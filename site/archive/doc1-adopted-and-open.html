@@ -1,0 +1,367 @@
+<title>What the Board Adopted, and What Is Still Open — NM Medical Psilocybin T&E</title>
+<style>
+  :root{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F5F2F9;
+    --text:#1B1722; --text-muted:#6B6577;
+    --border:#E5E1EC; --border-strong:#D3CDE0;
+    --accent:#5B4B8A; --accent-soft:#EDE8F6;
+    --add:#2F7D5B; --add-bg:#E8F3EC; --add-border:#BFE3CD;
+    --del:#B23A48; --del-bg:#F8EAEC; --del-border:#E8CBD1;
+    --open:#8A5A12; --open-bg:#F6EEDC; --open-border:#E7D6AC;
+    --neutral-pill:#5A5468; --neutral-pill-bg:#EEEBF2;
+    --shadow:0 1px 2px rgba(27,23,34,.04), 0 4px 18px rgba(27,23,34,.05);
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#151319; --surface:#1C1922; --surface-2:#221E2B;
+      --text:#EAE7F0; --text-muted:#9C95A9;
+      --border:#2C2836; --border-strong:#3A3447;
+      --accent:#B0A0DC; --accent-soft:#241F30;
+      --add:#79C79E; --add-bg:#16301F; --add-border:#27492F;
+      --del:#E28A96; --del-bg:#331B1F; --del-border:#4A2A2F;
+      --open:#DCB56C; --open-bg:#2E2612; --open-border:#4A3D1C;
+      --neutral-pill:#B6AFC4; --neutral-pill-bg:#272231;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#151319; --surface:#1C1922; --surface-2:#221E2B;
+    --text:#EAE7F0; --text-muted:#9C95A9;
+    --border:#2C2836; --border-strong:#3A3447;
+    --accent:#B0A0DC; --accent-soft:#241F30;
+    --add:#79C79E; --add-bg:#16301F; --add-border:#27492F;
+    --del:#E28A96; --del-bg:#331B1F; --del-border:#4A2A2F;
+    --open:#DCB56C; --open-bg:#2E2612; --open-border:#4A3D1C;
+    --neutral-pill:#B6AFC4; --neutral-pill-bg:#272231;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"]{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F5F2F9;
+    --text:#1B1722; --text-muted:#6B6577;
+    --border:#E5E1EC; --border-strong:#D3CDE0;
+    --accent:#5B4B8A; --accent-soft:#EDE8F6;
+    --add:#2F7D5B; --add-bg:#E8F3EC; --add-border:#BFE3CD;
+    --del:#B23A48; --del-bg:#F8EAEC; --del-border:#E8CBD1;
+    --open:#8A5A12; --open-bg:#F6EEDC; --open-border:#E7D6AC;
+    --neutral-pill:#5A5468; --neutral-pill-bg:#EEEBF2;
+    --shadow:0 1px 2px rgba(27,23,34,.04), 0 4px 18px rgba(27,23,34,.05);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;}
+  .wrap{
+    background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.6;
+    font-size:17px; letter-spacing:.001em;
+    padding:0 20px 96px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .col{max-width:880px; margin:0 auto;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.2;}
+  /* Masthead */
+  header.mast{border-bottom:1px solid var(--border); padding:56px 0 30px; margin-bottom:8px;}
+  .eyebrow{font-family:var(--sans); font-size:12px; font-weight:650; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+  h1{font-size:clamp(30px,5vw,44px); margin:0 0 14px; letter-spacing:-.01em;}
+  .dek{font-family:var(--serif); font-size:20px; color:var(--text-muted); margin:0; max-width:44ch;}
+  .metaline{display:flex; flex-wrap:wrap; gap:8px 20px; margin-top:22px; font-size:13px; color:var(--text-muted);}
+  .metaline b{color:var(--text); font-weight:600;}
+  /* Banner */
+  .banner{display:flex; gap:12px; align-items:flex-start; background:var(--open-bg); border:1px solid var(--open-border); border-radius:12px; padding:16px 18px; margin:26px 0; font-size:14.5px;}
+  .banner .mk{color:var(--open); font-weight:750; flex:none; font-size:13px; letter-spacing:.04em; text-transform:uppercase; padding-top:1px;}
+  .banner p{margin:0;}
+  /* Legend */
+  .legend{display:flex; flex-wrap:wrap; gap:10px 18px; margin:22px 0 6px; font-size:13px; color:var(--text-muted); align-items:center;}
+  .legend .lg{display:inline-flex; align-items:center; gap:7px;}
+  .sw{width:13px; height:13px; border-radius:4px; border:1px solid transparent; flex:none;}
+  .sw.add{background:var(--add-bg); border-color:var(--add-border);}
+  .sw.del{background:var(--del-bg); border-color:var(--del-border);}
+  .sw.open{background:var(--open-bg); border-color:var(--open-border);}
+  /* TOC */
+  nav.toc{margin:30px 0 8px; padding:18px 20px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px;}
+  nav.toc p{margin:0 0 10px; font-size:12px; font-weight:650; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted);}
+  nav.toc ol{margin:0; padding-left:20px; columns:2; column-gap:34px; font-size:14.5px;}
+  @media (max-width:560px){nav.toc ol{columns:1;}}
+  nav.toc li{margin:4px 0; break-inside:avoid;}
+  nav.toc a{text-decoration:none;} nav.toc a:hover{text-decoration:underline;}
+  /* Sections */
+  section{padding-top:40px;}
+  h2{font-size:26px; margin:0 0 4px; letter-spacing:-.01em;}
+  .kicker{font-size:13px; color:var(--text-muted); margin:0 0 18px;}
+  section > p{max-width:68ch;}
+  h3{font-size:18.5px; margin:26px 0 8px;}
+  /* Callout definition box */
+  .def{background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:10px; padding:16px 18px; margin:18px 0; box-shadow:var(--shadow);}
+  .def h4{margin:0 0 6px; font-family:var(--sans); font-size:13px; font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:var(--accent);}
+  .def p{margin:6px 0 0; font-size:15px;}
+  /* Motion / verbatim quote */
+  blockquote.motion{margin:20px 0; padding:20px 22px; background:var(--accent-soft); border-radius:12px; border:1px solid var(--border);}
+  blockquote.motion p{font-family:var(--serif); font-size:20px; line-height:1.45; margin:0; color:var(--text);}
+  blockquote.motion cite{display:block; margin-top:12px; font-family:var(--sans); font-style:normal; font-size:13px; color:var(--text-muted);}
+  /* Vote tally */
+  .tally{display:flex; gap:14px; flex-wrap:wrap; margin:18px 0;}
+  .tcard{flex:1 1 150px; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px; box-shadow:var(--shadow);}
+  .tcard .n{font-family:var(--serif); font-size:34px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums;}
+  .tcard .l{font-size:13px; color:var(--text-muted); margin-top:6px;}
+  .tcard.yes .n{color:var(--add);} .tcard.no .n{color:var(--del);}
+  /* Speaker quote */
+  blockquote.q{margin:14px 0; padding:2px 0 2px 18px; border-left:2px solid var(--border-strong);}
+  blockquote.q p{margin:0; font-size:15.5px;}
+  blockquote.q cite{display:block; margin-top:6px; font-style:normal; font-size:12.5px; color:var(--text-muted); font-family:var(--mono);}
+  /* Carve-out cards */
+  .carve{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  .cv{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 16px; display:flex; gap:14px; align-items:baseline; box-shadow:var(--shadow);}
+  .cv .num{font-family:var(--serif); font-size:20px; color:var(--accent); font-weight:600; flex:none; width:22px;}
+  .cv .body b{display:block; font-size:15.5px;}
+  .cv .body span{font-size:13.5px; color:var(--text-muted);}
+  /* Redline list */
+  .rl-group{margin:16px 0;}
+  .rl-group > h3{margin-bottom:6px;}
+  ul.redline{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
+  ul.redline li{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:11px 14px; font-size:15px;}
+  .ins{color:var(--add); background:var(--add-bg); border-radius:4px; padding:0 4px; box-decoration-break:clone;}
+  .del{color:var(--del); background:var(--del-bg); border-radius:4px; padding:0 4px; text-decoration:line-through; box-decoration-break:clone;}
+  .who{display:block; margin-top:5px; font-size:12.5px; color:var(--text-muted);}
+  .tag{display:inline-block; font-size:11px; font-weight:650; letter-spacing:.02em; padding:1px 7px; border-radius:999px; vertical-align:1px;}
+  .tag.va{color:var(--add); background:var(--add-bg); border:1px solid var(--add-border);}
+  /* Table */
+  .tablewrap{overflow-x:auto; margin:18px 0; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow);}
+  table{border-collapse:collapse; width:100%; min-width:680px; font-size:14px; background:var(--surface);}
+  thead th{text-align:left; font-family:var(--sans); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--text-muted); padding:12px 14px; border-bottom:1px solid var(--border-strong); position:sticky; top:0; background:var(--surface-2);}
+  tbody td{padding:11px 14px; border-bottom:1px solid var(--border); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.item{font-weight:600; width:34%;}
+  td.who-cell{color:var(--text-muted); width:30%;}
+  td.date-cell{font-family:var(--mono); font-size:12.5px; color:var(--text-muted); white-space:nowrap;}
+  .st{display:inline-block; font-size:11.5px; font-weight:650; padding:2px 9px; border-radius:999px; white-space:nowrap;}
+  .st.carve{color:var(--open); background:var(--open-bg); border:1px solid var(--open-border);}
+  .st.open{color:var(--open); background:transparent; border:1px solid var(--open-border);}
+  .st.va{color:var(--add); background:var(--add-bg); border:1px solid var(--add-border);}
+  .st.res{color:var(--add); background:transparent; border:1px solid var(--add-border);}
+  .st.no{color:var(--del); background:transparent; border:1px solid var(--del-border);}
+  .st.nt{color:var(--neutral-pill); background:var(--neutral-pill-bg); border:1px solid var(--border);}
+  /* Footer */
+  footer{margin-top:56px; padding-top:24px; border-top:1px solid var(--border); font-size:13px; color:var(--text-muted);}
+  footer h3{font-size:15px; color:var(--text); margin:0 0 8px;}
+  footer p{max-width:70ch; margin:8px 0;}
+  .fine{font-size:12.5px;}
+  hr.rule{border:none; border-top:1px solid var(--border); margin:40px 0 0;}
+  @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth;}}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:3px;}
+</style>
+
+<div class="wrap">
+<div class="col">
+
+  <header class="mast">
+    <p class="eyebrow">NM Medical Psilocybin · Training &amp; Education</p>
+    <h1>What the Board Adopted, and What Is Still Open</h1>
+    <p class="dek">A neutral community record of the June 26, 2026 vote, the verbal agreements, and every open item heading into July 9.</p>
+    <div class="metaline">
+      <span>Prepared for the <b>July 9, 2026</b> session</span>
+      <span>Sources: <b>6/25</b> hearing &amp; <b>6/26</b> board transcripts, plus the two draft documents</span>
+      <span>Companion: <b>Document 2 — The Three Open Items</b></span>
+    </div>
+  </header>
+
+  <div class="banner">
+    <span class="mk">Not final</span>
+    <p>Nothing on this page is final, promulgated rule text. The department is still drafting exact language for the August public rule hearing. This document shows what was said, who said it, and when. It does not advocate for any position or label any position right or wrong.</p>
+  </div>
+
+  <div class="legend">
+    <span class="lg"><span class="sw add"></span> Green = language agreed to be added</span>
+    <span class="lg"><span class="sw del"></span> Red strikethrough = removed / carved out of the vote</span>
+    <span class="lg"><span class="sw open"></span> Amber = still open / tabled to July 9</span>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#vote">The June 26 vote</a></li>
+      <li><a href="#drafts">The two draft documents</a></li>
+      <li><a href="#adopted">What was adopted</a></li>
+      <li><a href="#carveouts">The three carve-outs</a></li>
+      <li><a href="#verbal">Verbal agreements (redline)</a></li>
+      <li><a href="#log">Deferrals log (6/25 &amp; 6/26)</a></li>
+      <li><a href="#sources">Sources &amp; method</a></li>
+    </ol>
+  </nav>
+
+  <section id="vote">
+    <h2>The June 26 vote</h2>
+    <p class="kicker">Medical Psilocybin Advisory Board meeting, June 26, 2026</p>
+    <p>The board voted on a single motion: adopt the two Training &amp; Education draft documents as a package, with three items removed. It did not take separate votes on the individual line edits discussed on 6/25 and 6/26.</p>
+
+    <blockquote class="motion">
+      <p>“I move to adopt these recommendations minus the practicum requirement, the controlled substance number requirement, and the reciprocal timeline.”</p>
+      <cite>Motion by Brenda Burgard (per the meeting-note summary), 6/26/2026 board transcript, segment 334.</cite>
+    </blockquote>
+
+    <div class="tally">
+      <div class="tcard yes"><div class="n">3</div><div class="l">in favor</div></div>
+      <div class="tcard no"><div class="n">2</div><div class="l">against</div></div>
+      <div class="tcard"><div class="n">Carried</div><div class="l">motion adopted</div></div>
+    </div>
+
+    <p>The record identifies only one member’s vote by name: Larry Lima cast a “reluctant yes.” The two votes against are <b>not</b> named in the transcript, so they are not attributed here.</p>
+
+    <blockquote class="q">
+      <p>“I’m a reluctant yes, I prefer to have more discussion, honestly, but I can[’t] accept this.”</p>
+      <cite>Larry Lima · 6/26 · seg. 337 · [“can’t” appears to be a transcription slip for “can,” given he voted yes]</cite>
+    </blockquote>
+    <blockquote class="q">
+      <p>“My understanding is that we can still have discussion on these topics. It’s not closed off in the future… I’m voting in favor, but I also favor more discussion.”</p>
+      <cite>Larry Lima · 6/26 · seg. 341 · Department (Dominic Zerlo) confirmed on the record: “Yes, that is correct, Larry.” (seg. 342)</cite>
+    </blockquote>
+
+    <div class="def">
+      <h4>Two words to hold precisely</h4>
+      <p><b>Adopted</b> = only the single motion above (the two drafts as a package, minus the three carve-outs). The board did not vote on the individual edits below.</p>
+      <p><b>Verbal agreement</b> = a change people agreed to in discussion, with no final dictated wording yet. These are labeled “verbal agreement, no final text.” They are not finished rule language and are not final until the department prints the rules.</p>
+    </div>
+  </section>
+
+  <section id="drafts">
+    <h2>The two draft documents</h2>
+    <p class="kicker">Which text governs</p>
+    <p>Two working drafts were in play. Neither is final promulgated rule text. Where they cover the same topic and differ, the later 6/25 version is treated as the current wording.</p>
+    <div class="def">
+      <h4>Draft 1 — 6/12/26 recommendation draft</h4>
+      <p>Recommendation-style, 9 pages. Covers permit requirements by role (Diagnostic Clinician, Practitioner, Facilitator, including the New Mexico Controlled Substance number), curriculum requirements, practicum hours (100 / 120), mentoring, record-keeping, and continuing education. The earlier source.</p>
+    </div>
+    <div class="def">
+      <h4>Draft 2 — 6/25/26 rules-style draft <span class="tag va">controlling text</span></h4>
+      <p>Rules-style, 11 pages, using 7.35.X.X numbering. Covers educational-program application and evaluation, third-party evaluation, reciprocity (including the Dec 31 2026 and Dec 31 2027 exceptions), testing-out, provider and patient applications, appeals and discipline, healing centers, other approved locations, storage, and adverse-event / complaint reporting. The later, controlling text, presented at the 6/25 rules hearing.</p>
+    </div>
+    <p class="fine" style="color:var(--text-muted)">Note for context: at the 6/25 hearing, several attendees said the newly detailed document arrived close to the meeting and raised many questions. The department framed it as a pre-hearing draft, not a finished rule: “This is not the only time that these are going to be reviewed… there is time for changes. This is the start.” (Dominic Zerlo, 6/25)</p>
+  </section>
+
+  <section id="adopted">
+    <h2>What was adopted</h2>
+    <p class="kicker">The framework the board approved on 6/26</p>
+    <p>The adopted framework is the 6/12 recommendation draft plus the 6/25 rules draft, as amended in discussion, with the three carve-outs removed and sent to July 9. Everything in those two drafts except the three carve-outs is inside the adopted package. The line edits discussed are verbal agreements to be checked against the printed rules, not separately adopted text.</p>
+  </section>
+
+  <section id="carveouts">
+    <h2>The three carve-outs</h2>
+    <p class="kicker">Removed from the motion, not deleted — sent to the July 9 session</p>
+    <div class="carve">
+      <div class="cv"><span class="num">1</span><span class="body"><b>Controlled substance (CS) number for diagnostic clinicians</b><span>The requirement that a diagnostic clinician hold a New Mexico controlled substance number. Clarified on 6/26 as a New Mexico CS number, not a DEA number.</span></span></div>
+      <div class="cv"><span class="num">2</span><span class="body"><b>Practicum hour requirements</b><span>The 100-hour (facilitator) / 120-hour (practitioner) practicum and its sub-requirements, including the 20-hour supervisory practicum.</span></span></div>
+      <div class="cv"><span class="num">3</span><span class="body"><b>Reciprocal permit timeline</b><span>The sunset dates in the reciprocity section (Dec 31 2026 for the 40-contact-hour exception; Dec 31 2027 for the department’s waiver authority).</span></span></div>
+    </div>
+    <p>Full verbatim draft language and the attributed discussion for all three are in <b>Document 2 — The Three Open Items for July 9</b>.</p>
+  </section>
+
+  <section id="verbal">
+    <h2>Verbal agreements (redline)</h2>
+    <p class="kicker">Agreed in discussion on 6/25 or 6/26 — none are adopted rule text</p>
+    <p>These are changes people agreed to in discussion. None were separately voted on; each is a verbal agreement to be mapped against the actual rules when the department prints them. Read them as “agreed, no final text yet.”</p>
+
+    <div class="rl-group">
+      <h3>Provider roles &amp; training</h3>
+      <ul class="redline">
+        <li>Diagnostic clinician continuing education: <span class="del">annually</span> → <span class="ins">every two years</span> <span class="who">Drafting correction noted by Dominic on the record · 6/26</span></li>
+        <li>Wilderness first aid: <span class="del">required simply for sessions in a natural environment</span> → <span class="ins">required based on EMS access / remoteness (roughly more than an hour from EMS)</span> <span class="who">Chris Piskuski proposed; Larry Lima agreed; Dominic “added that on in” · 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li>Facilitator curriculum: <span class="ins">add peer-support training as an option</span> alongside the therapeutic-101 overview <span class="who">Chris Piskuski; Dominic agreed · 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li>Facilitator ethics / therapeutic-101: <span class="ins">add personal bias and the patient Bill of Rights</span> <span class="who">James Brown / Ian Dunn; Dominic · 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+      </ul>
+    </div>
+
+    <div class="rl-group">
+      <h3>Educational program approval &amp; evaluation</h3>
+      <ul class="redline">
+        <li>Faculty experience: <span class="ins">the two required faculty must have experience with 40 individual patients</span> <span class="who">6/26 add-on; how it is determined/demonstrated flagged as open. Overlaps the 6/25 “40 unique patient sessions” practicum-instructor placeholder · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li>Third-party evaluation: <span class="ins">add CME/CEU approval as an alternative pathway (both pathways remain available)</span> <span class="who">Raised by Ann Metz, Catherine Warnock, Dr. Fatimi, Lisa Ginsberg; department agreed · 6/25, explored again 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li>Inspections: <span class="ins">exempt active practicum / dosing sessions from unannounced inspection — notice required for those</span> <span class="who">Catherine Warnock, Dr. Fatimi; Dominic · 6/25 · <span class="tag va">verbal agreement, no final text</span></span></li>
+      </ul>
+    </div>
+
+    <div class="rl-group">
+      <h3>Reciprocity (non-timeline parts)</h3>
+      <ul class="redline">
+        <li>Non-US programs: <span class="ins">add requirement that non-English documentation be translated and apostilled</span> <span class="who">Ian Dunn; Dominic agreed · 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li><span class="ins">Clarify that the 40 contact hours are still required even for otherwise-exempt early applicants</span> <span class="who">Clarification stated by the department in response to Ann Metz · 6/25 · <span class="tag va">verbal agreement, no final text</span></span></li>
+      </ul>
+    </div>
+
+    <div class="rl-group">
+      <h3>Healing centers &amp; other approved locations</h3>
+      <ul class="redline">
+        <li>Mobile treatment units: <span class="ins">restore the accidentally deleted mobile-unit language under “other approved locations”</span> <span class="who">Chris Piskuski flagged; Dominic: “I will find that and we will add that back on in” · 6/25</span></li>
+        <li>Medical necessity for home / alternate location: <span class="ins">clarify the care team (diagnostic clinician with practitioner) determines it</span> <span class="who">Chat question (Jessica); Dominic · 6/25 · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li>Non-permitted staff present during treatment: <span class="ins">clarify they must be covered in the patient consent form</span> <span class="who">Raised 6/25; Dominic to clarify in the rules · 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+        <li><span class="ins">Add the patient Bill of Rights to healing-center responsibilities</span> <span class="who">James Brown via Dominic · 6/26</span></li>
+        <li>Language access: <span class="ins">add translation / language-access requirements (English + Spanish; ADA / Language Access Act)</span> <span class="who">Skye via Dominic · 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+      </ul>
+    </div>
+
+    <div class="rl-group">
+      <h3>Reporting</h3>
+      <ul class="redline">
+        <li>Adverse health event report: <span class="ins">add product ID as a required field</span> <span class="who">Raised by Greg (and Hanifa via chat) at 6/25; reflected in the healing-center reporting language presented 6/26 · <span class="tag va">verbal agreement, no final text</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="log">
+    <h2>Deferrals log</h2>
+    <p class="kicker">Every item deferred, questioned, or left open across 6/25 and 6/26 — not just the three headline carve-outs</p>
+    <p>The “what has been discussed, what has landed, what has not” view. Status reflects the most recent state in the record.</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Status</th><th>Raised / carried by</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="item">CS number requirement (diagnostic clinician)</td><td><span class="st carve">Carved out → July 9</span></td><td class="who-cell">Dissent: Denali Wilson, Chris Piskuski, Dan Jennings, Dr. Fatimi. Dept. defends: Dominic Zerlo, Dr. Truckner, Ian Dunn, Alana Dances</td><td class="date-cell">6/25, 6/26</td></tr>
+          <tr><td class="item">Practicum hours (100 / 120)</td><td><span class="st carve">Carved out → July 9</span></td><td class="who-cell">Scott Shannon, Larry Lima, Brenda Burgard; Dept. (Dominic)</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Reciprocal permit timeline (Dec 31 2026 sunset; Dec 31 2027 waiver in draft)</td><td><span class="st carve">Carved out → July 9</span></td><td class="who-cell">Larry Lima; Dept. (Dominic)</td><td class="date-cell">6/25, 6/26</td></tr>
+          <tr><td class="item">20-hour supervisory practicum (make optional; insurance gap)</td><td><span class="st open">Open</span></td><td class="who-cell">Ann Metz; Dept. declined</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Practicum-instructor experience minimum (placeholder: 40 unique patient sessions)</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Catherine Warnock (James Brown, Dr. Fatimi, Hanifa cautions)</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Faculty 40-patient experience requirement (how to verify)</td><td><span class="st open">Open thread</span></td><td class="who-cell">Dept. add-on (Dominic)</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Third-party evaluator → add CME/CEU alternative pathway</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Ann Metz, Warnock, Dr. Fatimi, Lisa Ginsberg; Dominic resolved</td><td class="date-cell">6/25, 6/26</td></tr>
+          <tr><td class="item">Practicum inspection carve-out (notice required for active practicum / dosing)</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Catherine Warnock, Dr. Fatimi; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Peer-support training as a facilitator option</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Chris Piskuski; Dominic agreed</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Wilderness first aid trigger (EMS access / remoteness)</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Chris Piskuski, Larry Lima; Dominic</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Personal bias + patient Bill of Rights in ethics / curriculum</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">James Brown, Ian Dunn; Dominic</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Apostille / translation of non-English foreign credentials</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Ian Dunn; Dominic</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Staff consent disclosure (non-permitted staff in consent form)</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Raised 6/25; Dominic to clarify</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Language access (English + Spanish; ADA / Language Access Act)</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Skye via Dominic</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Product ID in adverse-event reports</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Greg; Hanifa (chat); Dominic</td><td class="date-cell">6/25, 6/26</td></tr>
+          <tr><td class="item">Mobile treatment unit language (restore accidentally deleted)</td><td><span class="st va">To restore</span></td><td class="who-cell">Chris Piskuski; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Medical-necessity determiner for home / alternate location (care team)</td><td><span class="st va">Verbal agr.</span></td><td class="who-cell">Jessica (chat); Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Dosage decision authority (stays with care team; best-practices, not rule)</td><td><span class="st res">Resolved verbally</span></td><td class="who-cell">Hanifa; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Mentoring structure (program-based vs. department / licensing pool)</td><td><span class="st open">Open</span></td><td class="who-cell">Denali Wilson</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Condition-specific endorsements (end-of-life, PTSD)</td><td><span class="st open">Deferred “down the road”</span></td><td class="who-cell">Larry Lima; Dominic</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Test-out option for didactic modules (practicum still required)</td><td><span class="st res">Presented, no objection</span></td><td class="who-cell">Dominic; Dr. Fatimi discussion</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">BLS vs. CPR / BVM level of first aid</td><td><span class="st no">Not changed</span></td><td class="who-cell">Chris Piskuski; Dept. kept BLS</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Internal quality-review process for centers</td><td><span class="st no">Not a rule item</span></td><td class="who-cell">James Brown; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Cap on number of educational programs</td><td><span class="st res">Resolved — no limit</span></td><td class="who-cell">Erica; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Healing center + training center = two applications (no application fee)</td><td><span class="st res">Resolved</span></td><td class="who-cell">Catherine Warnock; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Diagnostic-clinician liability scope (accuracy of clearance, not treatment efficacy)</td><td><span class="st res">Resolved verbally</span></td><td class="who-cell">Chris Piskuski, Greg; Dr. Truckner, Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Insurance requirement for centers</td><td><span class="st no">Not required (recommended)</span></td><td class="who-cell">Hanifa (chat); Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Volunteers / multi-use spaces (present with permission)</td><td><span class="st res">Resolved</span></td><td class="who-cell">Chris Piskuski; Dominic</td><td class="date-cell">6/25</td></tr>
+          <tr><td class="item">Billing: billable diagnosis vs. non-billable treatment</td><td><span class="st open">Verbal guidance</span></td><td class="who-cell">Larry Lima (Q); Alana Dances (A)</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Insurance clawback risk (risk/benefit attestation)</td><td><span class="st open">Flagged, unresolved</span></td><td class="who-cell">Denali Wilson</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Background-check gap / Medicaid billing validation</td><td><span class="st open">Flagged as gap; statutory limit</span></td><td class="who-cell">Alana Dances; Dominic acknowledged</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">“Eligibility clinician” rename (of “diagnosing clinician”)</td><td><span class="st open">Raised, unresolved</span></td><td class="who-cell">Hanitha (public)</td><td class="date-cell">6/26</td></tr>
+          <tr><td class="item">Testing / training with well (non-qualifying) persons</td><td><span class="st open">Deferred; may need legislation</span></td><td class="who-cell">Larry Lima; Dominic</td><td class="date-cell">6/26</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer id="sources">
+    <h3>Sources &amp; method</h3>
+    <p><b>Meeting records.</b> June 25, 2026 committee hearing (“New Mexico Medical Psilocybin Program: Draft Regulations Review”) and June 26, 2026 Medical Psilocybin Advisory Board meeting, both read in full from their Notion transcripts. The 6/12 recommendation draft and the 6/25 rules-style draft are the underlying documents.</p>
+    <p><b>On verbatim rule text.</b> The two source PDFs are stored as images and could not be machine-read for this build. The verbatim draft language shown here and in Document 2 is drawn from the labeled-verbatim transcriptions in the committee’s Notion record. Confirm exact wording against the attached PDFs before relying on it.</p>
+    <p><b>On attributions.</b> Both transcripts are unlabeled auto-transcripts. Speakers were reconstructed from roll-call self-introductions and “Thank you, [name]” hand-offs. Two points are genuinely uncertain in the raw transcript and are flagged where they appear: the identity of the motion’s mover (the meeting-note summary assigns it to Brenda Burgard) and the CS-vs-DEA clarifying question on 6/26. The two votes against the motion are not named in the record and are not attributed.</p>
+    <p class="fine">Prepared July 8, 2026, as a community reference for the July 9 session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
+  </footer>
+
+</div>
+</div>
