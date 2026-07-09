@@ -56,13 +56,18 @@
   /* Documents referenced */
   .dockey-h{font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted); margin:30px 0 0;}
   .dockey{display:grid; grid-template-columns:1fr; gap:12px; margin:10px 0 4px;}
-  @media (min-width:640px){.dockey{grid-template-columns:1fr 1fr;}}
+  @media (min-width:720px){.dockey{grid-template-columns:repeat(3,1fr);}}
   .dk{display:block; text-decoration:none; color:inherit; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:14px 16px; transition:border-color .12s ease, background .12s ease, transform .12s ease;}
   .dk:hover{border-color:var(--border-strong); background:var(--surface-3); transform:translateY(-1px);}
+  .dk.current{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent);}
   .dk .dkl{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 5px;}
   .dk p{margin:0; font-size:14px; color:var(--text-muted);}
   .dk p b{color:var(--text); font-weight:600;}
   .dkgo{display:inline-block; margin-top:9px; font-size:12px; font-weight:600; color:var(--accent);}
+  .dkflag{display:inline-block; font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; padding:1px 6px; border-radius:999px; margin-left:6px; vertical-align:1px; background:var(--pillN-bg); color:var(--pillN); border:1px solid var(--border);}
+  .dkflag.cur{background:var(--accent-soft); color:var(--accent); border-color:var(--border-strong);}
+  .updated{margin:14px 0 0; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
+  .updated b{color:var(--text-muted); font-weight:600;}
 
   /* Section scaffolding */
   section{padding-top:20px;}
@@ -212,11 +217,17 @@
           <span class="dkgo">Open PDF ↗</span>
         </a>
         <a class="dk" href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">
-          <p class="dkl">The rules draft · June 25</p>
-          <p><b>The department's rules-style version</b> of the same subject, shown to the committee for review. Numbered 7.35.X.X.</p>
+          <p class="dkl">The rules draft · June 25 <span class="dkflag">superseded</span></p>
+          <p><b>The department's first rules-style version</b>, shown to the committee for review.</p>
+          <span class="dkgo">Open PDF ↗</span>
+        </a>
+        <a class="dk current" href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">
+          <p class="dkl">The rules draft · July 9 <span class="dkflag cur">on the table</span></p>
+          <p><b>The department's draft for the July 9 board meeting</b> (7.35.3). Proposes language for all three tabled items.</p>
           <span class="dkgo">Open PDF ↗</span>
         </a>
       </div>
+      <p class="updated"><b>Updated July 9, 2026.</b> Folded in the July 9 board-meeting rules draft (7.35.3), which supersedes the June 25 draft.</p>
     </header>
 
     <!-- DECISION BRIEF -->
@@ -224,12 +235,12 @@
       <div class="sec-head">
         <p class="k">July 9, 2026</p>
         <h2>Three items tabled</h2>
-        <p>Each card links to the detail: the recommendation as written, the committee input, and the rules-draft language where it exists.</p>
+        <p>Each card links to the detail: the recommendation as written, the committee input, and the July 9 rules-draft language.</p>
       </div>
       <div class="decks">
         <a class="deck" href="#cs">
           <span class="dn">Item 1</span>
-          <h3>Must the diagnostic clinician hold a controlled-substance number?</h3>
+          <h3>Must the certifying clinician hold a controlled-substance number?</h3>
           <p class="stake">Affects which clinicians can authorize a patient's entry to the program.</p>
           <span class="go">See the detail →</span>
         </a>
@@ -252,17 +263,17 @@
     <section class="item" id="cs">
       <div class="item-head">
         <span class="idx">1</span>
-        <h2>The controlled-substance number<span class="loc">Diagnostic Clinician qualifications</span></h2>
+        <h2>The controlled-substance number<span class="loc">Certifying clinician (renamed from "diagnostic clinician")</span></h2>
       </div>
 
       <div class="whatnow">
-        <p class="q">Should a diagnostic clinician be required to hold a New Mexico controlled substance number to be permitted?</p>
-        <p class="at"><b>What this is:</b> the diagnostic clinician authorizes a patient's entry to the program. A controlled-substance-number requirement limits which clinicians can serve in that role. Clarified on June 26 as a <b>New Mexico</b> CS number, not a federal DEA number.</p>
+        <p class="q">Should the certifying clinician be required to hold a New Mexico controlled substance number to be permitted?</p>
+        <p class="at"><b>What this is:</b> the certifying clinician authorizes a patient's entry to the program. A controlled-substance-number requirement limits which clinicians can serve in that role. Clarified on June 26 as a <b>New Mexico</b> CS number, not a federal DEA number. The July 9 draft renames this role from "diagnostic clinician" to "certifying clinician."</p>
       </div>
 
       <div class="diffbox">
-        <p class="dbl">Where the two documents differ</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=1" target="_blank" rel="noopener">The June 12 recommendation</a> (p. 1) lists a <b>New Mexico Controlled Substance number</b> as a required qualification. <a href="documents/rules-draft-2026-06-25.pdf#page=6" target="_blank" rel="noopener">The June 25 rules draft</a> (pp. 6-7) does not restate the diagnostic-clinician qualifications, so this requirement appears in the recommendation only.</p>
+        <p class="dbl">What the July 9 draft does</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=1" target="_blank" rel="noopener">The June 12 recommendation</a> (p. 1) required a <b>New Mexico Controlled Substance number</b>. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">The July 9 rules draft</a> <b>keeps that requirement</b> and <b>renames the role to "certifying clinician."</b> The June 25 draft had not restated the qualifications; the July 9 draft does.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12, as written</span></div>
@@ -279,7 +290,7 @@
         <p class="srcline">Verbatim from the June 12 recommendation, p. 1.</p>
       </div>
 
-      <div class="layer"><span class="ln">2</span><span class="lt">Committee input</span><span class="ld">June 26 board meeting</span></div>
+      <div class="layer"><span class="ln">2</span><span class="lt">Committee input</span><span class="ld">June 25 and 26 committee meetings</span></div>
       <div class="ci">
         <div class="ci-entry agree">
           <div class="ci-top"><span class="ci-tag agree">Agreement</span><span class="ci-who"><b>Dominic Zurlo</b> (department)</span></div>
@@ -311,22 +322,34 @@
         </div>
       </div>
 
-      <div class="layer"><span class="ln">3</span><span class="lt">From June 25</span><span class="ld">committee meeting</span></div>
-      <p class="subnote">The June 25 rules draft does not restate the diagnostic-clinician qualifications; it covers the provider application process, and the CS-number requirement lives only in the June 12 recommendation above. Two clinicians spoke to it at the June 25 committee meeting:</p>
+      <p class="subnote" style="margin-top:14px;">Also at the June 25 committee meeting:</p>
       <div class="ci">
         <div class="ci-entry dissent">
-          <div class="ci-top"><span class="ci-tag dissent">Dissent</span><span class="ci-who"><b>Dr. Fatemi</b> (training-program operator)</span></div>
+          <div class="ci-top"><span class="ci-tag dissent">Dissent</span><span class="ci-who"><b>Dr. Fatemi</b> (training-program operator) · June 25</span></div>
           <p class="ci-quote">"in our community, I don't know any any other physicians… who would be also taking the risk… of having a DEA license. And I know we're talking about having a controlled substance license, but that's against federal law."</p>
         </div>
         <div class="ci-entry dissent">
-          <div class="ci-top"><span class="ci-tag dissent">Dissent</span><span class="ci-who"><b>Dr. Truckner</b> (department physician)</span></div>
+          <div class="ci-top"><span class="ci-tag dissent">Dissent</span><span class="ci-who"><b>Dr. Truckner</b> (department physician) · June 25</span></div>
           <p class="ci-quote">"the diagnostic clinician is not prescribing psilocybin… That's not my DEA license. That's just me being a physician. So the DEA license has nothing to do with my responsibilities to clear this patient safely."</p>
         </div>
       </div>
 
+      <div class="layer"><span class="ln">3</span><span class="lt">The rules draft</span><span class="ld">July 9, 2026 (7.35.3)</span></div>
+      <div class="lang">
+        <div class="verbatim">
+          <p class="lead">The July 9 draft renames the role to "certifying clinician" and keeps the controlled-substance requirement. The certifying-clinician application packet requires, among other items:</p>
+          <ul>
+            <li>"Documentation of current NM professional license (e.g. MD, NP);"</li>
+            <li>"Certificate or verification of results NM Controlled Substance number;"</li>
+          </ul>
+          <p class="lead" style="margin-top:10px;">New in this draft: "a certifying clinician module consisting of a minimum of 8 didactic hours," plus a documented test-out of the didactic portion of the curriculum.</p>
+        </div>
+        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3): certifying-clinician application and educational requirements.</p>
+      </div>
+
       <div class="landed">
-        <p class="ll">Where it landed</p>
-        <p>Set aside on June 26 and sent to July 9. Clarified as a New Mexico controlled-substance number, not a DEA number. No amended language was adopted. Connected open threads: the billing line between diagnosis (billable) and treatment (not billable), insurance clawback risk from a risk/benefit attestation, and a suggested rename to "eligibility clinician."</p>
+        <p class="ll">Where it stands</p>
+        <p>The July 9 draft keeps the New Mexico controlled-substance requirement and renames the role to "certifying clinician." It has not been voted on. Connected open threads: the billing line between diagnosis (billable) and treatment (not billable), and insurance clawback risk from a risk/benefit attestation.</p>
       </div>
     </section>
 
@@ -343,8 +366,8 @@
       </div>
 
       <div class="diffbox">
-        <p class="dbl">Where the two documents differ</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=7" target="_blank" rel="noopener">The June 12 recommendation</a> (pp. 7-8) sets <b>100 hours (facilitators) / 120 hours (practitioners)</b> of practicum. <a href="documents/rules-draft-2026-06-25.pdf#page=4" target="_blank" rel="noopener">The June 25 rules draft</a> (pp. 4-5) does not restate these hours; it reaches practicum only through reciprocity, where a <b>40-contact-hour</b> exception applies to reciprocal applicants through December 31, 2026.</p>
+        <p class="dbl">What the July 9 draft does</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=7" target="_blank" rel="noopener">The June 12 recommendation</a> (pp. 7-8) set <b>100 hours (facilitators) / 120 hours (practitioners)</b>. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">The July 9 rules draft</a> now <b>restates those hours in the rule itself, unchanged</b> (the June 25 draft had left them out). The reduction concerns raised in committee did not change the numbers.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12, as written</span></div>
@@ -361,7 +384,7 @@
         <p class="srcline">Verbatim from the June 12 recommendation, pp. 7-8.</p>
       </div>
 
-      <div class="layer"><span class="ln">2</span><span class="lt">Committee input</span><span class="ld">June 26 board meeting</span></div>
+      <div class="layer"><span class="ln">2</span><span class="lt">Committee input</span><span class="ld">June 25 and 26 committee meetings</span></div>
       <div class="ci">
         <div class="ci-entry agree">
           <div class="ci-top"><span class="ci-tag agree">Agreement</span><span class="ci-who"><b>Dominic Zurlo</b> (department), reading the requirement into the record</span></div>
@@ -385,30 +408,43 @@
         </div>
       </div>
 
-      <div class="layer"><span class="ln">3</span><span class="lt">From June 25</span><span class="ld">committee meeting</span></div>
-      <p class="subnote">The June 25 rules draft does not restate the practicum hours. It touches practicum only through reciprocity: a "40 hours of contact time" exception, and a requirement that reciprocal practitioners still "complete the twenty (20) supervisory practicum hours in New Mexico" (rules draft, pp. 4-5). What was said that day:</p>
+      <p class="subnote" style="margin-top:14px;">Also at the June 25 committee meeting:</p>
       <div class="ci">
         <div class="ci-entry suggest">
-          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>Dr. Ann Metz</b> (LPCC; CO clinical facilitator), on the 20 supervisory hours</span></div>
+          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>Dr. Ann Metz</b> (LPCC; CO clinical facilitator), on the 20 supervisory hours · June 25</span></div>
           <p class="ci-quote">"Supervision is not a licensing requirement for anyone who's a social worker or counselor. It's an additional credential that people opt into… there is no psilocybin-specific liability insurance product available that covers clinical supervision… creates an uninsurable liability." (Recommended an optional "practitioner supervisor credential.")</p>
         </div>
         <div class="ci-entry agree">
-          <div class="ci-top"><span class="ci-tag agree">Agreement</span><span class="ci-who"><b>Dominic Zurlo</b> (department), declining to remove it</span></div>
+          <div class="ci-top"><span class="ci-tag agree">Agreement</span><span class="ci-who"><b>Dominic Zurlo</b> (department), declining to remove it · June 25</span></div>
           <p class="ci-quote">"the facilitators do need to be supervised by the practitioners based upon the model that is created, and that's actually why that is there."</p>
         </div>
         <div class="ci-entry suggest">
-          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>Catherine Warnock</b> (licensed practitioner), that instructors should exceed the minimums</span></div>
+          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>Catherine Warnock</b> (licensed practitioner), that instructors should exceed the minimums · June 25</span></div>
           <p class="ci-quote">"I don't think you should be training 14 experiences. I think 14 experiences is a low number to begin with… maybe a minimum of like 40 people that they have worked with."</p>
         </div>
         <div class="ci-entry suggest">
-          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>James Brown</b>, cautioning against fixed minimums in a new field</span></div>
+          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>James Brown</b>, cautioning against fixed minimums in a new field · June 25</span></div>
           <p class="ci-quote">"There's not a lot of people pre-set or pre-certified or pre-registered, pre-anything in this. So think about that when you guys talk about minimums."</p>
         </div>
       </div>
 
+      <div class="layer"><span class="ln">3</span><span class="lt">The rules draft</span><span class="ld">July 9, 2026 (7.35.3)</span></div>
+      <div class="lang">
+        <div class="verbatim">
+          <p class="lead">The July 9 draft writes the practicum into the rule itself:</p>
+          <ul>
+            <li>"The practicum shall consist of a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners and must be completed prior to applying for certification."</li>
+            <li>"Students shall participate in a minimum of 80 hours of administration and same-day therapy sessions… with a minimum of 14 different patients over a minimum of eight different administration and same-day therapy sessions…"</li>
+            <li>"Practitioners shall complete an additional minimum of 20 hours as a practitioner supervising facilitators…"</li>
+            <li>"All practicum hours shall take place in an approved healing center or other approved location."</li>
+          </ul>
+        </div>
+        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3): practitioner and facilitator practicum requirements. The hours match the June 12 recommendation.</p>
+      </div>
+
       <div class="landed">
-        <p class="ll">Where it landed</p>
-        <p>Set aside on June 26 and sent to July 9. No changes were adopted. Open threads inside this item: whether the 20-hour supervisory practicum is mandatory or opt-in, an instructor / faculty experience floor, the cost modeling Larry Leeman requested, and condition-specific endorsements for end-of-life and PTSD.</p>
+        <p class="ll">Where it stands</p>
+        <p>The July 9 draft keeps 100 / 120 hours and the 20 supervisory hours, unchanged, now written into the rule. It has not been voted on. Open threads: whether the 20-hour supervisory practicum is mandatory or opt-in, an instructor / faculty experience floor, the cost modeling Larry Leeman requested, and condition-specific endorsements for end-of-life and PTSD.</p>
       </div>
     </section>
 
@@ -416,17 +452,17 @@
     <section class="item" id="reciprocity">
       <div class="item-head">
         <span class="idx">3</span>
-        <h2>The reciprocity timeline<span class="loc">Reciprocity, rules draft pp. 4-5</span></h2>
+        <h2>The reciprocity timeline<span class="loc">Reciprocity · rules draft 7.35.3</span></h2>
       </div>
 
       <div class="whatnow">
-        <p class="q">Are the sunset dates adequate: Dec 31, 2026 for the reduced-hours exception, and Dec 31, 2027 for the department's waiver authority?</p>
-        <p class="at"><b>What this is:</b> reciprocity lets providers trained in other government-approved programs (for example, Colorado or Oregon) qualify in New Mexico under reduced practicum requirements. The sunset dates set how long those reduced requirements remain available.</p>
+        <p class="q">Are the reciprocity dates adequate? The July 9 draft keeps the December 31, 2026 reduced-hours exception and removes the December 31, 2027 end date on the department's discretionary waiver.</p>
+        <p class="at"><b>What this is:</b> reciprocity lets providers trained in other government-approved programs (for example, Colorado or Oregon) qualify in New Mexico under reduced practicum requirements. These dates set how long the reduced requirements remain available.</p>
       </div>
 
       <div class="diffbox">
-        <p class="dbl">Where the two documents differ</p>
-        <p class="d">Reciprocity and its sunset dates (<b>December 31, 2026</b> and <b>December 31, 2027</b>) appear only in <a href="documents/rules-draft-2026-06-25.pdf#page=4" target="_blank" rel="noopener">the June 25 rules draft</a> (pp. 4-5). <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> contains no reciprocity provision.</p>
+        <p class="dbl">What the July 9 draft does</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. <a href="documents/rules-draft-2026-06-25.pdf#page=4" target="_blank" rel="noopener">The June 25 draft</a> set two dates: December 31, 2026 and December 31, 2027. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">The July 9 draft</a> <b>keeps December 31, 2026</b>, <b>removes the December 31, 2027 end date</b> (the discretionary waiver is now open-ended), and adds a separate <b>June 30, 2027</b> deadline for educational programs to employ two department-certified faculty.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12</span></div>
@@ -435,7 +471,7 @@
         <p class="srcline">Confirmed against the June 12 recommendation (no reciprocity section).</p>
       </div>
 
-      <div class="layer"><span class="ln">2</span><span class="lt">Committee input</span><span class="ld">June 26 board meeting</span></div>
+      <div class="layer"><span class="ln">2</span><span class="lt">Committee input</span><span class="ld">June 25 and 26 committee meetings</span></div>
       <div class="ci">
         <div class="ci-entry agree">
           <div class="ci-top"><span class="ci-tag agree">Agreement</span><span class="ci-who"><b>Dominic Zurlo</b> (department), on the sunset rationale</span></div>
@@ -451,27 +487,28 @@
         </div>
       </div>
 
-      <div class="layer"><span class="ln">3</span><span class="lt">From June 25</span><span class="ld">the rules-draft language</span></div>
-      <p class="subnote">This item's only written language is in the June 25 rules draft:</p>
-      <div class="lang">
-        <div class="verbatim">
-          <ul>
-            <li>"Exception: any reciprocal applications received by the department by <b>December 31, 2026</b> will not be required to complete the full practicum hours required by New Mexico, but must demonstrate completion of at least 40 hours of contact time with a minimum of 2 separate individual sessions or 2 separate group sessions…"</li>
-            <li>"Exception: The department reserves the ability to waive, temporarily suspend, or reduce any of the rules regarding the practicum requirements… up until <b>December 31, 2027</b>; in order to facilitate the permitting of individuals trained by other governmental approved programs to build the initial infrastructure of the program."</li>
-          </ul>
-        </div>
-        <p class="srcline">Verbatim from the June 25 rules draft, reciprocity, pp. 4-5.</p>
-      </div>
-      <div class="ci" style="margin-top:12px;">
+      <p class="subnote" style="margin-top:14px;">Also at the June 25 committee meeting:</p>
+      <div class="ci">
         <div class="ci-entry clarify">
-          <div class="ci-top"><span class="ci-tag clarify">Clarification</span><span class="ci-who"><b>Dr. Ann Metz</b> asked, and <b>Dominic Zurlo</b> answered, at the June 25 committee meeting</span></div>
+          <div class="ci-top"><span class="ci-tag clarify">Clarification</span><span class="ci-who"><b>Dr. Ann Metz</b> asked, and <b>Dominic Zurlo</b> answered · June 25</span></div>
           <p class="ci-quote">Metz: "are people required to complete a training program and have the 40 hour practicum?" Zurlo: "They still need to show the 40 hours… but they would be otherwise exempted from the practica."</p>
         </div>
       </div>
 
+      <div class="layer"><span class="ln">3</span><span class="lt">The rules draft</span><span class="ld">July 9, 2026 (7.35.3)</span></div>
+      <div class="lang">
+        <div class="verbatim">
+          <ul>
+            <li>"An applicant for reciprocity whose application is received by the department by <b>December 31, 2026</b> shall not be required to complete the full practicum hours required by New Mexico, but shall demonstrate completion of at least 40 hours of contact time with a minimum of two separate individual sessions or two separate group sessions…"</li>
+            <li>"The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for reciprocity, in order to facilitate the certifying of individuals trained by other governmental approved programs to build the initial infrastructure of the program."</li>
+          </ul>
+        </div>
+        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3), reciprocity. The June 25 draft had capped the second waiver at <b>December 31, 2027</b>; the July 9 draft removes that end date. A separate provision requires educational programs to employ two department-certified faculty by <b>June 30, 2027</b>.</p>
+      </div>
+
       <div class="landed">
-        <p class="ll">Where it landed</p>
-        <p>Set aside on June 26 and sent to July 9. One clarification landed at June 25: applicants otherwise exempt from the full practicum must still show the 40 contact hours. The dates themselves were set aside, and the department noted the timeline could be extended.</p>
+        <p class="ll">Where it stands</p>
+        <p>The July 9 draft keeps the December 31, 2026 reduced-hours exception, removes the December 31, 2027 end date on the discretionary waiver (now open-ended), and adds a June 30, 2027 faculty-employment deadline for educational programs. It has not been voted on.</p>
       </div>
     </section>
 
@@ -553,7 +590,7 @@
                 <tr><td class="it">Billing: diagnosis vs. treatment</td><td><span class="st open">Verbal guidance</span></td><td class="wc">Larry Leeman (Q); Alana Dances (A)</td><td class="dc">6/26</td></tr>
                 <tr><td class="it">Insurance clawback risk (attestation)</td><td><span class="st open">Flagged</span></td><td class="wc">Denali Wilson</td><td class="dc">6/26</td></tr>
                 <tr><td class="it">Background-check gap / Medicaid validation</td><td><span class="st open">Flagged as gap</span></td><td class="wc">Alana Dances</td><td class="dc">6/26</td></tr>
-                <tr><td class="it">"Eligibility clinician" rename</td><td><span class="st open">Raised</span></td><td class="wc">Hanitha (public)</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Clinician rename</td><td><span class="st res">Renamed "certifying clinician" in 7/9 draft</span></td><td class="wc">Hanitha (public) raised "eligibility clinician"</td><td class="dc">6/26, 7/9</td></tr>
                 <tr><td class="it">Testing / training with well persons</td><td><span class="st open">May need legislation</span></td><td class="wc">Larry Leeman</td><td class="dc">6/26</td></tr>
               </tbody>
             </table>
@@ -565,7 +602,8 @@
     <footer>
       <div class="col" style="padding:0;">
         <h3>Sources &amp; method</h3>
-        <p><b>Document language</b> is quoted verbatim from the two source PDFs: the June 12 recommendation ("Draft for 6-12-26") and the June 25 rules draft ("Draft Outline for Training and Education Committee review for 6-25-26"). Neither is final, promulgated rule text.</p>
+        <p><b>Document language</b> is quoted verbatim from the source PDFs: the June 12 recommendation ("Draft for 6-12-26"), the June 25 rules draft, and the July 9, 2026 board-meeting rules draft (7.35.3, "Psilocybin patient and practitioner rule"). None is final, promulgated rule text.</p>
+        <p><b>Revision, July 9, 2026:</b> folded in the July 9 board-meeting rules draft (7.35.3). It keeps the controlled-substance requirement and renames the role to "certifying clinician"; keeps the 100 / 120 practicum hours and the 20 supervisory hours; keeps the December 31, 2026 reciprocity exception; and removes the December 31, 2027 waiver end date, adding a June 30, 2027 faculty-employment deadline for educational programs.</p>
         <p><b>Committee input</b> comes from the full transcripts of the June 25 and June 26 committee meetings. Both are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Peskuski, Fatemi, Leeman). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the motion.</p>
         <p class="fine">Prepared as a community reference for the July 9, 2026 session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
       </div>
