@@ -51,6 +51,19 @@
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
   @media (max-width:680px){.tnav{display:none;}}
 
+  /* Today callout (collapsible) */
+  .today{margin:22px 0 4px; border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; overflow:hidden;}
+  .today>summary{list-style:none; cursor:pointer; padding:14px 16px; display:flex; gap:12px; align-items:flex-start;}
+  .today>summary::-webkit-details-marker{display:none;}
+  .today .today-line{font-size:15px; color:var(--text); line-height:1.5;}
+  .today .today-line b{color:var(--open);}
+  .today>summary .chev{margin-left:auto; color:var(--open); font-size:13px; transition:transform .15s ease; flex:none; margin-top:3px;}
+  .today[open]>summary .chev{transform:rotate(90deg);}
+  .today-body{padding:0 16px 16px; font-size:14px; color:var(--text); line-height:1.55;}
+  .today-body p{margin:8px 0 0;}
+  .today-body ul{margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:7px;}
+  .today-body .today-next{margin:12px 0 0; font-family:var(--mono); font-size:12.5px; color:var(--text-muted);}
+
   /* Hero */
   .hero{padding:40px 0 8px;}
   .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
@@ -208,6 +221,7 @@
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
             <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">On the table for the July 9 board meeting (7.35.3)</span></a>
+            <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
             <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
           </div>
         </details>
@@ -221,24 +235,32 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
       <h1>Training &amp; Education:<br>the three tabled items for July 9, 2026</h1>
-      <p class="lede">The Training &amp; Education Committee developed a recommendation for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to accept the recommendation, but set three items aside. Those three items go to a session on <b>July 9, 2026</b>.</p>
-      <p class="mtgnote"><b>July 9 was scheduled as a committee meeting, not a board vote.</b> On the record at the June 26 Advisory Board meeting, the July 9 session (9-11 AM) was defined as an Education &amp; Training Committee meeting to discuss the three tabled items, ahead of the full Advisory Board meeting on July 17. A committee discusses and refines; the Advisory Board is the body that votes. <span class="sub">(DOH's public meetings page currently lists July 9 as a full Advisory Board meeting.)</span></p>
+      <p class="lede">The Training &amp; Education Committee developed a recommendation for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to accept the recommendation and set three items aside. The board took up those three items on <b>July 9, 2026</b>.</p>
+
+      <details class="today" id="today">
+        <summary><span class="today-line"><b>What happened July 9:</b> reciprocity was extended to Dec 31, 2027; practicum and didactic hours were sent to the Training and Education Committee; the certifying-clinician / controlled-substance-number question was sent back to the department. Nothing was finalized.</span><span class="chev">▸</span></summary>
+        <div class="today-body">
+          <p>July 9 was a working session, not a binding vote. The chair ruled out formal votes after the scheduled adjournment, so the board walked the full draft and focused on the three tabled items.</p>
+          <ul>
+            <li><b>Reciprocity — resolved by consensus.</b> Both the reciprocity waiver and the New Mexico program waiver deadlines were extended to <b>December 31, 2027</b>. The chair noted December 31 is a legislative backstop, not the target launch date.</li>
+            <li><b>Practicum and didactic hours — tabled.</b> Sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion to set specific numbers.</li>
+            <li><b>Certifying clinician / CS number — sent back to the department.</b> Kept in the draft, but the board pushed back on liability, rural access, and provider supply and asked the department to weigh alternatives.</li>
+          </ul>
+          <p class="today-next">Next: full Advisory Board July 17, 9 AM; Training and Education Committee July 17, 1 PM (times unchanged).</p>
+        </div>
+      </details>
+
       <span class="notfinal">● Nothing here is final rule text. This is a record of the documents, the committee input, and the dates.</span>
 
-      <p class="dockey-h">Documents referenced in this analysis</p>
-      <div class="dockey">
-        <a class="dk" href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">
-          <p class="dkl">The recommendation · June 12</p>
-          <p><b>The committee's document.</b> Permit qualifications by role, curriculum, practicum hours, mentoring, record-keeping, continuing education.</p>
-          <span class="dkgo">Open PDF ↗</span>
-        </a>
+      <p class="dockey-h">The document on the table</p>
+      <div class="dockey" style="grid-template-columns:1fr;">
         <a class="dk current" href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">
           <p class="dkl">The rules draft · July 9 <span class="dkflag cur">on the table</span></p>
-          <p><b>The department's draft for the July 9 board meeting</b> (7.35.3). Proposes language for all three tabled items.</p>
+          <p><b>The department's draft for the July 9 board meeting</b> (7.35.3). The June 12 recommendation and the July 9 meeting transcript are in the Documents menu, top right.</p>
           <span class="dkgo">Open PDF ↗</span>
         </a>
       </div>
-      <p class="updated"><b>Updated July 9, 2026.</b> Folded in the July 9 board-meeting rules draft (7.35.3), which supersedes the June 25 draft.</p>
+      <p class="updated"><b>Updated July 9, 2026, 3:37 PM MDT.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
     </header>
 
     <!-- DECISION BRIEF -->
@@ -360,7 +382,7 @@
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p>The July 9 draft keeps the New Mexico controlled-substance requirement and renames the role to "certifying clinician." It has not been voted on. Connected open threads: the billing line between diagnosis (billable) and treatment (not billable), and insurance clawback risk from a risk/benefit attestation.</p>
+        <p><b>July 9 meeting:</b> sent back to the department. The controlled-substance requirement stays in the draft, but the board did not endorse it and asked the department to reconsider and weigh alternatives (a consultation model, self-certification, or behavioral-health referral by telemedicine), citing malpractice liability for certifying clinicians, rural access, and the shortage of eligible providers. The rename to "certifying clinician" is confirmed. No vote was taken.</p>
       </div>
     </section>
 
@@ -455,7 +477,7 @@
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p>The July 9 draft keeps 100 / 120 hours and the 20 supervisory hours, unchanged, now written into the rule. It has not been voted on. Open threads: whether the 20-hour supervisory practicum is mandatory or opt-in, an instructor / faculty experience floor, the cost modeling Larry Leeman requested, and condition-specific endorsements for end-of-life and PTSD.</p>
+        <p><b>July 9 meeting:</b> tabled and sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion to set specific numbers (Larry Leeman named the California Institute of Integral Studies as an outside expert). The board tied practicum to the didactic hours, widely called too low at 25, and to a possible "fix-it" bill allowing training with trainees, plus a cost analysis. Section G still lets the department waive practicum without new rulemaking. Language cleaned up: "experience, observe <b>or</b> conduct" became "<b>and</b> conduct," and "therapy sessions" was removed.</p>
       </div>
     </section>
 
@@ -467,13 +489,13 @@
       </div>
 
       <div class="whatnow">
-        <p class="q">Are the reciprocity dates adequate? The July 9 draft keeps the December 31, 2026 reduced-hours exception and removes the December 31, 2027 end date on the department's discretionary waiver.</p>
+        <p class="q">Are the reciprocity deadlines adequate? On July 9 the board extended both the reciprocity waiver and the New Mexico program waiver to December 31, 2027.</p>
         <p class="at"><b>What this is:</b> reciprocity lets providers trained in other government-approved programs (for example, Colorado or Oregon) qualify in New Mexico under reduced practicum requirements. These dates set how long the reduced requirements remain available.</p>
       </div>
 
       <div class="diffbox">
-        <p class="dbl">What the July 9 draft does</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. The June 25 draft set two dates: December 31, 2026 and December 31, 2027. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">The July 9 draft</a> <b>keeps December 31, 2026</b>, <b>removes the December 31, 2027 end date</b> (the discretionary waiver is now open-ended), and adds a separate <b>June 30, 2027</b> deadline for educational programs to employ two department-certified faculty.</p>
+        <p class="dbl">What the July 9 meeting decided</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. The June 25 draft set two dates. At the <b>July 9 meeting the board extended both deadlines to December 31, 2027</b>: the reciprocity practicum-hours waiver and the New Mexico program waiver. The chair noted December 31 is a legislative backstop, not the target launch date. This was the one tabled item resolved by consensus on July 9.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12</span></div>
@@ -514,12 +536,12 @@
             <li>"The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for reciprocity, in order to facilitate the certifying of individuals trained by other governmental approved programs to build the initial infrastructure of the program."</li>
           </ul>
         </div>
-        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3), reciprocity. The June 25 draft had capped the second waiver at <b>December 31, 2027</b>; the July 9 draft removes that end date. A separate provision requires educational programs to employ two department-certified faculty by <b>June 30, 2027</b>.</p>
+        <p class="srcline">Verbatim from the July 9 rules draft (7.35.3), as written before the meeting. At the July 9 meeting the board extended the deadlines: the reciprocity waiver (shown as December 31, 2026 above) and the New Mexico program waiver (June 30, 2027) were both moved to <b>December 31, 2027</b>.</p>
       </div>
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p>The July 9 draft keeps the December 31, 2026 reduced-hours exception, removes the December 31, 2027 end date on the discretionary waiver (now open-ended), and adds a June 30, 2027 faculty-employment deadline for educational programs. It has not been voted on.</p>
+        <p><b>July 9 meeting:</b> resolved by consensus. Both the reciprocity waiver and the New Mexico program waiver were extended to <b>December 31, 2027</b> (out-of-state and NM cohorts finish around March 2027 and need time to complete practicum). The chair stressed December 31 is a legislative backstop, not the launch target. This was the only tabled item settled on July 9.</p>
       </div>
     </section>
 
@@ -614,7 +636,7 @@
       <div class="col" style="padding:0;">
         <h3>Sources &amp; method</h3>
         <p><b>Document language</b> is quoted verbatim from the source PDFs: the June 12 recommendation ("Draft for 6-12-26"), the June 25 rules draft, and the July 9, 2026 board-meeting rules draft (7.35.3, "Psilocybin patient and practitioner rule"). None is final, promulgated rule text.</p>
-        <p><b>Revision, July 9, 2026:</b> folded in the July 9 board-meeting rules draft (7.35.3). It keeps the controlled-substance requirement and renames the role to "certifying clinician"; keeps the 100 / 120 practicum hours and the 20 supervisory hours; keeps the December 31, 2026 reciprocity exception; and removes the December 31, 2027 waiver end date, adding a June 30, 2027 faculty-employment deadline for educational programs.</p>
+        <p><b>Revision, July 9, 2026, 3:37 PM MDT:</b> updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled and sent to the Training and Education Committee (July 17). Certifying clinician / controlled-substance number: sent back to the department to weigh alternatives; the "certifying clinician" rename is confirmed. The full July 9 meeting transcript (unofficial) is in the Documents menu.</p>
         <p><b>Committee input</b> comes from the full transcripts of the June 25 and June 26 committee meetings. Both are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Peskuski, Fatemi, Leeman). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the motion.</p>
         <p class="fine">Prepared as a community reference for the July 9, 2026 session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
       </div>
@@ -622,5 +644,14 @@
 
   </div>
 </div>
+<script>
+(function(){
+  var d=document.getElementById('today');
+  if(!d) return;
+  window.addEventListener('scroll',function(){
+    if(d.open){ var r=d.getBoundingClientRect(); if(r.bottom < 8){ d.open=false; } }
+  },{passive:true});
+})();
+</script>
 </body>
 </html>

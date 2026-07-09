@@ -2,20 +2,31 @@
 
 **Purpose of this file:** everything a new session needs to continue this work without re-deriving it. Read this first.
 
-**Last updated:** 2026-07-09, ahead of the **July 9, 2026** meeting.
-**Owner:** Gregory Evans (independent researcher / mycologist, Santa Fe; committee participant, not a voting board member).
+**Last updated:** 2026-07-09 evening, after the July 9 board meeting.
+**Owner:** Gregory Evans (independent researcher / mycologist, Santa Fe; committee participant, not a voting board member). **Do not attribute authorship of the site to him or anyone.**
 **Repo:** https://github.com/notafeature/NMMPAB_Rules-Draft-Analysis
+**Live site:** https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/ (Pages serves `docs/`).
 **Local working path:** `/Users/logosmediastation1/MPAB/Training and Education/`
 
-## UPDATE (2026-07-09 session)
+## UPDATE — July 9 meeting outcome (current; older numbered sections below predate the meeting)
 
-- **These were committee meetings, not hearings.** June 25 and June 26 are committee/board meetings. The word "hearing" was scrubbed from the site. A public rule hearing is a later, separate step.
-- **Process framing corrected.** The committee builds a recommendation (the 6/12 doc). At a board meeting with quorum (June 26, the 3-2 vote) it is accepted and submitted to DOH as a recommendation. DOH has no obligation to adopt it. The 6/25 rules draft is the department's rules-style version of the same subject. Do not label the 6/25 draft "premature" on the page (Gregory's call).
-- **July 9 was scheduled on the June 26 record as an Education & Training Committee meeting (9-11 AM), ahead of the full board on July 17.** The site says this prominently. DOH's public page separately lists July 9 as a full board meeting; both facts are shown.
-- **`site/index.html` was rebuilt.** Per item: (1) the recommendation verbatim, (2) committee input (tagged Agreement / Suggestion / Dissent, attributed), (3) the rules-draft language / June 25 material. A yellow "where the two documents differ" callout per item, with deep links to the source PDF pages. All invented "ways it could be written" rule text was removed (verbatim + attribution only).
-- **Light mode only** (dark toggle removed). Sticky floating item titles on a gray shade. Source PDFs copied to `site/documents/` with slugs and linked.
-- **Pages:** Gregory will enable it himself. Pages serves from repo root or `/docs` only, so `site/` will need a rename or a Pages Action when he is ready. Not done here by request.
-- Live preview artifact (this session): https://claude.ai/code/artifact/7708a374-8c81-4edf-8841-033a7c995c4c
+The site is LIVE from `docs/` (Pages enabled). Structure moved `site/` → `docs/`; sibling pages `pathways.html` (provider routes) and `reference.html` (who can qualify) were added on another branch. These are committee meetings, not hearings; the process framing (committee recommendation → board acceptance → department rules draft; DOH not obligated) still holds.
+
+**July 9 board meeting outcomes (verified against the full transcript, read end to end):**
+- **Reciprocity — resolved by consensus:** both the reciprocity waiver and the NM-program waiver deadlines extended to **December 31, 2027** (Ian Dunn: Dec 31 is a legislative backstop, not the launch target). The written 7/9 draft still reads Dec 31 2026 + open-ended waiver; the meeting superseded that.
+- **Practicum + didactic hours — tabled**, sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion (Leeman named CIIS). Tied to a possible "fix-it" bill (training with trainees) and a cost analysis. Section G lets the department waive practicum without new rulemaking.
+- **Certifying clinician / CS number — sent back to the department** (not resolved). Board pushback on liability, rural access, provider supply; alternatives floated (consultation model, self-certification, behavioral-health + telemedicine referral). Rename "diagnostic clinician" → "certifying clinician" confirmed.
+- Other: EMS added alongside BLS/CPR/AED; "therapy sessions" language removed; "experience, observe or conduct" → "and conduct"; new Medicaid seat **Keenan Ryan** (Acting CMO, covering for Alana Dances).
+- **July 17 schedule NOT switched** — stays board 9 AM, committee 1 PM.
+
+**Name corrections (July 9 transcript):** Zurlo, Leeman, Peskuski, **Dezbaá** (garbles: Despa / Desmond / Des Bell / Desba / Tyspa / Tess-Pa). Committee name is **Training and Education** (Brenda says it reversed; we do not).
+
+**Site state now:** `docs/index.html` reflects the July 9 outcome, with a collapsible "What happened July 9" callout up top (auto-collapses on scroll), the July 9 rules draft as the single on-page document (recommendation + transcript in the Documents dropdown, top right), timestamped with a time of day and **no author attribution**. Speaker-tagged July 9 transcript PDF: `docs/documents/NMMPAB-2026-07-09-transcript.pdf` (also `transcripts/`).
+
+**Remaining work (Gregory's punch list):**
+- **CS number:** build a clarification section — educate on the concept → use cases → expert testimony. Gregory is drafting the source list. It is not going to budge (department keeps it); Chris Peskuski is the loudest concern.
+- **Practicum study guide** as its own page, prepping the July 17 committee discussion.
+- Review sibling pages (`pathways.html`, `reference.html`) for anything outdated by July 9; consider adding the Documents dropdown to them.
 
 ---
 
