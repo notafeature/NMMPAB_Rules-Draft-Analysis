@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Can Qualify · NM Medical Psilocybin Training &amp; Education</title>
+<style>
+  :root{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
+    --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
+    --border:#E4E0EB; --border-strong:#D2CCDF;
+    --accent:#5A4A88; --accent-2:#7A67A8; --accent-soft:#EBE6F5;
+    --settled:#2C7A57; --settled-bg:#E6F3EB; --settled-border:#BADFCB;
+    --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
+    --chal:#6D4AA6; --chal-bg:#EEE8F7; --chal-border:#D6C8EC;
+    --none:#6F6A79; --none-bg:#EDEBF0; --none-border:#DBD6E2;
+    --recip:#256E8C; --recip-bg:#E1EFF5; --recip-border:#B7D8E5;
+    --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  body{margin:0; background:var(--bg);}
+  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.5; font-size:16px; min-height:100vh; -webkit-font-smoothing:antialiased;}
+  .col{max-width:940px; margin:0 auto; padding:0 22px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.16;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px;}
+
+  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar .inner{max-width:940px; margin:0 auto; padding:10px 22px; display:flex; align-items:center; gap:16px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; margin-right:auto; display:flex; align-items:center; gap:9px;}
+  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
+  .tnav{display:flex; gap:4px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
+  .tnav a:hover{background:var(--surface-2); color:var(--text);}
+  .tnav a.on{color:var(--accent); background:var(--accent-soft);}
+  @media (max-width:640px){.tnav a.hidesm{display:none;}}
+
+  .hero{padding:36px 0 4px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 12px;}
+  h1{font-size:clamp(23px,3.2vw,32px); margin:0 0 12px; line-height:1.12;}
+  .lede{font-size:16px; color:var(--text-muted); margin:0; max-width:660px;}
+  .lede b{font-weight:600; color:var(--text);}
+
+  .legend{margin:24px 0 8px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px 18px; box-shadow:var(--shadow);}
+  .legend h3{font-size:12px; text-transform:uppercase; letter-spacing:.07em; color:var(--text-faint); margin:0 0 12px; font-family:var(--sans); font-weight:700;}
+  .legrows{display:grid; gap:8px;}
+  @media (min-width:680px){.legrows{grid-template-columns:1fr 1fr; gap:8px 24px;}}
+  .li{display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--text-muted);}
+  .li b{color:var(--text); font-weight:600;}
+  .sw{flex:none; min-width:92px; text-align:center; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.02em; padding:3px 8px; border-radius:6px; border:1px solid;}
+  .sw.elig{background:var(--settled-bg); color:var(--settled); border-color:var(--settled-border);}
+  .sw.part{background:var(--open-bg); color:var(--open); border-color:var(--open-border);}
+  .sw.recip{background:var(--recip-bg); color:var(--recip); border-color:var(--recip-border);}
+  .sw.none{background:var(--none-bg); color:var(--none); border-color:var(--none-border);}
+  .sw.ns{background:var(--surface-2); color:var(--text-faint); border-color:var(--border-strong); border-style:dashed;}
+  .sw.set{background:var(--settled-bg); color:var(--settled); border-color:var(--settled-border);}
+  .sw.open{background:var(--open-bg); color:var(--open); border-color:var(--open-border);}
+  .sw.chal{background:var(--chal-bg); color:var(--chal); border-color:var(--chal-border); border-style:dashed;}
+
+  section{scroll-margin-top:64px;}
+  .sh{margin:40px 0 4px;}
+  .sh .k{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 6px;}
+  .sh h2{font-size:clamp(19px,2.4vw,24px); margin:0;}
+  .sh p{font-size:14px; color:var(--text-muted); margin:8px 0 0; max-width:680px;}
+
+  .tscroll{margin-top:16px; overflow-x:auto; border:1px solid var(--border); border-radius:14px; background:var(--surface); box-shadow:var(--shadow);}
+  table{border-collapse:collapse; width:100%; min-width:680px;}
+  th,td{border-bottom:1px solid var(--border); border-right:1px solid var(--border); text-align:left; vertical-align:top;}
+  thead th{background:var(--surface-2); padding:11px 13px; font-size:12px; font-weight:700; position:sticky; top:0; border-bottom:2px solid var(--border-strong);}
+  thead th .pd{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:7px; vertical-align:middle;}
+  thead th.corner{color:var(--text-faint); text-transform:uppercase; letter-spacing:.04em; font-size:10.5px; width:210px;}
+  td.step{background:var(--surface-2); padding:11px 13px; width:210px; font-family:var(--serif); font-size:13.5px; font-weight:600; position:sticky; left:0; z-index:1; border-right:2px solid var(--border-strong);}
+  td.step small{display:block; font-family:var(--sans); font-weight:400; font-size:10.5px; color:var(--text-faint); margin-top:3px;}
+  td.pers{background:var(--surface-2); padding:10px 13px; width:250px; font-size:13.5px; position:sticky; left:0; z-index:1; border-right:2px solid var(--border-strong);}
+  td.c{padding:7px 9px;}
+  td.band td, tr.band td{background:var(--surface-3);}
+  tr.band td{color:var(--accent); font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; padding:6px 13px;}
+  .cell{display:flex; flex-direction:column; gap:5px;}
+  .cell .rq{font-size:12.5px; color:var(--text); line-height:1.3;}
+  .pill{align-self:flex-start; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.02em; padding:2px 8px; border-radius:999px; border:1px solid;}
+  .pill.set{background:var(--settled-bg); color:var(--settled); border-color:var(--settled-border);}
+  .pill.open{background:var(--open-bg); color:var(--open); border-color:var(--open-border);}
+  .pill.chal{background:var(--chal-bg); color:var(--chal); border-color:var(--chal-border); border-style:dashed;}
+  .pill.ns{background:var(--surface-2); color:var(--text-faint); border-color:var(--border-strong); border-style:dashed;}
+  .pill.elig{background:var(--settled-bg); color:var(--settled); border-color:var(--settled-border);}
+  .pill.part{background:var(--open-bg); color:var(--open); border-color:var(--open-border);}
+  .pill.recip{background:var(--recip-bg); color:var(--recip); border-color:var(--recip-border);}
+  .pill.none{background:var(--none-bg); color:var(--none); border-color:var(--none-border);}
+  .recbar{padding:12px 16px; background:var(--recip-bg); color:var(--text); font-size:13px; border-top:1px solid var(--recip-border); line-height:1.5;}
+  .recbar b{color:var(--recip);}
+
+  .srcnote{font-family:var(--mono); font-size:11px; color:var(--text-faint); margin:10px 2px 0;}
+  .srcnote a{color:var(--text-faint); text-decoration:underline;}
+  .srcnote a:hover{color:var(--accent);}
+
+  footer{margin-top:48px; border-top:1px solid var(--border); background:var(--surface-2);}
+  footer .col{padding-top:26px; padding-bottom:42px;}
+  footer h3{font-size:15px; margin:0 0 10px;}
+  footer p{font-size:13px; color:var(--text-muted); margin:0 0 10px; line-height:1.5;}
+  footer a{color:var(--accent);}
+  footer .fine{font-size:12px; color:var(--text-faint);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="inner">
+      <span class="brand"><span class="dot"></span> Training &amp; Education Rules &middot; July 9</span>
+      <nav class="tnav">
+        <a class="hidesm" href="index.html">The three items</a>
+        <a href="pathways.html">Provider routes</a>
+        <a class="on" href="reference.html">Who can qualify</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="col">
+    <header class="hero">
+      <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
+      <h1>Who can qualify, and what each permit takes</h1>
+      <p class="lede">Two reference tables. The first is the <b>steps for each permit</b>. The second is <b>which licenses can qualify</b> for each. Eligibility follows what a license allows, not the job title.</p>
+    </header>
+
+    <div class="legend">
+      <h3>Reading the tables</h3>
+      <div class="legrows">
+        <div class="li"><span class="sw elig">Eligible</span><span>The rules give this license a route.</span></div>
+        <div class="li"><span class="sw part">Partial</span><span>Open only if that specific license's scope covers it.</span></div>
+        <div class="li"><span class="sw recip">Reciprocity</span><span>Only through the out-of-state route.</span></div>
+        <div class="li"><span class="sw none">No current path</span><span>The rules give this license <b>no</b> route.</span></div>
+        <div class="li"><span class="sw ns">Not specified</span><span>The rules <b>do not address</b> it. Different from no path: it is unanswered, not closed.</span></div>
+        <div class="li"><span class="sw open">Open, July 9</span><span>A step the board decides July 9.</span></div>
+      </div>
+    </div>
+
+    <!-- TABLE 1 -->
+    <section id="steps">
+      <div class="sh">
+        <p class="k">Table 1</p>
+        <h2>The steps, for each permit</h2>
+        <p>Read down a column for one permit. Colored pills mark steps that are open or contested.</p>
+      </div>
+      <div class="tscroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="corner">Step</th>
+              <th><span class="pd" style="background:#3E8E6E"></span>Facilitator</th>
+              <th><span class="pd" style="background:#5A4A88"></span>Practitioner</th>
+              <th><span class="pd" style="background:#256E8C"></span>Diagnostic Clinician</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="step">Entry credential</td>
+              <td class="c"><div class="cell"><span class="rq">No license</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">Therapy or counseling license</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">License that can diagnose</span><span class="pill set">Settled</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Prerequisites</td>
+              <td class="c"><div class="cell"><span class="rq">BLS, HIPAA, attestation</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">BLS, HIPAA, attestation</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">License only</span><span class="pill set">Settled</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Approved program</td>
+              <td class="c"><div class="cell"><span class="rq">Facilitator curriculum</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">Practitioner curriculum</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">Clinician curriculum</span><span class="pill set">Settled</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Practicum <small>at a Healing Center</small></td>
+              <td class="c"><div class="cell"><span class="rq">~100 hours</span><span class="pill open">Open, July 9</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">~120 hours</span><span class="pill open">Open, July 9</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">None required</span><span class="pill set">Settled</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Mentoring</td>
+              <td class="c"><div class="cell"><span class="rq">10 hours</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">10 hours</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">Not addressed</span><span class="pill ns">Not specified</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Testing out</td>
+              <td class="c"><div class="cell"><span class="rq">All modules but NM</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">All modules but NM</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">All modules but NM</span><span class="pill set">Settled</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Role gate</td>
+              <td class="c"><div class="cell"><span class="rq">None</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">20 hours supervising facilitators</span><span class="pill chal">Contested</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">NM Controlled Substance number</span><span class="pill open">Open, July 9</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Permit application</td>
+              <td class="c"><div class="cell"><span class="rq">Electronic packet, 2-year permit</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">Electronic packet, 2-year permit</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">Electronic packet, 2-year permit</span><span class="pill set">Settled</span></div></td>
+            </tr>
+            <tr>
+              <td class="step">Continuing education</td>
+              <td class="c"><div class="cell"><span class="rq">20 hours / 2 years</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">20 hours / 2 years</span><span class="pill set">Settled</span></div></td>
+              <td class="c"><div class="cell"><span class="rq">8 CME hours / 2 years</span><span class="pill set">Settled</span></div></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="recbar"><b>Reciprocity</b> is a separate entry into Practitioner or Facilitator for people trained outside New Mexico, if their program is on NMDOH's approved list. Reduced practicum applies through the December 31, 2026 and 2027 dates, both open for July 9. No Diagnostic Clinician route.</div>
+      </div>
+      <p class="srcnote">Source: <a href="sources/draft-6-12-recommendation.pdf" target="_blank">June 12 recommendation</a>, <a href="sources/draft-6-25-rules.pdf" target="_blank">June 25 rules draft</a>.</p>
+    </section>
+
+    <!-- TABLE 2 -->
+    <section id="qualify">
+      <div class="sh">
+        <p class="k">Table 2</p>
+        <h2>Which licenses can qualify</h2>
+        <p>Eligibility follows what the license allows. The Diagnostic Clinician column also turns on the Controlled Substance number, which is open for July 9.</p>
+      </div>
+      <div class="tscroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="corner">Starting license</th>
+              <th><span class="pd" style="background:#3E8E6E"></span>Facilitator</th>
+              <th><span class="pd" style="background:#5A4A88"></span>Practitioner</th>
+              <th><span class="pd" style="background:#256E8C"></span>Diagnostic Clinician</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="band"><td colspan="4">Prescribing / medical</td></tr>
+            <tr><td class="pers">Physician (MD / DO)</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td><td class="c"><span class="pill elig">Eligible</span></td></tr>
+            <tr><td class="pers">Psychiatrist</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill elig">Eligible</span></td></tr>
+            <tr><td class="pers">Nurse Practitioner</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td><td class="c"><span class="pill elig">Eligible</span></td></tr>
+            <tr><td class="pers">Physician Assistant</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td><td class="c"><span class="pill part">Partial</span></td></tr>
+            <tr class="band"><td colspan="4">Licensed behavioral health</td></tr>
+            <tr><td class="pers">Psychologist (PhD / PsyD)</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td></tr>
+            <tr><td class="pers">LCSW</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td></tr>
+            <tr><td class="pers">LPCC</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td></tr>
+            <tr><td class="pers">LMFT</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td></tr>
+            <tr class="band"><td colspan="4">Other NM-licensed health</td></tr>
+            <tr><td class="pers">Registered Nurse</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill none">No current path</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr><td class="pers">Pharmacist</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill none">No current path</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr><td class="pers">Naturopathic Doctor</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill ns">Not specified</span></td><td class="c"><span class="pill ns">Not specified</span></td></tr>
+            <tr><td class="pers">Massage Therapist / allied</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill none">No current path</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr><td class="pers">Other NM-licensed professional</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill part">Partial</span></td><td class="c"><span class="pill part">Partial</span></td></tr>
+            <tr class="band"><td colspan="4">Non-clinical / community</td></tr>
+            <tr><td class="pers">Unlicensed community member</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill none">No current path</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr><td class="pers">Peer supporter / lived experience</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill none">No current path</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr><td class="pers">Chaplain / hospice / spiritual care</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill none">No current path</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr><td class="pers">Indigenous / traditional healer</td><td class="c"><span class="pill elig">Eligible</span></td><td class="c"><span class="pill ns">Not specified</span></td><td class="c"><span class="pill none">No current path</span></td></tr>
+            <tr class="band"><td colspan="4">Trained outside New Mexico</td></tr>
+            <tr><td class="pers">Resident, out-of-state credential</td><td class="c"><span class="pill recip">Reciprocity</span></td><td class="c"><span class="pill recip">Reciprocity</span></td><td class="c"><span class="pill ns">Not specified</span></td></tr>
+            <tr><td class="pers">Internationally trained (non-US)</td><td class="c"><span class="pill recip">Reciprocity</span></td><td class="c"><span class="pill recip">Reciprocity</span></td><td class="c"><span class="pill ns">Not specified</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="srcnote">Eligibility read from the entry credentials in the <a href="sources/draft-6-12-recommendation.pdf" target="_blank">June 12 recommendation</a> p.1 and the reciprocity clause in the <a href="sources/draft-6-25-rules.pdf" target="_blank">June 25 rules draft</a> pp.4-7.</p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="col">
+      <h3>Sources</h3>
+      <p>Both tables are read from the <a href="sources/draft-6-12-recommendation.pdf" target="_blank">June 12 recommendation</a> and the <a href="sources/draft-6-25-rules.pdf" target="_blank">June 25 rules draft</a>. Neither is final rule text. For the same routes told step by step, see <a href="pathways.html">Provider routes</a>.</p>
+      <p class="fine">Community reference for the July 9, 2026 session. Not affiliated with NMDOH.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

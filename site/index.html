@@ -39,6 +39,7 @@
   .tnav{display:flex; gap:4px;}
   .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
   .tnav a:hover{background:var(--surface-2); color:var(--text);}
+  .tnav a.on{color:var(--accent); background:var(--accent-soft);}
   @media (max-width:680px){.tnav{display:none;}}
 
   /* Hero */
@@ -186,13 +187,9 @@
     <div class="inner">
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules · July 9</span>
       <nav class="tnav">
-        <a href="#decisions">The three items</a>
-        <a href="#cs">CS number</a>
-        <a href="#practicum">Practicum</a>
-        <a href="#reciprocity">Reciprocity</a>
-        <a href="#record">The record</a>
+        <a class="on" href="index.html">The three items</a>
         <a href="pathways.html">Provider routes</a>
-        <a href="reference.html">Who qualifies</a>
+        <a href="reference.html">Who can qualify</a>
       </nav>
     </div>
   </div>
