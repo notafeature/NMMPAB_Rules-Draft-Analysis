@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python venv used for PDF extraction (see HANDOFF.md §10)
+pdfenv/
+__pycache__/
+*.pyc

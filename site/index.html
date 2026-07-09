@@ -1,0 +1,698 @@
+<title>NM Medical Psilocybin Training Rules: Three Tabled Items, July 9, 2026</title>
+<style>
+  :root{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
+    --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
+    --border:#E4E0EB; --border-strong:#D2CCDF;
+    --accent:#5A4A88; --accent-2:#7A67A8; --accent-soft:#EBE6F5;
+    --add:#2C7A57; --add-bg:#E6F3EB; --add-border:#BADFCB;
+    --del:#B23A48; --del-bg:#F8E9EB; --del-border:#E8C8CE;
+    --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
+    --pillN:#57516A; --pillN-bg:#EDEAF2;
+    --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
+    --shadow-lg:0 2px 6px rgba(26,22,33,.06), 0 18px 44px rgba(26,22,33,.10);
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  :root[data-theme="dark"]{
+    --bg:#131118; --surface:#1B1824; --surface-2:#221E2C; --surface-3:#2A2537;
+    --text:#EAE7F1; --text-muted:#A49DB2; --text-faint:#7C7590;
+    --border:#2B2637; --border-strong:#3A3349;
+    --accent:#B4A4E0; --accent-2:#9683C6; --accent-soft:#251F33;
+    --add:#77C79C; --add-bg:#15301E; --add-border:#26482E;
+    --del:#E38A96; --del-bg:#331A1E; --del-border:#4A2830;
+    --open:#DCB46A; --open-bg:#2E2511; --open-border:#493C1B;
+    --pillN:#B4ADC4; --pillN-bg:#262130;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
+    --shadow-lg:0 2px 8px rgba(0,0,0,.4), 0 20px 50px rgba(0,0,0,.5);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  body{margin:0; background:var(--bg);}
+  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.62; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased;}
+  .col{max-width:920px; margin:0 auto; padding:0 20px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  h1,h2,h3,h4{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.18;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
+
+  /* Top bar */
+  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar .inner{max-width:920px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px;}
+  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
+  .tnav{display:flex; gap:4px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
+  .tnav a:hover{background:var(--surface-2); color:var(--text);}
+  @media (max-width:680px){.tnav{display:none;}}
+  .toggle{flex:none; width:38px; height:34px; border:1px solid var(--border-strong); background:var(--surface); border-radius:9px; cursor:pointer; color:var(--text); display:grid; place-items:center; font-size:15px; line-height:1;}
+  .toggle:hover{background:var(--surface-2);}
+  .toggle .moon{display:none;} .toggle .sun{display:block;}
+  :root[data-theme="dark"] .toggle .moon{display:block;} :root[data-theme="dark"] .toggle .sun{display:none;}
+
+  /* Hero */
+  .hero{padding:40px 0 8px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
+  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 14px; max-width:34ch; line-height:1.22;}
+  .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; max-width:68ch; line-height:1.55;}
+  .lede b{font-weight:600;}
+  .notfinal{display:inline-flex; gap:9px; align-items:center; margin-top:22px; background:var(--open-bg); border:1px solid var(--open-border); color:var(--open); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:600;}
+
+  /* Process strip */
+  .process{margin:34px 0 8px; padding:18px; background:var(--surface-2); border:1px solid var(--border); border-radius:14px;}
+  .process .plabel{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--text-muted); margin:0 0 14px;}
+  .steps{display:flex; flex-wrap:wrap; gap:8px; align-items:stretch;}
+  .step{flex:1 1 120px; min-width:120px; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:11px 13px; position:relative;}
+  .step .s-n{font-family:var(--mono); font-size:11px; color:var(--accent); font-weight:600;}
+  .step .s-t{font-size:13.5px; font-weight:600; margin-top:3px; line-height:1.3;}
+  .step .s-d{font-size:12px; color:var(--text-muted); margin-top:3px;}
+  .step.now{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent);}
+  .step.now .s-n{color:var(--accent);}
+  .step .flag{position:absolute; top:-9px; right:10px; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; background:var(--accent); color:#fff; padding:2px 7px; border-radius:999px;}
+  :root[data-theme="dark"] .step .flag{color:#151118;}
+
+  /* Section scaffolding */
+  section{padding-top:20px;}
+  .sec-head{margin:40px 0 6px;}
+  .sec-head .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  h2{font-size:clamp(20px,2.4vw,26px); letter-spacing:-.008em; margin:0;}
+  .sec-head p{color:var(--text-muted); max-width:66ch; margin:10px 0 0;}
+
+  /* Decision cards (above the fold) */
+  .decks{display:grid; grid-template-columns:1fr; gap:14px; margin-top:22px;}
+  @media (min-width:720px){.decks{grid-template-columns:repeat(3,1fr);}}
+  .deck{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; text-decoration:none; color:inherit; transition:transform .12s ease, box-shadow .12s ease;}
+  .deck:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg);}
+  .deck .dn{font-family:var(--serif); font-size:13px; font-weight:700; color:var(--accent); letter-spacing:.02em;}
+  .deck h3{font-size:18px; margin:0; line-height:1.25;}
+  .deck .stake{font-size:13.5px; color:var(--text-muted); margin:0;}
+  .deck .split{display:flex; flex-direction:column; gap:6px; margin-top:2px; font-size:12.5px; border-top:1px dashed var(--border-strong); padding-top:10px;}
+  .split .row{display:flex; gap:8px; align-items:baseline;}
+  .split .lab{flex:none; width:52px; font-weight:700; font-size:10.5px; letter-spacing:.03em; text-transform:uppercase;}
+  .split .keep{color:var(--del);} .split .change{color:var(--add);}
+  .deck .go{margin-top:auto; font-size:12.5px; font-weight:600; color:var(--accent);}
+
+  /* Item sections */
+  .item{margin-top:16px; scroll-margin-top:70px;}
+  .item-head{display:flex; gap:16px; align-items:flex-start; padding:20px 0 14px; border-bottom:2px solid var(--accent);}
+  .item-head .idx{font-family:var(--serif); font-size:32px; font-weight:600; color:var(--accent); line-height:.9; flex:none; font-variant-numeric:tabular-nums;}
+  .item-head h2{font-size:clamp(19px,2.2vw,23px);}
+  .item-head .loc{display:block; font-family:var(--mono); font-size:11.5px; color:var(--text-faint); margin-top:7px;}
+
+  .whatnow{background:var(--accent-soft); border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:18px 0;}
+  .whatnow .q{font-family:var(--serif); font-size:19px; font-weight:600; margin:0 0 8px; line-height:1.35;}
+  .whatnow .at{font-size:14.5px; color:var(--text); margin:0;}
+  .whatnow .at b{color:var(--accent);}
+
+  /* Split / dissent panel */
+  .positions{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  @media (min-width:640px){.positions{grid-template-columns:1fr 1fr;}}
+  .pos{border:1px solid var(--border); border-radius:12px; padding:14px 16px; background:var(--surface);}
+  .pos.keep{border-top:3px solid var(--del);}
+  .pos.change{border-top:3px solid var(--add);}
+  .pos .ph{font-size:11.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; margin:0 0 8px;}
+  .pos.keep .ph{color:var(--del);} .pos.change .ph{color:var(--add);}
+  .pos ul{margin:0; padding-left:16px; display:flex; flex-direction:column; gap:7px; font-size:14px;}
+  .pos li b{font-weight:650;}
+  .pos .names{font-size:12px; color:var(--text-muted); margin-top:9px;}
+
+  .subhead{font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:30px 0 12px; display:flex; align-items:center; gap:10px;}
+  .subhead::after{content:""; flex:1; height:1px; background:var(--border);}
+
+  /* Verbatim language cards */
+  .langgrid{display:grid; grid-template-columns:1fr; gap:14px;}
+  @media (min-width:720px){.langgrid.two{grid-template-columns:1fr 1fr;}}
+  .lang{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 18px; box-shadow:var(--shadow);}
+  .lang .lh{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:12px;}
+  .lang .lt{font-size:11.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--text-muted);}
+  .lang.spine{border-left:3px solid var(--accent);}
+  .lang.spine .lt{color:var(--accent);}
+  .badge{font-size:10px; font-weight:700; padding:2px 8px; border-radius:999px; letter-spacing:.02em;}
+  .badge.vote{background:var(--accent-soft); color:var(--accent);}
+  .badge.ref{background:var(--pillN-bg); color:var(--pillN);}
+  .verbatim{font-family:var(--mono); font-size:12.5px; line-height:1.62; color:var(--text);}
+  .verbatim ul{margin:0; padding-left:16px; display:flex; flex-direction:column; gap:8px;}
+  .verbatim ul ul{margin-top:8px;}
+  .verbatim .lead{margin:0 0 8px;}
+  .absent{font-size:14px; color:var(--text-muted); font-style:italic; margin:0;}
+  .srcline{margin-top:12px; padding-top:9px; border-top:1px dashed var(--border-strong); font-size:11px; color:var(--text-faint); font-family:var(--mono);}
+
+  /* Options / redline */
+  .options{display:flex; flex-direction:column; gap:12px; margin-top:4px;}
+  .opt{border:1px solid var(--border); border-radius:12px; overflow:hidden; background:var(--surface); box-shadow:var(--shadow);}
+  .opt .oh{display:flex; gap:12px; align-items:baseline; padding:13px 16px; background:var(--surface-2);}
+  .opt .otag{flex:none; font-family:var(--serif); font-weight:700; font-size:13px; color:var(--accent);}
+  .opt .ot{font-weight:600; font-size:15px;}
+  .opt .ob{padding:14px 16px; font-size:14px;}
+  .opt .who{font-size:12.5px; color:var(--text-muted); margin:0 0 10px;}
+  .redline{font-family:var(--mono); font-size:12.5px; line-height:1.7; background:var(--surface-2); border:1px solid var(--border); border-radius:8px; padding:11px 13px;}
+  .ins{color:var(--add); background:var(--add-bg); border-radius:3px; padding:0 3px; box-decoration-break:clone;}
+  .rem{color:var(--del); background:var(--del-bg); border-radius:3px; padding:0 3px; text-decoration:line-through; box-decoration-break:clone;}
+  .opt .note{font-size:12px; color:var(--text-faint); margin:10px 0 0; font-style:italic;}
+
+  /* Discussion toggle */
+  details.disc{margin-top:14px; border:1px solid var(--border); border-radius:12px; background:var(--surface); overflow:hidden;}
+  details.disc>summary{cursor:pointer; padding:14px 18px; font-weight:600; font-size:15px; list-style:none; display:flex; align-items:center; gap:10px;}
+  details.disc>summary::-webkit-details-marker{display:none;}
+  details.disc>summary .chev{transition:transform .15s ease; color:var(--accent); font-size:13px;}
+  details.disc[open]>summary .chev{transform:rotate(90deg);}
+  details.disc>summary .ct{color:var(--text-muted); font-weight:500; font-size:13px; margin-left:auto;}
+  .disc-body{padding:2px 18px 18px;}
+  .mtg{font-family:var(--mono); font-size:12px; font-weight:600; color:var(--accent); letter-spacing:.02em; margin:18px 0 2px;}
+  blockquote.q{margin:12px 0; padding:2px 0 2px 16px; border-left:2px solid var(--border-strong);}
+  blockquote.q .lead{font-size:13px; color:var(--text-muted); margin:0 0 4px;}
+  blockquote.q .lead b{color:var(--text); font-weight:650;}
+  blockquote.q p.t{margin:0; font-size:15px;}
+  blockquote.q cite{display:block; margin-top:5px; font-style:normal; font-size:12px; color:var(--text-faint);}
+
+  .landed{margin:22px 0 6px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--open); border-radius:10px; padding:13px 16px;}
+  .landed .ll{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--open); margin:0 0 6px;}
+  .landed p{margin:0; font-size:14.5px;}
+
+  /* Record section */
+  .motion{margin:18px 0; padding:20px 22px; background:var(--accent-soft); border-radius:12px; border:1px solid var(--border);}
+  .motion p{font-family:var(--serif); font-size:19px; line-height:1.45; margin:0; color:var(--text);}
+  .motion cite{display:block; margin-top:12px; font-style:normal; font-size:13px; color:var(--text-muted);}
+  .tally{display:flex; gap:12px; flex-wrap:wrap; margin:16px 0;}
+  .tc{flex:1 1 130px; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow);}
+  .tc .n{font-family:var(--serif); font-size:32px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums;}
+  .tc .l{font-size:12.5px; color:var(--text-muted); margin-top:5px;}
+  .tc.yes .n{color:var(--add);} .tc.no .n{color:var(--del);}
+  .redline-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
+  .redline-list li{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:10px 13px; font-size:14px;}
+  .redline-list .who{display:block; margin-top:5px; font-size:12px; color:var(--text-muted);}
+  .tag{display:inline-block; font-size:10.5px; font-weight:650; padding:1px 7px; border-radius:999px; vertical-align:1px; background:var(--add-bg); color:var(--add); border:1px solid var(--add-border);}
+  .tablewrap{overflow-x:auto; margin:14px 0 0; border:1px solid var(--border); border-radius:12px;}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:13.5px; background:var(--surface);}
+  thead th{text-align:left; font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted); padding:11px 13px; border-bottom:1px solid var(--border-strong); background:var(--surface-2);}
+  tbody td{padding:10px 13px; border-bottom:1px solid var(--border); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.it{font-weight:600; width:36%;}
+  td.wc{color:var(--text-muted);}
+  td.dc{font-family:var(--mono); font-size:12px; color:var(--text-faint); white-space:nowrap;}
+  .st{display:inline-block; font-size:11px; font-weight:650; padding:2px 8px; border-radius:999px; white-space:nowrap;}
+  .st.carve{color:var(--open); background:var(--open-bg); border:1px solid var(--open-border);}
+  .st.open{color:var(--open); border:1px solid var(--open-border);}
+  .st.va{color:var(--add); background:var(--add-bg); border:1px solid var(--add-border);}
+  .st.res{color:var(--add); border:1px solid var(--add-border);}
+  .st.no{color:var(--del); border:1px solid var(--del-border);}
+  .st.nt{color:var(--pillN); background:var(--pillN-bg); border:1px solid var(--border);}
+
+  footer{margin-top:60px; border-top:1px solid var(--border); padding:26px 0 80px;}
+  footer h3{font-size:15px; margin:0 0 8px;}
+  footer p{font-size:13px; color:var(--text-muted); max-width:74ch; margin:8px 0;}
+  .fine{font-size:12px; color:var(--text-faint);}
+</style>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="inner">
+      <span class="brand"><span class="dot"></span> Training &amp; Education Rules · July 9</span>
+      <nav class="tnav">
+        <a href="#decisions">The decisions</a>
+        <a href="#cs">CS number</a>
+        <a href="#practicum">Practicum</a>
+        <a href="#reciprocity">Reciprocity</a>
+        <a href="#record">The record</a>
+      </nav>
+      <button class="toggle" id="tt" aria-label="Toggle light or dark theme" aria-pressed="false" title="Toggle theme">
+        <span class="sun">☀</span><span class="moon">☾</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="col">
+
+    <!-- HERO -->
+    <header class="hero">
+      <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
+      <h1>Training &amp; Education rules: the three tabled items for July 9, 2026</h1>
+      <p class="lede">New Mexico is adopting rules for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to adopt the Training &amp; Education framework but excluded three items. Those three items are scheduled for <b>July 9, 2026</b>, which DOH now lists as a full Advisory Board meeting, so the board can vote on them.</p>
+      <span class="notfinal">● Nothing here is final rule text. It is a record of the draft language, the positions taken, and the dates.</span>
+    </header>
+
+    <!-- Timeline removed: the sequence/process must be reconstructed verbatim from the 6/25 and 6/26 transcripts before anything is published here. Do not synthesize. -->
+
+
+    <!-- DECISION BRIEF -->
+    <section id="decisions">
+      <div class="sec-head">
+        <p class="k">July 9, 2026</p>
+        <h2>What is being decided</h2>
+        <p>Three items. Each card links to the detail: the draft language, who supports keeping it, who supports changing it, and the drafting options on the record.</p>
+      </div>
+      <div class="decks">
+        <a class="deck" href="#cs">
+          <span class="dn">Decision 1</span>
+          <h3>Must the diagnostic clinician hold a controlled-substance number?</h3>
+          <p class="stake">Affects which clinicians can authorize a patient's entry to the program.</p>
+          <span class="go">See positions on the record →</span>
+        </a>
+        <a class="deck" href="#practicum">
+          <span class="dn">Decision 2</span>
+          <h3>Are 100 / 120 practicum hours right, and is supervision mandatory?</h3>
+          <p class="stake">Determines the cost and time required to qualify as a provider.</p>
+          <div class="split">
+            <div class="row"><span class="lab keep">Keep</span><span>Hours came from practitioners, including underground providers; this is a medical program.</span></div>
+            <div class="row"><span class="lab change">Change</span><span>Cost and volume data suggest the hours may be excessive; the 20 supervisory hours may be uninsurable.</span></div>
+          </div>
+          <span class="go">See detail →</span>
+        </a>
+        <a class="deck" href="#reciprocity">
+          <span class="dn">Decision 3</span>
+          <h3>Are the reciprocity sunset dates adequate?</h3>
+          <p class="stake">Determines how long out-of-state-trained providers can qualify under reduced requirements.</p>
+          <div class="split">
+            <div class="row"><span class="lab keep">Keep</span><span>A sunset avoids permanently reduced requirements.</span></div>
+            <div class="row"><span class="lab change">Change</span><span>Healing centers don't exist yet; the dates may be unrealistic and could be extended.</span></div>
+          </div>
+          <span class="go">See detail →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ITEM 1: CS NUMBER -->
+    <section class="item" id="cs">
+      <div class="item-head">
+        <span class="idx">1</span>
+        <h2>The controlled-substance number<span class="loc">Committee recommendation · Diagnostic Clinician qualifications</span></h2>
+      </div>
+
+      <div class="whatnow">
+        <p class="q">Should a diagnostic clinician be required to hold a New Mexico controlled substance number to be permitted?</p>
+        <p class="at"><b>Context:</b> the diagnostic clinician authorizes a patient's entry to the program. A controlled-substance-number requirement limits which clinicians can serve in that role. Clarified on 6/26 as a <b>New Mexico</b> CS number, not a federal DEA number.</p>
+      </div>
+
+      <p class="subhead">Positions on the record</p>
+      <div class="positions">
+        <div class="pos keep">
+          <p class="ph">Stated in support of the requirement</p>
+          <ul>
+            <li><b>Dominic Zurlo</b> (department), 6/26: “it still needs to have that medical clearance to be utilized in a therapy type practice… We do not see this as any different” from the cannabis model.</li>
+            <li><b>Ian Dunn</b> (board chair), 6/26: “This person's job is just to ensure physical safety, that there's no bad drug interactions, that there's no condition that is going to disqualify them.”</li>
+            <li><b>Alana Dances</b> (Acting Medicaid Director), 6/26: “a really nice balance of protecting safety on a brand new program… when you move too fast, you hurt patients.”</li>
+            <li><b>Dr. Truckner</b> (department physician), 6/25: “the DEA license has nothing to do with my responsibilities to clear this patient safely.”</li>
+          </ul>
+        </div>
+        <div class="pos change">
+          <p class="ph">Stated in support of changing it</p>
+          <ul>
+            <li><b>Denali Wilson</b> (Healing Advocacy Fund), 6/26: “the medical appropriateness of a candidate is based solely on whether they have a diagnosis with a qualifying condition… it goes beyond the requirement of diagnosis.”</li>
+            <li><b>Chris Peskuski</b> (board member), 6/26: “this is going to bottleneck access, especially for veterans… Colorado and Oregon have both shown this can be done effectively.”</li>
+            <li><b>Dan Jennings</b> (board member, rural), 6/26: “I worry… there won't be enough of the providers… taking it down to having a CS number and then it just even being in my area.”</li>
+            <li><b>Dr. Fatemi</b> (training-program operator), 6/25: “I don't know any… other physicians… who would be also taking the risk… of having a DEA license.”</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="subhead">The language on the table</p>
+      <div class="langgrid two">
+        <div class="lang spine">
+          <div class="lh"><span class="lt">Committee recommendation · 6/12</span><span class="badge vote">what's being voted on</span></div>
+          <div class="verbatim">
+            <p class="lead">Diagnostic Clinician: qualifications required to certify patients:</p>
+            <ul>
+              <li>“Have a current and valid license from a recognized New Mexico licensing board which allows diagnosing the qualifying medical condition within their licensure scope of practice…; and,”</li>
+              <li>“Have a <b>New Mexico Controlled Substance number</b>; and,”</li>
+              <li>“Complete required NMDOH training and continuing educational training requirements annually; and,”</li>
+              <li>“Apply, receive, and maintain a valid permit from the NMDOH medical psilocybin program as a diagnostic clinician.”</li>
+            </ul>
+          </div>
+          <p class="srcline">Verbatim from the 6/12 recommendation draft, p. 1.</p>
+        </div>
+        <div class="lang">
+          <div class="lh"><span class="lt">Rules draft · 6/25</span><span class="badge ref">for reference</span></div>
+          <p class="absent">The 6/25 rules draft does not restate the diagnostic-clinician qualifications. It covers the provider application process; the CS-number requirement lives only in the 6/12 recommendation above.</p>
+          <p class="srcline">Confirmed against the 6/25 rules draft, provider application section, pp. 6–7.</p>
+        </div>
+      </div>
+
+      <p class="subhead">Proposed ways to proceed</p>
+      <p style="font-size:13.5px;color:var(--text-muted);margin:0 0 12px;max-width:68ch;">Each option is tied to a statement on the record. Where redline wording is shown, no exact rule text was dictated at the meeting; it renders the attributed proposal. These are options that were raised, not a recommendation.</p>
+      <div class="options">
+        <div class="opt">
+          <div class="oh"><span class="otag">1</span><span class="ot">Keep the requirement as written</span></div>
+          <div class="ob"><p class="who">Department position — <b>Dominic Zurlo</b>, 6/26: “We do not see this as any different” from the cannabis model.</p>The 6/12 diagnostic-clinician qualification stands unchanged.</div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">2</span><span class="ot">Remove the requirement; base entry on diagnosis alone</span></div>
+          <div class="ob">
+            <p class="who">Raised by <b>Denali Wilson</b>, 6/26: eligibility “is based solely on whether they have a diagnosis with a qualifying condition.” No replacement wording was dictated on the record.</p>
+            <div class="redline">• Have a current and valid license… which allows diagnosing the qualifying medical condition…; and,<br>• <span class="rem">Have a New Mexico Controlled Substance number; and,</span><br>• Complete required NMDOH training…</div>
+            <p class="note">Rendering of the attributed proposal, not official text.</p>
+          </div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">3</span><span class="ot">Allow medical clearance by referral instead of requiring the CS number at entry</span></div>
+          <div class="ob">
+            <p class="who">Raised by <b>Chris Peskuski</b>, 6/26: “any problematic medical conditions can be referred from their side instead of requiring a medical screening first.”</p>
+            <p class="note">No rule text was proposed on the record; shown as stated.</p>
+          </div>
+        </div>
+      </div>
+
+      <details class="disc">
+        <summary><span class="chev">▸</span> What was actually said <span class="ct">6 speakers · 6/25 &amp; 6/26</span></summary>
+        <div class="disc-body">
+          <div class="mtg">At the June 25 hearing</div>
+          <blockquote class="q"><p class="lead"><b>Dr. Fatemi</b> (training-program operator), on physician fear:</p><p class="t">“in our community, I don't know any any other physicians… who would be also taking the risk… of having a DEA license. And I know we're talking about having a controlled substance license, but that's against federal law.”</p><cite>June 25 hearing</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Dr. Truckner</b> (department physician), that the role does not touch DEA registration:</p><p class="t">“the diagnostic clinician is not prescribing psilocybin… That's not my DEA license. That's just me being a physician. So the DEA license has nothing to do with my responsibilities to clear this patient safely.”</p><cite>June 25 hearing</cite></blockquote>
+          <div class="mtg">At the June 26 board meeting</div>
+          <blockquote class="q"><p class="lead"><b>Dominic Zurlo</b> (department), defending it via the cannabis model:</p><p class="t">“while this is a Schedule I at this time, because we are treating it in other ways as a medication, it still needs to have that medical clearance… we have had thousands of providers who have referred patients to the program. We are not asking those providers to prescribe psilocybin… We do not see this as any different.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Denali Wilson</b> (Healing Advocacy Fund), that it may exceed the statute:</p><p class="t">“the statute says specifically that the medical appropriateness of a candidate is based solely on whether they have a diagnosis with a qualifying condition… I don't believe that this design is supported by the statute because it goes beyond the requirement of diagnosis.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Denali Wilson</b>, on reversibility once a permit group exists:</p><p class="t">“we've created a property interest for a group of people who have a financial interest now in providing that care… That is a much more difficult thing to remedy down the line.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Chris Peskuski</b> (board member; veteran/facilitator), on access:</p><p class="t">“I'm very concerned that this is going to bottleneck access, especially for veterans… Colorado and Oregon have both shown this can be done effectively… any problematic medical conditions can be referred from their side instead of requiring a medical screening first. None of this adds up to me honestly.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Dan Jennings</b> (board member, rural), on the provider pool:</p><p class="t">“as being in the very rural area here, I worry… there won't be enough of the providers that… would be in this pool and then taking it down to having a CS number and then it just even being in my area.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Ian Dunn</b> (board chair), on the intended narrow role:</p><p class="t">“This person's job is just to ensure physical safety, that there's no bad drug interactions, that there's no condition that is going to disqualify them or put them at risk.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Alana Dances</b> (Acting Medicaid Director), on the balance:</p><p class="t">“you need a clinician to say, this person has PTSD, this person does not have cardiac disease… The clinician doesn't have to say… I think psilocybin is the correct treatment… when you move too fast, you hurt patients.”</p><cite>June 26 board meeting</cite></blockquote>
+        </div>
+      </details>
+
+      <div class="landed">
+        <p class="ll">Where it landed</p>
+        <p>Tabled on 6/26 and sent to July 9. Clarified as a New Mexico controlled-substance number, not a DEA number. No amended language was adopted. Connected open threads: the billing line between diagnosis (billable) and treatment (not billable), insurance clawback risk from a risk/benefit attestation, and a suggested rename to “eligibility clinician.”</p>
+      </div>
+    </section>
+
+    <!-- ITEM 2: PRACTICUM -->
+    <section class="item" id="practicum">
+      <div class="item-head">
+        <span class="idx">2</span>
+        <h2>The practicum hours<span class="loc">Committee recommendation · Practicum Requirements</span></h2>
+      </div>
+
+      <div class="whatnow">
+        <p class="q">Are 100 hours (facilitators) / 120 hours (practitioners) right, and should every practitioner complete 20 supervisory hours?</p>
+        <p class="at"><b>Context:</b> the practicum is the supervised-practice portion of provider training. The number of required hours affects the cost and time to qualify.</p>
+      </div>
+
+      <div class="positions">
+        <div class="pos keep">
+          <p class="ph">Keep the hours as written</p>
+          <ul>
+            <li>The timeframes came from practitioners, <b>including underground providers</b>; “not just arbitrary.”</li>
+            <li>This is a <b>medical program</b> treating people with qualifying conditions, unlike CO/OR general access.</li>
+            <li>Rules can be revised later if needed.</li>
+          </ul>
+          <p class="names">Department (Dominic Zurlo)</p>
+        </div>
+        <div class="pos change">
+          <p class="ph">Reduce, phase, or make supervision optional</p>
+          <ul>
+            <li>CO/OR data show <b>reduced volume</b> from cost and duration; “40 hours of practicum is probably excessive.”</li>
+            <li>A Colorado practicum runs <b>over $2,000</b>; the economics need modeling.</li>
+            <li>The <b>20 supervisory hours</b> are effectively uninsurable and should be opt-in.</li>
+          </ul>
+          <p class="names">Scott Shannon, Larry Leeman, Dr. Ann Metz, Catherine Warnock</p>
+        </div>
+      </div>
+
+      <p class="subhead">The language on the table</p>
+      <div class="langgrid two">
+        <div class="lang spine">
+          <div class="lh"><span class="lt">Committee recommendation · 6/12</span><span class="badge vote">what's being voted on</span></div>
+          <div class="verbatim">
+            <ul>
+              <li>“Supervised practice training… must include a minimum of one hundred (100) hours… for Facilitators and one hundred and twenty (120) hours for Practitioners.”</li>
+              <li>“Students shall participate in a minimum of eighty (80) hours of administration and same-day therapy sessions… with a minimum of fourteen (14) different patients over a minimum of 8 different… sessions” (≥6 individual with ≥6 patients; ≥2 group with 4+ each).</li>
+              <li>“Students shall participate in a minimum of twenty (20) hours of in-person preparation and post-integration therapy sessions” (≥6 patients; ≥1 group prep and ≥1 group post-integration).</li>
+              <li>“Practitioners must complete an additional minimum of twenty (20) hours as a practitioner supervising facilitators…”</li>
+              <li>“All practicum hours must take place in an approved Healing Center.”</li>
+            </ul>
+          </div>
+          <p class="srcline">Verbatim from the 6/12 recommendation draft, pp. 7-8.</p>
+        </div>
+        <div class="lang">
+          <div class="lh"><span class="lt">Rules draft · 6/25</span><span class="badge ref">for reference</span></div>
+          <p class="absent">The 6/25 rules draft does not restate the practicum hours. It touches practicum only through reciprocity: a “40 hours of contact time” exception, and a requirement that reciprocal practitioners still “complete the twenty (20) supervisory practicum hours in New Mexico.”</p>
+          <p class="srcline">Confirmed against the 6/25 rules draft, reciprocity section, pp. 4–5. The 100 / 120 figures were read aloud by the department at the 6/26 board meeting.</p>
+        </div>
+      </div>
+
+      <p class="subhead">Ways it could be written</p>
+      <div class="options">
+        <div class="opt">
+          <div class="oh"><span class="otag">A</span><span class="ot">Keep 100 / 120 as written</span></div>
+          <div class="ob"><p class="who">Reflects the department.</p>The full practicum section stands, revisited later if data warrant.</div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">B</span><span class="ot">Lower or phase the hours</span></div>
+          <div class="ob">
+            <p class="who">Reflects Scott Shannon (“probably excessive”) and Larry Leeman (cost modeling).</p>
+            <div class="redline">“…a minimum of <span class="rem">one hundred (100)</span><span class="ins">[reduced number]</span> hours… for Facilitators and <span class="rem">one hundred and twenty (120)</span><span class="ins">[reduced number]</span> hours for Practitioners<span class="ins">, with an initial phase-in period reviewed against cost and volume data</span>.”</div>
+            <p class="note">Illustrative drafting option, not official text. Leaves the exact reduced number for the board to set after economic modeling.</p>
+          </div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">C</span><span class="ot">Make the 20 supervisory hours opt-in</span></div>
+          <div class="ob">
+            <p class="who">Reflects Dr. Ann Metz's “practitioner supervisor credential” and the liability-insurance gap.</p>
+            <div class="redline">“Practitioners <span class="rem">must complete</span><span class="ins">who wish to supervise facilitators may complete</span> an additional minimum of twenty (20) hours… supervising facilitators<span class="ins">, as an optional supervisor credential</span>.”</div>
+            <p class="note">Illustrative drafting option, not official text.</p>
+          </div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">D</span><span class="ot">Add condition-specific &amp; instructor-experience floors</span></div>
+          <div class="ob">
+            <p class="who">Reflects Larry Leeman (end-of-life / PTSD experience) and Catherine Warnock (instructors should exceed the minimums they teach; a ~40-patient floor).</p>
+            <div class="redline"><span class="ins">Before sitting with end-of-life or PTSD patients, a provider must document experience in those specific diagnoses. Practicum instructors must have experience with a minimum of 40 individual patients.</span></div>
+            <p class="note">Illustrative drafting option, not official text. Overlaps the 6/26 faculty-experience add-on.</p>
+          </div>
+        </div>
+      </div>
+
+      <details class="disc">
+        <summary><span class="chev">▸</span> What was actually said <span class="ct">6 speakers · 6/25 &amp; 6/26</span></summary>
+        <div class="disc-body">
+          <div class="mtg">At the June 25 hearing</div>
+          <blockquote class="q"><p class="lead"><b>Dr. Ann Metz</b> (LPCC; CO clinical facilitator), on the 20 supervisory hours and an insurance gap:</p><p class="t">“Supervision is not a licensing requirement for anyone who's a social worker or counselor. It's an additional credential that people opt into… there is no psilocybin-specific liability insurance product available that covers clinical supervision… creates an uninsurable liability.”</p><cite>June 25 hearing · recommended an optional “practitioner supervisor credential”</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Dominic Zurlo</b> (department), declining to remove it:</p><p class="t">“the facilitators do need to be supervised by the practitioners based upon the model that is created, and that's actually why that is there.”</p><cite>June 25 hearing</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Catherine Warnock</b> (licensed practitioner), that instructors should exceed the minimums:</p><p class="t">“I don't think you should be training 14 experiences. I think 14 experiences is a low number to begin with… maybe a minimum of like 40 people that they have worked with.”</p><cite>June 25 hearing</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>James Brown</b>, cautioning against fixed minimums in a new field:</p><p class="t">“There's not a lot of people pre-set or pre-certified or pre-registered, pre-anything in this. So think about that when you guys talk about minimums.”</p><cite>June 25 hearing</cite></blockquote>
+          <div class="mtg">At the June 26 board meeting</div>
+          <blockquote class="q"><p class="lead"><b>Dominic Zurlo</b> (department), reading the requirement into the record:</p><p class="t">“the supervised practice will be 100 hours for facilitators and 120 for practitioners… a minimum of 80 hours of administration and same-day therapy sessions… with a minimum of 14 different patients over eight different… sessions… broken up into six individual and two group sessions.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Scott Shannon</b> (public; CO psychiatrist and educator), that the hours may be excessive:</p><p class="t">“40 hours of practicum is probably excessive from what we're seeing… I would encourage a less cautious and conservative approach to this model to try to really emphasize access.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Larry Leeman</b> (board member), on cost:</p><p class="t">“The cheapest one is over $2,000… I think it would be worth trying to model how we think that's going to occur.”</p><cite>June 26 board meeting · also urged experience in end-of-life and PTSD before sitting with those patients</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Dominic Zurlo</b> (department), on where the numbers came from:</p><p class="t">“the timeframes on this actually have come from various recommendations… including people who have been doing this work underground… this is not just arbitrary.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Shane</b> (department/participant), skeptical that rules get revised later:</p><p class="t">“the change in the future, never happens… I have low confidence that that's going to happen correctly.”</p><cite>June 26 board meeting</cite></blockquote>
+        </div>
+      </details>
+
+      <div class="landed">
+        <p class="ll">Where it landed</p>
+        <p>Tabled on 6/26 and sent to July 9. No changes were adopted. Open threads inside this item: whether the 20-hour supervisory practicum is mandatory or opt-in, an instructor / faculty experience floor, the cost modeling Larry Leeman requested, and condition-specific endorsements for end-of-life and PTSD.</p>
+      </div>
+    </section>
+
+    <!-- ITEM 3: RECIPROCITY -->
+    <section class="item" id="reciprocity">
+      <div class="item-head">
+        <span class="idx">3</span>
+        <h2>The reciprocity timeline<span class="loc">Rules draft · Reciprocity, pp. 4–5</span></h2>
+      </div>
+
+      <div class="whatnow">
+        <p class="q">Are the sunset dates adequate: Dec 31, 2026 for the reduced-hours exception, and Dec 31, 2027 for the department's waiver authority?</p>
+        <p class="at"><b>Context:</b> reciprocity lets providers trained in other government-approved programs (for example, Colorado or Oregon) qualify in New Mexico under reduced practicum requirements. The sunset dates set how long those reduced requirements remain available.</p>
+      </div>
+
+      <div class="positions">
+        <div class="pos keep">
+          <p class="ph">Keep the dates as written</p>
+          <ul>
+            <li>A <b>sunset clause</b> prevents permanently reduced requirements.</li>
+            <li>Waiver authority lets the department build infrastructure <b>without new rulemaking</b>.</li>
+          </ul>
+          <p class="names">Department (Dominic Zurlo)</p>
+        </div>
+        <div class="pos change">
+          <p class="ph">Extend or rethink the dates</p>
+          <ul>
+            <li>Healing centers <b>don't exist yet</b>; Dec 2026 may be unrealistic.</li>
+            <li>The department itself noted the timeline <b>“could be extended.”</b></li>
+            <li>Concern it <b>“encourages people to get trained in Colorado.”</b></li>
+          </ul>
+          <p class="names">Larry Leeman; department open to extension</p>
+        </div>
+      </div>
+
+      <p class="subhead">The language on the table</p>
+      <div class="langgrid two">
+        <div class="lang">
+          <div class="lh"><span class="lt">Committee recommendation · 6/12</span><span class="badge ref">for reference</span></div>
+          <p class="absent">Not in the 6/12 recommendation. Reciprocity and its timeline exist only in the 6/25 rules draft.</p>
+          <p class="srcline">Confirmed against the 6/12 recommendation draft (no reciprocity section).</p>
+        </div>
+        <div class="lang spine">
+          <div class="lh"><span class="lt">Rules draft · 6/25</span><span class="badge vote">the text at issue</span></div>
+          <div class="verbatim">
+            <ul>
+              <li>“Exception: any reciprocal applications received by the department by <b>December 31, 2026</b> will not be required to complete the full practicum hours required by New Mexico, but must demonstrate completion of at least 40 hours of contact time with a minimum of 2 separate individual sessions or 2 separate group sessions…”</li>
+              <li>“Exception: The department reserves the ability to waive, temporarily suspend, or reduce any of the rules regarding the practicum requirements… up until <b>December 31, 2027</b>; in order to facilitate the permitting of individuals trained by other governmental approved programs to build the initial infrastructure of the program.”</li>
+            </ul>
+          </div>
+          <p class="srcline">Verbatim from the 6/25 rules draft, reciprocity, pp. 4-5.</p>
+        </div>
+      </div>
+
+      <p class="subhead">Ways it could be written</p>
+      <div class="options">
+        <div class="opt">
+          <div class="oh"><span class="otag">A</span><span class="ot">Keep Dec 31, 2026 / Dec 31, 2027</span></div>
+          <div class="ob"><p class="who">Reflects the department.</p>Both sunset dates stand as drafted.</div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">B</span><span class="ot">Extend the sunset dates</span></div>
+          <div class="ob">
+            <p class="who">Reflects Larry Leeman's timing concern and the department noting it “could be extended.”</p>
+            <div class="redline">“…received by the department by December 31, <span class="rem">2026</span><span class="ins">[later date]</span>…” &nbsp;·&nbsp; “…up until December 31, <span class="rem">2027</span><span class="ins">[later date]</span>…”</div>
+            <p class="note">Illustrative drafting option, not official text. Keeps the sunset structure but moves the dates out.</p>
+          </div>
+        </div>
+        <div class="opt">
+          <div class="oh"><span class="otag">C</span><span class="ot">Clarify the 40-hour requirement (already agreed)</span></div>
+          <div class="ob">
+            <p class="who">A clarification the department stated at 6/25 in response to Dr. Ann Metz.</p>
+            <div class="redline"><span class="ins">Applicants otherwise exempt from the full practicum must still demonstrate the 40 contact hours.</span></div>
+            <p class="note">Verbal agreement, no final text yet. Separate from the sunset-date question.</p>
+          </div>
+        </div>
+      </div>
+
+      <details class="disc">
+        <summary><span class="chev">▸</span> What was actually said <span class="ct">3 voices · 6/25 &amp; 6/26</span></summary>
+        <div class="disc-body">
+          <div class="mtg">At the June 25 hearing</div>
+          <blockquote class="q"><p class="lead"><b>Dr. Ann Metz</b>, asking whether the 40 hours and the exemption stack:</p><p class="t">“are people required to complete a training program and have the 40 hour practicum?” <b>Dominic Zurlo</b> replied: “They still need to show the 40 hours… but they would be otherwise exempted from the practica.”</p><cite>June 25 hearing</cite></blockquote>
+          <div class="mtg">At the June 26 board meeting</div>
+          <blockquote class="q"><p class="lead"><b>Dominic Zurlo</b> (department), on the sunset rationale:</p><p class="t">“that's actually why that has a sunset clause of the end of December… we are lucky enough to have other states that actually already have programs… those individuals would have to apply by those dates by the end of December.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Larry Leeman</b> (board member), on the incentive it creates:</p><p class="t">“It's almost like we're giving some encouragement for people to get trained in Colorado during reciprocity.”</p><cite>June 26 board meeting</cite></blockquote>
+          <blockquote class="q"><p class="lead"><b>Dominic Zurlo</b> (department), that the timeline could move:</p><p class="t">“there's some concerns as far as some of the reciprocity for the timeline that could actually be extended potentially as well, but that we continue those discussions at this point.”</p><cite>June 26 board meeting</cite></blockquote>
+        </div>
+      </details>
+
+      <div class="landed">
+        <p class="ll">Where it landed</p>
+        <p>Tabled on 6/26 and sent to July 9. One clarification landed at 6/25: applicants otherwise exempt from the full practicum must still show the 40 contact hours. The dates themselves were tabled, and the department noted the timeline could be extended.</p>
+      </div>
+    </section>
+
+    <!-- THE RECORD -->
+    <section id="record">
+      <div class="sec-head">
+        <p class="k">The full record</p>
+        <h2>The vote, the verbal agreements, and everything else left open</h2>
+        <p>This section covers the rest of the record: the motion the board voted on, the edits agreed in discussion (none are final rule text), and every other item left open.</p>
+      </div>
+
+      <div class="motion">
+        <p>“I move to adopt these recommendations minus the practicum requirement, the controlled substance number requirement, and the reciprocal timeline.”</p>
+        <cite>Motion by Brenda Burgard (per the meeting-note summary), June 26 board meeting.</cite>
+      </div>
+      <div class="tally">
+        <div class="tc yes"><div class="n">3</div><div class="l">in favor</div></div>
+        <div class="tc no"><div class="n">2</div><div class="l">against</div></div>
+        <div class="tc"><div class="n">Carried</div><div class="l">framework adopted, minus the three</div></div>
+      </div>
+      <p style="font-size:14.5px; color:var(--text-muted); max-width:70ch;">The record names only one member's vote: Larry Leeman's “reluctant yes.” The two votes against are not named in the transcript, so they are not attributed here. Leeman added on the record: “I'm voting in favor, but I also favor more discussion. It's not closed off in the future.”</p>
+
+      <details class="disc">
+        <summary><span class="chev">▸</span> Verbal agreements: edits agreed in discussion, not final text <span class="ct">13 items</span></summary>
+        <div class="disc-body">
+          <ul class="redline-list">
+            <li>Diagnostic-clinician continuing ed: <span class="rem">annually</span> → <span class="ins">every two years</span> <span class="who">Drafting correction (Dominic Zurlo) · 6/26</span></li>
+            <li>Wilderness first aid: <span class="rem">required simply for natural-environment sessions</span> → <span class="ins">required based on EMS access / remoteness (roughly &gt; 1 hour from EMS)</span> <span class="who">Chris Peskuski; Larry Leeman agreed · 6/26 · <span class="tag">verbal agreement</span></span></li>
+            <li>Facilitator curriculum: <span class="ins">add peer-support training as an option</span> <span class="who">Chris Peskuski; department agreed · 6/26 · <span class="tag">verbal agreement</span></span></li>
+            <li>Facilitator ethics: <span class="ins">add personal bias and the patient Bill of Rights</span> <span class="who">James Brown / Ian Dunn · 6/26 · <span class="tag">verbal agreement</span></span></li>
+            <li>Faculty experience: <span class="ins">the two required faculty must have experience with 40 individual patients</span> <span class="who">6/26 add-on; verification method open · <span class="tag">verbal agreement</span></span></li>
+            <li>Third-party evaluation: <span class="ins">add CME/CEU approval as an alternative pathway</span> <span class="who">Dr. Ann Metz, Warnock, Dr. Fatemi, Lisa Ginsberg; department agreed · 6/25 · <span class="tag">verbal agreement</span></span></li>
+            <li>Inspections: <span class="ins">exempt active practicum / dosing from unannounced inspection; notice required</span> <span class="who">Catherine Warnock, Dr. Fatemi · 6/25 · <span class="tag">verbal agreement</span></span></li>
+            <li>Reciprocity: <span class="ins">non-English documentation must be translated and apostilled</span> <span class="who">Ian Dunn · 6/26 · <span class="tag">verbal agreement</span></span></li>
+            <li>Mobile treatment units: <span class="ins">restore accidentally deleted language under “other approved locations”</span> <span class="who">Chris Peskuski · 6/25</span></li>
+            <li>Home / alternate location: <span class="ins">clarify the care team (diagnostic clinician + practitioner) determines medical necessity</span> <span class="who">6/25 · <span class="tag">verbal agreement</span></span></li>
+            <li>Consent form: <span class="ins">non-permitted staff present during treatment must be disclosed</span> <span class="who">6/26 · <span class="tag">verbal agreement</span></span></li>
+            <li>Healing centers: <span class="ins">add the patient Bill of Rights; add English + Spanish / ADA language access</span> <span class="who">James Brown; Skye · 6/26 · <span class="tag">verbal agreement</span></span></li>
+            <li>Reporting: <span class="ins">add product ID as a required field in adverse-event reports</span> <span class="who">Greg; Hanifa · 6/25–6/26 · <span class="tag">verbal agreement</span></span></li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="disc">
+        <summary><span class="chev">▸</span> Deferrals log: everything raised across 6/25 and 6/26 <span class="ct">full table</span></summary>
+        <div class="disc-body">
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>Item</th><th>Status</th><th>Raised / carried by</th><th>Date</th></tr></thead>
+              <tbody>
+                <tr><td class="it">CS number requirement</td><td><span class="st carve">Carved out → 7/9</span></td><td class="wc">Denali Wilson, Chris Peskuski, Dan Jennings, Dr. Fatemi; dept. defends</td><td class="dc">6/25, 6/26</td></tr>
+                <tr><td class="it">Practicum hours (100 / 120)</td><td><span class="st carve">Carved out → 7/9</span></td><td class="wc">Scott Shannon, Larry Leeman, Brenda Burgard; dept.</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Reciprocal permit timeline</td><td><span class="st carve">Carved out → 7/9</span></td><td class="wc">Larry Leeman; dept.</td><td class="dc">6/25, 6/26</td></tr>
+                <tr><td class="it">20-hour supervisory practicum (make optional)</td><td><span class="st open">Open</span></td><td class="wc">Dr. Ann Metz; dept. declined</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Practicum-instructor experience minimum (~40 patients)</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Catherine Warnock</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Faculty 40-patient experience (how to verify)</td><td><span class="st open">Open thread</span></td><td class="wc">Dept. add-on</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Third-party evaluator → CME/CEU alternative</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Dr. Ann Metz, Warnock, Dr. Fatemi, Lisa Ginsberg</td><td class="dc">6/25, 6/26</td></tr>
+                <tr><td class="it">Practicum inspection carve-out (notice required)</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Catherine Warnock, Dr. Fatemi</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Peer-support training as a facilitator option</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Chris Peskuski</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Wilderness first aid trigger (EMS access)</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Chris Peskuski, Larry Leeman</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Personal bias + patient Bill of Rights in ethics</td><td><span class="st va">Verbal agr.</span></td><td class="wc">James Brown, Ian Dunn</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Apostille / translation of foreign credentials</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Ian Dunn</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Staff consent disclosure</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Raised 6/25; dept. to clarify</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Language access (English + Spanish; ADA)</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Skye</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Product ID in adverse-event reports</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Greg; Hanifa</td><td class="dc">6/25, 6/26</td></tr>
+                <tr><td class="it">Mobile treatment unit language (restore)</td><td><span class="st va">To restore</span></td><td class="wc">Chris Peskuski</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Medical-necessity determiner (care team)</td><td><span class="st va">Verbal agr.</span></td><td class="wc">Jessica (chat)</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Dosage decision authority (care team; not rule)</td><td><span class="st res">Resolved verbally</span></td><td class="wc">Hanifa</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Mentoring structure (program vs. dept. pool)</td><td><span class="st open">Open</span></td><td class="wc">Denali Wilson</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Condition-specific endorsements (EOL, PTSD)</td><td><span class="st open">Deferred</span></td><td class="wc">Larry Leeman</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Test-out option for didactic modules</td><td><span class="st res">Presented, no objection</span></td><td class="wc">Dept.; Dr. Fatemi</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">BLS vs. CPR / BVM level</td><td><span class="st no">Not changed</span></td><td class="wc">Chris Peskuski; dept. kept BLS</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Internal quality-review for centers</td><td><span class="st no">Not a rule item</span></td><td class="wc">James Brown</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Cap on number of educational programs</td><td><span class="st res">Resolved: no limit</span></td><td class="wc">Erica</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Healing + training center = two applications</td><td><span class="st res">Resolved</span></td><td class="wc">Catherine Warnock</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Diagnostic-clinician liability scope</td><td><span class="st res">Resolved verbally</span></td><td class="wc">Chris Peskuski, Greg; Dr. Truckner</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Insurance requirement for centers</td><td><span class="st no">Not required</span></td><td class="wc">Hanifa</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Volunteers / multi-use spaces</td><td><span class="st res">Resolved</span></td><td class="wc">Chris Peskuski</td><td class="dc">6/25</td></tr>
+                <tr><td class="it">Billing: diagnosis vs. treatment</td><td><span class="st open">Verbal guidance</span></td><td class="wc">Larry Leeman (Q); Alana Dances (A)</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Insurance clawback risk (attestation)</td><td><span class="st open">Flagged</span></td><td class="wc">Denali Wilson</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Background-check gap / Medicaid validation</td><td><span class="st open">Flagged as gap</span></td><td class="wc">Alana Dances</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">“Eligibility clinician” rename</td><td><span class="st open">Raised</span></td><td class="wc">Hanitha (public)</td><td class="dc">6/26</td></tr>
+                <tr><td class="it">Testing / training with well persons</td><td><span class="st open">May need legislation</span></td><td class="wc">Larry Leeman</td><td class="dc">6/26</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      <div class="col" style="padding:0;">
+        <h3>Sources &amp; method</h3>
+        <p><b>Draft language</b> is quoted verbatim from the two source PDFs: the 6/12 recommendation draft (“Draft for 6-12-26”) and the 6/25 rules draft (“Draft Outline for Training and Education Committee review for 6-25-26”). Neither is final, promulgated rule text.</p>
+        <p><b>Quotes</b> come from the full transcripts of the June 25 committee hearing and the June 26 Advisory Board meeting. Both are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Peskuski, Fatemi, Leeman). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the motion.</p>
+        <p><b>“Ways it could be written”</b> are illustrative drafting options assembled from the suggestions on the record, not official language. They exist to show the range of choices, not to endorse one.</p>
+        <p class="fine">Prepared as a community reference for the July 9, 2026 session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var saved=null; try{saved=localStorage.getItem('nmpsi-theme');}catch(e){}
+  root.setAttribute('data-theme', saved==='dark'?'dark':'light');
+  function sync(){var d=root.getAttribute('data-theme')==='dark'; var b=document.getElementById('tt'); if(b)b.setAttribute('aria-pressed',d);}
+  sync();
+  document.addEventListener('click',function(e){
+    if(e.target.closest && e.target.closest('#tt')){
+      var d=root.getAttribute('data-theme')==='dark';
+      root.setAttribute('data-theme', d?'light':'dark');
+      try{localStorage.setItem('nmpsi-theme', d?'light':'dark');}catch(e){}
+      sync();
+    }
+  });
+})();
+</script>
