@@ -1,45 +1,263 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NM Medical Psilocybin Provider Pathways Map</title>
 <style>
-:root{--bg:#fbfaf7;--ink:#202124;--muted:#68635d;--card:#fff;--line:#ddd6cb;--purple:#6551a3;--purple2:#eee9fb;--green:#167251;--green2:#e9f7ef;--gold:#936719;--gold2:#fff2d8;--red:#a73743;--red2:#fae9eb;--blue:#1c628f;--blue2:#e8f4fb;--shadow:0 12px 34px rgba(45,35,20,.09)}
-*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 10% 0,#f2ecff 0,transparent 32rem),var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);line-height:1.45}.page{max-width:1280px;margin:auto;padding:28px}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:end}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--purple);font-weight:800}h1{font-size:clamp(34px,5vw,68px);line-height:.95;margin:.25em 0;font-weight:850;letter-spacing:-.05em}h2{font-size:24px;margin:0 0 10px}h3{margin:0;font-size:16px}.lead{font-size:20px;color:var(--muted);max-width:760px}.panel,.card{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}.panel{padding:22px}.legend{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}.settled{background:var(--green2);color:var(--green);border:1px solid #bfe6cf}.open{background:var(--gold2);color:var(--gold);border:1px solid #ead09b}.proposed{background:var(--red2);color:var(--red);border:1px solid #efc5ca}.ns{background:#f0eef2;color:#625a69;border:1px solid #ddd7e3}.dot{width:10px;height:10px;border-radius:99px;background:currentColor}.map{margin-top:28px;display:grid;grid-template-columns:260px 1fr;gap:18px}.roles{display:grid;gap:12px;align-content:start;position:sticky;top:12px}.role{padding:18px;border-radius:22px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}.role b{display:block;font-size:21px}.role small{display:block;color:var(--muted);margin-top:5px}.role .mini{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}.board{display:grid;gap:18px}.lane{display:grid;grid-template-columns:210px repeat(9,minmax(150px,1fr));gap:10px;align-items:stretch;min-width:1480px}.scroller{overflow:auto;padding-bottom:12px}.head{position:sticky;top:0;z-index:2}.head .cell{background:#382b62;color:#fff;border-color:#382b62;text-align:center;font-weight:850;font-size:12px;letter-spacing:.04em;text-transform:uppercase}.persona{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;position:sticky;left:0;z-index:1;box-shadow:8px 0 20px rgba(251,250,247,.86)}.persona b{display:block}.persona span{display:block;color:var(--muted);font-size:13px;margin-top:4px}.cell{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:13px;min-height:116px}.cell strong{font-size:13px;display:block}.cell p{margin:7px 0 0;color:var(--muted);font-size:12.5px}.cell.ok{border-top:5px solid var(--green)}.cell.open{border-top:5px solid var(--gold)}.cell.prop{border-top:5px solid var(--red)}.cell.dead{background:repeating-linear-gradient(135deg,#fff,#fff 8px,#f4f1ed 8px,#f4f1ed 16px);color:#8b7d72}.cell.dead strong{color:#6f635a}.source{margin-top:8px;font-size:11px;color:#766f86}.source a{color:inherit}.route{display:inline-block;margin-top:8px;background:var(--purple2);color:var(--purple);border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800}.notegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.note{padding:18px}.note ul{margin:8px 0 0;padding-left:18px}.note li{margin:6px 0}.keyline{border-left:6px solid var(--purple)}.printbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:750}@media(max-width:900px){.hero,.map,.notegrid{grid-template-columns:1fr}.roles{position:static}.page{padding:18px}.lane{grid-template-columns:190px repeat(9,145px)}}
+  :root{
+    --bg:#fbfaf6; --paper:#fffdf9; --ink:#211d18; --muted:#6e675f; --faint:#938a80;
+    --line:#ded4c6; --line-strong:#c9bba8; --purple:#5d45a0; --purple-ink:#34235f; --purple-soft:#eee8fb;
+    --green:#17704f; --green-soft:#e7f5ec; --gold:#92620e; --gold-soft:#fff0cf;
+    --red:#a23645; --red-soft:#fae6e9; --gray:#68606b; --gray-soft:#efedf2;
+    --blue:#1f628c; --blue-soft:#e8f4fb; --shadow:0 18px 55px rgba(43,31,18,.11);
+    --radius:26px; --sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    --serif:"Iowan Old Style",Georgia,serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:radial-gradient(circle at 12% -10%,#efe8ff 0 18rem,transparent 35rem),radial-gradient(circle at 88% 8%,#dff3eb 0 14rem,transparent 32rem),var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.45}
+  a{color:var(--purple)}
+  .page{max-width:1420px;margin:auto;padding:30px 28px 60px}
+  .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(330px,.65fr);gap:22px;align-items:stretch}
+  .hero-card,.legend,.pathway,.source-card,.role-card,.persona-card,.rail{background:rgba(255,253,249,.93);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .hero-card{padding:34px}
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--purple);font-weight:900;margin-bottom:14px}
+  h1{font-family:var(--serif);font-weight:800;letter-spacing:-.055em;line-height:.9;font-size:clamp(44px,7vw,92px);margin:0 0 16px;max-width:12ch}
+  .lede{font-size:clamp(18px,2vw,24px);color:var(--muted);max-width:46em;margin:0}
+  .rule{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.badge{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:900;border:1px solid currentColor}.badge .dot{width:9px;height:9px;border-radius:99px;background:currentColor}.settled{color:var(--green);background:var(--green-soft)}.open{color:var(--gold);background:var(--gold-soft)}.proposed{color:var(--red);background:var(--red-soft)}.notset{color:var(--gray);background:var(--gray-soft)}.dead{color:#796a5d;background:repeating-linear-gradient(135deg,#fff,#fff 7px,#f0ebe4 7px,#f0ebe4 14px)}
+  .legend{padding:24px}.legend h2,.source-card h2,.pathway h2{font-size:20px;margin:0 0 12px}.legend p{color:var(--muted);font-size:14px;margin:12px 0 0}.legend-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .readme{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.read-step{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px}.read-step b{display:block;color:var(--purple);font-size:13px}.read-step span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+  .chooser{margin-top:24px}.chooser h2{font-size:22px;margin:0 0 12px}.personas{display:grid;grid-template-columns:repeat(6,minmax(150px,1fr));gap:10px}.persona-card{position:relative;padding:13px;cursor:pointer;box-shadow:none;transition:.16s transform,.16s border-color,.16s background}.persona-card input{position:absolute;opacity:0}.persona-card b{font-size:13px;display:block}.persona-card span{display:block;font-size:12px;color:var(--muted);margin-top:3px}.persona-card:has(input:checked){border-color:var(--purple);background:var(--purple-soft);transform:translateY(-2px);box-shadow:0 10px 26px rgba(93,69,160,.13)}
+  .story{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;margin-top:22px;align-items:start}.role-stack{display:grid;gap:12px;position:sticky;top:16px}.role-card{padding:18px}.role-card h3{font-size:23px;margin:0 0 6px}.role-card p{color:var(--muted);font-size:14px;margin:0}.role-card .route-tag{margin-top:12px}.role-card.active{outline:3px solid var(--purple);outline-offset:2px}
+  .map{display:grid;grid-template-columns:repeat(3,minmax(250px,1fr));gap:14px;align-items:start}.pathway{padding:16px;box-shadow:none}.pathway h2{font-family:var(--serif);font-size:27px;letter-spacing:-.02em}.pathway .who{font-size:13px;color:var(--muted);margin:-3px 0 14px}.steps{display:grid;gap:10px}.step{position:relative;border:1px solid var(--line);border-left:7px solid var(--green);border-radius:18px;background:#fff;padding:13px 13px 13px 15px;min-height:94px}.step.open{border-left-color:var(--gold);background:linear-gradient(0deg,rgba(255,240,207,.72),rgba(255,255,255,.88))}.step.proposed{border-left-color:var(--red);background:linear-gradient(0deg,rgba(250,230,233,.72),rgba(255,255,255,.88))}.step.notset{border-left-color:var(--gray);background:var(--gray-soft)}.step.dead{border-left-color:#8b7764;background:repeating-linear-gradient(135deg,#fff,#fff 8px,#f3eee7 8px,#f3eee7 16px)}.num{position:absolute;top:10px;right:11px;color:var(--faint);font-weight:900;font-size:12px}.step b{display:block;font-size:15px;padding-right:28px}.step p{font-size:13px;color:var(--muted);margin:5px 0 0}.src{font-size:11px;color:var(--faint);margin-top:7px}.route-for{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.mini{font-size:10.5px;font-weight:900;border-radius:999px;padding:3px 7px;background:var(--purple-soft);color:var(--purple)}
+  .persona-note{margin-top:18px;border:2px solid var(--purple);border-radius:24px;background:#fff;padding:18px}.persona-note h2{margin:0 0 8px;font-size:22px}.persona-note p{margin:0;color:var(--muted)}.persona-note ul{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 0;padding:0;list-style:none}.persona-note li{border:1px solid var(--line);border-radius:16px;padding:12px;background:var(--paper);font-size:13px}.persona-note b{display:block;color:var(--ink);font-size:14px;margin-bottom:3px}
+  .rails{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.rail{padding:18px}.rail h2{font-size:21px;margin:0 0 8px}.rail p,.rail li{font-size:14px;color:var(--muted)}.rail ul{padding-left:18px;margin:8px 0 0}.rail.open-rail{border-top:7px solid var(--gold)}.rail.prop-rail{border-top:7px solid var(--red)}.rail.set-rail{border-top:7px solid var(--green)}
+  .sources{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.source-card{padding:18px;box-shadow:none}.source-card ol{margin:8px 0 0;padding-left:22px}.source-card li{margin:7px 0;color:var(--muted);font-size:14px}.source-card code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:var(--gray-soft);border-radius:6px;padding:1px 4px;color:var(--ink)}
+  [data-focus="medical"] .pathway.practitioner,[data-focus="medical"] .pathway.facilitator,[data-focus="medical"] .role-card:not(.diagnostic),
+  [data-focus="behavioral"] .pathway.diagnostic,[data-focus="behavioral"] .pathway.facilitator,[data-focus="behavioral"] .role-card:not(.practitioner),
+  [data-focus="other"] .pathway,[data-focus="community"] .pathway.diagnostic,[data-focus="community"] .pathway.practitioner,[data-focus="community"] .role-card:not(.facilitator),
+  [data-focus="outstate"] .pathway.diagnostic,[data-focus="international"] .pathway{opacity:.46}
+  [data-focus="medical"] .pathway.diagnostic,[data-focus="behavioral"] .pathway.practitioner,[data-focus="community"] .pathway.facilitator{outline:3px solid var(--purple);outline-offset:3px}
+  [data-focus="outstate"] .rail.recip{outline:3px solid var(--purple);outline-offset:3px}
+  @media(max-width:1100px){.hero,.story,.sources{grid-template-columns:1fr}.role-stack{position:static;grid-template-columns:repeat(3,1fr)}.personas{grid-template-columns:repeat(3,1fr)}.map,.rails{grid-template-columns:1fr}.persona-note ul{grid-template-columns:1fr}}
+  @media(max-width:700px){.page{padding:18px 14px 40px}.hero-card{padding:24px}.personas,.role-stack,.readme{grid-template-columns:1fr}.legend-grid{grid-template-columns:1fr}h1{font-size:48px}}
 </style>
-<body><main class="page">
-<section class="hero">
-  <div><div class="eyebrow">Neutral whiteboard · July 9 open items marked</div><h1>Provider pathways map</h1><p class="lead">Pick a person on the left. Read across the row. Green cards are in the adopted package. Gold cards are still open. Red cards are proposed or challenged. Striped cards mean the draft sources do not give that person a route to that role.</p><div class="printbar"><span class="chip">Roles: Facilitator · Practitioner · Diagnostic Clinician</span><span class="chip">Supporting roles: Healing Center · Educational Program</span><span class="chip">Emerging role: Clinical Supervisor / Practicum Instructor</span></div></div>
-  <aside class="panel"><h2>Legend</h2><div class="legend"><span class="pill settled"><span class="dot"></span>Settled</span><span class="pill open"><span class="dot"></span>Open</span><span class="pill proposed"><span class="dot"></span>Proposed or challenged</span><span class="pill ns"><span class="dot"></span>Not specified yet</span></div><p class="source">Source status: adopted package minus three carved-out items from the 6/26 motion; open items are the controlled-substance number, practicum requirement, and reciprocity timeline.</p></aside>
-</section>
+</head>
+<body>
+<main class="page" data-focus="community" id="page">
+  <section class="hero">
+    <div class="hero-card">
+      <div class="eyebrow">New Mexico medical psilocybin · Training and education</div>
+      <h1>Find the door. Follow the road.</h1>
+      <p class="lede">This map tells one story: a person starts with a credential, chooses a permitted role, completes the role road, then applies to NMDOH. The open pieces are marked where they interrupt the road.</p>
+      <div class="rule" aria-label="Status legend shortcut">
+        <span class="badge settled"><span class="dot"></span>Settled in adopted package</span>
+        <span class="badge open"><span class="dot"></span>Open for July 9</span>
+        <span class="badge proposed"><span class="dot"></span>Proposed or challenged</span>
+        <span class="badge notset"><span class="dot"></span>Not specified yet</span>
+        <span class="badge dead"><span class="dot"></span>No route in these drafts</span>
+      </div>
+      <div class="readme">
+        <div class="read-step"><b>1. Start left.</b><span>Pick the person type.</span></div>
+        <div class="read-step"><b>2. Look for an open door.</b><span>A role door opens only when the draft gives that person an entry route.</span></div>
+        <div class="read-step"><b>3. Read down.</b><span>Every role has one road from entry to permit maintenance.</span></div>
+      </div>
+    </div>
+    <aside class="legend">
+      <h2>What is settled and what is not</h2>
+      <div class="legend-grid">
+        <span class="badge settled"><span class="dot"></span>Settled</span>
+        <span class="badge open"><span class="dot"></span>Open</span>
+        <span class="badge proposed"><span class="dot"></span>Proposed / challenged</span>
+        <span class="badge notset"><span class="dot"></span>Not specified</span>
+      </div>
+      <p>The 6/26 motion adopted the training framework minus three items: controlled-substance number, practicum requirement, and reciprocal timeline.</p>
+    </aside>
+  </section>
 
-<section class="map">
-  <aside class="roles">
-    <div class="role"><b>Facilitator</b><small>Assists practitioners during administration sessions after department-approved training.</small><div class="mini"><span class="pill settled">Permit route exists</span></div></div>
-    <div class="role"><b>Practitioner</b><small>Licensed health professional route for integrative therapy and facilitator supervision.</small><div class="mini"><span class="pill settled">License gate</span><span class="pill open">Practicum open</span></div></div>
-    <div class="role"><b>Diagnostic Clinician</b><small>License route for certifying qualifying conditions.</small><div class="mini"><span class="pill open">CS number open</span></div></div>
-    <div class="role"><b>Supervisor / Instructor</b><small>Emerging discussion area, not a defined permit in the draft package.</small><div class="mini"><span class="pill proposed">40 patients proposed</span></div></div>
-  </aside>
-  <div class="scroller panel"><div class="board">
-    <div class="lane head"><div class="cell">Starting person</div><div class="cell">1 Entry credential</div><div class="cell">2 Background</div><div class="cell">3 Education</div><div class="cell">4 Practicum</div><div class="cell">5 Mentoring</div><div class="cell">6 Test-out / prior experience</div><div class="cell">7 Role gates</div><div class="cell">8 NMDOH permit</div><div class="cell">9 Keep permit</div></div>
+  <section class="chooser" aria-label="Persona selector">
+    <h2>Choose a starting person. The map below really changes.</h2>
+    <div class="personas">
+      <label class="persona-card"><input type="radio" name="persona" value="medical"><b>MD/DO, psychiatrist, NP, PA</b><span>Prescribing / medical</span></label>
+      <label class="persona-card"><input type="radio" name="persona" value="behavioral"><b>Psychologist, LCSW, LPCC, LMFT</b><span>Licensed behavioral health</span></label>
+      <label class="persona-card"><input type="radio" name="persona" value="other"><b>RN, pharmacist, ND, LMT, allied</b><span>Other NM-licensed health</span></label>
+      <label class="persona-card"><input type="radio" name="persona" value="community" checked><b>Community member, peer, chaplain, traditional healer</b><span>Non-clinical / community</span></label>
+      <label class="persona-card"><input type="radio" name="persona" value="outstate"><b>Out-of-state credential</b><span>Trained elsewhere</span></label>
+      <label class="persona-card"><input type="radio" name="persona" value="international"><b>Internationally trained provider</b><span>Non-US training</span></label>
+    </div>
+  </section>
 
-    <div class="lane"><div class="persona"><b>Physician, psychiatrist, NP, PA</b><span>Prescribing / medical</span></div><div class="cell ok"><strong>Diagnostic Clinician possible if license allows diagnosis.</strong><p>Practitioner possible only if license scope allows counseling, mental-health therapy, or behavioral-health therapy.</p></div><div class="cell ok"><strong>NM module and role training.</strong><p>Medical clearance, diagnosis, benefit-risk evaluation, medication evaluation.</p></div><div class="cell ok"><strong>Role curriculum.</strong><p>Diagnostic Clinician curriculum plus test; Practitioner curriculum if pursuing therapy role.</p></div><div class="cell open"><strong>For Practitioner: 120 hours is open.</strong><p>All practicum hours at an approved Healing Center is in the draft.</p></div><div class="cell ok"><strong>10 hours after graduation and practicum.</strong></div><div class="cell ns"><strong>Testing-out exists in rules-style draft.</strong><p>Persona-specific use is not specified yet.</p></div><div class="cell open"><strong>Diagnostic Clinician: NM Controlled Substance number is open.</strong><p>Risk-benefit evaluation appears in curriculum wording.</p></div><div class="cell ok"><strong>Apply, receive, maintain NMDOH permit.</strong></div><div class="cell ok"><strong>Continuing education.</strong><p>8 hours for Diagnostic Clinicians; 20 hours for Practitioners / Facilitators.</p></div></div>
+  <section class="story">
+    <aside class="role-stack" aria-label="Role doors">
+      <div class="role-card diagnostic">
+        <h3>Door A · Diagnostic Clinician</h3>
+        <p>For a person whose New Mexico license allows diagnosing a qualifying condition. The CS-number gate is open.</p>
+        <div class="route-tag"><span class="badge open"><span class="dot"></span>CS number open</span></div>
+      </div>
+      <div class="role-card practitioner">
+        <h3>Door B · Practitioner</h3>
+        <p>For a licensed healthcare professional whose New Mexico license allows counseling, mental-health therapy, or behavioral-health therapy.</p>
+        <div class="route-tag"><span class="badge open"><span class="dot"></span>120-hour practicum open</span></div>
+      </div>
+      <div class="role-card facilitator">
+        <h3>Door C · Facilitator</h3>
+        <p>For a person who completes department-approved training to assist practitioners during administration sessions.</p>
+        <div class="route-tag"><span class="badge open"><span class="dot"></span>100-hour practicum open</span></div>
+      </div>
+    </aside>
 
-    <div class="lane"><div class="persona"><b>Psychologist, LCSW, LPCC, LMFT</b><span>Licensed behavioral health</span></div><div class="cell ok"><strong>Practitioner route is the clearest fit.</strong><p>License must allow counseling, mental-health therapy, or behavioral-health therapy.</p></div><div class="cell ok"><strong>BLS, CPR, first aid, medical monitoring.</strong></div><div class="cell ok"><strong>NM module, basic module, simulated patient module.</strong></div><div class="cell open"><strong>120 hours for Practitioner is open.</strong><p>Includes 20 supervisory hours that are challenged.</p></div><div class="cell ok"><strong>10 mentoring hours.</strong></div><div class="cell ns"><strong>Testing-out route not tied to this persona yet.</strong></div><div class="cell prop"><strong>20 supervisory hours challenged.</strong><p>Raised as opt-in / liability concern, not agreed.</p></div><div class="cell ok"><strong>NMDOH Practitioner permit.</strong></div><div class="cell ok"><strong>20 hours continuing education.</strong></div></div>
+    <div>
+      <div class="map" aria-label="Three role pathways">
+        <article class="pathway diagnostic">
+          <h2>Diagnostic Clinician road</h2>
+          <p class="who">Purpose: certify a patient's qualifying condition for the program.</p>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><b>Entry credential</b><p>Current, valid New Mexico license from a recognized board that allows diagnosis within scope.</p><div class="src">6/12 recommendation, p. 1</div></div>
+            <div class="step open"><span class="num">2</span><b>New Mexico Controlled Substance number</b><p>Written in the recommendation draft, carved out by the 6/26 motion.</p><div class="src">Open July 9</div></div>
+            <div class="step"><span class="num">3</span><b>Diagnostic Clinician curriculum</b><p>New Mexico module, pharmacokinetics, role responsibilities, diagnosis, benefit-risk, medication evaluation, medical monitoring, research evaluation, test.</p></div>
+            <div class="step notset"><span class="num">4</span><b>No practicum stated for this role</b><p>The provided draft text does not list Diagnostic Clinician practicum or mentoring.</p></div>
+            <div class="step"><span class="num">5</span><b>NMDOH permit</b><p>Apply, receive, and maintain a Diagnostic Clinician permit.</p></div>
+            <div class="step"><span class="num">6</span><b>Continuing education</b><p>8 hours of psychedelic-medicine or therapy continuing medical education every two years.</p></div>
+          </div>
+        </article>
 
-    <div class="lane"><div class="persona"><b>RN, pharmacist, naturopathic doctor, LMT or allied, other NM-licensed health</b><span>Other NM-licensed health</span></div><div class="cell ok"><strong>Route depends on license scope.</strong><p>Practitioner needs therapy scope; Diagnostic Clinician needs diagnosis scope; Facilitator has no license gate in the draft.</p></div><div class="cell ok"><strong>Same role background as chosen role.</strong></div><div class="cell ok"><strong>Approved educational program.</strong></div><div class="cell open"><strong>100 Facilitator / 120 Practitioner open.</strong></div><div class="cell ok"><strong>10 hours if Practitioner or Facilitator student.</strong></div><div class="cell ns"><strong>Not specified yet by persona.</strong></div><div class="cell open"><strong>Dead end where license scope does not match role gate.</strong><p>Diagnostic Clinician CS number remains open.</p></div><div class="cell ok"><strong>Permit for eligible role.</strong></div><div class="cell ok"><strong>Continuing education for permitted role.</strong></div></div>
+        <article class="pathway practitioner">
+          <h2>Practitioner road</h2>
+          <p class="who">Purpose: provide integrative therapy and supervise facilitators / sessions.</p>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><b>Entry credential</b><p>Current, valid New Mexico license from a recognized board that allows counseling, mental-health therapy, or behavioral-health therapy within scope.</p><div class="src">6/12 recommendation, p. 1</div></div>
+            <div class="step"><span class="num">2</span><b>Practitioner curriculum</b><p>New Mexico module, BLS / CPR / first aid, medical monitoring, psychedelic emergencies, simulated patient module, test.</p></div>
+            <div class="step open"><span class="num">3</span><b>Practicum: 120 hours</b><p>Draft says 80 administration / same-day therapy hours, 20 preparation / integration hours, plus 20 hours supervising facilitators. The practicum requirement was carved out.</p></div>
+            <div class="step proposed"><span class="num">4</span><b>20 supervisory hours challenged</b><p>The draft makes them part of Practitioner practicum. Public comment raised an optional-supervisor model; no agreement in source text.</p></div>
+            <div class="step"><span class="num">5</span><b>Mentoring</b><p>Educational programs provide 10 hours after graduation and practicum completion.</p></div>
+            <div class="step"><span class="num">6</span><b>NMDOH permit</b><p>Apply, receive, and maintain a Practitioner permit.</p></div>
+            <div class="step"><span class="num">7</span><b>Continuing education</b><p>20 hours every two years plus current BLS / CPR / basic first aid.</p></div>
+          </div>
+        </article>
 
-    <div class="lane"><div class="persona"><b>Unlicensed community member, peer supporter, chaplain / hospice / spiritual care, Indigenous or traditional healer</b><span>Non-clinical / community</span></div><div class="cell ok"><strong>Facilitator route exists.</strong><p>Practitioner and Diagnostic Clinician routes hit license dead ends in the draft.</p><span class="route">Facilitator path</span></div><div class="cell ok"><strong>NM module and facilitator curriculum.</strong><p>Cultural competency includes non-Western and traditional models.</p></div><div class="cell ok"><strong>Approved Facilitator education.</strong></div><div class="cell open"><strong>100 Facilitator hours open.</strong><p>All practicum hours at approved Healing Center.</p></div><div class="cell ok"><strong>10 hours mentoring.</strong></div><div class="cell ns"><strong>Testing-out not specified yet.</strong></div><div class="cell dead"><strong>No draft license route to Practitioner or Diagnostic Clinician.</strong></div><div class="cell ok"><strong>NMDOH Facilitator permit.</strong></div><div class="cell ok"><strong>20 hours continuing education.</strong></div></div>
+        <article class="pathway facilitator">
+          <h2>Facilitator road</h2>
+          <p class="who">Purpose: assist practitioners during administration sessions.</p>
+          <div class="steps">
+            <div class="step"><span class="num">1</span><b>Entry credential</b><p>No prior clinical license is specified in the provided draft text.</p><div class="src">6/12 recommendation, pp. 1-2</div></div>
+            <div class="step"><span class="num">2</span><b>Facilitator education</b><p>Complete department-approved training and education.</p></div>
+            <div class="step open"><span class="num">3</span><b>Practicum: 100 hours</b><p>Same practicum framework as above, at an approved Healing Center. The practicum requirement was carved out.</p></div>
+            <div class="step"><span class="num">4</span><b>Mentoring</b><p>Educational programs provide 10 hours after graduation and practicum completion.</p></div>
+            <div class="step"><span class="num">5</span><b>NMDOH permit</b><p>Apply, receive, and maintain a Facilitator permit.</p></div>
+            <div class="step"><span class="num">6</span><b>Continuing education</b><p>20 hours every two years plus current BLS / CPR / basic first aid.</p></div>
+          </div>
+        </article>
+      </div>
 
-    <div class="lane"><div class="persona"><b>Resident with out-of-state credential</b><span>Trained elsewhere</span></div><div class="cell ok"><strong>Reciprocity lane for Practitioner or Facilitator.</strong><p>Must have government-approved psilocybin education verified by the department.</p></div><div class="cell ok"><strong>Complete New Mexico Module.</strong></div><div class="cell ok"><strong>Document prior approved program.</strong></div><div class="cell open"><strong>Reduced practicum timeline open.</strong><p>Dec. 31, 2026 and Dec. 31, 2027 dates are open.</p></div><div class="cell ns"><strong>Mentoring in reciprocity not specified yet.</strong></div><div class="cell open"><strong>Prior practicum may count if verified.</strong><p>40 contact-hour exception is tied to the 2026 date.</p></div><div class="cell open"><strong>Practitioner reciprocity still lists 20 NM supervisory hours.</strong></div><div class="cell ok"><strong>NMDOH reciprocal permit route.</strong></div><div class="cell ok"><strong>Continuing education for permitted role.</strong></div></div>
+      <div class="persona-note" id="persona-note">
+        <h2>Selected path: Non-clinical / community</h2>
+        <p>The Facilitator door is the route shown in the drafts. Practitioner and Diagnostic Clinician both require New Mexico license scopes not shown for this persona.</p>
+        <ul>
+          <li><b>Open door</b>Facilitator.</li>
+          <li><b>Dead end in these drafts</b>Practitioner and Diagnostic Clinician license gates.</li>
+          <li><b>Still open</b>100 practicum hours.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <div class="lane"><div class="persona"><b>Internationally trained provider</b><span>Trained elsewhere, non-US</span></div><div class="cell ns"><strong>Not specified yet.</strong><p>The draft reciprocity text refers to other governmental approved programs; non-US handling is not detailed.</p></div><div class="cell ns"><strong>Not specified yet.</strong></div><div class="cell ns"><strong>Not specified yet.</strong></div><div class="cell ns"><strong>Not specified yet.</strong></div><div class="cell ns"><strong>Not specified yet.</strong></div><div class="cell ns"><strong>Not specified yet.</strong></div><div class="cell dead"><strong>No clear route in the provided drafts.</strong></div><div class="cell ns"><strong>Not specified yet.</strong></div><div class="cell ns"><strong>Not specified yet.</strong></div></div>
-  </div></div>
-</section>
+  <section class="rails" aria-label="Side rails and unresolved items">
+    <article class="rail recip open-rail">
+      <h2>Reciprocity lane</h2>
+      <p>For Practitioner or Facilitator applicants trained in another government-approved psilocybin program.</p>
+      <ul>
+        <li>Provide documentation of the outside program.</li>
+        <li>Complete the New Mexico module.</li>
+        <li>Show required practicum or verified equivalent practice.</li>
+        <li><b>Open:</b> Dec. 31, 2026 reduced-practicum date and Dec. 31, 2027 waiver authority date.</li>
+      </ul>
+    </article>
+    <article class="rail prop-rail">
+      <h2>Supervisor / instructor area</h2>
+      <p>This is not a defined permit in the provided draft text. It is an unsettled discussion area around who can supervise practicum or teach.</p>
+      <ul>
+        <li><b>Proposed:</b> practicum instructor experience with about 40 unique patients.</li>
+        <li><b>Open verification:</b> educational-program faculty 40 individual patients.</li>
+      </ul>
+    </article>
+    <article class="rail set-rail">
+      <h2>Support roles</h2>
+      <p>Healing Centers and Educational Programs support the road rather than create a separate provider permit path in this map.</p>
+      <ul>
+        <li>Practicum hours take place at an approved Healing Center.</li>
+        <li>Educational Programs deliver curriculum, records, mentoring, and test-out options.</li>
+      </ul>
+    </article>
+  </section>
 
-<section class="notegrid">
-  <div class="card note keyline"><h2>Open or unsettled markers</h2><ul><li>Diagnostic Clinician New Mexico Controlled Substance number: <b>Open</b>.</li><li>Practicum hours, 100 Facilitator / 120 Practitioner: <b>Open</b>.</li><li>Reciprocity dates, Dec. 31, 2026 / Dec. 31, 2027: <b>Open</b>.</li><li>Practitioner 20 supervisory hours: <b>Challenged</b>.</li><li>Practicum-instructor 40 unique patients: <b>Proposed</b>.</li><li>Educational-program faculty 40 individual patients: verification <b>Open</b>.</li></ul></div>
-  <div class="card note"><h2>Supporting roles</h2><ul><li><b>Healing Center staff or operator:</b> practicum must occur at an approved Healing Center; operator/staff pathway details are not specified here.</li><li><b>Educational Program faculty:</b> draft requires at least two faculty with current Practitioner or Facilitator permits; 40-patient verification is open.</li></ul></div>
-  <div class="card note"><h2>Trace to sources</h2><ul><li>6/12 recommendation: role qualifications, curricula, practicum, mentoring, continuing education.</li><li>6/25 rules-style draft: reciprocity, testing-out / prior experience, applications, education-program rules.</li><li>6/26 motion: adopted package minus controlled-substance number, practicum requirement, and reciprocal timeline.</li></ul></div>
-</section>
-</main></body></html>
+  <section class="sources">
+    <article class="source-card">
+      <h2>Traceable source anchors</h2>
+      <ol>
+        <li><code>source-text/raw-pdf-extraction.txt</code>: 6/12 role qualifications, curriculum, practicum, mentoring, continuing education.</li>
+        <li><code>source-text/raw-pdf-extraction.txt</code>: 6/25 reciprocity, testing-out, education-program application rules, permit application rules.</li>
+        <li><code>analysis/6-26-board-extraction.md</code>: 6/26 motion adopting the package minus three tabled items.</li>
+        <li><code>analysis/6-25-hearing-extraction.md</code>: public-comment anchors for challenged supervisory hours and instructor / faculty experience.</li>
+      </ol>
+    </article>
+    <article class="source-card">
+      <h2>Open-item checklist shown on the map</h2>
+      <ol>
+        <li>Controlled-substance number for Diagnostic Clinician.</li>
+        <li>Practicum hours: 100 Facilitator / 120 Practitioner.</li>
+        <li>Reciprocity dates: Dec. 31, 2026 and Dec. 31, 2027.</li>
+        <li>Practicum-instructor 40 unique patients.</li>
+        <li>Practitioner 20 supervisory hours.</li>
+        <li>Educational-program faculty 40 individual patients, verification open.</li>
+      </ol>
+    </article>
+  </section>
+</main>
+<script>
+  const notes = {
+    medical: {
+      title: 'Selected path: Prescribing / medical',
+      body: 'The Diagnostic Clinician door opens when the New Mexico license allows diagnosis. Practitioner only opens when that same person also has a license scope for counseling, mental-health therapy, or behavioral-health therapy.',
+      items: ['Open door: Diagnostic Clinician when diagnosis is in scope.', 'Possible only by scope: Practitioner.', 'Still open: New Mexico Controlled Substance number.']
+    },
+    behavioral: {
+      title: 'Selected path: Licensed behavioral health',
+      body: 'The Practitioner door is the direct road for licenses that allow counseling, mental-health therapy, or behavioral-health therapy. Diagnostic Clinician depends on diagnosis authority and the open CS-number gate.',
+      items: ['Open door: Practitioner.', 'Depends on scope: Diagnostic Clinician.', 'Still open: 120 practicum hours and 20 supervisory hours.']
+    },
+    other: {
+      title: 'Selected path: Other NM-licensed health',
+      body: 'The draft uses license scope, not job title. A person in this group follows the role that their New Mexico license legally supports. If the scope does not match a role gate, that role stops there.',
+      items: ['Possible by scope: Diagnostic Clinician or Practitioner.', 'Always visible route in draft: Facilitator.', 'Still open: practicum and CS-number gates where relevant.']
+    },
+    community: {
+      title: 'Selected path: Non-clinical / community',
+      body: 'The Facilitator door is the route shown in the drafts. Practitioner and Diagnostic Clinician both require New Mexico license scopes not shown for this persona.',
+      items: ['Open door: Facilitator.', 'Dead end in these drafts: Practitioner and Diagnostic Clinician license gates.', 'Still open: 100 practicum hours.']
+    },
+    outstate: {
+      title: 'Selected path: Out-of-state credential',
+      body: 'The reciprocity lane is the special road for Practitioner or Facilitator applicants trained in another government-approved psilocybin program. The dates are open.',
+      items: ['Open lane: Reciprocity for Practitioner or Facilitator.', 'Needed: NM module and documentation.', 'Still open: Dec. 31, 2026 / Dec. 31, 2027 timeline.']
+    },
+    international: {
+      title: 'Selected path: Internationally trained provider',
+      body: 'The provided drafts do not spell out a clear non-US pathway. The June 26 notes mention apostille and English translation as a verbal agreement, but the source drafts do not yet give a full road.',
+      items: ['Draft status: not specified yet.', 'Potential overlap: reciprocity if a governmental approval route is defined.', 'Visible result: no complete route in these sources.']
+    }
+  };
+  const page = document.getElementById('page');
+  const note = document.getElementById('persona-note');
+  function render(value){
+    page.dataset.focus = value;
+    const n = notes[value];
+    note.innerHTML = `<h2>${n.title}</h2><p>${n.body}</p><ul>${n.items.map(item => {
+      const [head, rest] = item.split(': ');
+      return `<li><b>${head}</b>${rest || ''}</li>`;
+    }).join('')}</ul>`;
+  }
+  document.querySelectorAll('input[name="persona"]').forEach(input => input.addEventListener('change', e => render(e.target.value)));
+</script>
+</body>
+</html>
