@@ -8,7 +8,7 @@ Goal: let anyone — including people who do not follow the legislative process 
 
 ```
 Training and Education/
-├── site/
+├── docs/                     ← served by GitHub Pages from this folder
 │   ├── index.html            ← the website (open this). Self-contained, GitHub-Pages ready.
 │   └── archive/              ← earlier two-document version (superseded)
 ├── Document Register/        ← the two source draft PDFs
@@ -38,6 +38,6 @@ The board adopted the rest of the training framework 3–2 on June 26 and carved
 
 ## Publishing
 
-`site/index.html` is fully self-contained (inline CSS/JS, no external requests). For GitHub Pages, serve `site/` or move `index.html` to the repo root.
+`docs/index.html` is fully self-contained (inline CSS/JS, no external requests). GitHub Pages serves the `docs/` folder at the site root, so the bare Pages URL loads the site.
 
 Nothing in this repository is final, promulgated rule text.
