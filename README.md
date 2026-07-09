@@ -1,43 +1,43 @@
-# NMMPAB Rules Draft Analysis — Training & Education
+# NMMPAB Rules Draft Analysis — Training and Education
 
-A neutral, plain-language community reference for the New Mexico Medical Psilocybin Advisory Board's **Training & Education** rulemaking, built for the **July 9, 2026** session.
+A neutral, plain-language community reference for the New Mexico Medical Psilocybin Advisory Board's **Training and Education** rulemaking.
 
-Goal: let anyone — including people who do not follow the legislative process — see **what is being decided, what is at stake, what the options are, who dissents, and what happens next.** No advocacy. Verbatim draft language and attributed quotes only.
+Goal: let anyone, including people who do not follow the legislative process, see what is being decided, what is at stake, what the options are, and what happened at each meeting. No advocacy. Verbatim draft language and attributed input only.
+
+**Live site:** https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/ (GitHub Pages serves the `docs/` folder).
 
 ## What's here
 
 ```
 Training and Education/
-├── docs/                     ← served by GitHub Pages from this folder
-│   ├── index.html            ← the website (open this). Self-contained, GitHub-Pages ready.
-│   └── archive/              ← earlier two-document version (superseded)
-├── Document Register/        ← the two source draft PDFs
-├── source-text/
-│   └── raw-pdf-extraction.txt ← verbatim text of both drafts (pypdf extraction)
-├── analysis/
-│   ├── 6-25-hearing-extraction.md   ← attributed quotes + deferrals, June 25
-│   ├── 6-26-board-extraction.md     ← motion, vote, quotes + deferrals, June 26
-│   └── meeting-inventory.md         ← every T&E meeting, IDs, DOH recordings
+├── docs/                     ← published by GitHub Pages
+│   ├── index.html            ← the three tabled items (flagship page)
+│   ├── pathways.html         ← provider routes
+│   ├── reference.html        ← who can qualify
+│   ├── documents/            ← source PDFs + the July 9 transcript (linked in-site)
+│   └── archive/              ← earlier superseded version
+├── Document Register/        ← original source draft PDFs
+├── source-text/              ← verbatim pypdf extraction
+├── analysis/                 ← attributed meeting extractions, SOURCES.md, inventory
+├── transcripts/              ← working copies of meeting transcripts
 ├── HANDOFF.md                ← full context for continuing this work (read first)
 └── README.md
 ```
 
-## The three decisions on July 9
+## Where things stand after July 9, 2026
 
-1. **Controlled-substance number** for the diagnostic clinician (the program's entry point).
-2. **Practicum hours** (100 facilitator / 120 practitioner; the 20 supervisory hours).
-3. **Reciprocity timeline** (the Dec 31 2026 / Dec 31 2027 sunset dates).
+On June 26 the board voted 3-2 to accept the committee's recommendation and set three items aside. On July 9 (a working session, no binding votes):
 
-The board adopted the rest of the training framework 3–2 on June 26 and carved these three out. July 9 is now posted as a **full board meeting**, so it can vote them in.
+1. **Reciprocity** — resolved by consensus: both waiver deadlines extended to **December 31, 2027**.
+2. **Practicum and didactic hours** — tabled and sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion.
+3. **Certifying clinician / controlled-substance number** — sent back to the department to weigh alternatives; the rename from "diagnostic clinician" to "certifying clinician" is confirmed.
+
+Next: full Advisory Board July 17, 9 AM; Training and Education Committee July 17, 1 PM.
 
 ## Sources
 
-- Draft language: the two PDFs in `Document Register/` (6/12 recommendation, 6/25 rules). Neither is final rule text.
-- Quotes: full transcripts of the June 25 hearing and June 26 board meeting.
-- Names corrected from garbled auto-transcripts: **Zurlo, Peskuski, Fatemi, Leeman**.
-
-## Publishing
-
-`docs/index.html` is fully self-contained (inline CSS/JS, no external requests). GitHub Pages serves the `docs/` folder at the site root, so the bare Pages URL loads the site.
+- Draft language: the source PDFs in `docs/documents/` (June 12 recommendation; July 9 board-meeting rules draft, 7.35.3). The June 25 draft is superseded. None is final rule text.
+- Meeting input: full transcripts of the June 25 and June 26 committee meetings and the July 9 board meeting.
+- Names corrected from garbled auto-transcripts: **Zurlo, Peskuski, Leeman, Dezbaá** (and Fatemi in earlier meetings).
 
 Nothing in this repository is final, promulgated rule text.
