@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The controlled-substance number: the certifying-clinician access point</title>
+<style>
+  :root{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
+    --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
+    --border:#E4E0EB; --border-strong:#D2CCDF;
+    --accent:#5A4A88; --accent-2:#7A67A8; --accent-soft:#EBE6F5;
+    --agree:#2C7A57; --dissent:#B23A48; --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
+    --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
+    --shadow-lg:0 2px 6px rgba(26,22,33,.06), 0 18px 44px rgba(26,22,33,.10);
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  body{margin:0; background:var(--bg);}
+  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.6; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased;}
+  .col{max-width:820px; margin:0 auto; padding:0 20px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.18;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
+
+  /* Top bar (site nav) */
+  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar .inner{max-width:820px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px;}
+  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
+  .tnav{display:flex; gap:4px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
+  .tnav a:hover{background:var(--surface-2); color:var(--text);}
+  .tnav a.on{color:var(--accent); background:var(--accent-soft);}
+  .tdrop{position:relative;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px;}
+  .tdrop>summary::-webkit-details-marker{display:none;}
+  .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
+  .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
+  .tdrop-menu{position:absolute; right:0; top:calc(100% + 6px); background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg); padding:6px; min-width:250px; display:flex; flex-direction:column; gap:2px; z-index:60;}
+  .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
+  .tdrop-menu a:hover{background:var(--surface-2);}
+  .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
+  .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
+  @media (max-width:680px){
+    .topbar .inner{position:relative;}
+    .hamburger{display:block;}
+    .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
+    .tnav.open{display:flex;}
+    .tnav a{padding:10px 8px;}
+    .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
+  }
+
+  /* Hero: title + a plain lede, no masthead box */
+  .hero{padding:36px 0 4px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+  h1{font-size:clamp(23px,3vw,32px); letter-spacing:-.008em; margin:0 0 4px; line-height:1.2;}
+  p.lede{font-size:17px; color:var(--text); margin:16px 0 0; line-height:1.62;}
+  p.lede b{font-weight:650;}
+
+  /* Section scaffolding (site style) */
+  section{padding-top:8px;}
+  .sec-head{margin:40px 0 2px; scroll-margin-top:62px;}
+  .sec-head .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  h2{font-size:clamp(19px,2.3vw,23px); letter-spacing:-.006em; margin:0;}
+  p.thesis{font-size:16.5px; color:var(--text); margin:14px 0 0; line-height:1.55; font-weight:600;}
+  p.thesis b{color:var(--accent);}
+  p.body{font-size:15.5px; color:var(--text); margin:13px 0 0; line-height:1.62;}
+  p.body b{font-weight:650;}
+  ul.body{margin:13px 0 0; padding-left:20px; font-size:15.5px; color:var(--text); line-height:1.6;}
+  ul.body li{margin:9px 0;}
+  ul.body li b{font-weight:650;}
+  .cite{font-size:13px; color:var(--text-muted); margin:12px 0 0; line-height:1.5;}
+  .cite b{color:var(--text);}
+
+  /* Statutory / verbatim quote */
+  blockquote.q2{margin:16px 0 0; padding:3px 0 3px 16px; border-left:3px solid var(--accent); font-family:var(--serif); font-size:17px; color:var(--text); line-height:1.5; font-style:italic;}
+  blockquote.q2 .c{display:block; font-family:var(--sans); font-style:normal; font-size:12.5px; color:var(--text-muted); margin-top:9px; line-height:1.5;}
+
+  /* Buried record */
+  details.rec{margin-top:16px; border:1px solid var(--border); border-radius:12px; background:var(--surface); overflow:hidden;}
+  details.rec>summary{cursor:pointer; padding:14px 18px; font-weight:600; font-size:15px; list-style:none; display:flex; align-items:center; gap:10px;}
+  details.rec>summary::-webkit-details-marker{display:none;}
+  details.rec>summary .chev{transition:transform .15s ease; color:var(--accent); font-size:13px;}
+  details.rec[open]>summary .chev{transform:rotate(90deg);}
+  details.rec>summary .ct{color:var(--text-muted); font-weight:500; font-size:13px; margin-left:auto;}
+  .rec-body{padding:2px 18px 18px;}
+  .ci{display:flex; flex-direction:column; gap:10px; margin-top:8px;}
+  .ci-entry{border:1px solid var(--border); border-radius:12px; background:var(--surface); padding:13px 16px; border-left:3px solid var(--border-strong);}
+  .ci-who{font-size:13px; color:var(--text-muted); margin-bottom:6px;}
+  .ci-who b{color:var(--text); font-weight:650;}
+  .ci-quote{margin:0; font-size:15px; line-height:1.5; font-style:italic;}
+
+  footer{margin-top:52px; border-top:1px solid var(--border); padding:24px 0 80px;}
+  footer h3{font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); margin:18px 0 8px;}
+  footer h3:first-child{margin-top:0;}
+  footer p{font-size:13px; color:var(--text-muted); line-height:1.55; margin:8px 0 0;}
+  footer p.meta{font-size:12px; color:var(--text-faint); margin-top:16px;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="inner">
+      <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
+      <nav class="tnav" id="tnav">
+        <a href="index.html">Tabled items</a>
+        <a href="pathways.html">Provider routes</a>
+        <a href="eligibility.html">Who can qualify</a>
+        <a href="hours.html">Training hours</a>
+        <a class="on" href="cs-number.html">The CS number</a>
+        <details class="tdrop">
+          <summary>Documents ▾</summary>
+          <div class="tdrop-menu">
+            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board draft (7.35.3)</span></a>
+            <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
+            <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
+          </div>
+        </details>
+      </nav>
+      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
+    </div>
+  </div>
+
+  <div class="col">
+
+    <header class="hero">
+      <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
+      <h1>The controlled-substance number: the certifying-clinician access point</h1>
+      <p class="lede">The draft rule (7.35.3) requires the &ldquo;certifying clinician&rdquo; who authorizes a patient&rsquo;s entry to hold a New Mexico controlled-substance number. On July 9, 2026, the Advisory Board declined to endorse that requirement and sent it back to the department, citing malpractice liability, rural access, and provider supply. No decision was made; the rename from &ldquo;diagnostic clinician&rdquo; to &ldquo;certifying clinician&rdquo; was confirmed. What follows is what the credential is, who can diagnose the qualifying conditions, what the statute requires, how other jurisdictions set the same access point, and what board members said, sourced throughout.</p>
+    </header>
+
+    <section id="what">
+      <div class="sec-head"><p class="k">1</p><h2>What a New Mexico controlled-substance number is</h2></div>
+      <p class="thesis">It is a state registration issued by the New Mexico Board of Pharmacy, separate from a federal DEA number. The draft rule requires the New Mexico number, not the federal one.</p>
+      <ul class="body">
+        <li><b>Created by</b> the New Mexico Controlled Substances Act (NMSA 1978, Sections 30-31-1 through 30-31-42) and Board of Pharmacy rule 16.19.20 NMAC.</li>
+        <li><b>Issued by</b> the New Mexico Board of Pharmacy, within the Regulation and Licensing Department.</li>
+        <li><b>Who may hold it:</b> only enumerated prescribing and administering license types. The Act&rsquo;s definition (Section 30-31-2(P)) lists physician, doctor of oriental medicine, dentist, physician assistant, certified nurse practitioner, clinical nurse specialist, certified nurse-midwife, prescribing psychologist, veterinarian, pharmacist and pharmacist clinician, and others &ldquo;licensed or certified to prescribe and administer drugs.&rdquo;</li>
+        <li><b>What it authorizes:</b> to administer, prescribe, or dispense controlled substances in New Mexico, within a &ldquo;valid practitioner-patient relationship&rdquo; as defined by the holder&rsquo;s own licensing board.</li>
+        <li><b>Versus a DEA number:</b> separate and stacked. The state application requires a current DEA registration and professional license (16.19.20.14(B) NMAC); the state number must be obtained before the DEA issues the federal one, and both precede enrollment in the state Prescription Monitoring Program.</li>
+      </ul>
+      <p class="cite">Verified. Sources: 16.19.20 NMAC; NMSA 30-31-2; New Mexico Board of Pharmacy practitioner application. The New Mexico / federal distinction was clarified on the record June 26.</p>
+    </section>
+
+    <section id="scope">
+      <div class="sec-head"><p class="k">2</p><h2>Who can diagnose the qualifying conditions, and who needs the number</h2></div>
+      <p class="thesis">Under New Mexico law, diagnosis and prescribing authority are <b>separate</b>. A licensed clinical social worker or a licensed psychologist can diagnose PTSD and depression without holding any controlled-substance number.</p>
+      <p class="body"><b>Social workers.</b> The Social Work Practice Act (Section 61-31-6) defines clinical social work practice to include &ldquo;the diagnosis, treatment and prevention of psychosocial dysfunction, disability or impairment, including but not limited to emotional and mental disorders,&rdquo; and defines clinical social work services as &ldquo;assessment, diagnosis and treatment, including psychotherapy and counseling.&rdquo; The section says nothing about a controlled-substance registration or prescribing authority. LCSWs have no prescriptive authority in New Mexico.</p>
+      <p class="body"><b>Psychologists.</b> An ordinary licensed psychologist may diagnose and treat mental disorders but cannot prescribe. New Mexico separately created a &ldquo;prescribing psychologist&rdquo; designation and a &ldquo;conditional prescription certificate&rdquo;; that subset may &ldquo;administer and prescribe psychotropic medication&rdquo; and &ldquo;must comply with all other state and federal laws regulating the administering and prescribing of controlled substances.&rdquo; A psychologist without that certificate can diagnose but cannot hold a controlled-substance number as a prescriber.</p>
+      <p class="body"><b>The effect.</b> Diagnosing a qualifying condition sits within the scope of several non-prescribing license types; holding a controlled-substance number is limited to the prescribing license types in section 1. So the requirement narrows the certifying pool from &ldquo;those who can diagnose the condition&rdquo; to &ldquo;the subset who can also prescribe controlled substances.&rdquo; Whether the department&rsquo;s final rule will accept a non-prescribing provider as a certifying clinician is a rulemaking question still open.</p>
+      <p class="cite">Verified. Sources: NMSA 61-31-6; NMSA 61-9-17.2.</p>
+    </section>
+
+    <section id="act">
+      <div class="sec-head"><p class="k">3</p><h2>What the Medical Psilocybin Act requires</h2></div>
+      <p class="thesis">Entry is <b>not based on a diagnosis alone</b>. The Act sets a two-part test: a diagnosed qualifying condition and a separate clinician judgment of medical appropriateness. Its definition of &ldquo;clinician&rdquo; names no license type and requires no controlled-substance number.</p>
+      <p class="body">The program was created by Senate Bill 219, the Medical Psilocybin Act, signed April 2025 and effective June 20, 2025. Its qualifying conditions are major treatment-resistant depression, post-traumatic stress disorder, substance use disorders, end-of-life care, and other conditions the department approves.</p>
+      <blockquote class="q2">&ldquo;qualified patient&rdquo; means a patient whose clinician has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition.<span class="c">SB 219, Section 3. The verb &ldquo;has judged,&rdquo; with &ldquo;medically appropriate candidate,&rdquo; denotes a clinical judgment layered on top of the diagnosis; diagnosis is necessary but not sufficient.</span></blockquote>
+      <blockquote class="q2">&ldquo;clinician&rdquo; means an approved health care provider licensed in New Mexico who holds a permit from the department to provide medical services to qualified patients.<span class="c">SB 219, Section 3. No controlled-substance number and no specific license type appears. Clinician qualifications are delegated to department rulemaking, where draft rule 7.35.3 and the term &ldquo;certifying clinician&rdquo; live.</span></blockquote>
+      <p class="body"><b>Scheduling.</b> SB 219 did not move psilocybin to a lower schedule. It kept psilocybin and psilocin in Schedule I and added a medical-use carve-out: each entry now reads &ldquo;except as provided otherwise in the Controlled Substances Act and the Medical Psilocybin Act,&rdquo; and a new subsection provides that &ldquo;the enumeration of psilocybin and psilocin in this schedule does not apply to their medical use as provided in the Medical Psilocybin Act.&rdquo; The enacted title states the amendment is to &ldquo;remove psilocybin and psilocin from the schedule for purposes of qualified medical treatment.&rdquo;</p>
+      <p class="cite">Confirmed against the enacted text. Source: SB 219, Section 30-31-6 amendment.</p>
+    </section>
+
+    <section id="proxy">
+      <div class="sec-head"><p class="k">4</p><h2>What the number does, and does not do, at this access point</h2></div>
+      <p class="thesis">New Mexico&rsquo;s registration requirement turns on <b>the act a person performs</b>, not on a drug&rsquo;s schedule number.</p>
+      <blockquote class="q2">A person who manufactures, distributes or dispenses a controlled substance or who proposes to engage in the manufacture, distribution or dispensing of a controlled substance shall obtain a registration issued by the board in accordance with its regulations.<span class="c">NMSA 1978, Section 30-31-12(A). &ldquo;The board&rdquo; is the Board of Pharmacy. The trigger is the regulated act, not the schedule number.</span></blockquote>
+      <p class="body">Two facts set the frame. First, SB 219 uses &ldquo;administering&rdquo; and &ldquo;recommending,&rdquo; never &ldquo;prescribe,&rdquo; for psilocybin: it protects a clinician &ldquo;administering&hellip; psilocybin&rdquo; and one &ldquo;recommending the program.&rdquo; Second, psilocybin remains a Schedule I substance under federal law, which cannot be prescribed at all (21 U.S.C. Section 829), and an ordinary DEA registration cannot authorize handling it. A certifying clinician who holds a controlled-substance number holds it for their other practice; the number is not, and cannot be, exercised on the psilocybin.</p>
+      <p class="body">The department&rsquo;s stated reason and the statutory structure both belong on the record:</p>
+      <ul class="body">
+        <li><b>The department&rsquo;s stated purpose (July 9):</b> licenses can diagnose some conditions (&ldquo;a social worker can diagnose&hellip; PTSD and depression&rdquo;), &ldquo;but the main reason for the controlled substance number is because it is a treatment that is occurring with a medication&hellip; that is part of what ensures that there is that medical evaluation, that medical certification.&rdquo;</li>
+        <li><b>The structural reading:</b> under Section 30-31-12, registration attaches to manufacturing, distributing, or dispensing, none of which the certifying clinician does to the psilocybin. So the number operates as a credential (a marker of prescriber-grade licensure), not as an authorization used on the drug. New Mexico&rsquo;s medical-cannabis program has the same shape: providers &ldquo;certify&rdquo; or &ldquo;recommend&rdquo; rather than prescribe cannabis, and no controlled-substance number is used on the cannabis, because cannabis is federal Schedule I.</li>
+      </ul>
+      <p class="body">Both statements are facts. Which should govern is the question the board sent back to the department.</p>
+      <p class="cite">Sources: NMSA 30-31-12; SB 219 Sections 3 and 5; 21 U.S.C. 829; July 9 transcript.</p>
+    </section>
+
+    <section id="states">
+      <div class="sec-head"><p class="k">5</p><h2>How other jurisdictions set the same access point</h2></div>
+      <p class="thesis">None of the three comparators gates access through a clinician who holds prescribing authority. Oregon and Colorado require <b>no diagnosis or qualifying condition</b>; Washington, D.C. medical cannabis lets adults <b>self-certify</b>. New Mexico&rsquo;s clinician-gated model is the most restrictive of the four.</p>
+      <p class="body"><b>Oregon</b> (Measure 109 / ORS 475A). The Oregon Health Authority states: &ldquo;To access psilocybin services, an individual must be 21 years of age or older&rdquo; and &ldquo;A prescription or medical referral is not required.&rdquo; Safety contraindications can disqualify a client during preparation, but that is a disqualifier, not an affirmative diagnosis requirement.</p>
+      <p class="body"><b>Colorado</b> (Proposition 122 / SB23-290). The implementing law contains no diagnosis, qualifying-condition, or physician-gatekeeper requirement; access is gated by age (21 and older), and the model runs through licensed facilitators and healing centers, not a prescriber. This finding rests partly on the law&rsquo;s silence, corroborated by secondary legal analysis; rated medium confidence.</p>
+      <p class="body"><b>Washington, D.C.</b> (medical cannabis). D.C. Code Section 7-1671.05 and D.C. Law 24-187 let adults 21 and older &ldquo;self-certify&hellip; on a form provided by [the regulator] that they are utilizing cannabis for medical purposes,&rdquo; replacing the prior requirement of a signed practitioner recommendation. Minors still require a recommendation; the permanent authority is D.C. Law 24-332 and the agency is now ABCA.</p>
+      <p class="cite">Verified. Sources: oregon.gov OHA; leg.colorado.gov SB23-290; code.dccouncil.gov.</p>
+    </section>
+
+    <section id="alt">
+      <div class="sec-head"><p class="k">6</p><h2>Consultation and telemedicine precedents</h2></div>
+      <p class="thesis">Two alternatives were floated July 9: a consultation model and a behavioral-health-plus-telemedicine referral. Federal controlled-substance law already recognizes both one clinician relying on another&rsquo;s evaluation and telemedicine prescribing without a prior in-person visit. These are precedents, not endorsements, and they concern prescribing, which differs from certifying a patient for entry.</p>
+      <ul class="body">
+        <li><b>Covering-practitioner exception.</b> The Ryan Haight Act generally requires one in-person evaluation before remotely prescribing a controlled substance, but permits a practitioner to evaluate a patient by telemedicine &ldquo;at the request of a practitioner who&hellip; has conducted at least 1 in-person medical evaluation of the patient&hellip; within the previous 24 months.&rdquo; It also exempts federal systems (Indian Health Service, Department of Veterans Affairs).</li>
+        <li><b>Current flexibility.</b> The DEA and HHS extended COVID-era flexibilities a fourth time, effective through December 31, 2026, letting a DEA-registered practitioner prescribe Schedule II&ndash;V controlled substances via telemedicine &ldquo;without having conducted an in-person medical evaluation,&rdquo; provided the prescription is for a legitimate medical purpose in the usual course of practice.</li>
+        <li><b>Proposed permanent rule.</b> The DEA has proposed a &ldquo;special registration&rdquo; that would let a patient receive prescribed controlled medications through telemedicine &ldquo;without ever having an in-person medical evaluation,&rdquo; covering Schedule III&ndash;V, with a narrower Schedule II track for specified board-certified specialties. Proposed, not final.</li>
+      </ul>
+      <p class="cite">Extracted from primary sources; not put through the same fact-check as sections 1&ndash;5. Sources: APA Ryan Haight toolkit; Federal Register fourth extension; DEA rulemaking.</p>
+    </section>
+
+    <section id="liability">
+      <div class="sec-head"><p class="k">7</p><h2>Liability for certifying a patient one will not treat</h2></div>
+      <p class="thesis">This was the concern that dominated July 9. The general framework: a clinician&rsquo;s <b>formal decision</b> that a patient foreseeably relies on can create a duty even without hands-on treatment, while informal advice is treated differently. The controlling illustrations are out-of-state case law, used here only to describe the framework, not as New Mexico authority.</p>
+      <p class="body"><b>The general rule:</b> &ldquo;Generally, a physician owes no duty to a patient without a physician-patient relationship. Without a physician-patient relationship, with no duty owed, there is no liability for &lsquo;breach&rsquo; of that nonexistent duty.&rdquo;</p>
+      <p class="body"><b>The exception that applies here:</b> in <i>Warren v. Dinter</i> (Minnesota), the court held that &ldquo;a duty arises between a physician and an identified third party when the physician provides medical advice and it is foreseeable that the third party will rely on that advice.&rdquo; A physician who never examined the patient faced liability for a decision the patient relied on. The court distinguished a &ldquo;formal medical decision&rdquo; from informal &ldquo;curbside&rdquo; advice.</p>
+      <p class="body">This describes why a certifying-clinician role can carry liability exposure. It does not quantify New Mexico exposure, and no New Mexico certifying-clinician liability authority was located. Whether a psilocybin certification is a &ldquo;formal medical decision&rdquo; of the kind that attaches a duty is an unlitigated question.</p>
+      <p class="cite">Illustrative, out-of-state and secondary. Sources: National Legal Research Group; Medical Economics on Warren v. Dinter (Minnesota).</p>
+    </section>
+
+    <section id="access">
+      <div class="sec-head"><p class="k">8</p><h2>New Mexico rural access and prescriber supply</h2></div>
+      <p class="thesis">The prescriber-eligible clinicians are the scarcest category and the most concentrated outside rural counties. The non-prescribing clinicians who can diagnose the qualifying conditions are far more available rurally.</p>
+      <ul class="body">
+        <li>27 of New Mexico&rsquo;s 33 counties are designated, in whole or in part, as health professional shortage areas; almost all counties are a shortage area for mental health.</li>
+        <li>Ten frontier counties, with 27,000 Medicaid managed-care enrollees combined, have no behavioral-health prescribers at all. Nineteen of the 33 counties have fewer than two licensed behavioral-health providers per 1,000 enrollees, all rural or frontier.</li>
+        <li>Rural New Mexico had 40 psychiatrists (5.6 per 100,000) against 306 (21.6 per 100,000) in urban counties; multiple rural counties had zero. Rural social workers, who can diagnose but not prescribe, numbered 997 (140.0 per 100,000), about 25 times the rural psychiatrist rate.</li>
+        <li>Only 29 percent of licensed behavioral-health providers are in rural and frontier counties, where nearly half of Medicaid managed-care enrollees live.</li>
+      </ul>
+      <p class="cite">Extracted; not put through the same fact-check as sections 1&ndash;5. Sources: HHS OIG OEI-02-17-00490; University of Washington Rural Health Research Center (June 2025); Commonwealth Fund via NM In Depth.</p>
+    </section>
+
+    <section id="record">
+      <div class="sec-head"><p class="k">The record</p><h2>The July 9 discussion, verbatim by speaker</h2></div>
+      <p class="body">The board did not endorse the requirement and sent it back to the department. No vote was taken. Ian Dunn will take it back to the department to reconsider.</p>
+      <details class="rec">
+        <summary><span class="chev">▸</span> Positions stated on the certifying clinician and the controlled-substance number <span class="ct">unofficial July 9 transcript</span></summary>
+        <div class="rec-body">
+          <div class="ci">
+            <div class="ci-entry"><p class="ci-who">Department presentation &middot; <b>Dominic Zurlo</b> and reader</p><p class="ci-quote">&ldquo;Licenses have the ability to be able to diagnose some of the conditions. And yes, that is true. For example, a social worker can diagnose with regard to PTSD and depression, for example. But the main reason for the controlled substance number is because it is a treatment that is occurring with a medication&hellip; with it being a medical program, that is part of what ensures that there is that medical evaluation, that medical certification.&rdquo;</p></div>
+            <div class="ci-entry"><p class="ci-who"><b>Chris Peskuski</b> &middot; board member</p><p class="ci-quote">&ldquo;I&rsquo;m concerned that putting the access point through a doctor is going to make it very risky for clinicians to certify anybody into this program because they&rsquo;re going to be subject to malpractice. I believe all the liability should lie in the room where the patient&rsquo;s being treated&hellip; Why would a clinician sign off on a patient when he&rsquo;s not gonna be necessarily in the room when all of that happens? My wife hasn&rsquo;t been able to get a primary care practitioner for over a year now and we live in Albuquerque&hellip; The access outside of Bernalillo County is going to be unattainable. I would recommend that we look towards a model of consultation&hellip; where the practitioners are required to consult&hellip; to determine medical readiness&hellip; and allows for continuity of care for practitioners to work with doctors that are already treating patients. And I think it solves a lot of these issues of liability and accessibility.&rdquo;</p></div>
+            <div class="ci-entry"><p class="ci-who"><b>Dan Jennings</b> &middot; board member</p><p class="ci-quote">&ldquo;From rural area, my big concern&hellip; is that I would have to find this person who is a doctor, who has a CS, who has gone through the program, and I physically have to travel to them&hellip; it won&rsquo;t be here. And I could not do it via tele. The only time I could is if I get recertified&hellip; if you&rsquo;re a patient that is an end-of-life, that means that end-of-life patient must go to that physician&hellip; if my mom who died of cancer would need to get this, she would physically not be able to be in this program.&rdquo;</p></div>
+            <div class="ci-entry"><p class="ci-who"><b>Ian Dunn</b> &middot; chair</p><p class="ci-quote">&ldquo;One of the models I was comparing it to was the Washington DC medical cannabis model which allows you to self-certify. So what if we could provide them with a list of contraindications, say, &lsquo;Hey, you got any of this?&rsquo; If they say no, then we can move them on&hellip; existential distress associated with a life limiting illness&hellip; That&rsquo;s not in the DSM-5. That doesn&rsquo;t need to be vetted by someone with diagnostic authority. I could self-certify.&rdquo;</p></div>
+            <div class="ci-entry"><p class="ci-who"><b>Brenda Burgard</b> &middot; board member</p><p class="ci-quote">&ldquo;This whole week was me trying to find doctors and psychiatrists for my patients currently. For example, for Adderall, the hoops that people have to jump through just to get the medical clearance and then try to find a psychiatrist to prescribe because doctors don&rsquo;t want to prescribe Adderall&hellip; we&rsquo;re looking at anywhere between three and six months of this type of bottleneck. As Ian said, this is the real world and I think that we really need to think all of this again.&rdquo;</p></div>
+            <div class="ci-entry"><p class="ci-who"><b>Keenan Ryan</b> &middot; Acting CMO, Medicaid (covering designee)</p><p class="ci-quote">&ldquo;Is it possible to [allow] all behavioral health providers and allow through telemedicine? Would that be a meaningful compromise, to allow some sort of recommendation or referral without being restrictive? Some therapists may not have a controlled substance because they&rsquo;re not prescribing, or they might be a psychologist without it, but they could still say that you have PTSD, for example, that would be within their scope and could refer. So just throwing out some options along this spectrum between complete in-person controlled substance versus all self-certified. I think there could be a happy medium in there.&rdquo;</p></div>
+            <div class="ci-entry"><p class="ci-who">Outcome &middot; <b>Dominic Zurlo</b></p><p class="ci-quote">&ldquo;What&rsquo;s the final action on the certifying clinician? So Ian will take that back to here in the department to reconsider.&rdquo;</p></div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      <h3>Sources</h3>
+      <p><b>New Mexico statute and rule.</b> Controlled Substances Act, NMSA 1978 Sections 30-31-1 to 30-31-42 (registration trigger 30-31-12(A); practitioner definition 30-31-2(P); Schedule I carve-out 30-31-6); Board of Pharmacy rule <a href="https://www.srca.nm.gov/parts/title16/16.019.0020.html" target="_blank" rel="noopener">16.19.20 NMAC</a>; Social Work Practice Act 61-31-6; prescribing psychologist 61-9-17.2; <a href="https://www.nmlegis.gov/Sessions/25%20Regular/bills/senate/SB0219.HTML" target="_blank" rel="noopener">Senate Bill 219</a>; <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">July 9 draft rules 7.35.3</a>; <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">July 9 transcript</a>.</p>
+      <p><b>Comparators.</b> <a href="https://www.oregon.gov/oha/ph/preventionwellness/pages/psilocybin-access-psilocybin-services.aspx" target="_blank" rel="noopener">Oregon Health Authority</a>; <a href="http://leg.colorado.gov/bills/sb23-290" target="_blank" rel="noopener">Colorado SB23-290</a>; <a href="https://code.dccouncil.gov/us/dc/council/code/sections/7-1671.05" target="_blank" rel="noopener">D.C. Code 7-1671.05</a> and D.C. Law 24-187; Ryan Haight Act toolkit (APA); DEA fourth telemedicine extension (Federal Register).</p>
+      <p><b>Access and liability.</b> <a href="https://oig.hhs.gov/oei/reports/oei-02-17-00490.pdf" target="_blank" rel="noopener">HHS OIG OEI-02-17-00490</a>; University of Washington Rural Health Research Center (June 2025); Commonwealth Fund via NM In Depth; Warren v. Dinter (Minnesota) via Medical Economics; National Legal Research Group.</p>
+      <p class="meta">Sections 1 through 5 are confirmed against the primary source or through three-vote fact-checking. Sections 6 through 8 are sourced but not put through that fact-check. Out-of-state case law is illustrative of the general liability framework, not New Mexico authority. Compiled July 9, 2026, from the record through the July 9 Advisory Board meeting. Community reference, not affiliated with NMDOH, not legal advice, nothing here is final rule text.</p>
+    </footer>
+
+  </div>
+</div>
+<script>
+(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+</script>
+</body>
+</html>
