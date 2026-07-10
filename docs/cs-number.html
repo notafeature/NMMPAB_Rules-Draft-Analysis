@@ -29,7 +29,7 @@
 
   /* Top bar (site nav) */
   .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
-  .topbar .inner{max-width:820px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
+  .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
   .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
   .tnav{display:flex; gap:4px;}
@@ -46,7 +46,7 @@
   .tdrop-menu a:hover{background:var(--surface-2);}
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
   .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
-  @media (max-width:680px){
+  @media (max-width:1080px){
     .topbar .inner{position:relative;}
     .hamburger{display:block;}
     .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
@@ -114,11 +114,13 @@
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
-        <a class="on" href="cs-number.html">The CS number</a>
+        <a class="on" href="cs-number.html">CS number</a>
+        <a href="input.html">Community input</a>
+        <a href="history.html">Recent developments</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
-            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board draft (7.35.3)</span></a>
+            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board-meeting draft (7.35.3)</span></a>
             <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
             <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
           </div>
@@ -178,13 +180,13 @@
         <li><b>The department&rsquo;s stated purpose (July 9):</b> licenses can diagnose some conditions (&ldquo;a social worker can diagnose&hellip; PTSD and depression&rdquo;), &ldquo;but the main reason for the controlled substance number is because it is a treatment that is occurring with a medication&hellip; that is part of what ensures that there is that medical evaluation, that medical certification.&rdquo;</li>
         <li><b>The structural reading:</b> under Section 30-31-12, registration attaches to manufacturing, distributing, or dispensing, none of which the certifying clinician does to the psilocybin. So the number operates as a credential (a marker of prescriber-grade licensure), not as an authorization used on the drug. New Mexico&rsquo;s medical-cannabis program has the same shape: providers &ldquo;certify&rdquo; or &ldquo;recommend&rdquo; rather than prescribe cannabis, and no controlled-substance number is used on the cannabis, because cannabis is federal Schedule I.</li>
       </ul>
-      <p class="body">Both statements are facts. Which should govern is the question the board sent back to the department.</p>
+      <p class="body">On July 9 the board sent this question back to the department to weigh alternatives.</p>
       <p class="cite">Sources: NMSA 30-31-12; SB 219 Sections 3 and 5; 21 U.S.C. 829; July 9 transcript.</p>
     </section>
 
     <section id="states">
       <div class="sec-head"><p class="k">5</p><h2>How other jurisdictions set the same access point</h2></div>
-      <p class="thesis">None of the three comparators gates access through a clinician who holds prescribing authority. Oregon and Colorado require <b>no diagnosis or qualifying condition</b>; Washington, D.C. medical cannabis lets adults <b>self-certify</b>. New Mexico&rsquo;s clinician-gated model is the most restrictive of the four.</p>
+      <p class="thesis">None of the three comparators gates access through a clinician who holds prescribing authority. Oregon and Colorado require <b>no diagnosis or qualifying condition</b>; Washington, D.C. medical cannabis lets adults <b>self-certify</b>. New Mexico&rsquo;s draft is the only one of the four that requires a clinician determination for entry.</p>
       <p class="body"><b>Oregon</b> (Measure 109 / ORS 475A). The Oregon Health Authority states: &ldquo;To access psilocybin services, an individual must be 21 years of age or older&rdquo; and &ldquo;A prescription or medical referral is not required.&rdquo; Safety contraindications can disqualify a client during preparation, but that is a disqualifier, not an affirmative diagnosis requirement.</p>
       <p class="body"><b>Colorado</b> (Proposition 122 / SB23-290). The implementing law contains no diagnosis, qualifying-condition, or physician-gatekeeper requirement; access is gated by age (21 and older), and the model runs through licensed facilitators and healing centers, not a prescriber. This finding rests partly on the law&rsquo;s silence, corroborated by secondary legal analysis; rated medium confidence.</p>
       <p class="body"><b>Washington, D.C.</b> (medical cannabis). D.C. Code Section 7-1671.05 and D.C. Law 24-187 let adults 21 and older &ldquo;self-certify&hellip; on a form provided by [the regulator] that they are utilizing cannabis for medical purposes,&rdquo; replacing the prior requirement of a signed practitioner recommendation. Minors still require a recommendation; the permanent authority is D.C. Law 24-332 and the agency is now ABCA.</p>

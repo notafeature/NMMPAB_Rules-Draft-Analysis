@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NM Medical Psilocybin Training Rules: Three Tabled Items, July 9, 2026</title>
+<title>NM Medical Psilocybin Training Rules: The Tabled Items</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -33,7 +33,7 @@
 
   /* Top bar */
   .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
-  .topbar .inner{max-width:920px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
+  .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
   .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
   .tnav{display:flex; gap:4px;}
@@ -50,7 +50,7 @@
   .tdrop-menu a:hover{background:var(--surface-2);}
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
   .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
-  @media (max-width:680px){
+  @media (max-width:1080px){
     .topbar .inner{position:relative;}
     .hamburger{display:block;}
     .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
@@ -208,32 +208,6 @@
   .st.no{color:var(--dissent); border:1px solid var(--dissent-border);}
   .st.nt{color:var(--pillN); background:var(--pillN-bg); border:1px solid var(--border);}
 
-  /* Suggest a resource */
-  .suggest{margin-top:48px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 22px 26px; box-shadow:var(--shadow);}
-  .suggest .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  .suggest h2{font-size:clamp(19px,2.2vw,24px); margin:0 0 8px;}
-  .suggest .intro{color:var(--text-muted); font-size:15px; margin:0; line-height:1.55;}
-  .sform{display:grid; gap:16px; margin-top:22px;}
-  .field{display:flex; flex-direction:column; gap:6px; border:none; margin:0; padding:0; min-width:0;}
-  .field label, .field legend{font-size:13px; font-weight:650; color:var(--text); padding:0;}
-  .field .hint{font-size:12.5px; color:var(--text-faint); font-weight:400;}
-  .field input[type=text], .field input[type=email], .field input[type=url], .field textarea{
-    font-family:var(--sans); font-size:15px; color:var(--text); background:var(--surface-2);
-    border:1px solid var(--border-strong); border-radius:10px; padding:10px 12px; width:100%; -webkit-appearance:none;}
-  .field textarea{min-height:92px; resize:vertical; line-height:1.5;}
-  .field input:focus, .field textarea:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
-  .radios{display:flex; flex-wrap:wrap; gap:8px; margin-top:2px;}
-  .radios label{display:inline-flex; align-items:center; gap:7px; font-weight:400; font-size:14px; color:var(--text); background:var(--surface-2); border:1px solid var(--border-strong); border-radius:999px; padding:7px 13px; cursor:pointer;}
-  .radios input{accent-color:var(--accent); margin:0;}
-  .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
-  .sform .actions{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:2px;}
-  .btn{font-family:var(--sans); font-size:15px; font-weight:600; color:#fff; background:var(--accent); border:none; border-radius:10px; padding:11px 22px; cursor:pointer;}
-  .btn:hover{background:var(--accent-2);}
-  .altcontact{font-size:13px; color:var(--text-muted);}
-  .sform-ok{display:none; margin-top:20px; background:var(--agree-bg); border:1px solid var(--agree-border); color:var(--agree); border-radius:10px; padding:14px 16px; font-size:14.5px; line-height:1.5;}
-  .sform-ok.show{display:block;}
-  .review-note{margin-top:22px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:10px; padding:14px 16px; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
-  .review-note b{color:var(--text);}
 
   footer{margin-top:60px; border-top:1px solid var(--border); padding:26px 0 80px;}
   footer h3{font-size:15px; margin:0 0 8px;}
@@ -247,16 +221,19 @@
 
   <div class="topbar">
     <div class="inner">
-      <span class="brand"><span class="dot"></span> Training &amp; Education Rules · July 9</span>
+      <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
-        <a class="on" href="index.html">The three items</a>
+        <a class="on" href="index.html">Tabled items</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
-        <a href="hours.html">Hours benchmark</a>
+        <a href="hours.html">Training hours</a>
+        <a href="cs-number.html">CS number</a>
+        <a href="input.html">Community input</a>
+        <a href="history.html">Recent developments</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
-            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">On the table for the July 9 board meeting (7.35.3)</span></a>
+            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board-meeting draft (7.35.3)</span></a>
             <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
             <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
           </div>
@@ -271,18 +248,18 @@
     <!-- HERO -->
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
-      <h1>Training &amp; Education:<br>Three tabled items for July 9, 2026</h1>
-      <p class="updated"><b>Updated July 9, 2026, 3:37 PM MDT.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
-      <p class="lede">The Training &amp; Education Committee developed a recommendation for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to accept the recommendation and set three items aside. The board took up those three items on <b>July 9, 2026</b>.</p>
+      <h1>Training &amp; Education:<br>The tabled items</h1>
+      <p class="updated"><b>Updated July 10, 2026.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
+      <p class="lede">The Training &amp; Education Committee developed a recommendation for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to accept the recommendation and set three items aside. The board took up those three items at its <b>July 9, 2026</b> meeting.</p>
 
       <details class="today" id="today">
-        <summary><span class="today-line"><b>What happened July 9:</b> reciprocity was extended to Dec 31, 2027; practicum and didactic hours were sent to the Training and Education Committee; the certifying-clinician / controlled-substance-number question was sent back to the department. Nothing was finalized.</span><span class="chev">▸</span></summary>
+        <summary><span class="today-line"><b>What happened July 9:</b> reciprocity was extended to Dec 31, 2027; practicum and didactic hours were sent to the Training and Education Committee; the certifying-clinician / controlled-substance-number question was sent back to the department. None of this is final rule text.</span><span class="chev">▸</span></summary>
         <div class="today-body">
-          <p>July 9 was a working session, not a binding vote. The chair ruled out formal votes after the scheduled adjournment, so the board walked the full draft and focused on the three tabled items.</p>
+          <p>July 9 was a meeting of the Medical Psilocybin Advisory Board. The board walked the full draft and acted on the three tabled items; the chair barred formal votes only after the scheduled adjournment.</p>
           <ul>
-            <li><b>Reciprocity — resolved by consensus.</b> Both the reciprocity waiver and the New Mexico program waiver deadlines were extended to <b>December 31, 2027</b>. The chair noted December 31 is a legislative backstop, not the target launch date.</li>
-            <li><b>Practicum and didactic hours — tabled.</b> Sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion to set specific numbers.</li>
-            <li><b>Certifying clinician / CS number — sent back to the department.</b> Kept in the draft, but the board pushed back on liability, rural access, and provider supply and asked the department to weigh alternatives.</li>
+            <li><b>Reciprocity: resolved without objection.</b> Both the reciprocity waiver and the New Mexico program waiver deadlines were extended to <b>December 31, 2027</b>. Board chair Ian Dunn noted December 31 is a legislative backstop, not the target launch date.</li>
+            <li><b>Practicum and didactic hours: tabled by vote.</b> The board voted to table the numbers and send them to the Training and Education Committee (July 17, 1 PM).</li>
+            <li><b>Certifying clinician / CS number: sent back to the department.</b> Kept in the draft, but the board did not endorse it and asked the department to weigh alternatives.</li>
           </ul>
           <p class="today-next">Next: full Advisory Board July 17, 9 AM; Training and Education Committee July 17, 1 PM (times unchanged).</p>
         </div>
@@ -293,7 +270,7 @@
       <p class="dockey-h">The document on the table</p>
       <div class="dockey" style="grid-template-columns:1fr;">
         <a class="dk current" href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">
-          <p class="dkl">The rules draft · July 9 <span class="dkflag cur">on the table</span></p>
+          <p class="dkl">The rules draft · July 9 <span class="dkflag cur">current draft</span></p>
           <p><b>The department's draft for the July 9 board meeting</b> (7.35.3). The June 12 recommendation and the July 9 meeting transcript are in the Documents menu, top right.</p>
           <span class="dkgo">Open PDF ↗</span>
         </a>
@@ -303,25 +280,25 @@
     <!-- DECISION BRIEF -->
     <section id="decisions">
       <div class="sec-head">
-        <p class="k">July 9, 2026</p>
-        <h2>Three items tabled</h2>
+        <p class="k">Set aside June 26 · Taken up July 9</p>
+        <h2>The three tabled items</h2>
         <p>Each card links to the detail: the recommendation as written, the committee input, and the July 9 rules-draft language.</p>
       </div>
       <div class="decks">
         <a class="deck" href="#cs">
-          <span class="dn">Item 1</span>
+          <span class="dn">Item 1 · Back with the department</span>
           <h3>Must the certifying clinician hold a controlled-substance number?</h3>
           <p class="stake">Affects which clinicians can authorize a patient's entry to the program.</p>
           <span class="go">See the detail →</span>
         </a>
         <a class="deck" href="#practicum">
-          <span class="dn">Item 2</span>
+          <span class="dn">Item 2 · With the committee July 17</span>
           <h3>Are 100 / 120 practicum hours right, and is supervision mandatory?</h3>
           <p class="stake">Affects the cost and time required to qualify as a provider.</p>
           <span class="go">See the detail →</span>
         </a>
         <a class="deck" href="#reciprocity">
-          <span class="dn">Item 3</span>
+          <span class="dn">Item 3 · Resolved July 9</span>
           <h3>Are the reciprocity sunset dates adequate?</h3>
           <p class="stake">Affects how long providers trained elsewhere can qualify under reduced requirements.</p>
           <span class="go">See the detail →</span>
@@ -419,7 +396,7 @@
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p><b>July 9 meeting:</b> sent back to the department. The controlled-substance requirement stays in the draft, but the board did not endorse it and asked the department to reconsider and weigh alternatives (a consultation model, self-certification, or behavioral-health referral by telemedicine), citing malpractice liability for certifying clinicians, rural access, and the shortage of eligible providers. The rename to "certifying clinician" is confirmed. No vote was taken.</p>
+        <p><b>July 9 meeting:</b> sent back to the department. The controlled-substance requirement stays in the draft, but the board did not endorse it and asked the department to reconsider and weigh alternatives (a consultation model, self-certification, or behavioral-health referral by telemedicine), citing malpractice liability for certifying clinicians, rural access, and the shortage of eligible providers. The rename to "certifying clinician" is confirmed. No vote was taken. Full reference: <a href="cs-number.html">what the CS number is, and what it does and does not do at this access point</a>.</p>
       </div>
     </section>
 
@@ -514,7 +491,7 @@
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p><b>July 9 meeting:</b> tabled and sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion to set specific numbers (Larry Leeman named the California Institute of Integral Studies as an outside expert). The board tied practicum to the didactic hours, widely called too low at 25, and to a possible "fix-it" bill allowing training with trainees, plus a cost analysis. Section G still lets the department waive practicum without new rulemaking. Language cleaned up: "experience, observe <b>or</b> conduct" became "<b>and</b> conduct," and "therapy sessions" was removed.</p>
+        <p><b>July 9 meeting:</b> the board voted to table the practicum and didactic hours and send them to the Training and Education Committee (July 17, 1 PM). Larry Leeman suggested the committee bring in outside experts and named the California Institute of Integral Studies as an example. The board tied the practicum to the didactic hours and to a possible "fix-it" bill allowing training with trainees, plus a cost analysis. Section G still lets the department waive practicum without new rulemaking. Language changed in the draft: "experience, observe <b>or</b> conduct" became "<b>and</b> conduct," and "therapy sessions" was removed. Detail: <a href="hours.html">the tabled numbers and the July 17 decision</a>.</p>
       </div>
     </section>
 
@@ -532,7 +509,7 @@
 
       <div class="diffbox">
         <p class="dbl">What the July 9 meeting decided</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. The June 25 draft set two dates. At the <b>July 9 meeting the board extended both deadlines to December 31, 2027</b>: the reciprocity practicum-hours waiver and the New Mexico program waiver. The chair noted December 31 is a legislative backstop, not the target launch date. This was the one tabled item resolved by consensus on July 9.</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. The June 25 draft set two dates. At the <b>July 9 meeting the board extended both deadlines to December 31, 2027</b>: the reciprocity practicum-hours waiver and the New Mexico program waiver. Board chair Ian Dunn noted December 31 is a legislative backstop, not the target launch date. This was the one tabled item resolved on July 9.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12</span></div>
@@ -578,7 +555,7 @@
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p><b>July 9 meeting:</b> resolved by consensus. Both the reciprocity waiver and the New Mexico program waiver were extended to <b>December 31, 2027</b> (out-of-state and NM cohorts finish around March 2027 and need time to complete practicum). The chair stressed December 31 is a legislative backstop, not the launch target. This was the only tabled item settled on July 9.</p>
+        <p><b>July 9 meeting:</b> resolved without objection. Both the reciprocity waiver and the New Mexico program waiver were extended to <b>December 31, 2027</b> (Larry Leeman: cohorts finish around March 2027 and need time to complete practicum). Board chair Ian Dunn said December 31 is a legislative backstop, not the launch target. This was the only tabled item settled on July 9.</p>
       </div>
     </section>
 
@@ -669,70 +646,11 @@
       </details>
     </section>
 
-    <!-- SUGGEST A RESOURCE -->
+    <!-- COMMUNITY INPUT POINTER -->
     <section id="suggest">
-      <div class="suggest">
-        <p class="k">Community input</p>
-        <h2>Suggest a resource</h2>
-        <p class="intro">This site is compiling source lists for the tabled items, in particular the practicum requirements and the controlled-substance-number question. If you know of a study, program curriculum, another state's rule, testimony, or other source that belongs on those lists, add it here.</p>
-
-        <!--
-          SETUP (two placeholders for the site owner to fill before this goes live):
-          1. Form endpoint: create a free form at https://formspree.io (50 submissions/month, no card),
-             then replace YOUR_FORM_ID in the action below with the ID Formspree gives you.
-          2. Email fallback: replace YOUR_ADDRESS in the mailto link with the inbox that should receive
-             suggestions. Remove the "Prefer email" line if you do not want an address published.
-          Until step 1 is done, the form shows a "not connected yet" notice instead of posting.
-        -->
-        <form class="sform" id="suggestForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="hidden" name="_subject" value="NMMPAB reference site: suggested resource">
-          <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
-
-          <fieldset class="field">
-            <legend>Which list is this for?</legend>
-            <div class="radios">
-              <label><input type="radio" name="list" value="Practicum" checked> Practicum</label>
-              <label><input type="radio" name="list" value="Controlled-substance number"> Controlled-substance number</label>
-              <label><input type="radio" name="list" value="Other"> Other</label>
-            </div>
-          </fieldset>
-
-          <div class="field">
-            <label for="s-title">Resource <span class="hint">what it is called</span></label>
-            <input type="text" id="s-title" name="resource" placeholder="Title, program, study, or rule">
-          </div>
-
-          <div class="field">
-            <label for="s-link">Link or citation <span class="hint">optional</span></label>
-            <input type="url" id="s-link" name="link" placeholder="https:// or a written citation">
-          </div>
-
-          <div class="field">
-            <label for="s-why">Why it belongs on the list <span class="hint">optional, a sentence or two</span></label>
-            <textarea id="s-why" name="note" placeholder="What it covers, and why it is relevant to this item."></textarea>
-          </div>
-
-          <div class="field">
-            <label for="s-name">Your name <span class="hint">optional</span></label>
-            <input type="text" id="s-name" name="name" autocomplete="name">
-          </div>
-
-          <div class="field">
-            <label for="s-contact">Contact <span class="hint">optional, used only to follow up on your suggestion</span></label>
-            <input type="email" id="s-contact" name="contact" autocomplete="email" placeholder="Email">
-          </div>
-
-          <div class="actions">
-            <button type="submit" class="btn">Send suggestion</button>
-            <span class="altcontact">Prefer email? Write to <a href="mailto:YOUR_ADDRESS?subject=Suggested%20resource">YOUR_ADDRESS</a>.</span>
-          </div>
-        </form>
-
-        <div class="sform-ok" id="suggestOk">Thank you. Your suggestion was received and will be reviewed before anything is added to the site.</div>
-
-        <div class="review-note">
-          <b>How suggestions are reviewed.</b> Submissions are collected, checked against the primary sources, and compiled into the source lists on this site. Nothing is published automatically, and listing a source is not an endorsement of it. No personal information is required; a name or contact is optional and used only to follow up on your submission.
-        </div>
+      <div class="landed" style="margin-top:48px;">
+        <p class="ll">Community input</p>
+        <p>Recommendations and resources for the people writing these rules (outside experts for July 17, studies, program curricula, other states' rules) are collected on the <a href="input.html">Community input</a> page and forwarded together.</p>
       </div>
     </section>
 
@@ -740,6 +658,7 @@
       <div class="col" style="padding:0;">
         <h3>Sources &amp; method</h3>
         <p><b>Document language</b> is quoted verbatim from the source PDFs: the June 12 recommendation ("Draft for 6-12-26"), the June 25 rules draft, and the July 9, 2026 board-meeting rules draft (7.35.3, "Psilocybin patient and practitioner rule"). None is final, promulgated rule text.</p>
+        <p><b>Revision, July 10, 2026:</b> parallel working drafts reconciled into this page; the July 9 meeting description corrected (it was an Advisory Board meeting; the chair barred formal votes only after the scheduled adjournment); reciprocity outcome stated as resolved without objection, per the transcript.</p>
         <p><b>Revision, July 9, 2026, 3:37 PM MDT:</b> updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled and sent to the Training and Education Committee (July 17). Certifying clinician / controlled-substance number: sent back to the department to weigh alternatives; the "certifying clinician" rename is confirmed. The full July 9 meeting transcript (unofficial) is in the Documents menu.</p>
         <p><b>Committee input</b> comes from the full transcripts of the June 25 and June 26 committee meetings. Both are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Peskuski, Fatemi, Leeman). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the motion.</p>
         <p class="fine">Prepared as a community reference for the July 9, 2026 session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
@@ -755,25 +674,6 @@
   window.addEventListener('scroll',function(){
     if(d.open){ var r=d.getBoundingClientRect(); if(r.bottom < 8){ d.open=false; } }
   },{passive:true});
-})();
-(function(){
-  var f=document.getElementById('suggestForm');
-  if(!f) return;
-  var ok=document.getElementById('suggestOk');
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(f.getAttribute('action').indexOf('YOUR_FORM_ID')!==-1){
-      alert('The suggestion form is not connected yet. Replace YOUR_FORM_ID in the page with a Formspree form ID, or use the email link.');
-      return;
-    }
-    var data=new FormData(f);
-    fetch(f.getAttribute('action'),{method:'POST',body:data,headers:{'Accept':'application/json'}})
-      .then(function(r){
-        if(r.ok){ f.style.display='none'; if(ok){ ok.classList.add('show'); ok.scrollIntoView({block:'nearest'}); } }
-        else { f.submit(); }
-      })
-      .catch(function(){ f.submit(); });
-  });
 })();
 (function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
 </script>

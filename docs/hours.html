@@ -33,7 +33,7 @@
 
   /* Top bar */
   .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
-  .topbar .inner{max-width:920px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
+  .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
   .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
   .tnav{display:flex; gap:4px;}
@@ -50,7 +50,7 @@
   .tdrop-menu a:hover{background:var(--surface-2);}
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
   .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
-  @media (max-width:680px){
+  @media (max-width:1080px){
     .topbar .inner{position:relative;}
     .hamburger{display:block;}
     .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
@@ -186,14 +186,17 @@
     <div class="inner">
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
-        <a class="hidesm" href="index.html">Tabled items</a>
-        <a class="hidesm" href="pathways.html">Provider routes</a>
-        <a class="hidesm" href="eligibility.html">Who can qualify</a>
+        <a href="index.html">Tabled items</a>
+        <a href="pathways.html">Provider routes</a>
+        <a href="eligibility.html">Who can qualify</a>
         <a class="on" href="hours.html">Training hours</a>
+        <a href="cs-number.html">CS number</a>
+        <a href="input.html">Community input</a>
+        <a href="history.html">Recent developments</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
-            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board draft (7.35.3)</span></a>
+            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board-meeting draft (7.35.3)</span></a>
             <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
             <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
           </div>
