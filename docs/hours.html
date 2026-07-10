@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Practicum and Didactic Hours: A Benchmark Study Guide for the July 17, 2026 Committee</title>
+<title>Training Hours: The Tabled Numbers and the July 17 Decision</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -25,7 +25,7 @@
   html{scroll-behavior:smooth;}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
   body{margin:0; background:var(--bg);}
-  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.62; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased;}
+  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.6; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased;}
   .col{max-width:920px; margin:0 auto; padding:0 20px;}
   a{color:var(--accent); text-underline-offset:2px;}
   h1,h2,h3,h4{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.18;}
@@ -61,109 +61,121 @@
   }
 
   /* Hero */
-  .hero{padding:40px 0 8px;}
+  .hero{padding:38px 0 8px;}
   .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
-  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 14px; line-height:1.22;}
-  .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; line-height:1.55;}
-  .lede b{font-weight:600; color:var(--text);}
-  .updated{margin:14px 0 0; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
-  .updated b{color:var(--text-muted); font-weight:600;}
-  .notfinal{display:inline-flex; gap:9px; align-items:center; margin-top:22px; background:var(--open-bg); border:1px solid var(--open-border); color:var(--open); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:600;}
+  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 16px; line-height:1.22;}
+
+  /* Frame (masthead: purpose / status / how to read) */
+  .frame{border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden; margin:0 0 4px;}
+  .frame .row{display:flex; gap:14px; padding:12px 16px; border-top:1px solid var(--border); font-size:14px; line-height:1.5;}
+  .frame .row:first-child{border-top:none;}
+  .frame .lab{flex:0 0 96px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); padding-top:2px;}
+  .frame .val{color:var(--text); margin:0;}
+  .frame .val b{font-weight:650;}
+  @media (max-width:560px){.frame .row{flex-direction:column; gap:4px;} .frame .lab{flex:none;}}
+
+  /* jump strip */
+  .jump{display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 0;}
+  .jump a{font-size:12.5px; text-decoration:none; color:var(--text-muted); background:var(--surface-2); border:1px solid var(--border); border-radius:999px; padding:5px 12px;}
+  .jump a:hover{border-color:var(--border-strong); color:var(--text); background:var(--surface-3);}
 
   /* Section scaffolding */
   section{padding-top:20px;}
-  .sec-head{margin:44px 0 6px;}
+  .sec-head{margin:48px 0 4px; scroll-margin-top:64px;}
   .sec-head .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  h2{font-size:clamp(20px,2.4vw,26px); letter-spacing:-.008em; margin:0;}
-  .sec-head p{color:var(--text-muted); margin:10px 0 0;}
-  h3.sub{font-size:18px; margin:26px 0 6px;}
-  p.body{font-size:15.5px; line-height:1.6;}
+  h2{font-size:clamp(20px,2.4vw,25px); letter-spacing:-.008em; margin:0;}
+  .thesis{font-size:16px; color:var(--text); margin:14px 0 0; line-height:1.55; font-weight:600;}
+  .thesis b{color:var(--accent);}
+  p.body{font-size:14.5px; color:var(--text-muted); margin:12px 0 0; line-height:1.6;}
+  p.body b{color:var(--text); font-weight:600;}
+  .cite{font-family:var(--mono); font-size:11.5px; color:var(--text-faint);}
+  .cite a{color:var(--text-faint);}
 
-  /* "On the table now" cards */
-  .now{display:grid; grid-template-columns:1fr; gap:14px; margin-top:22px;}
-  @media (min-width:720px){.now{grid-template-columns:1fr 1fr;}}
-  .nowcard{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px; box-shadow:var(--shadow);}
-  .nowcard .nl{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  .nowcard .big{font-family:var(--serif); font-size:30px; font-weight:600; line-height:1.05; color:var(--text); font-variant-numeric:tabular-nums;}
-  .nowcard .big span{font-size:15px; color:var(--text-muted); font-family:var(--sans); font-weight:500;}
-  .nowcard p{margin:10px 0 0; font-size:13.5px; color:var(--text-muted); line-height:1.5;}
-  .nowcard .src{margin-top:10px; padding-top:8px; border-top:1px dashed var(--border-strong); font-size:11px; color:var(--text-faint); font-family:var(--mono);}
+  /* Role / bucket cards */
+  .roles{display:grid; grid-template-columns:1fr; gap:14px; margin-top:20px;}
+  @media (min-width:720px){.roles{grid-template-columns:repeat(3,1fr);}}
+  .roles.two{grid-template-columns:1fr;}
+  @media (min-width:720px){.roles.two{grid-template-columns:1fr 1fr;}}
+  .role{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+  .role .rn{font-family:var(--serif); font-size:17px; font-weight:600; margin:0 0 2px;}
+  .role .rr{font-size:12px; color:var(--text-faint); margin:0 0 12px;}
+  .role .rrow{display:flex; justify-content:space-between; gap:10px; padding:8px 0; border-top:1px solid var(--border); font-size:13.5px;}
+  .role .rrow:first-of-type{border-top:none;}
+  .role .rk{color:var(--text-muted);}
+  .role .rv{font-weight:650; font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap;}
+  .role .rv.zero{color:var(--text-faint); font-weight:500;}
+  .role .rtot{margin-top:auto; padding-top:12px; border-top:2px solid var(--accent); display:flex; justify-content:space-between; font-size:13.5px; gap:10px;}
+  .role .rtot b{color:var(--accent); text-align:right;}
+  .role .rtot b.tbd{color:var(--open); font-family:var(--mono); font-size:12px; font-weight:700;}
 
   /* Table */
   .tablewrap{overflow-x:auto; margin:18px 0 0; border:1px solid var(--border); border-radius:12px;}
-  table{border-collapse:collapse; width:100%; min-width:760px; font-size:13.5px; background:var(--surface);}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:13.5px; background:var(--surface);}
   thead th{text-align:left; font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted); padding:11px 13px; border-bottom:1px solid var(--border-strong); background:var(--surface-2); vertical-align:bottom;}
   tbody td{padding:11px 13px; border-bottom:1px solid var(--border); vertical-align:top;}
   tbody tr:last-child td{border-bottom:none;}
   tbody tr.nmrow td{background:var(--accent-soft);}
-  td.prog{font-weight:650; width:20%;}
+  td.prog{font-weight:650; width:22%;}
   td.prog .who{display:block; font-weight:400; font-size:11.5px; color:var(--text-muted); margin-top:3px;}
   td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
-  td.src{font-family:var(--mono); font-size:11px; color:var(--text-faint);}
-  .tnote{font-size:12.5px; color:var(--text-muted); margin:10px 0 0;}
+  td.src a{font-size:12px;}
 
-  /* Cost model */
-  .costgrid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px;}
-  @media (min-width:640px){.costgrid{grid-template-columns:1fr 1fr 1fr;}}
-  .costcard{background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:15px 16px;}
-  .costcard .cl{font-size:12px; font-weight:700; color:var(--accent); margin:0 0 6px;}
-  .costcard .cn{font-family:var(--serif); font-size:22px; font-weight:600; color:var(--text);}
-  .costcard p{margin:6px 0 0; font-size:12.5px; color:var(--text-muted); line-height:1.5;}
-  .estimate{background:var(--open-bg); border:1px solid var(--open-border); border-left:4px solid var(--open); border-radius:12px; padding:14px 16px; margin:18px 0 4px;}
-  .estimate .el{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--open); margin:0 0 6px;}
-  .estimate p{margin:0 0 8px; font-size:14px; line-height:1.55;}
-  .estimate p:last-child{margin-bottom:0;}
-  .estimate ul{margin:6px 0 0; padding-left:18px; font-size:14px; line-height:1.5;}
-  .estimate li{margin:6px 0;}
-
-  /* Dependency chain */
-  .chain{list-style:none; margin:20px 0 0; padding:0; counter-reset:step; display:flex; flex-direction:column; gap:0;}
-  .chain li{position:relative; padding:0 0 20px 46px; counter-increment:step;}
-  .chain li::before{content:counter(step); position:absolute; left:0; top:0; width:30px; height:30px; border-radius:50%; background:var(--accent); color:#fff; font-family:var(--serif); font-weight:700; display:grid; place-items:center; font-size:14px;}
-  .chain li::after{content:""; position:absolute; left:14px; top:32px; bottom:0; width:2px; background:var(--border-strong);}
-  .chain li:last-child{padding-bottom:0;}
-  .chain li:last-child::after{display:none;}
-  .chain .ct{font-family:var(--serif); font-size:16px; font-weight:600; display:block; margin-bottom:3px;}
-  .chain .cd{font-size:14px; color:var(--text-muted); line-height:1.5;}
-  .chain .cd b{color:var(--text);}
-
-  /* Verbatim record (committee input) */
-  .ci{display:flex; flex-direction:column; gap:10px; margin-top:8px;}
-  .ci-entry{border:1px solid var(--border); border-radius:12px; background:var(--surface); padding:13px 16px; border-left:3px solid var(--border-strong);}
-  .ci-entry.agree{border-left-color:var(--agree);}
-  .ci-entry.dissent{border-left-color:var(--dissent);}
-  .ci-entry.suggest{border-left-color:var(--suggest);}
-  .ci-entry.clarify{border-left-color:var(--open);}
-  .ci-top{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:7px;}
-  .ci-tag{font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:2px 8px; border-radius:999px; flex:none;}
-  .ci-tag.suggest{background:var(--suggest-bg); color:var(--suggest); border:1px solid var(--suggest-border);}
-  .ci-tag.dissent{background:var(--dissent-bg); color:var(--dissent); border:1px solid var(--dissent-border);}
-  .ci-tag.clarify{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
-  .ci-tag.agree{background:var(--agree-bg); color:var(--agree); border:1px solid var(--agree-border);}
-  .ci-who{font-size:13px; color:var(--text-muted);}
-  .ci-who b{color:var(--text); font-weight:650;}
-  .ci-quote{margin:0; font-size:14.5px; line-height:1.5;}
-  .ci-quote.q{font-style:italic;}
-
-  /* Options */
-  .opt{border:1px solid var(--border); border-radius:12px; background:var(--surface); padding:16px 18px; margin-top:12px; box-shadow:var(--shadow);}
-  .opt .oh{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
-  .opt .ok{font-family:var(--serif); font-size:15px; font-weight:700; color:var(--accent);}
-  .opt .otag{font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:2px 8px; border-radius:999px; background:var(--pillN-bg); color:var(--pillN); border:1px solid var(--border);}
-  .opt .otag.att{background:var(--suggest-bg); color:var(--suggest); border-color:var(--suggest-border);}
-  .opt p{margin:0; font-size:14px; color:var(--text); line-height:1.55;}
-  .opt p.num{margin-top:8px; font-size:13px; color:var(--text-muted); font-family:var(--mono);}
-
-  .callout{background:var(--accent-soft); border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:18px 0;}
+  /* Callout / note */
+  .callout{background:var(--accent-soft); border:1px solid var(--border); border-radius:12px; padding:15px 18px; margin:20px 0;}
   .callout p{margin:0; font-size:14.5px; line-height:1.55;}
   .callout p b{color:var(--accent);}
+  .note{font-size:13px; color:var(--text-muted); margin:14px 0 0; line-height:1.55;}
+  .note b{color:var(--text);}
 
-  footer{margin-top:60px; border-top:1px solid var(--border); padding:26px 0 80px;}
-  footer h3{font-size:15px; margin:0 0 8px;}
-  footer p{font-size:13px; color:var(--text-muted); margin:8px 0;}
-  footer ol{font-size:12.5px; color:var(--text-muted); line-height:1.5; padding-left:20px;}
-  footer ol li{margin:5px 0; word-break:break-word;}
-  .fine{font-size:12px; color:var(--text-faint);}
+  /* Chips */
+  .chiprow{margin-top:16px;}
+  .chiprow .cl{font-size:14px; font-weight:600; color:var(--text); margin:0 0 8px;}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-size:12.5px; background:var(--surface); border:1px solid var(--border-strong); border-radius:999px; padding:5px 12px; color:var(--text);}
+  .chip b{color:var(--accent);}
+
+  /* Two-column tile */
+  .twocol{display:grid; grid-template-columns:1fr; gap:14px; margin-top:18px;}
+  @media (min-width:720px){.twocol{grid-template-columns:1fr 1fr;}}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px 20px; box-shadow:var(--shadow);}
+  .card .lbl{display:inline-block; font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:2px 8px; border-radius:999px; margin-bottom:10px;}
+  .card.a{border-top:3px solid var(--dissent);} .card.a .lbl{background:var(--dissent-bg); color:var(--dissent); border:1px solid var(--dissent-border);}
+  .card.b{border-top:3px solid var(--open);} .card.b .lbl{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
+  .card .ct{font-family:var(--serif); font-size:16px; font-weight:600; margin:0 0 10px;}
+  .card p{margin:0 0 10px; font-size:14px; line-height:1.55;}
+  .card p:last-child{margin-bottom:0;}
+  .card .qt{font-style:italic; color:var(--text); border-left:2px solid var(--border-strong); padding-left:12px;}
+  .card .more{font-size:12px; font-family:var(--mono);}
+
+  /* Question tiles */
+  .q{border:1px solid var(--border); border-radius:14px; background:var(--surface); padding:18px 20px; margin-top:14px; box-shadow:var(--shadow);}
+  .q .qh{font-family:var(--serif); font-size:18px; font-weight:700; color:var(--text); margin:0 0 10px;}
+  .q .pos{font-size:14px; line-height:1.55; margin:0 0 6px;}
+  .q .pos:last-of-type{margin-bottom:0;}
+  .q .pos b{color:var(--accent); font-weight:650;}
+  .q .more{display:inline-block; margin-top:10px; font-size:12px; font-family:var(--mono);}
+
+  /* Buried record */
+  details.rec{margin-top:16px; border:1px solid var(--border); border-radius:12px; background:var(--surface); overflow:hidden;}
+  details.rec>summary{cursor:pointer; padding:14px 18px; font-weight:600; font-size:15px; list-style:none; display:flex; align-items:center; gap:10px;}
+  details.rec>summary::-webkit-details-marker{display:none;}
+  details.rec>summary .chev{transition:transform .15s ease; color:var(--accent); font-size:13px;}
+  details.rec[open]>summary .chev{transform:rotate(90deg);}
+  details.rec>summary .ct{color:var(--text-muted); font-weight:500; font-size:13px; margin-left:auto;}
+  .rec-body{padding:2px 18px 18px;}
+  .ci{display:flex; flex-direction:column; gap:10px; margin-top:8px;}
+  .ci-entry{border:1px solid var(--border); border-radius:12px; background:var(--surface); padding:13px 16px; border-left:3px solid var(--border-strong); scroll-margin-top:70px;}
+  .ci-entry:target{box-shadow:0 0 0 2px var(--accent);}
+  .ci-who{font-size:13px; color:var(--text-muted); margin-bottom:6px;}
+  .ci-who b{color:var(--text); font-weight:650;}
+  .ci-quote{margin:0; font-size:14.5px; line-height:1.5; font-style:italic;}
+
+  footer{margin-top:56px; border-top:1px solid var(--border); padding:26px 0 80px;}
+  footer h3{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); margin:20px 0 8px;}
+  footer h3:first-child{margin-top:0;}
+  footer ul{list-style:none; margin:0; padding:0; font-size:12.5px; color:var(--text-muted); line-height:1.5;}
+  footer li{margin:6px 0; padding-left:14px; text-indent:-14px;}
+  footer p{font-size:12px; color:var(--text-faint); margin:16px 0 0;}
 </style>
 </head>
 <body>
@@ -174,10 +186,10 @@
     <div class="inner">
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
-        <a class="hidesm" href="index.html">The three items</a>
+        <a class="hidesm" href="index.html">Tabled items</a>
         <a class="hidesm" href="pathways.html">Provider routes</a>
         <a class="hidesm" href="eligibility.html">Who can qualify</a>
-        <a class="on" href="hours.html">Hours benchmark</a>
+        <a class="on" href="hours.html">Training hours</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
@@ -193,279 +205,341 @@
 
   <div class="col">
 
-    <!-- HERO -->
+    <!-- HERO / FRAME -->
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
-      <h1>Practicum and didactic hours:<br>a benchmark study guide for July 17, 2026</h1>
-      <p class="updated"><b>Prepared July 9, 2026.</b> Background for the Training and Education Committee meeting, July 17, 1:00 PM.</p>
-      <p class="lede">On <b>July 9, 2026</b> the Advisory Board tabled two numbers and sent them to the Training and Education Committee: the <b>practicum hours</b> (100 for facilitators, 120 for practitioners, including 20 supervisory) and the <b>didactic hours</b> (about 25 combined plus 5 each), which several board members called too low. The committee meets July 17 to set specific numbers. This page collects what the current draft says, what comparable programs require, roughly what it costs, and the options that were named on the record. It does not recommend a number.</p>
-      <span class="notfinal">● Nothing here is final rule text or a recommendation. It is a record of the draft, benchmarks with sources, and what was said.</span>
+      <h1>Training hours: the tabled numbers and the July 17 decision</h1>
+      <div class="frame">
+        <div class="row"><span class="lab">Purpose</span><p class="val">Neutral reference for the Training and Education Committee (July 17, 1:00 PM). Records what the draft proposes for training hours, how comparable programs set theirs, the cost variables, and the positions members stated July 9. It takes no position on the numbers.</p></div>
+        <div class="row"><span class="lab">Status</span><p class="val"><b>July 9, 2026:</b> the board kept the draft's clinician and continuing-education hours and sent two figures back to this committee, the practitioner and facilitator <b>didactic hours</b> and the <b>practicum hours</b>. No number was set. Verbatim discussion is in the record at the foot of the page.</p></div>
+        <div class="row"><span class="lab">How to read</span><p class="val">The July 9 draft is not final rule text. New Mexico figures are cited to that draft (7.35.3). Positions belong to the members who stated them. Benchmark hours are checked against each state's rule. New Mexico cost figures have not been researched and are marked open.</p></div>
+      </div>
+      <div class="jump">
+        <a href="#numbers">1 · The proposed hours</a>
+        <a href="#who">2 · Who the hours fall on</a>
+        <a href="#benchmark">3 · Comparable programs</a>
+        <a href="#cost">4 · Potential costs</a>
+        <a href="#questions">5 · Open questions</a>
+      </div>
     </header>
 
-    <!-- WHAT'S ON THE TABLE NOW -->
-    <section id="now">
+    <!-- 1 -->
+    <section id="numbers">
       <div class="sec-head">
-        <p class="k">Starting point</p>
-        <h2>What the current draft requires</h2>
-        <p>The hours below are what the board tabled on July 9. The practicum figures are read verbatim from the June 12 recommendation. The didactic figures are as the department described them at the July 9 meeting; the June 12 recommendation lists the modules but does not attach an hour count to each one.</p>
+        <p class="k">1</p>
+        <h2>The proposed training hours</h2>
       </div>
-      <div class="now">
-        <div class="nowcard">
-          <p class="nl">Didactic (classroom)</p>
-          <div class="big">~25 <span>hrs combined</span> + 5 <span>each</span></div>
-          <p>About 25 hours in the core module shared by both roles, plus 5 additional hours in the practitioner track and 5 in the facilitator track. Continuing education is separate: 8 CME hours for clinicians, 20 hours for practitioners and facilitators, every two years.</p>
-          <p class="src">Source: department presentation, July 9 transcript; CE hours, June 12 recommendation p.9</p>
+      <p class="thesis">The July 9 draft proposes hours by role: <b>8 didactic hours</b> for the certifying clinician with no practicum, and <b>about 35 didactic hours plus 100 to 120 practicum hours</b> for facilitators and practitioners. The practitioner and facilitator figures are the ones sent back to committee.</p>
+      <div class="roles">
+        <div class="role">
+          <p class="rn">Certifying clinician</p>
+          <p class="rr">Diagnoses, authorizes entry; holds a NM controlled-substance number</p>
+          <div class="rrow"><span class="rk">Didactic module</span><span class="rv">8 hrs</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv zero">none</span></div>
+          <div class="rrow"><span class="rk">Continuing ed</span><span class="rv">8 hrs / 2 yr</span></div>
+          <div class="rtot"><span>Kept July 9</span><b>8 hrs</b></div>
         </div>
-        <div class="nowcard">
-          <p class="nl">Practicum (supervised practice)</p>
-          <div class="big">100 <span>/ 120 hrs</span></div>
-          <p>Minimum 100 hours for facilitators, 120 for practitioners. Inside that: ≥80 hours of administration and same-day therapy sessions with ≥14 different patients across ≥8 sessions, plus ≥20 hours of preparation and integration. Practitioners add ≥20 supervisory hours. All hours in an approved Healing Center. Plus 10 hours of mentoring after graduation.</p>
-          <p class="src">Source: June 12 recommendation pp.7–8</p>
+        <div class="role">
+          <p class="rn">Facilitator</p>
+          <p class="rr">Guides sessions; no prescribing, no license required for this role</p>
+          <div class="rrow"><span class="rk">Shared therapy module</span><span class="rv">25 hrs</span></div>
+          <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs</span></div>
+          <div class="rrow"><span class="rk">Facilitator module</span><span class="rv">5 hrs</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">100 hrs</span></div>
+          <div class="rtot"><span>Sent back</span><b>35 + 100</b></div>
+        </div>
+        <div class="role">
+          <p class="rn">Practitioner</p>
+          <p class="rr">Licensed therapist role; supervises facilitators</p>
+          <div class="rrow"><span class="rk">Shared therapy module</span><span class="rv">25 hrs</span></div>
+          <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs</span></div>
+          <div class="rrow"><span class="rk">Practitioner module</span><span class="rv">5 hrs</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">120 hrs</span></div>
+          <div class="rtot"><span>Sent back</span><b>35 + 120</b></div>
         </div>
       </div>
-      <div class="callout">
-        <p><b>Why the two are linked.</b> On July 9 the department said it had "reduced down the didactic" and "flipped" the balance toward practicum after hearing that hands-on practice mattered most. Board members argued the two cannot move independently: <b>Chris Peskuski</b> said the practicum hours should not be lowered "without balancing it with the didactic," and <b>Dan Jennings</b> asked the committee to sort out "both the didactic and the practicum." The committee's task is to set both numbers together.</p>
-      </div>
+      <p class="body">Inside the practicum: at least 80 hours in real administration and same-day therapy sessions, at least 14 patients across at least 8 sessions, plus at least 20 hours of preparation and integration. Practitioners add 20 supervisory hours. All hours take place in an approved healing center or other approved location. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">draft 7.35.3</a>, practitioner and facilitator practicum requirements; educational requirements.</span></p>
+      <p class="note">The 100 / 120 practicum has held since the <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">June 12 recommendation</a> and carried into the June 25 and July 9 drafts. The department said July 9 the didactic did not change, only split into separate practitioner and facilitator modules. <span class="cite">Source: June 12 recommendation pp.7&ndash;9; July 9 transcript.</span></p>
     </section>
 
-    <!-- BENCHMARK TABLE -->
-    <section id="benchmark">
+    <!-- 2 -->
+    <section id="who">
       <div class="sec-head">
-        <p class="k">Benchmark</p>
-        <h2>How other programs set the hours</h2>
-        <p>Four reference points named or implied on the July 9 record: Oregon and Colorado (the two operating state psilocybin programs), the CIIS certificate (the training model Larry Leeman named), and the former buprenorphine "X-waiver" (the licensed-provider benchmark Keenan Ryan named). Numbers are the minimums each program sets for the facilitator-equivalent role. Sources are listed at the foot of the page.</p>
+        <p class="k">2</p>
+        <h2>Who the hours fall on</h2>
       </div>
+      <p class="thesis">The practicum figure binds almost entirely on new in-state facilitators and practitioners. Certifying clinicians owe no practicum, and <b>three clauses already in the draft</b> cut the practicum to 40 contact hours or waive it for everyone else.</p>
       <div class="tablewrap">
         <table>
           <thead>
+            <tr><th>Clause</th><th>Where it lives</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
             <tr>
-              <th>Program</th>
-              <th>Didactic / instruction</th>
-              <th>Practicum (hands-on)</th>
-              <th>Consultation / mentoring</th>
-              <th>Applies to</th>
-              <th>Source</th>
+              <td class="prog">Section G waiver</td>
+              <td class="num">Practicum rules, subsec. G</td>
+              <td>The department "may otherwise waive, temporarily suspend, or reduce the practicum requirements" to certify enough providers to build the program. Discretionary, no deadline.</td>
             </tr>
+            <tr>
+              <td class="prog">In-state bridge</td>
+              <td class="num">Practicum rules, subsec. H</td>
+              <td>People trained by a NM program certified by June 30, 2027 demonstrate 40 contact hours instead of the full practicum.</td>
+            </tr>
+            <tr>
+              <td class="prog">Reciprocity waiver</td>
+              <td class="num">Reciprocity rules, subsec. B&ndash;C</td>
+              <td>Out-of-state applicants by the deadline show 40 contact hours; the department may further reduce reciprocity practicum. Deadline extended to Dec 31, 2027 on July 9.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="body">Which providers land in which route is set on <a href="eligibility.html">Who can qualify</a> and <a href="pathways.html">Provider routes</a>. In short: the certifying clinician (a prescriber-eligible license, holding the controlled-substance number) owes 8 didactic hours and no practicum; the practitioner and facilitator owe the full stack; a reciprocity or bridge applicant owes 40 contact hours. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">draft 7.35.3</a>, practicum and reciprocity sections.</span></p>
+      <div class="callout">
+        <p>For the first years, most providers can reach certification through a 40-contact-hour path or a Section G reduction. The full 100 / 120 binds new in-state trainees after the bridge date lapses. This describes the clauses in the draft, not a position on them.</p>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section id="benchmark">
+      <div class="sec-head">
+        <p class="k">3</p>
+        <h2>Comparable programs</h2>
+      </div>
+      <p class="thesis">New Mexico proposes the <b>least didactic and the most practicum</b> of the operating comparators. Oregon and Colorado license people with no prior credential; the closest analog to New Mexico's already-licensed providers is the former buprenorphine waiver, at 24 hours.</p>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th>Program</th><th>Didactic</th><th>Practicum</th><th>Consult / mentor</th><th>Applies to</th><th>Source</th></tr>
           </thead>
           <tbody>
             <tr class="nmrow">
-              <td class="prog">New Mexico <span class="who">Draft — tabled July 9</span></td>
-              <td class="num">~25 hrs combined + 5 each</td>
-              <td class="num">100 hrs facilitator<br>120 hrs practitioner<br>(incl. 20 supervisory)</td>
-              <td class="num">10 hrs mentoring<br>(after graduation)</td>
-              <td>New-entry facilitators &amp; practitioners; must already hold a NM license</td>
-              <td class="src">[1][2]</td>
+              <td class="prog">New Mexico <span class="who">draft, tabled July 9</span></td>
+              <td class="num">~35 hrs</td>
+              <td class="num">100 / 120 hrs</td>
+              <td class="num">10 hrs mentoring</td>
+              <td>New facilitators &amp; practitioners; already NM-licensed</td>
+              <td class="src"><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Draft 7.35.3</a></td>
             </tr>
             <tr>
               <td class="prog">Oregon <span class="who">Psilocybin Services</span></td>
               <td class="num">120 hrs</td>
               <td class="num">40 hrs</td>
-              <td class="num">None required</td>
-              <td>Facilitators; <b>no prior license or degree required</b></td>
-              <td class="src">[3][4]</td>
+              <td class="num">none</td>
+              <td>Facilitators; no prior license or degree</td>
+              <td class="src"><a href="https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/Documents/333-333_HO_Report_FINAL.pdf" target="_blank" rel="noopener">OAR 333-333</a></td>
             </tr>
             <tr>
               <td class="prog">Colorado <span class="who">Natural Medicine</span></td>
               <td class="num">150 hrs</td>
               <td class="num">40 hrs</td>
-              <td class="num">50 hrs consultation<br>(over ~6 months)</td>
-              <td>Facilitators; no prior license required (Clinical Facilitator adds a license)</td>
-              <td class="src">[5][6]</td>
+              <td class="num">50 hrs consultation</td>
+              <td>Facilitators; no prior license</td>
+              <td class="src"><a href="https://www.law.cornell.edu/regulations/colorado/4-CCR-755-1-3" target="_blank" rel="noopener">4 CCR 755-1-3</a></td>
             </tr>
             <tr>
-              <td class="prog">CIIS certificate <span class="who">private program, not a state license</span></td>
-              <td class="num">140–150 hrs</td>
-              <td class="num">None built in<br>(optional OR add-on)</td>
-              <td class="num">~30 hrs mentor<br>consultation</td>
-              <td>Already-credentialed clinicians / clergy (graduate degree)</td>
-              <td class="src">[7]</td>
+              <td class="prog">CIIS certificate <span class="who">private, not a state license</span></td>
+              <td class="num">140&ndash;150 hrs</td>
+              <td class="num">none built in</td>
+              <td class="num">~30 hrs mentor</td>
+              <td>Already-credentialed clinicians / clergy</td>
+              <td class="src"><a href="https://www.ciis.edu/continuing-education/center-for-psychedelic-therapies-and-research/about-the-certificate" target="_blank" rel="noopener">CIIS</a></td>
             </tr>
             <tr>
-              <td class="prog">Buprenorphine "X-waiver" <span class="who">former DATA-2000, ended 2023</span></td>
-              <td class="num">24 hrs (NP / PA)<br>8 hrs (physician)</td>
-              <td class="num">None</td>
-              <td class="num">None</td>
-              <td>Already-licensed prescribers, to prescribe one medication</td>
-              <td class="src">[8][9]</td>
+              <td class="prog">Buprenorphine waiver <span class="who">former DATA-2000, ended 2023</span></td>
+              <td class="num">24 hrs (NP/PA)<br>8 hrs (MD)</td>
+              <td class="num">none</td>
+              <td class="num">none</td>
+              <td>Licensed prescribers, to add one authority</td>
+              <td class="src"><a href="https://www.samhsa.gov/substance-use/treatment/resources/mat-act" target="_blank" rel="noopener">SAMHSA</a></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="tnote">Reading the table: the two live state programs set <b>much higher didactic hours (120–150) and lower practicum hours (40)</b> than the New Mexico draft (~30 didactic, 100–120 practicum). Both operating programs license people with <b>no prior clinical credential</b>, so their didactic load carries training New Mexico assumes a licensed provider already has. The buprenorphine benchmark (24 hours) is the closest analog to New Mexico's population — already-licensed providers adding one authority — and is the figure Keenan Ryan pointed to.</p>
+      <p class="body">Oregon and Colorado train unlicensed people, so their large classroom load covers what New Mexico assumes a licensee already holds. Keenan Ryan named the buprenorphine waiver, 24 hours for already-licensed prescribers, as the nearest match to New Mexico's population. <span class="cite">Sources verified against each rule; see the Sources block.</span></p>
     </section>
 
-    <!-- COST -->
+    <!-- 4 -->
     <section id="cost">
       <div class="sec-head">
-        <p class="k">Cost</p>
-        <h2>What the practicum costs, roughly</h2>
-        <p>Larry Leeman asked for a cost analysis before any number is set: "We shouldn't be adding anything without figuring out how much it's going to cost." The didactic portion is tuition; the practicum portion is expensive because it requires access to real, paid administration sessions. The figures below are observed market prices, not New Mexico projections. Treat every total as an estimate.</p>
+        <p class="k">4</p>
+        <h2>Potential training costs in New Mexico</h2>
       </div>
-      <div class="costgrid">
-        <div class="costcard">
-          <p class="cl">Tuition (didactic)</p>
-          <div class="cn">$8,900–$9,400</div>
-          <p>CIIS certificate tuition. Oregon and Colorado training programs run in a similar range, roughly $8,000–$12,000.</p>
-        </div>
-        <div class="costcard">
-          <p class="cl">One session, Colorado</p>
-          <div class="cn">~$200</div>
-          <p>The cheapest Leeman found: a trainee "sitting for two sessions and having one." Market single sessions run higher, $1,000–$3,500.</p>
-        </div>
-        <div class="costcard">
-          <p class="cl">One session, Oregon</p>
-          <div class="cn">$700–$6,500+</div>
-          <p>Range across service centers; commonly $1,200–$3,500. Not covered by insurance in either state.</p>
+      <p class="thesis">No New Mexico cost analysis has been done. Larry Leeman asked for one before any number is set. This section holds the variables and the out-of-state reference prices; the <b>New Mexico totals are open research</b>.</p>
+      <div class="chiprow">
+        <p class="cl">What drives the cost</p>
+        <div class="chips">
+          <span class="chip">Tuition (didactic)</span>
+          <span class="chip">Session access &times; sessions required</span>
+          <span class="chip">Healing-center fees</span>
+          <span class="chip">Supervisor time</span>
+          <span class="chip">Travel</span>
+          <span class="chip">Lost income during practicum</span>
         </div>
       </div>
-      <div class="estimate">
-        <p class="el">Illustrative estimate — assumptions stated, not a projection</p>
-        <p>The draft practicum requires ≥80 hours of administration sessions across ≥8 sessions with ≥14 patients. If a trainee has to buy access to those sessions at market rates, the practicum alone could cost:</p>
-        <ul>
-          <li><b>Low (Colorado-style, trainee sessions ~$200):</b> 8 sessions × $200 ≈ <b>$1,600</b>, plus tuition ≈ $9,000 = <b>~$10,600</b>.</li>
-          <li><b>High (Oregon market sessions ~$1,500):</b> 8+ sessions × $1,500 ≈ <b>$12,000+</b>, plus tuition ≈ $9,000 = <b>~$21,000+</b>.</li>
-        </ul>
-        <p>The variable that moves this most is <b>who the practicum patients are</b>. If sessions can use fellow trainees (see the legal dependency below), the cost is roughly the psilocybin and center time. If each session must be a paying qualifying patient, the trainee is competing for, and paying for, scarce clinical access. Section G lets the department waive practicum if it proves "too onerous or expensive."</p>
+      <div class="chiprow">
+        <p class="cl">Reference prices that exist (Oregon and Colorado market, not New Mexico projections)</p>
+        <div class="chips">
+          <span class="chip"><b>~$200</b> Colorado trainee session (Leeman)</span>
+          <span class="chip"><b>$1,200&ndash;$3,500</b> Oregon market session</span>
+          <span class="chip"><b>$8,900&ndash;$12,000</b> training tuition</span>
+        </div>
+      </div>
+      <div class="chiprow">
+        <p class="cl">Cost per pathway (pathways from <a href="eligibility.html">Who can qualify</a>). Totals are blank because the New Mexico research is not done.</p>
+      </div>
+      <div class="roles two">
+        <div class="role">
+          <p class="rn">New in-state facilitator</p>
+          <p class="rr">Full didactic + full practicum</p>
+          <div class="rrow"><span class="rk">Didactic</span><span class="rv">~35 hrs</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">100 hrs / ~8 sessions</span></div>
+          <div class="rtot"><span>NM total</span><b class="tbd">to research</b></div>
+        </div>
+        <div class="role">
+          <p class="rn">New in-state practitioner</p>
+          <p class="rr">Adds 20 supervisory hours</p>
+          <div class="rrow"><span class="rk">Didactic</span><span class="rv">~35 hrs</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">120 hrs</span></div>
+          <div class="rtot"><span>NM total</span><b class="tbd">to research</b></div>
+        </div>
+        <div class="role">
+          <p class="rn">Reciprocity / out of state</p>
+          <p class="rr">Practicum cut to 40 contact hours</p>
+          <div class="rrow"><span class="rk">Didactic</span><span class="rv">equivalency</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">40 contact hrs</span></div>
+          <div class="rtot"><span>NM total</span><b class="tbd">to research</b></div>
+        </div>
+        <div class="role">
+          <p class="rn">Section G / in-state bridge</p>
+          <p class="rr">Practicum reduced or waived</p>
+          <div class="rrow"><span class="rk">Didactic</span><span class="rv">~35 hrs</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">reduced</span></div>
+          <div class="rtot"><span>NM total</span><b class="tbd">to research</b></div>
+        </div>
+      </div>
+      <p class="note"><b>Research inputs still needed:</b> what a New Mexico healing center charges a trainee for session access, whether trainees may practice on one another, real tuition once programs are approved, and how many providers the state needs. These are the numbers to gather, not assumptions to insert here.</p>
+      <div class="callout">
+        <p>The largest cost variable is who the novice practices on. The 80 practicum hours are real administration sessions. Leeman said a novice should not do those on patients with the four qualifying conditions, and that in other programs they happen with other trainees. Dosing a healthy trainee is not clearly authorized by the Medical Psilocybin Act, so that route depends on a fix-it bill, which Ian Dunn noted is not expected before January. Until then Section G and the 40-hour bridge are the tools that exist.</p>
       </div>
     </section>
 
-    <!-- LEGAL DEPENDENCY -->
-    <section id="dependency">
+    <!-- 5 -->
+    <section id="questions">
       <div class="sec-head">
-        <p class="k">The constraint under the number</p>
-        <h2>The trainee-training legal dependency</h2>
-        <p>The practicum number cannot be read alone, because the harder question is who a novice practices on. Larry Leeman laid out the chain on July 9. It ends at a legislative dependency the committee does not control.</p>
+        <p class="k">5</p>
+        <h2>Open questions for July 17</h2>
       </div>
-      <ol class="chain">
-        <li>
-          <span class="ct">The practicum requires real administration sessions</span>
-          <span class="cd">The draft requires ≥80 hours of supervised administration and same-day therapy with at least 14 different patients. That is hands-on exposure to people taking psilocybin, not classroom time.</span>
-        </li>
-        <li>
-          <span class="ct">Novices should not start on the four qualifying conditions</span>
-          <span class="cd">Leeman: "Practicum in general does not happen with people that have the diagnoses in our program. And I do not think it would be appropriate for a novice to be starting out doing sessions with people with any of these four conditions." In other programs, "they happen with people who are other trainees."</span>
-        </li>
-        <li>
-          <span class="ct">Training on trainees needs a legal fix</span>
-          <span class="cd">Administering psilocybin to a healthy trainee (rather than a qualifying patient) is not clearly authorized by the Medical Psilocybin Act. Leeman is "strongly in favor of a fix-it bill that actually allows for the training using psilocybin for trainees," and would "require two of those sessions, that would reflect what Colorado does."</span>
-        </li>
-        <li>
-          <span class="ct">A fix-it bill is a legislative act, not a rule</span>
-          <span class="cd">The committee and board can set hours by rule, but cannot authorize dosing trainees on their own. Ian Dunn noted the law is not expected to change "at least until January." Any practicum design that depends on training-with-trainees is therefore <b>contingent on the Legislature</b>.</span>
-        </li>
-        <li>
-          <span class="ct">Section G is the interim release valve</span>
-          <span class="cd">Until then, the draft's Section G lets the department waive or reduce the practicum "without having to go back through the rulemaking process" if it proves "too onerous or expensive." The department added it specifically for these concerns. It is a discretionary backstop, not a fixed standard.</span>
-        </li>
-      </ol>
+      <p class="thesis">July 9 left five questions open. Each is recorded with the positions stated, attributed to the members who stated them.</p>
+
+      <div class="q">
+        <p class="qh">Is ~35 didactic hours enough?</p>
+        <p class="pos"><b>Leeman:</b> no, below any program he has seen; more practicum does not remove the need for more didactic.</p>
+        <p class="pos"><b>Ryan:</b> the closest benchmark is the buprenorphine waiver, 24 hours for already-licensed providers.</p>
+        <p class="pos"><b>Burgard:</b> maybe a little higher than 25; these are already-licensed professionals, so it need not go far.</p>
+        <a class="more" href="#rec-leeman-didactic">quotes &rarr;</a>
+      </div>
+
+      <div class="q">
+        <p class="qh">Raise the didactic, or cut the practicum?</p>
+        <p class="pos"><b>Peskuski:</b> do not lower practicum without raising didactic; both are inadequate as they stand.</p>
+        <p class="pos"><b>Jennings:</b> settle both with a definite number, not "I feel it should be more."</p>
+        <a class="more" href="#rec-peskuski">quotes &rarr;</a>
+      </div>
+
+      <div class="twocol">
+        <div class="card a">
+          <span class="lbl">The problem Leeman raised</span>
+          <p class="ct">Who does a novice practice on?</p>
+          <p class="qt">"Practicum in general does not happen with people that have the diagnoses in our program... They happen with people who are other trainees."</p>
+          <p>He would require two sessions, as Colorado does, and revise the draft so a trainee is eventually the supervised provider, not only an observer.</p>
+          <a class="more" href="#rec-leeman-practicum">full quote &rarr;</a>
+        </div>
+        <div class="card b">
+          <span class="lbl">What it depends on</span>
+          <p class="ct">A legislative fix, or the waivers</p>
+          <p>Dosing a healthy trainee is not clearly allowed by the Act, so training on trainees needs a fix-it bill. Dunn: the law is not expected to change before January.</p>
+          <p>Until then the draft's Section G and the 40-hour bridge are the existing tools. See <a href="#who">the three clauses</a>.</p>
+        </div>
+      </div>
+
+      <div class="q">
+        <p class="qh">What will it cost?</p>
+        <p class="pos"><b>Leeman:</b> run a cost analysis before adding anything; the cheapest Colorado trainee session he found was about $200. The frame is in <a href="#cost">section 4</a>; the New Mexico numbers are not filled.</p>
+        <a class="more" href="#rec-leeman-practicum">quotes &rarr;</a>
+      </div>
+
+      <div class="q">
+        <p class="qh">Who should set the number?</p>
+        <p class="pos"><b>Leeman:</b> seat it after expert testimony, as the end-of-life committee did; bring in people with experience and no commercial conflict. He named the California Institute of Integral Studies. This step the committee controls, with no legislative dependency.</p>
+        <a class="more" href="#rec-leeman-experts">quotes &rarr;</a>
+      </div>
     </section>
 
-    <!-- THE RECORD -->
+    <!-- RECORD -->
     <section id="record">
-      <div class="sec-head">
-        <p class="k">On the record</p>
-        <h2>What was said July 9</h2>
-        <p>Verbatim, from the unofficial July 9 transcript. These are the positions the committee inherits. No position here is endorsed.</p>
-      </div>
-      <div class="ci">
-        <div class="ci-entry clarify">
-          <div class="ci-top"><span class="ci-tag clarify">Benchmark named</span><span class="ci-who"><b>Keenan Ryan</b> · Acting CMO, Medicaid (covering designee)</span></div>
-          <p class="ci-quote q">"If you look at the previous X waiver, they've required already licensed professionals in the field, so nurse practitioners, physicians assistants, etc., so similar to what you have here, to receive 24 hours of training just for this one specific agent. I think that's probably your best benchmark that I can think of."</p>
+      <details class="rec">
+        <summary><span class="chev">▸</span> The July 9 discussion, verbatim by speaker <span class="ct">source for the positions above</span></summary>
+        <div class="rec-body">
+          <p class="note" style="margin:6px 0 12px;">Verbatim from the <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">unofficial July 9 transcript</a>, speakers inferred. Linked from the questions above.</p>
+          <div class="ci">
+            <div class="ci-entry" id="rec-ryan">
+              <p class="ci-who"><b>Keenan Ryan</b> · Acting CMO, Medicaid (covering designee)</p>
+              <p class="ci-quote">"If you look at the previous X waiver, they've required already licensed professionals in the field, so nurse practitioners, physicians assistants, etc., so similar to what you have here, to receive 24 hours of training just for this one specific agent. I think that's probably your best benchmark that I can think of."</p>
+            </div>
+            <div class="ci-entry" id="rec-leeman-didactic">
+              <p class="ci-who"><b>Larry Leeman</b> · board member, UNM</p>
+              <p class="ci-quote">"I don't think 25 hours didactic is adequate for the practitioners if they haven't had evidence of other training. It's well below like with any program in the world that I have seen. And by adding more practicum, we don't obviate the need for more of the didactic."</p>
+            </div>
+            <div class="ci-entry" id="rec-peskuski">
+              <p class="ci-who"><b>Chris Peskuski</b> · board member</p>
+              <p class="ci-quote">"I don't think we can separate these issues. If we lower the practicum hours without balancing it with the didactic somewhere, and I feel like those are woefully inadequate to begin with. All of this is connected, and there's accessibility issues that also come up with how many patients are actually going to be available for people to do practicums."</p>
+            </div>
+            <div class="ci-entry" id="rec-jennings">
+              <p class="ci-who"><b>Dan Jennings</b> · board member</p>
+              <p class="ci-quote">"I'm going to echo Dr. Leeman and Chris. It does make sense to go back to the committee, but for both the didactic and the practicum... there needs to be a definitive consensus to the number of hours, because otherwise we just get into 'I feel it should be more, I feel it should be less.'"</p>
+            </div>
+            <div class="ci-entry" id="rec-leeman-practicum">
+              <p class="ci-who"><b>Larry Leeman</b> · board member, UNM</p>
+              <p class="ci-quote">"Practicum in general does not happen with people that have the diagnoses in our program... They happen with people who are other trainees. I'm strongly in favor of a fix-it bill that actually allows for the training using psilocybin for trainees... I would suggest that people are required to have two of those sessions, that would reflect what Colorado does. The way it's written, you don't actually have to be doing anything, it says you can just be observing. I'd like to see it revised... you actually have to be being observed and supervised. And we need to look at some cost analysis. We shouldn't be adding anything without figuring out how much it's going to cost. The cheapest I've seen in Colorado is about $200."</p>
+            </div>
+            <div class="ci-entry" id="rec-burgard">
+              <p class="ci-who"><b>Brenda Burgard</b> · board member</p>
+              <p class="ci-quote">"I agree that we should have more practicum hours than less didactic. Experience, knowing how to do all of this, is crucial to everything here. These are already licensed professionals... so maybe it should be a little higher than 25. I just don't think it needs to go crazy."</p>
+            </div>
+            <div class="ci-entry" id="rec-leeman-experts">
+              <p class="ci-who"><b>Larry Leeman</b> · board member, UNM</p>
+              <p class="ci-quote">"I would suggest an approach we use in the end of life committee, which is to bring in several experts. We can invite someone from California Institute of Integral Studies. Let's bring in some people that have experience and ideally don't have any kind of a commercial conflict."</p>
+            </div>
+            <div class="ci-entry" id="rec-dept">
+              <p class="ci-who">Department presentation · Dominic Zurlo</p>
+              <p class="ci-quote">"We are hearing from a wide variety of people, some who have said we actually should have more like 200 or 300 hours, and others who are saying this should be very minimal, for example just a weekend... We have Section G, a waiver of practicum requirements, so if we found these were onerous or too expensive, the program could waive them without having to go back through rulemaking."</p>
+            </div>
+          </div>
         </div>
-        <div class="ci-entry dissent">
-          <div class="ci-top"><span class="ci-tag dissent">Didactic too low</span><span class="ci-who"><b>Larry Leeman</b> · board member, UNM</span></div>
-          <p class="ci-quote q">"I don't think 25 hours didactic is adequate for the practitioners if they haven't had evidence of other training. It's well below like with any program in the world that I have seen. And by adding more practicum, we don't obviate the need for more of the didactic."</p>
-        </div>
-        <div class="ci-entry dissent">
-          <div class="ci-top"><span class="ci-tag dissent">Both inadequate</span><span class="ci-who"><b>Chris Peskuski</b> · board member</span></div>
-          <p class="ci-quote q">"I don't think we can separate these issues. If we lower the practicum hours without balancing it with the didactic somewhere — and I feel like those are woefully inadequate to begin with. All of this is connected, and there's accessibility issues that also come up with how many patients are actually going to be available for people to do practicums."</p>
-        </div>
-        <div class="ci-entry suggest">
-          <div class="ci-top"><span class="ci-tag suggest">Practicum design</span><span class="ci-who"><b>Larry Leeman</b> · board member, UNM</span></div>
-          <p class="ci-quote q">"The way it's written, you don't actually have to be doing anything — it says you can just be observing. I'd like to see it revised to say you can start out observing, but you actually have to be being observed and supervised at a certain point. And we need to look at some cost analysis. We shouldn't be adding anything without figuring out how much it's going to cost."</p>
-        </div>
-        <div class="ci-entry suggest">
-          <div class="ci-top"><span class="ci-tag suggest">Bring in experts</span><span class="ci-who"><b>Larry Leeman</b> · board member, UNM</span></div>
-          <p class="ci-quote q">"I would suggest an approach we use in the end of life committee, which is to bring in several experts. We can invite someone from California Institute of Integral Studies. Let's bring in some people that have experience and ideally don't have any kind of a commercial conflict."</p>
-        </div>
-        <div class="ci-entry agree">
-          <div class="ci-top"><span class="ci-tag agree">Practicum matters</span><span class="ci-who"><b>Brenda Burgard</b> · board member</span></div>
-          <p class="ci-quote q">"I agree that we should have more practicum hours than less didactic. Experience, knowing how to do all of this, is crucial to everything here. These are already licensed professionals... so maybe it should be a little higher than 25. I just don't think it needs to go crazy."</p>
-        </div>
-        <div class="ci-entry clarify">
-          <div class="ci-top"><span class="ci-tag clarify">Department</span><span class="ci-who">Department presentation · Dominic Zurlo</span></div>
-          <p class="ci-quote q">"We are hearing from a wide variety of people, some who have said we actually should have more like 200 or 300 hours, and others who are saying this should be very minimal, for example just a weekend. So we are trying to figure out some of that middle ground... We have Section G, a waiver of practicum requirements, so if we found these were onerous or too expensive, the program could waive them without having to go back through rulemaking."</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- OPTIONS -->
-    <section id="options">
-      <div class="sec-head">
-        <p class="k">For July 17</p>
-        <h2>Options for setting the numbers</h2>
-        <p>These are the approaches named on the July 9 record, plus the structural choices they imply. Attributed options carry a name and date. Options marked "illustrative" are drafting frames assembled from the benchmarks above, not recommendations and not anyone's stated position. The committee is not bound to any of them.</p>
-      </div>
-
-      <div class="opt">
-        <div class="oh"><span class="ok">A. Benchmark the didactic to the licensed-provider standard</span><span class="otag att">Named · Keenan Ryan</span></div>
-        <p>Set didactic hours against the former buprenorphine X-waiver: 24 hours for already-licensed providers adding one authority. This treats New Mexico's providers as credentialed clinicians, not new entrants, and lands near the draft's current combined figure — which is the argument that ~30 is defensible, or that 24 is the floor.</p>
-        <p class="num">Reference: 24 hrs (NP/PA), 8 hrs (physician) · X-waiver, ended 2023</p>
-      </div>
-
-      <div class="opt">
-        <div class="oh"><span class="ok">B. Benchmark to the operating state programs</span><span class="otag">Illustrative</span></div>
-        <p>Match Oregon (120 didactic + 40 practicum) or Colorado (150 didactic + 40 practicum + 50 consultation). Both set far more classroom time and far less practicum than the New Mexico draft, because both license people with no prior credential. Adopting their didactic hours without their open-entry model would stack New Mexico's licensed-provider requirement on top of full lay training.</p>
-        <p class="num">Reference: Oregon 120+40 · Colorado 150+40+50</p>
-      </div>
-
-      <div class="opt">
-        <div class="oh"><span class="ok">C. Keep the practicum, raise the didactic to rebalance</span><span class="otag att">Named · Peskuski, Jennings</span></div>
-        <p>Hold practicum near 100/120 but move the didactic up so the two are proportionate. Peskuski: do not lower practicum "without balancing it with the didactic." Jennings: send both back "for a definitive consensus," not "I feel it should be more." This treats the ratio, not either number alone, as the thing to fix.</p>
-        <p class="num">Reference: current draft ~30 didactic / 100–120 practicum</p>
-      </div>
-
-      <div class="opt">
-        <div class="oh"><span class="ok">D. Require a fixed number of psilocybin sessions, Colorado-style</span><span class="otag att">Named · Larry Leeman</span></div>
-        <p>Rather than count hours only, require each trainee to complete a set number of actual administration sessions — Leeman proposed two, "that would reflect what Colorado does" — and require the trainee to be the supervised provider for part of it, not only an observer. This depends on the fix-it bill for training on trainees.</p>
-        <p class="num">Reference: Leeman, July 9 · contingent on legislation</p>
-      </div>
-
-      <div class="opt">
-        <div class="oh"><span class="ok">E. Tier the hours by prior licensure</span><span class="otag">Illustrative</span></div>
-        <p>Set different totals for different entry credentials — e.g. a psychiatrist with therapy training, a general physician, and a non-clinical facilitator do not need the same didactic load. Burgard's point that these are "already licensed professionals" with existing clinical hours, and Leeman's that "we're certainly not requiring that people are all therapists," both point at variation the single number now flattens.</p>
-        <p class="num">Reference: implied by Burgard, Leeman · not drafted</p>
-      </div>
-
-      <div class="opt">
-        <div class="oh"><span class="ok">F. Set the numbers, use Section G as the release valve</span><span class="otag att">Named · department</span></div>
-        <p>Adopt specific hours now and rely on the Section G waiver to reduce the practicum administratively if cost or patient access proves prohibitive, without reopening rulemaking. This lets the committee pick a defensible number without solving the cost and trainee-supply problems first — at the cost of leaving the real requirement to department discretion.</p>
-        <p class="num">Reference: Section G · department, July 9</p>
-      </div>
-
-      <div class="callout" style="margin-top:20px;">
-        <p><b>Cross-cutting, before any number:</b> Leeman asked for a <b>cost analysis</b> and outside experts "without a commercial conflict"; Peskuski flagged <b>patient availability</b> for practicums; and the whole practicum design hinges on the <b>fix-it bill</b> for training on trainees. Whichever hours the committee lands on, these three are the constraints the number sits inside.</p>
-      </div>
+      </details>
     </section>
 
     <!-- SOURCES -->
     <footer>
       <div class="col" style="padding:0;">
-        <h3>Sources &amp; method</h3>
-        <p>New Mexico figures are quoted from the source documents and the July 9 meeting. Benchmark figures are the published minimums for each program's facilitator-equivalent role, retrieved July 2026. Cost figures are observed market prices in Oregon and Colorado, not New Mexico projections; every total in the cost section is an estimate with its assumptions stated. Nothing here is final New Mexico rule text or a recommendation.</p>
-        <ol>
-          <li><b>[1]</b> Practicum hours (100 / 120, 80-hour and 20-hour breakdown, mentoring): New Mexico Training &amp; Education recommendation, "Draft for 6-12-26," pp.7–8. Local: <span class="fine">Document Register/</span>.</li>
-          <li><b>[2]</b> Didactic (~25 combined + 5 each), CE hours, Section G, department framing: NM Medical Psilocybin Advisory Board meeting, July 9, 2026, unofficial transcript. In the Documents menu above.</li>
-          <li><b>[3]</b> Oregon 120 instructional + 40 practicum hours: Oregon Psilocybin Services training rules, OAR 333-333. <a href="https://www.oregon.gov/oha/ph/preventionwellness/pages/psilocybin-training-program-approval.aspx" target="_blank" rel="noopener">oregon.gov — Psilocybin Training Program</a>.</li>
-          <li><b>[4]</b> Oregon hours summary and topic breakdown: <a href="https://healingadvocacyfund.org/oregon-psilocybin-facilitators" target="_blank" rel="noopener">Healing Advocacy Fund — Oregon Psilocybin Facilitator</a>.</li>
-          <li><b>[5]</b> Colorado 150 didactic + 40 practicum + 50 consultation hours: Colorado Division of Professions and Occupations, Natural Medicine. <a href="https://dpo.colorado.gov/NaturalMedicine/FAQ" target="_blank" rel="noopener">dpo.colorado.gov — Natural Medicine FAQ</a>; rules at 4 CCR 755-1.</li>
-          <li><b>[6]</b> Colorado facilitator training program requirements: <a href="https://dora.colorado.gov/press-release/natural-medicine-facilitator-training-program-applications-now-open" target="_blank" rel="noopener">DORA — Facilitator Training Program</a>.</li>
-          <li><b>[7]</b> CIIS certificate hours (140–150 instruction, ~30 consultation) and tuition ($8,900 online / $9,400 hybrid): <a href="https://www.ciis.edu/continuing-education/center-for-psychedelic-therapies-and-research/about-the-certificate" target="_blank" rel="noopener">CIIS — Certificate in Psychedelic-Assisted Therapies &amp; Research</a>.</li>
-          <li><b>[8]</b> Buprenorphine X-waiver 24-hour training (NP/PA), 8-hour (physician), DATA-2000: <a href="https://www.apna.org/continuing-education/mat-waiver-training/" target="_blank" rel="noopener">APNA — MAT waiver training</a>.</li>
-          <li><b>[9]</b> X-waiver eliminated Dec 29, 2022 (Consolidated Appropriations Act, 2023 / MAT Act): <a href="https://www.samhsa.gov/substance-use/treatment/resources/mat-act" target="_blank" rel="noopener">SAMHSA — Waiver Elimination (MAT Act)</a>.</li>
-          <li><b>Session costs:</b> Oregon $700–$6,500 (commonly $1,200–$3,500) and Colorado ~$200–$3,500 per session: provider pricing pages and reporting collected July 2026; Colorado $200 trainee figure per Leeman, July 9 transcript.</li>
-        </ol>
-        <p class="fine">Prepared as a community reference for the July 17, 2026 Training and Education Committee meeting. Not affiliated with NMDOH. Not legal advice. Nothing here is final rule text.</p>
+        <h3>New Mexico (primary, local)</h3>
+        <ul>
+          <li>July 9 draft rules 7.35.3, practicum, educational, and reciprocity sections. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">rules-draft-2026-07-09.pdf</a></li>
+          <li>June 12 recommendation, practicum and continuing-education hours (pp.7&ndash;9). <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">recommendation-2026-06-12.pdf</a></li>
+          <li>July 9 Advisory Board meeting, unofficial transcript. <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">NMMPAB-2026-07-09-transcript.pdf</a></li>
+        </ul>
+        <h3>Benchmarks (verified against each rule)</h3>
+        <ul>
+          <li>Oregon 120 instruction + 40 practicum: OAR 333-333. <a href="https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/Documents/333-333_HO_Report_FINAL.pdf" target="_blank" rel="noopener">oregon.gov OHA report</a></li>
+          <li>Colorado 150 didactic + 40 practicum + 50 consultation: <a href="https://www.law.cornell.edu/regulations/colorado/4-CCR-755-1-3" target="_blank" rel="noopener">4 CCR 755-1-3</a></li>
+          <li>CIIS certificate 140&ndash;150 instruction, tuition $8,900&ndash;$9,400: <a href="https://www.ciis.edu/continuing-education/center-for-psychedelic-therapies-and-research/about-the-certificate" target="_blank" rel="noopener">ciis.edu</a></li>
+          <li>Buprenorphine waiver 24 hrs (NP/PA), 8 hrs (MD), ended 2023: <a href="https://www.samhsa.gov/substance-use/treatment/resources/mat-act" target="_blank" rel="noopener">SAMHSA MAT Act</a></li>
+        </ul>
+        <h3>Cost reference prices (Oregon and Colorado market, not New Mexico)</h3>
+        <ul>
+          <li>Colorado ~$200 trainee session: Leeman, July 9 transcript. Oregon $1,200&ndash;$3,500 market session and $8,900&ndash;$12,000 tuition: provider pricing pages, collected July 2026.</li>
+        </ul>
+        <p>Community reference for the July 17, 2026 Training and Education Committee meeting. Not affiliated with NMDOH. Not legal advice. Nothing here is final rule text.</p>
       </div>
     </footer>
 
