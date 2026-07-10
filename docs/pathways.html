@@ -31,14 +31,34 @@
   :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px;}
 
   .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
-  .topbar .inner{max-width:860px; margin:0 auto; padding:10px 22px; display:flex; align-items:center; gap:16px;}
-  .brand{font-family:var(--serif); font-weight:600; font-size:15px; margin-right:auto; display:flex; align-items:center; gap:9px;}
+  .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 22px; display:flex; align-items:center; gap:16px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; margin-right:auto; display:flex; align-items:center; gap:9px; white-space:nowrap;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
   .tnav{display:flex; gap:4px;}
-  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px; white-space:nowrap;}
   .tnav a:hover{background:var(--surface-2); color:var(--text);}
   .tnav a.on{color:var(--accent); background:var(--accent-soft);}
-  @media (max-width:640px){.tnav a.hidesm{display:none;}}
+  .tdrop{position:relative;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
+  .tdrop>summary::-webkit-details-marker{display:none;}
+  .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
+  .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
+  .tdrop-menu{position:absolute; right:0; top:calc(100% + 6px); background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg); padding:6px; min-width:250px; display:flex; flex-direction:column; gap:2px; z-index:60;}
+  .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
+  .tdrop-menu a:hover{background:var(--surface-2);}
+  .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
+  .updated{margin:12px 0 0; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
+  .updated b{color:var(--text-muted); font-weight:600;}
+  .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
+  @media (max-width:1140px){
+    .topbar .inner{position:relative;}
+    .hamburger{display:block;}
+    .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 22px 12px; gap:2px;}
+    .tnav.open{display:flex;}
+    .tnav a{padding:10px 8px;}
+    .tnav a.hidesm{display:block;}
+    .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
+  }
 
   .hero{padding:38px 0 4px;}
   .eyebrow{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 12px;}
@@ -130,12 +150,25 @@
 
   <div class="topbar">
     <div class="inner">
-      <span class="brand"><span class="dot"></span> Training &amp; Education Rules &middot; July 9</span>
-      <nav class="tnav">
-        <a class="hidesm" href="index.html">The three items</a>
+      <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
+      <nav class="tnav" id="tnav">
+        <a href="index.html">Tabled items</a>
         <a class="on" href="pathways.html">Provider routes</a>
-        <a href="reference.html">Who can qualify</a>
+        <a href="eligibility.html">Who can qualify</a>
+        <a href="hours.html">Training hours</a>
+        <a href="cs-number.html">CS number</a>
+        <a href="input.html">Community input</a>
+        <a href="history.html">Recent developments</a>
+        <details class="tdrop">
+          <summary>Documents ▾</summary>
+          <div class="tdrop-menu">
+            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">The department's July 9 board-meeting draft (7.35.3)</span></a>
+            <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
+            <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
+          </div>
+        </details>
       </nav>
+      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
     </div>
   </div>
 
@@ -143,10 +176,11 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
       <h1>Routes to a provider permit, by where you start</h1>
-      <p class="lede">Three permits: <b>Facilitator, Practitioner, Diagnostic Clinician</b>. Pick a starting license to see the steps and the open questions the board decides July 9.</p>
+      <p class="updated"><b>Updated July 9, 2026, 3:37 PM MDT.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
+      <p class="lede">Three permits: <b>Facilitator, Practitioner, Certifying Clinician</b>. Pick a starting license to see the steps and where each open question landed on July 9.</p>
       <div class="flags">
         <span class="fl set">&#9679; Settled</span>
-        <span class="fl open">&#9670; Open, July 9</span>
+        <span class="fl open">&#9670; Open</span>
         <span class="fl chal">&#9650; Contested</span>
       </div>
     </header>
@@ -159,11 +193,11 @@
     <div id="panel"></div>
 
     <div class="j9">
-      <h3>On the July 9 agenda</h3>
+      <h3>What happened July 9</h3>
       <ul>
-        <li>The <b>Controlled Substance number</b> for Diagnostic Clinicians: required, or not.</li>
-        <li>The <b>practicum hours</b> (~100 facilitator, ~120 practitioner) and the 20 supervising hours.</li>
-        <li>The <b>reciprocity dates</b>, December 31, 2026 and December 31, 2027.</li>
+        <li><b>Reciprocity</b>: resolved without objection; both waiver deadlines extended to <b>December 31, 2027</b>.</li>
+        <li><b>Practicum and didactic hours</b>: tabled by vote and sent to the Training and Education Committee (July 17).</li>
+        <li><b>Controlled Substance number</b> for the Certifying Clinician: sent back to the department to weigh alternatives.</li>
       </ul>
       <p style="margin:11px 0 0; font-size:13.5px; color:var(--text-muted);">Full record on the <a href="index.html">three items page</a>.</p>
     </div>
@@ -190,7 +224,7 @@
       {t:"Register with the state. <b>No license required.</b>", s:'set', src:L('6/12 p.1',P6+'1')},
       {t:"Certifications: <b>BLS, CPR, First Aid, HIPAA</b>. Sex-offender attestation.", s:'set', src:L('6/12 p.5',P6+'5')+' &middot; '+L('6/25 p.7',R6+'7')},
       {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('6/12 pp.5-7',P6+'5')},
-      {t:"Practicum at an approved Healing Center. Draft: <b>~100 hours</b>.", s:'open', flag:'July 9', why:"Hours and patient counts unresolved.", src:L('6/12 pp.7-8',P6+'7')},
+      {t:"Practicum at an approved Healing Center. Draft: <b>~100 hours</b>.", s:'open', flag:'Open', why:"Tabled July 9; sent to the Training and Education Committee (July 17).", src:L('6/12 pp.7-8',P6+'7')},
       {t:"Mentoring: <b>10 hours</b> after graduation.", s:'set', src:L('6/12 p.8',P6+'8')},
       {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
       {t:"Continuing ed: <b>20 hours every 2 years</b>. Keep BLS current.", s:'set', src:L('6/12 p.9',P6+'9')}
@@ -199,16 +233,16 @@
       {t:"Hold a NM license to provide <b>counseling, mental health, or behavioral health therapy</b>.", s:'set', src:L('6/12 p.1',P6+'1')},
       {t:"Certifications and attestation, as facilitator.", s:'set', src:L('6/12 p.3',P6+'3')+' &middot; '+L('6/25 p.7',R6+'7')},
       {t:"Approved <b>Practitioner training</b>.", s:'set', src:L('6/12 pp.3-5',P6+'3')},
-      {t:"Practicum at an approved Healing Center. Draft: <b>~120 hours</b>.", s:'open', flag:'July 9', why:"Hours unresolved.", src:L('6/12 pp.7-8',P6+'7')},
+      {t:"Practicum at an approved Healing Center. Draft: <b>~120 hours</b>.", s:'open', flag:'Open', why:"Tabled July 9; sent to the Training and Education Committee (July 17).", src:L('6/12 pp.7-8',P6+'7')},
       {t:"Includes <b>20 hours supervising facilitators</b>.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make it optional (6/25). Department kept it.", src:L('6/12 p.7',P6+'7')+' &middot; '+L('hearing 6/25','index.html#practicum')},
       {t:"Mentoring: <b>10 hours</b>.", s:'set', src:L('6/12 p.8',P6+'8')},
       {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
       {t:"Continuing ed: <b>20 hours every 2 years</b>. Keep BLS current.", s:'set', src:L('6/12 p.9',P6+'9')}
     ]},
-    dc:{name:'Diagnostic Clinician', dot:'#256E8C', steps:[
+    dc:{name:'Certifying Clinician', dot:'#256E8C', steps:[
       {t:"Hold a NM license that can <b>diagnose the qualifying condition</b>.", s:'set', src:L('6/12 p.1',P6+'1')},
-      {t:"Approved <b>Diagnostic Clinician training</b> (pharmacology, diagnosis, medical clearance, monitoring).", s:'set', src:L('6/12 pp.2-3',P6+'2')},
-      {t:"Hold a <b>New Mexico Controlled Substance number</b>.", s:'open', flag:'July 9', why:"Whether it is required at all is the July 9 question. NM number, not federal DEA.", src:L('6/12 p.1',P6+'1')+' &middot; '+L('board 6/26','index.html#cs')},
+      {t:"Approved <b>Certifying Clinician training</b> (pharmacology, diagnosis, medical clearance, monitoring).", s:'set', src:L('6/12 pp.2-3',P6+'2')},
+      {t:"Hold a <b>New Mexico Controlled Substance number</b>.", s:'open', flag:'Open', why:"Sent back to the department after July 9 to weigh alternatives. NM number, not federal DEA.", src:L('6/12 p.1',P6+'1')+' &middot; '+L('the three items','index.html#cs')},
       {t:"<b>No practicum.</b>", s:'set', src:L('6/12 pp.2-3',P6+'2')},
       {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
       {t:"Continuing ed: <b>8 CME hours every 2 years</b>.", s:'set', src:L('6/12 p.9',P6+'9')}
@@ -216,9 +250,9 @@
     recip:{name:'Reciprocity', dot:'#5A4A88', steps:[
       {t:"Trained and licensed outside New Mexico. Your program must be on <b>NMDOH's approved reciprocity list</b>.", s:'set', flag:null, why:"NMDOH decides which outside programs qualify. Programs regulated by another state market are the likely candidates.", src:L('6/25 pp.4-5',R6+'4')},
       {t:"Complete the <b>New Mexico Module</b>.", s:'set', src:L('6/25 pp.4-5',R6+'4')},
-      {t:"Apply <b>by December 31, 2026</b>: reduced practicum, at least <b>40 contact hours</b>.", s:'open', flag:'July 9', why:"The date is on the July 9 agenda.", src:L('6/25 p.4',R6+'4')},
-      {t:"NMDOH may further reduce the practicum <b>through December 31, 2027</b>.", s:'open', flag:'July 9', why:"Also on the July 9 agenda.", src:L('6/25 p.4',R6+'4')},
-      {t:"Apply as <b>Practitioner or Facilitator</b>. No Diagnostic Clinician route.", s:'set', src:L('6/25 pp.6-7',R6+'6')}
+      {t:"Apply <b>by December 31, 2027</b>: reduced practicum, at least <b>40 contact hours</b>.", s:'set', why:"Deadline extended to Dec 31, 2027 at the July 9 meeting.", src:L('6/25 p.4',R6+'4')},
+      {t:"NMDOH may further reduce the practicum <b>through December 31, 2027</b>.", s:'set', why:"Extended to Dec 31, 2027 at the July 9 meeting.", src:L('6/25 p.4',R6+'4')},
+      {t:"Apply as <b>Practitioner or Facilitator</b>. No Certifying Clinician route.", s:'set', src:L('6/25 pp.6-7',R6+'6')}
     ]}
   };
 
@@ -250,7 +284,7 @@
     {id:'elsewhere', title:"Trained outside New Mexico", ex:"Out-of-state, international, or Tribal, Pueblo, and Nation programs NMDOH approves.",
      routes:[
        {permit:'recip', state:'recip', line:"Enter by reciprocity, as Practitioner or Facilitator. Foreign credentials: translated to English and apostilled (6/26)."},
-       {permit:'dc', state:'nopath', line:"No reciprocity route for Diagnostic Clinician."}
+       {permit:'dc', state:'nopath', line:"No reciprocity route for Certifying Clinician."}
      ]}
   ];
 
@@ -326,6 +360,9 @@
   }
   render();
 })();
+</script>
+<script>
+(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
 </script>
 </body>
 </html>
