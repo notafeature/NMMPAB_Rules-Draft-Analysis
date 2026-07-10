@@ -59,56 +59,71 @@
     .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
   }
 
-  /* Today callout (collapsible) */
-  .today{margin:22px 0 4px; border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; overflow:hidden;}
-  .today>summary{list-style:none; cursor:pointer; padding:14px 16px; display:flex; gap:12px; align-items:flex-start;}
+  /* Hero */
+  .hero{padding:36px 0 4px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
+  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 10px; line-height:1.22;}
+  .updated{margin:0 0 14px; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
+  .updated b{color:var(--text-muted); font-weight:600;}
+  .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; line-height:1.55;}
+  .lede b{font-weight:600; color:var(--text);}
+
+  /* Open items: the message */
+  .openhead{margin:30px 0 4px;}
+  .openhead .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  h2{font-size:clamp(20px,2.4vw,26px); letter-spacing:-.008em; margin:0;}
+  .openhead p{color:var(--text-muted); margin:10px 0 0; font-size:15px;}
+  .openrow{display:grid; grid-template-columns:1fr; gap:14px; margin-top:20px;}
+  @media (min-width:720px){.openrow{grid-template-columns:repeat(3,1fr);}}
+  .ocard{background:var(--surface); border:1px solid var(--border-strong); border-radius:14px; padding:20px; box-shadow:var(--shadow-lg); display:flex; flex-direction:column; gap:10px;}
+  .ocard .on{font-family:var(--serif); font-size:12.5px; font-weight:700; color:var(--accent); letter-spacing:.02em;}
+  .ocard h3{font-size:17.5px; margin:0; line-height:1.32;}
+  .stpill{display:inline-flex; align-self:flex-start; gap:6px; align-items:center; font-size:11px; font-weight:700; padding:4px 11px; border-radius:999px; text-transform:uppercase; letter-spacing:.03em; white-space:nowrap;}
+  .stpill.sent{color:var(--dissent); background:var(--dissent-bg); border:1px solid var(--dissent-border);}
+  .stpill.tabled{color:var(--open); background:var(--open-bg); border:1px solid var(--open-border);}
+  .stpill.resolved{color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border);}
+  .ocard .osum{font-size:13.5px; color:var(--text-muted); margin:0; line-height:1.55;}
+  .ocard .olinks{margin-top:auto; display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; font-weight:650; padding-top:8px; border-top:1px solid var(--border); }
+  .statuskey{margin:16px 0 0; font-size:12.5px; color:var(--text-faint); line-height:1.6;}
+  .statuskey b{color:var(--text-muted);}
+
+  /* Demoted context strip */
+  .context-strip{margin-top:36px;}
+  .today{border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; overflow:hidden;}
+  .today>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; gap:12px; align-items:flex-start;}
   .today>summary::-webkit-details-marker{display:none;}
-  .today .today-line{font-size:15px; color:var(--text); line-height:1.5;}
+  .today .today-line{font-size:14px; color:var(--text); line-height:1.5;}
   .today .today-line b{color:var(--open);}
   .today>summary .chev{margin-left:auto; color:var(--open); font-size:13px; transition:transform .15s ease; flex:none; margin-top:3px;}
   .today[open]>summary .chev{transform:rotate(90deg);}
-  .today-body{padding:0 16px 16px; font-size:14px; color:var(--text); line-height:1.55;}
+  .today-body{padding:0 16px 16px; font-size:13.5px; color:var(--text); line-height:1.55;}
   .today-body p{margin:8px 0 0;}
   .today-body ul{margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:7px;}
-  .today-body .today-next{margin:12px 0 0; font-family:var(--mono); font-size:12.5px; color:var(--text-muted);}
+  .today-body .today-next{margin:12px 0 0; font-family:var(--mono); font-size:12px; color:var(--text-muted);}
 
-  /* Hero */
-  .hero{padding:40px 0 8px;}
-  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
-  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 14px; line-height:1.22;}
-  .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; line-height:1.55;}
-  .lede b{font-weight:600; color:var(--text);}
-  .notfinal{display:inline-flex; gap:9px; align-items:center; margin-top:22px; background:var(--open-bg); border:1px solid var(--open-border); color:var(--open); border-radius:999px; padding:6px 14px; font-size:13px; font-weight:600;}
-  .mtgnote{margin:24px 0 2px; padding:12px 0 12px 16px; border-left:4px solid var(--open); font-size:16px; color:var(--text); line-height:1.55;}
-  .mtgnote b{color:var(--open); font-weight:700;}
-  .mtgnote .sub{color:var(--text-muted); font-size:13.5px;}
-
-  /* Documents referenced */
-  .dockey-h{font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted); margin:30px 0 0;}
-  .dockey{display:grid; grid-template-columns:1fr; gap:12px; margin:10px 0 4px;}
-  @media (min-width:640px){.dockey{grid-template-columns:1fr 1fr;}}
-  .dk{display:block; text-decoration:none; color:inherit; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:14px 16px; transition:border-color .12s ease, background .12s ease, transform .12s ease;}
-  .dk:hover{border-color:var(--border-strong); background:var(--surface-3); transform:translateY(-1px);}
+  .stripgrid{display:grid; grid-template-columns:1fr; gap:10px; margin-top:12px;}
+  @media (min-width:640px){.stripgrid{grid-template-columns:1fr 1fr;}}
+  .dk{display:block; text-decoration:none; color:inherit; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:13px 15px; transition:border-color .12s ease, background .12s ease;}
+  .dk:hover{border-color:var(--border-strong); background:var(--surface-3);}
   .dk.current{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent);}
   .dk .dkl{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 5px;}
-  .dk p{margin:0; font-size:14px; color:var(--text-muted);}
+  .dk p{margin:0; font-size:13.5px; color:var(--text-muted);}
   .dk p b{color:var(--text); font-weight:600;}
-  .dkgo{display:inline-block; margin-top:9px; font-size:12px; font-weight:600; color:var(--accent);}
-  .dkflag{display:inline-block; font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; padding:1px 6px; border-radius:999px; margin-left:6px; vertical-align:1px; background:var(--pillN-bg); color:var(--pillN); border:1px solid var(--border);}
-  .dkflag.cur{background:var(--accent-soft); color:var(--accent); border-color:var(--border-strong);}
-  .updated{margin:14px 0 0; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
-  .updated b{color:var(--text-muted); font-weight:600;}
+  .dkgo{display:inline-block; margin-top:8px; font-size:12px; font-weight:600; color:var(--accent);}
+  .dkflag{display:inline-block; font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; padding:1px 6px; border-radius:999px; margin-left:6px; vertical-align:1px; background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
+  .inputstrip{display:flex; flex-direction:column; gap:6px; margin:0; background:var(--surface); border:1px solid var(--border-strong); border-radius:12px; padding:13px 15px; font-size:13.5px; color:var(--text-muted); line-height:1.5;}
+  .inputstrip b{color:var(--text); font-weight:650;}
+  .inputstrip a{font-weight:600; white-space:nowrap;}
+  .notfinal{display:inline-flex; gap:9px; align-items:center; margin-top:12px; background:var(--surface-2); border:1px solid var(--border); color:var(--text-muted); border-radius:999px; padding:6px 14px; font-size:12.5px; font-weight:600;}
 
   /* Section scaffolding */
   section{padding-top:20px;}
   .sec-head{margin:40px 0 6px;}
   .sec-head .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  h2{font-size:clamp(20px,2.4vw,26px); letter-spacing:-.008em; margin:0;}
   .sec-head p{color:var(--text-muted); margin:10px 0 0;}
 
-  /* Decision cards */
+  /* Decision cards (bottom pointer) */
   .decks{display:grid; grid-template-columns:1fr; gap:14px; margin-top:22px;}
-  @media (min-width:720px){.decks{grid-template-columns:repeat(3,1fr);}}
   .deck{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; text-decoration:none; color:inherit; transition:transform .12s ease, box-shadow .12s ease;}
   .deck:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg);}
   .deck .dn{font-family:var(--serif); font-size:13px; font-weight:700; color:var(--accent); letter-spacing:.02em;}
@@ -129,9 +144,6 @@
   .whatnow .at b{color:var(--accent);}
   .whatnow .give{margin:10px 0 0; font-size:13px;}
   .whatnow .give a{font-weight:600;}
-  .inputstrip{display:flex; gap:12px; align-items:baseline; flex-wrap:wrap; margin:14px 0 0; background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; padding:11px 15px; font-size:14px; color:var(--text-muted);}
-  .inputstrip b{color:var(--text); font-weight:650;}
-  .inputstrip a{font-weight:600; white-space:nowrap;}
   .diffbox{background:var(--open-bg); border:1px solid var(--open-border); border-left:4px solid var(--open); border-radius:12px; padding:14px 16px; margin:16px 0 4px;}
   .diffbox .dbl{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--open); margin:0 0 6px;}
   .diffbox p.d{margin:0; font-size:14.5px; color:var(--text); line-height:1.5;}
@@ -143,14 +155,16 @@
   .layer .lt{font-family:var(--serif); font-size:17px; font-weight:600;}
   .layer .ld{font-size:12.5px; color:var(--text-faint); margin-left:auto; font-family:var(--mono);}
 
-  /* verbatim cards */
-  .lang{background:var(--surface); border:1px solid var(--border-strong); border-left:4px solid var(--accent); border-radius:12px; padding:18px 20px; box-shadow:var(--shadow);}
-  .verbatim{font-family:var(--mono); font-size:13.5px; line-height:1.66; color:var(--text);}
+  /* verbatim exhibit cards: primary evidence, not a code snippet */
+  .lang{background:var(--surface); border:1px solid var(--border-strong); border-left:6px solid var(--accent); border-radius:14px; padding:22px 24px; box-shadow:var(--shadow-lg);}
+  .exhibit-tag{display:inline-flex; align-items:center; gap:7px; font-family:var(--serif); font-style:italic; font-size:12.5px; color:var(--accent); background:var(--accent-soft); border:1px solid var(--border-strong); padding:5px 13px; border-radius:999px; margin-bottom:14px;}
+  .verbatim{font-family:var(--mono); font-size:13.5px; line-height:1.7; color:var(--text);}
   .verbatim .lead{margin:0 0 8px;}
-  .verbatim ul{margin:0; padding-left:16px; display:flex; flex-direction:column; gap:8px;}
+  .verbatim ul{margin:0; padding-left:16px; display:flex; flex-direction:column; gap:9px;}
   .verbatim ul ul{margin-top:8px;}
+  .pagecite{font-family:var(--sans); font-style:normal; font-size:11px; color:var(--text-faint); font-weight:600;}
   .absent{font-size:14px; color:var(--text-muted); font-style:italic; margin:0;}
-  .srcline{margin-top:12px; padding-top:9px; border-top:1px dashed var(--border-strong); font-size:11px; color:var(--text-faint); font-family:var(--mono);}
+  .srcline{margin-top:14px; padding-top:11px; border-top:1px dashed var(--border-strong); font-size:11px; color:var(--text-faint); font-family:var(--mono);}
 
   /* committee input */
   .ci{display:flex; flex-direction:column; gap:10px;}
@@ -171,48 +185,16 @@
 
   .subnote{font-size:13.5px; color:var(--text-muted); margin:0 0 12px;}
 
+  /* the didactic/practicum debate */
+  .debate{margin:20px 0 4px; background:var(--surface-2); border:1px solid var(--border); border-radius:14px; padding:18px 20px 20px;}
+  .debate .dh{font-family:var(--serif); font-size:16.5px; font-weight:600; margin:0 0 4px; line-height:1.3;}
+  .debate .dsub{font-size:12px; color:var(--text-faint); font-family:var(--mono); margin:0 0 14px;}
+  .originnote{margin-top:14px; background:var(--surface); border:1px dashed var(--border-strong); border-radius:10px; padding:12px 15px; font-size:13.5px; color:var(--text-muted); line-height:1.5;}
+  .originnote b{color:var(--text);}
+
   .landed{margin:24px 0 6px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--open); border-radius:10px; padding:13px 16px;}
   .landed .ll{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--open); margin:0 0 6px;}
   .landed p{margin:0; font-size:14.5px;}
-
-  /* Record section */
-  .motion{margin:18px 0; padding:20px 22px; background:var(--accent-soft); border-radius:12px; border:1px solid var(--border);}
-  .motion p{font-family:var(--serif); font-size:19px; line-height:1.45; margin:0; color:var(--text);}
-  .motion cite{display:block; margin-top:12px; font-style:normal; font-size:13px; color:var(--text-muted);}
-  .tally{display:flex; gap:12px; flex-wrap:wrap; margin:16px 0;}
-  .tc{flex:1 1 130px; background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow);}
-  .tc .n{font-family:var(--serif); font-size:32px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums;}
-  .tc .l{font-size:12.5px; color:var(--text-muted); margin-top:5px;}
-  .tc.yes .n{color:var(--agree);} .tc.no .n{color:var(--dissent);}
-  .redline-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
-  .redline-list li{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:10px 13px; font-size:14px;}
-  .redline-list .who{display:block; margin-top:5px; font-size:12px; color:var(--text-muted);}
-  .ins{color:var(--agree); background:var(--agree-bg); border-radius:3px; padding:0 3px;}
-  .rem{color:var(--dissent); background:var(--dissent-bg); border-radius:3px; padding:0 3px; text-decoration:line-through;}
-  .tag{display:inline-block; font-size:10.5px; font-weight:650; padding:1px 7px; border-radius:999px; vertical-align:1px; background:var(--agree-bg); color:var(--agree); border:1px solid var(--agree-border);}
-  details.disc{margin-top:14px; border:1px solid var(--border); border-radius:12px; background:var(--surface); overflow:hidden;}
-  details.disc>summary{cursor:pointer; padding:14px 18px; font-weight:600; font-size:15px; list-style:none; display:flex; align-items:center; gap:10px;}
-  details.disc>summary::-webkit-details-marker{display:none;}
-  details.disc>summary .chev{transition:transform .15s ease; color:var(--accent); font-size:13px;}
-  details.disc[open]>summary .chev{transform:rotate(90deg);}
-  details.disc>summary .ct{color:var(--text-muted); font-weight:500; font-size:13px; margin-left:auto;}
-  .disc-body{padding:2px 18px 18px;}
-  .tablewrap{overflow-x:auto; margin:14px 0 0; border:1px solid var(--border); border-radius:12px;}
-  table{border-collapse:collapse; width:100%; min-width:640px; font-size:13.5px; background:var(--surface);}
-  thead th{text-align:left; font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted); padding:11px 13px; border-bottom:1px solid var(--border-strong); background:var(--surface-2);}
-  tbody td{padding:10px 13px; border-bottom:1px solid var(--border); vertical-align:top;}
-  tbody tr:last-child td{border-bottom:none;}
-  td.it{font-weight:600; width:36%;}
-  td.wc{color:var(--text-muted);}
-  td.dc{font-family:var(--mono); font-size:12px; color:var(--text-faint); white-space:nowrap;}
-  .st{display:inline-block; font-size:11px; font-weight:650; padding:2px 8px; border-radius:999px; white-space:nowrap;}
-  .st.carve{color:var(--open); background:var(--open-bg); border:1px solid var(--open-border);}
-  .st.open{color:var(--open); border:1px solid var(--open-border);}
-  .st.va{color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border);}
-  .st.res{color:var(--agree); border:1px solid var(--agree-border);}
-  .st.no{color:var(--dissent); border:1px solid var(--dissent-border);}
-  .st.nt{color:var(--pillN); background:var(--pillN-bg); border:1px solid var(--border);}
-
 
   footer{margin-top:60px; border-top:1px solid var(--border); padding:26px 0 80px;}
   footer h3{font-size:15px; margin:0 0 8px;}
@@ -233,7 +215,7 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a class="on" href="index.html">Tabled items</a>
-        <a href="changes.html">What changed</a>
+        <a href="changes.html">The draft</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
@@ -260,10 +242,48 @@
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
       <h1>Training &amp; Education:<br>The tabled items</h1>
       <p class="updated"><b>Updated July 10, 2026.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
-      <p class="lede">The Training &amp; Education Committee developed a recommendation for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to accept the recommendation and set three items aside. The board took up those three items at its <b>July 9, 2026</b> meeting.</p>
+      <p class="lede">The Training &amp; Education Committee wrote a recommendation for how medical psilocybin providers are trained and permitted. On <b>June 26, 2026</b> the Advisory Board voted <b>3-2</b> to accept it and set three items aside. The board took those three items up at its <b>July 9, 2026</b> meeting.</p>
+    </header>
 
+    <!-- THE MESSAGE: three open items, current status -->
+    <section id="decisions">
+      <div class="openhead">
+        <p class="k">Where things stand, July 10, 2026</p>
+        <h2>Three items are still open</h2>
+        <p>Each was set aside on June 26. Each was taken up on July 9. Here is what happened to each, and what is still ahead.</p>
+      </div>
+
+      <div class="openrow">
+        <div class="ocard">
+          <span class="on">Item 1</span>
+          <h3>Must the certifying clinician hold a controlled-substance number?</h3>
+          <span class="stpill sent">Sent back to the department, July 9</span>
+          <p class="osum">The July 9 draft keeps the requirement (p. 8). The board did not endorse it and asked the department to weigh alternatives. No vote was taken.</p>
+          <div class="olinks"><a href="#cs">See the detail ↓</a><a href="input.html?topic=cs-number">Give input →</a></div>
+        </div>
+        <div class="ocard">
+          <span class="on">Item 2</span>
+          <h3>Are the practicum and didactic hours right?</h3>
+          <span class="stpill tabled">Tabled to committee, July 17</span>
+          <p class="osum">100 / 120 practicum hours and the didactic modules (25 core + 5 role-specific + 5 simulated, about 35 hours combined) stand unchanged in the draft (p. 4-6). The board voted to send both, and the 20-hour supervisory question, to the Training and Education Committee, meeting July 17 at 1 PM.</p>
+          <div class="olinks"><a href="#practicum">See the detail ↓</a><a href="input.html?topic=hours">Give input →</a></div>
+        </div>
+        <div class="ocard">
+          <span class="on">Item 3</span>
+          <h3>Are the reciprocity deadlines adequate?</h3>
+          <span class="stpill resolved">Resolved, July 9</span>
+          <p class="osum">Both the reciprocity waiver and the New Mexico program waiver deadlines were extended to December 31, 2027, without objection. The draft text itself still shows the earlier dates (p. 6-7); the extension is not yet written in.</p>
+          <div class="olinks"><a href="#reciprocity">See the detail ↓</a><a href="input.html?topic=reciprocity">Give input →</a></div>
+        </div>
+      </div>
+
+      <p class="statuskey"><b>Sent back</b> means the department will weigh alternatives and bring something back. <b>Tabled</b> means the item now has a committee and a date. <b>Resolved</b> means the board settled it without objection, as of July 9, 2026.</p>
+    </section>
+
+    <!-- DEMOTED: recap, document, input, disclaimer -->
+    <section class="context-strip">
       <details class="today" id="today">
-        <summary><span class="today-line"><b>What happened July 9:</b> reciprocity was extended to Dec 31, 2027; practicum and didactic hours were sent to the Training and Education Committee; the certifying-clinician / controlled-substance-number question was sent back to the department. None of this is final rule text.</span><span class="chev">▸</span></summary>
+        <summary><span class="today-line"><b>The July 9 meeting, in brief:</b> reciprocity was extended to Dec 31, 2027; practicum and didactic hours went to the Training and Education Committee; the certifying-clinician controlled-substance question went back to the department.</span><span class="chev">▸</span></summary>
         <div class="today-body">
           <p>July 9 was a meeting of the Medical Psilocybin Advisory Board. The board walked the full draft and acted on the three tabled items; the chair barred formal votes only after the scheduled adjournment.</p>
           <ul>
@@ -275,47 +295,16 @@
         </div>
       </details>
 
-      <span class="notfinal">● Nothing here is final rule text. This is a record of the documents, the committee input, and the dates.</span>
-
-      <p class="dockey-h">The document on the table</p>
-      <div class="dockey" style="grid-template-columns:1fr;">
+      <div class="stripgrid">
         <a class="dk current" href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">
-          <p class="dkl">The rules draft · July 9 <span class="dkflag cur">current draft</span></p>
-          <p><b>The department's draft for the July 9 board meeting</b> (7.35.3). The June 12 recommendation and the July 9 meeting transcript are in the Documents menu, top right.</p>
+          <p class="dkl">The rules draft · July 9 <span class="dkflag">current draft</span></p>
+          <p><b>The department's draft for the July 9 board meeting</b> (7.35.3). The June 12 recommendation and the July 9 transcript are in the Documents menu, top right.</p>
           <span class="dkgo">Open PDF ↗</span>
         </a>
+        <div class="inputstrip"><span><b>Have something the rule-writers should see?</b> Studies, curricula, other states' rules, or a recommendation: sent once, compiled, and forwarded together.</span> <a href="input.html">Share it on Community input →</a></div>
       </div>
 
-      <div class="inputstrip"><span><b>Have something the rule-writers should see?</b> Studies, curricula, other states' rules, or a recommendation: sent once, compiled, and forwarded together.</span> <a href="input.html">Share it on Community input →</a></div>
-    </header>
-
-    <!-- DECISION BRIEF -->
-    <section id="decisions">
-      <div class="sec-head">
-        <p class="k">Set aside June 26 · Taken up July 9</p>
-        <h2>The three tabled items</h2>
-        <p>Each card links to the detail: the recommendation as written, the committee input, and the July 9 rules-draft language.</p>
-      </div>
-      <div class="decks">
-        <a class="deck" href="#cs">
-          <span class="dn">Item 1 · Back with the department</span>
-          <h3>Must the certifying clinician hold a controlled-substance number?</h3>
-          <p class="stake">Affects which clinicians can authorize a patient's entry to the program.</p>
-          <span class="go">See the detail →</span>
-        </a>
-        <a class="deck" href="#practicum">
-          <span class="dn">Item 2 · With the committee July 17</span>
-          <h3>Are the practicum and didactic hours right, and is the 20-hour supervisory practicum mandatory?</h3>
-          <p class="stake">Affects the cost and time required to qualify as a provider.</p>
-          <span class="go">See the detail →</span>
-        </a>
-        <a class="deck" href="#reciprocity">
-          <span class="dn">Item 3 · Resolved July 9</span>
-          <h3>Are the reciprocity sunset dates adequate?</h3>
-          <p class="stake">Affects how long providers trained elsewhere can qualify under reduced requirements.</p>
-          <span class="go">See the detail →</span>
-        </a>
-      </div>
+      <span class="notfinal">● Nothing here is final rule text. This is a record of the documents, the committee input, and the dates.</span>
     </section>
 
     <!-- ITEM 1: CS NUMBER -->
@@ -333,11 +322,12 @@
 
       <div class="diffbox">
         <p class="dbl">What the July 9 draft does</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=1" target="_blank" rel="noopener">The June 12 recommendation</a> (p. 1) required a <b>New Mexico Controlled Substance number</b>. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">The July 9 rules draft</a> <b>keeps that requirement</b> and <b>renames the role to "certifying clinician."</b> The June 25 draft had not restated the qualifications; the July 9 draft does.</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=1" target="_blank" rel="noopener">The June 12 recommendation</a> (p. 1) required a <b>New Mexico Controlled Substance number</b>. <a href="documents/rules-draft-2026-07-09.pdf#page=8" target="_blank" rel="noopener">The July 9 rules draft</a> <b>keeps that requirement</b> (p. 8) and <b>renames the role to "certifying clinician"</b> (p. 1). On July 9 the board sent the requirement back to the department to weigh alternatives.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12, as written</span></div>
       <div class="lang">
+        <span class="exhibit-tag">Exhibit · Recommendation, June 12, verbatim</span>
         <div class="verbatim">
           <p class="lead">Diagnostic Clinician: qualifications required to certify patients:</p>
           <ul>
@@ -394,17 +384,26 @@
         </div>
       </div>
 
+      <p class="subnote" style="margin-top:14px;">Also at the July 9 board meeting, when this item was sent back:</p>
+      <div class="ci">
+        <div class="ci-entry suggest">
+          <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>Keenan Ryan</b> (Acting CMO, Medicaid, covering the seat)</span></div>
+          <p class="ci-quote">"Is it possible to [allow] all behavioral health providers and allow through telemedicine? Would that be a meaningful compromise, to allow some sort of recommendation or referral without being restrictive? Some therapists may not have a controlled substance because they're not prescribing, or they might be a psychologist without it, but they could still say that you have PTSD, for example, that would be within their scope and could refer… I think there could be a happy medium in there."</p>
+        </div>
+      </div>
+
       <div class="layer"><span class="ln">3</span><span class="lt">The rules draft</span><span class="ld">July 9, 2026 (7.35.3)</span></div>
       <div class="lang">
+        <span class="exhibit-tag">Exhibit · Rules draft, July 9, verbatim</span>
         <div class="verbatim">
           <p class="lead">The July 9 draft renames the role to "certifying clinician" and keeps the controlled-substance requirement. The certifying-clinician application packet requires, among other items:</p>
           <ul>
-            <li>"Documentation of current NM professional license (e.g. MD, NP);"</li>
-            <li>"Certificate or verification of results NM Controlled Substance number;"</li>
+            <li>"Documentation of current NM professional license (e.g. MD, NP);" <span class="pagecite">p. 8</span></li>
+            <li>"Certificate or verification of results NM Controlled Substance number;" <span class="pagecite">p. 8</span></li>
           </ul>
-          <p class="lead" style="margin-top:10px;">New in this draft: "a certifying clinician module consisting of a minimum of 8 didactic hours," plus a documented test-out of the didactic portion of the curriculum.</p>
+          <p class="lead" style="margin-top:10px;">New in this draft: "a certifying clinician module consisting of a minimum of 8 didactic hours" <span class="pagecite">p. 4</span>, plus a documented test-out of the didactic portion of the curriculum <span class="pagecite">p. 8</span>.</p>
         </div>
-        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3): certifying-clinician application and educational requirements.</p>
+        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3): certifying-clinician application, p. 8, and educational requirements, p. 4.</p>
       </div>
 
       <div class="landed">
@@ -422,17 +421,18 @@
 
       <div class="whatnow">
         <p class="q">Are 100 hours (facilitators) / 120 hours (practitioners) of practicum and roughly 35 didactic hours the right numbers, and should every practitioner complete 20 supervisory hours?</p>
-        <p class="at"><b>What this is:</b> the practicum is the supervised-practice portion of provider training; the didactic hours are the classroom portion (about 35 for facilitators and practitioners, 8 for the certifying clinician, in the July 9 draft). On July 9 the board sent the practicum and the didactic hours to the committee together. The June 12 recommendation also sets <b>10 hours of mentoring</b> after graduation (p. 8), separate from these totals. The numbers set the cost and time to qualify: see <a href="hours.html">Training hours</a>.</p>
+        <p class="at"><b>What this is:</b> the practicum is the supervised-practice portion of provider training. The didactic hours are the classroom portion: a 25-hour core module plus a 5-hour role-specific module for facilitators and practitioners (about 35 hours combined, plus 5 more hours of simulated patient experience counted separately) and 8 hours for the certifying clinician, in the July 9 draft (p. 4-5). On July 9 the board sent the practicum and the didactic hours to the committee together. The July 9 draft also sets <b>10 hours of mentoring</b> after graduation (p. 6), separate from these totals, a requirement first proposed in the June 12 recommendation (p. 8, origin). The numbers set the cost and time to qualify: see <a href="hours.html">Training hours</a>.</p>
         <p class="give"><a href="input.html?topic=hours">Provide input on this item →</a></p>
       </div>
 
       <div class="diffbox">
         <p class="dbl">What the July 9 draft does</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=7" target="_blank" rel="noopener">The June 12 recommendation</a> (pp. 7-8) set <b>100 hours (facilitators) / 120 hours (practitioners)</b>. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">The July 9 rules draft</a> now <b>restates those hours in the rule itself, unchanged</b> (the June 25 draft had left them out). The reduction concerns raised in committee did not change the numbers.</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf#page=7" target="_blank" rel="noopener">The June 12 recommendation</a> (pp. 7-8) set <b>100 hours (facilitators) / 120 hours (practitioners)</b>. <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">The July 9 rules draft</a> now <b>restates those hours in the rule itself, unchanged</b> (p. 5), and adds that they must be completed before applying for certification. The reduction concerns raised in committee did not change the numbers.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12, as written</span></div>
       <div class="lang">
+        <span class="exhibit-tag">Exhibit · Recommendation, June 12, verbatim</span>
         <div class="verbatim">
           <ul>
             <li>"Supervised practice training… must include a minimum of one hundred (100) hours… for Facilitators and one hundred and twenty (120) hours for Practitioners."</li>
@@ -489,8 +489,30 @@
         </div>
       </div>
 
+      <div class="debate">
+        <p class="dh">The July 9 debate: raise the didactic, or cut the practicum?</p>
+        <p class="dsub">July 9, 2026 board meeting, unofficial transcript</p>
+        <div class="ci">
+          <div class="ci-entry dissent">
+            <div class="ci-top"><span class="ci-tag dissent">Dissent</span><span class="ci-who"><b>Larry Leeman</b> (board member, UNM)</span></div>
+            <p class="ci-quote">"I don't think 25 hours didactic is adequate for the practitioners if they haven't had evidence of other training. It's well below like with any program in the world that I have seen. And by adding more practicum, we don't obviate the need for more of the didactic."</p>
+          </div>
+          <div class="ci-entry dissent">
+            <div class="ci-top"><span class="ci-tag dissent">Dissent</span><span class="ci-who"><b>Chris Peskuski</b> (board member)</span></div>
+            <p class="ci-quote">"I don't think we can separate these issues. If we lower the practicum hours without balancing it with the didactic somewhere, and I feel like those are woefully inadequate to begin with. All of this is connected, and there's accessibility issues that also come up with how many patients are actually going to be available for people to do practicums."</p>
+          </div>
+          <div class="ci-entry suggest">
+            <div class="ci-top"><span class="ci-tag suggest">Suggestion</span><span class="ci-who"><b>Dan Jennings</b> (board member)</span></div>
+            <p class="ci-quote">"I'm going to echo Dr. Leeman and Chris. It does make sense to go back to the committee, but for both the didactic and the practicum... there needs to be a definitive consensus to the number of hours, because otherwise we just get into 'I feel it should be more, I feel it should be less.'"</p>
+          </div>
+        </div>
+        <div class="originnote"><b>Origin, June 12 recommendation (p. 8):</b> the 10-hour post-graduation mentoring requirement first appears in the committee's June 12 recommendation. It carries into the July 9 draft (p. 6) unchanged, and is not part of this debate.</div>
+        <p class="subnote" style="margin-top:12px;">Full exchange, with more speakers: <a href="hours.html">Training hours, the July 9 discussion</a>.</p>
+      </div>
+
       <div class="layer"><span class="ln">3</span><span class="lt">The rules draft</span><span class="ld">July 9, 2026 (7.35.3)</span></div>
       <div class="lang">
+        <span class="exhibit-tag">Exhibit · Rules draft, July 9, verbatim</span>
         <div class="verbatim">
           <p class="lead">The July 9 draft writes the practicum into the rule itself:</p>
           <ul>
@@ -500,12 +522,12 @@
             <li>"All practicum hours shall take place in an approved healing center or other approved location."</li>
           </ul>
         </div>
-        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3): practitioner and facilitator practicum requirements. The hours match the June 12 recommendation.</p>
+        <p class="srcline">Verbatim from the July 9, 2026 rules draft (7.35.3), p. 5: practitioner and facilitator practicum requirements. The hours match the June 12 recommendation.</p>
       </div>
 
       <div class="landed">
         <p class="ll">Where it stands</p>
-        <p><b>July 9 meeting:</b> the board voted to table the practicum and didactic hours and send them to the Training and Education Committee (July 17, 1 PM). Larry Leeman suggested the committee bring in outside experts and named the California Institute of Integral Studies as an example. The board tied the practicum to the didactic hours and to a possible "fix-it" bill allowing training with trainees, plus a cost analysis. Section G still lets the department waive practicum without new rulemaking. Language changed in the draft: "experience, observe <b>or</b> conduct" became "<b>and</b> conduct," and "therapy sessions" was removed. Detail: <a href="hours.html">the tabled numbers and the July 17 decision</a>.</p>
+        <p><b>July 9 meeting:</b> the board voted to table the practicum and didactic hours and send them to the Training and Education Committee (July 17, 1 PM). Larry Leeman suggested the committee bring in outside experts and named the California Institute of Integral Studies. The board tied the practicum to the didactic hours and to a possible "fix-it" bill allowing training with trainees, plus a cost analysis. Section G still lets the department waive practicum without new rulemaking (p. 6). Two wording changes were discussed at the meeting: "experience, observe or conduct" becoming "and conduct," and "therapy sessions" being removed. Neither change appears yet in the July 9 draft text (p. 5 still reads "experience, observe, or conduct… and therapy sessions"). Detail: <a href="hours.html">the tabled numbers and the July 17 decision</a>.</p>
       </div>
     </section>
 
@@ -524,12 +546,12 @@
 
       <div class="diffbox">
         <p class="dbl">What the July 9 meeting decided</p>
-        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. The June 25 draft set two dates. At the <b>July 9 meeting the board extended both deadlines to December 31, 2027</b>: the reciprocity practicum-hours waiver and the New Mexico program waiver. Board chair Ian Dunn noted December 31 is a legislative backstop, not the target launch date. This was the one tabled item resolved on July 9.</p>
+        <p class="d"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">The June 12 recommendation</a> has no reciprocity provision. The June 25 draft set two dates. At the <b>July 9 meeting the board extended both deadlines to December 31, 2027</b>: the reciprocity practicum-hours waiver (p. 7) and the New Mexico program waiver (p. 6). Board chair Ian Dunn noted December 31 is a legislative backstop, not the target launch date. This was the one tabled item resolved on July 9.</p>
       </div>
 
       <div class="layer"><span class="ln">1</span><span class="lt">The recommendation</span><span class="ld">June 12</span></div>
       <div class="lang" style="border-left-color:var(--border-strong);">
-        <p class="absent">Reciprocity is not in the June 12 recommendation. It exists only in the June 25 rules draft (shown in section 3).</p>
+        <p class="absent">Reciprocity is not in the June 12 recommendation. It first appears in the June 25 rules draft (origin only). The current requirement is in the <a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank" rel="noopener">July 9 draft</a>, p. 6 to p. 7 (shown in section 3 below).</p>
         <p class="srcline">Confirmed against the June 12 recommendation (no reciprocity section).</p>
       </div>
 
@@ -559,13 +581,14 @@
 
       <div class="layer"><span class="ln">3</span><span class="lt">The rules draft</span><span class="ld">July 9, 2026 (7.35.3)</span></div>
       <div class="lang">
+        <span class="exhibit-tag">Exhibit · Rules draft, July 9, verbatim</span>
         <div class="verbatim">
           <ul>
-            <li>"An applicant for reciprocity whose application is received by the department by <b>December 31, 2026</b> shall not be required to complete the full practicum hours required by New Mexico, but shall demonstrate completion of at least 40 hours of contact time with a minimum of two separate individual sessions or two separate group sessions…"</li>
-            <li>"The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for reciprocity, in order to facilitate the certifying of individuals trained by other governmental approved programs to build the initial infrastructure of the program."</li>
+            <li>"An applicant for reciprocity whose application is received by the department by <b>December 31, 2026</b> shall not be required to complete the full practicum hours required by New Mexico, but shall demonstrate completion of at least 40 hours of contact time with a minimum of two separate individual sessions or two separate group sessions…" <span class="pagecite">p. 7</span></li>
+            <li>"The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for reciprocity, in order to facilitate the certifying of individuals trained by other governmental approved programs to build the initial infrastructure of the program." <span class="pagecite">p. 7</span></li>
           </ul>
         </div>
-        <p class="srcline">Verbatim from the July 9 rules draft (7.35.3), as written before the meeting. At the July 9 meeting the board extended the deadlines: the reciprocity waiver (shown as December 31, 2026 above) and the New Mexico program waiver (June 30, 2027) were both moved to <b>December 31, 2027</b>.</p>
+        <p class="srcline">Verbatim from the July 9 rules draft (7.35.3), p. 7, as written before the meeting. At the July 9 meeting the board extended the deadlines: the reciprocity waiver (shown as December 31, 2026 above, p. 7) and the New Mexico program waiver (June 30, 2027, p. 6) were both moved to <b>December 31, 2027</b>.</p>
       </div>
 
       <div class="landed">
@@ -574,16 +597,16 @@
       </div>
     </section>
 
-    <!-- WHAT CHANGED POINTER -->
+    <!-- POINTER TO THE REST OF THE DRAFT -->
     <section id="record">
       <div class="sec-head">
         <p class="k">The rest of the draft</p>
-        <h2>What changed from the recommendation</h2>
-        <p>The three items above are the open questions. The rest of the June 12 recommendation was accepted 3-2 on June 26 and turned into the July 9 rules draft. The section-by-section record of that path (the motion and vote, the verbal agreements, and every change between the two documents) is tracked on its own page.</p>
+        <h2>The rules draft, section by section</h2>
+        <p>The three items above are the open questions. The rest of the June 12 recommendation was accepted 3-2 on June 26 and turned into the July 9 rules draft. The section-by-section record of that path, the motion and vote, the verbal agreements, and every change between the two documents, is tracked on its own page.</p>
       </div>
       <div class="decks" style="grid-template-columns:1fr;">
         <a class="deck" href="changes.html">
-          <span class="dn">Change log</span>
+          <span class="dn">The rules draft, section by section</span>
           <h3>What changed: from the June 12 recommendation to the July 9 rules draft</h3>
           <p class="stake">Every carried-over, changed, added, and dropped provision, with verbatim language and page references.</p>
           <span class="go">See the change log →</span>
@@ -597,9 +620,9 @@
         <h3>Sources &amp; method</h3>
         <p><b>Document language</b> is quoted verbatim from the source PDFs: the June 12 recommendation ("Draft for 6-12-26"), the June 25 rules draft, and the July 9, 2026 board-meeting rules draft (7.35.3, "Psilocybin patient and practitioner rule"). None is final, promulgated rule text.</p>
         <p><b>Revision, July 10, 2026:</b> parallel working drafts reconciled into this page; the July 9 meeting description corrected (it was an Advisory Board meeting; the chair barred formal votes only after the scheduled adjournment); reciprocity outcome stated as resolved without objection, per the transcript.</p>
-        <p><b>Revision, July 9, 2026, 3:37 PM MDT:</b> updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled and sent to the Training and Education Committee (July 17). Certifying clinician / controlled-substance number: sent back to the department to weigh alternatives; the "certifying clinician" rename is confirmed. The full July 9 meeting transcript (unofficial) is in the Documents menu.</p>
-        <p><b>Committee input</b> comes from the full transcripts of the June 25 and June 26 committee meetings. Both are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Peskuski, Fatemi, Leeman). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the motion.</p>
-        <p class="fine">Prepared as a community reference for the July 9, 2026 session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
+        <p><b>Revision, July 9, 2026:</b> updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled and sent to the Training and Education Committee (July 17). Certifying clinician / controlled-substance number: sent back to the department to weigh alternatives; the "certifying clinician" rename is confirmed. The full July 9 meeting transcript (unofficial) is in the Documents menu.</p>
+        <p><b>Committee input</b> comes from the full transcripts of the June 25 and June 26 committee meetings and the July 9 board meeting. All are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Leeman, Peskuski, Fatemi). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the June 26 motion.</p>
+        <p class="fine">Prepared as a community reference for the ongoing rulemaking, current to July 10, 2026 and the July 17, 2026 committee session. Not affiliated with NMDOH. Nothing here is final rule text.</p>
       <div class="sitefoot">
         <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
         <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
