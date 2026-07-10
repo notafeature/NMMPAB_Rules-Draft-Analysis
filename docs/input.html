@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community input — NM Medical Psilocybin Training Rules</title>
+<style>
+  :root{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
+    --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
+    --border:#E4E0EB; --border-strong:#D2CCDF;
+    --accent:#5A4A88; --accent-2:#7A67A8; --accent-soft:#EBE6F5;
+    --agree:#2C7A57; --agree-bg:#E6F3EB; --agree-border:#BADFCB;
+    --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
+    --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
+    --shadow-lg:0 2px 6px rgba(26,22,33,.06), 0 18px 44px rgba(26,22,33,.10);
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  body{margin:0; background:var(--bg);}
+  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.62; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased;}
+  .col{max-width:920px; margin:0 auto; padding:0 20px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.18;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
+
+  /* Top bar */
+  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar .inner{max-width:920px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--text);}
+  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
+  .tnav{display:flex; gap:4px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
+  .tnav a:hover{background:var(--surface-2); color:var(--text);}
+  .tnav a.on{color:var(--accent); background:var(--accent-soft);}
+  .tdrop{position:relative;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px;}
+  .tdrop>summary::-webkit-details-marker{display:none;}
+  .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
+  .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
+  .tdrop-menu{position:absolute; right:0; top:calc(100% + 6px); background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg); padding:6px; min-width:250px; display:flex; flex-direction:column; gap:2px; z-index:60;}
+  .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
+  .tdrop-menu a:hover{background:var(--surface-2);}
+  .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
+  .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
+  @media (max-width:680px){
+    .topbar .inner{position:relative;}
+    .hamburger{display:block;}
+    .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
+    .tnav.open{display:flex;}
+    .tnav a{padding:10px 8px;}
+    .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
+  }
+
+  /* Hero */
+  .hero{padding:40px 0 8px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
+  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 14px; line-height:1.22;}
+  .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; line-height:1.55;}
+  .lede b{font-weight:600; color:var(--text);}
+  .context{margin:22px 0 4px; padding:14px 16px; border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; font-size:14.5px; color:var(--text); line-height:1.55;}
+  .context b{color:var(--open);}
+
+  /* Form */
+  .formcard{margin-top:26px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 22px 26px; box-shadow:var(--shadow);}
+  .formcard h2{font-size:clamp(19px,2.2vw,23px); margin:0 0 6px;}
+  .formcard .sub{color:var(--text-muted); font-size:14.5px; margin:0; line-height:1.55;}
+  .sform{display:grid; gap:18px; margin-top:22px;}
+  .field{display:flex; flex-direction:column; gap:6px; min-width:0;}
+  .field label{font-size:13.5px; font-weight:650; color:var(--text);}
+  .field .hint{font-size:12.5px; color:var(--text-faint); font-weight:400;}
+  .field input[type=text], .field input[type=email], .field input[type=url], .field textarea, .field select{
+    font-family:var(--sans); font-size:15px; color:var(--text); background:var(--surface-2);
+    border:1px solid var(--border-strong); border-radius:10px; padding:10px 12px; width:100%; -webkit-appearance:none;}
+  .field select{appearance:none; background-image:linear-gradient(45deg,transparent 50%,var(--text-muted) 50%),linear-gradient(135deg,var(--text-muted) 50%,transparent 50%); background-position:calc(100% - 18px) 55%, calc(100% - 13px) 55%; background-size:5px 5px,5px 5px; background-repeat:no-repeat; padding-right:34px;}
+  .field textarea{min-height:96px; resize:vertical; line-height:1.5;}
+  .field input:focus, .field textarea:focus, .field select:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
+  .checkline{display:flex; align-items:flex-start; gap:10px; font-size:14.5px; color:var(--text); cursor:pointer; padding:2px 0;}
+  .checkline input{width:18px; height:18px; margin:1px 0 0; accent-color:var(--accent); flex:none;}
+  .contact-fields{display:none; grid-template-columns:1fr; gap:18px; margin-top:2px; padding:16px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px;}
+  .contact-fields.show{display:grid;}
+  @media (min-width:560px){.contact-fields.show{grid-template-columns:1fr 1fr;}}
+  .contact-fields .field input{background:var(--surface);}
+  .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
+  .btn{font-family:var(--sans); font-size:15px; font-weight:600; color:#fff; background:var(--accent); border:none; border-radius:10px; padding:12px 24px; cursor:pointer;}
+  .btn:hover{background:var(--accent-2);}
+  .sform-ok{display:none; margin-top:20px; background:var(--agree-bg); border:1px solid var(--agree-border); color:var(--agree); border-radius:12px; padding:16px 18px; font-size:15px; line-height:1.5;}
+  .sform-ok.show{display:block;}
+  .use-note{margin-top:22px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:10px; padding:14px 16px; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
+  .use-note b{color:var(--text);}
+
+  footer{margin-top:56px; border-top:1px solid var(--border); padding:26px 0 80px;}
+  footer p{font-size:13px; color:var(--text-muted); margin:8px 0;}
+  .fine{font-size:12px; color:var(--text-faint);}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules · July 9</a>
+      <nav class="tnav" id="tnav">
+        <a href="index.html">Tabled items</a>
+        <a href="pathways.html">Provider routes</a>
+        <a href="eligibility.html">Who can qualify</a>
+        <a href="hours.html">Hours benchmark</a>
+        <a class="on" href="input.html">Community input</a>
+        <details class="tdrop">
+          <summary>Documents ▾</summary>
+          <div class="tdrop-menu">
+            <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Rules draft &middot; July 9<span class="sub">On the table for the July 9 board meeting (7.35.3)</span></a>
+            <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 9 meeting<span class="sub">Unofficial, speaker-tagged</span></a>
+            <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation &middot; June 12<span class="sub">The committee's document</span></a>
+          </div>
+        </details>
+      </nav>
+      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
+    </div>
+  </div>
+
+  <div class="col">
+
+    <header class="hero">
+      <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
+      <h1>Community input</h1>
+      <p class="lede">A place to send recommendations and resources to the people writing the training rules, so they can be gathered and passed along together instead of one at a time.</p>
+
+      <div class="context">
+        <b>Why now.</b> On July 9 the board sent the practicum and didactic hours back to the Training and Education Committee, which meets July 17. Larry Leeman suggested the committee bring in outside experts for that discussion, as the end-of-life committee did, ideally people with real experience and no commercial conflict of interest, and named the California Institute of Integral Studies as one example. If you know someone who could present, or have a resource or idea that helps, add it here.
+      </div>
+    </header>
+
+    <div class="formcard">
+      <h2>Share a recommendation</h2>
+      <p class="sub">Nothing is required except a short description of what you are sending. Contact details are optional.</p>
+
+      <!-- Posts to a Formspree form (no external request until submit). No identity is attached to this page. -->
+      <form class="sform" id="inputForm" action="https://formspree.io/f/mjgqnkvv" method="POST">
+        <input type="hidden" name="_subject" value="NMMPAB reference site: community input">
+        <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+        <div class="field">
+          <label for="i-topic">What is this about?</label>
+          <select id="i-topic" name="topic">
+            <option>An expert or presenter for the July 17 committee meeting</option>
+            <option>Practicum and didactic hours</option>
+            <option>Controlled-substance number</option>
+            <option>Reciprocity</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="i-item">What is it? <span class="hint">a person, a resource, or a recommendation</span></label>
+          <input type="text" id="i-item" name="item" required placeholder="e.g. a person to invite, a study, a program, another state's approach">
+        </div>
+
+        <div class="field">
+          <label for="i-reason">Why are you sending it? <span class="hint">how it helps, and which decision it speaks to</span></label>
+          <textarea id="i-reason" name="reason" placeholder="A sentence or two."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="i-link">Link <span class="hint">optional</span></label>
+          <input type="url" id="i-link" name="link" placeholder="https://">
+        </div>
+
+        <label class="checkline"><input type="checkbox" id="wantContact" name="share_contact" value="yes"> Do you want to include your contact information? Optional, and only used to follow up on what you sent.</label>
+        <div class="contact-fields" id="contactFields">
+          <div class="field">
+            <label for="i-name">Your name</label>
+            <input type="text" id="i-name" name="name" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="i-email">Email</label>
+            <input type="email" id="i-email" name="contact" autocomplete="email">
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+
+      <div class="sform-ok" id="inputOk">Thank you. What you sent was received and will be reviewed before anything is passed along.</div>
+
+      <div class="use-note">
+        <b>How this is used.</b> Submissions are collected and forwarded to the department together, in context, rather than one at a time. They may also be shared with a board member who asks to receive them. Nothing is published on this site automatically, and sending something is not an endorsement of it. No personal information is required; a name or email is optional and used only to follow up on your submission.
+      </div>
+    </div>
+
+    <footer>
+      <p>Prepared as a community reference for the July 2026 Training and Education rulemaking. Not affiliated with NMDOH. Nothing here is final rule text.</p>
+      <p class="fine">The context above is drawn from the unofficial July 9 meeting transcript, in the Documents menu.</p>
+    </footer>
+
+  </div>
+</div>
+<script>
+(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+(function(){
+  var c=document.getElementById('wantContact'), box=document.getElementById('contactFields');
+  if(c&&box){ c.addEventListener('change',function(){ box.classList.toggle('show', c.checked); }); }
+})();
+(function(){
+  var f=document.getElementById('inputForm');
+  if(!f) return;
+  var ok=document.getElementById('inputOk');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var data=new FormData(f);
+    fetch(f.getAttribute('action'),{method:'POST',body:data,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){ f.style.display='none'; if(ok){ ok.classList.add('show'); ok.scrollIntoView({block:'nearest'}); } }
+        else { f.submit(); }
+      })
+      .catch(function(){ f.submit(); });
+  });
+})();
+</script>
+</body>
+</html>
