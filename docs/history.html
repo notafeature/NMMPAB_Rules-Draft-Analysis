@@ -71,6 +71,14 @@
   .ctx .q{font-family:var(--serif); color:var(--text); border-left:2px solid var(--border-strong); padding-left:12px; margin-top:10px;}
   .ctx cite{display:block; font-style:normal; font-size:12px; color:var(--text-faint); margin-top:4px;}
 
+  details.ctx{padding:0;}
+  details.ctx>summary{list-style:none; cursor:pointer; padding:14px 18px; font-family:var(--serif); font-weight:600; font-size:16px; color:var(--text); display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  details.ctx>summary::-webkit-details-marker{display:none;}
+  details.ctx>summary::after{content:"Show \25BE"; font-family:var(--sans); font-weight:600; font-size:12px; letter-spacing:.02em; color:var(--accent); white-space:nowrap;}
+  details.ctx[open]>summary::after{content:"Hide \25B4";}
+  details.ctx>summary:hover{color:var(--accent);}
+  details.ctx .ctx-body{padding:0 18px 16px;}
+
   .sh{margin:40px 0 6px;}
   .sh .k{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 6px;}
   .sh h2{font-size:clamp(19px,2.4vw,24px); margin:0;}
@@ -114,7 +122,7 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
-        <a href="changes.html">What changed</a>
+        <a href="changes.html">The draft</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
@@ -139,27 +147,53 @@
       <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; Advisory Board</p>
       <h1>Recent developments</h1>
       <p class="updated"><b>Updated July 10, 2026.</b> New entries are added as meetings happen.</p>
-      <p class="lede">The dated record of the Training and Education rulemaking, from the committee's first meetings to the July 9 board meeting, with sources for each step.</p>
+      <p class="lede">The dated chain that produced today's draft, newest first: every meeting, vote, and document, each one sourced.</p>
     </header>
-
-    <div class="ctx">
-      <h2>How this process works</h2>
-      <p>The <b>Training and Education Committee</b> writes a recommendation. At an <b>Advisory Board</b> meeting with a quorum, the board votes to accept it and submit it to the <b>Department of Health</b>. The department turns it into rule language, which then goes through the public rule-hearing process before it is promulgated. The department is not obligated to adopt the recommendation as written.</p>
-      <p class="q">"once we have a thumbs up here from the board&hellip; we will be turning this into the rule and then it will still go through and continue to go through the public process of rule hearings and going through all of that."<cite>Dominic Zurlo, department, June 26 board meeting</cite></p>
-    </div>
 
     <section>
       <div class="sh">
         <p class="k">The record</p>
-        <h2>What has happened, in order</h2>
+        <h2>What has happened, newest first</h2>
       </div>
       <ol class="tl">
+        <li class="tev next">
+          <span class="dot"></span>
+          <p class="d">July 17, 2026</p>
+          <h3>Coming up <span class="tag up">Upcoming</span></h3>
+          <p>Full Advisory Board at 9 AM; Training and Education Committee at 1 PM, taking up the practicum and didactic hours.</p>
+          <p class="src">Source: scheduled on the record at the July 9 meeting.</p>
+        </li>
+        <li class="tev key">
+          <span class="dot"></span>
+          <p class="d">July 9, 2026</p>
+          <h3>The tabled items taken up <span class="tag res">Reciprocity resolved</span></h3>
+          <p><b>Reciprocity</b> was resolved without objection, extending both waiver deadlines to December 31, 2027. The board <b>voted to table the practicum and didactic hours</b> and send them to the Training and Education Committee (July 17). The <b>controlled-substance number</b> for the certifying clinician was sent back to the department to weigh alternatives. Also on the record: "diagnostic clinician" was renamed "certifying clinician" throughout the draft; AED certification was added alongside BLS and CPR in individual training, and EMT certification was added as an outdoor-location staffing alternative; Keenan Ryan appeared as the new Medicaid seat.</p>
+          <p class="src">Source: <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">July 9 meeting transcript</a> (unofficial) &middot; <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">July 9 rules draft</a>.</p>
+        </li>
+      </ol>
+
+      <details class="ctx">
+        <summary>How this process works</summary>
+        <div class="ctx-body">
+          <p>The <b>Training and Education Committee</b> writes a recommendation. At an <b>Advisory Board</b> meeting with a quorum, the board votes to accept it and submit it to the <b>Department of Health</b>. The department turns it into rule language, which then goes through the public rule-hearing process before it is promulgated. The department is not obligated to adopt the recommendation as written.</p>
+          <p class="q">"once we have a thumbs up here from the board&hellip; we will be turning this into the rule and then it will still go through and continue to go through the public process of rule hearings and going through all of that."<cite>Dominic Zurlo, department, June 26 board meeting</cite></p>
+        </div>
+      </details>
+
+      <ol class="tl">
+        <li class="tev key">
+          <span class="dot"></span>
+          <p class="d">June 26, 2026</p>
+          <h3>The board vote, 3-2</h3>
+          <p>The Advisory Board voted <b>3-2</b> to accept the recommendation and set three items aside: (1) the controlled-substance number for the certifying clinician, (2) the practicum and didactic hours (practicum 100 for facilitators, 120 for practitioners, plus 20 supervisory), and (3) the reciprocity timeline. Only Larry Leeman's "reluctant yes" is named on the record; the two votes against are not.</p>
+          <p class="src">Source: June 26 board meeting transcript.</p>
+        </li>
         <li class="tev">
           <span class="dot"></span>
-          <p class="d">Jan 23 – May 22, 2026</p>
-          <h3>Committee meetings</h3>
-          <p>The Training and Education Committee met through the winter and spring to build the recommendation (Jan 23, Mar 6, Apr 10, a May 8 joint session with End-of-Life, and May 22). The May 22 meeting was held but not recorded or posted by DOH.</p>
-          <p class="src">Source: DOH Advisory Board meeting records; committee meeting inventory.</p>
+          <p class="d">June 25, 2026</p>
+          <h3>The department's rules-style draft</h3>
+          <p>The department presented a rules-formatted draft of the same subject at the June 25 committee meeting. This is history: it was superseded by the July 9 draft two weeks later.</p>
+          <p class="src">Source: June 25 committee meeting; <a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">June 25 draft</a> (superseded by the July 9 draft) &middot; <a href="changes.html">what changed from it, section by section</a>.</p>
         </li>
         <li class="tev key">
           <span class="dot"></span>
@@ -170,31 +204,10 @@
         </li>
         <li class="tev">
           <span class="dot"></span>
-          <p class="d">June 25, 2026</p>
-          <h3>The department's rules-style draft</h3>
-          <p>The department presented a rules-formatted draft of the same subject at the June 25 committee meeting.</p>
-          <p class="src">Source: June 25 committee meeting; <a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">June 25 draft</a> (superseded by the July 9 draft).</p>
-        </li>
-        <li class="tev key">
-          <span class="dot"></span>
-          <p class="d">June 26, 2026</p>
-          <h3>The board vote, 3-2</h3>
-          <p>The Advisory Board voted <b>3-2</b> to accept the recommendation and set three items aside: (1) the controlled-substance number for the certifying clinician, (2) the practicum hours (100 for facilitators, 120 for practitioners, plus 20 supervisory), and (3) the reciprocity timeline. Only Larry Leeman's "reluctant yes" is named on the record; the two votes against are not.</p>
-          <p class="src">Source: June 26 board meeting transcript.</p>
-        </li>
-        <li class="tev key">
-          <span class="dot"></span>
-          <p class="d">July 9, 2026</p>
-          <h3>The tabled items taken up <span class="tag res">Reciprocity resolved</span></h3>
-          <p>A Medical Psilocybin Advisory Board meeting with votes; the chair barred formal votes only after the scheduled adjournment. <b>Reciprocity</b> was resolved without objection, extending both waiver deadlines to December 31, 2027. The board <b>voted to table the practicum and didactic hours</b> and send them to the Training and Education Committee. The <b>controlled-substance number</b> for the certifying clinician was sent back to the department to weigh alternatives. Also in the July 9 draft and on the record: "diagnostic clinician" renamed "certifying clinician"; EMT training certification added alongside BLS/CPR; "therapy sessions" language removed; "experience, observe or conduct" changed to "and conduct"; Keenan Ryan appeared as the new Medicaid seat.</p>
-          <p class="src">Source: <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">July 9 meeting transcript</a> (unofficial) &middot; <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">July 9 rules draft</a>.</p>
-        </li>
-        <li class="tev next">
-          <span class="dot"></span>
-          <p class="d">July 17, 2026</p>
-          <h3>Coming up <span class="tag up">Upcoming</span></h3>
-          <p>Full Advisory Board at 9 AM; Training and Education Committee at 1 PM, taking up the practicum and didactic hours.</p>
-          <p class="src">Source: scheduled on the record at the July 9 meeting.</p>
+          <p class="d">Jan 23 &ndash; May 22, 2026</p>
+          <h3>Committee meetings</h3>
+          <p>The Training and Education Committee met through the winter and spring to build the recommendation (Jan 23, Mar 6, Apr 10, a May 8 joint session with End-of-Life, and May 22). The May 22 meeting was held but not recorded or posted by DOH.</p>
+          <p class="src">Source: DOH Advisory Board meeting records; committee meeting inventory.</p>
         </li>
       </ol>
     </section>

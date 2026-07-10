@@ -58,6 +58,23 @@ A neutral, plain-language community reference for the New Mexico Medical Psilocy
 - Nav label "Recent developments" shortened to "History" to fit the 8-link bar; page title unchanged.
 - changes.html entries generated from a verified section-by-section comparison (scratch research spot-checked against both PDFs). One extraction flagged unclear in place (draft p. 11, patient prohibitions subsection A). Two extraction oddities recorded as notes: "Hi-TEC" spelling and one leftover "certified Diagnosing Clinician" (draft p. 10).
 
+
+## 5b. Round-3 rebuild (July 10, overnight, agent fleet)
+
+Every page rebuilt by a per-page agent against a verified source map (Opus verified facts and July 9 page citations; Sonnet rebuilt; Opus audited currency, tone, and design; Sonnet fixed). Framing locked: current state on top, lineage in History, each page one undeniable message on the first screen. Key results:
+- Currency mandate enforced: current requirements cite the July 9 draft (7.35.3) with page deep-links. June 12 and June 25 appear only as labeled origin, and freely on history.html as the dated chain. The eligibility footer bug (cited old drafts as current) is fixed; every cell now anchors to July 9.
+- Draft/meeting tension handled honestly where they differ: the July 9 draft PDF still reads the older reciprocity dates (Dec 31 2026 / June 30 2027); the pages state the draft text and attribute the Dec 31 2027 extension to the July 9 meeting (transcript), per the rule that the meeting is the source of truth for what it changed.
+- changes.html renamed "The rules draft, section by section" (nav label "The draft"); June 26 motion/tally/verbal-agreements/deferrals demoted into one collapsed block below the section list; chip legend added.
+- index leads with the three open-item cards and a plain status key; item 2 carries the didactic/practicum debate as attributed quotes.
+- pathways/eligibility legends now state one-line meanings and the date each status is as-of.
+- history.html flipped to newest-first.
+- Nav (9 links) and site footer byte-identical on all 9 pages; zero em dashes; all internal links resolve; all pages parse.
+
+Agent-flagged items to check (not blockers, recorded for the next pass):
+- history.html dropped the "therapy sessions language removed" line because it could not be verified from the July 9 draft alone (needs the June 25 draft text to isolate the change). Restore with a citation if wanted; it is in the facts baseline.
+- cs-number.html section 6 discusses telemedicine via federal precedents; the July 9 draft's own in-person-plus-6-month-lookback rule (p. 10) was left out as new content beyond a wayfinding fix.
+- One garbled draft phrase ("verification of results NM Controlled Substance number", p. 8) is reproduced as-is because the extraction itself is garbled; verify against the printed PDF.
+
 ## 6. Open to-dos
 
 Parked pending team discussion (Gregory decides):

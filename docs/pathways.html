@@ -65,8 +65,10 @@
   h1{font-size:clamp(24px,3.4vw,34px); letter-spacing:-.01em; margin:0 0 12px; line-height:1.12;}
   .lede{font-size:16.5px; color:var(--text-muted); margin:0; max-width:640px;}
   .lede b{font-weight:600; color:var(--text);}
-  .flags{display:flex; gap:8px; flex-wrap:wrap; margin-top:18px;}
-  .fl{display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; padding:4px 11px; border-radius:999px; border:1px solid;}
+  .legend{display:grid; grid-template-columns:1fr; gap:6px; margin-top:16px; max-width:640px;}
+  @media (min-width:760px){.legend{grid-template-columns:1fr 1fr 1fr; gap:10px;}}
+  .lgrow{display:flex; align-items:baseline; gap:8px; font-size:12.5px; color:var(--text-muted); line-height:1.4;}
+  .fl{display:inline-flex; flex:none; align-items:center; gap:6px; font-size:11.5px; font-weight:600; padding:3px 10px; border-radius:999px; border:1px solid;}
   .fl.set{background:var(--settled-bg); color:var(--settled); border-color:var(--settled-border);}
   .fl.open{background:var(--open-bg); color:var(--open); border-color:var(--open-border);}
   .fl.chal{background:var(--chal-bg); color:var(--chal); border-color:var(--chal-border); border-style:dashed;}
@@ -75,11 +77,11 @@
   .pick .pl{font-family:var(--serif); font-size:15px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-faint); margin:0 0 14px;}
   .starts{display:grid; grid-template-columns:1fr; gap:9px;}
   @media (min-width:620px){.starts{grid-template-columns:1fr 1fr;}}
-  .start{text-align:left; background:var(--surface); border:1.5px solid var(--border); border-radius:12px; padding:13px 15px; cursor:pointer; font-family:var(--sans); color:inherit; box-shadow:var(--shadow); transition:border-color .12s, background .12s; display:flex; flex-direction:column; gap:3px;}
+  .start{text-align:left; background:var(--surface); border:1.5px solid var(--border); border-radius:12px; padding:12px 15px; cursor:pointer; font-family:var(--sans); color:inherit; box-shadow:var(--shadow); transition:border-color .12s, background .12s, box-shadow .12s; display:flex; flex-direction:column; gap:2px;}
   .start:hover{border-color:var(--border-strong);}
-  .start .stt{font-family:var(--serif); font-size:16px; font-weight:600; line-height:1.2;}
-  .start .stex{font-size:12.5px; color:var(--text-muted);}
-  .start.on{border-color:var(--accent); background:var(--accent-soft);}
+  .start .stt{font-family:var(--serif); font-size:15.5px; font-weight:600; line-height:1.22;}
+  .start .stex{font-size:12px; color:var(--text-muted); line-height:1.35;}
+  .start.on{border-color:var(--accent); background:var(--accent-soft); box-shadow:0 0 0 1.5px var(--accent), var(--shadow);}
 
   #panel{margin-top:6px;}
   .youare{margin:32px 0 4px; padding-bottom:10px; border-bottom:2px solid var(--accent);}
@@ -90,7 +92,7 @@
   .route{display:flex; gap:12px; align-items:center; background:var(--surface); border:1px solid var(--border); border-radius:11px; padding:11px 15px; box-shadow:var(--shadow);}
   button.route{width:100%; text-align:left; font-family:var(--sans); cursor:pointer; transition:border-color .12s, box-shadow .12s;}
   button.route:hover{border-color:var(--border-strong);}
-  .route.sel{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent);}
+  .route.sel{border-color:var(--accent); box-shadow:0 0 0 2px var(--accent);}
   .route .rgo{flex:none; font-size:12px; font-weight:600; color:var(--accent); white-space:nowrap;}
   .route.sel .rgo{color:var(--text-faint); font-weight:500;}
   .route.isopen{border-left:4px solid var(--settled);}
@@ -153,7 +155,7 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
-        <a href="changes.html">What changed</a>
+        <a href="changes.html">The draft</a>
         <a class="on" href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
@@ -178,11 +180,11 @@
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
       <h1>Routes to a provider permit</h1>
       <p class="updated"><b>Updated July 10, 2026.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
-      <p class="lede">The draft rules create three permits: <b>Facilitator, Practitioner, Certifying Clinician</b>. Select the description that fits your current license or background, then review the path to each permit that is open to you.</p>
-      <div class="flags">
-        <span class="fl set">&#9679; Settled</span>
-        <span class="fl open">&#9670; Open</span>
-        <span class="fl chal">&#9660; Contested</span>
+      <p class="lede">Pick where you start below, and see your route to each of the three permits: <b>Facilitator, Practitioner, Certifying Clinician.</b></p>
+      <div class="legend">
+        <div class="lgrow"><span class="fl set">&#9679; Settled</span> In the July 9 draft, not challenged on the record.</div>
+        <div class="lgrow"><span class="fl open">&#9670; Open</span> Sent out or awaiting a decision, as of July 9: practicum hours to committee (July 17); the CS number back to the department.</div>
+        <div class="lgrow"><span class="fl chal">&#9660; Contested</span> Kept in the draft over a named, on-record objection: Dr. Ann Metz, June 25 hearing.</div>
       </div>
     </header>
 
@@ -197,7 +199,7 @@
   <footer>
     <div class="col">
       <h3>Sources</h3>
-      <p>Steps are from the <a href="documents/recommendation-2026-06-12.pdf" target="_blank">June 12 recommendation</a> and the <a href="documents/rules-draft-2026-06-25.pdf" target="_blank">June 25 rules draft</a>. Each step links to its page. Neither draft is final rule text. Open and contested flags reflect the June 26 board vote and the June 25 and 26 discussions.</p>
+      <p>Steps are from the <a href="documents/rules-draft-2026-07-09.pdf" target="_blank">July 9 rules draft</a> (7.35.3), the department's document for the July 9 Advisory Board meeting. Each step links to its page. Where the July 9 meeting changed a requirement, the step cites the <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank">July 9 meeting transcript</a> instead. The <a href="documents/recommendation-2026-06-12.pdf" target="_blank">June 12 committee recommendation</a> is history, not a current source; it is not cited in the steps above. Nothing here is final rule text.</p>
       <div class="sitefoot">
         <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
         <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
@@ -210,75 +212,75 @@
 <script>
 (function(){
   "use strict";
-  var P6="documents/recommendation-2026-06-12.pdf#page=", R6="documents/rules-draft-2026-06-25.pdf#page=";
+  var J7="documents/rules-draft-2026-07-09.pdf#page=", T7="documents/NMMPAB-2026-07-09-transcript.pdf";
   function L(t,href){return '<a href="'+href+'" target="_blank">'+t+'</a>';}
 
   var PERMITS={
     fac:{name:'Facilitator', dot:'#3E8E6E', steps:[
-      {t:"Register with the state. <b>No license required.</b>", s:'set', src:L('6/12 p.1',P6+'1')},
-      {t:"Certifications: <b>BLS, CPR, First Aid, HIPAA</b>. Sex-offender attestation.", s:'set', src:L('6/12 p.5',P6+'5')+' &middot; '+L('6/25 p.7',R6+'7')},
-      {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('6/12 pp.5-7',P6+'5')},
-      {t:"Practicum at an approved Healing Center. Draft: <b>~100 hours</b>.", s:'open', flag:'Open', why:"Tabled July 9; sent to the Training and Education Committee (July 17).", src:L('6/12 pp.7-8',P6+'7')},
-      {t:"Mentoring: <b>10 hours</b> after graduation.", s:'set', src:L('6/12 p.8',P6+'8')},
-      {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
-      {t:"Continuing ed: <b>20 hours every 2 years</b>. Keep BLS current.", s:'set', src:L('6/12 p.9',P6+'9')}
+      {t:"Apply for certification. <b>No professional license required.</b>", s:'set', src:L('July 9 draft, p.9',J7+'9')},
+      {t:"Certifications: <b>HIPAA, plus BLS or (CPR and AED)</b>. Attestation you are not a registered sex offender.", s:'set', src:L('July 9 draft, p.5',J7+'5')+' &middot; '+L('p.9',J7+'9')},
+      {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('July 9 draft, p.4',J7+'4')+' &middot; '+L('p.7',J7+'7')},
+      {t:"Practicum at a healing center or other approved location. Draft: <b>100 hours</b>.", s:'open', flag:'Open', why:"Tabled July 9; sent to the Training and Education Committee, meeting July 17.", src:L('July 9 draft, p.5',J7+'5')},
+      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('July 9 draft, p.6',J7+'6')},
+      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('July 9 draft, p.8',J7+'8')},
+      {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('July 9 draft, p.5',J7+'5')}
     ]},
     prac:{name:'Practitioner', dot:'#5A4A88', steps:[
-      {t:"Hold a NM license to provide <b>counseling, mental health, or behavioral health therapy</b>.", s:'set', src:L('6/12 p.1',P6+'1')},
-      {t:"Certifications and attestation, as facilitator.", s:'set', src:L('6/12 p.3',P6+'3')+' &middot; '+L('6/25 p.7',R6+'7')},
-      {t:"Approved <b>Practitioner training</b>.", s:'set', src:L('6/12 pp.3-5',P6+'3')},
-      {t:"Practicum at an approved Healing Center. Draft: <b>~120 hours</b>.", s:'open', flag:'Open', why:"Tabled July 9; sent to the Training and Education Committee (July 17).", src:L('6/12 pp.7-8',P6+'7')},
-      {t:"Includes <b>20 hours supervising facilitators</b>.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make it optional (6/25). Department kept it.", src:L('6/12 p.7',P6+'7')+' &middot; '+L('hearing 6/25','index.html#practicum')},
-      {t:"Mentoring: <b>10 hours</b>.", s:'set', src:L('6/12 p.8',P6+'8')},
-      {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
-      {t:"Continuing ed: <b>20 hours every 2 years</b>. Keep BLS current.", s:'set', src:L('6/12 p.9',P6+'9')}
+      {t:"Hold a current NM professional license (for example PSY, LSW, LCSW).", s:'set', why:"The July 9 draft names license examples; it does not describe a therapy or counseling scope.", src:L('July 9 draft, p.8',J7+'8')},
+      {t:"Certifications and attestation, same as Facilitator.", s:'set', src:L('July 9 draft, p.5',J7+'5')+' &middot; '+L('pp.8-9',J7+'8')},
+      {t:"Approved <b>Practitioner training</b>: the 25-hour core module plus a 5-hour module on psychedelic and psilocybin therapeutic approaches.", s:'set', src:L('July 9 draft, p.4',J7+'4')},
+      {t:"Practicum at a healing center or other approved location. Draft: <b>120 hours</b>.", s:'open', flag:'Open', why:"Tabled July 9; sent to the Training and Education Committee, meeting July 17.", src:L('July 9 draft, p.5',J7+'5')},
+      {t:"Includes an additional <b>20 hours supervising facilitators</b> during administration and same-day therapy sessions.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make this optional at the June 25 hearing. The department kept it; it remains in the July 9 draft.", src:L('July 9 draft, p.5',J7+'5')+' &middot; '+L('hearing, 6/25','index.html#practicum')},
+      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('July 9 draft, p.6',J7+'6')},
+      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('July 9 draft, p.8',J7+'8')},
+      {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('July 9 draft, p.5',J7+'5')}
     ]},
     dc:{name:'Certifying Clinician', dot:'#256E8C', steps:[
-      {t:"Hold a NM license that can <b>diagnose the qualifying condition</b>.", s:'set', src:L('6/12 p.1',P6+'1')},
-      {t:"Approved <b>Certifying Clinician training</b> (pharmacology, diagnosis, medical clearance, monitoring).", s:'set', src:L('6/12 pp.2-3',P6+'2')},
-      {t:"Hold a <b>New Mexico Controlled Substance number</b>.", s:'open', flag:'Open', why:"Sent back to the department after July 9 to weigh alternatives. NM number, not federal DEA.", src:L('6/12 p.1',P6+'1')+' &middot; '+L('the tabled items','index.html#cs')},
-      {t:"<b>No practicum.</b>", s:'set', src:L('6/12 pp.2-3',P6+'2')},
-      {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
-      {t:"Continuing ed: <b>8 CME hours every 2 years</b>.", s:'set', src:L('6/12 p.9',P6+'9')}
+      {t:"Hold a current NM professional license (for example MD, NP).", s:'set', why:"The July 9 draft names license examples; it does not describe a diagnosing scope.", src:L('July 9 draft, p.8',J7+'8')},
+      {t:"Approved <b>Certifying Clinician training</b>: an 8-hour module covering pharmacology, 42 CFR Part 2, diagnosis of qualifying conditions, medical clearance, monitoring, and data-collection requirements.", s:'set', src:L('July 9 draft, p.4',J7+'4')},
+      {t:"Hold a <b>New Mexico Controlled Substance number</b> (state number, not the federal DEA number).", s:'open', flag:'Open', why:"Sent back to the department after July 9 to weigh alternatives. The requirement still appears in the July 9 draft's application packet.", src:L('July 9 draft, p.8',J7+'8')+' &middot; '+L('the tabled items','index.html#cs')},
+      {t:"<b>No practicum.</b>", s:'set', why:"The practicum section applies to practitioners and facilitators only; the Certifying Clinician packet lists no practicum item.", src:L('July 9 draft, p.5',J7+'5')+' &middot; '+L('p.8',J7+'8')},
+      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('July 9 draft, p.8',J7+'8')},
+      {t:"Continuing education: <b>8 CME hours every 2 years</b>.", s:'set', src:L('July 9 draft, p.5',J7+'5')}
     ]},
     recip:{name:'Reciprocity', dot:'#5A4A88', steps:[
-      {t:"Trained and licensed outside New Mexico. Your program must be on <b>NMDOH's approved reciprocity list</b>.", s:'set', flag:null, why:"NMDOH decides which outside programs qualify. Programs regulated by another state market are the likely candidates.", src:L('6/25 pp.4-5',R6+'4')},
-      {t:"Complete the <b>New Mexico Module</b>.", s:'set', src:L('6/25 pp.4-5',R6+'4')},
-      {t:"Apply <b>by December 31, 2027</b>: reduced practicum, at least <b>40 contact hours</b>.", s:'set', why:"Deadline extended to Dec 31, 2027 at the July 9 meeting.", src:L('6/25 p.4',R6+'4')},
-      {t:"NMDOH may further reduce the practicum <b>through December 31, 2027</b>.", s:'set', why:"Extended to Dec 31, 2027 at the July 9 meeting.", src:L('6/25 p.4',R6+'4')},
-      {t:"Apply as <b>Practitioner or Facilitator</b>. No Certifying Clinician route.", s:'set', src:L('6/25 pp.6-7',R6+'6')}
+      {t:"Trained and licensed outside New Mexico. Your program must be on <b>NMDOH's approved reciprocity list</b>, which names Oregon and Colorado programs, or you must show your program has other governmental approval and a curriculum substantially equivalent to New Mexico's.", s:'set', src:L('July 9 draft, pp.6-7',J7+'6')},
+      {t:"Complete the <b>New Mexico Module</b>.", s:'set', src:L('July 9 draft, p.6',J7+'6')},
+      {t:"Apply by the waiver deadline for a reduced practicum: at least <b>40 hours of contact time</b> instead of the full practicum.", s:'set', why:"The July 9 draft (written before the meeting) sets this deadline at December 31, 2026. At the July 9 meeting, without objection, the board moved it to December 31, 2027. Board chair Ian Dunn noted that date is a legislative backstop, not the target date.", src:L('July 9 draft, p.7',J7+'7')+' &middot; '+L('July 9 meeting transcript',T7)},
+      {t:"NMDOH may further reduce the practicum requirement at its discretion, to build the program's initial infrastructure.", s:'set', why:"The July 9 draft sets no end date for this discretion. At the July 9 meeting, the board moved the related waiver deadline to December 31, 2027 along with the deadline above.", src:L('July 9 draft, p.7',J7+'7')+' &middot; '+L('July 9 meeting transcript',T7)},
+      {t:"Apply as Practitioner or Facilitator. The reciprocity application packet lists items for those two permits only.", s:'open', flag:'Unresolved', why:"The July 9 draft is inconsistent here. Its reciprocity section (pp.6-7) names certifying clinicians as eligible to apply by reciprocity, but the reciprocity application-packet section (p.9) is titled “Reciprocal Practitioner or Facilitator” and lists no certifying-clinician items.", src:L('July 9 draft, pp.6-7',J7+'6')+' &middot; '+L('p.9',J7+'9')}
     ]}
   };
 
   var STARTS=[
     {id:'none', title:"No health license", ex:"Community, peer, lived experience, chaplain, hospice, spiritual care, traditional healer.",
      routes:[
-       {permit:'fac', state:'open', line:"No license required. Peer and lived experience explicitly included (added 6/26)."},
-       {permit:'prac', state:'nopath', line:"Needs a NM therapy or counseling license."},
-       {permit:'dc', state:'nopath', line:"Needs a NM license that can diagnose."}
+       {permit:'fac', state:'open', line:"No professional license required."},
+       {permit:'prac', state:'nopath', line:"Needs a NM professional license."},
+       {permit:'dc', state:'nopath', line:"Needs a NM professional license."}
      ]},
     {id:'therapy', title:"Therapy or counseling license", ex:"Psychologist, LCSW, LPCC, LMFT, psychiatric NP.",
      routes:[
        {permit:'prac', state:'open', line:"Direct route."},
        {permit:'fac', state:'open', line:"Also open. No license needed for this one."},
-       {permit:'dc', state:'part', line:"Only with a NM Controlled Substance number, which most non-prescribers cannot get. That requirement is the July 9 question, not your diagnosing scope."}
+       {permit:'dc', state:'part', line:"Only with a NM Controlled Substance number. That requirement is the open July 9 question, not your license scope."}
      ]},
     {id:'diagnose', title:"License to diagnose", ex:"Physician (MD/DO), psychiatrist, nurse practitioner, physician assistant.",
      routes:[
        {permit:'dc', state:'open', line:"Direct route, with the open Controlled Substance number question."},
-       {permit:'prac', state:'part', line:"Open if your license also covers therapy or counseling. A psychiatrist's does; a general physician's may not."},
+       {permit:'prac', state:'part', line:"Requires a NM professional license (the July 9 draft gives PSY, LSW, LCSW as examples; it does not describe a therapy or counseling scope)."},
        {permit:'fac', state:'open', line:"Also open."}
      ]},
     {id:'otherhealth', title:"Other health license", ex:"Registered nurse, pharmacist, licensed massage therapist. No diagnosis or therapy scope.",
      routes:[
-       {permit:'fac', state:'open', line:"Direct route. Unsettled scopes (some naturopathic doctors) are not addressed by the drafts."},
+       {permit:'fac', state:'open', line:"Direct route."},
        {permit:'prac', state:'nopath', line:"Needs a therapy license."},
        {permit:'dc', state:'nopath', line:"Needs a diagnosing license."}
      ]},
     {id:'elsewhere', title:"Trained outside New Mexico", ex:"Out-of-state, international, or Tribal, Pueblo, and Nation programs NMDOH approves.",
      routes:[
-       {permit:'recip', state:'recip', line:"Enter by reciprocity, as Practitioner or Facilitator. Foreign credentials: translated to English and apostilled (6/26)."},
-       {permit:'dc', state:'nopath', line:"No reciprocity route for Certifying Clinician."}
+       {permit:'recip', state:'recip', line:"Enter by reciprocity, as Practitioner or Facilitator."},
+       {permit:'dc', state:'part', line:"The July 9 draft's reciprocity section names certifying clinicians as eligible, but its application packet lists no certifying-clinician route. Unresolved in the draft."}
      ]}
   ];
 

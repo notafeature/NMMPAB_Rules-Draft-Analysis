@@ -65,13 +65,21 @@
   .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
   h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 16px; line-height:1.22;}
 
-  /* Frame (masthead: purpose / status / how to read) */
-  .frame{border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden; margin:0 0 4px;}
-  .frame .row{display:flex; gap:14px; padding:12px 16px; border-top:1px solid var(--border); font-size:14px; line-height:1.5;}
-  .frame .row:first-child{border-top:none;}
+  /* Status line + collapsed purpose/how-to-read */
+  .statusline{display:flex; gap:10px; align-items:baseline; padding:10px 16px; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); font-size:14px; line-height:1.5; margin:0 0 4px;}
+  .statusline .lab{flex:0 0 auto; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent);}
+  .statusline p{margin:0; color:var(--text);}
+  .statusline b{font-weight:650;}
+  @media (max-width:560px){.statusline{flex-direction:column; gap:2px;}}
+  details.frame{border:1px solid var(--border); border-radius:10px; background:var(--surface); overflow:hidden; margin:8px 0 0;}
+  details.frame>summary{cursor:pointer; padding:9px 16px; font-size:12.5px; font-weight:600; color:var(--text-muted); list-style:none; display:flex; align-items:center; gap:8px;}
+  details.frame>summary::-webkit-details-marker{display:none;}
+  details.frame>summary .chev{color:var(--accent); font-size:12px; transition:transform .15s ease;}
+  details.frame[open]>summary .chev{transform:rotate(90deg);}
+  .frame .row{display:flex; gap:14px; padding:10px 16px; border-top:1px solid var(--border); font-size:13.5px; line-height:1.5;}
   .frame .lab{flex:0 0 96px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); padding-top:2px;}
-  .frame .val{color:var(--text); margin:0;}
-  .frame .val b{font-weight:650;}
+  .frame .val{color:var(--text-muted); margin:0;}
+  .frame .val b{font-weight:650; color:var(--text);}
   @media (max-width:560px){.frame .row{flex-direction:column; gap:4px;} .frame .lab{flex:none;}}
 
   /* jump strip */
@@ -191,7 +199,7 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
-        <a href="changes.html">What changed</a>
+        <a href="changes.html">The draft</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a class="on" href="hours.html">Training hours</a>
@@ -217,27 +225,16 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
       <h1>Training hours: the tabled numbers and the July 17 decision</h1>
-      <div class="frame">
-        <div class="row"><span class="lab">Purpose</span><p class="val">Neutral reference for the Training and Education Committee (July 17, 1:00 PM). Records what the draft proposes for training hours, how comparable programs set theirs, the cost variables, and the positions members stated July 9. It takes no position on the numbers.</p></div>
-        <div class="row"><span class="lab">Status</span><p class="val"><b>July 9, 2026:</b> the board kept the draft's clinician and continuing-education hours and sent two figures back to this committee, the practitioner and facilitator <b>didactic hours</b> and the <b>practicum hours</b>. No number was set. Verbatim discussion is in the record at the foot of the page.</p></div>
-        <div class="row"><span class="lab">How to read</span><p class="val">The July 9 draft is not final rule text. New Mexico figures are cited to that draft (7.35.3). Positions belong to the members who stated them. Benchmark hours are checked against each state's rule. New Mexico cost figures have not been researched and are marked open.</p></div>
+      <div class="statusline">
+        <span class="lab">Status</span>
+        <p>Tabled by the Advisory Board <b>July 9</b>. The Training and Education Committee takes up the didactic and practicum hours <b>July 17 at 1:00 PM</b>. No number is set. This page states the draft figures, what comparable programs use, and what is and is not yet known about cost. It takes no position on the numbers.</p>
       </div>
-      <div class="jump">
-        <a href="#numbers">1 · The proposed hours</a>
-        <a href="#who">2 · Who the hours fall on</a>
-        <a href="#benchmark">3 · Comparable programs</a>
-        <a href="#cost">4 · Potential costs</a>
-        <a href="#questions">5 · Open questions</a>
-      </div>
-    </header>
+      <details class="frame">
+        <summary><span class="chev">&#9656;</span> Purpose and how to read this page</summary>
+        <div class="row"><span class="lab">Purpose</span><p class="val">Neutral reference for the Training and Education Committee. Records what the draft proposes for training hours, how comparable programs set theirs, the cost variables, and the positions members stated July 9.</p></div>
+        <div class="row"><span class="lab">How to read</span><p class="val">The July 9 draft is not final rule text. New Mexico figures are cited to that draft (7.35.3), by page. Positions belong to the members who stated them. Benchmark hours are checked against each state's rule. New Mexico cost figures have not been researched and are marked open.</p></div>
+      </details>
 
-    <!-- 1 -->
-    <section id="numbers">
-      <div class="sec-head">
-        <p class="k">1</p>
-        <h2>The proposed training hours</h2>
-      </div>
-      <p class="thesis">The July 9 draft proposes hours by role: <b>8 didactic hours</b> for the certifying clinician with no practicum, and <b>about 35 didactic hours plus 100 to 120 practicum hours</b> for facilitators and practitioners. The practitioner and facilitator figures are the ones sent back to committee.</p>
       <div class="roles">
         <div class="role">
           <p class="rn">Certifying clinician</p>
@@ -254,7 +251,7 @@
           <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs</span></div>
           <div class="rrow"><span class="rk">Facilitator module</span><span class="rv">5 hrs</span></div>
           <div class="rrow"><span class="rk">Practicum</span><span class="rv">100 hrs</span></div>
-          <div class="rtot"><span>Sent back</span><b>35 + 100</b></div>
+          <div class="rtot"><span>Sent to committee July 17</span><b>35 + 100</b></div>
         </div>
         <div class="role">
           <p class="rn">Practitioner</p>
@@ -263,11 +260,29 @@
           <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs</span></div>
           <div class="rrow"><span class="rk">Practitioner module</span><span class="rv">5 hrs</span></div>
           <div class="rrow"><span class="rk">Practicum</span><span class="rv">120 hrs</span></div>
-          <div class="rtot"><span>Sent back</span><b>35 + 120</b></div>
+          <div class="rtot"><span>Sent to committee July 17</span><b>35 + 120</b></div>
         </div>
       </div>
-      <p class="body">Inside the practicum: at least 80 hours in real administration and same-day therapy sessions, at least 14 patients across at least 8 sessions, plus at least 20 hours of preparation and integration. Practitioners add 20 supervisory hours. All hours take place in an approved healing center or other approved location. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">draft 7.35.3</a>, practitioner and facilitator practicum requirements; educational requirements.</span></p>
-      <p class="note">The 100 / 120 practicum has held since the <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">June 12 recommendation</a> and carried into the June 25 and July 9 drafts. The department said July 9 the didactic did not change, only split into separate practitioner and facilitator modules. <span class="cite">Source: June 12 recommendation pp.7&ndash;9; July 9 transcript.</span></p>
+      <p class="cite" style="margin-top:8px;">Certifying clinician hours: <a href="documents/rules-draft-2026-07-09.pdf#page=4" target="_blank" rel="noopener">draft p.4</a> (didactic), <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">p.5</a> (continuing ed). Facilitator and practitioner didactic: <a href="documents/rules-draft-2026-07-09.pdf#page=4" target="_blank" rel="noopener">draft pp.4&ndash;5</a>. Practicum: <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">draft p.5</a>.</p>
+
+      <div class="jump">
+        <a href="#numbers">1 &middot; The proposed hours</a>
+        <a href="#who">2 &middot; Who the hours fall on</a>
+        <a href="#benchmark">3 &middot; Comparable programs</a>
+        <a href="#cost">4 &middot; Potential costs</a>
+        <a href="#questions">5 &middot; Open questions</a>
+      </div>
+    </header>
+
+    <!-- 1 -->
+    <section id="numbers">
+      <div class="sec-head">
+        <p class="k">1</p>
+        <h2>The proposed training hours</h2>
+      </div>
+      <p class="thesis">The July 9 draft proposes hours by role: <b>8 didactic hours</b> for the certifying clinician with no practicum, and <b>about 30 didactic hours plus a 5-hour simulated-patient experience, plus 100 to 120 practicum hours</b> for facilitators and practitioners. The practitioner and facilitator figures are the ones sent to the committee for July 17. The role totals are above; this section holds the detail behind them.</p>
+      <p class="body">Inside the practicum: at least 80 hours in real administration and same-day therapy sessions, at least 14 patients across at least 8 sessions, plus at least 20 hours of preparation and integration. Practitioners add 20 supervisory hours. All hours take place in an approved healing center or other approved location. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">draft 7.35.3, p.5</a>, practitioner and facilitator practicum requirements.</span></p>
+      <p class="note">The 100/120 practicum figure is current text at <b>July 9 draft, page 5</b>. It originated in the June 12 recommendation and carried unchanged through the June 25 draft. The department said July 9 the didactic hours did not change, only split into separate practitioner and facilitator modules. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">rules-draft-2026-07-09.pdf, p.5</a>; origin, <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">June 12 recommendation</a>, pp.7&ndash;9; July 9 transcript.</span></p>
     </section>
 
     <!-- 2 -->
@@ -285,25 +300,25 @@
           <tbody>
             <tr>
               <td class="prog">Section G waiver</td>
-              <td class="num">Practicum rules, subsec. G</td>
+              <td class="num">Practicum rules, subsec. G<br><span class="cite"><a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank" rel="noopener">p.6</a></span></td>
               <td>The department "may otherwise waive, temporarily suspend, or reduce the practicum requirements" to certify enough providers to build the program. Discretionary, no deadline.</td>
             </tr>
             <tr>
               <td class="prog">In-state bridge</td>
-              <td class="num">Practicum rules, subsec. H</td>
-              <td>People trained by a NM program certified by June 30, 2027 demonstrate 40 contact hours instead of the full practicum.</td>
+              <td class="num">Practicum rules, subsec. H<br><span class="cite"><a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank" rel="noopener">p.6</a></span></td>
+              <td>People trained by a NM program certified by June 30, 2027 demonstrate 40 contact hours instead of the full practicum. The draft text reads June 30, 2027. At the July 9 meeting the board moved this deadline to December 31, 2027, alongside the reciprocity deadline. <span class="cite">Source: draft <a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank" rel="noopener">p.6</a>; deadline change, July 9 transcript.</span></td>
             </tr>
             <tr>
               <td class="prog">Reciprocity waiver</td>
-              <td class="num">Reciprocity rules, subsec. B&ndash;C</td>
-              <td>Out-of-state applicants by the deadline show 40 contact hours; the department may further reduce reciprocity practicum. Deadline extended to Dec 31, 2027 on July 9.</td>
+              <td class="num">Reciprocity rules, subsec. B&ndash;C<br><span class="cite"><a href="documents/rules-draft-2026-07-09.pdf#page=7" target="_blank" rel="noopener">p.7</a></span></td>
+              <td>Out-of-state applicants by the deadline show 40 contact hours; the department may further reduce reciprocity practicum. The draft text reads December 31, 2026. At the July 9 meeting the board moved this deadline to December 31, 2027, noted by chair Ian Dunn as a legislative backstop, not a target date. <span class="cite">Source: draft <a href="documents/rules-draft-2026-07-09.pdf#page=7" target="_blank" rel="noopener">p.7</a>; deadline change, July 9 transcript.</span></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="body">Which providers land in which route is set on <a href="eligibility.html">Who can qualify</a> and <a href="pathways.html">Provider routes</a>. In short: the certifying clinician (a prescriber-eligible license, holding the controlled-substance number) owes 8 didactic hours and no practicum; the practitioner and facilitator owe the full stack; a reciprocity or bridge applicant owes 40 contact hours. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">draft 7.35.3</a>, practicum and reciprocity sections.</span></p>
+      <p class="body">Which providers land in which route is set on <a href="eligibility.html">Who can qualify</a> and <a href="pathways.html">Provider routes</a>. In short: the certifying clinician (a prescriber-eligible license, holding the controlled-substance number) owes 8 didactic hours and no practicum; the practitioner and facilitator owe the full stack; a reciprocity or bridge applicant owes 40 contact hours. <span class="cite">Source: <a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank" rel="noopener">draft 7.35.3, pp.6&ndash;7</a>, practicum and reciprocity sections.</span></p>
       <div class="callout">
-        <p>For the first years, most providers can reach certification through a 40-contact-hour path or a Section G reduction. The full 100 / 120 binds new in-state trainees after the bridge date lapses. This describes the clauses in the draft, not a position on them.</p>
+        <p>For the first years, most providers can reach certification through a 40-contact-hour path or a Section G reduction. The full 100 / 120 binds new in-state trainees after the bridge date lapses, a date the draft sets at June 30, 2027 and the board moved to December 31, 2027 on July 9. This describes the clauses in the draft, not a position on them.</p>
       </div>
     </section>
 
@@ -322,11 +337,11 @@
           <tbody>
             <tr class="nmrow">
               <td class="prog">New Mexico <span class="who">draft, tabled July 9</span></td>
-              <td class="num">~35 hrs</td>
+              <td class="num">~30 hrs + 5 hr sim.</td>
               <td class="num">100 / 120 hrs</td>
               <td class="num">10 hrs mentoring</td>
               <td>New facilitators &amp; practitioners; already NM-licensed</td>
-              <td class="src"><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Draft 7.35.3</a></td>
+              <td class="src"><a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank" rel="noopener">Draft 7.35.3, p.6</a></td>
             </tr>
             <tr>
               <td class="prog">Oregon <span class="who">Psilocybin Services</span></td>
@@ -427,7 +442,7 @@
       </div>
       <p class="note"><b>Research inputs still needed:</b> what a New Mexico healing center charges a trainee for session access, whether trainees may practice on one another, real tuition once programs are approved, and how many providers the state needs. These are the numbers to gather, not assumptions to insert here.</p>
       <div class="callout">
-        <p>The largest cost variable is who the novice practices on. The 80 practicum hours are real administration sessions. Leeman said a novice should not do those on patients with the four qualifying conditions, and that in other programs they happen with other trainees. Dosing a healthy trainee is not clearly authorized by the Medical Psilocybin Act, so that route depends on a fix-it bill, which Ian Dunn noted is not expected before January. Until then Section G and the 40-hour bridge are the tools that exist.</p>
+        <p>A central cost variable is who the novice practices on. The 80 practicum hours are real administration sessions. Leeman said a novice should not do those on patients with the four qualifying conditions, and that in other programs they happen with other trainees. Dosing a healthy trainee is not clearly authorized by the Medical Psilocybin Act, so that route depends on a fix-it bill, which Ian Dunn noted is not expected before January. Until then Section G and the 40-hour bridge are the tools that exist.</p>
       </div>
     </section>
 
@@ -532,9 +547,9 @@
       <div class="col" style="padding:0;">
         <h3>New Mexico (primary, local)</h3>
         <ul>
-          <li>July 9 draft rules 7.35.3, practicum, educational, and reciprocity sections. <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">rules-draft-2026-07-09.pdf</a></li>
-          <li>June 12 recommendation, practicum and continuing-education hours (pp.7&ndash;9). <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">recommendation-2026-06-12.pdf</a></li>
-          <li>July 9 Advisory Board meeting, unofficial transcript. <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">NMMPAB-2026-07-09-transcript.pdf</a></li>
+          <li>July 9 draft rules 7.35.3, educational requirements (pp.4&ndash;5), practicum requirements (pp.5&ndash;6), reciprocity (p.7). <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">rules-draft-2026-07-09.pdf</a></li>
+          <li>The 100/120 practicum figure originated in the June 12 recommendation (pp.7&ndash;9), carried unchanged into the July 9 draft. Origin only, not the current-requirement source. <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">recommendation-2026-06-12.pdf</a></li>
+          <li>July 9 Advisory Board meeting, unofficial transcript, source for the reciprocity deadline change and the member positions in section 5. <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">NMMPAB-2026-07-09-transcript.pdf</a></li>
         </ul>
         <h3>Benchmarks (verified against each rule)</h3>
         <ul>

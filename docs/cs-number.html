@@ -62,6 +62,15 @@
   p.lede{font-size:17px; color:var(--text); margin:16px 0 0; line-height:1.62;}
   p.lede b{font-weight:650;}
 
+  /* On-page index */
+  nav.onpage{margin-top:22px; border:1px solid var(--border); border-radius:12px; background:var(--surface); box-shadow:var(--shadow); padding:16px 20px 18px;}
+  .onpage-k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
+  nav.onpage ol{margin:0; padding:0; list-style:none; display:grid; grid-template-columns:1fr; gap:7px;}
+  @media (min-width:640px){ nav.onpage ol{grid-template-columns:1fr 1fr; column-gap:22px;} }
+  nav.onpage li{font-size:14.5px; line-height:1.4;}
+  nav.onpage a{color:var(--text); text-decoration:none; border-bottom:1px solid transparent;}
+  nav.onpage a:hover{color:var(--accent); border-bottom-color:var(--accent-2);}
+
   /* Section scaffolding (site style) */
   section{padding-top:8px;}
   .sec-head{margin:40px 0 2px; scroll-margin-top:62px;}
@@ -115,7 +124,7 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
-        <a href="changes.html">What changed</a>
+        <a href="changes.html">The draft</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
@@ -140,12 +149,26 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
       <h1>The controlled-substance number: the certifying-clinician access point</h1>
-      <p class="lede">The draft rule (7.35.3) requires the &ldquo;certifying clinician&rdquo; who authorizes a patient&rsquo;s entry to hold a New Mexico controlled-substance number. On July 9, 2026, the Advisory Board declined to endorse that requirement and sent it back to the department, citing malpractice liability, rural access, and provider supply. No decision was made; the rename from &ldquo;diagnostic clinician&rdquo; to &ldquo;certifying clinician&rdquo; was confirmed. What follows is what the credential is, who can diagnose the qualifying conditions, what the statute requires, how other jurisdictions set the same access point, and what board members said, sourced throughout.</p>
+      <p class="lede">The July 9 draft rule (7.35.3) requires the &ldquo;certifying clinician,&rdquo; the person who certifies a patient into the program, to hold a New Mexico controlled-substance number (<a href="documents/rules-draft-2026-07-09.pdf#page=8" target="_blank" rel="noopener">draft, p. 8</a>). On July 9, 2026, the Advisory Board declined to endorse that requirement and sent it back to the department to weigh alternatives; no vote was taken.</p>
+      <nav class="onpage" aria-label="On this page">
+        <p class="onpage-k">On this page</p>
+        <ol>
+          <li><a href="#what">1. What a New Mexico controlled-substance number is</a></li>
+          <li><a href="#scope">2. Who can diagnose, and who needs the number</a></li>
+          <li><a href="#act">3. What the Medical Psilocybin Act requires</a></li>
+          <li><a href="#proxy">4. What the number does, and does not do, here</a></li>
+          <li><a href="#states">5. How other jurisdictions set the same access point</a></li>
+          <li><a href="#alt">6. Consultation and telemedicine precedents</a></li>
+          <li><a href="#liability">7. Liability for certifying a patient one will not treat</a></li>
+          <li><a href="#access">8. New Mexico rural access and prescriber supply</a></li>
+          <li><a href="#record">The record: July 9 discussion, verbatim</a></li>
+        </ol>
+      </nav>
     </header>
 
     <section id="what">
       <div class="sec-head"><p class="k">1</p><h2>What a New Mexico controlled-substance number is</h2></div>
-      <p class="thesis">It is a state registration issued by the New Mexico Board of Pharmacy, separate from a federal DEA number. The draft rule requires the New Mexico number, not the federal one.</p>
+      <p class="thesis">It is a state registration issued by the New Mexico Board of Pharmacy, separate from a federal DEA number. The draft rule requires the New Mexico number, not the federal one (<a href="documents/rules-draft-2026-07-09.pdf#page=8" target="_blank" rel="noopener">draft, p. 8</a>).</p>
       <ul class="body">
         <li><b>Created by</b> the New Mexico Controlled Substances Act (NMSA 1978, Sections 30-31-1 through 30-31-42) and Board of Pharmacy rule 16.19.20 NMAC.</li>
         <li><b>Issued by</b> the New Mexico Board of Pharmacy, within the Regulation and Licensing Department.</li>
@@ -153,7 +176,7 @@
         <li><b>What it authorizes:</b> to administer, prescribe, or dispense controlled substances in New Mexico, within a &ldquo;valid practitioner-patient relationship&rdquo; as defined by the holder&rsquo;s own licensing board.</li>
         <li><b>Versus a DEA number:</b> separate and stacked. The state application requires a current DEA registration and professional license (16.19.20.14(B) NMAC); the state number must be obtained before the DEA issues the federal one, and both precede enrollment in the state Prescription Monitoring Program.</li>
       </ul>
-      <p class="cite">Verified. Sources: 16.19.20 NMAC; NMSA 30-31-2; New Mexico Board of Pharmacy practitioner application. The New Mexico / federal distinction was clarified on the record June 26.</p>
+      <p class="cite">Verified. Sources: 16.19.20 NMAC; NMSA 30-31-2; New Mexico Board of Pharmacy practitioner application.</p>
     </section>
 
     <section id="scope">
@@ -211,7 +234,7 @@
 
     <section id="liability">
       <div class="sec-head"><p class="k">7</p><h2>Liability for certifying a patient one will not treat</h2></div>
-      <p class="thesis">This was the concern that dominated July 9. The general framework: a clinician&rsquo;s <b>formal decision</b> that a patient foreseeably relies on can create a duty even without hands-on treatment, while informal advice is treated differently. The controlling illustrations are out-of-state case law, used here only to describe the framework, not as New Mexico authority.</p>
+      <p class="thesis">Board members raised liability for certifying a patient one will not treat on July 9. The general framework: a clinician&rsquo;s <b>formal decision</b> that a patient foreseeably relies on can create a duty even without hands-on treatment, while informal advice is treated differently. The controlling illustrations are out-of-state case law, used here only to describe the framework, not as New Mexico authority.</p>
       <p class="body"><b>The general rule:</b> &ldquo;Generally, a physician owes no duty to a patient without a physician-patient relationship. Without a physician-patient relationship, with no duty owed, there is no liability for &lsquo;breach&rsquo; of that nonexistent duty.&rdquo;</p>
       <p class="body"><b>The exception that applies here:</b> in <i>Warren v. Dinter</i> (Minnesota), the court held that &ldquo;a duty arises between a physician and an identified third party when the physician provides medical advice and it is foreseeable that the third party will rely on that advice.&rdquo; A physician who never examined the patient faced liability for a decision the patient relied on. The court distinguished a &ldquo;formal medical decision&rdquo; from informal &ldquo;curbside&rdquo; advice.</p>
       <p class="body">This describes why a certifying-clinician role can carry liability exposure. It does not quantify New Mexico exposure, and no New Mexico certifying-clinician liability authority was located. Whether a psilocybin certification is a &ldquo;formal medical decision&rdquo; of the kind that attaches a duty is an unlitigated question.</p>

@@ -62,8 +62,10 @@
   h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 14px; line-height:1.22;}
   .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; line-height:1.55;}
   .lede b{font-weight:600; color:var(--text);}
-  .context{margin:22px 0 4px; padding:14px 16px; border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; font-size:14.5px; color:var(--text); line-height:1.55;}
+  .context{padding:14px 16px; border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; font-size:13.5px; color:var(--text); line-height:1.55;}
   .context b{color:var(--open);}
+  .notes-row{display:grid; gap:14px; margin-top:22px; grid-template-columns:1fr;}
+  @media (min-width:720px){.notes-row{grid-template-columns:1fr 1fr;}}
 
   /* Form */
   .formcard{margin-top:26px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 22px 26px; box-shadow:var(--shadow);}
@@ -90,7 +92,7 @@
   .btn:hover{background:var(--accent-2);}
   .sform-ok{display:none; margin-top:20px; background:var(--agree-bg); border:1px solid var(--agree-border); color:var(--agree); border-radius:12px; padding:16px 18px; font-size:15px; line-height:1.5;}
   .sform-ok.show{display:block;}
-  .use-note{margin-top:22px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:10px; padding:14px 16px; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
+  .use-note{background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:10px; padding:14px 16px; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
   .use-note b{color:var(--text);}
 
   footer{margin-top:56px; border-top:1px solid var(--border); padding:26px 0 80px;}
@@ -111,7 +113,7 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
-        <a href="changes.html">What changed</a>
+        <a href="changes.html">The draft</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
@@ -135,12 +137,8 @@
 
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
-      <h1>Community input</h1>
-      <p class="lede">A place to send recommendations and resources to the people writing the training rules, so they can be gathered and passed along together instead of one at a time.</p>
-
-      <div class="context">
-        <b>Why now.</b> On July 9 the board sent the practicum and didactic hours back to the Training and Education Committee, which meets July 17. Larry Leeman suggested the committee bring in outside experts for that discussion, as the end-of-life committee did, ideally people with real experience and no commercial conflict of interest, and named the California Institute of Integral Studies as one example. If you know someone who could present, or have a resource or idea that helps, add it here.
-      </div>
+      <h1>Send what the rule&#8209;writers should see</h1>
+      <p class="lede">Recommendations and resources sent here are compiled and forwarded to the department together, before the July 17 committee meeting, instead of arriving one at a time.</p>
     </header>
 
     <div class="formcard">
@@ -198,8 +196,13 @@
 
       <div class="sform-ok" id="inputOk">Thank you. What you sent was received and will be reviewed before anything is passed along.</div>
 
-      <div class="use-note">
-        <b>How this is used.</b> Submissions are collected and forwarded to the department together, in context, rather than one at a time. They may also be shared with a board member who asks to receive them. Nothing is published on this site automatically, and sending something is not an endorsement of it. No personal information is required; a name or email is optional and used only to follow up on your submission.
+      <div class="notes-row">
+        <div class="context">
+          <b>Why now.</b> On July 9 the board sent the practicum and didactic hours back to the Training and Education Committee, which meets July 17. Larry Leeman suggested the committee bring in outside experts for that discussion, as the end-of-life committee did, ideally people with real experience and no commercial conflict of interest, and named the California Institute of Integral Studies as one example. If you know someone who could present, or have a resource or idea that helps, add it here.
+        </div>
+        <div class="use-note">
+          <b>How this is used.</b> Submissions are collected and forwarded to the department together, in context, rather than one at a time. They may also be shared with a board member who asks to receive them. Nothing is published on this site automatically, and sending something is not an endorsement of it. No personal information is required; a name or email is optional and used only to follow up on your submission.
+        </div>
       </div>
     </div>
 
