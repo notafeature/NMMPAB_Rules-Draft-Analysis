@@ -36,12 +36,12 @@
   .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
   .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px; white-space:nowrap;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
-  .tnav{display:flex; gap:4px;}
-  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px; white-space:nowrap;}
+  .tnav{display:flex; gap:3px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 8px; border-radius:8px; white-space:nowrap;}
   .tnav a:hover{background:var(--surface-2); color:var(--text);}
   .tnav a.on{color:var(--accent); background:var(--accent-soft);}
   .tdrop{position:relative;}
-  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 8px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
   .tdrop>summary::-webkit-details-marker{display:none;}
   .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
   .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
@@ -176,6 +176,10 @@
   footer ul{list-style:none; margin:0; padding:0; font-size:12.5px; color:var(--text-muted); line-height:1.5;}
   footer li{margin:6px 0; padding-left:14px; text-indent:-14px;}
   footer p{font-size:12px; color:var(--text-faint); margin:16px 0 0;}
+  .sitefoot{margin-top:18px; padding-top:14px; border-top:1px solid var(--border);}
+  .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
+  .sitefoot p b{color:var(--text-muted); font-weight:650;}
+  .sitefoot a{color:var(--accent);}
 </style>
 </head>
 <body>
@@ -187,12 +191,13 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
+        <a href="changes.html">What changed</a>
         <a href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a class="on" href="hours.html">Training hours</a>
         <a href="cs-number.html">CS number</a>
         <a href="input.html">Community input</a>
-        <a href="history.html">Recent developments</a>
+        <a href="history.html">History</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
@@ -543,6 +548,10 @@
           <li>Colorado ~$200 trainee session: Leeman, July 9 transcript. Oregon $1,200&ndash;$3,500 market session and $8,900&ndash;$12,000 tuition: provider pricing pages, collected July 2026.</li>
         </ul>
         <p>Community reference for the July 17, 2026 Training and Education Committee meeting. Not affiliated with NMDOH. Not legal advice. Nothing here is final rule text.</p>
+      <div class="sitefoot">
+        <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
+        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
+      </div>
       </div>
     </footer>
 

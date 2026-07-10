@@ -13,7 +13,7 @@ A neutral, plain-language community reference for the New Mexico Medical Psilocy
 - No em dashes anywhere. Grep before shipping.
 - Facts only on public pages: dated events and attributed quotes. No characterizations ("overwhelmed," "confused"), no synthesized process or timeline.
 - Site-usable vs internal: a sentence that explains a fact or a distinction can be public; a sentence that recommends an outcome stays internal (in `analysis/`).
-- Nav identical on every page: same items, same order.
+- Nav identical on every page: same items, same order. Identical site footer on every page (disclaimer + about/report-error links).
 - Plain-label headings. Say more with less.
 - No direct pushes to main. Branches and PRs; Gregory merges.
 
@@ -28,6 +28,8 @@ A neutral, plain-language community reference for the New Mexico Medical Psilocy
 | cs-number.html | The CS number at the certifying-clinician access point: what it is, who can diagnose vs who can hold it, statute, comparators, July 9 record |
 | input.html | Community input form (Formspree mjgqnkvv), opt-in contact only |
 | history.html | Recent developments: the dated record from Jan 23 committee meetings through July 17 schedule |
+| changes.html | What changed: section-by-section comparison of the June 12 recommendation and the July 9 rules draft (104 entries, verbatim, page-linked); also holds the June 26 motion, tally, verbal agreements, and deferrals log (moved off index) |
+| about.html | How this site is built: method, AI-assistance disclaimer, verification tiers, corrections path (linked from the footer of every page) |
 
 ## 4. Facts baseline (verified against the June 26 and July 9 transcripts)
 
@@ -48,6 +50,14 @@ A neutral, plain-language community reference for the New Mexico Medical Psilocy
 - docs/archive/ deleted (superseded pages; recoverable from git history).
 - reference.html renamed eligibility.html (from the orphaned branch commit 1cc1781); mobile hamburger nav adopted from the same commit.
 
+## 5a. Round-2 decision log (July 10)
+
+- "Everything else" (June 26 motion, tally, verbal agreements, deferrals) moved from index.html to changes.html; index links to it.
+- Embedded community-input pointer moved to the top of index (strip under the rules-draft card); per-item "Provide input" links deep-link to input.html with the topic preselected (?topic=cs-number|hours|reciprocity).
+- Pathways: permit route rows are now the clickable selectors (tabs removed); journey heading states "Pathway to the X permit" plus the route label; "What happened July 9" tile removed (page constrained to routes); contested marker now a down triangle.
+- Nav label "Recent developments" shortened to "History" to fit the 8-link bar; page title unchanged.
+- changes.html entries generated from a verified section-by-section comparison (scratch research spot-checked against both PDFs). One extraction flagged unclear in place (draft p. 11, patient prohibitions subsection A). Two extraction oddities recorded as notes: "Hi-TEC" spelling and one leftover "certified Diagnosing Clinician" (draft p. 10).
+
 ## 6. Open to-dos
 
 Parked pending team discussion (Gregory decides):
@@ -59,6 +69,8 @@ Verification and content:
 - [ ] Wire in the June 12 and June 25 recordings if DOH posts them.
 - [ ] Possible future: transcript subpage per meeting, with quotes linked to their spot.
 - [ ] After July 17: record outcomes on history.html and the affected pages.
+- [ ] Form delivery: currently lands in the site owner's Formspree inbox. Wiring to DOH or to a board member (with CCs) is possible but needs that person's consent first (Gregory to ask Larry Leeman).
+- [ ] Verify against the printed PDF: "Hi-TEC" spelling (draft p. 5) and the leftover "certified Diagnosing Clinician" (draft p. 10); both are recorded as notes on changes.html.
 
 ## 7. Sources
 

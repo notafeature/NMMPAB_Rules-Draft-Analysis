@@ -12,12 +12,14 @@ Goal: let anyone, including people who do not follow the legislative process, se
 Training and Education/
 ├── docs/                     <- published by GitHub Pages
 │   ├── index.html            <- the tabled items (flagship page)
+│   ├── changes.html          <- what changed: June 12 recommendation vs July 9 rules draft
 │   ├── pathways.html         <- provider routes
 │   ├── eligibility.html      <- who can qualify
 │   ├── hours.html            <- training hours: the tabled numbers, benchmarks, costs
 │   ├── cs-number.html        <- the controlled-substance number at the certifying-clinician access point
 │   ├── input.html            <- community input form (recommendations and resources)
 │   ├── history.html          <- recent developments: the dated record
+│   ├── about.html            <- how this site is built (method + AI disclaimer)
 │   └── documents/            <- source PDFs + the July 9 transcript (linked in-site)
 ├── Document Register/        <- original source draft PDFs
 ├── source-text/              <- verbatim pypdf extraction
@@ -43,5 +45,7 @@ Next: full Advisory Board July 17, 9 AM; Training and Education Committee July 1
 - Draft language: the source PDFs in `docs/documents/` (June 12 recommendation; July 9 board-meeting rules draft, 7.35.3). The June 25 draft is superseded. None is final rule text.
 - Meeting input: full transcripts of the June 25 and June 26 committee meetings and the July 9 board meeting.
 - Names corrected from garbled auto-transcripts: **Zurlo, Peskuski, Leeman, Dezbaá** (and Fatemi in earlier meetings).
+
+This site is built from public meeting records with AI assistance; the transcripts it relies on are unofficial and may contain errors. See docs/about.html ("How this site is built") for the method, verification tiers, and corrections path.
 
 Nothing in this repository is final, promulgated rule text.

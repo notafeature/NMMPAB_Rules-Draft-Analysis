@@ -34,12 +34,12 @@
   .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 22px; display:flex; align-items:center; gap:16px;}
   .brand{font-family:var(--serif); font-weight:600; font-size:15px; margin-right:auto; display:flex; align-items:center; gap:9px; white-space:nowrap;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
-  .tnav{display:flex; gap:4px;}
-  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px; white-space:nowrap;}
+  .tnav{display:flex; gap:3px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 8px; border-radius:8px; white-space:nowrap;}
   .tnav a:hover{background:var(--surface-2); color:var(--text);}
   .tnav a.on{color:var(--accent); background:var(--accent-soft);}
   .tdrop{position:relative;}
-  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 8px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
   .tdrop>summary::-webkit-details-marker{display:none;}
   .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
   .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
@@ -47,7 +47,7 @@
   .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
   .tdrop-menu a:hover{background:var(--surface-2);}
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
-  .updated{margin:12px 0 0; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
+  .updated{margin:12px 0 18px; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
   .updated b{color:var(--text-muted); font-weight:600;}
   .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
   @media (max-width:1140px){
@@ -87,7 +87,12 @@
   .youare h2{font-size:clamp(19px,2.5vw,24px); margin:0;}
 
   .routes{display:flex; flex-direction:column; gap:9px; margin:18px 0 6px;}
-  .route{display:flex; gap:12px; align-items:flex-start; background:var(--surface); border:1px solid var(--border); border-radius:11px; padding:13px 15px; box-shadow:var(--shadow);}
+  .route{display:flex; gap:12px; align-items:center; background:var(--surface); border:1px solid var(--border); border-radius:11px; padding:11px 15px; box-shadow:var(--shadow);}
+  button.route{width:100%; text-align:left; font-family:var(--sans); cursor:pointer; transition:border-color .12s, box-shadow .12s;}
+  button.route:hover{border-color:var(--border-strong);}
+  .route.sel{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent);}
+  .route .rgo{flex:none; font-size:12px; font-weight:600; color:var(--accent); white-space:nowrap;}
+  .route.sel .rgo{color:var(--text-faint); font-weight:500;}
   .route.isopen{border-left:4px solid var(--settled);}
   .route.part{border-left:4px solid var(--open);}
   .route.recip{border-left:4px solid var(--accent);}
@@ -102,12 +107,9 @@
   .route .rl{margin:5px 0 0; font-size:14px; color:var(--text-muted); line-height:1.45;}
   .route .rl a{color:var(--accent);}
 
-  .journeywrap{margin-top:24px;}
-  .jhead h3{font-size:17px; margin:0 0 12px;}
-  .ptabs{display:flex; gap:8px; margin:0 0 16px; flex-wrap:wrap;}
-  .ptab{font-family:var(--sans); font-size:13px; font-weight:600; padding:7px 14px; border-radius:999px; border:1.5px solid var(--border); background:var(--surface); color:var(--text-muted); cursor:pointer;}
-  .ptab.on{border-color:var(--accent); background:var(--accent-soft); color:var(--accent);}
-  .ptab .pd{display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:7px; vertical-align:middle;}
+  .journeywrap{margin-top:28px;}
+  .jhead h3{font-size:18px; margin:0;}
+  .jhead .routeline{margin:4px 0 14px; font-size:13.5px; color:var(--text-muted);}
 
   .steps{margin:0; padding:0; list-style:none;}
   .step{position:relative; padding:0 0 18px 42px;}
@@ -130,12 +132,6 @@
   .step .src a{color:var(--text-faint); text-decoration:underline;}
   .step .src a:hover{color:var(--accent);}
 
-  .j9{margin:36px 0 0; background:var(--open-bg); border:1px solid var(--open-border); border-radius:12px; padding:16px 18px;}
-  .j9 h3{font-size:15px; margin:0 0 8px; color:var(--open);}
-  .j9 ul{margin:0; padding-left:18px; font-size:14px; color:var(--text); line-height:1.5;}
-  .j9 li{margin:4px 0;}
-  .j9 a{color:var(--accent); font-weight:600;}
-
   footer{margin-top:48px; border-top:1px solid var(--border); background:var(--surface-2);}
   footer .col{padding-top:26px; padding-bottom:42px;}
   footer h3{font-size:15px; margin:0 0 10px;}
@@ -143,6 +139,10 @@
   footer p b{color:var(--text); font-weight:600;}
   footer a{color:var(--accent);}
   footer .fine{font-size:12px; color:var(--text-faint);}
+  .sitefoot{margin-top:18px; padding-top:14px; border-top:1px solid var(--border);}
+  .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
+  .sitefoot p b{color:var(--text-muted); font-weight:650;}
+  .sitefoot a{color:var(--accent);}
 </style>
 </head>
 <body>
@@ -153,12 +153,13 @@
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules</span>
       <nav class="tnav" id="tnav">
         <a href="index.html">Tabled items</a>
+        <a href="changes.html">What changed</a>
         <a class="on" href="pathways.html">Provider routes</a>
         <a href="eligibility.html">Who can qualify</a>
         <a href="hours.html">Training hours</a>
         <a href="cs-number.html">CS number</a>
         <a href="input.html">Community input</a>
-        <a href="history.html">Recent developments</a>
+        <a href="history.html">History</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
@@ -175,13 +176,13 @@
   <div class="col">
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
-      <h1>Routes to a provider permit, by where you start</h1>
-      <p class="updated"><b>Updated July 9, 2026, 3:37 PM MDT.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
-      <p class="lede">Three permits: <b>Facilitator, Practitioner, Certifying Clinician</b>. Pick a starting license to see the steps and where each open question landed on July 9.</p>
+      <h1>Routes to a provider permit</h1>
+      <p class="updated"><b>Updated July 10, 2026.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
+      <p class="lede">The draft rules create three permits: <b>Facilitator, Practitioner, Certifying Clinician</b>. Select the description that fits your current license or background, then review the path to each permit that is open to you.</p>
       <div class="flags">
         <span class="fl set">&#9679; Settled</span>
         <span class="fl open">&#9670; Open</span>
-        <span class="fl chal">&#9650; Contested</span>
+        <span class="fl chal">&#9660; Contested</span>
       </div>
     </header>
 
@@ -191,23 +192,16 @@
     </div>
 
     <div id="panel"></div>
-
-    <div class="j9">
-      <h3>What happened July 9</h3>
-      <ul>
-        <li><b>Reciprocity</b>: resolved without objection; both waiver deadlines extended to <b>December 31, 2027</b>.</li>
-        <li><b>Practicum and didactic hours</b>: tabled by vote and sent to the Training and Education Committee (July 17).</li>
-        <li><b>Controlled Substance number</b> for the Certifying Clinician: sent back to the department to weigh alternatives.</li>
-      </ul>
-      <p style="margin:11px 0 0; font-size:13.5px; color:var(--text-muted);">Full record on the <a href="index.html">three items page</a>.</p>
-    </div>
   </div>
 
   <footer>
     <div class="col">
       <h3>Sources</h3>
       <p>Steps are from the <a href="documents/recommendation-2026-06-12.pdf" target="_blank">June 12 recommendation</a> and the <a href="documents/rules-draft-2026-06-25.pdf" target="_blank">June 25 rules draft</a>. Each step links to its page. Neither draft is final rule text. Open and contested flags reflect the June 26 board vote and the June 25 and 26 discussions.</p>
-      <p class="fine">Community reference for the July 9, 2026 session. Not affiliated with NMDOH.</p>
+      <div class="sitefoot">
+        <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
+        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
+      </div>
     </div>
   </footer>
 
@@ -242,7 +236,7 @@
     dc:{name:'Certifying Clinician', dot:'#256E8C', steps:[
       {t:"Hold a NM license that can <b>diagnose the qualifying condition</b>.", s:'set', src:L('6/12 p.1',P6+'1')},
       {t:"Approved <b>Certifying Clinician training</b> (pharmacology, diagnosis, medical clearance, monitoring).", s:'set', src:L('6/12 pp.2-3',P6+'2')},
-      {t:"Hold a <b>New Mexico Controlled Substance number</b>.", s:'open', flag:'Open', why:"Sent back to the department after July 9 to weigh alternatives. NM number, not federal DEA.", src:L('6/12 p.1',P6+'1')+' &middot; '+L('the three items','index.html#cs')},
+      {t:"Hold a <b>New Mexico Controlled Substance number</b>.", s:'open', flag:'Open', why:"Sent back to the department after July 9 to weigh alternatives. NM number, not federal DEA.", src:L('6/12 p.1',P6+'1')+' &middot; '+L('the tabled items','index.html#cs')},
       {t:"<b>No practicum.</b>", s:'set', src:L('6/12 pp.2-3',P6+'2')},
       {t:"Apply to NMDOH. Permit lasts <b>2 years</b>.", s:'set', src:L('6/25 p.6',R6+'6')},
       {t:"Continuing ed: <b>8 CME hours every 2 years</b>.", s:'set', src:L('6/12 p.9',P6+'9')}
@@ -308,7 +302,7 @@
     var cls= step.s==='open'?'s-open':(step.s==='chal'?'s-chal':'s-set');
     var flag='';
     if(step.s==='open') flag='<span class="flag open">&#9670; '+step.flag+'</span>';
-    if(step.s==='chal') flag='<span class="flag chal">&#9650; '+step.flag+'</span>';
+    if(step.s==='chal') flag='<span class="flag chal">&#9660; '+step.flag+'</span>';
     var why= step.why?'<p class="why">'+step.why+'</p>':'';
     return '<li class="step '+cls+'"><span class="num"></span><div class="card"><p class="txt">'+step.t+'</p>'+flag+why+'<p class="src">'+step.src+'</p></div></li>';
   }
@@ -318,42 +312,46 @@
     var st=STARTS[current], kids=startsEl.children;
     for(var i=0;i<kids.length;i++) kids[i].classList.toggle('on', i===current);
 
+    var keys=st.routes.filter(function(d){return d.state!=='nopath';}).map(function(d){return d.permit;});
+    if(keys.indexOf(activePath[st.id])<0) activePath[st.id]=keys[0];
+
     var html='<div class="youare"><p class="k">Starting license</p><h2>'+st.title+'</h2></div><div class="routes">';
     st.routes.forEach(function(d){
       var S=STATE[d.state];
       var label = d.permit==='recip' ? 'Practitioner or Facilitator, by reciprocity' : PERMITS[d.permit].name;
-      html+='<div class="route '+S.cls+'"><div class="rb"><p class="rn">'+label+' <span class="tag '+S.tag+'">'+S.lab+'</span></p><p class="rl">'+d.line+'</p></div></div>';
+      var inner='<div class="rb"><p class="rn">'+label+' <span class="tag '+S.tag+'">'+S.lab+'</span></p><p class="rl">'+d.line+'</p></div>';
+      if(d.state!=='nopath'){
+        var sel=(d.permit===activePath[st.id]);
+        html+='<button type="button" class="route '+S.cls+(sel?' sel':'')+'" data-k="'+d.permit+'" aria-pressed="'+(sel?'true':'false')+'">'+inner+'<span class="rgo">'+(sel?'Shown below':'View pathway &darr;')+'</span></button>';
+      } else {
+        html+='<div class="route nopath">'+inner+'</div>';
+      }
     });
     html+='</div>';
-
-    var keys=st.routes.filter(function(d){return d.state==='open'||d.state==='recip'||d.state==='part';}).map(function(d){return d.permit;});
     if(keys.length){
-      html+='<div class="journeywrap"><div class="jhead"><h3>Steps</h3></div>';
-      if(keys.length>1){
-        html+='<div class="ptabs">';
-        keys.forEach(function(k){var nm=k==='recip'?'Reciprocity':PERMITS[k].name; html+='<button class="ptab" data-k="'+k+'"><span class="pd" style="background:'+PERMITS[k].dot+'"></span>'+nm+'</button>';});
-        html+='</div>';
-      }
-      html+='<div id="jholder"></div></div>';
+      html+='<div class="journeywrap"><div class="jhead" id="jhead"></div><div id="jholder"></div></div>';
     }
     panelEl.innerHTML=html;
 
-    var holder=document.getElementById('jholder');
-    if(holder){
-      if(keys.indexOf(activePath[st.id])<0) activePath[st.id]=keys[0];
-      draw(holder, activePath[st.id]);
-      var tabs=panelEl.querySelectorAll('.ptab');
-      for(var t=0;t<tabs.length;t++){(function(tab){
-        tab.classList.toggle('on', tab.getAttribute('data-k')===activePath[st.id]);
-        tab.addEventListener('click',function(){
-          activePath[st.id]=tab.getAttribute('data-k');
-          for(var u=0;u<tabs.length;u++) tabs[u].classList.remove('on');
-          tab.classList.add('on'); draw(holder, activePath[st.id]);
+    if(keys.length){
+      drawJourney(st);
+      var rows=panelEl.querySelectorAll('button.route');
+      for(var t=0;t<rows.length;t++){(function(row){
+        row.addEventListener('click',function(){
+          activePath[st.id]=row.getAttribute('data-k');
+          render();
+          var jw=document.getElementById('jhead');
+          if(jw && jw.getBoundingClientRect().top>window.innerHeight-120){ jw.scrollIntoView({behavior:'smooth', block:'start'}); }
         });
-      })(tabs[t]);}
+      })(rows[t]);}
     }
   }
-  function draw(holder,key){
+  function drawJourney(st){
+    var key=activePath[st.id], route=null;
+    st.routes.forEach(function(r){ if(r.permit===key) route=r; });
+    var title = key==='recip' ? 'Pathway by reciprocity: Practitioner or Facilitator' : 'Pathway to the '+PERMITS[key].name+' permit';
+    document.getElementById('jhead').innerHTML='<h3>'+title+'</h3>'+(route?'<p class="routeline">'+route.line+'</p>':'');
+    var holder=document.getElementById('jholder');
     holder.innerHTML=journey(key);
     var nodes=holder.querySelectorAll('.num');
     for(var i=0;i<nodes.length;i++) nodes[i].textContent=(i+1);
