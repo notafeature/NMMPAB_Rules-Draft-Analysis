@@ -1,4 +1,4 @@
-# NMMPAB Rules Draft Analysis — Training and Education
+# NMMPAB Rules Draft Analysis: Training and Education
 
 A neutral, plain-language community reference for the New Mexico Medical Psilocybin Advisory Board's **Training and Education** rulemaking.
 
@@ -10,38 +10,33 @@ Goal: let anyone, including people who do not follow the legislative process, se
 
 ```
 Training and Education/
-├── docs/                     ← published by GitHub Pages
-│   ├── index.html            ← the three tabled items (flagship page)
-│   ├── pathways.html         ← provider routes
-│   ├── reference.html        ← who can qualify
-│   ├── documents/            ← source PDFs + the July 9 transcript (linked in-site)
-│   └── archive/              ← earlier superseded version
-├── Document Register/        ← original source draft PDFs
-├── source-text/              ← verbatim pypdf extraction
-├── analysis/                 ← attributed meeting extractions, SOURCES.md, inventory
-├── transcripts/              ← working copies of meeting transcripts
-├── HANDOFF.md                ← full context for continuing this work (read first)
+├── docs/                     <- published by GitHub Pages
+│   ├── index.html            <- the tabled items (flagship page)
+│   ├── pathways.html         <- provider routes
+│   ├── eligibility.html      <- who can qualify
+│   ├── hours.html            <- training hours: the tabled numbers, benchmarks, costs
+│   ├── cs-number.html        <- the controlled-substance number at the certifying-clinician access point
+│   ├── input.html            <- community input form (recommendations and resources)
+│   ├── history.html          <- recent developments: the dated record
+│   └── documents/            <- source PDFs + the July 9 transcript (linked in-site)
+├── Document Register/        <- original source draft PDFs
+├── source-text/              <- verbatim pypdf extraction
+├── analysis/                 <- attributed meeting extractions, CS-number research, SOURCES.md
+├── HANDOFF.md                <- current state and open to-dos (read first)
 └── README.md
 ```
 
 ## Where things stand after July 9, 2026
 
-On June 26 the board voted 3-2 to accept the committee's recommendation and set three items aside. On July 9 (a working session, no binding votes):
+On June 26 the board voted 3-2 to accept the committee's recommendation and set three items aside. July 9 was a Medical Psilocybin Advisory Board meeting with votes; the chair barred formal votes only after the scheduled adjournment. Outcomes:
 
-1. **Reciprocity** — resolved by consensus: both waiver deadlines extended to **December 31, 2027**.
-2. **Practicum and didactic hours** — tabled and sent to the Training and Education Committee (July 17, 1 PM) for a focused, expert-informed discussion.
-3. **Certifying clinician / controlled-substance number** — sent back to the department to weigh alternatives; the rename from "diagnostic clinician" to "certifying clinician" is confirmed.
+1. **Reciprocity**: resolved without objection. Both waiver deadlines extended to **December 31, 2027**.
+2. **Practicum and didactic hours**: the board voted to table the numbers and send them to the Training and Education Committee (July 17, 1 PM).
+3. **Certifying clinician / controlled-substance number**: sent back to the department to weigh alternatives; the rename from "diagnostic clinician" to "certifying clinician" is confirmed.
+
+Also on the July 9 record: EMT training certification added alongside BLS/CPR; "therapy sessions" language removed; "experience, observe or conduct" changed to "and conduct"; Keenan Ryan appeared as the new Medicaid seat.
 
 Next: full Advisory Board July 17, 9 AM; Training and Education Committee July 17, 1 PM.
-
-## Suggest-a-resource form (activation)
-
-`docs/index.html` has a "Suggest a resource" section near the bottom for collecting sources for the tabled-item lists (practicum and controlled-substance number). It is a plain styled form that posts to [Formspree](https://formspree.io) (free tier: 50 submissions/month, no card, no external request until submit). It ships with two placeholders that must be filled before it works:
-
-1. **Form endpoint.** Create a free Formspree form, then replace `YOUR_FORM_ID` in the `<form action="…">` with the ID Formspree gives you. Until then the form shows a "not connected yet" notice instead of posting.
-2. **Email fallback (optional).** Replace `YOUR_ADDRESS` in the `mailto:` link with an inbox for suggestions, or delete the "Prefer email" line if no address should be published.
-
-No personal information is required; name and contact fields are optional. Submissions are reviewed before anything is added to the site. A honeypot field (`_gotcha`) filters basic spam; Formspree's dashboard/CSV export is used to compile suggestions.
 
 ## Sources
 
