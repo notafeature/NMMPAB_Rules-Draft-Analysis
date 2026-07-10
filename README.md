@@ -34,6 +34,15 @@ On June 26 the board voted 3-2 to accept the committee's recommendation and set 
 
 Next: full Advisory Board July 17, 9 AM; Training and Education Committee July 17, 1 PM.
 
+## Suggest-a-resource form (activation)
+
+`docs/index.html` has a "Suggest a resource" section near the bottom for collecting sources for the tabled-item lists (practicum and controlled-substance number). It is a plain styled form that posts to [Formspree](https://formspree.io) (free tier: 50 submissions/month, no card, no external request until submit). It ships with two placeholders that must be filled before it works:
+
+1. **Form endpoint.** Create a free Formspree form, then replace `YOUR_FORM_ID` in the `<form action="…">` with the ID Formspree gives you. Until then the form shows a "not connected yet" notice instead of posting.
+2. **Email fallback (optional).** Replace `YOUR_ADDRESS` in the `mailto:` link with an inbox for suggestions, or delete the "Prefer email" line if no address should be published.
+
+No personal information is required; name and contact fields are optional. Submissions are reviewed before anything is added to the site. A honeypot field (`_gotcha`) filters basic spam; Formspree's dashboard/CSV export is used to compile suggestions.
+
 ## Sources
 
 - Draft language: the source PDFs in `docs/documents/` (June 12 recommendation; July 9 board-meeting rules draft, 7.35.3). The June 25 draft is superseded. None is final rule text.

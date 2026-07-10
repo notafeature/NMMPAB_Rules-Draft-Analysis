@@ -49,7 +49,15 @@
   .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
   .tdrop-menu a:hover{background:var(--surface-2);}
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
-  @media (max-width:680px){.tnav{display:none;}}
+  .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
+  @media (max-width:680px){
+    .topbar .inner{position:relative;}
+    .hamburger{display:block;}
+    .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
+    .tnav.open{display:flex;}
+    .tnav a{padding:10px 8px;}
+    .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
+  }
 
   /* Today callout (collapsible) */
   .today{margin:22px 0 4px; border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; overflow:hidden;}
@@ -200,6 +208,33 @@
   .st.no{color:var(--dissent); border:1px solid var(--dissent-border);}
   .st.nt{color:var(--pillN); background:var(--pillN-bg); border:1px solid var(--border);}
 
+  /* Suggest a resource */
+  .suggest{margin-top:48px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px 22px 26px; box-shadow:var(--shadow);}
+  .suggest .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  .suggest h2{font-size:clamp(19px,2.2vw,24px); margin:0 0 8px;}
+  .suggest .intro{color:var(--text-muted); font-size:15px; margin:0; line-height:1.55;}
+  .sform{display:grid; gap:16px; margin-top:22px;}
+  .field{display:flex; flex-direction:column; gap:6px; border:none; margin:0; padding:0; min-width:0;}
+  .field label, .field legend{font-size:13px; font-weight:650; color:var(--text); padding:0;}
+  .field .hint{font-size:12.5px; color:var(--text-faint); font-weight:400;}
+  .field input[type=text], .field input[type=email], .field input[type=url], .field textarea{
+    font-family:var(--sans); font-size:15px; color:var(--text); background:var(--surface-2);
+    border:1px solid var(--border-strong); border-radius:10px; padding:10px 12px; width:100%; -webkit-appearance:none;}
+  .field textarea{min-height:92px; resize:vertical; line-height:1.5;}
+  .field input:focus, .field textarea:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
+  .radios{display:flex; flex-wrap:wrap; gap:8px; margin-top:2px;}
+  .radios label{display:inline-flex; align-items:center; gap:7px; font-weight:400; font-size:14px; color:var(--text); background:var(--surface-2); border:1px solid var(--border-strong); border-radius:999px; padding:7px 13px; cursor:pointer;}
+  .radios input{accent-color:var(--accent); margin:0;}
+  .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
+  .sform .actions{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:2px;}
+  .btn{font-family:var(--sans); font-size:15px; font-weight:600; color:#fff; background:var(--accent); border:none; border-radius:10px; padding:11px 22px; cursor:pointer;}
+  .btn:hover{background:var(--accent-2);}
+  .altcontact{font-size:13px; color:var(--text-muted);}
+  .sform-ok{display:none; margin-top:20px; background:var(--agree-bg); border:1px solid var(--agree-border); color:var(--agree); border-radius:10px; padding:14px 16px; font-size:14.5px; line-height:1.5;}
+  .sform-ok.show{display:block;}
+  .review-note{margin-top:22px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:10px; padding:14px 16px; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
+  .review-note b{color:var(--text);}
+
   footer{margin-top:60px; border-top:1px solid var(--border); padding:26px 0 80px;}
   footer h3{font-size:15px; margin:0 0 8px;}
   footer p{font-size:13px; color:var(--text-muted); margin:8px 0;}
@@ -213,10 +248,11 @@
   <div class="topbar">
     <div class="inner">
       <span class="brand"><span class="dot"></span> Training &amp; Education Rules · July 9</span>
-      <nav class="tnav">
+      <nav class="tnav" id="tnav">
         <a class="on" href="index.html">The three items</a>
         <a href="pathways.html">Provider routes</a>
-        <a href="reference.html">Who can qualify</a>
+        <a href="eligibility.html">Who can qualify</a>
+        <a href="hours.html">Hours benchmark</a>
         <details class="tdrop">
           <summary>Documents ▾</summary>
           <div class="tdrop-menu">
@@ -226,6 +262,7 @@
           </div>
         </details>
       </nav>
+      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
     </div>
   </div>
 
@@ -632,6 +669,73 @@
       </details>
     </section>
 
+    <!-- SUGGEST A RESOURCE -->
+    <section id="suggest">
+      <div class="suggest">
+        <p class="k">Community input</p>
+        <h2>Suggest a resource</h2>
+        <p class="intro">This site is compiling source lists for the tabled items, in particular the practicum requirements and the controlled-substance-number question. If you know of a study, program curriculum, another state's rule, testimony, or other source that belongs on those lists, add it here.</p>
+
+        <!--
+          SETUP (two placeholders for the site owner to fill before this goes live):
+          1. Form endpoint: create a free form at https://formspree.io (50 submissions/month, no card),
+             then replace YOUR_FORM_ID in the action below with the ID Formspree gives you.
+          2. Email fallback: replace YOUR_ADDRESS in the mailto link with the inbox that should receive
+             suggestions. Remove the "Prefer email" line if you do not want an address published.
+          Until step 1 is done, the form shows a "not connected yet" notice instead of posting.
+        -->
+        <form class="sform" id="suggestForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="NMMPAB reference site: suggested resource">
+          <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+          <fieldset class="field">
+            <legend>Which list is this for?</legend>
+            <div class="radios">
+              <label><input type="radio" name="list" value="Practicum" checked> Practicum</label>
+              <label><input type="radio" name="list" value="Controlled-substance number"> Controlled-substance number</label>
+              <label><input type="radio" name="list" value="Other"> Other</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="s-title">Resource <span class="hint">what it is called</span></label>
+            <input type="text" id="s-title" name="resource" placeholder="Title, program, study, or rule">
+          </div>
+
+          <div class="field">
+            <label for="s-link">Link or citation <span class="hint">optional</span></label>
+            <input type="url" id="s-link" name="link" placeholder="https:// or a written citation">
+          </div>
+
+          <div class="field">
+            <label for="s-why">Why it belongs on the list <span class="hint">optional, a sentence or two</span></label>
+            <textarea id="s-why" name="note" placeholder="What it covers, and why it is relevant to this item."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="s-name">Your name <span class="hint">optional</span></label>
+            <input type="text" id="s-name" name="name" autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="s-contact">Contact <span class="hint">optional, used only to follow up on your suggestion</span></label>
+            <input type="email" id="s-contact" name="contact" autocomplete="email" placeholder="Email">
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn">Send suggestion</button>
+            <span class="altcontact">Prefer email? Write to <a href="mailto:YOUR_ADDRESS?subject=Suggested%20resource">YOUR_ADDRESS</a>.</span>
+          </div>
+        </form>
+
+        <div class="sform-ok" id="suggestOk">Thank you. Your suggestion was received and will be reviewed before anything is added to the site.</div>
+
+        <div class="review-note">
+          <b>How suggestions are reviewed.</b> Submissions are collected, checked against the primary sources, and compiled into the source lists on this site. Nothing is published automatically, and listing a source is not an endorsement of it. No personal information is required; a name or contact is optional and used only to follow up on your submission.
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="col" style="padding:0;">
         <h3>Sources &amp; method</h3>
@@ -652,6 +756,26 @@
     if(d.open){ var r=d.getBoundingClientRect(); if(r.bottom < 8){ d.open=false; } }
   },{passive:true});
 })();
+(function(){
+  var f=document.getElementById('suggestForm');
+  if(!f) return;
+  var ok=document.getElementById('suggestOk');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(f.getAttribute('action').indexOf('YOUR_FORM_ID')!==-1){
+      alert('The suggestion form is not connected yet. Replace YOUR_FORM_ID in the page with a Formspree form ID, or use the email link.');
+      return;
+    }
+    var data=new FormData(f);
+    fetch(f.getAttribute('action'),{method:'POST',body:data,headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){ f.style.display='none'; if(ok){ ok.classList.add('show'); ok.scrollIntoView({block:'nearest'}); } }
+        else { f.submit(); }
+      })
+      .catch(function(){ f.submit(); });
+  });
+})();
+(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
 </script>
 </body>
 </html>

@@ -25,7 +25,7 @@ The site is LIVE from `docs/` (Pages enabled). Structure moved `site/` → `docs
 
 **Remaining work (Gregory's punch list):**
 - **CS number:** build a clarification section — educate on the concept → use cases → expert testimony. Gregory is drafting the source list. It is not going to budge (department keeps it); Chris Peskuski is the loudest concern.
-- **Practicum study guide** as its own page, prepping the July 17 committee discussion.
+- **Practicum study guide** — DONE (`docs/hours.html`, linked in nav on index.html). Benchmark study guide for the July 17 committee: NM current numbers (didactic ~25+5, practicum 100/120), sourced benchmark table (Oregon 120+40, Colorado 150+40+50, CIIS 140–150, buprenorphine X-waiver 24hr), cost estimates, the trainee-training/fix-it-bill/Section G dependency chain, verbatim July 9 quotes (Ryan, Leeman, Peskuski, Burgard, Jennings, dept), and 6 neutral options. Sources: July 9 transcript + web (oregon.gov, dpo.colorado.gov, ciis.edu, SAMHSA/APNA). Style-matched to index.html, self-contained, no advocacy.
 - Review sibling pages (`pathways.html`, `reference.html`) for anything outdated by July 9; consider adding the Documents dropdown to them.
 
 ---
