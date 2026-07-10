@@ -30,14 +30,14 @@
   /* Top bar (site nav) */
   .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
   .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
-  .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px; white-space:nowrap;}
   .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
   .tnav{display:flex; gap:4px;}
-  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 10px; border-radius:8px; white-space:nowrap;}
   .tnav a:hover{background:var(--surface-2); color:var(--text);}
   .tnav a.on{color:var(--accent); background:var(--accent-soft);}
   .tdrop{position:relative;}
-  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
   .tdrop>summary::-webkit-details-marker{display:none;}
   .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
   .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
@@ -46,7 +46,7 @@
   .tdrop-menu a:hover{background:var(--surface-2);}
   .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
   .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
-  @media (max-width:1080px){
+  @media (max-width:1140px){
     .topbar .inner{position:relative;}
     .hamburger{display:block;}
     .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
