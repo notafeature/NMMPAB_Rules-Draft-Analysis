@@ -222,6 +222,19 @@
   .civo .who b{color:var(--text); font-weight:650;}
   .civo .note{margin:10px 0 0; padding-top:10px; border-top:1px dashed var(--border-strong); font-size:12px; color:var(--text-faint); line-height:1.5;}
   .civo .note a{color:var(--pillN);}
+  .civo .cin + .cin{border-top:1px solid var(--border); margin-top:18px; padding-top:18px;}
+  .civo .clead{margin:0 0 6px; font-size:14.5px; color:var(--text); line-height:1.55;}
+  .civo ol.cpts{margin:8px 0 0; padding-left:20px;}
+  .civo ol.cpts li{font-size:14px; line-height:1.6; color:var(--text-muted); margin:8px 0;}
+  .civo ol.cpts li b{color:var(--text); font-weight:650;}
+  .civo details.cfull{margin-top:12px;}
+  .civo details.cfull>summary{cursor:pointer; list-style:none; font-size:12.5px; font-weight:600; color:var(--pillN); display:flex; align-items:center; gap:8px;}
+  .civo details.cfull>summary::-webkit-details-marker{display:none;}
+  .civo details.cfull>summary .chev{transition:transform .15s ease; font-size:12px;}
+  .civo details.cfull[open]>summary .chev{transform:rotate(90deg);}
+  .civo .cfull-body{margin-top:10px; padding-left:14px; border-left:2px solid var(--border-strong); font-size:14px; line-height:1.62; color:var(--text-muted);}
+  .civo .cfull-body p{margin:0 0 10px;}
+  .civo .cfull-body p:last-child{margin-bottom:0;}
 
   footer{margin-top:56px; border-top:1px solid var(--border); padding:26px 0 80px;}
   footer h3{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); margin:20px 0 8px;}
@@ -603,12 +616,40 @@
     </section>
 
     <!-- COMMUNITY INPUT -->
-    <section id="community" class="civo" aria-label="Community input received">
-      <p class="ck">Community input received</p>
-      <p class="cd">Submitted through the community input form &middot; July 17, 2026</p>
-      <blockquote>"The 35 hour didactic requirement seems insufficient. I hope there will be more time for a thoughtful discussion and a rationale before the number of didactic hours is set. An official training and education committee intercession work group would be helpful in pulling together all of the different ideas that have been discussed informally. Then a clear recommendation could be brought to the advisory board."</blockquote>
-      <p class="who">On the <b>didactic hour requirement</b>, from <b>Kate Hawke</b>.</p>
-      <p class="note">A public submission, published here with the submitter&rsquo;s consent. Unverified community comment, offered for consideration; it is not this site&rsquo;s position and not a verified fact. <a href="input.html?topic=hours">Add your own input</a>.</p>
+    <section id="community" class="civo" aria-label="Community and public input">
+      <p class="ck">Community and public input</p>
+
+      <div class="cin">
+        <p class="cd">Community input form &middot; July 17, 2026</p>
+        <blockquote>"The 35 hour didactic requirement seems insufficient. I hope there will be more time for a thoughtful discussion and a rationale before the number of didactic hours is set. An official training and education committee intercession work group would be helpful in pulling together all of the different ideas that have been discussed informally. Then a clear recommendation could be brought to the advisory board."</blockquote>
+        <p class="who">On the <b>didactic hour requirement</b>, from <b>Kate Hawke</b>.</p>
+      </div>
+
+      <div class="cin">
+        <p class="cd">Public comment to the July 17 board meeting &middot; submitted on her behalf</p>
+        <p class="clead">On what should define a credible facilitator training program, Amy Wong-Hope offered four points and a framing on safety:</p>
+        <ol class="cpts">
+          <li><b>A clinically and trauma-informed curriculum:</b> knowledge of trauma, dissociation, psychiatric risk, grief, medical concerns, and substance use, and of the populations served, including people experiencing depression, PTSD, substance-use concerns, serious illness, and end-of-life distress. Facilitators should recognize complexity and individual vulnerability, understand the limits of their scope, and know when to consult, refer, pause, or decline to proceed.</li>
+          <li><b>Ethics woven throughout, not confined to a single module:</b> repeated engagement with consent, power, touch, boundaries, dual relationships, cultural humility, conflicts of interest, and heightened suggestibility, as "an ongoing practice."</li>
+          <li><b>A meaningful practicum:</b> students observed practicing preparation, screening, difficult conversations, boundary setting, crisis response, facilitation, and integration, with competence "demonstrated through supervised experience, not assumed from attendance or written assignments," and periodic competency review.</li>
+          <li><b>Admissions and evaluation of readiness:</b> interpersonal maturity, emotional regulation, self-awareness, self-reflective accountability, and the capacity to receive and integrate feedback, plus ongoing consultation or peer-consultation groups.</li>
+        </ol>
+        <blockquote>"Safety is not merely a protocol surrounding the intervention. Safety is an essential ingredient in the intervention itself."</blockquote>
+        <p class="who">Public comment, from <b>Amy Wong-Hope</b>.</p>
+        <details class="cfull">
+          <summary><span class="chev">&#9656;</span> Show the full comment</summary>
+          <div class="cfull-body">
+            <p>Thank you for the opportunity to offer my perspective on what should define a credible psilocybin facilitator training program.</p>
+            <p>First, the curriculum must be clinically and trauma informed. Facilitators need sufficient knowledge of trauma, dissociation, psychiatric risk, grief, medical concerns, substance use, and the populations they may serve, including people experiencing depression, PTSD, substance-use concerns, serious illness, and end-of-life distress. They must be able to recognize complexity and individual vulnerability, understand the limits of their scope, and know when to consult, refer, pause, or decline to proceed.</p>
+            <p>Second, ethics must be woven throughout the program, not confined to a single module. Students should repeatedly engage with consent, power, touch, boundaries, dual relationships, cultural humility, conflicts of interest, and heightened suggestibility. Ethical competence means being able to perceive risk, tolerate uncertainty, seek consultation, receive feedback, and repair harm. It is an ongoing practice.</p>
+            <p>Third, programs need a meaningful practicum. Students should be observed practicing preparation, screening, difficult conversations, boundary setting, crisis response, facilitation, and integration. Competence should be demonstrated through supervised experience, not assumed from attendance or written assignments. Periodic practicum-based competency review (at some regular interval?) could help facilitators keep these skills active.</p>
+            <p>Fourth, admissions and evaluation should assess interpersonal maturity, emotional regulation, self-awareness, self-reflective accountability, and the capacity to receive and integrate feedback. Facilitators should also participate in ongoing consultation or peer-consultation groups. These practices demonstrate readiness to hold responsibility for vulnerable people.</p>
+            <p>Ultimately, safety is not merely a protocol surrounding the intervention. Safety is an essential ingredient in the intervention itself. A strong program prepares facilitators to bring sound judgment, accountability, humility, and respect for the full personhood of every participant.</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="note">Community submissions and public comment, shared for consideration. Unverified; not this site&rsquo;s position and not verified fact. Public comment is drawn from the July 17 meeting; form submissions are published only with the submitter&rsquo;s consent, and email is never published. <a href="input.html?topic=hours">Add your own input</a>.</p>
     </section>
 
     <!-- RECORD -->
