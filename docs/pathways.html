@@ -14,6 +14,7 @@
     --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
     --chal:#6D4AA6; --chal-bg:#EEE8F7; --chal-border:#D6C8EC;
     --none:#6F6A79; --none-bg:#EDEBF0; --none-border:#DBD6E2;
+    --opt:#3F5C87; --opt-2:#5D79A4; --opt-bg:#EDF1F8; --opt-border:#C6D3E6;
     --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
     --shadow-lg:0 2px 6px rgba(26,22,33,.06), 0 18px 44px rgba(26,22,33,.10);
     --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
@@ -134,6 +135,32 @@
   .step .src a{color:var(--text-faint); text-decoration:underline;}
   .step .src a:hover{color:var(--accent);}
 
+  /* Options-raised register (July 16 discussion) */
+  .optzone{margin:44px 0 8px;}
+  .optbanner{background:var(--opt-bg); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:14px 16px; margin-bottom:22px;}
+  .opttag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:3px 10px; margin-bottom:9px;}
+  .optintro{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
+  .optintro b{color:var(--text); font-weight:600;}
+  .opthead h2{font-size:clamp(19px,2.5vw,24px); margin:0 0 8px; color:var(--text);}
+  .opthead>p{font-size:14.5px; color:var(--text-muted); margin:0; line-height:1.55; max-width:660px;}
+  .optgrid{display:grid; grid-template-columns:1fr; gap:12px; margin:20px 0;}
+  @media (min-width:620px){.optgrid{grid-template-columns:1fr 1fr;}}
+  .optcard{background:var(--surface); border:1px solid var(--opt-border); border-top:3px solid var(--opt); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow);}
+  .optcard.lead{background:var(--opt-bg);}
+  .optcard .odn{font-family:var(--serif); font-size:16px; font-weight:650; margin:0 0 5px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .optcard .olead{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:2px 8px;}
+  .optcard .ol{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.45;}
+  .optcard .ol a{color:var(--opt);}
+  .optbox{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:var(--shadow);}
+  .optbox h3{font-size:16px; margin:0 0 10px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
+  .optbox>p{margin:0 0 10px; font-size:14px; color:var(--text); line-height:1.55;}
+  .optpos{font-size:14px; line-height:1.55; margin:0 0 9px; color:var(--text);}
+  .optpos b{color:var(--opt); font-weight:650;}
+  .optmark{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--opt-bg); border:1px solid var(--opt-border); border-radius:999px; padding:2px 9px;}
+  .optsrc{font-family:var(--mono); font-size:10.5px; color:var(--text-faint); margin:8px 0 0; line-height:1.5;}
+  .optsrc a{color:var(--text-faint); text-decoration:underline;}
+  .optsrc a:hover{color:var(--opt);}
+
   footer{margin-top:48px; border-top:1px solid var(--border); background:var(--surface-2);}
   footer .col{padding-top:26px; padding-bottom:42px;}
   footer h3{font-size:15px; margin:0 0 10px;}
@@ -179,7 +206,7 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
       <h1>Routes to a provider permit</h1>
-      <p class="updated"><b>Updated July 10, 2026.</b> Reflects the outcome of the July 9 Advisory Board meeting.</p>
+      <p class="updated"><b>Updated July 16, 2026.</b> Core routes reflect the July 9 Advisory Board meeting. A <a href="#specialization">new section below</a> adds specialized-domain options discussed July 16.</p>
       <p class="lede">Pick where you start below, and see your route to each of the three permits: <b>Facilitator, Practitioner, Certifying Clinician.</b></p>
       <div class="legend">
         <div class="lgrow"><span class="fl set">&#9679; Settled</span> In the July 9 draft, not challenged on the record.</div>
@@ -194,6 +221,55 @@
     </div>
 
     <div id="panel"></div>
+
+    <section class="optzone" id="specialization" aria-label="Options raised for consideration, from the July 16 discussion">
+      <div class="optbanner">
+        <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
+        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the July 9 draft, not settled requirements, and not this site's recommendation. The routes above are unchanged.</p>
+      </div>
+
+      <div class="opthead">
+        <h2>An optional specialized-domain route, layered on a core permit</h2>
+        <p>Members discussed whether a provider who reaches one of the three core permits could then add a route for a specific qualifying condition. End-of-life care led the discussion because it is furthest along. The committee treats it as one of four qualifying-condition domains, each the same shape.</p>
+      </div>
+
+      <div class="optgrid">
+        <div class="optcard lead">
+          <p class="odn">End-of-life care <span class="olead">Furthest along</span></p>
+          <p class="ol">A proposed adjunct curriculum was presented July 16. The proposed hours and session outline are on <a href="hours.html#specialization">Training hours</a>.</p>
+        </div>
+        <div class="optcard">
+          <p class="odn">PTSD</p>
+          <p class="ol">A qualifying condition in New Mexico. Same overlay shape as end-of-life; no curriculum has been developed.</p>
+        </div>
+        <div class="optcard">
+          <p class="odn">Substance use disorders</p>
+          <p class="ol">A qualifying condition. Same overlay shape; no curriculum has been developed.</p>
+        </div>
+        <div class="optcard">
+          <p class="odn">Treatment-resistant depression</p>
+          <p class="ol">A qualifying condition. Same overlay shape; no curriculum has been developed.</p>
+        </div>
+      </div>
+
+      <div class="optbox">
+        <h3>An overlay on the three roles, not a fourth permit <span class="optmark">Discussed July 16</span></h3>
+        <p>The discussion framed a specialization as an endorsement carried on top of an existing role, not a new license. The same end-of-life competency could sit with a Clinician, a Practitioner, or a Guide or Facilitator, depending on who carries it.</p>
+        <p class="optpos"><b>Dom, Department of Health:</b> creating diagnosis-specific licensure is logistically difficult, since a group session with more than one qualifying condition would require every facilitator to hold every matching certification. The department's stated preference was endorsements and best-practice recommendations rather than a specialization mandate.</p>
+        <p class="optpos"><b>Larry Leeman:</b> pointed to continuity-of-care models, including death doulas who stay through the journey and a Space Attendant who provides continuity, as an example of why the competency travels with the role rather than defining a separate license.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. How specialization sits on core eligibility is on <a href="eligibility.html#specialization">Who can qualify</a>.</p>
+      </div>
+
+      <div class="optbox">
+        <h3>The open structural question: in the core, or an add-on? <span class="optmark">Discussed July 16</span></h3>
+        <p>Whether specialization hours are written into the core requirements for everyone, or layered on as a separate add-on, was left open.</p>
+        <p class="optpos"><b>Larry Leeman:</b> include the hours in New Mexico's core program, given that end-of-life is one of four qualifying conditions in the state.</p>
+        <p class="optpos"><b>Christine and others:</b> offer it as an adjunct add-on, noting that end-of-life work calls for a disposition not suited to every practitioner.</p>
+        <p class="optpos"><b>Gregory Evans:</b> keep the core robust and specializations external as add-ons, while considering baking the baseline of all four qualifying-condition domains into the general curriculum.</p>
+        <p class="optpos"><b>Jamie:</b> existential and spiritual themes run through all psilocybin work, not only end-of-life, so a baseline competency there fits every facilitator.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026. The hour ranges and the addendum framing are on <a href="hours.html#specialization">Training hours</a>.</p>
+      </div>
+    </section>
   </div>
 
   <footer>

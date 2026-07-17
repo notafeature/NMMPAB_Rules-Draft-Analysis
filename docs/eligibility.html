@@ -15,6 +15,7 @@
     --chal:#6D4AA6; --chal-bg:#EEE8F7; --chal-border:#D6C8EC;
     --none:#6F6A79; --none-bg:#EDEBF0; --none-border:#DBD6E2;
     --recip:#256E8C; --recip-bg:#E1EFF5; --recip-border:#B7D8E5;
+    --opt:#3F5C87; --opt-2:#5D79A4; --opt-bg:#EDF1F8; --opt-border:#C6D3E6;
     --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
     --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
     --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -118,6 +119,33 @@
   .srcnote a{color:var(--text-faint); text-decoration:underline;}
   .srcnote a:hover{color:var(--accent);}
 
+  /* Options-raised register (July 16 discussion) */
+  .optzone{margin:44px 0 8px;}
+  .optbanner{background:var(--opt-bg); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:14px 16px; margin-bottom:22px;}
+  .opttag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:3px 10px; margin-bottom:9px;}
+  .optintro{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
+  .optintro b{color:var(--text); font-weight:600;}
+  .opthead h2{font-size:clamp(19px,2.4vw,24px); margin:0 0 8px; color:var(--text);}
+  .opthead>p{font-size:14.5px; color:var(--text-muted); margin:0; line-height:1.55; max-width:680px;}
+  .optgrid{display:grid; grid-template-columns:1fr; gap:12px; margin:20px 0 6px;}
+  @media (min-width:620px){.optgrid{grid-template-columns:1fr 1fr;}}
+  .optcard{background:var(--surface); border:1px solid var(--opt-border); border-top:3px solid var(--opt); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow);}
+  .optcard.lead{background:var(--opt-bg);}
+  .optcard .ch{font-family:var(--serif); font-size:15.5px; font-weight:650; margin:0; color:var(--text); display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .optcard .csub{font-size:11.5px; color:var(--opt); font-weight:600; margin:3px 0 0; text-transform:uppercase; letter-spacing:.03em;}
+  .optcard .olead{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:2px 8px;}
+  .optcard ul{margin:9px 0 0; padding-left:18px;}
+  .optcard li{font-size:13.5px; color:var(--text-muted); line-height:1.5; margin:4px 0;}
+  .optbox{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:var(--shadow);}
+  .optbox h3{font-size:16px; margin:0 0 10px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
+  .optbox>p{margin:0 0 10px; font-size:14px; color:var(--text); line-height:1.55;}
+  .optpos{font-size:14px; line-height:1.55; margin:0 0 9px; color:var(--text);}
+  .optpos b{color:var(--opt); font-weight:650;}
+  .optmark{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--opt-bg); border:1px solid var(--opt-border); border-radius:999px; padding:2px 9px;}
+  .optsrc{font-family:var(--mono); font-size:10.5px; color:var(--text-faint); margin:8px 0 0; line-height:1.5;}
+  .optsrc a{color:var(--text-faint); text-decoration:underline;}
+  .optsrc a:hover{color:var(--opt);}
+
   footer{margin-top:48px; border-top:1px solid var(--border); background:var(--surface-2);}
   footer .col{padding-top:26px; padding-bottom:42px;}
   footer h3{font-size:15px; margin:0 0 10px;}
@@ -162,7 +190,7 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
       <h1>Who can qualify, and what each permit takes</h1>
-      <p class="updated"><b>Updated July 10, 2026.</b> Reflects the July 9 Advisory Board meeting and the July 9 rules draft.</p>
+      <p class="updated"><b>Updated July 16, 2026.</b> The two tables reflect the July 9 Advisory Board meeting and the July 9 rules draft. A <a href="#specialization">new section below</a> adds specialization options discussed July 16.</p>
       <p class="lede">Two reference tables. The first is the <b>steps for each permit</b>. The second is <b>which licenses can qualify</b> for each.</p>
     </header>
 
@@ -304,6 +332,57 @@
         </table>
       </div>
       <p class="srcnote">Entry credentials: <a href="documents/rules-draft-2026-07-09.pdf#page=8" target="_blank">July 9 rules draft</a> pp.8-9. Reciprocity clause: <a href="documents/rules-draft-2026-07-09.pdf#page=6" target="_blank">July 9 rules draft</a> pp.6-7. The July 9 draft gives license examples only (e.g. MD, NP; e.g. PSY, LSW, LCSW). The scope-of-practice test used to grade Physician/NP/PA and Psychologist/LCSW/LPCC/LMFT as Partial comes from the <a href="documents/recommendation-2026-06-12.pdf" target="_blank">June 12 recommendation</a> p.1, applied here since the July 9 draft does not restate it.</p>
+    </section>
+
+    <section class="optzone" id="specialization" aria-label="Options raised for consideration, from the July 16 discussion">
+      <div class="optbanner">
+        <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
+        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the July 9 draft, not settled requirements, and not this site's recommendation. The two tables above are unchanged.</p>
+      </div>
+
+      <div class="opthead">
+        <h2>Specialization as an added layer, not a separate license</h2>
+        <p>Members discussed treating competence in a specific qualifying condition as a layer added on top of core eligibility, sitting on the existing three roles as an endorsement. It would not add a fourth license or a new row to the tables above. End-of-life care is the domain furthest along; PTSD, substance use disorders, and treatment-resistant depression were treated as the same shape.</p>
+      </div>
+
+      <div class="optgrid">
+        <div class="optcard">
+          <p class="ch">Baseline, for every facilitator</p>
+          <p class="csub">Proposed as the psychospiritual core</p>
+          <ul>
+            <li>Spiritual assessment and meaning-making</li>
+            <li>Grief, loss, and bereavement</li>
+            <li>Family and relational systems</li>
+            <li>Ethics, culture, equity, and informed consent</li>
+          </ul>
+        </div>
+        <div class="optcard lead">
+          <p class="ch">End-of-life specialization <span class="olead">Overlay</span></p>
+          <p class="csub">Added on top of the baseline</p>
+          <ul>
+            <li>Client mindset in serious illness and end-of-life</li>
+            <li>Medical complexity and safety</li>
+            <li>Adapting facilitation for end-of-life care</li>
+            <li>Interdisciplinary collaboration and sustainable practice</li>
+          </ul>
+        </div>
+      </div>
+      <p class="optsrc" style="margin:0 2px 8px;">First-pass domain tagging presented by Jenn at the End-of-Life Care committee meeting, July 16, 2026. Rule of thumb offered in the discussion: psychospiritual content is baseline for everyone; medical-complexity and prognosis-aware content is the specialization layer.</p>
+
+      <div class="optbox">
+        <h3>The same competency, carried by different roles <span class="optmark">Discussed July 16</span></h3>
+        <p>Because the layer is an endorsement rather than a license, the same end-of-life competency can land in a clinical, a behavioral-health, or a community context, depending on which of the three roles carries it.</p>
+        <p class="optpos"><b>Larry Leeman:</b> described continuity-of-care models where a death doula stays with a client through the journey and a Space Attendant, such as a hospice-trained volunteer, provides continuity. He raised the gap that a chaplain or end-of-life doula has no post-training slot in the current three-role structure.</p>
+        <p class="optpos"><b>Jamie:</b> existential and spiritual themes appear across all psilocybin work, not only end-of-life, so a baseline competency in those areas fits every facilitator regardless of specialization.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them.</p>
+      </div>
+
+      <div class="optbox">
+        <h3>Open questions on the added layer <span class="optmark">Discussed July 16</span></h3>
+        <p class="optpos"><b>Test out or credential out.</b> For practitioners already specialized in palliative care, members raised whether existing expertise could satisfy the requirement without repeating training. Left open, and flagged for the training committee.</p>
+        <p class="optpos"><b>Endorsement or licensure.</b> Dom, of the Department of Health, said diagnosis-specific licensure is logistically difficult and that the department prefers endorsements and best-practice recommendations. Larry Leeman suggested a professional organization for New Mexico end-of-life psychedelic practice as a possible long-term home for the standard.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026. The optional route these questions attach to is on <a href="pathways.html#specialization">Provider routes</a>; the proposed hours are on <a href="hours.html#specialization">Training hours</a>.</p>
+      </div>
     </section>
   </div>
 
