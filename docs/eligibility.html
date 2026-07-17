@@ -158,6 +158,8 @@
   .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
   .sitefoot p b{color:var(--text-muted); font-weight:650;}
   .sitefoot a{color:var(--accent);}
+  .scrollcue{display:none;}
+  @media (max-width:730px){.scrollcue{display:block; font-size:12px; color:var(--text-faint); font-weight:600; margin:16px 0 -6px;}}
 </style>
 <style id="navpass">
   /* ===== Unified site nav (July 2026 UX pass) ===== */
@@ -269,6 +271,7 @@
         <h2>The steps, for each permit</h2>
         <p>Read down a column for one permit. Colored pills mark steps still open after July 9.</p>
       </div>
+      <p class="scrollcue" aria-hidden="true">Scroll sideways to see all columns &rarr;</p>
       <div class="tscroll">
         <table>
           <thead>
@@ -348,6 +351,7 @@
         <h2>Which licenses can qualify</h2>
         <p>Eligibility follows what the license allows. The Certifying Clinician column also turns on the Controlled Substance number, which was sent back to the department after July 9.</p>
       </div>
+      <p class="scrollcue" aria-hidden="true">Scroll sideways to see all columns &rarr;</p>
       <div class="tscroll">
         <table>
           <thead>
