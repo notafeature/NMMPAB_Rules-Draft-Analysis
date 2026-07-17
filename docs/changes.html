@@ -180,6 +180,10 @@
   .navcta:hover{border-color:var(--accent);}
   .navcta.on{background:var(--accent); color:#fff;}
   .hamburger{display:none;}
+  @media (min-width:861px){
+    .tnav{display:flex !important; position:static !important; flex-direction:row !important; align-items:center; background:none !important; border-bottom:none !important; box-shadow:none !important; padding:0 !important; max-height:none !important; overflow:visible !important;}
+    .hamburger{display:none !important;}
+  }
   @media (max-width:860px){
     .topbar .inner{position:relative; flex-wrap:wrap;}
     .hamburger{display:block;}

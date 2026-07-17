@@ -75,14 +75,18 @@
   .fl.chal{background:var(--chal-bg); color:var(--chal); border-color:var(--chal-border); border-style:dashed;}
 
   .pick{margin:30px 0 8px;}
-  .pick .pl{font-family:var(--serif); font-size:15px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-faint); margin:0 0 14px;}
+  .pick .pl{font-family:var(--serif); font-size:15px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-faint); margin:0 0 6px;}
+  .pick .phint{font-size:13.5px; color:var(--text-muted); margin:0 0 14px;}
   .starts{display:grid; grid-template-columns:1fr; gap:9px;}
   @media (min-width:620px){.starts{grid-template-columns:1fr 1fr;}}
-  .start{text-align:left; background:var(--surface); border:1.5px solid var(--border); border-radius:12px; padding:12px 15px; cursor:pointer; font-family:var(--sans); color:inherit; box-shadow:var(--shadow); transition:border-color .12s, background .12s, box-shadow .12s; display:flex; flex-direction:column; gap:2px;}
+  .start{position:relative; text-align:left; background:var(--surface); border:1.5px solid var(--border); border-radius:12px; padding:13px 15px 13px 42px; cursor:pointer; font-family:var(--sans); color:inherit; box-shadow:var(--shadow); transition:border-color .12s, background .12s, box-shadow .12s; display:flex; flex-direction:column; gap:2px;}
+  .start::before{content:""; position:absolute; left:15px; top:15px; width:16px; height:16px; border-radius:50%; border:2px solid var(--border-strong); background:var(--surface); transition:border-color .12s, box-shadow .12s;}
   .start:hover{border-color:var(--border-strong);}
+  .start:hover::before{border-color:var(--accent);}
   .start .stt{font-family:var(--serif); font-size:15.5px; font-weight:600; line-height:1.22;}
   .start .stex{font-size:12px; color:var(--text-muted); line-height:1.35;}
   .start.on{border-color:var(--accent); background:var(--accent-soft); box-shadow:0 0 0 1.5px var(--accent), var(--shadow);}
+  .start.on::before{border-color:var(--accent); box-shadow:inset 0 0 0 3.5px var(--accent);}
 
   #panel{margin-top:6px;}
   .youare{margin:32px 0 4px; padding-bottom:10px; border-bottom:2px solid var(--accent);}
@@ -210,6 +214,10 @@
   .navcta:hover{border-color:var(--accent);}
   .navcta.on{background:var(--accent); color:#fff;}
   .hamburger{display:none;}
+  @media (min-width:861px){
+    .tnav{display:flex !important; position:static !important; flex-direction:row !important; align-items:center; background:none !important; border-bottom:none !important; box-shadow:none !important; padding:0 !important; max-height:none !important; overflow:visible !important;}
+    .hamburger{display:none !important;}
+  }
   @media (max-width:860px){
     .topbar .inner{position:relative; flex-wrap:wrap;}
     .hamburger{display:block;}
@@ -279,6 +287,7 @@
 
     <div class="pick">
       <p class="pl">Starting license</p>
+      <p class="phint">Pick the one that fits you. Your routes to each permit appear below.</p>
       <div class="starts" id="starts"></div>
     </div>
 
