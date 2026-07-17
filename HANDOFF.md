@@ -38,7 +38,7 @@ A neutral, plain-language community reference for the New Mexico Medical Psilocy
 - June 12: committee recommendation issued. June 25: department presented a rules-style draft of the same subject (state as fact only).
 - June 26: board voted 3-2 to accept, setting aside (1) the CS number for the certifying clinician, (2) practicum hours (100/120 plus 20 supervisory), (3) the reciprocity timeline. Only Leeman's "reluctant yes" is named; the two against are not.
 - July 9: an Advisory Board meeting with votes; the chair barred formal votes only after the scheduled adjournment. Reciprocity resolved without objection, both waiver deadlines to December 31, 2027 (Ian Dunn, board chair: December 31 is a legislative backstop). Board voted to table practicum and didactic hours to the committee. CS number sent back to the department. Renamed "certifying clinician." EMT training certification added alongside BLS/CPR. "Therapy sessions" removed. "Experience, observe or conduct" became "and conduct." Keenan Ryan is the new Medicaid seat.
-- July 17: full Advisory Board 9 AM; Training and Education Committee 1 PM.
+- July 17: Training and Education Committee at 9 AM, taking up the practicum and didactic hours. (Corrected July 17 from an earlier "committee at 1 PM" note.)
 - Name corrections for auto-transcripts: Zurlo, Leeman, Peskuski, Dezbaá, Fatemi. Committee name is "Training and Education."
 
 ## 5. Reconciliation decision log (July 10 integration)
