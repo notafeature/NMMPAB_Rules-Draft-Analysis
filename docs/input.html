@@ -87,6 +87,8 @@
   .contact-fields.show{display:grid;}
   @media (min-width:560px){.contact-fields.show{grid-template-columns:1fr 1fr;}}
   .contact-fields .field input{background:var(--surface);}
+  #emailField{display:none;}
+  #emailField.on{display:block;}
   .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
   .btn{font-family:var(--sans); font-size:15px; font-weight:600; color:#fff; background:var(--accent); border:none; border-radius:10px; padding:12px 24px; cursor:pointer;}
   .btn:hover{background:var(--accent-2);}
@@ -244,19 +246,18 @@
           <input type="url" id="i-link" name="link" placeholder="https://">
         </div>
 
-        <label class="checkline"><input type="checkbox" id="wantContact" name="share_contact" value="yes"> Do you want to include your contact information? Optional, and only used to follow up on what you sent.</label>
+        <label class="checkline"><input type="checkbox" id="wantPublish" name="publish_named" value="yes"> You may publish this comment on the site with my name. If left unchecked, anything published is de-identified. Your email is never published.</label>
+        <label class="checkline"><input type="checkbox" id="wantContact" name="share_contact" value="yes"> Include your contact info so we can follow up. Optional, and used only to follow up on what you sent.</label>
         <div class="contact-fields" id="contactFields">
           <div class="field">
             <label for="i-name">Your name</label>
             <input type="text" id="i-name" name="name" autocomplete="name">
           </div>
-          <div class="field">
-            <label for="i-email">Email</label>
+          <div class="field" id="emailField">
+            <label for="i-email">Email <span class="hint">never published, follow-up only</span></label>
             <input type="email" id="i-email" name="contact" autocomplete="email">
           </div>
         </div>
-
-        <label class="checkline"><input type="checkbox" id="wantPublish" name="publish_named" value="yes"> You may publish this comment on the site with my name. If left unchecked, anything published is de-identified. Your email is never published.</label>
 
         <div>
           <button type="submit" class="btn">Send</button>
@@ -300,8 +301,18 @@
 <script>
 (function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
 (function(){
-  var c=document.getElementById('wantContact'), box=document.getElementById('contactFields');
-  if(c&&box){ c.addEventListener('change',function(){ box.classList.toggle('show', c.checked); }); }
+  var pub=document.getElementById('wantPublish'),
+      con=document.getElementById('wantContact'),
+      box=document.getElementById('contactFields'),
+      email=document.getElementById('emailField');
+  function sync(){
+    var showBox=(pub&&pub.checked)||(con&&con.checked);
+    if(box) box.classList.toggle('show', showBox);
+    if(email) email.classList.toggle('on', !!(con&&con.checked));
+  }
+  if(pub) pub.addEventListener('change', sync);
+  if(con) con.addEventListener('change', sync);
+  sync();
 })();
 (function(){
   var f=document.getElementById('inputForm');
