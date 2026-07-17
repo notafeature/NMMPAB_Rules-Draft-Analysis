@@ -102,6 +102,20 @@
   .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
   .sitefoot p b{color:var(--text-muted); font-weight:650;}
   .sitefoot a{color:var(--accent);}
+
+  /* Community input received, index */
+  .inlog{margin:40px 0 0;}
+  .inlog h2{font-family:var(--serif); font-size:20px; margin:0 0 6px;}
+  .inlog .il-sub{font-size:13.5px; color:var(--text-muted); margin:0 0 16px; line-height:1.55; max-width:640px;}
+  .inlog a.il{display:block; text-decoration:none; color:inherit; border:1px solid var(--border-strong); border-left:4px solid var(--accent); border-radius:12px; background:var(--surface); padding:15px 17px; margin:0 0 12px; box-shadow:var(--shadow); transition:border-color .12s, transform .12s;}
+  .inlog a.il:hover{border-color:var(--accent); transform:translateY(-2px);}
+  .inlog .il-top{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; margin:0 0 8px;}
+  .inlog .il-topic{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--accent);}
+  .inlog .il-date{font-family:var(--mono); font-size:11px; color:var(--text-faint);}
+  .inlog .il-q{margin:0; padding-left:12px; border-left:2px solid var(--border-strong); font-size:14px; color:var(--text); line-height:1.55;}
+  .inlog .il-who{margin:9px 0 0; font-size:12.5px; color:var(--text-muted);}
+  .inlog .il-who b{color:var(--text); font-weight:650;}
+  .inlog .il-go{display:inline-block; margin:9px 0 0; font-size:12.5px; font-weight:600; color:var(--accent);}
 </style>
 <style id="navpass">
   /* ===== Unified site nav (July 2026 UX pass) ===== */
@@ -242,6 +256,8 @@
           </div>
         </div>
 
+        <label class="checkline"><input type="checkbox" id="wantPublish" name="publish_named" value="yes"> You may publish this comment on the site with my name. If left unchecked, anything published is de-identified. Your email is never published.</label>
+
         <div>
           <button type="submit" class="btn">Send</button>
         </div>
@@ -254,10 +270,21 @@
           <b>Why now.</b> On July 17 the board voted 7-0 to send the practicum and didactic hours to the Training and Education Committee, which meets this afternoon to develop updated standards. Larry Leeman has suggested the committee bring in outside experts for that discussion, as the end-of-life committee did, ideally people with real experience and no commercial conflict of interest, and named the California Institute of Integral Studies as one example. If you know someone who could present, or have a resource or idea that helps, add it here.
         </div>
         <div class="use-note">
-          <b>How this is used.</b> Submissions are collected and forwarded to the department together, in context, rather than one at a time. They may also be shared with a board member who asks to receive them. Nothing is published on this site automatically, and sending something is not an endorsement of it. No personal information is required; a name or email is optional and used only to follow up on your submission.
+          <b>How this is used.</b> Submissions are collected and forwarded to the department together, in context, rather than one at a time. They may also be shared with a board member who asks to receive them. A comment may also be published on this site after review; by default anything published is de-identified, and it is attributed to your name only if you check the box above. Nothing is published automatically, and sending something is not an endorsement of it. A name or email is optional; your email is never published and is used only to follow up.
         </div>
       </div>
     </div>
+
+    <section class="inlog" aria-label="Community input received">
+      <h2>Community input received</h2>
+      <p class="il-sub">Selected submissions, published after review. By default they are de-identified; a name appears only with the submitter&rsquo;s consent, and an email is never published. Each links to where it lives on the site.</p>
+      <a class="il" href="hours.html#community">
+        <div class="il-top"><span class="il-topic">Training hours &middot; didactic hour requirement</span><span class="il-date">July 17, 2026</span></div>
+        <p class="il-q">"The 35 hour didactic requirement seems insufficient. I hope there will be more time for a thoughtful discussion and a rationale before the number of didactic hours is set. An official training and education committee intercession work group would be helpful in pulling together all of the different ideas that have been discussed informally. Then a clear recommendation could be brought to the advisory board."</p>
+        <p class="il-who">From <b>Kate Hawke</b>.</p>
+        <span class="il-go">Read it on Training hours &rarr;</span>
+      </a>
+    </section>
 
     <footer>
       <p>Prepared as a community reference for the July 2026 Training and Education rulemaking. Not affiliated with NMDOH. Nothing here is final rule text.</p>
