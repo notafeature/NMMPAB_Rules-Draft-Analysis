@@ -151,6 +151,19 @@
   .optcard .olead{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:2px 8px;}
   .optcard .ol{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.45;}
   .optcard .ol a{color:var(--opt);}
+  .domtile{width:100%; font-family:var(--sans); color:inherit; text-align:left; cursor:pointer; transition:border-color .12s, box-shadow .12s, background .12s;}
+  .domtile .odn, .domtile .ol{display:block;}
+  .domtile:hover{border-color:var(--opt-2);}
+  .domtile.sel{background:var(--opt-bg); box-shadow:0 0 0 2px var(--opt), var(--shadow);}
+  .domtile .rgo{display:block; margin-top:8px; font-size:11.5px; font-weight:600; color:var(--opt);}
+  .domtile.sel .rgo{color:var(--text-faint); font-weight:500;}
+  .optdetail{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:15px 17px; box-shadow:var(--shadow); margin:6px 0 16px;}
+  .optdetail .ddh{font-family:var(--serif); font-size:16.5px; font-weight:650; margin:0 0 8px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
+  .optdetail p{margin:0; font-size:14px; line-height:1.55; color:var(--text);}
+  .optdetail p a{color:var(--opt);}
+  .ddflag{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; border-radius:999px; padding:2px 9px; border:1px solid;}
+  .ddflag.disc{color:var(--opt); background:var(--opt-bg); border-color:var(--opt-border);}
+  .ddflag.none{color:var(--open); background:var(--open-bg); border-color:var(--open-border);}
   .optbox{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:var(--shadow);}
   .optbox h3{font-size:16px; margin:0 0 10px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
   .optbox>p{margin:0 0 10px; font-size:14px; color:var(--text); line-height:1.55;}
@@ -233,24 +246,29 @@
         <p>Members discussed whether a provider who reaches one of the three core permits could then add a route for a specific qualifying condition. End-of-life care led the discussion because it is furthest along. The committee treats it as one of four qualifying-condition domains, each the same shape.</p>
       </div>
 
-      <div class="optgrid">
-        <div class="optcard lead">
-          <p class="odn">End-of-life care <span class="olead">Furthest along</span></p>
-          <p class="ol">A proposed adjunct curriculum was presented July 16. The proposed hours and session outline are on <a href="hours.html#specialization">Training hours</a>.</p>
-        </div>
-        <div class="optcard">
-          <p class="odn">PTSD</p>
-          <p class="ol">A qualifying condition in New Mexico. Same overlay shape as end-of-life; no curriculum has been developed.</p>
-        </div>
-        <div class="optcard">
-          <p class="odn">Substance use disorders</p>
-          <p class="ol">A qualifying condition. Same overlay shape; no curriculum has been developed.</p>
-        </div>
-        <div class="optcard">
-          <p class="odn">Treatment-resistant depression</p>
-          <p class="ol">A qualifying condition. Same overlay shape; no curriculum has been developed.</p>
-        </div>
+      <div class="optgrid" id="domaintiles" role="group" aria-label="Qualifying-condition domains">
+        <button type="button" class="optcard domtile lead sel" data-dom="eol" aria-pressed="true">
+          <span class="odn">End-of-life care <span class="olead">Furthest along</span></span>
+          <span class="ol">A proposed adjunct curriculum was presented July 16.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+        <button type="button" class="optcard domtile" data-dom="ptsd" aria-pressed="false">
+          <span class="odn">PTSD</span>
+          <span class="ol">A qualifying condition in New Mexico.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+        <button type="button" class="optcard domtile" data-dom="sud" aria-pressed="false">
+          <span class="odn">Substance use disorders</span>
+          <span class="ol">A qualifying condition in New Mexico.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+        <button type="button" class="optcard domtile" data-dom="trd" aria-pressed="false">
+          <span class="odn">Treatment-resistant depression</span>
+          <span class="ol">A qualifying condition in New Mexico.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
       </div>
+      <div class="optdetail" id="domaindetail" aria-live="polite"></div>
 
       <div class="optbox">
         <h3>An overlay on the three roles, not a fourth permit <span class="optmark">Discussed July 16</span></h3>
@@ -439,6 +457,39 @@
 </script>
 <script>
 (function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+</script>
+<script>
+(function(){
+  "use strict";
+  var DOM={
+    eol:{t:'End-of-life care', flag:'<span class="ddflag disc">Discussed July 16</span>',
+      body:'Furthest along in the record. A proposed adjunct curriculum was presented at the July 16 End-of-Life Care committee meeting: roughly nine sessions, 15 to 20 hours, offered as a proposal under discussion. See the proposed hours and session outline on <a href="hours.html#specialization">Training hours</a>, and how the layer sits on core eligibility on <a href="eligibility.html#specialization">Who can qualify</a>.'},
+    ptsd:{t:'PTSD', flag:'<span class="ddflag none">Not discussed yet</span>',
+      body:'PTSD is one of New Mexico’s four qualifying conditions, shown here as a parallel option. The committee has not taken up a PTSD specialization, so there are no pathway details yet.'},
+    sud:{t:'Substance use disorders', flag:'<span class="ddflag none">Not discussed yet</span>',
+      body:'A qualifying condition in New Mexico, shown here as a parallel option. The committee has not taken up a substance use disorder specialization, so there are no pathway details yet.'},
+    trd:{t:'Treatment-resistant depression', flag:'<span class="ddflag none">Not discussed yet</span>',
+      body:'A qualifying condition in New Mexico, shown here as a parallel option. The committee has not taken up a treatment-resistant depression specialization, so there are no pathway details yet.'}
+  };
+  var tiles=document.getElementById('domaintiles'), detail=document.getElementById('domaindetail');
+  if(!tiles||!detail) return;
+  var btns=tiles.querySelectorAll('.domtile');
+  function show(key){
+    var d=DOM[key]; if(!d) return;
+    detail.innerHTML='<p class="ddh">'+d.t+' '+d.flag+'</p><p>'+d.body+'</p>';
+    for(var i=0;i<btns.length;i++){
+      var on=btns[i].getAttribute('data-dom')===key;
+      btns[i].classList.toggle('sel',on);
+      btns[i].setAttribute('aria-pressed',on?'true':'false');
+      var go=btns[i].querySelector('.rgo');
+      if(go) go.innerHTML=on?'Shown below':'View details &darr;';
+    }
+  }
+  for(var i=0;i<btns.length;i++){(function(b){
+    b.addEventListener('click',function(){show(b.getAttribute('data-dom'));});
+  })(btns[i]);}
+  show('eol');
+})();
 </script>
 </body>
 </html>
