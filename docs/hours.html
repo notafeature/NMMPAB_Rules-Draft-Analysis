@@ -213,6 +213,22 @@
   .optsrc a:hover{color:var(--opt);}
   .jump a.optj{color:var(--opt); border-color:var(--opt-border); background:var(--opt-bg);}
 
+  /* Live meeting log */
+  .live{border:1px solid var(--border-strong); border-left:4px solid var(--agree); border-radius:14px; background:var(--surface); padding:18px 20px; margin:24px 0 8px; box-shadow:var(--shadow); scroll-margin-top:64px;}
+  .live .lk{font-family:var(--serif); font-size:18px; font-weight:650; margin:0 0 6px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .livetag{font-size:10.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:999px; padding:3px 11px; display:inline-flex; align-items:center; gap:6px;}
+  .livetag::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--agree);}
+  .live .lnote{margin:0; font-size:13px; color:var(--text-muted); line-height:1.5;}
+  .live .lentry{margin-top:16px; padding-top:16px; border-top:1px solid var(--border);}
+  .live .led{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); margin:0 0 10px;}
+  .live p.body{margin:8px 0 0;}
+  .live .lsub{font-family:var(--serif); font-size:14.5px; font-weight:650; margin:18px 0 2px; color:var(--text);}
+  .live ol, .live ul{margin:6px 0 0; padding-left:20px;}
+  .live li{font-size:14px; line-height:1.6; color:var(--text-muted); margin:8px 0;}
+  .live li b{color:var(--text); font-weight:650;}
+  .live .lsrc{margin:16px 0 0; padding-top:10px; border-top:1px dashed var(--border-strong); font-family:var(--mono); font-size:11px; color:var(--text-faint); line-height:1.5;}
+  .jump a.livej{color:var(--agree); background:var(--agree-bg); border-color:var(--agree-border); font-weight:600;}
+
   /* Community input register */
   .civo{border:1px solid var(--border-strong); border-left:4px solid var(--pillN); border-radius:12px; background:var(--surface); padding:16px 18px; margin:44px 0 8px; box-shadow:var(--shadow); scroll-margin-top:64px;}
   .civo .ck{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--pillN); margin:0 0 4px;}
@@ -222,6 +238,19 @@
   .civo .who b{color:var(--text); font-weight:650;}
   .civo .note{margin:10px 0 0; padding-top:10px; border-top:1px dashed var(--border-strong); font-size:12px; color:var(--text-faint); line-height:1.5;}
   .civo .note a{color:var(--pillN);}
+  .civo .cin + .cin{border-top:1px solid var(--border); margin-top:18px; padding-top:18px;}
+  .civo .clead{margin:0 0 6px; font-size:14.5px; color:var(--text); line-height:1.55;}
+  .civo ol.cpts{margin:8px 0 0; padding-left:20px;}
+  .civo ol.cpts li{font-size:14px; line-height:1.6; color:var(--text-muted); margin:8px 0;}
+  .civo ol.cpts li b{color:var(--text); font-weight:650;}
+  .civo details.cfull{margin-top:12px;}
+  .civo details.cfull>summary{cursor:pointer; list-style:none; font-size:12.5px; font-weight:600; color:var(--pillN); display:flex; align-items:center; gap:8px;}
+  .civo details.cfull>summary::-webkit-details-marker{display:none;}
+  .civo details.cfull>summary .chev{transition:transform .15s ease; font-size:12px;}
+  .civo details.cfull[open]>summary .chev{transform:rotate(90deg);}
+  .civo .cfull-body{margin-top:10px; padding-left:14px; border-left:2px solid var(--border-strong); font-size:14px; line-height:1.62; color:var(--text-muted);}
+  .civo .cfull-body p{margin:0 0 10px;}
+  .civo .cfull-body p:last-child{margin-bottom:0;}
 
   footer{margin-top:56px; border-top:1px solid var(--border); padding:26px 0 80px;}
   footer h3{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); margin:20px 0 8px;}
@@ -367,6 +396,7 @@
       <p class="cite" style="margin-top:8px;">Certifying clinician hours: <a href="documents/rules-draft-2026-07-09.pdf#page=4" target="_blank" rel="noopener">draft p.4</a> (didactic), <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">p.5</a> (continuing ed). Facilitator and practitioner didactic: <a href="documents/rules-draft-2026-07-09.pdf#page=4" target="_blank" rel="noopener">draft pp.4&ndash;5</a>. Practicum: <a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">draft p.5</a>.</p>
 
       <div class="jump">
+        <a class="livej" href="#live717">&#9679; Live: today's meeting</a>
         <a href="#numbers">1 &middot; The proposed hours</a>
         <a href="#who">2 &middot; Who the hours fall on</a>
         <a href="#benchmark">3 &middot; Comparable programs</a>
@@ -376,6 +406,32 @@
         <a class="optj" href="#specialization">&#9670; Specialization hours</a>
       </div>
     </header>
+
+    <!-- LIVE: JULY 17 COMMITTEE MEETING -->
+    <section id="live717" class="live" aria-label="July 17 committee meeting, in progress">
+      <p class="lk">July 17 committee meeting <span class="livetag">In progress</span></p>
+      <p class="lnote">The Training and Education Committee is meeting this afternoon. These are unofficial notes logged as it happens, not the department&rsquo;s record. More will be added as the meeting continues.</p>
+
+      <div class="lentry">
+        <p class="led">Presentation &middot; Anne Metz, clinical facilitator (Fluence programs, Oregon and Colorado; consulted on national certification standards; states no conflicts of interest in New Mexico)</p>
+        <p class="body">Metz offered general recommendations, not a finalized plan, drawn from the committee&rsquo;s June 12 and June 25 drafts, the Healing Advocacy Fund&rsquo;s qualitative analysis of Colorado training (interviews with 24 operators, graduates, indigenous scholars, and legacy practitioners), a comparison of Oregon&rsquo;s 120 and Colorado&rsquo;s 150 training hours, and the Memoru consultation model in Boulder. She framed the task as calibration: rigorous enough to be defensible to the public and the legislature, lean enough to stay accessible, because every required hour is a real cost. She estimated a 120-hour practicum costs a licensed clinician roughly $18,000 to $24,000 in lost revenue, before tuition, supervision, and travel, and said that burden lands on the clinicians the program most wants and eventually on patients.</p>
+        <p class="lsub">Four recommendations</p>
+        <ol>
+          <li><b>Rename "practitioner" to "licensed provider."</b> "Practitioner" says nothing about training and collides with "nurse practitioner"; "licensed provider" names the qualification.</li>
+          <li><b>A single 84-hour didactic standard.</b> She placed 84 in a defensible middle: Oregon&rsquo;s 120 did not buy depth (Colorado graduates said the didactic lacked depth on any one skill), while Colorado&rsquo;s 150 raises cost and access concerns without clear outcome support. An illustrative allocation toward an 84-hour binding minimum: 25 to 30 hours of core psychotherapy skills and ethics (ethics about 20 percent), end-of-life 10 to 15, trauma 8, medicine, dosing, and research literacy 8, the New Mexico module 6 to 8, treatment modules 6 to 8, screening, suicidality, and crisis 5 to 8, somatic awareness and touch 4 to 6, historical and traditional use 3 to 4, and challenging experiences including HPPD 2 to 4. She noted 8 trauma hours is not PTSD treatment training, proposed no tiers by professional background, kept a module-by-module test-out except the New Mexico module, and urged the didactic be applied and practice-based rather than only lectures.</li>
+          <li><b>A scaffolded practicum with a training permit.</b> Four steps from lower to higher risk, none completed without real client contact: step 1, about 30 hours with well participants in a retreat or peer-support model; step 2, about 20 hours as second facilitator on at least two low-acuity co-facilitated cases (ideally nicotine use disorder or major depression, with PTSD and other substance use disorders excluded at this stage); step 3, about 12 hours of group practicum; step 4, for licensed providers only, 10 hours as lead facilitator with a licensed provider as second chair. A training permit issued at the end of step 1 would cover the later steps and the consultation period, giving trainees a lawful pathway to client contact. She flagged that requiring all hours in an approved healing center may bottleneck rural trainees and favored an apprenticeship or site-supervisor model, with the open question of who vets site supervisors. Net effect: a 62 to 72 hour practicum, cutting the 120-hour cost burden nearly in half.</li>
+          <li><b>Tie consultation sign-off to two presented cases.</b> The current draft&rsquo;s 10 mentoring hours never require the permittee to have seen a client. She recommended 20 to 30 hours of supervision or consultation during the permit period, with sign-off requiring at least two formal case presentations, each a biopsychosocial conceptualization (presenting concerns, risk factors, supportive factors, treatment considerations, aftercare), on clients the permittee personally worked with using the medicine. The two-case model is drawn from the Memoru group. She added an end-of-life checkpoint: one co-facilitated end-of-life case, and one presented in supervision, before serving end-of-life participants independently.</li>
+        </ol>
+        <p class="lsub">Open questions she raised</p>
+        <ul>
+          <li>Indications and volume: the current qualifying conditions limit the patient pool, and therefore placements and trainee throughput. Major depression is proposed for 2027; broader indications would materially change practicum feasibility.</li>
+          <li>Whether a dedicated substance use disorder plan is needed.</li>
+          <li>Who approves site supervisors if placements are decoupled from training programs.</li>
+          <li>If FDA approval arrives with reduced therapy-support requirements, longer state programs may face enrollment issues; an 84-hour standard is easier to sustain.</li>
+        </ul>
+        <p class="lsrc">Unofficial notes from the July 17 Training and Education Committee meeting, logged in progress. Attributed to Anne Metz.</p>
+      </div>
+    </section>
 
     <!-- 1 -->
     <section id="numbers">
@@ -604,12 +660,40 @@
     </section>
 
     <!-- COMMUNITY INPUT -->
-    <section id="community" class="civo" aria-label="Community input received">
-      <p class="ck">Community input received</p>
-      <p class="cd">Submitted through the community input form &middot; July 17, 2026</p>
-      <blockquote>"The 35 hour didactic requirement seems insufficient. I hope there will be more time for a thoughtful discussion and a rationale before the number of didactic hours is set. An official training and education committee intercession work group would be helpful in pulling together all of the different ideas that have been discussed informally. Then a clear recommendation could be brought to the advisory board."</blockquote>
-      <p class="who">On the <b>didactic hour requirement</b>, from <b>Kate Hawke</b>.</p>
-      <p class="note">A public submission, published here with the submitter&rsquo;s consent. Unverified community comment, offered for consideration; it is not this site&rsquo;s position and not a verified fact. <a href="input.html?topic=hours">Add your own input</a>.</p>
+    <section id="community" class="civo" aria-label="Community and public input">
+      <p class="ck">Community and public input</p>
+
+      <div class="cin">
+        <p class="cd">Community input form &middot; July 17, 2026</p>
+        <blockquote>"The 35 hour didactic requirement seems insufficient. I hope there will be more time for a thoughtful discussion and a rationale before the number of didactic hours is set. An official training and education committee intercession work group would be helpful in pulling together all of the different ideas that have been discussed informally. Then a clear recommendation could be brought to the advisory board."</blockquote>
+        <p class="who">On the <b>didactic hour requirement</b>, from <b>Kate Hawke</b>.</p>
+      </div>
+
+      <div class="cin">
+        <p class="cd">Public comment to the July 17 board meeting &middot; submitted on her behalf</p>
+        <p class="clead">On what should define a credible facilitator training program, Amy Wong-Hope offered four points and a framing on safety:</p>
+        <ol class="cpts">
+          <li><b>A clinically and trauma-informed curriculum:</b> knowledge of trauma, dissociation, psychiatric risk, grief, medical concerns, and substance use, and of the populations served, including people experiencing depression, PTSD, substance-use concerns, serious illness, and end-of-life distress. Facilitators should recognize complexity and individual vulnerability, understand the limits of their scope, and know when to consult, refer, pause, or decline to proceed.</li>
+          <li><b>Ethics woven throughout, not confined to a single module:</b> repeated engagement with consent, power, touch, boundaries, dual relationships, cultural humility, conflicts of interest, and heightened suggestibility, as "an ongoing practice."</li>
+          <li><b>A meaningful practicum:</b> students observed practicing preparation, screening, difficult conversations, boundary setting, crisis response, facilitation, and integration, with competence "demonstrated through supervised experience, not assumed from attendance or written assignments," and periodic competency review.</li>
+          <li><b>Admissions and evaluation of readiness:</b> interpersonal maturity, emotional regulation, self-awareness, self-reflective accountability, and the capacity to receive and integrate feedback, plus ongoing consultation or peer-consultation groups.</li>
+        </ol>
+        <blockquote>"Safety is not merely a protocol surrounding the intervention. Safety is an essential ingredient in the intervention itself."</blockquote>
+        <p class="who">Public comment, from <b>Amy Wong-Hope</b>.</p>
+        <details class="cfull">
+          <summary><span class="chev">&#9656;</span> Show the full comment</summary>
+          <div class="cfull-body">
+            <p>Thank you for the opportunity to offer my perspective on what should define a credible psilocybin facilitator training program.</p>
+            <p>First, the curriculum must be clinically and trauma informed. Facilitators need sufficient knowledge of trauma, dissociation, psychiatric risk, grief, medical concerns, substance use, and the populations they may serve, including people experiencing depression, PTSD, substance-use concerns, serious illness, and end-of-life distress. They must be able to recognize complexity and individual vulnerability, understand the limits of their scope, and know when to consult, refer, pause, or decline to proceed.</p>
+            <p>Second, ethics must be woven throughout the program, not confined to a single module. Students should repeatedly engage with consent, power, touch, boundaries, dual relationships, cultural humility, conflicts of interest, and heightened suggestibility. Ethical competence means being able to perceive risk, tolerate uncertainty, seek consultation, receive feedback, and repair harm. It is an ongoing practice.</p>
+            <p>Third, programs need a meaningful practicum. Students should be observed practicing preparation, screening, difficult conversations, boundary setting, crisis response, facilitation, and integration. Competence should be demonstrated through supervised experience, not assumed from attendance or written assignments. Periodic practicum-based competency review (at some regular interval?) could help facilitators keep these skills active.</p>
+            <p>Fourth, admissions and evaluation should assess interpersonal maturity, emotional regulation, self-awareness, self-reflective accountability, and the capacity to receive and integrate feedback. Facilitators should also participate in ongoing consultation or peer-consultation groups. These practices demonstrate readiness to hold responsibility for vulnerable people.</p>
+            <p>Ultimately, safety is not merely a protocol surrounding the intervention. Safety is an essential ingredient in the intervention itself. A strong program prepares facilitators to bring sound judgment, accountability, humility, and respect for the full personhood of every participant.</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="note">Community submissions and public comment, shared for consideration. Unverified; not this site&rsquo;s position and not verified fact. Public comment is drawn from the July 17 meeting; form submissions are published only with the submitter&rsquo;s consent, and email is never published. <a href="input.html?topic=hours">Add your own input</a>.</p>
     </section>
 
     <!-- RECORD -->
