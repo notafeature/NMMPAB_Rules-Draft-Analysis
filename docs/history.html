@@ -72,10 +72,10 @@
   .ctx cite{display:block; font-style:normal; font-size:12px; color:var(--text-faint); margin-top:4px;}
 
   details.ctx{padding:0;}
-  details.ctx>summary{list-style:none; cursor:pointer; padding:14px 18px; font-family:var(--serif); font-weight:600; font-size:16px; color:var(--text); display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  details.ctx>summary{list-style:none; cursor:pointer; padding:14px 18px; font-family:var(--serif); font-weight:600; font-size:16px; color:var(--text); display:flex; align-items:center; gap:10px;}
   details.ctx>summary::-webkit-details-marker{display:none;}
-  details.ctx>summary::after{content:"Show \25BE"; font-family:var(--sans); font-weight:600; font-size:12px; letter-spacing:.02em; color:var(--accent); white-space:nowrap;}
-  details.ctx[open]>summary::after{content:"Hide \25B4";}
+  details.ctx>summary .chev{transition:transform .15s ease; color:var(--accent); font-size:13px; flex:none;}
+  details.ctx[open]>summary .chev{transform:rotate(90deg);}
   details.ctx>summary:hover{color:var(--accent);}
   details.ctx .ctx-body{padding:0 18px 16px;}
 
@@ -226,7 +226,7 @@
       </ol>
 
       <details class="ctx">
-        <summary>How this process works</summary>
+        <summary><span class="chev">&#9656;</span> How this process works</summary>
         <div class="ctx-body">
           <p>The <b>Training and Education Committee</b> writes a recommendation. At an <b>Advisory Board</b> meeting with a quorum, the board votes to accept it and submit it to the <b>Department of Health</b>. The department turns it into rule language, which then goes through the public rule-hearing process before it is promulgated. The department is not obligated to adopt the recommendation as written.</p>
           <p class="q">"once we have a thumbs up here from the board&hellip; we will be turning this into the rule and then it will still go through and continue to go through the public process of rule hearings and going through all of that."<cite>Dominic Zurlo, department, June 26 board meeting</cite></p>
