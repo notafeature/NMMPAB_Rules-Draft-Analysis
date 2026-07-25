@@ -31,70 +31,33 @@ Everything else is flagged, not drafted. The flags are collected at `metz-crossw
 
 | File | What it is |
 |---|---|
-| `7.35.3-practicum-amendments-v4.pdf` | **The deliverable.** Side-by-side redline of every subsection being amended, plus six addenda: A the practicum dependency map, B the proposed new provisions including one withdrawn, C the arithmetic behind the practitioner practicum figure, D definitions that need updating, E the permit title laid out for decision, F the remaining twenty-four sections. Version history on the last page. Built and verified by `build-redline-pdf.py` |
-| `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match. Carries `VERSION` and `VERSION_HISTORY` |
-| `metz-crosswalk.md` | The four July 17 recommendations mapped against the published rule provision by provision, with the hours ledger, the answer to the open question on the permit title, and the cross-session flags |
-| `7.35.3.18-19-redline.md` | Redline amendment language for 7.35.3.18 and 7.35.3.19 |
-| `blocking-defects.md` | The blocking defects with proposed textual fixes, and the amendment language for 7.35.3.14 and 7.35.3.20 (H)(5) |
-| `*-rendered.md` | Generated copies with the permit title substituted. Do not edit these |
+| `7.35.3-practicum-amendments-v5.pdf` | **The deliverable.** Side-by-side redline plus three addenda |
+| `content.py` | The amendment content. Published text and proposed text, provision by provision |
+| `notes.py` | The Source line and the Please review note for each change |
+| `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match |
+| `*.md` | Superseded working drafting. Numbers in these files were not all traceable and have been removed from the current draft |
 
-**Everything a reviewer needs is in the PDF.** The markdown files are the working drafting behind it. There is no separate questions file; open items and calls made are stated in the PDF, on the page where they arise.
+## The rule for numbers
 
-Every proposed change in the PDF carries a Source line. Where it reads "Drafting", the change appears in no source and was written to make something else work. Those are the ones to argue with first.
+No figure enters a proposed change unless it exists in a source.
 
-To rebuild the PDF after editing the drafting:
+- Where the July 17 recommendation gives a range, the low end is drafted and the range is shown in a badge next to it.
+- Where the rule as published is unclear, the published text is left alone and a Please review note records what is unclear.
+- Where a figure follows from arithmetic rather than from a recommendation, the Source line says so and shows the arithmetic.
+- Gaps are reported, not filled.
 
-```
-python3 amendments/build-redline-pdf.py
-```
+## The hours
 
-**Versioning.** Every issued PDF carries a version in its filename and a version history on its last page. Bump `VERSION` in `build-redline-pdf.py` and add a `VERSION_HISTORY` row whenever the content changes, so that no two copies in circulation share a name. v1 and v2 were issued unversioned on July 25, 2026 and are described in the history for the record; v3 is the first versioned issue.
-
-## The permit-title variable
-
-The three source files never write the permit title literally. They use six tokens:
-
-| Token | Current value |
-|---|---|
-| `{{PT}}` | practitioner |
-| `{{PTS}}` | practitioners |
-| `{{PT_C}}` | Practitioner |
-| `{{PTS_C}}` | Practitioners |
-| `{{PT_UC}}` | PRACTITIONER |
-| `{{PTS_UC}}` | PRACTITIONERS |
-
-To change the title, edit the six values in `tools/render-permit-title.py` and run:
-
-```
-python3 tools/render-permit-title.py
-```
-
-This rewrites the three `*-rendered.md` files. To check whether the rendered files are current without rewriting them:
-
-```
-python3 tools/render-permit-title.py --check
-```
-
-The variable reaches only the four provisions in scope. A change of permit title also requires an amendment to 7.35.2.7 NMAC and a conforming pass over the rest of 7.35.3 NMAC, neither of which this folder covers. Whether that change would reach the practicum or the hours is answered at `metz-crosswalk.md`, Part 1. The short answer is no.
-
-## The position these drafts serve
-
-Hours shift. They do not shrink.
-
-| | Published July 23 | Proposed | Change |
+| | Published | Proposed | Change |
 |---|---|---|---|
-| Didactic hours | 35, plus a module with no hour count | 79 | +44 |
-| Simulated patient experience | 5 | 5 | 0 |
-| **Module total, either permit** | **40, plus an unpriced module** | **84** | **+44** |
-| Practicum, facilitator | 100 | 80 | -20 |
-| Practicum, practitioner | 120, or 140 on the second reading of 7.35.3.19 C | 90 | -30 |
+| Module total, either permit | 40 | 84 | +44 |
+| Practicum, facilitator | 100 | 62 | -38 |
+| Practicum, practitioner | 120 | 72 | -48 |
 | Supervision or consultation | 10 | 20 | +10 |
-| **Program total, facilitator** | **150** | **184** | **+34** |
-| **Program total, practitioner** | **170, or 190** | **194** | **+24** |
+| **Program total, facilitator** | **150** | **166** | **+16** |
+| **Program total, practitioner** | **170** | **176** | **+6** |
 
-The 84-hour standard is inclusive of the 5-hour simulated patient experience, confirmed by the author of the July 17 recommendation. 7.35.3.18 H states it as a module total with a didactic floor of 79 inside it.
-
-Total program hours rise for both permit types. Every patient and session minimum in the published practicum is carried forward unchanged. The argument rests on the published text, the July 17 record, and this arithmetic. It does not rest on comparison with Oregon or Colorado.
+The practitioner row assumes the 20 supervision hours in 7.35.3.19 C sit inside the published 120. On the other reading the published total is 190 and the proposed 176 is below it. Flagged in the PDF at 7.35.3.19 C, not resolved here.
 
 ## Conventions
 

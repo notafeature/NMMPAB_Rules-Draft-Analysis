@@ -1,3 +1,5 @@
+> **SUPERSEDED.** This file is working drafting from before v5 of the PDF. It contains hour figures that were not traceable to a source and that have been removed. The current draft is `7.35.3-practicum-amendments-v5.pdf`, built from `content.py` and `notes.py`. Do not rely on numbers in this file.
+
 # Crosswalk: the July 17, 2026 education and training recommendations against the rule published July 23, 2026
 
 **Recommendations crosswalked:** Dr. Anne Metz, "Recommendations on Education and Training Requirements for Facilitators and Licensed Providers," prepared for the Training and Education Committee, draft for discussion, July 17, 2026. Six pages. `docs/documents/metz-recommendations-2026-07-17.pdf`. Read together with the one-page summary, `docs/documents/metz-onepager-2026-07-17.pdf`, and the six-slide committee deck, `docs/documents/metz-slides-2026-07-17.pptx`. All three are byte-identical to the copies supplied on July 25. The summary and the deck are cited where either states a point the six-page draft does not.
