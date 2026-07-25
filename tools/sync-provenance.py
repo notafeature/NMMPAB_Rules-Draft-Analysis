@@ -76,6 +76,18 @@ REVISIONS = {
     "pathways": [
         ("July 25, 2026", "Reviewed and brought current to the July 23 published rule. All route steps re-cited: the citation helper and 25 step links pointed at the superseded July 9 draft and now point at the published rule with section numbers. The practitioner core module was corrected from 25 hours to 30. \"Administration and same-day therapy sessions\" corrected to \"administration day sessions\". The status legend said the committee \"meets 1 PM today\" and now states that the hours were published unchanged on July 23 with the committee recommendation in progress. The reciprocity waiver step read December 31, 2026; the published rule reads December 31, 2027. The note about the draft's internal inconsistency on certifying-clinician reciprocity was rechecked against the published text, where reciprocity now sits inside 7.35.3.10, and the inconsistency persists."),
     ],
+    "eligibility": [
+        ("July 25, 2026", "Reviewed and brought current to the July 23 published rule. Both tables re-cited from the July 9 draft to the published rule with section numbers. The reciprocity entry read that the draft set two waiver deadlines of December 31 2026 and June 30 2027; the published rule sets both at December 31, 2027, and the older dates are kept only as history. Four links whose text named the published rule while still pointing at the July 9 PDF were repaired."),
+    ],
+    "cs-number": [
+        ("July 25, 2026", "Reviewed and brought current. The page had no Updated date; one was added. The note that \"the July 9 draft PDF still shows the earlier text; an updated draft document has not been posted\" is no longer true: all three certifying-clinician exam pathways appear in the published rule at 7.35.3.8 (B)(8)(c) and 7.35.3.13 (A)(2), and the note now says so. Citations repointed to the published rule. No change to the substance of the page, which was accurate."),
+    ],
+    "about": [
+        ("July 25, 2026", "Reviewed and updated. The sources list named the July 9 draft as the current source; it now names the July 23 published rule, with the three earlier documents marked as history cited only where pages compare versions. The transcripts entry now distinguishes the speaker-tagged June and July 9 transcripts from the two July 17 transcripts, which carry no speaker labels at all."),
+    ],
+    "input": [
+        ("July 25, 2026", "Reviewed. No change to the form or its handling. A Reviewed date was added, since the page had none. Topics for the August 28 rule hearing and for submitting a document to the register were added earlier in the day, together with the querystring map entries they depend on."),
+    ],
     "documents": [
         ("July 25, 2026", "Page created. A register of every source document with what it is, when it landed, whether it is current or superseded, page count, size, and a direct download, plus a section naming the documents this site does not have."),
     ],
