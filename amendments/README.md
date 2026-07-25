@@ -14,6 +14,8 @@ Training and education only.
 | 7.35.3.19, practicum requirements | in scope |
 | 7.35.3.14, authorized possession | plumbing that 7.35.3.19 depends on |
 | 7.35.3.20 (H)(5), staffing ratios | plumbing that 7.35.3.19 depends on |
+| 7.35.3.20 M, designation of owners and employees | new. The only way to fix the dangling registration condition in 7.35.3.14 (C) |
+| 7.35.3.29, practicum with non-patient participants | new. Recommendation 3 step 1, drafted contingent on statutory authority |
 
 Everything else is flagged, not drafted. The flags are collected at `metz-crosswalk.md`, Part 7.
 
@@ -25,12 +27,21 @@ Everything else is flagged, not drafted. The flags are collected at `metz-crossw
 
 | File | What it is |
 |---|---|
+| `7.35.3-training-redline-2026-07-23.pdf` | Side-by-side redline of every subsection being amended. Left column the published text verbatim, right column the proposed text with insertions and deletions marked. Built and verified by `build-redline-pdf.py` |
+| `questions-for-metz.md` | Ten questions that change drafting, ordered by how much turns on the answer |
+| `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match |
 | `metz-crosswalk.md` | The four July 17 recommendations mapped against the published rule provision by provision, with the hours ledger, the answer to the open question on the permit title, and the cross-session flags |
 | `7.35.3.18-19-redline.md` | Redline amendment language for 7.35.3.18 and 7.35.3.19 |
 | `blocking-defects.md` | The blocking defects with proposed textual fixes, and the amendment language for 7.35.3.14 and 7.35.3.20 (H)(5) |
 | `*-rendered.md` | Generated copies with the permit title substituted. Do not edit these |
 
-Read `metz-crosswalk.md` first. It states the position and the arithmetic; the other two files are the drafting.
+Read the PDF first if you want the changes. Read `metz-crosswalk.md` first if you want the reasoning: it states the position and the arithmetic, and the other two markdown files are the drafting.
+
+To rebuild the PDF after editing the drafting:
+
+```
+python3 amendments/build-redline-pdf.py
+```
 
 ## The permit-title variable
 
@@ -90,7 +101,7 @@ These follow the repository rules in `HANDOFF.md`, section 2.
 
 - `docs/documents/rules-draft-2026-07-23-published.pdf`, the published proposed rule, 19 pages
 - `docs/documents/rules-draft-2026-07-09.pdf`, the prior board-meeting draft, used for new versus carried-over determinations
-- `docs/documents/metz-recommendations-2026-07-17.pdf` and `docs/documents/metz-onepager-2026-07-17.pdf`
+- `docs/documents/metz-recommendations-2026-07-17.pdf`, `docs/documents/metz-onepager-2026-07-17.pdf`, and `docs/documents/metz-slides-2026-07-17.pptx`
 - `source-text/NMMPAB-2026-07-17-board-transcript.txt` and `source-text/NMMPAB-2026-07-17-committee-transcript.txt`
 - `analysis/july23-rule-concerns.md`, `analysis/july23-published-delta.md`, `analysis/july17-to-july23-state-diff.md`
 

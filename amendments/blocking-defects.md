@@ -68,21 +68,23 @@ Redline key: **bold** is inserted, ~~strikethrough~~ is deleted.
 
 > ~~7.34.3.14~~ **7.35.3.14** AUTHORIZED POSSESSION, PURCHASE, OR SALE OF MEDICAL PSILOCYBIN BY {{PTS_UC}}, FACILITATORS, **TRAINING PERMITTEES,** HEALING CENTER OWNERS AND EMPLOYEES: Certification of a {{PT}}, facilitator, or healing center**, and issuance of a training permit under Subsection H of 7.35.3.19 NMAC,** shall enable {{PTS}}, facilitators, **training permittees,** and owners and employees of healing centers to do the following, in accordance with medical psilocybin program rules:
 >
-> ~~(A)~~ **A.** {{PTS_C}}: [text unchanged]
+> ~~(A)~~ **A.** {{PTS_C}}: {{PTS_C}} may purchase and possess medical psilocybin products obtained from permitted producers, and may sell or otherwise provide medical psilocybin products to qualified patients**, or to practicum participants in accordance with 7.35.3.29 NMAC,** during administration sessions conducted at a healing center location or other approved location. A {{PT}} may only sell or otherwise provide psilocybin products that are obtained from permitted producers.
 >
-> ~~(B)~~ **B.** Facilitators: [text unchanged]
+> ~~(B)~~ **B.** Facilitators: Facilitators may possess medical psilocybin products, for the purpose of providing those products to qualified patients**, or to practicum participants in accordance with 7.35.3.29 NMAC,** in administration sessions conducted at healing centers and other approved locations.
 >
 > ~~(C)~~ **C.** Healing centers: Owners and employees of healing centers who are ~~registered with the department~~ **designated to the department by the healing center in accordance with Subsection M of 7.35.3.20 NMAC** may purchase medical psilocybin products from permitted producers, may possess medical psilocybin products, and may sell or otherwise administer those products to qualified patients in administration sessions conducted at the healing center or other approved locations, provided that such individuals are also designated to engage in each activity by the healing center. A healing center may only sell or otherwise provide psilocybin products that are obtained from permitted producers.
 >
-> **D. Training permittees: A student who holds a current training permit issued under Subsection H of 7.35.3.19 NMAC may possess medical psilocybin products, and may administer or otherwise provide those products to qualified patients in administration sessions conducted at a healing center or other approved location, in each case only while under the direct, on-site supervision of a practicum supervisor registered under Subsection F of 7.35.3.19 NMAC, and only to the extent required by the practicum under 7.35.3.19 NMAC. A training permittee shall not purchase medical psilocybin products.**
+> **D. Training permittees: A student who holds a current training permit issued under Subsection H of 7.35.3.19 NMAC may possess medical psilocybin products, and may administer or otherwise provide those products to qualified patients, or to practicum participants in accordance with 7.35.3.29 NMAC, in administration sessions conducted at a healing center or other approved location, in each case only while under the direct, on-site supervision of a practicum supervisor registered under Subsection F of 7.35.3.19 NMAC, and only to the extent required by the practicum under 7.35.3.19 NMAC. A training permittee shall not purchase medical psilocybin products.**
 
-Three notes on the drafting.
+Four notes on the drafting.
 
 The section-number correction from 7.34.3.14 to 7.35.3.14 is mechanical. The heading as published points at Chapter 34 of Title 7, which is a different chapter, while the bracketed history note at the end of the same section reads "[7.35.3.14 NMAC, xx/xx/2026]". Four other headings carry the same error; the complete list is at `analysis/july23-rule-concerns.md`, N1.
 
 The subsection letters are changed from "(A)", "(B)", "(C)" to "A.", "B.", "C." to match the style used in every other section of the rule. 7.35.3.11 A carries the same anomaly. Recorded at `analysis/july23-rule-concerns.md`, N4.
 
 Subsection D grants possession and administration but withholds purchase. A training permittee has no reason to buy product, and withholding it keeps the chain of custody with a certificant.
+
+The references to practicum participants in Subsections A, B and D are required only if the new section 7.35.3.29 in Defect 4 below is adopted. If it is not, strike them; nothing else in this amendment depends on them.
 
 ### 1.5 Proposed fix, part two: the permit itself
 
@@ -154,7 +156,27 @@ The only relief in the published rule is two discretionary waivers with no crite
 
 **Proposed fix, the part that is drafted.** Three amendments in `7.35.3.18-19-redline.md`: Subsection E permits a healing center or other approved location to host a student whose program is not co-located; new Subsection F creates a registered practicum supervisor with published lists of supervisors and available sites; Subsection K adds a 30-day decision deadline, a written basis, a 40-hour contact-time floor, a bar on waiving the consultation requirement, a bar on authorizing an unpermitted person to handle product, and annual publication of waivers granted.
 
-**The part that is not drafted, and cannot be.** Practicum with participants who are not qualified patients. Nothing in 7.35.3 NMAC authorizes administering psilocybin outside the medical program, and the department cannot supply that authority by rule. This is set out at `metz-crosswalk.md`, Part 4.4. It is the reason the redline builds the risk gradient from role rather than from participant status.
+**Proposed fix, the part that is drafted contingently: new section 7.35.3.29.** Practicum with participants who are not qualified patients is step 1 of Recommendation 3. The rule cannot assert an authority the statute may not give, so the section is drafted with an express contingency: it applies "only to the extent that the Medical Psilocybin Act, Sections 26-2D-1 through -11 NMSA 1978, authorizes the administration of medical psilocybin to a person who is not a qualified patient," and if it does not apply, stage one of the practicum falls back to observation and support under the second limb of 7.35.3.19 D(1). Full text is in the side-by-side PDF and summarized below.
+
+> **7.35.3.29 SUPERVISED PRACTICE WITH PRACTICUM PARTICIPANTS WHO ARE NOT QUALIFIED PATIENTS:**
+>
+> **A. Purpose: This section provides for stage one of the practicum sequence required by Subsection D of 7.35.3.19 NMAC to be conducted with practicum participants who are not qualified patients, so that a student gains supervised experience of administration sessions before the student works with qualified patients.**
+>
+> **B. Practicum participant: A practicum participant is an individual who: (1) is 21 years of age or older; (2) is not a qualified patient and is not enrolled in the medical psilocybin program; (3) volunteers to take part in a practicum session, pays no fee for the session and receives no compensation for taking part; (4) has been screened for contraindications by a certifying clinician, or by a {{PT}} acting within the scope of the {{PT}}'s professional license, using criteria approved by the department; and (5) has given written informed consent on a form approved by the department, which shall state that the session is a training session, that the participant is not receiving medical psilocybin services for a qualifying condition, and that the participant may withdraw at any time.**
+>
+> **C. Conduct of practicum sessions: A practicum session under this section shall: (1) take place at a healing center or other approved location; (2) be supervised on site by a practicum supervisor registered under Subsection F of 7.35.3.19 NMAC; (3) meet the staffing ratios in Paragraph (5) of Subsection H of 7.35.3.20 NMAC, counting practicum participants as patients for that purpose; (4) include a preparation session and an integration session for each practicum participant; and (5) use only medical psilocybin products obtained from permitted producers.**
+>
+> **D. Records and reporting: A healing center or registrant of another approved location shall record practicum sessions in the daily log required by Subsection E of 7.35.3.20 NMAC, and shall report any potential adverse health event arising from a practicum session in accordance with Subsection L of 7.35.3.20 NMAC. An educational program shall record practicum sessions under this section in the records required by Subsection C of 7.35.3.17 NMAC.**
+>
+> **E. Limits: A practicum participant shall not be charged for, and shall not purchase, medical psilocybin products. Hours completed under this section count only toward stage one of the practicum sequence and shall not be counted toward the patient and session minimums in Subsections A and B of 7.35.3.19 NMAC.**
+>
+> **F. Effect: This section applies only to the extent that the Medical Psilocybin Act, Sections 26-2D-1 through -11 NMSA 1978, authorizes the administration of medical psilocybin to a person who is not a qualified patient. If and for so long as it does not, stage one of the practicum sequence is governed by the second sentence of Paragraph (1) of Subsection D of 7.35.3.19 NMAC.**
+
+**Section numbering.** The published rule ends at 7.35.3.28 SEVERABILITY. The new section is numbered 7.35.3.29. If the department prefers severability to remain last, the new section becomes 7.35.3.28 and severability becomes 7.35.3.29.
+
+**What the drafting does not decide.** Whether the Act reaches administration to a non-patient. The rule cites its authority as Section 26-2D-7 NMSA 1978 and its objective by reference to Sections 26-2D-1 through -11 NMSA 1978 (7.35.3.3 and 7.35.3.6, page 1). The Act's text is not in this repository and the question is not answered anywhere in it. The July 17 morning board transcript treats it as needing legislation: "what's going to be presented in the training committee this afternoon is impossible to do adequate training without having the ability for people to use psilocybin in the training," said in the context of hoping "that there's going to be a fix-it bill." This is question 1 at `questions-for-metz.md`.
+
+**Also not decided: whether a practicum participant may be another student.** The recommendation describes stage one as a "retreat or peer-support model" (`docs/documents/metz-recommendations-2026-07-17.pdf`, page 3) and does not say whether trainees may serve as each other's participants. Subsection B as drafted does not exclude it. This is question 5 at `questions-for-metz.md`.
 
 **In scope.** The drafted parts, yes, all in 7.35.3.19.
 
@@ -183,7 +205,7 @@ Subsection A obliges the program to engage the team, which means the program pay
 | 1 | B1 | 7.35.3.14, 7.35.3.19 A, 7.35.3.20 H(5) | Yes | This file, sections 1.4 and 1.6; `7.35.3.18-19-redline.md` Subsections D, F, H |
 | 2 | B5 | 7.35.3.14 (C) | Partly | This file, section 1.4 and Defect 2 |
 | 3 | B2 | 7.35.3.18 A | Yes | `7.35.3.18-19-redline.md` Subsections A and I |
-| 4 | B4 | 7.35.3.19 A, D, F | Partly. The statutory half is not reachable by rule | `7.35.3.18-19-redline.md` Subsections E, F, K |
+| 4 | B4 | 7.35.3.19 A, D, F | Yes, with the statutory half drafted contingently | `7.35.3.18-19-redline.md` Subsections E, F, K; new section 7.35.3.29 in this file |
 | 5 | B3 | 7.35.3.16 A, C(2)(b) | No | Fix stated in Defect 5, not drafted |
 
 ---

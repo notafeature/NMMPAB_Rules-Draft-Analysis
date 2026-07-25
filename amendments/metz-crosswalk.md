@@ -1,6 +1,6 @@
 # Crosswalk: the July 17, 2026 education and training recommendations against the rule published July 23, 2026
 
-**Recommendations crosswalked:** Dr. Anne Metz, "Recommendations on Education and Training Requirements for Facilitators and Licensed Providers," prepared for the Training and Education Committee, draft for discussion, July 17, 2026. Six pages. `docs/documents/metz-recommendations-2026-07-17.pdf`. The one-page summary at `docs/documents/metz-onepager-2026-07-17.pdf` is cited where it states a point the longer document does not.
+**Recommendations crosswalked:** Dr. Anne Metz, "Recommendations on Education and Training Requirements for Facilitators and Licensed Providers," prepared for the Training and Education Committee, draft for discussion, July 17, 2026. Six pages. `docs/documents/metz-recommendations-2026-07-17.pdf`. Read together with the one-page summary, `docs/documents/metz-onepager-2026-07-17.pdf`, and the six-slide committee deck, `docs/documents/metz-slides-2026-07-17.pptx`. All three are byte-identical to the copies supplied on July 25. The summary and the deck are cited where either states a point the six-page draft does not.
 
 **Rule crosswalked:** proposed rule 7.35.3 NMAC as published July 23, 2026, 19 pages, sections 7.35.3.1 through 7.35.3.28. `docs/documents/rules-draft-2026-07-23-published.pdf`. Rule hearing set for August 28, 2026.
 
@@ -23,7 +23,7 @@
 | ADOPTED | the published rule contains the recommended requirement |
 | PARTLY ADOPTED | the published rule contains part of it, and the part it omits is identified |
 | NOT ADOPTED | the recommendation was made and the published rule does not contain it |
-| NOT REACHABLE BY RULE | the recommendation requires authority the department does not hold under the Medical Psilocybin Act |
+| NOT REACHABLE BY RULE | the recommendation requires authority that cannot be determined from the rule text and may require legislation |
 
 **Permit-title variable.** This file uses the same six tokens as the redline. See `7.35.3.18-19-redline.md`, "Conventions." The rendered copy is `metz-crosswalk-rendered.md`. Quotations never carry the variable: where a quotation of the published rule, of a transcript, or of the recommendation contains the permit title, the title is reproduced literally as it appears in that source, so that a later change to the variable cannot alter a quotation.
 
@@ -116,7 +116,7 @@ The recommendation's table is at pages 2 and 3. The published topic list is at 7
 | Element | Recommended | Published provision | Disposition |
 |---|---|---|---|
 | Practicum totals reduced | approx. 62 facilitator, 72 Licensed Provider (page 4) | 7.35.3.19 A, pages 12 and 13: "a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners". Identical to the July 9 draft | NOT ADOPTED |
-| Step 1, initial facilitation with well participants, approx. 30 hours | page 3 | No provision authorizes psilocybin administration to a person who is not a qualified patient. 7.35.3.14 (A), page 9, authorizes provision "to qualified patients"; 7.35.3.19 speaks only of patients | NOT REACHABLE BY RULE |
+| Step 1, initial facilitation with well participants, approx. 30 hours | page 3, and slide 4 | No provision authorizes psilocybin administration to a person who is not a qualified patient. 7.35.3.14 (A), page 9, authorizes provision "to qualified patients"; 7.35.3.19 speaks only of patients | NOT ADOPTED. Drafted here as new section 7.35.3.29, contingent on statutory authority |
 | Step 2, co-facilitated cases with low-acuity clients, approx. 20 hours, trainee as second chair | page 4 | 7.35.3.19 A permits students to "experience, observe, or conduct supervised facilitation." No stage structure, no acuity rule, no second-chair rule | NOT ADOPTED |
 | Step 3, group practicum, approx. 12 hours | page 4 | 7.35.3.19 A(2) requires two group administration day sessions with four or more patients each; B requires one group preparatory and one group integration session. Group requirement present; no hour allocation to it | PARTLY ADOPTED |
 | Step 4, supervisory hours, Licensed Providers only, 10 hours | page 4 | 7.35.3.19 C, page 13, requires "an additional minimum of 20 hours as a practitioner supervising facilitators" | NOT ADOPTED |
@@ -151,7 +151,7 @@ See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, F, H, and `blocking-defec
 
 ### 4.4 Departures from Recommendation 3, and why
 
-**Step 1 is not drafted as well-participant facilitation.** Nothing in 7.35.3 NMAC authorizes administering psilocybin to a person who is not a qualified patient. The July 17 morning board transcript records the same point being made about the underlying statute rather than the rule: "what's going to be presented in the training committee this afternoon is impossible to do adequate training without having the ability for people to use psilocybin in the training," said in the context of hoping "that there's going to be a fix-it bill." The proposal at the afternoon committee meeting was in the same terms: "yes, we need an expansion for practicums to be feasible ... for them to be operated on well patients, those without qualifying conditions." Stage one is therefore drafted to produce the same graduated exposure through role rather than through the clinical status of the participant. If the Legislature supplies the authority, stage one can be restated in the recommendation's terms without disturbing the totals.
+**Step 1 is drafted, as a new section, with an express contingency.** New section 7.35.3.29 provides for stage one to be conducted with practicum participants who are not qualified patients, and 7.35.3.19 D(1) is written in two limbs so the practicum works whether or not that section is in effect. The contingency is there because the authority is statutory, not regulatory. Nothing in 7.35.3 NMAC authorizes administering psilocybin to a person who is not a qualified patient; 7.35.3.14, page 9, authorizes provision only "to qualified patients"; and the rule cites its own authority as Section 26-2D-7 NMSA 1978 with its objective stated by reference to Sections 26-2D-1 through -11 NMSA 1978 (7.35.3.3 and 7.35.3.6, page 1). Whether those sections reach a non-patient cannot be determined from the rule and is not answered anywhere in this repository. The July 17 morning board transcript treats it as needing legislation: "what's going to be presented in the training committee this afternoon is impossible to do adequate training without having the ability for people to use psilocybin in the training," said in the context of hoping "that there's going to be a fix-it bill." The afternoon committee transcript records the request in program terms: "yes, we need an expansion for practicums to be feasible ... for them to be operated on well patients, those without qualifying conditions." Full text at `blocking-defects.md`, Defect 4. This is question 1 at `questions-for-metz.md`.
 
 **Practicum totals are 80 and 90 rather than 62 and 72.** Two reasons, both stated so they can be argued with. First, the recommendation's totals assume that roughly 30 hours of the practicum are spent with well participants, which the rule cannot authorize; removing that step without adding hours back would reduce qualified-patient contact rather than redistribute it. Second, the position this drafting serves is that total program hours stay flat or rise, and 7.35.3.19 C's "additional minimum of 20 hours" admits two readings, one of which puts the published {{PT}} total at 190. See the ledger in Part 6.
 
@@ -268,7 +268,7 @@ Each of these is outside 7.35.3.18, 7.35.3.19, 7.35.3.14 and 7.35.3.20 (H)(5), a
 Recorded so that the omission is deliberate and visible.
 
 - **Recommendation 1, the retitle.** Out of scope by decision. Part 2.
-- **Step 1 with well participants.** Not reachable by rule. Part 4.4.
+- **Step 1 with well participants.** Drafted as new section 7.35.3.29, contingent on statutory authority. Part 4.4.
 - **PTSD as a standalone content area.** Part 3.2.
 - **Delivery-method requirements.** Belongs in 7.35.3.12. Part 3.2 and flag F7.
 - **Oregon and Colorado hour comparisons.** The recommendation uses Oregon's 120 hours and Colorado's 150 as its calibration frame (`docs/documents/metz-recommendations-2026-07-17.pdf`, page 1). No argument in this folder rests on that comparison. The case made here rests on the published text, the July 17 record, and the arithmetic in Part 6.
