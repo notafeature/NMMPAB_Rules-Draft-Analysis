@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Practicum Requirements · NM Medical Psilocybin 7.35.3</title>
+<title>Specialized Domains · NM Medical Psilocybin Training Rules</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -118,35 +118,40 @@
   .revs li:first-child{border-top:none; padding-top:0;}
   .revs b{color:var(--text); font-weight:650;}
   /* /provenance block */
-
-  .surface{margin:24px 0 0; border:1px solid var(--border-strong); border-radius:12px; overflow:hidden;}
-  .surface table{width:100%; border-collapse:collapse; font-size:14px;}
-  .surface th{text-align:left; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-faint); font-weight:700; padding:10px 14px; background:var(--surface-2); border-bottom:1px solid var(--border-strong);}
-  .surface td{padding:9px 14px; border-bottom:1px solid var(--border); vertical-align:top; color:var(--text);}
-  .surface tr:last-child td{border-bottom:none;}
-  .surface td.s{font-family:var(--mono); font-size:12.5px; white-space:nowrap; width:1%;}
-  .surface td.s a{text-decoration:none; font-weight:650;}
-  .surface td.s a:hover{text-decoration:underline;}
-  .sfoot{font-size:12.5px; color:var(--text-muted); line-height:1.6; margin:0; padding:12px 14px; background:var(--surface-2); border-top:1px solid var(--border-strong);}
-  .f{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; padding:2px 8px; border-radius:20px; white-space:nowrap; margin-right:4px;}
-  .f.def{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
-  .f.dep{background:var(--surface-3); color:var(--text-muted); border:1px solid var(--border-strong);}
-  .f.rai{background:#FBE9EC; color:#B23A48; border:1px solid #E8C8CE;}
-  .f.new{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
-  .f.brk{background:#FBE4E4; color:#A31D1D; border:1px solid #EFC2C2;}
-  .f.mis{background:#FBE4E4; color:#A31D1D; border:1px solid #EFC2C2;}
-
-  .pv{margin:18px 0 0; background:var(--surface); border:1px solid var(--border-strong); border-radius:12px; padding:18px 20px;}
-  .pv.brk{border-left:4px solid #A31D1D;}
-  .pv.mis{border-left:4px solid #A31D1D; border-style:solid solid solid solid; background:#FEF7F7;}
-  .pvh{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:12px;}
-  .pvh .sn{font-family:var(--mono); font-size:12.5px; color:var(--accent); font-weight:650; white-space:nowrap;}
-  .pvh h3{font-size:18px; margin:0; flex:1 1 auto;}
-  .pv blockquote{margin:0; padding:13px 16px; background:var(--surface-2); border-left:3px solid var(--border-strong); border-radius:0 8px 8px 0; font-size:14px; line-height:1.65; color:var(--text);}
-  .pv blockquote b{font-weight:700;}
-  .pv .ef{font-size:14.5px; line-height:1.62; color:var(--text); margin:12px 0 0;}
-  .pv .ef.note{font-size:13px; color:var(--text-muted);}
-  .pv .cite{font-family:var(--mono); font-size:11.5px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--border);}
+    --opt:#3F5C87; --opt-2:#5D79A4; --opt-bg:#EDF1F8; --opt-border:#C6D3E6;
+  .optzone{margin:44px 0 8px;}
+  .optbanner{background:var(--opt-bg); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:14px 16px; margin-bottom:22px;}
+  .opttag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:3px 10px; margin-bottom:9px;}
+  .optintro{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
+  .optintro b{color:var(--text); font-weight:600;}
+  .opthead h2{font-size:clamp(19px,2.5vw,24px); margin:0 0 8px; color:var(--text);}
+  .opthead>p{font-size:14.5px; color:var(--text-muted); margin:0; line-height:1.55; max-width:660px;}
+  .optgrid{display:grid; grid-template-columns:1fr; gap:12px; margin:20px 0;}
+  .optcard{background:var(--surface); border:1px solid var(--opt-border); border-top:3px solid var(--opt); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow);}
+  .optcard.lead{background:var(--opt-bg);}
+  .optcard .odn{font-family:var(--serif); font-size:16px; font-weight:650; margin:0 0 5px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .optcard .olead{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:2px 8px;}
+  .optcard .ol{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.45;}
+  .optcard .ol a{color:var(--opt);}
+  .domtile:hover{border-color:var(--opt-2);}
+  .domtile.sel{background:var(--opt-bg); box-shadow:0 0 0 2px var(--opt), var(--shadow);}
+  .domtile .rgo{display:block; margin-top:8px; font-size:11.5px; font-weight:600; color:var(--opt);}
+  .optdetail{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:15px 17px; box-shadow:var(--shadow); margin:6px 0 16px;}
+  .optdetail .ddh{font-family:var(--serif); font-size:16.5px; font-weight:650; margin:0 0 8px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
+  .optdetail p{margin:0; font-size:14px; line-height:1.55; color:var(--text);}
+  .optdetail p a{color:var(--opt);}
+  .ddflag{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; border-radius:999px; padding:2px 9px; border:1px solid;}
+  .ddflag.disc{color:var(--opt); background:var(--opt-bg); border-color:var(--opt-border);}
+  .ddflag.none{color:var(--open); background:var(--open-bg); border-color:var(--open-border);}
+  .optbox{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:var(--shadow);}
+  .optbox h3{font-size:16px; margin:0 0 10px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
+  .optbox>p{margin:0 0 10px; font-size:14px; color:var(--text); line-height:1.55;}
+  .optpos{font-size:14px; line-height:1.55; margin:0 0 9px; color:var(--text);}
+  .optpos b{color:var(--opt); font-weight:650;}
+  .optmark{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--opt-bg); border:1px solid var(--opt-border); border-radius:999px; padding:2px 9px;}
+  .optsrc{font-family:var(--mono); font-size:10.5px; color:var(--text-faint); margin:8px 0 0; line-height:1.5;}
+  .optsrc a{color:var(--text-faint); text-decoration:underline;}
+  .optsrc a:hover{color:var(--opt);}
 </style>
 <style id="navpass">
   /* ===== Unified site nav (July 2026 UX pass) ===== */
@@ -244,129 +249,69 @@
 
   <div class="col">
     <header class="hero">
-      <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; 7.35.3 NMAC</p>
-      <h1>Practicum requirements</h1>
-      <p class="updated"><b>Updated July 25, 2026.</b> Text as published July 23. Rule hearing August 28.</p>
-      <p class="lede">Every provision a practicum recommendation has to touch, quoted from the published rule. Three of them do not work as written.</p>
+      <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; Advisory Board</p>
+      <h1>Specialized domains</h1>
+      <p class="updated"><b>Updated July 25, 2026.</b></p>
+      <p class="lede">A specialization would sit on top of a core permit rather than replace it. Nothing here is in the published rule. This records what was raised, by whom, and where it stands.</p>
     </header>
 
-    <div class="surface">
-      <table>
-        <thead><tr><th>Section</th><th>What it governs</th><th>State</th></tr></thead>
-        <tbody>
-          <tr><td class="s"><a href="#s19a">7.35.3.19&nbsp;(A)</a></td><td>Hour totals, and when the practicum may start</td><td><span class="f def">Deferred</span> <span class="f new">New gate</span></td></tr>
-          <tr><td class="s"><a href="#s19b">7.35.3.19&nbsp;(B)</a></td><td>Preparation and integration hours</td><td><span class="f def">Deferred</span></td></tr>
-          <tr><td class="s"><a href="#s19c">7.35.3.19&nbsp;(C)</a></td><td>Practitioner supervisory hours</td><td><span class="f def">Deferred</span></td></tr>
-          <tr><td class="s"><a href="#s19d">7.35.3.19&nbsp;(D)</a></td><td>Where the practicum may happen</td><td><span class="f dep">Dependency</span></td></tr>
-          <tr><td class="s"><a href="#s19f">7.35.3.19&nbsp;(F)</a></td><td>Departmental discretion to waive or reduce</td><td><span class="f def">Deferred</span></td></tr>
-          <tr><td class="s"><a href="#s19g">7.35.3.19&nbsp;(G)</a></td><td>In-state waiver, 40 contact hours</td><td><span class="f brk">Conflicts</span></td></tr>
-          <tr><td class="s"><a href="#s18c">7.35.3.18&nbsp;(C)</a></td><td>Didactic hours the practicum gates on</td><td><span class="f rai">Raised 25 to 30</span></td></tr>
-          <tr><td class="s"><a href="#s14">7.35.3.14</a></td><td>Who may possess and administer psilocybin</td><td><span class="f brk">Students absent</span></td></tr>
-          <tr><td class="s"><a href="#s20h5">7.35.3.20&nbsp;(H)(5)</a></td><td>Staffing ratio counting students</td><td><span class="f brk">Depends on .14</span></td></tr>
-          <tr><td class="s"><a href="#s10d">7.35.3.10&nbsp;(D)(1)</a></td><td>Out-of-jurisdiction waiver, 40 contact hours</td><td><span class="f brk">Conflicts with 19(G)</span></td></tr>
-          <tr><td class="s"><a href="#s11">7.35.3.11</a></td><td>Creates the approved locations 19(D) requires</td><td><span class="f dep">Dependency</span></td></tr>
-          <tr><td class="s"><a href="#new1">New section</a></td><td>Authority for a student to handle psilocybin</td><td><span class="f mis">Does not exist</span></td></tr>
-          <tr><td class="s"><a href="#new2">New subsection</a></td><td>The healing-center registration 14(C) requires</td><td><span class="f mis">Does not exist</span></td></tr>
-        </tbody>
-      </table>
-      <p class="sfoot"><b>Deferred</b> was sent to the Training and Education Committee by a 7-0 board vote on July 17 and published unchanged on July 23. <b>Dependency</b> is not deferred but the practicum cannot operate without it. <b>Conflicts</b>, <b>students absent</b> and <b>does not exist</b> are defects in the published text.</p>
-    </div>
+    <section class="optzone" id="specialization" aria-label="Options raised for consideration">
 
-    <section id="provisions">
-      <div class="sh"><p class="k">Published text</p><h2>Provision by provision</h2></div>
+      <div class="optbanner">
+        <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
+        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the published rule, not settled requirements, and not this site's recommendation. The routes above are unchanged.</p>
+      </div>
 
-      <article class="pv" id="s19a">
-        <div class="pvh"><span class="sn">7.35.3.19 (A)</span><h3>Hour totals, and when the practicum may start</h3><span class="f def">Deferred</span><span class="f new">New gate</span></div>
-        <blockquote>An individual who seeks to become certified as a practitioner or facilitator shall participate in supervised practice training, otherwise referred to as a &ldquo;practicum&rdquo;, <b>after completing at least half of the didactic requirements and all of the simulated patient requirements</b> of the educational requirements. The practicum shall consist of a minimum of <b>100 hours</b> of supervised practice training for facilitators and <b>120 hours</b> for practitioners and shall be completed prior to applying for certification. Students shall participate in a minimum of <b>80 hours</b> of administration day sessions&hellip; with a minimum of <b>14 different patients</b> over a minimum of <b>eight different</b> administration and same-day sessions.</blockquote>
-        <p class="ef">Sets the totals, and bars a student from starting until half the classroom hours and all simulated patient hours are done. The gate is new in this draft, has no counterpart in the July 9 draft, and appears in neither July 17 transcript.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">Published rule, p.&nbsp;12</a></p>
-      </article>
+      <div class="opthead">
+        <h2>An optional specialized-domain route, layered on a core permit</h2>
+        <p>Members discussed whether a provider who reaches one of the three core permits could then add a route for a specific qualifying condition. End-of-life care led the discussion because it is furthest along. The committee treats it as one of four qualifying-condition domains, each the same shape.</p>
+      </div>
 
-      <article class="pv" id="s19b">
-        <div class="pvh"><span class="sn">7.35.3.19 (B)</span><h3>Preparation and integration hours</h3><span class="f def">Deferred</span></div>
-        <blockquote>Students shall participate in a minimum of <b>20 hours</b> of in-person preparation and integration sessions&hellip; This shall include a minimum of <b>six different patients</b> during individual sessions. This shall include at least one group preparatory and one group integration session with a minimum of four or more patients.</blockquote>
-        <p class="ef">The 20 hours here plus the 80 in (A) make up the 100-hour facilitator total.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">Published rule, p.&nbsp;12</a></p>
-      </article>
+      <div class="optgrid" id="domaintiles" role="group" aria-label="Qualifying-condition domains">
+        <button type="button" class="optcard domtile lead sel" data-dom="eol" aria-pressed="true">
+          <span class="odn">End-of-life care <span class="olead">Furthest along</span></span>
+          <span class="ol">A proposed adjunct curriculum was presented July 16.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+        <button type="button" class="optcard domtile" data-dom="ptsd" aria-pressed="false">
+          <span class="odn">PTSD</span>
+          <span class="ol">A qualifying condition in New Mexico.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+        <button type="button" class="optcard domtile" data-dom="sud" aria-pressed="false">
+          <span class="odn">Substance use disorders</span>
+          <span class="ol">A qualifying condition in New Mexico.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+        <button type="button" class="optcard domtile" data-dom="trd" aria-pressed="false">
+          <span class="odn">Treatment-resistant depression</span>
+          <span class="ol">A qualifying condition in New Mexico.</span>
+          <span class="rgo">View details &darr;</span>
+        </button>
+      </div>
+      <div class="optdetail" id="domaindetail" aria-live="polite"></div>
 
-      <article class="pv" id="s19c">
-        <div class="pvh"><span class="sn">7.35.3.19 (C)</span><h3>Practitioner supervisory hours</h3><span class="f def">Deferred</span></div>
-        <blockquote>Practitioners shall complete an additional minimum of <b>20 hours</b> as a practitioner supervising facilitators during in-person administration day sessions, which shall include a minimum of two different patients during individual administration day sessions, and a minimum of one group administration day sessions with a minimum of four or more patients in the group.</blockquote>
-        <p class="ef">These 20 hours are the difference between the facilitator total of 100 and the practitioner total of 120. The board named them in the deferral motion.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
-      </article>
+      <div class="optbox">
+        <h3>An overlay on the three roles, not a fourth permit <span class="optmark">Discussed July 16</span></h3>
+        <p>The discussion framed a specialization as an endorsement carried on top of an existing role, not a new license. The same end-of-life competency could sit with a Clinician, a Practitioner, or a Guide or Facilitator, depending on who carries it.</p>
+        <p class="optpos"><b>Dom, Department of Health:</b> creating diagnosis-specific licensure is logistically difficult, since a group session with more than one qualifying condition would require every facilitator to hold every matching certification. The department's stated preference was endorsements and best-practice recommendations rather than a specialization mandate.</p>
+        <p class="optpos"><b>Larry Leeman:</b> pointed to continuity-of-care models, including death doulas who stay through the journey and a Space Attendant who provides continuity, as an example of why the competency travels with the role rather than defining a separate license.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. How specialization sits on core eligibility is on <a href="eligibility.html#specialization">Who can qualify</a>.</p>
+      </div>
 
-      <article class="pv" id="s19d">
-        <div class="pvh"><span class="sn">7.35.3.19 (D)</span><h3>Where the practicum may happen</h3><span class="f dep">Dependency</span></div>
-        <blockquote>All practicum hours shall take place in an approved healing center or other approved location.</blockquote>
-        <p class="ef">Ties every practicum hour to a facility that must first be certified under 7.35.3.11. Any change to placement, including a site-supervisor or apprenticeship model, changes this sentence.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
-      </article>
-
-      <article class="pv" id="s19f">
-        <div class="pvh"><span class="sn">7.35.3.19 (F)</span><h3>Departmental discretion to waive or reduce</h3><span class="f def">Deferred</span></div>
-        <blockquote>The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for certification, in order to facilitate the certification of individuals trained by other government-approved programs, and to build the initial infrastructure of the program.</blockquote>
-        <p class="ef">Open-ended and undated. No standard governs when it applies, and nothing ends it.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
-      </article>
-
-      <article class="pv" id="s19g">
-        <div class="pvh"><span class="sn">7.35.3.19 (G)</span><h3>In-state waiver, 40 contact hours</h3><span class="f brk">Conflicts</span></div>
-        <blockquote>An applicant for certification shall not be required to satisfy the full New Mexico practicum hours requirement if the applicant: (1) Applies for certification by <b>December 31, 2027</b>; (2) Completes the didactic requirements by December 31, 2027; (3) Graduates from an educational program that the department certifies by December 31, 2027 or that the department has included on the department-approved list&hellip;; and (4) Demonstrates completion of at least <b>40 hours of contact time</b>&hellip; including: (a) A minimum of <b>two separate individual sessions</b>&hellip; and (b) A minimum of <b>one group session</b>&hellip;</blockquote>
-        <p class="ef">Requires two individual sessions and <b>one</b> group session. The out-of-jurisdiction waiver at 7.35.3.10 (D)(1) requires two individual and <b>two</b> group for the same 40 hours. Both cannot be the standard.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
-      </article>
-
-      <article class="pv" id="s18c">
-        <div class="pvh"><span class="sn">7.35.3.18 (C)</span><h3>Didactic hours the practicum gates on</h3><span class="f rai">Raised 25 to 30</span></div>
-        <blockquote>All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of <b>30 didactic hours and 5 hours of simulated patient experience</b>, prior to applying for certification.</blockquote>
-        <p class="ef">7.35.3.19 (A) gates practicum entry on "half of the didactic requirements and all of the simulated patient requirements," so this figure sets the gate. It was covered by the same 7-0 deferral vote and was published five hours higher than it stood that day. Three subjects were added: Trauma-Informed Care, Dosing, and Non-ordinary states of consciousness.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">Published rule, p.&nbsp;11</a></p>
-      </article>
-
-      <article class="pv brk" id="s14">
-        <div class="pvh"><span class="sn">7.35.3.14</span><h3>Who may possess and administer psilocybin</h3><span class="f brk">Students absent</span></div>
-        <blockquote>Certification of a practitioner, facilitator, or healing center shall enable <b>practitioners, facilitators, and owners and employees of healing centers</b> to do the following&hellip; (C) Healing centers: Owners and employees of healing centers <b>who are registered with the department</b> may purchase&hellip; possess&hellip; and may sell or otherwise administer those products to qualified patients&hellip;</blockquote>
-        <p class="ef">This is the only grant of authority to possess or administer psilocybin in the rule. It names three categories and a practicum student is none of them, because certification is what the practicum is a prerequisite for. Meanwhile 7.35.3.19 (A) requires students to "conduct supervised facilitation of administration day sessions."</p>
-        <p class="ef">The phrase "registered with the department" appears exactly once in all nineteen pages, in this subsection. Nothing in the rule creates that registration.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=9" target="_blank" rel="noopener">Published rule, p.&nbsp;9</a></p>
-      </article>
-
-      <article class="pv brk" id="s20h5">
-        <div class="pvh"><span class="sn">7.35.3.20 (H)(5)</span><h3>Staffing ratio counting students</h3><span class="f brk">Depends on .14</span></div>
-        <blockquote>&hellip;in group administration sessions a minimum of one practitioner for every eight patients and a minimum of <b>one facilitator or qualified student for every two patients</b>. For purposes of the foregoing provision, a student shall be deemed qualified if they are registered with a certified educational program and they have <b>completed at least 50 hours of their practicum</b>.</blockquote>
-        <p class="ef">Counts students toward mandatory coverage, which means a session can lawfully rely on someone 7.35.3.14 does not authorize to handle the medicine. New in this draft. Denali Wilson raised the idea at the July 17 committee meeting and the department said it would take it back.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=14" target="_blank" rel="noopener">Published rule, p.&nbsp;14</a></p>
-      </article>
-
-      <article class="pv brk" id="s10d">
-        <div class="pvh"><span class="sn">7.35.3.10 (D)(1)</span><h3>Out-of-jurisdiction waiver, 40 contact hours</h3><span class="f brk">Conflicts with 19(G)</span></div>
-        <blockquote>An applicant for certification as a practitioner or facilitator on the basis of an educational program from another jurisdiction, whose application is received by the department by <b>December 31, 2027</b>, shall not be required to complete the full practicum hours required by New Mexico, but shall demonstrate completion of at least <b>40 hours of contact time</b> with a minimum of <b>two separate individual sessions and two separate group sessions</b>&hellip;</blockquote>
-        <p class="ef">A second practicum waiver, sitting outside 7.35.3.19 in the out-of-jurisdiction application section. Same 40 hours, different session test. Amending 19(G) alone leaves this standing.</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=4" target="_blank" rel="noopener">Published rule, p.&nbsp;4</a></p>
-      </article>
-
-      <article class="pv" id="s11">
-        <div class="pvh"><span class="sn">7.35.3.11</span><h3>Creates the approved locations 19(D) requires</h3><span class="f dep">Dependency</span></div>
-        <blockquote>An applicant seeking certification as a healing center shall submit a complete application through the electronic system designated by the department&hellip;</blockquote>
-        <p class="ef">Every practicum hour must occur at a location certified under this section. No certified locations, no practicum. Any placement model that decouples the practicum from healing centers has to be written here as well as in 19(D).</p>
-        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=5" target="_blank" rel="noopener">Published rule, p.&nbsp;5</a></p>
-      </article>
-
-      <article class="pv mis" id="new1">
-        <div class="pvh"><span class="sn">New section</span><h3>Authority for a student to handle psilocybin</h3><span class="f mis">Does not exist</span></div>
-        <p class="ef">The rule requires students to facilitate administration sessions and counts them toward staffing, and never authorizes them to possess or administer the medicine. The gap has to be closed by adding to 7.35.3.14, or by creating a training permit as its own section.</p>
-        <p class="ef">On July 17 the department said a training permit was unnecessary because students "already will have that kind of protection ability to be there as a part of being registered as a student with an educational program." No such provision was published.</p>
-        <p class="ef note">The rule currently ends at 7.35.3.28, Severability. A new section numbered 29 would sit after it, which is unusual drafting; placing it in the training run is cleaner.</p>
-      </article>
-
-      <article class="pv mis" id="new2">
-        <div class="pvh"><span class="sn">New subsection</span><h3>The healing-center registration 14(C) requires</h3><span class="f mis">Does not exist</span></div>
-        <p class="ef">7.35.3.14 (C) conditions the authority of healing-center owners and employees on being "registered with the department." No section creates that registration, so on the face of the rule no owner or employee qualifies. It belongs in 7.35.3.11, which handles healing-center certification, or as a new subsection of 7.35.3.20.</p>
-      </article>
+      <div class="optbox">
+        <h3>The open structural question: in the core, or an add-on? <span class="optmark">Discussed July 16</span></h3>
+        <p>Whether specialization hours are written into the core requirements for everyone, or layered on as a separate add-on, was left open.</p>
+        <p class="optpos"><b>Larry Leeman:</b> include the hours in New Mexico's core program, given that end-of-life is one of four qualifying conditions in the state.</p>
+        <p class="optpos"><b>Christine and others:</b> offer it as an adjunct add-on, noting that end-of-life work calls for a disposition not suited to every practitioner.</p>
+        <p class="optpos"><b>Gregory Evans:</b> keep the core robust and specializations external as add-ons, while considering baking the baseline of all four qualifying-condition domains into the general curriculum.</p>
+        <p class="optpos"><b>Jamie:</b> existential and spiritual themes run through all psilocybin work, not only end-of-life, so a baseline competency there fits every facilitator.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026. The hour ranges and the addendum framing are on <a href="hours.html#specialization">Training hours</a>.</p>
+      </div>
+    
+      <p class="optsrc" style="margin:14px 2px 0;"><b>Where end-of-life sits in the published rule.</b> The curriculum at <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18 (C), p.&nbsp;11</a> lists seventeen required subjects and none of them is end-of-life care. Denali Wilson asked on July 17 that end-of-life, suicidality, substance use disorder and PTSD be added as didactic requirements; Chris Caldwell argued for nineteen or more live instruction hours, and Larry Leeman supported roughly ten to fifteen in the core. None appears in the text published on July 23.</p>
     </section>
   </div>
-
 
   <footer>
     <div class="col">
@@ -402,7 +347,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
-          <li><b>July 25, 2026</b> Rebuilt as a worksheet. The first version led with a reading guide and a three-column history of how each requirement reached the published text, which is not what this page is for; that history belongs on the History page. The page now lists the thirteen provisions a practicum change has to touch, quotes each from the published rule, states what it does, and flags the three that do not work as written: 7.35.3.14 authorises nobody to let a student handle psilocybin, 7.35.3.19 (G) and 7.35.3.10 (D)(1) set different session tests for the same 40-hour waiver, and 7.35.3.14 (C) conditions healing-centre authority on a registration no section creates. Two provisions were added after checking the dependency chain: 7.35.3.11, which creates the approved locations 19 (D) requires, and 7.35.3.10 (D)(1), the second practicum waiver. The reading guide and the closing scope section were removed. All eighteen quotation fragments verified against the published text.</li>
+          <li><b>July 25, 2026</b> Page created from the specialized-domain section that was previously at the foot of the provider routes page, where it sat below unrelated material and carried July 16 dates with no indication of their status. It now states that none of it is in the published rule. Added the citation showing where end-of-life sits in the published text: the curriculum at 7.35.3.18 (C) lists seventeen required subjects and end-of-life is not among them, nor are suicidality, substance use disorder or PTSD, all four of which were asked for on the record on July 17.</li>
           </ul>
         </div>
         </div>
