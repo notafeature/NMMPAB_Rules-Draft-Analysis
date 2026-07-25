@@ -19,7 +19,7 @@ Training and education only.
 
 Addendum A of the PDF maps every provision the practicum depends on, in and out of scope. Addendum B lists the ten proposed new provisions and what breaks if each is dropped.
 
-Everything else is flagged, not drafted. The flags are collected at `metz-crosswalk.md`, Part 7.
+Everything else is flagged, not drafted. The flags are collected at `metz-crosswalk.md`, Part 7, and summarized in Addendum F of the PDF.
 
 **This is not a review of Part 3.** Part 3 runs to 28 sections. `analysis/july23-rule-concerns.md` records 5 blocking and 23 material findings across the whole of it. This folder drafts fixes for the practicum and for the provisions the practicum cannot function without. Anything wider belongs in a separate document.
 
@@ -31,15 +31,16 @@ Everything else is flagged, not drafted. The flags are collected at `metz-crossw
 
 | File | What it is |
 |---|---|
-| `7.35.3-practicum-amendments-v3.pdf` | **The deliverable.** Side-by-side redline of every subsection being amended, plus Addendum A the practicum dependency map, Addendum B the proposed new provisions, Addendum C the arithmetic behind the practitioner practicum figure, and a version history. Built and verified by `build-redline-pdf.py` |
-| `open-questions.md` | Nine questions closed, eight calls flagged for the committee's review, one open decision, one item for counsel |
+| `7.35.3-practicum-amendments-v4.pdf` | **The deliverable.** Side-by-side redline of every subsection being amended, plus six addenda: A the practicum dependency map, B the proposed new provisions including one withdrawn, C the arithmetic behind the practitioner practicum figure, D definitions that need updating, E the permit title laid out for decision, F the remaining twenty-four sections. Version history on the last page. Built and verified by `build-redline-pdf.py` |
 | `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match. Carries `VERSION` and `VERSION_HISTORY` |
 | `metz-crosswalk.md` | The four July 17 recommendations mapped against the published rule provision by provision, with the hours ledger, the answer to the open question on the permit title, and the cross-session flags |
 | `7.35.3.18-19-redline.md` | Redline amendment language for 7.35.3.18 and 7.35.3.19 |
 | `blocking-defects.md` | The blocking defects with proposed textual fixes, and the amendment language for 7.35.3.14 and 7.35.3.20 (H)(5) |
 | `*-rendered.md` | Generated copies with the permit title substituted. Do not edit these |
 
-Read the PDF first if you want the changes. Read `metz-crosswalk.md` first if you want the reasoning: it states the position and the arithmetic, and the other two markdown files are the drafting.
+**Everything a reviewer needs is in the PDF.** The markdown files are the working drafting behind it. There is no separate questions file; open items and calls made are stated in the PDF, on the page where they arise.
+
+Every proposed change in the PDF carries a Source line. Where it reads "Drafting", the change appears in no source and was written to make something else work. Those are the ones to argue with first.
 
 To rebuild the PDF after editing the drafting:
 

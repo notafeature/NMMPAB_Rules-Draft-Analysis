@@ -144,10 +144,10 @@ The redline drafts the sequence to that objection rather than around it. New 7.3
 
 - Practicum totals 80 facilitator and 90 {{PT}}, down from 100 and 120. All of the reduction is taken from administration day session hours and from the {{PT}} supervision hours. The 20 hours of preparation and integration sessions are untouched, and every patient and session minimum is carried forward unchanged.
 - Stages, at 7.35.3.19 D: observation and support 20, co-facilitation 25, group practicum 15, and for {{PTS}} the supervision hours in Subsection C.
-- Training permit, at 7.35.3.19 H, issued on completion of stage one, with the authorization it carries stated in an amended 7.35.3.14.
+- Training permit, at 7.35.3.19 G, issued on completion of stage one, with the authorization it carries stated in an amended 7.35.3.14.
 - Site-supervisor model, at 7.35.3.19 E, with a registration and qualification scheme at new 7.35.3.19 F.
 
-See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, F, H, and `blocking-defects.md`, B1.
+See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, G, and `blocking-defects.md`, B1.
 
 ### 4.4 Departures from Recommendation 3, and why
 
@@ -295,8 +295,8 @@ Each of these is outside 7.35.3.18, 7.35.3.19, 7.35.3.14 and 7.35.3.20 (H)(5), a
 
 | # | Provision | Decision needed | Why it arises |
 |---|---|---|---|
-| F1 | 7.35.3.17 A, pages 10 and 11 | Either leave the 10 mentoring hours in place and rely on 7.35.3.19 I(4) to credit them toward the 30, or move the whole consultation requirement into 7.35.3.17 A and delete I(4) | Recommendation 4 restructures a requirement that lives in 7.35.3.17 |
-| F2 | 7.35.3.22, page 15 | Whether the training permittee is reached as a "certificant". 7.35.3.19 H(5) as drafted says a training permittee is a certificant for purposes of this rule; a conforming amendment to 7.35.3.22 would remove any doubt | 7.35.3.22 currently relieves neither "the qualified patient or certificant", and a student is neither |
+| F1 | 7.35.3.17 A, pages 10 and 11 | Either leave the 10 mentoring hours in place and rely on 7.35.3.19 H(4) to credit them toward the 30, or move the whole consultation requirement into 7.35.3.17 A and delete I(4) | Recommendation 4 restructures a requirement that lives in 7.35.3.17 |
+| F2 | 7.35.3.22, page 15 | Whether the training permittee is reached as a "certificant". 7.35.3.19 G(5) as drafted says a training permittee is a certificant for purposes of this rule; a conforming amendment to 7.35.3.22 would remove any doubt | 7.35.3.22 currently relieves neither "the qualified patient or certificant", and a student is neither |
 | F3 | 7.35.3.9 E(1), page 3 | Whether a permit retitle, if adopted, is accompanied by an eligibility change conforming the licensure predicate to the wider description in the recommendation | This is the only route by which a title change reaches the practicum. See Part 1, item 5 |
 | F4 | 7.35.3.13 B, page 8 | Whether facilitator scope of work is amended, and whether a PTSD referral or collaboration rule is added there | 7.35.3.19 B requires facilitator students to conduct sessions that 7.35.3.13 B may forbid after certification. Recommendation 2 proposes a PTSD collaboration rule rather than PTSD hours |
 | F5 | 7.35.3.15 A, page 9 | Whether a decision deadline binds the department on practicum site agreements and instructional staff changes | The site-supervisor model at 7.35.3.19 E multiplies practicum site agreements, each of which currently needs prior written approval with no outside date |

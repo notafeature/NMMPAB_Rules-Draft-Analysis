@@ -28,7 +28,7 @@ REPO = Path(__file__).resolve().parent.parent
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
 # Version this document on every rebuild that changes its content, so that no two
 # copies in circulation carry the same name. History is in VERSION_HISTORY below.
-VERSION = "v3"
+VERSION = "v4"
 VERSION_DATE = "July 25, 2026"
 OUT_PDF = REPO / ("amendments/7.35.3-practicum-amendments-%s.pdf" % VERSION)
 
@@ -41,6 +41,11 @@ VERSION_HISTORY = [
     ("v3", "July 25, 2026", "Consultation set to 20. Medical Psilocybin Act read and applied. 7.35.2 NMAC "
                             "read and applied. Post-traumatic stress disorder added as a required content "
                             "area. Addenda A, B and C added. First versioned issue."),
+    ("v4", "July 25, 2026", "Proposed 7.35.3.19 F, practicum supervisors, withdrawn as invented and not "
+                            "traceable to the July 17 recommendation. The withdrawal is recorded in Addendum B "
+                            "rather than dropped silently, and the remaining subsections are re-lettered. A "
+                            "provenance line added to every proposed change. The two readings of 7.35.3.19 C "
+                            "raised to the front of the document as a call-out. Addenda D, E and F added."),
 ]
 
 # The permit title, carried as a variable exactly as in the markdown drafts.
@@ -87,7 +92,7 @@ P.append((
     "healing centers to do the following, in accordance with medical psilocybin program rules:",
     dele("7.34.3.14") + " " + ins("7.35.3.14") + " AUTHORIZED POSSESSION, PURCHASE, OR SALE OF MEDICAL PSILOCYBIN BY "
     "{{PTS_UC}}, FACILITATORS, " + ins("TRAINING PERMITTEES,") + " HEALING CENTER OWNERS AND EMPLOYEES: Certification of "
-    "a {{PT}}, facilitator, or healing center" + ins(", and issuance of a training permit under Subsection H of 7.35.3.19 NMAC,") +
+    "a {{PT}}, facilitator, or healing center" + ins(", and issuance of a training permit under Subsection G of 7.35.3.19 NMAC,") +
     " shall enable {{PTS}}, facilitators, " + ins("training permittees,") + " and owners and employees of "
     "healing centers to do the following, in accordance with medical psilocybin program rules:",
 ))
@@ -140,11 +145,11 @@ P.append((
     "7.35.3.14",
     "Subsection D, Training permittees",
     NEW,
-    ins("D. Training permittees: A student who holds a current training permit issued under Subsection H of "
+    ins("D. Training permittees: A student who holds a current training permit issued under Subsection G of "
         "7.35.3.19 NMAC may possess medical psilocybin products, and may administer or otherwise provide those products "
         "to qualified patients, or to practicum participants in accordance with 7.35.3.29 NMAC, in administration "
         "sessions conducted at a healing center or other approved location, in each case only while under the direct, "
-        "on-site supervision of a practicum supervisor registered under Subsection F of 7.35.3.19 NMAC, and only to the "
+        "on-site supervision of a practicum supervisor, and only to the "
         "extent required by the practicum under 7.35.3.19 NMAC. A training permittee shall not purchase medical "
         "psilocybin products."),
 ))
@@ -381,9 +386,9 @@ P.append((
           "observes administration day sessions and provides support to the {{PT}} or facilitator conducting them, and "
           "the student shall not possess or administer medical psilocybin products during stage one. Preparation and "
           "integration sessions are required for each participant. Stage one shall be completed before a training permit "
-          "is issued under Subsection H of this section.") + "<br>"
+          "is issued under Subsection G of this section.") + "<br>"
     + ins("(2) Stage two, co-facilitation: a minimum of 25 hours during which the student, holding a current training "
-          "permit issued under Subsection H of this section, serves as the second person of a co-facilitation pair with a "
+          "permit issued under Subsection G of this section, serves as the second person of a co-facilitation pair with a "
           "certified {{PT}} or facilitator. A practicum supervisor shall assign stage two cases on the basis of the "
           "acuity of the patient's presentation and the student's demonstrated proficiency.") + "<br>"
     + ins("(3) Stage three, group practicum: a minimum of 15 hours of direct participation in group administration day "
@@ -401,46 +406,27 @@ P.append((
     "center or other approved location. "
     + ins("A healing center or other approved location may host a practicum student who is not enrolled in an "
           "educational program with which the healing center or other approved location is affiliated, provided that the "
-          "student is supervised by a practicum supervisor approved under Subsection F of this section. A healing center "
+          "student is supervised by a practicum supervisor. A healing center "
           "or other approved location that hosts a practicum student shall not be required to hold certification as a "
           "psilocybin educational program by reason of hosting the student."),
 ))
 
 P.append((
     "7.35.3.19",
-    "Subsection F, practicum supervisors",
-    NEW,
-    ins("F. Practicum supervisors:") + "<br>"
-    + ins("(1) A practicum supervisor for a facilitator student shall be a certified {{PT}} or a certified facilitator. "
-          "A practicum supervisor for a {{PT}} student shall be a certified {{PT}}.") + "<br>"
-    + ins("(2) A practicum supervisor shall have held the applicable certification for at least one year, or shall have "
-          "been certified on the basis of an educational program from another jurisdiction under 7.35.3.10 NMAC and have "
-          "practiced under that jurisdiction's authority for at least one year.") + "<br>"
-    + ins("(3) A practicum supervisor shall register with the department through the electronic system designated by the "
-          "department, and shall submit documentation of the requirements of Paragraphs (1) and (2) of this subsection. "
-          "The department shall act on a registration within 30 calendar days.") + "<br>"
-    + ins("(4) The department shall maintain and publish a list of registered practicum supervisors and of healing "
-          "centers and other approved locations available to host practicum students.") + "<br>"
-    + ins("(5) A practicum supervisor shall provide direct, on-site supervision during any session in which a student "
-          "possesses or administers medical psilocybin products."),
-))
-
-P.append((
-    "7.35.3.19",
-    "Subsection G, practicum standards (published Subsection E)",
+    "Subsection F, practicum standards (published Subsection E)",
     "E. Practicum standards: Practicum supervisors and students shall follow these rules as they apply "
     "to facilitation and therapy, shall comply with HIPAA and HITECH confidentiality requirements, and shall comport "
     "with applicable limits on scope of practice.",
-    dele("E.") + " " + ins("G.") + " Practicum standards: Practicum supervisors and students shall follow these rules as "
+    dele("E.") + " " + ins("F.") + " Practicum standards: Practicum supervisors and students shall follow these rules as "
     "they apply to facilitation and therapy, shall comply with HIPAA and HITECH confidentiality requirements, and shall "
     "comport with applicable limits on scope of practice. <span class='note'>Re-lettered only. Text not amended.</span>",
 ))
 
 P.append((
     "7.35.3.19",
-    "Subsection H, training permit",
+    "Subsection G, training permit",
     NEW,
-    ins("H. Training permit:") + "<br>"
+    ins("G. Training permit:") + "<br>"
     + ins("(1) Issuance: The department shall issue a training permit to an applicant who: (a) is registered as a student "
           "with a psilocybin educational program certified under 7.35.3.12 NMAC; (b) has completed the didactic "
           "requirement for entry to the practicum stated in Subsection A of this section; (c) has completed stage one of "
@@ -458,7 +444,7 @@ P.append((
           "supervised preparation and integration sessions as required by this section, in each case only while under "
           "the direct, on-site supervision of a practicum supervisor. A training permittee shall not purchase medical "
           "psilocybin products, shall not provide medical psilocybin services other than as part of the practicum or the "
-          "consultation requirement in Subsection I of this section, and shall not hold themselves out as a certified "
+          "consultation requirement in Subsection H of this section, and shall not hold themselves out as a certified "
           "{{PT}} or facilitator.") + "<br>"
     + ins("(4) Term: A training permit is valid for 24 months from the date of issuance and may be renewed once for a "
           "further 12 months. A training permit expires on the earlier of the end of its term, the date the permittee "
@@ -469,9 +455,9 @@ P.append((
 
 P.append((
     "7.35.3.19",
-    "Subsection I, supervision and consultation; case presentation sign-off",
+    "Subsection H, supervision and consultation; case presentation sign-off",
     NEW,
-    ins("I. Supervision and consultation; case presentation sign-off:") + "<br>"
+    ins("H. Supervision and consultation; case presentation sign-off:") + "<br>"
     + ins("(1) A training permittee shall complete a minimum of 20 hours of supervision or consultation during the "
           "training permit period, in addition to the practicum hours required by this section.") + "<br>"
     + ins("(2) Sign-off requires the permittee to present a minimum of two cases of qualified patients with whom the "
@@ -487,27 +473,27 @@ P.append((
 
 P.append((
     "7.35.3.19",
-    "Subsection J, end-of-life practice",
+    "Subsection I, end-of-life practice",
     NEW,
-    ins("J. End-of-life practice: Before providing medical psilocybin services to a patient enrolled on the basis of "
+    ins("I. End-of-life practice: Before providing medical psilocybin services to a patient enrolled on the basis of "
         "end-of-life care other than under the direct supervision of a {{PT}} or facilitator who meets the requirements "
         "of this subsection, a {{PT}} or facilitator shall have completed at least one co-facilitated end-of-life case "
-        "during the practicum and presented at least one end-of-life case under Subsection I of this section."),
+        "during the practicum and presented at least one end-of-life case under Subsection H of this section."),
 ))
 
 P.append((
     "7.35.3.19",
-    "Subsection K, waiver of practicum requirements (published Subsection F)",
+    "Subsection J, waiver of practicum requirements (published Subsection F)",
     "F. Waiver of practicum requirements: The department may otherwise waive, temporarily suspend, "
     "or reduce the practicum requirements for individuals applying for certification, in order to facilitate the certification "
     "of individuals trained by other government-approved programs, and to build the initial infrastructure of the program.",
-    dele("F.") + " " + ins("K.") + " Waiver of practicum requirements: The department may otherwise waive, temporarily "
+    dele("F.") + " " + ins("J.") + " Waiver of practicum requirements: The department may otherwise waive, temporarily "
     "suspend, or reduce the practicum requirements for individuals applying for certification, in order to facilitate the "
     "certification of individuals trained by other government-approved programs, and to build the initial infrastructure "
     "of the program. "
     + ins("The department shall act on a request under this subsection within 30 calendar days and shall state the basis "
           "for its decision in writing. The department shall not under this subsection: (1) reduce an applicant's "
-          "practicum below 40 hours of contact time with qualified patients; (2) waive the requirements of Subsection I "
+          "practicum below 40 hours of contact time with qualified patients; (2) waive the requirements of Subsection H "
           "of this section; or (3) authorize any person to possess or administer medical psilocybin products who is not "
           "certified or does not hold a current training permit. The department shall publish the number of waivers "
           "granted under this subsection and the general grounds for them, at least annually."),
@@ -515,7 +501,7 @@ P.append((
 
 P.append((
     "7.35.3.19",
-    "Subsection L, waiver for applications received by December 31, 2027 (published Subsection G)",
+    "Subsection K, waiver for applications received by December 31, 2027 (published Subsection G)",
     "G. Waiver of practicum hours requirement for applications received by December 31, 2027: An "
     "applicant for certification shall not be required to satisfy the full New Mexico practicum hours requirement if the "
     "applicant:\n"
@@ -528,7 +514,7 @@ P.append((
     "(a) A minimum of two separate individual sessions including the appointments for preparation, administration and "
     "integration; and\n"
     "(b) A minimum of one group session including the appointments for preparation, administration, and integration.",
-    dele("G.") + " " + ins("L.") + " Waiver of practicum hours requirement for applications received by December 31, 2027: "
+    dele("G.") + " " + ins("K.") + " Waiver of practicum hours requirement for applications received by December 31, 2027: "
     "An applicant for certification shall not be required to satisfy the full New Mexico practicum hours requirement if "
     "the applicant:<br>"
     "(1) Applies for certification by December 31, 2027;<br>"
@@ -562,7 +548,7 @@ P.append((
     "minimum of one facilitator or qualified student for every two patients. For purposes of the foregoing provision, a "
     "student shall be deemed qualified if they "
     + dele("are registered with a certified educational program and they have completed at least 50 hours of their practicum.")
-    + ins("hold a current training permit issued under Subsection H of 7.35.3.19 NMAC and have completed at least 50 "
+    + ins("hold a current training permit issued under Subsection G of 7.35.3.19 NMAC and have completed at least 50 "
           "hours of their practicum. Qualified students shall not fill more than half of the facilitator positions "
           "required by this paragraph in any administration session, and a session staffed in part by qualified students "
           "shall include at least one certified facilitator.")
@@ -601,8 +587,8 @@ P.append((
           "the participant is not receiving medical psilocybin services for a qualifying condition, and that the "
           "participant may withdraw at any time.") + "<br>"
     + ins("C. Conduct of practicum sessions: A practicum session under this section shall: (1) take place at a healing "
-          "center or other approved location; (2) be supervised on site by a practicum supervisor registered under "
-          "Subsection F of 7.35.3.19 NMAC; (3) meet the staffing ratios in Paragraph (5) of Subsection H of 7.35.3.20 "
+          "center or other approved location; (2) be supervised on site by a practicum supervisor; "
+          "(3) meet the staffing ratios in Paragraph (5) of Subsection H of 7.35.3.20 "
           "NMAC, counting practicum participants as patients for that purpose; (4) include a preparation session and an "
           "integration session for each practicum participant; and (5) use only medical psilocybin products obtained "
           "from permitted producers.") + "<br>"
@@ -745,6 +731,15 @@ table.dep td.amd { color: #0a5c2e; font-weight: bold; }
 table.dep td.flag { color: #9b1c1c; }
 table.dep td.ok { color: #0a5c2e; font-weight: bold; }
 table.dep td.bad { color: #9b1c1c; font-weight: bold; }
+.prov { margin-top: 6pt; padding-top: 4pt; border-top: 0.5px dashed #bbb;
+        font-family: Helvetica, Arial, sans-serif; font-size: 7.2pt; line-height: 1.45; color: #555; }
+.prov span { display: inline-block; text-transform: uppercase; letter-spacing: 0.5pt; font-size: 6.5pt;
+             color: #888; margin-right: 5pt; }
+.callout { border: 1.5px solid #9b1c1c; background: #fdf6f6; padding: 11pt 14pt; margin: 0 0 16pt 0;
+           font-family: Helvetica, Arial, sans-serif; font-size: 8.2pt; line-height: 1.6; break-inside: avoid; }
+.callout p { margin: 0 0 7pt 0; }
+.callout p:last-child { margin-bottom: 0; }
+.callout b { color: #9b1c1c; }
 """
 
 
@@ -779,11 +774,75 @@ def build_html():
                         % (render(sub), render(sub)))
             continue
         left = ('<span class="none">%s</span>' % NEW) if published == NEW else esc_plain(published)
+        prov = provenance_for(section, sub)
+        prov_html = ('<div class="prov"><span>Source</span>%s</div>' % render(prov)) if prov else ''
         rows.append('<tr><td class="left"><div class="label">%s</div>%s</td>'
-                    '<td><div class="label">%s</div>%s</td></tr>'
-                    % (render(sub), left, render(sub), render(proposed)))
+                    '<td><div class="label">%s</div>%s%s</td></tr>'
+                    % (render(sub), left, render(sub), render(proposed), prov_html))
     rows.append("</table>")
     return "\n".join(rows)
+
+
+# Where every proposed change comes from. "Drafting" means it appears in no source
+# and was written to make something else work; those are the ones to argue with first.
+PROVENANCE = {
+    ("7.35.3.14", "Section heading"): "Drafting, required to make the training permit operative. The section-number "
+        "correction is a defect in the rule as published.",
+    ("7.35.3.14", "Subsection A"): "Drafting, consequential on proposed 7.35.3.29. Strike if 7.35.3.29 is not adopted.",
+    ("7.35.3.14", "Subsection B"): "Drafting, consequential on proposed 7.35.3.29. Strike if 7.35.3.29 is not adopted.",
+    ("7.35.3.14", "Subsection C"): "Defect in the rule as published: the condition points at a registration that the "
+        "rule never creates.",
+    ("7.35.3.14", "Subsection D"): "Metz, Recommendation 3, training permit, page 4.",
+    ("7.35.3.18", "Subsection A"): "Metz, Recommendation 2, New Mexico module 6 to 8 hours, page 2. Eight is the top "
+        "of her range.",
+    ("7.35.3.18", "Subsection C, {{PT_C}} and facilitator psilocybin therapy module, lead-in"):
+        "Metz, Recommendation 2, single 84-hour standard, page 1.",
+    ("7.35.3.18", "Subsection C, required topics"): "Metz, Recommendation 2 curriculum table, pages 2 and 3, for every "
+        "topic and every hour figure except post-traumatic stress disorder, which comes from the July 17 committee "
+        "record and is scoped to the limits Metz states at page 2.",
+    ("7.35.3.18", "Subsection D"): "Drafting. One hour added to each role-specific module so the components reach the "
+        "84-hour total.",
+    ("7.35.3.18", "Subsection E"): "Drafting. One hour added to each role-specific module so the components reach the "
+        "84-hour total.",
+    ("7.35.3.18", "Subsection F"): "Defect in the rule as published: the sentence does not complete. Grammar only.",
+    ("7.35.3.18", "Subsection H"): "Metz, Recommendation 2, page 3: \u201cComponent ranges are illustrative; the "
+        "binding minimum is the total.\u201d",
+    ("7.35.3.18", "Subsection I"): "Drafting. Addresses a defect in the rule as published: the module gates every "
+        "pathway and carries no delivery date. The 90 days is a drafting choice.",
+    ("7.35.3.19", "Subsection A"): "Metz, Recommendation 3, practicum totals, page 4. The entry-gate wording is "
+        "drafting, addressing an ambiguity in the rule as published.",
+    ("7.35.3.19", "Subsection B"): "Drafting. Resolves an ambiguity in the rule as published about whether the "
+        "patients counted here may be the same patients counted in Subsection A. Hours unchanged.",
+    ("7.35.3.19", "Subsection C"): "Metz, Recommendation 3 step 4, 10 hours, page 4. The sentence stating that the "
+        "hours sit inside the total is drafting.",
+    ("7.35.3.19", "Subsection D"): "Metz, Recommendation 3 steps 1 to 4, pages 3 and 4. The stage hour figures are "
+        "hers; the lead-in preserving supervisor discretion is drafting, written to the objection recorded on July 17.",
+    ("7.35.3.19", "Subsection E"): "Metz, Recommendation 3, placement logistics, page 4: an approved supervisor at an "
+        "approved location may host students not enrolled at a co-located program.",
+    ("7.35.3.19", "Subsection F"): "Not amended. Re-lettered only.",
+    ("7.35.3.19", "Subsection G"): "Metz, Recommendation 3, training permit, page 4. The application items, the term, "
+        "and the appeal route are drafting.",
+    ("7.35.3.19", "Subsection H"): "Metz, Recommendation 4, pages 4 and 5. Twenty is the bottom of her stated range.",
+    ("7.35.3.19", "Subsection I"): "Metz, Recommendation 4, end-of-life checkpoint, page 5.",
+    ("7.35.3.19", "Subsection J"): "Drafting. Addresses a defect in the rule as published: the waiver has no criteria, "
+        "no procedure and no time limit. Every figure in the added text is a drafting choice.",
+    ("7.35.3.19", "Subsection K"): "Defect in the rule as published: this waiver and 7.35.3.10 D(1) set different "
+        "group-session floors for the same 40 hours.",
+    ("7.35.3.20", "Subsection H(5)"): "July 17 committee record, where counting students toward the ratio was "
+        "proposed and taken back for review. The substitution of the training permit for bare registration, and the "
+        "cap on how many positions students may fill, are drafting.",
+    ("7.35.3.20", "Subsection M"): "Drafting. Required by 7.35.3.14 C, which points at a registration the rule does "
+        "not create.",
+    ("7.35.3.29", "Entire section"): "Metz, Recommendation 3 step 1, page 3. The participant definition, the consent "
+        "and screening requirements, and the contingency clause are drafting.",
+}
+
+
+def provenance_for(section, sub):
+    for (sec, key), text in PROVENANCE.items():
+        if sec == section and sub.startswith(key):
+            return text
+    return None
 
 
 SECTION_INTRO = {
@@ -859,6 +918,30 @@ point at a different chapter of Title 7, while the bracketed history note at the
 appears. 7.35.3.29 in particular is drafted with an express contingency and should be read with the note above it.</p>
 </div>
 
+
+<div class="callout">
+<p><b>Please comb this one twice: 7.35.3.19 C, the supervision hours.</b> It is the one place where the rule as
+published can be read two ways, and the reading decides a number in this draft.</p>
+<p><b>What the rule says.</b> 7.35.3.19 A sets the practicum at "100 hours ... for facilitators and 120 hours for
+practitioners". 7.35.3.19 C then says practitioners "shall complete an additional minimum of 20 hours as a
+practitioner supervising facilitators", without saying what the 20 hours are additional to.</p>
+<p><b>Reading 1, which this draft assumes.</b> The 20 sit inside the 120. A facilitator does 100, a practitioner does
+the same 100 plus 20 supervision, which is the 120 already stated. Published practitioner program total: 170.</p>
+<p><b>Reading 2, which the word "additional" supports on its face.</b> The 20 sit on top of the 120, so the
+practitioner practicum is 140. Published practitioner program total: 190.</p>
+<p><b>What Metz recommended.</b> "Supervisory hours, Licensed Providers only (10 hours) ... Reduced from the 20 hours
+in the 6-12-26 draft" (July 17 recommendation, page 4). Her totals read as inclusive: 62 hours for a Facilitator and
+72 for a Licensed Provider, a difference of exactly the 10 supervisory hours. So her model uses reading 1.</p>
+<p><b>What this draft does.</b> Adopts reading 1 and says so in terms, so the ambiguity does not survive into the
+amended rule. It then sets the practitioner practicum at 90 rather than at Metz's 72, purely so that the proposed
+total clears the published requirement on reading 2 as well. That single defensive choice is the only reason the
+number is not 72. Addendum C sets out the arithmetic.</p>
+<p><b>The questions for this group.</b> Is reading 1 what the department intended? Is 170 the number everyone has in
+their head, or does anyone read the published draft as 190? If reading 1 is confirmed, the practitioner practicum can
+drop to 72 and the total still rises, from 170 to 176. If it is not confirmed, 90 stays. Either way the amended text
+should say which reading governs, because as published it does not.</p>
+</div>
+
 <div class="keybox">
 <p><b>The hours, at a glance.</b> Hours shift. They do not shrink. Total program hours rise for both permit types.
 The 84-hour standard is inclusive of the 5-hour simulated patient experience.</p>
@@ -902,7 +985,7 @@ ADDENDA = """
 <tr><td>7.35.3.17 C(2)(d), (e)</td><td>11</td><td>Records of practicum sessions, dates, locations, patient counts, and supervised facilitators</td><td>Not amended</td></tr>
 <tr><td class="amd">7.35.3.18 A, C, D, E</td><td>11 to 12</td><td>The didactic requirement the practicum entry gate is measured against</td><td class="amd">AMENDED</td></tr>
 <tr><td>7.35.3.18 F</td><td>12</td><td>Life support and HIPAA currency, carried into the training permit application</td><td class="amd">Amended for grammar only</td></tr>
-<tr><td class="amd">7.35.3.19</td><td>12 to 13</td><td>The practicum itself</td><td class="amd">AMENDED throughout</td></tr>
+<tr><td class="amd">7.35.3.19</td><td>12 to 13</td><td>The practicum itself</td><td class="amd">AMENDED throughout. Re-lettered A to K</td></tr>
 <tr><td>7.35.3.20 D</td><td>14</td><td>Students may be present at an administration session. This is the full reach of Section 5(D) of the Act and no further</td><td>Not amended</td></tr>
 <tr><td>7.35.3.20 E, L</td><td>14 to 15</td><td>Daily log and adverse event reporting, which the proposed 7.35.3.29 relies on</td><td>Not amended</td></tr>
 <tr><td class="amd">7.35.3.20 H(5)</td><td>14</td><td>Staffing ratio. Counts a qualified student toward mandatory session staffing</td><td class="amd">AMENDED</td></tr>
@@ -912,18 +995,20 @@ ADDENDA = """
 </table>
 
 <h2 class="addendum">Addendum B <span class="ttl">Proposed new provisions</span></h2>
-<p class="intro">Ten provisions in this draft do not exist in the rule as published. Each is listed with what it does,
-what it depends on, and whether it can be dropped without breaking anything else.</p>
+<p class="intro">Nine provisions in this draft do not exist in the rule as published, and one more was drafted and
+then withdrawn. Each is listed with what it does, what it depends on, and whether it can be dropped without breaking
+anything else. The withdrawn one is kept on the page rather than deleted, so that the decision is visible and can be
+reversed by asking.</p>
 <table class="dep">
 <tr><th>Proposed provision</th><th>What it does</th><th>Depends on</th><th>If dropped</th></tr>
-<tr><td>7.35.3.14 D</td><td>Authorizes a training permittee to possess and administer under direct on-site supervision</td><td>7.35.3.19 H</td><td class="flag">The practicum stays unlawful. This and 7.35.3.19 H stand or fall together</td></tr>
+<tr><td>7.35.3.14 D</td><td>Authorizes a training permittee to possess and administer under direct on-site supervision</td><td>7.35.3.19 G</td><td class="flag">The practicum stays unlawful. This and 7.35.3.19 H stand or fall together</td></tr>
 <tr><td>7.35.3.18 H</td><td>States the 84-hour module total in one place, with a didactic floor of 79 inside it</td><td>7.35.3.18 A, C, D, E</td><td>Hour figures survive module by module; no total is stated anywhere</td></tr>
 <tr><td>7.35.3.18 I</td><td>90-day deadline for the department to publish the New Mexico module, and relief for applicants meanwhile</td><td>7.35.3.18 A</td><td class="flag">Every certification pathway stays gated on a module with no delivery date</td></tr>
-<tr><td>7.35.3.19 D</td><td>Staged practicum sequence, as minimums rather than blocks</td><td>7.35.3.19 H, 7.35.3.29</td><td>Practicum hours and patient minimums survive; the risk gradient is lost</td></tr>
-<tr><td>7.35.3.19 F</td><td>Registers practicum supervisors and requires the department to publish a list</td><td>7.35.3.19 E</td><td>Severable. 7.35.3.19 E can stand with vetting left to the department</td></tr>
-<tr><td>7.35.3.19 H</td><td>Creates the training permit</td><td>7.35.3.14 D</td><td class="flag">The practicum stays unlawful. See 7.35.3.14 D</td></tr>
-<tr><td>7.35.3.19 I</td><td>20 consultation hours with two presented cases and a departmental evaluation form</td><td>7.35.3.17 A for the credit</td><td>7.35.3.17 A survives at 10 hours with no requirement to have seen a client</td></tr>
-<tr><td>7.35.3.19 J</td><td>End-of-life checkpoint before unsupervised end-of-life practice</td><td>7.35.3.19 I</td><td>Severable. No end-of-life competency gate remains</td></tr>
+<tr><td>7.35.3.19 D</td><td>Staged practicum sequence, as minimums rather than blocks</td><td>7.35.3.19 G, 7.35.3.29</td><td>Practicum hours and patient minimums survive; the risk gradient is lost</td></tr>
+<tr><td class="flag"><b>7.35.3.19 F, WITHDRAWN</b></td><td class="flag">Would have registered practicum supervisors, set a one-year experience floor, and required the department to publish a list of supervisors and available sites. <b>Withdrawn from this draft at v4.</b> The one-year floor, the registration scheme and the published list appear in no source: not in the July 17 recommendation, not in either July 17 transcript, and not in the rule as published. They were written to make Subsection E workable and are therefore invention. Subsection E, which does come from Metz at page 4, stands without them and leaves vetting where the rule already leaves it, with the department. <b>If the committee wants a supervisor provision, say so and it goes back in as a new Subsection F before the present F.</b> The underlying problem it addressed is real and is on the record: "the current draft requires that all hours be held in an approved healing center, which I think can potentially be a bottleneck for rural trainees", and the open question "who is going to vet site supervisors" was left to the committee by Metz at page 6.</td><td class="flag">Was 7.35.3.19 E</td><td class="flag">Withdrawn. Nothing else depends on it</td></tr>
+<tr><td>7.35.3.19 G</td><td>Creates the training permit</td><td>7.35.3.14 D</td><td class="flag">The practicum stays unlawful. See 7.35.3.14 D</td></tr>
+<tr><td>7.35.3.19 H</td><td>20 consultation hours with two presented cases and a departmental evaluation form</td><td>7.35.3.17 A for the credit</td><td>7.35.3.17 A survives at 10 hours with no requirement to have seen a client</td></tr>
+<tr><td>7.35.3.19 I</td><td>End-of-life checkpoint before unsupervised end-of-life practice</td><td>7.35.3.19 H</td><td>Severable. No end-of-life competency gate remains</td></tr>
 <tr><td>7.35.3.20 M</td><td>Creates the designation that 7.35.3.14 C requires</td><td>7.35.3.14 C</td><td class="flag">7.35.3.14 C keeps pointing at a registration that does not exist</td></tr>
 <tr><td>7.35.3.29</td><td>Practicum with participants who are not qualified patients</td><td>Statutory change</td><td>Severable. 7.35.3.19 D(1) falls to its second limb and stage one becomes observation</td></tr>
 </table>
@@ -952,6 +1037,62 @@ facilitator total is 150 on both readings and the module alone rises by 44, so a
 clears it. The decision is only about the practitioner number, and only about whether it matters to be safe against
 reading 2.</p>
 
+<h2 class="addendum">Addendum D <span class="ttl">Definitions that need to be updated, and where</span></h2>
+<p class="intro">Not proposed here and not for the August 28 hearing draft in this document. Recorded because it
+affects every provision in it, and because it cannot be fixed inside Part 3. 7.35.3.7, page 1, provides in full:
+"The definitions in 7.35.2.7 NMAC apply to this part." 7.35.2 NMAC was adopted effective June 23, 2026.</p>
+<table class="dep">
+<tr><th>Term used in Part 3</th><th>Defined in 7.35.2.7?</th><th>What 7.35.2.7 has instead</th><th>Consequence</th></tr>
+<tr><td><b>Facilitator</b></td><td class="bad">No. Appears zero times in 7.35.2 NMAC</td><td>"Guide" an individual who has completed training and education approved by the department to be able to assist practitioners during the administration sessions and who has been registered with the department</td><td class="flag">Every facilitator provision in Part 3 rests on an undefined term. A guide holds no professional license, so a facilitator is not a "clinician" under Section 3(B) of the Act, while 7.35.3.14 B authorizes facilitators to possess and provide</td></tr>
+<tr><td><b>Healing center</b></td><td class="bad">No</td><td>"Approved location" means a location approved by the department for psilocybin administration sessions</td><td class="flag">Healing centers are certified, inspected and regulated throughout Part 3 with no definition</td></tr>
+<tr><td><b>Certifying clinician</b></td><td class="bad">No</td><td>"Clinician" means an approved health care provider licensed in New Mexico who holds a certification from the department to provide medical services to qualified patients</td><td>Probably the same role renamed. Should be confirmed rather than assumed</td></tr>
+<tr><td><b>Student</b></td><td class="bad">No</td><td>Nothing</td><td class="flag">Carries consequence at 7.35.3.19, 7.35.3.20 D and 7.35.3.20 H(5)</td></tr>
+<tr><td>Practitioner</td><td class="ok">Yes</td><td>"Practitioner" means an individual who is a licensed healthcare professional who is certified by the department to provide medical psilocybin integrative therapy, supervise guides, and who has completed department required trainings</td><td class="ok">Carries the same licensure predicate as the Act's "clinician". 7.35.3.14 A is on solid ground</td></tr>
+<tr><td>Qualified patient, approved location, administration session, medical services</td><td class="ok">Yes</td><td>All present and consistent with the Act</td><td class="ok">No action</td></tr>
+</table>
+<p class="intro" style="border:0;padding-left:0">Two ways to fix it, both amendments outside this document: amend
+7.35.2.7 to define facilitator, healing center, certifying clinician and student; or conform Part 3 to the terms
+7.35.2.7 already defines. The first is cleaner and is what this drafting assumes. Either way it needs settling
+before August 28, and it is a terminology pass across all 19 pages rather than a change to any one provision.</p>
+
+<h2 class="addendum">Addendum E <span class="ttl">The permit title, laid out for decision</span></h2>
+<p class="intro">Recommendation 1 of the July 17 document proposes retitling "Practitioner" as "Licensed Provider".
+This draft keeps "practitioner" because the decision had not been made. The title is held as a variable in the source,
+so changing it is one command and one rebuild. What follows is what the decision does and does not reach.</p>
+<table class="dep">
+<tr><th>Question</th><th>Answer</th><th>Basis</th></tr>
+<tr><td>Does the title change any hour count?</td><td class="ok">No</td><td>Every hour figure attaches to the permit type by a bare reference to it. Substituting a different word leaves every number unchanged</td></tr>
+<tr><td>Does the title change what the practicum is?</td><td class="ok">No</td><td>What the practicum is turns on the licensure predicate at 7.35.3.9 E(1), which already requires a practitioner applicant to hold a New Mexico professional license, and on facilitator scope at 7.35.3.13 B</td></tr>
+<tr><td>Is the proposed name accurate to the rule as it stands?</td><td class="ok">Yes</td><td>7.35.3.9 E(1) requires "Documentation of current professional license to practice in New Mexico (e.g. PSY, LSW, LCSW)". 7.35.2.7 defines practitioner as "a licensed healthcare professional". The permit is already a licensed-provider permit</td></tr>
+<tr><td>What does the change actually cost?</td><td>An amendment to 7.35.2.7 NMAC, which is a different part, plus a conforming pass over every occurrence in Part 3</td><td>7.35.3.7 imports the definitions from 7.35.2.7. The title cannot be changed inside Part 3 alone</td></tr>
+<tr><td>Is there a way the change could reach the practicum after all?</td><td class="flag">Only if it comes with an eligibility change</td><td>Metz describes the title as naming "a professional license permitting delivery of medical, counseling, mental health, or behavioral health care", which is wider than the examples at 7.35.3.9 E(1). Widening that list would change who is standing in the practicum, though still not what it contains</td></tr>
+</table>
+<p class="intro" style="border:0;padding-left:0"><b>The test.</b> If a proposed retitle comes with no amendment to
+7.35.3.9 E(1), it is a rename and nothing more, and nothing in this document changes. If it comes with one, the
+eligibility question is the real proposal and should be argued as such.</p>
+
+<h2 class="addendum">Addendum F <span class="ttl">The remaining twenty-four sections</span></h2>
+<p class="intro">This document covers the practicum and the provisions it cannot function without. Part 3 has
+twenty-eight sections. The rest are inventoried but not drafted. This is the map, so that the scope of what is here
+is visible and the scope of what is not is not a surprise. Findings are from
+<i>analysis/july23-rule-concerns.md</i>, which records five blocking and twenty-three material findings across the
+whole part, and <i>analysis/july23-published-delta.md</i>, which maps ninety substantive changes between the July 9
+draft and the rule as published.</p>
+<table class="dep">
+<tr><th>Group</th><th>Sections</th><th>Known findings</th><th>Status</th></tr>
+<tr><td><b>0. Terminology</b></td><td>7.35.3.7, and 7.35.2.7 NMAC</td><td>Facilitator, healing center, certifying clinician and student are undefined</td><td class="flag">Should go first. It touches every other section, so drafting anything else before it settles means drafting twice. Addendum D</td></tr>
+<tr><td><b>1. The practicum chain</b></td><td>7.35.3.14, .18, .19, .20 H(5) and M, .29</td><td>B1, B2, B4, and material findings M1, M2, M13, M14</td><td class="amd">THIS DOCUMENT</td></tr>
+<tr><td>2. Educational programs</td><td>7.35.3.12, .15, .16, .17</td><td>B3 the evaluator conflict rule disqualifies the evaluators a program must hire; M5 the deferral expires the day it becomes available; M8 no deadline binds the department on instructor changes; M9 the denial grounds were deleted; M10 the evaluator standard may be unmeetable; M11 mentoring is unfunded and untied to certification; M12 the test-out price cap assumes per-module pricing</td><td>Adjacent to this document. Natural second</td></tr>
+<tr><td>3. Out-of-jurisdiction pathway</td><td>7.35.3.10</td><td>M3 the two 40-hour waivers disagree; M4 the 2027 waiver may cancel itself; M6 the approved list is empty at launch and populates only retroactively; M7 individuals must commission an evaluation only a program can commission</td><td>Not drafted</td></tr>
+<tr><td>4. Locations and oversight</td><td>7.35.3.11, .20, .21</td><td>B5 healing center staff authority hangs on a registration that does not exist; M16 outdoor locations need no AED while healing centers do; M18 the patient roster and the new patient-interview authority; M22 other approved locations have a 90-day term and no renewal path</td><td>Partly reached here at 7.35.3.20 H(5) and M</td></tr>
+<tr><td>5. Patients, applicants, process</td><td>7.35.3.8, .9, .13, .22, .23, .24, .25, .26, .27</td><td>M15 facilitator scope conflicts with the practicum and the ratios; M17 complainants lose confidentiality and must use certified mail; M19 the benefit-risk attestation; M20 renewals can lapse while pending; M21 the re-application clause reads as a deadline; M23 two review tracks with inconsistent scope; N5 a suspended certificant can be out of practice 135 days</td><td>Not drafted. Includes the controlled-substance number, which is out of scope by decision</td></tr>
+<tr><td>6. Mechanical</td><td>Throughout</td><td>N1 five section headings read 7.34.3 instead of 7.35.3; N2 two sections carry a real effective date while the rest carry placeholders; N3 a numbering gap at 7.35.3.9 D; N4 nine further drafting defects</td><td>Two of the five heading errors are corrected here. The rest are not</td></tr>
+</table>
+<p class="intro" style="border:0;padding-left:0">Suggested order if the whole part is taken on: terminology, then
+educational programs, then out-of-jurisdiction, then locations, then patients and process, with the mechanical items
+swept last in a single pass. Anything already settled here would be marked as handled in this document rather than
+redrafted.</p>
+
 <h2 class="addendum">Version history</h2>
 <table class="dep">
 <tr><th>Version</th><th>Date</th><th>What changed</th></tr>
@@ -969,7 +1110,7 @@ deck of the same date. July 17, 2026 transcripts, morning Advisory Board and aft
 both labeled &ldquo;UNOFFICIAL AUTO-GENERATED TRANSCRIPT. NO SPEAKER ATTRIBUTION.&rdquo;<br><br>
 <b>Reasoning and citations for every change in this document</b> are in the repository at <i>amendments/metz-crosswalk.md</i>,
 <i>amendments/7.35.3.18-19-redline.md</i>, and <i>amendments/blocking-defects.md</i>.<br><br>
-<b>Addenda.</b> A, the practicum dependency map. B, the proposed new provisions and what happens if each is dropped. C, the arithmetic behind the practitioner practicum figure.<br><br>
+<b>Addenda.</b> A, the practicum dependency map. B, the proposed new provisions, including one withdrawn. C, the arithmetic behind the practitioner practicum figure. D, definitions that need updating. E, the permit title laid out for decision. F, the remaining twenty-four sections.<br><br>
 <b>Status.</b> Internal drafting work. Not a filing, not submitted to the Department of Health, and not promulgated rule
 text.
 </div>

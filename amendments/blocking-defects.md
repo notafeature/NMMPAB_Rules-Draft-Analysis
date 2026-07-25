@@ -46,10 +46,10 @@ Section 5(D) protects presence and nothing more. That is exactly the reach of 7.
 
 So a practicum student who administers is protected only if the student is a "clinician" within Section 3(B), which requires both an approved health care provider licensed in New Mexico and a department permit. Under the published rule:
 
-- A {{PT}} student holds a New Mexico professional license, because 7.35.3.9 E(1), page 3, requires "Documentation of current professional license to practice in New Mexico (e.g. PSY, LSW, LCSW)". With the training permit proposed at 7.35.3.19 H, such a student would hold a department permit as well, and would have a colorable claim to fall within Section 3(B).
+- A {{PT}} student holds a New Mexico professional license, because 7.35.3.9 E(1), page 3, requires "Documentation of current professional license to practice in New Mexico (e.g. PSY, LSW, LCSW)". With the training permit proposed at 7.35.3.19 G, such a student would hold a department permit as well, and would have a colorable claim to fall within Section 3(B).
 - A facilitator student holds no license. 7.35.3.9 F, page 3, requires none. A training permit does not supply one.
 
-The training permit is therefore necessary but may not be sufficient for facilitator students. That is a question for counsel, not a drafting question, and it is the reason 7.35.3.19 H(3) confines the permittee's authority to supervised practicum work rather than granting a general authority.
+The training permit is therefore necessary but may not be sufficient for facilitator students. That is a question for counsel, not a drafting question, and it is the reason 7.35.3.19 G(3) confines the permittee's authority to supervised practicum work rather than granting a general authority.
 
 ### 3. 7.35.2.7 NMAC answers half of the question it raised, and opens a defect of its own
 
@@ -137,7 +137,7 @@ The need for a permit was also stated at the meeting by a committee participant,
 
 Redline key: **bold** is inserted, ~~strikethrough~~ is deleted.
 
-> ~~7.34.3.14~~ **7.35.3.14** AUTHORIZED POSSESSION, PURCHASE, OR SALE OF MEDICAL PSILOCYBIN BY {{PTS_UC}}, FACILITATORS, **TRAINING PERMITTEES,** HEALING CENTER OWNERS AND EMPLOYEES: Certification of a {{PT}}, facilitator, or healing center**, and issuance of a training permit under Subsection H of 7.35.3.19 NMAC,** shall enable {{PTS}}, facilitators, **training permittees,** and owners and employees of healing centers to do the following, in accordance with medical psilocybin program rules:
+> ~~7.34.3.14~~ **7.35.3.14** AUTHORIZED POSSESSION, PURCHASE, OR SALE OF MEDICAL PSILOCYBIN BY {{PTS_UC}}, FACILITATORS, **TRAINING PERMITTEES,** HEALING CENTER OWNERS AND EMPLOYEES: Certification of a {{PT}}, facilitator, or healing center**, and issuance of a training permit under Subsection G of 7.35.3.19 NMAC,** shall enable {{PTS}}, facilitators, **training permittees,** and owners and employees of healing centers to do the following, in accordance with medical psilocybin program rules:
 >
 > ~~(A)~~ **A.** {{PTS_C}}: {{PTS_C}} may purchase and possess medical psilocybin products obtained from permitted producers, and may sell or otherwise provide medical psilocybin products to qualified patients**, or to practicum participants in accordance with 7.35.3.29 NMAC,** during administration sessions conducted at a healing center location or other approved location. A {{PT}} may only sell or otherwise provide psilocybin products that are obtained from permitted producers.
 >
@@ -145,7 +145,7 @@ Redline key: **bold** is inserted, ~~strikethrough~~ is deleted.
 >
 > ~~(C)~~ **C.** Healing centers: Owners and employees of healing centers who are ~~registered with the department~~ **designated to the department by the healing center in accordance with Subsection M of 7.35.3.20 NMAC** may purchase medical psilocybin products from permitted producers, may possess medical psilocybin products, and may sell or otherwise administer those products to qualified patients in administration sessions conducted at the healing center or other approved locations, provided that such individuals are also designated to engage in each activity by the healing center. A healing center may only sell or otherwise provide psilocybin products that are obtained from permitted producers.
 >
-> **D. Training permittees: A student who holds a current training permit issued under Subsection H of 7.35.3.19 NMAC may possess medical psilocybin products, and may administer or otherwise provide those products to qualified patients, or to practicum participants in accordance with 7.35.3.29 NMAC, in administration sessions conducted at a healing center or other approved location, in each case only while under the direct, on-site supervision of a practicum supervisor registered under Subsection F of 7.35.3.19 NMAC, and only to the extent required by the practicum under 7.35.3.19 NMAC. A training permittee shall not purchase medical psilocybin products.**
+> **D. Training permittees: A student who holds a current training permit issued under Subsection G of 7.35.3.19 NMAC may possess medical psilocybin products, and may administer or otherwise provide those products to qualified patients, or to practicum participants in accordance with 7.35.3.29 NMAC, in administration sessions conducted at a healing center or other approved location, in each case only while under the direct, on-site supervision of a practicum supervisor registered under a practicum supervisor, and only to the extent required by the practicum under 7.35.3.19 NMAC. A training permittee shall not purchase medical psilocybin products.**
 
 Four notes on the drafting.
 
@@ -163,7 +163,7 @@ The permit is created at new 7.35.3.19 H. Full text is in `7.35.3.18-19-redline.
 
 ### 1.6 Proposed fix, part three: 7.35.3.20 (H)(5)
 
-> (5) Includes procedures to ensure that there are {{PTS}} and facilitators present at all times during an administration session with a minimum of one {{PT}} and one facilitator for individual patient sessions; and in group administration sessions a minimum of one {{PT}} for every eight patients and a minimum of one facilitator or qualified student for every two patients. For purposes of the foregoing provision, a student shall be deemed qualified if they ~~are registered with a certified educational program and they have completed at least 50 hours of their practicum~~ **hold a current training permit issued under Subsection H of 7.35.3.19 NMAC and have completed at least 50 hours of their practicum. Qualified students shall not fill more than half of the facilitator positions required by this paragraph in any administration session, and a session staffed in part by qualified students shall include at least one certified facilitator.** Exception: the department may waive or decrease this ratio if the department determines that the ratio specified presents a barrier for patients and that safety concerns are otherwise alleviated.
+> (5) Includes procedures to ensure that there are {{PTS}} and facilitators present at all times during an administration session with a minimum of one {{PT}} and one facilitator for individual patient sessions; and in group administration sessions a minimum of one {{PT}} for every eight patients and a minimum of one facilitator or qualified student for every two patients. For purposes of the foregoing provision, a student shall be deemed qualified if they ~~are registered with a certified educational program and they have completed at least 50 hours of their practicum~~ **hold a current training permit issued under Subsection G of 7.35.3.19 NMAC and have completed at least 50 hours of their practicum. Qualified students shall not fill more than half of the facilitator positions required by this paragraph in any administration session, and a session staffed in part by qualified students shall include at least one certified facilitator.** Exception: the department may waive or decrease this ratio if the department determines that the ratio specified presents a barrier for patients and that safety concerns are otherwise alleviated.
 
 Two changes.
 
@@ -175,7 +175,7 @@ The section-number correction from 7.34.3.20 to 7.35.3.20 applies to this sectio
 
 ### 1.7 Conforming amendment outside this scope
 
-7.35.3.22, page 15, addresses "the qualified patient or certificant". 7.35.3.19 H(5) as drafted states that a training permittee is a certificant for purposes of the rule, which should be sufficient. An express addition to 7.35.3.22 would remove any doubt. Flagged, not drafted. See `metz-crosswalk.md`, flag F2.
+7.35.3.22, page 15, addresses "the qualified patient or certificant". 7.35.3.19 G(5) as drafted states that a training permittee is a certificant for purposes of the rule, which should be sufficient. An express addition to 7.35.3.22 would remove any doubt. Flagged, not drafted. See `metz-crosswalk.md`, flag F2.
 
 ---
 
@@ -235,7 +235,7 @@ The only relief in the published rule is two discretionary waivers with no crite
 >
 > **B. Practicum participant: A practicum participant is an individual who: (1) is 21 years of age or older; (2) is not a qualified patient and is not enrolled in the medical psilocybin program; (3) volunteers to take part in a practicum session, pays no fee for the session and receives no compensation for taking part; (4) has been screened for contraindications by a certifying clinician, or by a {{PT}} acting within the scope of the {{PT}}'s professional license, using criteria approved by the department; and (5) has given written informed consent on a form approved by the department, which shall state that the session is a training session, that the participant is not receiving medical psilocybin services for a qualifying condition, and that the participant may withdraw at any time.**
 >
-> **C. Conduct of practicum sessions: A practicum session under this section shall: (1) take place at a healing center or other approved location; (2) be supervised on site by a practicum supervisor registered under Subsection F of 7.35.3.19 NMAC; (3) meet the staffing ratios in Paragraph (5) of Subsection H of 7.35.3.20 NMAC, counting practicum participants as patients for that purpose; (4) include a preparation session and an integration session for each practicum participant; and (5) use only medical psilocybin products obtained from permitted producers.**
+> **C. Conduct of practicum sessions: A practicum session under this section shall: (1) take place at a healing center or other approved location; (2) be supervised on site by a practicum supervisor registered under a practicum supervisor; (3) meet the staffing ratios in Paragraph (5) of Subsection H of 7.35.3.20 NMAC, counting practicum participants as patients for that purpose; (4) include a preparation session and an integration session for each practicum participant; and (5) use only medical psilocybin products obtained from permitted producers.**
 >
 > **D. Records and reporting: A healing center or registrant of another approved location shall record practicum sessions in the daily log required by Subsection E of 7.35.3.20 NMAC, and shall report any potential adverse health event arising from a practicum session in accordance with Subsection L of 7.35.3.20 NMAC. An educational program shall record practicum sessions under this section in the records required by Subsection C of 7.35.3.17 NMAC.**
 >
@@ -273,10 +273,10 @@ Subsection A obliges the program to engage the team, which means the program pay
 
 | # | Concerns-inventory ID | Provision | In this drafting scope | Where the fix is |
 |---|---|---|---|---|
-| 1 | B1 | 7.35.3.14, 7.35.3.19 A, 7.35.3.20 H(5) | Yes | This file, sections 1.4 and 1.6; `7.35.3.18-19-redline.md` Subsections D, F, H |
+| 1 | B1 | 7.35.3.14, 7.35.3.19 A, 7.35.3.20 H(5) | Yes | This file, sections 1.4 and 1.6; `7.35.3.18-19-redline.md` Subsections D and G |
 | 2 | B5 | 7.35.3.14 (C) | Partly | This file, section 1.4 and Defect 2 |
 | 3 | B2 | 7.35.3.18 A | Yes | `7.35.3.18-19-redline.md` Subsections A and I |
-| 4 | B4 | 7.35.3.19 A, D, F | Yes, with the statutory half drafted contingently | `7.35.3.18-19-redline.md` Subsections E, F, K; new section 7.35.3.29 in this file |
+| 4 | B4 | 7.35.3.19 A, D, F | Yes, with the statutory half drafted contingently | `7.35.3.18-19-redline.md` Subsections E and J; new section 7.35.3.29 in this file |
 | 5 | B3 | 7.35.3.16 A, C(2)(b) | No | Fix stated in Defect 5, not drafted |
 
 ---
@@ -285,7 +285,7 @@ Subsection A obliges the program to engage the team, which means the program pay
 
 If the amendments are taken in pieces, this is the order in which they have to be taken for each piece to have anything to operate on.
 
-1. **7.35.3.14 D and 7.35.3.19 H, together.** Neither works alone. 7.35.3.14 D authorizes a permit that 7.35.3.19 H creates; 7.35.3.19 H issues a permit whose content is stated in 7.35.3.14 D.
+1. **7.35.3.14 D and 7.35.3.19 G, together.** Neither works alone. 7.35.3.14 D authorizes a permit that 7.35.3.19 G creates; 7.35.3.19 H issues a permit whose content is stated in 7.35.3.14 D.
 2. **7.35.3.20 H(5).** Depends on 1. Without the permit, substituting "holds a current training permit" for the 50-hour test would empty the paragraph.
 3. **7.35.3.19 D, the practicum sequence.** Depends on 1, because stage two requires a training permit.
 4. **7.35.3.19 E and F, location and supervisors.** Independent of 1, and independently useful.
