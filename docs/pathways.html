@@ -189,6 +189,8 @@
   .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
   .sitefoot p b{color:var(--text-muted); font-weight:650;}
   .sitefoot a{color:var(--accent);}
+  .step .metz{margin:9px 0 0; padding:9px 11px; background:var(--surface-2); border-left:3px solid var(--accent-2); border-radius:0 8px 8px 0; font-size:13px; color:var(--text); line-height:1.5;}
+  .step .metz .mz{display:block; font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-2); margin-bottom:3px;}
 /* provenance block */
   .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
   .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
@@ -280,6 +282,7 @@
             <a href="pathways.html" data-nav="pathways">Provider routes<span class="sub">Routes to each permit by starting license</span></a>
             <a href="eligibility.html" data-nav="eligibility">Who can qualify<span class="sub">Which licenses map to which permit</span></a>
             <a href="hours.html" data-nav="hours">Training hours<span class="sub">Didactic, practicum, and specialization</span></a>
+            <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
             <a href="cs-number.html" data-nav="cs-number">CS number<span class="sub">The certifying-clinician access point</span></a>
           </div>
         </details>
@@ -312,7 +315,8 @@
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
       <h1>Routes to a provider permit</h1>
-      <p class="updated"><b>Updated July 25, 2026.</b> Core routes reflect the <b>July 23 published proposed rule</b>. The open steps note where an item is still moving. A <a href="#specialization">section below</a> adds specialized-domain options.</p>
+      <p class="updated"><b>Updated July 25, 2026.</b></p>
+      <p class="lede">Pick a starting license and follow every step to each permit, as the published rule requires them. Where the committee recommendation would change a step, the change is shown directly beneath it.</p>
       <p class="lede">Pick where you start below, and see your route to each of the three permits: <b>Facilitator, Practitioner, Certifying Clinician.</b></p>
       <div class="legend">
         <div class="lgrow"><span class="fl set">&#9679; Settled</span> In the published rule, not challenged on the record.</div>
@@ -330,59 +334,6 @@
 
     <div id="panel"></div>
 
-    <section class="optzone" id="specialization" aria-label="Options raised for consideration, from the July 16 discussion">
-      <div class="optbanner">
-        <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
-        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the published rule, not settled requirements, and not this site's recommendation. The routes above are unchanged.</p>
-      </div>
-
-      <div class="opthead">
-        <h2>An optional specialized-domain route, layered on a core permit</h2>
-        <p>Members discussed whether a provider who reaches one of the three core permits could then add a route for a specific qualifying condition. End-of-life care led the discussion because it is furthest along. The committee treats it as one of four qualifying-condition domains, each the same shape.</p>
-      </div>
-
-      <div class="optgrid" id="domaintiles" role="group" aria-label="Qualifying-condition domains">
-        <button type="button" class="optcard domtile lead sel" data-dom="eol" aria-pressed="true">
-          <span class="odn">End-of-life care <span class="olead">Furthest along</span></span>
-          <span class="ol">A proposed adjunct curriculum was presented July 16.</span>
-          <span class="rgo">View details &darr;</span>
-        </button>
-        <button type="button" class="optcard domtile" data-dom="ptsd" aria-pressed="false">
-          <span class="odn">PTSD</span>
-          <span class="ol">A qualifying condition in New Mexico.</span>
-          <span class="rgo">View details &darr;</span>
-        </button>
-        <button type="button" class="optcard domtile" data-dom="sud" aria-pressed="false">
-          <span class="odn">Substance use disorders</span>
-          <span class="ol">A qualifying condition in New Mexico.</span>
-          <span class="rgo">View details &darr;</span>
-        </button>
-        <button type="button" class="optcard domtile" data-dom="trd" aria-pressed="false">
-          <span class="odn">Treatment-resistant depression</span>
-          <span class="ol">A qualifying condition in New Mexico.</span>
-          <span class="rgo">View details &darr;</span>
-        </button>
-      </div>
-      <div class="optdetail" id="domaindetail" aria-live="polite"></div>
-
-      <div class="optbox">
-        <h3>An overlay on the three roles, not a fourth permit <span class="optmark">Discussed July 16</span></h3>
-        <p>The discussion framed a specialization as an endorsement carried on top of an existing role, not a new license. The same end-of-life competency could sit with a Clinician, a Practitioner, or a Guide or Facilitator, depending on who carries it.</p>
-        <p class="optpos"><b>Dom, Department of Health:</b> creating diagnosis-specific licensure is logistically difficult, since a group session with more than one qualifying condition would require every facilitator to hold every matching certification. The department's stated preference was endorsements and best-practice recommendations rather than a specialization mandate.</p>
-        <p class="optpos"><b>Larry Leeman:</b> pointed to continuity-of-care models, including death doulas who stay through the journey and a Space Attendant who provides continuity, as an example of why the competency travels with the role rather than defining a separate license.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. How specialization sits on core eligibility is on <a href="eligibility.html#specialization">Who can qualify</a>.</p>
-      </div>
-
-      <div class="optbox">
-        <h3>The open structural question: in the core, or an add-on? <span class="optmark">Discussed July 16</span></h3>
-        <p>Whether specialization hours are written into the core requirements for everyone, or layered on as a separate add-on, was left open.</p>
-        <p class="optpos"><b>Larry Leeman:</b> include the hours in New Mexico's core program, given that end-of-life is one of four qualifying conditions in the state.</p>
-        <p class="optpos"><b>Christine and others:</b> offer it as an adjunct add-on, noting that end-of-life work calls for a disposition not suited to every practitioner.</p>
-        <p class="optpos"><b>Gregory Evans:</b> keep the core robust and specializations external as add-ons, while considering baking the baseline of all four qualifying-condition domains into the general curriculum.</p>
-        <p class="optpos"><b>Jamie:</b> existential and spiritual themes run through all psilocybin work, not only end-of-life, so a baseline competency there fits every facilitator.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026. The hour ranges and the addendum framing are on <a href="hours.html#specialization">Training hours</a>.</p>
-      </div>
-    </section>
   </div>
 
   <footer>
@@ -421,6 +372,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> Rebuilt. The page now says what it is in a lede, which it did not. Every step that the committee recommendation would change now shows the change directly beneath it, so a reader sees the published requirement and the proposed one together: 84 didactic hours in place of 35, a 62 or 72 hour scaffolded practicum in place of 100 or 120, supervisory hours from 20 to 10, and mentoring replaced by consultation with two presented cases. The certifying clinician route carries no such note, because the recommendation addresses facilitators and practitioners only and nothing on that route changes. The specialized-domain material from July 16 moved to its own page, and the JavaScript that rendered it was removed rather than left orphaned.</li>
           <li><b>July 25, 2026</b> Reviewed and brought current to the July 23 published rule. All route steps re-cited: the citation helper and 25 step links pointed at the superseded July 9 draft and now point at the published rule with section numbers. The practitioner core module was corrected from 25 hours to 30. "Administration and same-day therapy sessions" corrected to "administration day sessions". The status legend said the committee "meets 1 PM today" and now states that the hours were published unchanged on July 23 with the committee recommendation in progress. The reciprocity waiver step read December 31, 2026; the published rule reads December 31, 2027. The note about the draft's internal inconsistency on certifying-clinician reciprocity was rechecked against the published text, where reciprocity now sits inside 7.35.3.10, and the inconsistency persists.</li>
           </ul>
         </div>
@@ -446,19 +398,19 @@
     fac:{name:'Facilitator', dot:'#3E8E6E', steps:[
       {t:"Apply for certification. <b>No professional license required.</b>", s:'set', src:L('published rule 7.35.3.10, p.4',J7+'4')},
       {t:"Certifications: <b>HIPAA, plus BLS or (CPR and AED)</b>. Attestation you are not a registered sex offender.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('p.9',J7+'9')},
-      {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')+' &middot; '+L('p.7',J7+'7')},
-      {t:"Practicum at a healing center or other approved location. Published rule: <b>100 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12')},
-      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10')},
+      {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')+' &middot; '+L('p.7',J7+'7'), metz:"84 didactic hours in place of 35, taught as ten named subject areas. The New Mexico module stays required and stays untestable-out-of."},
+      {t:"Practicum at a healing center or other approved location. Published rule: <b>100 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"About 62 hours in four scaffolded steps: roughly 30 hours with well participants, 20 as second chair on two low-acuity cases, and 12 of group practicum. A training permit issues after step one."},
+      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 to 30 hours of supervision or consultation during the training permit period, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
       {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
       {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
     ]},
     prac:{name:'Practitioner', dot:'#5A4A88', steps:[
       {t:"Hold a current NM professional license (for example PSY, LSW, LCSW).", s:'set', why:"The published rule names license examples; it does not describe a therapy or counseling scope.", src:L('published rule 7.35.3.9, p.2',J7+'2')},
       {t:"Certifications and attestation, same as Facilitator.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('pp.2-3',J7+'2')},
-      {t:"Approved <b>Practitioner training</b>: the 30-hour core module plus a 5-hour module on psychedelic and psilocybin therapeutic approaches.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')},
-      {t:"Practicum at a healing center or other approved location. Published rule: <b>120 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12')},
-      {t:"Includes an additional <b>20 hours supervising facilitators</b> during administration day sessions.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make this optional at the June 25 hearing. The department kept it; it remains in the published rule.", src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('hearing, 6/25','index.html#practicum')},
-      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10')},
+      {t:"Approved <b>Practitioner training</b>: the 30-hour core module plus a 5-hour module on psychedelic and psilocybin therapeutic approaches.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11'), metz:"84 didactic hours in place of 35, on one standard shared with facilitators rather than tiered by role."},
+      {t:"Practicum at a healing center or other approved location. Published rule: <b>120 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"About 72 hours: the facilitator sequence plus 10 hours leading sessions with a licensed provider as second chair."},
+      {t:"Includes an additional <b>20 hours supervising facilitators</b> during administration day sessions.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make this optional at the June 25 hearing. The department kept it; it remains in the published rule.", src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('hearing, 6/25','index.html#practicum'), metz:"Reduced to 10 hours and folded into step four of the scaffolded practicum."},
+      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 to 30 hours of supervision or consultation during the training permit period, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
       {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
       {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
     ]},
@@ -533,7 +485,8 @@
     if(step.s==='open') flag='<span class="flag open">&#9670; '+step.flag+'</span>';
     if(step.s==='chal') flag='<span class="flag chal">&#9660; '+step.flag+'</span>';
     var why= step.why?'<p class="why">'+step.why+'</p>':'';
-    return '<li class="step '+cls+'"><span class="num"></span><div class="card"><p class="txt">'+step.t+'</p>'+flag+why+'<p class="src">'+step.src+'</p></div></li>';
+    var metz= step.metz?'<p class="metz"><span class="mz">If the committee recommendation is adopted</span>'+step.metz+'</p>':'';
+    return '<li class="step '+cls+'"><span class="num"></span><div class="card"><p class="txt">'+step.t+'</p>'+flag+why+metz+'<p class="src">'+(step.src||'')+'</p></div></li>';
   }
   function journey(key){return '<ol class="steps">'+PERMITS[key].steps.map(stepHTML).join('')+'</ol>';}
 
@@ -592,37 +545,7 @@
 (function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
 </script>
 <script>
-(function(){
-  "use strict";
-  var DOM={
-    eol:{t:'End-of-life care', flag:'<span class="ddflag disc">Discussed July 16</span>',
-      body:'Furthest along in the record. A proposed adjunct curriculum was presented at the July 16 End-of-Life Care committee meeting: roughly nine sessions, 15 to 20 hours, offered as a proposal under discussion. See the proposed hours and session outline on <a href="hours.html#specialization">Training hours</a>, and how the layer sits on core eligibility on <a href="eligibility.html#specialization">Who can qualify</a>.'},
-    ptsd:{t:'PTSD', flag:'<span class="ddflag none">Not discussed yet</span>',
-      body:'PTSD is one of New Mexico’s four qualifying conditions, shown here as a parallel option. The committee has not taken up a PTSD specialization, so there are no pathway details yet.'},
-    sud:{t:'Substance use disorders', flag:'<span class="ddflag none">Not discussed yet</span>',
-      body:'A qualifying condition in New Mexico, shown here as a parallel option. The committee has not taken up a substance use disorder specialization, so there are no pathway details yet.'},
-    trd:{t:'Treatment-resistant depression', flag:'<span class="ddflag none">Not discussed yet</span>',
-      body:'A qualifying condition in New Mexico, shown here as a parallel option. The committee has not taken up a treatment-resistant depression specialization, so there are no pathway details yet.'}
-  };
-  var tiles=document.getElementById('domaintiles'), detail=document.getElementById('domaindetail');
-  if(!tiles||!detail) return;
-  var btns=tiles.querySelectorAll('.domtile');
-  function show(key){
-    var d=DOM[key]; if(!d) return;
-    detail.innerHTML='<p class="ddh">'+d.t+' '+d.flag+'</p><p>'+d.body+'</p>';
-    for(var i=0;i<btns.length;i++){
-      var on=btns[i].getAttribute('data-dom')===key;
-      btns[i].classList.toggle('sel',on);
-      btns[i].setAttribute('aria-pressed',on?'true':'false');
-      var go=btns[i].querySelector('.rgo');
-      if(go) go.innerHTML=on?'Shown below':'View details &darr;';
-    }
-  }
-  for(var i=0;i<btns.length;i++){(function(b){
-    b.addEventListener('click',function(){show(b.getAttribute('data-dom'));});
-  })(btns[i]);}
-  show('eol');
-})();
+
 </script>
 <script id="navjs">
 (function(){
