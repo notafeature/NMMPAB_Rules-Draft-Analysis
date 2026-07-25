@@ -316,8 +316,7 @@
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
       <h1>Routes to a provider permit</h1>
       <p class="updated"><b>Updated July 25, 2026.</b></p>
-      <p class="lede">Pick a starting license and follow every step to each permit, as the published rule requires them. Where the committee recommendation would change a step, the change is shown directly beneath it.</p>
-      <p class="lede">Pick where you start below, and see your route to each of the three permits: <b>Facilitator, Practitioner, Certifying Clinician.</b></p>
+      <p class="lede">Pick where you start below and follow every step to each of the three permits, <b>certifying clinician, practitioner, facilitator</b>, as the published rule requires them. Where the committee recommendation would change a step, the change is shown directly beneath it.</p>
       <div class="legend">
         <div class="lgrow"><span class="fl set">&#9679; Settled</span> In the published rule, not challenged on the record.</div>
         <div class="lgrow"><span class="fl open">&#9670; Open</span> Still moving as of July 25: the practicum and didactic hours, deferred to the Training and Education Committee by a 7-0 board vote on July 17 and published unchanged on July 23. The committee recommendation is in progress.</div>
@@ -395,25 +394,6 @@
   function L(t,href){return '<a href="'+href+'" target="_blank">'+t+'</a>';}
 
   var PERMITS={
-    fac:{name:'Facilitator', dot:'#3E8E6E', steps:[
-      {t:"Apply for certification. <b>No professional license required.</b>", s:'set', src:L('published rule 7.35.3.10, p.4',J7+'4')},
-      {t:"Certifications: <b>HIPAA, plus BLS or (CPR and AED)</b>. Attestation you are not a registered sex offender.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('p.9',J7+'9')},
-      {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')+' &middot; '+L('p.7',J7+'7'), metz:"84 didactic hours in place of 35, taught as ten named subject areas. The New Mexico module stays required and stays untestable-out-of."},
-      {t:"Practicum at a healing center or other approved location. Published rule: <b>100 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"About 62 hours in four scaffolded steps: roughly 30 hours with well participants, 20 as second chair on two low-acuity cases, and 12 of group practicum. A training permit issues after step one."},
-      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 to 30 hours of supervision or consultation during the training permit period, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
-      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
-      {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
-    ]},
-    prac:{name:'Practitioner', dot:'#5A4A88', steps:[
-      {t:"Hold a current NM professional license (for example PSY, LSW, LCSW).", s:'set', why:"The published rule names license examples; it does not describe a therapy or counseling scope.", src:L('published rule 7.35.3.9, p.2',J7+'2')},
-      {t:"Certifications and attestation, same as Facilitator.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('pp.2-3',J7+'2')},
-      {t:"Approved <b>Practitioner training</b>: the 30-hour core module plus a 5-hour module on psychedelic and psilocybin therapeutic approaches.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11'), metz:"84 didactic hours in place of 35, on one standard shared with facilitators rather than tiered by role."},
-      {t:"Practicum at a healing center or other approved location. Published rule: <b>120 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"About 72 hours: the facilitator sequence plus 10 hours leading sessions with a licensed provider as second chair."},
-      {t:"Includes an additional <b>20 hours supervising facilitators</b> during administration day sessions.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make this optional at the June 25 hearing. The department kept it; it remains in the published rule.", src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('hearing, 6/25','index.html#practicum'), metz:"Reduced to 10 hours and folded into step four of the scaffolded practicum."},
-      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 to 30 hours of supervision or consultation during the training permit period, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
-      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
-      {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
-    ]},
     dc:{name:'Certifying Clinician', dot:'#256E8C', steps:[
       {t:"Hold a current NM professional license (for example MD, NP).", s:'set', why:"The published rule names license examples; it does not describe a diagnosing scope.", src:L('published rule 7.35.3.9, p.2',J7+'2')},
       {t:"Approved <b>Certifying Clinician training</b>: an 8-hour module covering pharmacology, 42 CFR Part 2, diagnosis of qualifying conditions, medical clearance, monitoring, and data-collection requirements.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')},
@@ -428,21 +408,40 @@
       {t:"Apply by the waiver deadline for a reduced practicum: at least <b>40 hours of contact time</b> instead of the full practicum.", s:'set', why:"The published rule sets this deadline at December 31, 2027. The July 9 draft still read December 31, 2026; the board moved it without objection that day and the published text now carries it. Board chair Ian Dunn noted that date is a legislative backstop, not the target date.", src:L('published rule 7.35.3.10, p.4',J7+'4')+' &middot; '+L('July 9 meeting transcript',T7)},
       {t:"NMDOH may further reduce the practicum requirement at its discretion, to build the program's initial infrastructure.", s:'set', why:"The published rule sets no end date for this discretion, at 7.35.3.19 (F). The related waiver deadline is December 31, 2027.", src:L('published rule 7.35.3.10, p.4',J7+'4')+' &middot; '+L('July 9 meeting transcript',T7)},
       {t:"Apply as Practitioner or Facilitator. The reciprocity application packet lists items for those two permits only.", s:'open', flag:'Unresolved', why:"The published rule is inconsistent here. Reciprocity now sits inside 7.35.3.10, which names certifying clinicians as eligible to apply on the basis of a program from another jurisdiction, while the application items listed there are for practitioners and facilitators.", src:L('published rule 7.35.3.10 and 7.35.3.19',J7+'6')+' &middot; '+L('p.9',J7+'9')}
+    ]},
+    prac:{name:'Practitioner', dot:'#5A4A88', steps:[
+      {t:"Hold a current NM professional license (for example PSY, LSW, LCSW).", s:'set', why:"The published rule names license examples; it does not describe a therapy or counseling scope.", src:L('published rule 7.35.3.9, p.2',J7+'2')},
+      {t:"Certifications and attestation, same as Facilitator.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('pp.2-3',J7+'2')},
+      {t:"Approved <b>Practitioner training</b>: the 30-hour core module plus a 5-hour module on psychedelic and psilocybin therapeutic approaches.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11'), metz:"84 didactic hours in place of 35, on one standard shared with facilitators rather than tiered by role."},
+      {t:"Practicum at a healing center or other approved location. Published rule: <b>120 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"About 72 hours: the facilitator sequence plus 10 hours leading sessions with a licensed provider as second chair."},
+      {t:"Includes an additional <b>20 hours supervising facilitators</b> during administration day sessions.", s:'chal', flag:'Contested', why:"Dr. Ann Metz asked to make this optional at the June 25 hearing. The department kept it; it remains in the published rule.", src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('hearing, 6/25','index.html#practicum'), metz:"Reduced to 10 hours and folded into step four of the scaffolded practicum."},
+      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 to 30 hours of supervision or consultation during the training permit period, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
+      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
+      {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
+    ]},
+    fac:{name:'Facilitator', dot:'#3E8E6E', steps:[
+      {t:"Apply for certification. <b>No professional license required.</b>", s:'set', src:L('published rule 7.35.3.10, p.4',J7+'4')},
+      {t:"Certifications: <b>HIPAA, plus BLS or (CPR and AED)</b>. Attestation you are not a registered sex offender.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('p.9',J7+'9')},
+      {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')+' &middot; '+L('p.7',J7+'7'), metz:"84 didactic hours in place of 35, taught as ten named subject areas. The New Mexico module stays required and stays untestable-out-of."},
+      {t:"Practicum at a healing center or other approved location. Published rule: <b>100 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee meets July 17 at 1 PM to develop updated standards.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"About 62 hours in four scaffolded steps: roughly 30 hours with well participants, 20 as second chair on two low-acuity cases, and 12 of group practicum. A training permit issues after step one."},
+      {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 to 30 hours of supervision or consultation during the training permit period, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
+      {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
+      {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
     ]}
   };
 
   var STARTS=[
     {id:'none', title:"No health license", ex:"Community, peer, lived experience, chaplain, hospice, spiritual care, traditional healer.",
      routes:[
-       {permit:'fac', state:'open', line:"No professional license required."},
+       {permit:'dc', state:'nopath', line:"Needs a NM professional license."},
        {permit:'prac', state:'nopath', line:"Needs a NM professional license."},
-       {permit:'dc', state:'nopath', line:"Needs a NM professional license."}
+       {permit:'fac', state:'open', line:"No professional license required."}
      ]},
     {id:'therapy', title:"Therapy or counseling license", ex:"Psychologist, LCSW, LPCC, LMFT, psychiatric NP.",
      routes:[
+       {permit:'dc', state:'part', line:"Only with a NM Controlled Substance number. That requirement is the open July 9 question, not your license scope."},
        {permit:'prac', state:'open', line:"Direct route."},
-       {permit:'fac', state:'open', line:"Also open. No license needed for this one."},
-       {permit:'dc', state:'part', line:"Only with a NM Controlled Substance number. That requirement is the open July 9 question, not your license scope."}
+       {permit:'fac', state:'open', line:"Also open. No license needed for this one."}
      ]},
     {id:'diagnose', title:"License to diagnose", ex:"Physician (MD/DO), psychiatrist, nurse practitioner, physician assistant.",
      routes:[
@@ -452,9 +451,9 @@
      ]},
     {id:'otherhealth', title:"Other health license", ex:"Registered nurse, pharmacist, licensed massage therapist. No diagnosis or therapy scope.",
      routes:[
-       {permit:'fac', state:'open', line:"Direct route."},
+       {permit:'dc', state:'nopath', line:"Needs a diagnosing license."},
        {permit:'prac', state:'nopath', line:"Needs a therapy license."},
-       {permit:'dc', state:'nopath', line:"Needs a diagnosing license."}
+       {permit:'fac', state:'open', line:"Direct route."}
      ]},
     {id:'elsewhere', title:"Trained outside New Mexico", ex:"Out-of-state, international, or Tribal, Pueblo, and Nation programs NMDOH approves.",
      routes:[
