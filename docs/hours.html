@@ -932,6 +932,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
           <li><b>July 25, 2026</b> Role tiles reordered to certifying clinician, practitioner, facilitator, as asked. The totals could not be reconciled with the rows above them: the tile listed 30, 5 and 5 while the total read "35 + 100". Totals now read "35 didactic + 5 sim + 100 practicum" and the rows name their units, so the arithmetic is visible.</li>
           <li><b>July 25, 2026</b> Page review applied. Removed the "Purpose and how to read this page" panel: a page that needs instructions for reading it has already failed. Added Dr. Anne Metz's proposed alternative permit title as a parenthetical under the Practitioner tile, since that is a separate recommendation that can be dropped without affecting the practicum work. Every entry in "What changed on July 23" now names its subsection in the sentence itself rather than relying on a link placed to one side.</li>
           <li><b>July 25, 2026</b> Brought current to the July 23 published rule. The page had no Updated date at all and was written in live-blog present tense from July 17: the Dr. Anne Metz presentation carried an "In progress" tag and a section was headed "Open questions for July 17". Role cards updated from the July 9 numbers to the published ones. Corrected two live errors: the in-state bridge deadline read June 30, 2027 and the reciprocity deadline read December 31, 2026, and both are December 31, 2027 in the published rule. Added a "What changed on July 23" summary.</li>
@@ -987,6 +988,39 @@
   nav.addEventListener('click', function(e){
     if(e.target.closest('.tdrop-menu a')) closeAll(null);
   });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
 })();
 </script>
 </body>

@@ -347,6 +347,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
           <li><b>July 25, 2026</b> Page created from the specialized-domain section that was previously at the foot of the provider routes page, where it sat below unrelated material and carried July 16 dates with no indication of their status. It now states that none of it is in the published rule. Added the citation showing where end-of-life sits in the published text: the curriculum at 7.35.3.18 (C) lists seventeen required subjects and end-of-life is not among them, nor are suicidality, substance use disorder or PTSD, all four of which were asked for on the record on July 17.</li>
           </ul>
         </div>
@@ -398,6 +399,39 @@
   nav.addEventListener('click', function(e){
     if(e.target.closest('.tdrop-menu a')) closeAll(null);
   });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
 })();
 </script>
 </body>

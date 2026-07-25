@@ -100,9 +100,12 @@ Then set the date marker at the top of the page: **Updated** if the content chan
 ```
 python3 tools/sync-nav.py          # nav markup and script, identical everywhere
 python3 tools/sync-provenance.py   # document chain and per-page revisions
+python3 tools/sync-count.py        # visit-counter beacon, identical everywhere
 ```
 
-Both accept `--check` to verify without writing. Never hand-edit the blocks they own; edit the tool and re-run.
+All three accept `--check` to verify without writing. Never hand-edit the blocks they own; edit the tool and re-run.
+
+A new page needs nothing special from the third one: run it and the beacon appears. The counter's endpoint is the `ENDPOINT` constant in `tools/sync-count.py` and lives nowhere else, so moving the counter is `python3 tools/sync-count.py --endpoint https://NEW-HOST`. What the counter records is stated on `about.html`, and the Worker behind it is in `analytics/`, which has its own README.
 
 Then the checks in the next section. All of them, every time.
 

@@ -371,6 +371,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
           <li><b>July 25, 2026</b> Rebuilt. The page now says what it is in a lede, which it did not. Every step that the committee recommendation would change now shows the change directly beneath it, so a reader sees the published requirement and the proposed one together: 84 didactic hours in place of 35, a 62 or 72 hour scaffolded practicum in place of 100 or 120, supervisory hours from 20 to 10, and mentoring replaced by consultation with two presented cases. The certifying clinician route carries no such note, because the recommendation addresses facilitators and practitioners only and nothing on that route changes. The specialized-domain material from July 16 moved to its own page, and the JavaScript that rendered it was removed rather than left orphaned.</li>
           <li><b>July 25, 2026</b> Reviewed and brought current to the July 23 published rule. All route steps re-cited: the citation helper and 25 step links pointed at the superseded July 9 draft and now point at the published rule with section numbers. The practitioner core module was corrected from 25 hours to 30. "Administration and same-day therapy sessions" corrected to "administration day sessions". The status legend said the committee "meets 1 PM today" and now states that the hours were published unchanged on July 23 with the committee recommendation in progress. The reciprocity waiver step read December 31, 2026; the published rule reads December 31, 2027. The note about the draft's internal inconsistency on certifying-clinician reciprocity was rechecked against the published text, where reciprocity now sits inside 7.35.3.10, and the inconsistency persists.</li>
           </ul>
@@ -580,6 +581,39 @@
   nav.addEventListener('click', function(e){
     if(e.target.closest('.tdrop-menu a')) closeAll(null);
   });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
 })();
 </script>
 </body>

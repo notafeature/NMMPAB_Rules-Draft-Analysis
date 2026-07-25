@@ -58,8 +58,17 @@ CHAIN = [
 
 # Per-page revision entries, newest first. Keep each one specific: what changed,
 # not that something changed.
+
+# The visit counter landed on all thirteen pages at once. The page that owns the
+# disclosure carries the full entry; the other twelve carry this one line, so a
+# reader of any page can see that the block appeared and where it is explained.
+COUNTER = ("July 25, 2026", "The site-wide visit counter was added: every page now carries the "
+           "identical beacon written by tools/sync-count.py. What it records, and what it "
+           "deliberately does not, is set out on the about page.")
+
 REVISIONS = {
     "index": [
+        COUNTER,
         ("July 25, 2026", "Title capitalisation corrected: the first word after the line break was lower case. Added the CSS rules for the section headings introduced with the document strip, which had none and were rendering unstyled."),
         ("July 25, 2026", "Rebuilt against the page review. The title read \"The rule is published\", which is a headline rather than a statement of fact, and now states that the rule hearing is August 28, 2026. \"What is next\" moved from mid-page into the hero, above \"Where things stand\". The open item now carries a red border and states that the committee recommendation needs to reach the department as soon as possible; it had been the site accent colour, which reads as decoration rather than attention. The \"Nothing on this page is final\" disclaimer moved into the footer. The document strip now carries a heading saying what it is, and the input tile was removed from it. The three lineage deep-dives on the controlled-substance number, the practicum and reciprocity were removed as history that belongs elsewhere, and the two in-page links into them were repointed to the practicum and draft pages. \"Find your way around\" moved to its own page at guide.html."),
         ("July 17, 2026", "Updated to the July 17 full Advisory Board meeting. The board voted 7-0 to defer the practicum and didactic hours to the Training and Education Committee."),
@@ -67,49 +76,61 @@ REVISIONS = {
         ("July 9, 2026", "Updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled."),
     ],
     "hours": [
+        COUNTER,
         ("July 25, 2026", "Role tiles reordered to certifying clinician, practitioner, facilitator, as asked. The totals could not be reconciled with the rows above them: the tile listed 30, 5 and 5 while the total read \"35 + 100\". Totals now read \"35 didactic + 5 sim + 100 practicum\" and the rows name their units, so the arithmetic is visible."),
         ("July 25, 2026", "Page review applied. Removed the \"Purpose and how to read this page\" panel: a page that needs instructions for reading it has already failed. Added Dr. Anne Metz's proposed alternative permit title as a parenthetical under the Practitioner tile, since that is a separate recommendation that can be dropped without affecting the practicum work. Every entry in \"What changed on July 23\" now names its subsection in the sentence itself rather than relying on a link placed to one side."),
         ("July 25, 2026", "Brought current to the July 23 published rule. The page had no Updated date at all and was written in live-blog present tense from July 17: the Dr. Anne Metz presentation carried an \"In progress\" tag and a section was headed \"Open questions for July 17\". Role cards updated from the July 9 numbers to the published ones. Corrected two live errors: the in-state bridge deadline read June 30, 2027 and the reciprocity deadline read December 31, 2026, and both are December 31, 2027 in the published rule. Added a \"What changed on July 23\" summary."),
         ("July 17, 2026", "Added the live log of the July 17 Training and Education Committee meeting, including the Dr. Anne Metz presentation."),
     ],
     "history": [
+        COUNTER,
         ("July 25, 2026", "Page review applied. The lede was rewritten: it had been describing itself rather than saying what the page holds. \"New here?\" was removed from the process explainer, which asked a reader to identify as a novice before being given an explanation."),
         ("July 25, 2026", "Two entries added: the July 23 publication of the proposed rule, and the July 17 afternoon Training and Education Committee meeting, which the page had omitted entirely while carrying the morning board meeting. The July 17 board entry is now labelled morning so the two are distinguishable. \"What is next\" replaced its stale July 17 contents with August 14, August 21, and the August 28 hearing. The \"How this process works\" explainer was moved out of the middle of the chronology, where it split the timeline into two lists, and now sits above it."),
         ("July 17, 2026", "Added the July 17 Advisory Board meeting: the 7-0 deferral, the department keeping the controlled-substance number, and the revised certifying-clinician exam language."),
     ],
     "pathways": [
+        COUNTER,
         ("July 25, 2026", "Rebuilt. The page now says what it is in a lede, which it did not. Every step that the committee recommendation would change now shows the change directly beneath it, so a reader sees the published requirement and the proposed one together: 84 didactic hours in place of 35, a 62 or 72 hour scaffolded practicum in place of 100 or 120, supervisory hours from 20 to 10, and mentoring replaced by consultation with two presented cases. The certifying clinician route carries no such note, because the recommendation addresses facilitators and practitioners only and nothing on that route changes. The specialized-domain material from July 16 moved to its own page, and the JavaScript that rendered it was removed rather than left orphaned."),
         ("July 25, 2026", "Reviewed and brought current to the July 23 published rule. All route steps re-cited: the citation helper and 25 step links pointed at the superseded July 9 draft and now point at the published rule with section numbers. The practitioner core module was corrected from 25 hours to 30. \"Administration and same-day therapy sessions\" corrected to \"administration day sessions\". The status legend said the committee \"meets 1 PM today\" and now states that the hours were published unchanged on July 23 with the committee recommendation in progress. The reciprocity waiver step read December 31, 2026; the published rule reads December 31, 2027. The note about the draft's internal inconsistency on certifying-clinician reciprocity was rechecked against the published text, where reciprocity now sits inside 7.35.3.10, and the inconsistency persists."),
     ],
     "eligibility": [
+        COUNTER,
         ("July 25, 2026", "Figures corrected. The practicum read \"~100 hours\" and \"~120 hours\"; the rule says a minimum of 100 and 120, so the tildes are gone. The prerequisites row read \"BLS, HIPAA, attestation\" and now records that the published rule accepts BLS, or CPR and AED, or New Mexico EMT licensure. The curriculum row named a curriculum without ever giving its hours, and now states 30 shared plus 5 role-specific didactic with 5 simulated patient hours, and 8 for the certifying clinician. Added a block setting out what changes if the committee recommendation is adopted, including that the certifying clinician does not change."),
         ("July 25, 2026", "Reviewed and brought current to the July 23 published rule. Both tables re-cited from the July 9 draft to the published rule with section numbers. The reciprocity entry read that the draft set two waiver deadlines of December 31 2026 and June 30 2027; the published rule sets both at December 31, 2027, and the older dates are kept only as history. Four links whose text named the published rule while still pointing at the July 9 PDF were repaired."),
     ],
     "cs-number": [
+        COUNTER,
         ("July 25, 2026", "Reviewed and brought current. The page had no Updated date; one was added. The note that \"the July 9 draft PDF still shows the earlier text; an updated draft document has not been posted\" is no longer true: all three certifying-clinician exam pathways appear in the published rule at 7.35.3.8 (B)(8)(c) and 7.35.3.13 (A)(2), and the note now says so. Citations repointed to the published rule. No change to the substance of the page, which was accurate."),
     ],
     "input": [
+        COUNTER,
         ("July 25, 2026", "Reviewed. No change to the form or its handling. A Reviewed date was added, since the page had none. Topics for the August 28 rule hearing and for submitting a document to the register were added earlier in the day, together with the querystring map entries they depend on."),
     ],
     "changes": [
+        COUNTER,
         ("July 25, 2026", "Added the CSS rules for the body, citation and note classes used in the published-provisions section, which had none on this page and were rendering unstyled."),
         ("July 25, 2026", "Page review applied. The section headed \"Earlier layer, 104 provisions\" told a reader nothing and is now \"Where the rules came from\", with a heading that says what the comparison actually is. The published-provisions table states in its opening line that these are the provisions deferred to the committee, rather than leaving it to be found. The \"Change from July 9\" column can now be hidden, since it is context rather than the thing most readers came for."),
         ("July 25, 2026", "Restructured into layers rather than re-citing 108 anchors that were already correct for what they compare. A new section, \"The training and education provisions, as published\", now leads the page: thirteen provisions with the July 23 text, the section and page, and what changed from July 9. It covers the didactic increase from 25 to 30 hours, the unchanged practicum, the new rule that the practicum cannot begin before half the didactic and all simulated patient hours, both waiver deadlines moving to December 31 2027, the disagreement between the two waivers on group session counts, and the new qualified-student staffing ratio. The existing 104-provision comparison was mis-framed as the current draft when it is a comparison of the June 12 recommendation against the July 9 draft; it is relabelled as the earlier layer and kept intact, with its July 9 page anchors, which are correct for that comparison."),
     ],
     "deferred": [
+        COUNTER,
         ("July 25, 2026", "Rebuilt as a worksheet. The first version led with a reading guide and a three-column history of how each requirement reached the published text, which is not what this page is for; that history belongs on the History page. The page now lists the thirteen provisions a practicum change has to touch, quotes each from the published rule, states what it does, and flags the three that do not work as written: 7.35.3.14 authorises nobody to let a student handle psilocybin, 7.35.3.19 (G) and 7.35.3.10 (D)(1) set different session tests for the same 40-hour waiver, and 7.35.3.14 (C) conditions healing-centre authority on a registration no section creates. Two provisions were added after checking the dependency chain: 7.35.3.11, which creates the approved locations 19 (D) requires, and 7.35.3.10 (D)(1), the second practicum waiver. The reading guide and the closing scope section were removed. All eighteen quotation fragments verified against the published text."),
     ],
     "about": [
+        ("July 25, 2026", "A visit counter was added to the site, and this page now states what it records. Every page carries an identical beacon, written by tools/sync-count.py, that reports the page's file name and the host of the referring link to a Cloudflare Worker kept in analytics/. The reader identifier is a hash of the requesting address, the browser string and the date, which changes every day, so two readers on one day can be told apart and one reader cannot be followed from one day to the next. No address, city, cookie or typed value is stored, Global Privacy Control and Do Not Track are honoured, and records are deleted after 400 days. The dashboard of totals is private to the maintainer."),
         ("July 25, 2026", "Added to the primary navigation under The record. The page existed but was reachable only from the footer link at the foot of each page, so it had no route in from the nav at all. Sources updated: the list named the July 9 draft as the current source and now names the July 23 published rule, with the three earlier documents marked as history. The transcripts entry now distinguishes the speaker-tagged June and July 9 transcripts from the two July 17 transcripts, which carry no speaker labels."),
     ],
     "guide": [
+        COUNTER,
         ("July 25, 2026", "Shipped broken and fixed the same day. The page was created by moving the site map section out of the overview, and the CSS the tiles depend on was left behind, so the cards rendered as one run-on block of underlined text. Seven classes had no rule. The styles were restored and a check for unstyled classes was added to the verification pass in UPDATING.md. The page also moved in the navigation from The record to Overview, where a directory of the site belongs, and its opening line no longer refers to three items that are no longer above it."),
         ("July 25, 2026", "Page created from the site map that was previously a section of the overview. It lists what each page holds, so the overview does not have to carry a directory of itself."),
     ],
     "specialization": [
+        COUNTER,
         ("July 25, 2026", "Page created from the specialized-domain section that was previously at the foot of the provider routes page, where it sat below unrelated material and carried July 16 dates with no indication of their status. It now states that none of it is in the published rule. Added the citation showing where end-of-life sits in the published text: the curriculum at 7.35.3.18 (C) lists seventeen required subjects and end-of-life is not among them, nor are suicidality, substance use disorder or PTSD, all four of which were asked for on the record on July 17."),
     ],
     "documents": [
+        COUNTER,
         ("July 25, 2026", "Descriptions tightened to one line each after review; the page was over-written on creation. Page created earlier the same day: a register of every source document with what it is, when it landed, whether it is current or superseded, page count, size, and a direct download, plus a section naming the documents this site does not have."),
     ],
 }

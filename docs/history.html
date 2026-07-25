@@ -364,6 +364,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
           <li><b>July 25, 2026</b> Page review applied. The lede was rewritten: it had been describing itself rather than saying what the page holds. "New here?" was removed from the process explainer, which asked a reader to identify as a novice before being given an explanation.</li>
           <li><b>July 25, 2026</b> Two entries added: the July 23 publication of the proposed rule, and the July 17 afternoon Training and Education Committee meeting, which the page had omitted entirely while carrying the morning board meeting. The July 17 board entry is now labelled morning so the two are distinguishable. "What is next" replaced its stale July 17 contents with August 14, August 21, and the August 28 hearing. The "How this process works" explainer was moved out of the middle of the chronology, where it split the timeline into two lists, and now sits above it.</li>
           <li><b>July 17, 2026</b> Added the July 17 Advisory Board meeting: the 7-0 deferral, the department keeping the controlled-substance number, and the revised certifying-clinician exam language.</li>
@@ -417,6 +418,39 @@
   nav.addEventListener('click', function(e){
     if(e.target.closest('.tdrop-menu a')) closeAll(null);
   });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
 })();
 </script>
 </body>

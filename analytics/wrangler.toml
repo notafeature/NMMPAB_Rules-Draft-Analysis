@@ -1,0 +1,31 @@
+# Deploy config for the nmmpab-count Worker.
+#
+#   cd analytics
+#   npx wrangler deploy
+#
+# Nothing in this file is a credential. The two secrets the Worker needs, SALT
+# and DASH_PASS, are set with `wrangler secret put` and never live in the repo,
+# which is public. The Cloudflare account ID is deliberately left out: pick the
+# Santa Fe Psychedelic Society account at the prompt, or set
+# CLOUDFLARE_ACCOUNT_ID in your shell.
+
+name = "nmmpab-count"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+# Created 2026-07-25 in the Santa Fe Psychedelic Society account, primary
+# location WNAM. Schema in schema.sql, already applied.
+[[d1_databases]]
+binding = "DB"
+database_name = "nmmpab-count"
+database_id = "1be069cb-1e83-420e-a41d-78370dc6b67f"
+
+[vars]
+# Only requests carrying one of these origins are recorded. Add a second entry
+# here if the site ever moves to a custom domain, and change ENDPOINT in
+# tools/sync-count.py to match.
+ALLOWED_ORIGINS = "https://notafeature.github.io"
+DASH_USER = "owner"
+
+[observability]
+enabled = true

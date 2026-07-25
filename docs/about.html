@@ -258,6 +258,11 @@
     </section>
 
     <section>
+      <div class="sh"><p class="k">Measurement</p><h2>What is recorded when you read a page</h2></div>
+      <p class="body">Every page loads a short script that reports two things to a visit counter: the file name of the page, and the host name of the site a reader followed a link from. The counter runs on Cloudflare Workers on infrastructure this site's maintainer controls, and nothing is sent to an advertising network, an analytics company, or a data broker. There are no cookies. From each report the counter keeps a country code, the name of the internet provider that carried the request, and a hash of the requesting address, the browser string, and the date. That hash makes it possible to tell two readers apart on the same day and impossible to connect a reader on one day to the same reader on the next, because it changes daily and none of the values that go into it are stored. The address itself, the city, and anything a reader types are never recorded. Clicks on a document link are counted by file name. A browser that sends Global Privacy Control or Do Not Track is not counted at all. Records are deleted after 400 days. The purpose is to know whether these pages are read and which of them, and the result is a private page of totals, not anything about a person.</p>
+    </section>
+
+    <section>
       <div class="sh"><p class="k">Corrections</p><h2>Report an error</h2></div>
       <p class="body">If anything here is wrong, misattributed, or out of date, send it through the <a href="input.html?topic=correction">community input form</a> with the topic "A correction to this site." Corrections are checked against the primary source and fixed on the page, with the revision noted.</p>
     </section>
@@ -297,6 +302,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> A visit counter was added to the site, and this page now states what it records. Every page carries an identical beacon, written by tools/sync-count.py, that reports the page's file name and the host of the referring link to a Cloudflare Worker kept in analytics/. The reader identifier is a hash of the requesting address, the browser string and the date, which changes every day, so two readers on one day can be told apart and one reader cannot be followed from one day to the next. No address, city, cookie or typed value is stored, Global Privacy Control and Do Not Track are honoured, and records are deleted after 400 days. The dashboard of totals is private to the maintainer.</li>
           <li><b>July 25, 2026</b> Added to the primary navigation under The record. The page existed but was reachable only from the footer link at the foot of each page, so it had no route in from the nav at all. Sources updated: the list named the July 9 draft as the current source and now names the July 23 published rule, with the three earlier documents marked as history. The transcripts entry now distinguishes the speaker-tagged June and July 9 transcripts from the two July 17 transcripts, which carry no speaker labels.</li>
           </ul>
         </div>
@@ -348,6 +354,39 @@
   nav.addEventListener('click', function(e){
     if(e.target.closest('.tdrop-menu a')) closeAll(null);
   });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
 })();
 </script>
 </body>

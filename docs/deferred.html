@@ -402,6 +402,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
           <li><b>July 25, 2026</b> Rebuilt as a worksheet. The first version led with a reading guide and a three-column history of how each requirement reached the published text, which is not what this page is for; that history belongs on the History page. The page now lists the thirteen provisions a practicum change has to touch, quotes each from the published rule, states what it does, and flags the three that do not work as written: 7.35.3.14 authorises nobody to let a student handle psilocybin, 7.35.3.19 (G) and 7.35.3.10 (D)(1) set different session tests for the same 40-hour waiver, and 7.35.3.14 (C) conditions healing-centre authority on a registration no section creates. Two provisions were added after checking the dependency chain: 7.35.3.11, which creates the approved locations 19 (D) requires, and 7.35.3.10 (D)(1), the second practicum waiver. The reading guide and the closing scope section were removed. All eighteen quotation fragments verified against the published text.</li>
           </ul>
         </div>
@@ -453,6 +454,39 @@
   nav.addEventListener('click', function(e){
     if(e.target.closest('.tdrop-menu a')) closeAll(null);
   });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
 })();
 </script>
 </body>
