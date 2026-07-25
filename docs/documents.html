@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How This Site Is Built · NM Medical Psilocybin Training &amp; Education</title>
+<title>Documents · NM Medical Psilocybin Training &amp; Education</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -136,6 +136,24 @@
     .navcta{text-align:left; margin-top:8px;}
     .navcta.on{color:#fff;}
   }
+
+  .key{margin:24px 0 0; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:14px 18px;}
+  .keyh{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  .keylist{list-style:none; margin:0; padding:0; font-size:14px; color:var(--text-muted); line-height:1.6;}
+  .keylist li{margin:5px 0;}
+  .chip{display:inline-block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; padding:2px 8px; border-radius:20px; margin-right:7px; vertical-align:1px;}
+  .chip.cur{background:var(--agree-bg); color:var(--agree); border:1px solid var(--agree-border);}
+  .chip.sup{background:var(--surface-3); color:var(--text-faint); border:1px solid var(--border-strong);}
+  .chip.rec{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
+  .dl{margin:16px 0 0; display:flex; flex-direction:column; gap:12px;}
+  .doc{background:var(--surface); border:1px solid var(--border-strong); border-left:4px solid var(--accent); border-radius:12px; padding:15px 18px; box-shadow:var(--shadow);}
+  .doctop{display:flex; align-items:flex-start; gap:12px; flex-wrap:wrap;}
+  .doc h3{font-size:17px; margin:0; flex:1 1 auto; line-height:1.25;}
+  .doc h3 a{text-decoration:none;}
+  .doc h3 a:hover{text-decoration:underline;}
+  .docdate{font-family:var(--mono); font-size:12px; color:var(--text-faint); margin:5px 0 0;}
+  .docwhat{font-size:14.5px; color:var(--text); line-height:1.58; margin:9px 0 0;}
+  .docmeta{font-size:12.5px; color:var(--text-muted); margin:10px 0 0; padding-top:9px; border-top:1px solid var(--border); font-family:var(--mono);}
 </style>
 </head>
 <body>
@@ -181,52 +199,165 @@
   <div class="col">
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; Advisory Board</p>
-      <h1>How this site is built</h1>
-      <p class="updated"><b>Updated July 17, 2026.</b></p>
-      <p class="lede">What this site is, where every statement comes from, what was produced with AI assistance, and how to report an error.</p>
+      <h1>Documents</h1>
+      <p class="updated"><b>Updated July 25, 2026.</b></p>
+      <p class="lede">Every source document this site is built from, in one place: what each one is, when it landed, whether it is still current, and a direct download. Nothing here is final, promulgated rule text.</p>
     </header>
 
-    <div class="ai">
-      <h2>Read this before relying on anything here</h2>
-      <p>This site is a <b>community reference, not an official source</b>. It is not affiliated with the New Mexico Department of Health or the Medical Psilocybin Advisory Board. Nothing here is final, promulgated rule text, and nothing here is legal or medical advice.</p>
-      <p>It was built with <b>AI assistance</b>. AI tools handled transcription cleanup, quote extraction, drafting, and cross-checking against the public record, with human review of the result. The meeting transcripts it relies on are <b>unofficial auto-transcripts with speakers inferred from context</b>. Errors of transcription, attribution, or interpretation are possible. Where this site and a primary source disagree, the primary source is right.</p>
+    <div class="key">
+      <p class="keyh">How to read the labels</p>
+      <ul class="keylist">
+        <li><span class="chip cur">Current</span> The version in force for citation purposes right now.</li>
+        <li><span class="chip sup">Superseded</span> Replaced by a later version. Kept because the site's history pages cite it.</li>
+        <li><span class="chip rec">Record</span> A meeting record or a submission. Not superseded by anything; it is what it is.</li>
+      </ul>
     </div>
 
     <section>
-      <div class="sh"><p class="k">Method</p><h2>Where the content comes from</h2></div>
-      <p class="body">Every page is built from the public record of the Training and Education rulemaking, in this order of authority:</p>
-      <ul class="body">
-        <li><b>Source documents.</b> The committee's June 12 recommendation, the department's June 25 draft (superseded), and the July 9 rules draft (7.35.3). Draft language on this site is quoted verbatim from these PDFs, and every quote links to its source page. The July 9 draft, the July 9 transcript, and the June 12 recommendation are in the Documents menu above.</li>
-        <li><b>Meeting transcripts.</b> Full transcripts of the June 25 and June 26 committee meetings and the July 9 Advisory Board meeting. These are unofficial auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Names garbled by transcription are corrected: Zurlo, Peskuski, Leeman, Dezbaá, Fatemi. Where a speaker or a vote could not be identified, it is left unattributed, including the two votes against the June 26 motion.</li>
-        <li><b>Live meetings, transcript pending.</b> Statements from the July 16 End-of-Life Care committee meeting, the July 17 Advisory Board meeting (including the revised certifying-clinician language on the CS-number page), and the July 17 Training and Education Committee meeting (unofficial notes logged live on Training hours) are recorded from the live meetings. No transcript or updated draft document has been posted yet; these statements sit in the middle "Transcript" tier below until one is, and will be checked against the posted record when it appears.</li>
-        <li><b>Out-of-state benchmarks.</b> Comparisons (Oregon, Colorado, Washington D.C., CIIS, the buprenorphine waiver) cite the primary rule or statute for each row, linked at the point of use.</li>
-      </ul>
-    </section>
+      <div class="sh"><p class="k">The rule</p><h2>Rules drafts, newest first</h2></div>
+      <p class="body">Three successive drafts of <b>7.35.3 NMAC</b>, the part covering patients, certifying clinicians, practitioners, facilitators, healing centers, other approved locations, and educational programs. Each supersedes the one below it. The section-by-section comparison is on <a href="changes.html">the draft page</a>.</p>
 
-    <section>
-      <div class="sh"><p class="k">Accuracy</p><h2>How verified each kind of statement is</h2></div>
-      <div class="tier">
-        <div class="t strong"><span class="lv">Verbatim</span><p><b>Draft-rule and recommendation quotes</b> are copied from the source PDFs and can be checked one click away. Strongest tier.</p></div>
-        <div class="t mid"><span class="lv">Transcript</span><p><b>Meeting quotes and outcomes</b> come from the unofficial transcripts. Wording is faithful to the auto-transcript, which itself may contain errors; speaker attribution is inferred.</p></div>
-        <div class="t weak"><span class="lv">Compiled</span><p><b>Benchmarks and background</b> are sourced to the cited primary document but were collected and summarized with AI assistance; a citation error is possible.</p></div>
+      <div class="dl">
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule, 7.35.3 NMAC</a></h3>
+            <span class="chip cur">Current</span>
+          </div>
+          <p class="docdate">Published July 23, 2026</p>
+          <p class="docwhat">The department's published proposed rule, and the text that goes to the rule hearing on August 28, 2026. First version with final section numbering, 7.35.3.1 through 7.35.3.28. Carries the practicum and didactic hours forward unchanged from the July 9 draft, six days after the Advisory Board voted 7-0 to send those hours back to the Training and Education Committee.</p>
+          <p class="docmeta">PDF &middot; 19 pages &middot; 309 KB &middot; <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Board-meeting draft, 7.35.3</a></h3>
+            <span class="chip sup">Superseded</span>
+          </div>
+          <p class="docdate">July 9, 2026</p>
+          <p class="docwhat">The draft the Advisory Board went through section by section at its July 9 meeting. Used placeholder section numbers, shown as 7.35.3.X. Superseded by the July 23 published rule. Still cited across this site wherever the record concerns what the board reviewed on July 9.</p>
+          <p class="docmeta">PDF &middot; 17 pages &middot; 422 KB &middot; <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Department draft</a></h3>
+            <span class="chip sup">Superseded</span>
+          </div>
+          <p class="docdate">June 25, 2026</p>
+          <p class="docwhat">The department's rules-style draft of the committee's subject matter, presented June 25. The origin of the module test-out mechanism that later drafts keep. Superseded twice over.</p>
+          <p class="docmeta">PDF &middot; 11 pages &middot; 267 KB &middot; <a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
       </div>
-      <p class="body" style="margin-top:14px;">Known soft points are flagged in place rather than smoothed over. One stands right now. The June 26 motion is attributed to Brenda Burgard per the meeting-note summary, because the raw transcript is unlabeled at that segment.</p>
     </section>
 
     <section>
-      <div class="sh"><p class="k">Policy</p><h2>What this site will and will not do</h2></div>
+      <div class="sh"><p class="k">Committee</p><h2>Recommendations and presentations</h2></div>
+      <p class="body">What the Training and Education Committee produced, and what was presented to it. These are proposals and submissions, not rule text.</p>
+
+      <div class="dl">
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations on Education and Training Requirements</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">July 17, 2026 &middot; Dr. Anne Metz</p>
+          <p class="docwhat">Written recommendations presented to the Training and Education Committee on the afternoon of July 17: four recommendations covering the permit title, a single 84-hour didactic standard with a full curriculum table, a four-step scaffolded practicum with a training permit, and consultation sign-off tied to two case presentations. Labeled by its author a draft for discussion, not a finalized plan.</p>
+          <p class="docmeta">PDF &middot; 6 pages &middot; 36 KB &middot; <a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/metz-onepager-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations at a Glance</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">July 17, 2026 &middot; Dr. Anne Metz</p>
+          <p class="docwhat">The same four recommendations on a single page, with the state-by-state hours comparison and the open questions. The short version to hand someone.</p>
+          <p class="docmeta">PDF &middot; 1 page &middot; 171 KB &middot; <a href="documents/metz-onepager-2026-07-17.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/metz-slides-2026-07-17.pptx" target="_blank" rel="noopener">Committee slides</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">July 17, 2026 &middot; Dr. Anne Metz</p>
+          <p class="docwhat">The deck as presented, six slides. Speaker notes are included in the file and carry reasoning that is not on the slides themselves.</p>
+          <p class="docmeta">PowerPoint &middot; 6 slides &middot; 126 KB &middot; <a href="documents/metz-slides-2026-07-17.pptx" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Committee recommendation on training requirements</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">June 12, 2026 &middot; Training and Education Committee</p>
+          <p class="docwhat">The committee's own recommendation, the document the Advisory Board voted 3-2 to accept on June 26 while setting three items aside. The source of the 100 and 120 practicum hours and the 20 supervisory hours that the July 23 rule still carries.</p>
+          <p class="docmeta">PDF &middot; 9 pages &middot; 148 KB &middot; <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="sh"><p class="k">Meetings</p><h2>Transcripts</h2></div>
+      <p class="body">Transcripts of the meetings this site quotes. <b>All are unofficial.</b> The Department of Health posts its own recordings and minutes, and those govern. Read the note on each before relying on a line.</p>
+
+      <div class="ai">
+        <h2>Two kinds of transcript here, and the difference matters</h2>
+        <p>The <b>July 9</b> transcript is speaker-tagged: each passage is labeled with who is speaking. The two <b>July 17</b> transcripts are not. They were captured from auto-generated meeting notes that carry no speaker labels, and none have been added.</p>
+        <p>Where this site quotes a July 17 transcript and names a speaker, the speaker is fixed by the surrounding text, for example someone being thanked by name immediately after speaking, and the basis is recorded. Where context does not fix a speaker, no name is given. Automatic transcription also misreads names, numbers, and technical terms, and garbles speech during crosstalk.</p>
+      </div>
+
+      <div class="dl">
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Advisory Board, morning session</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">July 17, 2026 &middot; called to order 9:02 a.m. Mountain</p>
+          <p class="docwhat">The full Advisory Board meeting. Contains the 7-0 vote deferring practicum and didactic hours to the Training and Education Committee, the department's statement that it would set a rule hearing for the end of August, the extended controlled-substance-number discussion, and the revised in-person medical exam language with its three pathways.</p>
+          <p class="docmeta">PDF &middot; 23 pages &middot; 75 KB &middot; unofficial, no speaker attribution &middot; <a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Training and Education Committee, afternoon session</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">July 17, 2026 &middot; 1:00 p.m. Mountain</p>
+          <p class="docwhat">The committee meeting that took up the deferred hours. Contains Dr. Anne Metz's presentation and the discussion that followed, the department's request for topics and hours "sooner rather than later" with no deadline attached, the end-of-life training debate, the legacy practitioner discussion, and the setting of the committee's next meeting for August 21.</p>
+          <p class="docmeta">PDF &middot; 23 pages &middot; 75 KB &middot; unofficial, no speaker attribution &middot; <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+
+        <article class="doc">
+          <div class="doctop">
+            <h3><a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Advisory Board</a></h3>
+            <span class="chip rec">Record</span>
+          </div>
+          <p class="docdate">July 9, 2026</p>
+          <p class="docwhat">The board meeting that went through the draft section by section. Contains the reciprocity resolution extending both waiver deadlines to December 31, 2027, the vote to table practicum and didactic hours, and the rename from diagnostic clinician to certifying clinician.</p>
+          <p class="docmeta">PDF &middot; 34 pages &middot; 87 KB &middot; unofficial, speaker-tagged &middot; <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Download</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="sh"><p class="k">Gaps</p><h2>Documents this site does not have</h2></div>
+      <p class="body">Named here so the gaps are visible rather than silent. If you hold any of these, or know where they are posted, <a href="input.html?topic=document">send them through</a>.</p>
       <ul class="body">
-        <li>It records <b>dated events and attributed quotes</b>. It does not characterize how people felt or what they meant.</li>
-        <li>It explains facts and distinctions. It does not recommend outcomes, and no page argues a position.</li>
-        <li>When the record changes, pages are updated and the revision is noted on the page.</li>
+        <li><b>Official minutes</b> for any meeting. Nothing on this site is official minutes. One consequence is recorded on <a href="changes.html">the draft page</a>: the mover of the June 26 motion is attributed from a meeting-note summary, and the raw transcript is unlabeled at that point.</li>
+        <li><b>Recordings or transcripts for June 12 and June 25.</b> The recommendation and the department draft from those dates are here; the meetings themselves are not.</li>
+        <li><b>The May 22 committee meeting.</b> Held, but not recorded or posted by the department.</li>
+        <li><b>The rule hearing notice</b> as published, with the official time, place, and comment instructions for August 28.</li>
       </ul>
     </section>
 
     <section>
-      <div class="sh"><p class="k">Corrections</p><h2>Report an error</h2></div>
-      <p class="body">If anything here is wrong, misattributed, or out of date, send it through the <a href="input.html?topic=correction">community input form</a> with the topic "A correction to this site." Corrections are checked against the primary source and fixed on the page, with the revision noted.</p>
+      <div class="sh"><p class="k">Contribute</p><h2>Send a document</h2></div>
+      <p class="body">If you have a document that belongs here, a rule draft, a submission, a transcript, a program curriculum, or another state's standard, send it through the <a href="input.html?topic=document">community input form</a>. Include where it came from so it can be labeled honestly. Documents are added with their source stated, and are never presented as official when they are not.</p>
+      <p class="body">If something here is <b>mislabeled, out of date, or wrong</b>, that is a correction: send it through the <a href="input.html?topic=correction">same form</a> with the correction topic.</p>
     </section>
   </div>
+
 
   <footer>
     <div class="col">
