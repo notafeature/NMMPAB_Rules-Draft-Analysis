@@ -158,6 +158,10 @@
   .scrollcue{display:none;}
   @media (max-width:730px){.scrollcue{display:block; font-size:12px; color:var(--text-faint); font-weight:600; margin:16px 0 -6px;}}
   td.chg{background:var(--open-bg);}
+  .tsum-hide td:nth-child(3), .tsum-hide th:nth-child(3){display:none;}
+  th.c3{white-space:nowrap;}
+  .colhide{font:inherit; font-size:10px; text-transform:uppercase; letter-spacing:.05em; margin-left:8px; padding:2px 8px; border:1px solid var(--border-strong); border-radius:20px; background:var(--surface); color:var(--text-muted); cursor:pointer;}
+  .colhide:hover{color:var(--text); border-color:var(--accent);}
 /* provenance block */
   .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
   .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
@@ -243,7 +247,6 @@
             <a href="pathways.html" data-nav="pathways">Provider routes<span class="sub">Routes to each permit by starting license</span></a>
             <a href="eligibility.html" data-nav="eligibility">Who can qualify<span class="sub">Which licenses map to which permit</span></a>
             <a href="hours.html" data-nav="hours">Training hours<span class="sub">Didactic, practicum, and specialization</span></a>
-            <a href="deferred.html" data-nav="deferred">The deferred requirements<span class="sub">What the July 17 deferral changed, and did not</span></a>
             <a href="cs-number.html" data-nav="cs-number">CS number<span class="sub">The certifying-clinician access point</span></a>
           </div>
         </details>
@@ -252,6 +255,7 @@
           <div class="tdrop-menu">
             <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
             <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
+            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
             <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
           </div>
         </details>
@@ -284,11 +288,11 @@
         <p class="k">Current text &middot; July 23</p>
         <h2>The training and education provisions, as published</h2>
       </div>
-      <p class="body">The provisions the Advisory Board deferred to the Training and Education Committee on July 17, plus the sections they depend on. Every figure is from the published proposed rule.</p>
+      <p class="body"><b>These are the provisions the Advisory Board deferred to the Training and Education Committee on July 17</b>, plus the sections they depend on. Every figure is from the published proposed rule. The full provision-level worksheet, including what is broken in the published text, is on <a href="deferred.html">Practicum requirements</a>.</p>
       <p class="scrollcue" aria-hidden="true">Scroll sideways to see all columns &rarr;</p>
       <div class="tablewrap">
         <table>
-          <thead><tr><th>Provision</th><th>Published July 23</th><th>Change from July 9</th></tr></thead>
+          <thead><tr><th>Provision</th><th>Published July 23</th><th class="c3">Change from July 9 <button type="button" class="colhide" id="colhide" aria-pressed="false">hide</button></th></tr></thead>
           <tbody>
             <tr>
               <td><b>Shared didactic module</b><br><span class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18 (C), p.11</a></span></td>
@@ -363,8 +367,8 @@
 
     <section>
       <div class="sh">
-        <p class="k">Earlier layer &middot; 104 provisions</p>
-        <h2>The June 12 recommendation against the July 9 draft</h2>
+        <p class="k">Where the rules came from</p>
+        <h2>What the committee recommended, and what the department drafted</h2>
         <p>The earlier layer of the record, kept so the chain stays walkable. Every provision is grouped under the July 9 draft's own section headings and shows that draft's text side by side with the June 12 recommendation it came from, so you can see what was new, what changed, what carried over untouched, and what the recommendation had that did not make it in. Page numbers link into the source PDFs. For what the rules say <b>now</b>, see the section above.</p>
       </div>
       <div class="legend-key">
@@ -534,6 +538,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> Page review applied. The section headed "Earlier layer, 104 provisions" told a reader nothing and is now "Where the rules came from", with a heading that says what the comparison actually is. The published-provisions table states in its opening line that these are the provisions deferred to the committee, rather than leaving it to be found. The "Change from July 9" column can now be hidden, since it is context rather than the thing most readers came for.</li>
           <li><b>July 25, 2026</b> Restructured into layers rather than re-citing 108 anchors that were already correct for what they compare. A new section, "The training and education provisions, as published", now leads the page: thirteen provisions with the July 23 text, the section and page, and what changed from July 9. It covers the didactic increase from 25 to 30 hours, the unchanged practicum, the new rule that the practicum cannot begin before half the didactic and all simulated patient hours, both waiver deadlines moving to December 31 2027, the disagreement between the two waivers on group session counts, and the new qualified-student staffing ratio. The existing 104-provision comparison was mis-framed as the current draft when it is a comparison of the June 12 recommendation against the July 9 draft; it is relabelled as the earlier layer and kept intact, with its July 9 page anchors, which are correct for that comparison.</li>
           </ul>
         </div>
@@ -569,6 +574,18 @@
       btns.forEach(function(x){x.classList.remove('on');});
       b.classList.add('on'); apply(b.getAttribute('data-f'));
     });
+  });
+})();
+</script>
+<script id="colhidejs">
+(function(){
+  var b=document.getElementById('colhide'); if(!b) return;
+  var t=b.closest('table'); if(!t) return;
+  b.addEventListener('click', function(e){
+    e.preventDefault();
+    var hidden=t.classList.toggle('tsum-hide');
+    b.textContent=hidden?'show':'hide';
+    b.setAttribute('aria-pressed', hidden?'true':'false');
   });
 })();
 </script>
