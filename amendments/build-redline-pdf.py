@@ -26,7 +26,22 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
-OUT_PDF = REPO / "amendments/7.35.3-training-redline-2026-07-23.pdf"
+# Version this document on every rebuild that changes its content, so that no two
+# copies in circulation carry the same name. History is in VERSION_HISTORY below.
+VERSION = "v3"
+VERSION_DATE = "July 25, 2026"
+OUT_PDF = REPO / ("amendments/7.35.3-practicum-amendments-%s.pdf" % VERSION)
+
+VERSION_HISTORY = [
+    ("v1", "July 25, 2026", "First side-by-side draft. 84 read as a didactic total. Consultation at 30. "
+                            "Practicum step 1 with well participants not drafted."),
+    ("v2", "July 25, 2026", "84 restated as a module total inclusive of the 5 simulated patient hours. "
+                            "Practicum entry gate changed from a fraction to a flat 40 didactic hours. "
+                            "Step 1 drafted as proposed new section 7.35.3.29."),
+    ("v3", "July 25, 2026", "Consultation set to 20. Medical Psilocybin Act read and applied. 7.35.2 NMAC "
+                            "read and applied. Post-traumatic stress disorder added as a required content "
+                            "area. Addenda A, B and C added. First versioned issue."),
+]
 
 # The permit title, carried as a variable exactly as in the markdown drafts.
 PERMIT_TITLE = {
@@ -210,11 +225,15 @@ P.append((
     + ins("(16) End-of-life and palliative care, a minimum of 10 didactic hours;") + "<br>"
     + ins("(17) Screening, suicidality, and crisis response, a minimum of five didactic hours;") + "<br>"
     + ins("(18) Substance use disorder, including nicotine use disorder, a minimum of four didactic hours;") + "<br>"
-    + ins("(19) Somatic awareness and therapeutic touch, including consent, a minimum of four didactic hours;") + "<br>"
-    + ins("(20) History and traditional use of psilocybin and other psychedelics, a minimum of three didactic hours;") + "<br>"
-    + ins("(21) Individual and group treatment models and group dynamics;") + "<br>"
-    + dele("(16)") + " " + ins("(22)") + " A simulated patient experience of no less than 5 hours; and<br>"
-    + dele("(17)") + " " + ins("(23)") + " Evaluation to demonstrate competency in the above areas.",
+    + ins("(19) Post-traumatic stress disorder: recognition, screening, contraindications, and collaboration "
+          "with or referral to a provider trained in the treatment of post-traumatic stress disorder, a minimum of four "
+          "didactic hours. This paragraph does not require training in the treatment of post-traumatic stress "
+          "disorder;") + "<br>"
+    + ins("(20) Somatic awareness and therapeutic touch, including consent, a minimum of four didactic hours;") + "<br>"
+    + ins("(21) History and traditional use of psilocybin and other psychedelics, a minimum of three didactic hours;") + "<br>"
+    + ins("(22) Individual and group treatment models and group dynamics;") + "<br>"
+    + dele("(16)") + " " + ins("(23)") + " A simulated patient experience of no less than 5 hours; and<br>"
+    + dele("(17)") + " " + ins("(24)") + " Evaluation to demonstrate competency in the above areas.",
 ))
 
 P.append((
@@ -716,6 +735,16 @@ del { text-decoration: line-through; color: #9b1c1c; }
                       vertical-align: middle; }
 .hours th { background: #f2f2f2; text-transform: none; letter-spacing: 0; color: #222; }
 .hours td.n { text-align: right; }
+h2.addendum { break-before: page; }
+table.dep { width: 100%; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif;
+            font-size: 7.9pt; margin: 4pt 0 10pt 0; }
+table.dep th, table.dep td { border: 0.5px solid #bbb; padding: 4pt 7pt; width: auto; text-align: left;
+                             vertical-align: top; text-transform: none; letter-spacing: 0; }
+table.dep th { background: #f2f2f2; color: #222; font-size: 7.6pt; }
+table.dep td.amd { color: #0a5c2e; font-weight: bold; }
+table.dep td.flag { color: #9b1c1c; }
+table.dep td.ok { color: #0a5c2e; font-weight: bold; }
+table.dep td.bad { color: #9b1c1c; font-weight: bold; }
 """
 
 
@@ -793,8 +822,8 @@ SECTION_TITLES = {
 HEAD = """
 <div class="cover">
 <h1>7.35.3 NMAC: proposed amendments to the training and education provisions</h1>
-<p class="sub">A side-by-side working draft, prepared against the proposed rule published July 23, 2026.
-Rule hearing set for August 28, 2026.</p>
+<p class="sub"><b>Version {VERSION}, {VERSION_DATE}.</b> A side-by-side working draft, prepared against the proposed
+rule published July 23, 2026. Rule hearing set for August 28, 2026. Version history is at the end.</p>
 </div>
 
 <div class="status">
@@ -850,6 +879,86 @@ with four or more patients each, and 20 hours of preparation and integration ses
 </div>
 """
 
+
+ADDENDA = """
+<h2 class="addendum">Addendum A <span class="ttl">Practicum dependency map</span></h2>
+<p class="intro">Every provision the practicum depends on, in and out of this document. The practicum is
+7.35.3.19. It cannot function without each row below. The Status column says whether this draft touches it.</p>
+<table class="dep">
+<tr><th>Provision</th><th>Page</th><th>What the practicum needs from it</th><th>Status in this draft</th></tr>
+<tr><td>7.35.2.7 NMAC</td><td>n/a</td><td>Supplies every defined term used in Part 3, by force of 7.35.3.7. Defines practitioner, guide, clinician, qualified patient, approved location, administration session</td><td class="flag">Not amended. Defect flagged: facilitator, healing center, certifying clinician and student are used throughout Part 3 and defined nowhere</td></tr>
+<tr><td>Medical Psilocybin Act, Section 5</td><td>n/a</td><td>The criminal and civil exemption. Reaches producers, clinicians and qualified patients, and protects presence only for anyone else</td><td class="flag">Statute. Cannot be reached by rule</td></tr>
+<tr><td>7.35.3.9 C(3)</td><td>3</td><td>Certification application requires documentation of completed practicum</td><td>Not amended</td></tr>
+<tr><td>7.35.3.9 E(1)</td><td>3</td><td>Practitioner licensure predicate. Decides what a practitioner student may do under 7.35.3.19 B "when licensure allows"</td><td class="flag">Not amended. Flagged</td></tr>
+<tr><td>7.35.3.9 E(2), F(1)</td><td>3</td><td>Both certification lists require documentation of the department-approved practicum</td><td>Not amended</td></tr>
+<tr><td>7.35.3.10 D</td><td>5</td><td>Out-of-jurisdiction 40-hour practicum waiver</td><td class="flag">Not amended. Conflicts with 7.35.3.19 L; conforming amendment flagged</td></tr>
+<tr><td>7.35.3.11 A, B</td><td>5 to 7</td><td>Healing centers and other approved locations. The practicum may only happen in them</td><td>Not amended</td></tr>
+<tr><td>7.35.3.12 A</td><td>7</td><td>Educational program certification. A training permit requires registration with a certified program</td><td>Not amended</td></tr>
+<tr><td>7.35.3.13 B</td><td>8</td><td>Facilitator scope of work. Limits what a facilitator may do after certification, and so what the practicum can usefully train</td><td class="flag">Not amended. Flagged</td></tr>
+<tr><td class="amd">7.35.3.14</td><td>9</td><td>The authority to possess and administer. Without it no student may lawfully handle the medicine</td><td class="amd">AMENDED. New Subsection D</td></tr>
+<tr><td>7.35.3.15 A(4)</td><td>9</td><td>Practicum site agreements need prior written departmental approval, with no deadline on the department</td><td class="flag">Not amended. Flagged</td></tr>
+<tr><td>7.35.3.17 A</td><td>10 to 11</td><td>The 10 mentoring hours, credited toward the consultation requirement</td><td class="flag">Not amended. Flagged</td></tr>
+<tr><td>7.35.3.17 B</td><td>11</td><td>Test-out. Makes practicum completion a condition of graduation, which may empty the December 31, 2027 waiver</td><td class="flag">Not amended. Flagged</td></tr>
+<tr><td>7.35.3.17 C(2)(d), (e)</td><td>11</td><td>Records of practicum sessions, dates, locations, patient counts, and supervised facilitators</td><td>Not amended</td></tr>
+<tr><td class="amd">7.35.3.18 A, C, D, E</td><td>11 to 12</td><td>The didactic requirement the practicum entry gate is measured against</td><td class="amd">AMENDED</td></tr>
+<tr><td>7.35.3.18 F</td><td>12</td><td>Life support and HIPAA currency, carried into the training permit application</td><td class="amd">Amended for grammar only</td></tr>
+<tr><td class="amd">7.35.3.19</td><td>12 to 13</td><td>The practicum itself</td><td class="amd">AMENDED throughout</td></tr>
+<tr><td>7.35.3.20 D</td><td>14</td><td>Students may be present at an administration session. This is the full reach of Section 5(D) of the Act and no further</td><td>Not amended</td></tr>
+<tr><td>7.35.3.20 E, L</td><td>14 to 15</td><td>Daily log and adverse event reporting, which the proposed 7.35.3.29 relies on</td><td>Not amended</td></tr>
+<tr><td class="amd">7.35.3.20 H(5)</td><td>14</td><td>Staffing ratio. Counts a qualified student toward mandatory session staffing</td><td class="amd">AMENDED</td></tr>
+<tr><td>7.35.3.21 A</td><td>15</td><td>Department assessment authority over records and premises</td><td>Not amended</td></tr>
+<tr><td>7.35.3.22</td><td>15</td><td>Prohibitions. Reaches "the qualified patient or certificant", which as published does not include a student</td><td class="flag">Not amended. Flagged</td></tr>
+<tr><td>7.35.3.27</td><td>16 to 19</td><td>Discipline and appeal, which the proposed training permit denial appeal runs through</td><td>Not amended</td></tr>
+</table>
+
+<h2 class="addendum">Addendum B <span class="ttl">Proposed new provisions</span></h2>
+<p class="intro">Ten provisions in this draft do not exist in the rule as published. Each is listed with what it does,
+what it depends on, and whether it can be dropped without breaking anything else.</p>
+<table class="dep">
+<tr><th>Proposed provision</th><th>What it does</th><th>Depends on</th><th>If dropped</th></tr>
+<tr><td>7.35.3.14 D</td><td>Authorizes a training permittee to possess and administer under direct on-site supervision</td><td>7.35.3.19 H</td><td class="flag">The practicum stays unlawful. This and 7.35.3.19 H stand or fall together</td></tr>
+<tr><td>7.35.3.18 H</td><td>States the 84-hour module total in one place, with a didactic floor of 79 inside it</td><td>7.35.3.18 A, C, D, E</td><td>Hour figures survive module by module; no total is stated anywhere</td></tr>
+<tr><td>7.35.3.18 I</td><td>90-day deadline for the department to publish the New Mexico module, and relief for applicants meanwhile</td><td>7.35.3.18 A</td><td class="flag">Every certification pathway stays gated on a module with no delivery date</td></tr>
+<tr><td>7.35.3.19 D</td><td>Staged practicum sequence, as minimums rather than blocks</td><td>7.35.3.19 H, 7.35.3.29</td><td>Practicum hours and patient minimums survive; the risk gradient is lost</td></tr>
+<tr><td>7.35.3.19 F</td><td>Registers practicum supervisors and requires the department to publish a list</td><td>7.35.3.19 E</td><td>Severable. 7.35.3.19 E can stand with vetting left to the department</td></tr>
+<tr><td>7.35.3.19 H</td><td>Creates the training permit</td><td>7.35.3.14 D</td><td class="flag">The practicum stays unlawful. See 7.35.3.14 D</td></tr>
+<tr><td>7.35.3.19 I</td><td>20 consultation hours with two presented cases and a departmental evaluation form</td><td>7.35.3.17 A for the credit</td><td>7.35.3.17 A survives at 10 hours with no requirement to have seen a client</td></tr>
+<tr><td>7.35.3.19 J</td><td>End-of-life checkpoint before unsupervised end-of-life practice</td><td>7.35.3.19 I</td><td>Severable. No end-of-life competency gate remains</td></tr>
+<tr><td>7.35.3.20 M</td><td>Creates the designation that 7.35.3.14 C requires</td><td>7.35.3.14 C</td><td class="flag">7.35.3.14 C keeps pointing at a registration that does not exist</td></tr>
+<tr><td>7.35.3.29</td><td>Practicum with participants who are not qualified patients</td><td>Statutory change</td><td>Severable. 7.35.3.19 D(1) falls to its second limb and stage one becomes observation</td></tr>
+</table>
+
+<h2 class="addendum">Addendum C <span class="ttl">Why the practitioner practicum is drafted at 90</span></h2>
+<p class="intro">7.35.3.19 C as published requires "an additional minimum of 20 hours" of supervision without
+saying what the 20 hours are additional to. That single ambiguity is the only reason this number is not simply the
+72 in the July 17 recommendation. The two readings, and what each makes the published requirement:</p>
+<table class="dep">
+<tr><th>Reading of the published 7.35.3.19 C</th><th>Published practitioner practicum</th><th>Published practitioner program total</th></tr>
+<tr><td><b>Reading 1.</b> The 20 hours are inside the 120. 100 for a facilitator plus 20 gives the 120 stated in Subsection A. This is the natural reading and the one this draft adopts and states expressly</td><td>120</td><td><b>170</b></td></tr>
+<tr><td><b>Reading 2.</b> The 20 hours are on top of the 120, which is what the word "additional" says on its face</td><td>140</td><td><b>190</b></td></tr>
+</table>
+<p class="intro" style="border:0;padding-left:0;margin-top:9pt">The proposal must exceed the published requirement on
+both readings, because the draft cannot settle what the published text means, only what the amended text will mean.
+With the module fixed at 84 and consultation at 20, the practitioner program total is 104 plus the practicum:</p>
+<table class="dep">
+<tr><th>Practitioner practicum</th><th>Program total</th><th>Against reading 1 (170)</th><th>Against reading 2 (190)</th></tr>
+<tr><td>72, as recommended July 17</td><td>176</td><td class="ok">clears by 6</td><td class="bad">short by 14</td></tr>
+<tr><td>80</td><td>184</td><td class="ok">clears by 14</td><td class="bad">short by 6</td></tr>
+<tr><td>86</td><td>190</td><td class="ok">clears by 20</td><td class="bad">ties, does not clear</td></tr>
+<tr><td><b>90, as drafted</b></td><td><b>194</b></td><td class="ok"><b>clears by 24</b></td><td class="ok"><b>clears by 4</b></td></tr>
+</table>
+<p class="intro" style="border:0;padding-left:0;margin-top:9pt">The facilitator side is never at risk. The published
+facilitator total is 150 on both readings and the module alone rises by 44, so any practicum at or above 36 hours
+clears it. The decision is only about the practitioner number, and only about whether it matters to be safe against
+reading 2.</p>
+
+<h2 class="addendum">Version history</h2>
+<table class="dep">
+<tr><th>Version</th><th>Date</th><th>What changed</th></tr>
+%s
+</table>
+"""
+
 FOOT = """
 <div class="foot">
 <b>Sources.</b> Published rule: <i>docs/documents/rules-draft-2026-07-23-published.pdf</i>, 19 pages, sections 7.35.3.1
@@ -860,6 +969,7 @@ deck of the same date. July 17, 2026 transcripts, morning Advisory Board and aft
 both labeled &ldquo;UNOFFICIAL AUTO-GENERATED TRANSCRIPT. NO SPEAKER ATTRIBUTION.&rdquo;<br><br>
 <b>Reasoning and citations for every change in this document</b> are in the repository at <i>amendments/metz-crosswalk.md</i>,
 <i>amendments/7.35.3.18-19-redline.md</i>, and <i>amendments/blocking-defects.md</i>.<br><br>
+<b>Addenda.</b> A, the practicum dependency map. B, the proposed new provisions and what happens if each is dropped. C, the arithmetic behind the practitioner practicum figure.<br><br>
 <b>Status.</b> Internal drafting work. Not a filing, not submitted to the Department of Health, and not promulgated rule
 text.
 </div>
@@ -875,10 +985,12 @@ def main():
         return 1
     print("verified: every published-column block matches the published PDF")
 
+    version_rows = "\n".join(
+        "<tr><td><b>%s</b></td><td>%s</td><td>%s</td></tr>" % v for v in VERSION_HISTORY)
     doc = ("<!doctype html><html><head><meta charset='utf-8'>"
-           "<title>7.35.3 NMAC training and education redline</title>"
-           "<style>%s</style></head><body>%s%s%s</body></html>"
-           % (CSS, HEAD, build_html(), FOOT))
+           "<title>7.35.3 NMAC practicum amendments %s</title>"
+           "<style>%s</style></head><body>%s%s%s%s</body></html>"
+           % (VERSION, CSS, HEAD, build_html(), ADDENDA % version_rows, FOOT))
 
     tmp = Path(tempfile.mkdtemp()) / "redline.html"
     tmp.write_text(doc, encoding="utf-8")

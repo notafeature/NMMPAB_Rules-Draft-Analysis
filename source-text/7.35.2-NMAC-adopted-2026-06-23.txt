@@ -1,0 +1,790 @@
+{"metadata":{"type":"page"},"title":"📘 7.35.2 NMAC — Adopted Rule (effective 6/23/2026)","url":"https://app.notion.com/p/2a3f430293784860bf389a48595a3f19","text":"Here is the result of "view" for the Page with URL https://app.notion.com/p/2a3f430293784860bf389a48595a3f19 as of 2026-06-23T23:10:43.560Z:
+<page url="https://app.notion.com/p/2a3f430293784860bf389a48595a3f19" icon="📘">
+<ancestor-path>
+<parent-page url="https://app.notion.com/p/2dca2b7222dc802f9e4fc5c518dd9b2d" title="Propagation Committee"/>
+<ancestor-2-page url="https://app.notion.com/p/2dca2b7222dc80629ca6cb4cb06ac65b" title="Advisory Board Sub Committee Overview"/>
+<ancestor-3-page url="https://app.notion.com/p/287a2b7222dc81ba82ded12e401268a2" title=""/>
+<ancestor-4-page url="https://app.notion.com/p/287a2b7222dc81d6856fda6679faab0e" title=""/>
+<ancestor-5-page url="https://app.notion.com/p/287a2b7222dc81bfb837cf4282bb0551" title="NMDOH Advisory TeamSpace"/>
+</ancestor-path>
+<properties>
+{"title":"7.35.2 NMAC — Adopted Rule (effective 6/23/2026)"}
+</properties>
+<content>
+TITLE 7 HEALTH \\| CHAPTER 35 MEDICAL PSILOCYBIN \\| PART 2 PRODUCER AND LABORATORY REQUIREMENTS
+<empty-block/>
+<callout icon="📘" color="green_bg">
+	**Adopted Rule — Effective June 23, 2026.** Published in the New Mexico Register, Volume XXXVII, Issue 12 (6/23/2026). Source PDF: `7.35.2_v1_260623.pdf`. Compare to the pre-hearing draft: <mention-page url="https://app.notion.com/p/332a2b7222dc8054a1b3dc55a4a6b3b0"/>.
+</callout>
+---
+## 7.35.2.1 ISSUING AGENCY
+New Mexico department of health.
+\[7.35.2.1 NMAC - N, 6/23/2026\]
+## 7.35.2.2 SCOPE
+All persons, whether natural or legal entities, that apply to transact, or that transact, business in New Mexico as a psilocybin producer or psilocybin testing laboratory, their owners, agents, and assignees.
+\[7.35.2.2 NMAC - N, 6/23/2026\]
+## 7.35.2.3 STATUTORY AUTHORITY
+This rule is promulgated pursuant to the following statutory authorities: the New Mexico Department of Health Act, Subsection E of Section 9-7-6 NMSA 1978; and the Medical Psilocybin Act, Section 26-2D-7, NMSA 1978.
+\[7.35.2.3 NMAC - N, 6/23/2026\]
+## 7.35.2.4 DURATION
+Permanent.
+\[7.35.2.4 NMAC - N, 6/23/2026\]
+## 7.35.2.5 EFFECTIVE DATE
+June 23, 2026, unless a later date is cited at the end of a section.
+\[7.35.2.5 NMAC - N, 6/23/2026\]
+## 7.35.2.6 OBJECTIVE
+The objective of this rule is to adopt rules governing the issuance of permits to producers and laboratories to operate within the New Mexico medical psilocybin program, established pursuant to the Medical Psilocybin Act at Sections 26-2D-1 through -11, NMSA 1978. The rule sets standards for applications for producer and laboratory permits, and standards for the operations of producers and laboratories, including but not limited to specifying: products allowed to be sold or otherwise distributed by producers; restrictions on the application of pesticides and other adulterants to psilocybin products; requirements for implementation and usage of a department-approved traceability system; testing requirements; wastage requirements; sanitation requirements; and transportation requirements. This rule also establishes a procedure for disciplinary actions to be taken against permits, and a process for administrative appeals from disciplinary actions and proposed disciplinary actions.
+\[7.35.2.6 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.7 DEFINITIONS
+### A. Definitions beginning with "A"
+1. **"Actual control"** means the ability to:
+	- control the policies, management, or personnel of a permittee;
+	- control strategic priorities, capital allocations, acquisitions, and divestments of a permittee; or
+	- control a majority of voting rights of a permittee.
+2. **"Administration session"** means the session in which psilocybin is administered.
+3. **"Adulterate"** means to use or incorporate a substance that contaminates a psilocybin product and that creates a risk to public health.
+4. **"Analytes"** means a substance whose chemical constituents are being identified and measured.
+5. **"Appellant"** means a person who requests a hearing to contest an immediate or proposed disciplinary action.
+6. **"Approved location"** means a location approved by the department for psilocybin administration sessions.
+### B. Definitions beginning with "B"
+**"Board"** means the medical psilocybin advisory board.
+### C. Definitions beginning with "C"
+1. **"Capsule"** means a small soluble pill, tablet or container that contains homogenized psilocybin material.
+2. **"Certificate of analysis" or "COA"** means a document issued by a permitted psilocybin testing laboratory that reports the results of all analyses required by the department or additional testing requested by a producer or manufacturer.
+3. **"Certification"** means an approval issued by the department to a clinician or a practitioner to provide medical services to qualified patients.
+4. **"Clinician"** means an approved health care provider licensed in New Mexico who holds a certification from the department to provide medical services to qualified patients.
+5. **"Compliance notification"** means a notification of noncompliance with a regulatory requirement that is issued to a psilocybin producer or psilocybin testing laboratory.
+6. **"Compound"** means to prepare psilocybin to tailor dosage, and includes grinding and powdering psilocybin mushrooms, as well as the creation of psilocybin capsules.
+7. **"Convert"** means converting psilocybin mushrooms into a homogenized lot.
+8. **"Cultivation"** means the growing, harvesting, drying, and handling of psilocybin-producing mushrooms.
+9. **"Cultivation batch" or "batch"** means a quantity of unharvested spores, fruiting body, or mycelium that is grown together under the same conditions, that may contain fungi that originates from diverse spores or mycelial tissue.
+### D. Definitions beginning with "D"
+**"Department"** means the department of health.
+### E. Definitions beginning with "E"
+**"Expiration date"** means a date determined by a producer after which an associated psilocybin product will not retain optimal quality.
+### F. Definitions beginning with "F"
+1. **"Facility"** means any building, space, or grounds licensed for the cultivation, harvesting, drying, storage, or preparation of psilocybin-producing fungi or psilocybin products.
+2. **"Flush"** means the fruiting body of psilocybin mushrooms harvested at the same time from a growing medium.
+3. **"Fruiting bodies"** means the spore producing organs of the fungi.
+4. **"Fungi"** is any member of the group of eukaryotic organisms that includes microorganisms such as yeasts and molds, as well as the more familiar mushrooms.
+### G. Definitions beginning with "G"
+1. **"Genuine ownership"** means an ownership interest in an applicant or a permittee that is evidenced by record ownership in which the owner, regardless of the amount of capital or assets that the owner contributes to the applicant or permittee, enjoys the customary incidents of ownership and shares in the profits and losses of the permittee proportionate to the percentage of the owner's interest in the permit.
+2. **"Growth medium" or "substrate"** means the underlying base layer, surface, or nutrient rich substance where fungal growth occurs.
+3. **"Guide"** an individual who has completed training and education approved by the department to be able to assist practitioners during the administration sessions and who has been registered with the department.
+### H. Definitions beginning with "H"
+1. **"Harvest"** means to remove, collect, or gather, fruiting bodies of mushrooms containing psilocybin.
+2. **"Harvest lot"** means the fruiting bodies of mushrooms cultivated and harvested at the permitted location.
+3. **"Homogenization date"** means the date a harvest lot is homogenized.
+4. **"Homogenized"** means dried fruiting bodies that have been mixed by powdering or other techniques which uniformly distribute psilocybin throughout the product.
+5. **"Homogenized lot"** means a quantity of psilocybin mushrooms identified by a producer that is cultivated and dried under the same conditions, and harvested within a specified time period at the same location within permitted premises.
+### I. Definitions beginning with "I"
+1. **"Information notification"** means a notification providing information regarding relevant updates and alerts that is issued to a psilocybin producer or psilocybin testing laboratory.
+2. **"Inoculate"** means the process of introducing psilocybin spores or mycelium into growth medium.
+3. **"Input"** means material utilized in growing medium for growing psilocybin mushrooms, including but not limited to soil, grain, woodchips, water, nutrients, and other materials.
+### J–L. \[RESERVED\]
+### M. Definitions beginning with "M"
+1. **"Manufacture" or "process"** means to harvest, dry, compound, convert, or package into pills, capsules, or sachets of homogenized powder, and label mushrooms and products containing psilocybin.
+2. **"Medical services"** means services provided to a patient in an approved setting before, during and after the ingestion of psilocybin and includes a preparation session, an administration session and an integration session.
+3. **"Mycelium"** means the fungal threads or hyphae of psilocybin containing mushrooms.
+4. **"Mushroom"** is the fleshy, spore-bearing fruiting body of a fungus.
+### N–O. \[RESERVED\]
+### P. Definitions beginning with "P"
+<callout icon="⚠️" color="yellow_bg">
+	As published, the P. heading in the adopted text shows "\[RESERVED\]" immediately above the P-list. Treat the listed items below as the operative P definitions; the \[RESERVED\] marker appears to be a publication artifact in the New Mexico Register text.
+</callout>
+1. **"Package"** means to enclose, wrap, or seal psilocybin products.
+2. **"Permit"** means the authorization issued by the department to a person to operate as a psilocybin producer or psilocybin testing laboratory under this part.
+3. **"Permit-applicant"** means a person who has applied for a permit to operate as a psilocybin producer or psilocybin testing laboratory.
+4. **"Permittee"** means a psilocybin producer or psilocybin testing laboratory that holds a permit issued by the department.
+5. **"Person"** means a natural person, corporation, partnership, limited liability company, association, and any other business or organization that is capable of entering into contracts, owning property, and suing or being sued.
+6. **"Potency"** means the level of psilocybin and analytes in a sample of a batch, lot, or product which is measured and expressed in metric units.
+7. **"Practitioner"** means an individual who is a licensed healthcare professional who is certified by the department to provide medical psilocybin integrative therapy, supervise guides, and who has completed department required trainings.
+8. **"Product lot"** means the same type of product that has been created from a homogenized lot.
+9. **"Program"** means the medical use of psilocybin program.
+10. **"Psilocybin"** means the naturally occurring psychedelic compound 4-phosphoryloxy-N,N-dimethyltryptamine, also known as 4-PO-DMT, and its pharmacologically active metabolite psilocin, 4-hydroxy-N,N-dimethyltryptamine, found in certain mushrooms, but does not include synthetic or synthetic analogs of psilocybin.
+11. **"Psilocybin material"** means psilocybin mushrooms, mycelium, and derived material that naturally contain psilocybin.
+12. **"Psilocybin mushroom"** means a fungus that naturally contains psilocybin.
+13. **"Psilocybin producer" or "producer"** means a person who has a permit from the department to grow and harvest or prepare psilocybin from psilocybin-producing mushrooms, including to compound, convert, process or manufacture psilocybin products directly or indirectly from psilocybin mushrooms and to package or repackage or label or relabel the products.
+14. **"Psilocybin product"** means psilocybin material that is intended for sale or distribution to a qualified patient.
+15. **"Psilocybin testing laboratory" or "laboratory"** means a facility permitted by the department to test psilocybin products for potency and contaminants in accordance with this rule.
+16. **"Psilocybin waste"** means:
+	- Partially consumed products;
+	- Byproducts of cultivation, harvesting, processing, or other production of products;
+	- Products disposed or to be disposed by a producer or laboratory; and
+	- Products designated for disposal by the department due to contamination, expiration, or which do not follow the requirements for production and administration.
+### Q. Definitions beginning with "Q"
+1. **"Qualified patient" or "patient"** means a patient whose clinician has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition.
+2. **"Qualifying condition"** includes:
+	- major treatment-resistant depression;
+	- posttraumatic stress disorder;
+	- substance use disorders;
+	- end-of-life care; and
+	- other conditions approved by the department.
+### R. Definitions beginning with "R"
+**"Recall"** means to remove a medical psilocybin product from the medical psilocybin market by contacting persons to whom the product was sold or otherwise distributed and having the product returned to the producer for destruction.
+### S. Definitions beginning with "S"
+**"Satchet"** means a small, sealed package or pouch of homogenized psilocybin mushrooms.
+### T. Definitions beginning with "T"
+1. **"Testing sample"** means the unit of psilocybin mushrooms or products being tested.
+2. **"Traceability system"** means the department-approved system that is used to track psilocybin mushrooms and products from inoculation to end use.
+### U. Definitions beginning with "U"
+**"Unique identification number"** means the most recent unique number assigned by traceability for a psilocybin product that may include cultivation batches, harvest lots, homogenized lots, product lots, and testing samples.
+### V–Z. \[RESERVED\]
+\[7.35.2.7 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.8 PERMIT APPLICATION REQUIREMENTS
+### A. General requirements
+An applicant for a producer or laboratory permit shall provide to the department and shall maintain the following records:
+1. business license in the state of New Mexico;
+2. proof of registration of the business with New Mexico secretary of state;
+3. proof of registration of the business with New Mexico taxation and revenue department;
+4. certificate of occupancy;
+5. proof of fire code compliance;
+6. electrical and HVAC inspection reports;
+7. proof of compliance with applicable city and county planning/zoning requirements;
+8. proof that facility is within the geographical boundaries of New Mexico;
+9. proof of ownership of the facility or a signed, written statement from the owner of the property acknowledging that the owner understands that the tenant will be participating in the medical psilocybin program as a permittee and what their permit allows;
+10. conditional use permits where applicable (e.g., city of Albuquerque raw food permit);
+11. an attestation that all psilocybin and psilocybin products will be produced or tested (as applicable to the permit type) only within the state of New Mexico and will not be transported beyond the borders of the state of New Mexico; and
+12. such additional documentation as the department may reasonably request to ensure compliance with this rule or other applicable laws, regulations, or ordinances.
+### B. Additional producer application requirements
+An applicant for a producer permit shall additionally provide to the department and maintain food safety training certificates for employees.
+### C. Additional laboratory application requirements
+An applicant for a psilocybin testing laboratory permit shall additionally provide to the department and maintain the following records:
+1. A license or permit from New Mexico regulation and licensing department — cannabis control division with:
+	- Proof of current approval to operate as a cannabis testing laboratory in New Mexico;
+	- Standard operating procedures for sampling and testing of psilocybin;
+	- An initial demonstration of capabilities for each of the tests required by this rule; or
+2. Proof of current ISO/IEC 17025 or NELAC/TNI accreditation, with:
+	- Standard operating procedures for sampling and testing of psilocybin; and
+	- An initial demonstration of capabilities for each of the tests required by this rule.
+### D. Changes in location, equipment, or status
+A permittee shall apply for and shall obtain an amended permit prior to implementing any substantial structural modification to its permitted location. Additionally, a permittee shall notify the department of any change to registrations, licenses, permits, certifications, and any equipment alterations or acquisitions that substantially affect the production process.
+\[7.35.2.8 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.9 GENERAL PERMITTEE REQUIREMENTS
+**A. Compliance with applicable laws:** A permittee shall comply with all applicable state, tribal, and local laws, regulations, and ordinances, including requirements concerning agriculture, environmental health, building and occupancy, fire safety, zoning, and worker safety.
+**B. Dual ownership prohibited:** A person who holds an ownership interest in a permittee shall not hold an ownership interest in any other permittee.
+**C. Permits non-transferable:** A permit shall not be transferred by sale, assignment, or otherwise, except as approved by the department upon the death of a sole proprietor. A permit that is transferred shall be invalid.
+**D. Transfer of actual control prohibited:** An applicant or permittee shall not transfer actual control of the applicant or permittee to any person using a management, consulting, or intellectual property agreement, or by any other means. A transfer of actual control shall invalidate an associated permit.
+**E. Nominee, straw, and proxy ownership prohibited:** A person shall not apply for or hold a permit if any ownership interest in the permit is nominal or without the benefits and risks of genuine ownership or control.
+**F. Record of financial interests:** Permittees shall create and maintain complete lists of all individuals and legal entities that hold a financial interest in the permittee or the operations of the permittee, including contact information for each individual or entity and a description of their financial interest. Applicants and permittees shall provide the information required by this section to the department within 15 calendar days of the department's written request for such information. If a legal entity holds a financial interest in the permittee or the permittee's operations within the medical psilocybin program, the following individuals within the legal entity shall be deemed to also hold a financial interest:
+1. For limited partnerships, each general partner in the limited partnership;
+2. For limited liability companies, each manager and managing member of the limited liability company;
+3. For for-profit corporations, each principal officer of the corporation; and
+4. For non-profit entities, each principal officer of the entity.
+\[7.35.2.9 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.10 GENERAL PRODUCER REQUIREMENTS
+A producer shall:
+**A.** Only cultivate, manufacture, and possess psilocybin and psilocybin products on the producer's permitted premises, and shall not transport psilocybin outside the state of New Mexico.
+**B.** Use equipment, counters and surfaces for post-harvest processing that are food-grade and do not react adversely with any solvent being used.
+**C.** Construct and maintain floors, walls, ceilings, counters and surface areas in a manner that reduces the potential development of microbials, molds, and unintended fungi.
+**D.** Maintain the licensed premises in a manner that is free from conditions that may result in contamination of psilocybin products and that is suitable for safe and sanitary operations.
+**E.** Store all psilocybin products in a secured, locked area, including psilocybin products that require refrigeration.
+**F.** Associate every cultivation batch, harvest lot, homogenized lot, and product lot with a unique identification number and enter this information into the traceability system.
+**G.** Only sell psilocybin or psilocybin products to other producers and to practitioners; and only otherwise distribute psilocybin or psilocybin products to medical psilocybin testing laboratories, or to department employees for testing in accordance with this rule.
+**H.** Immediately discontinue operations and notify the department in the event of an imminent health hazard that could result in contamination of psilocybin products.
+\[7.35.2.10 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.11 ALLOWED PSILOCYBIN PRODUCTS
+**A.** A producer shall not manufacture psilocybin by chemical synthesis.
+**B.** A producer shall not adulterate a psilocybin product and shall not sell or otherwise distribute an adulterated psilocybin product.
+**C.** Psilocybin products shall be homogenized prior to being made available for sale or distribution.
+**D.** Psilocybin products not authorized by this rule are prohibited and may not be manufactured, nor possessed, by any permittee.
+\[7.35.2.11 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.12 PESTICIDES AND OTHER ADULTERANTS PROHIBITED
+**A.** Producers are prohibited from applying pesticides to fungi or growing medium.
+**B.** A producer shall not add to psilocybin products, substrates, growing medium, or packaging any chemical, drug, plant, or substance that has the effect of increasing potency, intoxicating effect, duration of effect, toxicity or potential for excessive use.
+**C.** A producer shall document in the traceability system the growing medium and inputs utilized by the producer.
+**D.** A producer shall not use inputs that are adulterated, shall destroy adulterated products, and shall document their destruction in the traceability system.
+**E.** Psilocybin products that are intended for product development and that will not be made available for consumption shall be labeled in bold, capital letters, in a font size no smaller than 12 points, "NOT FOR CONSUMPTION".
+\[7.35.2.12 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.13 PRODUCER POLICIES AND PROCEDURES
+A producer shall create, and shall at all times maintain on its premises, policies and procedures that include but are not limited to:
+- **A.** instructions for making each psilocybin product, including ingredients, and inputs;
+- **B.** the procedure for making each harvest lot or harvest lots homogenous;
+- **C.** procedures for conducting safety checks prior to commencing production of psilocybin products;
+- **D.** procedures for cleaning all equipment, counters and surfaces;
+- **E.** procedures for preventing growth of pathogenic organisms and toxin formations;
+- **F.** procedures for proper handling and storage of any solvent or other chemical used in cleaning and in production in accordance with material safety data sheets and other applicable laws;
+- **G.** procedures for proper disposal of any waste produced during processing in accordance with applicable laws, rules, and ordinances;
+- **H.** procedures for appropriate use of any necessary safety or sanitary equipment; and
+- **I.** emergency procedures to be followed in case of fire, chemical spill or other emergencies.
+\[7.35.2.13 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.14 PACKAGING AND LABELING; PRODUCT INFORMATION DOCUMENT
+### A. Packaging requirements
+A producer shall comply with the following packaging requirements for all psilocybin products:
+1. A producer shall utilize packaging for a psilocybin product that is intended for sale or distribution that protects the product from contamination and excessive moisture, and that does not impart any toxic or harmful substance.
+2. Packaging shall not display any untruthful or misleading content.
+3. Packaging shall not feature a design that is attractive to minors; and
+4. A label shall be printed or otherwise affixed on the psilocybin product package that shall:
+	1. contain all required information in a legible font at least eight points;
+	2. be written in English (though it may also be written in additional languages);
+	3. be unobstructed and clearly visible;
+	4. contain the producer's business name and permit number;
+	5. identify the type of product contained in the packaging (e.g., homogenized mushroom powder);
+	6. identify the species name and cultivar(s) of fungi contained in the psilocybin product;
+	7. identify the net quantity of the package contents using the metric system of measurement;
+	8. identify the potency of psilocybin analytes contained in the product, expressed in milligrams, and calculated using laboratory test results, including: (i) total psilocybin equivalent; and (ii) total potential psilocin;
+	9. identify a unique identification number of the product lot;
+	10. identify the expiration date of the psilocybin product;
+	11. include the statement, "Keep out of the reach of children"; and
+	12. a logo designated by the department that is no smaller than 1/2 inch by 1/2 inch, indicating the product contains psilocybin.
+### B. Product information document
+A producer shall generate and make available to qualified patients and practitioners a product information document, in printed and electronic form, that lists the following information in English in 12-point font or larger:
+1. all of the information required to be contained on the product label;
+2. a statement regarding the number of years the producer's business has been established in New Mexico and a statement declaring the state and country of residency, including length of time of residency, of any individual who owns or has invested in the company;
+3. results of all laboratory tests and re-tests conducted on homogenized lots and product lots;
+4. the type and composition of the growth medium used, including type of grain, soil, compost, and other inputs;
+5. date of manufacture or processing of the final product, including date of homogenization;
+6. list of all active and inactive ingredients in descending order of predominance by weight or volume;
+7. list of potential major food allergens which might be contained in the product or in the growth medium;
+8. intended use and directions for use;
+9. a description of how the product should be stored to maintain quality and freshness;
+10. the statement: "This product is not approved by the FDA to treat, cure, or prevent any disease. The FDA has not evaluated this product for safety, effectiveness, or quality. There may be long term adverse health effects from consumption of psilocybin, including additional risks for women who are or may become pregnant or are breastfeeding."
+11. the statement, "The risks, benefits, drug interactions, and effects of psilocybin are not fully understood. Individual results may vary";
+12. the statement, "Do not drive a motor vehicle or operate machinery while under the use of psilocybin";
+13. the telephone number for the New Mexico poison and drug information center; and
+14. the telephone number for the New Mexico crisis and access line.
+**C.** A practitioner shall provide the product information document to the patient prior to administration of the applicable psilocybin product.
+**D.** A practitioner shall, upon request, make reasonable efforts to provide a translation of the product information document to languages other than English and in an accessible format.
+\[7.35.2.14 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.15 GENERAL TRACKING REQUIREMENTS
+In addition to any requirements specific to tracking within each permit type, all producers shall meet minimum requirements.
+### A. Tracking psilocybin
+Producers shall track cultivation batches, harvest lots, homogenized lots, product lots, and psilocybin product inventory using the traceability system specified by the department, in accordance with the following:
+1. each cultivation batch, harvest lot, homogenized lot, and product lot shall be assigned a unique identification number in the traceability system;
+2. cultivation batches shall not be transferred in their entirety to another producer; and
+3. producers are prohibited from removing an assigned unique identification number.
+### B. Tracking testing results
+Medical psilocybin laboratories shall record the results of all required testing of psilocybin samples or products using the traceability system.
+### C. Additional information to be recorded
+A producer shall ensure the following data is timely and accurately recorded in the traceability system:
+1. a complete inventory of all cultivation batches, harvest lots, homogenized lots, product lots, and psilocybin products in the possession, control or ownership of the producer;
+2. any changes to the producer's inventory;
+3. when psilocybin material is converted to waste;
+4. the reason any psilocybin material is converted to waste;
+5. when psilocybin waste is destroyed;
+6. any theft of psilocybin related batches, lots, or products;
+7. all sales records of products;
+8. results of all testing mandated by the department; and
+9. the county and municipality, as applicable, where the psilocybin or psilocybin product was harvested, otherwise cultivated, manufactured, tested, sold to other producers, sold to practitioners, and disposed of or destroyed.
+\[7.35.2.15 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.16 IMPLEMENTATION AND ADMINISTRATION OF TRACEABILITY SYSTEM
+**A. Operational account:** A producer and a laboratory may apply for an account and department training once they receive a permit from the department. A producer and a laboratory shall activate a traceability system account and shall ensure the account is functional prior to operating or exercising any privilege of a permit.
+**B. System administrator required:** Each producer and laboratory shall designate at least one individual as a traceability system administrator.
+**C. Additional users:** A producer and a laboratory may designate additional individuals as traceability system users. The producer or laboratory shall ensure that all individuals who are granted account access are trained by a traceability system administrator in the use of the traceability system.
+**D. System training:** A producer and a laboratory or its designee shall attend and successfully complete all required traceability system training provided by the department.
+**E. Continuing education:** The department may require additional continuing education for a producer's and a laboratory's assigned traceability system administrator to retain their account.
+**F. Responsibility for traceability system costs:** Each producer and laboratory shall be solely responsible for all costs, including any applicable vendor fees, associated with the producer's or laboratory's use of the traceability system.
+\[7.35.2.16 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.17 GENERAL TRACEABILITY SYSTEM USE
+**A. System required:** All traceability activities of a producer and laboratory shall be tracked and reconciled daily through the use of the department-approved traceability system.
+**B. Weights and measures:** Producers and laboratories shall utilize a standard of weights and measures that is supported by the traceability system to track all products. A scale used to weigh product prior to entry into the traceability system shall be certified to be registered and calibrated in accordance with applicable requirements of the New Mexico department of agriculture.
+**C. System security:** Producers and laboratories shall maintain the security of the traceability system, as follows. A producer shall:
+1. maintain an accurate and complete list of all traceability system users for each permit;
+2. update the user list when a new user of the system is trained or when a previous user is removed;
+3. train and authorize any new users of the system before they are allowed to access the traceability system; and
+4. cancel the user privileges of any user and their associated accounts once the person is no longer employed by the producer.
+**D. Additional software allowed:** Producers and laboratories may use additional software applications to collect information to be used by the business, including additional inventory tracking and point of sale systems.
+**E. Entry of data:** Producers and laboratories shall enter data into the traceability system that fully and transparently accounts for all inventory tracking activities.
+**F. Use of assigned account:** Individuals entering data into the traceability system shall only use that individual's traceability system account.
+**G. Loss of access:** If at any point a producer or laboratory loses access to the traceability system for any reason, the producer or laboratory shall immediately notify the department and shall maintain comprehensive records detailing all traceability activities that occurred during the loss of access. Once access is restored, these traceability activities must be entered into the traceability system and the department notified. Producers and laboratories shall document when access to the system was lost, the cause of system loss, and when access was restored.
+\[7.35.2.17 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.18 COMPLIANCE NOTIFICATIONS
+**A. Monitor notifications:** Producers and laboratories shall monitor all compliance notifications from the traceability system or the department and shall resolve any issue(s) detailed in the compliance notification in a timely fashion. Compliance notifications from the traceability system shall not be dismissed in the traceability system until the producer resolves the compliance issues detailed in the notification.
+**B. Monitor informational notifications:** Producers and laboratories shall take appropriate action in response to informational notifications received through the traceability system or the department including but not limited to notifications related to enforcement alerts and other pertinent information.
+\[7.35.2.18 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.19 REQUIRED TESTING OF PSILOCYBIN PRODUCTS
+A producer shall arrange for samples to be collected and tested by an approved psilocybin testing laboratory whenever testing is required to be conducted by this rule. A producer shall ensure that testing is completed within 30 calendar days of the date of homogenization. The homogenized lot shall pass all required tests prior to being sold or distributed for consumption.
+### A. Staggered implementation
+1. The department may, within its discretion, delay or suspend implementation of sample collection, testing, and labeling requirements in whole or in part.
+2. In determining the start date of an individual testing requirement, the department shall consider whether a psilocybin testing laboratory has validated a method for conducting the test.
+3. In determining the date on which a producer must have its samples collected, the department shall consider the capacity of psilocybin testing laboratories to collect and transport samples.
+### B. Collection and transportation of samples; re-testing
+A psilocybin testing laboratory shall collect samples from a psilocybin producer for the performance of any required test, re-test after a failed result, and re-test after remediation. A psilocybin testing laboratory may also test for the purposes of labeling.
+1. Samples shall be between 1–5 grams for every 1 kilogram of product in each homogenized lot and in accordance with the psilocybin testing laboratories sampling protocols.
+2. A psilocybin testing laboratory shall develop and implement a training program for its staff concerning sample collection, transport, and testing, and shall require staff to successfully complete the training program prior to allowing staff to perform sample collection, transport of samples, or testing.
+3. The psilocybin testing laboratory may reject any sample that is suspected of having been collected in a manner that is inconsistent with the laboratory's protocol.
+4. A producer may specify reasonable precautions for a psilocybin testing laboratory to prevent the contamination of batches or lots during the sampling process; provided that the producer shall provide access to laboratory staff to the entire batch or lot to be sampled. Precautions may include, but are not limited to:
+	- requiring the use of gloves and other personal protective equipment;
+	- inspecting tools and containers prior to their use;
+	- specifying the location within the producer's establishment at which the samples will be collected;
+	- specifying locations within the producer's establishment to which laboratory staff will not have access; and
+	- the right to refuse entry to any laboratory employee or contractor not in compliance with the precautions.
+### C. Exception to required testing
+If additional testing requirements take effect after a psilocybin testing laboratory obtains a sample for testing, the laboratory shall perform only those tests required at the time the sample was obtained.
+### D. Visual inspection
+A sample shall be deemed to pass visual inspection tests if, under a minimum of 40x magnification, laboratory personnel detect in a one-gram sample:
+1. no living or dead insects, hair, eggs, or feces; and
+2. no more than two percent sand, soil, mold, or rocks.
+### E. Microbiological testing
+A producer shall arrange for a sample of each homogenized lot to be collected and tested by an approved psilocybin testing laboratory for the purpose of microbiological testing, and the sample shall pass testing prior to the lot being released for sale or distribution for consumption. A producer shall arrange for additional microbiological testing of the homogenized lot and any product lot derived from the homogenized lot no less than five months and no more than six months after the lot passes a microbiological test, in accordance with the re-testing provisions of this rule. A sample shall be deemed to pass microbiological tests if the sample contains concentrations of target microbes not exceeding the action levels set forth in Table 1, *Microbiological Testing Requirements*, below.
+1. The department may require testing for additional microbes if quality control or inspection testing conducted by psilocybin testing laboratories, NMDA, or the department identifies their presence in a psilocybin product in a quantity or amount that poses a threat to public health. The department shall provide written notice to producers 30 calendar days prior to requiring additional microbiological testing, except that such notice shall not be required when human illness is linked to contaminated psilocybin products.
+2. The psilocybin testing laboratory may report a collective total of the four Aspergillus strains listed without distinguishing individual totals.
+3. The test results shall be reported as "present," "absent," or in colony forming units (CFU) per one gram sample, depending on the action level stated below.
+**Table 1. Microbiological Testing Requirements**
+<table header-row="true">
+<colgroup>
+<col width="381">
+<col width="139.99107360839844">
+</colgroup>
+<tr>
+<td>**Target Microbe**</td>
+<td>**Action Level**</td>
+</tr>
+<tr>
+<td>*E. coli*</td>
+<td>100 CFU/gram</td>
+</tr>
+<tr>
+<td>*Aspergillus flavus, A. fumigatus, A. niger,* or *A. terreus*</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>*Salmonella* spp.</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>Shiga-toxin producing *E. coli*</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>*Clostridium botulinum*</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>*Pseudomonas aeruginosa*</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>*Listeria*</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>*Trichoderma*</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>Total Yeast and Molds</td>
+<td>\\> 1,000 CFU</td>
+</tr>
+</table>
+### F. Water content testing
+A producer shall arrange for a sample of each homogenized lot to be collected and tested by an approved psilocybin testing laboratory for the purpose of water content testing, prior to the lot being released for sale or distribution for consumption. **Water content shall be less than 10%.** A producer shall arrange for additional water content testing of the homogenized lot and any product lot derived from the homogenized lot no less than five months and no more than six months after the lot is initially tested for water content, in accordance with the re-testing provisions of this rule.
+### G. Potency testing
+A producer shall arrange for a sample of each homogenized lot to be collected and tested by an approved psilocybin testing laboratory for the purpose of potency testing, prior to the lot being released for sale or distribution for consumption. A producer shall arrange for additional potency testing of the homogenized lot and any product lot derived from the homogenized lot no less than five months and no more than six months after the lot is tested for potency, in accordance with the re-testing provisions of this rule. Potency testing shall measure the quantity of analytes identified in Table 2, "Potency Testing Requirements".
+**Table 2. Potency Testing Requirements**
+<table header-row="true">
+<tr>
+<td>**Analyte**</td>
+<td>**CAS Number**</td>
+<td>**Reporting Units**</td>
+</tr>
+<tr>
+<td>Psilocybin</td>
+<td>520-52-5</td>
+<td>mg/gm</td>
+</tr>
+<tr>
+<td>Psilocin</td>
+<td>520-53-6</td>
+<td>mg/gm</td>
+</tr>
+<tr>
+<td>Norbaeocystin</td>
+<td>2140-59-7</td>
+<td>mg/gm</td>
+</tr>
+<tr>
+<td>Baeocystin</td>
+<td>21420-59-7</td>
+<td>mg/gm</td>
+</tr>
+<tr>
+<td>Aeruginascin</td>
+<td>114264-95-8</td>
+<td>mg/gm</td>
+</tr>
+</table>
+### H. Heavy metal testing
+A producer shall arrange for a sample of each homogenized lot to be collected and tested by an approved psilocybin testing laboratory for the purpose of heavy metal testing, and the sample shall pass testing prior to the lot being released for sale or distribution for consumption. A sample shall be deemed to pass the heavy metal test if the sample contains concentrations of the analytes below the action levels stated in Table 3, *Heavy Metal Testing Requirements*.
+**Table 3. Heavy Metal Testing Requirements**
+<table header-row="true">
+<tr>
+<td>**Analyte**</td>
+<td>**Symbol**</td>
+<td>**CAS Number**</td>
+<td>**Action Level**</td>
+</tr>
+<tr>
+<td>Arsenic</td>
+<td>As</td>
+<td>7440-38-2</td>
+<td>0.2 µg/gm</td>
+</tr>
+<tr>
+<td>Cadmium</td>
+<td>Cd</td>
+<td>7440-43-9</td>
+<td>0.2 µg/gm</td>
+</tr>
+<tr>
+<td>Lead</td>
+<td>Pb</td>
+<td>7439-92-1</td>
+<td>0.5 µg/gm</td>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>Hg</td>
+<td>7439-97-6</td>
+<td>0.1 µg/gm</td>
+</tr>
+</table>
+\\*Action levels based on USP Section 232 Elemental Impurities — Limits based on maximum of 10gm/day ingested.
+### I. Pesticide testing
+A producer shall arrange for a sample of each homogenized lot to be collected and tested by an approved psilocybin testing laboratory for the purpose of pesticide testing, and the sample shall pass testing prior to the lot being released for sale or distribution for consumption. A sample shall be deemed to pass the pesticide test if concentrations of targeted pesticides are lower than the action levels listed in Table 4, *Pesticide Testing Requirements*.
+1. The department may require testing for additional pesticides if quality control or inspection testing conducted by psilocybin testing laboratories, NMDA, or the department identify their presence in a psilocybin product produced or manufactured by any psilocybin establishment. The department shall provide written notice to producers 30 calendar days before implementing required testing for additional pesticide residues.
+2. Nothing in this section shall be interpreted to waive or diminish any requirement of the Pesticide Control Act, Sections 76-4-1 et seq. NMSA 1978. The department, alone or in conjunction with NMDA, may investigate any suspected use of a pesticide not registered with NMDA for use on psilocybin.
+**Table 4. Pesticide Testing Requirements**
+<table header-row="true">
+<tr>
+<td>**Targeted Pesticide**</td>
+<td>**CAS Number**</td>
+<td>**Action Level (µg/g)**</td>
+</tr>
+<tr>
+<td>†Abamectin</td>
+<td>71751-41-2</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>†Acequinocyl</td>
+<td>57960-19-7</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>†Bifenazate</td>
+<td>149877-41-8</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>†Bifenthrin</td>
+<td>82657-04-3</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>†Etoxazole</td>
+<td>153233-91-1</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>†Imazalil</td>
+<td>35554-44-0</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>†Imidacloprid</td>
+<td>138261-41-3</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>\\*\\*Metrafenone</td>
+<td>220899-03-6</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>†Myclobutanil</td>
+<td>88671-89-0</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>†Paclobutrazol</td>
+<td>76738-62-0</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>Piperonyl butoxide</td>
+<td>51-03-6</td>
+<td>10</td>
+</tr>
+<tr>
+<td>†Pyrethrins (cumulative total)</td>
+<td>121-21-1 / 25402-06-6 / 4466-14-2</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>†Spinosyn A, D (cumulative total)</td>
+<td>131929-60-7 / 131929-63-0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>†Spiromesifen</td>
+<td>283594-90-1</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>†Spirotetramat</td>
+<td>203313-25-1</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>\\*\\*Thiabendazole</td>
+<td>148-79-8</td>
+<td>40.0</td>
+</tr>
+<tr>
+<td>†Trifloxystrobin</td>
+<td>141517-21-7</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>Other pesticide not registered with NMDA for use on psilocybin</td>
+<td>Varies</td>
+<td>0.02</td>
+</tr>
+</table>
+\\*Micrograms of pesticide per gram (µg/g) of sample / parts per million (ppm). Report levels less than the Limit of Quantitation for each pesticide residue according to the following example: "Paclobitrazol \\< 0.4 µg/g". † Not registered with NMDA. \\*\\* Regulatory limits for mushrooms from the USDA via Foodchain application.
+### J. Release of lot after testing
+A producer may release an entire homogenized lot or product lot for sale or distribution for consumption, provided that the sample taken from the lot passes the tests required in this section.
+### K. Procedures for testing
+A producer shall adhere to the following procedures:
+1. After collection of samples, a homogenized lot or product lot shall be segregated in a secure container and stored under controlled environmental conditions (temperature, humidity, light) designed to limit microbial growth or other spoilage until the producer receives a certificate of analysis indicating that the lot meets the testing requirements.
+2. The secured container shall be labeled with the identification number used in the traceability system, the name of the psilocybin testing laboratory, the date on which the samples were taken, and, in minimum 12-point font, in all capital letters, "AWAITING TEST RESULTS. DO NOT USE."
+3. The psilocybin testing laboratory and the producer submitting samples shall both accurately and timely document the sampling and testing of the lot in the traceability system.
+4. A producer shall maintain records of all results of laboratory tests conducted for at least the preceding two years and shall make those results available to practitioners and patients upon request.
+### L. Re-testing
+1. If a sample fails any test, the producer may request re-testing by the same psilocybin testing laboratory or another psilocybin testing laboratory. If the repeated test is within acceptable limits, then the lot may be released for sale or distribution for consumption.
+2. Homogenized lots and any product lots derived from a homogenized lot shall be re-tested for potency, water content, and microbiological contaminants no less than five months and no more than 6 months after the date of the previous test. Re-testing of homogenized lots and product lots shall be conducted according to the same standards as the initial test of the homogenized lot.
+### M. Recall and destruction
+Any psilocybin lot that fails a test is subject to recall and destruction in accordance with the following:
+1. The producer shall remove the lot from inventory;
+2. If any product was previously sold or otherwise distributed from the failed lot, the producer shall notify those persons who received the product of the failed test result and shall recall the product;
+3. If any product from the failed lot has been consumed, the practitioner who dispensed the product shall forward the notification of the failed test to the qualified patient who consumed the product;
+4. The producer shall note the removal from inventory and the notice of recall in the traceability system within 24 hours; and
+5. The producer shall note the success or failure of the recall in the traceability system within seven calendar days.
+\[7.35.2.19 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.20 ADDITIONAL TESTING SERVICES OFFERED BY PSILOCYBIN TESTING LABORATORIES
+A psilocybin testing laboratory may provide additional testing services to producers for quality improvement, research and development, or labeling purposes.
+### A. Research and development testing; quality control testing
+A psilocybin testing laboratory may conduct such additional tests that a producer may wish to be conducted on a psilocybin product for the purposes of research and development or quality control.
+1. The producer may collect the sample, or an agent of the psilocybin testing laboratory may collect the sample.
+2. If a producer requests testing for research and development purposes, the results may not be used to satisfy any required testing requirement, even if the sample passes all tests.
+3. The failure of a test that is conducted for research and development purposes shall not constitute the failure of a test required by this rule.
+4. The results of a test conducted for research and development purposes shall not be included on a product label.
+### B. Testing for the purposes of labeling
+A psilocybin testing laboratory may conduct such additional tests that a producer may wish to be conducted on a psilocybin product for the purposes of labeling, including but not limited to tests for additional pesticides, microbial contaminants, solvents, mycotoxins, and metals.
+1. An agent of the psilocybin testing laboratory shall collect the samples according to the laboratory's protocols.
+2. A label may include the results of the additional test.
+3. A label may include a reference to the sample passing third-party psilocybin screening criteria, including one or more of the following:
+	- naming the contaminants for which screening was performed;
+	- providing an electronic link or QR code to the list of contaminants for which the psilocybin product was screened; or
+	- including a statement that the product has met third-party screening criteria, such as those established by an industry association, except that no label shall contain claims that a psilocybin product is "pesticide free" or "organic" unless such statements are specifically authorized under U.S. department of agriculture regulations.
+### C. Reporting of contamination
+Nothing in this rule shall be interpreted to require a psilocybin testing laboratory to offer testing for analytes not included in required testing. However, a psilocybin testing laboratory shall report to the department the detection of any contaminants found in these samples.
+### D. Testing services limited to entities in NM; tribal governments
+A psilocybin testing laboratory may perform any test on a sample of psilocybin product for any entity located within New Mexico, and for any entity operated or permitted by a tribal government with which the department has an intergovernmental agreement covering psilocybin product testing. If the intergovernmental agreement permits such entities to collect and submit samples, the psilocybin testing laboratory shall provide guidance on sample collection; otherwise, an agent of the laboratory shall collect samples.
+### E. Testing services for the department or other governmental entities
+A psilocybin testing laboratory may perform any test on behalf of the department, the NM department of agriculture, another state agency, or a state or local law enforcement authority acting within its lawful jurisdiction.
+\[7.35.2.20 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.21 WASTAGE OF PSILOCYBIN AND PSILOCYBIN PRODUCTS; PERMITTED METHODS
+**A.** A producer shall waste any psilocybin product to which a pesticide has been applied, and shall waste any product that is manufactured using an unapproved solvent.
+**B.** Wastage of psilocybin or psilocybin products shall be accomplished by destroying, combining, or otherwise incorporating the psilocybin or psilocybin product into other material making it unusable.
+**C.** Disposal of wasted products shall be conducted in accordance with all applicable waste disposal laws.
+**D.** Producers shall not attempt to incorporate a wasted psilocybin product into any product intended for human consumption.
+**E.** Producers shall record the wastage of products within 24 hours, including batch or lot number, weight, dates of wastage and disposal, and any test results associated with the wasted product, in the traceability system, and shall deduct any wasted items from inventory. The electronic record shall be retained for no less than two years following disposal.
+\[7.35.2.21 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.22 QUALITY ASSURANCE TESTING; COMPLAINT PROCEDURE
+### A. Department-initiated quality assurance testing
+The department or its representative(s) may conduct quality assurance sampling and testing of psilocybin or psilocybin products, and may require a producer to provide samples for this purpose. The department may additionally adopt and enforce a randomized testing schedule for the sampling and testing of psilocybin products, provided that a producer shall not be required to submit to randomized sampling and testing of psilocybin products more than four times within any 12-month period. The department may prohibit the sale or transfer of products that are determined by the department to contain prohibited levels of a contaminant, or that are found to have been improperly tested.
+### B. Testing by NMDOH scientific laboratory
+The New Mexico department of health scientific laboratory may, upon the request of the program, test psilocybin and psilocybin products and may act as a reference laboratory for the program. The program may also collaborate with scientific laboratory staff for the purpose of conducting inspections of psilocybin testing laboratories and laboratory applicants.
+### C. Complaints
+If the department receives a complaint regarding the presence of a contaminant in a psilocybin product, improper labeling of a psilocybin product, or if the department has reason to believe a contaminant or incorrect labeling may jeopardize public health and safety, the department or its representative may conduct an inspection and may require a producer to provide samples to the department for testing, which shall not be counted toward the randomized testing 12-month cap. The department shall electronically transmit any complaint to the producer, via e-mail or notification in the traceability system, within five business days of the department receiving the complaint. Producers shall allow the department or its representative(s) access to a facility or to collect samples. A complaint shall be made on a form provided by the department that at a minimum identifies:
+1. date the complaint is filed;
+2. location of the product;
+3. any identifiable features of the product at issue, including the type and amount;
+4. the nature of the complaint; and
+5. name and contact information of the complainant.
+### D. Department sampling and testing requirements
+Department employees may possess psilocybin samples for the purposes of verifying a regulated entity's compliance with the Medical Psilocybin Act or department rules. The department shall comply with the following testing requirements:
+1. the department shall maintain chain of custody documentation for any testing samples taken;
+2. a written receipt shall be given to the producer for all testing samples;
+3. all testing samples shall be placed into a sealed container and clearly labeled;
+4. all testing samples shall be tested by the department or a designated testing facility; and
+5. the quantity of psilocybin or psilocybin products that is gathered by the department from a producer for testing purposes shall not exceed the applicable testing sample sizes.
+**E. Costs of testing:** The producer shall bear the costs of any testing required by the department.
+**F. Record of samples:** Producers shall record in the traceability system, within 24 hours, the samples taken by the department, including batch or lot number, weight, dates the sample was taken, and any test results associated with the product, and shall deduct the samples from inventory. The electronic record shall be retained for no less than two years.
+\[7.35.2.22 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.23 PRODUCER REQUIREMENTS FOR SANITATION AND PRODUCT HANDLING
+Producers shall comply with the provisions of the following subparts of the 2022 United States food and drug administration model food code, which are incorporated as though fully set forth herein:
+- **A.** Subpart 1-2 ("Definitions");
+- **B.** Subpart 2-3 ("Personal Cleanliness");
+- **C.** Subpart 2-4 ("Hygienic Practices");
+- **D.** Subpart 4-3 ("Numbers and Capacities");
+- **E.** Subpart 4-4 ("Location and Installation");
+- **F.** Subpart 4-5 ("Maintenance and Operation");
+- **G.** Subpart 4-6 ("Cleaning of Equipment and Utensils");
+- **H.** Subpart 4-7 ("Sanitization of Equipment and Utensils");
+- **I.** Subpart 5-1 ("Water");
+- **J.** Subpart 5-2 ("Plumbing System");
+- **K.** Subpart 5-4 ("Sewage, Other Liquid Waste, and Rainwater");
+- **L.** Subpart 6-1 ("Materials for Construction and Repair");
+- **M.** Subpart 6-2 ("Design, Construction, and Installation");
+- **N.** Subpart 6-3 ("Numbers and Capacities");
+- **O.** Subpart 6-4 ("Location and Placement"); and
+- **P.** Subpart 6-5 ("Maintenance and Operation").
+\[7.35.2.23 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.24 REQUIREMENTS FOR THE TRANSPORTATION OF PSILOCYBIN
+### A. General requirements
+Producers shall develop and maintain a plan for safe transportation of psilocybin which shall include the following requirements:
+1. transportation of psilocybin shall only be conducted by persons holding a permit or designated employees, or contractors of a permittee or certified practitioner;
+2. prior to transporting psilocybin a permittee must complete a chain of custody form, only the psilocybin listed on the chain of custody form may be transported;
+3. psilocybin shall only be transported inside of a motor vehicle in reasonable operating condition and shall not be visible or identifiable from outside of the vehicle;
+4. psilocybin shall be locked in a box, container, or cage that is secured within the inside of the vehicle, including when such a box, container, or cage is located inside of the trunk;
+5. vehicles shall be locked and secured while left unattended;
+6. vehicles shall have a vehicle alarm system;
+7. psilocybin shall not be tampered with, or opened, during transport;
+8. a person who transports psilocybin or psilocybin products may transport to multiple approved locations during one trip;
+9. a person who transports psilocybin or psilocybin products shall not deviate from the travel requirements described in this section, except for necessary rest, fuel, or vehicle repair stops;
+10. vehicles transporting psilocybin are subject to inspection by the department at any permitted premises or during transport at any time;
+11. storage and transportation of psilocybin shall be under conditions that will maintain and protect it against physical, chemical, and microbial contamination as well as against deterioration of the psilocybin and the container;
+12. the vehicle must be properly registered with the New Mexico motor vehicle division; and
+13. the driver of the vehicle must be prepared to show proper identification, including an employee badge, driver's license, vehicle registration and proof of insurance, and the appropriate chain of custody form to law enforcement and the department when requested.
+### B. Chain of custody form
+Prior to transporting psilocybin, a permittee shall generate and submit a chain of custody form through traceability for the following activities:
+1. testing and sampling of psilocybin;
+2. sale of psilocybin; and
+3. destruction, wastage, or disposal of psilocybin.
+### C. Verification of chain of custody form
+The permittee receiving the psilocybin shipment will verify the psilocybin is accurately reflected in the chain of custody.
+### D. Rejection of shipment
+Permittees shall not take into possession or transport:
+1. Any psilocybin that is not on the chain of custody form; or
+2. Any psilocybin that is less than or greater than the amount reflected on the chain of custody.
+**E. Responsibility for discrepancy:** A permittee who transports a psilocybin product shall be responsible for any discrepancy between the chain of custody form and the psilocybin product in their possession during transport.
+**F. Void or change prohibited:** A permittee shall not void or alter a chain of custody document after departing from the originating licensed premises.
+**G. Documentation of all transport:** A chain of custody document shall accompany every transport of psilocybin or a psilocybin product.
+\[7.35.2.24 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.25 MONITORING AND CORRECTIVE ACTIONS
+**A. Monitoring:** The department or its designee may perform on-site assessments of a permittee or permittee-applicant, with or without prior notice, during normal business hours to determine compliance with the Medical Psilocybin Act and this rule.
+**B. Corrective action:** If the department or its designee finds that corrective action is needed to ensure compliance with the Medical Psilocybin Act or this rule, the department shall issue notice to the permittee or permittee-applicant of the deficiency, and the permittee or permittee-applicant shall correct the deficiency within 30 calendar days.
+**C. Record access; interviews:** The department may review any and all records related to the operation of a permittee, and may require and conduct interviews with such persons or entities, and with persons affiliated with such entities, for the purpose of determining compliance with the Medical Psilocybin Act and this rule. The department shall have access to the financial records of a permittee, including sales records, and shall be granted immediate access to inspect or copy those records upon request.
+**D. Referral to law enforcement:** The department shall refer complaints alleging criminal activity that are made against a permittee to appropriate law enforcement authorities.
+**E. Financial records:** A permittee shall maintain detailed sales and invoicing records in a manner and format approved by the department, and shall inform the department of the location where such records are kept, and shall promptly notify the department if the records are removed.
+\[7.35.2.25 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.26 DISCIPLINARY ACTIONS AND APPEAL PROCESS
+### A. Immediate suspension; record review process
+If immediate action is necessary to protect the health and safety of the public, the program administrator or their designee may immediately suspend the permit of a producer or laboratory in whole or in part.
+1. A permittee whose permit has been immediately suspended in whole or in part may request a record review in accordance with this part.
+2. The sole issue at a record review on a summary suspension is whether the permit shall remain suspended pending a final adjudicatory hearing and subsequent decision by the secretary.
+3. A permittee given notice of summary suspension may submit a written request for a record review. To be effective, the written request shall:
+	- be made no later than 30 calendar days from the date of the notice issued by the department, as determined by the postmark;
+	- be properly addressed to the medical psilocybin program;
+	- state the requestor's name, address, and telephone number;
+	- provide a brief narrative rebutting the stated grounds for the suspension, or demonstrating that the issues which resulted in the suspension have been resolved; and
+	- include attachments of any additional documentation that the permittee wishes to be considered in the record review.
+4. The record review requested subsequent to an immediate suspension shall be conducted by the program administrator or their designee.
+5. The program administrator shall appoint a designee to conduct the record review by reviewing all documents submitted by the permittee and the department that are relevant to the immediate suspension.
+6. The record review shall be completed, and a written decision issued by the program administrator or their designee, no later than 15 calendar days from the date that the medical psilocybin program receives the written request for record review. The decision shall be issued to the permittee via certified U.S. postal mail.
+### B. Notices of disciplinary action; grounds for disciplinary action
+The department may issue notice of an immediate suspension and notice of contemplated disciplinary action to a permittee. Notice shall be served upon a permittee's contact person of record. Notice shall be served via certified U.S. postal mail; a courtesy copy will be transmitted via e-mail or through the traceability system. A notice shall be deemed to have been served on the date borne by the certified mail return receipt showing delivery or the last attempted delivery of the notice or decision to the addressee or refusal of the addressee to accept delivery of the notice or decision.
+### C. Grounds for disciplinary action
+Disciplinary action may be taken against a permittee or a permit-applicant. Disciplinary action may consist of revocation, or suspension in whole or in part, of a permit, denial of an application for a permit, and other actions. Disciplinary action may be imposed based on:
+- violation of any provision of this rule;
+- selling or distributing psilocybin or a psilocybin product in a manner that is inconsistent with rule or statute;
+- threatening or harming a patient, a practitioner, clinician, guide, or an employee of the department;
+- intentionally destroying, damaging, altering, removing, or concealing evidence of a violation of rule or statute; attempting to do so; or asking or encouraging another person to do so;
+- conduct that shows willful or reckless disregard for health or safety;
+- failure to comply with the department's requested access to premises or materials;
+- falsification or misrepresentation of any material or information submitted to the department;
+- failure to adhere to any attestation, acknowledgement, verification, or other representation made to the department;
+- failure to submit or disclose information required by this rule or otherwise requested by the department;
+- failure to correct any violation of this rule that is cited as a result of a review or audit of financial records or other materials, or that is cited as a result of a monitoring visit or site inspection;
+- a discrepancy between a chain of custody form and the transported psilocybin product;
+- a finding of non-compliance with tax obligations by a taxation regulatory authority; and
+- a finding by the department that any person holds an ownership interest in a permit or permittee that is nominal or without the benefits and risks of genuine ownership.
+### D. Persons and entities who may request a hearing
+The following persons or entities may request a hearing to contest an action or proposed action of the department, in accordance with this rule:
+1. a permittee whose permit has been immediately suspended or who has received a notice of contemplated action to impose a disciplinary action; and
+2. a permit-applicant whose application is denied for any reason other than failure to submit a completed application or failure to meet a submittal requirement of this rule.
+### E. Timing and content of request for hearing
+A permittee or permit-applicant who wishes to request a hearing may do so by mailing a written request for hearing no later than 30 calendar days from the date that the notice of contemplated action is received, or in the case of an immediate suspension, no later than 30 calendar days from the date of the immediate suspension. The request shall:
+1. be properly addressed to the medical psilocybin program;
+2. be mailed to the medical psilocybin program via certified U.S. postal mail (return receipt requested, to verify delivery);
+3. state the requestor's name, address, and telephone number; and
+4. include a statement of the issue(s) that the requestor considers relevant to the review of the action.
+### F. Hearing process
+1. All hearings held pursuant to this section shall be conducted by a hearing officer appointed by the secretary.
+2. Hearings shall be conducted in Santa Fe, NM, provided that, if the permittee or permittee-applicant is located more than 100 miles from Santa Fe, NM, or if the parties otherwise consent, the hearing may be conducted via telephone or via web video conference.
+3. Hearings held pursuant to this section that concern patients or patient-applicants shall be closed to the public. Hearings may also be closed in whole or in part, upon the request of a party, to prevent the disclosure of information that is confidential under applicable law.
+4. The hearing shall be recorded, at a minimum, by means of sound reproduction.
+### G. Scheduling
+The department shall schedule and hold the hearing as soon as practicable, provided that the hearing shall not be held later than 60 calendar days from the date the department receives the request for hearing. The hearing officer may extend the 60-day time period upon motion for good cause shown, or the parties may extend the 60-day time period by mutual agreement. The department shall issue a notice of hearing, which shall include:
+1. a statement of the location, date, and time of the hearing;
+2. a short and plain statement of the legal authority under which the hearing is to be held; and
+3. a short and plain statement of the subject of the hearing.
+### H. Presentation of evidence
+All parties shall be given the opportunity to present evidence and argument on all relevant issues.
+### I. Record of proceeding
+The record of the proceeding shall include the following:
+1. all pleadings, motions, and intermediate rulings;
+2. evidence and briefs received or considered;
+3. a statement of matters officially noticed;
+4. offers of proof, objections, and rulings thereon;
+5. proposed findings and conclusions; and
+6. any findings or decisions recommended by the hearing officer for adoption by the secretary.
+**J. Recording:** A party may request a copy of the recording of the proceedings.
+### K. Procedures and evidence
+1. A party may be represented by a person licensed to practice law in New Mexico or a non-lawyer representative, or may represent themselves.
+2. The rules of evidence as applied in the courts do not apply in these proceedings. Any relevant evidence shall be admitted. Irrelevant, immaterial, or unduly repetitious evidence may be excluded.
+3. The experience, technical competence, and specialized knowledge of the hearing officer, the department or the department's staff may be used in the evaluation of evidence.
+4. An appellant's failure to appear at the hearing at the date and time noticed for the hearing shall, absent good cause, constitute a default.
+### L. Conduct of proceeding
+Unless the hearing officer determines that a different procedure is appropriate, the hearing shall be conducted in accordance with the procedures set forth in this rule. The following procedures shall apply:
+1. the appellant shall present an opening statement and the department may present an opening statement or reserve the statement until presentation of the department's case;
+2. after the opening statements, if made, the appellant shall present their case;
+3. upon the conclusion of the appellant's case, the department shall present its case;
+4. upon conclusion of the appellee's case, the appellant may present rebuttal evidence; and
+5. after presentation of the evidence by the parties, the parties may present closing argument.
+**M. Burden of proof:** The appellant shall bear the burden of establishing by a preponderance of the evidence that the decision made or proposed by the department should be reversed or modified.
+**N. Continuances:** The hearing examiner may grant a continuance for good cause shown. A motion to continue a hearing shall be made at least 10 calendar days before the hearing date.
+### O. Telephonic and web video hearings
+1. Any party requesting that a hearing be conducted via telephone or web video conference shall do so no less than 10 business days prior to the date of the hearing. Notice of the hearing shall be given to all parties and shall include all necessary telephone numbers or instructions for access to the web video conference.
+2. The in-person presence of some parties or witnesses at the hearing shall not prevent the participation of other parties or witnesses by telephone or web video conference with prior approval of the hearing officer.
+### P. Recommended action and final decision
+1. The parties may submit briefs including proposed findings of fact and conclusions of law for consideration by the hearing officer.
+2. No later than 30 calendar days after the last submission by a party, the hearing officer shall prepare and submit to the secretary a written recommendation of action to be taken by the secretary. The recommendation may include proposed findings of fact and conclusions of law for adoption by the secretary, and shall propose sustaining, modifying, or reversing the action or proposed action of the department.
+3. The secretary shall issue a final written decision accepting or rejecting the hearing officer's recommendation in whole or in part no later than 45 calendar days after receipt of the hearing officer's recommendation. The final decision shall identify the final action taken. Service of the secretary's final decision shall be made upon the appellant by certified mail.
+4. The final decision or order shall be included in a permittee's file with the medical psilocybin program.
+\[7.35.2.26 NMAC - N, 6/23/2026\]
+---
+## 7.35.2.27 SEVERABILITY
+The provisions of this rule are separate and severable. If any provision of this rule is held to be invalid, unconstitutional, or unenforceable, the remaining provisions shall stay in effect.
+\[7.35.2.27 NMAC - N, 6/23/2026\]
+---
+HISTORY OF 7.35.2 NMAC — \[RESERVED\]
+---
+## Source
+New Mexico Register, Volume XXXVII, Issue 12, June 23, 2026. Original PDF attached below.
+<pdf src="file://%7B%22source%22%3A%22attachment%3Adc662059-324c-4330-977c-6014ff35d61d%3A4f612cab-37aa-4715-9cac-716d0298b473.pdf%22%2C%22permissionRecord%22%3A%7B%22table%22%3A%22block%22%2C%22id%22%3A%22d9f5131c-c420-4196-9819-f5b14871a4b4%22%2C%22spaceId%22%3A%224dda2b72-22dc-815b-aa49-00033e76889f%22%7D%7D">7.35.2_v1_260623.pdf — adopted rule, 6/23/2026</pdf>
+</content>
+</page>"}

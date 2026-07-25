@@ -51,13 +51,33 @@ So a practicum student who administers is protected only if the student is a "cl
 
 The training permit is therefore necessary but may not be sufficient for facilitator students. That is a question for counsel, not a drafting question, and it is the reason 7.35.3.19 H(3) confines the permittee's authority to supervised practicum work rather than granting a general authority.
 
-### 3. It raises a question larger than the training chain, which this drafting does not answer.
+### 3. 7.35.2.7 NMAC answers half of the question it raised, and opens a defect of its own
 
-The same analysis applies to persons the published rule already authorizes. 7.35.3.14 (B), page 9, authorizes facilitators to possess and provide psilocybin products, and 7.35.3.14 (C) authorizes healing center owners and employees to purchase, possess, sell and administer them. Neither class is named in Section 5, and facilitators are not required to hold any professional license.
+7.35.3.7, page 1, provides that "The definitions in 7.35.2.7 NMAC apply to this part." 7.35.2 NMAC was adopted effective June 23, 2026. Its text is at `source-text/7.35.2-NMAC-adopted-2026-06-23.txt`, retrieved July 25, 2026.
 
-**This is not asserted as a conflict.** 7.35.3.7, page 1, provides that "The definitions in 7.35.2.7 NMAC apply to this part." 7.35.2 NMAC is not in this repository. If 7.35.2.7 defines {{PT}} and facilitator as species of the statutory "clinician", the question resolves. If it does not, 7.35.3.14 (B) and (C) reach further than Section 5 does, which would be a defect of a different order from anything in this file and well outside the training and education scope.
+The relevant definitions:
 
-**Recommended next step:** counsel reads 7.35.2.7 NMAC against Section 3(B) of the Act. This is the single highest-value check available and it takes one document.
+> "Clinician" means an approved health care provider licensed in New Mexico who holds a certification from the department to provide medical services to qualified patients.
+
+> "Practitioner" means an individual who is a licensed healthcare professional who is certified by the department to provide medical psilocybin integrative therapy, supervise guides, and who has completed department required trainings.
+
+> "Guide" an individual who has completed training and education approved by the department to be able to assist practitioners during the administration sessions and who has been registered with the department.
+
+**Resolved: a {{PT}} carries the licensure predicate.** Both "clinician" and "{{PT}}" require a licensed health care professional certified by the department. A {{PT}} therefore has a straightforward claim to be a "clinician" for purposes of Section 5 of the Act, and 7.35.3.14 (A) sits on solid ground. So does the position of a {{PT}} student holding a training permit, subject to the point in item 2 above.
+
+**Not resolved, and now sharper: "facilitator" is not defined anywhere.** The word appears zero times in 7.35.2 NMAC. It is not in the definitions that 7.35.3.7 imports, and 7.35.3 does not define it either. Nor are "healing center", "certifying clinician", or "student", each of which carries regulatory consequence throughout 7.35.3.
+
+**The nearest analogue is "guide", and the fit is close.** 7.35.2.7 defines a guide as a person who assists {{PTS}} during administration sessions and is registered with the department, and it defines a {{PT}} as a person who supervises guides. 7.35.3.13 B, page 8, defines a facilitator as a person who "is authorized to work alongside a {{PT}} during medical psilocybin services", who "works under the direct supervision of a {{PT}}", and who provides peer, logistical and administrative support. Those describe the same role.
+
+**Two consequences, neither of which this drafting resolves.**
+
+First, if facilitator and guide are the same role under two names, then Part 3 has renamed a defined term without amending the part that defines it, and every facilitator provision in Part 3 rests on a term with no definition. That includes four provisions in this document: 7.35.3.13 B, 7.35.3.14 (B), the facilitator practicum in 7.35.3.19, and the staffing ratio in 7.35.3.20 H(5).
+
+Second, a guide is not required to hold any professional license, and neither is a facilitator under 7.35.3.9 F, page 3. Neither is therefore a "clinician" under Section 3(B) of the Act or under 7.35.2.7. 7.35.3.14 (B) authorizes facilitators to possess psilocybin products and provide them to qualified patients. Section 5 of the Act names producers, clinicians and qualified patients, and protects everyone else only for presence. Whether Section 5 reaches a facilitator is a question for counsel and it is larger than the training chain.
+
+**The narrow fix, which is not drafted here.** Either amend 7.35.2.7 NMAC to define "facilitator", or conform Part 3 to use "guide". Both are amendments to provisions outside the four in this document. The first is cleaner and is what the drafting assumes. Flagged rather than drafted, because it changes terminology across all 19 pages of Part 3 and belongs with the wider Part 3 work.
+
+**One further note for whoever does that pass.** 7.35.2.7's "guide" is "registered with the department." Registration by that name exists in the adopted chapter. 7.35.3.14 (C) conditions healing center staff authority on being "registered with the department" and Part 3 creates no such registration, which is Defect 2 below. The two may be the same missing mechanism.
 
 ---
 
@@ -225,9 +245,9 @@ The only relief in the published rule is two discretionary waivers with no crite
 
 **Section numbering.** The published rule ends at 7.35.3.28 SEVERABILITY. The new section is numbered 7.35.3.29. If the department prefers severability to remain last, the new section becomes 7.35.3.28 and severability becomes 7.35.3.29.
 
-**What the drafting does not decide.** Whether the Act reaches administration to a non-patient. The rule cites its authority as Section 26-2D-7 NMSA 1978 and its objective by reference to Sections 26-2D-1 through -11 NMSA 1978 (7.35.3.3 and 7.35.3.6, page 1). The Act's text is not in this repository and the question is not answered anywhere in it. The July 17 morning board transcript treats it as needing legislation: "what's going to be presented in the training committee this afternoon is impossible to do adequate training without having the ability for people to use psilocybin in the training," said in the context of hoping "that there's going to be a fix-it bill." This is question 1 at `questions-for-metz.md`.
+**What the drafting does not decide.** Whether the Act reaches administration to a non-patient. The rule cites its authority as Section 26-2D-7 NMSA 1978 and its objective by reference to Sections 26-2D-1 through -11 NMSA 1978 (7.35.3.3 and 7.35.3.6, page 1). The Act's text is not in this repository and the question is not answered anywhere in it. The July 17 morning board transcript treats it as needing legislation: "what's going to be presented in the training committee this afternoon is impossible to do adequate training without having the ability for people to use psilocybin in the training," said in the context of hoping "that there's going to be a fix-it bill." This is question 1 at `open-questions.md`.
 
-**Also not decided: whether a practicum participant may be another student.** The recommendation describes stage one as a "retreat or peer-support model" (`docs/documents/metz-recommendations-2026-07-17.pdf`, page 3) and does not say whether trainees may serve as each other's participants. Subsection B as drafted does not exclude it. This is question 5 at `questions-for-metz.md`.
+**Also not decided: whether a practicum participant may be another student.** The recommendation describes stage one as a "retreat or peer-support model" (`docs/documents/metz-recommendations-2026-07-17.pdf`, page 3) and does not say whether trainees may serve as each other's participants. Subsection B as drafted does not exclude it. This is question 5 at `open-questions.md`.
 
 **In scope.** The drafted parts, yes, all in 7.35.3.19.
 
