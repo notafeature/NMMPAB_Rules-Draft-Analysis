@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Documents · NM Medical Psilocybin Training &amp; Education</title>
+<title>The Deferred Training Requirements · NM Medical Psilocybin</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -118,6 +118,57 @@
   .revs li:first-child{border-top:none; padding-top:0;}
   .revs b{color:var(--text); font-weight:650;}
   /* /provenance block */
+
+  .orient{margin:26px 0 0; background:var(--surface-2); border:1px solid var(--border); border-radius:14px; padding:18px 20px;}
+  .orient .ok{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
+  .orient>p{font-size:14.5px; color:var(--text-muted); line-height:1.6; margin:0 0 14px;}
+  .orow{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px;}
+  .ocol{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px;}
+  .ocol.rec{opacity:.72;}
+  .ocol.cur{border-color:var(--accent); border-left:3px solid var(--accent);}
+  .ocol .ol{font-size:13.5px; font-weight:650; color:var(--text); margin:0;}
+  .ocol .od{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); margin:2px 0 6px;}
+  .ocol .ox{font-size:12.5px; color:var(--text-muted); line-height:1.5; margin:0;}
+  .onote{font-size:12.5px; color:var(--text-faint); line-height:1.55; margin:14px 0 0 !important;}
+
+  .pw{margin:22px 0 0; background:var(--surface); border:1px solid var(--border-strong); border-radius:14px; padding:20px 22px; box-shadow:var(--shadow);}
+  .pwhead{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;}
+  .pwhead h3{font-size:20px; margin:0;}
+  .pill{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; padding:3px 10px; border-radius:20px; white-space:nowrap;}
+  .pill.defer{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
+  .pill.moved{background:#FBE9EC; color:#B23A48; border:1px solid #E8C8CE;}
+  .pill.new{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
+  .pwsum{font-size:15px; color:var(--text); line-height:1.6; margin:10px 0 0;}
+  .pwgrid{display:grid; grid-template-columns:1fr 108px 1fr 108px 1fr; gap:0; align-items:stretch; margin:16px 0 0;}
+  .pwcol{border:1px solid var(--border); border-radius:10px; padding:13px 15px; background:var(--surface);}
+  .pwcol.rec{background:var(--surface-2); opacity:.82;}
+  .pwcol.mid{background:var(--surface-2);}
+  .pwcol.cur{border-color:var(--accent); border-left:3px solid var(--accent); background:var(--surface);}
+  .pwcol .cl{font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--text-muted); margin:0 0 8px;}
+  .pwcol.cur .cl{color:var(--accent);}
+  .pwcol .cd{font-family:var(--mono); font-weight:400; letter-spacing:0; text-transform:none; color:var(--text-faint);}
+  .pwcol .cq{font-size:13.5px; line-height:1.6; color:var(--text); margin:0;}
+  .pwcol.rec .cq, .pwcol.mid .cq{color:var(--text-muted);}
+  .pwcol .cq.empty{font-style:italic; color:var(--text-faint);}
+  .pwcol .cs{font-size:11.5px; font-family:var(--mono); margin:9px 0 0; padding-top:8px; border-top:1px solid var(--border);}
+  .pwarrow{display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 8px; position:relative;}
+  .pwarrow::before{content:""; position:absolute; left:0; right:0; top:26px; height:1px; background:var(--border-strong);}
+  .pwarrow .ab{position:relative; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--text-muted); background:var(--surface); padding:3px 7px; border:1px solid var(--border-strong); border-radius:20px;}
+  .pwarrow.chg .ab{color:#B23A48; border-color:#E8C8CE; background:#FBE9EC;}
+  .pwarrow .an{font-size:11.5px; color:var(--text-faint); line-height:1.45; margin-top:10px;}
+  .pwnote{font-size:13.5px; color:var(--text-muted); line-height:1.6; margin:15px 0 0; padding-top:13px; border-top:1px solid var(--border);}
+
+  .more{margin:22px 0 0; border:1px dashed var(--border-strong); border-radius:12px; padding:15px 18px; background:var(--surface-2);}
+  .more .mk{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--text-faint); margin:0 0 7px;}
+  .more p{font-size:13.5px; color:var(--text-muted); line-height:1.6; margin:0;}
+
+  @media (max-width:900px){
+    .orow{grid-template-columns:1fr;}
+    .pwgrid{grid-template-columns:1fr;}
+    .pwarrow{padding:10px 0;}
+    .pwarrow::before{display:none;}
+    .pwarrow .an{margin-top:6px;}
+  }
 </style>
 <style id="navpass">
   /* ===== Unified site nav (July 2026 UX pass) ===== */
@@ -161,24 +212,6 @@
     .navcta{text-align:left; margin-top:8px;}
     .navcta.on{color:#fff;}
   }
-
-  .key{margin:24px 0 0; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:14px 18px;}
-  .keyh{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  .keylist{list-style:none; margin:0; padding:0; font-size:14px; color:var(--text-muted); line-height:1.6;}
-  .keylist li{margin:5px 0;}
-  .chip{display:inline-block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; padding:2px 8px; border-radius:20px; margin-right:7px; vertical-align:1px;}
-  .chip.cur{background:var(--agree-bg); color:var(--agree); border:1px solid var(--agree-border);}
-  .chip.sup{background:var(--surface-3); color:var(--text-faint); border:1px solid var(--border-strong);}
-  .chip.rec{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
-  .dl{margin:16px 0 0; display:flex; flex-direction:column; gap:12px;}
-  .doc{background:var(--surface); border:1px solid var(--border-strong); border-left:4px solid var(--accent); border-radius:12px; padding:15px 18px; box-shadow:var(--shadow);}
-  .doctop{display:flex; align-items:flex-start; gap:12px; flex-wrap:wrap;}
-  .doc h3{font-size:17px; margin:0; flex:1 1 auto; line-height:1.25;}
-  .doc h3 a{text-decoration:none;}
-  .doc h3 a:hover{text-decoration:underline;}
-  .docdate{font-family:var(--mono); font-size:12px; color:var(--text-faint); margin:5px 0 0;}
-  .docwhat{font-size:14.5px; color:var(--text); line-height:1.58; margin:9px 0 0;}
-  .docmeta{font-size:12.5px; color:var(--text-muted); margin:10px 0 0; padding-top:9px; border-top:1px solid var(--border); font-family:var(--mono);}
 </style>
 </head>
 <body>
@@ -225,162 +258,156 @@
   <div class="col">
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; Advisory Board</p>
-      <h1>Documents</h1>
+      <h1>The deferred training requirements</h1>
       <p class="updated"><b>Updated July 25, 2026.</b></p>
-      <p class="lede">Every source document this site is built from, in one place: what each one is, when it landed, whether it is still current, and a direct download. Nothing here is final, promulgated rule text.</p>
+      <p class="lede">On July 17 the Advisory Board voted seven to nothing to send the practicum and didactic hour requirements back to the Training and Education Committee. This page follows those requirements alone, from the committee's original recommendation through to the rule the department published on July 23, so that the effect of the deferral can be read directly rather than inferred.</p>
     </header>
 
-    <div class="key">
-      <p class="keyh">How to read the labels</p>
-      <ul class="keylist">
-        <li><span class="chip cur">Current</span> The version in force for citation purposes right now.</li>
-        <li><span class="chip sup">Superseded</span> Replaced by a later version. Kept because the site's history pages cite it.</li>
-        <li><span class="chip rec">Record</span> A meeting record or a submission. Not superseded by anything; it is what it is.</li>
-      </ul>
+    <div class="orient">
+      <p class="ok">How to read the three columns</p>
+      <p>A requirement on this page has passed through three documents. Each column shows what that document said, and the two arrows between them show what changed at each step.</p>
+      <div class="orow">
+        <div class="ocol rec"><p class="ol">What the committee recommended</p><p class="od">June 12, 2026</p><p class="ox">The committee's recommendation. It is not a live document. The department turned it into rule language, and it exists now only as the origin of the text that followed.</p></div>
+        <div class="ocol mid"><p class="ol">The draft the board reviewed</p><p class="od">July 9, 2026</p><p class="ox">The rules-style draft the Advisory Board went through section by section. Superseded on July 23.</p></div>
+        <div class="ocol cur"><p class="ol">The rule as published</p><p class="od">July 23, 2026</p><p class="ox">The proposed rule going to the August 28 hearing. This is the operative text today.</p></div>
+      </div>
+      <p class="onote">Every quotation below is verbatim. Where the wording is long, the column shows the operative sentence and the full text opens beneath it. All document links open in a new tab.</p>
     </div>
 
-    <section>
-      <div class="sh"><p class="k">The rule</p><h2>Rules drafts, newest first</h2></div>
-      <p class="body">Three successive drafts of <b>7.35.3 NMAC</b>, the part covering patients, certifying clinicians, practitioners, facilitators, healing centers, other approved locations, and educational programs. Each supersedes the one below it. The section-by-section comparison is on <a href="changes.html">the draft page</a>.</p>
+    <section id="walk">
+      <div class="sh">
+        <p class="k">The deferred set</p>
+        <h2>Requirement by requirement</h2>
+      </div>
+      <p class="body">These are the requirements covered by the July 17 deferral, together with the two provisions they depend on. The committee's recommendation on them is being prepared and had not reached the department before publication.</p>
 
-      <div class="dl">
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule, 7.35.3 NMAC</a></h3>
-            <span class="chip cur">Current</span>
+      <!-- ROW 1 -->
+      <article class="pw">
+        <div class="pwhead">
+          <h3>Total practicum hours</h3>
+          <span class="pill defer">Deferred July 17, published unchanged</span>
+        </div>
+        <p class="pwsum">One hundred hours for facilitators and one hundred and twenty for practitioners. The figure originated in the committee's recommendation and has not moved since, through two subsequent drafts and a unanimous vote to reconsider it.</p>
+        <div class="pwgrid">
+          <div class="pwcol rec">
+            <p class="cl">Recommended <span class="cd">June 12</span></p>
+            <p class="cq">"must include a minimum of one hundred (100) hours of supervised practice training for Facilitators and one hundred and twenty (120) hours for Practitioners"</p>
+            <p class="cs"><a href="documents/recommendation-2026-06-12.pdf#page=7" target="_blank" rel="noopener">Recommendation, p.&nbsp;7</a></p>
           </div>
-          <p class="docdate">Published July 23, 2026</p>
-          <p class="docwhat">The text going to the August 28 hearing. First version with final section numbering. Practicum unchanged; didactic raised from 25 hours to 30.</p>
-          <p class="docmeta">PDF &middot; 19 pages &middot; 309 KB &middot; <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
+          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">Hour totals identical. The draft adds that the practicum must be completed before applying for certification.</span></div>
+          <div class="pwcol mid">
+            <p class="cl">Drafted <span class="cd">July 9</span></p>
+            <p class="cq">"The practicum shall consist of a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners and must be completed prior to applying for certification."</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">July 9 draft, p.&nbsp;5</a></p>
+          </div>
+          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">One word changed, "must" to "shall". The hour totals are untouched.</span></div>
+          <div class="pwcol cur">
+            <p class="cl">Published <span class="cd">July 23</span></p>
+            <p class="cq">"The practicum shall consist of a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners and shall be completed prior to applying for certification."</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">7.35.3.19&nbsp;(A), p.&nbsp;12</a></p>
+          </div>
+        </div>
+        <p class="pwnote">The board voted seven to nothing on July 17 to send this figure to the Training and Education Committee for reassessment. The department published it unchanged six days later, and has said on the record that it remains open to adjusting the hours.</p>
+      </article>
 
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Board-meeting draft, 7.35.3</a></h3>
-            <span class="chip sup">Superseded</span>
+      <!-- ROW 2 -->
+      <article class="pw">
+        <div class="pwhead">
+          <h3>Shared didactic module</h3>
+          <span class="pill moved">Deferred July 17, published higher</span>
+        </div>
+        <p class="pwsum">The classroom requirement shared by practitioners and facilitators rose from twenty-five hours to thirty in the published rule, and three subjects were added to the required curriculum. This figure was covered by the same deferral vote as the practicum hours.</p>
+        <div class="pwgrid">
+          <div class="pwcol rec">
+            <p class="cl">Recommended <span class="cd">June 12</span></p>
+            <p class="cq">The recommendation set the curriculum by subject rather than by a single shared hour total. The twenty-five hour figure first appears in the department's drafting.</p>
+            <p class="cs"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation</a></p>
           </div>
-          <p class="docdate">July 9, 2026</p>
-          <p class="docwhat">What the board reviewed section by section on July 9. Placeholder section numbers. Cited only where the site compares versions.</p>
-          <p class="docmeta">PDF &middot; 17 pages &middot; 422 KB &middot; <a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
+          <div class="pwarrow"><span class="ab">Changed</span><span class="an">The department consolidated the subjects into a single module and set it at twenty-five hours, with five hours of simulated patient experience on top.</span></div>
+          <div class="pwcol mid">
+            <p class="cl">Drafted <span class="cd">July 9</span></p>
+            <p class="cq">"All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of 25 didactic hours, prior to applying for certification"</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-09.pdf#page=4" target="_blank" rel="noopener">July 9 draft, p.&nbsp;4</a></p>
+          </div>
+          <div class="pwarrow chg"><span class="ab">Raised</span><span class="an">Twenty-five hours became thirty. Three subjects were added: Trauma-Informed Care, Dosing, and Non-ordinary states of consciousness. The required list grew from fourteen items to seventeen.</span></div>
+          <div class="pwcol cur">
+            <p class="cl">Published <span class="cd">July 23</span></p>
+            <p class="cq">"All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of 30 didactic hours and 5 hours of simulated patient experience, prior to applying for certification"</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18&nbsp;(C), p.&nbsp;11</a></p>
+          </div>
+        </div>
+        <p class="pwnote">This is the one deferred figure that moved. It was published five hours higher than it stood on the day the board voted to send it to committee. Adding Trauma-Informed Care answers a recommendation Dr. Anne Metz made to the committee on July 17, which asked for trauma to be taught as a subject in its own right rather than folded into other modules.</p>
+      </article>
 
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Department draft</a></h3>
-            <span class="chip sup">Superseded</span>
+      <!-- ROW 3 -->
+      <article class="pw">
+        <div class="pwhead">
+          <h3>When the practicum may begin</h3>
+          <span class="pill new">New in the published rule</span>
+        </div>
+        <p class="pwsum">The published rule bars a student from starting the practicum until half the classroom hours and all of the simulated patient hours are finished. Neither earlier document contains this condition, and it was not raised at either July 17 meeting.</p>
+        <div class="pwgrid">
+          <div class="pwcol rec">
+            <p class="cl">Recommended <span class="cd">June 12</span></p>
+            <p class="cq empty">No counterpart. The recommendation sets no sequencing condition between the classroom hours and the practicum.</p>
           </div>
-          <p class="docdate">June 25, 2026</p>
-          <p class="docwhat">The department's first rules-style draft. Origin of the module test-out mechanism later drafts keep.</p>
-          <p class="docmeta">PDF &middot; 11 pages &middot; 267 KB &middot; <a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
+          <div class="pwarrow"><span class="ab">No counterpart</span></div>
+          <div class="pwcol mid">
+            <p class="cl">Drafted <span class="cd">July 9</span></p>
+            <p class="cq empty">No counterpart. The July 9 draft sets no sequencing condition.</p>
+          </div>
+          <div class="pwarrow chg"><span class="ab">Added</span><span class="an">A new condition appears, gating entry to the practicum on classroom and simulated patient progress.</span></div>
+          <div class="pwcol cur">
+            <p class="cl">Published <span class="cd">July 23</span></p>
+            <p class="cq">"shall participate in supervised practice training, otherwise referred to as a &lsquo;practicum&rsquo;, after completing at least half of the didactic requirements and all of the simulated patient requirements of the educational requirements"</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">7.35.3.19&nbsp;(A), p.&nbsp;12</a></p>
+          </div>
+        </div>
+        <p class="pwnote">The committee discussed the order of classroom and practical work on July 17 and reached no conclusion. This condition appears in neither transcript, and it changes what a student must do before entering a placement.</p>
+      </article>
+
+      <!-- ROW 4 -->
+      <article class="pw">
+        <div class="pwhead">
+          <h3>Practitioner supervisory hours</h3>
+          <span class="pill defer">Deferred July 17, published unchanged</span>
+        </div>
+        <p class="pwsum">Practitioners owe twenty hours supervising facilitators, on top of the practicum itself. The board named this figure specifically when it sent the hours to committee.</p>
+        <div class="pwgrid">
+          <div class="pwcol rec">
+            <p class="cl">Recommended <span class="cd">June 12</span></p>
+            <p class="cq">"Practitioners must complete an additional minimum of twenty (20) hours as a practitioner supervising facilitators&hellip;"</p>
+            <p class="cs"><a href="documents/recommendation-2026-06-12.pdf#page=8" target="_blank" rel="noopener">Recommendation, p.&nbsp;8</a></p>
+          </div>
+          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">Unchanged in substance.</span></div>
+          <div class="pwcol mid">
+            <p class="cl">Drafted <span class="cd">July 9</span></p>
+            <p class="cq">Twenty hours supervising facilitators during administration and same-day therapy sessions, with minimums for individual and group sessions.</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">July 9 draft, p.&nbsp;5</a></p>
+          </div>
+          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">The hours are unchanged. "Same-day therapy" becomes "administration day", part of a wider removal of therapy language from the rule.</span></div>
+          <div class="pwcol cur">
+            <p class="cl">Published <span class="cd">July 23</span></p>
+            <p class="cq">"Practitioners shall complete an additional minimum of 20 hours as a practitioner supervising facilitators during in-person administration day sessions"</p>
+            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">7.35.3.19&nbsp;(C), p.&nbsp;13</a></p>
+          </div>
+        </div>
+        <p class="pwnote">The chair named the twenty supervisory hours in the motion putting the deferral to a vote. The figure is unchanged in the published rule.</p>
+      </article>
+
+      <div class="more">
+        <p class="mk">Still to be added to this page</p>
+        <p>The remaining deferred and dependent provisions follow the same three-column form: the composition of the practicum hours, the practicum location requirement, the two waiver routes and the dates attached to them, the mentoring requirement, continuing education, and the staffing ratio that counts students toward required coverage.</p>
       </div>
     </section>
 
     <section>
-      <div class="sh"><p class="k">Committee</p><h2>Recommendations and presentations</h2></div>
-      <p class="body">What the Training and Education Committee produced, and what was presented to it. These are proposals and submissions, not rule text.</p>
-
-      <div class="dl">
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations on Education and Training Requirements</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">July 17, 2026 &middot; Dr. Anne Metz</p>
-          <p class="docwhat">Four recommendations: the permit title, an 84-hour didactic standard with curriculum table, a four-step practicum with a training permit, and consultation sign-off tied to two case presentations. Labeled by its author a draft for discussion.</p>
-          <p class="docmeta">PDF &middot; 6 pages &middot; 36 KB &middot; <a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
-
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/metz-onepager-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations at a Glance</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">July 17, 2026 &middot; Dr. Anne Metz</p>
-          <p class="docwhat">The same four recommendations on one page. The short version to hand someone.</p>
-          <p class="docmeta">PDF &middot; 1 page &middot; 171 KB &middot; <a href="documents/metz-onepager-2026-07-17.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
-
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/metz-slides-2026-07-17.pptx" target="_blank" rel="noopener">Committee slides</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">July 17, 2026 &middot; Dr. Anne Metz</p>
-          <p class="docwhat">The deck as presented. Speaker notes carry reasoning not on the slides.</p>
-          <p class="docmeta">PowerPoint &middot; 6 slides &middot; 126 KB &middot; <a href="documents/metz-slides-2026-07-17.pptx" target="_blank" rel="noopener">Download</a></p>
-        </article>
-
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Committee recommendation on training requirements</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">June 12, 2026 &middot; Training and Education Committee</p>
-          <p class="docwhat">Accepted 3-2 on June 26 with three items set aside. Source of the 100 and 120 practicum hours the published rule still carries.</p>
-          <p class="docmeta">PDF &middot; 9 pages &middot; 148 KB &middot; <a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
+      <div class="sh">
+        <p class="k">Scope</p>
+        <h2>What this page covers, and what it does not</h2>
       </div>
-    </section>
-
-    <section>
-      <div class="sh"><p class="k">Meetings</p><h2>Transcripts</h2></div>
-      <p class="body">Transcripts of the meetings this site quotes. <b>All are unofficial.</b> The Department of Health posts its own recordings and minutes, and those govern. Read the note on each before relying on a line.</p>
-
-      <div class="ai">
-        <h2>Two kinds of transcript here, and the difference matters</h2>
-        <p>The <b>July 9</b> transcript is speaker-tagged: each passage is labeled with who is speaking. The two <b>July 17</b> transcripts are not. They were captured from auto-generated meeting notes that carry no speaker labels, and none have been added.</p>
-        <p>Where this site quotes a July 17 transcript and names a speaker, the speaker is fixed by the surrounding text, for example someone being thanked by name immediately after speaking, and the basis is recorded. Where context does not fix a speaker, no name is given. Automatic transcription also misreads names, numbers, and technical terms, and garbles speech during crosstalk.</p>
-      </div>
-
-      <div class="dl">
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Advisory Board, morning session</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">July 17, 2026 &middot; called to order 9:02 a.m. Mountain</p>
-          <p class="docwhat">Contains the 7-0 vote deferring the hours to committee, the end-of-August hearing announcement, the CS-number discussion, and the three-pathway exam language.</p>
-          <p class="docmeta">PDF &middot; 23 pages &middot; 75 KB &middot; unofficial, no speaker attribution &middot; <a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
-
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Training and Education Committee, afternoon session</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">July 17, 2026 &middot; 1:00 p.m. Mountain</p>
-          <p class="docwhat">The committee meeting that took up the deferred hours. Contains Dr. Anne Metz's presentation and the discussion that followed, the department's request for topics and hours "sooner rather than later" with no deadline attached, the end-of-life training debate, the legacy practitioner discussion, and the setting of the committee's next meeting for August 21.</p>
-          <p class="docmeta">PDF &middot; 23 pages &middot; 75 KB &middot; unofficial, no speaker attribution &middot; <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
-
-        <article class="doc">
-          <div class="doctop">
-            <h3><a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Advisory Board</a></h3>
-            <span class="chip rec">Record</span>
-          </div>
-          <p class="docdate">July 9, 2026</p>
-          <p class="docwhat">Went through the draft section by section. Contains the reciprocity resolution to December 31 2027 and the rename to certifying clinician.</p>
-          <p class="docmeta">PDF &middot; 34 pages &middot; 87 KB &middot; unofficial, speaker-tagged &middot; <a href="documents/NMMPAB-2026-07-09-transcript.pdf" target="_blank" rel="noopener">Download</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="sh"><p class="k">Gaps</p><h2>Documents this site does not have</h2></div>
-      <p class="body">Named here so the gaps are visible rather than silent. If you hold any of these, or know where they are posted, <a href="input.html?topic=document">send them through</a>.</p>
-      <ul class="body">
-        <li><b>Official minutes</b> for any meeting. Nothing on this site is official minutes. One consequence is recorded on <a href="changes.html">the draft page</a>: the mover of the June 26 motion is attributed from a meeting-note summary, and the raw transcript is unlabeled at that point.</li>
-        <li><b>Recordings or transcripts for June 12 and June 25.</b> The recommendation and the department draft from those dates are here; the meetings themselves are not.</li>
-        <li><b>The May 22 committee meeting.</b> Held, but not recorded or posted by the department.</li>
-        <li><b>The rule hearing notice</b> as published, with the official time, place, and comment instructions for August 28.</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="sh"><p class="k">Contribute</p><h2>Send a document</h2></div>
-      <p class="body">If you have a document that belongs here, a rule draft, a submission, a transcript, a program curriculum, or another state's standard, send it through the <a href="input.html?topic=document">community input form</a>. Include where it came from so it can be labeled honestly. Documents are added with their source stated, and are never presented as official when they are not.</p>
-      <p class="body">If something here is <b>mislabeled, out of date, or wrong</b>, that is a correction: send it through the <a href="input.html?topic=correction">same form</a> with the correction topic.</p>
+      <p class="body">This page is deliberately narrow. It follows only the requirements the Advisory Board deferred on July 17, together with the provisions those requirements depend on, so that a reader can see the effect of the deferral without reading around it.</p>
+      <p class="body">The complete proposed rule runs to twenty-eight sections and covers patients, healing centers, product storage, adverse event reporting, and discipline as well as training. The section-by-section record of the whole document is on <a href="changes.html">the draft page</a>. What the published rule requires of each role, and what it costs, is on <a href="hours.html">Training hours</a>. The dated record of how the requirements reached this point is on <a href="history.html">History</a>.</p>
     </section>
   </div>
 
@@ -419,7 +446,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
-          <li><b>July 25, 2026</b> Descriptions tightened to one line each after review; the page was over-written on creation. Page created earlier the same day: a register of every source document with what it is, when it landed, whether it is current or superseded, page count, size, and a direct download, plus a section naming the documents this site does not have.</li>
+          <li><b>July 25, 2026</b> Page created. Follows only the requirements the Advisory Board deferred on July 17, from the committee's June 12 recommendation through the July 9 draft to the July 23 published rule, with the change at each step stated between the columns. Four provisions are built: total practicum hours, the shared didactic module, the new condition on when the practicum may begin, and the practitioner supervisory hours. The remaining deferred and dependent provisions are named at the foot of the walk and still to be added.</li>
           </ul>
         </div>
         </div>
