@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Deferred Training Requirements · NM Medical Psilocybin</title>
+<title>Practicum Requirements · NM Medical Psilocybin 7.35.3</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -119,56 +119,34 @@
   .revs b{color:var(--text); font-weight:650;}
   /* /provenance block */
 
-  .orient{margin:26px 0 0; background:var(--surface-2); border:1px solid var(--border); border-radius:14px; padding:18px 20px;}
-  .orient .ok{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  .orient>p{font-size:14.5px; color:var(--text-muted); line-height:1.6; margin:0 0 14px;}
-  .orow{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px;}
-  .ocol{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:12px 14px;}
-  .ocol.rec{opacity:.72;}
-  .ocol.cur{border-color:var(--accent); border-left:3px solid var(--accent);}
-  .ocol .ol{font-size:13.5px; font-weight:650; color:var(--text); margin:0;}
-  .ocol .od{font-family:var(--mono); font-size:11.5px; color:var(--text-faint); margin:2px 0 6px;}
-  .ocol .ox{font-size:12.5px; color:var(--text-muted); line-height:1.5; margin:0;}
-  .onote{font-size:12.5px; color:var(--text-faint); line-height:1.55; margin:14px 0 0 !important;}
+  .surface{margin:24px 0 0; border:1px solid var(--border-strong); border-radius:12px; overflow:hidden;}
+  .surface table{width:100%; border-collapse:collapse; font-size:14px;}
+  .surface th{text-align:left; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-faint); font-weight:700; padding:10px 14px; background:var(--surface-2); border-bottom:1px solid var(--border-strong);}
+  .surface td{padding:9px 14px; border-bottom:1px solid var(--border); vertical-align:top; color:var(--text);}
+  .surface tr:last-child td{border-bottom:none;}
+  .surface td.s{font-family:var(--mono); font-size:12.5px; white-space:nowrap; width:1%;}
+  .surface td.s a{text-decoration:none; font-weight:650;}
+  .surface td.s a:hover{text-decoration:underline;}
+  .sfoot{font-size:12.5px; color:var(--text-muted); line-height:1.6; margin:0; padding:12px 14px; background:var(--surface-2); border-top:1px solid var(--border-strong);}
+  .f{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; padding:2px 8px; border-radius:20px; white-space:nowrap; margin-right:4px;}
+  .f.def{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
+  .f.dep{background:var(--surface-3); color:var(--text-muted); border:1px solid var(--border-strong);}
+  .f.rai{background:#FBE9EC; color:#B23A48; border:1px solid #E8C8CE;}
+  .f.new{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
+  .f.brk{background:#FBE4E4; color:#A31D1D; border:1px solid #EFC2C2;}
+  .f.mis{background:#FBE4E4; color:#A31D1D; border:1px solid #EFC2C2;}
 
-  .pw{margin:22px 0 0; background:var(--surface); border:1px solid var(--border-strong); border-radius:14px; padding:20px 22px; box-shadow:var(--shadow);}
-  .pwhead{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;}
-  .pwhead h3{font-size:20px; margin:0;}
-  .pill{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; padding:3px 10px; border-radius:20px; white-space:nowrap;}
-  .pill.defer{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
-  .pill.moved{background:#FBE9EC; color:#B23A48; border:1px solid #E8C8CE;}
-  .pill.new{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
-  .pwsum{font-size:15px; color:var(--text); line-height:1.6; margin:10px 0 0;}
-  .pwgrid{display:grid; grid-template-columns:1fr 108px 1fr 108px 1fr; gap:0; align-items:stretch; margin:16px 0 0;}
-  .pwcol{border:1px solid var(--border); border-radius:10px; padding:13px 15px; background:var(--surface);}
-  .pwcol.rec{background:var(--surface-2); opacity:.82;}
-  .pwcol.mid{background:var(--surface-2);}
-  .pwcol.cur{border-color:var(--accent); border-left:3px solid var(--accent); background:var(--surface);}
-  .pwcol .cl{font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--text-muted); margin:0 0 8px;}
-  .pwcol.cur .cl{color:var(--accent);}
-  .pwcol .cd{font-family:var(--mono); font-weight:400; letter-spacing:0; text-transform:none; color:var(--text-faint);}
-  .pwcol .cq{font-size:13.5px; line-height:1.6; color:var(--text); margin:0;}
-  .pwcol.rec .cq, .pwcol.mid .cq{color:var(--text-muted);}
-  .pwcol .cq.empty{font-style:italic; color:var(--text-faint);}
-  .pwcol .cs{font-size:11.5px; font-family:var(--mono); margin:9px 0 0; padding-top:8px; border-top:1px solid var(--border);}
-  .pwarrow{display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 8px; position:relative;}
-  .pwarrow::before{content:""; position:absolute; left:0; right:0; top:26px; height:1px; background:var(--border-strong);}
-  .pwarrow .ab{position:relative; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--text-muted); background:var(--surface); padding:3px 7px; border:1px solid var(--border-strong); border-radius:20px;}
-  .pwarrow.chg .ab{color:#B23A48; border-color:#E8C8CE; background:#FBE9EC;}
-  .pwarrow .an{font-size:11.5px; color:var(--text-faint); line-height:1.45; margin-top:10px;}
-  .pwnote{font-size:13.5px; color:var(--text-muted); line-height:1.6; margin:15px 0 0; padding-top:13px; border-top:1px solid var(--border);}
-
-  .more{margin:22px 0 0; border:1px dashed var(--border-strong); border-radius:12px; padding:15px 18px; background:var(--surface-2);}
-  .more .mk{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--text-faint); margin:0 0 7px;}
-  .more p{font-size:13.5px; color:var(--text-muted); line-height:1.6; margin:0;}
-
-  @media (max-width:900px){
-    .orow{grid-template-columns:1fr;}
-    .pwgrid{grid-template-columns:1fr;}
-    .pwarrow{padding:10px 0;}
-    .pwarrow::before{display:none;}
-    .pwarrow .an{margin-top:6px;}
-  }
+  .pv{margin:18px 0 0; background:var(--surface); border:1px solid var(--border-strong); border-radius:12px; padding:18px 20px;}
+  .pv.brk{border-left:4px solid #A31D1D;}
+  .pv.mis{border-left:4px solid #A31D1D; border-style:solid solid solid solid; background:#FEF7F7;}
+  .pvh{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:12px;}
+  .pvh .sn{font-family:var(--mono); font-size:12.5px; color:var(--accent); font-weight:650; white-space:nowrap;}
+  .pvh h3{font-size:18px; margin:0; flex:1 1 auto;}
+  .pv blockquote{margin:0; padding:13px 16px; background:var(--surface-2); border-left:3px solid var(--border-strong); border-radius:0 8px 8px 0; font-size:14px; line-height:1.65; color:var(--text);}
+  .pv blockquote b{font-weight:700;}
+  .pv .ef{font-size:14.5px; line-height:1.62; color:var(--text); margin:12px 0 0;}
+  .pv .ef.note{font-size:13px; color:var(--text-muted);}
+  .pv .cite{font-family:var(--mono); font-size:11.5px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--border);}
 </style>
 <style id="navpass">
   /* ===== Unified site nav (July 2026 UX pass) ===== */
@@ -225,6 +203,7 @@
         <details class="tdrop navgrp" data-navgrp="req">
           <summary>Requirements <span class="caret">&#9662;</span></summary>
           <div class="tdrop-menu">
+            <a href="deferred.html" data-nav="deferred">Practicum requirements<span class="sub">Every provision a practicum change has to touch</span></a>
             <a href="pathways.html" data-nav="pathways">Provider routes<span class="sub">Routes to each permit by starting license</span></a>
             <a href="eligibility.html" data-nav="eligibility">Who can qualify<span class="sub">Which licenses map to which permit</span></a>
             <a href="hours.html" data-nav="hours">Training hours<span class="sub">Didactic, practicum, and specialization</span></a>
@@ -257,157 +236,126 @@
 
   <div class="col">
     <header class="hero">
-      <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; Advisory Board</p>
-      <h1>The deferred training requirements</h1>
-      <p class="updated"><b>Updated July 25, 2026.</b></p>
-      <p class="lede">On July 17 the Advisory Board voted seven to nothing to send the practicum and didactic hour requirements back to the Training and Education Committee. This page follows those requirements alone, from the committee's original recommendation through to the rule the department published on July 23, so that the effect of the deferral can be read directly rather than inferred.</p>
+      <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; 7.35.3 NMAC</p>
+      <h1>Practicum requirements</h1>
+      <p class="updated"><b>Updated July 25, 2026.</b> Text as published July 23. Rule hearing August 28.</p>
+      <p class="lede">Every provision a practicum recommendation has to touch, quoted from the published rule. Three of them do not work as written.</p>
     </header>
 
-    <div class="orient">
-      <p class="ok">How to read the three columns</p>
-      <p>A requirement on this page has passed through three documents. Each column shows what that document said, and the two arrows between them show what changed at each step.</p>
-      <div class="orow">
-        <div class="ocol rec"><p class="ol">What the committee recommended</p><p class="od">June 12, 2026</p><p class="ox">The committee's recommendation. It is not a live document. The department turned it into rule language, and it exists now only as the origin of the text that followed.</p></div>
-        <div class="ocol mid"><p class="ol">The draft the board reviewed</p><p class="od">July 9, 2026</p><p class="ox">The rules-style draft the Advisory Board went through section by section. Superseded on July 23.</p></div>
-        <div class="ocol cur"><p class="ol">The rule as published</p><p class="od">July 23, 2026</p><p class="ox">The proposed rule going to the August 28 hearing. This is the operative text today.</p></div>
-      </div>
-      <p class="onote">Every quotation below is verbatim. Where the wording is long, the column shows the operative sentence and the full text opens beneath it. All document links open in a new tab.</p>
+    <div class="surface">
+      <table>
+        <thead><tr><th>Section</th><th>What it governs</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td class="s"><a href="#s19a">7.35.3.19&nbsp;(A)</a></td><td>Hour totals, and when the practicum may start</td><td><span class="f def">Deferred</span> <span class="f new">New gate</span></td></tr>
+          <tr><td class="s"><a href="#s19b">7.35.3.19&nbsp;(B)</a></td><td>Preparation and integration hours</td><td><span class="f def">Deferred</span></td></tr>
+          <tr><td class="s"><a href="#s19c">7.35.3.19&nbsp;(C)</a></td><td>Practitioner supervisory hours</td><td><span class="f def">Deferred</span></td></tr>
+          <tr><td class="s"><a href="#s19d">7.35.3.19&nbsp;(D)</a></td><td>Where the practicum may happen</td><td><span class="f dep">Dependency</span></td></tr>
+          <tr><td class="s"><a href="#s19f">7.35.3.19&nbsp;(F)</a></td><td>Departmental discretion to waive or reduce</td><td><span class="f def">Deferred</span></td></tr>
+          <tr><td class="s"><a href="#s19g">7.35.3.19&nbsp;(G)</a></td><td>In-state waiver, 40 contact hours</td><td><span class="f brk">Conflicts</span></td></tr>
+          <tr><td class="s"><a href="#s18c">7.35.3.18&nbsp;(C)</a></td><td>Didactic hours the practicum gates on</td><td><span class="f rai">Raised 25 to 30</span></td></tr>
+          <tr><td class="s"><a href="#s14">7.35.3.14</a></td><td>Who may possess and administer psilocybin</td><td><span class="f brk">Students absent</span></td></tr>
+          <tr><td class="s"><a href="#s20h5">7.35.3.20&nbsp;(H)(5)</a></td><td>Staffing ratio counting students</td><td><span class="f brk">Depends on .14</span></td></tr>
+          <tr><td class="s"><a href="#s10d">7.35.3.10&nbsp;(D)(1)</a></td><td>Out-of-jurisdiction waiver, 40 contact hours</td><td><span class="f brk">Conflicts with 19(G)</span></td></tr>
+          <tr><td class="s"><a href="#s11">7.35.3.11</a></td><td>Creates the approved locations 19(D) requires</td><td><span class="f dep">Dependency</span></td></tr>
+          <tr><td class="s"><a href="#new1">New section</a></td><td>Authority for a student to handle psilocybin</td><td><span class="f mis">Does not exist</span></td></tr>
+          <tr><td class="s"><a href="#new2">New subsection</a></td><td>The healing-center registration 14(C) requires</td><td><span class="f mis">Does not exist</span></td></tr>
+        </tbody>
+      </table>
+      <p class="sfoot"><b>Deferred</b> was sent to the Training and Education Committee by a 7-0 board vote on July 17 and published unchanged on July 23. <b>Dependency</b> is not deferred but the practicum cannot operate without it. <b>Conflicts</b>, <b>students absent</b> and <b>does not exist</b> are defects in the published text.</p>
     </div>
 
-    <section id="walk">
-      <div class="sh">
-        <p class="k">The deferred set</p>
-        <h2>Requirement by requirement</h2>
-      </div>
-      <p class="body">These are the requirements covered by the July 17 deferral, together with the two provisions they depend on. The committee's recommendation on them is being prepared and had not reached the department before publication.</p>
+    <section id="provisions">
+      <div class="sh"><p class="k">Published text</p><h2>Provision by provision</h2></div>
 
-      <!-- ROW 1 -->
-      <article class="pw">
-        <div class="pwhead">
-          <h3>Total practicum hours</h3>
-          <span class="pill defer">Deferred July 17, published unchanged</span>
-        </div>
-        <p class="pwsum">One hundred hours for facilitators and one hundred and twenty for practitioners. The figure originated in the committee's recommendation and has not moved since, through two subsequent drafts and a unanimous vote to reconsider it.</p>
-        <div class="pwgrid">
-          <div class="pwcol rec">
-            <p class="cl">Recommended <span class="cd">June 12</span></p>
-            <p class="cq">"must include a minimum of one hundred (100) hours of supervised practice training for Facilitators and one hundred and twenty (120) hours for Practitioners"</p>
-            <p class="cs"><a href="documents/recommendation-2026-06-12.pdf#page=7" target="_blank" rel="noopener">Recommendation, p.&nbsp;7</a></p>
-          </div>
-          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">Hour totals identical. The draft adds that the practicum must be completed before applying for certification.</span></div>
-          <div class="pwcol mid">
-            <p class="cl">Drafted <span class="cd">July 9</span></p>
-            <p class="cq">"The practicum shall consist of a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners and must be completed prior to applying for certification."</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">July 9 draft, p.&nbsp;5</a></p>
-          </div>
-          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">One word changed, "must" to "shall". The hour totals are untouched.</span></div>
-          <div class="pwcol cur">
-            <p class="cl">Published <span class="cd">July 23</span></p>
-            <p class="cq">"The practicum shall consist of a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners and shall be completed prior to applying for certification."</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">7.35.3.19&nbsp;(A), p.&nbsp;12</a></p>
-          </div>
-        </div>
-        <p class="pwnote">The board voted seven to nothing on July 17 to send this figure to the Training and Education Committee for reassessment. The department published it unchanged six days later, and has said on the record that it remains open to adjusting the hours.</p>
+      <article class="pv" id="s19a">
+        <div class="pvh"><span class="sn">7.35.3.19 (A)</span><h3>Hour totals, and when the practicum may start</h3><span class="f def">Deferred</span><span class="f new">New gate</span></div>
+        <blockquote>An individual who seeks to become certified as a practitioner or facilitator shall participate in supervised practice training, otherwise referred to as a &ldquo;practicum&rdquo;, <b>after completing at least half of the didactic requirements and all of the simulated patient requirements</b> of the educational requirements. The practicum shall consist of a minimum of <b>100 hours</b> of supervised practice training for facilitators and <b>120 hours</b> for practitioners and shall be completed prior to applying for certification. Students shall participate in a minimum of <b>80 hours</b> of administration day sessions&hellip; with a minimum of <b>14 different patients</b> over a minimum of <b>eight different</b> administration and same-day sessions.</blockquote>
+        <p class="ef">Sets the totals, and bars a student from starting until half the classroom hours and all simulated patient hours are done. The gate is new in this draft, has no counterpart in the July 9 draft, and appears in neither July 17 transcript.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">Published rule, p.&nbsp;12</a></p>
       </article>
 
-      <!-- ROW 2 -->
-      <article class="pw">
-        <div class="pwhead">
-          <h3>Shared didactic module</h3>
-          <span class="pill moved">Deferred July 17, published higher</span>
-        </div>
-        <p class="pwsum">The classroom requirement shared by practitioners and facilitators rose from twenty-five hours to thirty in the published rule, and three subjects were added to the required curriculum. This figure was covered by the same deferral vote as the practicum hours.</p>
-        <div class="pwgrid">
-          <div class="pwcol rec">
-            <p class="cl">Recommended <span class="cd">June 12</span></p>
-            <p class="cq">The recommendation set the curriculum by subject rather than by a single shared hour total. The twenty-five hour figure first appears in the department's drafting.</p>
-            <p class="cs"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Recommendation</a></p>
-          </div>
-          <div class="pwarrow"><span class="ab">Changed</span><span class="an">The department consolidated the subjects into a single module and set it at twenty-five hours, with five hours of simulated patient experience on top.</span></div>
-          <div class="pwcol mid">
-            <p class="cl">Drafted <span class="cd">July 9</span></p>
-            <p class="cq">"All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of 25 didactic hours, prior to applying for certification"</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-09.pdf#page=4" target="_blank" rel="noopener">July 9 draft, p.&nbsp;4</a></p>
-          </div>
-          <div class="pwarrow chg"><span class="ab">Raised</span><span class="an">Twenty-five hours became thirty. Three subjects were added: Trauma-Informed Care, Dosing, and Non-ordinary states of consciousness. The required list grew from fourteen items to seventeen.</span></div>
-          <div class="pwcol cur">
-            <p class="cl">Published <span class="cd">July 23</span></p>
-            <p class="cq">"All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of 30 didactic hours and 5 hours of simulated patient experience, prior to applying for certification"</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18&nbsp;(C), p.&nbsp;11</a></p>
-          </div>
-        </div>
-        <p class="pwnote">This is the one deferred figure that moved. It was published five hours higher than it stood on the day the board voted to send it to committee. Adding Trauma-Informed Care answers a recommendation Dr. Anne Metz made to the committee on July 17, which asked for trauma to be taught as a subject in its own right rather than folded into other modules.</p>
+      <article class="pv" id="s19b">
+        <div class="pvh"><span class="sn">7.35.3.19 (B)</span><h3>Preparation and integration hours</h3><span class="f def">Deferred</span></div>
+        <blockquote>Students shall participate in a minimum of <b>20 hours</b> of in-person preparation and integration sessions&hellip; This shall include a minimum of <b>six different patients</b> during individual sessions. This shall include at least one group preparatory and one group integration session with a minimum of four or more patients.</blockquote>
+        <p class="ef">The 20 hours here plus the 80 in (A) make up the 100-hour facilitator total.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">Published rule, p.&nbsp;12</a></p>
       </article>
 
-      <!-- ROW 3 -->
-      <article class="pw">
-        <div class="pwhead">
-          <h3>When the practicum may begin</h3>
-          <span class="pill new">New in the published rule</span>
-        </div>
-        <p class="pwsum">The published rule bars a student from starting the practicum until half the classroom hours and all of the simulated patient hours are finished. Neither earlier document contains this condition, and it was not raised at either July 17 meeting.</p>
-        <div class="pwgrid">
-          <div class="pwcol rec">
-            <p class="cl">Recommended <span class="cd">June 12</span></p>
-            <p class="cq empty">No counterpart. The recommendation sets no sequencing condition between the classroom hours and the practicum.</p>
-          </div>
-          <div class="pwarrow"><span class="ab">No counterpart</span></div>
-          <div class="pwcol mid">
-            <p class="cl">Drafted <span class="cd">July 9</span></p>
-            <p class="cq empty">No counterpart. The July 9 draft sets no sequencing condition.</p>
-          </div>
-          <div class="pwarrow chg"><span class="ab">Added</span><span class="an">A new condition appears, gating entry to the practicum on classroom and simulated patient progress.</span></div>
-          <div class="pwcol cur">
-            <p class="cl">Published <span class="cd">July 23</span></p>
-            <p class="cq">"shall participate in supervised practice training, otherwise referred to as a &lsquo;practicum&rsquo;, after completing at least half of the didactic requirements and all of the simulated patient requirements of the educational requirements"</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">7.35.3.19&nbsp;(A), p.&nbsp;12</a></p>
-          </div>
-        </div>
-        <p class="pwnote">The committee discussed the order of classroom and practical work on July 17 and reached no conclusion. This condition appears in neither transcript, and it changes what a student must do before entering a placement.</p>
+      <article class="pv" id="s19c">
+        <div class="pvh"><span class="sn">7.35.3.19 (C)</span><h3>Practitioner supervisory hours</h3><span class="f def">Deferred</span></div>
+        <blockquote>Practitioners shall complete an additional minimum of <b>20 hours</b> as a practitioner supervising facilitators during in-person administration day sessions, which shall include a minimum of two different patients during individual administration day sessions, and a minimum of one group administration day sessions with a minimum of four or more patients in the group.</blockquote>
+        <p class="ef">These 20 hours are the difference between the facilitator total of 100 and the practitioner total of 120. The board named them in the deferral motion.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
       </article>
 
-      <!-- ROW 4 -->
-      <article class="pw">
-        <div class="pwhead">
-          <h3>Practitioner supervisory hours</h3>
-          <span class="pill defer">Deferred July 17, published unchanged</span>
-        </div>
-        <p class="pwsum">Practitioners owe twenty hours supervising facilitators, on top of the practicum itself. The board named this figure specifically when it sent the hours to committee.</p>
-        <div class="pwgrid">
-          <div class="pwcol rec">
-            <p class="cl">Recommended <span class="cd">June 12</span></p>
-            <p class="cq">"Practitioners must complete an additional minimum of twenty (20) hours as a practitioner supervising facilitators&hellip;"</p>
-            <p class="cs"><a href="documents/recommendation-2026-06-12.pdf#page=8" target="_blank" rel="noopener">Recommendation, p.&nbsp;8</a></p>
-          </div>
-          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">Unchanged in substance.</span></div>
-          <div class="pwcol mid">
-            <p class="cl">Drafted <span class="cd">July 9</span></p>
-            <p class="cq">Twenty hours supervising facilitators during administration and same-day therapy sessions, with minimums for individual and group sessions.</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-09.pdf#page=5" target="_blank" rel="noopener">July 9 draft, p.&nbsp;5</a></p>
-          </div>
-          <div class="pwarrow"><span class="ab">Carried over</span><span class="an">The hours are unchanged. "Same-day therapy" becomes "administration day", part of a wider removal of therapy language from the rule.</span></div>
-          <div class="pwcol cur">
-            <p class="cl">Published <span class="cd">July 23</span></p>
-            <p class="cq">"Practitioners shall complete an additional minimum of 20 hours as a practitioner supervising facilitators during in-person administration day sessions"</p>
-            <p class="cs"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">7.35.3.19&nbsp;(C), p.&nbsp;13</a></p>
-          </div>
-        </div>
-        <p class="pwnote">The chair named the twenty supervisory hours in the motion putting the deferral to a vote. The figure is unchanged in the published rule.</p>
+      <article class="pv" id="s19d">
+        <div class="pvh"><span class="sn">7.35.3.19 (D)</span><h3>Where the practicum may happen</h3><span class="f dep">Dependency</span></div>
+        <blockquote>All practicum hours shall take place in an approved healing center or other approved location.</blockquote>
+        <p class="ef">Ties every practicum hour to a facility that must first be certified under 7.35.3.11. Any change to placement, including a site-supervisor or apprenticeship model, changes this sentence.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
       </article>
 
-      <div class="more">
-        <p class="mk">Still to be added to this page</p>
-        <p>The remaining deferred and dependent provisions follow the same three-column form: the composition of the practicum hours, the practicum location requirement, the two waiver routes and the dates attached to them, the mentoring requirement, continuing education, and the staffing ratio that counts students toward required coverage.</p>
-      </div>
-    </section>
+      <article class="pv" id="s19f">
+        <div class="pvh"><span class="sn">7.35.3.19 (F)</span><h3>Departmental discretion to waive or reduce</h3><span class="f def">Deferred</span></div>
+        <blockquote>The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for certification, in order to facilitate the certification of individuals trained by other government-approved programs, and to build the initial infrastructure of the program.</blockquote>
+        <p class="ef">Open-ended and undated. No standard governs when it applies, and nothing ends it.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
+      </article>
 
-    <section>
-      <div class="sh">
-        <p class="k">Scope</p>
-        <h2>What this page covers, and what it does not</h2>
-      </div>
-      <p class="body">This page is deliberately narrow. It follows only the requirements the Advisory Board deferred on July 17, together with the provisions those requirements depend on, so that a reader can see the effect of the deferral without reading around it.</p>
-      <p class="body">The complete proposed rule runs to twenty-eight sections and covers patients, healing centers, product storage, adverse event reporting, and discipline as well as training. The section-by-section record of the whole document is on <a href="changes.html">the draft page</a>. What the published rule requires of each role, and what it costs, is on <a href="hours.html">Training hours</a>. The dated record of how the requirements reached this point is on <a href="history.html">History</a>.</p>
+      <article class="pv" id="s19g">
+        <div class="pvh"><span class="sn">7.35.3.19 (G)</span><h3>In-state waiver, 40 contact hours</h3><span class="f brk">Conflicts</span></div>
+        <blockquote>An applicant for certification shall not be required to satisfy the full New Mexico practicum hours requirement if the applicant: (1) Applies for certification by <b>December 31, 2027</b>; (2) Completes the didactic requirements by December 31, 2027; (3) Graduates from an educational program that the department certifies by December 31, 2027 or that the department has included on the department-approved list&hellip;; and (4) Demonstrates completion of at least <b>40 hours of contact time</b>&hellip; including: (a) A minimum of <b>two separate individual sessions</b>&hellip; and (b) A minimum of <b>one group session</b>&hellip;</blockquote>
+        <p class="ef">Requires two individual sessions and <b>one</b> group session. The out-of-jurisdiction waiver at 7.35.3.10 (D)(1) requires two individual and <b>two</b> group for the same 40 hours. Both cannot be the standard.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
+      </article>
+
+      <article class="pv" id="s18c">
+        <div class="pvh"><span class="sn">7.35.3.18 (C)</span><h3>Didactic hours the practicum gates on</h3><span class="f rai">Raised 25 to 30</span></div>
+        <blockquote>All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of <b>30 didactic hours and 5 hours of simulated patient experience</b>, prior to applying for certification.</blockquote>
+        <p class="ef">7.35.3.19 (A) gates practicum entry on "half of the didactic requirements and all of the simulated patient requirements," so this figure sets the gate. It was covered by the same 7-0 deferral vote and was published five hours higher than it stood that day. Three subjects were added: Trauma-Informed Care, Dosing, and Non-ordinary states of consciousness.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">Published rule, p.&nbsp;11</a></p>
+      </article>
+
+      <article class="pv brk" id="s14">
+        <div class="pvh"><span class="sn">7.35.3.14</span><h3>Who may possess and administer psilocybin</h3><span class="f brk">Students absent</span></div>
+        <blockquote>Certification of a practitioner, facilitator, or healing center shall enable <b>practitioners, facilitators, and owners and employees of healing centers</b> to do the following&hellip; (C) Healing centers: Owners and employees of healing centers <b>who are registered with the department</b> may purchase&hellip; possess&hellip; and may sell or otherwise administer those products to qualified patients&hellip;</blockquote>
+        <p class="ef">This is the only grant of authority to possess or administer psilocybin in the rule. It names three categories and a practicum student is none of them, because certification is what the practicum is a prerequisite for. Meanwhile 7.35.3.19 (A) requires students to "conduct supervised facilitation of administration day sessions."</p>
+        <p class="ef">The phrase "registered with the department" appears exactly once in all nineteen pages, in this subsection. Nothing in the rule creates that registration.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=9" target="_blank" rel="noopener">Published rule, p.&nbsp;9</a></p>
+      </article>
+
+      <article class="pv brk" id="s20h5">
+        <div class="pvh"><span class="sn">7.35.3.20 (H)(5)</span><h3>Staffing ratio counting students</h3><span class="f brk">Depends on .14</span></div>
+        <blockquote>&hellip;in group administration sessions a minimum of one practitioner for every eight patients and a minimum of <b>one facilitator or qualified student for every two patients</b>. For purposes of the foregoing provision, a student shall be deemed qualified if they are registered with a certified educational program and they have <b>completed at least 50 hours of their practicum</b>.</blockquote>
+        <p class="ef">Counts students toward mandatory coverage, which means a session can lawfully rely on someone 7.35.3.14 does not authorize to handle the medicine. New in this draft. Denali Wilson raised the idea at the July 17 committee meeting and the department said it would take it back.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=14" target="_blank" rel="noopener">Published rule, p.&nbsp;14</a></p>
+      </article>
+
+      <article class="pv brk" id="s10d">
+        <div class="pvh"><span class="sn">7.35.3.10 (D)(1)</span><h3>Out-of-jurisdiction waiver, 40 contact hours</h3><span class="f brk">Conflicts with 19(G)</span></div>
+        <blockquote>An applicant for certification as a practitioner or facilitator on the basis of an educational program from another jurisdiction, whose application is received by the department by <b>December 31, 2027</b>, shall not be required to complete the full practicum hours required by New Mexico, but shall demonstrate completion of at least <b>40 hours of contact time</b> with a minimum of <b>two separate individual sessions and two separate group sessions</b>&hellip;</blockquote>
+        <p class="ef">A second practicum waiver, sitting outside 7.35.3.19 in the out-of-jurisdiction application section. Same 40 hours, different session test. Amending 19(G) alone leaves this standing.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=4" target="_blank" rel="noopener">Published rule, p.&nbsp;4</a></p>
+      </article>
+
+      <article class="pv" id="s11">
+        <div class="pvh"><span class="sn">7.35.3.11</span><h3>Creates the approved locations 19(D) requires</h3><span class="f dep">Dependency</span></div>
+        <blockquote>An applicant seeking certification as a healing center shall submit a complete application through the electronic system designated by the department&hellip;</blockquote>
+        <p class="ef">Every practicum hour must occur at a location certified under this section. No certified locations, no practicum. Any placement model that decouples the practicum from healing centers has to be written here as well as in 19(D).</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=5" target="_blank" rel="noopener">Published rule, p.&nbsp;5</a></p>
+      </article>
+
+      <article class="pv mis" id="new1">
+        <div class="pvh"><span class="sn">New section</span><h3>Authority for a student to handle psilocybin</h3><span class="f mis">Does not exist</span></div>
+        <p class="ef">The rule requires students to facilitate administration sessions and counts them toward staffing, and never authorizes them to possess or administer the medicine. The gap has to be closed by adding to 7.35.3.14, or by creating a training permit as its own section.</p>
+        <p class="ef">On July 17 the department said a training permit was unnecessary because students "already will have that kind of protection ability to be there as a part of being registered as a student with an educational program." No such provision was published.</p>
+        <p class="ef note">The rule currently ends at 7.35.3.28, Severability. A new section numbered 29 would sit after it, which is unusual drafting; placing it in the training run is cleaner.</p>
+      </article>
+
+      <article class="pv mis" id="new2">
+        <div class="pvh"><span class="sn">New subsection</span><h3>The healing-center registration 14(C) requires</h3><span class="f mis">Does not exist</span></div>
+        <p class="ef">7.35.3.14 (C) conditions the authority of healing-center owners and employees on being "registered with the department." No section creates that registration, so on the face of the rule no owner or employee qualifies. It belongs in 7.35.3.11, which handles healing-center certification, or as a new subsection of 7.35.3.20.</p>
+      </article>
     </section>
   </div>
 
@@ -446,7 +394,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
-          <li><b>July 25, 2026</b> Page created. Follows only the requirements the Advisory Board deferred on July 17, from the committee's June 12 recommendation through the July 9 draft to the July 23 published rule, with the change at each step stated between the columns. Four provisions are built: total practicum hours, the shared didactic module, the new condition on when the practicum may begin, and the practitioner supervisory hours. The remaining deferred and dependent provisions are named at the foot of the walk and still to be added.</li>
+          <li><b>July 25, 2026</b> Rebuilt as a worksheet. The first version led with a reading guide and a three-column history of how each requirement reached the published text, which is not what this page is for; that history belongs on the History page. The page now lists the thirteen provisions a practicum change has to touch, quotes each from the published rule, states what it does, and flags the three that do not work as written: 7.35.3.14 authorises nobody to let a student handle psilocybin, 7.35.3.19 (G) and 7.35.3.10 (D)(1) set different session tests for the same 40-hour waiver, and 7.35.3.14 (C) conditions healing-centre authority on a registration no section creates. Two provisions were added after checking the dependency chain: 7.35.3.11, which creates the approved locations 19 (D) requires, and 7.35.3.10 (D)(1), the second practicum waiver. The reading guide and the closing scope section were removed. All eighteen quotation fragments verified against the published text.</li>
           </ul>
         </div>
         </div>

@@ -84,21 +84,20 @@ Open question for the redesign: what actually belongs on an overview page, and w
 
 ## A private analytics view
 
-Wanted: a dashboard, visible only to the site owner, showing traffic to these pages. The specific question it needs to answer is whether the Department of Health is reading the site, which matters because nobody has sent it to them and that is a deliberate choice for now.
+Moved to its own file, `analysis/analytics-session-prompt.md`, ready to paste into a separate session.
 
-Design constraints that follow from the site's own commitments: it should not track individuals, and it should not add third-party scripts to public pages that would compromise the privacy of people reading about their own healthcare. A server-side or log-based approach fits the site better than an embedded analytics tag. GitHub Pages does not expose logs, so this likely means either a lightweight self-hosted collector or moving the site behind something that does.
+The correction that matters: the audience is committee members, board members, and department staff working the rulemaking, not patients reading about their own healthcare. An earlier version of these notes said otherwise and was wrong. The privacy caution still stands, because this is a small and identifiable professional community, but the reason is different.
 
 ## Who arrives, and what they want
 
-To be sharpened before layout work:
+Corrected July 25. This site is a working tool for the people running the rulemaking. It is not a public-health explainer, and building it as one was a mistake carried through several pages.
 
-1. **A prospective facilitator or practitioner.** "What do I have to do, how many hours, what does it cost, does my license shorten it?" Wants a path, not a rule.
-2. **A student or someone trained elsewhere.** "Does what I already did count?" Wants reciprocity answered as a decision.
-3. **A committee or board member.** "What changed, what is still open?" Wants a diff and a status, fast.
-4. **A patient or family member.** "Can I get this, from whom, when?" Almost nothing on the site serves this person.
-5. **Someone preparing to comment at the hearing.** "What is proposed, where do I object, how?" Time-boxed and specific.
+1. **Committee and board members.** What does the rule say now, what changed, what still has to be decided, and what am I being asked to sign off on. They arrive knowing the subject and needing the current state fast.
+2. **Department staff.** What is being proposed against what was published, stated precisely enough to act on.
+3. **People preparing to comment at the August 28 hearing.** What is proposed, where the problems are, and what to say.
+4. **Training providers and prospective permit holders.** What will be required of me, and does what I already hold count.
 
-Readers 2, 4 and 5 are underserved.
+Nobody in this audience needs the process explained from first principles, and none of them will read a page that explains itself before it says anything. A patient-facing surface is a different project and is out of scope.
 
 ## What the redesign must preserve
 
