@@ -6,6 +6,13 @@ Goal: let anyone, including people who do not follow the legislative process, se
 
 **Live site:** https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/ (GitHub Pages serves the `docs/` folder).
 
+## Working files
+
+- **[UPDATING.md](UPDATING.md)** is the runbook. Read it before changing anything in `docs/`. It covers the update loop after a meeting or a new document, the verification pass, the house rules, and the traps that have already caught someone.
+- **[analysis/site-redesign-notes.md](analysis/site-redesign-notes.md)** is the accumulated design brief: the writing standard, the page-by-page defects, and the decisions taken.
+- **[analysis/audit-session-prompt.md](analysis/audit-session-prompt.md)** is a ready-to-paste prompt for a fresh session to audit the site for factual correctness.
+- **[analysis/analytics-session-prompt.md](analysis/analytics-session-prompt.md)** is a ready-to-paste prompt for adding a private traffic dashboard.
+
 ## What's here
 
 ```

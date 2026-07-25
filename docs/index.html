@@ -252,6 +252,10 @@
   .datesrow ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 26px; font-size:14px; color:var(--text-muted);}
   .datesrow b{color:var(--text); font-family:var(--mono); font-size:13px; margin-right:5px;}
   .dkmore{font-size:13px; color:var(--text-muted); margin:8px 0 0; line-height:1.5;}
+  .sh{margin:40px 0 8px;}
+  .sh .k{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 6px;}
+  .sh h2{font-size:clamp(19px,2.4vw,24px); margin:0;}
+  .sh p{font-size:14.5px; color:var(--text-muted); margin:8px 0 0; max-width:680px;}
 /* provenance block */
   .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
   .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
@@ -330,7 +334,13 @@
     <div class="inner">
       <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
       <nav class="tnav" id="tnav" aria-label="Primary">
-        <a href="index.html" data-nav="index">Overview</a>
+        <details class="tdrop navgrp" data-navgrp="ov">
+          <summary>Overview <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+          </div>
+        </details>
         <details class="tdrop navgrp" data-navgrp="req">
           <summary>Requirements <span class="caret">&#9662;</span></summary>
           <div class="tdrop-menu">
@@ -346,7 +356,6 @@
           <div class="tdrop-menu">
             <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
             <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
-            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
             <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
           </div>
         </details>
@@ -371,7 +380,7 @@
     <!-- HERO -->
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
-      <h1>Training and Education:<br>the rule hearing is August 28, 2026</h1>
+      <h1>Training and Education:<br>The rule hearing is August 28, 2026</h1>
       <p class="updated"><b>Updated July 25, 2026.</b></p>
       <p class="lede">New Mexico is writing the rules for who may provide medical psilocybin therapy and how they are trained. On <b>July 23</b> the Department of Health published its proposed rule, and a <b>rule hearing is set for August 28</b>. One of the three items the board set aside is now settled in the text, one was kept by the department, and one was sent to the Training and Education Committee six days before publication. <b>The committee recommendation on the training hours is being written now and has not yet reached the department.</b> New to this? <a href="history.html#process">How the process works</a>.</p>
       <p class="lede" style="margin-top:10px; font-size:14.5px;">This site covers the provider training rules, not patient eligibility. The Act's qualifying conditions for patients are PTSD, major treatment-resistant depression, substance use disorders, and end-of-life care; how a patient is certified is on the <a href="cs-number.html">CS number page</a>.</p>
@@ -491,6 +500,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> Title capitalisation corrected: the first word after the line break was lower case. Added the CSS rules for the section headings introduced with the document strip, which had none and were rendering unstyled.</li>
           <li><b>July 25, 2026</b> Rebuilt against the page review. The title read "The rule is published", which is a headline rather than a statement of fact, and now states that the rule hearing is August 28, 2026. "What is next" moved from mid-page into the hero, above "Where things stand". The open item now carries a red border and states that the committee recommendation needs to reach the department as soon as possible; it had been the site accent colour, which reads as decoration rather than attention. The "Nothing on this page is final" disclaimer moved into the footer. The document strip now carries a heading saying what it is, and the input tile was removed from it. The three lineage deep-dives on the controlled-substance number, the practicum and reciprocity were removed as history that belongs elsewhere, and the two in-page links into them were repointed to the practicum and draft pages. "Find your way around" moved to its own page at guide.html.</li>
           <li><b>July 17, 2026</b> Updated to the July 17 full Advisory Board meeting. The board voted 7-0 to defer the practicum and didactic hours to the Training and Education Committee.</li>
           <li><b>July 10, 2026</b> Parallel working drafts reconciled into this page. The July 9 meeting description corrected: it was an Advisory Board meeting, and the chair barred formal votes only after the scheduled adjournment.</li>
