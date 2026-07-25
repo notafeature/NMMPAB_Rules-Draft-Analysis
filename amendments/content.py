@@ -1,10 +1,8 @@
-"""Content for the practicum amendment redline.
+"""Published text and proposed amendment, provision by provision.
 
-Every number in a proposed change must exist in a source. Where the July 17
-recommendation gives a range, the low end is used and the range is shown in a
-badge next to it. Where the published rule is unclear, the published text is
-left alone and the problem is recorded in a review note. Nothing is invented to
-close a gap; gaps are reported.
+Where the Metz recommendation states a range, the low end is used and the range
+is shown in a badge. Where the rule as published is unclear, the published text
+is left as it stands and the question is stated at that provision.
 """
 
 NEW = "There is no current language. This provision does not exist in the proposed rule as published."
@@ -20,7 +18,7 @@ def dele(t):
 
 
 def rng(t):
-    """Badge showing the source range behind a number taken from a range."""
+    """Badge showing the recommended range behind a figure."""
     return '<span class="rangebadge">%s</span>' % t
 
 
@@ -109,7 +107,7 @@ P.append((
     "clinicians, {{PTS}}, and facilitators who provide medical psilocybin services, including all such providers who "
     "are certified by the department on the basis of having completed an educational program from another jurisdiction, "
     "shall complete a New Mexico educational module created or approved by the department"
-    + ins(", consisting of a minimum of six didactic hours,") + rng("Recommendation: 6 to 8")
+    + ins(", consisting of a minimum of six didactic hours,") + rng("Metz: 6 to 8")
     + " prior to applying for certification, which shall include at a minimum: "
     "<span class='note'>Paragraphs (1) through (5) not amended.</span>",
 ))
@@ -243,9 +241,9 @@ P.append((
     "certified as a {{PT}} or facilitator shall participate in supervised practice training, otherwise referred to as a "
     "“practicum”, after completing at least half of the didactic requirements and all of the simulated patient "
     "requirements of the educational requirements. The practicum shall consist of a minimum of "
-    + dele("100") + " " + ins("62") + rng("Recommendation: approx. 62")
+    + dele("100") + " " + ins("62") + rng("Metz: approx. 62")
     + " hours of supervised practice training for facilitators and " + dele("120") + " " + ins("72")
-    + rng("Recommendation: approx. 72")
+    + rng("Metz: approx. 72")
     + " hours for {{PTS}} and shall be completed prior to applying for certification. Students shall participate in "
     + dele("a minimum of 80 hours of administration day sessions, where students are")
     + ins("administration day sessions as required by Subsection D of this section, where students are")
@@ -274,7 +272,7 @@ P.append((
     "minimum of two different patients during individual administration day sessions, and a minimum of one group "
     "administration day sessions with a minimum of four or more patients in the group.",
     "C. {{PT_C}} supervision hours: {{PTS_C}} shall complete an additional minimum of "
-    + dele("20") + " " + ins("10") + rng("Recommendation: 10")
+    + dele("20") + " " + ins("10") + rng("Metz: 10")
     + " hours as a {{PT}} supervising facilitators during in-person administration day sessions, which shall include a "
     "minimum of two different patients during individual administration day sessions, and a minimum of one group "
     "administration day sessions with a minimum of four or more patients in the group.",
@@ -288,13 +286,13 @@ P.append((
         "sequence:") + "<br>"
     + ins("(1) approximately 30 hours of initial facilitation experience. This stage shall be completed with practicum "
           "participants who are not qualified patients, in accordance with 7.35.3.29 NMAC. Preparation and integration "
-          "sessions are required for each participant;") + rng("Recommendation: approx. 30") + "<br>"
+          "sessions are required for each participant;") + rng("Metz: approx. 30") + "<br>"
     + ins("(2) approximately 20 hours of co-facilitated cases, being a minimum of two cases co-facilitated with a "
           "certified {{PT}} or facilitator, including administration sessions and the associated preparation and "
           "integration sessions. The student holds a training permit issued under Subsection G of this section at this "
-          "stage and serves as the second person in the co-facilitation pair;") + rng("Recommendation: approx. 20") + "<br>"
+          "stage and serves as the second person in the co-facilitation pair;") + rng("Metz: approx. 20") + "<br>"
     + ins("(3) approximately 12 hours of group practicum, being direct participation in group preparation, "
-          "administration, and integration sessions; and") + rng("Recommendation: approx. 12") + "<br>"
+          "administration, and integration sessions; and") + rng("Metz: approx. 12") + "<br>"
     + ins("(4) for {{PT}} applicants only, the supervision hours required by Subsection C of this section."),
 ))
 
@@ -338,7 +336,7 @@ P.append((
     NEW,
     ins("H. Supervision and consultation; case presentation sign-off:") + "<br>"
     + ins("(1) A training permittee shall complete a minimum of 20 hours of supervision or consultation during the "
-          "training permit period, in addition to the practicum hours required by this section;") + rng("Recommendation: 20 to 30") + "<br>"
+          "training permit period, in addition to the practicum hours required by this section;") + rng("Metz: 20 to 30") + "<br>"
     + ins("(2) sign-off is tied to case presentation. The permittee shall present a minimum of two cases of clients the "
           "permittee has personally worked with using regulated medicine. Each case presentation shall take the form of "
           "a biopsychosocial case conceptualization, including a discussion of presenting concerns, risk factors, "

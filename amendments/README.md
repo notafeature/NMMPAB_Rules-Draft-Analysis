@@ -4,49 +4,28 @@ Drafting folder for proposed amendments to the medical psilocybin rule published
 
 **This folder is internal drafting work, not published rule text and not a filing.** Nothing here has been submitted to the Department of Health. Nothing in this repository is final, promulgated rule text.
 
-## Scope
+**Out of scope by decision:** the controlled-substance number requirement for certifying clinicians.
 
-Training and education only.
-
-| Provision | Why it is here |
-|---|---|
-| 7.35.3.18, educational requirements | in scope |
-| 7.35.3.19, practicum requirements | in scope |
-| 7.35.3.14, authorized possession | plumbing that 7.35.3.19 depends on |
-| 7.35.3.20 (H)(5), staffing ratios | plumbing that 7.35.3.19 depends on |
-| 7.35.3.20 M, designation of owners and employees | new. The only way to fix the dangling registration condition in 7.35.3.14 (C) |
-| 7.35.3.29, practicum with non-patient participants | new. Recommendation 3 step 1, drafted contingent on statutory authority |
-
-Addendum A of the PDF maps every provision the practicum depends on, in and out of scope. Addendum B lists the ten proposed new provisions and what breaks if each is dropped.
-
-Everything else is flagged, not drafted. The flags are collected at `metz-crosswalk.md`, Part 7, and summarized in Addendum F of the PDF.
-
-**This is not a review of Part 3.** Part 3 runs to 28 sections. `analysis/july23-rule-concerns.md` records 5 blocking and 23 material findings across the whole of it. This folder drafts fixes for the practicum and for the provisions the practicum cannot function without. Anything wider belongs in a separate document.
-
-**Out of scope by decision:** the controlled-substance number requirement for certifying clinicians. No file in this folder proposes reopening it.
-
-**Permit title:** the drafts keep "practitioner." They do not adopt "licensed provider." The term is defined in 7.35.2.7 NMAC, a different part of Title 7, which 7.35.3.7 NMAC incorporates by reference. The title is carried as a variable so the decision can be made later and applied in one pass.
+**Permit title:** the draft keeps "practitioner." The term is defined in 7.35.2.7 NMAC, which 7.35.3.7 NMAC incorporates by reference. It is held as a variable in `build-redline-pdf.py` and can be changed in one pass.
 
 ## Files
 
 | File | What it is |
 |---|---|
-| `7.35.3-practicum-amendments-v5.pdf` | **The deliverable.** Side-by-side redline plus three addenda |
-| `content.py` | The amendment content. Published text and proposed text, provision by provision |
-| `notes.py` | The Source line and the Please review note for each change |
-| `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match |
-| `*.md` | Superseded working drafting. Numbers in these files were not all traceable and have been removed from the current draft |
+| `7.35.3-practicum-amendments-v6.pdf` | The document. Side-by-side redline plus three addenda |
+| `content.py` | Published text and proposed amendment, provision by provision |
+| `notes.py` | Citation and review note for each change |
+| `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published rule by exact contiguous match |
 
-## The rule for numbers
+## What the document is
 
-No figure enters a proposed change unless it exists in a source.
+An analysis of the recommendation of Dr. Anne Metz to the Training and Education Committee dated July 17, 2026, stated as amendment language against the proposed rule published July 23, 2026, for the committee's consideration.
 
-- Where the July 17 recommendation gives a range, the low end is drafted and the range is shown in a badge next to it.
-- Where the rule as published is unclear, the published text is left alone and a Please review note records what is unclear.
-- Where a figure follows from arithmetic rather than from a recommendation, the Source line says so and shows the arithmetic.
-- Gaps are reported, not filled.
+It covers 7.35.3.19, practicum requirements, and the three provisions on which the practicum depends: 7.35.3.18, 7.35.3.14, and Paragraph (5) of Subsection H of 7.35.3.20. One new section, 7.35.3.29, is proposed. No other provision of Part 3 is addressed.
 
-## The hours
+Where the Metz recommendation states a range, the low end is drafted and marked with a badge. Where the rule as published is unclear, the published text is left as it stands and the question is stated at that provision.
+
+## Hours
 
 | | Published | Proposed | Change |
 |---|---|---|---|
@@ -57,7 +36,7 @@ No figure enters a proposed change unless it exists in a source.
 | **Program total, facilitator** | **150** | **166** | **+16** |
 | **Program total, practitioner** | **170** | **176** | **+6** |
 
-The practitioner row assumes the 20 supervision hours in 7.35.3.19 C sit inside the published 120. On the other reading the published total is 190 and the proposed 176 is below it. Flagged in the PDF at 7.35.3.19 C, not resolved here.
+The practitioner rows take the 20 supervision hours in 7.35.3.19 C to be within the published 120. On the other reading of that subsection the published total is 190. Stated at 7.35.3.19 C.
 
 ## Conventions
 
