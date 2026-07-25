@@ -88,6 +88,9 @@ REVISIONS = {
     "input": [
         ("July 25, 2026", "Reviewed. No change to the form or its handling. A Reviewed date was added, since the page had none. Topics for the August 28 rule hearing and for submitting a document to the register were added earlier in the day, together with the querystring map entries they depend on."),
     ],
+    "changes": [
+        ("July 25, 2026", "Restructured into layers rather than re-citing 108 anchors that were already correct for what they compare. A new section, \"The training and education provisions, as published\", now leads the page: thirteen provisions with the July 23 text, the section and page, and what changed from July 9. It covers the didactic increase from 25 to 30 hours, the unchanged practicum, the new rule that the practicum cannot begin before half the didactic and all simulated patient hours, both waiver deadlines moving to December 31 2027, the disagreement between the two waivers on group session counts, and the new qualified-student staffing ratio. The existing 104-provision comparison was mis-framed as the current draft when it is a comparison of the June 12 recommendation against the July 9 draft; it is relabelled as the earlier layer and kept intact, with its July 9 page anchors, which are correct for that comparison."),
+    ],
     "documents": [
         ("July 25, 2026", "Page created. A register of every source document with what it is, when it landed, whether it is current or superseded, page count, size, and a direct download, plus a section naming the documents this site does not have."),
     ],
