@@ -81,11 +81,11 @@ The reasoning, provision by provision.
 
 | Element | Recommended | Published rule | Disposition |
 |---|---|---|---|
-| A single didactic total for both permit types | 84 hours | No total is stated anywhere in the rule. Module minimums are 30 at 7.35.3.18 C (page 11), 5 at 7.35.3.18 D (page 12) for facilitators, 5 at 7.35.3.18 E (page 12) for practitioners, and no figure at all at 7.35.3.18 A (page 11) for the New Mexico module. Stated didactic total: 35, plus an unpriced module | NOT ADOPTED |
-| Simulated patient hours stated separately from didactic hours | Not counted in the 84 | 7.35.3.18 C, page 11: "a minimum of 30 didactic hours and 5 hours of simulated patient experience", which does not say whether the 5 count toward the 30. The July 9 draft said they did not | PARTLY ADOPTED |
+| A single didactic total for both permit types | 84 hours, inclusive of the simulated patient experience, confirmed by the author | No total is stated anywhere in the rule. Module minimums are 30 at 7.35.3.18 C (page 11), 5 at 7.35.3.18 D (page 12) for facilitators, 5 at 7.35.3.18 E (page 12) for practitioners, and no figure at all at 7.35.3.18 A (page 11) for the New Mexico module. Stated didactic total: 35, plus an unpriced module | NOT ADOPTED |
+| Simulated patient hours and the 84 | Counted inside the 84. The curriculum table has no simulated-patient row and its total line reads "Total 84" (page 3); the author confirmed the 5 hours sit inside it | 7.35.3.18 C, page 11: "a minimum of 30 didactic hours and 5 hours of simulated patient experience", which does not say whether the 5 count toward the 30. The July 9 draft said they did not | PARTLY ADOPTED |
 | Test-out retained as the route for experienced clinicians rather than tiering hours by background | Retained | 7.35.3.17 B, page 11, retains the module-by-module test-out and excludes the New Mexico module | ADOPTED |
 
-**Proposed here.** 84 as a binding total, stated in one place: new 7.35.3.18 H. Allocation: New Mexico module 8, core psilocybin therapy module 70, role-specific module 6. Simulated patient hours restated as additional to the didactic hours. See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, H.
+**Proposed here.** 84 as a binding module total, stated in one place: new 7.35.3.18 H, with a didactic floor of 79 inside it so that a program cannot satisfy the standard by expanding the simulated patient experience. Allocation: New Mexico module 8 didactic, core psilocybin therapy module 65 didactic plus the 5-hour simulated patient experience, role-specific module 6 didactic. See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, H.
 
 ### 3.2 The curriculum allocation, content area by content area
 
@@ -157,7 +157,9 @@ See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, F, H, and `blocking-defec
 
 **Step 1 is drafted, as a new section, with an express contingency.** New section 7.35.3.29 provides for stage one to be conducted with practicum participants who are not qualified patients, and 7.35.3.19 D(1) is written in two limbs so the practicum works whether or not that section is in effect. The contingency is there because the authority is statutory, not regulatory. Nothing in 7.35.3 NMAC authorizes administering psilocybin to a person who is not a qualified patient; 7.35.3.14, page 9, authorizes provision only "to qualified patients"; and the rule cites its own authority as Section 26-2D-7 NMSA 1978 with its objective stated by reference to Sections 26-2D-1 through -11 NMSA 1978 (7.35.3.3 and 7.35.3.6, page 1). Whether those sections reach a non-patient cannot be determined from the rule and is not answered anywhere in this repository. The July 17 morning board transcript treats it as needing legislation: "what's going to be presented in the training committee this afternoon is impossible to do adequate training without having the ability for people to use psilocybin in the training," said in the context of hoping "that there's going to be a fix-it bill." The afternoon committee transcript records the request in program terms: "yes, we need an expansion for practicums to be feasible ... for them to be operated on well patients, those without qualifying conditions." Full text at `blocking-defects.md`, Defect 4. This is question 1 at `questions-for-metz.md`.
 
-**Practicum totals are 80 and 90 rather than 62 and 72.** Two reasons, both stated so they can be argued with. First, the recommendation's totals assume that roughly 30 hours of the practicum are spent with well participants, which the rule cannot authorize; removing that step without adding hours back would reduce qualified-patient contact rather than redistribute it. Second, the position this drafting serves is that total program hours stay flat or rise, and 7.35.3.19 C's "additional minimum of 20 hours" admits two readings, one of which puts the published practitioner total at 190. See the ledger in Part 6.
+**Practicum totals are 80 and 90 rather than 62 and 72.** One reason, and it is arithmetic rather than a view about practicum design. The position this drafting serves is that total program hours stay flat or rise. 7.35.3.19 C's "additional minimum of 20 hours" admits two readings, one of which puts the published practitioner program total at 190. With the module fixed at 84, the practicum and the consultation must together exceed 106 to stay above that. The recommended 72 with 30 consultation hours reaches 186, four short. Ninety with 30 reaches 204. The sensitivity table is at Part 6.3, and the choice is question 3 at `questions-for-metz.md`.
+
+**What is no longer a reason.** An earlier version of this crosswalk also reasoned that the recommended totals assume roughly 30 hours with well participants and that removing the step without adding hours back would thin qualified-patient contact. The author has since confirmed that the 30 hours sit inside the 62 and 72, and that if the program cannot support well participants the practicum bucket should hold at the same size with the carve-out made later. That is what 7.35.3.19 D(1) does. The bucket does not shrink when the well-participant limb is unavailable, so this is no longer an argument for a larger bucket.
 
 **Supervision hours are reduced to 10, as recommended.** No departure.
 
@@ -184,7 +186,7 @@ See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, F, H, and `blocking-defec
 
 **Proposed here.** New 7.35.3.19 I: 30 hours of supervision or consultation during the training permit period, two presented cases in the form the recommendation specifies, a department-approved evaluation form for each, the existing 10 hours of mentoring at 7.35.3.17 A credited toward the 30 so that nothing is double counted, and completion required before applying for certification. New 7.35.3.19 J carries the end-of-life checkpoint. See `7.35.3.18-19-redline.md`, Subsections I and J.
 
-**Departure.** The recommendation gives a range of 20 to 30. The redline states 30. A range stated in a rule operates as its floor, so drafting "20 to 30" would enact 20.
+**Departure, and the provenance of the range.** The recommendation gives "20-30 total hours." The redline states 30. A range stated in a rule operates as its floor, so drafting "20 to 30" would enact 20. The 20 to 30 figure carries no stated derivation in any of the four sources: it appears as a bare recommendation in the written draft (pages 4 and 5), on slide 5, in the one-page summary's flow diagram, and in the transcript ("in place of the 10 hours, I would recommend 20 to 30 hours of supervision or consultation during the permit period, in addition to the practicum"). The Colorado analysis findings the recommendation cites for Recommendation 4 endorse "Continuing oversight after training" qualitatively and give no number, and Memoru is cited for the two-case sign-off model rather than for an hour count. The one number the recommendation does derive in this area is the two case presentations. See Part 6.5.
 
 **Placement.** The consultation requirement is drafted into 7.35.3.19 rather than 7.35.3.17 because 7.35.3.17 is outside this scope, and because the requirement is tied to the training permit, which 7.35.3.19 creates. Paragraph I(4) credits the existing 10 hours so that 7.35.3.17 A need not be amended. The alternative, moving the whole requirement into 7.35.3.17 A, is a live option and is flagged in Part 7, F1.
 
@@ -197,36 +199,48 @@ See `7.35.3.18-19-redline.md`, Subsections A, C, D, E, F, H, and `blocking-defec
 | Component | Section | Published July 23 | Recommended July 17 | Proposed here |
 |---|---|---|---|---|
 | New Mexico module | 7.35.3.18 A | not stated | 6 to 8 | 8 |
-| Core module, didactic | 7.35.3.18 C | 30 | included in the 84 total | 70 |
+| Core module, didactic | 7.35.3.18 C | 30 | included in the 84 total | 65 |
 | Facilitator module, didactic | 7.35.3.18 D | 5 | included in the 84 total | 6 |
-| Didactic subtotal | | 35 plus an unpriced module | 84 | 84 |
-| Simulated patient experience | 7.35.3.18 C | 5 | not counted in the 84 | 5 |
-| Practicum | 7.35.3.19 A and B | 100 | approx. 62 | 80 |
+| Simulated patient experience | 7.35.3.18 C | 5 | included in the 84 total | 5 |
+| Module subtotal | 7.35.3.18 H | 40, of which 35 didactic, plus an unpriced module | 84, of which the didactic split is not stated | 84, of which 79 didactic |
+| Practicum | 7.35.3.19 A and B | 100 | approx. 62, inclusive of the well-participant step | 80 |
 | Supervision or consultation | 7.35.3.17 A, and 7.35.3.19 I as proposed | 10 | 20 to 30 | 30 |
-| **Total** | | **150** | **166 to 176** | **199** |
+| **Total** | | **150** | **166 to 176** | **194** |
 
 ### 6.2 Practitioner
 
 | Component | Section | Published July 23 | Recommended July 17 | Proposed here |
 |---|---|---|---|---|
 | New Mexico module | 7.35.3.18 A | not stated | 6 to 8 | 8 |
-| Core module, didactic | 7.35.3.18 C | 30 | included in the 84 total | 70 |
+| Core module, didactic | 7.35.3.18 C | 30 | included in the 84 total | 65 |
 | Practitioner module, didactic | 7.35.3.18 E | 5 | included in the 84 total | 6 |
-| Didactic subtotal | | 35 plus an unpriced module | 84 | 84 |
-| Simulated patient experience | 7.35.3.18 C | 5 | not counted in the 84 | 5 |
-| Practicum, including supervision hours | 7.35.3.19 A, B and C | 120, or 140 on the second reading of Subsection C | approx. 72 | 90 |
+| Simulated patient experience | 7.35.3.18 C | 5 | included in the 84 total | 5 |
+| Module subtotal | 7.35.3.18 H | 40, of which 35 didactic, plus an unpriced module | 84, of which the didactic split is not stated | 84, of which 79 didactic |
+| Practicum, including supervision hours | 7.35.3.19 A, B and C | 120, or 140 on the second reading of Subsection C | approx. 72, inclusive of the well-participant step | 90 |
 | Supervision or consultation | 7.35.3.17 A, and 7.35.3.19 I as proposed | 10 | 20 to 30 | 30 |
-| **Total** | | **170, or 190 on the second reading** | **176 to 186** | **209** |
+| **Total** | | **170, or 190 on the second reading** | **176 to 186** | **204** |
 
-### 6.3 What the ledger shows
+### 6.3 What the ledger shows, and where the floor is
 
-**Total program hours rise.** Facilitator: 150 to 199, an increase of 49. Practitioner: 170 to 209, an increase of 39, or 190 to 209, an increase of 19, depending on which reading of 7.35.3.19 C is taken. The proposal exceeds the published total on every reading.
+**Total program hours rise.** Facilitator: 150 to 194, an increase of 44. Practitioner: 170 to 204, an increase of 34, or 190 to 204, an increase of 14, depending on which reading of 7.35.3.19 C is taken. The proposal exceeds the published total on every reading.
 
-**The increase is not spread evenly.** Didactic hours rise by 49. Consultation rises by 20. Practicum falls by 20 for facilitators and by 30 for practitioners. What moves is where the hours sit, not how many there are.
+**The increase is not spread evenly.** Module hours rise by 44. Consultation rises by 20. Practicum falls by 20 for facilitators and by 30 for practitioners. What moves is where the hours sit, not how many there are.
 
 **Patient contact is not reduced.** The published minimum of 14 different patients over a minimum of eight different administration day sessions, including six individual sessions with six different patients and two group sessions with four or more patients each, is carried forward unchanged in the redline. So is the 20-hour preparation and integration requirement. The reduction is taken entirely from hours, and none of it from the patient and session floors.
 
-**The reading of 7.35.3.19 C matters and should be settled at the hearing whatever else is decided.** As published, the practitioner practicum is either 120 hours or 140. See `7.35.3.18-19-redline.md`, Subsection C.
+**Where the floor is.** The binding constraint is the practitioner total against the second reading of 7.35.3.19 C, which puts the published requirement at 190. With the module fixed at 84, the practicum and the consultation must together exceed 106 for the proposal to stay above it. The facilitator side is never at risk: the published facilitator total is 150 and the module alone rises by 44.
+
+| Practitioner practicum | With 20 consultation hours | With 30 consultation hours |
+|---|---|---|
+| 72, as recommended July 17 | 176 | 186 |
+| 76 | 180 | 190 |
+| 80 | 184 | 194 |
+| 86 | 190 | 200 |
+| **90, as proposed here** | **194** | **204** |
+
+Published: 170 on the first reading of 7.35.3.19 C, 190 on the second. Cells at or below 190 do not clear the second reading. This is why the practicum is drafted at 90 rather than at the recommended 72, and it is an arithmetic constraint rather than a preference about practicum design.
+
+**The recommended practicum totals are inclusive of the well-participant step.** The author confirmed that the approximately 30 hours of step 1 sit inside the 62 and 72, not on top of them. The proposal keeps a single practicum bucket on the same principle: if the well-participant step is unavailable, the hours stay in the bucket and are earned as observation and support with qualified patients under the second limb of 7.35.3.19 D(1), rather than the bucket shrinking.
 
 ### 6.4 The department's own arithmetic of the recommended model
 
@@ -247,6 +261,35 @@ The same passage records the department's position that hour figures are still a
 > "do we need to adjust the hours, for example, in the didactic somewhat?"
 
 The Advisory Board had voted earlier the same day, without objection, to send the practicum and didactic hours to the Training and Education Committee. The morning board transcript records the motion as "we can move to a vote on to defer the training and education practicum and didactic hours to the training and education committee for them to solve to reassess and re-come together and have time to come up with those updated standards," followed by "I see seven hands" and "the motion is adopted. We will send that back to the Training and Education Committee." Basis for attribution: the presiding chair puts the motion. The published rule sets didactic hours at 30 rather than the 25 that stood in the draft in circulation on the day of that vote. See `analysis/july17-to-july23-state-diff.md`, items 1 and 2.
+
+### 6.6 The consultation hours: where 20 to 30 comes from, and what the record adds
+
+**Where it comes from: nowhere that is stated.** The figure appears four times and is derived in none of them.
+
+- Written draft, pages 4 and 5: "Recommended requirement: 20-30 total hours of supervision or consultation completed during the training permit period, in addition to the practicum hours above, with sign-off tied to case presentation."
+- Slide 5: "20-30 hours of supervision or consultation" (the source renders the range with an en dash).
+- One-page summary, in the flow diagram: "Consultation  20-30 hrs · 2 case presentations".
+- July 17 afternoon committee transcript: "in place of the 10 hours, I would recommend 20 to 30 hours of supervision or consultation during the permit period, in addition to the practicum".
+
+The supporting evidence section of the written draft cites the Colorado analysis for the principle and not for a number: "Continuing oversight after training - associate-style supervised periods, ongoing consultation, and peer support groups - was widely endorsed and supports the training permit and Recommendation 4" (page 5, em dash rendered here as a hyphen). Memoru is cited for the two-case sign-off model, not for an hour count. By contrast the recommendation does derive its other figures: the 84 from the Oregon 120 and Colorado 150 calibration argument, and the trauma, suicidality and touch minimums from the stakeholder interviews. The consultation range is the one number in the document offered without a source.
+
+**What the 10 hours it replaces were for.** The June 12, 2026 committee recommendation already stated a case-discussion purpose for the mentoring it required: "The purpose of the mentoring sessions are to allow new graduates to consult with the educational program faculty regarding cases, patients, situations, and how they handle them." (`Document Register/Draft for Training Requirements 6-12-26.pdf`.) What it did not do was require the graduate to have seen a client, which is the gap Recommendation 4 targets.
+
+**What the record adds, and why it bears on 20 versus 30.** At the July 17 afternoon committee meeting the consultation period was described as the phase in which a trainee moves to higher acuity, not only as a sign-off mechanism. The transcript fixes both speakers: the chair says "No, we didn't answer Ian's question. I think that was directed to you, Anne." immediately before the first answer below, and the intervening question is Ian Dunn's.
+
+> "that people start out With lower acuity conditions and then, you know, as they're doing their supervised consultation hours that they would, you know, be able to work on more complex cases."
+
+Ian Dunn, in reply:
+
+> "I just wanted to make sure that they would eventually deal with complex cases before they were fully licensed to practice by themselves."
+
+And then:
+
+> "Yeah, I think as soon as they're in the consultation phase that they've completed the lower acuity and that they've had the supervision, 10 hours and the group that I think they could certainly take on more difficult cases."
+
+That exchange makes the consultation period load-bearing. Under the practicum sequence in Recommendation 3, every practicum case is low acuity by design: step 2 is expressly limited to "low-acuity presentations" with "PTSD and other substance use disorders" excluded (written draft, page 4; slide 4 states it as "PTSD and other SUDs excluded at this stage"). If complex cases are to be reached under supervision before full permitting, as Dunn asked and as the answer describes, the consultation period is the only place in the design where that happens.
+
+Thirty hours is drafted on that basis rather than on the range's own authority. It is also what the arithmetic in Part 6.3 requires at a practicum of 90. This is question 4 at `questions-for-metz.md`, and the question there is put as what the range is doing rather than as a choice between its endpoints.
 
 ---
 

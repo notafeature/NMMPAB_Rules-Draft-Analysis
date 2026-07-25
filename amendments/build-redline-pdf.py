@@ -166,9 +166,8 @@ P.append((
     "facilitators shall complete a psilocybin therapy module consisting of a minimum of 30 didactic hours and 5 hours of "
     "simulated patient experience, prior to applying for certification, which shall include:",
     "C. Requirements for initial {{PT}} and facilitator certification: All {{PTS}} and "
-    "facilitators shall complete a psilocybin therapy module consisting of a minimum of " + dele("30") + " " + ins("70")
-    + " didactic hours and 5 hours of simulated patient experience "
-    + ins("in addition to those didactic hours") + ", prior to applying for certification, which shall include:",
+    "facilitators shall complete a psilocybin therapy module consisting of a minimum of " + dele("30") + " " + ins("65")
+    + " didactic hours and 5 hours of simulated patient experience, prior to applying for certification, which shall include:",
 ))
 
 P.append((
@@ -263,14 +262,15 @@ P.append((
 
 P.append((
     "7.35.3.18",
-    "Subsection H, total didactic hours",
+    "Subsection H, total module hours",
     NEW,
-    ins("H. Total didactic hours: The didactic hours required by Subsections A, C and D of this section shall "
-        "together total a minimum of 84 didactic hours for a facilitator applicant. The didactic hours required by "
-        "Subsections A, C and E of this section shall together total a minimum of 84 didactic hours for a {{PT}} "
-        "applicant. The 5 hours of simulated patient experience required by Subsection C of this section are in addition "
-        "to the 84 didactic hours. The hour minimums stated for individual content areas within Subsection C are floors "
-        "within the 84-hour total and do not limit an educational program's allocation of the balance of the hours."),
+    ins("H. Total module hours: The requirements of Subsections A, C and D of this section shall together total a "
+        "minimum of 84 hours for a facilitator applicant. The requirements of Subsections A, C and E of this section "
+        "shall together total a minimum of 84 hours for a {{PT}} applicant. Of that total, no fewer than 79 hours shall "
+        "be didactic hours, and 5 hours shall be the simulated patient experience required by Subsection C of this "
+        "section, which is in addition to the didactic hours required by that subsection. The hour minimums stated for "
+        "individual content areas within Subsection C are floors within the 84-hour total and do not limit an "
+        "educational program's allocation of the balance of the hours."),
 ))
 
 P.append((
@@ -300,9 +300,8 @@ P.append((
     "following criteria:",
     "A. Minimum practicum hours; administration day sessions: An individual who seeks to become "
     "certified as a {{PT}} or facilitator shall participate in supervised practice training, otherwise referred to as a "
-    "“practicum”, after completing at least half of the didactic " + dele("requirements")
-    + ins("hours required by Subsection A of 7.35.3.18 NMAC and by Subsection C of that section, together with the "
-          "didactic hours required by Subsection D or E of that section as applicable to the certification sought,")
+    "“practicum”, after completing at least " + dele("half of the didactic requirements")
+    + ins("40 of the didactic hours required by 7.35.3.18 NMAC")
     + " and all of the simulated patient requirements "
     "of the educational requirements. The practicum shall consist of a minimum of " + dele("100") + " " + ins("80")
     + " hours of supervised practice training for facilitators and " + dele("120") + " " + ins("90")
@@ -777,16 +776,18 @@ If the department prefers severability to remain last, the new section becomes 7
 </div>
 
 <div class="keybox">
-<b>The hours, at a glance.</b> Hours shift. They do not shrink.
+<b>The hours, at a glance.</b> Hours shift. They do not shrink. The 84-hour standard is inclusive of the 5-hour
+simulated patient experience.
 <table class="hours">
 <tr><th>Component</th><th>Published July 23</th><th>Proposed</th><th>Change</th></tr>
-<tr><td>Didactic</td><td>35, plus a New Mexico module with no hour count</td><td>84</td><td class="n">+49</td></tr>
+<tr><td>Didactic hours</td><td>35, plus a New Mexico module with no hour count</td><td>79</td><td class="n">+44</td></tr>
 <tr><td>Simulated patient experience</td><td>5</td><td>5</td><td class="n">0</td></tr>
+<tr><td><b>Module total, either permit</b></td><td><b>40, plus an unpriced module</b></td><td><b>84</b></td><td class="n"><b>+44</b></td></tr>
 <tr><td>Practicum, facilitator</td><td>100</td><td>80</td><td class="n">&minus;20</td></tr>
 <tr><td>Practicum, practitioner</td><td>120, or 140 on the second reading of 7.35.3.19 C</td><td>90</td><td class="n">&minus;30</td></tr>
 <tr><td>Supervision or consultation</td><td>10</td><td>30</td><td class="n">+20</td></tr>
-<tr><td><b>Program total, facilitator</b></td><td><b>150</b></td><td><b>199</b></td><td class="n"><b>+49</b></td></tr>
-<tr><td><b>Program total, practitioner</b></td><td><b>170, or 190</b></td><td><b>209</b></td><td class="n"><b>+39</b></td></tr>
+<tr><td><b>Program total, facilitator</b></td><td><b>150</b></td><td><b>194</b></td><td class="n"><b>+44</b></td></tr>
+<tr><td><b>Program total, practitioner</b></td><td><b>170, or 190</b></td><td><b>204</b></td><td class="n"><b>+34</b></td></tr>
 </table>
 Every patient and session minimum in the published practicum is carried forward unchanged: 14 different patients, eight
 different administration day sessions, six individual sessions with six different patients, two group sessions with four

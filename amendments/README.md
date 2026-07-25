@@ -28,7 +28,7 @@ Everything else is flagged, not drafted. The flags are collected at `metz-crossw
 | File | What it is |
 |---|---|
 | `7.35.3-training-redline-2026-07-23.pdf` | Side-by-side redline of every subsection being amended. Left column the published text verbatim, right column the proposed text with insertions and deletions marked. Built and verified by `build-redline-pdf.py` |
-| `questions-for-metz.md` | Ten questions that change drafting, ordered by how much turns on the answer |
+| `questions-for-metz.md` | Ten questions that change drafting. Three answered, seven open, each marked |
 | `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match |
 | `metz-crosswalk.md` | The four July 17 recommendations mapped against the published rule provision by provision, with the hours ledger, the answer to the open question on the permit title, and the cross-session flags |
 | `7.35.3.18-19-redline.md` | Redline amendment language for 7.35.3.18 and 7.35.3.19 |
@@ -76,13 +76,16 @@ Hours shift. They do not shrink.
 
 | | Published July 23 | Proposed | Change |
 |---|---|---|---|
-| Didactic | 35, plus a module with no hour count | 84 | +49 |
-| Simulated patient | 5 | 5 | 0 |
+| Didactic hours | 35, plus a module with no hour count | 79 | +44 |
+| Simulated patient experience | 5 | 5 | 0 |
+| **Module total, either permit** | **40, plus an unpriced module** | **84** | **+44** |
 | Practicum, facilitator | 100 | 80 | -20 |
 | Practicum, practitioner | 120, or 140 on the second reading of 7.35.3.19 C | 90 | -30 |
 | Supervision or consultation | 10 | 30 | +20 |
-| **Program total, facilitator** | **150** | **199** | **+49** |
-| **Program total, practitioner** | **170, or 190** | **209** | **+39** |
+| **Program total, facilitator** | **150** | **194** | **+44** |
+| **Program total, practitioner** | **170, or 190** | **204** | **+34** |
+
+The 84-hour standard is inclusive of the 5-hour simulated patient experience, confirmed by the author of the July 17 recommendation. 7.35.3.18 H states it as a module total with a didactic floor of 79 inside it.
 
 Total program hours rise for both permit types. Every patient and session minimum in the published practicum is carried forward unchanged. The argument rests on the published text, the July 17 record, and this arithmetic. It does not rest on comparison with Oregon or Colorado.
 
