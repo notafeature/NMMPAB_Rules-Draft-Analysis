@@ -162,6 +162,12 @@
   th.c3{white-space:nowrap;}
   .colhide{font:inherit; font-size:10px; text-transform:uppercase; letter-spacing:.05em; margin-left:8px; padding:2px 8px; border:1px solid var(--border-strong); border-radius:20px; background:var(--surface); color:var(--text-muted); cursor:pointer;}
   .colhide:hover{color:var(--text); border-color:var(--accent);}
+  p.body{font-size:14.5px; color:var(--text-muted); margin:12px 0 0; line-height:1.6;}
+  p.body b{color:var(--text); font-weight:600;}
+  .cite{font-family:var(--mono); font-size:11.5px; color:var(--text-faint);}
+  .cite a{color:var(--text-faint);}
+  .note{font-size:13px; color:var(--text-muted); margin:14px 0 0; line-height:1.55;}
+  .note b{color:var(--text);}
 /* provenance block */
   .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
   .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
@@ -239,7 +245,13 @@
     <div class="inner">
       <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
       <nav class="tnav" id="tnav" aria-label="Primary">
-        <a href="index.html" data-nav="index">Overview</a>
+        <details class="tdrop navgrp" data-navgrp="ov">
+          <summary>Overview <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+          </div>
+        </details>
         <details class="tdrop navgrp" data-navgrp="req">
           <summary>Requirements <span class="caret">&#9662;</span></summary>
           <div class="tdrop-menu">
@@ -538,6 +550,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> Added the CSS rules for the body, citation and note classes used in the published-provisions section, which had none on this page and were rendering unstyled.</li>
           <li><b>July 25, 2026</b> Page review applied. The section headed "Earlier layer, 104 provisions" told a reader nothing and is now "Where the rules came from", with a heading that says what the comparison actually is. The published-provisions table states in its opening line that these are the provisions deferred to the committee, rather than leaving it to be found. The "Change from July 9" column can now be hidden, since it is context rather than the thing most readers came for.</li>
           <li><b>July 25, 2026</b> Restructured into layers rather than re-citing 108 anchors that were already correct for what they compare. A new section, "The training and education provisions, as published", now leads the page: thirteen provisions with the July 23 text, the section and page, and what changed from July 9. It covers the didactic increase from 25 to 30 hours, the unchanged practicum, the new rule that the practicum cannot begin before half the didactic and all simulated patient hours, both waiver deadlines moving to December 31 2027, the disagreement between the two waivers on group session counts, and the new qualified-student staffing ratio. The existing 104-provision comparison was mis-framed as the current draft when it is a comparison of the June 12 recommendation against the July 9 draft; it is relabelled as the earlier layer and kept intact, with its July 9 page anchors, which are correct for that comparison.</li>
           </ul>

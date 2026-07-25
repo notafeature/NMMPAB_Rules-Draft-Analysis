@@ -140,6 +140,22 @@ for f in sorted(glob.glob("docs/*.html")):
     if problems: print(f, "|", "; ".join(problems))
 EOF
 
+# every class used in the body has a CSS rule on that page.
+# This catches content moved between pages without its styles, which renders
+# as an unstyled wall of text. It has happened: guide.html shipped broken.
+python3 - <<'EOF'
+import glob, re
+for f in sorted(glob.glob("docs/*.html")):
+    s = open(f).read()
+    head = s[:s.index("</head>")]
+    body = re.sub(r'<nav class="tnav".*?</nav>', '', s[s.index("</head>"):], flags=re.S)
+    body = re.sub(r'<!-- provenance.*?/provenance -->', '', body, flags=re.S)
+    cls = set()
+    for u in re.findall(r'class="([A-Za-z0-9 _-]+)"', body): cls.update(u.split())
+    missing = [c for c in sorted(cls) if not re.search(r'[.#]' + re.escape(c) + r'[ ,.:{>]', head)]
+    if missing: print(f, "| unstyled:", missing)
+EOF
+
 # link text must not contradict its target
 python3 - <<'EOF'
 import glob, re

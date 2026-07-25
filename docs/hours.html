@@ -270,6 +270,8 @@
   .changebox li{margin:6px 0;}
   .changebox .cite{margin-top:10px; display:block;}
   .altname{display:block; font-family:var(--sans); font-size:11.5px; font-weight:400; color:var(--text-faint); font-style:italic; margin-top:2px;}
+  .updated{margin:0 0 14px; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
+  .updated b{color:var(--text-muted); font-weight:600;}
 /* provenance block */
   .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
   .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
@@ -348,7 +350,13 @@
     <div class="inner">
       <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
       <nav class="tnav" id="tnav" aria-label="Primary">
-        <a href="index.html" data-nav="index">Overview</a>
+        <details class="tdrop navgrp" data-navgrp="ov">
+          <summary>Overview <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+          </div>
+        </details>
         <details class="tdrop navgrp" data-navgrp="req">
           <summary>Requirements <span class="caret">&#9662;</span></summary>
           <div class="tdrop-menu">
@@ -403,27 +411,27 @@
           <div class="rrow"><span class="rk">Didactic module</span><span class="rv">8 hrs</span></div>
           <div class="rrow"><span class="rk">Practicum</span><span class="rv zero">none</span></div>
           <div class="rrow"><span class="rk">Continuing ed</span><span class="rv">8 hrs / 2 yr</span></div>
-          <div class="rtot"><span>Unchanged July 23</span><b>8 hrs</b></div>
-        </div>
-        <div class="role">
-          <p class="rn">Facilitator</p>
-          <p class="rr">Guides sessions; no prescribing, no license required for this role</p>
-          <div class="rrow"><span class="rk">Shared therapy module</span><span class="rv">30 hrs</span></div>
-          <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs</span></div>
-          <div class="rrow"><span class="rk">Facilitator module</span><span class="rv">5 hrs</span></div>
-          <div class="rrow"><span class="rk">Practicum</span><span class="rv">100 hrs</span></div>
-          <div class="rrow"><span class="rk">Continuing ed</span><span class="rv">20 hrs / 2 yr</span></div>
-          <div class="rtot"><span>Published July 23</span><b>35 + 100</b></div>
+          <div class="rtot"><span>Unchanged July 23</span><b>8 didactic, no practicum</b></div>
         </div>
         <div class="role">
           <p class="rn">Practitioner <span class="altname">proposed: &ldquo;licensed provider&rdquo;</span></p>
           <p class="rr">Licensed therapist role; supervises facilitators</p>
-          <div class="rrow"><span class="rk">Shared therapy module</span><span class="rv">30 hrs</span></div>
-          <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs</span></div>
-          <div class="rrow"><span class="rk">Practitioner module</span><span class="rv">5 hrs</span></div>
+          <div class="rrow"><span class="rk">Shared therapy module</span><span class="rv">30 didactic</span></div>
+          <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs, separate</span></div>
+          <div class="rrow"><span class="rk">Practitioner module</span><span class="rv">5 didactic</span></div>
           <div class="rrow"><span class="rk">Practicum</span><span class="rv">120 hrs</span></div>
           <div class="rrow"><span class="rk">Continuing ed</span><span class="rv">20 hrs / 2 yr</span></div>
-          <div class="rtot"><span>Published July 23</span><b>35 + 120</b></div>
+          <div class="rtot"><span>Published July 23</span><b>35 didactic + 5 sim + 120 practicum</b></div>
+        </div>
+        <div class="role">
+          <p class="rn">Facilitator</p>
+          <p class="rr">Guides sessions; no prescribing, no license required for this role</p>
+          <div class="rrow"><span class="rk">Shared therapy module</span><span class="rv">30 didactic</span></div>
+          <div class="rrow"><span class="rk">Simulated patient</span><span class="rv">5 hrs, separate</span></div>
+          <div class="rrow"><span class="rk">Facilitator module</span><span class="rv">5 didactic</span></div>
+          <div class="rrow"><span class="rk">Practicum</span><span class="rv">100 hrs</span></div>
+          <div class="rrow"><span class="rk">Continuing ed</span><span class="rv">20 hrs / 2 yr</span></div>
+          <div class="rtot"><span>Published July 23</span><b>35 didactic + 5 sim + 100 practicum</b></div>
         </div>
       </div>
       <p class="cite" style="margin-top:8px;">All figures from the published proposed rule: didactic and continuing education, <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18, pp.11&ndash;12</a>; practicum, <a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">7.35.3.19, pp.12&ndash;13</a>. The practicum figure for practitioners includes the 20 supervisory hours in 7.35.3.19 (C). Practitioners and facilitators must also hold current BLS, or CPR and AED, or New Mexico EMT licensure, plus HIPAA certification within the preceding two years.</p>
@@ -923,6 +931,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> Role tiles reordered to certifying clinician, practitioner, facilitator, as asked. The totals could not be reconciled with the rows above them: the tile listed 30, 5 and 5 while the total read "35 + 100". Totals now read "35 didactic + 5 sim + 100 practicum" and the rows name their units, so the arithmetic is visible.</li>
           <li><b>July 25, 2026</b> Page review applied. Removed the "Purpose and how to read this page" panel: a page that needs instructions for reading it has already failed. Added Dr. Anne Metz's proposed alternative permit title as a parenthetical under the Practitioner tile, since that is a separate recommendation that can be dropped without affecting the practicum work. Every entry in "What changed on July 23" now names its subsection in the sentence itself rather than relying on a link placed to one side.</li>
           <li><b>July 25, 2026</b> Brought current to the July 23 published rule. The page had no Updated date at all and was written in live-blog present tense from July 17: the Dr. Anne Metz presentation carried an "In progress" tag and a section was headed "Open questions for July 17". Role cards updated from the July 9 numbers to the published ones. Corrected two live errors: the in-state bridge deadline read June 30, 2027 and the reciprocity deadline read December 31, 2026, and both are December 31, 2027 in the published rule. Added a "What changed on July 23" summary.</li>
           <li><b>July 17, 2026</b> Added the live log of the July 17 Training and Education Committee meeting, including the Dr. Anne Metz presentation.</li>

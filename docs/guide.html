@@ -122,6 +122,17 @@
   .sec-head .k{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 6px;}
   .sec-head h2{font-size:clamp(19px,2.4vw,24px); margin:0;}
   .sec-head p{color:var(--text-muted); margin:10px 0 0; font-size:15px; line-height:1.6;}
+  .mapgrid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:20px;}
+  @media (min-width:620px){.mapgrid{grid-template-columns:1fr 1fr;}}
+  @media (min-width:900px){.mapgrid{grid-template-columns:1fr 1fr 1fr;}}
+  .mapcard{display:flex; flex-direction:column; gap:4px; text-decoration:none; color:inherit; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px 17px; box-shadow:var(--shadow); transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;}
+  .mapcard:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg); border-color:var(--border-strong);}
+  .mapcard .mc-k{font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text-faint);}
+  .mapcard .mc-t{font-family:var(--serif); font-size:17px; font-weight:650; color:var(--text); line-height:1.25;}
+  .mapcard .mc-d{font-size:13px; color:var(--text-muted); line-height:1.45; margin-top:2px;}
+  .mapcard .mc-go{margin-top:auto; padding-top:8px; font-size:12.5px; font-weight:600; color:var(--accent);}
+
+  .mapcard.cur{border-color:var(--accent); border-left:3px solid var(--accent);}
 </style>
 <style id="navpass">
   /* ===== Unified site nav (July 2026 UX pass) ===== */
@@ -174,7 +185,13 @@
     <div class="inner">
       <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
       <nav class="tnav" id="tnav" aria-label="Primary">
-        <a href="index.html" data-nav="index">Overview</a>
+        <details class="tdrop navgrp" data-navgrp="ov">
+          <summary>Overview <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+          </div>
+        </details>
         <details class="tdrop navgrp" data-navgrp="req">
           <summary>Requirements <span class="caret">&#9662;</span></summary>
           <div class="tdrop-menu">
@@ -222,7 +239,7 @@
       <div class="sec-head">
         <p class="k">Find your way around</p>
         <h2>What's on this site</h2>
-        <p>The three items above are the live decisions. These pages hold the standing detail behind them. Each opens to more underneath.</p>
+        <p>Each page below owns one part of the record. A fact lives on exactly one of them, and the others link to it.</p>
       </div>
       <div class="mapgrid">
         <a class="mapcard" href="pathways.html">
@@ -240,7 +257,7 @@
         <a class="mapcard" href="hours.html">
           <span class="mc-k">Requirements</span>
           <span class="mc-t">Training hours</span>
-          <span class="mc-d">The proposed hours, what other states require, and what training may cost.</span>
+          <span class="mc-d">What the published rule requires by role, and what training may cost.</span>
           <span class="mc-go">Open &rarr;</span>
         </a>
         <a class="mapcard" href="cs-number.html">
@@ -252,7 +269,7 @@
         <a class="mapcard" href="changes.html">
           <span class="mc-k">The record</span>
           <span class="mc-t">The draft, section by section</span>
-          <span class="mc-d">All 104 provisions of the July 9 draft, what changed, and the June 26 vote.</span>
+          <span class="mc-d">The training provisions as published on July 23, and where each one came from.</span>
           <span class="mc-go">Open &rarr;</span>
         </a>
         <a class="mapcard" href="history.html">
@@ -299,6 +316,7 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 25, 2026</b> Shipped broken and fixed the same day. The page was created by moving the site map section out of the overview, and the CSS the tiles depend on was left behind, so the cards rendered as one run-on block of underlined text. Seven classes had no rule. The styles were restored and a check for unstyled classes was added to the verification pass in UPDATING.md. The page also moved in the navigation from The record to Overview, where a directory of the site belongs, and its opening line no longer refers to three items that are no longer above it.</li>
           <li><b>July 25, 2026</b> Page created from the site map that was previously a section of the overview. It lists what each page holds, so the overview does not have to carry a directory of itself.</li>
           </ul>
         </div>
