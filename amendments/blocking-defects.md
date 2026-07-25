@@ -4,9 +4,60 @@
 
 **Relationship to the other files in this folder.** `metz-crosswalk.md` maps the July 17 recommendations against the published text. `7.35.3.18-19-redline.md` carries the amendment language for 7.35.3.18 and 7.35.3.19. This file carries the defects that block the training and education chain, and the amendment language for the two provisions outside those sections that the redline depends on: 7.35.3.14 and 7.35.3.20 (H)(5).
 
-**Ordering.** Defect 1 is first because it is the one that stops the practicum from being lawful rather than merely difficult. The remaining defects follow the numbering in `analysis/july23-rule-concerns.md` so the two documents can be read side by side.
+**Ordering.** The statutory frame comes first because it settles one question and reframes two others. Defect 1 is first among the defects because it is the one that stops the practicum from being lawful rather than merely difficult. The remaining defects follow the numbering in `analysis/july23-rule-concerns.md` so the two documents can be read side by side.
 
 **Conventions.** Page citations are to the printed page of the published PDF. Rule quotations are verbatim from its text layer with PDF line breaks collapsed to single spaces and no other alteration. Both July 17 transcripts are labeled "UNOFFICIAL AUTO-GENERATED TRANSCRIPT. NO SPEAKER ATTRIBUTION"; a speaker is named only where the surrounding transcript text fixes it and the basis is stated. The permit title is carried as the variable described in `7.35.3.18-19-redline.md`; the rendered copy of this file is `blocking-defects-rendered.md`. Quotations never carry the variable: where a quotation contains the permit title, the title is reproduced literally as it appears in the source.
+
+---
+
+## The statutory frame, and what it settles
+
+**Source.** Senate Bill 219, 57th Legislature, State of New Mexico, First Session, 2025, enacting the Medical Psilocybin Act at Sections 1 through 11, codified at Sections 26-2D-1 through -11 NMSA 1978. Archived at `Document Register/SB0219-Medical-Psilocybin-Act-2025.pdf`.
+
+**Caveat, and it matters.** The copy read here is the bill as introduced. It carries the "INTRODUCED BY" line and the new-and-deleted-material marginalia of an introduced bill. Committee amendments before enactment are not reflected. Counsel should verify every conclusion below against the enacted text at 26-2D-1 through -11 NMSA 1978 before relying on it. The section structure is consistent with the enacted Act as the rule cites it: Section 1 provides that "Sections 1 through 11 of this act may be cited as the 'Medical Psilocybin Act'", and 7.35.3.6, page 1, cites "the Medical Psilocybin Act at Sections 26-2D-1 through -11, NMSA 1978."
+
+### What the Act protects
+
+Section 3(B): "'clinician' means an approved health care provider licensed in New Mexico who holds a permit from the department to provide medical services to qualified patients".
+
+Section 3(H): "'qualified patient' means a patient whose clinician has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition".
+
+Section 5(A): "A producer, clinician or qualified patient shall not be subject to arrest, prosecution or penalty for participating in the program."
+
+Section 5(B): "The following conduct is lawful and shall not constitute grounds for detention, search or arrest of a person ... (1) a producer or clinician possessing or transporting not more than an adequate supply of psilocybin for medical purposes as defined by department rule; and (2) a clinician administering or a qualified patient taking psilocybin in an approved setting in accordance with the Medical Psilocybin Act or rules promulgated in accordance with that act."
+
+Section 5(D): "A person shall not be subject to arrest or prosecution for a psilocybin-related offense for simply being in the presence of the medical use of psilocybin as allowed under the provisions of the Medical Psilocybin Act."
+
+Section 7(A)(2) gives the department authority to establish "necessary initial and ongoing training for producers and clinicians."
+
+The words "practitioner", "facilitator", "student" and "healing center" appear zero times in the bill. The protected classes are producer, clinician, and qualified patient.
+
+### 1. It settles the well-participant question. A statutory change is required.
+
+Section 5(B)(2) makes lawful "a clinician administering or a qualified patient taking psilocybin in an approved setting." A well participant is not a qualified patient, because Section 3(H) defines that term by reference to diagnosis with a qualifying condition. Nothing in Section 5 reaches a person who is neither a qualified patient nor a clinician nor a producer taking psilocybin.
+
+The department has authority under Section 7(A)(2) to require training. It has no authority under Section 5 to extend the criminal and civil exemption to a person the Legislature did not name. The contingency clause in the proposed 7.35.3.29 F therefore stays, and it should be read as an on-the-record statement of what the rule would do if the authority existed rather than as an assertion that it does. This is consistent with what the July 17 morning board transcript records: "impossible to do adequate training without having the ability for people to use psilocybin in the training," said while hoping "that there's going to be a fix-it bill."
+
+**What a fix-it bill would need to do:** add to Section 5(B) a paragraph making lawful the administration of psilocybin to, and the taking of psilocybin by, a person participating in supervised practice training under department rule, in an approved setting.
+
+### 2. It sharpens Defect 1 rather than resolving it.
+
+Section 5(D) protects presence and nothing more. That is exactly the reach of 7.35.3.20 D, page 14, which permits "students completing their practicums" to be present at an administration session. It does not reach administering.
+
+So a practicum student who administers is protected only if the student is a "clinician" within Section 3(B), which requires both an approved health care provider licensed in New Mexico and a department permit. Under the published rule:
+
+- A {{PT}} student holds a New Mexico professional license, because 7.35.3.9 E(1), page 3, requires "Documentation of current professional license to practice in New Mexico (e.g. PSY, LSW, LCSW)". With the training permit proposed at 7.35.3.19 H, such a student would hold a department permit as well, and would have a colorable claim to fall within Section 3(B).
+- A facilitator student holds no license. 7.35.3.9 F, page 3, requires none. A training permit does not supply one.
+
+The training permit is therefore necessary but may not be sufficient for facilitator students. That is a question for counsel, not a drafting question, and it is the reason 7.35.3.19 H(3) confines the permittee's authority to supervised practicum work rather than granting a general authority.
+
+### 3. It raises a question larger than the training chain, which this drafting does not answer.
+
+The same analysis applies to persons the published rule already authorizes. 7.35.3.14 (B), page 9, authorizes facilitators to possess and provide psilocybin products, and 7.35.3.14 (C) authorizes healing center owners and employees to purchase, possess, sell and administer them. Neither class is named in Section 5, and facilitators are not required to hold any professional license.
+
+**This is not asserted as a conflict.** 7.35.3.7, page 1, provides that "The definitions in 7.35.2.7 NMAC apply to this part." 7.35.2 NMAC is not in this repository. If 7.35.2.7 defines {{PT}} and facilitator as species of the statutory "clinician", the question resolves. If it does not, 7.35.3.14 (B) and (C) reach further than Section 5 does, which would be a defect of a different order from anything in this file and well outside the training and education scope.
+
+**Recommended next step:** counsel reads 7.35.2.7 NMAC against Section 3(B) of the Act. This is the single highest-value check available and it takes one document.
 
 ---
 

@@ -19,6 +19,8 @@ Training and education only.
 
 Everything else is flagged, not drafted. The flags are collected at `metz-crosswalk.md`, Part 7.
 
+**This is not a review of Part 3.** Part 3 runs to 28 sections. `analysis/july23-rule-concerns.md` records 5 blocking and 23 material findings across the whole of it. This folder drafts fixes for the practicum and for the provisions the practicum cannot function without. Anything wider belongs in a separate document.
+
 **Out of scope by decision:** the controlled-substance number requirement for certifying clinicians. No file in this folder proposes reopening it.
 
 **Permit title:** the drafts keep "practitioner." They do not adopt "licensed provider." The term is defined in 7.35.2.7 NMAC, a different part of Title 7, which 7.35.3.7 NMAC incorporates by reference. The title is carried as a variable so the decision can be made later and applied in one pass.
@@ -28,7 +30,7 @@ Everything else is flagged, not drafted. The flags are collected at `metz-crossw
 | File | What it is |
 |---|---|
 | `7.35.3-training-redline-2026-07-23.pdf` | Side-by-side redline of every subsection being amended. Left column the published text verbatim, right column the proposed text with insertions and deletions marked. Built and verified by `build-redline-pdf.py` |
-| `questions-for-metz.md` | Ten questions that change drafting. Three answered, seven open, each marked |
+| `questions-for-metz.md` | Short list of open questions. Three answered, one settled by statute, eight open, one for counsel |
 | `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published PDF by exact contiguous match |
 | `metz-crosswalk.md` | The four July 17 recommendations mapped against the published rule provision by provision, with the hours ledger, the answer to the open question on the permit title, and the cross-session flags |
 | `7.35.3.18-19-redline.md` | Redline amendment language for 7.35.3.18 and 7.35.3.19 |
@@ -81,9 +83,9 @@ Hours shift. They do not shrink.
 | **Module total, either permit** | **40, plus an unpriced module** | **84** | **+44** |
 | Practicum, facilitator | 100 | 80 | -20 |
 | Practicum, practitioner | 120, or 140 on the second reading of 7.35.3.19 C | 90 | -30 |
-| Supervision or consultation | 10 | 30 | +20 |
-| **Program total, facilitator** | **150** | **194** | **+44** |
-| **Program total, practitioner** | **170, or 190** | **204** | **+34** |
+| Supervision or consultation | 10 | 20 | +10 |
+| **Program total, facilitator** | **150** | **184** | **+34** |
+| **Program total, practitioner** | **170, or 190** | **194** | **+24** |
 
 The 84-hour standard is inclusive of the 5-hour simulated patient experience, confirmed by the author of the July 17 recommendation. 7.35.3.18 H states it as a module total with a didactic floor of 79 inside it.
 
@@ -107,5 +109,6 @@ These follow the repository rules in `HANDOFF.md`, section 2.
 - `docs/documents/metz-recommendations-2026-07-17.pdf`, `docs/documents/metz-onepager-2026-07-17.pdf`, and `docs/documents/metz-slides-2026-07-17.pptx`
 - `source-text/NMMPAB-2026-07-17-board-transcript.txt` and `source-text/NMMPAB-2026-07-17-committee-transcript.txt`
 - `analysis/july23-rule-concerns.md`, `analysis/july23-published-delta.md`, `analysis/july17-to-july23-state-diff.md`
+- `Document Register/SB0219-Medical-Psilocybin-Act-2025.pdf`, Senate Bill 219, 57th Legislature, First Session, 2025, as introduced. The enacted text at Sections 26-2D-1 through -11 NMSA 1978 has not been checked against it
 
 Nothing in `docs/` was modified by this work.

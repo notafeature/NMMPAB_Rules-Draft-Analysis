@@ -38,7 +38,7 @@ PERMIT_TITLE = {
     "{{PTS_UC}}": "PRACTITIONERS",
 }
 
-NEW = "No counterpart in the published rule. This is new text."
+NEW = "There is no current language. This provision does not exist in the proposed rule as published."
 
 # Baseline distance, in points, within which two text lines are the same visual line.
 LINE_TOLERANCE = 3.0
@@ -453,7 +453,7 @@ P.append((
     "Subsection I, supervision and consultation; case presentation sign-off",
     NEW,
     ins("I. Supervision and consultation; case presentation sign-off:") + "<br>"
-    + ins("(1) A training permittee shall complete a minimum of 30 hours of supervision or consultation during the "
+    + ins("(1) A training permittee shall complete a minimum of 20 hours of supervision or consultation during the "
           "training permit period, in addition to the practicum hours required by this section.") + "<br>"
     + ins("(2) Sign-off requires the permittee to present a minimum of two cases of qualified patients with whom the "
           "permittee has personally worked in the medical psilocybin program. Each case presentation shall take the form "
@@ -461,7 +461,7 @@ P.append((
           "treatment considerations, and recommendations for aftercare.") + "<br>"
     + ins("(3) The supervisor or consultant shall complete an evaluation on a form approved by the department for each "
           "case presented, and shall submit it through the electronic system designated by the department.") + "<br>"
-    + ins("(4) The 10 hours of mentoring sessions required by Subsection A of 7.35.3.17 NMAC are credited toward the 30 "
+    + ins("(4) The 10 hours of mentoring sessions required by Subsection A of 7.35.3.17 NMAC are credited toward the 20 "
           "hours required by this subsection.") + "<br>"
     + ins("(5) The requirements of this subsection shall be completed prior to applying for certification."),
 ))
@@ -672,23 +672,35 @@ body { font-family: "Times New Roman", Times, Georgia, serif; font-size: 8.6pt;
        line-height: 1.34; color: #111; margin: 0; }
 h1 { font-family: Helvetica, Arial, sans-serif; font-size: 15pt; margin: 0 0 2pt 0;
      letter-spacing: -0.2pt; }
-.sub { font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; color: #444;
-       margin: 0 0 2pt 0; }
-.cover { border-bottom: 2px solid #111; padding-bottom: 8pt; margin-bottom: 10pt; }
-.keybox { border: 1px solid #bbb; background: #fafafa; padding: 7pt 9pt; margin: 0 0 12pt 0;
-          font-family: Helvetica, Arial, sans-serif; font-size: 7.9pt; line-height: 1.5; }
-.keybox b { font-size: 8.1pt; }
-h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 14pt 0 5pt 0;
+.sub { font-family: Helvetica, Arial, sans-serif; font-size: 8.6pt; color: #444;
+       margin: 0 0 5pt 0; line-height: 1.45; max-width: 7.2in; }
+.cover { border-bottom: 2px solid #111; padding-bottom: 12pt; margin-bottom: 16pt; }
+.keybox { border: 1px solid #bbb; background: #fafafa; padding: 11pt 14pt; margin: 0 0 16pt 0;
+          font-family: Helvetica, Arial, sans-serif; font-size: 8.1pt; line-height: 1.62; }
+.keybox b { font-size: 8.4pt; }
+.keybox, .status { break-inside: avoid; }
+.keybox p { margin: 0 0 7pt 0; }
+.keybox p:last-child { margin-bottom: 0; }
+.status { border: 1.5px solid #111; background: #fff; padding: 11pt 14pt; margin: 0 0 16pt 0;
+          font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; line-height: 1.62; }
+.status p { margin: 0 0 7pt 0; }
+.status p:last-child { margin-bottom: 0; }
+.thsub { display: block; font-weight: normal; text-transform: none; letter-spacing: 0;
+         font-size: 7.1pt; color: #777; margin-top: 2pt; }
+p.intro { font-family: Helvetica, Arial, sans-serif; font-size: 8.1pt; line-height: 1.5;
+          color: #333; margin: 0 0 8pt 0; padding: 0 0 0 8pt; border-left: 2.5px solid #bbb;
+          break-after: avoid; }
+h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 18pt 0 7pt 0;
      padding: 3pt 0 3pt 0; border-top: 1.5px solid #111; border-bottom: 0.5px solid #111;
      break-after: avoid; }
 h2 .ttl { font-weight: normal; color: #555; font-size: 9pt; }
 table { width: 100%; border-collapse: collapse; }
 tr { break-inside: avoid; }
-th { font-family: Helvetica, Arial, sans-serif; font-size: 7.4pt; text-transform: uppercase;
-     letter-spacing: 0.4pt; color: #555; text-align: left; padding: 3pt 7pt; border-bottom: 1px solid #999;
-     width: 50%; }
-td { vertical-align: top; padding: 6pt 7pt 8pt 7pt; border-bottom: 0.5px solid #ddd; width: 50%; }
-td.left { border-right: 1px solid #ccc; color: #333; }
+th { font-family: Helvetica, Arial, sans-serif; font-size: 7.6pt; text-transform: uppercase;
+     letter-spacing: 0.4pt; color: #333; text-align: left; padding: 5pt 9pt 6pt 9pt;
+     border-bottom: 1px solid #999; width: 50%; vertical-align: top; }
+td { vertical-align: top; padding: 8pt 9pt 10pt 9pt; border-bottom: 0.5px solid #ddd; width: 50%; }
+td.left { border-right: 1px solid #ccc; color: #333; background: #fcfcfc; }
 .label { font-family: Helvetica, Arial, sans-serif; font-size: 7.6pt; font-weight: bold;
          color: #000; margin-bottom: 3pt; }
 ins { text-decoration: underline; color: #0a5c2e; font-weight: bold; }
@@ -700,7 +712,8 @@ del { text-decoration: line-through; color: #9b1c1c; }
         font-family: Helvetica, Arial, sans-serif; font-size: 7.9pt; line-height: 1.5; }
 .hours { width: 100%; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif;
          font-size: 8pt; margin-top: 6pt; }
-.hours th, .hours td { border: 0.5px solid #bbb; padding: 3pt 6pt; width: auto; text-align: left; }
+.hours th, .hours td { border: 0.5px solid #bbb; padding: 4pt 8pt; width: auto; text-align: left;
+                      vertical-align: middle; }
 .hours th { background: #f2f2f2; text-transform: none; letter-spacing: 0; color: #222; }
 .hours td.n { text-align: right; }
 """
@@ -725,8 +738,10 @@ def build_html():
                 rows.append("</table>")
             current = section
             rows.append('<h2>%s <span class="ttl">%s</span></h2>' % (section, SECTION_TITLES[section]))
-            rows.append('<table><tr><th>As published, July 23, 2026</th>'
-                        '<th>As proposed</th></tr>')
+            if section in SECTION_INTRO:
+                rows.append('<p class="intro">%s</p>' % SECTION_INTRO[section])
+            rows.append('<table><tr><th>Current language<span class="thsub">Proposed rule as published July 23, 2026</span></th>'
+                        '<th>Proposed amendment<span class="thsub">Draft for review. Not filed, not adopted</span></th></tr>')
         if published == UNCHANGED:
             rows.append('<tr><td class="left"><div class="label">%s</div>'
                         '<span class="unch">Not amended.</span></td>'
@@ -742,6 +757,31 @@ def build_html():
     return "\n".join(rows)
 
 
+SECTION_INTRO = {
+    "7.35.3.14": "This section is the one that grants authority to hold and hand over the medicine. Everything the "
+                 "practicum asks a student to do depends on it. The amendments add a fourth class of person, the "
+                 "training permittee, and repair a condition in Subsection C that cannot currently be satisfied.",
+    "7.35.3.18": "The educational requirements. The amendments set a single binding standard of 84 module hours for "
+                 "both permit types, give the New Mexico module an hour count and a delivery date it currently lacks, "
+                 "and add the content areas that were requested on the record on July 17 and did not appear in the "
+                 "rule as published.",
+    "7.35.3.19": "The practicum. This is the section the work was commissioned to address, and the other three "
+                 "sections in this document are here because this one depends on them. The amendments move hours out "
+                 "of the practicum and into the classroom and consultation, add a staged sequence, create the "
+                 "training permit that makes the practicum lawful, open practicum placement beyond a student's own "
+                 "program, and put standards on a waiver that currently has none.",
+    "7.35.3.20": "Healing centers and other approved locations. Only two provisions are touched: the staffing ratio, "
+                 "because it counts students toward mandatory staffing, and a new subsection creating the "
+                 "designation that 7.35.3.14 C requires and the rule never established.",
+    "7.35.3.29": "PROPOSED NEW SECTION. Nothing in the rule as published corresponds to it. It would provide for the "
+                 "first stage of the practicum to be conducted with participants who are not qualified patients, "
+                 "which is step 1 of the July 17 recommendation. It is drafted with an express contingency, because "
+                 "the Medical Psilocybin Act as read for this draft does not extend its criminal and civil exemption "
+                 "to a person who is not a qualified patient, a clinician, or a producer. Read it as the text that "
+                 "would be needed if the Legislature supplies that authority, and as a statement of the ask if it "
+                 "does not.",
+}
+
 SECTION_TITLES = {
     "7.35.3.14": "Authorized possession, purchase, or sale of medical psilocybin",
     "7.35.3.18": "Educational requirements for certifying clinicians, practitioners, and facilitators",
@@ -752,46 +792,61 @@ SECTION_TITLES = {
 
 HEAD = """
 <div class="cover">
-<h1>7.35.3 NMAC, proposed amendments: training and education</h1>
-<p class="sub">Side-by-side redline against the proposed rule published July 23, 2026. Rule hearing August 28, 2026.</p>
-<p class="sub">Only the subsections being amended appear. Where a section has subsections that are not being amended,
-they are named and marked so the reader can see the full extent of what is and is not touched.</p>
+<h1>7.35.3 NMAC: proposed amendments to the training and education provisions</h1>
+<p class="sub">A side-by-side working draft, prepared against the proposed rule published July 23, 2026.
+Rule hearing set for August 28, 2026.</p>
+</div>
+
+<div class="status">
+<p><b>What this is, and what it is not.</b> This is a working draft for review. Nothing in it is definitive,
+nothing has been filed, and nothing has been adopted. It is offered so that counsel and the committee can work from
+specific proposed language rather than from a list of concerns, and can see, provision by provision, exactly what
+would change and exactly what would not.</p>
+<p><b>What has been done to it.</b> Every word in the left column has been checked against the text layer of the
+published rule and matches it exactly; the document does not build if any block fails that check. Every proposed
+change traces to the rule as published, to the July 17, 2026 recommendations, or to what was said on the record at
+the two July 17, 2026 meetings. The reasoning and the citation for each one sit in the accompanying files, which
+are named at the end.</p>
+<p><b>What it deliberately leaves alone.</b> It covers the practicum and the provisions the practicum cannot
+function without. It is not a review of the whole of Part 3, and it is not a filing. Where a fix would require
+changing something outside that scope, the point is flagged and the language is not drafted.</p>
 </div>
 
 <div class="keybox">
-<b>How to read this.</b> Left column is the text as published, verbatim, with line breaks introduced by the PDF
-collapsed to single spaces and no other alteration. Right column is the text as proposed:
-<ins>underlined bold green is inserted</ins>, <del>struck red is deleted</del>, unmarked text is carried forward
-unchanged. Every left-column block was verified against the text layer of the published PDF before this file was
-generated.<br>
-<b>Permit title.</b> The drafts keep &ldquo;practitioner.&rdquo; They do not adopt &ldquo;licensed provider.&rdquo;
-The title is carried in the source as a variable and substituted here, so it can be changed later in one pass.
-The term is defined in 7.35.2.7 NMAC, a different part, which 7.35.3.7 NMAC incorporates by reference.<br>
-<b>Section numbering.</b> The published headings for 7.35.3.14 and 7.35.3.20 read 7.34.3.14 and 7.34.3.20, which point
-at a different chapter of Title 7, while the bracketed history note at the end of each section reads 7.35.3. Three other
-headings carry the same error. The corrections are shown.<br>
-<b>7.35.3.29.</b> The new section is numbered after the last section in the published rule, 7.35.3.28 SEVERABILITY.
-If the department prefers severability to remain last, the new section becomes 7.35.3.28 and severability becomes
-7.35.3.29.
+<p><b>How to read the columns.</b> The left column is the rule as published, verbatim, with line breaks introduced
+by the PDF collapsed to single spaces and no other alteration. The right column is the proposed amendment:
+<ins>underlined bold green is inserted</ins>, <del>struck red is deleted</del>, and unmarked text is carried forward
+unchanged. Where a section has subsections that are not being amended, they are named and marked so the extent of
+what is and is not touched is visible on the page.</p>
+<p><b>Permit title.</b> The draft keeps &ldquo;practitioner.&rdquo; It does not adopt &ldquo;licensed provider.&rdquo;
+The title is held as a variable in the source and substituted here, so that if the committee changes it, it changes
+everywhere in one pass. The term is defined in 7.35.2.7 NMAC, a different part, which 7.35.3.7 NMAC incorporates by
+reference, so a retitle is an amendment to that part as well.</p>
+<p><b>Section numbering.</b> The published headings for 7.35.3.14 and 7.35.3.20 read 7.34.3.14 and 7.34.3.20, which
+point at a different chapter of Title 7, while the bracketed history note at the end of each of those sections reads
+7.35.3. Three further headings carry the same error. The corrections are shown in the right column.</p>
+<p><b>Proposed new provisions.</b> Four provisions in this document do not exist in the rule as published:
+7.35.3.14 D, 7.35.3.19 D, F, H, I and J, 7.35.3.20 M, and the whole of 7.35.3.29. Each is introduced where it
+appears. 7.35.3.29 in particular is drafted with an express contingency and should be read with the note above it.</p>
 </div>
 
 <div class="keybox">
-<b>The hours, at a glance.</b> Hours shift. They do not shrink. The 84-hour standard is inclusive of the 5-hour
-simulated patient experience.
+<p><b>The hours, at a glance.</b> Hours shift. They do not shrink. Total program hours rise for both permit types.
+The 84-hour standard is inclusive of the 5-hour simulated patient experience.</p>
 <table class="hours">
-<tr><th>Component</th><th>Published July 23</th><th>Proposed</th><th>Change</th></tr>
+<tr><th>Component</th><th>As published July 23</th><th>Proposed</th><th>Change</th></tr>
 <tr><td>Didactic hours</td><td>35, plus a New Mexico module with no hour count</td><td>79</td><td class="n">+44</td></tr>
 <tr><td>Simulated patient experience</td><td>5</td><td>5</td><td class="n">0</td></tr>
 <tr><td><b>Module total, either permit</b></td><td><b>40, plus an unpriced module</b></td><td><b>84</b></td><td class="n"><b>+44</b></td></tr>
 <tr><td>Practicum, facilitator</td><td>100</td><td>80</td><td class="n">&minus;20</td></tr>
 <tr><td>Practicum, practitioner</td><td>120, or 140 on the second reading of 7.35.3.19 C</td><td>90</td><td class="n">&minus;30</td></tr>
-<tr><td>Supervision or consultation</td><td>10</td><td>30</td><td class="n">+20</td></tr>
-<tr><td><b>Program total, facilitator</b></td><td><b>150</b></td><td><b>194</b></td><td class="n"><b>+44</b></td></tr>
-<tr><td><b>Program total, practitioner</b></td><td><b>170, or 190</b></td><td><b>204</b></td><td class="n"><b>+34</b></td></tr>
+<tr><td>Supervision or consultation</td><td>10</td><td>20</td><td class="n">+10</td></tr>
+<tr><td><b>Program total, facilitator</b></td><td><b>150</b></td><td><b>184</b></td><td class="n"><b>+34</b></td></tr>
+<tr><td><b>Program total, practitioner</b></td><td><b>170, or 190</b></td><td><b>194</b></td><td class="n"><b>+24</b></td></tr>
 </table>
-Every patient and session minimum in the published practicum is carried forward unchanged: 14 different patients, eight
-different administration day sessions, six individual sessions with six different patients, two group sessions with four
-or more patients each, and 20 hours of preparation and integration sessions. Only hours move.
+<p>Every patient and session minimum in the published practicum is carried forward unchanged: 14 different patients,
+eight different administration day sessions, six individual sessions with six different patients, two group sessions
+with four or more patients each, and 20 hours of preparation and integration sessions. Only hours move.</p>
 </div>
 """
 
