@@ -48,7 +48,45 @@ NAV = """      <nav class="tnav" id="tnav" aria-label="Primary">
         </details>
       </nav>"""
 
+NAV_JS = """<script id="navjs">
+(function(){
+  var f=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+  var cur=f.replace('.html','')||'index';
+  var el=document.querySelector('.tnav [data-nav="'+cur+'"]');
+  if(el){ el.classList.add('on'); var g=el.closest('.navgrp'); if(g){ var s=g.querySelector('summary'); if(s) s.classList.add('on'); } }
+
+  // Dropdowns are native <details>, which stay open until their own summary is
+  // clicked again. On a nav that is wrong: clicking anywhere else should close
+  // them. Close on outside click, on Escape, and when a sibling opens.
+  var nav=document.getElementById('tnav');
+  if(!nav) return;
+  var groups=[].slice.call(nav.querySelectorAll('details.navgrp'));
+  if(!groups.length) return;
+
+  function closeAll(except){
+    groups.forEach(function(d){ if(d!==except) d.open=false; });
+  }
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){ if(d.open) closeAll(d); });
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.contains(e.target)) closeAll(null);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'||e.key==='Esc'){
+      var open=groups.filter(function(d){ return d.open; });
+      if(open.length){ closeAll(null); var s=open[0].querySelector('summary'); if(s) s.focus(); }
+    }
+  });
+  // Choosing a destination should not leave the menu hanging open behind it.
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('.tdrop-menu a')) closeAll(null);
+  });
+})();
+</script>"""
+
 PATTERN = re.compile(r'      <nav class="tnav" id="tnav" aria-label="Primary">.*?\n      </nav>', re.S)
+JS_PATTERN = re.compile(r'<script id="navjs">.*?</script>', re.S)
 
 
 def main():
@@ -58,10 +96,11 @@ def main():
     for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
         name = os.path.basename(path)
         src = open(path).read()
-        if not PATTERN.search(src):
+        if not PATTERN.search(src) or not JS_PATTERN.search(src):
             missing.append(name)
             continue
         new = PATTERN.sub(lambda _: NAV, src, count=1)
+        new = JS_PATTERN.sub(lambda _: NAV_JS, new, count=1)
         if new == src:
             ok.append(name)
         elif check:
