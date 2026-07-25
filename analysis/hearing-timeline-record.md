@@ -33,7 +33,7 @@ Later in the same meeting:
 
 > "I do want to let everybody know that because of some of the timing issues, in order from, you know, to be able to meet the goal of having the first patients in December, we are going to move forward with a regulation hearing. And we are looking at the end of August. Now, of course, we still have some of the training. And so some of those aspects that are being developed and considered. And so we still do have those portions."
 
-Speaker: Dominic Zerlo, director, New Mexico Department of Health Center for Medical Cannabis and Psilocybin. Basis: the speaker says "we are moving forward from the department standpoint," and in the afternoon session the same speaker says "as I mentioned this morning during the board meeting" while identifying as the department.
+Speaker: Dominic Zurlo, director, New Mexico Department of Health Center for Medical Cannabis and Psilocybin. Basis: the speaker says "we are moving forward from the department standpoint," and in the afternoon session the same speaker says "as I mentioned this morning during the board meeting" while identifying as the department.
 
 Read this passage carefully. Two things are said together: the hearing is set for the end of August, and the training aspects are "being developed and considered," with "those portions" still outstanding.
 
@@ -43,7 +43,7 @@ Afternoon session, responding to the committee chair's question about forming a 
 
 > "we are going to be moving forward with a proposed rule. So the sooner if there are specific topics to include in or suggestions as far as hours, we really need them sooner rather than later."
 
-Speaker: Dominic Zerlo. Basis: the committee chair addresses the question to "Dominic" and thanks "Dominic" immediately after the answer.
+Speaker: Dominic Zurlo. Basis: the committee chair addresses the question to "Dominic" and thanks "Dominic" immediately after the answer.
 
 No date was attached to that request. The committee was not given a deadline to deliver.
 

@@ -2,7 +2,15 @@
 
 ## Why this is a state diff and not a document diff
 
-There is no July 17 version of the rule. The rule text in circulation on July 17 was the **July 9 draft**. This is established on the record, not inferred: during the afternoon committee meeting a member of the public asked about the reciprocity dates in "the document that was sent out to the public" and described "two different dates ... One is the end of 2026 and one is June 2027." Those are the July 9 dates. The department's answer was that "those dates were placeholders."
+There is no July 17 version of the rule. The rule text in circulation on July 17 was the **July 9 draft**. This is established by the department on the record, not inferred. Asked during the afternoon committee meeting about the reciprocity dates in the document then circulating, Dominic Zurlo answered:
+
+> "we're seeing an earlier version where what we really said is we put it in as a placeholder because we wanted to have the conversation and the decision across the board was those dates that you really were seeing for reciprocity out of state and for the in-state programs, for example, all we put it all to December 31st of 27"
+
+> "That one specifically, or those dates, were placeholders."
+
+Basis for attribution: the committee chair thanks "Dominic" immediately after this answer.
+
+A committee participant, Denali Wilson, separately referred in the same meeting to "what's in the drafts, at least the version that's been sent to the public," confirming that the text under discussion was the already-circulated draft rather than anything issued that day.
 
 The only new rule language produced on July 17 was the revised in-person examination provision, which the department read into the record and pasted into the meeting chat during the morning board session.
 
@@ -78,7 +86,7 @@ A five-hour increase, published six days after the board voted to send this numb
 
 ## 3. In-person examination: carried through
 
-**July 17, morning.** The department read the revised language into the record, describing three pathways. Dominic Zerlo, director, Center for Medical Cannabis and Psilocybin:
+**July 17, morning.** The department read the revised language into the record, describing three pathways. Dominic Zurlo, director, Center for Medical Cannabis and Psilocybin:
 
 > "the certifying clinician would still need to conduct an in-person exam of the patient within the previous six months ... They could do that final appointment as telehealth if they have seen that patient in person in the previous six months. In addition to that, they could also do telehealth or telemedicine if they have done a review of the medical records pertaining to the diagnosis for the qualifying condition from a clinician who has examined the individual in person within the previous six months. Or if that is burdensome, they can do the same thing, but make sure that they have a formal consult with a clinician who has conducted an in-person exam in the previous six months."
 
@@ -92,7 +100,7 @@ Carried through as described.
 
 This is the item where the July 17 record and the published text diverge most consequentially, because the reason given on July 17 for not needing a change is not supported by the text that was published.
 
-**July 17, afternoon.** Dr. Metz recommended a time-limited training permit, on the reasoning that it "gives trainees a lawful pathway to get their required client contact." The department's response, Dominic Zerlo, responding to a point raised by Denali Wilson:
+**July 17, afternoon.** Dr. Metz recommended a time-limited training permit, on the reasoning that it "gives trainees a lawful pathway to get their required client contact." The department's response, Dominic Zurlo, responding to a point raised by Denali Wilson:
 
 > "that's already was part of the idea as far as not needing another permit with that practicum because those students already will have that kind of protection ability to be there as a part of being registered as a student with an educational program"
 
@@ -116,7 +124,7 @@ The consequence: Recommendation 3's training permit is not a preference about pr
 
 ## 7. Students in the staffing ratio: taken back, and delivered
 
-**July 17, afternoon.** Zerlo, on the same point raised by Denali Wilson:
+**July 17, afternoon.** Zurlo, on the same point raised by Denali Wilson:
 
 > "you brought up an interesting part about them, the students at that point counting towards part of the ratio. And we can definitely take a look at that if that would be after they've completed so many hours to be a part of that rather than needing to create an entire other permit or certification level. But we could definitely look at that. I'll take that on back as well."
 

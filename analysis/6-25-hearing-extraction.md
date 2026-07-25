@@ -1,6 +1,6 @@
 # 6/25/2026 — "Training and Education" committee hearing — transcript extraction
 
-> **NAME CORRECTIONS (apply on use):** Zerlo→**Zurlo**, Piskuski→**Peskuski**, Fatimi/Lita→**Dr. Fatemi**, Lima→**Leeman**. The quotes below preserve the raw auto-transcript wording.
+> **NAME CORRECTIONS (apply on use):** Zurlo→**Zurlo**, Piskuski→**Peskuski**, Fatimi/Lita→**Dr. Fatemi**, Lima→**Leeman**. The quotes below preserve the raw auto-transcript wording.
 > **"seg." / "block" numbers** = auto-transcript segment numbers, not timestamps.
 > Source: Notion page `de38d5ffbeba444d8c29d0ccb02ca4ad` (embedded note `38aa2b7222dc80ec89cadaeed14ce519`), full transcript read (404 blocks).
 > Meeting note title as stored: "New Mexico Medical Psilocybin Program: Draft Regulations Review", June 25, 2026, 1:00–3:00 PM MT.

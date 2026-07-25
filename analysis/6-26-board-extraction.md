@@ -1,6 +1,6 @@
 # 6/26/2026 — Medical Psilocybin Advisory Board meeting — transcript extraction
 
-> **NAME CORRECTIONS (apply on use):** Zerlo→**Zurlo**, Piskuski→**Peskuski**, Lima→**Leeman**, Fatimi→**Fatemi**. Quotes preserve raw auto-transcript wording.
+> **NAME CORRECTIONS (apply on use):** Zurlo→**Zurlo**, Piskuski→**Peskuski**, Lima→**Leeman**, Fatimi→**Fatemi**. Quotes preserve raw auto-transcript wording.
 > **"seg." numbers** = auto-transcript segment numbers.
 > Source: Notion page `9c05a6c8a0ea47068a138ac4776121f4` (embedded note `38ba2b7222dc80969c1ec6bb62a88fe5`), full transcript read (365 segments).
 > Board present: Ian Dunn (Chair), Brenda Burgard, Chris Peskuski, Dan Jennings, Alana Dances, Larry Leeman. Dept: Dominic Zurlo + staff (Jorge, Shane).
