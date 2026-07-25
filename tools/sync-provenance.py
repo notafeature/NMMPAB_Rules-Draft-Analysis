@@ -91,6 +91,9 @@ REVISIONS = {
     "changes": [
         ("July 25, 2026", "Restructured into layers rather than re-citing 108 anchors that were already correct for what they compare. A new section, \"The training and education provisions, as published\", now leads the page: thirteen provisions with the July 23 text, the section and page, and what changed from July 9. It covers the didactic increase from 25 to 30 hours, the unchanged practicum, the new rule that the practicum cannot begin before half the didactic and all simulated patient hours, both waiver deadlines moving to December 31 2027, the disagreement between the two waivers on group session counts, and the new qualified-student staffing ratio. The existing 104-provision comparison was mis-framed as the current draft when it is a comparison of the June 12 recommendation against the July 9 draft; it is relabelled as the earlier layer and kept intact, with its July 9 page anchors, which are correct for that comparison."),
     ],
+    "deferred": [
+        ("July 25, 2026", "Page created. Follows only the requirements the Advisory Board deferred on July 17, from the committee's June 12 recommendation through the July 9 draft to the July 23 published rule, with the change at each step stated between the columns. Four provisions are built: total practicum hours, the shared didactic module, the new condition on when the practicum may begin, and the practitioner supervisory hours. The remaining deferred and dependent provisions are named at the foot of the walk and still to be added."),
+    ],
     "documents": [
         ("July 25, 2026", "Descriptions tightened to one line each after review; the page was over-written on creation. Page created earlier the same day: a register of every source document with what it is, when it landed, whether it is current or superseded, page count, size, and a direct download, plus a section naming the documents this site does not have."),
     ],

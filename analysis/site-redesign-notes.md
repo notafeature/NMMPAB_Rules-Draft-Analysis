@@ -10,25 +10,21 @@ The site is organized by **document structure**. It should be organized by **wha
 
 Nine pages map roughly one-to-one onto the shape of the source material: a page for the draft, a page for the hours, a page for the history. That is how the material is filed, not how anyone arrives. Depth is present and unreachable.
 
-## The writing standard, stated by the owner
+## The writing standard
 
-Quote it directly, because it is the clearest statement of the bar:
+The prose has to earn its place. Concretely, that means the following.
 
-> "This is not a fucking propaganda doc. This is not the news. This is not hyperbole. Just fucking make it clear."
+**Write in complete sentences, or write an actual list.** A list rendered as prose is neither. Sentence fragments strung together for rhythm, four or five words at a time, are a tic rather than a style, and they make a page harder to read rather than punchier.
 
-> "We're not trying to get clicks. We want to say exactly what the current version of truth is."
+**Every element introduces itself.** A reader arriving cold at any section should learn from the section what it is and why it exists. A heading that names a thing without explaining it, such as "Earlier layer, 104 provisions", fails this test. So does a section that needs a companion note explaining how to read it: if a page requires instructions, the page is the problem.
 
-> "Everything needs to hold the weight of its presence."
+**Be specific rather than gestural.** Cite the subsection, not just the document. Name the figure, not just the fact that it changed. A link placed off to the side does not substitute for stating in the sentence which provision is being discussed.
 
-> "Assume nobody has ever been here and write and make the page so clear that you don't have to say what it is."
+**Assume the reader is intelligent and has never been here before.** These are compatible. It means explaining the thing without flattering the reader, and without labels like "New here?" that ask someone to self-identify as a novice before they are allowed an explanation.
 
-Concrete failures of that standard, all currently live:
+**Cut anything that is only there for effect.** No headline energy, no hyperbole, no rhetorical framing. The site is a record, and its persuasive force comes entirely from being accurate and legible. Live examples that failed this and have been fixed or logged: "The rule is published" as a subtitle, and "the dated chain that produced the published rule, newest first: every meeting, vote, and document, each one sourced."
 
-- **"The rule is published"** as an index subtitle. That is a headline, not a statement of truth. The truth is: the rule hearing is scheduled for August 28. Say that and nothing else.
-- **"The dated chain that produced the published rule, newest first: every meeting, vote, and document, each one sourced."** Too pleased with itself. Say what the page is.
-- **"New here? How this process works."** Drop "New here?". Nobody should have to self-identify as a novice to get an explanation.
-- **"Earlier layer, 104 provisions."** Means nothing to a reader. Does not describe what the section contains or why it exists.
-- **"Purpose and how to read this page."** If a page needs instructions for reading it, the page has failed. Not against instructions in principle; against them in this form.
+**Say what is true now, plainly.** For the index that meant replacing a headline with the fact that the rule hearing is scheduled for August 28.
 
 ## Specific defects, page by page
 
@@ -75,6 +71,22 @@ Open question for the redesign: what actually belongs on an overview page, and w
     - July 9 draft
     - July 23 published
     Format is an open design problem. The point is a reader can see one provision's whole life at a glance and collapse what they do not need.
+
+## Four decisions taken on July 25
+
+**The recommendation must read as an origin, not as a live document.** Committee members found it genuinely hard to grasp that the recommendation became the rules draft and no longer exists as a separate thing anyone can act on. Wherever the recommendation appears beside draft text it should be visually lighter: a summary, an expander, or a link, rather than equal weight with the operative rule. The distinction to carry is "this is what the committee proposed" against "this is what the rule says".
+
+**Links must not take a reader away from what they are reading.** External links open in a new tab. Internal references should ideally open as a popover on desktop, showing the referenced block in place and dismissing on click away. The mobile equivalent is unresolved.
+
+**Mobile is deferred to the redesign.** Build for desktop and make it robust there. A serious answer for narrow screens is a separate problem, and guessing at it now would compromise the desktop layout without solving the mobile one.
+
+**The whole of Part 3 needs a home, but the deferred set needs its own.** The complete twenty-eight section rule has to be recorded somewhere. The provisions under active review, meaning the deferred practicum and didactic requirements, need a contained page of their own so a reader is not navigating around everything else to follow them. This produced `deferred.html` on July 25.
+
+## A private analytics view
+
+Wanted: a dashboard, visible only to the site owner, showing traffic to these pages. The specific question it needs to answer is whether the Department of Health is reading the site, which matters because nobody has sent it to them and that is a deliberate choice for now.
+
+Design constraints that follow from the site's own commitments: it should not track individuals, and it should not add third-party scripts to public pages that would compromise the privacy of people reading about their own healthcare. A server-side or log-based approach fits the site better than an embedded analytics tag. GitHub Pages does not expose logs, so this likely means either a lightweight self-hosted collector or moving the site behind something that does.
 
 ## Who arrives, and what they want
 
