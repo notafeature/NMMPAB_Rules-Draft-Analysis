@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit every verifiable claim in the amendment document outside the practicum.
 
-Eight classes of check, each with a receipt:
+Eleven classes of check, each with a receipt:
 
   RULE    every left-column block, against the text layer of the published rule
   QUOTE   every quotation in the notes and the addenda, harvested rather than
@@ -9,13 +9,20 @@ Eight classes of check, each with a receipt:
   FIGURE  every numeric token inside a proposed insertion, against the published
           rule, so that no figure can enter that no source carries
   COUNT   every count the addenda assert, recomputed from the sources
-  TERM    the undefined-term claims, recounted in both parts
+  TERM    the undefined-term claims, recounted in both parts and in the Act
   CITE    every provision that proposes a change carries a source note; every
           provision reproduced without amendment carries a note saying why
   PROSE   every review note finishes its sentences and states the issue, the
           choices, and who decides
   STYLE   no em dashes, and no NMSA 1978 section number asserted by this draft
   HEADER  every page of the built PDF names the section or addendum it carries
+  SHEET   Addendum E, the question sheet, against the review notes: every note
+          appears, every row points at a note, every row sits under the
+          decision-maker its note names, no row carries a figure its note does
+          not carry, and the sheet is one page
+  TRUTH   every statement in SOURCE-OF-TRUTH.md: quotations against sources,
+          counts recomputed, citations to sections that exist, and the phrases
+          that carry the settled facts present verbatim
 
 Exit code is non-zero if any check fails. Output: amendments-remainder/AUDIT.md
 """
@@ -27,7 +34,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from content import P, NEW, UNCHANGED                      # noqa: E402
-from notes import SOURCE, REVIEW                           # noqa: E402
+from notes import SOURCE, REVIEW, GROUPS, QUESTIONS        # noqa: E402
 
 REPO = HERE.parent
 SRC = {
@@ -210,8 +217,8 @@ def harvest():
     notes_src = (HERE / "notes.py").read_text(encoding="utf-8")
     for q in re.findall(r"&#8220;(.+?)&#8221;", notes_src, re.S):
         out.add(re.sub(r'"\s*\n\s*"', "", q))
-    for name in ("ADDENDUM_A_INTRO", "ADDENDUM_A_TAIL", "ADDENDUM_B", "ADDENDUM_C",
-                 "ADDENDUM_D_INTRO", "HEAD", "FOOT"):
+    for name in ("ADDENDUM_A_INTRO", "ADDENDUM_A_TAIL", "ADDENDUM_A_TERMS", "ADDENDUM_B",
+                 "ADDENDUM_C", "ADDENDUM_D_INTRO", "HEAD", "FOOT"):
         m = re.search(r'^%s = """(.*?)"""' % name, BUILD, re.S | re.M)
         if m:
             body = re.sub(r"<[^>]+>", " ", m.group(1))
@@ -242,7 +249,7 @@ for q in harvest():
     hits = [n for n in SRC if found(q, n)]
     check("QUOTE", '"%s"' % q[:66], bool(hits), hits[0] if hits else "FOUND IN NO SOURCE")
 
-# The four definitions drafted at 7.35.3.7 are each traceable to one provision.
+# The six definitions drafted at 7.35.3.7 are each traceable to one provision.
 # Check that the provision each is drawn from says what the note says it says.
 DEF_BASIS = {
     "certificant": "a practitioner, certifying clinician, facilitator, healing center or other approved "
@@ -251,6 +258,10 @@ DEF_BASIS = {
                    "services. A facilitator works under the direct supervision of a practitioner, and provides "
                    "peer support to qualified patients, as well as logistical and administrative support to the "
                    "practitioner and to the healing center.",
+    "other approved location": "Other approved locations are physical locations at which medical psilocybin "
+                               "is intended to be consumed, that are not locations of healing centers.",
+    "practicum": "An individual who seeks to become certified as a practitioner or facilitator shall "
+                 "participate in supervised practice training, otherwise referred to as a",
     "registrant": "A practitioner or facilitator may apply for temporary department certification of an "
                   '"other approved location"',
     "student": "a student shall be deemed qualified if they are registered with a certified educational "
@@ -336,8 +347,8 @@ SECTION_REF = re.compile(r"^7\.35\.[23]\.\d{1,2}$")
 RENUMBER = {
     # Renumbering existing paragraphs to close the gap at (3).
     ("7.35.3.9", "Subsection D, certifying clinician application requirements"): {"3", "4", "5"},
-    # Numbering the four paragraphs of the definitions list this draft adds.
-    ("7.35.3.7", "Entire section, definitions"): {"1", "2", "3", "4"},
+    # Numbering the six paragraphs of the definitions list this draft adds.
+    ("7.35.3.7", "Entire section, definitions"): {"1", "2", "3", "4", "5", "6"},
 }
 
 for doc, section, sub, _, proposed in P:
@@ -453,9 +464,29 @@ check("TERM", "\"certifying clinician\" appears 53 times in 7.35.3 NMAC",
 check("TERM", "\"guide\" appears 0 times in 7.35.3 NMAC and 3 times in 7.35.2 NMAC",
       count_term(p3, "guide") == 0 and count_term(p2, "guide") == 3,
       "part 3: %d, part 2: %d" % (count_term(p3, "guide"), count_term(p2, "guide")))
-check("TERM", "4 of the 16 are defined in the draft at 7.35.3.7",
-      len(re.findall(r"&#8220;[A-Z][a-z]", next(prop for _, sec, _, _, prop in P if sec == "7.35.3.7"))) == 4,
-      "certificant, facilitator, registrant of another approved location, student")
+check("TERM", "6 of the 16 are defined in the draft at 7.35.3.7",
+      len(re.findall(r"&#8220;[A-Z][a-z]", next(prop for _, sec, _, _, prop in P if sec == "7.35.3.7"))) == 6,
+      "certificant, facilitator, other approved location, practicum, "
+      "registrant of another approved location, student")
+
+# Addendum A states that none of the sixteen terms appears anywhere in the Act.
+act_corpus = corpus("Medical Psilocybin Act")
+for term in TERMS:
+    check("TERM", "\"%s\" appears 0 times in the Medical Psilocybin Act" % term,
+          count_term(act_corpus, term) == 0, "counted %d" % count_term(act_corpus, term))
+
+# Addendum A states that the Act's two funds carry other names, and that
+# 7.35.2 NMAC uses none of the three names.
+check("TERM", "the Act names the \"medical psilocybin treatment equity fund\"",
+      count_term(act_corpus, "medical psilocybin treatment equity fund") > 0,
+      "counted %d" % count_term(act_corpus, "medical psilocybin treatment equity fund"))
+check("TERM", "the Act names the \"medical psilocybin research fund\"",
+      count_term(act_corpus, "medical psilocybin research fund") > 0,
+      "counted %d" % count_term(act_corpus, "medical psilocybin research fund"))
+for name in ["Equity and Access Fund", "medical psilocybin treatment equity fund",
+             "medical psilocybin research fund"]:
+    check("TERM", "7.35.2 NMAC does not use the name \"%s\"" % name,
+          count_term(p2, name) == 0, "counted %d" % count_term(p2, name))
 
 
 # Every count the cover and the README state about the size of this draft, against
@@ -466,7 +497,8 @@ reproduced = [(sec, sub) for _, sec, sub, _, prop in P if prop == UNCHANGED]
 sections = {sec for _, sec, _, _, _ in P}
 addC = len(re.findall(r"<tr><td>", re.search(r'^ADDENDUM_C = """(.*?)"""', BUILD, re.S | re.M).group(1)))
 addB = len(re.findall(r"<tr><td>", re.search(r'^ADDENDUM_B = """(.*?)"""', BUILD, re.S | re.M).group(1)))
-WORDS = {19: "nineteen", 21: "twenty-one", 24: "twenty-four", 9: "nine"}
+WORDS = {19: "nineteen", 21: "twenty-one", 24: "twenty-four", 9: "nine", 10: "ten",
+         23: "twenty-three", 25: "twenty-five", 6: "six", 16: "sixteen"}
 
 README = (HERE / "README.md").read_text(encoding="utf-8")
 for label, n, phrases in [
@@ -627,7 +659,7 @@ for (section, sub), text in SOURCE.items():
           plain.endswith((".", '."', ".)")), "ends: %s" % plain[-42:])
 
 # Sentences in the addenda must terminate too.
-for name in ("ADDENDUM_A_TAIL", "ADDENDUM_B", "ADDENDUM_C"):
+for name in ("ADDENDUM_A_TAIL", "ADDENDUM_A_TERMS", "ADDENDUM_B", "ADDENDUM_C"):
     m = re.search(r'^%s = """(.*?)"""' % name, BUILD, re.S | re.M)
     body = re.sub(r"<[^>]+>", " ", m.group(1))
     for cell in [c.strip() for c in re.split(r"\s{2,}", flatten(body)) if len(c.strip()) > 40]:
@@ -650,8 +682,9 @@ def document_prose():
         out += [section, sub, published, proposed]
     for d in (SOURCE, REVIEW):
         out += list(d.values())
-    for name in ("HEAD", "FOOT", "ADDENDUM_A_INTRO", "ADDENDUM_A_TAIL", "ADDENDUM_B",
-                 "ADDENDUM_C", "ADDENDUM_D_INTRO", "CSS"):
+    out += [q for _, _, _, q in QUESTIONS] + [label for _, label in GROUPS]
+    for name in ("HEAD", "FOOT", "ADDENDUM_A_INTRO", "ADDENDUM_A_TAIL", "ADDENDUM_A_TERMS",
+                 "ADDENDUM_B", "ADDENDUM_C", "ADDENDUM_D_INTRO", "CSS"):
         m = re.search(r'^%s = """(.*?)"""' % name, BUILD, re.S | re.M)
         if m:
             out.append(m.group(1))
@@ -685,7 +718,7 @@ if README.exists():
 # An NMSA 1978 section number may appear only inside a quotation of the published
 # rule, never as this draft's own assertion. The quoted spans are located by
 # offset, so a number outside one of them fails wherever it sits.
-for f in ["content.py", "notes.py", "build-redline-pdf.py", "README.md"]:
+for f in ["content.py", "notes.py", "build-redline-pdf.py", "README.md", "SOURCE-OF-TRUTH.md"]:
     path = HERE / f
     if not path.exists():
         continue
@@ -730,7 +763,7 @@ check("STYLE", "nothing under amendments/ or docs/ is referenced for writing",
 # reproduced in the top margin of every page the section spans. Every page has to
 # name a section, a part, an addendum, the cover, or the closing sources block,
 # and every named page declared in the build has to be reachable.
-NAMES = re.compile(r"7\.35\.3\.?\d*|Addendum [A-D]|Part I|Sources and method")
+NAMES = re.compile(r"7\.35\.3\.?\d*|Addendum [A-E]|Part I|Sources and method")
 
 RUN = re.findall(r'\("([a-zA-Z0-9]+)", "([^"]+)", "([^"]+)"\),', re.search(
     r"^RUNNING = \[(.*?)^\]", BUILD, re.S | re.M).group(1))
@@ -748,7 +781,9 @@ for cls, label, title in RUN:
     check("HEADER", "named page %s is reachable from the build" % cls, reachable,
           "section.%s { page: %s; }" % (cls, cls))
 
-PDF = HERE / "7.35.3-remainder-amendments-v1.pdf"
+PDF = HERE / "7.35.3-remainder-amendments-v2.pdf"
+PAGE_HEADERS = []
+PAGE_TEXTS = []
 if check("HEADER", "the document has been built", PDF.exists(),
          "run build-redline-pdf.py before audit.py"):
     from pdfminer.high_level import extract_pages as _pages
@@ -759,8 +794,173 @@ if check("HEADER", "the document has been built", PDF.exists(),
         top = page.height - 56
         hdr = " | ".join(flatten(el.get_text()) for el in page
                          if isinstance(el, _LTC) and el.y1 > top)
+        PAGE_HEADERS.append(hdr)
+        PAGE_TEXTS.append(flatten(" ".join(el.get_text() for el in page if isinstance(el, _LTC))))
         check("HEADER", "page %d names what it carries" % i, bool(NAMES.search(hdr)),
               hdr[:64] if hdr else "NO HEADER TEXT FOUND")
+    m = re.search(r"One document, (\d+) pages", (HERE / "README.md").read_text(encoding="utf-8"))
+    check("COUNT", "the README states the page count the built PDF has",
+          bool(m) and int(m.group(1)) == len(pages),
+          "README says %s, the PDF has %d pages" % (m.group(1) if m else "nothing", len(pages)))
+
+
+# ---------------------------------------------------------------------------
+# SHEET: Addendum E, the question sheet, against the review notes
+# ---------------------------------------------------------------------------
+
+# The one-line questions in notes.py are a re-presentation of the review notes.
+# Every note appears; every row points at a note; every row sits under the
+# decision-maker its note names; and no row carries a figure its note does not
+# carry, so the sheet cannot introduce analysis of its own.
+
+GROUP_KEYS = [k for k, _ in GROUPS]
+DECIDER_OF_GROUP = {
+    "staff": r"Department of Health staff|department's to choose|department's to set|only the department",
+    "counsel": r"department counsel",
+    "committee": r"Training and Education Committee|committee's decision|committee decides",
+    "board": r"question for the board|board decides|The board decides",
+    "named": r"Dr\. Metz|Ms\. Wilson|Dr\. Leeman",
+}
+
+qkeys = {(s, sub) for _, s, sub, _ in QUESTIONS}
+for (s, sub) in sorted(REVIEW):
+    check("SHEET", "the review note at %s %s appears on the question sheet" % (s, sub),
+          (s, sub) in qkeys, "every review note is re-presented in Addendum E")
+
+for g, s, sub, q in QUESTIONS:
+    label = "%s %s (%s)" % (s, sub, g)
+    note = flatten(unent(REVIEW.get((s, sub), "")))
+    check("SHEET", "the question at %s points at a review note" % label, bool(note),
+          "no orphan rows")
+    check("SHEET", "the question at %s sits under a declared group" % label, g in GROUP_KEYS,
+          "groups: %s" % ", ".join(GROUP_KEYS))
+    check("SHEET", "the question at %s is one line" % label, len(q) <= 160,
+          "%d characters" % len(q))
+    check("SHEET", "the question at %s ends with a question mark" % label, q.endswith("?"),
+          "ends: %s" % q[-30:])
+    check("SHEET", "the note at %s %s names the decision-maker the sheet files it under" % (s, sub),
+          bool(re.search(DECIDER_OF_GROUP.get(g, r"$^"), note)),
+          "group %s, pattern %s" % (g, DECIDER_OF_GROUP.get(g, "none")))
+    stray = sorted(t for t in re.findall(r"\d+(?:\.\d+)*", q)
+                   if t not in set(re.findall(r"\d+(?:\.\d+)*", note)) and t != s and not s.endswith("." + t))
+    check("SHEET", "the question at %s carries no figure its note does not carry" % label,
+          not stray, "stray tokens: %s" % (stray or "none"))
+
+if PAGE_HEADERS:
+    adE_pages = [i for i, hdr in enumerate(PAGE_HEADERS, 1) if "Addendum E" in hdr]
+    check("SHEET", "the question sheet is one page", len(adE_pages) == 1,
+          "pages naming Addendum E in the header: %s" % adE_pages)
+    sheet_text = " ".join(PAGE_TEXTS[i - 1] for i in adE_pages)
+    check("SHEET", "the sheet states the review-note count the draft has",
+          ("The %s review notes" % WORDS[len(REVIEW)]) in sheet_text,
+          "expected: The %s review notes" % WORDS[len(REVIEW)])
+    for _, glabel in GROUPS:
+        check("SHEET", "the sheet shows the group \"%s\"" % glabel, glabel in sheet_text,
+              "group heading on the rendered page")
+
+
+# ---------------------------------------------------------------------------
+# TRUTH: SOURCE-OF-TRUTH.md, the settled facts for the session that edits docs/
+# ---------------------------------------------------------------------------
+
+# Every statement in the file is machine-checked here or does not belong in the
+# file: quotations are harvested and traced to a source, counts are recomputed
+# from the sources rather than read back from the file, citations must point at
+# sections that exist, and the sentences that carry the settled facts must be
+# present verbatim so they cannot drift.
+
+SOT_PATH = HERE / "SOURCE-OF-TRUTH.md"
+if check("TRUTH", "SOURCE-OF-TRUTH.md exists", SOT_PATH.exists(), "the folder's settled facts"):
+    sot_raw = SOT_PATH.read_text(encoding="utf-8")
+    # Phrase checks run on the flattened text, so a hard line wrap inside a
+    # phrase is not a failure; character and table checks run on the raw file.
+    sot = flatten(sot_raw)
+    for dash, label in [("—", "em dash"), ("–", "en dash")]:
+        check("TRUTH", "SOURCE-OF-TRUTH.md contains no %s" % label, dash not in sot_raw,
+              "%d found" % sot_raw.count(dash))
+    for bad in ("SB 219", "SB0219", "Senate Bill"):
+        check("TRUTH", "SOURCE-OF-TRUTH.md never cites the bill as %s" % bad, bad not in sot_raw,
+              "the statute is cited, never the bill")
+    # Quotations, harvested exactly as the notes' quotations are.
+    sot_quotes = sorted({flatten(unent(q)) for q in re.findall(r'"(.+?)"', sot, re.S)
+                         if len(flatten(unent(q))) > 2})
+    for q in sot_quotes:
+        if q in NOT_FROM_SOURCE:
+            check("TRUTH", '"%s" (the file\'s own words, not a quotation of a source)' % q[:60], True,
+                  "excluded by name")
+            continue
+        hits = [n for n in SRC if found(q, n)]
+        check("TRUTH", 'SOURCE-OF-TRUTH.md quotes "%s"' % q[:66], bool(hits),
+              hits[0] if hits else "FOUND IN NO SOURCE")
+    # Sections cited exist, with the practicum draft's proposed section handled
+    # the way the notes handle it.
+    plain_sot = unent(sot)
+    sot_proposed = set(PROPOSED_SEC.findall(plain_sot))
+    for ref in sorted(sot_proposed, key=int):
+        check("TRUTH", "SOURCE-OF-TRUTH.md marks 7.35.3.%s as proposed, and the published rule has no such "
+              "section" % ref, int(ref) not in s3 and "practicum" in plain_sot,
+              "7.35.3.%s does not exist in the published rule" % ref)
+    for ref in sorted(set(re.findall(r"7\.35\.3\.(\d{1,2})", plain_sot)) - sot_proposed, key=int):
+        check("TRUTH", "SOURCE-OF-TRUTH.md cites 7.35.3.%s, which exists" % ref, int(ref) in s3, "1 to 28")
+    for ref in sorted(set(re.findall(r"7\.35\.2\.(\d{1,2})", plain_sot)), key=int):
+        check("TRUTH", "SOURCE-OF-TRUTH.md cites 7.35.2.%s, which exists" % ref, int(ref) in s2, "1 to 27")
+    # The document, version and dates the file names must be the build's.
+    ver = re.search(r'^VERSION = "(v\d+)"', BUILD, re.M).group(1)
+    vdate = re.search(r'^VERSION_DATE = "([^"]+)"', BUILD, re.M).group(1)
+    check("TRUTH", "the file names the current document and version the build writes",
+          ("7.35.3-remainder-amendments-%s.pdf" % ver) in sot and ("working draft %s" % ver) in sot, ver)
+    check("TRUTH", "the file carries the draft date the build stamps", vdate in sot, vdate)
+    check("TRUTH", "the file and the cover state the same rule hearing date",
+          "August 28, 2026" in sot and "August 28, 2026" in BUILD, "August 28, 2026")
+    # Counts, recomputed rather than transcribed.
+    prop7 = next(prop for _, sec, _, _, prop in P if sec == "7.35.3.7")
+    n_def = len(re.findall(r"&#8220;[A-Z][a-z]", prop7))
+    for label, phrase in [
+            ("amended provisions", "%s provisions are amended" % WORDS[len(amended)].capitalize()),
+            ("sections reached", "across %s sections" % WORDS[len(sections)]),
+            ("recorded defects", "%s further defects are recorded" % WORDS[addC].capitalize()),
+            ("provisions reproduced unamended",
+             "%s provisions are reproduced without amendment" % WORDS[len(reproduced)].capitalize()),
+            ("review notes", "%s review notes" % WORDS[len(REVIEW)]),
+            ("drafted definitions", "%s are drafted at 7.35.3.7" % WORDS[n_def].capitalize()),
+            ("undrafted terms", "%s are not" % WORDS[16 - n_def].capitalize()),
+            ("healing center occurrences",
+             "healing center, %d occurrences" % count_term(p3, "healing center")),
+            ("certifying clinician occurrences",
+             "certifying clinician, %d occurrences" % count_term(p3, "certifying clinician"))]:
+        check("TRUTH", "the file states the %s the draft has" % label, phrase in sot,
+              phrase if phrase in sot else "MISSING: %s" % phrase)
+    for name in ["Certificant", "Facilitator", "Other approved location", "Practicum",
+                 "Registrant of another approved location", "Student"]:
+        check("TRUTH", "the file lists the drafted definition of %s, which the redline carries" % name.lower(),
+              name.lower() in sot.lower() and ("&#8220;%s&#8221;" % name) in prop7, name)
+    # The who-decides table must carry the counts the question sheet has.
+    gcount = {}
+    for g, _, _, _ in QUESTIONS:
+        gcount[g] = gcount.get(g, 0) + 1
+    for key, glabel in GROUPS:
+        m = re.search(r"\|\s*%s\s*\|\s*(\d+)\s*\|" % re.escape(glabel), sot)
+        check("TRUTH", "the who-decides table gives %s the count the sheet has" % glabel,
+              bool(m) and int(m.group(1)) == gcount.get(key, 0),
+              "sheet: %d, file: %s" % (gcount.get(key, 0), m.group(1) if m else "no row"))
+    if PAGE_TEXTS:
+        m = re.search(r"(\d+) pages", sot)
+        check("TRUTH", "the file states the page count the built PDF has",
+              bool(m) and int(m.group(1)) == len(PAGE_TEXTS),
+              "file says %s, the PDF has %d" % (m.group(1) if m else "nothing", len(PAGE_TEXTS)))
+    # The sentences that carry the standing constraints, present verbatim.
+    for phrase in ["not a filing, not submitted, and not adopted rule text",
+                   "Nothing here reopens the practicum draft",
+                   "controlled-substance number requirement",
+                   "nothing is proposed about it",
+                   "No speaker is named from either transcript",
+                   "Do not compose a definition",
+                   "the statute is cited, never the bill",
+                   "No NMSA 1978 section number is asserted",
+                   "Do not write that either provision controls",
+                   "This repository is public"]:
+        check("TRUTH", "the file carries the sentence \"%s\"" % phrase, phrase in sot,
+              "required statement, checked verbatim")
 
 
 # ---------------------------------------------------------------------------
@@ -769,7 +969,8 @@ if check("HEADER", "the document has been built", PDF.exists(),
 
 passed = sum(1 for _, _, ok, _ in results if ok)
 failed = len(results) - passed
-order = ["RULE", "QUOTE", "FIGURE", "COUNT", "TERM", "CITE", "PROSE", "STYLE", "HEADER"]
+order = ["RULE", "QUOTE", "FIGURE", "COUNT", "TERM", "CITE", "PROSE", "STYLE", "HEADER",
+         "SHEET", "TRUTH"]
 
 lines = ["# Audit: 7.35.3 NMAC amendments outside the practicum", "",
          "Generated by `amendments-remainder/audit.py`. Re-run with "

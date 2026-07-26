@@ -92,10 +92,15 @@ P.append((
           "part to work alongside a practitioner during medical psilocybin services, under the direct "
           "supervision of a practitioner, and to provide peer support to qualified patients as well as "
           "logistical and administrative support to the practitioner and to the healing center.") + "<br>"
-    + ins("(3) &#8220;Registrant of another approved location&#8221; means the practitioner or facilitator "
+    + ins("(3) &#8220;Other approved location&#8221; means a physical location at which medical psilocybin "
+          "is intended to be consumed, that is not the location of a healing center, and that holds a "
+          "temporary certification issued by the department under Subsection B of 7.35.3.11 NMAC.") + "<br>"
+    + ins("(4) &#8220;Practicum&#8221; means the supervised practice training required of an individual who "
+          "seeks to become certified as a practitioner or facilitator under 7.35.3.19 NMAC.") + "<br>"
+    + ins("(5) &#8220;Registrant of another approved location&#8221; means the practitioner or facilitator "
           "who holds a certification of an other approved location issued under Subsection B of 7.35.3.11 "
           "NMAC.") + "<br>"
-    + ins("(4) &#8220;Student&#8221; means an individual who is registered with a psilocybin educational "
+    + ins("(6) &#8220;Student&#8221; means an individual who is registered with a psilocybin educational "
           "program certified by the department under this part."),
 ))
 
@@ -168,6 +173,19 @@ P.append((
     + ins("after the date of the denial") + ". An applicant who "
     "is denied a second time may not re-apply for six months from the denial. An applicant whose application "
     "is denied may appeal the denial in accordance with this rule.",
+))
+
+P.append((
+    D2,
+    "7.35.3.10",
+    "Paragraph (1) of Subsection D, waiver of practicum requirements",
+    "D. Waiver of practicum requirements: (1) An applicant for certification as a practitioner or facilitator "
+    "on the basis of an educational program from another jurisdiction, whose application is received by the "
+    "department by December 31, 2027, shall not be required to complete the full practicum hours required by "
+    "New Mexico, but shall demonstrate completion of at least 40 hours of contact time with a minimum of two "
+    "separate individual sessions and two separate group sessions for preparation, administration, and "
+    "integrative therapy with psilocybin treatment.",
+    UNCHANGED,
 ))
 
 P.append((

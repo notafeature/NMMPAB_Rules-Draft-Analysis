@@ -33,14 +33,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from content import P, NEW, UNCHANGED, D1, D2, D3, D4     # noqa: E402
-from notes import source_for, review_for                  # noqa: E402
+from notes import source_for, review_for, REVIEW, GROUPS, QUESTIONS   # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
-OUT_PDF = REPO / "amendments-remainder/7.35.3-remainder-amendments-v1.pdf"
+OUT_PDF = REPO / "amendments-remainder/7.35.3-remainder-amendments-v2.pdf"
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
 PART2_TXT = REPO / "source-text/7.35.2-NMAC-adopted-2026-06-23.txt"
 
-VERSION = "v1"
+VERSION = "v2"
 VERSION_DATE = "July 26, 2026"
 
 LINE_TOLERANCE = 3.0
@@ -275,6 +275,14 @@ table.tm tr.tot td { border-top: 1.2px solid #111; font-weight: bold; background
 table.tm tr.def td { background: #f4f8f4; }
 .foot { margin-top: 14pt; border-top: 1.5px solid #111; padding-top: 8pt;
         font-family: Helvetica, Arial, sans-serif; font-size: 7.7pt; line-height: 1.5; color: #444; }
+table.qs { width: 100%; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif;
+           font-size: 6.5pt; line-height: 1.2; margin: 2pt 0 4pt 0; }
+table.qs th, table.qs td { border: 0.5px solid #bbb; padding: 1.3pt 4pt; text-align: left; vertical-align: top; }
+table.qs th { background: #f2f2f2; font-size: 6.3pt; text-transform: uppercase; letter-spacing: 0.3pt; }
+table.qs td.prov { white-space: nowrap; font-weight: bold; }
+table.qs tr.grp td { background: #ececec; font-weight: bold; font-size: 6.8pt; border-top: 1.2px solid #111; }
+table.qs tr { break-inside: avoid; }
+section.adE p.intro { margin-bottom: 5pt; }
 """
 
 
@@ -312,6 +320,7 @@ RUNNING = [
     ("adB", "Addendum B", "Dependencies across the two drafting scopes"),
     ("adC", "Addendum C", "Defects recorded and not drafted, and why"),
     ("adD", "Addendum D", "Mechanical defects across all twenty-eight sections"),
+    ("adE", "Addendum E", "The questions, one line each, grouped by who decides"),
 ]
 
 SECTION_CLASS = {sec: cls for cls, sec, _ in RUNNING if sec.startswith("7.")}
@@ -344,7 +353,7 @@ submitted, and not adopted rule text.</p>
 
 <ul class="what">
 <li>This document covers the twenty-four sections of 7.35.3 NMAC that the practicum amendment draft does not
-reach: 7.35.3.1 through .13, .15, .16, .17, and .21 through .28. It is in four parts, with four addenda at the
+reach: 7.35.3.1 through .13, .15, .16, .17, and .21 through .28. It is in four parts, with five addenda at the
 end.</li>
 <li>Nothing here reopens the practicum draft, which covers 7.35.3.14, .18, .19, Paragraph (5) of Subsection H
 of .20, and a proposed .29. Read against working draft v9 of that document. Its
@@ -374,9 +383,11 @@ source note and, where there is one, the review note run the full width beneath 
 {CONTENTS}
 <p class="tnote"><b>The defined terms are the largest finding.</b> 7.35.3.7 NMAC provides in full: "The
 definitions in 7.35.2.7 NMAC apply to this part." Sixteen terms that carry regulatory consequence in this part
-are defined in neither part. Four are drafted at 7.35.3.7, because a single provision of the published rule
-supplies the content. Twelve are not, and the two largest are healing center, 54 occurrences, and certifying
-clinician, 53 occurrences. Addendum A counts every one of them, section by section, in both parts.</p>
+are defined in neither part. Six are drafted at 7.35.3.7, because a single provision of the published rule
+supplies the content. Ten are not, and the two largest are healing center, 54 occurrences, and certifying
+clinician, 53 occurrences. Addendum A counts every one of them, section by section, in both parts, and
+assembles for each of the ten the provisions of 7.35.3 NMAC, 7.35.2 NMAC and the Medical Psilocybin Act that
+bear on it, so a definition can be decided from assembled material rather than composed from scratch.</p>
 </section>
 """
 
@@ -399,6 +410,8 @@ def contents_table():
                 '<td>Every defect recorded and not drafted, with the reason nothing is proposed.</td></tr>')
     rows.append('<tr><td class="pt">Addendum D</td><td>All 28</td>'
                 '<td>Numbering, dates and drafting form across the whole part.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum E</td><td>Every review note</td>'
+                '<td>The questions this document leaves open, one line each, grouped by who decides.</td></tr>')
     rows.append('</table>')
     return "\n".join(rows)
 
@@ -500,9 +513,10 @@ define. The second block, shaded, is the terms 7.35.2.7 NMAC does define, shown 
 
 ADDENDUM_A_TAIL = """
 <p class="tnote"><b>What the table shows.</b> Sixteen terms carrying regulatory consequence in this part are
-defined in neither part. Four of them are defined in the draft at 7.35.3.7 NMAC, because a single provision of
-the published rule supplies the content: certificant, facilitator, registrant of another approved location, and
-student. Twelve are not, and the two largest are healing center and certifying clinician. "Guide", the one
+defined in neither part. Six of them are defined in the draft at 7.35.3.7 NMAC, because a single provision of
+the published rule supplies the content: certificant, facilitator, other approved location, practicum,
+registrant of another approved location, and student. Ten are not, and the two largest are healing center and
+certifying clinician. "Guide", the one
 defined term in 7.35.2.7 NMAC for an individual who assists practitioners during administration sessions,
 appears nowhere in 7.35.3 NMAC, while "facilitator", which 7.35.2.7 NMAC does not define, appears throughout
 it. 7.35.2 NMAC was adopted effective June 23, 2026, so amending 7.35.2.7 NMAC is a separate rulemaking and any
@@ -514,6 +528,150 @@ where the Act reads permit, and defines "Permit" as the authorization to operate
 psilocybin testing laboratory. Section 5 of the Act exempts a producer, a clinician and a qualified patient
 from arrest, prosecution and penalty. Neither the Act nor 7.35.2.7 NMAC uses the word facilitator. The
 consequence is stated at 7.35.3.7 NMAC in the redline above.</p>
+"""
+
+
+ADDENDUM_A_TERMS = """
+<h2 class="sec">Addendum A, continued <span class="ttl">The material for a definition of each term, assembled
+from the sources</span></h2>
+<p class="intro">For each term the table counts, what follows gathers the provisions of 7.35.3 NMAC, 7.35.2
+NMAC and the Medical Psilocybin Act that bear on the term, quoted exactly and cited, so that a definition can
+be decided from assembled material rather than composed from scratch. Two of the sixteen, other approved
+location and practicum, are defined in the redline at 7.35.3.7 NMAC because a single provision supplies the
+content; they are marked below, and the source of each is quoted. Nothing below proposes language for the
+remaining ten, and none of the sixteen terms appears anywhere in the Medical Psilocybin Act.</p>
+
+<p class="tnote"><b>healing center.</b> The most-used undefined term, and no provision states what a healing
+center is. What the rule supplies: it is certified on application, 7.35.3.11 NMAC Subsection A, page 5, "An
+applicant seeking certification as a healing center shall submit a complete application"; it is an
+organization with owners, a board of directors and employees, Paragraph (11) of the same subsection; and it is
+a place where administration sessions occur and psilocybin products are handled, 7.35.3.14 NMAC, page 9, under
+which "Owners and employees of healing centers who are registered with the department may purchase medical
+psilocybin products from permitted producers, may possess medical psilocybin products, and may sell or
+otherwise administer those products to qualified patients in administration sessions conducted at the healing
+center or other approved locations", and "A healing center may only sell or otherwise provide psilocybin
+products that are obtained from permitted producers." Its operating duties are stated at 7.35.3.20 NMAC, pages
+13 to 15, including the patient list at Subsection A and the reporting duty at Subsection L. Its location is
+what an other approved location is defined against: other approved locations "are physical locations at which
+medical psilocybin is intended to be consumed, that are not locations of healing centers", 7.35.3.11 NMAC
+Subsection B, page 6. 7.35.2 NMAC does not use the term; its nearest defined term is "Approved location",
+meaning "a location approved by the department for psilocybin administration sessions". The Act does not use
+the term and speaks instead of settings: Section 5(B)(2) makes lawful the conduct of a clinician administering
+or a qualified patient taking psilocybin "in an approved setting", and Section 7(A)(3) directs the department
+to establish "treatment protocols, including patient selection criteria, medical service standards, dosage
+standards and approved settings for administration of psilocybin to patients". Whether a healing center is one
+of the Act's approved settings is stated nowhere in this record.</p>
+
+<p class="tnote"><b>certifying clinician.</b> No provision states what a certifying clinician is, and the rule
+uses the bare word clinician in its scope section while using the two-word term everywhere else. What the rule
+supplies: the certifying clinician stands at the door of the program, since a patient application "shall be
+submitted by a patient and the patient's certifying clinician", 7.35.3.8 NMAC lead-in, page 1; the work is
+certifying patients, and "In order to certify a patient, a certifying clinician must have an actual
+clinician-patient relationship with the patient.", 7.35.3.13 NMAC Subsection A, page 8; an applicant must hold
+a license, "Documentation of current professional license to practice in New Mexico (e.g. MD, NP)", 7.35.3.9
+NMAC Subsection D, page 3; and "All certifying clinicians shall complete a certifying clinician module",
+7.35.3.18 NMAC Subsection B, page 11. What the other sources supply: Section 3(B) of the Act defines
+"clinician" as "an approved health care provider licensed in New Mexico who holds a permit from the department
+to provide medical services to qualified patients", and 7.35.2.7 NMAC defines "Clinician" in the same words
+except that it reads certification where the Act reads permit. Whether the certifying clinician of this part
+is the clinician that Section 3(B) of the Act and 7.35.2.7 NMAC define is stated nowhere in this record.</p>
+
+<p class="tnote"><b>educational program.</b> Regulated as a certificant, never described. What the rule
+supplies: it is certified on application, "An applicant seeking certification as a psilocybin educational
+program shall submit a complete application through the electronic system designated by the department.",
+7.35.3.12 NMAC Subsection A, page 7; its application must include, at Paragraph (18) of that subsection, "A
+plan demonstrating how the program will ensure that enrolled students complete all required components and
+graduate within two years of enrollment"; and it is one of the classes that may relinquish a certification,
+7.35.3.26 NMAC, page 16. 7.35.2 NMAC does not use the term. The Act does not use the term; its only training
+provision is Section 7(A)(2), which directs the department to establish "necessary initial and ongoing
+training for producers and clinicians", naming neither practitioners, facilitators, students nor programs.</p>
+
+<p class="tnote"><b>other approved location. Defined in the redline at 7.35.3.7 NMAC.</b> One provision
+supplies the content, which is why this term is drafted: 7.35.3.11 NMAC Subsection B, page 6, provides that
+"Other approved locations are physical locations at which medical psilocybin is intended to be consumed, that
+are not locations of healing centers." The same subsection supplies the "temporary department certification",
+the purposes, "if a qualified patient is unable to be physically transported to a healing center, for other
+reasons of medical necessity, for purposes of improving patient access in rural and frontier counties, or to
+enable treatment to occur in a natural environment setting", and the examples, "Such locations may include a
+patient's residence, or another temporary location." 7.35.2.7 NMAC defines "Approved location" but not this
+longer term, and the Act does not use it.</p>
+
+<p class="tnote"><b>practicum. Defined in the redline at 7.35.3.7 NMAC.</b> One provision supplies the
+content, which is why this term is drafted: 7.35.3.19 NMAC Subsection A, page 12, provides that an individual
+who seeks to become certified as a practitioner or facilitator "shall participate in supervised practice
+training, otherwise referred to as a" practicum. That section belongs to the practicum amendment draft, whose
+working draft v9 amends the hour figures in the same subsection and keeps the quoted phrase; Addendum B
+records the dependency. In this document's scope the word appears in the reporting duty for "Any modification,
+termination, or addition of practicum site agreements", 7.35.3.15 NMAC Subsection A, page 9, in the mentoring
+obligation that runs "after graduation and after practicum hours are completed", 7.35.3.17 NMAC Subsection A,
+page 10, and in the waiver reproduced at Paragraph (1) of Subsection D of 7.35.3.10 NMAC, page 5. Neither
+7.35.2 NMAC nor the Act uses the word.</p>
+
+<p class="tnote"><b>didactic.</b> The word does the work of an equivalency test in this document's scope and
+of an hour denomination in the practicum draft's. 7.35.3.10 NMAC Subsection A, page 4, keeps a program from
+another jurisdiction on the department list only while its curriculum stays equivalent to the "didactic
+educational requirements applicable for New Mexico certification", and removes it when "the didactic
+requirements of the educational program are no longer equivalent to those applicable for New Mexico
+certification". The module provisions of 7.35.3.18 NMAC, pages 11 to 12, state their minimums in didactic
+hours, and 7.35.3.19 NMAC Subsection A, page 12, opens the practicum to a student "after completing at least
+half of the didactic requirements and all of the simulated patient requirements of the educational
+requirements". No provision states which parts of a program are didactic and which are not. Neither 7.35.2
+NMAC nor the Act uses the word.</p>
+
+<p class="tnote"><b>adverse health event.</b> The nearest the rule comes to content is the list of what a
+report of one must include. 7.35.3.20 NMAC Subsection L, pages 14 to 15, requires a healing center and a
+registrant of another approved location to "report any potential adverse health event associated with medical
+psilocybin services to the department no later than two business days" after becoming aware of it, and
+requires reports to include "Any challenging psychological, emotional, or behavioral reactions", "Any
+participant reaction requiring medical or therapeutic attention", "Any incident requiring emergency response",
+and "Any other incident which has a negative impact on a patient". A location's safety plan must include
+"adverse health event response and reporting", 7.35.3.11 NMAC Paragraph (15) of Subsection A, page 5; patient
+information must cover "How to report an adverse health event to the department", 7.35.3.20 NMAC Paragraph (5)
+of Subsection G, page 14; and a practitioner's administration records must note "Any adverse health events",
+7.35.3.13 NMAC Subsection C, page 9. Whether the report-contents list is the definition is stated nowhere: it
+is a list of what reports include, not of what an event is. Neither 7.35.2 NMAC nor the Act uses the term.</p>
+
+<p class="tnote"><b>administrative review committee.</b> All four occurrences sit in 7.35.3.25 NMAC, page 16.
+"The administrative review shall be conducted by the administrative review committee.", Subsection C; "The
+decision of the administrative review committee is the final decision of the informal administrative review
+proceeding.", Paragraph (2) of Subsection D; and Subsection E provides that "Except as otherwise provided by
+law, there shall be no right to judicial review of a decision by the administrative review committee." Nothing
+in 7.35.3 NMAC or 7.35.2 NMAC constitutes the committee, states who sits on it, or says how it is appointed,
+and the Act does not use the term. The review note at 7.35.3.25 above records who must answer.</p>
+
+<p class="tnote"><b>graduate.</b> Four occurrences, and the fullest statement of what graduation takes is a
+list inside a subsection the Wilson working redline proposes to strike. An educational program must plan for
+enrolled students to "complete all required components and graduate within two years of enrollment", 7.35.3.12
+NMAC Paragraph (18) of Subsection A, page 7; mentoring runs "after graduation and after practicum hours are
+completed", 7.35.3.17 NMAC Subsection A, page 10; a student using the test-out option completes "the New
+Mexico Module, certifications, simulated patient, and practicum requirements to graduate from the educational
+program", 7.35.3.17 NMAC Subsection B, page 11; and the practicum-hours waiver reaches an applicant who
+"Graduates from an educational program that the department certifies by December 31, 2027", 7.35.3.19 NMAC
+Paragraph (3) of Subsection G, page 13. Neither 7.35.2 NMAC nor the Act uses the word.</p>
+
+<p class="tnote"><b>simulated patient.</b> The rule requires the experience and never says what a simulated
+patient is. "A simulated patient experience of no less than 5 hours", 7.35.3.18 NMAC Subsection C, page 12;
+the practicum opens only after "all of the simulated patient requirements" are complete, 7.35.3.19 NMAC
+Subsection A, page 12; and the test-out option leaves the requirement standing, 7.35.3.17 NMAC Subsection B,
+page 11. Neither 7.35.2 NMAC nor the Act uses the term.</p>
+
+<p class="tnote"><b>medical psilocybin services.</b> Three occurrences, against a two-word term both other
+sources define. A facilitator "is authorized to work alongside a practitioner during medical psilocybin
+services", 7.35.3.13 NMAC Subsection B, page 8; the education requirements reach all certificants "who provide
+medical psilocybin services", 7.35.3.18 NMAC Subsection A, page 11; and the reporting duty covers "any
+potential adverse health event associated with medical psilocybin services", 7.35.3.20 NMAC Subsection L,
+pages 14 to 15. Section 3(D) of the Act and 7.35.2.7 NMAC define "Medical services", identically, as "services
+provided to a patient in an approved setting before, during and after the ingestion of psilocybin", including
+a preparation session, an administration session and an integration session. Whether the three-word term means
+the same as the defined two-word term is stated nowhere in this record.</p>
+
+<p class="tnote"><b>equity and access fund.</b> One occurrence, and no source names a fund by this name. A
+patient application must include "Information required for patient participation in the Equity and Access Fund
+(as applicable)", 7.35.3.8 NMAC Paragraph (7) of Subsection B, page 2. The Act creates two funds in Section
+11, neither by this name: the "medical psilocybin treatment equity fund", to be used "to fund treatments of
+qualified patients who meet income requirements determined by rule of the department", and the "medical
+psilocybin research fund". 7.35.2 NMAC uses neither name. Whether the Equity and Access Fund is the Act's
+medical psilocybin treatment equity fund is stated nowhere in this record.</p>
 """
 
 
@@ -538,6 +696,12 @@ amended here either.</td></tr>
 <td>The definition of student drafted here is taken from the qualified student test in 7.35.3.20 H(5). The
 practicum draft amends that paragraph for the permit title and does not change the test.</td>
 <td class="amd">Drafted here, sourced there. If the test changes, the definition follows it.</td></tr>
+<tr><td>7.35.3.7, page 1</td><td>7.35.3.19 A, page 12</td>
+<td>The definition of practicum drafted here is taken from 7.35.3.19 A, which provides that an individual
+seeking certification as a practitioner or facilitator "shall participate in supervised practice training,
+otherwise referred to as a" practicum. The practicum draft amends the hour figures in the same subsection and
+keeps that phrase.</td>
+<td class="amd">Drafted here, sourced there. If the phrase changes, the definition follows it.</td></tr>
 <tr><td>7.35.3.7, page 1</td><td>7.35.3.14 B, page 9</td>
 <td>7.35.3.14 B authorizes facilitators to possess psilocybin products and provide them to qualified patients.
 Whether a facilitator is a clinician under Section 3(B) of the Medical Psilocybin Act, and so within the
@@ -569,7 +733,8 @@ sessions" and 7.35.3.19 G(4) requires "A minimum of one group session". The prac
 conflict at its 7.35.3.19 K and amends neither provision, on the ground that 7.35.3.10 is outside its
 scope.</td>
 <td class="flag">Not drafted here either. Conforming one to the other is a choice between two figures already
-in the rule, so neither document makes it and the conflict stands until the committee chooses.</td></tr>
+in the rule, so neither document makes it. The provision is reproduced at 7.35.3.10 above with the sharpened
+record, and the choice is put to the committee there.</td></tr>
 <tr><td>7.35.3.16 A and C, page 10</td><td>7.35.3.18, pages 11 to 12</td>
 <td>The third-party evaluation assesses the curriculum that 7.35.3.18 requires. Curing the evaluator conflict
 does not touch the curriculum, and the practicum draft's changes to the curriculum do not touch the
@@ -599,10 +764,10 @@ note at the provision named, stating the choices and who decides.</p>
 effect before the rest has a date.</td>
 <td>No source supplies the intended effective date, and which way to conform is the department's to choose.</td></tr>
 <tr><td>7.35.3.7, page 1</td>
-<td>Twelve of the sixteen undefined terms have no definition in any source, including healing center, 54
+<td>Ten of the sixteen undefined terms have no definition in any source, including healing center, 54
 occurrences, and certifying clinician, 53 occurrences.</td>
 <td>Drafting a defined term with regulatory consequence from no source would be composing it. Addendum A
-records the slate.</td></tr>
+records the slate and assembles the material for each of the ten.</td></tr>
 <tr><td>7.35.3.9 B, page 3</td>
 <td>A renewal application is due no less than 30 days before expiry, and the department has no deadline to
 decide it, so a certification can lapse while a timely renewal is pending. Nothing continues the certification
@@ -780,6 +945,57 @@ def addendum_d(corpus):
     return "\n".join(out)
 
 
+# ---------------------------------------------------------------------------
+# Addendum E: the question sheet, generated from the review notes' companion
+# list in notes.py so it cannot drift from them. audit.py checks that every
+# review note appears here, that every row points at a review note, that each
+# row sits under the decision-maker its note names, and that the sheet is one
+# page.
+# ---------------------------------------------------------------------------
+
+COUNT_WORDS = {20: "twenty", 21: "twenty-one", 22: "twenty-two", 23: "twenty-three",
+               24: "twenty-four", 25: "twenty-five", 26: "twenty-six"}
+
+
+def compact_cite(section, sub):
+    """A short citation derived mechanically from the provision label."""
+    m = re.match(r"Paragraph \((\d+)\) of Subsection ([A-Z])", sub)
+    if m:
+        return "%s %s(%s)" % (section, m.group(2), m.group(1))
+    m = re.match(r"Paragraphs \((\d+)\) and \((\d+)\) of Subsection ([A-Z])", sub)
+    if m:
+        return "%s %s(%s), (%s)" % (section, m.group(3), m.group(1), m.group(2))
+    m = re.match(r"Subsection ([A-Z])", sub)
+    if m:
+        return "%s %s" % (section, m.group(1))
+    if sub.startswith("Entire section"):
+        return section
+    if sub.startswith("Section heading"):
+        return "%s heading and A" % section
+    return "%s %s" % (section, sub)
+
+
+def addendum_e():
+    rows = ['</section>', '<section class="rr adE">',
+            '<h2 class="sec">Addendum E <span class="ttl">The questions, one line each, grouped by who '
+            'decides</span></h2>',
+            '<p class="intro">The %s review notes in this document each state an issue, the choices, and who '
+            'decides. This page re-presents them as questions, one line each, grouped by who decides. It '
+            'introduces nothing new: the note at the provision named in each row is the controlling '
+            'statement, and where one note puts different questions to different decision-makers it appears '
+            'once per question.</p>' % COUNT_WORDS[len(REVIEW)],
+            '<table class="qs">',
+            '<tr><th>At</th><th>What is being asked</th></tr>']
+    for key, label in GROUPS:
+        rows.append('<tr class="grp"><td colspan="2">%s</td></tr>' % label)
+        for g, section, sub, q in QUESTIONS:
+            if g != key:
+                continue
+            rows.append('<tr><td class="prov">%s</td><td>%s</td></tr>' % (compact_cite(section, sub), q))
+    rows.append('</table>')
+    return "\n".join(rows)
+
+
 FOOT = """
 </section>
 <section class="src">
@@ -830,8 +1046,8 @@ def main():
         print("no chromium found")
         return 1
 
-    addenda = (ADDENDUM_A_INTRO + term_map(corpus3, corpus2) + ADDENDUM_A_TAIL
-               + ADDENDUM_B + ADDENDUM_C + ADDENDUM_D_INTRO + addendum_d(corpus3))
+    addenda = (ADDENDUM_A_INTRO + term_map(corpus3, corpus2) + ADDENDUM_A_TAIL + ADDENDUM_A_TERMS
+               + ADDENDUM_B + ADDENDUM_C + ADDENDUM_D_INTRO + addendum_d(corpus3) + addendum_e())
     head = (HEAD.replace("{VERSION}", VERSION).replace("{VERSION_DATE}", VERSION_DATE)
             .replace("{CONTENTS}", contents_table()))
     foot = FOOT.replace("{VERSION}", VERSION)
