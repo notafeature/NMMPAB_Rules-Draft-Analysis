@@ -18,8 +18,9 @@ They are separate. Do not let one drift into the other.
 built against the published rule. Lives in `amendments/`, on its own branch. Deadline-driven.
 
 **2. The site.** `docs/`, thirteen pages, served from `main` by GitHub Pages at
-https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/. A reference for people following
-the rulemaking. No external deadline.
+https://rules.medical-psilocybin.org. The address is set by `docs/CNAME`; deleting or
+overwriting that file takes the domain down. A reference for people following the rulemaking.
+No external deadline.
 
 ## The timeline, and why the dates are what they are
 

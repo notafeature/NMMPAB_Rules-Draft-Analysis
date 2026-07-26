@@ -4,7 +4,7 @@ A neutral, plain-language community reference for the New Mexico Medical Psilocy
 
 Goal: let anyone, including people who do not follow the legislative process, see what is being decided, what is at stake, what the options are, and what happened at each meeting. No advocacy. Verbatim draft language and attributed input only.
 
-**Live site:** https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/ (GitHub Pages serves the `docs/` folder from `main`).
+**Live site:** https://rules.medical-psilocybin.org (GitHub Pages serves the `docs/` folder from `main`; the address is set by `docs/CNAME`). The visit counter answers separately on `count.medical-psilocybin.org` and is described in `analytics/README.md`.
 
 ## Read these first
 
