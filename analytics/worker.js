@@ -234,20 +234,25 @@ function challenge() {
 
 /* ------------------------------------------------------------------ query */
 
-async function summary(env, days) {
-  const from = daysAgo(days);
+async function summary(env, hours) {
+  // Everything filters on ts rather than day, so a range can be shorter than a
+  // calendar day. Under two days the chart buckets by hour, because two bars
+  // is not a chart.
+  const from = new Date(Date.now() - hours * 3600000).toISOString().slice(0, 19) + "Z";
+  const byHour = hours <= 48;
+  const bucket = byHour ? "substr(ts,1,13)" : "day";
   const q = (sql) => env.DB.prepare(sql).bind(from).all();
 
   const [totals, daily, pages, refs, orgs, dls, countries, depth, sessions, hosts] = await Promise.all([
     q("SELECT COUNT(*) views, COUNT(DISTINCT visitor||day) visitor_days, " +
       "COUNT(DISTINCT day) active_days, MIN(day) first_day, " +
-      "SUM(nojs) nojs FROM hits WHERE day >= ?1 AND kind='pv'"),
-    q("SELECT day, COUNT(*) views, COUNT(DISTINCT visitor) readers " +
-      "FROM hits WHERE day >= ?1 AND kind='pv' GROUP BY day ORDER BY day"),
+      "SUM(nojs) nojs FROM hits WHERE ts >= ?1 AND kind='pv'"),
+    q("SELECT " + bucket + " AS day, COUNT(*) views, COUNT(DISTINCT visitor) readers " +
+      "FROM hits WHERE ts >= ?1 AND kind='pv' GROUP BY " + bucket + " ORDER BY 1"),
     q("SELECT path, COUNT(*) views, COUNT(DISTINCT visitor||day) visitor_days, MAX(day) last_day " +
-      "FROM hits WHERE day >= ?1 AND kind='pv' GROUP BY path ORDER BY views DESC"),
+      "FROM hits WHERE ts >= ?1 AND kind='pv' GROUP BY path ORDER BY views DESC"),
     q("SELECT COALESCE(NULLIF(ref_host,''),'(none)') host, COUNT(*) n, " +
-      "COUNT(DISTINCT visitor||day) visitor_days FROM hits WHERE day >= ?1 " +
+      "COUNT(DISTINCT visitor||day) visitor_days FROM hits WHERE ts >= ?1 " +
       "GROUP BY COALESCE(NULLIF(ref_host,''),'(none)') ORDER BY n DESC LIMIT 25"),
     // Group by the expressions, not by the output aliases. SQLite resolves a
     // GROUP BY name against the real columns first, and `hits` has a column
@@ -255,32 +260,32 @@ async function summary(env, days) {
     // into a page-view row and a document-click row.
     q("SELECT COALESCE(NULLIF(as_org,''),'(unknown)') org, net_kind, asn, COUNT(*) n, " +
       "COUNT(DISTINCT visitor||day) visitor_days, MIN(day) first_day, MAX(day) last_day " +
-      "FROM hits WHERE day >= ?1 " +
+      "FROM hits WHERE ts >= ?1 " +
       "GROUP BY COALESCE(NULLIF(as_org,''),'(unknown)'), net_kind, asn " +
       "ORDER BY visitor_days DESC, n DESC LIMIT 40"),
     q("SELECT path, COUNT(*) n, COUNT(DISTINCT visitor||day) visitor_days, MAX(day) last_day " +
-      "FROM hits WHERE day >= ?1 AND kind='dl' GROUP BY path ORDER BY n DESC LIMIT 30"),
+      "FROM hits WHERE ts >= ?1 AND kind='dl' GROUP BY path ORDER BY n DESC LIMIT 30"),
     q("SELECT COALESCE(NULLIF(country,''),'??') code, COUNT(*) n FROM hits " +
-      "WHERE day >= ?1 GROUP BY COALESCE(NULLIF(country,''),'??') ORDER BY n DESC LIMIT 20"),
+      "WHERE ts >= ?1 GROUP BY COALESCE(NULLIF(country,''),'??') ORDER BY n DESC LIMIT 20"),
     q("SELECT b AS bucket, COUNT(*) AS n FROM (SELECT CASE " +
       "WHEN COUNT(*) >= 30 THEN '30+' WHEN COUNT(*) >= 10 THEN '10-29' " +
       "WHEN COUNT(*) >= 5 THEN '5-9' WHEN COUNT(*) >= 2 THEN '2-4' ELSE '1' END AS b " +
-      "FROM hits WHERE day >= ?1 AND kind='pv' GROUP BY visitor, day) GROUP BY b"),
+      "FROM hits WHERE ts >= ?1 AND kind='pv' GROUP BY visitor, day) GROUP BY b"),
     q("SELECT day, COUNT(*) events, " +
       "SUM(CASE WHEN kind='pv' THEN 1 ELSE 0 END) views, " +
       "SUM(CASE WHEN kind='dl' THEN 1 ELSE 0 END) docs, " +
       "COUNT(DISTINCT path) pages, MIN(ts) first_ts, MAX(ts) last_ts, " +
-      "MAX(as_org) org, MAX(net_kind) net FROM hits WHERE day >= ?1 " +
+      "MAX(as_org) org, MAX(net_kind) net FROM hits WHERE ts >= ?1 " +
       "GROUP BY visitor, day HAVING SUM(CASE WHEN kind='pv' THEN 1 ELSE 0 END) >= 2 " +
       "ORDER BY views DESC, pages DESC LIMIT 25"),
     q("SELECT COALESCE(NULLIF(site_host,''),'(before this was recorded)') host, COUNT(*) n, " +
-      "COUNT(DISTINCT visitor||day) visitor_days, MAX(day) last_day FROM hits WHERE day >= ?1 " +
+      "COUNT(DISTINCT visitor||day) visitor_days, MAX(day) last_day FROM hits WHERE ts >= ?1 " +
       "GROUP BY COALESCE(NULLIF(site_host,''),'(before this was recorded)') ORDER BY n DESC LIMIT 10"),
   ]);
 
   const t = totals.results[0] || {};
   return {
-    range: { days, from, to: utcDay(new Date()) },
+    range: { hours, bucket: byHour ? "hour" : "day", from, fromDay: from.slice(0, 10), to: utcDay(new Date()) },
     totals: {
       views: t.views || 0,
       visitorDays: t.visitor_days || 0,
@@ -387,9 +392,9 @@ export default {
 
     if (path === "/api/summary") {
       if (!authed(request, env)) return challenge();
-      const raw = parseInt(url.searchParams.get("days") || "30", 10);
-      const days = [7, 30, 90, 365, 3650].includes(raw) ? raw : 30;
-      const data = await summary(env, days);
+      const raw = parseInt(url.searchParams.get("h") || "720", 10);
+      const hours = [24, 48, 168, 720, 2160, 8760, 876000].includes(raw) ? raw : 720;
+      const data = await summary(env, hours);
       return new Response(JSON.stringify(data), { headers: { ...SECURITY_HEADERS, "Content-Type": "application/json; charset=utf-8" } });
     }
 
@@ -490,23 +495,25 @@ const DASHBOARD = `<!doctype html>
   <p class="sub">rules.medical-psilocybin.org. No cookies, no reader identified.</p>
 
   <div class="ranges" id="ranges" role="group" aria-label="Time range">
-    <button data-days="7">7 days</button>
-    <button data-days="30" aria-pressed="true">30 days</button>
-    <button data-days="90">90 days</button>
-    <button data-days="365">1 year</button>
-    <button data-days="3650">All</button>
+    <button data-h="24">24 hours</button>
+    <button data-h="48">48 hours</button>
+    <button data-h="168">7 days</button>
+    <button data-h="720" aria-pressed="true">30 days</button>
+    <button data-h="2160">90 days</button>
+    <button data-h="8760">1 year</button>
+    <button data-h="876000">All</button>
   </div>
 
   <div class="kpis" id="kpis"></div>
 
   <div class="card">
     <div class="cardhead">
-      <h2>Visits per day</h2>
-      <p class="sub">Bars are page views. The line is readers, counted once each per day.</p>
+      <h2 id="visitsh">Visits per day</h2>
+      <p class="sub" id="visitssub">Bars are page views. The line is readers, counted once each per day.</p>
     </div>
     <p class="legend">
       <span><i class="swatch" style="background:var(--s1)"></i> Page views</span>
-      <span><i class="swatch" style="background:var(--s2)"></i> Readers that day</span>
+      <span><i class="swatch" style="background:var(--s2)"></i> <span id="readerslegend">Readers that day</span></span>
     </p>
     <div class="chartwrap" id="dailywrap"></div>
     <details class="tbl"><summary>Show the daily numbers as a table</summary>
@@ -590,15 +597,23 @@ const DASHBOARD = `<!doctype html>
 
 <script>
 (function(){
-  var state = { days: 30, data: null };
+  var state = { h: 720, data: null };
   var $ = function(id){ return document.getElementById(id); };
   var esc = function(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){
     return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); };
   var n = function(v){ return (v == null ? 0 : v).toLocaleString("en-US"); };
 
   function shortDay(d){
-    var p = String(d).split("-");
+    var v = String(d);
+    if (v.indexOf("T") > 0) return v.slice(11) + ":00";
+    var p = v.split("-");
     return p[1].replace(/^0/,"") + "/" + p[2];
+  }
+  function rangeLabel(d){
+    var h = d.range.hours;
+    if (h <= 48) return h + " hours";
+    if (h >= 87600) return "all time";
+    return Math.round(h / 24) + " days";
   }
 
   function empty(msg){ return '<p class="empty">' + esc(msg) + '</p>'; }
@@ -610,10 +625,9 @@ const DASHBOARD = `<!doctype html>
     var tiles = [
       ["Page views", n(t.views), t.views ? "since " + (t.firstDay || d.range.from) : "nothing recorded yet"],
       ["Reader-days", n(t.visitorDays), "one person on one day counts once"],
-      ["Most in a day", peak ? n(peak.readers) : "0",
+      [d.range.bucket === "hour" ? "Most in an hour" : "Most in a day", peak ? n(peak.readers) : "0",
         peak ? "readers, on " + peak.day + ", " + n(peak.views) + " views" : "no activity in range"],
-      ["Active days", n(t.activeDays), "days with at least one reader, of " +
-        (d.range.days > 999 ? "all time" : n(d.range.days))],
+      ["Active days", n(t.activeDays), "days with at least one reader, in " + rangeLabel(d)],
       ["Documents opened", n(t.downloads), "PDF links clicked"]
     ];
     $("kpis").innerHTML = tiles.map(function(k){
@@ -631,13 +645,31 @@ const DASHBOARD = `<!doctype html>
     // Fill in the days with no visits, so a gap reads as a gap.
     var byDay = {}, i;
     for (i = 0; i < rows.length; i++) byDay[rows[i].day] = rows[i];
-    var start = new Date(d.range.from + "T00:00:00Z");
-    var end = new Date(d.range.to + "T00:00:00Z");
-    var firstSeen = new Date((d.totals.firstDay || d.range.to) + "T00:00:00Z");
-    if (firstSeen > start) start = firstSeen;
+    var hourly = d.range.bucket === "hour";
+    $("visitsh").textContent = hourly ? "Visits per hour" : "Visits per day";
+    $("visitssub").textContent = hourly
+      ? "Bars are page views. The line is readers, counted once each per hour."
+      : "Bars are page views. The line is readers, counted once each per day.";
+    $("readerslegend").textContent = hourly ? "Readers that hour" : "Readers that day";
+    var step = hourly ? 3600000 : 86400000;
+    var cut = hourly ? 13 : 10;
+    var start = new Date(hourly ? d.range.from : d.range.fromDay + "T00:00:00Z");
+    // End at whichever is later, this browser's clock or the last bucket the
+    // Worker returned. The two clocks are not the same machine, and a bucket
+    // past the browser's idea of now would otherwise be dropped silently.
+    var end = new Date();
+    if (rows.length){
+      var lastKey = rows[rows.length - 1].day;
+      var lastTs = Date.parse(hourly ? lastKey + ":00:00Z" : lastKey + "T00:00:00Z");
+      if (lastTs > end.getTime()) end = new Date(lastTs);
+    }
+    if (!hourly){
+      var firstSeen = new Date((d.totals.firstDay || d.range.to) + "T00:00:00Z");
+      if (firstSeen > start) start = firstSeen;
+    }
     var series = [];
-    for (var t = start.getTime(); t <= end.getTime(); t += 86400000){
-      var key = new Date(t).toISOString().slice(0,10);
+    for (var t = Math.floor(start.getTime() / step) * step; t <= end.getTime(); t += step){
+      var key = new Date(t).toISOString().slice(0, cut);
       series.push(byDay[key] || { day: key, views: 0, readers: 0 });
     }
     if (series.length > 190) series = series.slice(series.length - 190);
@@ -679,10 +711,13 @@ const DASHBOARD = `<!doctype html>
                  '" r="3.2" fill="var(--s2)" stroke="var(--surface)" stroke-width="2"/>');
       }
     }
-    // Date labels: first, last, and a few in between, so they never collide.
+    // Label backwards from the newest bucket, so the spacing is uniform and the
+    // most recent one is always named. Labelling forwards and then forcing the
+    // last one leaves the final pair overlapping whenever the count is not a
+    // multiple of the step.
     var every = Math.max(1, Math.ceil(series.length / 10));
-    for (i = 0; i < series.length; i++){
-      if (i % every === 0 || i === series.length - 1){
+    for (i = series.length - 1; i >= 0; i -= every){
+      {
         svg.push('<text x="' + x(i).toFixed(1) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="10.5" ' +
                  'fill="var(--text-faint)" font-family="var(--sans)">' + shortDay(series[i].day) + '</text>');
       }
@@ -805,7 +840,7 @@ const DASHBOARD = `<!doctype html>
         '<span class="mono">' + esc(r.last_day) + "</span>"]; }), [false, true, true, false]);
     simple("countries", ["Country", "Requests"],
       d.countries.map(function(r){ return ['<span class="mono">' + esc(r.code) + "</span>", n(r.n)]; }), [false, true]);
-    $("foot").innerHTML = "Range " + esc(d.range.from) + " to " + esc(d.range.to) + ". " +
+    $("foot").innerHTML = "Last " + esc(rangeLabel(d)) + ", from " + esc(d.range.from) + ". " +
       "Rows are deleted after " + n(d.retentionDays) + " days. " +
       n(d.totals.nojs) + " view(s) arrived through the image fallback. " +
       "Readers whose browser sends Global Privacy Control or Do Not Track are not counted at all, " +
@@ -814,16 +849,16 @@ const DASHBOARD = `<!doctype html>
 
   function load(){
     $("kpis").innerHTML = '<p class="empty">Loading.</p>';
-    fetch("/api/summary?days=" + state.days, { credentials: "same-origin" })
+    fetch("/api/summary?h=" + state.h, { credentials: "same-origin" })
       .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(render)
       .catch(function(e){ $("kpis").innerHTML = '<p class="empty">Could not load: ' + esc(e.message) + "</p>"; });
   }
 
   $("ranges").addEventListener("click", function(e){
-    var b = e.target.closest("button[data-days]");
+    var b = e.target.closest("button[data-h]");
     if (!b) return;
-    state.days = +b.dataset.days;
+    state.h = +b.dataset.h;
     $("ranges").querySelectorAll("button").forEach(function(x){ x.removeAttribute("aria-pressed"); });
     b.setAttribute("aria-pressed", "true");
     load();
