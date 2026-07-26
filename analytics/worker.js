@@ -238,7 +238,7 @@ async function summary(env, days) {
   const from = daysAgo(days);
   const q = (sql) => env.DB.prepare(sql).bind(from).all();
 
-  const [totals, daily, pages, refs, orgs, dls, countries, hosts] = await Promise.all([
+  const [totals, daily, pages, refs, orgs, dls, countries, depth, sessions, hosts] = await Promise.all([
     q("SELECT COUNT(*) views, COUNT(DISTINCT visitor||day) visitor_days, " +
       "COUNT(DISTINCT day) active_days, MIN(day) first_day, " +
       "SUM(nojs) nojs FROM hits WHERE day >= ?1 AND kind='pv'"),
@@ -262,6 +262,17 @@ async function summary(env, days) {
       "FROM hits WHERE day >= ?1 AND kind='dl' GROUP BY path ORDER BY n DESC LIMIT 30"),
     q("SELECT COALESCE(NULLIF(country,''),'??') code, COUNT(*) n FROM hits " +
       "WHERE day >= ?1 GROUP BY COALESCE(NULLIF(country,''),'??') ORDER BY n DESC LIMIT 20"),
+    q("SELECT b AS bucket, COUNT(*) AS n FROM (SELECT CASE " +
+      "WHEN COUNT(*) >= 30 THEN '30+' WHEN COUNT(*) >= 10 THEN '10-29' " +
+      "WHEN COUNT(*) >= 5 THEN '5-9' WHEN COUNT(*) >= 2 THEN '2-4' ELSE '1' END AS b " +
+      "FROM hits WHERE day >= ?1 AND kind='pv' GROUP BY visitor, day) GROUP BY b"),
+    q("SELECT day, COUNT(*) events, " +
+      "SUM(CASE WHEN kind='pv' THEN 1 ELSE 0 END) views, " +
+      "SUM(CASE WHEN kind='dl' THEN 1 ELSE 0 END) docs, " +
+      "COUNT(DISTINCT path) pages, MIN(ts) first_ts, MAX(ts) last_ts, " +
+      "MAX(as_org) org, MAX(net_kind) net FROM hits WHERE day >= ?1 " +
+      "GROUP BY visitor, day HAVING SUM(CASE WHEN kind='pv' THEN 1 ELSE 0 END) >= 2 " +
+      "ORDER BY views DESC, pages DESC LIMIT 25"),
     q("SELECT COALESCE(NULLIF(site_host,''),'(before this was recorded)') host, COUNT(*) n, " +
       "COUNT(DISTINCT visitor||day) visitor_days, MAX(day) last_day FROM hits WHERE day >= ?1 " +
       "GROUP BY COALESCE(NULLIF(site_host,''),'(before this was recorded)') ORDER BY n DESC LIMIT 10"),
@@ -284,6 +295,8 @@ async function summary(env, days) {
     orgs: orgs.results,
     downloads: dls.results,
     countries: countries.results,
+    depth: depth.results,
+    sessions: sessions.results,
     hosts: hosts.results,
     retentionDays: RETENTION_DAYS,
   };
@@ -400,7 +413,7 @@ const DASHBOARD = `<!doctype html>
 <title>Readers of the NMMPAB rules site</title>
 <style>
   :root{
-    color-scheme: light dark;
+    color-scheme: light;
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8;
     --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
     --border:#E4E0EB; --border-strong:#D2CCDF;
@@ -410,24 +423,6 @@ const DASHBOARD = `<!doctype html>
     --s2:#eb6834;  /* readers */
     --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:where(:not([data-theme="light"])){
-      --bg:#0F0D13; --surface:#17141D; --surface-2:#1E1A28;
-      --text:#F3F1F7; --text-muted:#A9A2B8; --text-faint:#7E7791;
-      --border:#2A2536; --border-strong:#3A3348;
-      --accent:#9C8BD0;
-      --grid:#221E2E; --axis:#3A3348;
-      --s1:#9085e9; --s2:#d95926;
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#0F0D13; --surface:#17141D; --surface-2:#1E1A28;
-    --text:#F3F1F7; --text-muted:#A9A2B8; --text-faint:#7E7791;
-    --border:#2A2536; --border-strong:#3A3348;
-    --accent:#9C8BD0;
-    --grid:#221E2E; --axis:#3A3348;
-    --s1:#9085e9; --s2:#d95926;
   }
   *{box-sizing:border-box;}
   body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
@@ -525,6 +520,16 @@ const DASHBOARD = `<!doctype html>
       <p class="sub">Reader-days counts one person once per day per page, so a page reread all afternoon counts once.</p>
     </div>
     <div id="pages"></div>
+  </div>
+
+  <div class="card">
+    <div class="cardhead">
+      <h2>Depth of activity</h2>
+      <p class="sub">One row per reader per day. Somebody who opens one page and leaves is a different thing from somebody working through the site, and this separates them.</p>
+    </div>
+    <div id="depth"></div>
+    <p class="note" style="margin-top:16px;">A reader cannot be followed from one day to the next, by design: the identifier is rebuilt daily and the old one is unrecoverable. So a person who worked through the site on three days appears as <b>three rows</b>, not one. If you want to see somebody returning across weeks, that requires a longer-lived identifier and a change to what <span class="mono">about.html</span> promises readers. Ask, and it is a small change.</p>
+    <div id="sessions"></div>
   </div>
 
   <div class="card">
@@ -753,9 +758,43 @@ const DASHBOARD = `<!doctype html>
 
   function simple(id, head, rows, nums){ $(id).innerHTML = table(head, rows, nums); }
 
+  // Ordered buckets, so a single hue that darkens with depth rather than
+  // categorical colour: the scale is the meaning here.
+  var BUCKETS = ["1", "2-4", "5-9", "10-29", "30+"];
+  var BUCKET_INK = ["#cde2fb", "#86b6ef", "#3987e5", "#256abf", "#184f95"];
+  var BUCKET_NOTE = ["opened one page", "a look", "reading", "working", "working hard"];
+
+  function depth(d){
+    var by = {}, total = 0;
+    d.depth.forEach(function(r){ by[r.bucket] = r.n; total += r.n; });
+    if (!total){ $("depth").innerHTML = empty("No visits recorded in this range."); return; }
+    var max = Math.max.apply(null, BUCKETS.map(function(b){ return by[b] || 0; }));
+    $("depth").innerHTML = '<table><thead><tr><th>Pages in a day</th><th></th>' +
+      '<th class="num">Reader-days</th><th class="num">Share</th></tr></thead><tbody>' +
+      BUCKETS.map(function(b, i){
+        var v = by[b] || 0;
+        return "<tr><td><b>" + b + "</b> <span style=\'color:var(--text-faint)\'>" + BUCKET_NOTE[i] + "</span></td>" +
+          '<td class="barcell"><span class="bar" style="width:' + (max ? Math.max(v ? 3 : 0, Math.round(v / max * 100)) : 0) +
+          "%; background:" + BUCKET_INK[i] + '"></span></td>' +
+          '<td class="num">' + n(v) + '</td><td class="num">' + (total ? Math.round(v / total * 100) : 0) + "%</td></tr>";
+      }).join("") + "</tbody></table>";
+  }
+
+  function sessions(d){
+    if (!d.sessions.length){ $("sessions").innerHTML = empty("Nobody has opened more than one page in a day yet."); return; }
+    $("sessions").innerHTML = table(
+      ["Day", "Pages read", "Distinct", "Over", "Docs", "Network"],
+      d.sessions.map(function(r){
+        var mins = Math.max(1, Math.round((Date.parse(r.last_ts) - Date.parse(r.first_ts)) / 60000));
+        var span = mins >= 60 ? Math.floor(mins / 60) + "h " + (mins % 60) + "m" : mins + " min";
+        return ['<span class="mono">' + esc(r.day) + "</span>", n(r.views), n(r.pages), span, n(r.docs),
+                esc(r.org) + ' <span class="tag ' + esc(r.net) + '">' + esc(r.net) + "</span>"];
+      }), [false, true, true, false, true, false]);
+  }
+
   function render(d){
     state.data = d;
-    kpis(d); daily(d); pages(d); orgs(d);
+    kpis(d); daily(d); pages(d); depth(d); sessions(d); orgs(d);
     simple("hosts", ["Address", "Requests", "Reader-days", "Last seen"],
       d.hosts.map(function(r){ return ['<span class="mono">' + esc(r.host) + "</span>", n(r.n), n(r.visitor_days),
         '<span class="mono">' + esc(r.last_day) + "</span>"]; }), [false, true, true, false]);
