@@ -305,10 +305,15 @@ P.append((
     NEW,
     ins("D. Practicum sequence: The practicum required by Subsection A of this section consists of the following, in "
         "sequence:") + "<br>"
-    + ins("(1) Initial facilitation experience: students shall begin the practicum by completing a minimum of two "
-          "sessions as a facilitator in a retreat or peer-support model with well participants, in accordance with "
-          "7.35.3.29 NMAC. Practicum session experience shall include preparation, administration, and integration;")
-    + rng("Metz: approx. 30 hours") + "<br>"
+    + ins("(1) Initial facilitation experience. <b>Version 1, operative under the Medical Psilocybin Act as it stands "
+          "today:</b> students shall begin the practicum by completing a minimum of two administration day sessions "
+          "with qualified patients, in an observing or assisting role under the supervision of a "
+          "department-permitted {{NPT}}. Practicum session experience shall include preparation, administration, and "
+          "integration;") + rng("Metz: approx. 30 hours") + "<br>"
+    + ins("<b>Version 2, which requires an amendment to the Medical Psilocybin Act:</b> students shall begin the "
+          "practicum by completing a minimum of two sessions as a facilitator in a retreat or peer-support model with "
+          "well participants, in accordance with 7.35.3.29 NMAC. Practicum session experience shall include "
+          "preparation, administration, and integration;") + rng("Metz: approx. 30 hours") + "<br>"
     + ins("(2) Co-facilitation experience: after completing the initial facilitation experience, students shall complete "
           "a minimum of two sessions co-facilitated with a department-permitted {{NPT}}, with patients presenting a "
           "low-acuity qualifying condition. Practicum session experience shall include preparation, administration, and "
@@ -448,16 +453,34 @@ P.append((
 
 P.append((
     "7.35.3.29",
-    "Entire section, practicum participants who are not qualified patients",
+    "Version 1, no new section required",
+    NEW,
+    '<span class="unch">No new section. Under Version 1 of Paragraph (1) of Subsection D of 7.35.3.19 NMAC the entire '
+    'practicum is performed with qualified patients, which the Medical Psilocybin Act already authorizes, so nothing '
+    'needs to be added to Part 3. If the committee adopts Version 1, this section is deleted and the practicum is '
+    'lawful on the day the rule takes effect.</span>',
+))
+
+P.append((
+    "7.35.3.29",
+    "Version 2, new section conditioned on a statutory amendment",
     NEW,
     ins("7.35.3.29 PRACTICUM PARTICIPANTS WHO ARE NOT QUALIFIED PATIENTS:") + "<br>"
-    + ins("A. Purpose: This section provides for the stage of the practicum described in Paragraph (1) of Subsection D "
-          "of 7.35.3.19 NMAC to be conducted with practicum participants who are not qualified patients, so that a "
-          "student gains supervised exposure to non-ordinary states before working with clinical populations.") + "<br>"
+    + ins("A. Purpose: This section provides for the stage of the practicum described in Version 2 of Paragraph (1) of "
+          "Subsection D of 7.35.3.19 NMAC to be conducted with practicum participants who are not qualified patients, "
+          "so that a student gains supervised exposure to non-ordinary states before working with clinical "
+          "populations.") + "<br>"
     + ins("B. Practicum participant: A practicum participant is an individual who is not a qualified patient and who "
           "takes part in a practicum session in a retreat or peer-support model. Preparation and integration sessions "
           "are required for each participant.") + "<br>"
-    + ins("C. Effect: This section applies only to the extent that the Medical Psilocybin Act, Sections 26-2D-1 through "
-          "-11 NMSA 1978, authorizes the administration of medical psilocybin to a person who is not a qualified "
-          "patient."),
+    + ins("C. Effect: This section does not operate unless and until the Medical Psilocybin Act authorizes a person "
+          "who is not a qualified patient to take medical psilocybin in an approved setting under department rule. "
+          "Until that authorization exists, no session may be conducted under this section.") + "<br>"
+    + ins("D. Statutory amendment requested: This section is drafted on the express request that Section 5 of the "
+          "Medical Psilocybin Act be amended. Paragraph (2) of Subsection B of that section exempts from criminal and "
+          "civil liability a clinician administering or a qualified patient taking psilocybin in an approved setting. "
+          "The amendment requested is to extend that exemption to a practicum participant taking medical psilocybin "
+          "in an approved setting under department rule, and to a certificant or student administering or providing "
+          "medical psilocybin to such a participant. No lesser change reaches this stage of the practicum, because "
+          "Subsection D of Section 5 of the Act protects presence only."),
 ))

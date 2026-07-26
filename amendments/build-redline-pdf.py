@@ -26,7 +26,7 @@ from notes import source_for, review_for       # noqa: E402
 REPO = Path(__file__).resolve().parent.parent
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
 
-VERSION = "v7"
+VERSION = "v8"
 VERSION_DATE = "July 26, 2026"
 OUT_PDF = REPO / ("amendments/7.35.3-practicum-amendments-%s.pdf" % VERSION)
 
@@ -64,22 +64,26 @@ SECTION_TITLES = {
     "7.35.3.18": "Educational requirements for certifying clinicians, practitioners, and facilitators",
     "7.35.3.19": "Practicum requirements for practitioners and facilitators",
     "7.35.3.20": "Requirements for healing centers and other approved locations",
-    "7.35.3.29": "Proposed new section. Practicum participants who are not qualified patients",
+    "7.35.3.29": "Proposed new section, in two versions. Practicum participants who are not qualified patients",
 }
 
 SECTION_INTRO = {
-    "7.35.3.14": "Authorized possession. Amended so that a student may lawfully be provided psilocybin in the first "
-                 "stage of the practicum, and to conform the permit title.",
-    "7.35.3.18": "Educational requirements. The 84-hour total is stated, the New Mexico module is given an hour "
-                 "count, content areas are added to the required topic list, and the permit title is conformed.",
+    "7.35.3.14": "Authorized possession. Subsections A and B are amended so that a practicum participant who is not "
+                 "a qualified patient may lawfully be provided psilocybin under Version 2 of the first practicum "
+                 "stage. The permit name is conformed throughout the section. Nothing here changes who may possess or "
+                 "administer: those acts stay with the licensed provider, the facilitator and the healing center.",
+    "7.35.3.18": "Educational requirements. The 84-hour total is stated in one place, the New Mexico module is given "
+                 "an hour count, eight content areas are added to the required topic list, an incomplete sentence at "
+                 "Subsection F is repaired, and the permit name is conformed throughout the section.",
     "7.35.3.19": "Practicum requirements. The practicum totals, the supervision hours and the practicum sequence are "
                  "amended; independent medical screening, the consultation requirement and the end-of-life checkpoint "
                  "are added; the section is re-lettered A through K.",
     "7.35.3.20": "Requirements for healing centers and other approved locations. The section heading number is "
-                 "corrected and the permit title is conformed in Paragraph (5) of Subsection H. No staffing ratio is "
-                 "changed.",
-    "7.35.3.29": "Proposed new section. The first stage of the practicum, conducted with participants who are not "
-                 "qualified patients.",
+                 "corrected and the permit name is conformed in Paragraph (5) of Subsection H. No staffing ratio is "
+                 "changed, and the qualified student provision is carried forward exactly as the department wrote it.",
+    "7.35.3.29": "The first stage of the practicum, in two versions. Version 1 needs no new section and works under "
+                 "the Medical Psilocybin Act as it stands today. Version 2 is the model the Metz recommendation "
+                 "describes, and Subsection D of it states the statutory amendment that would be required.",
 }
 
 
@@ -137,28 +141,34 @@ def verify():
 # ---------------------------------------------------------------------------
 
 CSS = """
-@page { size: letter landscape; margin: 0.5in 0.5in 0.6in 0.5in;
+@page { size: letter landscape; margin: 0.62in 0.5in 0.6in 0.5in;
+        @top-left { content: ""; font-family: Helvetica, Arial, sans-serif; font-size: 7.4pt; color: #777; }
+        @top-right { content: "Working draft {VERSION}"; font-family: Helvetica, Arial, sans-serif;
+                     font-size: 7.4pt; color: #999; }
         @bottom-center { content: counter(page); } }
 * { box-sizing: border-box; }
 body { font-family: "Times New Roman", Times, Georgia, serif; font-size: 8.7pt;
        line-height: 1.36; color: #111; margin: 0; }
-h1 { font-family: Helvetica, Arial, sans-serif; font-size: 15pt; margin: 0 0 3pt 0; letter-spacing: -0.2pt; }
+h1 { font-family: Helvetica, Arial, sans-serif; font-size: 13.5pt; margin: 0 0 3pt 0; letter-spacing: -0.2pt; }
 .sub { font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; color: #444; margin: 0 0 3pt 0; }
-.cover { border-bottom: 2px solid #111; padding-bottom: 7pt; margin-bottom: 9pt; }
-ul.what { font-family: Helvetica, Arial, sans-serif; font-size: 8.6pt; line-height: 1.5;
-          margin: 0 0 10pt 0; padding-left: 15pt; max-width: 7.6in; }
+.cover { border-bottom: 2px solid #111; padding-bottom: 5pt; margin-bottom: 7pt; }
+ul.what { font-family: Helvetica, Arial, sans-serif; font-size: 8.2pt; line-height: 1.42;
+          margin: 0 0 7pt 0; padding-left: 15pt; max-width: 7.6in; }
 ul.what li { margin-bottom: 2pt; }
-.key { font-family: Helvetica, Arial, sans-serif; font-size: 8.2pt; color: #333;
-       border-top: 0.5px solid #ccc; border-bottom: 0.5px solid #ccc; padding: 5pt 0; margin: 0 0 10pt 0; }
+.key { font-family: Helvetica, Arial, sans-serif; font-size: 7.9pt; color: #333;
+       border-top: 0.5px solid #ccc; border-bottom: 0.5px solid #ccc; padding: 4pt 0; margin: 0 0 7pt 0; }
 p.tnote { font-family: Helvetica, Arial, sans-serif; font-size: 7.5pt; color: #555; margin: 0; max-width: 6.6in; }
-h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 0 0 6pt 0;
+h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 0 0 5pt 0;
      padding: 3pt 0; border-top: 1.5px solid #111; border-bottom: 0.5px solid #111; break-after: avoid; }
-h2.sec { break-before: page; }
+section.rr { break-before: page; }
+h2.sec { break-before: avoid; }
 h2 .ttl { font-weight: normal; color: #555; font-size: 9pt; }
 p.intro { font-family: Helvetica, Arial, sans-serif; font-size: 8.1pt; line-height: 1.5; color: #333;
           margin: 0 0 8pt 0; padding-left: 8pt; border-left: 2.5px solid #bbb; break-after: avoid; }
 table.rl { width: 100%; border-collapse: collapse; }
-table.rl tr { break-inside: avoid; }
+table.rl tr { break-inside: auto; }
+.label { break-after: avoid; }
+.prov, .review { break-inside: auto; }
 table.rl th { font-family: Helvetica, Arial, sans-serif; font-size: 7.6pt; text-transform: uppercase;
               letter-spacing: 0.4pt; color: #333; text-align: left; padding: 5pt 9pt 6pt 9pt;
               border-bottom: 1px solid #999; width: 50%; vertical-align: top; }
@@ -187,7 +197,7 @@ del { text-decoration: line-through; color: #9b1c1c; }
 .review b { color: #c0392b; font-weight: bold; letter-spacing: 0.3pt; }
 table.hrs { border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; font-size: 8.2pt;
             margin: 0 0 6pt 0; break-inside: avoid; }
-table.hrs th, table.hrs td { border: 0.5px solid #bbb; padding: 2.2pt 9pt; text-align: left; }
+table.hrs th, table.hrs td { border: 0.5px solid #bbb; padding: 1.9pt 9pt; text-align: left; }
 table.hrs th { background: #f2f2f2; font-size: 7.6pt; text-transform: uppercase; letter-spacing: 0.3pt; }
 table.hrs td.n { text-align: right; white-space: nowrap; }
 table.hrs tr.band td { background: #f2f2f2; font-weight: bold; border-top: 1.5px solid #111; }
@@ -200,6 +210,32 @@ table.dep td.flag { color: #9b1c1c; }
 .foot { margin-top: 14pt; border-top: 1.5px solid #111; padding-top: 8pt;
         font-family: Helvetica, Arial, sans-serif; font-size: 7.7pt; line-height: 1.5; color: #444; }
 """
+
+
+# Running header in the top-left margin of every page. A named page per section
+# means a page carries the identity of the section it belongs to, and Chromium
+# reproduces that in the margin box on every page the section spans.
+RUNNING = [
+    ("s14", "7.35.3.14", "Authorized possession, purchase, or sale of medical psilocybin"),
+    ("s18", "7.35.3.18", "Educational requirements"),
+    ("s19", "7.35.3.19", "Practicum requirements"),
+    ("s20", "7.35.3.20", "Requirements for healing centers and other approved locations"),
+    ("s29", "7.35.3.29", "Proposed new section, practicum participants who are not qualified patients"),
+    ("adA", "Addendum A", "Provisions on which the practicum operates"),
+    ("adB", "Addendum B", "Terms used in Part 3 and defined nowhere"),
+    ("adC", "Addendum C", "The permit name, and every place the renaming reaches"),
+    ("adD", "Addendum D", "Sections not addressed"),
+]
+
+SECTION_CLASS = {sec: cls for cls, sec, _ in RUNNING if sec.startswith("7.")}
+
+
+def running_css():
+    out = []
+    for cls, label, title in RUNNING:
+        out.append('@page %s { @top-left { content: "%s  %s"; } }' % (cls, label, title))
+        out.append('section.%s { page: %s; }' % (cls, cls))
+    return "\n".join(out)
 
 
 def _fresh(t, i):
@@ -245,20 +281,23 @@ HEAD = """
 
 <ul class="what">
 <li>This document analyzes the recommendation of Dr. Anne Metz to the Training and Education Committee dated
-July 17, 2026, and states it as amendment language against the proposed rule published July 23, 2026, for the
-committee's consideration.</li>
+July 17, 2026, and states it as amendment language against the proposed rule published July 23, 2026. The working
+redline of Denali Wilson dated July 25, 2026 is folded in, and provisions taken from it are cited to her.</li>
 <li>It covers 7.35.3.19, practicum requirements, and the three provisions on which the practicum depends:
 7.35.3.18, educational requirements; 7.35.3.14, authorized possession; and Paragraph (5) of Subsection H of
 7.35.3.20, staffing ratios. One new section is proposed; no other provision of Part 3 is addressed.</li>
-<li>The working redline of Denali Wilson dated July 25, 2026 is folded in. Provisions taken from it are cited to
-her. Where she and the Metz recommendation diverge, both are shown and the question is stated.</li>
-<li>Recommendation 1 of the Metz recommendation, retitling "practitioner" as "licensed provider", is carried through.
-The retitle is marked wherever it falls inside a provision reproduced here. Addendum C maps every other place in
-7.35.3 NMAC and 7.35.2 NMAC that a conforming amendment would have to reach.</li>
-<li>The Metz recommendation states several requirements as ranges. This draft adopts the low end of each range and
-marks it, so that the committee may raise it.</li>
-<li>Each proposed change carries a citation to its source. Where the rule as published is unclear, the published
-text is left as it stands and the question is stated at that provision.</li>
+<li>Recommendation 1 of the Metz recommendation renames the practitioner permit to licensed provider. The renaming
+is carried through and marked <del>practitioner</del> <ins>licensed provider</ins> wherever it falls inside a
+provision reproduced here. Addendum C counts every other place in 7.35.3 NMAC and 7.35.2 NMAC that a conforming
+amendment would have to reach, so the committee can see the whole extent of it before adopting it.</li>
+<li><b>Two decisions are put to the committee as drafted alternatives, not as questions.</b> Paragraph (1) of
+Subsection D of 7.35.3.19 is drafted in two versions. Version 1 operates under the Medical Psilocybin Act exactly as
+it stands today and needs no new section. Version 2 is the model the Metz recommendation describes and cannot operate
+until the Act is amended; proposed 7.35.3.29 states the amendment requested in its own subsection. The practicum
+total is 62 and 72 hours under either version.</li>
+<li>Where a source states a range, this draft adopts the low end and marks it, so that the committee may raise it.
+Where the rule as published is unclear, the published text is left exactly as it stands and the choice is set out at
+that provision. No figure appears anywhere in this draft that is not carried by a cited source.</li>
 </ul>
 
 <div class="key">
@@ -276,13 +315,13 @@ text is left as it stands and the question is stated at that provision.</li>
 <tr><td>Role-specific module</td><td class="n">5</td><td class="n">5</td><td class="n">0</td></tr>
 <tr><td><b>Module total, either permit</b></td><td class="n"><b>40</b></td><td class="n"><b>84</b></td><td class="n"><b>+44</b></td></tr>
 <tr><td>Practicum, facilitator</td><td class="n">100</td><td class="n">62</td><td class="n">&minus;38</td></tr>
-<tr><td>Practicum, practitioner</td><td class="n">120</td><td class="n">72</td><td class="n">&minus;48</td></tr>
+<tr><td>Practicum, licensed provider</td><td class="n">120</td><td class="n">72</td><td class="n">&minus;48</td></tr>
 <tr><td>Supervision or consultation</td><td class="n">10</td><td class="n">20</td><td class="n">+10</td></tr>
 <tr class="band"><td>Program total, facilitator</td><td class="n">150</td><td class="n">166</td><td class="n">+16</td></tr>
-<tr class="band"><td>Program total, practitioner</td><td class="n">170</td><td class="n">176</td><td class="n">+6</td></tr>
+<tr class="band"><td>Program total, licensed provider</td><td class="n">170</td><td class="n">176</td><td class="n">+6</td></tr>
 </table>
-<p class="tnote">The practitioner rows take the 20 supervision hours in 7.35.3.19 C to be within the published 120.
-See 7.35.3.19 C.</p>
+<p class="tnote">The licensed provider rows take the 20 supervision hours in 7.35.3.19 C to be within the published
+120. On the other reading of that subsection the published total is 190. Both readings are set out at 7.35.3.19 C.</p>
 """
 
 
@@ -292,8 +331,9 @@ def build_body():
     for section, sub, published, proposed in P:
         if section != current:
             if current is not None:
-                rows.append("</table>")
+                rows.append("</table></section>")
             current = section
+            rows.append('<section class="rr %s">' % SECTION_CLASS[section])
             rows.append('<h2 class="sec">%s <span class="ttl">%s</span></h2>' % (section, SECTION_TITLES[section]))
             if section in SECTION_INTRO:
                 rows.append('<p class="intro">%s</p>' % SECTION_INTRO[section])
@@ -320,16 +360,17 @@ def build_body():
             extra += '<div class="review"><b>Please review.</b> %s</div>' % render_note(rev)
         rows.append('<tr><td class="left"><div class="label">%s</div>%s</td>'
                     '<td><div class="label">%s</div>%s%s</td></tr>' % (label, left, label, right, extra))
-    rows.append("</table>")
+    rows.append("</table></section>")
     return "\n".join(rows)
 
 
 ADDENDA = """
+<section class="rr adA">
 <h2 class="sec">Addendum A <span class="ttl">Provisions on which the practicum operates</span></h2>
 <p class="intro">Provisions on which 7.35.3.19 operates, and whether this draft amends each.</p>
 <table class="dep">
 <tr><th>Provision</th><th>Page</th><th>What the practicum needs from it</th><th>In this draft</th></tr>
-<tr><td>7.35.2.7 NMAC</td><td>n/a</td><td>Supplies every defined term used in Part 3, by force of 7.35.3.7</td><td class="flag">Not amended here. The permit retitle would require amending the definition at P(7); 7.35.2 NMAC is a separate rulemaking. Facilitator, healing center, certifying clinician and student are used in Part 3 and defined in neither part. Addenda B and C</td></tr>
+<tr><td>7.35.2.7 NMAC</td><td>n/a</td><td>Supplies every defined term used in Part 3, by force of 7.35.3.7</td><td class="flag">Not amended here. Renaming the permit would require amending the definition at P(7); 7.35.2 NMAC is a separate rulemaking. Facilitator, healing center, certifying clinician and student are used in Part 3 and defined in neither part. Addenda B and C</td></tr>
 <tr><td>Medical Psilocybin Act, Section 5</td><td>n/a</td><td>The criminal and civil exemption. Names producers, clinicians and qualified patients, and protects presence only for anyone else</td><td class="flag">Statute. Not reachable by rule</td></tr>
 <tr><td>7.35.3.9 C(3), E, F</td><td>3</td><td>Certification applications require documentation of the completed practicum, and E(1) sets the practitioner licensure predicate</td><td>Not amended</td></tr>
 <tr><td>7.35.3.10 D</td><td>5</td><td>Out-of-jurisdiction 40-hour practicum waiver</td><td class="flag">Not amended. Disagrees with 7.35.3.19 K</td></tr>
@@ -343,7 +384,7 @@ ADDENDA = """
 <tr><td class="amd">7.35.3.18</td><td>11 to 12</td><td>The didactic requirement the practicum entry gate is measured against</td><td class="amd">AMENDED. Heading and Subsections A, C, E, F and G</td></tr>
 <tr><td class="amd">7.35.3.19</td><td>12 to 13</td><td>The practicum</td><td class="amd">AMENDED. Re-lettered A to K</td></tr>
 <tr><td>7.35.3.20 D</td><td>14</td><td>Students may be present at an administration session</td><td>Not amended</td></tr>
-<tr><td class="amd">7.35.3.20 H(5)</td><td>14</td><td>Staffing ratio, which counts a qualified student</td><td class="amd">AMENDED. Permit title only. No ratio changed</td></tr>
+<tr><td class="amd">7.35.3.20 H(5)</td><td>14</td><td>Staffing ratio, which counts a qualified student</td><td class="amd">AMENDED. Permit name only. No ratio changed</td></tr>
 <tr><td>7.35.3.22</td><td>15</td><td>Prohibitions, reaching "the qualified patient or certificant"</td><td class="flag">Not amended</td></tr>
 <tr><td>7.35.3.27</td><td>16 to 19</td><td>Discipline and appeal</td><td>Not amended</td></tr>
 </table>
@@ -356,13 +397,24 @@ ADDENDA = """
 <tr><td>7.35.3.19 F</td><td>Separates medical screening from the training program overseeing the practicum</td><td>Wilson redline</td><td class="flag">A program may clear its own students for the treatments that generate their hours</td></tr>
 <tr><td>7.35.3.19 H</td><td>20 consultation hours, two presented cases, standardized evaluation form</td><td>Metz recommendation, pages 4 to 5</td><td>7.35.3.17 A survives at 10 hours with no requirement to have seen a client</td></tr>
 <tr><td>7.35.3.19 I</td><td>End-of-life checkpoint</td><td>Metz recommendation, page 5</td><td>No end-of-life competency gate remains</td></tr>
-<tr><td>7.35.3.29</td><td>Practicum participants who are not qualified patients</td><td>Metz recommendation, step 1, page 3</td><td>The first stage of the practicum has no lawful setting</td></tr>
+<tr><td>7.35.3.29<br>Version 2 only</td><td>Lets the first practicum stage run with participants who are not qualified patients, and states the statutory amendment that would be required</td><td>Metz recommendation, step 1, page 3; Medical Psilocybin Act, Section 5</td><td>Version 1 governs, the first stage runs with qualified patients, and no statutory work is needed</td></tr>
 </table>
 <p class="tnote">No training permit is proposed. At the July 17, 2026 Training and Education Committee meeting the
 department stated that a training permit "really wouldn't be necessary with the model that we have" and undertook to
 count students toward the staffing ratio instead. Paragraph (5) of Subsection H of 7.35.3.20 as published does that.
 See the note at that paragraph.</p>
 
+<h2>The one statutory request in this document</h2>
+<p class="intro">Everything else in this draft can be adopted by rule. One thing cannot. If the committee wants the
+first practicum stage to run with well participants, as the Metz recommendation describes, the Medical Psilocybin Act
+has to be amended, and this document asks for that amendment in plain terms rather than leaving it implied.</p>
+<table class="dep">
+<tr><th>What the Act says now</th><th>Why the first stage falls outside it</th><th>The amendment requested</th><th>If it is not pursued</th></tr>
+<tr><td>Paragraph (2) of Subsection B of Section 5 makes lawful the conduct of "a clinician administering or a qualified patient taking psilocybin in an approved setting". Subsection D of the same section protects a person "for simply being in the presence of the medical use of psilocybin"</td><td>A well participant is not a qualified patient, because Subsection H of Section 3 defines a qualified patient by diagnosis with a qualifying condition. Presence is protected; taking psilocybin is not</td><td class="amd">Extend the exemption in Section 5 to a practicum participant taking medical psilocybin in an approved setting under department rule, and to a certificant or student administering or providing it to such a participant</td><td>Adopt Version 1. The first stage runs with qualified patients, the practicum total stays at 62 and 72 hours, and proposed 7.35.3.29 is deleted</td></tr>
+</table>
+
+</section>
+<section class="rr adB">
 <h2 class="sec">Addendum B <span class="ttl">Terms used in Part 3 and defined nowhere</span></h2>
 <p class="intro">7.35.3.7 provides in full: "The definitions in 7.35.2.7 NMAC apply to this part." 7.35.2 NMAC was adopted effective June 23, 2026. The terms below are used in Part 3. Apart from the permit title, no amendment to the definitions is proposed in this document.</p>
 <table class="dep">
@@ -371,22 +423,24 @@ See the note at that paragraph.</p>
 <tr><td><b>Healing center</b></td><td class="flag">No</td><td>"Approved location" means a location approved by the department for psilocybin administration sessions</td><td class="flag">Healing centers are certified and regulated throughout Part 3 with no definition</td></tr>
 <tr><td><b>Certifying clinician</b></td><td class="flag">No</td><td>"Clinician" means an approved health care provider licensed in New Mexico who holds a certification from the department to provide medical services to qualified patients</td><td>Probably the same role renamed</td></tr>
 <tr><td><b>Student</b></td><td class="flag">No</td><td>Nothing</td><td class="flag">Carries consequence at 7.35.3.19, 7.35.3.20 D and 7.35.3.20 H(5)</td></tr>
-<tr><td>Practitioner</td><td>Yes</td><td>"Practitioner" means an individual who is a licensed healthcare professional who is certified by the department to provide medical psilocybin integrative therapy, supervise guides, and who has completed department required trainings</td><td class="amd">Carries the same licensure predicate as the Act's "clinician". Retitled by this draft. Addendum C</td></tr>
+<tr><td>Practitioner</td><td>Yes</td><td>"Practitioner" means an individual who is a licensed healthcare professional who is certified by the department to provide medical psilocybin integrative therapy, supervise guides, and who has completed department required trainings</td><td class="amd">Carries the same licensure predicate as the Act's "clinician". Renamed by this draft. Addendum C</td></tr>
 </table>
 
-<h2 class="sec">Addendum C <span class="ttl">The permit title, and every place a retitle reaches</span></h2>
-<p class="intro">Recommendation 1 of the Metz recommendation, page 1, proposes retitling "Practitioner" as "Licensed
-Provider". This draft carries the retitle. It is marked <del>practitioner</del> <ins>licensed provider</ins> wherever
+</section>
+<section class="rr adC">
+<h2 class="sec">Addendum C <span class="ttl">The permit name, and every place the renaming reaches</span></h2>
+<p class="intro">Recommendation 1 of the Metz recommendation, page 1, renames the practitioner permit to licensed provider. This draft
+carries the renaming. It is marked <del>practitioner</del> <ins>licensed provider</ins> wherever
 it falls inside a provision reproduced in this document. The term is defined at Paragraph (7) of Subsection P of
-7.35.2.7 NMAC, and 7.35.3.7 NMAC provides in full: "The definitions in 7.35.2.7 NMAC apply to this part." A retitle
-is therefore an amendment to 7.35.2 NMAC plus a conforming pass over 7.35.3 NMAC. The tables below count every
+7.35.2.7 NMAC, and 7.35.3.7 NMAC provides in full: "The definitions in 7.35.2.7 NMAC apply to this part." Renaming
+the permit is therefore an amendment to 7.35.2 NMAC plus a conforming pass over 7.35.3 NMAC. The tables below count every
 occurrence in both parts, so that the committee can see the whole surface.</p>
 <p class="tnote">Two drafting notes. First, the Metz recommendation writes "Licensed Provider" in title case; this
 draft writes "licensed provider" in lower case, because the rule as published writes "practitioner" in lower case
-except in headings and at the start of a subsection. Second, the retitle reaches no hour count and no practicum
+except in headings and at the start of a subsection. Second, the renaming reaches no hour count and no practicum
 requirement. Those attach to the permit type, and what the permit is turns on the licensure predicate at Paragraph (1)
 of Subsection E of 7.35.3.9 NMAC, which already requires a New Mexico professional license. Adopting or declining the
-retitle changes nothing else in this document.</p>
+renaming changes nothing else in this document.</p>
 <table class="dep">
 <tr><th>7.35.3 NMAC, section</th><th>Occurrences</th><th>Reached by this draft</th><th>Note</th></tr>
 <tr><td>Part title</td><td>1</td><td class="flag">No</td><td>"PART 3 PATIENTS, CERTIFYING CLINICIANS, PRACTITIONERS, FACILITATORS, HEALING CENTERS, OTHER APPROVED LOCATIONS, AND EDUCATIONAL PROGRAMS"</td></tr>
@@ -417,13 +471,15 @@ retitle changes nothing else in this document.</p>
 <tr><td>7.35.2.26 Disciplinary actions</td><td>1</td><td class="flag">No</td><td></td></tr>
 <tr class="band"><td><b>Total, 7.35.2 NMAC</b></td><td><b>12</b></td><td><b>0 reached</b></td><td>7.35.2 NMAC was adopted effective June 23, 2026 and is not before this hearing</td></tr>
 </table>
-<div class="review"><b>Please review.</b> The retitle is all or nothing. If it is adopted, the conforming amendment has
+<div class="review"><b>Please review.</b> The renaming is all or nothing. If it is adopted, the conforming amendment has
 to reach all 66 occurrences in 7.35.3 NMAC and all 12 in 7.35.2 NMAC, including the definition at Paragraph (7) of
-Subsection P of 7.35.2.7 NMAC. This document reaches 29. If the committee adopts the retitle, the remaining 49 are a
+Subsection P of 7.35.2.7 NMAC. This document reaches 29. If the committee adopts the renaming, the remaining 49 are a
 conforming pass, and 7.35.2 NMAC is a separate rulemaking. If the committee declines it, strike every
 <del>practitioner</del> <ins>licensed provider</ins> mark in this document; nothing else in the document depends on
 it.</div>
 
+</section>
+<section class="rr adD">
 <h2 class="sec">Addendum D <span class="ttl">Sections not addressed</span></h2>
 <p class="intro">Part 3 has twenty-eight sections. This draft addresses the practicum and the provisions on which it operates. The sections below are not addressed. Findings are recorded in the concerns inventory of July 23, 2026, which lists five blocking and twenty-three material findings across the part.</p>
 <table class="dep">
@@ -435,6 +491,7 @@ it.</div>
 <tr><td>Patients, applicants, process</td><td>7.35.3.8, .9, .13, .22 to .27</td><td>Facilitator scope conflicts with the practicum and the ratios; complainants lose confidentiality; the benefit-risk attestation; renewals can lapse while pending; the re-application clause reads as a deadline; two review tracks with inconsistent scope; a suspended certificant can be out of practice more than 135 days</td></tr>
 <tr><td>Mechanical</td><td>Throughout</td><td>Five section headings read 7.34.3 instead of 7.35.3, two of which are corrected here; two sections carry a real effective date while the rest carry placeholders; a numbering gap at 7.35.3.9 D</td></tr>
 </table>
+</section>
 """
 
 FOOT = """
@@ -444,8 +501,9 @@ Metz, <i>Recommendations on Education and Training Requirements for Facilitators
 2026, with the one-page summary and the committee slide deck of the same date. Working redline: Denali Wilson,
 <i>NMAC 7.35.3</i>, July 25, 2026, tracked changes and comments as exported from the document file. July 17, 2026 transcripts, morning
 Advisory Board and afternoon Training and Education Committee, both labeled "UNOFFICIAL AUTO-GENERATED TRANSCRIPT.
-NO SPEAKER ATTRIBUTION." Medical Psilocybin Act, Senate Bill 219, 2025, as introduced; the enacted text at Sections
-26-2D-1 through -11 NMSA 1978 has not been checked against it. 7.35.2 NMAC as adopted effective June 23, 2026.<br><br>
+NO SPEAKER ATTRIBUTION." Statute: the Medical Psilocybin Act, cited throughout by its own section numbers. The text
+consulted is the Act as passed in the 2025 regular session; its codification in NMSA 1978 has not been verified and no
+NMSA section number is asserted anywhere in this document. 7.35.2 NMAC as adopted effective June 23, 2026.<br><br>
 <b>Method.</b> The left column reproduces the rule as published, verbatim, with line breaks introduced by the PDF
 collapsed to single spaces and no other alteration. Each block was checked against the text layer of the published
 rule.<br><br>
@@ -465,10 +523,11 @@ def main():
 
     head = HEAD.replace("{VERSION}", VERSION).replace("{VERSION_DATE}", VERSION_DATE)
     foot = FOOT.replace("{VERSION}", VERSION)
+    css = CSS.replace("{VERSION}", VERSION) + "\n" + running_css()
     doc = ("<!doctype html><html><head><meta charset='utf-8'>"
            "<title>7.35.3 NMAC practicum amendments %s</title>"
            "<style>%s</style></head><body>%s%s%s%s</body></html>"
-           % (VERSION, CSS, head, build_body(), ADDENDA, foot))
+           % (VERSION, css, head, build_body(), ADDENDA, foot))
 
     tmp = Path(tempfile.mkdtemp()) / "redline.html"
     tmp.write_text(doc, encoding="utf-8")

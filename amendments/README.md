@@ -6,7 +6,11 @@ Drafting folder for proposed amendments to the medical psilocybin rule published
 
 **Out of scope by decision:** the controlled-substance number requirement for certifying clinicians.
 
-**Permit title:** the draft carries Recommendation 1 of the Metz recommendation and retitles "practitioner" as "licensed provider." The retitle is marked as a change wherever it falls inside a provision the document reproduces. Addendum C of the document maps every other place it would have to reach: 66 occurrences in 7.35.3 NMAC, of which the draft conforms 29, and 12 in 7.35.2 NMAC, which is a separate rulemaking. The title is held as a variable in `build-redline-pdf.py`; setting `RETITLE = False` reverts the whole document in one pass.
+**Permit name:** the draft carries Recommendation 1 of the Metz recommendation, which renames the practitioner permit to licensed provider. The renaming is marked as a change wherever it falls inside a provision the document reproduces. Addendum C counts every other place it would have to reach: 66 occurrences in 7.35.3 NMAC, of which the draft conforms 29, and 12 in 7.35.2 NMAC, which is already adopted and would be a separate rulemaking. The name is held as a variable in `build-redline-pdf.py`; setting `RETITLE = False` reverts the whole document in one pass.
+
+**One statutory request, and a version that avoids it.** Paragraph (1) of Subsection D of 7.35.3.19 is drafted in two versions. Version 1 operates under the Medical Psilocybin Act exactly as it stands today and needs no new section. Version 2 is the model the Metz recommendation describes and cannot operate until the Act is amended; proposed 7.35.3.29 states the amendment requested in its own Subsection D. The practicum total is 62 and 72 hours under either version.
+
+**Citation form:** the statute is cited as the Medical Psilocybin Act by its own section numbers. The bill number is not used in the document, and no NMSA 1978 section number is asserted anywhere, because the codification has not been verified here.
 
 **No training permit is proposed.** At the July 17, 2026 Training and Education Committee meeting the department stated that a training permit "really wouldn't be necessary with the model that we have" and undertook to count students toward the staffing ratio instead. Paragraph (5) of Subsection H of 7.35.3.20 as published does that, through the "qualified student" definition. The phrase "training permit" appears nowhere in the rule as published.
 
@@ -14,7 +18,8 @@ Drafting folder for proposed amendments to the medical psilocybin rule published
 
 | File | What it is |
 |---|---|
-| `7.35.3-practicum-amendments-v7.pdf` | The document. Side-by-side redline plus four addenda |
+| `7.35.3-practicum-amendments-v8.pdf` | The document. Side-by-side redline plus four addenda. Every page carries a running header naming the section or addendum it belongs to |
+| `SOURCE-OF-TRUTH.md` | The settled facts, cited, for the session that edits `docs/`. If a site page disagrees with it, the page is wrong |
 | `content.py` | Published text and proposed amendment, provision by provision |
 | `notes.py` | Citation and review note for each change |
 | `build-redline-pdf.py` | Builds the PDF. Aborts unless every left-column block matches the published rule by exact contiguous match |
@@ -44,7 +49,7 @@ Where the Metz recommendation states a range, the low end is drafted and marked 
 
 The licensed provider rows take the 20 supervision hours in 7.35.3.19 C to be within the published 120. On the other reading of that subsection the published total is 190. Stated at 7.35.3.19 C.
 
-The retitle reaches no hour count. Adopting or declining it changes nothing in this table.
+The renaming reaches no hour count. Adopting or declining it changes nothing in this table.
 
 ## Conventions
 
@@ -68,7 +73,7 @@ spellings, and the constraints. Both supersede `HANDOFF.md`, which has been dele
 - `Document Register/NMAC-7.35.3-Wilson-redline-2026-07-25.docx`, the Denali Wilson working redline of July 25, 2026, with `source-text/wilson-redline-2026-07-25.txt` and `source-text/wilson-redline-2026-07-25-comments.txt` as the extracted tracked changes and comments
 - `source-text/NMMPAB-2026-07-17-board-transcript.txt` and `source-text/NMMPAB-2026-07-17-committee-transcript.txt`
 - `analysis/july23-rule-concerns.md`, `analysis/july23-published-delta.md`, `analysis/july17-to-july23-state-diff.md`
-- `Document Register/SB0219-Medical-Psilocybin-Act-2025.pdf`, Senate Bill 219, 57th Legislature, First Session, 2025, as introduced. The enacted text at Sections 26-2D-1 through -11 NMSA 1978 has not been checked against it
+- `Document Register/SB0219-Medical-Psilocybin-Act-2025.pdf`, the Medical Psilocybin Act as passed in the 2025 regular session. Section 1 provides that Sections 1 through 11 may be cited as the Medical Psilocybin Act, and the document cites those section numbers. The codification in NMSA 1978 has not been verified and is not asserted
 - `source-text/7.35.2-NMAC-adopted-2026-06-23.txt`, 7.35.2 NMAC as adopted effective June 23, 2026, retrieved July 25, 2026. This is the part that supplies every defined term used in Part 3
 
 Nothing in `docs/` was modified by this work.

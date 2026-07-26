@@ -246,7 +246,7 @@ for q in harvest():
     check("QUOTE", '"%s"' % q[:70], bool(hits), hits[0] if hits else "found in no source")
 
 # ---------------------------------------------------------------------------
-# TITLE: the permit-title retitle surface stated in Addendum C
+# TITLE: the permit-name surface stated in Addendum C
 # ---------------------------------------------------------------------------
 
 TERM = re.compile(r"(?i)practitioner")
@@ -348,6 +348,88 @@ for section, sub, published, proposed in P:
     hit = any(section == sec and sub.startswith(key) for (sec, key) in SOURCE)
     check("COVER", "%s %s carries a citation" % (section, sub), hit)
 
+
+# ---------------------------------------------------------------------------
+# PROSE: no unfinished sentence anywhere in the notes or the addenda
+# ---------------------------------------------------------------------------
+
+NUL = "\x00"
+
+# Short forms that are complete as written: citation labels and field values,
+# not prose. Anything not on this list has to stand as a full sentence.
+LABELS = {
+    "two changes", "not amended", "re-lettered", "correction", "arithmetic",
+    "permit name only", "addendum c", "sources", "method", "status",
+    "two matters", "three points", "the columns", "one thing cannot",
+    "consequential on proposed 7.35.3.29",
+    "metz recommendation, page 1, recommendation 1",
+    "from the wilson redline", "rule hearing august 28, 2026",
+    "two drafting notes", "this document reaches 29", "please review",
+    "working draft v8", "renamed by this draft",
+}
+
+
+def prose_sentences(txt):
+    txt = re.sub(r"<[^>]+>", " ", txt)
+    txt = re.sub(r"\s+", " ", txt).strip()
+    for a in ["Dr.", "Ms.", "Mr.", "No.", "e.g.", "i.e."]:
+        txt = txt.replace(a, a.replace(".", NUL))
+    txt = re.sub(r"(\d)\.(?=\d)", lambda m: m.group(1) + NUL, txt)
+    return [s.replace(NUL, ".").strip()
+            for s in re.split(r"(?<=[.?!])\s+", txt) if s.strip()]
+
+
+def unfinished(txt):
+    out = []
+    for s in prose_sentences(txt):
+        words = re.findall(r"[A-Za-z][A-Za-z'\u2019-]*", s)
+        stem = re.sub(r"[.?!\u201d\"]+$", "", s).strip().lower()
+        if stem in LABELS:
+            continue
+        if len(words) < 5:
+            out.append("too short: %s" % s)
+        elif s.endswith("?") and len(words) < 9:
+            out.append("bare question: %s" % s)
+    return out
+
+
+build_src = (REPO / "amendments/build-redline-pdf.py").read_text(encoding="utf-8")
+for d, nm in ((SOURCE, "source note"), (REVIEW, "review note")):
+    for (sec, key), v in d.items():
+        problems = unfinished(v)
+        check("PROSE", "%s, %s %s, every sentence is complete" % (nm, sec, key[:38]),
+              not problems, "; ".join(problems)[:150] if problems else "ok")
+
+# Prose blocks of the document. Table cells are field values, not prose, so the
+# tables are stripped before the check runs.
+for name in ("HEAD", "FOOT"):
+    m = re.search(r'^%s = """(.*?)"""' % name, build_src, re.S | re.M)
+    problems = unfinished(m.group(1).replace("{VERSION}", "v8"))
+    check("PROSE", "%s, every sentence is complete" % name, not problems,
+          "; ".join(problems)[:150] if problems else "ok")
+
+m = re.search(r'^ADDENDA = """(.*?)"""', build_src, re.S | re.M)
+addenda_prose = re.sub(r"<table.*?</table>", " ", m.group(1), flags=re.S)
+problems = unfinished(addenda_prose)
+check("PROSE", "the addenda, every sentence outside the tables is complete", not problems,
+      "; ".join(problems)[:150] if problems else "ok")
+
+# Every review note has to say who decides or what the choice is.
+DECIDER = re.compile(r"(?i)the committee|the department|Dr\. Metz|Ms\. Wilson|Dr\. Leeman|should")
+for (sec, key), v in REVIEW.items():
+    check("PROSE", "review note, %s %s, names who decides" % (sec, key[:38]),
+          bool(DECIDER.search(v)), "no decider named" if not DECIDER.search(v) else "ok")
+
+# The bill must not be cited by its bill number, and no NMSA section asserted.
+for bad in ("Senate Bill 219", "SB 219", "SB0219", "26-2D"):
+    hits = []
+    for d in (SOURCE, REVIEW):
+        hits += [k for k, v in d.items() if bad in v]
+    body = re.sub(r"^SRC = \{.*?\n\}", "", build_src, flags=re.S)
+    in_doc = bad in re.sub(r"consulted is the Act[^<]*", "", body)
+    check("PROSE", 'the document does not cite the statute as "%s"' % bad,
+          not hits and not in_doc, "%d notes" % len(hits) if hits else "ok")
+
 # ---------------------------------------------------------------------------
 # Report
 # ---------------------------------------------------------------------------
@@ -358,14 +440,15 @@ def main():
     for cls, claim, ok, detail in results:
         by.setdefault(cls, []).append((claim, ok, detail))
     lines = ["# Audit", "",
-             "Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. "
+             "Machine-checked claims in `7.35.3-practicum-amendments-v8.pdf`. "
              "Regenerate with `python3 amendments/audit.py`.", "",
              "| Class | Checks | Passed |", "|---|---|---|"]
-    order = ["RULE", "QUOTE", "MATH", "TITLE", "COVER"]
+    order = ["RULE", "QUOTE", "MATH", "TITLE", "PROSE", "COVER"]
     label = {"RULE": "Published text reproduced verbatim",
              "QUOTE": "Quotations against their source",
              "MATH": "Arithmetic",
-             "TITLE": "The permit-title surface in Addendum C",
+             "TITLE": "The permit-name surface in Addendum C",
+             "PROSE": "No unfinished sentence, and every review note names who decides",
              "COVER": "Every change carries a citation"}
     for cls in order:
         rows = by.get(cls, [])

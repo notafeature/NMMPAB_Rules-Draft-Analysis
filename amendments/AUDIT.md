@@ -1,15 +1,16 @@
 # Audit
 
-Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. Regenerate with `python3 amendments/audit.py`.
+Machine-checked claims in `7.35.3-practicum-amendments-v8.pdf`. Regenerate with `python3 amendments/audit.py`.
 
 | Class | Checks | Passed |
 |---|---|---|
 | Published text reproduced verbatim | 45 | 45 |
-| Quotations against their source | 45 | 45 |
+| Quotations against their source | 51 | 51 |
 | Arithmetic | 26 | 26 |
-| The permit-title surface in Addendum C | 33 | 33 |
-| Every change carries a citation | 27 | 27 |
-| **Total** | **176** | **176** |
+| The permit-name surface in Addendum C | 33 | 33 |
+| No unfinished sentence, and every review note names who decides | 61 | 61 |
+| Every change carries a citation | 28 | 28 |
+| **Total** | **244** | **244** |
 
 ## Published text reproduced verbatim
 
@@ -97,18 +98,24 @@ Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. Regenerate with 
 | pass | "Component ranges are illustrative; the binding minimum is the total." | Metz recommendation |
 | pass | "Guide" | 7.35.2 NMAC |
 | pass | "Licensed Provider" | Metz recommendation |
+| pass | "Names of facilitators supervised by practitioner students during pract" | published rule |
 | pass | "Practitioner" | published rule |
 | pass | "Supervisory hours, Licensed Providers only (10 hours)." | Metz recommendation |
 | pass | "an approved supervisor at an approved location can host practicum stud" | Metz recommendation |
 | pass | "approximately 62 hours for Facilitators (steps 1-3); approximately 72 " | Metz recommendation |
+| pass | "as them being a registered student with an educational program where t" | committee transcript |
 | pass | "certification" | published rule |
 | pass | "clinician" | published rule |
+| pass | "experience, observe, or conduct (when licensure allows) preparation or" | published rule |
+| pass | "for simply being in the presence of the medical use of psilocybin" | Medical Psilocybin Act |
 | pass | "guide" | 7.35.2 NMAC |
 | pass | "licensed provider" | committee transcript |
 | pass | "practitioner" | published rule |
-| pass | "qualified student" | published rule |
 | pass | "rather than needing to create an entire other permit or certification " | committee transcript |
+| pass | "registered with the department." | 7.35.2 NMAC |
+| pass | "students completing their practicums" | published rule |
 | pass | "the qualified patient or certificant" | published rule |
+| pass | "those students already will have that kind of protection ability to be" | committee transcript |
 | pass | "training permit" | Metz recommendation |
 
 ## Arithmetic
@@ -142,7 +149,7 @@ Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. Regenerate with 
 | pass | the Metz recommendation states approximately 12 hours for that step | Metz recommendation, pages 3 to 4 |
 | pass | 7.35.3.19 H drafts 20 |  |
 
-## The permit-title surface in Addendum C
+## The permit-name surface in Addendum C
 
 | Result | Claim | Checked against |
 |---|---|---|
@@ -180,6 +187,72 @@ Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. Regenerate with 
 | pass | 49 occurrences remain across both parts | 49 |
 | pass | no unmarked permit title survives in the proposed column | none |
 
+## No unfinished sentence, and every review note names who decides
+
+| Result | Claim | Checked against |
+|---|---|---|
+| pass | source note, 7.35.3.14 Section heading, every sentence is complete | ok |
+| pass | source note, 7.35.3.14 Subsection A, every sentence is complete | ok |
+| pass | source note, 7.35.3.14 Subsection B, every sentence is complete | ok |
+| pass | source note, 7.35.3.14 Subsection C, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Section heading, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection A, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection C, {{PT_C}} and facilitator, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection C, required topics, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection E, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection F, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection G, every sentence is complete | ok |
+| pass | source note, 7.35.3.18 Subsection H, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Section heading, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection A, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection B, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection C, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection D, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection E, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection F, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection G, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection H, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection I, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection J, every sentence is complete | ok |
+| pass | source note, 7.35.3.19 Subsection K, every sentence is complete | ok |
+| pass | source note, 7.35.3.20 Section heading, every sentence is complete | ok |
+| pass | source note, 7.35.3.20 Subsection H(5), every sentence is complete | ok |
+| pass | source note, 7.35.3.29 Version 1, every sentence is complete | ok |
+| pass | source note, 7.35.3.29 Version 2, every sentence is complete | ok |
+| pass | review note, 7.35.3.14 Subsection C, every sentence is complete | ok |
+| pass | review note, 7.35.3.18 Subsection A, every sentence is complete | ok |
+| pass | review note, 7.35.3.18 Subsection C, {{PT_C}} and facilitator, every sentence is complete | ok |
+| pass | review note, 7.35.3.18 Subsection C, required topics, every sentence is complete | ok |
+| pass | review note, 7.35.3.19 Subsection A, every sentence is complete | ok |
+| pass | review note, 7.35.3.19 Subsection C, every sentence is complete | ok |
+| pass | review note, 7.35.3.19 Subsection D, every sentence is complete | ok |
+| pass | review note, 7.35.3.19 Subsection F, every sentence is complete | ok |
+| pass | review note, 7.35.3.19 Subsection H, every sentence is complete | ok |
+| pass | review note, 7.35.3.19 Subsection K, every sentence is complete | ok |
+| pass | review note, 7.35.3.20 Subsection H(5), every sentence is complete | ok |
+| pass | review note, 7.35.3.29 Version 1, every sentence is complete | ok |
+| pass | review note, 7.35.3.29 Version 2, every sentence is complete | ok |
+| pass | HEAD, every sentence is complete | ok |
+| pass | FOOT, every sentence is complete | ok |
+| pass | the addenda, every sentence outside the tables is complete | ok |
+| pass | review note, 7.35.3.14 Subsection C, names who decides | ok |
+| pass | review note, 7.35.3.18 Subsection A, names who decides | ok |
+| pass | review note, 7.35.3.18 Subsection C, {{PT_C}} and facilitator, names who decides | ok |
+| pass | review note, 7.35.3.18 Subsection C, required topics, names who decides | ok |
+| pass | review note, 7.35.3.19 Subsection A, names who decides | ok |
+| pass | review note, 7.35.3.19 Subsection C, names who decides | ok |
+| pass | review note, 7.35.3.19 Subsection D, names who decides | ok |
+| pass | review note, 7.35.3.19 Subsection F, names who decides | ok |
+| pass | review note, 7.35.3.19 Subsection H, names who decides | ok |
+| pass | review note, 7.35.3.19 Subsection K, names who decides | ok |
+| pass | review note, 7.35.3.20 Subsection H(5), names who decides | ok |
+| pass | review note, 7.35.3.29 Version 1, names who decides | ok |
+| pass | review note, 7.35.3.29 Version 2, names who decides | ok |
+| pass | the document does not cite the statute as "Senate Bill 219" | ok |
+| pass | the document does not cite the statute as "SB 219" | ok |
+| pass | the document does not cite the statute as "SB0219" | ok |
+| pass | the document does not cite the statute as "26-2D" | ok |
+
 ## Every change carries a citation
 
 | Result | Claim | Checked against |
@@ -210,4 +283,5 @@ Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. Regenerate with 
 | pass | 7.35.3.19 Subsection K, waiver for applications received by December 31, 2027 (published Subsection G) carries a citation |  |
 | pass | 7.35.3.20 Section heading and lead-in carries a citation |  |
 | pass | 7.35.3.20 Subsection H(5), staffing ratios carries a citation |  |
-| pass | 7.35.3.29 Entire section, practicum participants who are not qualified patients carries a citation |  |
+| pass | 7.35.3.29 Version 1, no new section required carries a citation |  |
+| pass | 7.35.3.29 Version 2, new section conditioned on a statutory amendment carries a citation |  |
