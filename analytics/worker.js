@@ -140,6 +140,19 @@ async function record(request, env, ctx, { kind, path, ref, nojs, siteHost }) {
   const day = utcDay(now);
   const cf = request.cf || {};
   const org = String(cf.asOrganization || "").slice(0, 120);
+  const net = classifyNetwork(org);
+
+  // Drop datacenter traffic. A newly registered domain gets swept by
+  // vulnerability scanners within minutes, and the ones that render pages run
+  // the counter script and arrive looking like readers. The first two rows
+  // this counter ever recorded were exactly that, from AWS, alongside probes
+  // for /.ssh/id_rsa and /backup.zip in the same minute.
+  //
+  // The cost is that a reader behind a commercial VPN is not counted either.
+  // That is the right trade here: the readers this exists to detect are on
+  // office and home networks, and an uncounted reader is better than a
+  // scanner counted as one.
+  if (net === "hosting") return;
 
   await env.DB.prepare(
     "INSERT INTO hits (ts,day,kind,path,visitor,ref_host,country,asn,as_org,net_kind,nojs,site_host) " +
@@ -154,7 +167,7 @@ async function record(request, env, ctx, { kind, path, ref, nojs, siteHost }) {
     String(cf.country || "").slice(0, 2),
     Number(cf.asn) || 0,
     org,
-    classifyNetwork(org),
+    net,
     nojs ? 1 : 0,
     refHost(siteHost) || ""
   ).run();

@@ -39,7 +39,7 @@ Never kept: IP addresses, cookies, any identifier lasting beyond one UTC day, ci
 
 The reader hash is `SHA-256(day + secret + IP + user-agent)`, truncated. Two visits from one person on one day collide, which is what makes a daily unique count possible. The same person tomorrow gets a different hash, which is what makes a per-person history impossible. None of the inputs are stored.
 
-Global Privacy Control and Do Not Track are honoured in the page script, so those readers are never counted. Every number in the dashboard is a floor rather than a total, and the dashboard says so in its footer.
+Global Privacy Control and Do Not Track are honoured in the page script, so those readers are never counted. Traffic from datacenter networks is dropped as well, which removes the scanners that sweep a new domain and also, unavoidably, any reader on a commercial VPN. Every number in the dashboard is a floor rather than a total, and the dashboard says so in its footer.
 
 Records older than 400 days are deleted by a sweep that runs at most once per UTC day.
 
