@@ -31,7 +31,7 @@ Training and Education/
 ├── Document Register/        <- original source draft PDFs
 ├── source-text/              <- verbatim pypdf extraction
 ├── analysis/                 <- attributed meeting extractions, CS-number research, SOURCES.md
-├── HANDOFF.md                <- current state and open to-dos (read first)
+├── UPDATING.md               <- what to change when something happens (read first)
 └── README.md
 ```
 
