@@ -61,7 +61,7 @@ This content changes register, and the change must be deliberate and visible.
   is furthest along in the record, but the structure should show the full set of
   qualifying-condition domains as parallel options, not a single endorsed one.
 
-## Guardrails carried from HANDOFF (still apply)
+## Guardrails (still apply; now held in CLAUDE.md and WRITING-STANDARD.md)
 
 No em dashes. Every attributed position keeps its name, date, and quote. Current
 requirements cite the July 9 draft (documents/rules-draft-2026-07-09.pdf, page-linked).

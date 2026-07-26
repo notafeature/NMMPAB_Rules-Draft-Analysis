@@ -251,14 +251,21 @@ Normalise in the comparison; never reproduce it on the page.
 
 ## Part 6: Known gaps
 
-Things the site asserts that have no source document in this repository. Not errors; missing
-paperwork. Landing any of these closes a gap.
+Things the site asserts that have no source document **in this repository**. Not errors;
+missing paperwork. Landing any of these closes a gap.
 
-| Missing | What rests on it |
-|---|---|
-| June 26 board transcript | the 3-2 vote, the motion, the named "reluctant yes" |
-| June 25 meeting transcript | statements attributed to that meeting |
-| July 16 End-of-Life committee source | all of `specialization.html`, the specialization sections of `hours.html` and `eligibility.html`, the nine-session curriculum |
-| Hearing notice | the hearing date, asserted on eleven pages |
+Meeting notes and transcripts originate in **Notion** and are copied here. Three of the four
+gaps below have a Notion page and are retrievable; they were never missing, only uncopied.
+
+| Missing here | What rests on it | Upstream |
+|---|---|---|
+| June 26 board transcript | the 3-2 vote, the motion, the named "reluctant yes" | Notion, "Medical Psilocybin Advisory Board Meeting (June 2026)" |
+| June 25 meeting record | statements attributed to that meeting | Notion, "Training & Education Rules: Vote Record, Redline & Open Items (6/25 to 6/26)" |
+| July 16 End-of-Life committee | all of `specialization.html`, the specialization sections of `hours.html` and `eligibility.html`, the nine-session curriculum | Notion, "End of life Care 7/16" and "Proposed Adjunct Training in End-of-Life Psychedelic Care (Slides)" |
+| Hearing notice | the hearing date, asserted on eleven pages | Not located. The date itself is not in doubt; see `CLAUDE.md` |
+
+**Copying one in is Event C** (Part 1). Put the PDF in `docs/documents/`, the searchable text
+in `source-text/`, register it on `docs/documents.html`, and record on the document itself
+whether the transcript carries speaker labels.
 
 `docs/documents.html` carries this list for readers. Keep the two in step.
