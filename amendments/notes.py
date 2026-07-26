@@ -90,8 +90,8 @@ REVIEW = {
         "The Metz recommendation states when the permit issues and what it authorizes. It states no term, renewal "
         "period, or application process, and none is drafted.",
     ("7.35.3.19", "Subsection K"):
-        "Paragraph (4)(b) requires a minimum of one group session. Subsection D(1) of 7.35.3.10 requires two separate "
-        "group sessions for the same 40 hours of contact time.",
+        "Paragraph (4)(b) of this subsection requires \u201cA minimum of one group session.\u201d Subsection D(1) of "
+        "7.35.3.10 requires \u201ctwo separate group sessions\u201d for the same 40 hours of contact time.",
     ("7.35.3.29", "Entire section"):
         "Section 5(B)(2) of the Medical Psilocybin Act reaches “a clinician administering or a qualified patient "
         "taking psilocybin in an approved setting.” Section 3(H) defines a qualified patient by diagnosis with a "
