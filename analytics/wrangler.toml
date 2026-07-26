@@ -26,7 +26,12 @@ account_id = "2418db2ff3f95726c374a86551d2436e"
 # depending on the zone's SSL mode being Full, which can take the live site
 # down. A separate hostname has the same blocking profile, since a network
 # filter blocks the registrable domain, and cannot break the site.
-workers_dev = false
+#
+# The workers.dev address is also on. It costs nothing, no other record can
+# claim it, and it is the way to tell a broken Worker apart from a hostname
+# that something else is answering: if the Worker is healthy there and not on
+# the custom domain, the fault is in DNS rather than in this code.
+workers_dev = true
 
 [[routes]]
 pattern = "count.medical-psilocybin.org"
