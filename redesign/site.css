@@ -1,0 +1,174 @@
+/* NMMPAB Training and Education reference: the design system.
+   One file, owned like the nav is owned. Pages link it; they do not copy it.
+   Per-page style blocks hold only what is genuinely page-specific.
+
+   The two load-bearing decisions:
+   1. Type carries epistemology. Serif is reserved for verbatim material,
+      always on tinted ground with a citation. The site's own voice is sans.
+      Mono is for dates, section numbers, and file names only.
+   2. Status is one vocabulary, five states, defined once, never color alone. */
+
+:root{
+  /* ground and ink */
+  --paper:#FBFAF7;          /* warm paper, replaces the cool near-white */
+  --paper-2:#F4F2EC;        /* recessed panels */
+  --ink:#1F1D18;
+  --ink-2:#54514A;
+  --ink-3:#8A867C;
+  --line:#E3E0D7;
+
+  /* identity */
+  --brand:#5A4A88;          /* the site's purple, kept: nav, links, wordmark */
+  --brand-deep:#3F3364;
+
+  /* status: the five states. Chips always carry their word. */
+  --st-open:#B3261E;        --st-open-bg:#FBEBE9;
+  --st-committee:#8A5A00;   --st-committee-bg:#FCF3DE;
+  --st-settled:#1E6B45;     --st-settled-bg:#E7F3EC;
+  --st-defect:#B3261E;      /* outline variant, no fill */
+  --st-record:#4A5568;      --st-record-bg:#ECEFF3;
+
+  /* chart categorical order, validated for CVD and contrast on --paper */
+  --ch-1:#5B3FA8;  /* classroom */
+  --ch-2:#1D8A6F;  /* supervised practice */
+  --ch-3:#A5690E;  /* consultation */
+
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:Charter,"Bitstream Charter",Georgia,serif;   /* verbatim material only */
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  --wrap:960px;
+  --r:8px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.65 var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* ---------- chrome ---------- */
+.topbar{
+  position:sticky;top:0;z-index:20;background:var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;gap:28px;height:56px}
+.wordmark{display:flex;align-items:center;gap:10px;font-weight:650;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.wordmark svg{display:block}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{
+  padding:7px 12px;border-radius:6px;color:var(--ink-2);
+  text-decoration:none;font-size:14.5px;font-weight:520;
+}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+.nav a[aria-current]{background:var(--brand);color:#fff}
+.nav a.cta{color:var(--brand);font-weight:650}
+
+.sitefoot{border-top:1px solid var(--line);margin-top:72px;background:var(--paper-2)}
+.sitefoot .wrap{padding:28px 24px 36px;font-size:13.5px;color:var(--ink-2)}
+.sitefoot p{margin:6px 0}
+.sitefoot a{color:var(--brand)}
+
+/* ---------- hero: four templates, visibly different ---------- */
+.hero{padding:44px 0 8px}
+.eyebrow{font:600 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin:0 0 14px}
+h1{font:700 clamp(28px,4.2vw,38px)/1.15 var(--sans);letter-spacing:-.015em;margin:0 0 10px}
+.lede{font-size:17.5px;color:var(--ink-2);max-width:44em;margin:0 0 6px}
+.stamp{font:12.5px var(--mono);color:var(--ink-3);margin:10px 0 0}
+.stamp b{color:var(--ink-2);font-weight:600}
+
+/* template accents: the reader knows the page kind before reading a word */
+.t-dashboard .hero{border-bottom:0}
+.t-reference .hero h1::after,
+.t-workspace .hero h1::after,
+.t-record .hero h1::after{content:"";display:block;width:56px;height:4px;border-radius:2px;margin-top:14px}
+.t-reference .hero h1::after{background:var(--brand)}
+.t-workspace .hero h1::after{background:var(--st-open)}
+.t-record .hero h1::after{background:var(--st-record)}
+.kicker{font:600 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+
+/* ---------- sections ---------- */
+section{margin:44px 0}
+h2{font:650 21px/1.3 var(--sans);letter-spacing:-.01em;margin:0 0 6px}
+h3{font:650 16.5px/1.4 var(--sans);margin:0 0 4px}
+.secintro{color:var(--ink-2);max-width:46em;margin:0 0 18px}
+p{margin:0 0 12px;max-width:46em}
+a{color:var(--brand)}
+
+/* ---------- status chips: one vocabulary ---------- */
+.chip{
+  display:inline-flex;align-items:center;gap:6px;
+  font:600 11.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;
+  padding:5px 10px;border-radius:999px;white-space:nowrap;
+}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.chip.open{color:var(--st-open);background:var(--st-open-bg)}
+.chip.committee{color:var(--st-committee);background:var(--st-committee-bg)}
+.chip.settled{color:var(--st-settled);background:var(--st-settled-bg)}
+.chip.defect{color:var(--st-defect);background:transparent;box-shadow:inset 0 0 0 1.5px var(--st-defect)}
+.chip.record{color:var(--st-record);background:var(--st-record-bg)}
+
+/* ---------- cards ---------- */
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+.card.open-item{border-left:4px solid var(--st-open)}
+.card h3{font-size:19px}
+.card .links{display:flex;gap:18px;border-top:1px solid var(--line);margin-top:16px;padding-top:14px;font-size:14.5px}
+
+.rowlist{display:grid;gap:10px}
+.rowlist .row{
+  display:flex;align-items:baseline;gap:14px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  padding:13px 18px;font-size:15px;
+}
+.rowlist .row .what{color:var(--ink-2)}
+.rowlist .row a{margin-left:auto;white-space:nowrap;font-size:14px}
+
+/* ---------- verbatim: serif, tinted, cited. The document, not us. ---------- */
+.verbatim{
+  font-family:var(--serif);font-size:16.5px;line-height:1.7;
+  background:var(--paper-2);border-left:3px solid var(--brand);
+  border-radius:0 var(--r) var(--r) 0;
+  padding:16px 20px;margin:14px 0;
+}
+.verbatim p{max-width:none}
+.verbatim .src{
+  display:block;font:12px var(--mono);color:var(--ink-3);
+  margin-top:10px;font-style:normal;
+}
+.verbatim .src a{color:var(--ink-2)}
+
+/* ---------- data tables ---------- */
+table.data{border-collapse:collapse;width:100%;font-size:14.5px;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+table.data th{font:600 11.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+table.data td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+table.data tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.sect{font:12.5px var(--mono);color:var(--ink-2);white-space:nowrap}
+
+/* ---------- pipeline diagram ---------- */
+.pipeline{margin:26px 0 8px}
+.pipeline svg{display:block;width:100%;height:auto}
+
+/* ---------- chart figure ---------- */
+figure.chart{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 22px 14px}
+figure.chart figcaption{font-size:13.5px;color:var(--ink-2);margin-bottom:14px}
+figure.chart figcaption b{color:var(--ink);font-weight:650}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--ink-2);margin:10px 0 2px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+/* ---------- utility ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:760px){.grid2,.grid3{grid-template-columns:1fr}.nav{flex-wrap:wrap}}
+.datesrow{display:flex;gap:26px;flex-wrap:wrap;background:var(--paper-2);border-radius:var(--r);padding:14px 20px;font-size:14.5px}
+.datesrow b{font:600 13px var(--mono)}
+details.rec{background:#fff;border:1px solid var(--line);border-radius:var(--r);margin:10px 0}
+details.rec>summary{cursor:pointer;padding:14px 18px;font-weight:600;font-size:15px;list-style:none;display:flex;gap:10px;align-items:baseline}
+details.rec>summary::after{content:"▸";margin-left:auto;color:var(--ink-3);transition:transform .15s}
+details.rec[open]>summary::after{transform:rotate(90deg)}
+details.rec>div{padding:2px 18px 16px}
+.count{font:600 12px var(--mono);color:var(--ink-3)}
