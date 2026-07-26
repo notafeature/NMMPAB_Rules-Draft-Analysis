@@ -112,7 +112,11 @@ If the counter ever stops recording and the hostname starts serving the site ins
 GET /accounts/<account>/workers/scripts/nmmpab-count/settings
 ```
 
-`"bindings": []` means the mirror is deployed, not the counter. The repository must contain exactly one Worker config, `analytics/wrangler.toml`, and the Cloudflare build connection must stay disconnected.
+`"bindings": []` means the mirror is deployed, not the counter.
+
+The trap is worse than a stray file, and this is the part that cost the night. **Changing directory into `analytics/` does not make wrangler use `analytics/wrangler.toml`.** Wrangler searches upwards from the working directory and prefers a JSON config found above it over the TOML config it is standing next to. Proven with `wrangler deploy --dry-run` from inside `analytics/`: with a root `wrangler.jsonc` present it read `docs/` as static assets and reported "No bindings".
+
+So every wrangler call in `setup.sh` now passes `--config ./wrangler.toml`, and the script verifies afterwards that `env.DB` is actually bound rather than trusting the exit code. Keep both. The integration will offer the root config again, and with the flag in place it no longer matters.
 
 ## Cost
 
