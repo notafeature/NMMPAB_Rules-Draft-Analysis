@@ -26,6 +26,8 @@ Drafting folder for the twenty-four sections of the medical psilocybin rule publ
 
 Rebuild with `python3 amendments-remainder/build-redline-pdf.py`, then `python3 amendments-remainder/audit.py`. Both must be clean. All four documents carry the same four addenda, so any one of them can be circulated on its own.
 
+`AUDIT.md` is byte-reproducible: every check is emitted from a list or a sorted set, so a diff of that file shows only real changes. The PDFs are not, because the renderer stamps a creation time into each file, so they differ on every build even when nothing else has.
+
 The machinery is copied from `amendments/`, not imported, so the practicum document keeps building if this one breaks.
 
 ## The split

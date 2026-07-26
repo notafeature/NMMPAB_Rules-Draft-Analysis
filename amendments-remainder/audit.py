@@ -154,6 +154,9 @@ def found(text, name):
     return " ".join(words[:mid]) in c and " ".join(words[mid:]) in c
 
 
+# Every iteration that produces a check is over a list or a sorted set, so the
+# receipts in AUDIT.md are byte-identical between runs and a diff of that file
+# shows only real changes.
 def check(cls, claim, ok, detail=""):
     results.append((cls, claim, bool(ok), detail))
     return bool(ok)
@@ -489,7 +492,7 @@ SUBSEC = re.compile(r"(?<!proposed )Subsection ([A-Z]) of (?:(7\.35\.3\.\d{1,2})
 for doc, section, sub, _, proposed in P:
     if proposed in (NEW, UNCHANGED):
         continue
-    for letter, ref in SUBSEC.findall(proposed):
+    for letter, ref in sorted(set(SUBSEC.findall(proposed))):
         target = ref or section
         n = int(target.rsplit(".", 1)[1])
         have = subsections_of(n)
@@ -498,7 +501,7 @@ for doc, section, sub, _, proposed in P:
 
 for d in (SOURCE, REVIEW):
     for (section, sub), text in d.items():
-        for letter, ref in SUBSEC.findall(unent(text)):
+        for letter, ref in sorted(set(SUBSEC.findall(unent(text)))):
             target = ref or section
             n = int(target.rsplit(".", 1)[1])
             have = subsections_of(n)
@@ -521,7 +524,7 @@ for d in (SOURCE, REVIEW):
 PARA = re.compile(r"Paragraph \((\d{1,2})\) of Subsection ([A-Z]) of (7\.35\.3\.\d{1,2}) NMAC")
 for d in (SOURCE, REVIEW):
     for (section, sub), text in d.items():
-        for num, letter, ref in PARA.findall(unent(text)):
+        for num, letter, ref in sorted(set(PARA.findall(unent(text)))):
             n = int(ref.rsplit(".", 1)[1])
             body = s3.get(n, "")
             parts = re.split(r"(?<![A-Za-z(])%s\.\s" % letter, body)
@@ -539,15 +542,15 @@ for d in (SOURCE, REVIEW):
     for (section, sub), text in d.items():
         plain = unent(text)
         proposed = set(PROPOSED_SEC.findall(plain))
-        for ref in proposed:
+        for ref in sorted(proposed, key=int):
             check("CITE", "%s %s marks 7.35.3.%s as proposed and names whose proposal it is"
                   % (section, sub, ref),
                   int(ref) not in s3 and "practicum amendment draft" in plain,
                   "7.35.3.%s does not exist in the published rule" % ref)
-        for ref in set(re.findall(r"7\.35\.3\.(\d{1,2})", plain)) - proposed:
+        for ref in sorted(set(re.findall(r"7\.35\.3\.(\d{1,2})", plain)) - proposed, key=int):
             check("CITE", "%s %s cites 7.35.3.%s, which exists" % (section, sub, ref),
                   int(ref) in s3, "1 to 28")
-        for ref in set(re.findall(r"7\.35\.2\.(\d{1,2})", text)):
+        for ref in sorted(set(re.findall(r"7\.35\.2\.(\d{1,2})", text)), key=int):
             check("CITE", "%s %s cites 7.35.2.%s, which exists" % (section, sub, ref),
                   int(ref) in s2, "1 to 27")
 
