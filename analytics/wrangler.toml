@@ -33,6 +33,11 @@ account_id = "2418db2ff3f95726c374a86551d2436e"
 # the custom domain, the fault is in DNS rather than in this code.
 workers_dev = true
 
+# Versioned preview URLs are off. They are covered by the same password as the
+# dashboard, so this is tidiness rather than a hole, but a private dashboard
+# does not need extra addresses that answer on it.
+preview_urls = false
+
 [[routes]]
 pattern = "count.medical-psilocybin.org"
 custom_domain = true
