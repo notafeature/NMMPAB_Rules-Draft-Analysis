@@ -83,7 +83,25 @@ Training and Education Committee. The practicum draft records the same conflict 
 and amends neither provision. **Do not write that either provision controls**, that the conflict has been
 resolved, or that either figure is a drafting error; each is a figure the published rule carries.
 
-## 5. What is open and who decides
+## 5. Hours. The reading convention, and the two hour figures in this scope
+
+The working convention of this review: **an hour figure sits inside the governing total unless the provision
+states it as an addition.** Where totals do not reconcile under that convention, the mismatch is recorded as a
+question at the provision, not resolved by drafting. The program hour totals themselves belong to the
+practicum draft's scope, and `amendments/SOURCE-OF-TRUTH.md` is the authority for them; do not restate its
+totals from this folder.
+
+Only two hour figures appear anywhere in the twenty-four sections this document covers, and both carry a
+question. The 40 hours of contact time in the waiver at 7.35.3.10 D(1), which section 4 above covers. And the
+10 hours of mentoring at 7.35.3.17 A, "after graduation and after practicum hours are completed", which under
+the convention sit inside no total, published or proposed: the practicum draft carries its supervision and
+consultation hours inside its program totals, and no line of those totals is mentoring after graduation. If
+the consultation requirement lands at the practicum draft's proposed 7.35.3.19 H while 7.35.3.17 A also
+stands, a graduate owes both sets of hours; where the requirement sits is open with Dr. Metz, Ms. Wilson and
+Dr. Leeman. **Do not report the 10 mentoring hours as part of any program total**, and do not report the two
+obligations as reconciled.
+
+## 6. What is open and who decides
 
 The twenty-four review notes each state the issue, the choices, and who decides. Addendum E of the document
 re-presents them as one-line questions, grouped by decision-maker, and introduces no analysis of its own; the
@@ -101,7 +119,7 @@ A note that puts different questions to different decision-makers appears once p
 to more than the number of notes. Do not report any of these items as decided, and do not attribute a position
 on any of them to the board, the committee, the department, or any named person.
 
-## 6. What must not be written, anywhere that cites this folder
+## 7. What must not be written, anywhere that cites this folder
 
 - This draft is a working draft. It is not a filing, and describing it as filed, submitted, or adopted is
   wrong in every tense.

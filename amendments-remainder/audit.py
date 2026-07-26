@@ -437,6 +437,26 @@ check("COUNT", "\"registered with the department\" appears once in 7.35.3 NMAC",
 check("COUNT", "\"registrant\" appears 10 times in 7.35.3 NMAC, all in 7.35.3.20",
       count_term(p3, "registrant") == 10 and count_term(s3[20], "registrant") == 10,
       "%d in the part, %d in .20" % (count_term(p3, "registrant"), count_term(s3[20], "registrant")))
+# The 135 days the 7.35.3.27 M review note states are the sum of three periods
+# the section itself carries, recomputed here rather than transcribed.
+s27 = s3.get(27, "")
+check("COUNT", "the 135 days at 7.35.3.27 M are the sum of three periods the section carries",
+      all(p in s27 for p in ("60 calendar days", "30 calendar days", "45 calendar days"))
+      and 60 + 30 + 45 == 135
+      and "135" in REVIEW.get(("7.35.3.27", "Subsection M, continuances"), ""),
+      "60 + 30 + 45 = 135, each period found in 7.35.3.27")
+
+# The hours convention: only two hour figures appear anywhere in the twenty-four
+# sections this document covers, so the hours reconciliation in this scope is
+# exactly the two questions the draft records. Recomputed from the corpus.
+scope_hours = set()
+for n in sorted(s3):
+    if n in (14, 18, 19, 20):
+        continue
+    scope_hours |= {m.group(1) for m in re.finditer(r"(\d+)\s+hours?\b", s3[n])}
+check("COUNT", "the twenty-four in-scope sections carry exactly two hour figures, 40 and 10",
+      scope_hours == {"40", "10"}, "found: %s" % sorted(scope_hours, key=int))
+
 check("COUNT", "\"administrative review committee\" appears 4 times, all in 7.35.3.25",
       count_term(p3, "administrative review committee") == 4
       and count_term(s3[25], "administrative review committee") == 4,
@@ -948,6 +968,16 @@ if check("TRUTH", "SOURCE-OF-TRUTH.md exists", SOT_PATH.exists(), "the folder's 
         check("TRUTH", "the file states the page count the built PDF has",
               bool(m) and int(m.group(1)) == len(PAGE_TEXTS),
               "file says %s, the PDF has %d" % (m.group(1) if m else "nothing", len(PAGE_TEXTS)))
+    # The hours convention and its consequence in this scope. The figure set is
+    # recomputed above in COUNT; here the file has to state the convention and
+    # both figures, and nothing else may present the mentoring hours as inside
+    # a total.
+    check("TRUTH", "the file states the hours reading convention",
+          "an hour figure sits inside the governing total unless the provision states it as an addition"
+          in sot, "the working convention, checked verbatim")
+    check("TRUTH", "the file names both in-scope hour figures the corpus carries",
+          all(("%s hours" % f) in sot for f in sorted(scope_hours, key=int)),
+          "figures recomputed from the corpus: %s" % sorted(scope_hours, key=int))
     # The sentences that carry the standing constraints, present verbatim.
     for phrase in ["not a filing, not submitted, and not adopted rule text",
                    "Nothing here reopens the practicum draft",
@@ -958,6 +988,7 @@ if check("TRUTH", "SOURCE-OF-TRUTH.md exists", SOT_PATH.exists(), "the folder's 
                    "the statute is cited, never the bill",
                    "No NMSA 1978 section number is asserted",
                    "Do not write that either provision controls",
+                   "Do not report the 10 mentoring hours as part of any program total",
                    "This repository is public"]:
         check("TRUTH", "the file carries the sentence \"%s\"" % phrase, phrase in sot,
               "required statement, checked verbatim")
