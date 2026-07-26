@@ -185,18 +185,6 @@
   .opttag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:3px 10px; margin-bottom:9px;}
   .optintro{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
   .optintro b{color:var(--text); font-weight:600;}
-  .opthead h2{font-size:clamp(20px,2.4vw,25px); margin:0 0 8px; color:var(--text);}
-  .opthead>p{font-size:14.5px; color:var(--text-muted); margin:0; line-height:1.6; max-width:680px;}
-  .opthead>p b{color:var(--text); font-weight:600;}
-  .optgrid{display:grid; grid-template-columns:1fr; gap:12px; margin:18px 0 6px;}
-  @media (min-width:720px){.optgrid{grid-template-columns:1fr 1fr;}}
-  .optcard{background:var(--surface); border:1px solid var(--opt-border); border-top:3px solid var(--opt); border-radius:12px; padding:15px 17px; box-shadow:var(--shadow);}
-  .optcard.lead{background:var(--opt-bg);}
-  .optcard .ch{font-family:var(--serif); font-size:15.5px; font-weight:650; margin:0; color:var(--text); display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
-  .optcard .csub{font-size:11.5px; color:var(--opt); font-weight:600; margin:3px 0 0; text-transform:uppercase; letter-spacing:.03em;}
-  .optcard .olead{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:2px 8px;}
-  .optcard .obig{font-family:var(--serif); font-size:22px; font-weight:700; color:var(--opt); margin:8px 0 2px; font-variant-numeric:tabular-nums;}
-  .optcard .ol{margin:6px 0 0; font-size:13px; color:var(--text-muted); line-height:1.45;}
   .optbox{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:var(--shadow);}
   .optbox h3{font-size:16px; margin:0 0 10px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
   .optbox>p{margin:0 0 10px; font-size:14px; color:var(--text); line-height:1.55;}
@@ -204,10 +192,6 @@
   .optpos{font-size:14px; line-height:1.55; margin:0 0 9px; color:var(--text);}
   .optpos b{color:var(--opt); font-weight:650;}
   .optmark{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--opt-bg); border:1px solid var(--opt-border); border-radius:999px; padding:2px 9px;}
-  .optsub{font-family:var(--serif); font-size:17px; font-weight:600; margin:22px 0 6px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
-  .opttbl{border-color:var(--opt-border);}
-  .opttbl thead th{background:var(--opt-bg); color:var(--opt);}
-  .opttbl tbody tr.tot td{background:var(--opt-bg); font-weight:700;}
   .optsrc{font-family:var(--mono); font-size:10.5px; color:var(--text-faint); margin:8px 0 0; line-height:1.5;}
   .optsrc a{color:var(--text-faint); text-decoration:underline;}
   .optsrc a:hover{color:var(--opt);}
@@ -355,6 +339,7 @@
           <div class="tdrop-menu">
             <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
             <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
           </div>
         </details>
         <details class="tdrop navgrp" data-navgrp="req">
@@ -373,8 +358,6 @@
           <div class="tdrop-menu">
             <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
             <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
-            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
-            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
           </div>
         </details>
         <a href="input.html" data-nav="input" class="navcta">Community input</a>
@@ -809,69 +792,18 @@
       </details>
     </section>
 
-    <!-- 6 : SPECIALIZATION (OPTIONS REGISTER) -->
-    <section class="optzone" id="specialization" aria-label="Options raised for consideration, from the July 16 discussion">
+    <!-- 6 : SPECIALIZATION (POINTER; the material itself is on specialization.html) -->
+    <section class="optzone" id="specialization" aria-label="Specialization hours, held on the specialized domains page">
       <div class="optbanner">
-        <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
-        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the July 9 draft, not settled requirements, and not this site's recommendation. The core hours in sections 1 to 5 above are unchanged.</p>
-      </div>
-
-      <div class="opthead">
-        <h2>Specialization hours: a proposed addendum</h2>
-        <p>The discussion treated hours toward a specialization as an <b>addendum on top of the core totals</b>, not folded into them. End-of-life care is the one domain with a proposed curriculum; PTSD, substance use disorders, and treatment-resistant depression were treated as the same shape, without a curriculum yet.</p>
-      </div>
-
-      <div class="optgrid">
-        <div class="optcard">
-          <p class="ch">Core baseline</p>
-          <p class="csub">As published July 23</p>
-          <p class="ol">Facilitator: <b>35 didactic + 100 practicum</b>. Practitioner: <b>35 didactic + 120 practicum</b>. These are the core figures in <a href="#numbers">section 1</a>, as published on July 23.</p>
-        </div>
-        <div class="optcard lead">
-          <p class="ch">End-of-life addendum <span class="olead">Proposed</span></p>
-          <p class="csub">Added on top of the core, open range</p>
-          <p class="obig">15 to 40 hrs</p>
-          <p class="ol">The committee has worked toward <b>15 to 20 hours</b>. Gregory Evans floated a wider range, roughly <b>20 to 40</b>. Presented here as an open range, not a set number.</p>
-        </div>
-      </div>
-      <p class="optsrc" style="margin:0 2px 6px;">Source: End-of-Life Care committee meeting, July 16, 2026; hour ranges attributed to the committee and to Gregory Evans. Core figures: <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">published rule pp.11&ndash;13</a>.</p>
-
-      <p class="optsub">The proposed end-of-life curriculum <span class="optmark">Presented July 16</span></p>
-      <p class="body" style="margin-top:0;">Jenn presented a proposed nine-session curriculum, about <b>17 hours</b> as drafted, within the committee's 15 to 20 range. It is a proposal under discussion, not a settled requirement. The central competency named in the deck is the worker's ability to reflect on their own relationship with death, grief, and spirituality.</p>
-      <p class="scrollcue" aria-hidden="true">Scroll sideways to see all columns &rarr;</p>
-      <div class="tablewrap opttbl">
-        <table>
-          <thead>
-            <tr><th>Session domain</th><th>Hours</th><th>Primary focus</th></tr>
-          </thead>
-          <tbody>
-            <tr><td class="prog">Client mindset in serious illness and end-of-life</td><td class="num">2.0</td><td>Existential distress, mortality awareness, anticipatory grief</td></tr>
-            <tr><td class="prog">Medical complexity and safety</td><td class="num">1.5</td><td>Drug interactions, contraindications, symptom burden</td></tr>
-            <tr><td class="prog">Medical complexity and safety</td><td class="num">1.5</td><td>Serious-illness considerations, consultation thresholds</td></tr>
-            <tr><td class="prog">Spiritual assessment and meaning-making</td><td class="num">2.0</td><td>Meaning, suffering, transcendence, spiritual inquiry</td></tr>
-            <tr><td class="prog">Grief, loss, and bereavement</td><td class="num">2.0</td><td>Anticipatory grief, bereavement, caregiver grief</td></tr>
-            <tr><td class="prog">Family and relational systems</td><td class="num">1.5</td><td>Family conflict, caregiver burden, support networks</td></tr>
-            <tr><td class="prog">Adapting facilitation for end-of-life care</td><td class="num">3.0</td><td>Preparation, pacing, accessibility, home and support planning</td></tr>
-            <tr><td class="prog">Ethics, culture, equity, informed consent</td><td class="num">1.5</td><td>Vulnerability, consent, cultural humility, boundaries</td></tr>
-            <tr><td class="prog">Interdisciplinary collaboration and sustainable practice</td><td class="num">2.0</td><td>Team-based care, burnout, grief exposure, reflective practice</td></tr>
-            <tr class="tot"><td class="prog">Nine sessions</td><td class="num">17.0</td><td>Within the committee's 15 to 20 range</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="optsrc">Source: "Proposed Adjunct Training in End-of-Life Psychedelic Care," presented by Jenn, End-of-Life Care committee meeting, July 16, 2026. Hours and domains from the presented session and assessment matrix.</p>
-
-      <div class="optbox">
-        <h3>All four domains, as parallel options <span class="optmark">Discussed July 16</span></h3>
-        <p>The nine-session outline exists for end-of-life care only. PTSD, substance use disorders, and treatment-resistant depression are the other qualifying conditions and were treated as the same shape, each a domain a provider could specialize in, none with a curriculum drafted. They are shown together on <a href="specialization.html">Specialized domains</a>.</p>
+        <span class="opttag">&#9670; Not in the published rule</span>
+        <p class="optintro">A specialization would sit on top of a core permit and add hours to the totals above rather than change them. None of it is in the published rule, and none of it is a settled requirement. It is kept on its own page so that this one holds only the hours the rule requires.</p>
       </div>
 
       <div class="optbox">
-        <h3>Left open for the training committee <span class="optmark">Discussed July 16</span></h3>
-        <p class="optpos"><b>In the core, or a separate add-on.</b> Whether the end-of-life hours are written into core training for everyone or offered as a separate specialization was not resolved. Larry Leeman favored building them into New Mexico's core, since end-of-life is one of four qualifying conditions; Christine and others favored an adjunct add-on. The fuller split is on <a href="specialization.html">Specialized domains</a>.</p>
-        <p class="optpos"><b>Test out, or credential out.</b> Whether a practitioner already specialized in palliative care could satisfy the requirement through existing expertise, rather than repeating hours, was flagged for the training committee.</p>
-        <p class="optpos"><b>What a specialization hour is, and what readiness means.</b> The discussion did not define what counts toward a specialization hour, or how a resident's readiness to carry the specialization would be judged.</p>
-        <p class="optpos"><b>The practicum progression.</b> The committee's strong view was that end-of-life is not an appropriate starting population for a practicum; a resident should gain experience with other populations first. A proposed progression ran from resident, to co-facilitator, to supervised primary. The steps and thresholds were left open.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. Terminology follows the site convention: "resident" and "Space Attendant."</p>
+        <h3>Specialization hours are on Specialized domains <span class="optmark">Discussed July 16</span></h3>
+        <p>The July 16 End-of-Life Care committee treated hours toward a specialization as an addendum on top of the core totals, not folded into them. The proposed range, the nine-session end-of-life curriculum presented that day, and the questions left open for the training committee are all recorded there, against the same core figures as <a href="#numbers">section 1</a> above.</p>
+        <p class="optpos"><a href="specialization.html#hours">Specialization hours, the session outline, and what was left open &rarr;</a></p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026. Core figures as published: <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">published rule pp.11&ndash;13</a>.</p>
       </div>
     </section>
 
@@ -932,7 +864,8 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
-          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
+          <li><b>July 26, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
+          <li><b>July 25, 2026</b> The specialization section moved off this page onto Specialized domains, which already held the same subject, so the two are no longer split across pages. What moved: the addendum framing, the core-baseline and end-of-life range cards, the nine-session curriculum table, and the questions left open for the training committee. What is left here is a pointer at the same anchor, so links in from other pages still land. Two boxes were dropped rather than moved, because Specialized domains already carried both: the four qualifying-condition domains as parallel options, and whether the hours belong in the core or in a separate add-on.</li>
           <li><b>July 25, 2026</b> Role tiles reordered to certifying clinician, practitioner, facilitator, as asked. The totals could not be reconciled with the rows above them: the tile listed 30, 5 and 5 while the total read "35 + 100". Totals now read "35 didactic + 5 sim + 100 practicum" and the rows name their units, so the arithmetic is visible.</li>
           <li><b>July 25, 2026</b> Page review applied. Removed the "Purpose and how to read this page" panel: a page that needs instructions for reading it has already failed. Added Dr. Anne Metz's proposed alternative permit title as a parenthetical under the Practitioner tile, since that is a separate recommendation that can be dropped without affecting the practicum work. Every entry in "What changed on July 23" now names its subsection in the sentence itself rather than relying on a link placed to one side.</li>
           <li><b>July 25, 2026</b> Brought current to the July 23 published rule. The page had no Updated date at all and was written in live-blog present tense from July 17: the Dr. Anne Metz presentation carried an "In progress" tag and a section was headed "Open questions for July 17". Role cards updated from the July 9 numbers to the published ones. Corrected two live errors: the in-state bridge deadline read June 30, 2027 and the reciprocity deadline read December 31, 2026, and both are December 31, 2027 in the published rule. Added a "What changed on July 23" summary.</li>

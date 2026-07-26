@@ -136,6 +136,7 @@
   .domtile:hover{border-color:var(--opt-2);}
   .domtile.sel{background:var(--opt-bg); box-shadow:0 0 0 2px var(--opt), var(--shadow);}
   .domtile .rgo{display:block; margin-top:8px; font-size:11.5px; font-weight:600; color:var(--opt);}
+  .domtile.sel .rgo{color:var(--text-faint); font-weight:500;}
   .optdetail{background:var(--surface); border:1px solid var(--opt-border); border-left:4px solid var(--opt); border-radius:12px; padding:15px 17px; box-shadow:var(--shadow); margin:6px 0 16px;}
   .optdetail .ddh{font-family:var(--serif); font-size:16.5px; font-weight:650; margin:0 0 8px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;}
   .optdetail p{margin:0; font-size:14px; line-height:1.55; color:var(--text);}
@@ -149,6 +150,25 @@
   .optpos{font-size:14px; line-height:1.55; margin:0 0 9px; color:var(--text);}
   .optpos b{color:var(--opt); font-weight:650;}
   .optmark{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--opt); background:var(--opt-bg); border:1px solid var(--opt-border); border-radius:999px; padding:2px 9px;}
+  .optsub{font-family:var(--serif); font-size:17px; font-weight:600; margin:34px 0 6px; display:flex; align-items:center; gap:9px; flex-wrap:wrap; scroll-margin-top:64px;}
+  .hourgrid{margin:18px 0 6px;}
+  @media (min-width:720px){.hourgrid{grid-template-columns:1fr 1fr;}}
+  .optcard .ch{font-family:var(--serif); font-size:15.5px; font-weight:650; margin:0; color:var(--text); display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .optcard .csub{font-size:11.5px; color:var(--opt); font-weight:600; margin:3px 0 0; text-transform:uppercase; letter-spacing:.03em;}
+  .optcard .obig{font-family:var(--serif); font-size:22px; font-weight:700; color:var(--opt); margin:8px 0 2px; font-variant-numeric:tabular-nums;}
+  .hourgrid .ol{margin:6px 0 0; font-size:13px;}
+  .tablewrap{overflow-x:auto; margin:18px 0 0; border:1px solid var(--border); border-radius:12px;}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:13.5px; background:var(--surface);}
+  thead th{text-align:left; font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted); padding:11px 13px; border-bottom:1px solid var(--border-strong); background:var(--surface-2); vertical-align:bottom;}
+  tbody td{padding:11px 13px; border-bottom:1px solid var(--border); vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  td.prog{font-weight:650; width:22%;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  .opttbl{border-color:var(--opt-border);}
+  .opttbl thead th{background:var(--opt-bg); color:var(--opt);}
+  .opttbl tbody tr.tot td{background:var(--opt-bg); font-weight:700;}
+  .scrollcue{display:none;}
+  @media (max-width:730px){.scrollcue{display:block; font-size:12px; color:var(--text-faint); font-weight:600; margin:16px 0 -6px;}}
   .optsrc{font-family:var(--mono); font-size:10.5px; color:var(--text-faint); margin:8px 0 0; line-height:1.5;}
   .optsrc a{color:var(--text-faint); text-decoration:underline;}
   .optsrc a:hover{color:var(--opt);}
@@ -209,6 +229,7 @@
           <div class="tdrop-menu">
             <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
             <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
           </div>
         </details>
         <details class="tdrop navgrp" data-navgrp="req">
@@ -227,8 +248,6 @@
           <div class="tdrop-menu">
             <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
             <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
-            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
-            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
           </div>
         </details>
         <a href="input.html" data-nav="input" class="navcta">Community input</a>
@@ -259,7 +278,7 @@
 
       <div class="optbanner">
         <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
-        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the published rule, not settled requirements, and not this site's recommendation. The routes above are unchanged.</p>
+        <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the published rule, not settled requirements, and not this site's recommendation. The core requirements they would sit on top of are unchanged.</p>
       </div>
 
       <div class="opthead">
@@ -306,9 +325,59 @@
         <p class="optpos"><b>Christine and others:</b> offer it as an adjunct add-on, noting that end-of-life work calls for a disposition not suited to every practitioner.</p>
         <p class="optpos"><b>Gregory Evans:</b> keep the core robust and specializations external as add-ons, while considering baking the baseline of all four qualifying-condition domains into the general curriculum.</p>
         <p class="optpos"><b>Jamie:</b> existential and spiritual themes run through all psilocybin work, not only end-of-life, so a baseline competency there fits every facilitator.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026. The hour ranges and the addendum framing are on <a href="hours.html#specialization">Training hours</a>.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026.</p>
       </div>
-    
+
+      <p class="optsub" id="hours">Specialization hours: a proposed addendum <span class="optmark">Discussed July 16</span></p>
+      <p class="body" style="margin-top:0;">The discussion treated hours toward a specialization as an <b>addendum on top of the core totals</b>, not folded into them. End-of-life care is the one domain with a proposed curriculum; PTSD, substance use disorders, and treatment-resistant depression were treated as the same shape, without a curriculum yet.</p>
+
+      <div class="optgrid hourgrid">
+        <div class="optcard">
+          <p class="ch">Core baseline</p>
+          <p class="csub">As published July 23</p>
+          <p class="ol">Facilitator: <b>35 didactic + 100 practicum</b>. Practitioner: <b>35 didactic + 120 practicum</b>. These are the core figures on <a href="hours.html#numbers">Training hours</a>, as published on July 23.</p>
+        </div>
+        <div class="optcard lead">
+          <p class="ch">End-of-life addendum <span class="olead">Proposed</span></p>
+          <p class="csub">Added on top of the core, open range</p>
+          <p class="obig">15 to 40 hrs</p>
+          <p class="ol">The committee has worked toward <b>15 to 20 hours</b>. Gregory Evans floated a wider range, roughly <b>20 to 40</b>. Presented here as an open range, not a set number.</p>
+        </div>
+      </div>
+      <p class="optsrc" style="margin:0 2px 6px;">Source: End-of-Life Care committee meeting, July 16, 2026; hour ranges attributed to the committee and to Gregory Evans. Core figures: <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">published rule pp.11&ndash;13</a>.</p>
+
+      <p class="optsub">The proposed end-of-life curriculum <span class="optmark">Presented July 16</span></p>
+      <p class="body" style="margin-top:0;">Jenn presented a proposed nine-session curriculum, about <b>17 hours</b> as drafted, within the committee's 15 to 20 range. It is a proposal under discussion, not a settled requirement. The central competency named in the deck is the worker's ability to reflect on their own relationship with death, grief, and spirituality.</p>
+      <p class="scrollcue" aria-hidden="true">Scroll sideways to see all columns &rarr;</p>
+      <div class="tablewrap opttbl">
+        <table>
+          <thead>
+            <tr><th>Session domain</th><th>Hours</th><th>Primary focus</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="prog">Client mindset in serious illness and end-of-life</td><td class="num">2.0</td><td>Existential distress, mortality awareness, anticipatory grief</td></tr>
+            <tr><td class="prog">Medical complexity and safety</td><td class="num">1.5</td><td>Drug interactions, contraindications, symptom burden</td></tr>
+            <tr><td class="prog">Medical complexity and safety</td><td class="num">1.5</td><td>Serious-illness considerations, consultation thresholds</td></tr>
+            <tr><td class="prog">Spiritual assessment and meaning-making</td><td class="num">2.0</td><td>Meaning, suffering, transcendence, spiritual inquiry</td></tr>
+            <tr><td class="prog">Grief, loss, and bereavement</td><td class="num">2.0</td><td>Anticipatory grief, bereavement, caregiver grief</td></tr>
+            <tr><td class="prog">Family and relational systems</td><td class="num">1.5</td><td>Family conflict, caregiver burden, support networks</td></tr>
+            <tr><td class="prog">Adapting facilitation for end-of-life care</td><td class="num">3.0</td><td>Preparation, pacing, accessibility, home and support planning</td></tr>
+            <tr><td class="prog">Ethics, culture, equity, informed consent</td><td class="num">1.5</td><td>Vulnerability, consent, cultural humility, boundaries</td></tr>
+            <tr><td class="prog">Interdisciplinary collaboration and sustainable practice</td><td class="num">2.0</td><td>Team-based care, burnout, grief exposure, reflective practice</td></tr>
+            <tr class="tot"><td class="prog">Nine sessions</td><td class="num">17.0</td><td>Within the committee's 15 to 20 range</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="optsrc">Source: "Proposed Adjunct Training in End-of-Life Psychedelic Care," presented by Jenn, End-of-Life Care committee meeting, July 16, 2026. Hours and domains from the presented session and assessment matrix.</p>
+
+      <div class="optbox">
+        <h3>Left open for the training committee <span class="optmark">Discussed July 16</span></h3>
+        <p class="optpos"><b>Test out, or credential out.</b> Whether a practitioner already specialized in palliative care could satisfy the requirement through existing expertise, rather than repeating hours, was flagged for the training committee.</p>
+        <p class="optpos"><b>What a specialization hour is, and what readiness means.</b> The discussion did not define what counts toward a specialization hour, or how a resident's readiness to carry the specialization would be judged.</p>
+        <p class="optpos"><b>The practicum progression.</b> The committee's strong view was that end-of-life is not an appropriate starting population for a practicum; a resident should gain experience with other populations first. A proposed progression ran from resident, to co-facilitator, to supervised primary. The steps and thresholds were left open.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. Terminology follows the site convention: "resident" and "Space Attendant."</p>
+      </div>
+
       <p class="optsrc" style="margin:14px 2px 0;"><b>Where end-of-life sits in the published rule.</b> The curriculum at <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18 (C), p.&nbsp;11</a> lists seventeen required subjects and none of them is end-of-life care. Denali Wilson asked on July 17 that end-of-life, suicidality, substance use disorder and PTSD be added as didactic requirements; Chris Caldwell argued for nineteen or more live instruction hours, and Larry Leeman supported roughly ten to fifteen in the core. None appears in the text published on July 23.</p>
     </section>
   </div>
@@ -347,7 +416,8 @@
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
-          <li><b>July 25, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
+          <li><b>July 26, 2026</b> The site-wide visit counter was added: every page now carries the identical beacon written by tools/sync-count.py. What it records, and what it deliberately does not, is set out on the about page.</li>
+          <li><b>July 25, 2026</b> This page now holds the specialization hours, which had been maintained on Training hours as well. Added at a new #hours anchor: the addendum framing, the core-baseline and end-of-life range cards, the nine-session 17-hour curriculum presented on July 16, and the three questions left open for the training committee. The banner said "The routes above are unchanged", which was left over from when this material sat at the foot of the provider routes page and there were routes above it.</li>
           <li><b>July 25, 2026</b> Page created from the specialized-domain section that was previously at the foot of the provider routes page, where it sat below unrelated material and carried July 16 dates with no indication of their status. It now states that none of it is in the published rule. Added the citation showing where end-of-life sits in the published text: the curriculum at 7.35.3.18 (C) lists seventeen required subjects and end-of-life is not among them, nor are suicidality, substance use disorder or PTSD, all four of which were asked for on the record on July 17.</li>
           </ul>
         </div>
@@ -364,6 +434,39 @@
 </div>
 <script>
 (function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');})})();
+</script>
+<script>
+(function(){
+  "use strict";
+  var DOM={
+    eol:{t:'End-of-life care', flag:'<span class="ddflag disc">Discussed July 16</span>',
+      body:'Furthest along in the record. A proposed adjunct curriculum was presented at the July 16 End-of-Life Care committee meeting: roughly nine sessions, 15 to 20 hours, offered as a proposal under discussion. See <a href="#hours">the proposed hours and session outline</a> below, and how the layer sits on core eligibility on <a href="eligibility.html#specialization">Who can qualify</a>.'},
+    ptsd:{t:'PTSD', flag:'<span class="ddflag none">Not discussed yet</span>',
+      body:'PTSD is one of New Mexico\u2019s four qualifying conditions, shown here as a parallel option. The committee has not taken up a PTSD specialization, so there are no pathway details yet.'},
+    sud:{t:'Substance use disorders', flag:'<span class="ddflag none">Not discussed yet</span>',
+      body:'A qualifying condition in New Mexico, shown here as a parallel option. The committee has not taken up a substance use disorder specialization, so there are no pathway details yet.'},
+    trd:{t:'Treatment-resistant depression', flag:'<span class="ddflag none">Not discussed yet</span>',
+      body:'A qualifying condition in New Mexico, shown here as a parallel option. The committee has not taken up a treatment-resistant depression specialization, so there are no pathway details yet.'}
+  };
+  var tiles=document.getElementById('domaintiles'), detail=document.getElementById('domaindetail');
+  if(!tiles||!detail) return;
+  var btns=tiles.querySelectorAll('.domtile');
+  function show(key){
+    var d=DOM[key]; if(!d) return;
+    detail.innerHTML='<p class="ddh">'+d.t+' '+d.flag+'</p><p>'+d.body+'</p>';
+    for(var i=0;i<btns.length;i++){
+      var on=btns[i].getAttribute('data-dom')===key;
+      btns[i].classList.toggle('sel',on);
+      btns[i].setAttribute('aria-pressed',on?'true':'false');
+      var go=btns[i].querySelector('.rgo');
+      if(go) go.innerHTML=on?'Shown below':'View details &darr;';
+    }
+  }
+  for(var i=0;i<btns.length;i++){(function(b){
+    b.addEventListener('click',function(){show(b.getAttribute('data-dom'));});
+  })(btns[i]);}
+  show('eol');
+})();
 </script>
 <script id="navjs">
 (function(){
