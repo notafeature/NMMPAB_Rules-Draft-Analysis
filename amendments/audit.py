@@ -27,7 +27,14 @@ SRC = {
     "7.35.2 NMAC": REPO / "source-text/7.35.2-NMAC-adopted-2026-06-23.txt",
     "committee transcript": REPO / "source-text/NMMPAB-2026-07-17-committee-transcript.txt",
     "board transcript": REPO / "source-text/NMMPAB-2026-07-17-board-transcript.txt",
+    "Wilson redline": REPO / "source-text/wilson-redline-2026-07-25.txt",
+    "Wilson comments": REPO / "source-text/wilson-redline-2026-07-25-comments.txt",
 }
+
+# The Wilson redline is a tracked-changes export. Insertions are wrapped in
+# {+ +}, deletions in [- -], and comment anchors read «Cnn». Strip the markup
+# so a quotation of the resulting text can be matched.
+WILSON_MARKUP = re.compile(r"\{\+|\+\}|\[-|-\]|«C\d+»")
 
 LINE_TOLERANCE = 3.0
 results = []
@@ -43,7 +50,11 @@ def flatten(t):
 def load(name):
     p = SRC[name]
     if p.suffix == ".txt":
-        return flatten(p.read_text(encoding="utf-8"))
+        t = p.read_text(encoding="utf-8")
+        if name.startswith("Wilson"):
+            t = flatten(WILSON_MARKUP.sub("", t))
+            return re.sub(r"\s+([.,;:])", r"\1", t)
+        return flatten(t)
     from pdfminer.high_level import extract_pages, extract_text
     from pdfminer.layout import LTTextContainer, LTTextLine
     if name != "published rule":
@@ -115,17 +126,27 @@ for section, sub, published, _ in P:
 
 # Which source each quotation should be found in, by the note that carries it.
 QUOTE_SOURCE = {
-    "authorizing them to practice under supervision": "Metz recommendation",
     "Component ranges are illustrative; the binding minimum is the total": "Metz recommendation",
     "approximately 62 hours for Facilitators (steps 1-3); approximately 72 hours for Licensed Providers (steps 1-4)": "Metz recommendation",
     "Supervisory hours, Licensed Providers only (10 hours)": "Metz recommendation",
     "an approved supervisor at an approved location can host practicum students who are not enrolled at a co-located training program": "Metz recommendation",
     "Initial facilitation experience with well participants (approximately 30 hours). Two to three sessions as a facilitator in a retreat or peer-support model.": "Metz recommendation",
+    "The permit title “Practitioner” is confusing and communicates nothing to the public about the holder's training and education": "Metz recommendation",
     "half of the didactic requirements": "published rule",
     "an additional minimum of 20 hours": "published rule",
     "A minimum of one group session": "published rule",
     "two separate group sessions": "published rule",
+    "The definitions in 7.35.2.7 NMAC apply to this part.": "published rule",
+    "PART 3 PATIENTS, CERTIFYING CLINICIANS, PRACTITIONERS, FACILITATORS, HEALING CENTERS, OTHER APPROVED LOCATIONS, AND EDUCATIONAL PROGRAMS": "published rule",
     "a clinician administering or a qualified patient taking psilocybin in an approved setting": "Medical Psilocybin Act",
+    # Wilson working redline of July 25, 2026
+    "A training program overseeing practicum treatments cannot also medically screen patients.": "Wilson redline",
+    "in any manner of co-facilitation designed by the school or healing center hosting practicums that otherwise complies with the regulations of these provisions": "Wilson redline",
+    "I haven't added the specific hour requirements for each because I think that is a bit much for what needs to live in regulation": "Wilson comments",
+    # July 17, 2026 Training and Education Committee, on why no training permit
+    "really wouldn't be necessary with the model that we have": "committee transcript",
+    "as them being a registered student with an educational program": "committee transcript",
+    "rather than needing to create an entire other permit or certification level": "committee transcript",
 }
 
 for text, src in QUOTE_SOURCE.items():
@@ -195,8 +216,127 @@ check("MATH", "7.35.3.18 C drafts 68", drafted("7.35.3.18", "Subsection C, {{PT_
 check("MATH", "7.35.3.18 H drafts 84", drafted("7.35.3.18", "Subsection H", "minimum of 84 hours"))
 check("MATH", "7.35.3.19 A drafts 62 and 72", drafted("7.35.3.19", "Subsection A", ">62<") and drafted("7.35.3.19", "Subsection A", ">72<"))
 check("MATH", "7.35.3.19 C drafts 10", drafted("7.35.3.19", "Subsection C", ">10<"))
-check("MATH", "7.35.3.19 D drafts 30, 20, 12", all(drafted("7.35.3.19", "Subsection D", "approximately %d hours" % n) for n in (30, 20, 12)))
+check("MATH", "7.35.3.19 D shows the step hours 30, 20, 12",
+      all(drafted("7.35.3.19", "Subsection D", "approx. %d hours" % n) for n in (30, 20, 12)))
+for n in (30, 20, 12):
+    check("MATH", "the Metz recommendation states approximately %d hours for that step" % n,
+          found("approximately %d hours" % n, "Metz recommendation"), "Metz recommendation, pages 3 to 4")
 check("MATH", "7.35.3.19 H drafts 20", drafted("7.35.3.19", "Subsection H", "minimum of 20 hours"))
+
+# Every remaining quotation, harvested from the notes and the addenda rather
+# than listed by hand, so that a new quotation cannot enter unchecked. Each has
+# to be found in at least one source, punctuation included.
+def harvest():
+    out = set()
+    for d in (SOURCE, REVIEW):
+        for v in d.values():
+            out.update(re.findall(r"“(.+?)”", v))
+    build = (REPO / "amendments/build-redline-pdf.py").read_text(encoding="utf-8")
+    for name in ("HEAD", "ADDENDA", "FOOT"):
+        m = re.search(r'^%s = """(.*?)"""' % name, build, re.S | re.M)
+        if m:
+            out.update(re.findall(r'"(.+?)"', re.sub(r"<[^>]+>", " ", m.group(1))))
+    return sorted(out)
+
+
+for q in harvest():
+    if flatten(q) in {flatten(k) for k in QUOTE_SOURCE}:
+        continue
+    hits = [n for n in SRC if found(q, n)]
+    check("QUOTE", '"%s"' % q[:70], bool(hits), hits[0] if hits else "found in no source")
+
+# ---------------------------------------------------------------------------
+# TITLE: the permit-title retitle surface stated in Addendum C
+# ---------------------------------------------------------------------------
+
+TERM = re.compile(r"(?i)practitioner")
+
+# Counts asserted in Addendum C for 7.35.3 NMAC, by section.
+PART3_COUNTS = {2: 1, 6: 1, 9: 5, 10: 5, 11: 3, 12: 1, 13: 12, 14: 6,
+                17: 2, 18: 14, 19: 6, 20: 3, 26: 1, 27: 5}
+PART3_TITLE_LINE = 1          # the part title, before 7.35.3.1
+PART3_TOTAL = 66
+
+# Counts asserted in Addendum C for 7.35.2 NMAC, by section.
+PART2_COUNTS = {7: 3, 10: 1, 14: 3, 15: 1, 19: 2, 24: 1, 26: 1}
+PART2_TOTAL = 12
+
+# Sections this draft reaches, and how many of their occurrences it conforms.
+REACHED = {"7.35.3.14": 6, "7.35.3.18": 14, "7.35.3.19": 6, "7.35.3.20": 3}
+
+
+def segment(corpus, pattern):
+    heads, seen = [], set()
+    for m in re.finditer(pattern, corpus):
+        n = int(m.group(1))
+        if n in seen:
+            continue
+        seen.add(n)
+        heads.append((m.start(), n))
+    out = {}
+    for i, (pos, n) in enumerate(heads):
+        end = heads[i + 1][0] if i + 1 < len(heads) else len(corpus)
+        out[n] = corpus[pos:end]
+    return heads, out
+
+
+p3 = CORPUS.setdefault("published rule", load("published rule"))
+p3_heads, p3_secs = segment(p3, r"7\.3[45]\.3\.(\d{1,2})\s+(?!NMAC)[A-Z][A-Z]+")
+check("TITLE", "the published rule has 28 sections", len(p3_secs) == 28, str(len(p3_secs)))
+for n in sorted(set(list(p3_secs) + list(PART3_COUNTS))):
+    want = PART3_COUNTS.get(n, 0)
+    got = len(TERM.findall(p3_secs.get(n, "")))
+    if want or got:
+        check("TITLE", "7.35.3.%d carries %d occurrences of the permit title" % (n, want),
+              got == want, "counted %d" % got)
+pre = len(TERM.findall(p3[:p3_heads[0][0]]))
+check("TITLE", "the part title carries 1 occurrence", pre == PART3_TITLE_LINE, "counted %d" % pre)
+tot3 = len(TERM.findall(p3))
+check("TITLE", "7.35.3 NMAC carries 66 occurrences in all", tot3 == PART3_TOTAL, "counted %d" % tot3)
+
+p2 = CORPUS.setdefault("7.35.2 NMAC", load("7.35.2 NMAC"))
+_, p2_secs = segment(p2, r"## 7\.35\.2\.(\d{1,2}) [A-Z]")
+for n in sorted(set(list(p2_secs) + list(PART2_COUNTS))):
+    want = PART2_COUNTS.get(n, 0)
+    got = len(TERM.findall(p2_secs.get(n, "")))
+    if want or got:
+        check("TITLE", "7.35.2.%d carries %d occurrences of the permit title" % (n, want),
+              got == want, "counted %d" % got)
+tot2 = len(TERM.findall(p2))
+check("TITLE", "7.35.2 NMAC carries 12 occurrences in all", tot2 == PART2_TOTAL, "counted %d" % tot2)
+
+# Tokens in the drafted text. {{PT...}} conforms published text; {{NPT...}}
+# writes the title into text that is wholly new and has nothing to strike.
+CONFORM = ["{{PTS_UC}}", "{{PT_UC}}", "{{PTS_C}}", "{{PT_C}}", "{{PTS}}", "{{PT}}"]
+FRESH = ["{{NPTS}}", "{{NPT}}"]
+conformed, stray = {}, []
+for section, sub, published, proposed in P:
+    if proposed in (NEW, UNCHANGED):
+        continue
+    t = proposed
+    n = 0
+    for k in CONFORM:
+        n += t.count(k)
+        t = t.replace(k, "")
+    for k in FRESH:
+        t = t.replace(k, "")
+    conformed[section] = conformed.get(section, 0) + n
+    if TERM.search(t):
+        stray.append("%s %s" % (section, sub))
+    if "{{" in t:
+        stray.append("%s %s unknown token" % (section, sub))
+
+for section, want in REACHED.items():
+    got = conformed.get(section, 0)
+    check("TITLE", "%s conforms all %d of its occurrences" % (section, want), got == want, "drafted %d" % got)
+reached = sum(conformed.get(s, 0) for s in REACHED)
+check("TITLE", "this draft conforms 29 occurrences", reached == 29, str(reached))
+check("TITLE", "37 occurrences in 7.35.3 NMAC are left to a conforming pass",
+      PART3_TOTAL - reached == 37, str(PART3_TOTAL - reached))
+check("TITLE", "49 occurrences remain across both parts",
+      (PART3_TOTAL - reached) + PART2_TOTAL == 49, str((PART3_TOTAL - reached) + PART2_TOTAL))
+check("TITLE", "no unmarked permit title survives in the proposed column",
+      not stray, "; ".join(stray) if stray else "none")
 
 # ---------------------------------------------------------------------------
 # COVER: every proposed change carries a citation
@@ -218,13 +358,14 @@ def main():
     for cls, claim, ok, detail in results:
         by.setdefault(cls, []).append((claim, ok, detail))
     lines = ["# Audit", "",
-             "Machine-checked claims in `7.35.3-practicum-amendments-v6.pdf`. "
+             "Machine-checked claims in `7.35.3-practicum-amendments-v7.pdf`. "
              "Regenerate with `python3 amendments/audit.py`.", "",
              "| Class | Checks | Passed |", "|---|---|---|"]
-    order = ["RULE", "QUOTE", "MATH", "COVER"]
+    order = ["RULE", "QUOTE", "MATH", "TITLE", "COVER"]
     label = {"RULE": "Published text reproduced verbatim",
              "QUOTE": "Quotations against their source",
              "MATH": "Arithmetic",
+             "TITLE": "The permit-title surface in Addendum C",
              "COVER": "Every change carries a citation"}
     for cls in order:
         rows = by.get(cls, [])

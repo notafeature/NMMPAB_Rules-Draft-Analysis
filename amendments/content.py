@@ -37,9 +37,8 @@ P.append((
     "a practitioner, facilitator, or healing center shall enable practitioners, facilitators, and owners and employees of "
     "healing centers to do the following, in accordance with medical psilocybin program rules:",
     dele("7.34.3.14") + " " + ins("7.35.3.14") + " AUTHORIZED POSSESSION, PURCHASE, OR SALE OF MEDICAL PSILOCYBIN BY "
-    "{{PTS_UC}}, FACILITATORS, " + ins("TRAINING PERMITTEES,") + " HEALING CENTER OWNERS AND EMPLOYEES: Certification of "
-    "a {{PT}}, facilitator, or healing center" + ins(", and issuance of a training permit under Subsection G of 7.35.3.19 NMAC,")
-    + " shall enable {{PTS}}, facilitators, " + ins("training permittees,") + " and owners and employees of "
+    "{{PTS_UC}}, FACILITATORS, HEALING CENTER OWNERS AND EMPLOYEES: Certification of "
+    "a {{PT}}, facilitator, or healing center shall enable {{PTS}}, facilitators, and owners and employees of "
     "healing centers to do the following, in accordance with medical psilocybin program rules:",
 ))
 
@@ -80,20 +79,16 @@ P.append((
     UNCHANGED,
 ))
 
-P.append((
-    "7.35.3.14",
-    "Subsection D, Training permittees",
-    NEW,
-    ins("D. Training permittees: A student who holds a current training permit issued under Subsection G of "
-        "7.35.3.19 NMAC may possess medical psilocybin products, and may administer or otherwise provide those products "
-        "to qualified patients, or to practicum participants in accordance with 7.35.3.29 NMAC, in administration "
-        "sessions conducted at a healing center or other approved location, in each case only while practising under "
-        "supervision as required by 7.35.3.19 NMAC."),
-))
-
 # ---------------------------------------------------------------------------
 # 7.35.3.18
 # ---------------------------------------------------------------------------
+
+P.append((
+    "7.35.3.18",
+    "Section heading",
+    "7.35.3.18 EDUCATIONAL REQUIREMENTS FOR CERTIFYING CLINICIANS, PRACTITIONERS, AND FACILITATORS:",
+    "7.35.3.18 EDUCATIONAL REQUIREMENTS FOR CERTIFYING CLINICIANS, {{PTS_UC}}, AND FACILITATORS:",
+))
 
 P.append((
     "7.35.3.18",
@@ -187,9 +182,14 @@ P.append((
 
 P.append((
     "7.35.3.18",
-    "Subsection E, additional {{PT_C}} module",
-    UNCHANGED,
-    UNCHANGED,
+    "Subsection E, additional {{PT_C}} module, lead-in",
+    "E. Additional requirements for initial practitioner certification: All practitioners shall complete a "
+    "module on psychedelic and psilocybin therapeutic approaches consisting of a minimum of five didactic hours, prior "
+    "to applying for certification, which shall include:",
+    "E. Additional requirements for initial {{PT}} certification: All {{PTS}} shall complete a "
+    "module on psychedelic and psilocybin therapeutic approaches consisting of a minimum of five didactic hours, prior "
+    "to applying for certification, which shall include: "
+    "<span class='note'>Paragraphs (1) through (3) not amended.</span>",
 ))
 
 P.append((
@@ -207,8 +207,22 @@ P.append((
 P.append((
     "7.35.3.18",
     "Subsection G, continuing education",
-    UNCHANGED,
-    UNCHANGED,
+    "G. Continuing education requirements for certifying clinicians, practitioners and facilitators:\n"
+    "(1) Certifying clinicians: Certifying clinicians shall complete a minimum of eight hours of continuing medical "
+    "education credits specific to psychedelic medicine or therapy every two years.\n"
+    "(2) Practitioners and facilitators: Practitioners and facilitators shall complete a minimum of 20 hours of "
+    "continuing education credits specific to psychedelic therapy and practice every two years. Practitioners and "
+    "facilitators shall also keep current with their basic life support, or cardiopulmonary resuscitation and automated "
+    "external defibrillation certification, or emergency medical technician licensure in addition to the 20 hours of "
+    "continuing education credits.",
+    "G. Continuing education requirements for certifying clinicians, {{PTS}} and facilitators:<br>"
+    "(1) Certifying clinicians: Certifying clinicians shall complete a minimum of eight hours of continuing medical "
+    "education credits specific to psychedelic medicine or therapy every two years.<br>"
+    "(2) {{PTS_C}} and facilitators: {{PTS_C}} and facilitators shall complete a minimum of 20 hours of "
+    "continuing education credits specific to psychedelic therapy and practice every two years. {{PTS_C}} and "
+    "facilitators shall also keep current with their basic life support, or cardiopulmonary resuscitation and automated "
+    "external defibrillation certification, or emergency medical technician licensure in addition to the 20 hours of "
+    "continuing education credits.",
 ))
 
 P.append((
@@ -217,7 +231,7 @@ P.append((
     NEW,
     ins("H. Total module hours: The requirements of Subsections A, C and D of this section shall together total a "
         "minimum of 84 hours for a facilitator applicant. The requirements of Subsections A, C and E of this section "
-        "shall together total a minimum of 84 hours for a {{PT}} applicant. The hours stated for each module in this "
+        "shall together total a minimum of 84 hours for a {{NPT}} applicant. The hours stated for each module in this "
         "section are minimums within that total."),
 ))
 
@@ -227,10 +241,17 @@ P.append((
 
 P.append((
     "7.35.3.19",
+    "Section heading",
+    "7.35.3.19 PRACTICUM REQUIREMENTS FOR PRACTITIONERS AND FACILITATORS:",
+    "7.35.3.19 PRACTICUM REQUIREMENTS FOR {{PTS_UC}} AND FACILITATORS:",
+))
+
+P.append((
+    "7.35.3.19",
     "Subsection A, minimum practicum hours; administration day sessions",
     "A. Minimum practicum hours; administration day sessions: An individual who seeks to become "
     "certified as a practitioner or facilitator shall participate in supervised practice training, otherwise referred to as a "
-    "“practicum”, after completing at least half of the didactic requirements and all of the simulated patient requirements "
+    "\u201cpracticum\u201d, after completing at least half of the didactic requirements and all of the simulated patient requirements "
     "of the educational requirements. The practicum shall consist of a minimum of 100 hours of supervised practice "
     "training for facilitators and 120 hours for practitioners and shall be completed prior to applying for certification. "
     "Students shall participate in a minimum of 80 hours of administration day sessions, where students are provided the "
@@ -239,7 +260,7 @@ P.append((
     "following criteria:",
     "A. Minimum practicum hours; administration day sessions: An individual who seeks to become "
     "certified as a {{PT}} or facilitator shall participate in supervised practice training, otherwise referred to as a "
-    "“practicum”, after completing at least half of the didactic requirements and all of the simulated patient "
+    "\u201cpracticum\u201d, after completing at least half of the didactic requirements and all of the simulated patient "
     "requirements of the educational requirements. The practicum shall consist of a minimum of "
     + dele("100") + " " + ins("62") + rng("Metz: approx. 62")
     + " hours of supervised practice training for facilitators and " + dele("120") + " " + ins("72")
@@ -284,16 +305,20 @@ P.append((
     NEW,
     ins("D. Practicum sequence: The practicum required by Subsection A of this section consists of the following, in "
         "sequence:") + "<br>"
-    + ins("(1) approximately 30 hours of initial facilitation experience. This stage shall be completed with practicum "
-          "participants who are not qualified patients, in accordance with 7.35.3.29 NMAC. Preparation and integration "
-          "sessions are required for each participant;") + rng("Metz: approx. 30") + "<br>"
-    + ins("(2) approximately 20 hours of co-facilitated cases, being a minimum of two cases co-facilitated with a "
-          "certified {{PT}} or facilitator, including administration sessions and the associated preparation and "
-          "integration sessions. The student holds a training permit issued under Subsection G of this section at this "
-          "stage and serves as the second person in the co-facilitation pair;") + rng("Metz: approx. 20") + "<br>"
-    + ins("(3) approximately 12 hours of group practicum, being direct participation in group preparation, "
-          "administration, and integration sessions; and") + rng("Metz: approx. 12") + "<br>"
-    + ins("(4) for {{PT}} applicants only, the supervision hours required by Subsection C of this section."),
+    + ins("(1) Initial facilitation experience: students shall begin the practicum by completing a minimum of two "
+          "sessions as a facilitator in a retreat or peer-support model with well participants, in accordance with "
+          "7.35.3.29 NMAC. Practicum session experience shall include preparation, administration, and integration;")
+    + rng("Metz: approx. 30 hours") + "<br>"
+    + ins("(2) Co-facilitation experience: after completing the initial facilitation experience, students shall complete "
+          "a minimum of two sessions co-facilitated with a department-permitted {{NPT}}, with patients presenting a "
+          "low-acuity qualifying condition. Practicum session experience shall include preparation, administration, and "
+          "integration;") + rng("Metz: approx. 20 hours") + "<br>"
+    + ins("(3) Group practicum: direct participation in group preparation, administration, and integration sessions; "
+          "and") + rng("Metz: approx. 12 hours") + "<br>"
+    + ins("(4) Additional experience: students may complete the remaining balance of the hours required by Subsection A "
+          "of this section in any manner of co-facilitation designed by the educational program or healing center "
+          "hosting the practicum that otherwise complies with this rule. For {{NPT}} applicants, the supervision hours "
+          "required by Subsection C of this section count toward that balance."),
 ))
 
 P.append((
@@ -309,25 +334,22 @@ P.append((
 
 P.append((
     "7.35.3.19",
-    "Subsection F, practicum standards (published Subsection E)",
-    "E. Practicum standards: Practicum supervisors and students shall follow these rules as they apply "
-    "to facilitation and therapy, shall comply with HIPAA and HITECH confidentiality requirements, and shall comport "
-    "with applicable limits on scope of practice.",
-    dele("E.") + " " + ins("F.") + " Practicum standards: Practicum supervisors and students shall follow these rules as "
-    "they apply to facilitation and therapy, shall comply with HIPAA and HITECH confidentiality requirements, and shall "
-    "comport with applicable limits on scope of practice. <span class='note'>Re-lettered only. Text not amended.</span>",
+    "Subsection F, independent medical screening",
+    NEW,
+    ins("F. Independent medical screening required: A training program overseeing practicum treatments shall not also "
+        "medically screen patients. Medical screening shall be conducted independently by the clinician with the "
+        "hosting healing center or another certifying clinician not affiliated with the training program."),
 ))
 
 P.append((
     "7.35.3.19",
-    "Subsection G, training permit",
-    NEW,
-    ins("G. Training permit: On completion of the stage described in Paragraph (1) of Subsection D of this section, "
-        "the department shall issue to the student a time-limited training permit authorizing the student to practise "
-        "under supervision, first as the second member of a co-facilitation pair during the stages described in "
-        "Paragraphs (2) and (3) of Subsection D of this section, and then while completing the requirements of "
-        "Subsection H of this section. The full facilitator or {{PT}} certification issues only when all requirements "
-        "are met."),
+    "Subsection G, practicum standards (published Subsection E)",
+    "E. Practicum standards: Practicum supervisors and students shall follow these rules as they apply "
+    "to facilitation and therapy, shall comply with HIPAA and HITECH confidentiality requirements, and shall comport "
+    "with applicable limits on scope of practice.",
+    dele("E.") + " " + ins("G.") + " Practicum standards: Practicum supervisors and students shall follow these rules as "
+    "they apply to facilitation and therapy, shall comply with HIPAA and HITECH confidentiality requirements, and shall "
+    "comport with applicable limits on scope of practice. <span class='note'>Re-lettered only. Text not amended.</span>",
 ))
 
 P.append((
@@ -335,10 +357,10 @@ P.append((
     "Subsection H, supervision and consultation; case presentation sign-off",
     NEW,
     ins("H. Supervision and consultation; case presentation sign-off:") + "<br>"
-    + ins("(1) A training permittee shall complete a minimum of 20 hours of supervision or consultation during the "
-          "training permit period, in addition to the practicum hours required by this section;") + rng("Metz: 20 to 30") + "<br>"
-    + ins("(2) sign-off is tied to case presentation. The permittee shall present a minimum of two cases of clients the "
-          "permittee has personally worked with using regulated medicine. Each case presentation shall take the form of "
+    + ins("(1) An applicant for certification shall complete a minimum of 20 hours of supervision or consultation after "
+          "the practicum is completed, in addition to the practicum hours required by this section;") + rng("Metz: 20 to 30") + "<br>"
+    + ins("(2) sign-off is tied to case presentation. The applicant shall present a minimum of two cases of clients the "
+          "applicant has personally worked with using regulated medicine. Each case presentation shall take the form of "
           "a biopsychosocial case conceptualization, including a discussion of presenting concerns, risk factors, "
           "supportive factors, treatment considerations, and recommendations for aftercare; and") + "<br>"
     + ins("(3) the consultant or supervisor shall complete a standardized evaluation form on each case presented."),
@@ -348,7 +370,7 @@ P.append((
     "7.35.3.19",
     "Subsection I, end-of-life practice",
     NEW,
-    ins("I. End-of-life practice: Before serving end-of-life participants independently, a {{PT}} or facilitator shall "
+    ins("I. End-of-life practice: Before serving end-of-life participants independently, a {{NPT}} or facilitator shall "
         "complete at least one co-facilitated end-of-life case and present at least one end-of-life case in supervision "
         "or consultation."),
 ))
@@ -390,6 +412,17 @@ P.append((
 
 P.append((
     "7.35.3.20",
+    "Section heading and lead-in",
+    "7.34.3.20 REQUIREMENTS FOR HEALING CENTERS AND OTHER APPROVED LOCATIONS: A healing center and a "
+    "registrant of another approved location shall comply with the following requirements:",
+    dele("7.34.3.20") + " " + ins("7.35.3.20") + " REQUIREMENTS FOR HEALING CENTERS AND OTHER APPROVED LOCATIONS: A "
+    "healing center and a registrant of another approved location shall comply with the following requirements: "
+    "<span class='note'>Subsections A through G and I not amended. Of Subsection H, only Paragraph (5) is "
+    "reproduced.</span>",
+))
+
+P.append((
+    "7.35.3.20",
     "Subsection H(5), staffing ratios",
     "(5) Includes procedures to ensure that there are practitioners and facilitators present at all "
     "times during an administration session with a minimum of one practitioner and one facilitator for individual patient "
@@ -403,11 +436,10 @@ P.append((
     "times during an administration session with a minimum of one {{PT}} and one facilitator for individual patient "
     "sessions; and in group administration sessions a minimum of one {{PT}} for every eight patients and a "
     "minimum of one facilitator or qualified student for every two patients. For purposes of the foregoing provision, a "
-    "student shall be deemed qualified if they " + dele("are registered with a certified educational program")
-    + ins("hold a current training permit issued under Subsection G of 7.35.3.19 NMAC")
-    + " and they have completed at least 50 hours of their practicum. Exception: the department may waive or decrease "
-    "this ratio if the department determines that the ratio specified presents a barrier for patients and that safety "
-    "concerns are otherwise alleviated.",
+    "student shall be deemed qualified if they are registered with a certified educational program and they have "
+    "completed at least 50 hours of their practicum. Exception: the department may waive or decrease this ratio if the "
+    "department determines that the ratio specified presents a barrier for patients and that safety concerns are otherwise "
+    "alleviated.",
 ))
 
 # ---------------------------------------------------------------------------
