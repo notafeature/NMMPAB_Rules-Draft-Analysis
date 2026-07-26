@@ -458,6 +458,44 @@ check("TERM", "4 of the 16 are defined in the draft at 7.35.3.7",
       "certificant, facilitator, registrant of another approved location, student")
 
 
+# Every count the cover and the README state about the size of this draft, against
+# what is actually in content.py and in Addendum C. These claims drifted once,
+# reading twenty-one amended provisions when there were twenty-four.
+amended = [(sec, sub) for _, sec, sub, _, prop in P if prop not in (NEW, UNCHANGED)]
+reproduced = [(sec, sub) for _, sec, sub, _, prop in P if prop == UNCHANGED]
+sections = {sec for _, sec, _, _, _ in P}
+addC = len(re.findall(r"<tr><td>", re.search(r'^ADDENDUM_C = """(.*?)"""', BUILD, re.S | re.M).group(1)))
+addB = len(re.findall(r"<tr><td>", re.search(r'^ADDENDUM_B = """(.*?)"""', BUILD, re.S | re.M).group(1)))
+WORDS = {19: "nineteen", 21: "twenty-one", 24: "twenty-four", 9: "nine"}
+
+README = (HERE / "README.md").read_text(encoding="utf-8")
+for label, n, phrases in [
+        ("amended provisions", len(amended),
+         ["%s provisions are amended" % WORDS[len(amended)].capitalize()]),
+        ("sections reached", len(sections),
+         ["across %s sections" % WORDS[len(sections)]]),
+        ("recorded defects", addC,
+         ["%s further defects are recorded" % WORDS[addC].capitalize(),
+          "all %s are listed with the reason in Addendum C" % WORDS[addC]]),
+        ("provisions reproduced unamended", len(reproduced),
+         ["%s provisions are reproduced without amendment" % WORDS[len(reproduced)].capitalize()])]:
+    for phrase in phrases:
+        check("COUNT", "the README states the %s as %d" % (label, n), phrase in README,
+              phrase if phrase in README else "MISSING: %s" % phrase)
+for label, n, phrase in [
+        ("amended provisions", len(amended),
+         "<b>%s provisions are amended.</b>" % WORDS[len(amended)].capitalize()),
+        ("recorded defects", addC,
+         "<b>%s further defects are recorded and not drafted.</b>" % WORDS[addC].capitalize())]:
+    check("COUNT", "the cover states the %s as %d" % (label, n), phrase in BUILD,
+          phrase if phrase in BUILD else "MISSING: %s" % phrase)
+check("COUNT", "every recorded defect in Addendum C has a review note somewhere in the draft",
+      addC <= len(REVIEW), "%d rows in Addendum C, %d review notes" % (addC, len(REVIEW)))
+check("COUNT", "Addendum B records at least one dependency per practicum-scope section touched",
+      addB >= 6, "%d rows" % addB)
+check("COUNT", "every provision in the draft carries a source note", len(SOURCE) == len(P),
+      "%d notes, %d provisions" % (len(SOURCE), len(P)))
+
 # ---------------------------------------------------------------------------
 # CITE
 # ---------------------------------------------------------------------------

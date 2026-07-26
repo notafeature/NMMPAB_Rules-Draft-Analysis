@@ -350,11 +350,11 @@ end.</li>
 of .20, and a proposed .29. Read against working draft v9 of that document. Its
 <i>amendments/SOURCE-OF-TRUTH.md</i> assigns to this document each item drafted or recorded here, and Addendum
 B records every dependency in both directions.</li>
-<li><b>Twenty-one changes are drafted.</b> Every one is a mechanical correction, a conforming amendment between
-two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. No change
+<li><b>Twenty-four provisions are amended.</b> Every change is a mechanical correction, a conforming amendment
+between two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. No change
 introduces a figure or a policy choice that no source supplies.</li>
 <li><b>Twenty-one further defects are recorded and not drafted.</b> Each carries a note at its provision stating
-the issue, the choices, and who decides, and all of them are listed with the reason in Addendum C. The
+the issue, the choices, and who decides, and all twenty-one are listed with the reason in Addendum C. The
 commonest reason is that the fix requires a figure no source carries.</li>
 <li>The two BLOCKING findings in this scope are both reached. The third-party evaluator conflict is drafted at
 7.35.3.16 A and again at 7.35.3.16 C(2)(b), so either or both may be adopted. The registration on which

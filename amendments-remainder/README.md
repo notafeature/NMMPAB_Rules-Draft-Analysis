@@ -41,9 +41,9 @@ The parts come from the `doc` field of each entry in `content.py` and are named 
 
 ## What is drafted, and what is not
 
-Twenty-one changes are drafted. Every one of them is either a mechanical correction, a conforming amendment between two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. **No change introduces a figure or a policy choice that no source supplies.**
+Twenty-four provisions are amended, across nineteen sections. Every change is either a mechanical correction, a conforming amendment between two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. **No change introduces a figure or a policy choice that no source supplies.**
 
-Twenty-one further defects are recorded and left undrafted. Each has a review note at its provision stating the issue, the choices, and who decides, and all twenty-one are listed with the reason in Addendum C. The commonest reason is that the fix requires a figure no source carries.
+Twenty-one further defects are recorded and left undrafted. Each has a review note at its provision stating the issue, the choices, and who decides, and all twenty-one are listed with the reason in Addendum C. Nine provisions are reproduced without amendment because they carry one of those findings. The commonest reason is that the fix requires a figure no source carries.
 
 ### The two BLOCKING findings in this scope
 
