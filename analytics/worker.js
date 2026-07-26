@@ -1,18 +1,29 @@
 /**
- * nmmpab-count: a visit counter for the NMMPAB rules-draft site.
+ * nmmpab-count: serves the NMMPAB rules-draft site, and counts its readers.
  *
  * The site is static HTML on GitHub Pages, which keeps no logs and exposes
- * none. This Worker is the only place a visit is recorded, and it stores the
- * least it can while still answering the four questions that were asked:
- * is anyone reading this, roughly how many, which pages, and is there any
- * sign the Department of Health is among them.
+ * none. This Worker does two jobs on one hostname:
  *
- * Routes:
- *   POST /e         record an event, sent by the beacon in every page
- *   GET  /px        1x1 pixel fallback for readers with JavaScript disabled
- *   GET  /          the dashboard, HTTP Basic auth, owner only
- *   GET  /api/summary?days=N   the dashboard's data, same auth
- *   GET  /health    liveness, no auth, returns nothing about the data
+ * 1. It serves the site at rules.medical-psilocybin.org, by fetching from
+ *    GitHub Pages and passing the response through. It deliberately does this
+ *    rather than pointing GitHub Pages at the custom domain with a CNAME file,
+ *    because GitHub then permanently redirects the notafeature.github.io URL
+ *    to the new one. Proxying instead keeps BOTH addresses live and
+ *    independent. If a Department of Health network filter blocks one of them,
+ *    and blocking a month-old domain with "psilocybin" in the name is a real
+ *    possibility, the other still works.
+ *
+ * 2. It counts visits under /_count, on that same hostname. Same origin means
+ *    there is no third-party request for a content blocker or a network filter
+ *    to recognise as tracking, because there is no third party.
+ *
+ * Routes under /_count:
+ *   POST /_count/e     record an event, sent by the beacon in every page
+ *   GET  /_count/px    image fallback when sendBeacon and fetch are blocked
+ *   GET  /_count/      the dashboard, HTTP Basic auth, owner only
+ *   GET  /_count/api/summary?days=N   the dashboard's data, same auth
+ *   GET  /_count/health               liveness, no auth, reveals no data
+ * Everything else is the site.
  *
  * What is never stored: IP addresses, cookies, any identifier that survives
  * the UTC day, city or coordinates, referrer paths or query strings, and any
@@ -21,6 +32,40 @@
  */
 
 const RETENTION_DAYS = 400;
+
+// Where the site actually lives. The Worker is a window onto this, not a copy.
+const UPSTREAM = "https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis";
+
+// Everything under this prefix is the counter. Everything else is the site.
+const PREFIX = "/_count";
+
+const UPSTREAM_BASE = new URL(UPSTREAM + "/");
+
+/**
+ * Move a redirect from the upstream address onto this one.
+ *
+ * The upstream serves the site out of a subdirectory and this Worker serves it
+ * at the root, so a redirect has to lose that subdirectory as well as the host.
+ * The Location header may be absolute or path-only depending on what produced
+ * it, so resolve it first and work from the result rather than pattern-matching
+ * the raw string. Redirects pointing anywhere else are left alone.
+ */
+function rebaseLocation(loc, origin) {
+  let abs;
+  try {
+    abs = new URL(loc, UPSTREAM_BASE);
+  } catch (e) {
+    return loc;
+  }
+  if (abs.origin !== UPSTREAM_BASE.origin) return loc;
+
+  const prefix = UPSTREAM_BASE.pathname.replace(/\/$/, "");
+  let path = abs.pathname;
+  if (path === prefix) path = "/";
+  else if (path.startsWith(prefix + "/")) path = path.slice(prefix.length);
+
+  return origin + path + abs.search + abs.hash;
+}
 
 const PV_PATH = /^[a-z0-9-]+\.html$/;
 const DL_PATH = /^documents\/[A-Za-z0-9._%-]+\.(pdf|txt)$/;
@@ -118,7 +163,7 @@ async function sweep(env, today) {
   ]);
 }
 
-async function record(request, env, ctx, { kind, path, ref, nojs }) {
+async function record(request, env, ctx, { kind, path, ref, nojs, siteHost }) {
   const ua = request.headers.get("User-Agent") || "";
   if (!ua || BOT_UA.test(ua)) return;
 
@@ -133,8 +178,8 @@ async function record(request, env, ctx, { kind, path, ref, nojs }) {
   const org = String(cf.asOrganization || "").slice(0, 120);
 
   await env.DB.prepare(
-    "INSERT INTO hits (ts,day,kind,path,visitor,ref_host,country,asn,as_org,net_kind,nojs) " +
-    "VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11)"
+    "INSERT INTO hits (ts,day,kind,path,visitor,ref_host,country,asn,as_org,net_kind,nojs,site_host) " +
+    "VALUES (?1,?2,?3,?4,?5,?6,?7,?8,?9,?10,?11,?12)"
   ).bind(
     now.toISOString().slice(0, 19) + "Z",
     day,
@@ -146,7 +191,8 @@ async function record(request, env, ctx, { kind, path, ref, nojs }) {
     Number(cf.asn) || 0,
     org,
     classifyNetwork(org),
-    nojs ? 1 : 0
+    nojs ? 1 : 0,
+    refHost(siteHost) || ""
   ).run();
 
   ctx.waitUntil(sweep(env, day).catch(() => {}));
@@ -195,7 +241,7 @@ async function summary(env, days) {
   const from = daysAgo(days);
   const q = (sql) => env.DB.prepare(sql).bind(from).all();
 
-  const [totals, daily, pages, refs, orgs, dls, countries] = await Promise.all([
+  const [totals, daily, pages, refs, orgs, dls, countries, hosts] = await Promise.all([
     q("SELECT COUNT(*) views, COUNT(DISTINCT visitor||day) visitor_days, " +
       "COUNT(DISTINCT day) active_days, MIN(day) first_day, " +
       "SUM(nojs) nojs FROM hits WHERE day >= ?1 AND kind='pv'"),
@@ -219,6 +265,9 @@ async function summary(env, days) {
       "FROM hits WHERE day >= ?1 AND kind='dl' GROUP BY path ORDER BY n DESC LIMIT 30"),
     q("SELECT COALESCE(NULLIF(country,''),'??') code, COUNT(*) n FROM hits " +
       "WHERE day >= ?1 GROUP BY COALESCE(NULLIF(country,''),'??') ORDER BY n DESC LIMIT 20"),
+    q("SELECT COALESCE(NULLIF(site_host,''),'(before this was recorded)') host, COUNT(*) n, " +
+      "COUNT(DISTINCT visitor||day) visitor_days, MAX(day) last_day FROM hits WHERE day >= ?1 " +
+      "GROUP BY COALESCE(NULLIF(site_host,''),'(before this was recorded)') ORDER BY n DESC LIMIT 10"),
   ]);
 
   const t = totals.results[0] || {};
@@ -238,6 +287,7 @@ async function summary(env, days) {
     orgs: orgs.results,
     downloads: dls.results,
     countries: countries.results,
+    hosts: hosts.results,
     retentionDays: RETENTION_DAYS,
   };
 }
@@ -250,10 +300,51 @@ const GIF = Uint8Array.from([
   1, 0, 0x3b,
 ]);
 
+/**
+ * Serve the site by passing GitHub Pages through.
+ *
+ * Every link on the site is relative, so nothing needs rewriting in the body.
+ * Only Location headers need care, because GitHub redirects a directory that
+ * was asked for without its trailing slash, and that redirect would otherwise
+ * bounce the reader onto github.io mid-visit.
+ */
+async function serveSite(request, url) {
+  if (request.method !== "GET" && request.method !== "HEAD") {
+    return new Response("Method not allowed", { status: 405 });
+  }
+
+  const upstream = await fetch(UPSTREAM + url.pathname + url.search, {
+    method: request.method,
+    headers: {
+      "Accept": request.headers.get("Accept") || "*/*",
+      "Accept-Language": request.headers.get("Accept-Language") || "",
+      "User-Agent": request.headers.get("User-Agent") || "",
+      "If-None-Match": request.headers.get("If-None-Match") || "",
+    },
+    redirect: "manual",
+  });
+
+  const res = new Response(upstream.body, upstream);
+  const loc = res.headers.get("Location");
+  if (loc) res.headers.set("Location", rebaseLocation(loc, url.origin));
+  return res;
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const path = url.pathname.replace(/\/+$/, "") || "/";
+
+    // Answered here rather than passed upstream, since the browser asks for it
+    // on every dashboard load and GitHub Pages has nothing to give it.
+    if (url.pathname === "/favicon.ico") {
+      return new Response(null, { status: 204, headers: { "Cache-Control": "max-age=86400" } });
+    }
+
+    // Everything outside the counter prefix is the site itself.
+    if (url.pathname !== PREFIX && !url.pathname.startsWith(PREFIX + "/")) {
+      return serveSite(request, url);
+    }
+    const path = url.pathname.slice(PREFIX.length).replace(/\/+$/, "") || "/";
 
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders(request, env) });
@@ -261,10 +352,6 @@ export default {
 
     if (path === "/health") {
       return new Response("ok", { headers: { "Content-Type": "text/plain" } });
-    }
-
-    if (path === "/favicon.ico") {
-      return new Response(null, { status: 204, headers: { "Cache-Control": "max-age=86400" } });
     }
 
     // Ingest. Deliberately unauthenticated, so it is kept narrow: the request
@@ -289,6 +376,7 @@ export default {
           path: body.p,
           ref: body.r,
           nojs: false,
+          siteHost: origin,
         }).catch(() => {})
       );
       return new Response(null, { status: 204, headers: cors });
@@ -308,6 +396,7 @@ export default {
             path: url.searchParams.get("p"),
             ref: url.searchParams.get("r") || "",
             nojs: true,
+            siteHost: ref,
           }).catch(() => {})
         );
       }
@@ -453,7 +542,7 @@ const DASHBOARD = `<!doctype html>
 <body>
 <div class="col">
   <h1>Readers of the NMMPAB rules site</h1>
-  <p class="sub">notafeature.github.io/NMMPAB_Rules-Draft-Analysis. Counted at the edge, no cookies, no reader identified.</p>
+  <p class="sub">rules.medical-psilocybin.org and notafeature.github.io/NMMPAB_Rules-Draft-Analysis, counted together. No cookies, no reader identified.</p>
 
   <div class="ranges" id="ranges" role="group" aria-label="Time range">
     <button data-days="7">7 days</button>
@@ -500,6 +589,20 @@ const DASHBOARD = `<!doctype html>
       somebody at the department opened the page, and the absence of one is <b>no evidence either way</b>.
       Nothing here identifies a person, and it should not be used to try.</p>
     <div id="orgs"></div>
+  </div>
+
+  <div class="card">
+    <div class="cardhead">
+      <h2>Which address readers used</h2>
+    </div>
+    <p class="note">The site answers on two addresses on purpose, and neither redirects to the other, so that a
+      network filter blocking one does not cut a reader off. <b>This is where you find out whether that is
+      happening.</b> If readers appear only on <span class="mono">notafeature.github.io</span>, then
+      <span class="mono">rules.medical-psilocybin.org</span> is not reaching them: a domain registered in
+      July 2026 with "psilocybin" in the name is the kind of thing a government filter blocks by default, both
+      for being new and for the word. If the reverse, the github.io address is the blocked one. If both appear,
+      neither is blocked and this table can be ignored.</p>
+    <div id="hosts"></div>
   </div>
 
   <div class="card">
@@ -702,6 +805,9 @@ const DASHBOARD = `<!doctype html>
   function render(d){
     state.data = d;
     kpis(d); daily(d); pages(d); orgs(d);
+    simple("hosts", ["Address", "Requests", "Reader-days", "Last seen"],
+      d.hosts.map(function(r){ return ['<span class="mono">' + esc(r.host) + "</span>", n(r.n), n(r.visitor_days),
+        '<span class="mono">' + esc(r.last_day) + "</span>"]; }), [false, true, true, false]);
     simple("refs", ["Came from", "Requests", "Reader-days"],
       d.referrers.map(function(r){ return [esc(r.host), n(r.n), n(r.visitor_days)]; }), [false, true, true]);
     simple("dls", ["Document", "Clicks", "Reader-days", "Last seen"],
@@ -718,7 +824,7 @@ const DASHBOARD = `<!doctype html>
 
   function load(){
     $("kpis").innerHTML = '<p class="empty">Loading.</p>';
-    fetch("/api/summary?days=" + state.days, { credentials: "same-origin" })
+    fetch("${PREFIX}/api/summary?days=" + state.days, { credentials: "same-origin" })
       .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(render)
       .catch(function(e){ $("kpis").innerHTML = '<p class="empty">Could not load: ' + esc(e.message) + "</p>"; });

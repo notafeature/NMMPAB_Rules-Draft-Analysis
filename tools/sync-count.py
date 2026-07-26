@@ -31,7 +31,7 @@ DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
 SELF = os.path.abspath(__file__)
 
 # The Worker's origin, no trailing slash. Printed by `npx wrangler deploy`.
-ENDPOINT = ""
+ENDPOINT = "https://rules.medical-psilocybin.org/_count"
 
 # What this sends, and nothing else:
 #   k  "pv" for a page view, "dl" for a click on a document link

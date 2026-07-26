@@ -40,7 +40,15 @@ CREATE TABLE IF NOT EXISTS hits (
 
   -- 1 if the row arrived through the beacon's image fallback rather than
   -- through sendBeacon or fetch.
-  nojs     INTEGER NOT NULL DEFAULT 0
+  nojs     INTEGER NOT NULL DEFAULT 0,
+
+  -- Which of the site's two addresses the reader was on. The site answers on
+  -- both rules.medical-psilocybin.org and notafeature.github.io, on purpose,
+  -- so that a network filter blocking one does not cut a reader off. This
+  -- column is how you find out whether that is happening: a reader who only
+  -- ever appears on the github.io address is a reader for whom the new domain
+  -- does not resolve or is blocked.
+  site_host TEXT
 );
 
 CREATE INDEX IF NOT EXISTS hits_day      ON hits(day);

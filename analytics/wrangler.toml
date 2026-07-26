@@ -16,10 +16,21 @@ compatibility_date = "2026-07-01"
 # and the Society is a client rather than a party to it.
 account_id = "2418db2ff3f95726c374a86551d2436e"
 
-# Serve on the free nmmpab-count.<your-subdomain>.workers.dev hostname. To move
-# to a domain of your own later, set this to false, add a [[routes]] entry with
-# custom_domain = true, redeploy, and re-run tools/sync-count.py --endpoint.
-workers_dev = true
+# The Worker owns rules.medical-psilocybin.org: it serves the site there by
+# passing GitHub Pages through, and counts visits under /_count on that same
+# hostname. Wrangler creates the DNS record and the certificate itself, since
+# the zone is on Cloudflare DNS in this account.
+#
+# GitHub Pages is deliberately NOT pointed at this domain with a docs/CNAME
+# file. Doing that makes GitHub permanently redirect the notafeature.github.io
+# address to this one, leaving a single point of failure. Proxying instead
+# keeps both addresses live and independent, which matters if a Department of
+# Health filter blocks a new domain with "psilocybin" in the name.
+workers_dev = false
+
+[[routes]]
+pattern = "rules.medical-psilocybin.org"
+custom_domain = true
 
 # Created 2026-07-26, primary location WNAM. Schema in schema.sql, already applied.
 [[d1_databases]]

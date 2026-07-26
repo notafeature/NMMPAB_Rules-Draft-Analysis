@@ -259,7 +259,7 @@
 
     <section>
       <div class="sh"><p class="k">Measurement</p><h2>What is recorded when you read a page</h2></div>
-      <p class="body">Every page loads a short script that reports two things to a visit counter: the file name of the page, and the host name of the site a reader followed a link from. The counter runs on Cloudflare Workers on infrastructure this site's maintainer controls, and nothing is sent to an advertising network, an analytics company, or a data broker. There are no cookies. From each report the counter keeps a country code, the name of the internet provider that carried the request, and a hash of the requesting address, the browser string, and the date. That hash makes it possible to tell two readers apart on the same day and impossible to connect a reader on one day to the same reader on the next, because it changes daily and none of the values that go into it are stored. The address itself, the city, and anything a reader types are never recorded. Clicks on a document link are counted by file name. A browser that sends Global Privacy Control or Do Not Track is not counted at all. Records are deleted after 400 days. The purpose is to know whether these pages are read and which of them, and the result is a private page of totals, not anything about a person.</p>
+      <p class="body">Every page loads a short script that reports two things to a visit counter: the file name of the page, and the host name of the site a reader followed a link from. The counter runs on the same domain that served the page, on Cloudflare Workers infrastructure this site's maintainer controls, so there is no third party involved and nothing is sent to an advertising network, an analytics company, or a data broker. There are no cookies. From each report the counter keeps a country code, the name of the internet provider that carried the request, and a hash of the requesting address, the browser string, and the date. That hash makes it possible to tell two readers apart on the same day and impossible to connect a reader on one day to the same reader on the next, because it changes daily and none of the values that go into it are stored. The address itself, the city, and anything a reader types are never recorded. Clicks on a document link are counted by file name. A browser that sends Global Privacy Control or Do Not Track is not counted at all. Records are deleted after 400 days. The purpose is to know whether these pages are read and which of them, and the result is a private page of totals, not anything about a person.</p>
     </section>
 
     <section>
@@ -358,7 +358,7 @@
 </script>
 <script id="countjs">
 (function(){
-  var E="";
+  var E="https://rules.medical-psilocybin.org/_count";
   if(!E) return;
   var nav=navigator;
   if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
