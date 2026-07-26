@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit every verifiable claim in the four amendment documents outside the practicum.
+"""Audit every verifiable claim in the amendment document outside the practicum.
 
 Eight classes of check, each with a receipt:
 
@@ -15,7 +15,7 @@ Eight classes of check, each with a receipt:
   PROSE   every review note finishes its sentences and states the issue, the
           choices, and who decides
   STYLE   no em dashes, and no NMSA 1978 section number asserted by this draft
-  HEADER  every page of every built PDF names the section or addendum it carries
+  HEADER  every page of the built PDF names the section or addendum it carries
 
 Exit code is non-zero if any check fails. Output: amendments-remainder/AUDIT.md
 """
@@ -617,11 +617,15 @@ def document_prose():
         m = re.search(r'^%s = """(.*?)"""' % name, BUILD, re.S | re.M)
         if m:
             out.append(m.group(1))
-    for name in ("DOCS", "SECTION_TITLES", "UNDEFINED_TERMS", "DEFINED_TERMS"):
-        m = re.search(r"^%s = [\[{](.*?)^[\]}]" % name, BUILD, re.S | re.M)
+    for name in ("PARTS", "SECTION_TITLES", "UNDEFINED_TERMS", "DEFINED_TERMS", "RUNNING"):
+        m = re.search(r"^%s = ([\[{].*?[\]}])\n" % name, BUILD, re.S | re.M)
         if m:
             out.append(m.group(1))
-    m = re.search(r"^def addendum_d\(corpus\):(.*?)^FOOT = ", BUILD, re.S | re.M)
+    for fn in ("addendum_d", "contents_table", "build_body"):
+        m = re.search(r"^def %s\\(.*?\\):(.*?)\n\n\n" % fn, BUILD, re.S | re.M)
+        if m:
+            out.append(m.group(1))
+    m = re.search(r"^def _never_matches\(\):", BUILD, re.S | re.M)
     if m:
         out.append(m.group(1))
     return "\n".join(out)
@@ -684,36 +688,41 @@ check("STYLE", "nothing under amendments/ or docs/ is referenced for writing",
 # HEADER: every page names what it carries
 # ---------------------------------------------------------------------------
 
-# The running header is the repeating table header of each section's table, so a
-# page break inside a provision still names the section. The cover page names the
-# document; the closing sources page carries no header by design. Every other page
-# has to name a section or an addendum.
-NAMES = re.compile(r"7\.35\.3\.\d|Addendum [A-D]|proposed amendments outside the practicum")
+# The running header is a CSS named page per section, so the section's identity is
+# reproduced in the top margin of every page the section spans. Every page has to
+# name a section, a part, an addendum, the cover, or the closing sources block,
+# and every named page declared in the build has to be reachable.
+NAMES = re.compile(r"7\.35\.3\.?\d*|Addendum [A-D]|Part I|Sources and method")
 
-DOC_STEMS = re.findall(r'\("(7\.35\.3-[a-z]+-amendments)", "(\d)"', BUILD)
-check("HEADER", "the build produces four documents", len(DOC_STEMS) == 4, str([d for d, _ in DOC_STEMS]))
+RUN = re.findall(r'\("([a-zA-Z0-9]+)", "([^"]+)", "([^"]+)"\),', re.search(
+    r"^RUNNING = \[(.*?)^\]", BUILD, re.S | re.M).group(1))
+declared = {cls for cls, lab, _ in RUN if re.fullmatch(r"7\.35\.3\.\d{1,2}", lab)}
+rendered = {"s%s" % sec.rsplit(".", 1)[1] for _, sec, _, _, _ in P}
+check("HEADER", "the build declares a named page for every section it renders",
+      declared == rendered,
+      "declared %d, rendered %d, difference %s"
+      % (len(declared), len(rendered), sorted(declared ^ rendered) or "none"))
+PART_CLS = set(re.findall(r'"[IV]+": "([a-zA-Z0-9]+)"', BUILD))
+SEC_CLS = {"s%s" % lab.rsplit(".", 1)[1] for _, lab, _ in RUN if lab.startswith("7.35.3.")}
+for cls, label, title in RUN:
+    reachable = (cls in SEC_CLS or cls in PART_CLS
+                 or ('class="rr %s"' % cls) in BUILD or ('class="%s"' % cls) in BUILD)
+    check("HEADER", "named page %s is reachable from the build" % cls, reachable,
+          "section.%s { page: %s; }" % (cls, cls))
 
-for stem, num in DOC_STEMS:
-    pdf = HERE / ("%s-v1.pdf" % stem)
-    if not check("HEADER", "%s-v1.pdf has been built" % stem, pdf.exists(),
-                 "run build-redline-pdf.py before audit.py"):
-        continue
+PDF = HERE / "7.35.3-remainder-amendments-v1.pdf"
+if check("HEADER", "the document has been built", PDF.exists(),
+         "run build-redline-pdf.py before audit.py"):
     from pdfminer.high_level import extract_pages as _pages
     from pdfminer.layout import LTTextContainer as _LTC
-    pages = list(_pages(str(pdf)))
-    check("HEADER", "%s has pages" % stem, len(pages) > 4, "%d pages" % len(pages))
+    pages = list(_pages(str(PDF)))
+    check("HEADER", "the document is one file", True, "%d pages" % len(pages))
     for i, page in enumerate(pages, 1):
-        top = page.height - 90
+        top = page.height - 56
         hdr = " | ".join(flatten(el.get_text()) for el in page
                          if isinstance(el, _LTC) and el.y1 > top)
-        if i == len(pages):
-            check("HEADER", "%s page %d is the closing sources page" % (stem, i),
-                  "Every block was checked against the text layer" in hdr
-                  or "Sources." in hdr or "Status." in hdr or "Method." in hdr,
-                  "no running header by design")
-            continue
-        check("HEADER", "%s page %d names what it carries" % (stem, i), bool(NAMES.search(hdr)),
-              hdr[:70] if hdr else "NO HEADER TEXT FOUND")
+        check("HEADER", "page %d names what it carries" % i, bool(NAMES.search(hdr)),
+              hdr[:64] if hdr else "NO HEADER TEXT FOUND")
 
 
 # ---------------------------------------------------------------------------

@@ -8,9 +8,14 @@ Every left-column block is verified against the text layer of the published PDF
 by exact contiguous match before any file is written. If any block fails, the
 build aborts and writes nothing.
 
-One PDF per document key in `DOCS`. Regrouping the draft is an edit to `DOCS`
-here and to the `doc` field of each entry in `content.py`; nothing else depends
-on the split.
+One document, in four parts, with the addenda at the end. The parts come from
+the `doc` field of each entry in `content.py` and are named in `PARTS` here.
+
+The form follows `amendments/7.35.3-practicum-amendments-v9.pdf`: named CSS pages
+carry a running header naming the section in the top margin of every page the
+section spans; each provision is one table row whose two columns are a grid
+inside a single cell, so a long provision flows across a page break with the
+columns still aligned and the notes run the full width beneath them.
 
 The machinery is copied from `amendments/build-redline-pdf.py` rather than
 imported, so that the practicum document keeps building if this one breaks.
@@ -31,7 +36,7 @@ from content import P, NEW, UNCHANGED, D1, D2, D3, D4     # noqa: E402
 from notes import source_for, review_for                  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
-OUT_DIR = REPO / "amendments-remainder"
+OUT_PDF = REPO / "amendments-remainder/7.35.3-remainder-amendments-v1.pdf"
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
 PART2_TXT = REPO / "source-text/7.35.2-NMAC-adopted-2026-06-23.txt"
 
@@ -40,20 +45,20 @@ VERSION_DATE = "July 26, 2026"
 
 LINE_TOLERANCE = 3.0
 
-# doc key -> (file stem, number, title, one-line statement of what it covers)
-DOCS = {
-    D1: ("7.35.3-framework-amendments", "1", "Framework and defined terms",
-         "7.35.3.1 through 7.35.3.7. The defined-term dependency on 7.35.2.7 NMAC, and the four definitions "
-         "the published rule itself supplies."),
-    D2: ("7.35.3-education-amendments", "2", "Educational programs",
+# doc key -> (roman numeral, title, what the part covers)
+PARTS = {
+    D1: ("I", "Framework and defined terms",
+         "7.35.3.1 through 7.35.3.7. The dependency of this part on the definitions in 7.35.2.7 NMAC, and the "
+         "four definitions a single provision of the published rule supplies."),
+    D2: ("II", "Educational programs",
          "7.35.3.10, .12, .15, .16 and .17. The third-party evaluator conflict, the out-of-jurisdiction "
          "pathway, and the reporting and consultation obligations."),
-    D3: ("7.35.3-locations-amendments", "3", "Locations and oversight",
-         "7.35.3.11, .20 and .21. Healing center and other approved location applications, the registration "
-         "on which healing center staff authority depends, and department assessments."),
-    D4: ("7.35.3-process-amendments", "4", "Patients, applicants and process",
-         "7.35.3.8, .9, .13 and .22 through .28. Enrollment and certification applications, complaints, "
-         "review of denials, and discipline."),
+    D3: ("III", "Locations and oversight",
+         "7.35.3.11, .20 and .21. Healing center and other approved location applications, the registration on "
+         "which healing center staff authority depends, and department assessments."),
+    D4: ("IV", "Patients, applicants and process",
+         "7.35.3.8, .9, .13 and .22 through .28. Enrollment and certification applications, complaints, review "
+         "of denials, and discipline."),
 }
 
 SECTION_TITLES = {
@@ -179,45 +184,53 @@ def count_term(body, term):
 # ---------------------------------------------------------------------------
 
 CSS = """
-@page { size: letter landscape; margin: 0.5in 0.5in 0.6in 0.5in;
+@page { size: letter landscape; margin: 0.62in 0.5in 0.6in 0.5in;
+        @top-left { content: ""; font-family: Helvetica, Arial, sans-serif; font-size: 7.4pt; color: #777; }
+        @top-right { content: "Working draft {VERSION}"; font-family: Helvetica, Arial, sans-serif;
+                     font-size: 7.4pt; color: #999; }
         @bottom-center { content: counter(page); } }
 * { box-sizing: border-box; }
 body { font-family: "Times New Roman", Times, Georgia, serif; font-size: 8.7pt;
        line-height: 1.36; color: #111; margin: 0; }
-h1 { font-family: Helvetica, Arial, sans-serif; font-size: 15pt; margin: 0 0 3pt 0; letter-spacing: -0.2pt; }
+h1 { font-family: Helvetica, Arial, sans-serif; font-size: 13.5pt; margin: 0 0 3pt 0; letter-spacing: -0.2pt; }
 .sub { font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; color: #444; margin: 0 0 3pt 0; }
-.cover { border-bottom: 2px solid #111; padding-bottom: 7pt; margin-bottom: 9pt; }
-ul.what { font-family: Helvetica, Arial, sans-serif; font-size: 8.6pt; line-height: 1.5;
-          margin: 0 0 10pt 0; padding-left: 15pt; max-width: 7.6in; }
+.cover { border-bottom: 2px solid #111; padding-bottom: 5pt; margin-bottom: 7pt; }
+ul.what { font-family: Helvetica, Arial, sans-serif; font-size: 8.2pt; line-height: 1.42;
+          margin: 0 0 7pt 0; padding-left: 15pt; max-width: 7.6in; }
 ul.what li { margin-bottom: 2pt; }
-.key { font-family: Helvetica, Arial, sans-serif; font-size: 8.2pt; color: #333;
-       border-top: 0.5px solid #ccc; border-bottom: 0.5px solid #ccc; padding: 5pt 0; margin: 0 0 10pt 0; }
-p.tnote { font-family: Helvetica, Arial, sans-serif; font-size: 7.5pt; color: #555; margin: 0; max-width: 7.4in; }
-h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 0 0 6pt 0;
+.key { font-family: Helvetica, Arial, sans-serif; font-size: 7.9pt; color: #333;
+       border-top: 0.5px solid #ccc; border-bottom: 0.5px solid #ccc; padding: 4pt 0; margin: 0 0 7pt 0; }
+p.tnote { font-family: Helvetica, Arial, sans-serif; font-size: 7.5pt; color: #555; margin: 0 0 3pt 0;
+          max-width: 7.4in; }
+h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 0 0 5pt 0;
      padding: 3pt 0; border-top: 1.5px solid #111; border-bottom: 0.5px solid #111; break-after: avoid; }
-h2.sec { break-before: page; }
+section.rr { break-before: page; }
+section.src { break-before: page; }
+h2.sec { break-before: avoid; }
 h2 .ttl { font-weight: normal; color: #555; font-size: 9pt; }
+h2 .pt { float: right; font-weight: normal; color: #888; font-size: 7.4pt; text-transform: uppercase;
+         letter-spacing: 0.6pt; padding-top: 3pt; }
+.parthead { break-before: page; border-top: 3px solid #111; padding-top: 7pt; margin-bottom: 9pt; }
+.parthead h2 { border: none; padding: 0; margin: 0 0 3pt 0; font-size: 14pt; }
+.parthead p { font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; line-height: 1.5; color: #444;
+              margin: 0; max-width: 7.4in; }
 p.intro { font-family: Helvetica, Arial, sans-serif; font-size: 8.1pt; line-height: 1.5; color: #333;
           margin: 0 0 8pt 0; padding-left: 8pt; border-left: 2.5px solid #bbb; break-after: avoid; }
-table.rl { width: 100%; border-collapse: collapse; break-before: page; }
-table.rl.first { break-before: auto; }
-table.rl tr { break-inside: avoid; }
-table.rl thead { display: table-header-group; }
-table.rl th.run { font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 0;
-                  border: none; border-top: 1.5px solid #111; border-bottom: 0.5px solid #111; }
-table.rl th.run div { padding: 3pt 0 4pt 0; font-size: 11pt; }
-table.rl th.run span.ttl { font-weight: normal; color: #555; font-size: 9pt; }
-table.rl th.run span.doc { float: right; font-weight: normal; color: #888; font-size: 7.4pt;
-                           text-transform: uppercase; letter-spacing: 0.5pt; padding-top: 3pt; }
-table.rl th.col { font-family: Helvetica, Arial, sans-serif; font-size: 7.6pt; text-transform: uppercase;
-                  letter-spacing: 0.4pt; color: #333; text-align: left; padding: 5pt 9pt 6pt 9pt;
-                  border-bottom: 1px solid #999; width: 50%; vertical-align: top; }
-table.rl th.col span { display: block; font-weight: normal; text-transform: none; letter-spacing: 0;
-                       font-size: 7.1pt; color: #777; margin-top: 2pt; }
-table.rl td { vertical-align: top; padding: 8pt 9pt 10pt 9pt; border-bottom: 0.5px solid #ddd; width: 50%; }
-table.rl td.left { border-right: 1px solid #ccc; color: #333; background: #fcfcfc; }
+table.rl { width: 100%; border-collapse: collapse; }
+table.rl tr { break-inside: auto; }
+table.rl tr.keep { break-inside: avoid; }
+table.rl th { font-family: Helvetica, Arial, sans-serif; font-size: 7.6pt; text-transform: uppercase;
+              letter-spacing: 0.4pt; color: #333; text-align: left; padding: 5pt 9pt 6pt 9pt;
+              border-bottom: 1px solid #999; width: 50%; vertical-align: top; }
+table.rl th span { display: block; font-weight: normal; text-transform: none; letter-spacing: 0;
+                   font-size: 7.1pt; color: #777; margin-top: 2pt; }
+table.rl td { vertical-align: top; padding: 8pt 0 9pt 0; border-bottom: 0.5px solid #ddd; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; }
+.cl { padding: 0 9pt 0 9pt; border-right: 1px solid #ccc; color: #333; }
+.cr { padding: 0 9pt 0 9pt; }
+table.rl tr.provrow .review, table.rl tr.provrow .prov { margin-left: 9pt; margin-right: 9pt; }
 .label { font-family: Helvetica, Arial, sans-serif; font-size: 7.7pt; font-weight: bold; color: #000;
-         margin-bottom: 3pt; }
+         margin-bottom: 3pt; break-after: avoid; }
 ins { text-decoration: underline; color: #0a5c2e; font-weight: bold; }
 del { text-decoration: line-through; color: #9b1c1c; }
 .none { color: #888; font-style: italic; }
@@ -226,12 +239,12 @@ del { text-decoration: line-through; color: #9b1c1c; }
               line-height: 1; color: #8a5a00; background: #fdf5e3; border: 0.5px solid #e0c98a;
               border-radius: 2pt; padding: 2pt 4pt; margin: 0 3pt; vertical-align: 1.5pt;
               white-space: nowrap; font-weight: normal; text-decoration: none; }
-.prov { margin-top: 6pt; padding-top: 4pt; border-top: 0.5px dashed #bbb;
+.prov { margin-top: 6pt; padding-top: 4pt; border-top: 0.5px dashed #bbb; break-inside: avoid;
         font-family: Helvetica, Arial, sans-serif; font-size: 7.2pt; line-height: 1.45; color: #555; }
 .prov span.tag { display: inline-block; text-transform: uppercase; letter-spacing: 0.5pt; font-size: 6.5pt;
                  color: #888; margin-right: 5pt; }
 .review { margin-top: 7pt; border: 1.5pt solid #e09a3e; background: #fffdf8; border-radius: 7pt;
-          padding: 6pt 10pt; font-family: Helvetica, Arial, sans-serif; font-size: 7.5pt;
+          padding: 6pt 10pt; break-inside: avoid; font-family: Helvetica, Arial, sans-serif; font-size: 7.5pt;
           line-height: 1.5; color: #7a2e2e; font-weight: 600; }
 .review b { color: #c0392b; font-weight: bold; letter-spacing: 0.3pt; }
 table.dep { width: 100%; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif;
@@ -239,24 +252,23 @@ table.dep { width: 100%; border-collapse: collapse; font-family: Helvetica, Aria
 table.dep th, table.dep td { border: 0.5px solid #bbb; padding: 3.4pt 6pt; text-align: left; vertical-align: top; }
 table.dep th { background: #f2f2f2; font-size: 7.3pt; }
 table.dep thead { display: table-header-group; }
-table.dep tr.an th { background: #fff; border: none; border-bottom: 0.5px solid #111;
-                     font-family: Helvetica, Arial, sans-serif; font-size: 8.6pt; padding: 2pt 0 3pt 0; }
-table.dep tr.an th span { float: right; font-weight: normal; color: #888; font-size: 7.2pt;
-                          text-transform: uppercase; letter-spacing: 0.5pt; }
+table.dep tr { break-inside: avoid; }
 table.dep td.amd { color: #0a5c2e; font-weight: bold; }
 table.dep td.flag { color: #9b1c1c; }
 table.dep td.n { text-align: right; white-space: nowrap; }
+table.toc { border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt;
+            margin: 0 0 6pt 0; break-inside: avoid; width: 100%; }
+table.toc th, table.toc td { border: 0.5px solid #bbb; padding: 2.4pt 7pt; text-align: left;
+                             vertical-align: top; }
+table.toc th { background: #f2f2f2; font-size: 7.3pt; text-transform: uppercase; letter-spacing: 0.3pt; }
+table.toc td.pt { white-space: nowrap; font-weight: bold; }
+table.toc td.n { text-align: right; white-space: nowrap; }
 table.tm { border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; font-size: 6.6pt;
            margin: 4pt 0 8pt 0; }
 table.tm th, table.tm td { border: 0.5px solid #ccc; padding: 1.6pt 3pt; text-align: right; }
 table.tm th { background: #f2f2f2; font-size: 6.2pt; }
 table.tm th.term { text-align: left; white-space: nowrap; padding-right: 6pt; }
 table.tm thead { display: table-header-group; }
-table.tm tr.an th { background: #fff; border: none; border-bottom: 0.5px solid #111;
-                    font-family: Helvetica, Arial, sans-serif; font-size: 8.6pt; padding: 2pt 0 3pt 0;
-                    white-space: normal; }
-table.tm tr.an th span { float: right; font-weight: normal; color: #888; font-size: 7.2pt;
-                         text-transform: uppercase; letter-spacing: 0.5pt; }
 table.tm td.term { text-align: left; white-space: nowrap; padding-right: 6pt; }
 table.tm td.z { color: #ccc; }
 table.tm tr.tot td { border-top: 1.2px solid #111; font-weight: bold; background: #fafafa; }
@@ -266,61 +278,161 @@ table.tm tr.def td { background: #f4f8f4; }
 """
 
 
+# Running header in the top-left margin of every page. A named page per section
+# means a page carries the identity of the section it belongs to, and Chromium
+# reproduces it in the margin box on every page the section spans. This is the
+# mechanism v9 uses.
+RUNNING = [
+    ("s2", "7.35.3.2", "Scope"),
+    ("s3", "7.35.3.3", "Statutory authority"),
+    ("s5", "7.35.3.5", "Effective date"),
+    ("s7", "7.35.3.7", "Definitions"),
+    ("s10", "7.35.3.10", "Certification on an educational program from another jurisdiction"),
+    ("s12", "7.35.3.12", "Application process for psilocybin educational programs"),
+    ("s15", "7.35.3.15", "Educational programs, required reporting and curriculum approval"),
+    ("s16", "7.35.3.16", "Requirements for third-party evaluators"),
+    ("s17", "7.35.3.17", "Educational programs, mentoring and record-keeping"),
+    ("s11", "7.35.3.11", "Applications for healing centers and other approved locations"),
+    ("s20", "7.35.3.20", "Requirements for healing centers and other approved locations"),
+    ("s21", "7.35.3.21", "Department evaluation and assessment"),
+    ("s8", "7.35.3.8", "Patient enrollment application process"),
+    ("s9", "7.35.3.9", "Certifying clinician, practitioner and facilitator applications"),
+    ("s13", "7.35.3.13", "Requirements and prohibitions for certificants"),
+    ("s23", "7.35.3.23", "Prohibition against dual ownership"),
+    ("s24", "7.35.3.24", "Complaints to the department"),
+    ("s25", "7.35.3.25", "Informal administrative review of denied patient applications"),
+    ("s27", "7.35.3.27", "Disciplinary actions and appeal process"),
+    ("cov", "7.35.3 NMAC", "Proposed amendments outside the practicum"),
+    ("src", "Sources and method", "How every claim in this document was checked"),
+    ("pI", "Part I", "Framework and defined terms"),
+    ("pII", "Part II", "Educational programs"),
+    ("pIII", "Part III", "Locations and oversight"),
+    ("pIV", "Part IV", "Patients, applicants and process"),
+    ("adA", "Addendum A", "Terms this part uses and no part defines"),
+    ("adB", "Addendum B", "Dependencies across the two drafting scopes"),
+    ("adC", "Addendum C", "Defects recorded and not drafted, and why"),
+    ("adD", "Addendum D", "Mechanical defects across all twenty-eight sections"),
+]
+
+SECTION_CLASS = {sec: cls for cls, sec, _ in RUNNING if sec.startswith("7.")}
+PART_CLASS = {"I": "pI", "II": "pII", "III": "pIII", "IV": "pIV"}
+
+
+def running_css():
+    out = []
+    for cls, label, title in RUNNING:
+        out.append('@page %s { @top-left { content: "%s  %s"; } }' % (cls, label, title))
+        out.append('section.%s { page: %s; }' % (cls, cls))
+    return "\n".join(out)
+
+
+def strip_tags(t):
+    return re.sub(r"<[^>]+>", "", t)
+
+
 def esc(t):
     return html.escape(t).replace("\n", "<br>")
 
 
 HEAD = """
+<section class="cov">
 <div class="cover">
-<h1>7.35.3 NMAC: proposed amendments outside the practicum. {NUM} of 4, {TITLE}</h1>
+<h1>7.35.3 NMAC: proposed amendments to the twenty-four sections outside the practicum</h1>
 <p class="sub">Working draft {VERSION}, {VERSION_DATE}. Rule hearing August 28, 2026. Not a filing, not
 submitted, and not adopted rule text.</p>
 </div>
 
 <ul class="what">
-<li>{COVERS}</li>
-<li>This is one of four documents covering the twenty-four sections of 7.35.3 NMAC that the practicum
-amendment draft in <i>amendments/</i> does not reach. That draft covers 7.35.3.14, .18, .19, Paragraph (5) of
-Subsection H of .20, and a proposed .29, and nothing here reopens any of them.</li>
-<li>Every proposed change carries a citation to the provision, source document, or transcript it comes from.
-Where a defect has no fix that a source supplies, the published text is left exactly as it stands and the
-question is stated at that provision, with the choices and who decides.</li>
-<li>No figure appears in a right column unless a source carries it. A figure taken from elsewhere in the rule
-is badged with where it comes from.</li>
+<li>This document covers the twenty-four sections of 7.35.3 NMAC that the practicum amendment draft does not
+reach: 7.35.3.1 through .13, .15, .16, .17, and .21 through .28. It is in four parts, with four addenda at the
+end.</li>
+<li>Nothing here reopens the practicum draft, which covers 7.35.3.14, .18, .19, Paragraph (5) of Subsection H
+of .20, and a proposed .29. Read against working draft v9 of that document. Its
+<i>amendments/SOURCE-OF-TRUTH.md</i> assigns to this document each item drafted or recorded here, and Addendum
+B records every dependency in both directions.</li>
+<li><b>Twenty-one changes are drafted.</b> Every one is a mechanical correction, a conforming amendment between
+two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. No change
+introduces a figure or a policy choice that no source supplies.</li>
+<li><b>Twenty-one further defects are recorded and not drafted.</b> Each carries a note at its provision stating
+the issue, the choices, and who decides, and all of them are listed with the reason in Addendum C. The
+commonest reason is that the fix requires a figure no source carries.</li>
+<li>The two BLOCKING findings in this scope are both reached. The third-party evaluator conflict is drafted at
+7.35.3.16 A and again at 7.35.3.16 C(2)(b), so either or both may be adopted. The registration on which
+7.35.3.14 C conditions healing center staff authority is drafted at 7.35.3.11 A(11), which is where v9 records
+that the fix belongs.</li>
 </ul>
 
 <div class="key">
 <b>The columns.</b> Left is the rule as published, verbatim. Right is the proposed amendment:
 <ins>underlined green inserted</ins>, <del>struck red deleted</del>, unmarked text carried forward unchanged.
-<span class="rangebadge">60 from 7.35.3.15 B</span> marks a figure taken from another provision of the same
-rule rather than newly drafted. A provision shown with no amendment is reproduced because it carries a finding.
+<span class="rangebadge">60 from 7.35.3.15 B</span> marks a figure taken from another provision of the same rule
+rather than newly drafted. A provision shown with no amendment is reproduced because it carries a finding. The
+source note and, where there is one, the review note run the full width beneath both columns.
 </div>
+
+<h2>Contents</h2>
+{CONTENTS}
+<p class="tnote"><b>The defined terms are the largest finding.</b> 7.35.3.7 NMAC provides in full: "The
+definitions in 7.35.2.7 NMAC apply to this part." Sixteen terms that carry regulatory consequence in this part
+are defined in neither part. Four are drafted at 7.35.3.7, because a single provision of the published rule
+supplies the content. Twelve are not, and the two largest are healing center, 54 occurrences, and certifying
+clinician, 53 occurrences. Addendum A counts every one of them, section by section, in both parts.</p>
+</section>
 """
 
 
-def build_body(doc):
-    rows, current, first = [], None, True
-    for d, section, sub, published, proposed in P:
-        if d != doc:
-            continue
+def contents_table():
+    rows = ['<table class="toc">',
+            '<tr><th>Part</th><th>Sections</th><th>What it covers</th></tr>']
+    for doc, (num, title, covers) in PARTS.items():
+        secs = []
+        for d, section, _, _, _ in P:
+            if d == doc and section not in secs:
+                secs.append(section)
+        rows.append('<tr><td class="pt">%s. %s</td><td>%s</td><td>%s</td></tr>'
+                    % (num, title, ", ".join(s.replace("7.35.3.", ".") for s in secs), covers))
+    rows.append('<tr><td class="pt">Addendum A</td><td>All 28, and 7.35.2 NMAC</td>'
+                '<td>Terms this part uses and no part defines, counted section by section in both parts.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum B</td><td>Both scopes</td>'
+                '<td>Dependencies between these sections and the provisions the practicum draft reaches.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum C</td><td>These 24</td>'
+                '<td>Every defect recorded and not drafted, with the reason nothing is proposed.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum D</td><td>All 28</td>'
+                '<td>Numbering, dates and drafting form across the whole part.</td></tr>')
+    rows.append('</table>')
+    return "\n".join(rows)
+
+
+def build_body():
+    rows, current, part = [], None, None
+    for doc, section, sub, published, proposed in P:
+        if doc != part:
+            if current is not None:
+                rows.append("</table></section>")
+                current = None
+            part = doc
+            num, title, covers = PARTS[doc]
+            rows.append('<section class="rr %s"><div class="parthead">'
+                        '<h2>Part %s. %s</h2><p>%s</p></div></section>'
+                        % (PART_CLASS[num], num, title, covers))
         if section != current:
             if current is not None:
-                rows.append("</table>")
+                rows.append("</table></section>")
             current = section
-            run = ('<thead><tr><th class="run" colspan="2"><div>%s <span class="ttl">%s</span>'
-                   '<span class="doc">%s of 4 &middot; %s</span></div></th></tr>'
-                   '<tr><th class="col">Current language<span>Proposed rule as published July 23, 2026</span></th>'
-                   '<th class="col">Proposed amendment<span>Draft for review. Not filed, not adopted</span></th>'
-                   '</tr></thead>'
-                   % (section, SECTION_TITLES[section], DOCS[doc][1], DOCS[doc][2]))
-            rows.append('<table class="rl%s">%s' % (" first" if first else "", run))
-            first = False
+            num = PARTS[doc][0]
+            rows.append('<section class="rr %s">' % SECTION_CLASS[section])
+            rows.append('<h2 class="sec">%s <span class="ttl">%s</span>'
+                        '<span class="pt">Part %s</span></h2>'
+                        % (section, SECTION_TITLES[section], num))
+            rows.append('<table class="rl"><tr>'
+                        '<th>Current language<span>Proposed rule as published July 23, 2026</span></th>'
+                        '<th>Proposed amendment<span>Draft for review. Not filed, not adopted</span></th></tr>')
         if published == UNCHANGED and proposed == UNCHANGED:
             continue
         left = ('<span class="none">%s</span>' % NEW) if published == NEW else esc(published)
         if proposed == UNCHANGED:
-            right = '<span class="unch">Not amended. This provision is reproduced because it carries a ' \
-                    'finding recorded below.</span>'
+            right = ('<span class="unch">Not amended. This provision is reproduced because it carries a '
+                     'finding recorded below.</span>')
         else:
             right = proposed
         src = source_for(section, sub)
@@ -330,9 +442,18 @@ def build_body(doc):
             extra += '<div class="prov"><span class="tag">Source</span>%s</div>' % src
         if rev:
             extra += '<div class="review"><b>Please review.</b> %s</div>' % rev
-        rows.append('<tr><td class="left"><div class="label">%s</div>%s</td>'
-                    '<td><div class="label">%s</div>%s%s</td></tr>' % (sub, left, sub, right, extra))
-    rows.append("</table>")
+        # One row per provision. The two columns are a grid inside a single cell,
+        # and the notes run the full width beneath them, so a note is about half
+        # as tall as it would be inside a column. A provision short enough to fit
+        # a page is marked so that it is never split.
+        body = max(len(strip_tags(left)), len(strip_tags(right))) / 92.0
+        lines = body + len(strip_tags(extra)) / 190.0 + 4
+        keep = " keep" if lines < 18 else ""
+        rows.append('<tr class="provrow%s"><td colspan="2">'
+                    '<div class="cols"><div class="cl"><div class="label">%s</div>%s</div>'
+                    '<div class="cr"><div class="label">%s</div>%s</div></div>%s</td></tr>'
+                    % (keep, sub, left, sub, right, extra))
+    rows.append("</table></section>")
     return "\n".join(rows)
 
 
@@ -344,8 +465,6 @@ def term_map(corpus3, corpus2):
     _, s3 = segment(corpus3, r"7\.3[45]\.3\.(\d{1,2})\s+(?!NMAC)[A-Z][A-Z]+")
     secs = sorted(s3)
     out = ['<table class="tm">', '<thead>',
-           '<tr class="an"><th class="term" colspan="%d">Addendum A '
-           '<span>Terms this part uses and no part defines</span></th></tr>' % (len(secs) + 3),
            '<tr><th class="term">Term in 7.35.3 NMAC</th>'
            + "".join('<th>%d</th>' % n for n in secs)
            + '<th>Part&nbsp;3</th><th>Part&nbsp;2</th></tr>', '</thead>']
@@ -370,6 +489,7 @@ def term_map(corpus3, corpus2):
 
 
 ADDENDUM_A_INTRO = """
+<section class="rr adA">
 <h2 class="sec">Addendum A <span class="ttl">Terms this part uses and no part defines</span></h2>
 <p class="intro">7.35.3.7 NMAC provides in full: "The definitions in 7.35.2.7 NMAC apply to this part." Every
 count in the table below is produced from the text layer of the published rule and of 7.35.2 NMAC each time
@@ -398,13 +518,14 @@ consequence is stated at 7.35.3.7 NMAC in the redline above.</p>
 
 
 ADDENDUM_B = """
+</section>
+<section class="rr adB">
 <h2 class="sec">Addendum B <span class="ttl">Dependencies across the two drafting scopes</span></h2>
 <p class="intro">Provisions in these four documents that operate on, or are operated on by, a provision the
 practicum amendment draft in <i>amendments/</i> reaches. Nothing in these documents amends a provision in that
 draft's scope. Where a fix would require one, it is recorded here and left undrafted.</p>
 <table class="dep">
 <thead>
-<tr class="an"><th colspan="4">Addendum B <span>Dependencies across the two drafting scopes</span></th></tr>
 <tr><th>Provision here</th><th>Provision in the practicum draft's scope</th><th>Relationship</th><th>Handled</th></tr>
 </thead>
 <tr><td>7.35.3.11 A(11), page 5</td><td>7.35.3.14 C, page 9</td>
@@ -462,13 +583,14 @@ conflict.</td>
 
 
 ADDENDUM_C = """
+</section>
+<section class="rr adC">
 <h2 class="sec">Addendum C <span class="ttl">Defects recorded and not drafted, and why</span></h2>
 <p class="intro">Every defect this record found in the twenty-four sections, that this draft does not amend.
 The reason in each row is the reason no language is proposed, not an assessment of severity. Each has a review
 note at the provision named, stating the choices and who decides.</p>
 <table class="dep">
 <thead>
-<tr class="an"><th colspan="3">Addendum C <span>Defects recorded and not drafted, and why</span></th></tr>
 <tr><th>Provision</th><th>Defect</th><th>Why nothing is drafted</th></tr>
 </thead>
 <tr><td>7.35.3.5, page 1, with the history notes at page 19</td>
@@ -585,6 +707,8 @@ nothing is proposed about it.</p>
 
 
 ADDENDUM_D_INTRO = """
+</section>
+<section class="rr adD">
 <h2 class="sec">Addendum D <span class="ttl">Mechanical defects across all twenty-eight sections</span></h2>
 <p class="intro">Numbering, dates and drafting form, checked across the whole of 7.35.3 NMAC rather than only
 the sections these documents amend. Every count and every entry is produced from the text layer of the
@@ -604,8 +728,6 @@ def addendum_d(corpus):
                "7.35.3.13": "document 4 above", "7.35.3.23": "document 4 above",
                "7.35.3.25": "document 4 above"}
     out = ['<table class="dep">', '<thead>',
-           '<tr class="an"><th colspan="4">Addendum D '
-           '<span>Mechanical defects across all twenty-eight sections</span></th></tr>',
            '<tr><th>Item</th><th>Count</th><th>Where</th><th>Corrected</th></tr>', '</thead>']
     out.append('<tr><td>Section headings reading 7.34.3 instead of 7.35.3</td><td class="n">%d of %d</td>'
                '<td class="flag">%s</td><td class="amd">%s</td></tr>'
@@ -659,6 +781,8 @@ def addendum_d(corpus):
 
 
 FOOT = """
+</section>
+<section class="src">
 <div class="foot">
 <b>Sources.</b> Rule as published: <i>docs/documents/rules-draft-2026-07-23-published.pdf</i>, 19 pages,
 7.35.3.1 through 7.35.3.28. Prior board-meeting draft, used for new against carried-over determinations:
@@ -676,9 +800,10 @@ PDF collapsed to single spaces and hyphenation introduced by a line break rejoin
 Every block was checked against the text layer of the published rule by exact contiguous match, and the build
 aborts if any block fails. <i>amendments-remainder/audit.py</i> re-checks every verifiable claim in these
 documents and exits non-zero on any failure; <i>amendments-remainder/AUDIT.md</i> is its output.<br><br>
-<b>Status.</b> Working draft {VERSION}, document {NUM} of 4. Not a filing, not submitted, and not adopted rule
-text. Nothing in <i>amendments/</i> or <i>docs/</i> was modified by this work.
+<b>Status.</b> Working draft {VERSION}. Not a filing, not submitted, and not adopted rule text. Nothing in
+<i>amendments/</i> or <i>docs/</i> was modified by this work.
 </div>
+</section>
 """
 
 
@@ -707,22 +832,21 @@ def main():
 
     addenda = (ADDENDUM_A_INTRO + term_map(corpus3, corpus2) + ADDENDUM_A_TAIL
                + ADDENDUM_B + ADDENDUM_C + ADDENDUM_D_INTRO + addendum_d(corpus3))
+    head = (HEAD.replace("{VERSION}", VERSION).replace("{VERSION_DATE}", VERSION_DATE)
+            .replace("{CONTENTS}", contents_table()))
+    foot = FOOT.replace("{VERSION}", VERSION)
+    css = CSS.replace("{VERSION}", VERSION) + "\n" + running_css()
+    doc_html = ("<!doctype html><html><head><meta charset='utf-8'>"
+                "<title>7.35.3 NMAC amendments outside the practicum %s</title>"
+                "<style>%s</style></head><body>%s%s%s%s</body></html>"
+                % (VERSION, css, head, build_body(), addenda, foot))
 
-    for doc, (stem, num, title, covers) in DOCS.items():
-        head = (HEAD.replace("{VERSION}", VERSION).replace("{VERSION_DATE}", VERSION_DATE)
-                .replace("{NUM}", num).replace("{TITLE}", title).replace("{COVERS}", covers))
-        foot = FOOT.replace("{VERSION}", VERSION).replace("{NUM}", num)
-        out_pdf = OUT_DIR / ("%s-%s.pdf" % (stem, VERSION))
-        doc_html = ("<!doctype html><html><head><meta charset='utf-8'>"
-                    "<title>7.35.3 NMAC %s amendments %s</title>"
-                    "<style>%s</style></head><body>%s%s%s%s</body></html>"
-                    % (title.lower(), VERSION, CSS, head, build_body(doc), addenda, foot))
-        tmp = Path(tempfile.mkdtemp()) / "redline.html"
-        tmp.write_text(doc_html, encoding="utf-8")
-        subprocess.run([chrome, "--headless", "--disable-gpu", "--no-sandbox",
-                        "--no-pdf-header-footer", "--print-to-pdf=%s" % out_pdf, tmp.as_uri()],
-                       check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        print("wrote %s (%.0f KB)" % (out_pdf.relative_to(REPO), out_pdf.stat().st_size / 1024))
+    tmp = Path(tempfile.mkdtemp()) / "redline.html"
+    tmp.write_text(doc_html, encoding="utf-8")
+    subprocess.run([chrome, "--headless", "--disable-gpu", "--no-sandbox",
+                    "--no-pdf-header-footer", "--print-to-pdf=%s" % OUT_PDF, tmp.as_uri()],
+                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    print("wrote %s (%.0f KB)" % (OUT_PDF.relative_to(REPO), OUT_PDF.stat().st_size / 1024))
     return 0
 
 
