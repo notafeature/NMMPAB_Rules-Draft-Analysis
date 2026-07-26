@@ -3,7 +3,7 @@
 For the session that edits `docs/`. Every statement below is settled, is cited, and is machine-checked by
 `amendments/audit.py`. If a page in `docs/` disagrees with this file, the page is wrong.
 
-Current document: `amendments/7.35.3-practicum-amendments-v8.pdf`, working draft v8, July 26, 2026.
+Current document: `amendments/7.35.3-practicum-amendments-v9.pdf`, working draft v9, July 26, 2026.
 Rule hearing August 28, 2026. Regenerate the receipts with `python3 amendments/audit.py`, which writes
 `amendments/AUDIT.md`.
 
@@ -40,7 +40,7 @@ already carries it, and 7.35.3.20 H(5) as published is the staffing consequence.
 
 ## 2. Hours. These figures are final in the draft and arithmetic-checked
 
-| Component | Published | Draft v8 | Change |
+| Component | Published | Draft v9 | Change |
 |---|---|---|---|
 | New Mexico module | not stated | 6 | +6 |
 | Psilocybin therapy module, didactic | 30 | 68 | +38 |
@@ -59,9 +59,17 @@ Source: Metz recommendation pages 3 and 4. Every step figure is that document's 
 **Total hours rise. They do not fall.** A page that says the recommendation reduces training is wrong. Practicum hours
 fall; module hours rise by more.
 
-**One published figure is ambiguous and the site must not pick a side.** 7.35.3.19 C adds "an additional minimum of
-20 hours" without saying what it is additional to. Inside the 120 the published licensed provider total is 170; on top
-of the 120 it is 190. The draft follows the recommendation and treats supervision as inside. Say both readings exist.
+**7.35.3.19 C is settled: the supervision hours sit inside the practicum total, not on top of it.** The published
+text is ambiguous, because it adds "an additional minimum of 20 hours" without saying what it is additional to, but the
+committee has directed the inside reading and the Metz totals of 62 and 72 differ by exactly her 10 supervisory hours.
+The published licensed provider total is 170 and the proposed total is 176. **Do not write that the published total may
+be 190.**
+
+**68 didactic hours at 7.35.3.18 C is settled.** Page 2 of the Metz recommendation adopts "a single state-level standard
+of 84 didactic hours" and its curriculum table lists the New Mexico module as one of the ten content areas, so the
+module sits inside the 84. Subtracting the New Mexico module (6), the role-specific module (5) and the simulated
+patient experience (5) leaves 68. The Wilson redline reads the same 84 as 80 didactic hours; that reading is not
+adopted. Either way the program totals 84 module hours.
 
 ---
 
@@ -104,10 +112,8 @@ the draft conforms 29, and 12 more in 7.35.2 NMAC, which is already adopted and 
 
 | Open item | Where | Who decides |
 |---|---|---|
-| Whether the 84-hour total means 68 didactic hours as drafted, or 80 as in the Wilson redline | 7.35.3.18 C | The committee |
 | Whether the published minimums of 14 different patients over eight different sessions fit inside a 62-hour practicum | 7.35.3.19 A | The committee |
 | Whether consultation sign-off is stated in hours, in cases, or both, and whether it sits at 7.35.3.19 H or 7.35.3.17 A | 7.35.3.19 H | Dr. Metz, Ms. Wilson, Dr. Leeman |
-| Which reading of 7.35.3.19 C governs the published baseline, 170 or 190 | 7.35.3.19 C | The committee |
 | Whether to pursue the statutory amendment, or adopt Version 1 | 7.35.3.19 D and 7.35.3.29 | The committee |
 | Whether any curriculum content area carries an hour floor of its own | 7.35.3.18 C | The committee |
 | Whether to adopt the permit renaming at all | throughout | The committee |

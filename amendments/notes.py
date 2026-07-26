@@ -25,8 +25,12 @@ SOURCE = {
     ("7.35.3.18", "Subsection A"):
         "Metz recommendation, page 2, curriculum table: New Mexico module, 6 to 8 hours.",
     ("7.35.3.18", "Subsection C, {{PT_C}} and facilitator psilocybin therapy module, lead-in"):
-        "Arithmetic. The Metz recommendation, page 1, states a total of 84 hours. 84 less Subsection A (6), less "
-        "Subsection D or E (5, unchanged), less the simulated patient experience (5, unchanged) leaves 68.",
+        "Metz recommendation, page 2: “Adopt a single state-level standard of 84 didactic hours for both "
+        "Facilitator and Licensed Provider permits, with the curriculum allocation below.” The curriculum table "
+        "on the same page lists the New Mexico module as one of its ten content areas, so the New Mexico module sits "
+        "inside the 84. The arithmetic follows: 84 less the New Mexico module at Subsection A (6), less the "
+        "role-specific module at Subsection D or E (5, unchanged), less the simulated patient experience "
+        "(5, unchanged), leaves 68 didactic hours for this subsection.",
     ("7.35.3.18", "Subsection C, required topics"):
         "Metz recommendation, pages 2 and 3, curriculum table, for paragraphs (16), (17), (20), (21), (22) and (23). "
         "July 17, 2026 Training and Education Committee transcript for paragraphs (18) and (19); both are qualifying "
@@ -101,12 +105,12 @@ REVIEW = {
         "certification pathway in the rule is conditioned on completing it. No source in the record supplies a date, "
         "so none is drafted here. The committee should ask the department to state a date on the record.",
     ("7.35.3.18", "Subsection C, {{PT_C}} and facilitator psilocybin therapy module, lead-in"):
-        "The committee has to choose between two readings of the 84-hour total, and the two sources read it "
-        "differently. Reading 1, drafted here, is that the 84 includes the New Mexico module (6), the role-specific "
-        "module (5) and the simulated patient experience (5), which leaves 68 didactic hours for this subsection. "
-        "Reading 2 is the Wilson redline, which sets this subsection at 80 didactic hours and strikes the simulated "
-        "patient experience from the lead-in. Both readings produce an 84-hour program; they differ on what counts "
-        "inside it. The committee should pick one, because the two cannot both be drafted.",
+        "Settled at 68, and recorded here only so the divergence is visible. The New Mexico module is one of the ten "
+        "content areas inside the 84 in the curriculum table on page 2 of the Metz recommendation, so it is subtracted "
+        "along with the role-specific module and the simulated patient experience, leaving 68. The Wilson redline "
+        "reads the same 84 as 80 didactic hours and strikes the simulated patient experience from the lead-in; that "
+        "reading is not adopted. Either way the program totals 84 module hours, so nothing else in this draft moves "
+        "if the committee later prefers her allocation.",
     ("7.35.3.18", "Subsection C, required topics"):
         "The Metz recommendation gives an illustrative range for each content area and states that the binding "
         "minimum is the total, so no per-topic minimum is drafted here. The Wilson redline reaches the same "
@@ -129,13 +133,12 @@ REVIEW = {
         "redline strikes them; the committee should confirm whether those minimums are attainable within 62 hours, "
         "because if they are not, either the minimums or the total has to move.",
     ("7.35.3.19", "Subsection C"):
-        "Subsection A sets 120 hours for the practitioner permit. This subsection then adds “an additional "
-        "minimum of 20 hours” without saying what it is additional to, and the answer changes the published "
-        "total. If the 20 hours sit inside the 120, the published program total is 170. If they sit on top of the 120, "
-        "it is 190. The Metz totals of approximately 62 and 72 differ by exactly her 10 supervisory hours, which "
-        "means the recommendation treats supervision as inside the practicum total, and this draft follows the "
-        "recommendation for a proposed total of 176. The committee should state which reading governs so the "
-        "published baseline is not ambiguous on the record.",
+        "Settled: the supervision hours sit inside the practicum total, not on top of it. The published text is "
+        "ambiguous, because it adds “an additional minimum of 20 hours” without saying what it is additional "
+        "to, and this draft resolves it as inside. Two things confirm that reading. The Metz totals of approximately "
+        "62 and 72 differ by exactly her 10 supervisory hours, so the recommendation treats supervision as inside the "
+        "practicum total. The committee has directed the same reading. The published program total for the licensed "
+        "provider is therefore 170 and the proposed total is 176.",
     ("7.35.3.19", "Subsection D"):
         "Two matters. First, Paragraph (1) is drafted in two versions because the Medical Psilocybin Act does not "
         "authorize a person who is not a qualified patient to take psilocybin. Version 1 performs the initial "

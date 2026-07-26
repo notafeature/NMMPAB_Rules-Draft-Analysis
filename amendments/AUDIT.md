@@ -1,16 +1,16 @@
 # Audit
 
-Machine-checked claims in `7.35.3-practicum-amendments-v8.pdf`. Regenerate with `python3 amendments/audit.py`.
+Machine-checked claims in `7.35.3-practicum-amendments-v9.pdf`. Regenerate with `python3 amendments/audit.py`.
 
 | Class | Checks | Passed |
 |---|---|---|
 | Published text reproduced verbatim | 45 | 45 |
-| Quotations against their source | 51 | 51 |
+| Quotations against their source | 52 | 52 |
 | Arithmetic | 26 | 26 |
 | The permit-name surface in Addendum C | 33 | 33 |
 | No unfinished sentence, and every review note names who decides | 61 | 61 |
 | Every change carries a citation | 28 | 28 |
-| **Total** | **244** | **244** |
+| **Total** | **245** | **245** |
 
 ## Published text reproduced verbatim
 
@@ -93,6 +93,7 @@ Machine-checked claims in `7.35.3-practicum-amendments-v8.pdf`. Regenerate with 
 | pass | 7.35.2 NMAC contains no "healing center" | 0 occurrences |
 | pass | 7.35.2 NMAC contains no "certifying clinician" | 0 occurrences |
 | pass | 7.35.2 NMAC contains no "student" | 0 occurrences |
+| pass | "Adopt a single state-level standard of 84 didactic hours for both Faci" | Metz recommendation |
 | pass | "Approved location" | 7.35.2 NMAC |
 | pass | "Clinician" | 7.35.2 NMAC |
 | pass | "Component ranges are illustrative; the binding minimum is the total." | Metz recommendation |

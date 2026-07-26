@@ -18,7 +18,7 @@ Drafting folder for proposed amendments to the medical psilocybin rule published
 
 | File | What it is |
 |---|---|
-| `7.35.3-practicum-amendments-v8.pdf` | The document. Side-by-side redline plus four addenda. Every page carries a running header naming the section or addendum it belongs to |
+| `7.35.3-practicum-amendments-v9.pdf` | The document. Side-by-side redline plus four addenda. Every page carries a running header naming the section or addendum it belongs to |
 | `SOURCE-OF-TRUTH.md` | The settled facts, cited, for the session that edits `docs/`. If a site page disagrees with it, the page is wrong |
 | `content.py` | Published text and proposed amendment, provision by provision |
 | `notes.py` | Citation and review note for each change |
@@ -47,7 +47,7 @@ Where the Metz recommendation states a range, the low end is drafted and marked 
 | **Program total, facilitator** | **150** | **166** | **+16** |
 | **Program total, licensed provider** | **170** | **176** | **+6** |
 
-The licensed provider rows take the 20 supervision hours in 7.35.3.19 C to be within the published 120. On the other reading of that subsection the published total is 190. Stated at 7.35.3.19 C.
+The 20 supervision hours in 7.35.3.19 C sit inside the practicum total, not on top of it, so the published licensed provider total is 170. Stated at 7.35.3.19 C.
 
 The renaming reaches no hour count. Adopting or declining it changes nothing in this table.
 

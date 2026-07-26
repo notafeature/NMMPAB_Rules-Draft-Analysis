@@ -365,7 +365,7 @@ LABELS = {
     "metz recommendation, page 1, recommendation 1",
     "from the wilson redline", "rule hearing august 28, 2026",
     "two drafting notes", "this document reaches 29", "please review",
-    "working draft v8", "renamed by this draft",
+    "working draft v9", "renamed by this draft",
 }
 
 
@@ -404,7 +404,7 @@ for d, nm in ((SOURCE, "source note"), (REVIEW, "review note")):
 # tables are stripped before the check runs.
 for name in ("HEAD", "FOOT"):
     m = re.search(r'^%s = """(.*?)"""' % name, build_src, re.S | re.M)
-    problems = unfinished(m.group(1).replace("{VERSION}", "v8"))
+    problems = unfinished(m.group(1).replace("{VERSION}", "v9"))
     check("PROSE", "%s, every sentence is complete" % name, not problems,
           "; ".join(problems)[:150] if problems else "ok")
 
@@ -440,7 +440,7 @@ def main():
     for cls, claim, ok, detail in results:
         by.setdefault(cls, []).append((claim, ok, detail))
     lines = ["# Audit", "",
-             "Machine-checked claims in `7.35.3-practicum-amendments-v8.pdf`. "
+             "Machine-checked claims in `7.35.3-practicum-amendments-v9.pdf`. "
              "Regenerate with `python3 amendments/audit.py`.", "",
              "| Class | Checks | Passed |", "|---|---|---|"]
     order = ["RULE", "QUOTE", "MATH", "TITLE", "PROSE", "COVER"]

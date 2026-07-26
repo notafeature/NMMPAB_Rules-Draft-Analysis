@@ -26,7 +26,7 @@ from notes import source_for, review_for       # noqa: E402
 REPO = Path(__file__).resolve().parent.parent
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
 
-VERSION = "v8"
+VERSION = "v9"
 VERSION_DATE = "July 26, 2026"
 OUT_PDF = REPO / ("amendments/7.35.3-practicum-amendments-%s.pdf" % VERSION)
 
@@ -168,14 +168,18 @@ p.intro { font-family: Helvetica, Arial, sans-serif; font-size: 8.1pt; line-heig
 table.rl { width: 100%; border-collapse: collapse; }
 table.rl tr { break-inside: auto; }
 .label { break-after: avoid; }
-.prov, .review { break-inside: auto; }
+.prov, .review { break-inside: avoid; }
 table.rl th { font-family: Helvetica, Arial, sans-serif; font-size: 7.6pt; text-transform: uppercase;
               letter-spacing: 0.4pt; color: #333; text-align: left; padding: 5pt 9pt 6pt 9pt;
               border-bottom: 1px solid #999; width: 50%; vertical-align: top; }
 table.rl th span { display: block; font-weight: normal; text-transform: none; letter-spacing: 0;
                    font-size: 7.1pt; color: #777; margin-top: 2pt; }
-table.rl td { vertical-align: top; padding: 8pt 9pt 10pt 9pt; border-bottom: 0.5px solid #ddd; width: 50%; }
-table.rl td.left { border-right: 1px solid #ccc; color: #333; background: #fcfcfc; }
+table.rl td { vertical-align: top; padding: 8pt 0 9pt 0; border-bottom: 0.5px solid #ddd; }
+table.rl tr.keep { break-inside: avoid; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; }
+.cl { padding: 0 9pt 0 9pt; border-right: 1px solid #ccc; color: #333; }
+.cr { padding: 0 9pt 0 9pt; }
+table.rl tr.provrow .review, table.rl tr.provrow .prov { margin-left: 9pt; margin-right: 9pt; }
 .label { font-family: Helvetica, Arial, sans-serif; font-size: 7.7pt; font-weight: bold; color: #000;
          margin-bottom: 3pt; }
 ins { text-decoration: underline; color: #0a5c2e; font-weight: bold; }
@@ -320,9 +324,13 @@ that provision. No figure appears anywhere in this draft that is not carried by 
 <tr class="band"><td>Program total, facilitator</td><td class="n">150</td><td class="n">166</td><td class="n">+16</td></tr>
 <tr class="band"><td>Program total, licensed provider</td><td class="n">170</td><td class="n">176</td><td class="n">+6</td></tr>
 </table>
-<p class="tnote">The licensed provider rows take the 20 supervision hours in 7.35.3.19 C to be within the published
-120. On the other reading of that subsection the published total is 190. Both readings are set out at 7.35.3.19 C.</p>
+<p class="tnote">The 20 supervision hours in 7.35.3.19 C sit inside the practicum total, not on top of it, so the
+published licensed provider total is 170. The basis is set out at 7.35.3.19 C.</p>
 """
+
+
+def strip_tags(t):
+    return re.sub(r"<[^>]+>", "", t or "")
 
 
 def build_body():
@@ -342,9 +350,10 @@ def build_body():
                         '<th>Proposed amendment<span>Draft for review. Not filed, not adopted</span></th></tr>')
         label = render_label(sub)
         if published == UNCHANGED and proposed == UNCHANGED:
-            rows.append('<tr><td class="left"><div class="label">%s</div><span class="unch">Not amended.</span></td>'
-                        '<td><div class="label">%s</div><span class="unch">Not amended.</span></td></tr>'
-                        % (label, label))
+            rows.append('<tr class="provrow keep"><td colspan="2"><div class="cols">'
+                        '<div class="cl"><div class="label">%s</div><span class="unch">Not amended.</span></div>'
+                        '<div class="cr"><div class="label">%s</div><span class="unch">Not amended.</span></div>'
+                        '</div></td></tr>' % (label, label))
             continue
         left = ('<span class="none">%s</span>' % NEW) if published == NEW else esc(published)
         if proposed == UNCHANGED:
@@ -358,8 +367,17 @@ def build_body():
             extra += '<div class="prov"><span>Source</span>%s</div>' % render_note(src)
         if rev:
             extra += '<div class="review"><b>Please review.</b> %s</div>' % render_note(rev)
-        rows.append('<tr><td class="left"><div class="label">%s</div>%s</td>'
-                    '<td><div class="label">%s</div>%s%s</td></tr>' % (label, left, label, right, extra))
+        # One row per provision. The two columns are a grid inside a single
+        # cell, and the notes run the full width beneath them, so a note is
+        # about half as tall as it would be inside a column. A provision short
+        # enough to fit a page is marked so it is never split.
+        body = max(len(strip_tags(left)), len(strip_tags(right))) / 92.0
+        lines = body + len(strip_tags(extra)) / 190.0 + 4
+        keep = " keep" if lines < 18 else ""
+        rows.append('<tr class="provrow%s"><td colspan="2">'
+                    '<div class="cols"><div class="cl"><div class="label">%s</div>%s</div>'
+                    '<div class="cr"><div class="label">%s</div>%s</div></div>%s</td></tr>'
+                    % (keep, label, left, label, right, extra))
     rows.append("</table></section>")
     return "\n".join(rows)
 
