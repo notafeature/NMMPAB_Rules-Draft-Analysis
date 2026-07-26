@@ -1,8 +1,8 @@
 """Citation and review note for each provision.
 
-Every provision the document reproduces carries a source note. A provision that
-raises a question the record cannot settle also carries a review note. Each
-review note states the issue, the choices, and who decides.
+Every provision the document reproduces carries a source note. A review
+callout enters only for a gap, a contradiction, a typo, or a drafting mistake;
+it leads with the question and names who answers it.
 
 Sources are the rule as published July 23, 2026; the prior board-meeting draft
 of July 9, 2026; 7.35.2 NMAC as adopted effective June 23, 2026; the Medical
@@ -18,54 +18,18 @@ SOURCE = {
 
     # ---- D1. Framework and defined terms ----
 
-    ("7.35.3.2", "Entire section, scope"):
-        "Not amended. Recorded for the terminology it fixes. 7.35.3.2 NMAC, page 1, lists the regulated "
-        "classes as &#8220;patients, practitioners, clinicians, facilitators, healing centers and other "
-        "approved locations, and educational programs&#8221;. Of those, 7.35.2.7 NMAC defines practitioner, "
-        "clinician and approved location, and does not define facilitator, healing center or educational "
-        "program. Carried over from the July 9, 2026 draft.",
-
-    ("7.35.3.3", "Entire section, statutory authority"):
-        "Not amended. Recorded as a fact. 7.35.3.3 NMAC, page 1, cites &#8220;the Medical Psilocybin Act, "
-        "Section 26-2D-7, NMSA 1978&#8221;. Section 1 of the Act provides that Sections 1 through 11 of the act "
-        "may be cited as the Medical Psilocybin Act. Section 7 of the Act is the section creating the program "
-        "in the department and directing what the department shall establish. This record does not verify the "
-        "codification. Carried over from the July 9, 2026 draft.",
-
-    ("7.35.3.5", "Entire section, effective date"):
-        "Not amended. Recorded for its interaction with the history notes. 7.35.3.5 NMAC, page 1, reads "
-        "&#8220;xx/xx, 2026, unless a later date is cited at the end of a section&#8221;. Twenty-six of the "
-        "twenty-eight history notes in the rule read &#8220;xx/xx/2026&#8221;. The notes for 7.35.3.27 and "
-        "7.35.3.28, page 19, read &#8220;9/22/2026&#8221;. Carried over from the July 9, 2026 draft, which "
-        "read &#8220;XXXX,XX,2026&#8221;.",
-
     ("7.35.3.7", "Entire section, definitions"):
-        "Six definitions are added. Each is drawn from a single provision of the rule as published, cited "
-        "here, and none is composed for this draft. Certificant: 7.35.3.26 NMAC, page 16, which names the six "
-        "classes that hold a certification. Facilitator: 7.35.3.13 NMAC Subsection B, page 8, which states the "
-        "scope of work, together with 7.35.3.9 NMAC Subsection F, page 3, which requires certification. "
-        "Other approved location: 7.35.3.11 NMAC Subsection B, page 6, which provides that such locations "
-        "&#8220;are physical locations at which medical psilocybin is intended to be consumed, that are not "
-        "locations of healing centers&#8221; and that they hold a temporary certification. Practicum: "
-        "7.35.3.19 NMAC Subsection A, page 12, which provides that an individual who seeks to become certified "
-        "as a practitioner or facilitator &#8220;shall participate in supervised practice training&#8221; and "
-        "gives that training the name practicum; that section belongs to the practicum amendment draft, whose "
-        "working draft v9 amends the hour figures in the same subsection and keeps the quoted phrase, and "
-        "Addendum B records the dependency. Registrant of another approved location: 7.35.3.11 NMAC Subsection "
-        "B, page 6. Student: 7.35.3.20 NMAC Paragraph (5) of Subsection H, page 14. Section 7.35.3.7 as "
-        "published reads in full: &#8220;The definitions in 7.35.2.7 NMAC apply to this part.&#8221; This "
-        "section is new; the July 9, 2026 draft carried no definitions section. Addendum A maps every "
-        "undefined term and assembles, for each term left undrafted, the provisions that bear on it. Amending "
-        "7.35.2 NMAC is a separate rulemaking, because that part was adopted effective June 23, 2026, so any "
-        "term this part needs and 7.35.2.7 NMAC does not supply has to be carried here.",
+        "Six definitions are added. Each is drawn from a single provision of the rule as published, and none "
+        "is composed. Certificant: 7.35.3.26 NMAC, page 16. Facilitator: 7.35.3.13 NMAC Subsection B, page 8, "
+        "with 7.35.3.9 NMAC Subsection F, page 3. Other approved location: 7.35.3.11 NMAC Subsection B, page "
+        "6. Practicum: 7.35.3.19 NMAC Subsection A, page 12; that section is the practicum draft's, whose v9 "
+        "keeps the defining phrase while amending the hour figures, and Addendum B records the dependency. "
+        "Registrant of another approved location: 7.35.3.11 NMAC Subsection B, page 6. Student: 7.35.3.20 "
+        "NMAC Paragraph (5) of Subsection H, page 14. As published the section reads in full: &#8220;The "
+        "definitions in 7.35.2.7 NMAC apply to this part.&#8221; Amending 7.35.2 NMAC, adopted effective June "
+        "23, 2026, is a separate rulemaking, so any term this part needs has to be carried here.",
 
     # ---- D2. Educational programs ----
-
-    ("7.35.3.10", "Paragraph (2) of Subsection A, additions to the list"):
-        "Not amended. Recorded for the sequence it creates. 7.35.3.10 NMAC Paragraph (2) of Subsection A, "
-        "page 4, is the only route by which a program reaches the list. Carried over from the July 9, 2026 "
-        "draft, where the section was titled &#8220;RECIPROCITY FOR CERTIFYING CLINICIANS, PRACTITIONERS AND "
-        "FACILITATORS&#8221;.",
 
     ("7.35.3.10", "Paragraph (2) of Subsection B, documentation of equivalency"):
         "Conforming amendment. Items (a)(ii) and (b)(ii) of 7.35.3.10 NMAC Paragraph (2) of Subsection B, "
@@ -85,27 +49,12 @@ SOURCE = {
         "All four are drafted the same way in this document. No figure is added.",
 
     ("7.35.3.10", "Paragraph (1) of Subsection D, waiver of practicum requirements"):
-        "Not amended. Reproduced for the conflict it makes with Paragraph (4) of Subsection G of 7.35.3.19 "
-        "NMAC, page 13, which this document does not reach. For the same 40 hours of contact time, this "
-        "paragraph, at page 5, requires &#8220;two separate group sessions&#8221; and Paragraph (4) of "
-        "Subsection G of 7.35.3.19 NMAC requires &#8220;A minimum of one group session&#8221;. Both descend "
-        "from the July 9, 2026 draft, which carried the same waiver twice and read &#8220;a minimum of two "
-        "separate individual sessions or two separate group sessions&#8221; in both places. The published "
-        "rule departed from that wording differently in each place, so no restoration of the July 9 wording "
-        "can conform the two provisions. The practicum amendment document records the same conflict at its "
-        "re-lettered 7.35.3.19 K and amends neither provision. Addendum B and Addendum C carry the "
-        "cross-references.",
+        "Not amended. Reproduced, at page 5, for the conflict with Paragraph (4) of Subsection G of 7.35.3.19 "
+        "NMAC, page 13, stated in the callout below. Addendum B and Addendum C carry the cross-references.",
 
     ("7.35.3.12", "Subsection D, re-application after denial"):
         "Conforming amendment. Same defect and same fix as 7.35.3.10 NMAC Subsection C. 7.35.3.12 NMAC "
         "Subsection D, page 8. Carried over from the July 9, 2026 draft.",
-
-    ("7.35.3.15", "Subsection A, required reporting of updates"):
-        "The 60 calendar days are taken from 7.35.3.15 NMAC Subsection B, page 9, which gives the department "
-        "60 calendar days to decide a curriculum approval application. No new figure is introduced. Subsection "
-        "A as published bars a program from implementing a reported change &#8220;until written approval is "
-        "issued by the department&#8221; and sets no period within which the department must act. Carried over "
-        "from the July 9, 2026 draft.",
 
     ("7.35.3.16", "Section heading and Subsection A, general requirements"):
         "Finding B3 of `analysis/july23-rule-concerns.md`, verified against the published rule. 7.35.3.16 NMAC "
@@ -114,9 +63,7 @@ SOURCE = {
         "evaluator for &#8220;receiving compensation from&#8230; the program or organization being "
         "evaluated&#8221;, with no exception for the engagement itself. The amendment states that the "
         "engagement fee is not a disqualifying conflict. Both provisions are carried over from the July 9, "
-        "2026 draft. On why the evaluation exists, the July 17, 2026 Training and Education Committee "
-        "transcript records that programs &#8220;also will have a need to have that third-party evaluation "
-        "that's looking to ensure that the curriculum is implemented with fidelity&#8221;.",
+        "2026 draft.",
 
     ("7.35.3.16", "Paragraph (2) of Subsection B, minimum qualifications"):
         "Restoration. The July 9, 2026 draft read &#8220;Medical or research practice&#8221;. The published "
@@ -197,24 +144,6 @@ SOURCE = {
         "90 days in the amendment is the figure already in Subsection D. Re-application: the same conforming "
         "change as 7.35.3.10 NMAC Subsection C. 7.35.3.11 NMAC Subsection D, page 7. Carried over from the "
         "July 9, 2026 draft.",
-
-    ("7.35.3.20", "Section heading, lead-in, and Subsection A"):
-        "Not amended here. The section heading reads 7.34.3.20 and its correction is drafted in the practicum "
-        "amendment document, so it is not duplicated. Recorded for two other things. Terminology: the lead-in "
-        "and Subsection A, page 13, use &#8220;a registrant of another approved location&#8221;, and the term "
-        "&#8220;registrant&#8221; appears 10 times in 7.35.3.20 NMAC and nowhere else in the rule, while "
-        "Subsection B of 7.35.3.11 NMAC, page 6, issues a certification for such a location rather than a "
-        "registration; the definition drafted at 7.35.3.7 NMAC ties the two together. Patient roster: finding "
-        "M18. Carried over from the July 9, 2026 draft.",
-
-    ("7.35.3.21", "Subsection A, authority to conduct assessments"):
-        "Not amended. Recorded for two things. Patient interviews: Subsection A, page 15, permits the "
-        "department to &#8220;interview staff and patients&#8221;, subject to the exception in the same "
-        "subsection for an on-site assessment during a patient session or at a patient's home. Frequency: "
-        "7.35.3.21 NMAC sets no interval at which assessments occur, while 7.35.3.16 NMAC Subsection E, page "
-        "10, requires a third-party evaluation report without stating how often. Carried over from the July 9, "
-        "2026 draft, where the section was titled &#8220;PSILOCYBIN EDUCATIONAL PROGRAMS, HEALING CENTERS, "
-        "OTHER APPROVED LOCATIONS; EVALUATION AND ASSESSMENT BY THE DEPARTMENT&#8221;.",
 
     # ---- D4. Patients, applicants and process ----
 
@@ -308,339 +237,116 @@ SOURCE = {
 
 REVIEW = {
 
-    ("7.35.3.11", "Paragraph (11) of Subsection A, owners and employees"):
-        "The registration drafted here operates on the list the healing center files with its application, "
-        "which fixes the position as at the date of the application. Nothing in 7.35.3.11 NMAC requires a "
-        "healing center to update that list, and 7.35.3.11 NMAC has four subsections, A through D, none of "
-        "which is a reporting duty; the only comparable duty in the rule is Subsection A of 7.35.3.15 NMAC, "
-        "page 9, which applies to educational programs and not to healing centers. So an owner or employee "
-        "who joins after certification would not be registered until the renewal under Subsection C of this "
-        "section, which falls at two years. Three choices. Add a reporting duty for changes to the list, "
-        "which is a new obligation that no source in this record proposes and which is therefore not drafted "
-        "here. Rely on the two-year renewal. Or strike the registration condition from Subsection C of "
-        "7.35.3.14 NMAC instead of supplying a registration, which would leave the designation by the healing "
-        "center as the only requirement. Department of Health staff decide, and the third choice has to be "
-        "coordinated with the practicum amendment document because Subsection C of 7.35.3.14 NMAC is in that "
-        "draft's scope. Whichever is chosen, the condition in Subsection C of 7.35.3.14 NMAC cannot be "
-        "satisfied as published.",
-
-
-    ("7.35.3.2", "Entire section, scope"):
-        "The scope names six regulated classes, and 7.35.2.7 NMAC defines three of them. The rule uses "
-        "&#8220;clinician&#8221; here and &#8220;certifying clinician&#8221; 53 times elsewhere, and 7.35.2.7 "
-        "NMAC defines the first and not the second. Two choices. Leave the scope as published and rely on the "
-        "definitions drafted at 7.35.3.7 NMAC to carry the undefined terms, or conform this section to the "
-        "vocabulary the rest of the part uses. The Training and Education Committee and Department of Health "
-        "staff decide which, and the choice governs the definition slate at 7.35.3.7 NMAC.",
-
-    ("7.35.3.3", "Entire section, statutory authority"):
-        "This document does not verify any NMSA 1978 section number, and the codification asserted here has "
-        "not been checked against the enacted text in this record. Two choices. Leave the citation as "
-        "published, or ask the department to confirm the codification before the rule is filed. Department of "
-        "Health staff and department counsel decide, and no board action is needed either way.",
-
-    ("7.35.3.5", "Entire section, effective date"):
-        "Because 7.35.3.5 NMAC gives effect to a later date cited at the end of a section, the rule as "
-        "published takes effect on an unfilled date except for 7.35.3.27 and 7.35.3.28, which take effect "
-        "September 22, 2026. The rule hearing is set for August 28, 2026. No source in this record supplies "
-        "the intended effective date, so none is drafted. Three choices. Conform the two history notes to the "
-        "placeholder the other twenty-six carry, fill 7.35.3.5 NMAC with a date and leave the two notes as "
-        "they stand if a later date for those two sections is intended, or fill all twenty-eight with one "
-        "date. Department of Health staff decide, because the department sets the filing and effective dates.",
+    # A review callout enters this record only for a gap, a contradiction, a
+    # typo, or a drafting mistake. It leads with the question, and it names who
+    # answers. Machine-checked: question first, decision-maker named, length
+    # capped, and the question re-appears verbatim on the sheet in Addendum E.
 
     ("7.35.3.7", "Entire section, definitions"):
-        "Two questions here, and the second is the larger one. First, the slate. Sixteen terms that carry "
-        "regulatory consequence in this part are defined nowhere: the six definitions drafted here are the "
-        "only ones a single provision of the rule supplies, and ten remain, including healing center, which "
-        "appears 54 times, and certifying clinician, which appears 53 times. No source in this record defines "
-        "either, so neither is drafted. Addendum A lists all sixteen with counts and assembles, for each of "
-        "the ten, every provision of 7.35.3 NMAC, 7.35.2 NMAC and the Medical Psilocybin Act that bears on "
-        "the term. The Training and Education "
-        "Committee decides which to send to the department, and the department decides what each says. Second, "
-        "the facilitator. Section 3(B) of the Medical Psilocybin Act defines a clinician as an approved health "
-        "care provider licensed in New Mexico who holds a permit from the department to provide medical "
-        "services to qualified patients. Section 5 of the Act exempts from arrest, prosecution and penalty a "
-        "producer, a clinician and a qualified patient, and Paragraph (2) of Subsection B of Section 5 makes "
-        "lawful the conduct of &#8220;a clinician administering or a qualified patient taking psilocybin in an "
-        "approved setting&#8221;. A facilitator holds no professional license under this rule: Subsection F of "
-        "7.35.3.9 NMAC, page 3, requires no license of a facilitator applicant. Subsection B of 7.35.3.14 "
-        "NMAC, page 9, nonetheless authorizes facilitators to possess medical psilocybin products and to "
-        "provide them to qualified patients. Whether a facilitator falls within Section 3(B) of the Act, and "
-        "so within the Section 5 exemption, is a question of statutory construction that this record cannot "
-        "settle and that a definition in this part cannot cure if the answer is no. Two choices once it is "
-        "answered: if a facilitator is within Section 3(B), nothing needs to change; if not, the authority in "
-        "Subsection B of 7.35.3.14 NMAC has to be narrowed or the Act amended. Department of Health staff and "
-        "department counsel decide it, and the board should be told the answer before the rule is filed. Two "
-        "things bear on this and neither is in doubt. The practicum amendment draft reads the same Paragraph "
-        "(2) of Subsection B of Section 5 against the same Subsection H of Section 3, which defines a "
-        "qualified patient as &#8220;a patient whose clinician has judged the patient to be a medically "
-        "appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying "
-        "condition&#8221;, and concludes that a participant who is not a qualified patient falls outside the "
-        "provision; its proposed 7.35.3.29 accordingly states the statutory amendment it would need and "
-        "conditions the whole section on that amendment. The question recorded here is the other half of the "
-        "same provision, about who may administer rather than who may take. Separately, the position of a "
-        "student is not in doubt and is not raised here: the practicum draft locates the provision of the "
-        "medicine in the practitioner or the healing center under Subsections A and C of 7.35.3.14 NMAC, and "
-        "7.35.3.20 NMAC Subsection D, page 14, provides that &#8220;students completing their practicums may "
-        "be present during an administration session&#8221;.",
-
-    ("7.35.3.10", "Paragraph (2) of Subsection A, additions to the list"):
-        "A program reaches the list only when an individual application relying on that program is approved, "
-        "and an application filed on or after January 1, 2028 needs either a third-party evaluation or a "
-        "program already on the list. On the first day the list is empty, so the first applicants must supply "
-        "an evaluation, and finding M6 of `analysis/july23-rule-concerns.md` records that the list can only "
-        "populate after the fact. Two choices. Leave the paragraph as published and rely on the amendment "
-        "drafted at Paragraph (2) of Subsection B of this section, which lets an applicant point to the list "
-        "once a program is on it, or add a route by which the department may place a program on the list on "
-        "its own initiative. The second is a new grant of authority and no source in this record proposes its "
-        "terms, so it is not drafted. The Training and Education Committee decides whether to ask for it, and "
-        "Department of Health staff decide its terms.",
-
-    ("7.35.3.10", "Subsection C, re-application after denial"):
-        "The amendment reads the six months as a waiting period, because the following sentence of the same "
-        "subsection sets a waiting period for a second denial and the two sentences otherwise contradict each "
-        "other. The other reading is that a denied applicant has six months in which to re-apply and loses the "
-        "right afterwards. Finding M21 of `analysis/july23-rule-concerns.md` records the ambiguity. Department "
-        "of Health staff decide which reading was intended, and the same answer governs all four places the "
-        "sentence appears.",
-
-    ("7.35.3.10", "Paragraph (1) of Subsection D, waiver of practicum requirements"):
-        "Two waivers of the practicum hours requirement each set a 40-hour floor for applications received by "
-        "December 31, 2027, and they disagree on the group sessions inside those hours. This paragraph "
-        "requires &#8220;two separate group sessions&#8221;; Paragraph (4) of Subsection G of 7.35.3.19 NMAC, "
-        "page 13, accepts &#8220;A minimum of one group session&#8221;. This paragraph is the stricter "
-        "reading, and it is the one that names an applicant relying on an educational program from another "
-        "jurisdiction. The two scopes overlap: Paragraph (3) of Subsection G of 7.35.3.19 NMAC extends that "
-        "section's waiver to a graduate of a program &#8220;that the department has included on the "
-        "department-approved list of educational programs by December 31, 2027&#8221;, and the list "
-        "maintained under Subsection A of this section is a list of programs from other jurisdictions, so an "
-        "out-of-jurisdiction applicant whose program is on the list appears to qualify under both waivers at "
-        "once. Such an applicant whose 40 documented hours include one group session satisfies Subsection G "
-        "of 7.35.3.19 NMAC and fails this paragraph, and the rule does not say which governs. Three choices. "
-        "Conform this paragraph to the one group session; conform Paragraph (4) of Subsection G of 7.35.3.19 "
-        "NMAC to the two group sessions here, which is in the practicum amendment document's scope and would "
-        "have to be drafted there; or state which waiver an applicant relying on an out-of-jurisdiction "
-        "program proceeds under. Each is a choice between two figures already in the rule, and the July 9, "
-        "2026 draft cannot break the tie, because it read &#8220;or two separate group sessions&#8221; in "
-        "both places, a third reading the published rule dropped. The Training and Education Committee "
-        "decides which to send forward, and the answer has to be coordinated with the practicum amendment "
-        "document, which records the same conflict and amends neither provision.",
-
-    ("7.35.3.15", "Subsection A, required reporting of updates"):
-        "Finding M8 of `analysis/july23-rule-concerns.md`. Until the department approves, a program may not "
-        "replace an instructor who has resigned, change a practicum site, or move a classroom, and the rule as "
-        "published binds the department to no period. The 60 calendar days drafted here are the period the "
-        "rule already sets for curriculum approval in Subsection B of this section, and no source in this "
-        "record proposes a period for this subsection. Three choices. Adopt the 60 days by analogy as drafted, "
-        "set a shorter period for changes that do not touch curriculum, or provide that a reported change may "
-        "be implemented if the department does not act within the period. Department of Health staff decide, "
-        "because the period binds the department.",
-
-    ("7.35.3.16", "Section heading and Subsection A, general requirements"):
-        "The amendment cures the conflict by naming the engagement fee as something other than a disqualifying "
-        "conflict. One alternative is to place the same words in item (b) of Paragraph (2) of Subsection C "
-        "instead, and this document drafts that too so that the committee can adopt either or both. A second "
-        "alternative is to have the department, rather than the program, engage and pay the team, which would "
-        "remove the conflict entirely but requires a funding source that no document in this record identifies. "
-        "The Training and Education Committee decides which route to send forward, and Department of Health "
-        "staff decide whether the second is available.",
-
-    ("7.35.3.16", "Paragraph (2) of Subsection B, minimum qualifications"):
-        "Finding M10 of `analysis/july23-rule-concerns.md`. Two questions sit on this paragraph. First, "
-        "whether the change from &#8220;or&#8221; to &#8220;and&#8221; between the July 9 and July 23 drafts "
-        "was deliberate. Two choices follow from the answer: keep the amendment, which restores the July 9 "
-        "wording, or withdraw it if the narrowing was intended. Department of Health staff decide, because "
-        "only the department knows whether the change was made on purpose. Second, whether a three-person "
-        "team can in fact cover all three domains at three years of experience each in New Mexico. Two "
-        "choices there as well: leave the standard as published, or lower it. No source in this record "
-        "proposes a lower standard, so none is drafted. The Training and Education Committee decides whether "
-        "to ask for one, because the committee is the body that will hear from programs that cannot find a "
-        "qualifying team.",
-
-    ("7.35.3.17", "Subsection A, mentoring sessions"):
-        "This subsection is left exactly as published, deliberately. The Wilson working redline would change "
-        "the obligation from 10 hours of mentoring to 2 student case consultations, and the practicum "
-        "amendment document holds open, for Dr. Metz, Ms. Wilson and Dr. Leeman, whether the consultation "
-        "requirement is stated in hours, in cases, or in both, and whether it belongs at the proposed "
-        "Subsection H of 7.35.3.19 NMAC, which exists only in that draft's re-lettering of that section, or "
-        "at Subsection A of this section. As published, 7.35.3.19 NMAC runs A through G and has no Subsection "
-        "H. Drafting either figure here would answer that question, so neither is drafted. The hours are "
-        "where the two documents have to be read together, under the working convention that an hour figure "
-        "sits inside the governing total unless the provision states it as an addition. This subsection "
-        "provides &#8220;a minimum of 10 hours of mentoring sessions after graduation and after practicum "
-        "hours are completed&#8221;, so its 10 hours sit inside no total: the program hours run through "
-        "7.35.3.18 NMAC and 7.35.3.19 NMAC, the practicum amendment document carries its supervision and "
-        "consultation hours inside its program totals under its settled reading of Subsection C of 7.35.3.19 "
-        "NMAC, and no line of either total is mentoring after graduation. If the consultation requirement "
-        "lands at the proposed 7.35.3.19 H while this subsection also stands, a graduate owes both sets of "
-        "hours; if it lands here, the drafting has to say whether the hours sit inside the program totals or "
-        "after them. Two choices, and "
-        "they are theirs: state the requirement here, in which case this subsection is redrafted and the "
-        "proposed 7.35.3.19 H carries a cross-reference, or state it at the proposed 7.35.3.19 H, in which "
-        "case this subsection is struck. Dr. Metz, Ms. Wilson and Dr. Leeman decide "
-        "which, and this section should be redrafted once they do. Findings M11 and M12 of "
-        "`analysis/july23-rule-concerns.md` record the separate points that the obligation is unfunded and "
-        "survives the program.",
-
-    ("7.35.3.17", "Subsection B, module evaluation without attendance"):
-        "Finding M12 of `analysis/july23-rule-concerns.md`: the price cap is stated as a fraction of the "
-        "&#8220;normal price of each of the educational modules&#8221;, which assumes that programs price "
-        "modules separately rather than pricing the program as a whole. Two choices. Strike the subsection, as "
-        "the Wilson working redline proposes, or keep it and restate the cap so that it works for a program "
-        "with a single price. No source in this record supplies a restated cap, so none is drafted. The "
-        "Training and Education Committee decides whether the option survives at all, and only then is a "
-        "restated cap worth drafting.",
-
-    ("7.35.3.11", "Paragraph (9) of Subsection B, proof of ownership"):
-        "The amendment exempts the qualified patient's own residence from the ownership proof and the owner's "
-        "written statement. Two things to weigh. Subsection B of this section makes an other approved location "
-        "available in part &#8220;for purposes of improving patient access in rural and frontier "
-        "counties&#8221;, and a patient's residence is the leading example the same subsection gives. Against "
-        "that, the owner's statement is the only place in the rule where a property owner is told what will "
-        "occur on the premises, so exempting the residence removes that notice for the location where "
-        "sessions are most likely to be unsupervised by a healing center. Two choices. Adopt the exemption as "
-        "drafted, or keep the requirement and allow the patient's own attestation in place of the owner's "
-        "statement. The board decides, because the trade is patient access against notice to a third party.",
-
-    ("7.35.3.11", "Paragraph (10) of Subsection B, outdoor or natural environments"):
-        "Two further questions on the same paragraph, neither answered here. The 15 minutes: the Wilson "
-        "working redline comments on both places the figure appears, &#8220;Is this a reasonable limit? "
-        "Everything feels at least 15 minutes away - should we say 30?&#8221; and &#8220;again - I think this "
-        "should maybe be 30. Everything is 15 minutes away from everything.&#8221; Those are questions rather "
-        "than a recommendation, and no source in this record supplies a figure, so the 15 minutes is left as "
-        "published in both paragraphs. The two-person requirement: the redline adds at the healing center "
-        "paragraph that &#8220;For the purposes of this section, an individual is a DOH-permitted "
-        "practitioner, a DOH-premitted facilitator, or an individual who is a DOH registered student with an "
-        "approved training program who has completed a minimum of 30 practicum hours and who is accompanied by "
-        "a DOH-permitted practitioner.&#8221;, and the comment on it reads &#8220;Not sure where this goes - "
-        "the 2 person universal requirement did not make it into the published rules, though DOH did confirm "
-        "they mean for it to be universal.&#8221; Because the author records that she does not know where the "
-        "provision belongs, it is not drafted. Ms. Wilson and Department of Health staff decide where it goes "
-        "and whether the 15 minutes becomes 30.",
-
-    ("7.35.3.11", "Subsection D, certification period; approval and denial"):
-        "The renewal drafted here repeats the 90 days the subsection already sets, so nothing new is "
-        "introduced, but three questions remain. Whether 90 days is the right term at all, which no source in "
-        "this record addresses. Whether a renewal application needs its own contents, or whether the "
-        "application under Subsection B of this section is resubmitted. Whether the department is bound to any "
-        "period in deciding a renewal, since Subsection D binds it to 30 calendar days only for a denial. "
-        "Department of Health staff decide all three, because each one binds the department, and the Training "
-        "and Education Committee should say whether a 90-day term with renewal is workable for a practicum "
-        "site.",
-
-    ("7.35.3.20", "Section heading, lead-in, and Subsection A"):
-        "Two questions, neither drafted here. Terminology: this section calls the holder of an other approved "
-        "location certification a registrant 10 times, and Subsection B of 7.35.3.11 NMAC issues a "
-        "certification. Two choices. Adopt the definition drafted at 7.35.3.7 NMAC, which ties the two words "
-        "together and leaves this section untouched, or conform all 10 occurrences here to certificant. "
-        "Department of Health staff decide which, and the second choice requires 10 edits this document does "
-        "not make. Patient roster: finding M18 of `analysis/july23-rule-concerns.md` records that Subsection A "
-        "requires a list of all qualified patients intended to use and who have used the location, which read "
-        "with Subsection A of 7.35.3.21 NMAC allows the department to obtain patient identities and interview "
-        "patients. Whether the roster should instead be kept in a form that does not identify patients to the "
-        "department is a question for the board, and it turns on the department's data needs, which "
-        "Department of Health staff would have to state.",
-
-    ("7.35.3.21", "Subsection A, authority to conduct assessments"):
-        "Two questions, neither drafted here. Patient interviews: the exception in this subsection protects a "
-        "patient during a session and at home, and does not otherwise limit whom the department may interview "
-        "or require that the patient consent. Whether an additional consent requirement should apply to any "
-        "patient interview is a question for the board. Frequency: the rule does not say how often the "
-        "department assesses a program, a healing center or an other approved location, and it does not say "
-        "how often a third-party evaluation must be repeated once the initial one is filed under Paragraph "
-        "(20) of Subsection A of 7.35.3.12 NMAC. Finding M10 of `analysis/july23-rule-concerns.md` records the "
-        "second point. No source in this record supplies an interval, so none is drafted. Department of Health "
-        "staff decide both, because each is a demand on department capacity.",
+        "Which of the ten undefined terms should the department be asked to define? Healing center, 54 uses, "
+        "and certifying clinician, 53, lead; Addendum A assembles the material for each. Does the Act's "
+        "exemption cover facilitators? Section 5 of the Act exempts a producer, a clinician and a qualified "
+        "patient; a facilitator is none of these, and 7.35.3.14 B lets facilitators possess and provide "
+        "medical psilocybin. The Training and Education Committee picks the slate; Department of Health staff "
+        "and department counsel answer the exemption question.",
 
     ("7.35.3.8", "Subsection D, review of a denied patient application"):
-        "Finding M23 of `analysis/july23-rule-concerns.md`. Three provisions describe review of a denial, and "
-        "their scopes do not line up. This subsection covers a patient applicant denied for an incomplete "
-        "application or a missed submittal requirement. Subsection A of 7.35.3.25 NMAC covers any patient "
-        "applicant whose application has been denied. Paragraph (7) of Subsection C of 7.35.3.27 NMAC gives a "
-        "hearing to an applicant denied for any reason other than an incomplete application or a missed "
-        "submittal requirement. Read together, the informal review reaches every denial and the hearing "
-        "reaches every denial except the two that this subsection covers, so a patient applicant denied on the "
-        "merits may have both. The amendment drafted here only fixes the name of the proceeding and leaves the "
-        "overlap alone. Two choices on the overlap. Narrow Subsection A of 7.35.3.25 NMAC to the grounds this "
-        "subsection names, or state that the informal review and the hearing are alternatives and which one a "
-        "patient applicant elects. Department of Health staff and department counsel decide, because the "
-        "answer affects what process a denied applicant is owed.",
+        "Which denials get the informal review, and which the hearing? Three provisions overlap: this "
+        "subsection covers incomplete applications, 7.35.3.25 A covers any denial, and 7.35.3.27 C(7) covers "
+        "every denial except incomplete applications, so a patient denied on the merits may have both tracks. "
+        "The amendment fixes only the name of the proceeding. Department of Health staff and department "
+        "counsel align the scopes.",
 
     ("7.35.3.9", "Subsection D, certifying clinician application requirements"):
-        "The renumbering assumes that the gap is a numbering error rather than the trace of a deleted "
-        "requirement. Section 7.35.3.9 has no counterpart in the July 9, 2026 draft, so this record cannot "
-        "show what, if anything, stood at Paragraph (3). Two choices. Renumber as drafted, or restore the "
-        "missing requirement if one was intended. Department of Health staff decide, because only the "
-        "department knows what the paragraph held.",
+        "Numbering error, or a dropped requirement? The paragraphs run (1), (2), (4), (5), (6); there is no "
+        "(3), and the section has no July 9 counterpart to show what stood there. The renumbering drafted "
+        "here assumes an error. Department of Health staff confirm nothing was meant to fill the gap.",
+
+    ("7.35.3.10", "Subsection C, re-application after denial"):
+        "Is the six months after a first denial a waiting period or a deadline? This subsection says a denied "
+        "applicant &#8220;may re-apply within six months&#8221;, then bars a second-time applicant &#8220;for "
+        "six months from the denial&#8221;. The amendment reads both as waiting periods, and the same fix is "
+        "drafted at 7.35.3.9 A, 7.35.3.11 D and 7.35.3.12 D. Department of Health staff confirm the intended "
+        "reading.",
+
+    ("7.35.3.10", "Paragraph (1) of Subsection D, waiver of practicum requirements"):
+        "Two group sessions or one, inside the same 40 waiver hours? This paragraph requires &#8220;two "
+        "separate group sessions&#8221;; 7.35.3.19 G(4) accepts &#8220;A minimum of one group session&#8221;, "
+        "and an out-of-jurisdiction applicant whose program is on the department list can qualify under both "
+        "at once. The July 9, 2026 draft read &#8220;or two separate group sessions&#8221; in both places, so "
+        "no restoration conforms them. The Training and Education Committee chooses; the practicum draft "
+        "records the same conflict and amends neither.",
+
+    ("7.35.3.11", "Paragraph (11) of Subsection A, owners and employees"):
+        "Is this the right home for the registration 7.35.3.14 C requires? That provision conditions healing "
+        "center staff authority on being &#8220;registered with the department&#8221;, and no such "
+        "registration exists in 7.35.3 NMAC or 7.35.2 NMAC. It is drafted here, where the healing center "
+        "already files the names; the practicum draft assigns the fix to 7.35.3.11 or 7.35.3.20. Department "
+        "of Health staff decide the home.",
+
+    ("7.35.3.11", "Paragraph (9) of Subsection B, proof of ownership"):
+        "Keep the owner's statement for a patient's own residence, or adopt the exemption drafted here? The "
+        "Wilson redline records that the paragraph as published makes an end-of-life patient get a landlord's "
+        "permission for treatment at home. The exemption removes that, and it also removes the only notice an "
+        "owner gets. The board weighs access against notice.",
+
+    ("7.35.3.11", "Paragraph (10) of Subsection B, outdoor or natural environments"):
+        "Where does the two-person requirement belong? The Wilson redline adds it at the healing center "
+        "paragraph and records that &#8220;the 2 person universal requirement did not make it into the "
+        "published rules, though DOH did confirm they mean for it to be universal.&#8221; Ms. Wilson and "
+        "Department of Health staff place it.",
 
     ("7.35.3.13", "Subsection B, facilitators; scope of work"):
-        "Finding M15 of `analysis/july23-rule-concerns.md`. This subsection puts a facilitator under the "
-        "direct supervision of a practitioner and limits the facilitator to peer support and to logistical and "
-        "administrative support. Three provisions sit against it, and all three are in the practicum "
-        "amendment document rather than this one. Subsection B of 7.35.3.14 NMAC, page 9, lets a facilitator "
-        "possess psilocybin products and provide them to qualified patients. Paragraph (5) of Subsection H of "
-        "7.35.3.20 NMAC, page 14, permits a group session staffed by one facilitator or qualified student for "
-        "every two patients with one practitioner for every eight patients, so a facilitator may be the only "
-        "certificant with a given patient. Subsection C of 7.35.3.19 NMAC, page 13, has practitioners "
-        "supervising facilitators during administration sessions as part of the practicum. Whether "
-        "&#8220;direct supervision&#8221; means presence in the room, presence at the location, or "
-        "availability is not stated anywhere in the rule. Three choices. Define direct supervision in this "
-        "part, which the definitions drafted at 7.35.3.7 NMAC could carry; narrow the facilitator authority "
-        "in the three provisions named above to match this subsection; or widen this subsection to match "
-        "them. No source in this record chooses among the three, so none is drafted. The Training and "
-        "Education Committee and Department of Health staff decide the meaning, and because the conflicting "
-        "provisions belong to the practicum draft, any amendment has to be coordinated with that document "
-        "rather than made here.",
+        "Does direct supervision mean in the room, at the location, or available? This subsection limits a "
+        "facilitator to peer support under a practitioner's &#8220;direct supervision&#8221;, while 7.35.3.14 "
+        "B lets facilitators possess and provide psilocybin and 7.35.3.20 H(5) lets a facilitator be the only "
+        "certificant with a patient in a group session. The rule never defines the term. The Training and "
+        "Education Committee and Department of Health staff say what it means; the conflicting provisions are "
+        "in the practicum draft's scope.",
+
+    ("7.35.3.16", "Section heading and Subsection A, general requirements"):
+        "Adopt the engagement-fee cure at Subsection A, at C(2)(b), or both? As published no evaluator can "
+        "serve: a program &#8220;shall engage a qualified third-party evaluation team&#8221;, and C(2)(b) "
+        "disqualifies anyone &#8220;receiving compensation from&#8230; the program or organization being "
+        "evaluated&#8221;. Both cures are drafted. The Training and Education Committee chooses.",
+
+    ("7.35.3.16", "Paragraph (2) of Subsection B, minimum qualifications"):
+        "Was the change from or to and deliberate? The July 9, 2026 draft read &#8220;Medical or research "
+        "practice&#8221;; the published rule reads &#8220;Medical and research practice&#8221;, so an "
+        "evaluator in this domain now needs both. The amendment restores the July 9 reading. Department of "
+        "Health staff confirm the intent.",
+
+    ("7.35.3.17", "Subsection A, mentoring sessions"):
+        "Hours or cases, and stated here or at the practicum draft's proposed 7.35.3.19 H? Open with Dr. "
+        "Metz, Ms. Wilson and Dr. Leeman; as published, 7.35.3.19 runs A through G and has no Subsection H. "
+        "One warning while it is open: the 10 mentoring hours here run &#8220;after graduation and after "
+        "practicum hours are completed&#8221; and sit inside no program total, so if the consultation "
+        "requirement lands at 7.35.3.19 H while this subsection stands, a graduate owes both sets of hours.",
+
+    ("7.35.3.17", "Subsection B, module evaluation without attendance"):
+        "Strike the test-out option, or keep it and restate the cap? The Wilson redline strikes the "
+        "subsection: &#8220;Strike, right? I don't think we want this test out provision.&#8221; If it stays, "
+        "the cap is broken for any program with a single price, because it is a fraction of the &#8220;normal "
+        "price of each of the educational modules&#8221;. The Training and Education Committee decides "
+        "whether it survives.",
 
     ("7.35.3.24", "Entire section, complaints to the department"):
-        "Two questions the amendment does not reach. Standing: the July 9, 2026 draft provided that "
-        "&#8220;Patients or staff may lodge a complaint with the department.&#8221; The published section "
-        "allows a complaint from a qualified patient or a certificant, so an employee of a healing center who "
-        "is neither has no route under this section. Two choices. Restore standing for staff, or leave the "
-        "section as published and rely on the adverse health event reporting in Subsection L of 7.35.3.20 "
-        "NMAC. Scope of the confidentiality restored here: the July 9 wording protected the complainant's name "
-        "and contact information and said nothing about disclosure to the certificant complained of, or about "
-        "the application of the Inspection of Public Records Act. Department of Health staff and department "
-        "counsel decide both, and the board should be told whether a complainant can be assured of "
-        "confidentiality before the rule is filed.",
+        "Do staff regain standing to complain? The July 9, 2026 draft allowed &#8220;Patients or staff&#8221; "
+        "to complain; the published section allows only a qualified patient or certificant, so a healing "
+        "center employee who is neither has no route. Department of Health staff and department counsel "
+        "decide whether staff standing returns.",
 
     ("7.35.3.25", "Paragraph (1) of Subsection D, content and timeline"):
-        "Two questions on this section that the corrections do not reach. The administrative review committee: "
-        "Subsection C of this section and Paragraph (2) of Subsection D assign the review to &#8220;the "
-        "administrative review committee&#8221;, and nothing in 7.35.3 NMAC or 7.35.2 NMAC constitutes that "
-        "committee, states who sits on it, or says how it is appointed. The term appears four times in the "
-        "rule, all in this section, and it is carried over from the July 9, 2026 draft. Judicial review: "
-        "Subsection E provides that &#8220;Except as otherwise provided by law, there shall be no right to "
-        "judicial review of a decision by the administrative review committee.&#8221; and the Wilson working "
-        "redline comments on that subsection &#8220;they really went in the opposite direction of due process "
-        "here...&#8221; Neither is drafted, because constituting a committee and limiting judicial review are "
-        "both beyond what a correction can carry, and no source in this record proposes terms for either. "
-        "Department of Health staff must say who the committee is, and department counsel must say whether "
-        "Subsection E is within the department's authority. The board should have both answers before the rule "
-        "is filed.",
-
-    ("7.35.3.27", "Subsection M, continuances"):
-        "Finding N5 of `analysis/july23-rule-concerns.md`, which the correction to this subsection does not "
-        "reach. Subsection A of this section newly allows the department to suspend a certification "
-        "immediately. After a suspension, Subsection F allows the hearing to be held up to 60 calendar days "
-        "after the request, Paragraph (2) of Subsection O allows the hearing officer 30 calendar days after "
-        "the last submission to recommend, and Paragraph (3) of Subsection O allows the secretary 45 calendar "
-        "days after receipt to decide, so a suspended certificant can be out of practice for more than 135 "
-        "days before a final decision. The rule provides no expedited track. Two choices. Add an expedited "
-        "schedule for a hearing that follows an immediate suspension, or leave the timeline as published. No "
-        "source in this record supplies a shorter period, so none is drafted. Department of Health staff and "
-        "department counsel decide, because the periods bind the department and the secretary.",
+        "Who is the administrative review committee? It decides every informal review and its decision is "
+        "final, but nothing in 7.35.3 NMAC or 7.35.2 NMAC constitutes it, seats it, or appoints it. "
+        "Department of Health staff must say who it is before the rule is filed.",
 }
 
 
 # ---------------------------------------------------------------------------
-# The question sheet, Addendum E. A re-presentation of the review notes above,
-# one line per question, grouped by who decides. It introduces no analysis of
-# its own: the note at the provision named in each row is the controlling
-# statement, and `audit.py` checks that every review note appears here, that
-# every row points at a review note, that the group each row sits under is the
-# decision-maker the note names, and that no row carries a figure its note does
-# not carry.
+# The question sheet, Addendum E. Every row quotes its callout's question
+# verbatim, grouped by who answers it, so the sheet cannot drift from the
+# notes. Machine-checked in audit.py.
 # ---------------------------------------------------------------------------
 
 GROUPS = [
@@ -651,83 +357,44 @@ GROUPS = [
     ("named", "Dr. Metz, Ms. Wilson and Dr. Leeman"),
 ]
 
-# (group key, section, subsection label, one-line question)
+# (group key, section, subsection label, the question, verbatim from the note)
 QUESTIONS = [
-    ("staff", "7.35.3.5", "Entire section, effective date",
-     "Which effective date fills the placeholders, and do 7.35.3.27 and 7.35.3.28 keep September 22, 2026?"),
     ("staff", "7.35.3.9", "Subsection D, certifying clinician application requirements",
-     "Is the gap at paragraph (3) a numbering error, or the trace of a requirement that was meant to stay?"),
+     "Numbering error, or a dropped requirement?"),
     ("staff", "7.35.3.10", "Subsection C, re-application after denial",
-     "Is the six months after a first denial a waiting period or a deadline to re-apply, in all four places "
-     "the sentence appears?"),
+     "Is the six months after a first denial a waiting period or a deadline?"),
     ("staff", "7.35.3.11", "Paragraph (11) of Subsection A, owners and employees",
-     "How does the owner and employee registration stay current between application and the two-year renewal?"),
-    ("staff", "7.35.3.11", "Subsection D, certification period; approval and denial",
-     "Is a 90-day term with renewal workable, what does a renewal contain, and what period binds the "
-     "department to decide one?"),
-    ("staff", "7.35.3.15", "Subsection A, required reporting of updates",
-     "What period binds the department to act on a reported program change, and do the 60 days drafted by "
-     "analogy stand?"),
+     "Is this the right home for the registration 7.35.3.14 C requires?"),
     ("staff", "7.35.3.16", "Paragraph (2) of Subsection B, minimum qualifications",
-     "Was the change from or to and between the July 9 and July 23 drafts deliberate, and should the July 9 "
-     "reading return?"),
-    ("staff", "7.35.3.20", "Section heading, lead-in, and Subsection A",
-     "Does the definition drafted at 7.35.3.7 settle registrant, or should all 10 occurrences here read "
-     "certificant?"),
-    ("staff", "7.35.3.21", "Subsection A, authority to conduct assessments",
-     "How often does the department assess, and how often must a third-party evaluation be repeated?"),
+     "Was the change from or to and deliberate?"),
+    ("staff", "7.35.3.25", "Paragraph (1) of Subsection D, content and timeline",
+     "Who is the administrative review committee?"),
 
-    ("counsel", "7.35.3.3", "Entire section, statutory authority",
-     "Should the department confirm the codification of the Medical Psilocybin Act before the rule is filed?"),
     ("counsel", "7.35.3.7", "Entire section, definitions",
-     "Is a facilitator within Section 3(B) of the Act, and so within the Section 5 exemption, given the "
-     "authority 7.35.3.14 NMAC confers?"),
+     "Does the Act's exemption cover facilitators?"),
     ("counsel", "7.35.3.8", "Subsection D, review of a denied patient application",
-     "Are the informal review and the hearing alternatives, and which denials reach which track?"),
+     "Which denials get the informal review, and which the hearing?"),
     ("counsel", "7.35.3.24", "Entire section, complaints to the department",
-     "Does staff standing to complain return, and how far does the restored confidentiality assurance reach?"),
-    ("counsel", "7.35.3.25", "Paragraph (1) of Subsection D, content and timeline",
-     "Who sits on the administrative review committee, and is the bar on judicial review within the "
-     "department's authority?"),
-    ("counsel", "7.35.3.27", "Subsection M, continuances",
-     "Does a hearing that follows an immediate suspension get an expedited schedule?"),
+     "Do staff regain standing to complain?"),
 
-    ("committee", "7.35.3.2", "Entire section, scope",
-     "Does the scope keep clinician as published, or conform to the vocabulary the rest of the part uses?"),
     ("committee", "7.35.3.7", "Entire section, definitions",
-     "Which of the ten undefined terms go to the department for definition, healing center and certifying "
-     "clinician first?"),
-    ("committee", "7.35.3.10", "Paragraph (2) of Subsection A, additions to the list",
-     "Should the department be asked for authority to place a program on the list on its own initiative?"),
+     "Which of the ten undefined terms should the department be asked to define?"),
     ("committee", "7.35.3.10", "Paragraph (1) of Subsection D, waiver of practicum requirements",
-     "Which group-session minimum stands in the 40-hour waiver, the two here or the one of 7.35.3.19 G(4)?"),
+     "Two group sessions or one, inside the same 40 waiver hours?"),
     ("committee", "7.35.3.13", "Subsection B, facilitators; scope of work",
-     "What does direct supervision mean, and is it defined in this part or the three wider provisions "
-     "narrowed?"),
+     "Does direct supervision mean in the room, at the location, or available?"),
     ("committee", "7.35.3.16", "Section heading and Subsection A, general requirements",
-     "Does the engagement-fee cure go forward at Subsection A, at the conflict rule, or by the department "
-     "engaging the team?"),
-    ("committee", "7.35.3.16", "Paragraph (2) of Subsection B, minimum qualifications",
-     "Can a three-person team cover all three domains at three years each, or should a lower standard be "
-     "requested?"),
+     "Adopt the engagement-fee cure at Subsection A, at C(2)(b), or both?"),
     ("committee", "7.35.3.17", "Subsection B, module evaluation without attendance",
-     "Does the test-out option survive, and if it does, how is its price cap restated for a single-price "
-     "program?"),
+     "Strike the test-out option, or keep it and restate the cap?"),
 
     ("board", "7.35.3.11", "Paragraph (9) of Subsection B, proof of ownership",
-     "Does the owner notice stay for a patient's own residence, or does the access exemption drafted here "
-     "stand?"),
-    ("board", "7.35.3.20", "Section heading, lead-in, and Subsection A",
-     "Should the location's patient roster be kept in a form that does not identify patients to the "
-     "department?"),
-    ("board", "7.35.3.21", "Subsection A, authority to conduct assessments",
-     "Should a patient interview outside a session or the patient's home require the patient's consent?"),
+     "Keep the owner's statement for a patient's own residence, or adopt the exemption drafted here?"),
 
     ("named", "7.35.3.17", "Subsection A, mentoring sessions",
-     "Is the consultation requirement stated in hours or in cases, and does it sit at the proposed 7.35.3.19 "
-     "H or here?"),
+     "Hours or cases, and stated here or at the practicum draft's proposed 7.35.3.19 H?"),
     ("named", "7.35.3.11", "Paragraph (10) of Subsection B, outdoor or natural environments",
-     "Where does the two-person requirement belong, and does the 15-minute threshold become 30?"),
+     "Where does the two-person requirement belong?"),
 ]
 
 

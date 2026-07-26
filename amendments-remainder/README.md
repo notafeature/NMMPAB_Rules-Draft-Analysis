@@ -1,6 +1,6 @@
 # Proposed amendments outside the practicum: 7.35.3 NMAC
 
-**Owner:** notafeature. **Version:** working draft v2. **Last edited:** July 26, 2026.
+**Owner:** notafeature. **Version:** working draft v3. **Last edited:** July 26, 2026.
 
 Drafting folder for the twenty-four sections of the medical psilocybin rule published July 23, 2026 that the practicum amendment draft in `amendments/` does not reach: **7.35.3.1 through .13, .15, .16, .17, and .21 through .28.** Rule hearing August 28, 2026.
 
@@ -18,7 +18,7 @@ Drafting folder for the twenty-four sections of the medical psilocybin rule publ
 
 | File | What it is |
 |---|---|
-| `7.35.3-remainder-amendments-v2.pdf` | The document. Side-by-side redline in four parts, plus five addenda |
+| `7.35.3-remainder-amendments-v3.pdf` | The document. Side-by-side redline in numerical section order, plus five addenda |
 | `SOURCE-OF-TRUTH.md` | The settled facts, cited, for the session that edits `docs/`. If a site page disagrees with it, the page is wrong |
 | `content.py` | Published text and proposed amendment, provision by provision |
 | `notes.py` | Source note and, where needed, review note for each provision, plus the question sheet Addendum E is generated from |
@@ -34,23 +34,23 @@ The machinery is copied from `amendments/`, not imported, so the practicum docum
 
 ## Form
 
-One document, 42 pages, in four parts with five addenda at the end. It follows `amendments/7.35.3-practicum-amendments-v9.pdf` in every respect that document settled:
+One document, 23 pages: the redline in numerical section order, then five addenda. It follows `amendments/7.35.3-practicum-amendments-v9.pdf` in the respects that document settled, with one recorded divergence:
 
-- **Running header from named CSS pages.** Each section declares `@page sNN { @top-left { content: "7.35.3.NN  Title" } }` and the section is bound to it with `page: sNN`, so the section's identity appears in the top margin of every page it spans. `audit.py` opens the built PDF and checks all 37 pages, and checks that every section rendered has a named page declared.
+- **Running header from named CSS pages, one per addendum.** The redline body shares a single named page so sections share pages instead of each forcing a page of its own; this diverges from v9's page-per-section form, deliberately, because these sections are short. `audit.py` opens the built PDF and checks the header of every page.
 - **One table row per provision, two columns as a grid inside a single cell.** A long provision flows across a page break with the columns still aligned, instead of being forced onto one page.
-- **The source note and the review note run the full width beneath both columns**, which makes a note about half as tall as it is inside a column. With notes as long as these, that is the difference between a readable page and an unreadable one.
+- **The source note and the question callout run the full width beneath both columns.**
 - **A short provision is marked `break-inside: avoid`** from an estimate of its rendered height, so it is never split for the sake of a line or two.
 - Same type, sizes, colors, insertion and deletion marks, badge, and review callout.
 
-The parts come from the `doc` field of each entry in `content.py` and are named in `PARTS` in the build script. Regrouping is an edit to those two places.
+The redline is ordered by section number; the order is computed in the build script from the section numbers in `content.py`.
 
 ## What is drafted, and what is not
 
-Twenty-four provisions are amended, across nineteen sections. Every change is either a mechanical correction, a conforming amendment between two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. **No change introduces a figure or a policy choice that no source supplies.**
+Twenty-three provisions are amended, across thirteen sections. Every change is either a mechanical correction, a conforming amendment between two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. **No change introduces a figure or a policy choice that no source supplies.**
 
-Twenty-one further defects are recorded and left undrafted. Each has a review note at its provision stating the issue, the choices, and who decides, and all twenty-one are listed with the reason in Addendum C. Ten provisions are reproduced without amendment because they carry one of those findings. The commonest reason is that the fix requires a figure no source carries.
+Eleven further defects are recorded and left undrafted, and all eleven are listed with the reason in Addendum C. Four provisions are reproduced without amendment because a question sits on them.
 
-Addendum E is the question sheet: the twenty-four review notes re-presented as one-line questions, one page, grouped by who decides. It is generated from a companion list in `notes.py`, and `audit.py` checks that every review note appears on it, that every row points at a review note, that each row sits under the decision-maker its note names, that no row carries a figure its note does not carry, and that the sheet stays one page.
+A question enters this record only for a gap, a contradiction, a typo, or a drafting mistake; process design and department deadlines are not this review's subjects, and the unfilled dates are the department's to fill at publication. Every question sits in a callout at its provision, question first, decision-maker named, length machine-capped. Addendum E lists all sixteen questions verbatim, one page, grouped by who answers; `audit.py` checks that every callout's question appears, that every row quotes its callout verbatim, and that the sheet stays one page.
 
 ### The two BLOCKING findings in this scope
 
@@ -78,8 +78,6 @@ Verified independently against the published rule, and recomputed on every build
 | Item | Count | Where | Corrected |
 |---|---|---|---|
 | Headings reading 7.34.3 | 5 of 28 | .13, .14, .20, .23, .25 | .13, .23, .25 here; .14 and .20 in the practicum draft |
-| History notes with a real effective date | 2 of 28 | .27 and .28, both 9/22/2026 | Recorded at 7.35.3.5. No source supplies the intended date |
-| History notes omitting "- N" | 9 of 28 | .11, .13, .14, .20, .22, .23, .24, .25, .26 | Recorded. The designator is the department's to set |
 | Numbering gap | 1 | 7.35.3.9 D runs (1), (2), (4), (5), (6) | Renumbered here |
 | Subsections lettered "(A)" | 4 | 7.35.3.11 A, and 7.35.3.14 A, B and C | 7.35.3.11 A here; 7.35.3.14 in the practicum draft |
 
@@ -91,7 +89,7 @@ These are the repository rules that bear on these documents. `audit.py` enforces
 - Verbatim means verbatim. Anything reproduced from a source is reproduced exactly, with line breaks introduced by the PDF collapsed to single spaces and hyphenation introduced by a line break rejoined. Nothing else is altered. Punctuation that is not in the source sits outside the closing quotation mark. Every quoted span in `notes.py` and in the addenda is harvested automatically and checked against a source, so a quotation cannot enter unchecked.
 - Every claim is cited to a section and page of the published rule, to a source document, or to a transcript. Every provision that proposes a change carries a source note, and every provision reproduced without amendment says why it is reproduced.
 - No figure enters a right column unless a named provision of the published rule carries it. `audit.py` requires, for every numeric token inside an insertion, an entry naming the provision it comes from, and then checks that provision's own published text for it. It is not enough that the digits appear somewhere in the rule.
-- Every review note finishes its sentences and states the issue, the choices, and who decides. Machine-checked.
+- Every question callout leads with its question, stays under a machine-checked length cap, names who answers, and finishes its sentences. A question enters only for a gap, a contradiction, a typo, or a drafting mistake.
 - The statute is cited, never the bill: "the Medical Psilocybin Act, Section 5(B)(2)". No NMSA 1978 section number is asserted by this draft. Where the published rule asserts one, it appears only inside a quotation of the rule, and `audit.py` checks that by offset.
 - No characterization of anyone's motives.
 - Both July 17, 2026 transcripts are labeled "UNOFFICIAL AUTO-GENERATED TRANSCRIPT. NO SPEAKER ATTRIBUTION." No speaker is named from either transcript anywhere in these documents.

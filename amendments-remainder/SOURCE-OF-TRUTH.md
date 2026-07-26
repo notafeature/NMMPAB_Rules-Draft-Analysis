@@ -5,8 +5,8 @@ For the session that edits `docs/`. Every statement below is settled, is cited, 
 from the sources rather than read back from this file, and every citation must point at a section that exists.
 If a page in `docs/` disagrees with this file, the page is wrong.
 
-Current document: `amendments-remainder/7.35.3-remainder-amendments-v2.pdf`, working draft v2, July 26, 2026.
-One document, 42 pages, in four parts with five addenda. Rule hearing August 28, 2026. Regenerate the receipts
+Current document: `amendments-remainder/7.35.3-remainder-amendments-v3.pdf`, working draft v3, July 26, 2026.
+One document, 23 pages: the redline in numerical section order, then five addenda. Rule hearing August 28, 2026. Regenerate the receipts
 with `python3 amendments-remainder/audit.py`, which writes `amendments-remainder/AUDIT.md`.
 
 **This folder is internal drafting work, not a filing, not submitted, and not adopted rule text.** Say so on
@@ -23,11 +23,16 @@ covers 7.35.3.14, 7.35.3.18, 7.35.3.19, Paragraph (5) of Subsection H of 7.35.3.
 scope, including the hours, the permit renaming, and the two versions of the first practicum stage. Addendum B
 of this document records every dependency between the two scopes, in both directions.
 
-Twenty-four provisions are amended across nineteen sections. Every change is a mechanical correction, a
+Twenty-three provisions are amended across thirteen sections. Every change is a mechanical correction, a
 conforming amendment between two provisions of the same rule, or a restoration of wording the July 9, 2026
-draft carried. No change introduces a figure or a policy choice that no source supplies. Ten provisions are
-reproduced without amendment because they carry a recorded finding. Twenty-one further defects are recorded
-and deliberately left undrafted; Addendum C lists every one with the reason nothing is proposed.
+draft carried. No change introduces a figure or a policy choice that no source supplies. Four provisions are
+reproduced without amendment because a question sits on them. Eleven further defects are recorded and
+deliberately left undrafted; Addendum C lists every one with the reason nothing is proposed.
+
+**The review filter.** A question enters this record only for a gap, a contradiction, a typo, or a drafting
+mistake. Process design, department workload and department deadlines are not this review's subjects. The
+unfilled dates and history-note placeholders are the department's to fill at publication and are not raised
+as defects. Do not add questions outside the filter, and do not restate cut ones.
 
 **Out of scope by decision:** the controlled-substance number requirement for certifying clinicians. It is
 reproduced where the renumbering around it required it, recorded as fact, and nothing is proposed about it.
@@ -101,23 +106,22 @@ stands, a graduate owes both sets of hours; where the requirement sits is open w
 Dr. Leeman. **Do not report the 10 mentoring hours as part of any program total**, and do not report the two
 obligations as reconciled.
 
-## 6. What is open and who decides
+## 6. What is open and who answers
 
-The twenty-four review notes each state the issue, the choices, and who decides. Addendum E of the document
-re-presents them as one-line questions, grouped by decision-maker, and introduces no analysis of its own; the
-note at each provision is the controlling statement. The groups and their question counts:
+There are sixteen questions in the document, in fifteen callouts, one at each provision that carries one. Each
+callout leads with its question and names who answers. Addendum E lists every question verbatim, grouped by
+who answers, on one page. The groups and their question counts:
 
 | Who decides | Questions |
 |---|---:|
-| Department of Health staff | 9 |
-| Department of Health staff with department counsel | 6 |
-| The Training and Education Committee | 8 |
-| The board | 3 |
+| Department of Health staff | 5 |
+| Department of Health staff with department counsel | 3 |
+| The Training and Education Committee | 5 |
+| The board | 1 |
 | Dr. Metz, Ms. Wilson and Dr. Leeman | 2 |
 
-A note that puts different questions to different decision-makers appears once per question, so the counts sum
-to more than the number of notes. Do not report any of these items as decided, and do not attribute a position
-on any of them to the board, the committee, the department, or any named person.
+Do not report any of these items as decided, and do not attribute a position on any of them to the board, the
+committee, the department, or any named person.
 
 ## 7. What must not be written, anywhere that cites this folder
 

@@ -49,33 +49,8 @@ P = []
 # D1. Framework and defined terms: 7.35.3.1 through .7
 # ===========================================================================
 
-P.append((
-    D1,
-    "7.35.3.2",
-    "Entire section, scope",
-    "7.35.3.2 SCOPE: This rule applies to all patients, practitioners, clinicians, facilitators, healing "
-    "centers and other approved locations, and educational programs who participate or seek to participate in "
-    "the New Mexico medical psilocybin program.",
-    UNCHANGED,
-))
 
-P.append((
-    D1,
-    "7.35.3.3",
-    "Entire section, statutory authority",
-    "7.35.3.3 STATUTORY AUTHORITY: This rule is promulgated pursuant to the following statutory authorities: "
-    "the New Mexico Department of Health Act, Subsection E of Section 9-7-6 NMSA 1978; and the Medical "
-    "Psilocybin Act, Section 26-2D-7, NMSA 1978.",
-    UNCHANGED,
-))
 
-P.append((
-    D1,
-    "7.35.3.5",
-    "Entire section, effective date",
-    "7.35.3.5 EFFECTIVE DATE: xx/xx, 2026, unless a later date is cited at the end of a section.",
-    UNCHANGED,
-))
 
 P.append((
     D1,
@@ -109,15 +84,6 @@ P.append((
 # D2. Educational programs: 7.35.3.10, .12, .15, .16, .17
 # ===========================================================================
 
-P.append((
-    D2,
-    "7.35.3.10",
-    "Paragraph (2) of Subsection A, additions to the list",
-    "(2) Educational programs shall be added to the list when an application for certification as a "
-    "certifying clinician, practitioner, or facilitator is submitted and approved based on the applicant's "
-    "completion of the out-of-state educational program.",
-    UNCHANGED,
-))
 
 P.append((
     D2,
@@ -208,32 +174,6 @@ P.append((
     "appeal the denial in accordance with this rule.",
 ))
 
-P.append((
-    D2,
-    "7.35.3.15",
-    "Subsection A, required reporting of updates",
-    "A. Required reporting of updates: A department-certified psilocybin educational program shall notify the "
-    "department, through the department-approved electronic system designated by the department, of any of "
-    "the following changes, and shall not implement the change until written approval is issued by the "
-    "department: (1) Any revision to the program's curriculum; revised curricula shall be submitted to the "
-    "department for review and may not be implemented until the department grants approval; (2) Any change in "
-    "ownership, including changes in controlling interest or organizational structure; (3) Any change in "
-    "physical locations utilized for instruction or educational activities; (4) Any modification, "
-    "termination, or addition of practicum site agreements; and (5) Any change in instructional staff, "
-    "including submission of curricula vitae or résumés for all newly added instructors.",
-    "A. Required reporting of updates: A department-certified psilocybin educational program shall notify the "
-    "department, through the department-approved electronic system designated by the department, of any of "
-    "the following changes, and shall not implement the change until written approval is issued by the "
-    "department"
-    + ins(". The department shall notify the program of its approval or denial of a change reported under "
-          "this subsection within 60 calendar days of receiving the report") + " " + rng("60 from 7.35.3.15 B")
-    + ": (1) Any revision to the program's curriculum; revised curricula shall be submitted to the "
-    "department for review and may not be implemented until the department grants approval; (2) Any change in "
-    "ownership, including changes in controlling interest or organizational structure; (3) Any change in "
-    "physical locations utilized for instruction or educational activities; (4) Any modification, "
-    "termination, or addition of practicum site agreements; and (5) Any change in instructional staff, "
-    "including submission of curricula vitae or résumés for all newly added instructors.",
-))
 
 P.append((
     D2,
@@ -434,30 +374,7 @@ P.append((
     "in accordance with this rule.",
 ))
 
-P.append((
-    D3,
-    "7.35.3.20",
-    "Section heading, lead-in, and Subsection A",
-    "7.34.3.20 REQUIREMENTS FOR HEALING CENTERS AND OTHER APPROVED LOCATIONS: A healing center and a "
-    "registrant of another approved location shall comply with the following requirements: A. A healing "
-    "center and a registrant of another approved location shall maintain a list of all qualified patients who "
-    "are intended to utilize, and who have utilized, the location for administration sessions.",
-    UNCHANGED,
-))
 
-P.append((
-    D3,
-    "7.35.3.21",
-    "Subsection A, authority to conduct assessments",
-    "A. Authority to conduct assessments: The department or its designee may conduct remote or on-site "
-    "assessments of a psilocybin education program, healing center or other approved location, with or "
-    "without prior notice, during normal business hours, for the purpose of determining compliance with the "
-    "Medical Psilocybin Act and this rule. In conducting assessments, the department may review "
-    "documentation, inspect premises and equipment, and interview staff and patients. Exception: except in "
-    "emergency circumstances, the department or its designee shall not conduct an on-site assessment during a "
-    "patient session or at a patient's home without prior written consent from the patient(s).",
-    UNCHANGED,
-))
 
 
 # ===========================================================================
@@ -599,6 +516,17 @@ P.append((
 P.append((
     D4,
     "7.35.3.27",
+    "Paragraph (8) of Subsection B, grounds for disciplinary action",
+    "(8) for certifying clinicians and practitioners: any determination by the individual's licensing body "
+    "that the clinician has engaged in unprofessional or dishonorable conduct;",
+    "(8) for certifying clinicians and practitioners: any determination by the individual's licensing body "
+    "that the " + dele("clinician") + " " + ins("certifying clinician or practitioner")
+    + " has engaged in unprofessional or dishonorable conduct;",
+))
+
+P.append((
+    D4,
+    "7.35.3.27",
     "Paragraph (1) of Subsection C, persons who may request a hearing",
     "C. Persons who may request a hearing: The following persons may request a hearing to contest an action "
     "or proposed action of the department, in accordance with this rule: (1) a certified patient; (2) a "
@@ -615,17 +543,6 @@ P.append((
     "program; and (7) an applicant for enrollment or certification as any of the foregoing, whose application "
     "is denied for any reason other than failure to submit a completed application or failure to meet a "
     "submittal requirement of this rule.",
-))
-
-P.append((
-    D4,
-    "7.35.3.27",
-    "Paragraph (8) of Subsection B, grounds for disciplinary action",
-    "(8) for certifying clinicians and practitioners: any determination by the individual's licensing body "
-    "that the clinician has engaged in unprofessional or dishonorable conduct;",
-    "(8) for certifying clinicians and practitioners: any determination by the individual's licensing body "
-    "that the " + dele("clinician") + " " + ins("certifying clinician or practitioner")
-    + " has engaged in unprofessional or dishonorable conduct;",
 ))
 
 P.append((

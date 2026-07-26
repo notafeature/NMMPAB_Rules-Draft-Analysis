@@ -8,14 +8,14 @@ Every left-column block is verified against the text layer of the published PDF
 by exact contiguous match before any file is written. If any block fails, the
 build aborts and writes nothing.
 
-One document, in four parts, with the addenda at the end. The parts come from
-the `doc` field of each entry in `content.py` and are named in `PARTS` here.
+One document: the redline, sections in numerical order, then five addenda.
+Sections share pages so no section forces a page of its own.
 
-The form follows `amendments/7.35.3-practicum-amendments-v9.pdf`: named CSS pages
-carry a running header naming the section in the top margin of every page the
-section spans; each provision is one table row whose two columns are a grid
-inside a single cell, so a long provision flows across a page break with the
-columns still aligned and the notes run the full width beneath them.
+The form follows `amendments/7.35.3-practicum-amendments-v9.pdf` for the table:
+each provision is one table row whose two columns are a grid inside a single
+cell, so a long provision flows across a page break with the columns still
+aligned and the notes run the full width beneath them. The redline body shares
+one named CSS page instead of one per section, a recorded divergence from v9.
 
 The machinery is copied from `amendments/build-redline-pdf.py` rather than
 imported, so that the practicum document keeps building if this one breaks.
@@ -36,30 +36,14 @@ from content import P, NEW, UNCHANGED, D1, D2, D3, D4     # noqa: E402
 from notes import source_for, review_for, REVIEW, GROUPS, QUESTIONS   # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
-OUT_PDF = REPO / "amendments-remainder/7.35.3-remainder-amendments-v2.pdf"
+OUT_PDF = REPO / "amendments-remainder/7.35.3-remainder-amendments-v3.pdf"
 PUBLISHED_PDF = REPO / "docs/documents/rules-draft-2026-07-23-published.pdf"
 PART2_TXT = REPO / "source-text/7.35.2-NMAC-adopted-2026-06-23.txt"
 
-VERSION = "v2"
+VERSION = "v3"
 VERSION_DATE = "July 26, 2026"
 
 LINE_TOLERANCE = 3.0
-
-# doc key -> (roman numeral, title, what the part covers)
-PARTS = {
-    D1: ("I", "Framework and defined terms",
-         "7.35.3.1 through 7.35.3.7. The dependency of this part on the definitions in 7.35.2.7 NMAC, and the "
-         "four definitions a single provision of the published rule supplies."),
-    D2: ("II", "Educational programs",
-         "7.35.3.10, .12, .15, .16 and .17. The third-party evaluator conflict, the out-of-jurisdiction "
-         "pathway, and the reporting and consultation obligations."),
-    D3: ("III", "Locations and oversight",
-         "7.35.3.11, .20 and .21. Healing center and other approved location applications, the registration on "
-         "which healing center staff authority depends, and department assessments."),
-    D4: ("IV", "Patients, applicants and process",
-         "7.35.3.8, .9, .13 and .22 through .28. Enrollment and certification applications, complaints, review "
-         "of denials, and discipline."),
-}
 
 SECTION_TITLES = {
     "7.35.3.2": "Scope",
@@ -206,14 +190,12 @@ h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; margin: 0 0 5pt
      padding: 3pt 0; border-top: 1.5px solid #111; border-bottom: 0.5px solid #111; break-after: avoid; }
 section.rr { break-before: page; }
 section.src { break-before: page; }
+section.flow { break-before: avoid; }
+section.flow h2.sec { margin-top: 9pt; }
 h2.sec { break-before: avoid; }
 h2 .ttl { font-weight: normal; color: #555; font-size: 9pt; }
 h2 .pt { float: right; font-weight: normal; color: #888; font-size: 7.4pt; text-transform: uppercase;
          letter-spacing: 0.6pt; padding-top: 3pt; }
-.parthead { break-before: page; border-top: 3px solid #111; padding-top: 7pt; margin-bottom: 9pt; }
-.parthead h2 { border: none; padding: 0; margin: 0 0 3pt 0; font-size: 14pt; }
-.parthead p { font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; line-height: 1.5; color: #444;
-              margin: 0; max-width: 7.4in; }
 p.intro { font-family: Helvetica, Arial, sans-serif; font-size: 8.1pt; line-height: 1.5; color: #333;
           margin: 0 0 8pt 0; padding-left: 8pt; border-left: 2.5px solid #bbb; break-after: avoid; }
 table.rl { width: 100%; border-collapse: collapse; }
@@ -248,8 +230,8 @@ del { text-decoration: line-through; color: #9b1c1c; }
           line-height: 1.5; color: #7a2e2e; font-weight: 600; }
 .review b { color: #c0392b; font-weight: bold; letter-spacing: 0.3pt; }
 table.dep { width: 100%; border-collapse: collapse; font-family: Helvetica, Arial, sans-serif;
-            font-size: 7.6pt; margin: 4pt 0 10pt 0; }
-table.dep th, table.dep td { border: 0.5px solid #bbb; padding: 3.4pt 6pt; text-align: left; vertical-align: top; }
+            font-size: 7.3pt; line-height: 1.4; margin: 3pt 0 8pt 0; }
+table.dep th, table.dep td { border: 0.5px solid #bbb; padding: 2.6pt 5pt; text-align: left; vertical-align: top; }
 table.dep th { background: #f2f2f2; font-size: 7.3pt; }
 table.dep thead { display: table-header-group; }
 table.dep tr { break-inside: avoid; }
@@ -286,45 +268,20 @@ section.adE p.intro { margin-bottom: 5pt; }
 """
 
 
-# Running header in the top-left margin of every page. A named page per section
-# means a page carries the identity of the section it belongs to, and Chromium
-# reproduces it in the margin box on every page the section spans. This is the
-# mechanism v9 uses.
+# Running header in the top-left margin of every page. The redline flows as one
+# body: its sections share one named page so that small sections share pages
+# instead of each forcing a page of its own. Each addendum keeps its own named
+# page. This diverges from the per-section named pages of practicum v9, and the
+# README records the divergence.
 RUNNING = [
-    ("s2", "7.35.3.2", "Scope"),
-    ("s3", "7.35.3.3", "Statutory authority"),
-    ("s5", "7.35.3.5", "Effective date"),
-    ("s7", "7.35.3.7", "Definitions"),
-    ("s10", "7.35.3.10", "Certification on an educational program from another jurisdiction"),
-    ("s12", "7.35.3.12", "Application process for psilocybin educational programs"),
-    ("s15", "7.35.3.15", "Educational programs, required reporting and curriculum approval"),
-    ("s16", "7.35.3.16", "Requirements for third-party evaluators"),
-    ("s17", "7.35.3.17", "Educational programs, mentoring and record-keeping"),
-    ("s11", "7.35.3.11", "Applications for healing centers and other approved locations"),
-    ("s20", "7.35.3.20", "Requirements for healing centers and other approved locations"),
-    ("s21", "7.35.3.21", "Department evaluation and assessment"),
-    ("s8", "7.35.3.8", "Patient enrollment application process"),
-    ("s9", "7.35.3.9", "Certifying clinician, practitioner and facilitator applications"),
-    ("s13", "7.35.3.13", "Requirements and prohibitions for certificants"),
-    ("s23", "7.35.3.23", "Prohibition against dual ownership"),
-    ("s24", "7.35.3.24", "Complaints to the department"),
-    ("s25", "7.35.3.25", "Informal administrative review of denied patient applications"),
-    ("s27", "7.35.3.27", "Disciplinary actions and appeal process"),
-    ("cov", "7.35.3 NMAC", "Proposed amendments outside the practicum"),
+    ("body", "7.35.3 NMAC", "Proposed amendments outside the practicum"),
     ("src", "Sources and method", "How every claim in this document was checked"),
-    ("pI", "Part I", "Framework and defined terms"),
-    ("pII", "Part II", "Educational programs"),
-    ("pIII", "Part III", "Locations and oversight"),
-    ("pIV", "Part IV", "Patients, applicants and process"),
     ("adA", "Addendum A", "Terms this part uses and no part defines"),
     ("adB", "Addendum B", "Dependencies across the two drafting scopes"),
     ("adC", "Addendum C", "Defects recorded and not drafted, and why"),
     ("adD", "Addendum D", "Mechanical defects across all twenty-eight sections"),
-    ("adE", "Addendum E", "The questions, one line each, grouped by who decides"),
+    ("adE", "Addendum E", "The questions, one line each, grouped by who answers"),
 ]
-
-SECTION_CLASS = {sec: cls for cls, sec, _ in RUNNING if sec.startswith("7.")}
-PART_CLASS = {"I": "pI", "II": "pII", "III": "pIII", "IV": "pIV"}
 
 
 def running_css():
@@ -344,7 +301,7 @@ def esc(t):
 
 
 HEAD = """
-<section class="cov">
+<section class="flow body">
 <div class="cover">
 <h1>7.35.3 NMAC: proposed amendments to the twenty-four sections outside the practicum</h1>
 <p class="sub">Working draft {VERSION}, {VERSION_DATE}. Rule hearing August 28, 2026. Not a filing, not
@@ -352,91 +309,66 @@ submitted, and not adopted rule text.</p>
 </div>
 
 <ul class="what">
-<li>This document covers the twenty-four sections of 7.35.3 NMAC that the practicum amendment draft does not
-reach: 7.35.3.1 through .13, .15, .16, .17, and .21 through .28. It is in four parts, with five addenda at the
-end.</li>
-<li>Nothing here reopens the practicum draft, which covers 7.35.3.14, .18, .19, Paragraph (5) of Subsection H
-of .20, and a proposed .29. Read against working draft v9 of that document. Its
-<i>amendments/SOURCE-OF-TRUTH.md</i> assigns to this document each item drafted or recorded here, and Addendum
-B records every dependency in both directions.</li>
-<li><b>Twenty-four provisions are amended.</b> Every change is a mechanical correction, a conforming amendment
-between two provisions of the same rule, or a restoration of wording the July 9, 2026 draft carried. No change
-introduces a figure or a policy choice that no source supplies.</li>
-<li><b>Twenty-one further defects are recorded and not drafted.</b> Each carries a note at its provision stating
-the issue, the choices, and who decides, and all twenty-one are listed with the reason in Addendum C. The
-commonest reason is that the fix requires a figure no source carries.</li>
-<li>The two BLOCKING findings in this scope are both reached. The third-party evaluator conflict is drafted at
-7.35.3.16 A and again at 7.35.3.16 C(2)(b), so either or both may be adopted. The registration on which
-7.35.3.14 C conditions healing center staff authority is drafted at 7.35.3.11 A(11), which is where v9 records
-that the fix belongs.</li>
+<li><b>Twenty-three provisions are amended.</b> One redline, sections in numerical order. Every change is a
+mechanical correction, a conforming amendment between two provisions of the same rule, or a restoration of
+wording the July 9, 2026 draft carried. No figure or policy choice enters without a source.</li>
+<li><b>Four provisions are reproduced without amendment.</b> Each carries a question. Every question in the
+document sits in an orange callout at its provision, question first, and all of them are on one page in
+Addendum E, grouped by who answers.</li>
+<li><b>Eleven further defects are recorded and not drafted.</b> Addendum C lists each with the reason.</li>
+<li>Questions are limited to gaps, contradictions, typos, and drafting mistakes. The unfilled dates and
+placeholders are the department's to fill at publication and are not raised. Nothing here reopens the
+practicum draft: read against its working draft v9, and Addendum B records every dependency between the two
+scopes.</li>
 </ul>
 
 <div class="key">
 <b>The columns.</b> Left is the rule as published, verbatim. Right is the proposed amendment:
 <ins>underlined green inserted</ins>, <del>struck red deleted</del>, unmarked text carried forward unchanged.
-<span class="rangebadge">60 from 7.35.3.15 B</span> marks a figure taken from another provision of the same rule
-rather than newly drafted. A provision shown with no amendment is reproduced because it carries a finding. The
-source note and, where there is one, the review note run the full width beneath both columns.
+A badge such as <span class="rangebadge">90 from 7.35.3.11 D</span> names the provision a figure is taken
+from. The source note and, where there is one, the question run the full width beneath both columns.
 </div>
 
 <h2>Contents</h2>
 {CONTENTS}
-<p class="tnote"><b>The defined terms are the largest finding.</b> 7.35.3.7 NMAC provides in full: "The
-definitions in 7.35.2.7 NMAC apply to this part." Sixteen terms that carry regulatory consequence in this part
-are defined in neither part. Six are drafted at 7.35.3.7, because a single provision of the published rule
-supplies the content. Ten are not, and the two largest are healing center, 54 occurrences, and certifying
-clinician, 53 occurrences. Addendum A counts every one of them, section by section, in both parts, and
-assembles for each of the ten the provisions of 7.35.3 NMAC, 7.35.2 NMAC and the Medical Psilocybin Act that
-bear on it, so a definition can be decided from assembled material rather than composed from scratch.</p>
 </section>
 """
 
 
 def contents_table():
+    secs = []
+    for _, section, _, _, _ in sorted(P, key=lambda e: int(e[1].rsplit(".", 1)[1])):
+        if section not in secs:
+            secs.append(section)
     rows = ['<table class="toc">',
-            '<tr><th>Part</th><th>Sections</th><th>What it covers</th></tr>']
-    for doc, (num, title, covers) in PARTS.items():
-        secs = []
-        for d, section, _, _, _ in P:
-            if d == doc and section not in secs:
-                secs.append(section)
-        rows.append('<tr><td class="pt">%s. %s</td><td>%s</td><td>%s</td></tr>'
-                    % (num, title, ", ".join(s.replace("7.35.3.", ".") for s in secs), covers))
-    rows.append('<tr><td class="pt">Addendum A</td><td>All 28, and 7.35.2 NMAC</td>'
-                '<td>Terms this part uses and no part defines, counted section by section in both parts.</td></tr>')
-    rows.append('<tr><td class="pt">Addendum B</td><td>Both scopes</td>'
-                '<td>Dependencies between these sections and the provisions the practicum draft reaches.</td></tr>')
-    rows.append('<tr><td class="pt">Addendum C</td><td>These 24</td>'
+            '<tr><th>Where</th><th>What</th></tr>']
+    rows.append('<tr><td class="pt">The redline</td><td>Sections %s, in numerical order.</td></tr>'
+                % ", ".join(s.replace("7.35.3.", ".") for s in secs))
+    rows.append('<tr><td class="pt">Addendum A</td>'
+                '<td>Terms this part uses and no part defines, counted in both parts, with the material for a '
+                'definition of each assembled from the sources.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum B</td>'
+                '<td>Dependencies between these sections and the practicum draft, in both directions.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum C</td>'
                 '<td>Every defect recorded and not drafted, with the reason nothing is proposed.</td></tr>')
-    rows.append('<tr><td class="pt">Addendum D</td><td>All 28</td>'
-                '<td>Numbering, dates and drafting form across the whole part.</td></tr>')
-    rows.append('<tr><td class="pt">Addendum E</td><td>Every review note</td>'
-                '<td>The questions this document leaves open, one line each, grouped by who decides.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum D</td>'
+                '<td>Numbering and drafting-form defects across all twenty-eight sections.</td></tr>')
+    rows.append('<tr><td class="pt">Addendum E</td>'
+                '<td>Every question in the document, one line each, grouped by who answers. One page.</td></tr>')
     rows.append('</table>')
     return "\n".join(rows)
 
 
 def build_body():
-    rows, current, part = [], None, None
-    for doc, section, sub, published, proposed in P:
-        if doc != part:
-            if current is not None:
-                rows.append("</table></section>")
-                current = None
-            part = doc
-            num, title, covers = PARTS[doc]
-            rows.append('<section class="rr %s"><div class="parthead">'
-                        '<h2>Part %s. %s</h2><p>%s</p></div></section>'
-                        % (PART_CLASS[num], num, title, covers))
+    rows, current = [], None
+    for doc, section, sub, published, proposed in sorted(P, key=lambda e: int(e[1].rsplit(".", 1)[1])):
         if section != current:
             if current is not None:
                 rows.append("</table></section>")
             current = section
-            num = PARTS[doc][0]
-            rows.append('<section class="rr %s">' % SECTION_CLASS[section])
-            rows.append('<h2 class="sec">%s <span class="ttl">%s</span>'
-                        '<span class="pt">Part %s</span></h2>'
-                        % (section, SECTION_TITLES[section], num))
+            rows.append('<section class="flow body">')
+            rows.append('<h2 class="sec">%s <span class="ttl">%s</span></h2>'
+                        % (section, SECTION_TITLES[section]))
             rows.append('<table class="rl"><tr>'
                         '<th>Current language<span>Proposed rule as published July 23, 2026</span></th>'
                         '<th>Proposed amendment<span>Draft for review. Not filed, not adopted</span></th></tr>')
@@ -444,8 +376,7 @@ def build_body():
             continue
         left = ('<span class="none">%s</span>' % NEW) if published == NEW else esc(published)
         if proposed == UNCHANGED:
-            right = ('<span class="unch">Not amended. This provision is reproduced because it carries a '
-                     'finding recorded below.</span>')
+            right = ('<span class="unch">Not amended. Reproduced for the question below.</span>')
         else:
             right = proposed
         src = source_for(section, sub)
@@ -454,7 +385,7 @@ def build_body():
         if src:
             extra += '<div class="prov"><span class="tag">Source</span>%s</div>' % src
         if rev:
-            extra += '<div class="review"><b>Please review.</b> %s</div>' % rev
+            extra += '<div class="review"><b>Question.</b> %s</div>' % rev
         # One row per provision. The two columns are a grid inside a single cell,
         # and the notes run the full width beneath them, so a note is about half
         # as tall as it would be inside a column. A provision short enough to fit
@@ -751,29 +682,16 @@ ADDENDUM_C = """
 </section>
 <section class="rr adC">
 <h2 class="sec">Addendum C <span class="ttl">Defects recorded and not drafted, and why</span></h2>
-<p class="intro">Every defect this record found in the twenty-four sections, that this draft does not amend.
-The reason in each row is the reason no language is proposed, not an assessment of severity. Each has a review
-note at the provision named, stating the choices and who decides.</p>
+<p class="intro">Gaps, contradictions, typos and drafting mistakes this draft records and does not amend, each
+with the reason no language is proposed.</p>
 <table class="dep">
 <thead>
 <tr><th>Provision</th><th>Defect</th><th>Why nothing is drafted</th></tr>
 </thead>
-<tr><td>7.35.3.5, page 1, with the history notes at page 19</td>
-<td>Twenty-six history notes carry the placeholder "xx/xx/2026"; the notes for 7.35.3.27 and 7.35.3.28 carry
-9/22/2026. Under 7.35.3.5 a later date cited at the end of a section controls, so two sections would take
-effect before the rest has a date.</td>
-<td>No source supplies the intended effective date, and which way to conform is the department's to choose.</td></tr>
 <tr><td>7.35.3.7, page 1</td>
 <td>Ten of the sixteen undefined terms have no definition in any source, including healing center, 54
 occurrences, and certifying clinician, 53 occurrences.</td>
-<td>Drafting a defined term with regulatory consequence from no source would be composing it. Addendum A
-records the slate and assembles the material for each of the ten.</td></tr>
-<tr><td>7.35.3.9 B, page 3</td>
-<td>A renewal application is due no less than 30 days before expiry, and the department has no deadline to
-decide it, so a certification can lapse while a timely renewal is pending. Nothing continues the certification
-in the interim.</td>
-<td>The fix is a continued-validity provision, which is a new grant, and no source in this record proposes its
-terms.</td></tr>
+<td>Composing a definition from no source is a policy act. Addendum A assembles the material for each.</td></tr>
 <tr><td>7.35.3.9 E(1) and F, page 3</td>
 <td>A practitioner applicant must document a professional license "(e.g. PSY, LSW, LCSW)" with no stated scope
 of practice, and a facilitator applicant needs no license at all. The Wilson working redline comments "Also no
@@ -787,76 +705,39 @@ supplies one.</td></tr>
 certificant application.</td>
 <td>Conforming one to the other is a choice between two figures already in the rule, and both bind the
 department.</td></tr>
-<tr><td>7.35.3.10 A(2) and A(3), pages 4 to 5</td>
-<td>The list of out-of-jurisdiction programs populates only when an individual application relying on a
-program is approved, so it is empty at launch. A(3) refers to programs approved by Oregon and Colorado "as of
-December 31, 2027", which is after the December 31, 2027 waiver in D(1) has closed.</td>
-<td>Both fixes are new grants of authority to the department, and no source in this record proposes their
-terms.</td></tr>
 <tr><td>7.35.3.10 D(1), page 5, with 7.35.3.19 G(4), page 13</td>
 <td>The two 40-hour waivers set different group-session minimums, two against one.</td>
 <td>Conforming one to the other is a choice between two figures already in the rule. The practicum draft
-records the same conflict and amends neither provision, so neither document makes the choice. Addendum B.</td></tr>
-<tr><td>7.35.3.11 A(22)(d) and (e), and B(10)(d), pages 5 to 7</td>
-<td>The 15-minute threshold for a remote natural environment. The Wilson working redline asks twice whether it
-should be 30.</td>
-<td>A question in the source, not a recommendation, and no source supplies a figure.</td></tr>
+records the same conflict and amends neither provision. The question is at 7.35.3.10 above.</td></tr>
 <tr><td>7.35.3.11, page 5</td>
 <td>The two-person universal requirement the Wilson working redline adds, which its author records did not
 reach the published rule.</td>
 <td>The author records that she does not know where the provision belongs. Placing it would answer her
-question.</td></tr>
-<tr><td>7.35.3.12 A(20) and B(1), pages 7 to 8</td>
-<td>An application filed on or before December 31, 2027 may be approved without the third-party evaluation
-provided the evaluation is submitted by December 31, 2027, so the deferral shortens to nothing as that date
-approaches and is unavailable on the last day.</td>
-<td>The fix is a period, and no source in this record supplies one. Tying it to the certification term would
-be a choice about how long a program may operate unevaluated.</td></tr>
+question, which is at 7.35.3.11 B(10) above.</td></tr>
 <tr><td>7.35.3.12, pages 7 to 8, against the July 9, 2026 draft</td>
 <td>The grounds for denying an educational program application present in the July 9 draft do not appear in the
 published rule. Finding M9.</td>
 <td>Restoring deleted grounds is a substantive policy decision, and this record cannot show whether the
 deletion was deliberate.</td></tr>
 <tr><td>7.35.3.17 A, pages 10 to 11</td>
-<td>The mentoring obligation, and whether it is stated in hours or cases and where it sits.</td>
-<td>Open in the practicum document for three named people. Addendum B.</td></tr>
+<td>The consultation obligation, whether it is stated in hours or cases, where it sits, and the double-count if
+it is stated twice.</td>
+<td>Open in the practicum document for three named people. The question is at 7.35.3.17 A above. Addendum
+B.</td></tr>
 <tr><td>7.35.3.17 B, page 11</td>
 <td>The test-out price cap is a fraction of the price of "each of the educational modules", which assumes
 per-module pricing. The Wilson working redline strikes the subsection.</td>
 <td>Whether the option survives at all is the committee's decision, and a restated cap is worth drafting only
 if it does.</td></tr>
-<tr><td>7.35.3.20 A, page 13, with 7.35.3.21 A, page 15</td>
-<td>Healing centers must keep a roster of all qualified patients intended to use and who have used the
-location, and the department may interview patients.</td>
-<td>Whether the roster should be kept in a form that does not identify patients turns on the department's data
-needs, which no source in this record states.</td></tr>
-<tr><td>7.35.3.20, page 13</td>
-<td>The term "registrant of another approved location", 10 occurrences, against the certification that
-7.35.3.11 B issues.</td>
-<td>The definition drafted at 7.35.3.7 ties the two words together. Conforming all 10 occurrences instead is a
-drafting choice, and this document does not make it.</td></tr>
-<tr><td>7.35.3.21, page 15</td>
-<td>No interval is set for department assessments, and none for repeating a third-party evaluation after the
-first.</td>
-<td>An interval is a figure and a demand on department capacity. No source supplies either.</td></tr>
-<tr><td>7.35.3.25 C and D(2), page 16</td>
-<td>The administrative review committee decides a denied patient application and is constituted nowhere in
-7.35.3 NMAC or 7.35.2 NMAC. Four occurrences, all in this section.</td>
-<td>Only the department can say who the committee is.</td></tr>
-<tr><td>7.35.3.25 E, page 16</td>
-<td>"Except as otherwise provided by law, there shall be no right to judicial review of a decision by the
-administrative review committee." The Wilson working redline comments on it.</td>
-<td>Whether the provision is within the department's authority is a legal question for department counsel.</td></tr>
 <tr><td>7.35.3.24, page 15</td>
 <td>The July 9, 2026 draft allowed a complaint from patients or staff; the published section allows one from a
 qualified patient or certificant, so staff who are neither have no route.</td>
 <td>Restoring standing for staff is a policy decision. The confidentiality assurance the July 9 draft carried
 is restored in the redline above, because that text exists in a source.</td></tr>
-<tr><td>7.35.3.27, pages 16 to 19</td>
-<td>A certificant suspended immediately under Subsection A can be out of practice more than 135 days before a
-final decision, and there is no expedited track. Finding N5.</td>
-<td>An expedited schedule is a set of periods binding the department and the secretary, and no source supplies
-them.</td></tr>
+<tr><td>7.35.3.25 C and D(2), page 16</td>
+<td>The administrative review committee decides a denied patient application and is constituted nowhere in
+7.35.3 NMAC or 7.35.2 NMAC. Four occurrences, all in this section.</td>
+<td>Only the department can say who the committee is. The question is at 7.35.3.25 above.</td></tr>
 <tr><td>7.35.3.8 D, 7.35.3.25 A, 7.35.3.27 C(7), pages 2, 16 and 17</td>
 <td>Three provisions describe review of a denial and their scopes overlap, so a patient applicant denied on the
 merits may have both an informal review and a hearing. Finding M23.</td>
@@ -864,10 +745,9 @@ merits may have both an informal review and a hearing. Finding M23.</td>
 what process is owed.</td></tr>
 </table>
 <p class="tnote"><b>Out of scope by decision.</b> The controlled-substance number requirement for certifying
-clinicians. It appears at Paragraph (3) of Subsection B of 7.35.3.8 NMAC, page 1, and at Paragraph (2) of
-Subsection D of 7.35.3.9 NMAC, page 3. Paragraph (2) is reproduced in the redline above because the
-renumbering of the paragraphs around it required it. It is reproduced as published and is not amended, and
-nothing is proposed about it.</p>
+clinicians, at Paragraph (3) of Subsection B of 7.35.3.8 NMAC and Paragraph (2) of Subsection D of 7.35.3.9
+NMAC. The latter is reproduced in the redline above, as published, because the renumbering around it required
+it; it is not amended, and nothing is proposed about it.</p>
 """
 
 
@@ -875,9 +755,10 @@ ADDENDUM_D_INTRO = """
 </section>
 <section class="rr adD">
 <h2 class="sec">Addendum D <span class="ttl">Mechanical defects across all twenty-eight sections</span></h2>
-<p class="intro">Numbering, dates and drafting form, checked across the whole of 7.35.3 NMAC rather than only
-the sections these documents amend. Every count and every entry is produced from the text layer of the
-published rule each time this document is built.</p>
+<p class="intro">Numbering and drafting form, checked across the whole of 7.35.3 NMAC rather than only the
+sections this document amends. Every count and every entry is produced from the text layer of the published
+rule each time this document is built. The unfilled dates and history-note placeholders are the department's
+to fill at publication and are not defects.</p>
 """
 
 
@@ -886,12 +767,9 @@ def addendum_d(corpus):
     for m in re.finditer(r"(7\.3[45]\.3\.\d{1,2})\s+(?!NMAC)([A-Z][A-Z ,;\-]+?)(?=:)", corpus):
         heads.append((m.group(1), flatten(m.group(2))))
     bad = [(h, t) for h, t in heads if h.startswith("7.34.3")]
-    notes = re.findall(r"\[(7\.3[45]\.3\.\d{1,2}) NMAC(\s*-\s*N)?,\s*([^\]]+)\]", corpus)
-    no_n = [s for s, n, _ in notes if not n.strip()]
-    real = [(s, d.strip()) for s, _, d in notes if "xx" not in d]
     reached = {"7.35.3.14": "practicum draft", "7.35.3.20": "practicum draft",
-               "7.35.3.13": "document 4 above", "7.35.3.23": "document 4 above",
-               "7.35.3.25": "document 4 above"}
+               "7.35.3.13": "redline above", "7.35.3.23": "redline above",
+               "7.35.3.25": "redline above"}
     out = ['<table class="dep">', '<thead>',
            '<tr><th>Item</th><th>Count</th><th>Where</th><th>Corrected</th></tr>', '</thead>']
     out.append('<tr><td>Section headings reading 7.34.3 instead of 7.35.3</td><td class="n">%d of %d</td>'
@@ -899,48 +777,40 @@ def addendum_d(corpus):
                % (len(bad), len(heads), ", ".join(h for h, _ in bad),
                   "; ".join("%s in the %s" % (h.replace("7.34.3", "7.35.3"), reached[h.replace("7.34.3", "7.35.3")])
                             for h, _ in bad)))
-    out.append('<tr><td>History notes carrying a real effective date rather than a placeholder</td>'
-               '<td class="n">%d of %d</td><td class="flag">%s</td>'
-               '<td>Not corrected. Recorded at 7.35.3.5 above.</td></tr>'
-               % (len(real), len(notes), ", ".join("%s reads %s" % (s, d) for s, d in real)))
-    out.append('<tr><td>History notes omitting the "- N" new-section designator</td>'
-               '<td class="n">%d of %d</td><td>%s</td>'
-               '<td>Not corrected. Mechanical, and the designator is the department\'s to set.</td></tr>'
-               % (len(no_n), len(notes), ", ".join(no_n)))
     d9 = re.search(r"D\.\s+Certifying clinician application requirements:(.*?)E\.\s+Practitioner application",
                    corpus, re.S)
     items = re.findall(r"\((\d)\)", d9.group(1)) if d9 else []
     out.append('<tr><td>Numbering gap inside a subsection</td><td class="n">1</td>'
                '<td class="flag">7.35.3.9 D runs %s. There is no (3).</td>'
-               '<td class="amd">Renumbered in document 4 above.</td></tr>' % ", ".join("(%s)" % i for i in items))
+               '<td class="amd">Renumbered in the redline above.</td></tr>' % ", ".join("(%s)" % i for i in items))
     parens = sorted({m.group(1) for m in re.finditer(r"\(([A-Z])\)\s+[A-Z][a-z]", corpus)})
     out.append('<tr><td>Subsections lettered "(A)" rather than "A."</td><td class="n">%d</td>'
                '<td class="flag">7.35.3.11 A, and 7.35.3.14 A, B and C. Letters found: %s</td>'
-               '<td class="amd">7.35.3.11 A in document 3 above. 7.35.3.14 in the practicum draft.</td></tr>'
+               '<td class="amd">7.35.3.11 A in the redline above; 7.35.3.14 in the practicum draft.</td></tr>'
                % (len(parens) + 1, ", ".join(parens)))
     out.append('<tr><td>Sentence with no verb governing the decision</td><td class="n">1</td>'
                '<td class="flag">7.35.3.25 D(1), page 16. Carried over from the July 9, 2026 draft.</td>'
-               '<td class="amd">Corrected in document 4 above.</td></tr>')
+               '<td class="amd">Corrected in the redline above.</td></tr>')
     out.append('<tr><td>Sentence that does not complete</td><td class="n">1</td>'
                '<td class="flag">7.35.3.18 F, page 12.</td>'
                '<td>In the practicum draft\'s scope. Corrected there.</td></tr>')
     out.append('<tr><td>Presiding official named inconsistently</td><td class="n">1</td>'
                '<td class="flag">7.35.3.27 M reads "hearing examiner"; the rest of 7.35.3.27 reads "hearing '
-               'officer".</td><td class="amd">Corrected in document 4 above.</td></tr>')
+               'officer".</td><td class="amd">Corrected in the redline above.</td></tr>')
     out.append('<tr><td>Duplicated words</td><td class="n">1</td>'
                '<td class="flag">7.35.3.24 reads "the electronic system designated by the department '
-               'electronic system".</td><td class="amd">Corrected in document 4 above.</td></tr>')
+               'electronic system".</td><td class="amd">Corrected in the redline above.</td></tr>')
     out.append('<tr><td>Spacing inside a heading</td><td class="n">1</td>'
                '<td class="flag">7.35.3.16 C reads "Conflict of -interest prohibitions". The July 9, 2026 '
                'draft read "Conflict-of-interest prohibitions".</td>'
-               '<td class="amd">Corrected in document 2 above.</td></tr>')
+               '<td class="amd">Corrected in the redline above.</td></tr>')
     out.append('<tr><td>Class named in the lead-in but not in the operative words</td><td class="n">1</td>'
                '<td class="flag">7.35.3.27 B(8) opens "for certifying clinicians and practitioners" and then '
                'refers only to "the clinician".</td>'
-               '<td class="amd">Corrected in document 4 above.</td></tr>')
+               '<td class="amd">Corrected in the redline above.</td></tr>')
     out.append('<tr><td>Patient described as certified rather than enrolled</td><td class="n">1</td>'
                '<td class="flag">7.35.3.27 C(1) reads "a certified patient".</td>'
-               '<td class="amd">Corrected in document 4 above.</td></tr>')
+               '<td class="amd">Corrected in the redline above.</td></tr>')
     out.append('</table>')
     return "\n".join(out)
 
@@ -953,7 +823,8 @@ def addendum_d(corpus):
 # page.
 # ---------------------------------------------------------------------------
 
-COUNT_WORDS = {20: "twenty", 21: "twenty-one", 22: "twenty-two", 23: "twenty-three",
+COUNT_WORDS = {14: "fourteen", 15: "fifteen", 16: "sixteen", 17: "seventeen", 18: "eighteen",
+               20: "twenty", 21: "twenty-one", 22: "twenty-two", 23: "twenty-three",
                24: "twenty-four", 25: "twenty-five", 26: "twenty-six"}
 
 
@@ -978,14 +849,12 @@ def compact_cite(section, sub):
 def addendum_e():
     rows = ['</section>', '<section class="rr adE">',
             '<h2 class="sec">Addendum E <span class="ttl">The questions, one line each, grouped by who '
-            'decides</span></h2>',
-            '<p class="intro">The %s review notes in this document each state an issue, the choices, and who '
-            'decides. This page re-presents them as questions, one line each, grouped by who decides. It '
-            'introduces nothing new: the note at the provision named in each row is the controlling '
-            'statement, and where one note puts different questions to different decision-makers it appears '
-            'once per question.</p>' % COUNT_WORDS[len(REVIEW)],
+            'answers</span></h2>',
+            '<p class="intro">The %s questions in this document, verbatim, grouped by who answers. The '
+            'callout at the provision named in each row carries the basis.</p>'
+            % COUNT_WORDS[len(QUESTIONS)],
             '<table class="qs">',
-            '<tr><th>At</th><th>What is being asked</th></tr>']
+            '<tr><th>At</th><th>The question</th></tr>']
     for key, label in GROUPS:
         rows.append('<tr class="grp"><td colspan="2">%s</td></tr>' % label)
         for g, section, sub, q in QUESTIONS:

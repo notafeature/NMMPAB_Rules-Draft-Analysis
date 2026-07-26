@@ -12,14 +12,14 @@ Eleven classes of check, each with a receipt:
   TERM    the undefined-term claims, recounted in both parts and in the Act
   CITE    every provision that proposes a change carries a source note; every
           provision reproduced without amendment carries a note saying why
-  PROSE   every review note finishes its sentences and states the issue, the
-          choices, and who decides
+  PROSE   every review callout leads with its question, stays short, names who
+          answers, and finishes its sentences
   STYLE   no em dashes, and no NMSA 1978 section number asserted by this draft
   HEADER  every page of the built PDF names the section or addendum it carries
-  SHEET   Addendum E, the question sheet, against the review notes: every note
-          appears, every row points at a note, every row sits under the
-          decision-maker its note names, no row carries a figure its note does
-          not carry, and the sheet is one page
+  SHEET   Addendum E, the question sheet, against the review callouts: every
+          callout's question appears verbatim, every row points at a callout,
+          every row sits under the decision-maker its callout names, and the
+          sheet is one page
   TRUTH   every statement in SOURCE-OF-TRUTH.md: quotations against sources,
           counts recomputed, citations to sections that exist, and the phrases
           that carry the settled facts present verbatim
@@ -326,10 +326,6 @@ PUB_TOKENS = tokens(corpus("published rule"))
 #
 # (section, subsection label) -> {token: (what it is, published text that carries it)}
 FIGURE_BASIS = {
-    ("7.35.3.15", "Subsection A, required reporting of updates"): {
-        "60": ("the period the same section already gives the department",
-               "The department shall notify the applicant within 60 calendar days"),
-    },
     ("7.35.3.11", "Subsection D, certification period; approval and denial"): {
         "90": ("the term the same subsection already sets",
                "shall be valid for 90 days"),
@@ -412,16 +408,6 @@ corrected = sorted({sec for _, sec, _, _, prop in P
 check("COUNT", "this draft corrects three of the five and the practicum draft corrects two",
       corrected == ["7.35.3.13", "7.35.3.23", "7.35.3.25"], str(corrected))
 
-notes = re.findall(r"\[(7\.3[45]\.3\.\d{1,2}) NMAC(\s*-\s*N)?,\s*([^\]]+)\]", p3)
-check("COUNT", "28 history notes", len(notes) == 28, "counted %d" % len(notes))
-real = [(s, d.strip()) for s, _, d in notes if "xx" not in d]
-check("COUNT", "26 history notes carry a placeholder and 2 carry a real date",
-      len(notes) - len(real) == 26 and len(real) == 2, str(real))
-check("COUNT", "the two are 7.35.3.27 and 7.35.3.28, both reading 9/22/2026",
-      real == [("7.35.3.27", "9/22/2026"), ("7.35.3.28", "9/22/2026")], str(real))
-no_n = [s for s, n, _ in notes if not n.strip()]
-check("COUNT", "9 history notes omit the \"- N\" designator", len(no_n) == 9, "%d: %s" % (len(no_n), no_n))
-
 d9 = re.search(r"D\.\s+Certifying clinician application requirements:(.*?)E\.\s+Practitioner application",
                p3, re.S)
 items = re.findall(r"\((\d)\)", d9.group(1)) if d9 else []
@@ -437,15 +423,6 @@ check("COUNT", "\"registered with the department\" appears once in 7.35.3 NMAC",
 check("COUNT", "\"registrant\" appears 10 times in 7.35.3 NMAC, all in 7.35.3.20",
       count_term(p3, "registrant") == 10 and count_term(s3[20], "registrant") == 10,
       "%d in the part, %d in .20" % (count_term(p3, "registrant"), count_term(s3[20], "registrant")))
-# The 135 days the 7.35.3.27 M review note states are the sum of three periods
-# the section itself carries, recomputed here rather than transcribed.
-s27 = s3.get(27, "")
-check("COUNT", "the 135 days at 7.35.3.27 M are the sum of three periods the section carries",
-      all(p in s27 for p in ("60 calendar days", "30 calendar days", "45 calendar days"))
-      and 60 + 30 + 45 == 135
-      and "135" in REVIEW.get(("7.35.3.27", "Subsection M, continuances"), ""),
-      "60 + 30 + 45 = 135, each period found in 7.35.3.27")
-
 # The hours convention: only two hour figures appear anywhere in the twenty-four
 # sections this document covers, so the hours reconciliation in this scope is
 # exactly the two questions the draft records. Recomputed from the corpus.
@@ -518,7 +495,8 @@ sections = {sec for _, sec, _, _, _ in P}
 addC = len(re.findall(r"<tr><td>", re.search(r'^ADDENDUM_C = """(.*?)"""', BUILD, re.S | re.M).group(1)))
 addB = len(re.findall(r"<tr><td>", re.search(r'^ADDENDUM_B = """(.*?)"""', BUILD, re.S | re.M).group(1)))
 WORDS = {19: "nineteen", 21: "twenty-one", 24: "twenty-four", 9: "nine", 10: "ten",
-         23: "twenty-three", 25: "twenty-five", 6: "six", 16: "sixteen"}
+         23: "twenty-three", 25: "twenty-five", 6: "six", 16: "sixteen", 4: "four",
+         11: "eleven", 13: "thirteen", 14: "fourteen", 15: "fifteen", 12: "twelve"}
 
 README = (HERE / "README.md").read_text(encoding="utf-8")
 for label, n, phrases in [
@@ -537,6 +515,8 @@ for label, n, phrases in [
 for label, n, phrase in [
         ("amended provisions", len(amended),
          "<b>%s provisions are amended.</b>" % WORDS[len(amended)].capitalize()),
+        ("provisions reproduced unamended", len(reproduced),
+         "<b>%s provisions are reproduced without amendment.</b>" % WORDS[len(reproduced)].capitalize()),
         ("recorded defects", addC,
          "<b>%s further defects are recorded and not drafted.</b>" % WORDS[addC].capitalize())]:
     check("COUNT", "the cover states the %s as %d" % (label, n), phrase in BUILD,
@@ -649,29 +629,31 @@ for d in (SOURCE, REVIEW):
 # PROSE
 # ---------------------------------------------------------------------------
 
-DECIDER = re.compile(r"(?i)\b(decides?|decide it|must say|are the department's to choose|"
-                     r"is the department's to set|is the committee's decision|"
-                     r"is a question for the board|is the board's|to choose)\b")
-CHOICES = re.compile(r"(?i)(two choices|three choices|two things to weigh|"
-                     r"two questions|three questions|two further questions|"
-                     r"one alternative|either or both|which reading)")
+# The five decision-maker groups the sheet uses, and the token a callout must
+# carry to sit under each. One pattern serves PROSE and SHEET.
+GROUP_TOKEN = {
+    "staff": r"Department of Health staff",
+    "counsel": r"department counsel",
+    "committee": r"Training and Education Committee",
+    "board": r"[Tt]he board",
+    "named": r"Dr\. Metz|Ms\. Wilson|Dr\. Leeman",
+}
+ANY_DECIDER = re.compile("|".join(GROUP_TOKEN.values()))
 
 for (section, sub), text in REVIEW.items():
     plain = flatten(unent(text))
-    label = "%s %s review note" % (section, sub)
-    check("PROSE", "%s ends a complete sentence" % label, plain.endswith((".", '."', ".)")),
-          "ends: %s" % plain[-42:])
-    check("PROSE", "%s does not end on a bare question" % label, not plain.endswith("?"),
-          "ends: %s" % plain[-42:])
-    check("PROSE", "%s names who decides" % label, bool(DECIDER.search(plain)),
-          "decider phrase present" if DECIDER.search(plain) else "NO DECIDER NAMED")
-    check("PROSE", "%s states the choices" % label, bool(CHOICES.search(plain)),
-          "choice framing present" if CHOICES.search(plain) else "NO CHOICES STATED")
+    label = "%s %s callout" % (section, sub)
+    check("PROSE", "%s leads with its question" % label,
+          "?" in plain and plain.index("?") <= 120,
+          "first question mark at offset %s" % (plain.index("?") if "?" in plain else "none"))
+    check("PROSE", "%s is short" % label, len(plain) <= 560, "%d characters, cap 560" % len(plain))
+    check("PROSE", "%s ends a complete sentence, not a bare question" % label,
+          plain.endswith((".", '."', ".)")), "ends: %s" % plain[-42:])
+    check("PROSE", "%s names who answers" % label, bool(ANY_DECIDER.search(plain)),
+          "decision-maker token present" if ANY_DECIDER.search(plain) else "NO DECISION-MAKER NAMED")
     check("PROSE", "%s has no unterminated final clause" % label,
           not re.search(r"\b(and|or|but|which|that|whether|if|because|the)\s*\.$", plain),
           "trailing conjunction check")
-    check("PROSE", "%s is long enough to state an issue" % label, len(plain) > 200,
-          "%d characters" % len(plain))
 
 for (section, sub), text in SOURCE.items():
     plain = flatten(unent(text))
@@ -767,9 +749,9 @@ mine = sorted({s for _, s, _, _, _ in P})
 for s in mine:
     check("STYLE", "%s is outside the practicum draft's scope" % s, s not in PRACTICUM,
           "practicum draft covers .14, .18, .19, .20 H(5) and proposed .29")
-check("STYLE", "the draft reaches no provision of 7.35.3.20 other than by reproducing it",
+check("STYLE", "the draft amends no provision of 7.35.3.20",
       all(prop == UNCHANGED for _, s, _, _, prop in P if s == "7.35.3.20"),
-      "7.35.3.20 is reproduced and not amended, because its heading is corrected in the practicum draft")
+      "7.35.3.20 H(5) and its heading belong to the practicum draft")
 check("STYLE", "nothing under amendments/ or docs/ is referenced for writing",
       not re.search(r"open\(.*(amendments/|docs/)", (HERE / "build-redline-pdf.py").read_text(encoding="utf-8")),
       "read-only use of the published PDF")
@@ -787,21 +769,16 @@ NAMES = re.compile(r"7\.35\.3\.?\d*|Addendum [A-E]|Part I|Sources and method")
 
 RUN = re.findall(r'\("([a-zA-Z0-9]+)", "([^"]+)", "([^"]+)"\),', re.search(
     r"^RUNNING = \[(.*?)^\]", BUILD, re.S | re.M).group(1))
-declared = {cls for cls, lab, _ in RUN if re.fullmatch(r"7\.35\.3\.\d{1,2}", lab)}
-rendered = {"s%s" % sec.rsplit(".", 1)[1] for _, sec, _, _, _ in P}
-check("HEADER", "the build declares a named page for every section it renders",
-      declared == rendered,
-      "declared %d, rendered %d, difference %s"
-      % (len(declared), len(rendered), sorted(declared ^ rendered) or "none"))
-PART_CLS = set(re.findall(r'"[IV]+": "([a-zA-Z0-9]+)"', BUILD))
-SEC_CLS = {"s%s" % lab.rsplit(".", 1)[1] for _, lab, _ in RUN if lab.startswith("7.35.3.")}
+check("HEADER", "the redline body shares one named page and every addendum has its own",
+      {cls for cls, _, _ in RUN} == {"body", "src", "adA", "adB", "adC", "adD", "adE"},
+      "declared: %s" % sorted(cls for cls, _, _ in RUN))
 for cls, label, title in RUN:
-    reachable = (cls in SEC_CLS or cls in PART_CLS
-                 or ('class="rr %s"' % cls) in BUILD or ('class="%s"' % cls) in BUILD)
+    reachable = ('class="rr %s"' % cls) in BUILD or ('class="%s"' % cls) in BUILD \
+                or ('class="flow %s"' % cls) in BUILD or ("'<section class=\"rr %s\">'" % cls) in BUILD
     check("HEADER", "named page %s is reachable from the build" % cls, reachable,
           "section.%s { page: %s; }" % (cls, cls))
 
-PDF = HERE / "7.35.3-remainder-amendments-v2.pdf"
+PDF = HERE / "7.35.3-remainder-amendments-v3.pdf"
 PAGE_HEADERS = []
 PAGE_TEXTS = []
 if check("HEADER", "the document has been built", PDF.exists(),
@@ -834,46 +811,37 @@ if check("HEADER", "the document has been built", PDF.exists(),
 # carry, so the sheet cannot introduce analysis of its own.
 
 GROUP_KEYS = [k for k, _ in GROUPS]
-DECIDER_OF_GROUP = {
-    "staff": r"Department of Health staff|department's to choose|department's to set|only the department",
-    "counsel": r"department counsel",
-    "committee": r"Training and Education Committee|committee's decision|committee decides",
-    "board": r"question for the board|board decides|The board decides",
-    "named": r"Dr\. Metz|Ms\. Wilson|Dr\. Leeman",
-}
 
 qkeys = {(s, sub) for _, s, sub, _ in QUESTIONS}
 for (s, sub) in sorted(REVIEW):
-    check("SHEET", "the review note at %s %s appears on the question sheet" % (s, sub),
-          (s, sub) in qkeys, "every review note is re-presented in Addendum E")
+    check("SHEET", "the callout at %s %s appears on the question sheet" % (s, sub),
+          (s, sub) in qkeys, "every callout is on Addendum E")
 
 for g, s, sub, q in QUESTIONS:
     label = "%s %s (%s)" % (s, sub, g)
     note = flatten(unent(REVIEW.get((s, sub), "")))
-    check("SHEET", "the question at %s points at a review note" % label, bool(note),
+    check("SHEET", "the question at %s points at a callout" % label, bool(note),
           "no orphan rows")
     check("SHEET", "the question at %s sits under a declared group" % label, g in GROUP_KEYS,
           "groups: %s" % ", ".join(GROUP_KEYS))
-    check("SHEET", "the question at %s is one line" % label, len(q) <= 160,
+    check("SHEET", "the question at %s appears verbatim in its callout" % label,
+          q in note, "the sheet quotes the callout, so it cannot add analysis")
+    check("SHEET", "the question at %s is one line" % label, len(q) <= 120,
           "%d characters" % len(q))
     check("SHEET", "the question at %s ends with a question mark" % label, q.endswith("?"),
           "ends: %s" % q[-30:])
-    check("SHEET", "the note at %s %s names the decision-maker the sheet files it under" % (s, sub),
-          bool(re.search(DECIDER_OF_GROUP.get(g, r"$^"), note)),
-          "group %s, pattern %s" % (g, DECIDER_OF_GROUP.get(g, "none")))
-    stray = sorted(t for t in re.findall(r"\d+(?:\.\d+)*", q)
-                   if t not in set(re.findall(r"\d+(?:\.\d+)*", note)) and t != s and not s.endswith("." + t))
-    check("SHEET", "the question at %s carries no figure its note does not carry" % label,
-          not stray, "stray tokens: %s" % (stray or "none"))
+    check("SHEET", "the callout at %s %s names the decision-maker the sheet files it under" % (s, sub),
+          bool(re.search(GROUP_TOKEN.get(g, r"$^"), note)),
+          "group %s, pattern %s" % (g, GROUP_TOKEN.get(g, "none")))
 
 if PAGE_HEADERS:
     adE_pages = [i for i, hdr in enumerate(PAGE_HEADERS, 1) if "Addendum E" in hdr]
     check("SHEET", "the question sheet is one page", len(adE_pages) == 1,
           "pages naming Addendum E in the header: %s" % adE_pages)
     sheet_text = " ".join(PAGE_TEXTS[i - 1] for i in adE_pages)
-    check("SHEET", "the sheet states the review-note count the draft has",
-          ("The %s review notes" % WORDS[len(REVIEW)]) in sheet_text,
-          "expected: The %s review notes" % WORDS[len(REVIEW)])
+    check("SHEET", "the sheet states the question count the draft has",
+          ("The %s questions" % WORDS[len(QUESTIONS)]) in sheet_text,
+          "expected: The %s questions" % WORDS[len(QUESTIONS)])
     for _, glabel in GROUPS:
         check("SHEET", "the sheet shows the group \"%s\"" % glabel, glabel in sheet_text,
               "group heading on the rendered page")
@@ -941,7 +909,8 @@ if check("TRUTH", "SOURCE-OF-TRUTH.md exists", SOT_PATH.exists(), "the folder's 
             ("recorded defects", "%s further defects are recorded" % WORDS[addC].capitalize()),
             ("provisions reproduced unamended",
              "%s provisions are reproduced without amendment" % WORDS[len(reproduced)].capitalize()),
-            ("review notes", "%s review notes" % WORDS[len(REVIEW)]),
+            ("question count", "%s questions" % WORDS[len(QUESTIONS)]),
+            ("callout count", "%s callouts" % WORDS[len(REVIEW)]),
             ("drafted definitions", "%s are drafted at 7.35.3.7" % WORDS[n_def].capitalize()),
             ("undrafted terms", "%s are not" % WORDS[16 - n_def].capitalize()),
             ("healing center occurrences",
@@ -989,6 +958,8 @@ if check("TRUTH", "SOURCE-OF-TRUTH.md exists", SOT_PATH.exists(), "the folder's 
                    "No NMSA 1978 section number is asserted",
                    "Do not write that either provision controls",
                    "Do not report the 10 mentoring hours as part of any program total",
+                   "only for a gap, a contradiction, a typo, or a drafting mistake",
+                   "the department's to fill at publication",
                    "This repository is public"]:
         check("TRUTH", "the file carries the sentence \"%s\"" % phrase, phrase in sot,
               "required statement, checked verbatim")
