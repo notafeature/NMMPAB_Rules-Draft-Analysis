@@ -9,6 +9,7 @@ Identifying an individual reader is not the goal, and the schema is built so tha
 | `worker.js` | The whole service: the collector, the dashboard, and the query layer |
 | `schema.sql` | The D1 schema, with a comment on every column saying why it exists |
 | `wrangler.toml` | Deploy config. No credentials, by design; the repository is public |
+| `setup.sh` | One command that does the whole deployment |
 
 The beacon that every page carries is not here. It is written into `docs/*.html` by `tools/sync-count.py`, in the same way the nav and the provenance block are written by their own tools.
 
@@ -44,35 +45,37 @@ Records older than 400 days are deleted by a sweep that runs at most once per UT
 
 ## Deploy
 
-The D1 database already exists and its schema is already applied. It was created on July 25, 2026 in the Santa Fe Psychedelic Society account, and its ID is in `wrangler.toml`.
-
 ```
-cd analytics
-
-# 1. Two secrets. Neither is ever written to the repository.
-npx wrangler secret put SALT        # any long random string, see "Rotating the salt"
-npx wrangler secret put DASH_PASS   # the dashboard password
-
-# 2. Deploy. Pick the Santa Fe Psychedelic Society account at the prompt.
-npx wrangler deploy
+./analytics/setup.sh
 ```
 
-`wrangler deploy` prints the Worker's hostname. That hostname is the one thing the pages need:
+That is the whole thing. It logs into Cloudflare, deploys the Worker, generates the hashing secret, asks for a dashboard password, writes the resulting address into all thirteen pages, and prints the dashboard URL. Then commit and push, and numbers start arriving once someone loads a page.
 
-```
-cd ..
-python3 tools/sync-count.py --endpoint https://THE-HOSTNAME-IT-PRINTED
-```
+The D1 database already exists and its schema is already applied. It was created on July 26, 2026 in the personal Cloudflare account, not the Santa Fe Psychedelic Society one, and both IDs are in `wrangler.toml`.
 
-That writes the value into `tools/sync-count.py` and into all thirteen pages in one step. Commit both. Until it is run the beacon is present, valid, identical on every page, and inert: it returns before sending anything. That is deliberate, because a guessed hostname would record nothing while looking like it worked.
+Until the address is set the beacon is present, valid, identical on every page, and inert: it returns before sending anything. That is deliberate, because a guessed hostname would record nothing while looking like it worked.
 
 ### On the choice of hostname
 
-The default `*.workers.dev` hostname works immediately and names neither this site nor any organisation. It has one real drawback: `workers.dev` is a shared domain that some corporate and government networks category-block outright, and those are precisely the networks whose readers this is meant to detect.
+The Worker deploys to `nmmpab-count.<subdomain>.workers.dev`, a free address Cloudflare hands out with no DNS to configure and no domain to buy. It names neither this site nor any organisation, which matters: the address appears in the page source of every page, on a site whose about page states that it is unaffiliated with the Department of Health or the Advisory Board and whose `UPDATING.md` states that it is not an advocacy site.
 
-A custom hostname on a domain already in the same Cloudflare account avoids that. Adding one is a route in `wrangler.toml` and a DNS record. Consider what the hostname says, though: it appears in the page source of every page on a site whose own about page states that it is unaffiliated with the Department of Health or the Advisory Board, and whose `UPDATING.md` states that it is not an advocacy site. A hostname belonging to an advocacy organisation would sit oddly with that.
+The one real drawback is that `workers.dev` is a shared domain that some corporate and government networks category-block outright, and those are precisely the networks whose readers this is meant to detect. If the state-network row never appears and you suspect that is why, move to a subdomain of a domain you own: set `workers_dev = false` in `wrangler.toml`, add
 
-If the site is ever moved to a custom domain of its own, add that origin to `ALLOWED_ORIGINS` in `wrangler.toml`, redeploy, and the counter follows.
+```toml
+[[routes]]
+pattern = "count.example.org"
+custom_domain = true
+```
+
+redeploy, and run `python3 tools/sync-count.py --endpoint https://count.example.org`. Wrangler creates the DNS record and the certificate itself, provided the domain is on Cloudflare DNS in the same account.
+
+If the site itself ever moves to a custom domain, add that origin to `ALLOWED_ORIGINS` in `wrangler.toml` and redeploy, and the counter follows.
+
+### Who can see what
+
+The numbers are yours alone. The dashboard and the data API are the only routes that read anything, both are behind a password, and both send `X-Robots-Tag: noindex`. Nobody else can reach them, and there is no public or shareable view.
+
+One thing is public, unavoidably: the address itself. It sits in the page source of a public site in a public repository, so anyone who views source can see that a counter exists and what it is called. That is why the address should not carry a name you would rather not attach to this, and it is why `about.html` says plainly what is collected instead of leaving it to be discovered.
 
 ## The dashboard
 

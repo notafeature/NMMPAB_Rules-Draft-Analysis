@@ -1,24 +1,31 @@
 # Deploy config for the nmmpab-count Worker.
 #
-#   cd analytics
-#   npx wrangler deploy
+# You should not need to run wrangler by hand. Run ./setup.sh instead.
 #
-# Nothing in this file is a credential. The two secrets the Worker needs, SALT
-# and DASH_PASS, are set with `wrangler secret put` and never live in the repo,
-# which is public. The Cloudflare account ID is deliberately left out: pick the
-# Santa Fe Psychedelic Society account at the prompt, or set
-# CLOUDFLARE_ACCOUNT_ID in your shell.
+# Nothing in this file is a credential. The account and database IDs identify
+# things but cannot be used without a login, which is why they are safe in a
+# public repository. The two real secrets, SALT and DASH_PASS, are set with
+# `wrangler secret put` and never touch the repo.
 
 name = "nmmpab-count"
 main = "worker.js"
 compatibility_date = "2026-07-01"
 
-# Created 2026-07-25 in the Santa Fe Psychedelic Society account, primary
-# location WNAM. Schema in schema.sql, already applied.
+# Gregory.l.evans@gmail.com's personal Cloudflare account. Deliberately not the
+# Santa Fe Psychedelic Society account: this site states that it is unaffiliated,
+# and the Society is a client rather than a party to it.
+account_id = "2418db2ff3f95726c374a86551d2436e"
+
+# Serve on the free nmmpab-count.<your-subdomain>.workers.dev hostname. To move
+# to a domain of your own later, set this to false, add a [[routes]] entry with
+# custom_domain = true, redeploy, and re-run tools/sync-count.py --endpoint.
+workers_dev = true
+
+# Created 2026-07-26, primary location WNAM. Schema in schema.sql, already applied.
 [[d1_databases]]
 binding = "DB"
 database_name = "nmmpab-count"
-database_id = "1be069cb-1e83-420e-a41d-78370dc6b67f"
+database_id = "6b4b8f4f-38be-4315-9cd1-75a08d10acb6"
 
 [vars]
 # Only requests carrying one of these origins are recorded. Add a second entry
