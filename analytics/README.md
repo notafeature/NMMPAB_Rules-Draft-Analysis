@@ -81,7 +81,7 @@ It accepts a same-origin path such as `/_count` as well as a full origin. `ALLOW
 
 ## The dashboard
 
-`https://count.medical-psilocybin.org/dash`, HTTP Basic auth, user `owner` and the `DASH_PASS` secret. It is the only route that reads data, it sends `X-Robots-Tag: noindex`, and it is served with `Cache-Control: no-store`.
+`https://count.medical-psilocybin.org/`, HTTP Basic auth, user `owner` and the `DASH_PASS` secret. It and `/api/summary` are the only routes that read data. Both carry a strict content policy that permits nothing off their own origin, plus no-store, nosniff, DENY framing, no referrer and noindex.
 
 It shows visits per day with readers overlaid, totals for the selected range, views and reader-days per page, referring hosts, documents opened, countries, and the network table described below. Ranges are 7, 30 and 90 days, one year, and everything.
 

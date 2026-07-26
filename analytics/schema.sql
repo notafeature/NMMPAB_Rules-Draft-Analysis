@@ -42,12 +42,14 @@ CREATE TABLE IF NOT EXISTS hits (
   -- through sendBeacon or fetch.
   nojs     INTEGER NOT NULL DEFAULT 0,
 
-  -- Which of the site's two addresses the reader was on. The site answers on
-  -- both rules.medical-psilocybin.org and notafeature.github.io, on purpose,
-  -- so that a network filter blocking one does not cut a reader off. This
-  -- column is how you find out whether that is happening: a reader who only
-  -- ever appears on the github.io address is a reader for whom the new domain
-  -- does not resolve or is blocked.
+  -- Which address the reader was on. The site is served at
+  -- rules.medical-psilocybin.org, and notafeature.github.io redirects there,
+  -- so nearly every row says the former. A github.io row is somebody arriving
+  -- from a stale bookmark or an old emailed link.
+  --
+  -- What this cannot show is a reader who is blocked: they never load the
+  -- page, so nothing is recorded, which is indistinguishable from nobody
+  -- reading.
   site_host TEXT
 );
 
