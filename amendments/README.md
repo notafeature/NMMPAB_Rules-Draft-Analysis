@@ -40,7 +40,9 @@ The practitioner rows take the 20 supervision hours in 7.35.3.19 C to be within 
 
 ## Conventions
 
-These follow the repository rules in `HANDOFF.md`, section 2.
+These are the repository rules that bear on this document. `WRITING-STANDARD.md` governs how
+everything here is written; `CLAUDE.md` holds the standing facts, the corrected transcript
+spellings, and the constraints. Both supersede `HANDOFF.md`, which has been deleted.
 
 - No em dashes.
 - Verbatim means verbatim. Anything inside quotation marks is reproduced exactly, with PDF line breaks collapsed to single spaces and no other alteration.
