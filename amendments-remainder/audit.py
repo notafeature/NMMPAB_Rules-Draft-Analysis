@@ -529,10 +529,22 @@ for d in (SOURCE, REVIEW):
             check("CITE", "the note at %s %s cites Paragraph (%s) of Subsection %s of %s, which exists"
                   % (section, sub, num, letter, ref), ok, "checked inside that subsection")
 
-# A section cited by number in a note must be a section that exists.
+# A section cited by number in a note must be a section that exists, unless the
+# note marks it as proposed, in which case it must say whose proposal it is.
+# "proposed 7.35.3.29" marks a whole section as proposed; "the proposed
+# 7.35.3.19 H" marks only a subsection of a section that does exist, and is
+# checked by the subsection rules above instead.
+PROPOSED_SEC = re.compile(r"proposed 7\.35\.3\.(\d{1,2})\b(?! [A-Z]\b)")
 for d in (SOURCE, REVIEW):
     for (section, sub), text in d.items():
-        for ref in set(re.findall(r"7\.35\.3\.(\d{1,2})", text)):
+        plain = unent(text)
+        proposed = set(PROPOSED_SEC.findall(plain))
+        for ref in proposed:
+            check("CITE", "%s %s marks 7.35.3.%s as proposed and names whose proposal it is"
+                  % (section, sub, ref),
+                  int(ref) not in s3 and "practicum amendment draft" in plain,
+                  "7.35.3.%s does not exist in the published rule" % ref)
+        for ref in set(re.findall(r"7\.35\.3\.(\d{1,2})", plain)) - proposed:
             check("CITE", "%s %s cites 7.35.3.%s, which exists" % (section, sub, ref),
                   int(ref) in s3, "1 to 28")
         for ref in set(re.findall(r"7\.35\.2\.(\d{1,2})", text)):

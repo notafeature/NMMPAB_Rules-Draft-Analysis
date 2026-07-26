@@ -6,6 +6,8 @@ Drafting folder for the twenty-four sections of the medical psilocybin rule publ
 
 **Nothing here reopens the practicum draft.** That draft covers 7.35.3.14, 7.35.3.18, 7.35.3.19, Paragraph (5) of Subsection H of 7.35.3.20, and a proposed 7.35.3.29. The practicum, the didactic hours, the permit renaming and 7.35.3.29 are not addressed here. `audit.py` fails if any provision in this draft's scope collides with that one.
 
+**Read against practicum working draft v9**, which is on branch `claude/nm-psilocybin-rule-amendment-wdvy7y` and not yet on `main`; `main` still carries v7. Its `amendments/SOURCE-OF-TRUTH.md` assigns to this document each of the items these four documents draft or record: the 7.35.3.14 C registration fix "belongs at 7.35.3.11 or 7.35.3.20"; the three headings still reading 7.34.3 after that draft corrects two are 7.34.3.13, 7.34.3.23 and 7.34.3.25; and the conflict between 7.35.3.19 K and 7.35.3.10 D(1) is left for whoever reaches 7.35.3.10. Addendum B records every dependency in both directions.
+
 **Out of scope by decision:** the controlled-substance number requirement for certifying clinicians. It is reproduced where the renumbering around it required it, recorded as fact, and nothing is proposed about it.
 
 ## Files
@@ -95,5 +97,5 @@ Nothing in `amendments/` or `docs/` was modified by this work.
 
 ## Divergences from the practicum draft, recorded not resolved
 
-- That draft cites the Act as "Sections 26-2D-1 through -11 NMSA 1978" in the proposed text of 7.35.3.29 and notes that the enacted text has not been checked. These documents assert no NMSA section number anywhere and cite the Act by the section numbers Section 1 of the act supplies. Whether the two documents should be conformed before either is circulated is a question for the committee.
-- `amendments/README.md` points at `WRITING-STANDARD.md` and `CLAUDE.md` as the governing conventions and states that `HANDOFF.md` has been deleted. Neither file is present in the repository, and `HANDOFF.md` is present. The conventions above are taken from `amendments/README.md` itself.
+- **Citation form now agrees.** v7 cited the Act as "Sections 26-2D-1 through -11 NMSA 1978" in the proposed text of 7.35.3.29. v9 removed it: its `content.py`, `notes.py` and `build-redline-pdf.py` carry no NMSA section number and no bill number, and it cites the Act by the section numbers Section 1 of the act supplies. That is the rule these documents follow, so there is nothing left to conform.
+- `amendments/README.md`, on the v9 branch as on `main`, points at `WRITING-STANDARD.md` and `CLAUDE.md` as the governing conventions and states that `HANDOFF.md` has been deleted. Neither of the first two files is present in the repository on either branch, and `HANDOFF.md` is present on both. The conventions above are therefore taken from `amendments/README.md` itself. Raised, not edited.

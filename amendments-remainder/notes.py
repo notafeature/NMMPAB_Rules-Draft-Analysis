@@ -345,8 +345,22 @@ REVIEW = {
         "NMAC, page 9, nonetheless authorizes facilitators to possess medical psilocybin products and to "
         "provide them to qualified patients. Whether a facilitator falls within Section 3(B) of the Act, and "
         "so within the Section 5 exemption, is a question of statutory construction that this record cannot "
-        "settle and that a definition in this part cannot cure if the answer is no. Department of Health staff "
-        "and department counsel decide it, and the board should be told the answer before the rule is filed.",
+        "settle and that a definition in this part cannot cure if the answer is no. Two choices once it is "
+        "answered: if a facilitator is within Section 3(B), nothing needs to change; if not, the authority in "
+        "Subsection B of 7.35.3.14 NMAC has to be narrowed or the Act amended. Department of Health staff and "
+        "department counsel decide it, and the board should be told the answer before the rule is filed. Two "
+        "things bear on this and neither is in doubt. The practicum amendment draft reads the same Paragraph "
+        "(2) of Subsection B of Section 5 against the same Subsection H of Section 3, which defines a "
+        "qualified patient as &#8220;a patient whose clinician has judged the patient to be a medically "
+        "appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying "
+        "condition&#8221;, and concludes that a participant who is not a qualified patient falls outside the "
+        "provision; its proposed 7.35.3.29 accordingly states the statutory amendment it would need and "
+        "conditions the whole section on that amendment. The question recorded here is the other half of the "
+        "same provision, about who may administer rather than who may take. Separately, the position of a "
+        "student is not in doubt and is not raised here: the practicum draft locates the provision of the "
+        "medicine in the practitioner or the healing center under Subsections A and C of 7.35.3.14 NMAC, and "
+        "7.35.3.20 NMAC Subsection D, page 14, provides that &#8220;students completing their practicums may "
+        "be present during an administration session&#8221;.",
 
     ("7.35.3.10", "Paragraph (2) of Subsection A, additions to the list"):
         "A program reaches the list only when an individual application relying on that program is approved, "

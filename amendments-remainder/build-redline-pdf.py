@@ -420,23 +420,35 @@ practicum draft amends that paragraph for the permit title and does not change t
 <tr><td>7.35.3.7, page 1</td><td>7.35.3.14 B, page 9</td>
 <td>7.35.3.14 B authorizes facilitators to possess psilocybin products and provide them to qualified patients.
 Whether a facilitator is a clinician under Section 3(B) of the Medical Psilocybin Act, and so within the
-Section 5 exemption, governs whether that authority holds.</td>
+Section 5 exemption, governs whether that authority holds. This is the administering half of Paragraph (2) of
+Subsection B of Section 5 of the Act. The practicum draft reads the taking half of the same provision against
+Subsection H of Section 3, and its proposed 7.35.3.29 states the statutory amendment that half would need and
+conditions the section on it, so the two drafts read the same provision consistently.</td>
 <td class="flag">Not drafted. Recorded at 7.35.3.7 as a question for department counsel.</td></tr>
+<tr><td>7.35.3.7, page 1</td><td>7.35.3.14 A and C, page 9, with 7.35.3.20 D, page 14</td>
+<td>The position of a student is not in doubt and is not raised in these documents. The practicum draft locates
+the provision of the medicine in the practitioner or the healing center, and 7.35.3.20 D provides that
+"students completing their practicums may be present during an administration session". The definition of
+student drafted here does not disturb that.</td>
+<td class="amd">Settled in the practicum draft. Nothing here contradicts it.</td></tr>
 <tr><td>7.35.3.13 B, page 8</td><td>7.35.3.14 B, 7.35.3.19 C, 7.35.3.20 H(5)</td>
 <td>The facilitator scope of work in 7.35.3.13 B is narrower than the authority the other three provisions
 confer, and "direct supervision" is not defined anywhere in the rule.</td>
 <td class="flag">Not drafted. Any amendment has to be coordinated with the practicum draft.</td></tr>
-<tr><td>7.35.3.17 A, pages 10 to 11</td><td>7.35.3.19 H, as that draft proposes it</td>
+<tr><td>7.35.3.17 A, pages 10 to 11</td><td>Proposed 7.35.3.19 H, which exists only in that draft's
+re-lettering of 7.35.3.19</td>
 <td>Whether the consultation requirement is stated in hours or in cases, and whether it sits at the proposed
 7.35.3.19 H or at 7.35.3.17 A, is open in the practicum document for Dr. Metz, Ms. Wilson and Dr. Leeman. As
 published, 7.35.3.19 NMAC runs A through G and has no Subsection H.</td>
 <td class="flag">Not drafted. 7.35.3.17 A is left exactly as published so that their answer governs.</td></tr>
-<tr><td>7.35.3.10 D(1), page 5</td><td>7.35.3.19 G(4), page 13</td>
+<tr><td>7.35.3.10 D(1), page 5</td><td>7.35.3.19 G(4), page 13, which that draft re-letters as 7.35.3.19 K</td>
 <td>Two waivers of the practicum hours requirement each set a 40-hour floor for applications received by
-December 31, 2027. 7.35.3.10 D(1) requires two separate individual and two separate group sessions;
-7.35.3.19 G(4) requires two individual sessions and one group session.</td>
-<td class="flag">Not drafted. Conforming one to the other is a choice between two figures already in the rule,
-and one of the two provisions belongs to the practicum draft.</td></tr>
+December 31, 2027. For the same 40 hours of contact time, 7.35.3.10 D(1) requires "two separate group
+sessions" and 7.35.3.19 G(4) requires "A minimum of one group session". The practicum draft records the
+conflict at its 7.35.3.19 K and amends neither provision, on the ground that 7.35.3.10 is outside its
+scope.</td>
+<td class="flag">Not drafted here either. Conforming one to the other is a choice between two figures already
+in the rule, so neither document makes it and the conflict stands until the committee chooses.</td></tr>
 <tr><td>7.35.3.16 A and C, page 10</td><td>7.35.3.18, pages 11 to 12</td>
 <td>The third-party evaluation assesses the curriculum that 7.35.3.18 requires. Curing the evaluator conflict
 does not touch the curriculum, and the practicum draft's changes to the curriculum do not touch the
@@ -496,7 +508,8 @@ December 31, 2027", which is after the December 31, 2027 waiver in D(1) has clos
 terms.</td></tr>
 <tr><td>7.35.3.10 D(1), page 5, with 7.35.3.19 G(4), page 13</td>
 <td>The two 40-hour waivers set different group-session minimums, two against one.</td>
-<td>One of the two provisions is in the practicum draft's scope. Addendum B.</td></tr>
+<td>Conforming one to the other is a choice between two figures already in the rule. The practicum draft
+records the same conflict and amends neither provision, so neither document makes the choice. Addendum B.</td></tr>
 <tr><td>7.35.3.11 A(22)(d) and (e), and B(10)(d), pages 5 to 7</td>
 <td>The 15-minute threshold for a remote natural environment. The Wilson working redline asks twice whether it
 should be 30.</td>
