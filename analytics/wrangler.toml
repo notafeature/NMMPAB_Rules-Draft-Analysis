@@ -28,10 +28,10 @@ database_name = "nmmpab-count"
 database_id = "6b4b8f4f-38be-4315-9cd1-75a08d10acb6"
 
 [vars]
-# Only requests carrying one of these origins are recorded. Add a second entry
-# here if the site ever moves to a custom domain, and change ENDPOINT in
-# tools/sync-count.py to match.
-ALLOWED_ORIGINS = "https://notafeature.github.io"
+# Only requests carrying one of these origins are recorded. Both are listed so
+# the counter keeps working through a move to the custom domain and does not
+# silently record nothing on whichever host it is not currently serving.
+ALLOWED_ORIGINS = "https://notafeature.github.io,https://rules.medical-psilocybin.org"
 DASH_USER = "owner"
 
 [observability]

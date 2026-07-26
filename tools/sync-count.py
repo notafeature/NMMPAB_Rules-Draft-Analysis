@@ -85,8 +85,11 @@ def block():
 def set_endpoint(url):
     """Rewrite the ENDPOINT constant in this file, so the value has one home."""
     url = url.strip().rstrip("/")
-    if url and not url.startswith("https://"):
-        print("Endpoint must be an https:// origin.")
+    # A path rather than an origin means the counter is served from the site's
+    # own hostname, which is the best case: no cross-origin request at all, and
+    # nothing for a content blocker or a network filter to recognise.
+    if url and not (url.startswith("https://") or url.startswith("/")):
+        print("Endpoint must be an https:// origin, or a same-origin path such as /_count.")
         return 1
     src = open(SELF).read()
     new = re.sub(r'^ENDPOINT = ".*"$', 'ENDPOINT = "%s"' % url, src, count=1, flags=re.M)
