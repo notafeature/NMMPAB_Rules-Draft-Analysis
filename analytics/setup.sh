@@ -72,7 +72,7 @@ echo "Dashboard password: set."
 say "4/4  Done"
 cat <<EOF
 
-  Dashboard   $COUNTER/
+  Dashboard   $COUNTER/dash
   Username    owner
   Password    $PASS_NOTE
 

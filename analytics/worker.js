@@ -18,7 +18,7 @@
  * Routes:
  *   POST /e         record an event, sent by the beacon in every page
  *   GET  /px        image fallback when sendBeacon and fetch are blocked
- *   GET  /          the dashboard, HTTP Basic auth, owner only
+ *   GET  /dash      the dashboard, HTTP Basic auth, owner only (also at /)
  *   GET  /api/summary?days=N   the dashboard's data, same auth
  *   GET  /health    liveness, no auth, reveals no data
  *
@@ -353,7 +353,10 @@ export default {
       });
     }
 
-    if (path === "/") {
+    // Served at /dash as well as /. Something on the zone answers the bare
+    // root of this hostname before the Worker sees it, and every other path
+    // arrives here untouched, so /dash is the address that reliably works.
+    if (path === "/" || path === "/dash") {
       if (!authed(request, env)) return challenge();
       return new Response(DASHBOARD, {
         headers: {
