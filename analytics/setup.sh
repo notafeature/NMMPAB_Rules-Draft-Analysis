@@ -1,24 +1,22 @@
 #!/usr/bin/env bash
 #
-# Put the site on rules.medical-psilocybin.org and turn the visit counter on.
-# Run this once:
+# Turn the visit counter on. Run this once:
 #
 #     ./analytics/setup.sh
 #
 # It logs you into Cloudflare, deploys the Worker to your personal account,
-# creates the DNS record and certificate for rules.medical-psilocybin.org,
+# creates the DNS record and certificate for count.medical-psilocybin.org,
 # generates the hashing secret, and sets the dashboard password.
 #
-# After this the site answers on BOTH addresses, independently:
-#   https://rules.medical-psilocybin.org/            served by this Worker
-#   https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/   served by GitHub
-# That is deliberate. If a network filter blocks one, the other still works.
+# It does not touch the site. GitHub Pages serves rules.medical-psilocybin.org
+# directly, and nothing here sits in front of that.
 #
 # Safe to run again. Re-running redeploys and leaves the data alone.
 
 set -euo pipefail
 cd "$(dirname "$0")"
 
+COUNTER="https://count.medical-psilocybin.org"
 SITE="https://rules.medical-psilocybin.org"
 say() { printf '\n\033[1m%s\033[0m\n' "$1"; }
 
@@ -33,16 +31,18 @@ fi
 
 # --------------------------------------------------------------- 2. deploy
 say "2/4  Deploying"
-echo "This claims rules.medical-psilocybin.org and creates its DNS record."
+echo "This claims count.medical-psilocybin.org and creates its DNS record."
 echo
 if ! npx --yes wrangler@4 deploy; then
   cat <<'EOF'
 
-Deploy failed. The usual cause is that a DNS record for "rules" already
+Deploy failed. The usual cause is that a DNS record for "count" already
 exists, which blocks Wrangler from creating the one it needs.
 
 Fix: Cloudflare dashboard, medical-psilocybin.org, DNS, delete the existing
-"rules" record, then run this script again. Wrangler will recreate it.
+"count" record, then run this script again. Wrangler will recreate it.
+
+Do not delete the "rules" record. That one is the site.
 EOF
   exit 1
 fi
@@ -72,17 +72,12 @@ echo "Dashboard password: set."
 say "4/4  Done"
 cat <<EOF
 
-  Site        $SITE/
-  Dashboard   $SITE/_count/
+  Dashboard   $COUNTER/
   Username    owner
   Password    $PASS_NOTE
 
-The old address keeps working and is not redirected:
-  https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/
-
-Check both open before you hand the new one to anybody. Readers on either
-address are counted, and the dashboard has a "Which address readers used"
-table, which is how you find out if a filter is blocking the new domain.
+The site itself is untouched and still served by GitHub Pages at
+  $SITE/
 
 Numbers appear once somebody loads a page. Until then the dashboard is empty,
 which is correct rather than broken.

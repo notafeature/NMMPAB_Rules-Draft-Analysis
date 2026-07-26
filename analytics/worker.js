@@ -1,29 +1,26 @@
 /**
- * nmmpab-count: serves the NMMPAB rules-draft site, and counts its readers.
+ * nmmpab-count: a visit counter for the NMMPAB rules-draft site.
  *
- * The site is static HTML on GitHub Pages, which keeps no logs and exposes
- * none. This Worker does two jobs on one hostname:
+ * The site is static HTML on GitHub Pages, served at
+ * rules.medical-psilocybin.org, and GitHub keeps no access logs and exposes
+ * none. This Worker is the only place a visit is recorded, and it stores the
+ * least it can while still answering the four questions that were asked:
+ * is anyone reading this, roughly how many, which pages, and is there any
+ * sign the Department of Health is among them.
  *
- * 1. It serves the site at rules.medical-psilocybin.org, by fetching from
- *    GitHub Pages and passing the response through. It deliberately does this
- *    rather than pointing GitHub Pages at the custom domain with a CNAME file,
- *    because GitHub then permanently redirects the notafeature.github.io URL
- *    to the new one. Proxying instead keeps BOTH addresses live and
- *    independent. If a Department of Health network filter blocks one of them,
- *    and blocking a month-old domain with "psilocybin" in the name is a real
- *    possibility, the other still works.
+ * It runs at count.medical-psilocybin.org, a sibling of the site's own
+ * hostname rather than a third-party tracking service. That matters for the
+ * question being asked: a network filter blocks a registrable domain, so any
+ * filter that can reach medical-psilocybin.org to read the site can reach it
+ * to record the visit. The Worker is deliberately NOT in front of the site,
+ * so it cannot take the site down.
  *
- * 2. It counts visits under /_count, on that same hostname. Same origin means
- *    there is no third-party request for a content blocker or a network filter
- *    to recognise as tracking, because there is no third party.
- *
- * Routes under /_count:
- *   POST /_count/e     record an event, sent by the beacon in every page
- *   GET  /_count/px    image fallback when sendBeacon and fetch are blocked
- *   GET  /_count/      the dashboard, HTTP Basic auth, owner only
- *   GET  /_count/api/summary?days=N   the dashboard's data, same auth
- *   GET  /_count/health               liveness, no auth, reveals no data
- * Everything else is the site.
+ * Routes:
+ *   POST /e         record an event, sent by the beacon in every page
+ *   GET  /px        image fallback when sendBeacon and fetch are blocked
+ *   GET  /          the dashboard, HTTP Basic auth, owner only
+ *   GET  /api/summary?days=N   the dashboard's data, same auth
+ *   GET  /health    liveness, no auth, reveals no data
  *
  * What is never stored: IP addresses, cookies, any identifier that survives
  * the UTC day, city or coordinates, referrer paths or query strings, and any
@@ -33,39 +30,6 @@
 
 const RETENTION_DAYS = 400;
 
-// Where the site actually lives. The Worker is a window onto this, not a copy.
-const UPSTREAM = "https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis";
-
-// Everything under this prefix is the counter. Everything else is the site.
-const PREFIX = "/_count";
-
-const UPSTREAM_BASE = new URL(UPSTREAM + "/");
-
-/**
- * Move a redirect from the upstream address onto this one.
- *
- * The upstream serves the site out of a subdirectory and this Worker serves it
- * at the root, so a redirect has to lose that subdirectory as well as the host.
- * The Location header may be absolute or path-only depending on what produced
- * it, so resolve it first and work from the result rather than pattern-matching
- * the raw string. Redirects pointing anywhere else are left alone.
- */
-function rebaseLocation(loc, origin) {
-  let abs;
-  try {
-    abs = new URL(loc, UPSTREAM_BASE);
-  } catch (e) {
-    return loc;
-  }
-  if (abs.origin !== UPSTREAM_BASE.origin) return loc;
-
-  const prefix = UPSTREAM_BASE.pathname.replace(/\/$/, "");
-  let path = abs.pathname;
-  if (path === prefix) path = "/";
-  else if (path.startsWith(prefix + "/")) path = path.slice(prefix.length);
-
-  return origin + path + abs.search + abs.hash;
-}
 
 const PV_PATH = /^[a-z0-9-]+\.html$/;
 const DL_PATH = /^documents\/[A-Za-z0-9._%-]+\.(pdf|txt)$/;
@@ -300,36 +264,6 @@ const GIF = Uint8Array.from([
   1, 0, 0x3b,
 ]);
 
-/**
- * Serve the site by passing GitHub Pages through.
- *
- * Every link on the site is relative, so nothing needs rewriting in the body.
- * Only Location headers need care, because GitHub redirects a directory that
- * was asked for without its trailing slash, and that redirect would otherwise
- * bounce the reader onto github.io mid-visit.
- */
-async function serveSite(request, url) {
-  if (request.method !== "GET" && request.method !== "HEAD") {
-    return new Response("Method not allowed", { status: 405 });
-  }
-
-  const upstream = await fetch(UPSTREAM + url.pathname + url.search, {
-    method: request.method,
-    headers: {
-      "Accept": request.headers.get("Accept") || "*/*",
-      "Accept-Language": request.headers.get("Accept-Language") || "",
-      "User-Agent": request.headers.get("User-Agent") || "",
-      "If-None-Match": request.headers.get("If-None-Match") || "",
-    },
-    redirect: "manual",
-  });
-
-  const res = new Response(upstream.body, upstream);
-  const loc = res.headers.get("Location");
-  if (loc) res.headers.set("Location", rebaseLocation(loc, url.origin));
-  return res;
-}
-
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -340,11 +274,7 @@ export default {
       return new Response(null, { status: 204, headers: { "Cache-Control": "max-age=86400" } });
     }
 
-    // Everything outside the counter prefix is the site itself.
-    if (url.pathname !== PREFIX && !url.pathname.startsWith(PREFIX + "/")) {
-      return serveSite(request, url);
-    }
-    const path = url.pathname.slice(PREFIX.length).replace(/\/+$/, "") || "/";
+    const path = url.pathname.replace(/\/+$/, "") || "/";
 
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders(request, env) });
@@ -542,7 +472,7 @@ const DASHBOARD = `<!doctype html>
 <body>
 <div class="col">
   <h1>Readers of the NMMPAB rules site</h1>
-  <p class="sub">rules.medical-psilocybin.org and notafeature.github.io/NMMPAB_Rules-Draft-Analysis, counted together. No cookies, no reader identified.</p>
+  <p class="sub">rules.medical-psilocybin.org. No cookies, no reader identified.</p>
 
   <div class="ranges" id="ranges" role="group" aria-label="Time range">
     <button data-days="7">7 days</button>
@@ -595,13 +525,14 @@ const DASHBOARD = `<!doctype html>
     <div class="cardhead">
       <h2>Which address readers used</h2>
     </div>
-    <p class="note">The site answers on two addresses on purpose, and neither redirects to the other, so that a
-      network filter blocking one does not cut a reader off. <b>This is where you find out whether that is
-      happening.</b> If readers appear only on <span class="mono">notafeature.github.io</span>, then
-      <span class="mono">rules.medical-psilocybin.org</span> is not reaching them: a domain registered in
-      July 2026 with "psilocybin" in the name is the kind of thing a government filter blocks by default, both
-      for being new and for the word. If the reverse, the github.io address is the blocked one. If both appear,
-      neither is blocked and this table can be ignored.</p>
+    <p class="note">The site is served at <span class="mono">rules.medical-psilocybin.org</span>, and the older
+      <span class="mono">notafeature.github.io</span> address now redirects there, so nearly every row should
+      show the new domain. A github.io row is somebody who reached the old address from a stale bookmark or an
+      emailed link and was redirected. <b>What this table cannot tell you is whether the new domain is blocked
+      for somebody.</b> A reader whose network filters
+      <span class="mono">medical-psilocybin.org</span> never loads the page, so the beacon never fires and
+      nothing appears here at all, which looks exactly like nobody reading. If you suspect that, the test is
+      to ask one person at the department to open the link and say whether it loaded.</p>
     <div id="hosts"></div>
   </div>
 
@@ -824,7 +755,7 @@ const DASHBOARD = `<!doctype html>
 
   function load(){
     $("kpis").innerHTML = '<p class="empty">Loading.</p>';
-    fetch("${PREFIX}/api/summary?days=" + state.days, { credentials: "same-origin" })
+    fetch("/api/summary?days=" + state.days, { credentials: "same-origin" })
       .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(render)
       .catch(function(e){ $("kpis").innerHTML = '<p class="empty">Could not load: ' + esc(e.message) + "</p>"; });

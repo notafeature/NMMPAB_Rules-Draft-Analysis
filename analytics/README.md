@@ -6,7 +6,7 @@ Identifying an individual reader is not the goal, and the schema is built so tha
 
 | File | What it is |
 |---|---|
-| `worker.js` | The whole service: the site proxy, the collector, the dashboard, and the query layer |
+| `worker.js` | The whole service: the collector, the dashboard, and the query layer |
 | `schema.sql` | The D1 schema, with a comment on every column saying why it exists |
 | `wrangler.toml` | Deploy config. No credentials, by design; the repository is public |
 | `setup.sh` | One command that does the whole deployment |
@@ -17,7 +17,7 @@ The beacon that every page carries is not here. It is written into `docs/*.html`
 
 Five real options were considered. Only one of them can answer the fourth question at all.
 
-**Cloudflare in front of Pages.** Point a custom domain at GitHub Pages, proxy it through Cloudflare, and count at the edge with nothing in the page. This is the most robust collection method available: no JavaScript, no cross-origin request, nothing a content blocker can refuse. The price is the site's URL. `notafeature.github.io/NMMPAB_Rules-Draft-Analysis` is printed in `UPDATING.md`, in the README, and in whatever board members have already bookmarked or been emailed, and moving it to a custom domain to gain a counter is a large change made for a small reason. Free-plan zone analytics is also thinner than it looks: request counts and countries, no per-reader uniqueness, and no network operator.
+**Cloudflare in front of Pages.** Proxy the custom domain through Cloudflare and count at the edge with nothing in the page. This is the most robust collection method available: no JavaScript, no cross-origin request, nothing a content blocker can refuse. Two costs. Free-plan zone analytics is thinner than it looks, giving request counts and countries but no per-reader uniqueness and no network operator, so it does not answer the fourth question either. And it puts Cloudflare's proxy in the path of a live site whose SSL mode has to be right, for a counter. Not worth the risk to the site.
 
 **Self-hosted Plausible or Umami.** The best dashboards of the five, and no code to maintain. Plausible Community Edition wants ClickHouse and Postgres and about 2 GB of memory, which is a real server at real monthly cost. Umami is much lighter and will sit on a free Vercel plus a free Postgres, but free Postgres tiers sleep, expire, or vanish, and the failure mode is losing exactly the record you were trying to keep. Both are disqualified on substance rather than cost: neither records the network the request came from, so neither can say anything about the fourth question.
 
@@ -49,48 +49,39 @@ Records older than 400 days are deleted by a sweep that runs at most once per UT
 ./analytics/setup.sh
 ```
 
-That is the whole thing. It logs into Cloudflare, deploys the Worker, generates the hashing secret, asks for a dashboard password, writes the resulting address into all thirteen pages, and prints the dashboard URL. Then commit and push, and numbers start arriving once someone loads a page.
+That is the whole thing. It logs into Cloudflare, deploys the Worker, creates the DNS record and certificate for `count.medical-psilocybin.org`, generates the hashing secret, and asks for a dashboard password. The pages already point at that address. It does not touch the site.
 
 The D1 database already exists and its schema is already applied. It was created on July 26, 2026 in the personal Cloudflare account, not the Santa Fe Psychedelic Society one, and both IDs are in `wrangler.toml`.
 
-Until the address is set the beacon is present, valid, identical on every page, and inert: it returns before sending anything. That is deliberate, because a guessed hostname would record nothing while looking like it worked.
+### Where it runs, and why not on the site's own hostname
 
-### Two addresses, on purpose
+The Worker answers on `count.medical-psilocybin.org`. The site is served by GitHub Pages at `rules.medical-psilocybin.org`, and nothing here sits in front of it, so a Worker problem cannot take the site down.
 
-The site answers on both of these, and **neither redirects to the other**:
+The tidier arrangement would be a Worker route at `rules.medical-psilocybin.org/_count`, same origin, nothing separate in the page source. It was not done, because reaching it means switching the `rules` DNS record from DNS-only to proxied and depending on the zone's SSL mode being Full. Get that wrong and the live site goes into a redirect loop, five weeks before a rule hearing, to gain nothing measurable.
 
-| Address | Served by |
-|---|---|
-| `https://rules.medical-psilocybin.org/` | this Worker, passing GitHub Pages through |
-| `https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/` | GitHub Pages directly |
+Nothing measurable, because a network filter blocks a **registrable domain**. `count.medical-psilocybin.org` and `rules.medical-psilocybin.org` stand or fall together: any filter that lets a reader load the site will let the beacon through, and any filter that blocks the counter has already blocked the site. The same-origin version is cosmetically better and functionally identical.
 
-That redundancy is the point, and it is the reason GitHub Pages is **not** pointed at the custom domain with a `docs/CNAME` file. Adding that file is the obvious way to do this and it is the wrong one here: GitHub then answers the github.io address with a permanent redirect to the custom domain, so the site has one way in instead of two.
+If you want it anyway later: set the `rules` record to Proxied, confirm SSL/TLS mode is Full, change the route in `wrangler.toml` to `rules.medical-psilocybin.org/_count/*` with `zone_name` instead of `custom_domain`, redeploy, then `python3 tools/sync-count.py --endpoint https://rules.medical-psilocybin.org/_count`.
 
-One way in is a problem for this particular readership. Department of Health staff have not been able to reach this maintainer's pages before, and `medical-psilocybin.org` was registered in July 2026, which puts it in two categories a government web filter blocks by default: a newly registered domain, and a drug-related keyword. The github.io address has the opposite risk profile, being old and generic but sometimes blocked as code hosting. Keeping both live means a filter has to block both to lock a reader out.
+### What the counter cannot tell you
 
-The cost of proxying rather than redirecting is that the Worker sits in front of the site, so a Worker outage takes down the new address. The github.io address is unaffected by that, which is the same argument again.
+If `medical-psilocybin.org` is filtered on someone's network, they never load the page, the beacon never fires, and they never appear. **That looks exactly like nobody reading.** The dashboard says so where it matters. The only reliable test is to ask one person at the department whether the link opened.
 
-The dashboard's **Which address readers used** table is how you find out whether either address is actually being blocked. If readers only ever appear on github.io, the new domain is not reaching them.
+This is the cost of having moved the site onto a single custom domain. The github.io address now redirects rather than serving independently, so there is no second way in. Removing the custom domain in the repository's Pages settings would restore that, at the price of changing the address you have been handing out.
 
 ### If the counter should ever move
 
 The address the pages report to is the `ENDPOINT` constant in `tools/sync-count.py` and lives nowhere else. Change it and re-run:
 
 ```
-python3 tools/sync-count.py --endpoint https://somewhere-else/_count
+python3 tools/sync-count.py --endpoint https://somewhere-else
 ```
 
-It accepts a same-origin path such as `/_count` as well as a full origin. A full origin is what is set now, deliberately: readers on the github.io address are cross-origin to the counter, and an absolute URL means they are still counted. `ALLOWED_ORIGINS` in `wrangler.toml` lists both site addresses for the same reason.
-
-### Who can see what
-
-The numbers are yours alone. The dashboard and the data API are the only routes that read anything, both are behind a password, and both send `X-Robots-Tag: noindex`. Nobody else can reach them, and there is no public or shareable view.
-
-One thing is public, unavoidably: the address itself. It sits in the page source of a public site in a public repository, so anyone who views source can see that a counter exists and what it is called. That is why the address should not carry a name you would rather not attach to this, and it is why `about.html` says plainly what is collected instead of leaving it to be discovered.
+It accepts a same-origin path such as `/_count` as well as a full origin. `ALLOWED_ORIGINS` in `wrangler.toml` lists the site addresses that are allowed to report, and needs the same edit if the site moves.
 
 ## The dashboard
 
-`https://rules.medical-psilocybin.org/_count/`, HTTP Basic auth, user `owner` and the `DASH_PASS` secret. It is the only route that reads data, it sends `X-Robots-Tag: noindex`, and it is served with `Cache-Control: no-store`.
+`https://count.medical-psilocybin.org/`, HTTP Basic auth, user `owner` and the `DASH_PASS` secret. It is the only route that reads data, it sends `X-Robots-Tag: noindex`, and it is served with `Cache-Control: no-store`.
 
 It shows visits per day with readers overlaid, totals for the selected range, views and reader-days per page, referring hosts, documents opened, countries, and the network table described below. Ranges are 7, 30 and 90 days, one year, and everything.
 
@@ -122,7 +113,5 @@ Zero at this volume. Workers and D1 both have free tiers measured in millions of
 **Querying by hand.** `npx wrangler d1 execute nmmpab-count --remote --command "SELECT path, COUNT(*) FROM hits GROUP BY path"`.
 
 **Deleting everything.** `npx wrangler d1 execute nmmpab-count --remote --command "DELETE FROM hits"`, or delete the database in the Cloudflare dashboard. Then run `python3 tools/sync-count.py --endpoint ""` to make the beacon inert again, and remove the Measurement section from `docs/about.html`.
-
-**Counting server-side instead.** Now that the Worker serves the site, it sees every request and could count without any JavaScript in the page, which no content blocker or script policy could stop. That was not done, for two reasons: it would drop the Global Privacy Control and Do Not Track promise made on `about.html`, since those are signals only the browser can send, and it would count prefetches and bots that the beacon does not. If the beacon turns out to be blocked for the readers who matter, this is the fix, and it is contained to `serveSite` in `worker.js`.
 
 **Abuse.** The collector is unauthenticated, because it has to be. It is kept narrow: the request must carry an allowed `Origin`, the path must match a file this site actually has, and obvious robot user-agents are dropped. Someone determined could still post junk rows. The blast radius is a wrong number on a private dashboard, which `DELETE FROM hits WHERE ...` fixes.
