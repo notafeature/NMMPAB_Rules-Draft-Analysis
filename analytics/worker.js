@@ -18,7 +18,7 @@
  * Routes:
  *   POST /e         record an event, sent by the beacon in every page
  *   GET  /px        image fallback when sendBeacon and fetch are blocked
- *   GET  /dash      the dashboard, HTTP Basic auth, owner only (also at /)
+ *   GET  /          the dashboard, HTTP Basic auth, owner only
  *   GET  /api/summary?days=N   the dashboard's data, same auth
  *   GET  /health    liveness, no auth, reveals no data
  *
@@ -29,6 +29,26 @@
  */
 
 const RETENTION_DAYS = 400;
+
+// Applied to every authenticated response. The dashboard is a private page
+// that reads a database, so it should not be framed, sniffed, cached by
+// anything in between, indexed, or allowed to load or reach anything off its
+// own origin. The page is entirely self-contained, so the policy can be
+// absolute rather than a list of exceptions.
+const SECURITY_HEADERS = {
+  "Cache-Control": "no-store, no-cache, must-revalidate, private",
+  "Content-Security-Policy":
+    "default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; " +
+    "connect-src 'self'; img-src 'self' data:; form-action 'none'; " +
+    "frame-ancestors 'none'; base-uri 'none'",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "Referrer-Policy": "no-referrer",
+  "X-Robots-Tag": "noindex, nofollow, noarchive",
+  "Permissions-Policy": "geolocation=(), camera=(), microphone=(), interest-cohort=()",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Cross-Origin-Resource-Policy": "same-origin",
+};
 
 
 const PV_PATH = /^[a-z0-9-]+\.html$/;
@@ -357,28 +377,12 @@ export default {
       const raw = parseInt(url.searchParams.get("days") || "30", 10);
       const days = [7, 30, 90, 365, 3650].includes(raw) ? raw : 30;
       const data = await summary(env, days);
-      return new Response(JSON.stringify(data), {
-        headers: {
-          "Content-Type": "application/json; charset=utf-8",
-          "Cache-Control": "no-store",
-          "X-Robots-Tag": "noindex",
-        },
-      });
+      return new Response(JSON.stringify(data), { headers: { ...SECURITY_HEADERS, "Content-Type": "application/json; charset=utf-8" } });
     }
 
-    // Served at /dash as well as /. Something on the zone answers the bare
-    // root of this hostname before the Worker sees it, and every other path
-    // arrives here untouched, so /dash is the address that reliably works.
-    if (path === "/" || path === "/dash") {
+    if (path === "/") {
       if (!authed(request, env)) return challenge();
-      return new Response(DASHBOARD, {
-        headers: {
-          "Content-Type": "text/html; charset=utf-8",
-          "Cache-Control": "no-store",
-          "X-Robots-Tag": "noindex",
-          "Referrer-Policy": "no-referrer",
-        },
-      });
+      return new Response(DASHBOARD, { headers: { ...SECURITY_HEADERS, "Content-Type": "text/html; charset=utf-8" } });
     }
 
     return new Response("Not found", { status: 404 });

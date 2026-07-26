@@ -102,6 +102,18 @@ So a state-network row is weak positive evidence that somebody at the department
 
 The `net_kind` column is a guess made by regular expression in `worker.js`. The patterns for a New Mexico state network are a guess at a registration string, not a lookup. When a plausible row appears in the dashboard, put its exact name into `NET_RULES` and redeploy, and it will classify correctly from then on.
 
+## A trap that already caught this project once
+
+On 2026-07-26 the Cloudflare GitHub integration committed a `wrangler.jsonc` to the repository root, named `nmmpab-count`, configured as `"assets": {"directory": "docs"}`. Same Worker name as this one. Every push to `main` then triggered a Cloudflare build that replaced the counter with a static mirror of the website: `/` served `docs/index.html`, every counter route 404ed, and the deployed Worker had no D1 binding at all. It alternated with every manual deploy and cost most of a night to find.
+
+If the counter ever stops recording and the hostname starts serving the site instead, check this first:
+
+```
+GET /accounts/<account>/workers/scripts/nmmpab-count/settings
+```
+
+`"bindings": []` means the mirror is deployed, not the counter. The repository must contain exactly one Worker config, `analytics/wrangler.toml`, and the Cloudflare build connection must stay disconnected.
+
 ## Cost
 
 Zero at this volume. Workers and D1 both have free tiers measured in millions of operations, and a few dozen readers produce a few hundred rows a month. There is no monthly bill to forget about and no server to keep alive.

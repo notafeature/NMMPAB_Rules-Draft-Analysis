@@ -105,6 +105,8 @@ python3 tools/sync-count.py        # visit-counter beacon, identical everywhere
 
 All three accept `--check` to verify without writing. Never hand-edit the blocks they own; edit the tool and re-run.
 
+Never let a second Cloudflare Worker config into this repository. `analytics/wrangler.toml` is the only one. The Cloudflare GitHub integration will offer to add a `wrangler.jsonc` at the root that claims the same Worker name and serves `docs/` as a static site; accepting it silently replaces the counter with a copy of the website. Keep the build connection disconnected.
+
 A new page needs nothing special from the third one: run it and the beacon appears. The counter's endpoint is the `ENDPOINT` constant in `tools/sync-count.py` and lives nowhere else, so moving the counter is `python3 tools/sync-count.py --endpoint https://NEW-HOST`. What the counter records is stated on `about.html`, and the Worker behind it is in `analytics/`, which has its own README.
 
 Then the checks in the next section. All of them, every time.
