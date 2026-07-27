@@ -1,14 +1,492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=rule.html#s19">
-<title>Moved · 7.35.3 NMAC Training and Education</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practicum Requirements · NM Medical Psilocybin 7.35.3</title>
+<style>
+  :root{
+    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
+    --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
+    --border:#E4E0EB; --border-strong:#D2CCDF;
+    --accent:#5A4A88; --accent-2:#7A67A8; --accent-soft:#EBE6F5;
+    --agree:#2C7A57; --agree-bg:#E6F3EB; --agree-border:#BADFCB;
+    --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
+    --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
+    --shadow-lg:0 2px 6px rgba(26,22,33,.06), 0 18px 44px rgba(26,22,33,.10);
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  body{margin:0; background:var(--bg);}
+  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.55; font-size:16px; min-height:100vh; -webkit-font-smoothing:antialiased;}
+  .col{max-width:820px; margin:0 auto; padding:0 22px;}
+  a{color:var(--accent); text-underline-offset:2px;}
+  h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.16;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px;}
+
+  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
+  .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 22px; display:flex; align-items:center; gap:16px;}
+  .brand{font-family:var(--serif); font-weight:600; font-size:15px; margin-right:auto; display:flex; align-items:center; gap:9px; white-space:nowrap;}
+  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
+  .tnav{display:flex; gap:3px;}
+  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 8px; border-radius:8px; white-space:nowrap;}
+  .tnav a:hover{background:var(--surface-2); color:var(--text);}
+  .tnav a.on{color:var(--accent); background:var(--accent-soft);}
+  .tdrop{position:relative;}
+  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 8px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
+  .tdrop>summary::-webkit-details-marker{display:none;}
+  .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
+  .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
+  .tdrop-menu{position:absolute; right:0; top:calc(100% + 6px); background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg); padding:6px; min-width:250px; display:flex; flex-direction:column; gap:2px; z-index:60;}
+  .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
+  .tdrop-menu a:hover{background:var(--surface-2);}
+  .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
+  .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
+  @media (max-width:1140px){
+    .topbar .inner{position:relative;}
+    .hamburger{display:block;}
+    .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 22px 12px; gap:2px;}
+    .tnav.open{display:flex;}
+    .tnav a{padding:10px 8px;}
+    .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
+  }
+
+  .hero{padding:38px 0 4px;}
+  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 12px;}
+  h1{font-size:clamp(24px,3.4vw,34px); letter-spacing:-.01em; margin:0 0 12px; line-height:1.12;}
+  .updated{margin:0 0 18px; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
+  .updated b{color:var(--text-muted); font-weight:600;}
+  .lede{font-size:16.5px; color:var(--text-muted); margin:0; max-width:640px;}
+
+  .ai{margin:26px 0 6px; background:var(--open-bg); border:1px solid var(--open-border); border-radius:12px; padding:16px 18px;}
+  .ai h2{font-size:16px; margin:0 0 8px; color:var(--open);}
+  .ai p{font-size:14.5px; color:var(--text); margin:0 0 8px; line-height:1.55;}
+  .ai p:last-child{margin-bottom:0;}
+
+  .sh{margin:38px 0 8px;}
+  .sh .k{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 6px;}
+  .sh h2{font-size:clamp(19px,2.4vw,24px); margin:0;}
+  p.body{font-size:15px; color:var(--text); line-height:1.6; margin:10px 0 0;}
+  p.body b{font-weight:650;}
+  ul.body{font-size:15px; color:var(--text); line-height:1.6; margin:10px 0 0; padding-left:20px;}
+  ul.body li{margin:7px 0;}
+  ul.body b{font-weight:650;}
+  .tier{margin:14px 0 0; border:1px solid var(--border); border-radius:12px; overflow:hidden;}
+  .tier .t{display:flex; gap:12px; padding:12px 16px; border-bottom:1px solid var(--border); background:var(--surface); font-size:14.5px; line-height:1.5;}
+  .tier .t:last-child{border-bottom:none;}
+  .tier .t .lv{flex:none; width:118px; font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.04em; padding-top:2px;}
+  .tier .t.strong .lv{color:var(--agree);}
+  .tier .t.mid .lv{color:var(--open);}
+  .tier .t.weak .lv{color:var(--text-faint);}
+  .tier .t p{margin:0; color:var(--text-muted);}
+  .tier .t p b{color:var(--text);}
+
+  footer{margin-top:48px; border-top:1px solid var(--border); background:var(--surface-2);}
+  footer .col{padding-top:26px; padding-bottom:42px;}
+  footer p{font-size:13px; color:var(--text-muted); margin:0 0 10px; line-height:1.5;}
+  footer .fine{font-size:12px; color:var(--text-faint);}
+  .sitefoot{margin-top:18px; padding-top:14px; border-top:1px solid var(--border);}
+  .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
+  .sitefoot p b{color:var(--text-muted); font-weight:650;}
+  .sitefoot a{color:var(--accent);}
+/* provenance block */
+  .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
+  .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
+  .prov>summary::-webkit-details-marker{display:none;}
+  .prov>summary:hover{color:var(--text);}
+  .prov .provsum{font-weight:650;}
+  .prov .provchev{margin-left:auto; font-size:11px; transition:transform .15s;}
+  .prov[open] .provchev{transform:rotate(90deg);}
+  .provbody{padding:4px 16px 18px;}
+  .provsec{margin-top:16px;}
+  .provk{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
+  .chain{list-style:none; margin:0; padding:0; counter-reset:ch;}
+  .chain li{position:relative; padding:0 0 14px 26px; border-left:2px solid var(--border-strong); margin-left:5px;}
+  .chain li:last-child{border-left-color:transparent; padding-bottom:2px;}
+  .chain li::before{content:""; position:absolute; left:-6px; top:4px; width:10px; height:10px; border-radius:50%; background:var(--border-strong); border:2px solid var(--surface);}
+  .chain li.cur::before{background:var(--accent);}
+  .chain .cd{font-size:12px; font-family:var(--mono); color:var(--text-faint);}
+  .chain .cn{font-size:14.5px; font-weight:650; color:var(--text); margin:1px 0 0;}
+  .chain .cw{font-size:13.5px; color:var(--text-muted); line-height:1.55; margin:4px 0 0;}
+  .chain .curflag{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:20px; padding:1px 8px; margin-left:7px; vertical-align:1px;}
+  .revs{list-style:none; margin:0; padding:0;}
+  .revs li{font-size:13.5px; color:var(--text-muted); line-height:1.55; padding:8px 0; border-top:1px solid var(--border);}
+  .revs li:first-child{border-top:none; padding-top:0;}
+  .revs b{color:var(--text); font-weight:650;}
+  /* /provenance block */
+
+  .surface{margin:24px 0 0; border:1px solid var(--border-strong); border-radius:12px; overflow:hidden;}
+  .surface table{width:100%; border-collapse:collapse; font-size:14px;}
+  .surface th{text-align:left; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-faint); font-weight:700; padding:10px 14px; background:var(--surface-2); border-bottom:1px solid var(--border-strong);}
+  .surface td{padding:9px 14px; border-bottom:1px solid var(--border); vertical-align:top; color:var(--text);}
+  .surface tr:last-child td{border-bottom:none;}
+  .surface td.s{font-family:var(--mono); font-size:12.5px; white-space:nowrap; width:1%;}
+  .surface td.s a{text-decoration:none; font-weight:650;}
+  .surface td.s a:hover{text-decoration:underline;}
+  .sfoot{font-size:12.5px; color:var(--text-muted); line-height:1.6; margin:0; padding:12px 14px; background:var(--surface-2); border-top:1px solid var(--border-strong);}
+  .f{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; padding:2px 8px; border-radius:20px; white-space:nowrap; margin-right:4px;}
+  .f.def{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
+  .f.dep{background:var(--surface-3); color:var(--text-muted); border:1px solid var(--border-strong);}
+  .f.rai{background:#FBE9EC; color:#B23A48; border:1px solid #E8C8CE;}
+  .f.new{background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
+  .f.brk{background:#FBE4E4; color:#A31D1D; border:1px solid #EFC2C2;}
+  .f.mis{background:#FBE4E4; color:#A31D1D; border:1px solid #EFC2C2;}
+
+  .pv{margin:18px 0 0; background:var(--surface); border:1px solid var(--border-strong); border-radius:12px; padding:18px 20px;}
+  .pv.brk{border-left:4px solid #A31D1D;}
+  .pv.mis{border-left:4px solid #A31D1D; border-style:solid solid solid solid; background:#FEF7F7;}
+  .pvh{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:12px;}
+  .pvh .sn{font-family:var(--mono); font-size:12.5px; color:var(--accent); font-weight:650; white-space:nowrap;}
+  .pvh h3{font-size:18px; margin:0; flex:1 1 auto;}
+  .pv blockquote{margin:0; padding:13px 16px; background:var(--surface-2); border-left:3px solid var(--border-strong); border-radius:0 8px 8px 0; font-size:14px; line-height:1.65; color:var(--text);}
+  .pv blockquote b{font-weight:700;}
+  .pv .ef{font-size:14.5px; line-height:1.62; color:var(--text); margin:12px 0 0;}
+  .pv .ef.note{font-size:13px; color:var(--text-muted);}
+  .pv .cite{font-family:var(--mono); font-size:11.5px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--border);}
+</style>
+<style id="navpass">
+  /* ===== Unified site nav (July 2026 UX pass) ===== */
+  .brand{text-decoration:none; color:inherit;}
+  .tnav{display:flex; align-items:center; gap:4px;}
+  .tnav>a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:6px 10px; border-radius:8px; white-space:nowrap;}
+  .tnav>a:hover{background:var(--surface-2); color:var(--text);}
+  .tnav>a.on{color:var(--accent); background:var(--accent-soft);}
+  .navgrp{position:relative;}
+  .navgrp>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:6px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
+  .navgrp>summary::-webkit-details-marker{display:none;}
+  .navgrp>summary:hover{background:var(--surface-2); color:var(--text);}
+  .navgrp[open]>summary{background:var(--surface-2); color:var(--text);}
+  .navgrp>summary.on{color:var(--accent); background:var(--accent-soft);}
+  .navgrp .caret{font-size:10px; opacity:.7;}
+  .navgrp .tdrop-menu{position:absolute; top:calc(100% + 6px); left:0; right:auto; background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg,0 18px 44px rgba(26,22,33,.14)); padding:6px; min-width:280px; display:flex; flex-direction:column; gap:2px; z-index:60;}
+  .navgrp[data-navgrp="docs"] .tdrop-menu{left:auto; right:0;}
+  .navgrp .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px; display:block; white-space:normal; line-height:1.3;}
+  .navgrp .tdrop-menu a:hover{background:var(--surface-2);}
+  .navgrp .tdrop-menu a.on{background:var(--accent-soft); color:var(--accent);}
+  .navgrp .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:2px; font-weight:400;}
+  .navcta{font-size:13px; text-decoration:none; color:var(--accent); background:var(--accent-soft); border:1px solid transparent; padding:6px 12px; border-radius:8px; white-space:nowrap; font-weight:600;}
+  .navcta:hover{border-color:var(--accent);}
+  .navcta.on{background:var(--accent); color:#fff;}
+  .hamburger{display:none;}
+  @media (min-width:861px){
+    .tnav{display:flex !important; position:static !important; flex-direction:row !important; align-items:center; background:none !important; border-bottom:none !important; box-shadow:none !important; padding:0 !important; max-height:none !important; overflow:visible !important;}
+    .hamburger{display:none !important;}
+  }
+  @media (max-width:860px){
+    .topbar .inner{position:relative; flex-wrap:wrap;}
+    .hamburger{display:block;}
+    .tnav{display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg,0 18px 44px rgba(26,22,33,.14)); padding:8px 22px 14px; gap:2px; max-height:82vh; overflow:auto;}
+    .tnav.open{display:flex;}
+    .tnav>a{padding:11px 10px;}
+    .navgrp{border-top:1px solid var(--border);}
+    .navgrp:first-of-type{border-top:none;}
+    .navgrp>summary{padding:11px 10px;}
+    .navgrp .caret{margin-left:auto;}
+    .navgrp .tdrop-menu{position:static; box-shadow:none; border:none; padding:2px 0 8px 10px; min-width:0;}
+    .navcta{text-align:left; margin-top:8px;}
+    .navcta.on{color:#fff;}
+  }
+</style>
 </head>
 <body>
-<main class="wrap" style="padding-top:60px">
-<p>This page moved in the July 26, 2026 redesign. Its content now lives at <a href="rule.html#s19">rule.html#s19</a>.</p>
-</main>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="inner">
+      <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
+      <nav class="tnav" id="tnav" aria-label="Primary">
+        <details class="tdrop navgrp" data-navgrp="ov">
+          <summary>Overview <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
+            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
+          </div>
+        </details>
+        <details class="tdrop navgrp" data-navgrp="req">
+          <summary>Requirements <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="deferred.html" data-nav="deferred">Practicum requirements<span class="sub">Every provision a practicum change has to touch</span></a>
+            <a href="pathways.html" data-nav="pathways">Provider routes<span class="sub">Routes to each permit by starting license</span></a>
+            <a href="eligibility.html" data-nav="eligibility">Who can qualify<span class="sub">Which licenses map to which permit</span></a>
+            <a href="hours.html" data-nav="hours">Training hours<span class="sub">Didactic, practicum, and specialization</span></a>
+            <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
+            <a href="cs-number.html" data-nav="cs-number">CS number<span class="sub">The certifying-clinician access point</span></a>
+          </div>
+        </details>
+        <details class="tdrop navgrp" data-navgrp="record">
+          <summary>The record <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
+            <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
+          </div>
+        </details>
+        <a href="input.html" data-nav="input" class="navcta">Community input</a>
+        <details class="tdrop navgrp" data-navgrp="docs">
+          <summary>Documents <span class="caret">&#9662;</span></summary>
+          <div class="tdrop-menu">
+            <a href="documents.html" data-nav="documents">All documents<span class="sub">The register: what each one is and whether it is current</span></a>
+            <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published rule &middot; July 23<span class="sub">The proposed rule going to the August 28 hearing</span></a>
+            <a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 17 board<span class="sub">Unofficial, no speaker attribution</span></a>
+            <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 17 committee<span class="sub">Unofficial, no speaker attribution</span></a>
+            <a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations &middot; July 17<span class="sub">Dr. Anne Metz, presented to the committee</span></a>
+          </div>
+        </details>
+      </nav>
+      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
+    </div>
+  </div>
+
+  <div class="col">
+    <header class="hero">
+      <p class="eyebrow">New Mexico Medical Psilocybin Program &middot; 7.35.3 NMAC</p>
+      <h1>Practicum requirements</h1>
+      <p class="updated"><b>Updated July 27, 2026.</b> Text as published July 23. Rule hearing August 28.</p>
+      <p class="lede">Every provision a practicum recommendation has to touch, quoted from the published rule. Three of them do not work as written.</p>
+    </header>
+
+    <div class="surface">
+      <table>
+        <thead><tr><th>Section</th><th>What it governs</th><th>State</th></tr></thead>
+        <tbody>
+          <tr><td class="s"><a href="#s19a">7.35.3.19&nbsp;(A)</a></td><td>Hour totals, and when the practicum may start</td><td><span class="f def">Deferred</span> <span class="f new">New gate</span></td></tr>
+          <tr><td class="s"><a href="#s19b">7.35.3.19&nbsp;(B)</a></td><td>Preparation and integration hours</td><td><span class="f def">Deferred</span></td></tr>
+          <tr><td class="s"><a href="#s19c">7.35.3.19&nbsp;(C)</a></td><td>Practitioner supervisory hours</td><td><span class="f def">Deferred</span></td></tr>
+          <tr><td class="s"><a href="#s19d">7.35.3.19&nbsp;(D)</a></td><td>Where the practicum may happen</td><td><span class="f dep">Dependency</span></td></tr>
+          <tr><td class="s"><a href="#s19f">7.35.3.19&nbsp;(F)</a></td><td>Departmental discretion to waive or reduce</td><td><span class="f def">Deferred</span></td></tr>
+          <tr><td class="s"><a href="#s19g">7.35.3.19&nbsp;(G)</a></td><td>In-state waiver, 40 contact hours</td><td><span class="f brk">Conflicts</span></td></tr>
+          <tr><td class="s"><a href="#s18c">7.35.3.18&nbsp;(C)</a></td><td>Didactic hours the practicum gates on</td><td><span class="f rai">Raised 25 to 30</span></td></tr>
+          <tr><td class="s"><a href="#s14">7.35.3.14</a></td><td>Who may possess and administer psilocybin</td><td><span class="f brk">Students absent</span></td></tr>
+          <tr><td class="s"><a href="#s20h5">7.35.3.20&nbsp;(H)(5)</a></td><td>Staffing ratio counting students</td><td><span class="f brk">Depends on .14</span></td></tr>
+          <tr><td class="s"><a href="#s10d">7.35.3.10&nbsp;(D)(1)</a></td><td>Out-of-jurisdiction waiver, 40 contact hours</td><td><span class="f brk">Conflicts with 19(G)</span></td></tr>
+          <tr><td class="s"><a href="#s11">7.35.3.11</a></td><td>Creates the approved locations 19(D) requires</td><td><span class="f dep">Dependency</span></td></tr>
+          <tr><td class="s"><a href="#new1">New section</a></td><td>Authority for a student to handle psilocybin</td><td><span class="f mis">Does not exist</span></td></tr>
+          <tr><td class="s"><a href="#new2">New subsection</a></td><td>The healing-center registration 14(C) requires</td><td><span class="f mis">Does not exist</span></td></tr>
+        </tbody>
+      </table>
+      <p class="sfoot"><b>Deferred</b> was sent to the Training and Education Committee by a 7-0 board vote on July 17 and published unchanged on July 23. <b>Dependency</b> is not deferred but the practicum cannot operate without it. <b>Conflicts</b>, <b>students absent</b> and <b>does not exist</b> are defects in the published text.</p>
+    </div>
+
+    <section id="provisions">
+      <div class="sh"><p class="k">Published text</p><h2>Provision by provision</h2></div>
+
+      <article class="pv" id="s19a">
+        <div class="pvh"><span class="sn">7.35.3.19 (A)</span><h3>Hour totals, and when the practicum may start</h3><span class="f def">Deferred</span><span class="f new">New gate</span></div>
+        <blockquote>An individual who seeks to become certified as a practitioner or facilitator shall participate in supervised practice training, otherwise referred to as a &ldquo;practicum&rdquo;, <b>after completing at least half of the didactic requirements and all of the simulated patient requirements</b> of the educational requirements. The practicum shall consist of a minimum of <b>100 hours</b> of supervised practice training for facilitators and <b>120 hours</b> for practitioners and shall be completed prior to applying for certification. Students shall participate in a minimum of <b>80 hours</b> of administration day sessions&hellip; with a minimum of <b>14 different patients</b> over a minimum of <b>eight different</b> administration and same-day sessions.</blockquote>
+        <p class="ef">Sets the totals, and bars a student from starting until half the classroom hours and all simulated patient hours are done. The gate is new in this draft, has no counterpart in the July 9 draft, and appears in neither July 17 transcript.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">Published rule, p.&nbsp;12</a></p>
+      </article>
+
+      <article class="pv" id="s19b">
+        <div class="pvh"><span class="sn">7.35.3.19 (B)</span><h3>Preparation and integration hours</h3><span class="f def">Deferred</span></div>
+        <blockquote>Students shall participate in a minimum of <b>20 hours</b> of in-person preparation and integration sessions&hellip; This shall include a minimum of <b>six different patients</b> during individual sessions. This shall include at least one group preparatory and one group integration session with a minimum of four or more patients.</blockquote>
+        <p class="ef">The 20 hours here plus the 80 in (A) make up the 100-hour facilitator total.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=12" target="_blank" rel="noopener">Published rule, p.&nbsp;12</a></p>
+      </article>
+
+      <article class="pv" id="s19c">
+        <div class="pvh"><span class="sn">7.35.3.19 (C)</span><h3>Practitioner supervisory hours</h3><span class="f def">Deferred</span></div>
+        <blockquote>Practitioners shall complete an additional minimum of <b>20 hours</b> as a practitioner supervising facilitators during in-person administration day sessions, which shall include a minimum of two different patients during individual administration day sessions, and a minimum of one group administration day sessions with a minimum of four or more patients in the group.</blockquote>
+        <p class="ef">These 20 hours are the difference between the facilitator total of 100 and the practitioner total of 120. The board named them in the deferral motion.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
+      </article>
+
+      <article class="pv" id="s19d">
+        <div class="pvh"><span class="sn">7.35.3.19 (D)</span><h3>Where the practicum may happen</h3><span class="f dep">Dependency</span></div>
+        <blockquote>All practicum hours shall take place in an approved healing center or other approved location.</blockquote>
+        <p class="ef">Ties every practicum hour to a facility that must first be certified under 7.35.3.11. Any change to placement, including a site-supervisor or apprenticeship model, changes this sentence.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
+      </article>
+
+      <article class="pv" id="s19f">
+        <div class="pvh"><span class="sn">7.35.3.19 (F)</span><h3>Departmental discretion to waive or reduce</h3><span class="f def">Deferred</span></div>
+        <blockquote>The department may otherwise waive, temporarily suspend, or reduce the practicum requirements for individuals applying for certification, in order to facilitate the certification of individuals trained by other government-approved programs, and to build the initial infrastructure of the program.</blockquote>
+        <p class="ef">Open-ended and undated. No standard governs when it applies, and nothing ends it.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
+      </article>
+
+      <article class="pv" id="s19g">
+        <div class="pvh"><span class="sn">7.35.3.19 (G)</span><h3>In-state waiver, 40 contact hours</h3><span class="f brk">Conflicts</span></div>
+        <blockquote>An applicant for certification shall not be required to satisfy the full New Mexico practicum hours requirement if the applicant: (1) Applies for certification by <b>December 31, 2027</b>; (2) Completes the didactic requirements by December 31, 2027; (3) Graduates from an educational program that the department certifies by December 31, 2027 or that the department has included on the department-approved list&hellip;; and (4) Demonstrates completion of at least <b>40 hours of contact time</b>&hellip; including: (a) A minimum of <b>two separate individual sessions</b>&hellip; and (b) A minimum of <b>one group session</b>&hellip;</blockquote>
+        <p class="ef">Requires two individual sessions and <b>one</b> group session. The out-of-jurisdiction waiver at 7.35.3.10 (D)(1) requires two individual and <b>two</b> group for the same 40 hours. Both cannot be the standard.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=13" target="_blank" rel="noopener">Published rule, p.&nbsp;13</a></p>
+      </article>
+
+      <article class="pv" id="s18c">
+        <div class="pvh"><span class="sn">7.35.3.18 (C)</span><h3>Didactic hours the practicum gates on</h3><span class="f rai">Raised 25 to 30</span></div>
+        <blockquote>All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of <b>30 didactic hours and 5 hours of simulated patient experience</b>, prior to applying for certification.</blockquote>
+        <p class="ef">7.35.3.19 (A) gates practicum entry on "half of the didactic requirements and all of the simulated patient requirements," so this figure sets the gate. It was covered by the same 7-0 deferral vote and was published five hours higher than it stood that day. Three subjects were added: Trauma-Informed Care, Dosing, and Non-ordinary states of consciousness.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">Published rule, p.&nbsp;11</a></p>
+      </article>
+
+      <article class="pv brk" id="s14">
+        <div class="pvh"><span class="sn">7.35.3.14</span><h3>Who may possess and administer psilocybin</h3><span class="f brk">Students absent</span></div>
+        <blockquote>Certification of a practitioner, facilitator, or healing center shall enable <b>practitioners, facilitators, and owners and employees of healing centers</b> to do the following&hellip; (C) Healing centers: Owners and employees of healing centers <b>who are registered with the department</b> may purchase&hellip; possess&hellip; and may sell or otherwise administer those products to qualified patients&hellip;</blockquote>
+        <p class="ef">This is the only grant of authority to possess or administer psilocybin in the rule. It names three categories and a practicum student is none of them, because certification is what the practicum is a prerequisite for. Meanwhile 7.35.3.19 (A) requires students to "conduct supervised facilitation of administration day sessions."</p>
+        <p class="ef">The phrase "registered with the department" appears exactly once in all nineteen pages, in this subsection. Nothing in the rule creates that registration.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=9" target="_blank" rel="noopener">Published rule, p.&nbsp;9</a></p>
+      </article>
+
+      <article class="pv brk" id="s20h5">
+        <div class="pvh"><span class="sn">7.35.3.20 (H)(5)</span><h3>Staffing ratio counting students</h3><span class="f brk">Depends on .14</span></div>
+        <blockquote>&hellip;in group administration sessions a minimum of one practitioner for every eight patients and a minimum of <b>one facilitator or qualified student for every two patients</b>. For purposes of the foregoing provision, a student shall be deemed qualified if they are registered with a certified educational program and they have <b>completed at least 50 hours of their practicum</b>.</blockquote>
+        <p class="ef">Counts students toward mandatory coverage, which means a session can lawfully rely on someone 7.35.3.14 does not authorize to handle the medicine. New in this draft. Denali Wilson raised the idea at the July 17 committee meeting and the department said it would take it back.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=14" target="_blank" rel="noopener">Published rule, p.&nbsp;14</a></p>
+      </article>
+
+      <article class="pv brk" id="s10d">
+        <div class="pvh"><span class="sn">7.35.3.10 (D)(1)</span><h3>Out-of-jurisdiction waiver, 40 contact hours</h3><span class="f brk">Conflicts with 19(G)</span></div>
+        <blockquote>An applicant for certification as a practitioner or facilitator on the basis of an educational program from another jurisdiction, whose application is received by the department by <b>December 31, 2027</b>, shall not be required to complete the full practicum hours required by New Mexico, but shall demonstrate completion of at least <b>40 hours of contact time</b> with a minimum of <b>two separate individual sessions and two separate group sessions</b>&hellip;</blockquote>
+        <p class="ef">A second practicum waiver, sitting outside 7.35.3.19 in the out-of-jurisdiction application section. Same 40 hours, different session test. Amending 19(G) alone leaves this standing.</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=4" target="_blank" rel="noopener">Published rule, p.&nbsp;4</a></p>
+      </article>
+
+      <article class="pv" id="s11">
+        <div class="pvh"><span class="sn">7.35.3.11</span><h3>Creates the approved locations 19(D) requires</h3><span class="f dep">Dependency</span></div>
+        <blockquote>An applicant seeking certification as a healing center shall submit a complete application through the electronic system designated by the department&hellip;</blockquote>
+        <p class="ef">Every practicum hour must occur at a location certified under this section. No certified locations, no practicum. Any placement model that decouples the practicum from healing centers has to be written here as well as in 19(D).</p>
+        <p class="cite"><a href="documents/rules-draft-2026-07-23-published.pdf#page=5" target="_blank" rel="noopener">Published rule, p.&nbsp;5</a></p>
+      </article>
+
+      <article class="pv mis" id="new1">
+        <div class="pvh"><span class="sn">New section</span><h3>Authority for a student to handle psilocybin</h3><span class="f mis">Does not exist</span></div>
+        <p class="ef">The rule requires students to facilitate administration sessions and counts them toward staffing, and never authorizes them to possess or administer the medicine. The gap has to be closed by adding to 7.35.3.14, or by creating a training permit as its own section.</p>
+        <p class="ef">On July 17 the department said a training permit was unnecessary because students "already will have that kind of protection ability to be there as a part of being registered as a student with an educational program." No such provision was published.</p>
+        <p class="ef note">The rule currently ends at 7.35.3.28, Severability. A new section numbered 29 would sit after it, which is unusual drafting; placing it in the training run is cleaner.</p>
+      </article>
+
+      <article class="pv mis" id="new2">
+        <div class="pvh"><span class="sn">New subsection</span><h3>The healing-center registration 14(C) requires</h3><span class="f mis">Does not exist</span></div>
+        <p class="ef">7.35.3.14 (C) conditions the authority of healing-center owners and employees on being "registered with the department." No section creates that registration, so on the face of the rule no owner or employee qualifies. It belongs in 7.35.3.11, which handles healing-center certification, or as a new subsection of 7.35.3.20.</p>
+      </article>
+    </section>
+  </div>
+
+
+  <footer>
+    <div class="col">
+      <!-- provenance: generated by tools/sync-provenance.py, do not hand-edit -->
+      <details class="prov">
+        <summary><span class="provsum">Provenance: the document chain and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
+        <div class="provbody">
+        <div class="provsec">
+          <p class="provk">The document chain, oldest first</p>
+          <ol class="chain">
+          <li>
+            <p class="cd">June 12, 2026</p>
+            <p class="cn"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Committee recommendation</a></p>
+            <p class="cw">The Training and Education Committee's own recommendation. Origin of the 100 and 120 practicum hours and the 20 supervisory hours. The Advisory Board voted 3-2 on June 26 to accept it, setting three items aside.</p>
+          </li>
+          <li>
+            <p class="cd">June 25, 2026</p>
+            <p class="cn"><a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Department draft</a></p>
+            <p class="cw">The department's first rules-style draft of the same subject. Introduced the module test-out mechanism that every later draft keeps, and the first reciprocity provision, which the June 12 recommendation did not contain.</p>
+          </li>
+          <li>
+            <p class="cd">July 9, 2026</p>
+            <p class="cn"><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Board-meeting draft</a></p>
+            <p class="cw">The draft the Advisory Board went through section by section on July 9. Used placeholder section numbers shown as 7.35.3.X. Set the shared didactic module at 25 hours. Carried the older waiver dates of December 31, 2026 and June 30, 2027, which the board extended by vote that day without the text being updated.</p>
+          </li>
+          <li class="cur">
+            <p class="cd">July 23, 2026</p>
+            <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
+            <p class="cw">The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
+          </li>
+          </ol>
+        </div>
+        <div class="provsec">
+          <p class="provk">Revisions to this page</p>
+          <ul class="revs">
+          <li><b>July 27, 2026</b> Restored. The July 27 redesign merge replaced this page with a redirect; it returns unchanged from the July 25 version. The committee recommendation on the deferred hours reached the department the same day; nothing on this page changes with it, because this page quotes the published text.</li>
+          <li><b>July 25, 2026</b> Rebuilt as a worksheet. The first version led with a reading guide and a three-column history of how each requirement reached the published text, which is not what this page is for; that history belongs on the History page. The page now lists the thirteen provisions a practicum change has to touch, quotes each from the published rule, states what it does, and flags the three that do not work as written: 7.35.3.14 authorises nobody to let a student handle psilocybin, 7.35.3.19 (G) and 7.35.3.10 (D)(1) set different session tests for the same 40-hour waiver, and 7.35.3.14 (C) conditions healing-centre authority on a registration no section creates. Two provisions were added after checking the dependency chain: 7.35.3.11, which creates the approved locations 19 (D) requires, and 7.35.3.10 (D)(1), the second practicum waiver. The reading guide and the closing scope section were removed. All eighteen quotation fragments verified against the published text.</li>
+          </ul>
+        </div>
+        </div>
+      </details>
+      <!-- /provenance -->
+      <div class="sitefoot">
+        <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
+        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script>
+(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');})})();
+</script>
+<script id="navjs">
+(function(){
+  var f=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+  var cur=f.replace('.html','')||'index';
+  var el=document.querySelector('.tnav [data-nav="'+cur+'"]');
+  if(el){ el.classList.add('on'); var g=el.closest('.navgrp'); if(g){ var s=g.querySelector('summary'); if(s) s.classList.add('on'); } }
+
+  // Dropdowns are native <details>, which stay open until their own summary is
+  // clicked again. On a nav that is wrong: clicking anywhere else should close
+  // them. Close on outside click, on Escape, and when a sibling opens.
+  var nav=document.getElementById('tnav');
+  if(!nav) return;
+  var groups=[].slice.call(nav.querySelectorAll('details.navgrp'));
+  if(!groups.length) return;
+
+  function closeAll(except){
+    groups.forEach(function(d){ if(d!==except) d.open=false; });
+  }
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){ if(d.open) closeAll(d); });
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.contains(e.target)) closeAll(null);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'||e.key==='Esc'){
+      var open=groups.filter(function(d){ return d.open; });
+      if(open.length){ closeAll(null); var s=open[0].querySelector('summary'); if(s) s.focus(); }
+    }
+  });
+  // Choosing a destination should not leave the menu hanging open behind it.
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('.tdrop-menu a')) closeAll(null);
+  });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="https://count.medical-psilocybin.org";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
+})();
+</script>
 </body>
 </html>
