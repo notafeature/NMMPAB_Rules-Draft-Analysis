@@ -90,3 +90,13 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .note{border-left:3px solid var(--blue);background:var(--bluewash);padding:12px 16px;font-size:14px;margin:14px 0}
 .note.open{border-color:var(--open);background:var(--openwash)}
 .note.defect{border-color:var(--defect);background:var(--defectwash)}
+
+/* Citations: the source opens on hover, closes on leave, and the click opens it in a new tab */
+a[data-cite]{position:relative}
+a[data-cite]:hover::after,a[data-cite]:focus-visible::after{
+  content:attr(data-cite);position:absolute;left:0;bottom:calc(100% + 7px);z-index:40;
+  width:max-content;max-width:min(320px,72vw);white-space:normal;
+  font:500 11.5px/1.5 var(--mono);letter-spacing:.01em;color:var(--ink);text-align:left;
+  background:var(--bg);border:1px solid var(--ink2);border-radius:4px;padding:7px 10px;
+  pointer-events:none}
+a.pdf[data-cite]:hover::after,a.pdf[data-cite]:focus-visible::after{left:auto;right:0}

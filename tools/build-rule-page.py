@@ -25,9 +25,11 @@ NAV = """<header class="top"><div class="wrap">
 <nav>
 <a href="index.html">Overview</a>
 <a href="rule.html" aria-current="page">The rule</a>
+<a href="pathways.html">Pathways</a>
 <a href="recommendation.html">Recommendation</a>
+<a href="hours.html">Hours</a>
 <a href="record.html">Record</a>
-<a href="comment.html">Public comment</a>
+<a href="comment.html">Comment</a>
 <a href="about.html">About</a>
 </nav>
 </div></header>"""
@@ -68,14 +70,16 @@ ANNOTATIONS = {
          "The didactic hours were deferred to the Training and Education Committee by a 7-0 board vote on "
          "July 17. The text published six days later raised the shared module from 25 hours to 30 and added "
          "three topics: trauma-informed care, dosing, and non-ordinary states of consciousness. The committee's "
-         "recommendation is on the <a href='recommendation.html'>recommendation page</a>."),
+         "recommendation, submitted July 27, proposes a single 80-hour didactic standard with minimums in "
+         "nine content areas; it is on the <a href='recommendation.html'>recommendation page</a>."),
         ("defect", "A module with no date it must exist",
          "Every certification pathway requires a New Mexico module created or approved by the department, and "
          "the rule sets no date by which that module must exist. Finding B2.")],
     19: [("open", "Deferred to committee, published unchanged",
          "The board voted 7-0 on July 17 to send the practicum hours to committee. This text carries them "
-         "unchanged: 100 hours for facilitators, 120 for practitioners. The committee's recommendation proposes "
-         "a staged practicum of 62 to 72 hours; the two positions can be compared on the "
+         "unchanged: 100 hours for facilitators, 120 for practitioners. The committee's recommendation, "
+         "submitted July 27, proposes a staged practicum of 60 hours for facilitators and 70 for licensed "
+         "providers; the two positions can be compared on the "
          "<a href='hours.html'>working model of the hours</a>."),
         ("blue", "New in this draft",
          "The condition that the practicum cannot begin until half the didactic requirements and all simulated "
@@ -164,7 +168,7 @@ def main():
         body.append(f"""
 <section class="rsec" id="s{n}">
   <div class="rhead"><span class="rnum">7.35.3.{n}</span><h2 class="rtitle">{title.title()}</h2>
-  <a class="pdf" href="{DOC}#page={page}" target="_blank" rel="noopener">PDF p. {page}</a></div>
+  <a class="pdf" href="{DOC}#page={page}" target="_blank" rel="noopener" data-cite="Published proposed rule 7.35.3 NMAC, {DOCDATE}, page {page}">PDF p. {page}</a></div>
   <div class="verbatim">{render_body(s['body'])}</div>
   {notehtml}
 </section>""")
