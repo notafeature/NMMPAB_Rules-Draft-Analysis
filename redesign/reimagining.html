@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7.35.3 NMAC, annotated</title>
+<style>
+:root{
+  --paper:#F7F4EE; --page:#FDFCF9; --ink:#211E1A; --ink2:#5A554C; --faint:#96907F;
+  --hair:#DED9CC; --accent:#7A2E1D;
+  --open:#8A5A00; --settled:#2E6B4C; --defect:#A8271F;
+  --serif:Charter,"Bitstream Charter","Iowan Old Style",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 var(--serif)}
+
+/* ============ the cover ============ */
+.cover{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px 40px}
+.cover .state{font:600 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:34px}
+.cover h1{font:400 15px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--ink2);margin:0 0 18px}
+.cover .title{font:700 clamp(34px,5vw,54px)/1.12 var(--serif);letter-spacing:-.01em;max-width:15em;margin:0 0 10px}
+.cover .subtitle{font-size:19px;color:var(--ink2);font-style:italic;margin:0 0 46px}
+.coverline{width:64px;border:0;border-top:1.5px solid var(--ink);margin:0 0 44px}
+.cover .standing{font-size:17.5px;color:var(--ink);max-width:34em;margin:0 0 8px}
+.cover .standing b{font-weight:650}
+.cover .asof{font:12px var(--mono);color:var(--faint);margin:14px 0 54px}
+.procession{display:flex;gap:0;align-items:flex-start;font-family:var(--sans)}
+.procession .p{padding:0 26px;position:relative}
+.procession .p + .p::before{content:"";position:absolute;left:0;top:9px;height:1px;width:1px}
+.procession .p .m{width:7px;height:7px;border-radius:50%;background:var(--ink2);margin:6px auto 8px}
+.procession .p.now .m{width:9px;height:9px;background:var(--accent);outline:4px solid #EAD9D3;outline-offset:0}
+.procession .p.todo .m{background:transparent;border:1.5px solid var(--faint)}
+.procession .p .t{font-size:12.5px;font-weight:600;color:var(--ink2)}
+.procession .p.now .t{color:var(--accent)}
+.procession .p.todo .t{color:var(--faint);font-weight:500}
+.procession .p .d{font:10.5px var(--mono);color:var(--faint);margin-top:2px}
+.cover .enter{margin-top:64px;font-family:var(--sans);font-size:14px}
+.cover .enter a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+.cover .enter .aux{margin-top:14px;font-size:12.5px;color:var(--faint)}
+.cover .enter .aux a{border-bottom:1px solid var(--hair);color:var(--ink2);margin:0 10px}
+
+/* ============ the reading surface ============ */
+.volume{background:var(--page);border-top:1px solid var(--hair);box-shadow:0 -1px 0 #fff inset}
+.leaf{max-width:1060px;margin:0 auto;padding:72px 24px 40px;display:grid;grid-template-columns:64px minmax(0,620px) 280px;gap:0 36px}
+@media(max-width:980px){.leaf{grid-template-columns:44px 1fr}.apparatus{grid-column:2;margin-top:10px}}
+
+.secnum{grid-column:1;font:600 15px var(--mono);color:var(--faint);text-align:right;padding-top:9px;letter-spacing:-.02em}
+.text{grid-column:2}
+.apparatus{grid-column:3}
+
+.provision h2{font:650 24px/1.25 var(--serif);margin:0 0 4px}
+.provision .whatis{font:14px var(--sans);color:var(--ink2);margin:0 0 22px}
+.ruletext{position:relative;padding:4px 0 4px 22px;border-left:2px solid var(--hair);margin:0 0 14px}
+.ruletext p{margin:0 0 14px;text-align:justify;hyphens:auto}
+.ruletext b{font-weight:650}
+.ruletext .figure{font-weight:650;white-space:nowrap}
+.tail{font:12px var(--mono);color:var(--faint);margin:6px 0 0}
+
+/* margin apparatus */
+.mark{font-family:var(--sans);margin-bottom:22px;padding-top:9px}
+.mark .flag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 0;border-top:2px solid;margin-bottom:6px}
+.mark.open .flag{color:var(--open);border-color:var(--open)}
+.mark.settled .flag{color:var(--settled);border-color:var(--settled)}
+.mark.defect .flag{color:var(--defect);border-color:var(--defect)}
+.mark .why{font-size:13px;line-height:1.55;color:var(--ink2)}
+.mark .why a{color:inherit}
+.persons{font-family:var(--sans);background:#F3EFE6;border-radius:2px;padding:12px 14px;margin-bottom:14px}
+.persons .k{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin-bottom:5px}
+.persons .v{font-size:13px;line-height:1.55;color:var(--ink)}
+
+/* citations: a small raised mark; hover opens, leaving closes; click goes deeper in a new tab */
+.cite{position:relative;display:inline}
+.cite > a{font:600 11px var(--sans);color:var(--accent);text-decoration:none;vertical-align:super;line-height:0;padding:0 1px}
+.cite .pop{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(100% + 8px);width:290px;background:var(--ink);color:#F5F2EA;font:13px/1.5 var(--sans);padding:11px 13px;border-radius:3px;visibility:hidden;opacity:0;transition:opacity .12s;z-index:9;text-align:left}
+.cite .pop b{color:#fff}
+.cite .pop .go{display:block;margin-top:7px;font-size:11.5px;color:#C9BFA9}
+.cite:hover .pop{visibility:visible;opacity:1}
+.cite .pop::after{content:"";position:absolute;top:100%;left:50%;margin-left:-5px;border:5px solid transparent;border-top-color:var(--ink)}
+
+/* the recommendation, beside the sentence it would replace */
+.turn{font-family:var(--sans);margin:26px 0 8px}
+.turn button{font:600 13px var(--sans);color:var(--accent);background:none;border:1px solid var(--accent);border-radius:2px;padding:7px 14px;cursor:pointer}
+.turn button:hover{background:#F4E7E3}
+.compare{display:none;grid-template-columns:1fr 1fr;gap:0;margin:16px 0 6px;border:1px solid var(--hair);background:#fff}
+.compare.on{display:grid}
+.compare .half{padding:16px 18px}
+.compare .half + .half{border-left:1px solid var(--hair)}
+.compare .h{font:700 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.compare .half:first-child .h{color:var(--ink2)}
+.compare .half:last-child .h{color:var(--accent)}
+.compare p{font-size:15px;line-height:1.6;margin:0 0 10px;font-family:var(--serif)}
+.compare .naught{color:var(--faint);font-style:italic}
+.effect{grid-column:1 / -1;border-top:1px solid var(--hair);background:#FBF8F1;padding:14px 18px;font:14px/1.6 var(--sans);color:var(--ink)}
+.effect .k{font-weight:700;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);display:block;margin-bottom:4px}
+
+/* section separator */
+.leafrule{max-width:1060px;margin:26px auto;padding:0 24px}
+.leafrule hr{border:0;border-top:1px solid var(--hair)}
+
+.volfoot{max-width:1060px;margin:0 auto;padding:26px 24px 60px;font:13px var(--sans);color:var(--faint);display:flex;gap:28px;flex-wrap:wrap}
+.volfoot a{color:var(--ink2)}
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<div class="cover">
+  <div class="state">In rulemaking &nbsp;·&nbsp; hearing August 28, 2026</div>
+  <h1>New Mexico Administrative Code &nbsp;·&nbsp; Title 7 &nbsp;·&nbsp; Chapter 35 &nbsp;·&nbsp; Part 3</h1>
+  <p class="title">Training and Education for Medical Psilocybin Providers</p>
+  <p class="subtitle">The rule as proposed, with what is still being decided shown where it lives.</p>
+  <hr class="coverline">
+  <p class="standing">The Department of Health published this text on <b>July 23, 2026</b>. One requirement, the practicum and didactic hours, is with the Training and Education Committee for a recommendation. The rule hearing is <b>August 28</b>, and public comment is open until then.</p>
+  <p class="asof">THIS EDITION REFLECTS THE RECORD THROUGH JULY 26, 2026</p>
+  <div class="procession" aria-label="Where the rulemaking stands">
+    <div class="p"><div class="m"></div><div class="t">Recommendation</div><div class="d">JAN – JUN</div></div>
+    <div class="p"><div class="m"></div><div class="t">Drafts</div><div class="d">JUN – JUL</div></div>
+    <div class="p now"><div class="m"></div><div class="t">Published text</div><div class="d">JUL 23</div></div>
+    <div class="p todo"><div class="m"></div><div class="t">Hearing</div><div class="d">AUG 28</div></div>
+    <div class="p todo"><div class="m"></div><div class="t">Adopted rule</div><div class="d">&nbsp;</div></div>
+  </div>
+  <div class="enter">
+    <a href="#s19">Read the text ↓</a>
+    <div class="aux">
+      <a href="#">Meetings and votes</a> · <a href="#">Documents</a> · <a href="#">Public comment</a> · <a href="#">About this edition</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= THE TEXT ================= -->
+<div class="volume">
+
+  <div class="leaf" id="s19">
+    <div class="secnum">.19</div>
+    <div class="text">
+      <div class="provision">
+        <h2>Practicum requirements</h2>
+        <p class="whatis">The supervised practice a person must complete before they can be certified to work with patients.</p>
+
+        <div class="ruletext">
+          <p>An individual who seeks to become certified as a practitioner or facilitator shall participate in supervised practice training, otherwise referred to as a &ldquo;practicum&rdquo;, <b>after completing at least half of the didactic requirements and all of the simulated patient requirements</b><span class="cite"><a href="#" target="_blank" rel="noopener">°</a><span class="pop"><b>New in this draft.</b> This start condition appears in no earlier version and was not raised at either July 17 meeting.<span class="go">Published rule, 7.35.3.19 (A), p. 12 · opens in a new tab</span></span></span> of the educational requirements. The practicum shall consist of a minimum of <span class="figure">100 hours</span> of supervised practice training for facilitators and <span class="figure">120 hours</span> for practitioners<span class="cite"><a href="#" target="_blank" rel="noopener">°</a><span class="pop"><b>Deferred, then published unchanged.</b> The board voted 7-0 on July 17 to send these figures to committee. The text published six days later carries them unchanged.<span class="go">July 17 board transcript · July 23 published rule, p. 12 · opens in a new tab</span></span></span> and shall be completed prior to applying for certification.</p>
+        </div>
+        <p class="tail">7.35.3.19 (A), published July 23, 2026, p. 12. Subsections B through G follow in the full text.</p>
+
+        <div class="turn">
+          <button type="button" onclick="this.closest('.text').querySelector('.compare').classList.toggle('on'); this.textContent = this.textContent.startsWith('Show') ? 'Hide the recommendation' : 'Show the recommendation beside the text';">Show the recommendation beside the text</button>
+        </div>
+
+        <div class="compare">
+          <div class="half">
+            <div class="h">As published</div>
+            <p>A minimum of <b>100 hours</b> for facilitators and <b>120 hours</b> for practitioners, all of it inside an approved healing center or other approved location.</p>
+            <p class="naught">The text does not say how a student may lawfully sit with a patient during these hours.</p>
+          </div>
+          <div class="half">
+            <div class="h">As recommended to the committee</div>
+            <p>A staged practicum of <b>62 to 72 hours</b>: practice with well participants first, then low-acuity cases beside an experienced facilitator, then group work, then lead-chair hours.</p>
+            <p>Supervision rises from 10 hours to <b>20</b>, tied to two presented cases.</p>
+          </div>
+          <div class="effect">
+            <span class="k">What the difference means for a person</span>
+            Under the published text, a working clinician gives up roughly $18,000 to $24,000 in earnings to sit the 120 hours, before tuition and travel, and a rural candidate must reach an approved center for every hour. Under the recommendation, the hours nearly halve and the early stages can happen where the candidate lives. Dr. Anne Metz gave the cost estimate to the committee on July 17; the staged model is hers.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="apparatus">
+      <div class="mark open">
+        <span class="flag">Open · in committee</span>
+        <div class="why">The board sent these hours back on July 17. The committee's recommendation is being written and reviewed now; it meets August 21, seven days before the hearing.</div>
+      </div>
+      <div class="persons">
+        <div class="k">Who this reaches</div>
+        <div class="v">Every person who wants to become a facilitator or practitioner, and every clinic deciding whether training is affordable enough to offer.</div>
+      </div>
+      <div class="mark defect">
+        <span class="flag">Defect as written</span>
+        <div class="why">The practicum requires students to work with patients, and no provision authorizes a student to possess or administer psilocybin. <a href="#" target="_blank" rel="noopener">The three defects, stated in full.</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leafrule"><hr></div>
+
+  <div class="leaf" id="s18">
+    <div class="secnum">.18</div>
+    <div class="text">
+      <div class="provision">
+        <h2>Educational requirements</h2>
+        <p class="whatis">The classroom hours a person must complete, by role.</p>
+        <div class="ruletext">
+          <p>All practitioners and facilitators shall complete a psilocybin therapy module consisting of a minimum of <span class="figure">30 didactic hours</span><span class="cite"><a href="#" target="_blank" rel="noopener">°</a><span class="pop"><b>Raised while deferred.</b> This module was 25 hours in the July 9 draft. It was raised to 30 in the published text while the hours were with the committee, with three topics added.<span class="go">7.35.3.18 (C), p. 11 · comparison of the two drafts · opens in a new tab</span></span></span> and 5 hours of simulated patient experience, prior to applying for certification&hellip;</p>
+        </div>
+        <p class="tail">7.35.3.18 (C), published July 23, 2026, p. 11. Shown in part; the full section lists every module by role.</p>
+      </div>
+    </div>
+    <div class="apparatus">
+      <div class="mark open">
+        <span class="flag">Open · in committee</span>
+        <div class="why">Deferred with the practicum on July 17. The committee's recommendation proposes a single 84-hour didactic standard in place of the module structure.</div>
+      </div>
+      <div class="persons">
+        <div class="k">Who this reaches</div>
+        <div class="v">Every candidate in every role, and the certifying clinicians who carry a separate 8-hour requirement.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="volfoot">
+    <span>An independent community edition of the rulemaking record. Not affiliated with the New Mexico Department of Health.</span>
+    <span>Nothing here is final rule text.</span>
+    <a href="#">Sources and method</a>
+    <a href="#">Report an error</a>
+  </div>
+
+</div>
+
+</body>
+</html>

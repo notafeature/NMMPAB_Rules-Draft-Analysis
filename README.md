@@ -16,8 +16,8 @@ Goal: let anyone, including people who do not follow the legislative process, se
 
 They are separate and they have different clocks.
 
-1. **The draft recommendation.** Amendment language for the Training and Education Committee, built against the published rule. Lives in `amendments/`, on its own branch. Deadline-driven.
-2. **The site.** `docs/`, thirteen pages, served from `main`. No external deadline.
+1. **The draft recommendation.** Drafting work for the Training and Education Committee, built against the published rule. Lives in `amendments/` and `amendments-remainder/`, each with its own audit harness. Deadline-driven.
+2. **The site.** `docs/`, served from `main`. Six primary pages, the retained record pages, and redirect stubs at retired addresses. No external deadline.
 
 ## Where things stand
 
@@ -25,33 +25,33 @@ The operative document is the department's **proposed rule 7.35.3 NMAC, publishe
 
 Earlier documents are history and are cited only where a page compares versions: the June 12 committee recommendation, the June 25 department draft, and the July 9 board-meeting draft.
 
-For what changed and when, see `docs/history.html` and `docs/changes.html`. For why the dates are what they are, see [CLAUDE.md](CLAUDE.md).
+For what changed and when, see `docs/record.html` and `docs/changes.html`. For why the dates are what they are, see [CLAUDE.md](CLAUDE.md).
 
 ## What's here
 
 ```
 NMMPAB_Rules-Draft-Analysis/
 ├── docs/                     <- the site, published by GitHub Pages from main
-│   ├── index.html            <- what is open, what is settled, the next dates
-│   ├── guide.html            <- a directory of the site: which page holds what
-│   ├── history.html          <- the dated chain of meetings and documents, newest first
-│   ├── documents.html        <- the register: every document, and what is missing
-│   ├── changes.html          <- provision-level diffs, newest layer on top
-│   ├── deferred.html         <- every provision a practicum change touches
-│   ├── pathways.html         <- route to each permit by starting license
-│   ├── eligibility.html      <- which licenses map to which permit
-│   ├── hours.html            <- hour requirements by role, cost, and the record
-│   ├── specialization.html   <- the specialized-domain overlay. Not in the rule
-│   ├── cs-number.html        <- the controlled-substance number access point
+│   ├── index.html            <- the overview: where the rulemaking stands, portals by role
+│   ├── rule.html             <- the published text, all 28 sections, verbatim and annotated
+│   ├── recommendation.html   <- the committee recommendation beside the published text
+│   ├── hours.html            <- the working model of the three deferred quantities
+│   ├── record.html           <- the dated chain of meetings and documents, and the register
+│   ├── comment.html          <- the hearing facts and the community input form
 │   ├── about.html            <- method, sources, corrections
-│   ├── input.html            <- community input form
+│   ├── changes.html          <- provision-level diffs, retained record page
+│   ├── eligibility.html      <- which licenses map to which permit, retained record page
+│   ├── cs-number.html        <- the controlled-substance number access point, retained
+│   ├── training-hours-record.html <- the pre-redesign hours page, retained
 │   └── documents/            <- source PDFs, linked from the site
-├── amendments/               <- draft amendment language, and its own audit harness
+├── amendments/               <- drafting for the practicum sections, with its own audit harness
+├── amendments-remainder/     <- drafting for the sections outside the practicum, with its own audit harness
 ├── analytics/                <- the visit-counter Worker. The only wrangler config in the repo
+├── redesign/                 <- the working folder behind the redesign: brief, prototypes, audits
 ├── Document Register/        <- original source PDFs and the Medical Psilocybin Act
 ├── source-text/              <- plain-text extractions, searchable
 ├── analysis/                 <- extractions, deltas, research. Public
-├── tools/                    <- sync-nav.py, sync-provenance.py, sync-count.py. All take --check
+├── tools/                    <- build-rule-page.py and check-site.py for the site; sync-nav.py, sync-provenance.py, sync-count.py
 ├── CLAUDE.md                 <- standing facts (read first)
 ├── WRITING-STANDARD.md       <- how everything here is written
 ├── UPDATING.md               <- what to change when something happens
@@ -62,7 +62,7 @@ NMMPAB_Rules-Draft-Analysis/
 
 - **The rule and the drafts:** `docs/documents/`. The July 23 published proposed rule is current. The June 12 recommendation, June 25 draft and July 9 draft are superseded.
 - **Transcripts:** `docs/documents/` as PDFs and `source-text/` as searchable text. The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.** A speaker is named from an unlabelled transcript only where the surrounding text fixes it, and the basis is stated.
-- **Upstream:** meeting notes and transcripts originate in Notion and are copied into this repository. `docs/documents.html` lists what the repository does not yet hold, and `UPDATING.md` Part 6 tracks the same gaps for editors.
+- **Upstream:** meeting notes and transcripts originate in Notion and are copied into this repository. `docs/record.html` lists the documents the repository holds, and `UPDATING.md` Part 6 tracks the gaps for editors.
 - **Names corrected from garbled auto-transcripts:** Zurlo, Leeman, Peskuski, Dezbaá, Fatemi, Wilson, Caldwell, Burgard, Dunn, Ryan, Truckner.
 
 This site is built from public meeting records with AI assistance; the transcripts it relies on are unofficial and may contain errors. See `docs/about.html` for the method and the corrections path.

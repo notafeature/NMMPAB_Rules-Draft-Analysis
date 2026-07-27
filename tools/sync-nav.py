@@ -105,6 +105,9 @@ def main():
     for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
         name = os.path.basename(path)
         src = open(path).read()
+        if '<header class="top">' in src or "http-equiv=\"refresh\"" in src:
+            # redesign chrome or a redirect stub; not this tool's surface
+            continue
         if not PATTERN.search(src) or not JS_PATTERN.search(src):
             missing.append(name)
             continue

@@ -1,602 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NM Medical Psilocybin Training Rules: The Published Rule</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Overview · 7.35.3 NMAC Training and Education</title>
+<link rel="stylesheet" href="style.css">
 <style>
-  :root{
-    --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
-    --text:#1A1621; --text-muted:#645E71; --text-faint:#8A8397;
-    --border:#E4E0EB; --border-strong:#D2CCDF;
-    --accent:#5A4A88; --accent-2:#7A67A8; --accent-soft:#EBE6F5;
-    --agree:#2C7A57; --agree-bg:#E6F3EB; --agree-border:#BADFCB;
-    --dissent:#B23A48; --dissent-bg:#F8E9EB; --dissent-border:#E8C8CE;
-    --suggest:#5A4A88; --suggest-bg:#EBE6F5; --suggest-border:#D2CCDF;
-    --open:#8A5A12; --open-bg:#F6EEDB; --open-border:#E7D5A9;
-    --pillN:#57516A; --pillN-bg:#EDEAF2;
-    --shadow:0 1px 2px rgba(26,22,33,.04), 0 6px 22px rgba(26,22,33,.06);
-    --shadow-lg:0 2px 6px rgba(26,22,33,.06), 0 18px 44px rgba(26,22,33,.10);
-    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif;
-    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    --mono:ui-monospace,"SF Mono","SFMono-Regular",Menlo,Consolas,monospace;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
-  body{margin:0; background:var(--bg);}
-  .wrap{background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.62; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased;}
-  .col{max-width:920px; margin:0 auto; padding:0 20px;}
-  a{color:var(--accent); text-underline-offset:2px;}
-  h1,h2,h3,h4{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.18;}
-  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
-
-  /* Top bar */
-  .topbar{position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid var(--border);}
-  .topbar .inner{max-width:1140px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:16px;}
-  .brand{font-family:var(--serif); font-weight:600; font-size:15px; letter-spacing:-.01em; margin-right:auto; display:flex; align-items:center; gap:8px; white-space:nowrap;}
-  .brand .dot{width:9px; height:9px; border-radius:50%; background:var(--accent);}
-  .tnav{display:flex; gap:3px;}
-  .tnav a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:5px 8px; border-radius:8px; white-space:nowrap;}
-  .tnav a:hover{background:var(--surface-2); color:var(--text);}
-  .tnav a.on{color:var(--accent); background:var(--accent-soft);}
-  .tdrop{position:relative;}
-  .tdrop>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:5px 8px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
-  .tdrop>summary::-webkit-details-marker{display:none;}
-  .tdrop>summary:hover{background:var(--surface-2); color:var(--text);}
-  .tdrop[open]>summary{background:var(--surface-2); color:var(--text);}
-  .tdrop-menu{position:absolute; right:0; top:calc(100% + 6px); background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg); padding:6px; min-width:250px; display:flex; flex-direction:column; gap:2px; z-index:60;}
-  .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px;}
-  .tdrop-menu a:hover{background:var(--surface-2);}
-  .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:1px;}
-  .hamburger{display:none; background:none; border:1px solid var(--border-strong); border-radius:8px; padding:4px 10px; font-size:16px; line-height:1; color:var(--text); cursor:pointer;}
-  @media (max-width:1140px){
-    .topbar .inner{position:relative;}
-    .hamburger{display:block;}
-    .tnav{display:none; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg); padding:8px 20px 12px; gap:2px;}
-    .tnav.open{display:flex;}
-    .tnav a{padding:10px 8px;}
-    .tdrop-menu{position:static; box-shadow:none; border:none; padding:4px 0 4px 8px; min-width:0;}
-  }
-
-  /* Hero */
-  .hero{padding:36px 0 4px;}
-  .eyebrow{font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--accent); margin:0 0 16px;}
-  h1{font-size:clamp(22px,3vw,31px); letter-spacing:-.008em; margin:0 0 10px; line-height:1.22;}
-  .updated{margin:0 0 14px; font-size:12.5px; color:var(--text-faint); font-family:var(--mono);}
-  .updated b{color:var(--text-muted); font-weight:600;}
-  .lede{font-family:var(--sans); font-size:17px; color:var(--text-muted); margin:0; line-height:1.55;}
-  .lede b{font-weight:600; color:var(--text);}
-
-  /* Open items: the message */
-  .openhead{margin:30px 0 4px;}
-  .openhead .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  h2{font-size:clamp(20px,2.4vw,26px); letter-spacing:-.008em; margin:0;}
-  .openhead p{color:var(--text-muted); margin:10px 0 0; font-size:15px;}
-  .openrow{display:grid; grid-template-columns:1fr; gap:14px; margin-top:20px;}
-  @media (min-width:720px){.openrow{grid-template-columns:repeat(3,1fr);}}
-  .ocard{background:var(--surface); border:1px solid var(--border-strong); border-radius:14px; padding:20px; box-shadow:var(--shadow-lg); display:flex; flex-direction:column; gap:10px;}
-  .ocard .on{font-family:var(--serif); font-size:12.5px; font-weight:700; color:var(--accent); letter-spacing:.02em;}
-  .ocard h3{font-size:17.5px; margin:0; line-height:1.32;}
-  .stpill{display:inline-flex; align-self:flex-start; gap:6px; align-items:center; font-size:11px; font-weight:700; padding:4px 11px; border-radius:999px; text-transform:uppercase; letter-spacing:.03em; white-space:nowrap;}
-  .stpill.sent{color:var(--dissent); background:var(--dissent-bg); border:1px solid var(--dissent-border);}
-  .stpill.tabled{color:var(--open); background:var(--open-bg); border:1px solid var(--open-border);}
-  .stpill.resolved{color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border);}
-  .stpill.kept{color:var(--pillN); background:var(--pillN-bg); border:1px solid var(--border-strong);}
-  .ocard .osum{font-size:13.5px; color:var(--text-muted); margin:0; line-height:1.55;}
-  .ocard .olinks{margin-top:auto; display:flex; gap:16px; flex-wrap:wrap; font-size:12.5px; font-weight:650; padding-top:8px; border-top:1px solid var(--border); }
-  .statuskey{margin:16px 0 0; font-size:12.5px; color:var(--text-faint); line-height:1.6;}
-  .statuskey b{color:var(--text-muted);}
-
-  /* Demoted context strip */
-  .context-strip{margin-top:36px;}
-  .today{border:1px solid var(--open-border); background:var(--open-bg); border-radius:12px; overflow:hidden; margin-top:18px;}
-  .today>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; gap:12px; align-items:flex-start;}
-  .today>summary::-webkit-details-marker{display:none;}
-  .today .today-line{font-size:14px; color:var(--text); line-height:1.5;}
-  .today .today-line b{color:var(--open);}
-  .today>summary .chev{margin-left:auto; color:var(--open); font-size:13px; transition:transform .15s ease; flex:none; margin-top:3px;}
-  .today[open]>summary .chev{transform:rotate(90deg);}
-  .today-body{padding:0 16px 16px; font-size:13.5px; color:var(--text); line-height:1.55;}
-  .today-body p{margin:8px 0 0;}
-  .today-body ul{margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:7px;}
-  .today-body .today-next{margin:12px 0 0; font-family:var(--mono); font-size:12px; color:var(--text-muted);}
-
-  .stripgrid{display:grid; grid-template-columns:1fr; gap:10px; margin-top:12px;}
-  @media (min-width:640px){.stripgrid{grid-template-columns:1fr 1fr;}}
-  .dk{display:block; text-decoration:none; color:inherit; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:13px 15px; transition:border-color .12s ease, background .12s ease;}
-  .dk:hover{border-color:var(--border-strong); background:var(--surface-3);}
-  .dk.current{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent);}
-  .dk .dkl{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 5px;}
-  .dk p{margin:0; font-size:13.5px; color:var(--text-muted);}
-  .dk p b{color:var(--text); font-weight:600;}
-  .dkgo{display:inline-block; margin-top:8px; font-size:12px; font-weight:600; color:var(--accent);}
-  .dkflag{display:inline-block; font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; padding:1px 6px; border-radius:999px; margin-left:6px; vertical-align:1px; background:var(--accent-soft); color:var(--accent); border:1px solid var(--border-strong);}
-  .inputstrip{display:flex; flex-direction:column; gap:6px; margin:0; background:var(--surface); border:1px solid var(--border-strong); border-radius:12px; padding:13px 15px; font-size:13.5px; color:var(--text-muted); line-height:1.5;}
-  .inputstrip b{color:var(--text); font-weight:650;}
-  .inputstrip a{font-weight:600; white-space:nowrap;}
-  .notfinal{display:inline-flex; gap:9px; align-items:center; margin-top:12px; background:var(--surface-2); border:1px solid var(--border); color:var(--text-muted); border-radius:999px; padding:6px 14px; font-size:12.5px; font-weight:600;}
-
-  /* Section scaffolding */
-  section{padding-top:20px;}
-  .sec-head{margin:40px 0 6px;}
-  .sec-head .k{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  .sec-head p{color:var(--text-muted); margin:10px 0 0;}
-
-  /* Decision cards (bottom pointer) */
-  .decks{display:grid; grid-template-columns:1fr; gap:14px; margin-top:22px;}
-  .deck{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; text-decoration:none; color:inherit; transition:transform .12s ease, box-shadow .12s ease;}
-  .deck:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg);}
-  .deck .dn{font-family:var(--serif); font-size:13px; font-weight:700; color:var(--accent); letter-spacing:.02em;}
-  .deck h3{font-size:18px; margin:0; line-height:1.25;}
-  .deck .stake{font-size:13.5px; color:var(--text-muted); margin:0;}
-  .deck .go{margin-top:auto; font-size:12.5px; font-weight:600; color:var(--accent);}
-
-  /* Item sections */
-  .item{margin-top:16px; scroll-margin-top:120px;}
-  .item-head{display:flex; gap:14px; align-items:center; padding:12px 16px; margin:0 -16px; border-bottom:2px solid var(--accent); position:sticky; top:52px; background:var(--surface-2); z-index:40; box-shadow:0 6px 16px rgba(26,22,33,.07);}
-  .item-head .idx{font-family:var(--serif); font-size:26px; font-weight:600; color:var(--accent); line-height:1; flex:none; font-variant-numeric:tabular-nums;}
-  .item-head h2{font-size:clamp(19px,2.2vw,23px);}
-  .item-head .loc{display:block; font-family:var(--mono); font-size:11.5px; color:var(--text-faint); margin-top:7px;}
-
-  .whatnow{background:var(--accent-soft); border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:18px 0;}
-  .whatnow .q{font-family:var(--serif); font-size:19px; font-weight:600; margin:0 0 8px; line-height:1.35;}
-  .whatnow .at{font-size:14.5px; color:var(--text); margin:0;}
-  .whatnow .at b{color:var(--accent);}
-  .whatnow .give{margin:10px 0 0; font-size:13px;}
-  .whatnow .give a{font-weight:600;}
-  .diffbox{background:var(--open-bg); border:1px solid var(--open-border); border-left:4px solid var(--open); border-radius:12px; padding:14px 16px; margin:16px 0 4px;}
-  .diffbox .dbl{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--open); margin:0 0 6px;}
-  .diffbox p.d{margin:0; font-size:14.5px; color:var(--text); line-height:1.5;}
-  .diffbox p.d b{font-weight:650;}
-
-  /* numbered layer heads */
-  .layer{margin:26px 0 12px; display:flex; align-items:center; gap:12px;}
-  .layer .ln{font-family:var(--serif); font-size:14px; font-weight:700; color:#fff; background:var(--accent); width:26px; height:26px; border-radius:50%; display:grid; place-items:center; flex:none; font-variant-numeric:tabular-nums;}
-  .layer .lt{font-family:var(--serif); font-size:17px; font-weight:600;}
-  .layer .ld{font-size:12.5px; color:var(--text-faint); margin-left:auto; font-family:var(--mono);}
-
-  /* verbatim exhibit cards: primary evidence, not a code snippet */
-  .lang{background:var(--surface); border:1px solid var(--border-strong); border-left:6px solid var(--accent); border-radius:14px; padding:22px 24px; box-shadow:var(--shadow-lg);}
-  .exhibit-tag{display:inline-flex; align-items:center; gap:7px; font-family:var(--serif); font-style:italic; font-size:12.5px; color:var(--accent); background:var(--accent-soft); border:1px solid var(--border-strong); padding:5px 13px; border-radius:999px; margin-bottom:14px;}
-  .verbatim{font-family:var(--mono); font-size:13.5px; line-height:1.7; color:var(--text);}
-  .verbatim .lead{margin:0 0 8px;}
-  .verbatim ul{margin:0; padding-left:16px; display:flex; flex-direction:column; gap:9px;}
-  .verbatim ul ul{margin-top:8px;}
-  .pagecite{font-family:var(--sans); font-style:normal; font-size:11px; color:var(--text-faint); font-weight:600;}
-  .absent{font-size:14px; color:var(--text-muted); font-style:italic; margin:0;}
-  .srcline{margin-top:14px; padding-top:11px; border-top:1px dashed var(--border-strong); font-size:11px; color:var(--text-faint); font-family:var(--mono);}
-
-  /* committee input */
-  .ci{display:flex; flex-direction:column; gap:10px;}
-  .ci-entry{border:1px solid var(--border); border-radius:12px; background:var(--surface); padding:13px 16px; border-left:3px solid var(--border-strong);}
-  .ci-entry.agree{border-left-color:var(--agree);}
-  .ci-entry.dissent{border-left-color:var(--dissent);}
-  .ci-entry.suggest{border-left-color:var(--suggest);}
-  .ci-entry.clarify{border-left-color:var(--open);}
-  .ci-top{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:7px;}
-  .ci-tag{font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:2px 8px; border-radius:999px; flex:none;}
-  .ci-tag.agree{background:var(--agree-bg); color:var(--agree); border:1px solid var(--agree-border);}
-  .ci-tag.dissent{background:var(--dissent-bg); color:var(--dissent); border:1px solid var(--dissent-border);}
-  .ci-tag.suggest{background:var(--suggest-bg); color:var(--suggest); border:1px solid var(--suggest-border);}
-  .ci-tag.clarify{background:var(--open-bg); color:var(--open); border:1px solid var(--open-border);}
-  .ci-who{font-size:13px; color:var(--text-muted);}
-  .ci-who b{color:var(--text); font-weight:650;}
-  .ci-quote{margin:0; font-size:14.5px; line-height:1.5;}
-
-  .subnote{font-size:13.5px; color:var(--text-muted); margin:0 0 12px;}
-
-  /* the didactic/practicum debate */
-  .debate{margin:20px 0 4px; background:var(--surface-2); border:1px solid var(--border); border-radius:14px; padding:18px 20px 20px;}
-  .debate .dh{font-family:var(--serif); font-size:16.5px; font-weight:600; margin:0 0 4px; line-height:1.3;}
-  .debate .dsub{font-size:12px; color:var(--text-faint); font-family:var(--mono); margin:0 0 14px;}
-  .originnote{margin-top:14px; background:var(--surface); border:1px dashed var(--border-strong); border-radius:10px; padding:12px 15px; font-size:13.5px; color:var(--text-muted); line-height:1.5;}
-  .originnote b{color:var(--text);}
-
-  .landed{margin:24px 0 6px; background:var(--surface-2); border:1px solid var(--border); border-left:3px solid var(--open); border-radius:10px; padding:13px 16px;}
-  .landed .ll{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--open); margin:0 0 6px;}
-  .landed p{margin:0; font-size:14.5px;}
-
-  /* Site map (hub) */
-  .mapgrid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:20px;}
-  @media (min-width:620px){.mapgrid{grid-template-columns:1fr 1fr;}}
-  @media (min-width:900px){.mapgrid{grid-template-columns:1fr 1fr 1fr;}}
-  .mapcard{display:flex; flex-direction:column; gap:4px; text-decoration:none; color:inherit; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px 17px; box-shadow:var(--shadow); transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;}
-  .mapcard:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg); border-color:var(--border-strong);}
-  .mapcard .mc-k{font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text-faint);}
-  .mapcard .mc-t{font-family:var(--serif); font-size:17px; font-weight:650; color:var(--text); line-height:1.25;}
-  .mapcard .mc-d{font-size:13px; color:var(--text-muted); line-height:1.45; margin-top:2px;}
-  .mapcard .mc-go{margin-top:auto; padding-top:8px; font-size:12.5px; font-weight:600; color:var(--accent);}
-
-  /* Unified record expander (deeper context under every item) */
-  .record{border:1px solid var(--border-strong); border-radius:14px; background:var(--surface); margin:18px 0 4px; box-shadow:var(--shadow);}
-  .record>summary{list-style:none; cursor:pointer; padding:15px 18px; display:flex; flex-direction:column; gap:5px;}
-  .record>summary::-webkit-details-marker{display:none;}
-  .record .rs-main{font-family:var(--serif); font-size:15.5px; font-weight:650; color:var(--accent); display:flex; align-items:center; gap:10px;}
-  .record .rs-chev{display:inline-block; transition:transform .15s ease; font-size:13px; flex:none;}
-  .record[open] .rs-chev{transform:rotate(90deg);}
-  .record .rs-count{margin-left:auto; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft); border:1px solid var(--border-strong); border-radius:999px; padding:2px 10px; white-space:nowrap;}
-  .record .rs-prev{font-size:13px; color:var(--text-muted); line-height:1.5; padding-left:23px;}
-  .record>summary:hover .rs-main{text-decoration:underline;}
-  .record[open]>summary{border-bottom:1px solid var(--border);}
-  .record-body{padding:6px 18px 20px;}
-
-  footer{margin-top:60px; border-top:1px solid var(--border); padding:26px 0 80px;}
-  footer h3{font-size:15px; margin:0 0 8px;}
-  footer p{font-size:13px; color:var(--text-muted); margin:8px 0;}
-  .fine{font-size:12px; color:var(--text-faint);}
-  .sitefoot{margin-top:18px; padding-top:14px; border-top:1px solid var(--border);}
-  .sitefoot p{font-size:12.5px; color:var(--text-faint); margin:0 0 6px; line-height:1.55;}
-  .sitefoot p b{color:var(--text-muted); font-weight:650;}
-  .sitefoot a{color:var(--accent);}
-  .ocard.live{background:var(--surface); border:1px solid #E8C8CE; border-left:5px solid #B23A48; border-radius:14px; padding:20px 22px; box-shadow:var(--shadow-lg,0 18px 44px rgba(26,22,33,.10)); margin-top:18px;}
-  .ocard.live .on{color:#B23A48;}
-  .ocard.live .stpill.tabled{background:#FBE9EC; color:#B23A48; border:1px solid #E8C8CE;}
-  .ocard.live .osum.urgent{background:#FBE9EC; border:1px solid #E8C8CE; border-radius:10px; padding:12px 14px; color:#7E2A34;}
-  .ocard.live h3{font-size:clamp(19px,2.3vw,24px); margin:8px 0 10px;}
-  .ocard.live .osum{font-size:15px; line-height:1.6; color:var(--text); margin:0 0 11px;}
-  .settled{margin:18px 0 0; border:1px solid var(--border); border-radius:12px; background:var(--surface-2); overflow:hidden;}
-  .settled>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:14px; color:var(--text-muted);}
-  .settled>summary::-webkit-details-marker{display:none;}
-  .settled>summary:hover{color:var(--text);}
-  .settled .settled-line{flex:1;}
-  .settled .chev{font-size:11px; transition:transform .15s;}
-  .settled[open] .chev{transform:rotate(90deg);}
-  .settled-body{padding:2px 16px 16px;}
-  .scard{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:10px;}
-  .scard h3{font-size:16px; margin:0 0 7px;}
-  .scard p{font-size:14px; line-height:1.58; color:var(--text-muted); margin:8px 0 0;}
-  .settled-note{font-size:13px; color:var(--text-faint); margin:10px 0 0; line-height:1.5;}
-  .datesrow{margin:16px 0 0; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; padding:13px 16px;}
-  .datesrow .dk2{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;}
-  .datesrow ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:8px 26px; font-size:14px; color:var(--text-muted);}
-  .datesrow b{color:var(--text); font-family:var(--mono); font-size:13px; margin-right:5px;}
-  .dkmore{font-size:13px; color:var(--text-muted); margin:8px 0 0; line-height:1.5;}
-  .sh{margin:40px 0 8px;}
-  .sh .k{font-size:11.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 6px;}
-  .sh h2{font-size:clamp(19px,2.4vw,24px); margin:0;}
-  .sh p{font-size:14.5px; color:var(--text-muted); margin:8px 0 0; max-width:680px;}
-/* provenance block */
-  .prov{margin:26px 0 0; border:1px solid var(--border-strong); border-radius:12px; background:var(--surface); overflow:hidden;}
-  .prov>summary{list-style:none; cursor:pointer; padding:13px 16px; display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--text-muted); background:var(--surface-2);}
-  .prov>summary::-webkit-details-marker{display:none;}
-  .prov>summary:hover{color:var(--text);}
-  .prov .provsum{font-weight:650;}
-  .prov .provchev{margin-left:auto; font-size:11px; transition:transform .15s;}
-  .prov[open] .provchev{transform:rotate(90deg);}
-  .provbody{padding:4px 16px 18px;}
-  .provsec{margin-top:16px;}
-  .provk{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
-  .chain{list-style:none; margin:0; padding:0; counter-reset:ch;}
-  .chain li{position:relative; padding:0 0 14px 26px; border-left:2px solid var(--border-strong); margin-left:5px;}
-  .chain li:last-child{border-left-color:transparent; padding-bottom:2px;}
-  .chain li::before{content:""; position:absolute; left:-6px; top:4px; width:10px; height:10px; border-radius:50%; background:var(--border-strong); border:2px solid var(--surface);}
-  .chain li.cur::before{background:var(--accent);}
-  .chain .cd{font-size:12px; font-family:var(--mono); color:var(--text-faint);}
-  .chain .cn{font-size:14.5px; font-weight:650; color:var(--text); margin:1px 0 0;}
-  .chain .cw{font-size:13.5px; color:var(--text-muted); line-height:1.55; margin:4px 0 0;}
-  .chain .curflag{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:20px; padding:1px 8px; margin-left:7px; vertical-align:1px;}
-  .revs{list-style:none; margin:0; padding:0;}
-  .revs li{font-size:13.5px; color:var(--text-muted); line-height:1.55; padding:8px 0; border-top:1px solid var(--border);}
-  .revs li:first-child{border-top:none; padding-top:0;}
-  .revs b{color:var(--text); font-weight:650;}
-  /* /provenance block */
-</style>
-<style id="navpass">
-  /* ===== Unified site nav (July 2026 UX pass) ===== */
-  .brand{text-decoration:none; color:inherit;}
-  .tnav{display:flex; align-items:center; gap:4px;}
-  .tnav>a{font-size:13px; text-decoration:none; color:var(--text-muted); padding:6px 10px; border-radius:8px; white-space:nowrap;}
-  .tnav>a:hover{background:var(--surface-2); color:var(--text);}
-  .tnav>a.on{color:var(--accent); background:var(--accent-soft);}
-  .navgrp{position:relative;}
-  .navgrp>summary{list-style:none; cursor:pointer; font-size:13px; color:var(--text-muted); padding:6px 10px; border-radius:8px; display:inline-flex; align-items:center; gap:5px; white-space:nowrap;}
-  .navgrp>summary::-webkit-details-marker{display:none;}
-  .navgrp>summary:hover{background:var(--surface-2); color:var(--text);}
-  .navgrp[open]>summary{background:var(--surface-2); color:var(--text);}
-  .navgrp>summary.on{color:var(--accent); background:var(--accent-soft);}
-  .navgrp .caret{font-size:10px; opacity:.7;}
-  .navgrp .tdrop-menu{position:absolute; top:calc(100% + 6px); left:0; right:auto; background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg,0 18px 44px rgba(26,22,33,.14)); padding:6px; min-width:280px; display:flex; flex-direction:column; gap:2px; z-index:60;}
-  .navgrp[data-navgrp="docs"] .tdrop-menu{left:auto; right:0;}
-  .navgrp .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px; display:block; white-space:normal; line-height:1.3;}
-  .navgrp .tdrop-menu a:hover{background:var(--surface-2);}
-  .navgrp .tdrop-menu a.on{background:var(--accent-soft); color:var(--accent);}
-  .navgrp .tdrop-menu a .sub{display:block; font-size:11px; color:var(--text-faint); margin-top:2px; font-weight:400;}
-  .navcta{font-size:13px; text-decoration:none; color:var(--accent); background:var(--accent-soft); border:1px solid transparent; padding:6px 12px; border-radius:8px; white-space:nowrap; font-weight:600;}
-  .navcta:hover{border-color:var(--accent);}
-  .navcta.on{background:var(--accent); color:#fff;}
-  .hamburger{display:none;}
-  @media (min-width:861px){
-    .tnav{display:flex !important; position:static !important; flex-direction:row !important; align-items:center; background:none !important; border-bottom:none !important; box-shadow:none !important; padding:0 !important; max-height:none !important; overflow:visible !important;}
-    .hamburger{display:none !important;}
-  }
-  @media (max-width:860px){
-    .topbar .inner{position:relative; flex-wrap:wrap;}
-    .hamburger{display:block;}
-    .tnav{display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:stretch; background:var(--surface); border-bottom:1px solid var(--border); box-shadow:var(--shadow-lg,0 18px 44px rgba(26,22,33,.14)); padding:8px 22px 14px; gap:2px; max-height:82vh; overflow:auto;}
-    .tnav.open{display:flex;}
-    .tnav>a{padding:11px 10px;}
-    .navgrp{border-top:1px solid var(--border);}
-    .navgrp:first-of-type{border-top:none;}
-    .navgrp>summary{padding:11px 10px;}
-    .navgrp .caret{margin-left:auto;}
-    .navgrp .tdrop-menu{position:static; box-shadow:none; border:none; padding:2px 0 8px 10px; min-width:0;}
-    .navcta{text-align:left; margin-top:8px;}
-    .navcta.on{color:#fff;}
-  }
+.plaque{font-size:18px;line-height:1.65;max-width:62ch;color:var(--ink)}
+.plaque b{font-weight:650}
+.procession{display:flex;margin:26px 0 6px;border-top:1.5px solid var(--ink)}
+.pstage{flex:1;padding:12px 14px 4px;border-left:1px solid var(--hair)}
+.pstage:first-child{border-left:0;padding-left:0}
+.pstage .n{font:600 13px var(--sans);color:var(--ink2)}
+.pstage .d{font:11px var(--mono);color:var(--faint);margin-top:2px}
+.pstage.here{border-top:3px solid var(--blue);margin-top:-2px}
+.pstage.here .n{color:var(--blue);font-weight:700}
+.pstage.todo .n{color:var(--faint);font-weight:500}
+.portals{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.portal{border:1px solid var(--hair);border-radius:6px;padding:16px 18px;text-decoration:none;color:var(--ink);display:block}
+.portal:hover{border-color:var(--blue)}
+.portal .pt{font-weight:650;font-size:15.5px;color:var(--blue)}
+.portal .px{font-size:13.5px;color:var(--ink2);margin-top:4px;line-height:1.5}
+@media(max-width:760px){.portals{grid-template-columns:1fr}.procession{flex-wrap:wrap}}
 </style>
 </head>
 <body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">7.35.3 <b>·</b> Training &amp; Education</a>
+<nav>
+<a href="index.html" aria-current="page">Overview</a>
+<a href="rule.html">The rule</a>
+<a href="recommendation.html">Recommendation</a>
+<a href="record.html">Record</a>
+<a href="comment.html">Public comment</a>
+<a href="about.html">About</a>
+</nav>
+</div></header>
+<main class="wrap">
 
-<div class="wrap">
+  <div class="head">
+    <p class="kicker">New Mexico medical psilocybin program · 7.35.3 NMAC</p>
+    <h1>Overview</h1>
+    <p class="stamp">Reviewed July 27, 2026. Every claim on this site cites the published rule, a named transcript, or a filed document.</p>
+  </div>
 
-  <div class="topbar">
-    <div class="inner">
-      <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
-      <nav class="tnav" id="tnav" aria-label="Primary">
-        <details class="tdrop navgrp" data-navgrp="ov">
-          <summary>Overview <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
-            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
-            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
-          </div>
-        </details>
-        <details class="tdrop navgrp" data-navgrp="req">
-          <summary>Requirements <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="deferred.html" data-nav="deferred">Practicum requirements<span class="sub">Every provision a practicum change has to touch</span></a>
-            <a href="pathways.html" data-nav="pathways">Provider routes<span class="sub">Routes to each permit by starting license</span></a>
-            <a href="eligibility.html" data-nav="eligibility">Who can qualify<span class="sub">Which licenses map to which permit</span></a>
-            <a href="hours.html" data-nav="hours">Training hours<span class="sub">Didactic, practicum, and specialization</span></a>
-            <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
-            <a href="cs-number.html" data-nav="cs-number">CS number<span class="sub">The certifying-clinician access point</span></a>
-          </div>
-        </details>
-        <details class="tdrop navgrp" data-navgrp="record">
-          <summary>The record <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
-            <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
-          </div>
-        </details>
-        <a href="input.html" data-nav="input" class="navcta">Community input</a>
-        <details class="tdrop navgrp" data-navgrp="docs">
-          <summary>Documents <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="documents.html" data-nav="documents">All documents<span class="sub">The register: what each one is and whether it is current</span></a>
-            <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published rule &middot; July 23<span class="sub">The proposed rule going to the August 28 hearing</span></a>
-            <a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 17 board<span class="sub">Unofficial, no speaker attribution</span></a>
-            <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 17 committee<span class="sub">Unofficial, no speaker attribution</span></a>
-            <a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations &middot; July 17<span class="sub">Dr. Anne Metz, presented to the committee</span></a>
-          </div>
-        </details>
-      </nav>
-      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
+  <section>
+    <p class="plaque">New Mexico is writing the rule that governs how medical psilocybin providers are trained and certified. The Department of Health published the proposed text on <b>July 23, 2026</b>, and the rule hearing is <b>August 28</b>. The practicum and didactic hours went to the Training and Education Committee, and the committee's recommendation was submitted on <b>July 27</b>. This site holds the text, the recommendation, and the record of how both came to be.</p>
+    <div class="procession" aria-label="The rulemaking in five stages">
+      <div class="pstage"><div class="n">Committee recommendation</div><div class="d">JAN – JUN</div></div>
+      <div class="pstage"><div class="n">Department drafts</div><div class="d">JUN 25 · JUL 9</div></div>
+      <div class="pstage here"><div class="n">Published text</div><div class="d">JUL 23 · OPERATIVE</div></div>
+      <div class="pstage todo"><div class="n">Rule hearing</div><div class="d">AUG 28</div></div>
+      <div class="pstage todo"><div class="n">Adopted rule</div><div class="d">AFTER THE HEARING</div></div>
     </div>
-  </div>
+  </section>
 
-  <div class="col">
+  <section>
+    <p class="seclabel">Find your part</p>
+    <div class="portals">
+      <a class="portal" href="rule.html#s18">
+        <div class="pt">I want to practice or facilitate</div>
+        <div class="px">The education and practicum sections state what the current draft would require of you. The working model shows what the open hours question costs.</div>
+      </a>
+      <a class="portal" href="rule.html#s9">
+        <div class="pt">I certify patients</div>
+        <div class="px">The application section carries the certifying-clinician requirements, including the controlled-substance number the department kept on July 17.</div>
+      </a>
+      <a class="portal" href="rule.html#s12">
+        <div class="pt">I run or would join a training program</div>
+        <div class="px">The educational-program sections govern approval, mentoring, and evaluation, and two of them carry defects noted in place.</div>
+      </a>
+      <a class="portal" href="record.html">
+        <div class="pt">I am following the process</div>
+        <div class="px">The record holds every meeting, vote, and document, newest first, and the recommendation page holds what the committee proposes.</div>
+      </a>
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <header class="hero">
-      <p class="eyebrow">New Mexico Medical Psilocybin Program · Advisory Board</p>
-      <h1>Training and Education:<br>The rule hearing is August 28, 2026</h1>
-      <p class="updated"><b>Updated July 25, 2026.</b></p>
-      <p class="lede">New Mexico is writing the rules for who may provide medical psilocybin therapy and how they are trained. On <b>July 23</b> the Department of Health published its proposed rule, and a <b>rule hearing is set for August 28</b>. One of the three items the board set aside is now settled in the text, one was kept by the department, and one was sent to the Training and Education Committee six days before publication. <b>The committee recommendation on the training hours is being written now and has not yet reached the department.</b> New to this? <a href="history.html#process">How the process works</a>.</p>
-      <p class="lede" style="margin-top:10px; font-size:14.5px;">This site covers the provider training rules, not patient eligibility. The Act's qualifying conditions for patients are PTSD, major treatment-resistant depression, substance use disorders, and end-of-life care; how a patient is certified is on the <a href="cs-number.html">CS number page</a>.</p>
-      <div class="datesrow">
-        <p class="dk2">What is next</p>
-        <ul>
-          <li><b>August 14</b> Advisory Board</li>
-          <li><b>August 21</b> Training and Education Committee</li>
-          <li><b>August 28</b> Rule hearing</li>
-        </ul>
-      </div>
-    </header>
+  <section>
+    <p class="seclabel">Where things stand</p>
+    <div class="fix"><b>OPEN</b><span class="what">Practicum and didactic hours, deferred to the Training and Education Committee by a 7-0 board vote on July 17 and published unchanged. The committee's <a href="recommendation.html">recommendation</a> was submitted July 27: 80 didactic hours, a staged practicum of 60 or 70 hours by role, and 20 hours of case presentation and consultation. The department decides what enters the hearing text.</span></div>
+    <div class="fix"><b>DEFECT</b><span class="what">Five provisions of the published text do not work as written; each is <a href="rule.html#s14">noted at the provision it sits in</a>.</span></div>
+    <div class="fix"><b>SETTLED</b><span class="what">The certifying-clinician controlled-substance number, kept July 17, and the reciprocity deadlines, set to December 31, 2027 on July 9. Both stand in the <a href="rule.html#s9">published text</a>.</span></div>
+  </section>
 
-    <!-- THE MESSAGE: three open items, current status -->
-    <section id="decisions">
-      <div class="openhead">
-        <p class="k">Where things stand, July 25, 2026</p>
-        <h2>One item is open: the training hours</h2>
-        <p>The department published its proposed rule on July 23 and a rule hearing is set for August 28. Two of the three items the board set aside on June 26 are settled. The third, the practicum and didactic hours, was deferred to the Training and Education Committee, and that recommendation is being written now.</p>
-      </div>
+  <section class="grid2">
+    <div>
+      <p class="seclabel">Scheduled</p>
+      <div class="fix"><b>AUG 14</b><span class="what">Advisory Board meets.</span></div>
+      <div class="fix"><b>AUG 21</b><span class="what">Training and Education Committee meets.</span></div>
+      <div class="fix"><b>AUG 28</b><span class="what">Rule hearing on 7.35.3 NMAC. Public comment is taken and recorded there.</span></div>
+    </div>
+    <div>
+      <p class="seclabel">What changed on July 23</p>
+      <div class="fix"><b>18 (C)</b><span class="what">The shared didactic module rose from 25 hours to 30, with three topics added.</span></div>
+      <div class="fix"><b>19 (A)</b><span class="what">The practicum figures held at 100 and 120 hours, and a new start condition appeared.</span></div>
+      <div class="fix"><b>ALL</b><span class="what">Publication set the hearing. The published text is what the hearing runs on.</span></div>
+    </div>
+  </section>
 
-      <div class="ocard live">
-        <span class="on">Open now</span>
-        <h3>The practicum and didactic hours</h3>
-        <span class="stpill tabled">Committee recommendation in progress</span>
-        <p class="osum urgent">The committee's recommendation on these hours needs to reach the department <b>as soon as possible</b>. The rule hearing is August 28, the committee next meets August 21, and the department has said it will take input up to and past the hearing but that the text it publishes is what the hearing runs on.</p>
-        <p class="osum">On July 17 the Advisory Board voted <b>7-0</b> to send the practicum and didactic hours, and the 20-hour supervisory question, to the Training and Education Committee. That recommendation <b>is being prepared now</b> and has not yet been delivered to the department.</p>
-        <p class="osum">The rule published on July 23 therefore carries the department&rsquo;s own figures: <b>100 practicum hours for facilitators and 120 for practitioners, unchanged</b>, with the shared didactic module <b>raised from 25 hours to 30</b>.</p>
-        <p class="osum">Publishing the full text is what allows the hearing to be scheduled. The department has said input is still wanted and that the hours can still move. Dominic Zurlo, July 17: <b>"we&rsquo;re happy to talk about adjusting those lengths of time,"</b> and that suggestions are needed "sooner rather than later&hellip; after the rule gets published or the proposed rule rather gets published and even after the hearing of it."</p>
-        <div class="olinks"><a href="hours.html">The published hours and the July 17 record &rarr;</a><a href="deferred.html">Every provision it touches &rarr;</a><a href="input.html?topic=hours">Give input &rarr;</a></div>
-      </div>
-
-      <details class="settled">
-        <summary><span class="settled-line"><b>Settled:</b> the certifying-clinician controlled-substance number, and the reciprocity deadlines. Both are in the published rule.</span><span class="chev">&#9656;</span></summary>
-        <div class="settled-body">
-          <div class="scard">
-            <h3>The certifying-clinician controlled-substance number</h3>
-            <span class="stpill kept">Kept, and in the published rule</span>
-            <p>The department kept the requirement after consulting the Secretary of Health and its attorneys, and it appears in the July 23 rule. The board did not vote to remove it; Chris Peskuski restated his objection that it is an access bottleneck. The revised certifying-clinician exam language was also published, setting three ways to meet the in-person requirement: an in-person exam within six months, or a telemedicine evaluation paired with either a records review or a formal consult. <a href="cs-number.html#update">The language and the quotes &rarr;</a></p>
-          </div>
-          <div class="scard">
-            <h3>The reciprocity deadlines</h3>
-            <span class="stpill resolved">Resolved, and written into the rule</span>
-            <p>Both the reciprocity waiver and the New Mexico program waiver deadlines were extended to December 31, 2027 without objection on July 9. The July 23 rule now carries both dates in its text; until publication the draft still showed the older ones. Reciprocity is no longer a standalone section and sits inside the out-of-jurisdiction application process at 7.35.3.10. <a href="changes.html">The provision detail &rarr;</a></p>
-          </div>
-          <p class="settled-note">Both remain open to public comment at the August 28 hearing. Settled here means the board and the department have acted, not that the text is final.</p>
-        </div>
-      </details>
-
-    </section>
-
-    <section class="context-strip">
-      <div class="sh"><p class="k">The document</p><h2>The text the hearing runs on</h2></div>
-      <div class="stripgrid">
-        <a class="dk current" href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">
-          <p class="dkl">The proposed rule &middot; July 23 <span class="dkflag">published</span></p>
-          <p><b>7.35.3 NMAC, 19 pages.</b> Sections 7.35.3.1 through .28.</p>
-          <span class="dkgo">Open PDF &#8599;</span>
-        </a>
-        <p class="dkmore">Earlier drafts, both July 17 transcripts, and the committee documents are on the <a href="documents.html">documents page</a>. To send something to the rule-writers, use <a href="input.html">community input</a>.</p>
-      </div>
-    </section>
-
-    <!-- POINTER TO THE REST OF THE DRAFT -->
-    <section id="record">
-      <div class="sec-head">
-        <p class="k">The rest of the draft</p>
-        <h2>The rules draft, section by section</h2>
-        <p>The rest of the June 12 recommendation was accepted 3-2 on June 26 and became the department&rsquo;s draft, published as a proposed rule on July 23. The section-by-section record of that path, the motion and vote, the verbal agreements, and every change between the documents, is tracked on its own page.</p>
-      </div>
-      <div class="decks" style="grid-template-columns:1fr;">
-        <a class="deck" href="changes.html">
-          <span class="dn">The rules draft, section by section</span>
-          <h3>What changed: from the June 12 recommendation to the July 9 rules draft</h3>
-          <p class="stake">Every carried-over, changed, added, and dropped provision, with verbatim language and page references.</p>
-          <span class="go">See the change log →</span>
-        </a>
-      </div>
-    </section>
-
-
-    <footer>
-      <div class="col" style="padding:0;">
-        <h3>Sources &amp; method</h3>
-        <p><b>Document language</b> is quoted verbatim from the source PDFs: the June 12 recommendation ("Draft for 6-12-26"), the June 25 rules draft, and the July 9, 2026 board-meeting rules draft (7.35.3, "Psilocybin patient and practitioner rule"). None is final, promulgated rule text.</p>
-        <p><b>Committee input</b> comes from the full transcripts of the June 25 and June 26 committee meetings and the July 9 and July 17 board meetings. All are unlabeled auto-transcripts; speakers were reconstructed from roll-call and hand-off cues. Some names were garbled by the transcription and are corrected here (Zurlo, Leeman, Peskuski, Fatemi). Where a speaker or vote could not be identified, it is left unattributed, including the two votes against the June 26 motion.</p>
-        <p class="fine"><b>Nothing on this site is final rule text.</b> Every provision in the published rule, settled or open, can be commented on at the August 28 hearing. Prepared as a reference for the ongoing rulemaking, current to the July 23, 2026 published proposed rule. Not affiliated with the New Mexico Department of Health.</p>
-      <!-- provenance: generated by tools/sync-provenance.py, do not hand-edit -->
-      <details class="prov">
-        <summary><span class="provsum">Provenance: the document chain and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
-        <div class="provbody">
-        <div class="provsec">
-          <p class="provk">The document chain, oldest first</p>
-          <ol class="chain">
-          <li>
-            <p class="cd">June 12, 2026</p>
-            <p class="cn"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Committee recommendation</a></p>
-            <p class="cw">The Training and Education Committee's own recommendation. Origin of the 100 and 120 practicum hours and the 20 supervisory hours. The Advisory Board voted 3-2 on June 26 to accept it, setting three items aside.</p>
-          </li>
-          <li>
-            <p class="cd">June 25, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Department draft</a></p>
-            <p class="cw">The department's first rules-style draft of the same subject. Introduced the module test-out mechanism that every later draft keeps, and the first reciprocity provision, which the June 12 recommendation did not contain.</p>
-          </li>
-          <li>
-            <p class="cd">July 9, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Board-meeting draft</a></p>
-            <p class="cw">The draft the Advisory Board went through section by section on July 9. Used placeholder section numbers shown as 7.35.3.X. Set the shared didactic module at 25 hours. Carried the older waiver dates of December 31, 2026 and June 30, 2027, which the board extended by vote that day without the text being updated.</p>
-          </li>
-          <li class="cur">
-            <p class="cd">July 23, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
-            <p class="cw">The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
-          </li>
-          </ol>
-        </div>
-        <div class="provsec">
-          <p class="provk">Revisions to this page</p>
-          <ul class="revs">
-          <li><b>July 25, 2026</b> Title capitalisation corrected: the first word after the line break was lower case. Added the CSS rules for the section headings introduced with the document strip, which had none and were rendering unstyled.</li>
-          <li><b>July 25, 2026</b> Rebuilt against the page review. The title read "The rule is published", which is a headline rather than a statement of fact, and now states that the rule hearing is August 28, 2026. "What is next" moved from mid-page into the hero, above "Where things stand". The open item now carries a red border and states that the committee recommendation needs to reach the department as soon as possible; it had been the site accent colour, which reads as decoration rather than attention. The "Nothing on this page is final" disclaimer moved into the footer. The document strip now carries a heading saying what it is, and the input tile was removed from it. The three lineage deep-dives on the controlled-substance number, the practicum and reciprocity were removed as history that belongs elsewhere, and the two in-page links into them were repointed to the practicum and draft pages. "Find your way around" moved to its own page at guide.html.</li>
-          <li><b>July 17, 2026</b> Updated to the July 17 full Advisory Board meeting. The board voted 7-0 to defer the practicum and didactic hours to the Training and Education Committee.</li>
-          <li><b>July 10, 2026</b> Parallel working drafts reconciled into this page. The July 9 meeting description corrected: it was an Advisory Board meeting, and the chair barred formal votes only after the scheduled adjournment.</li>
-          <li><b>July 9, 2026</b> Updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled.</li>
-          </ul>
-        </div>
-        </div>
-      </details>
-      <!-- /provenance -->
-      <div class="sitefoot">
-        <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
-        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
-      </div>
-      </div>
-    </footer>
-
-  </div>
-</div>
-<script>
-(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
-(function(){
-  function openRecord(id){var sec=document.getElementById(id);if(!sec)return;var rec=sec.querySelector('details.record');if(rec) rec.open=true;}
-  if(location.hash){ openRecord(location.hash.slice(1)); }
-  var links=document.querySelectorAll('.olinks a[href^="#"]');
-  for(var i=0;i<links.length;i++){(function(a){a.addEventListener('click',function(){openRecord(a.getAttribute('href').slice(1));});})(links[i]);}
-})();
-</script>
-<script id="navjs">
-(function(){
-  var f=(location.pathname.split('/').pop()||'index.html').toLowerCase();
-  var cur=f.replace('.html','')||'index';
-  var el=document.querySelector('.tnav [data-nav="'+cur+'"]');
-  if(el){ el.classList.add('on'); var g=el.closest('.navgrp'); if(g){ var s=g.querySelector('summary'); if(s) s.classList.add('on'); } }
-
-  // Dropdowns are native <details>, which stay open until their own summary is
-  // clicked again. On a nav that is wrong: clicking anywhere else should close
-  // them. Close on outside click, on Escape, and when a sibling opens.
-  var nav=document.getElementById('tnav');
-  if(!nav) return;
-  var groups=[].slice.call(nav.querySelectorAll('details.navgrp'));
-  if(!groups.length) return;
-
-  function closeAll(except){
-    groups.forEach(function(d){ if(d!==except) d.open=false; });
-  }
-  groups.forEach(function(d){
-    d.addEventListener('toggle', function(){ if(d.open) closeAll(d); });
-  });
-  document.addEventListener('click', function(e){
-    if(!nav.contains(e.target)) closeAll(null);
-  });
-  document.addEventListener('keydown', function(e){
-    if(e.key==='Escape'||e.key==='Esc'){
-      var open=groups.filter(function(d){ return d.open; });
-      if(open.length){ closeAll(null); var s=open[0].querySelector('summary'); if(s) s.focus(); }
-    }
-  });
-  // Choosing a destination should not leave the menu hanging open behind it.
-  nav.addEventListener('click', function(e){
-    if(e.target.closest('.tdrop-menu a')) closeAll(null);
-  });
-})();
-</script>
-<script id="countjs">
-(function(){
-  var E="https://count.medical-psilocybin.org";
-  if(!E) return;
-  var nav=navigator;
-  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
-  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
-
-  function send(k,p){
-    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
-    try{
-      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
-    }catch(e){}
-    try{
-      if(window.fetch){
-        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
-                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
-        return;
-      }
-    }catch(e){}
-    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
-  }
-
-  send("pv",location.pathname);
-
-  // Which documents actually get opened is half the question, and a PDF link
-  // leaves the site without ever loading a page that could report it.
-  document.addEventListener("click",function(e){
-    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
-    if(a) send("dl",a.getAttribute("href"));
-  },true);
-})();
-</script>
+</main>
+<footer class="foot"><div class="wrap">
+<span>An independent community record of the rulemaking. Not affiliated with the New Mexico Department of Health.</span>
+<span>Nothing here is final rule text, legal advice, or medical advice.</span>
+<a href="about.html">Sources and method</a>
+<a href="comment.html">Report an error</a>
+</div></footer>
 </body>
 </html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Overview</title>
+<style>
+:root{
+  --paper:#FBFAF6; --ink:#1B1A17; --ink2:#55524B; --mute:#8B8779; --rule:#DDD8CC;
+  --amber:#8A5A00; --amberbg:#FBF4E2; --green:#1E6B45; --greenbg:#EBF4EE; --red:#A8271F;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.55 var(--sans)}
+a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+
+.frame{max-width:1280px;margin:0 auto;padding:0 20px}
+
+/* top strip: identity and places, one line */
+.strip{display:flex;align-items:baseline;gap:26px;padding:16px 0 14px;border-bottom:2px solid var(--ink)}
+.strip .id{font-weight:700;font-size:15px;text-decoration:none}
+.strip nav{margin-left:auto;display:flex;gap:20px;font-size:13.5px}
+.strip nav a{color:var(--ink2);text-decoration:none}
+.strip nav a[aria-current]{color:var(--ink);font-weight:650;text-decoration:underline;text-underline-offset:5px}
+
+/* board title: one line of fact */
+.boardtitle{display:flex;align-items:baseline;gap:18px;padding:26px 0 4px}
+.boardtitle h1{font-size:21px;font-weight:700;margin:0;letter-spacing:-.01em}
+.boardtitle .date{font:12.5px var(--mono);color:var(--ink2)}
+.statesentence{margin:2px 0 0;color:var(--ink2);font-size:15.5px;max-width:78ch}
+
+/* ---- the board ---- */
+.board{position:relative;margin-top:18px}
+.lanes{position:relative;display:grid;grid-template-columns:repeat(5,1fr)}
+.lane{padding:0 14px 18px;border-left:1px dotted var(--rule);min-height:360px}
+.lane:first-child{border-left:0;padding-left:2px}
+.lane.now-side{background:linear-gradient(#F6F3EA,#FBFAF6 86%)}
+
+/* stations: the process line lives in the svg; labels align to lanes */
+.stations{display:grid;grid-template-columns:repeat(5,1fr);margin-top:2px}
+.stations .st{padding:8px 14px 14px;font-size:13.5px}
+.stations .st:first-child{padding-left:2px}
+.st .n{font-weight:700}
+.st .d{font:11.5px var(--mono);color:var(--mute);margin-top:1px}
+.st.past .n{color:var(--ink2);font-weight:600}
+.st.oper .n{color:var(--ink)}
+.st.future .n{color:var(--ink2)}
+.st.far .n{color:var(--mute);font-weight:600}
+
+/* tokens: work items, positioned by state */
+.tok{position:relative;background:#fff;border:1px solid #C9C4B6;border-radius:3px;padding:10px 12px 9px;margin:0 0 12px}
+.tok .s{display:block;font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding-right:52px}
+.tok .t{font-size:15px;font-weight:650;line-height:1.3;margin:3px 0 2px}
+.tok .x{font-size:13px;color:var(--ink2);line-height:1.45}
+.tok .dt{position:absolute;top:10px;right:11px;font:11px var(--mono);color:var(--mute)}
+.tok.active{border-color:var(--amber);border-left-width:4px;background:var(--amberbg)}
+.tok.active .s{color:var(--amber)}
+.tok.settled{border-left:4px solid var(--green)}
+.tok.settled .s{color:var(--green)}
+.tok.flag{border:1.5px solid var(--red);background:#fff}
+.tok.flag .s{color:var(--red)}
+.tok.past{border-style:dashed;background:transparent;color:var(--ink2)}
+.tok.past .s{color:var(--mute)}
+.tok.ghost{border:1px dashed #C9C4B6;background:transparent;color:var(--ink2)}
+.tok.ghost .s{color:var(--mute)}
+.tok a{color:inherit}
+
+/* today: a position on the time axis, not a countdown */
+.today{position:absolute;top:0;bottom:0;left:61%;width:0;border-left:1.5px dashed var(--ink);opacity:.55}
+.today em{position:absolute;top:6px;left:5px;z-index:3;font:10.5px var(--mono);font-style:normal;letter-spacing:.06em;color:var(--ink);background:var(--paper);padding:1px 5px;border:1px solid var(--rule)}
+
+/* under-board: schedule as fixtures, one line each */
+.under{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:34px 0 0;padding-top:14px;border-top:2px solid var(--ink)}
+.under h2{font-size:12px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--ink2);margin:0 0 8px}
+.fix{display:flex;gap:14px;align-items:baseline;padding:7px 0;border-top:1px dotted var(--rule);font-size:14.5px}
+.fix:first-of-type{border-top:0}
+.fix b{font:12px var(--mono);font-weight:600;white-space:nowrap;color:var(--ink)}
+.fix span{color:var(--ink2)}
+
+.foot{margin:44px 0 30px;padding-top:12px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--mute);display:flex;gap:30px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <header class="strip">
+    <a class="id" href="#">Training &amp; Education Rulemaking · 7.35.3 NMAC</a>
+    <nav>
+      <a href="#" aria-current="page">Overview</a>
+      <a href="#">The rule</a>
+      <a href="#">Recommended changes</a>
+      <a href="#">Meetings &amp; documents</a>
+      <a href="#">Public comment</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <div class="boardtitle">
+    <h1>Where the rulemaking stands</h1>
+    <span class="date">SATURDAY · JULY 26 · 2026</span>
+  </div>
+  <p class="statesentence">New Mexico is writing the rule that governs how medical psilocybin providers are trained and certified. The text below moves left to right; each item sits at the stage it occupies today.</p>
+
+  <div class="board">
+    <svg viewBox="0 0 1240 118" style="display:block;width:100%">
+      <defs>
+        <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+          <path d="M0 0 L8 4 L0 8 z" fill="#55524B"/>
+        </marker>
+      </defs>
+      <!-- the deferral: hours moved from the published text back to committee -->
+      <path d="M 596 78 C 480 18, 250 18, 140 70" fill="none" stroke="#8A5A00" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+      <text x="368" y="26" text-anchor="middle" font-family="system-ui" font-size="11.5" fill="#8A5A00">practicum and didactic hours deferred by 7-0 vote · Jul 17</text>
+      <!-- the process line -->
+      <line x1="124" y1="96" x2="868" y2="96" stroke="#1B1A17" stroke-width="1.5"/>
+      <line x1="868" y1="96" x2="1116" y2="96" stroke="#B4AFA2" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <circle cx="124" cy="96" r="5" fill="#55524B"/>
+      <circle cx="372" cy="96" r="5" fill="#55524B"/>
+      <circle cx="620" cy="96" r="6.5" fill="#1B1A17"/>
+      <circle cx="620" cy="96" r="11" fill="none" stroke="#1B1A17" stroke-width="1.5"/>
+      <circle cx="868" cy="96" r="5.5" fill="#FBFAF6" stroke="#1B1A17" stroke-width="1.8"/>
+      <circle cx="1116" cy="96" r="5" fill="#FBFAF6" stroke="#B4AFA2" stroke-width="1.6"/>
+    </svg>
+
+    <div class="stations">
+      <div class="st past"><div class="n">Committee recommendation</div><div class="d">JAN – JUN</div></div>
+      <div class="st past"><div class="n">Department drafts</div><div class="d">JUN 25 · JUL 9</div></div>
+      <div class="st oper"><div class="n">Published text</div><div class="d">JUL 23 · OPERATIVE</div></div>
+      <div class="st future"><div class="n">Rule hearing</div><div class="d">AUG 28</div></div>
+      <div class="st far"><div class="n">Adopted rule</div><div class="d">AFTER THE HEARING</div></div>
+    </div>
+
+    <div class="lanes">
+      <div class="today" aria-hidden="true"><em>TODAY</em></div>
+
+      <div class="lane">
+        <div class="tok active">
+          <span class="dt">JUL 17</span>
+          <span class="s">In committee</span>
+          <p class="t">Practicum and didactic hours</p>
+          <p class="x">The board sent the hours back for a recommendation. It is being drafted and reviewed now; the committee meets August 21.</p>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="tok past">
+          <span class="s">Superseded</span>
+          <p class="t">Earlier drafts</p>
+          <p class="x">The June 25 and July 9 drafts, replaced by the published text. Held in <a href="#">meetings &amp; documents</a>.</p>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="tok settled">
+          <span class="dt">JUL 17</span>
+          <span class="s">Settled</span>
+          <p class="t">Controlled-substance number</p>
+          <p class="x">Kept by the department for certifying clinicians. <a href="#">How it was decided</a>.</p>
+        </div>
+        <div class="tok settled">
+          <span class="dt">JUL 9</span>
+          <span class="s">Settled</span>
+          <p class="t">Reciprocity deadlines</p>
+          <p class="x">Both waiver deadlines run to December 31, 2027. <a href="#">The record</a>.</p>
+        </div>
+        <div class="tok flag">
+          <span class="dt">JUL 23</span>
+          <span class="s">Defect noted</span>
+          <p class="t">Three provisions fail as written</p>
+          <p class="x">Each depends on something the text does not provide. <a href="#">Stated provision by provision</a>.</p>
+        </div>
+      </div>
+
+      <div class="lane now-side">
+        <div class="tok" style="margin-top:30px">
+          <span class="dt">AUG 28</span>
+          <span class="s">Scheduled</span>
+          <p class="t">Rule hearing</p>
+          <p class="x">The published text is what the hearing runs on. Comment is taken and recorded there.</p>
+        </div>
+        <div class="tok active">
+          <span class="s">Open now</span>
+          <p class="t">Public comment</p>
+          <p class="x">Comment can be sent before the hearing and given at it. <a href="#">How to comment</a>.</p>
+        </div>
+      </div>
+
+      <div class="lane">
+        <div class="tok ghost">
+          <span class="s">Empty</span>
+          <p class="t">Nothing is final</p>
+          <p class="x">After the hearing the department adopts the rule. It is published in the New Mexico Register and this column fills.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="under">
+    <div>
+      <h2>Scheduled meetings</h2>
+      <div class="fix"><b>AUG 14</b><span>Advisory Board</span></div>
+      <div class="fix"><b>AUG 21</b><span>Training and Education Committee</span></div>
+      <div class="fix"><b>AUG 28</b><span>Rule hearing on 7.35.3 NMAC</span></div>
+    </div>
+    <div>
+      <h2>This site</h2>
+      <div class="fix"><b>JUL 25</b><span>Every page is current to the text published July 23.</span></div>
+      <div class="fix"><b>SOURCES</b><span>Every claim cites the published rule or a named transcript. <a href="#">How this site is built</a>.</span></div>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span>Independent community reference. Not affiliated with the New Mexico Department of Health.</span>
+    <span>Nothing here is final rule text, legal advice, or medical advice.</span>
+    <span><a href="#">Report an error</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
