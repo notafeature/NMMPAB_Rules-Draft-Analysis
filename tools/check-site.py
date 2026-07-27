@@ -17,9 +17,11 @@ def fail(msg):
     print("FAIL " + msg)
 
 navs = {}
+srcs = {}
 for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
     name = os.path.basename(path)
     src = open(path).read()
+    srcs[name] = src
 
     class P(html.parser.HTMLParser):
         def __init__(self):
@@ -68,6 +70,32 @@ if len(set(navs.values())) > 1:
     for k, v in navs.items(): byname.setdefault(v, []).append(k)
     groups = " | ".join(",".join(v) for v in byname.values())
     fail(f"chrome differs between redesign pages: {groups}")
+
+# every page is reachable: linked by href from at least one other page.
+# Redirect stubs are exempt; they are retired addresses, not destinations.
+stubs = {n for n, s in srcs.items() if 'http-equiv="refresh"' in s}
+linked = set()
+for n, s in srcs.items():
+    if n in stubs:
+        continue
+    for href in re.findall(r'href="([^"#?]+\.html)', s):
+        if os.path.basename(href) != n:
+            linked.add(os.path.basename(href))
+for n in srcs:
+    if n not in stubs and n not in linked:
+        fail(f"{n}: reachable from no other page")
+
+# every redirect stub's target holds the anchor it promises
+for n in stubs:
+    m = re.search(r'url=([^">]+)', srcs[n])
+    if not m:
+        fail(f"{n}: stub with no url=")
+        continue
+    target, _, frag = m.group(1).partition("#")
+    if target not in srcs:
+        fail(f"{n}: stub target {target} missing")
+    elif frag and f'id="{frag}"' not in srcs[target]:
+        fail(f"{n}: stub target {target} lacks anchor #{frag}")
 
 if failures:
     print(f"\n{len(failures)} failure(s).")
