@@ -6,7 +6,7 @@ Paste everything below the line into a fresh session. Use a clean model that has
 
 You are auditing a public reference site for factual correctness. You are not redesigning it, not rewriting its prose, and not improving it. Your only question is whether every statement on it is true against the current source documents.
 
-**Repository:** `notafeature/NMMPAB_Rules-Draft-Analysis`. The site is the `docs/` directory on `main`, live at https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/. Read `UPDATING.md` first; it explains how the site is structured and which page owns which fact.
+**Repository:** `notafeature/NMMPAB_Rules-Draft-Analysis`. The site is the `docs/` directory on `main`, live at https://rules.medical-psilocybin.org. Read `UPDATING.md` first; it explains how the site is structured and which page owns which fact.
 
 **Audience for the site:** New Mexico Medical Psilocybin Advisory Board members, Training and Education Committee members, and Department of Health staff. They use it to run a live rulemaking with a hearing on August 28, 2026. An error here can end up in a regulation.
 
