@@ -56,10 +56,10 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 <main class="wrap">
 
   <div class="head">
-    <p class="kicker">7.35.3.18 and .19 · <b>deferred to committee Jul 17</b> · hearing Aug 28</p>
+    <p class="kicker">7.35.3.18 and .19 · <b>recommendation submitted Jul 27</b> · hearing Aug 28</p>
     <h1>The hours, as a working model</h1>
-    <p class="lede">These three quantities are what the Advisory Board sent to committee, and the department has said it is willing to adjust them. Move them and watch what changes for the person doing the training. Marks show the text as published and as recommended to the committee.</p>
-    <p class="stamp">Updated July 26, 2026.</p>
+    <p class="lede">These three quantities are what the Advisory Board sent to committee, and the department has said it is willing to adjust them. Move them and watch what changes for the person doing the training. Marks show the text as published and as recommended in the committee submission.</p>
+    <p class="stamp">Updated July 27, 2026.</p>
   </div>
 
   <div class="roles" role="radiogroup" aria-label="Role">
@@ -73,7 +73,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="trackwrap">
         <input type="range" id="s-class" min="0" max="120" value="40" step="1" aria-label="Classroom hours">
         <span class="pin" style="left:33.3%"><i>PUBLISHED 40</i></span>
-        <span class="pin rec" style="left:70%"><i>RECOMMENDED 84</i></span>
+        <span class="pin rec" style="left:66.7%"><i>RECOMMENDED 80</i></span>
       </div>
       <div class="out"><span id="o-class">40</span><small>HOURS</small></div>
     </div>
@@ -82,7 +82,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="trackwrap">
         <input type="range" id="s-prac" min="0" max="150" value="100" step="1" aria-label="Supervised practice hours">
         <span class="pin" id="pin-prac-pub" style="left:66.7%"><i id="pin-prac-pub-t">PUBLISHED 100</i></span>
-        <span class="pin rec" id="pin-prac-rec" style="left:41.3%"><i id="pin-prac-rec-t">RECOMMENDED 62</i></span>
+        <span class="pin rec" id="pin-prac-rec" style="left:40%"><i id="pin-prac-rec-t">RECOMMENDED 60</i></span>
       </div>
       <div class="out"><span id="o-prac">100</span><small>HOURS</small></div>
     </div>
@@ -118,10 +118,10 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
   <div class="meaning pub" id="meaning">As published: 100 supervised hours for facilitators and 120 for practitioners, every hour inside an approved healing center or other approved location, completed before applying for certification.</div>
 
   <p class="src">
-    Published figures: <a href="rule.html#s18">7.35.3.18</a> and <a href="rule.html#s19">7.35.3.19</a>, published July 23, 2026, pages 11 to 13 of the <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">official PDF</a>. Recommended figures and the cost estimate: presentation of Dr. Anne Metz to the Training and Education Committee, July 17, 2026, as recorded in the <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">meeting transcript</a>; her staged practicum runs 62 hours for facilitators and 72 for practitioners, with supervision of 20 to 30 hours tied to two presented cases. The department's willingness to adjust the lengths of time was stated at the same meeting. The full pre-redesign hours page, with the July 9 and July 17 records, benchmarks, and cost variables, is kept at <a href="training-hours-record.html">training-hours-record.html</a>. Nothing here is final rule text.
+    Published figures: <a href="rule.html#s18">7.35.3.18</a> and <a href="rule.html#s19">7.35.3.19</a>, published July 23, 2026, pages 11 to 13 of the <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">official PDF</a>. Recommended figures: the summary of the recommended rules, submitted July 27, 2026, stated in full on the <a href="recommendation.html">recommendation page</a>; a staged practicum of 60 hours for facilitators and 70 for licensed providers, 80 didactic hours, and 20 hours of case presentation and consultation tied to two presented cases. The cost estimate and the department's willingness to adjust the lengths of time: the July 17 committee meeting, as recorded in the <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">transcript</a>. The full pre-redesign hours page, with the July 9 and July 17 records, benchmarks, and cost variables, is kept at <a href="training-hours-record.html">training-hours-record.html</a>. Nothing here is final rule text.
   </p>
 
-  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The two positions it compares: the published text requires 40 classroom hours, 100 or 120 supervised hours by role, and 10 supervision hours. The recommendation to the committee proposes 84 classroom hours, 62 or 72 supervised hours by role, and 20 supervision hours.</p></noscript>
+  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The two positions it compares: the published text requires 40 classroom hours, 100 or 120 supervised hours by role, and 10 supervision hours. The submitted recommendation proposes 80 classroom hours, 60 or 70 supervised hours by role, and 20 hours of case presentation and consultation.</p></noscript>
 </main>
 <footer class="foot"><div class="wrap">
 <span>An independent community record of the rulemaking. Not affiliated with the New Mexico Department of Health.</span>
@@ -135,7 +135,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
   var S={class:document.getElementById('s-class'),prac:document.getElementById('s-prac'),sup:document.getElementById('s-sup')};
   var O={class:document.getElementById('o-class'),prac:document.getElementById('o-prac'),sup:document.getElementById('o-sup')};
   var role='f';
-  var PINS={f:{pub:100,rec:62},p:{pub:120,rec:72}};
+  var PINS={f:{pub:100,rec:60},p:{pub:120,rec:70}};
   var meaning=document.getElementById('meaning');
   function fmt(n){return n.toLocaleString('en-US')}
   function update(){
@@ -147,9 +147,9 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     if(c===40&&p===pins.pub&&s===10){
       meaning.className='meaning pub';
       meaning.textContent='As published: '+(role==='f'?'100 supervised hours for a facilitator':'120 supervised hours for a practitioner, including 20 as a supervising practitioner')+', every hour inside an approved healing center or other approved location, completed before applying for certification.';
-    }else if(c===84&&p===pins.rec&&s===20){
+    }else if(c===80&&p===pins.rec&&s===20){
       meaning.className='meaning rec';
-      meaning.textContent='As recommended: a staged practicum of '+(role==='f'?'62':'72')+' hours that begins with well participants and adds patient acuity step by step, with supervision doubled and tied to two presented cases. The classroom deepens to 84 hours; the cost of supervised hours falls by roughly half.';
+      meaning.textContent='As recommended: a staged practicum of '+(role==='f'?'60':'70')+' hours that begins with well participants and adds patient acuity step by step, with consultation doubled and tied to two presented cases. The classroom deepens to 80 hours; the supervised hours, the costly ones, fall by two fifths.';
     }else{
       meaning.className='meaning';
       meaning.textContent='A position being tested. On July 17 the department said it is willing to talk about adjusting these lengths of time; whatever number stands after the August 28 hearing is what every candidate will live with.';
@@ -175,7 +175,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     });
   });
   document.getElementById('b-pub').addEventListener('click',function(){S.class.value=40;S.prac.value=PINS[role].pub;S.sup.value=10;update()});
-  document.getElementById('b-rec').addEventListener('click',function(){S.class.value=84;S.prac.value=PINS[role].rec;S.sup.value=20;update()});
+  document.getElementById('b-rec').addEventListener('click',function(){S.class.value=80;S.prac.value=PINS[role].rec;S.sup.value=20;update()});
   setPins();update();
 })();
 </script>
