@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The training hours, as a working model</title>
+<style>
+:root{
+  --paper:#FAF8F4; --ink:#211E1A; --ink2:#57534A; --faint:#98927F; --hair:#E0DBCE;
+  --accent:#7A2E1D; --open:#8A5A00;
+  --serif:Charter,"Bitstream Charter","Iowan Old Style",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.6 var(--sans)}
+.page{max-width:920px;margin:0 auto;padding:56px 24px 80px}
+
+.crumb{font:600 11px var(--mono);letter-spacing:.14em;color:var(--faint);margin-bottom:10px}
+.crumb b{color:var(--open);font-weight:600}
+h1{font:700 30px/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 10px}
+.lede{font-size:16.5px;color:var(--ink2);max-width:58ch;margin:0 0 8px}
+.lede b{color:var(--ink);font-weight:650}
+
+.roles{display:inline-flex;border:1px solid var(--hair);border-radius:3px;margin:22px 0 8px;font-family:var(--sans)}
+.roles label{padding:8px 18px;font-size:14px;font-weight:600;color:var(--ink2);cursor:pointer}
+.roles input{position:absolute;opacity:0}
+.roles label.on{background:var(--ink);color:#FAF8F4}
+
+.model{margin-top:14px;border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:190px 1fr 130px;gap:26px;align-items:center;padding:26px 0 34px;border-bottom:1px solid var(--hair)}
+.row .name{font-size:15px;font-weight:650}
+.row .name small{display:block;font-weight:400;font-size:12.5px;color:var(--faint);margin-top:2px}
+.trackwrap{position:relative;padding:26px 0 10px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:2px;background:var(--hair);outline:none;margin:0}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:var(--accent);border:3px solid var(--paper);box-shadow:0 0 0 1.5px var(--accent);cursor:grab}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--paper);box-shadow:0 0 0 1.5px var(--accent);cursor:grab}
+.pin{position:absolute;top:16px;width:0;height:16px;border-left:1.5px solid var(--ink2)}
+.pin i{position:absolute;top:-14px;left:-1px;transform:translateX(-50%);font:600 9.5px var(--mono);letter-spacing:.08em;color:var(--faint);font-style:normal;white-space:nowrap}
+.pin.rec{border-color:var(--accent)}
+.pin.rec i{color:var(--accent)}
+.row .out{font:650 34px var(--mono);text-align:right;letter-spacing:-.03em}
+.row .out small{display:block;font:500 10.5px var(--mono);letter-spacing:.12em;color:var(--faint);margin-top:2px}
+
+.sets{margin:20px 0 4px;font-family:var(--sans)}
+.sets button{font:600 13px var(--sans);border:1px solid var(--ink2);background:none;color:var(--ink);border-radius:3px;padding:8px 16px;margin-right:10px;cursor:pointer}
+.sets button:hover{background:#EFEBE1}
+.sets button.rec{border-color:var(--accent);color:var(--accent)}
+
+.reads{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
+.read{border-top:2px solid var(--ink);padding-top:12px}
+.read .k{font:600 10.5px var(--mono);letter-spacing:.14em;color:var(--ink2)}
+.read .v{font:650 44px/1.1 var(--mono);letter-spacing:-.03em;margin-top:6px}
+.read .b{font-size:13px;color:var(--faint);margin-top:6px;max-width:36ch}
+
+.meaning{margin-top:30px;border-left:3px solid var(--open);background:#F6F1E4;padding:16px 20px;font:15.5px/1.65 var(--serif)}
+.meaning.rec{border-color:var(--accent);background:#F5EBE7}
+.meaning.pub{border-color:var(--ink2);background:#F1EFE9}
+
+.src{margin-top:44px;padding-top:14px;border-top:1px solid var(--hair);font:13px/1.7 var(--sans);color:var(--faint)}
+.src a{color:var(--ink2)}
+@media(max-width:760px){.row{grid-template-columns:1fr;gap:10px}.row .out{text-align:left}.reads{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="crumb">7.35.3 NMAC &nbsp;·&nbsp; PRACTICUM AND DIDACTIC HOURS &nbsp;·&nbsp; <b>DEFERRED TO COMMITTEE JUL 17</b> &nbsp;·&nbsp; HEARING AUG 28</p>
+  <h1>The training hours, as a working model</h1>
+  <p class="lede">These three quantities are what the Advisory Board sent to committee, and the department has said it is willing to adjust them. Move them and watch what changes for the person doing the training. Marks show the text <b>as published</b> and <b>as recommended</b> to the committee.</p>
+
+  <div class="roles" role="radiogroup" aria-label="Role">
+    <label class="on" id="rl-f"><input type="radio" name="role" value="f" checked>Facilitator</label>
+    <label id="rl-p"><input type="radio" name="role" value="p">Practitioner</label>
+  </div>
+
+  <div class="model">
+    <div class="row">
+      <div class="name">Classroom<small>didactic modules and simulated patients</small></div>
+      <div class="trackwrap">
+        <input type="range" id="s-class" min="0" max="120" value="40" step="1" aria-label="Classroom hours">
+        <span class="pin" style="left:33.3%"><i>PUBLISHED 40</i></span>
+        <span class="pin rec" style="left:70%"><i>RECOMMENDED 84</i></span>
+      </div>
+      <div class="out"><span id="o-class">40</span><small>HOURS</small></div>
+    </div>
+    <div class="row">
+      <div class="name">Supervised practice<small>the practicum, with patients</small></div>
+      <div class="trackwrap">
+        <input type="range" id="s-prac" min="0" max="150" value="100" step="1" aria-label="Supervised practice hours">
+        <span class="pin" id="pin-prac-pub" style="left:66.7%"><i id="pin-prac-pub-t">PUBLISHED 100</i></span>
+        <span class="pin rec" id="pin-prac-rec" style="left:41.3%"><i id="pin-prac-rec-t">RECOMMENDED 62</i></span>
+      </div>
+      <div class="out"><span id="o-prac">100</span><small>HOURS</small></div>
+    </div>
+    <div class="row">
+      <div class="name">Supervision<small>consultation after certification begins</small></div>
+      <div class="trackwrap">
+        <input type="range" id="s-sup" min="0" max="40" value="10" step="1" aria-label="Supervision hours">
+        <span class="pin" style="left:25%"><i>PUBLISHED 10</i></span>
+        <span class="pin rec" style="left:50%"><i>RECOMMENDED 20</i></span>
+      </div>
+      <div class="out"><span id="o-sup">10</span><small>HOURS</small></div>
+    </div>
+  </div>
+
+  <div class="sets">
+    <button type="button" id="b-pub">Set to the published text</button>
+    <button type="button" class="rec" id="b-rec">Set to the recommendation</button>
+  </div>
+
+  <div class="reads">
+    <div class="read">
+      <div class="k">PROGRAM TOTAL</div>
+      <div class="v"><span id="r-total">150</span> <span style="font-size:18px">hrs</span></div>
+      <div class="b">Classroom, supervised practice, and supervision together, before a person may work unsupervised.</div>
+    </div>
+    <div class="read">
+      <div class="k">EARNINGS A WORKING CLINICIAN GIVES UP</div>
+      <div class="v" style="font-size:34px"><span id="r-cost">$15,000 – 20,000</span></div>
+      <div class="b">Hours in supervised practice at $150 to $200 an hour, the estimate given to the committee on July 17. Tuition, supervision fees, and travel come on top.</div>
+    </div>
+  </div>
+
+  <div class="meaning pub" id="meaning">As published: 100 supervised hours for facilitators and 120 for practitioners, every hour inside an approved healing center or other approved location, completed before applying for certification.</div>
+
+  <p class="src">
+    Published figures: proposed rule 7.35.3 NMAC, sections .18 and .19, published July 23, 2026, pages 11 to 13. Recommended figures and the cost estimate: presentation of Dr. Anne Metz to the Training and Education Committee, July 17, 2026, as recorded in the meeting transcript; her staged practicum runs 62 hours for facilitators and 72 for practitioners, with supervision of 20 to 30 hours tied to two presented cases. The department's willingness to adjust the lengths of time was stated at the same meeting. Nothing here is final rule text.
+  </p>
+
+  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The two positions it compares: the published text requires 40 classroom hours, 100 or 120 supervised hours by role, and 10 supervision hours. The recommendation to the committee proposes 84 classroom hours, 62 or 72 supervised hours by role, and 20 supervision hours.</p></noscript>
+</div>
+
+<script>
+(function(){
+  var S={class:document.getElementById('s-class'),prac:document.getElementById('s-prac'),sup:document.getElementById('s-sup')};
+  var O={class:document.getElementById('o-class'),prac:document.getElementById('o-prac'),sup:document.getElementById('o-sup')};
+  var role='f';
+  var PINS={f:{pub:100,rec:62},p:{pub:120,rec:72}};
+  var meaning=document.getElementById('meaning');
+  function fmt(n){return n.toLocaleString('en-US')}
+  function update(){
+    var c=+S.class.value,p=+S.prac.value,s=+S.sup.value;
+    O.class.textContent=c;O.prac.textContent=p;O.sup.textContent=s;
+    document.getElementById('r-total').textContent=c+p+s;
+    document.getElementById('r-cost').textContent='$'+fmt(p*150)+' – '+fmt(p*200);
+    var pins=PINS[role];
+    if(c===40&&p===pins.pub&&s===10){
+      meaning.className='meaning pub';
+      meaning.textContent='As published: '+(role==='f'?'100 supervised hours for a facilitator':'120 supervised hours for a practitioner, including 20 as a supervising practitioner')+', every hour inside an approved healing center or other approved location, completed before applying for certification.';
+    }else if(c===84&&p===pins.rec&&s===20){
+      meaning.className='meaning rec';
+      meaning.textContent='As recommended: a staged practicum of '+(role==='f'?'62':'72')+' hours that begins with well participants and adds patient acuity step by step, with supervision doubled and tied to two presented cases. The classroom deepens to 84 hours; the total cost of supervised hours falls by roughly half.';
+    }else{
+      meaning.className='meaning';
+      meaning.textContent='A position being tested. On July 17 the department said it is willing to talk about adjusting these lengths of time; whatever number stands after the August 28 hearing is what every candidate will live with.';
+    }
+  }
+  function setPins(){
+    var pins=PINS[role];
+    var pub=document.getElementById('pin-prac-pub'),rec=document.getElementById('pin-prac-rec');
+    pub.style.left=(pins.pub/150*100)+'%';rec.style.left=(pins.rec/150*100)+'%';
+    document.getElementById('pin-prac-pub-t').textContent='PUBLISHED '+pins.pub;
+    document.getElementById('pin-prac-rec-t').textContent='RECOMMENDED '+pins.rec;
+  }
+  Object.keys(S).forEach(function(k){S[k].addEventListener('input',update)});
+  document.querySelectorAll('.roles input').forEach(function(r){
+    r.addEventListener('change',function(){
+      role=r.value;
+      document.getElementById('rl-f').className=role==='f'?'on':'';
+      document.getElementById('rl-p').className=role==='p'?'on':'';
+      var pins=PINS[role];
+      if(+S.prac.value===PINS[role==='f'?'p':'f'].pub)S.prac.value=pins.pub;
+      if(+S.prac.value===PINS[role==='f'?'p':'f'].rec)S.prac.value=pins.rec;
+      setPins();update();
+    });
+  });
+  document.getElementById('b-pub').addEventListener('click',function(){S.class.value=40;S.prac.value=PINS[role].pub;S.sup.value=10;update()});
+  document.getElementById('b-rec').addEventListener('click',function(){S.class.value=84;S.prac.value=PINS[role].rec;S.sup.value=20;update()});
+  setPins();update();
+})();
+</script>
+</body>
+</html>
