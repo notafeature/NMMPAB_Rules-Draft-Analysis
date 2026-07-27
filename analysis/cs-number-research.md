@@ -62,7 +62,7 @@
 
 ## 4. How the draft rule frames the access point
 
-From the July 9 rules draft and the meeting record (local primary sources; see Section 9 and HANDOFF.md):
+From the July 9 rules draft and the meeting record (local primary sources; see Section 9 and CLAUDE.md):
 
 - The department renamed "diagnostic clinician" to "certifying clinician" throughout the proposed rules after stakeholders said "diagnostic clinician" "didn't cover everything."
 - The certifying-clinician application requires, among other items, "certificate or verification of results of their New Mexico controlled substance number."
@@ -155,7 +155,7 @@ Sources are a mix of primary federal (HHS OIG; University of Washington rural he
 
 ## 9. The July 9, 2026 board discussion, verbatim by speaker
 
-Source: NMMPAB July 9, 2026 unofficial transcript (`docs/documents/NMMPAB-2026-07-09-transcript.pdf`), speakers inferred. Names corrected per HANDOFF (Peskuski, Zurlo). Outcome: the certifying-clinician / CS-number item was sent back to the department; no vote was taken. Ian Dunn will take it back to the department to reconsider.
+Source: NMMPAB July 9, 2026 unofficial transcript (`docs/documents/NMMPAB-2026-07-09-transcript.pdf`), speakers inferred. Names corrected per CLAUDE.md (Peskuski, Zurlo). Outcome: the certifying-clinician / CS-number item was sent back to the department; no vote was taken. Ian Dunn will take it back to the department to reconsider.
 
 **Department reader (rationale for the requirement):**
 > "The difference being that with the clinician, the certifying clinician is the New Mexico controlled substance number. And I know there's been a lot of question about that, about why we are requiring that. Licenses have the ability to be able to diagnose some of the conditions. And yes, that is true. For example, a social worker can diagnose with regard to PTSD and depression, for example. But the main reason for the controlled substance number is because it is a treatment that is occurring with a medication. And so with that... the certifying individual, in this case, the clinician, does need to have a controlled substance number... with it being a medical program, that is part of what ensures that there is that medical evaluation, that medical certification."

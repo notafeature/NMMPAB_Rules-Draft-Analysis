@@ -1,232 +1,271 @@
-# How to update this site
+# What to change when something happens
 
-Read this before changing anything in `docs/`. It exists so that a session starting with "we had another meeting, here is the transcript" can bring the site current without rediscovering how any of it works.
+This is a propagation map. Something happens in the rulemaking: a meeting, a new draft, a
+published document. This file says where that lands on the site.
 
-## What this site is
+It answers one question: **"I have new source material. What do I have to touch?"**
 
-A working reference for the people running New Mexico's medical psilocybin training and education rulemaking: Advisory Board members, Training and Education Committee members, and department staff. They arrive knowing the subject. It is not a public explainer and not an advocacy site.
+It is not a style guide and not a philosophy. If you need to know what a page is for, open
+the page.
 
-**Live:** https://notafeature.github.io/NMMPAB_Rules-Draft-Analysis/ served from `docs/` on `main`.
+---
 
-Two things are always true and must stay true:
+## Part 1: The four trigger events
 
-1. Every statement about what the rule requires cites the **current published rule** by section and page.
-2. Nothing is characterised. Dated events and attributed quotes only.
+### Event A. A new rule draft is published
 
-## The current state of truth
+The heaviest event. Every page citation is keyed to a section number and a PDF page number,
+and **both move between drafts.** A published draft has always renumbered something.
 
-As of July 25, 2026 the operative document is **`docs/documents/rules-draft-2026-07-23-published.pdf`**, the department's published proposed rule 7.35.3 NMAC, 19 pages, sections 7.35.3.1 through .28, going to a rule hearing on **August 28, 2026**.
+| Order | Touch | Why |
+|---|---|---|
+| 1 | `docs/documents/rules-draft-YYYY-MM-DD-*.pdf` | the file itself, dated name |
+| 2 | Extract text, diff against the draft it supersedes | see Part 4 |
+| 3 | Write the diff to `analysis/DATE-delta.md` | before editing any page |
+| 4 | `tools/sync-provenance.py` → `CHAIN` | add the doc, move `"current": True`, describe what changed |
+| 5 | `docs/documents.html` | register entry: what it is, page count, size, current or superseded |
+| 6 | `docs/changes.html` | **add a new diff layer on top.** Previous published vs new published. Older layers stay, unedited, with their own pagination |
+| 7 | Every page in the fact index (Part 2) whose figure changed | |
+| 8 | Every `#page=N` anchor on every page | old anchors are wrong the moment the PDF changes |
+| 9 | `docs/history.html` | dated entry, newest first |
+| 10 | `docs/index.html` | what is open now, what is settled, next dates |
+| 11 | Run the checks (Part 3) | |
 
-Everything earlier is history: the June 12 committee recommendation, the June 25 department draft, and the July 9 board-meeting draft. They are cited only where a page is explicitly comparing versions.
+**The trap that has caught three sessions:** a figure that was deferred, tabled, or sent back
+to committee can still change in the next published draft. July 23 raised the shared didactic
+module from 25 to 30 while it was deferred. Diff every provision. Do not assume anything
+carried forward.
 
-The document chain lives in one place, `tools/sync-provenance.py`, and is written into the foot of every page. **When a new document supersedes the current one, that file is the first thing you edit.**
+### Event B. A meeting happens
 
-## The update loop
+| Touch | Why |
+|---|---|
+| `docs/documents/NMMPAB-YYYY-MM-DD-*-transcript.pdf` | and the plain text in `source-text/` so it is searchable |
+| `docs/documents.html` | register entry, and state whether the transcript carries speaker labels |
+| `docs/history.html` | dated entry |
+| The page that owns whatever was decided | Part 2 |
+| `docs/index.html` | only if it changed what is open |
+| Status pills on `eligibility.html` and `pathways.html` | if a vote moved something between settled and open |
 
-When a meeting happens or a document is published, work in this order. Skipping ahead produces pages that contradict each other.
+A meeting changes the *record*. It does not change the rule text until a draft is published.
+Where the meeting and the current draft disagree, state both and attribute each.
 
-### 1. Get the source in
+### Event C. A document lands that is not a rule draft
 
-Put the document in `docs/documents/` with a dated name matching the existing pattern, for example `rules-draft-2026-07-23-published.pdf`. Transcripts go in as PDFs and also as plain text in `source-text/` so they can be searched and quoted.
+Recommendations, public comment, presentations, the hearing notice.
 
-If a transcript has no speaker labels, say so on the document itself and everywhere it is quoted. The July 9 transcript is speaker-tagged; both July 17 transcripts are not. Never add a speaker label you inferred without recording the basis.
+| Touch |
+|---|
+| `docs/documents/` and `docs/documents.html` |
+| The one page it bears on |
+| `docs/history.html` if it is dated and consequential |
 
-### 2. Extract and diff before writing anything
+### Event D. A date or a deadline changes
 
-Extract the text and compare it against the version it supersedes. Do not summarise from the meeting notes and do not trust your memory of what changed.
+Dates are the most duplicated fact on the site. Change one and you are changing it in up to
+eleven places. Grep first, then edit. See the fact index.
 
+---
+
+## Part 2: The fact index
+
+**Which pages assert which fact.** Measured from the site, excluding tool-generated blocks.
+Regenerate this table when pages are added or content moves; it is the thing that goes stale
+first, and a stale version of it is how one fact ended up owned by two pages.
+
+| Fact | Pages that assert it | N |
+|---|---|---|
+| Hearing date | about, changes, cs-number, deferred, documents, eligibility, guide, history, hours, index, input | 11 |
+| The 7-0 deferral vote | changes, cs-number, deferred, documents, eligibility, history, hours, index, pathways, specialization | 10 |
+| CS number requirement | changes, cs-number, eligibility, guide, history, hours, index, input | 8 |
+| Reciprocity route | changes, documents, eligibility, history, hours, index, input, pathways | 8 |
+| Waiver deadlines (Dec 31, 2027) | changes, deferred, eligibility, history, hours, index, pathways | 7 |
+| Practicum 100 / 120 | changes, deferred, eligibility, hours, pathways | 5 |
+| Supervisory 20 | changes, eligibility, history, hours, pathways | 5 |
+| Simulated patient 5 | changes, deferred, eligibility, history, hours | 5 |
+| BLS / CPR+AED / NM EMT | changes, eligibility, history, hours, pathways | 5 |
+| Didactic 30 + 5 | changes, deferred, eligibility, hours | 4 |
+| Clinician 8 didactic / 8 CME | changes, eligibility, hours, pathways | 4 |
+| Continuing education 20 / 8 | changes, eligibility, history, hours | 4 |
+| Practicum entry gate | changes, deferred, history, hours | 4 |
+| Metz 84-hour proposal | documents, eligibility, history, hours | 4 |
+| Mentoring 10 | changes, eligibility, pathways | 3 |
+| Test-out | changes, eligibility, pathways | 3 |
+
+**Regenerate it:**
+
+```bash
+cd docs && python3 - <<'PY'
+import glob, re, os
+pages = {}
+for f in sorted(glob.glob('*.html')):
+    s = open(f).read(); b = s[s.index('</head>'):]
+    b = re.sub(r'<nav class="tnav".*?</nav>', '', b, flags=re.S)
+    b = re.sub(r'<!-- provenance.*?/provenance -->', '', b, flags=re.S)
+    pages[os.path.basename(f)[:-5]] = b
+FACTS = [("practicum 100/120", r'100 hours|120 hours'),
+         ("hearing date", r'August 28'),
+         ("waiver dates", r'December 31, 2027')]   # add rows as facts are added
+for name, pat in FACTS:
+    hits = sorted(p for p, b in pages.items() if re.search(pat, b))
+    print(f"{name:<24}{len(hits):>3}  {' '.join(hits)}")
+PY
 ```
-pip install pypdf
-python3 -c "
-from pypdf import PdfReader
-r = PdfReader('docs/documents/NEW.pdf')
-for i, p in enumerate(r.pages, 1):
-    print(f'\n===== PAGE {i} =====\n' + (p.extract_text() or ''))
-" > /tmp/new.txt
-```
 
-Then diff section by section against the previous extraction. Section numbering changes between drafts, so align on headings rather than on order. Write the result into `analysis/` as a dated delta file before touching any page.
+### What each page owns
 
-**This step has caught real errors.** The July 23 publication raised the shared didactic module from 25 hours to 30, and every page on the site said 25 because everyone assumed the deferred figures had been carried forward untouched.
-
-### 3. Build the section-to-page map
-
-Deep links use `documents/FILE.pdf#page=N`. Page numbers change between drafts, so every citation on the site breaks when a document is superseded. Build the map once and reuse it:
-
-```
-python3 -c "
-import re
-raw = open('/tmp/new.txt').read()
-for part in re.split(r'(===== PAGE \d+ =====)', raw):
-    m = re.match(r'===== PAGE (\d+) =====', part)
-    if m: page = m.group(1); continue
-    for h in re.finditer(r'(7\.\d+\.\d+\.\d+)\s+([A-Z][A-Z ,;:/&-]+):', part):
-        print(f'{h.group(1)}\tp.{page}\t{h.group(2).strip()}')
-"
-```
-
-### 4. Update the provenance chain
-
-Edit `CHAIN` in `tools/sync-provenance.py`: add the new document, mark it `"current": True`, remove `current` from the old one, and describe what it changed. Then run the tool.
-
-### 5. Update the pages
-
-Which page owns which fact:
+A fact lives on exactly one page in full. Other pages state it in one line and link.
 
 | Page | Owns |
 |---|---|
-| `index.html` | What is open right now, what is settled, the next three dates |
+| `index.html` | What is open right now, what is settled, the next dates |
+| `guide.html` | A directory of the site: which page holds what |
+| `history.html` | The dated chain of meetings, votes and documents, newest first |
+| `documents.html` | The register: what each document is, whether it is current, a download, and what the site does not have |
+| `changes.html` | Provision-level diffs, one layer per document transition, newest on top |
 | `deferred.html` | Every provision a practicum change touches, and what is broken in the published text |
-| `hours.html` | Hour requirements by role, cost, and the record of what was said about them |
 | `pathways.html` | Route to each permit by starting license |
-| `eligibility.html` | Which licenses map to which permit |
+| `eligibility.html` | Which licenses map to which permit; the two status tables |
+| `hours.html` | Hour requirements by role, cost, and the record of what was said about them |
+| `specialization.html` | The specialized-domain overlay and its proposed hours. None of it is in the rule |
 | `cs-number.html` | The controlled-substance number at the certifying-clinician access point |
-| `changes.html` | Provision-level record, current layer first, earlier comparisons below |
-| `history.html` | The dated chain of meetings, votes, and documents, newest first |
-| `documents.html` | The register: what each document is, whether it is current, and a download |
-| `about.html` | Method, sources, verification, corrections |
+| `about.html` | Method, sources, corrections |
 | `input.html` | The community input form |
 
-A fact belongs on exactly one page. Other pages link to it.
+---
 
-### 6. Record what you did
+## Part 3: What is generated, and what is not
 
-Add an entry to `REVISIONS` in `tools/sync-provenance.py` for every page you changed, stating **what changed**, not that something changed. "Corrected the in-state bridge deadline from June 30 2027 to December 31 2027" is an entry. "Updated for the published rule" is not.
+Four things are generated by a tool and identical on all thirteen pages. **Never hand-edit
+them.** Edit the tool, run it.
 
-Then set the date marker at the top of the page: **Updated** if the content changed, **Reviewed** if you checked it and it needed nothing.
+| Block | Tool | Covers |
+|---|---|---|
+| Site nav | `tools/sync-nav.py` | all 13 pages |
+| Document chain | `tools/sync-provenance.py` → `CHAIN` | all 13 pages |
+| Per-page revisions | `tools/sync-provenance.py` → `REVISIONS` | per page |
+| Visit-counter beacon | `tools/sync-count.py` | all 13 pages |
 
-### 7. Run the tools and the verification pass
+A new page needs nothing special from the third tool: run it and the beacon appears. The
+counter's endpoint is the `ENDPOINT` constant in `tools/sync-count.py` and lives nowhere else,
+so moving the counter is `python3 tools/sync-count.py --endpoint https://NEW-HOST`. What the
+counter records is stated on `about.html`; the Worker behind it is in `analytics/`, which has
+its own README.
 
-```
-python3 tools/sync-nav.py          # nav markup and script, identical everywhere
-python3 tools/sync-provenance.py   # document chain and per-page revisions
-python3 tools/sync-count.py        # visit-counter beacon, identical everywhere
-```
+**Never let a second Cloudflare Worker config into this repository.** `analytics/wrangler.toml`
+is the only one. The Cloudflare GitHub integration will offer to add a `wrangler.jsonc` at the
+root that claims the same Worker name and serves `docs/` as a static site; accepting it
+silently replaces the counter with a copy of the website. Keep the build connection
+disconnected. This has happened twice.
 
-All three accept `--check` to verify without writing. Never hand-edit the blocks they own; edit the tool and re-run.
+**Everything else is hand-maintained in every page that states it.** That is why the fact
+index above exists, and it is the site's largest structural cost: each page is a standalone
+HTML file carrying its own full copy of the stylesheet, so moving a block between pages
+leaves its CSS and its JavaScript behind. This has shipped broken twice.
 
-Never let a second Cloudflare Worker config into this repository. `analytics/wrangler.toml` is the only one. The Cloudflare GitHub integration will offer to add a `wrangler.jsonc` at the root that claims the same Worker name and serves `docs/` as a static site; accepting it silently replaces the counter with a copy of the website. Keep the build connection disconnected.
+### The checks
 
-A new page needs nothing special from the third one: run it and the beacon appears. The counter's endpoint is the `ENDPOINT` constant in `tools/sync-count.py` and lives nowhere else, so moving the counter is `python3 tools/sync-count.py --endpoint https://NEW-HOST`. What the counter records is stated on `about.html`, and the Worker behind it is in `analytics/`, which has its own README.
-
-Then the checks in the next section. All of them, every time.
-
-### 8. Commit, pull request, merge
-
-Branch, commit with a message that says what changed and why, open a pull request, merge it. The site owner reviews on the live site, so unmerged work is invisible to them.
-
-Squash-merging rewrites history on `main`, so the branch diverges after every merge. Expect to `git merge origin/main` and resolve before the next merge. The conflicts are almost always your newer work against the squashed older version, and the resolution is almost always to keep yours, but read them rather than assuming.
-
-## The verification pass
-
-Run all of it before opening a pull request.
-
-```
-# every page parses, no unclosed or mismatched tags
-# nested anchors: invalid HTML that browsers silently break apart
-# em dashes: house rule, zero anywhere
-python3 - <<'EOF'
-import glob, html.parser, re
-for f in sorted(glob.glob("docs/*.html")):
-    s = open(f).read()
-    class P(html.parser.HTMLParser):
-        def __init__(s): super().__init__(); s.st=[]; s.bad=[]
-        def handle_starttag(s,t,a):
-            if t not in ('meta','link','br','hr','img','input'): s.st.append(t)
-        def handle_endtag(s,t):
-            if s.st and s.st[-1]==t: s.st.pop()
-            elif t in s.st: s.bad.append(t)
-    p = P(); p.feed(s)
-    nested = [m for m in re.finditer(r'<a\b[^>]*>', s) if '<a ' in s[m.end():s.find('</a>', m.end())]]
-    problems = []
-    if p.bad or p.st: problems.append(f"parse {p.bad or p.st}")
-    if nested: problems.append(f"{len(nested)} nested anchor(s)")
-    if s.count(chr(8212)): problems.append(f"{s.count(chr(8212))} em dash(es)")
-    if problems: print(f, "|", "; ".join(problems))
-EOF
-
-# every class used in the body has a CSS rule on that page.
-# This catches content moved between pages without its styles, which renders
-# as an unstyled wall of text. It has happened: guide.html shipped broken.
-python3 - <<'EOF'
-import glob, re
-for f in sorted(glob.glob("docs/*.html")):
-    s = open(f).read()
-    head = s[:s.index("</head>")]
-    body = re.sub(r'<nav class="tnav".*?</nav>', '', s[s.index("</head>"):], flags=re.S)
-    body = re.sub(r'<!-- provenance.*?/provenance -->', '', body, flags=re.S)
-    cls = set()
-    for u in re.findall(r'class="([A-Za-z0-9 _-]+)"', body): cls.update(u.split())
-    missing = [c for c in sorted(cls) if not re.search(r'[.#]' + re.escape(c) + r'[ ,.:{>]', head)]
-    if missing: print(f, "| unstyled:", missing)
-EOF
-
-# link text must not contradict its target
-python3 - <<'EOF'
-import glob, re
-for f in sorted(glob.glob("docs/*.html")):
-    s = open(f).read()
-    for m in re.finditer(r'<a href="(documents/[^"]*)"[^>]*>([^<]*)</a>', s):
-        href, txt = m.group(1), m.group(2)
-        for tag in ("2026-06-12", "2026-06-25", "2026-07-09", "2026-07-23"):
-            if tag in href: break
-        else: continue
-        if "published" in txt.lower() and "07-23" not in href:
-            print(f, "| text says published, href is", href)
-EOF
-
-# internal links resolve.
-# Skips anything containing a quote or a plus, which is an href built in
-# JavaScript rather than a literal link. pathways.html constructs its citation
-# links that way, and a naive grep reports them as broken.
-cd docs && grep -oh 'href="[^"]*"' *.html | sed 's/href="//;s/"//' | sort -u \
-  | while read h; do
-      case "$h" in http*|\#*|*@*|*\'*|*+*) continue;; esac
-      [ -e "${h%%[#?]*}" ] || echo "MISS $h"
-    done
+```bash
+python3 tools/sync-nav.py --check          # nav identical everywhere
+python3 tools/sync-provenance.py --check   # chain and revisions identical
+python3 tools/sync-count.py --check        # visit-counter beacon identical everywhere
 ```
 
-**Verify every quotation against the source.** Do not trust your own transcription. Split on ellipses and check each fragment:
+And these, which have no script yet and are run by hand. Seven of the eight failure classes
+below have already shipped to the live site. Each is mechanically detectable, and none is
+detected today.
 
+| Check | What it catches | Has shipped broken |
+|---|---|---|
+| Cited section appears on cited page | `#page=N` and section numbers that disagree with the PDF | Yes, 9 at once |
+| Class used in a body has a CSS rule on that page | content moved without its styles | Yes |
+| Class emitted by JS has a CSS rule on that page | same, via the renderer | Yes |
+| Every JS handler target exists in the markup | buttons moved without their JavaScript | Yes |
+| Internal links and `#anchors` resolve | links left dead by a page split | Yes |
+| No nested `<a>` | invalid HTML, browsers break the layout apart | Yes |
+| Every page parses; zero em dashes | | |
+| Quoted fragments appear verbatim in the source | paraphrase inside quotation marks | Yes |
+
+---
+
+## Part 4: Extracting and diffing a new draft
+
+`pypdf` needs the `cryptography` import blocked in some environments.
+
+```bash
+python3 - <<'PY'
+import sys
+class B:
+    def find_module(s, f, p=None):
+        if f == "cryptography" or f.startswith("cryptography."): return s
+    def load_module(s, f): raise ImportError()
+sys.meta_path.insert(0, B())
+from pypdf import PdfReader
+r = PdfReader('docs/documents/NEW.pdf')
+open('/tmp/new.txt','w').write("".join(
+    f"\n===== PAGE {i} =====\n" + (p.extract_text() or "") for i, p in enumerate(r.pages, 1)))
+PY
 ```
-python3 - <<'EOF'
-import re, html
-src = re.sub(r"===== PAGE \d+ =====", "", open("/tmp/new.txt").read())
-norm = lambda t: re.sub(r"\s+"," ",t).replace(chr(8220),'"').replace(chr(8221),'"').replace(chr(8217),"'")
-src = norm(src).replace("certif ication","certification").replace("in -person","in-person")
-page = open("docs/PAGE.html").read()
-for q in re.findall(r'<blockquote>(.*?)</blockquote>', page, re.S):
-    t = norm(html.unescape(re.sub(r'<[^>]+>','',q)))
-    for frag in [f.strip(' .;') for f in t.split(chr(8230))]:
-        if len(frag) > 24 and frag not in src:
-            print("NOT VERBATIM:", frag[:120])
-EOF
+
+Then build the section-to-page map, because every citation on the site depends on it:
+
+```bash
+python3 - <<'PY'
+import re
+raw = open('/tmp/new.txt').read()
+pages, cur = {}, None
+for line in raw.split('\n'):
+    m = re.match(r'===== PAGE (\d+) =====', line)
+    if m: cur = int(m.group(1)); pages[cur] = []; continue
+    if cur: pages[cur].append(line)
+for p in sorted(pages):
+    for m in re.finditer(r'7\.3[45]\.3\.(\d+)', '\n'.join(pages[p])):
+        print(f"7.35.3.{m.group(1)}\tp.{p}")
+PY
 ```
 
-PDF extraction inserts spaces inside words from character spacing, so `certification` can extract as `certif ication`. Normalise those in the comparison rather than reproducing them on the page.
+Diff section by section against the previous extraction, aligning on headings rather than
+order. Write the result to `analysis/DATE-delta.md` **before** touching a page.
 
-## House rules
+PDF extraction inserts spaces inside words. `certification` extracts as `certif ication`.
+Normalise in the comparison; never reproduce it on the page.
 
+---
+
+## Part 5: Non-negotiables
+
+- **Verbatim means verbatim.** Never paraphrase inside quotation marks. Mark elisions with an
+  ellipsis and verify each side of it separately against the source.
+- **Cite to the subsection and the page.** "7.35.3.19 (A), p. 13", not "the practicum section".
+- **Unlabelled transcripts stay unlabelled.** Some transcripts carry no speaker labels. Name a
+  speaker only where the surrounding text fixes it, and state the basis.
+- **A meeting is the source for what it decided. The published draft is the source for what
+  the rule says.** Where they differ, state both.
 - **No em dashes.** Commas, colons, or a full stop.
-- **Verbatim means verbatim.** Never paraphrase inside quotation marks. Mark elisions with an ellipsis and verify each side separately.
-- **Cite to the subsection**, not just the document. "7.35.3.19 (A), p. 12" rather than "the practicum section".
-- **Every claim carries its source.** A page cite or a named transcript.
-- **The repository is public.** Everything committed is published, including commit messages and everything in `analysis/`. There is no internal directory.
-- **Links to documents open in a new tab**, so a reader is not taken away from what they are comparing.
-- **Never nest an `<a>` inside another `<a>`.** It is invalid, browsers break the layout apart, and a parser check will not catch it.
+- **Never nest an `<a>` inside another `<a>`.**
+- **Links to documents open in a new tab.**
+- **The repository is public.** Everything committed is published, including commit messages
+  and everything in `analysis/`. There is no internal directory.
 
-## Writing standard
+---
 
-- Complete sentences, or an actual list. A list written as prose is neither, and strings of four-word fragments are a tic rather than a style.
-- Every element introduces itself. If a page needs a note explaining how to read it, rewrite the page.
-- Specific rather than gestural. Name the subsection and the figure.
-- The reader is intelligent and has never been here. Both at once.
-- Cut anything present only for effect. No headlines, no hyperbole.
+## Part 6: Known gaps
 
-## Traps that have already caught someone
+Things the site asserts that have no source document **in this repository**. Not errors;
+missing paperwork. Landing any of these closes a gap.
 
-- **Live-blog tense.** Pages written during a meeting said "this morning" and "the committee meets at 1 PM today" for eight days. If you write during a meeting, put a date on it and close it out afterwards.
-- **Assuming deferred figures were carried forward.** The July 23 rule raised the didactic module while it was deferred. Diff, do not assume.
-- **Page anchors after a new draft.** Every `#page=N` is wrong the moment a document is superseded.
-- **Blanket find-and-replace on link text.** Replacing "July 9 draft" with "published rule" left four links whose text and target disagreed. The check above exists because of that.
-- **Currency work is not review.** Repointing citations does not tell you whether a page still makes sense, still says what it is, or still holds its weight. Do both, and do not report one as the other.
+Meeting notes and transcripts originate in **Notion** and are copied here. Three of the four
+gaps below have a Notion page and are retrievable; they were never missing, only uncopied.
+
+| Missing here | What rests on it | Upstream |
+|---|---|---|
+| June 26 board transcript | the 3-2 vote, the motion, the named "reluctant yes" | Notion, "Medical Psilocybin Advisory Board Meeting (June 2026)" |
+| June 25 meeting record | statements attributed to that meeting | Notion, "Training & Education Rules: Vote Record, Redline & Open Items (6/25 to 6/26)" |
+| July 16 End-of-Life committee | all of `specialization.html`, the specialization sections of `hours.html` and `eligibility.html`, the nine-session curriculum | Notion, "End of life Care 7/16" and "Proposed Adjunct Training in End-of-Life Psychedelic Care (Slides)" |
+| Hearing notice | the hearing date, asserted on eleven pages | Not located. The date itself is not in doubt; see `CLAUDE.md` |
+
+**Copying one in is Event C** (Part 1). Put the PDF in `docs/documents/`, the searchable text
+in `source-text/`, register it on `docs/documents.html`, and record on the document itself
+whether the transcript carries speaker labels.
+
+`docs/documents.html` carries this list for readers. Keep the two in step.
