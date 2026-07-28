@@ -23,21 +23,54 @@
 .portal .px{font-size:13.5px;color:var(--ink2);margin-top:4px;line-height:1.5}
 @media(max-width:760px){.portals{grid-template-columns:1fr}.procession{flex-wrap:wrap}}
 </style>
+<noscript><style>.tnav{display:flex}</style></noscript>
 </head>
 <body>
-<header class="top"><div class="wrap">
-<a class="brand" href="index.html">7.35.3 <b>·</b> Training &amp; Education</a>
-<nav>
-<a href="index.html" aria-current="page">Overview</a>
-<a href="rule.html">The rule</a>
-<a href="pathways.html">Pathways</a>
-<a href="recommendation.html">Recommendation</a>
-<a href="hours.html">Hours</a>
-<a href="record.html">Record</a>
-<a href="comment.html">Comment</a>
-<a href="about.html">About</a>
-</nav>
-</div></header>
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="dot"></span>7.35.3 NMAC &middot; Training &amp; Education</a>
+    <nav class="tnav" id="tnav" aria-label="Primary">
+      <details class="tdrop navgrp" data-navgrp="start">
+        <summary>Start here <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="index.html" aria-current="page" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+          <a href="index.html#directory">What is on this site<span class="sub">Every page, in one list</span></a>
+          <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
+        </div>
+      </details>
+      <details class="tdrop navgrp" data-navgrp="provider">
+        <summary>Becoming a provider <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="pathways.html" data-nav="pathways">Can I become a provider?<span class="sub">Pick where you start; the route to each permit</span></a>
+          <a href="eligibility.html" data-nav="eligibility">Which licenses qualify<span class="sub">The license-by-permit tables</span></a>
+          <a href="hours.html" data-nav="hours">Training hours<span class="sub">The working model of the deferred quantities</span></a>
+          <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
+          <a href="cs-number.html" data-nav="cs-number">The controlled-substance number<span class="sub">The certifying-clinician requirement</span></a>
+          <a href="deferred.html" data-nav="deferred">What practicum changes touch<span class="sub">Every provision a practicum change reaches</span></a>
+        </div>
+      </details>
+      <details class="tdrop navgrp" data-navgrp="rule">
+        <summary>The rule <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="rule.html" data-nav="rule">The published rule<span class="sub">All twenty-eight sections, verbatim, annotated</span></a>
+          <a href="changes.html" data-nav="changes">Section by section<span class="sub">All 104 provisions, and what changed</span></a>
+          <a href="recommendation.html" data-nav="recommendation">Committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
+          <a href="comment.html" data-nav="comment">How to comment<span class="sub">The August 28 hearing, and the input channel</span></a>
+        </div>
+      </details>
+      <details class="tdrop navgrp" data-navgrp="record">
+        <summary>The record <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="record.html" data-nav="record">Meetings and filings<span class="sub">The dated chain, newest first</span></a>
+          <a href="record.html#documents">All documents<span class="sub">The register: every document and its status</span></a>
+          <a href="training-hours-record.html" data-nav="training-hours-record">The training-hours record<span class="sub">July 9 and 17, benchmarks, and community comment</span></a>
+        </div>
+      </details>
+      <a href="comment.html" class="navcta">Community input</a>
+    </nav>
+    <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
+  </div>
+</header>
 <main class="wrap">
 
   <div class="head">
@@ -48,25 +81,26 @@
 
   <section>
     <p class="plaque">New Mexico is writing the rule that governs how medical psilocybin providers are trained and certified. The Department of Health published the proposed text on <b>July 23, 2026</b>, and the rule hearing is <b>August 28</b>. The practicum and didactic hours went to the Training and Education Committee, and the committee's recommendation was submitted on <b>July 27</b>. This site holds the text, the recommendation, and the record of how both came to be.</p>
-    <div class="procession" aria-label="The rulemaking in five stages">
-      <div class="pstage"><div class="n">Committee recommendation</div><div class="d">JAN – JUN</div></div>
-      <div class="pstage"><div class="n">Department drafts</div><div class="d">JUN 25 · JUL 9</div></div>
-      <div class="pstage here"><div class="n">Published text</div><div class="d">JUL 23 · OPERATIVE</div></div>
-      <div class="pstage todo"><div class="n">Rule hearing</div><div class="d">AUG 28</div></div>
-      <div class="pstage todo"><div class="n">Adopted rule</div><div class="d">AFTER THE HEARING</div></div>
-    </div>
   </section>
 
   <section>
     <p class="seclabel">Find your part</p>
     <div class="portals">
-      <a class="portal" href="rule.html#s18">
-        <div class="pt">I want to practice or facilitate</div>
-        <div class="px">The education and practicum sections state what the current draft would require of you. The working model shows what the open hours question costs.</div>
+      <a class="portal" href="pathways.html">
+        <div class="pt">I want to become a provider</div>
+        <div class="px">Pick where you start today, and follow the route to each of the three permits, step by step, with each step's status and its place in the published rule.</div>
       </a>
-      <a class="portal" href="rule.html#s9">
+      <a class="portal" href="eligibility.html">
+        <div class="pt">Which licenses qualify</div>
+        <div class="px">The tables hold the steps for each permit side by side, and the license-by-permit verdicts: nineteen starting licenses against the three permits.</div>
+      </a>
+      <a class="portal" href="cs-number.html">
         <div class="pt">I certify patients</div>
-        <div class="px">The application section carries the certifying-clinician requirements, including the controlled-substance number the department kept on July 17.</div>
+        <div class="px">The published rule requires a New Mexico controlled-substance number of certifying clinicians. The page states what the number is, who needs it, and what it does and does not authorize.</div>
+      </a>
+      <a class="portal" href="hours.html">
+        <div class="pt">How long would training take</div>
+        <div class="px">The working model holds the hours the board sent to committee: move the three quantities and see the total, and the cost, for the person training.</div>
       </a>
       <a class="portal" href="rule.html#s12">
         <div class="pt">I run or would join a training program</div>
@@ -84,6 +118,13 @@
     <div class="fix"><b>OPEN</b><span class="what">Practicum and didactic hours, deferred to the Training and Education Committee by a 7-0 board vote on July 17 and published unchanged. The committee's <a href="recommendation.html">recommendation</a> was submitted July 27: 80 didactic hours, a staged practicum of 60 or 70 hours by role, and 20 hours of case presentation and consultation. The department decides what enters the hearing text.</span></div>
     <div class="fix"><b>DEFECT</b><span class="what">Five provisions of the published text do not work as written; each is <a href="rule.html#s14">noted at the provision it sits in</a>.</span></div>
     <div class="fix"><b>SETTLED</b><span class="what">The certifying-clinician controlled-substance number, kept July 17, and the reciprocity deadlines, set to December 31, 2027 on July 9. Both stand in the <a href="rule.html#s9">published text</a>.</span></div>
+    <div class="procession" aria-label="The rulemaking in five stages">
+      <div class="pstage"><div class="n">Committee recommendation</div><div class="d">JAN – JUN</div></div>
+      <div class="pstage"><div class="n">Department drafts</div><div class="d">JUN 25 · JUL 9</div></div>
+      <div class="pstage here"><div class="n">Published text</div><div class="d">JUL 23 · OPERATIVE</div></div>
+      <div class="pstage todo"><div class="n">Rule hearing</div><div class="d">AUG 28</div></div>
+      <div class="pstage todo"><div class="n">Adopted rule</div><div class="d">AFTER THE HEARING</div></div>
+    </div>
   </section>
 
   <section class="grid2">
@@ -105,22 +146,22 @@
     <p class="seclabel">Every page on this site</p>
     <div class="grid2">
       <div>
-        <div class="fix"><b>HERE</b><span class="what"><a href="index.html">Overview</a>: where the rulemaking stands, and where your situation is covered.</span></div>
-        <div class="fix"><b>TEXT</b><span class="what"><a href="rule.html">The rule</a>: all twenty-eight sections of the published text, verbatim, annotated where something is open or defective.</span></div>
-        <div class="fix"><b>ROUTE</b><span class="what"><a href="pathways.html">Provider routes</a>: pick where you start, follow every step to each of the three permits.</span></div>
-        <div class="fix"><b>REC</b><span class="what"><a href="recommendation.html">Recommendation</a>: what the committee submitted July 27, beside what the published text says.</span></div>
-        <div class="fix"><b>MODEL</b><span class="what"><a href="hours.html">The hours</a>: move the three deferred quantities and see what changes for the person training.</span></div>
-        <div class="fix"><b>REACH</b><span class="what"><a href="deferred.html">Practicum requirements</a>: the thirteen provisions a practicum change touches, quoted, three flagged as not working as written.</span></div>
+        <div class="fix"><b>HERE</b><span class="what"><a href="index.html">Where things stand</a>: where the rulemaking stands, and where your situation is covered.</span></div>
+        <div class="fix"><b>TEXT</b><span class="what"><a href="rule.html">The published rule</a>: all twenty-eight sections of the published text, verbatim, annotated where something is open or defective.</span></div>
+        <div class="fix"><b>ROUTE</b><span class="what"><a href="pathways.html">Can I become a provider?</a>: pick where you start, follow every step to each of the three permits.</span></div>
+        <div class="fix"><b>REC</b><span class="what"><a href="recommendation.html">Committee recommendation</a>: what the committee submitted July 27, beside what the published text says.</span></div>
+        <div class="fix"><b>MODEL</b><span class="what"><a href="hours.html">Training hours</a>: move the three deferred quantities and see what changes for the person training.</span></div>
+        <div class="fix"><b>REACH</b><span class="what"><a href="deferred.html">What practicum changes touch</a>: the thirteen provisions a practicum change touches, quoted, three flagged as not working as written.</span></div>
         <div class="fix"><b>LAYER</b><span class="what"><a href="specialization.html">Specialized domains</a>: the optional endorsement layer raised July 16. None of it is in the published rule.</span></div>
       </div>
       <div>
-        <div class="fix"><b>CHAIN</b><span class="what"><a href="record.html">Record</a>: the dated chain of meetings, votes, and documents, the register, and the gaps.</span></div>
-        <div class="fix"><b>DIFF</b><span class="what"><a href="changes.html">What changed</a>: provision-level comparison across the June 12 recommendation and the drafts.</span></div>
-        <div class="fix"><b>WHO</b><span class="what"><a href="eligibility.html">Eligibility</a>: which licenses map to which permit, in tables.</span></div>
+        <div class="fix"><b>CHAIN</b><span class="what"><a href="record.html">Meetings and filings</a>: the dated chain of meetings, votes, and documents, the register, and the gaps.</span></div>
+        <div class="fix"><b>DIFF</b><span class="what"><a href="changes.html">Section by section</a>: provision-level comparison across the June 12 recommendation and the drafts.</span></div>
+        <div class="fix"><b>WHO</b><span class="what"><a href="eligibility.html">Which licenses qualify</a>: which licenses map to which permit, in tables.</span></div>
         <div class="fix"><b>CS #</b><span class="what"><a href="cs-number.html">The controlled-substance number</a>: the certifying-clinician requirement, with the full July 9 record by speaker.</span></div>
-        <div class="fix"><b>HOURS</b><span class="what"><a href="training-hours-record.html">Training hours record</a>: the July 9 and 17 records, benchmarks from other states, cost variables, and community comment.</span></div>
-        <div class="fix"><b>VOICE</b><span class="what"><a href="comment.html">Public comment</a>: the hearing facts, the input form, and the input received.</span></div>
-        <div class="fix"><b>METHOD</b><span class="what"><a href="about.html">About</a>: how the site is built, how verified each statement is, and how to correct it.</span></div>
+        <div class="fix"><b>HOURS</b><span class="what"><a href="training-hours-record.html">The training-hours record</a>: the July 9 and 17 records, benchmarks from other states, cost variables, and community comment.</span></div>
+        <div class="fix"><b>VOICE</b><span class="what"><a href="comment.html">How to comment</a>: the hearing facts, the input form, and the input received.</span></div>
+        <div class="fix"><b>METHOD</b><span class="what"><a href="about.html">How this site is built</a>: how the site is built, how verified each statement is, and how to correct it.</span></div>
       </div>
     </div>
   </section>
@@ -132,5 +173,75 @@
 <a href="about.html">Sources and method</a>
 <a href="comment.html">Report an error</a>
 </div></footer>
+<script id="navjs">
+(function(){
+  var nav=document.getElementById('tnav');
+  if(!nav) return;
+  var b=document.getElementById('hbtn');
+  if(b){ b.addEventListener('click', function(){ var o=nav.classList.toggle('open'); b.setAttribute('aria-expanded', o?'true':'false'); }); }
+  var f=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+  var cur=f.replace('.html','')||'index';
+  var el=document.querySelector('.tnav [data-nav="'+cur+'"]');
+  if(el){ el.classList.add('on'); var g=el.closest('.navgrp'); if(g){ var s=g.querySelector('summary'); if(s) s.classList.add('on'); } }
+
+  // Dropdowns are native <details>, which stay open until their own summary is
+  // clicked again. On a nav that is wrong: clicking anywhere else should close
+  // them. Close on outside click, on Escape, and when a sibling opens.
+  var groups=[].slice.call(nav.querySelectorAll('details.navgrp'));
+  if(!groups.length) return;
+  function closeAll(except){
+    groups.forEach(function(d){ if(d!==except) d.open=false; });
+  }
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){ if(d.open) closeAll(d); });
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.contains(e.target)) closeAll(null);
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'||e.key==='Esc'){
+      var open=groups.filter(function(d){ return d.open; });
+      if(open.length){ closeAll(null); var s=open[0].querySelector('summary'); if(s) s.focus(); }
+    }
+  });
+  // Choosing a destination should not leave the menu hanging open behind it.
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('.tdrop-menu a')) closeAll(null);
+  });
+})();
+</script>
+<script id="countjs">
+(function(){
+  var E="https://count.medical-psilocybin.org";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
+})();
+</script>
 </body>
 </html>

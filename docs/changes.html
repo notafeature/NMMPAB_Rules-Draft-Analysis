@@ -209,7 +209,7 @@
   .navgrp>summary.on{color:var(--accent); background:var(--accent-soft);}
   .navgrp .caret{font-size:10px; opacity:.7;}
   .navgrp .tdrop-menu{position:absolute; top:calc(100% + 6px); left:0; right:auto; background:var(--surface); border:1px solid var(--border-strong); border-radius:10px; box-shadow:var(--shadow-lg,0 18px 44px rgba(26,22,33,.14)); padding:6px; min-width:280px; display:flex; flex-direction:column; gap:2px; z-index:60;}
-  .navgrp[data-navgrp="docs"] .tdrop-menu{left:auto; right:0;}
+  .navgrp[data-navgrp="record"] .tdrop-menu{left:auto; right:0;}
   .navgrp .tdrop-menu a{font-size:13px; text-decoration:none; color:var(--text); padding:8px 10px; border-radius:7px; display:block; white-space:normal; line-height:1.3;}
   .navgrp .tdrop-menu a:hover{background:var(--surface-2);}
   .navgrp .tdrop-menu a.on{background:var(--accent-soft); color:var(--accent);}
@@ -237,55 +237,56 @@
     .navcta.on{color:#fff;}
   }
 </style>
+<noscript><style>.tnav{display:flex}</style></noscript>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="topbar">
-    <div class="inner">
-      <a class="brand" href="index.html"><span class="dot"></span> Training &amp; Education Rules</a>
-      <nav class="tnav" id="tnav" aria-label="Primary">
-        <details class="tdrop navgrp" data-navgrp="ov">
-          <summary>Overview <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
-            <a href="guide.html" data-nav="guide">What is on this site<span class="sub">Which page holds what</span></a>
-            <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
-          </div>
-        </details>
-        <details class="tdrop navgrp" data-navgrp="req">
-          <summary>Requirements <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="deferred.html" data-nav="deferred">Practicum requirements<span class="sub">Every provision a practicum change has to touch</span></a>
-            <a href="pathways.html" data-nav="pathways">Provider routes<span class="sub">Routes to each permit by starting license</span></a>
-            <a href="eligibility.html" data-nav="eligibility">Who can qualify<span class="sub">Which licenses map to which permit</span></a>
-            <a href="hours.html" data-nav="hours">Training hours<span class="sub">Didactic, practicum, and specialization</span></a>
-            <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
-            <a href="cs-number.html" data-nav="cs-number">CS number<span class="sub">The certifying-clinician access point</span></a>
-          </div>
-        </details>
-        <details class="tdrop navgrp" data-navgrp="record">
-          <summary>The record <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="changes.html" data-nav="changes">The draft, section by section<span class="sub">All 104 provisions, and what changed</span></a>
-            <a href="history.html" data-nav="history">History<span class="sub">The dated chain, newest first</span></a>
-          </div>
-        </details>
-        <a href="input.html" data-nav="input" class="navcta">Community input</a>
-        <details class="tdrop navgrp" data-navgrp="docs">
-          <summary>Documents <span class="caret">&#9662;</span></summary>
-          <div class="tdrop-menu">
-            <a href="documents.html" data-nav="documents">All documents<span class="sub">The register: what each one is and whether it is current</span></a>
-            <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published rule &middot; July 23<span class="sub">The proposed rule going to the August 28 hearing</span></a>
-            <a href="documents/NMMPAB-2026-07-17-board-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 17 board<span class="sub">Unofficial, no speaker attribution</span></a>
-            <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener">Transcript &middot; July 17 committee<span class="sub">Unofficial, no speaker attribution</span></a>
-            <a href="documents/metz-recommendations-2026-07-17.pdf" target="_blank" rel="noopener">Recommendations &middot; July 17<span class="sub">Dr. Anne Metz, presented to the committee</span></a>
-          </div>
-        </details>
-      </nav>
-      <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
-    </div>
+  <header class="topbar">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="dot"></span>7.35.3 NMAC &middot; Training &amp; Education</a>
+    <nav class="tnav" id="tnav" aria-label="Primary">
+      <details class="tdrop navgrp" data-navgrp="start">
+        <summary>Start here <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="index.html" data-nav="index">Where things stand<span class="sub">What is open, what is settled, what is next</span></a>
+          <a href="index.html#directory">What is on this site<span class="sub">Every page, in one list</span></a>
+          <a href="about.html" data-nav="about">How this site is built<span class="sub">Sources, method, and how to report an error</span></a>
+        </div>
+      </details>
+      <details class="tdrop navgrp" data-navgrp="provider">
+        <summary>Becoming a provider <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="pathways.html" data-nav="pathways">Can I become a provider?<span class="sub">Pick where you start; the route to each permit</span></a>
+          <a href="eligibility.html" data-nav="eligibility">Which licenses qualify<span class="sub">The license-by-permit tables</span></a>
+          <a href="hours.html" data-nav="hours">Training hours<span class="sub">The working model of the deferred quantities</span></a>
+          <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
+          <a href="cs-number.html" data-nav="cs-number">The controlled-substance number<span class="sub">The certifying-clinician requirement</span></a>
+          <a href="deferred.html" data-nav="deferred">What practicum changes touch<span class="sub">Every provision a practicum change reaches</span></a>
+        </div>
+      </details>
+      <details class="tdrop navgrp" data-navgrp="rule">
+        <summary>The rule <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="rule.html" data-nav="rule">The published rule<span class="sub">All twenty-eight sections, verbatim, annotated</span></a>
+          <a href="changes.html" aria-current="page" data-nav="changes">Section by section<span class="sub">All 104 provisions, and what changed</span></a>
+          <a href="recommendation.html" data-nav="recommendation">Committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
+          <a href="comment.html" data-nav="comment">How to comment<span class="sub">The August 28 hearing, and the input channel</span></a>
+        </div>
+      </details>
+      <details class="tdrop navgrp" data-navgrp="record">
+        <summary>The record <span class="caret">&#9662;</span></summary>
+        <div class="tdrop-menu">
+          <a href="record.html" data-nav="record">Meetings and filings<span class="sub">The dated chain, newest first</span></a>
+          <a href="record.html#documents">All documents<span class="sub">The register: every document and its status</span></a>
+          <a href="training-hours-record.html" data-nav="training-hours-record">The training-hours record<span class="sub">July 9 and 17, benchmarks, and community comment</span></a>
+        </div>
+      </details>
+      <a href="comment.html" class="navcta">Community input</a>
+    </nav>
+    <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
   </div>
+</header>
 
   <div class="col">
     <header class="hero">
@@ -560,36 +561,12 @@
       <!-- /provenance -->
       <div class="sitefoot">
         <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
-        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="input.html?topic=correction">Report an error</a> &middot; <a href="history.html">Recent developments</a></p>
+        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="comment.html">Report an error</a> &middot; <a href="record.html">Recent developments</a></p>
       </div>
     </div>
   </footer>
 
 </div>
-<script>
-(function(){var b=document.getElementById('hbtn'),n=document.getElementById('tnav');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');})})();
-(function(){
-  var bar=document.getElementById('fbar'); if(!bar) return;
-  var btns=bar.querySelectorAll('.fbtn');
-  function apply(f){
-    document.querySelectorAll('details.grp').forEach(function(g){
-      var vis=0;
-      g.querySelectorAll('.entry').forEach(function(e){
-        var show=(f==='all'||e.getAttribute('data-st')===f);
-        e.style.display=show?'':'none'; if(show) vis++;
-      });
-      g.style.display=vis?'':'none';
-      if(f!=='all'&&vis) g.open=true;
-    });
-  }
-  btns.forEach(function(b){
-    b.addEventListener('click',function(){
-      btns.forEach(function(x){x.classList.remove('on');});
-      b.classList.add('on'); apply(b.getAttribute('data-f'));
-    });
-  });
-})();
-</script>
 <script id="colhidejs">
 (function(){
   var b=document.getElementById('colhide'); if(!b) return;
@@ -604,6 +581,10 @@
 </script>
 <script id="navjs">
 (function(){
+  var nav=document.getElementById('tnav');
+  if(!nav) return;
+  var b=document.getElementById('hbtn');
+  if(b){ b.addEventListener('click', function(){ var o=nav.classList.toggle('open'); b.setAttribute('aria-expanded', o?'true':'false'); }); }
   var f=(location.pathname.split('/').pop()||'index.html').toLowerCase();
   var cur=f.replace('.html','')||'index';
   var el=document.querySelector('.tnav [data-nav="'+cur+'"]');
@@ -612,11 +593,8 @@
   // Dropdowns are native <details>, which stay open until their own summary is
   // clicked again. On a nav that is wrong: clicking anywhere else should close
   // them. Close on outside click, on Escape, and when a sibling opens.
-  var nav=document.getElementById('tnav');
-  if(!nav) return;
   var groups=[].slice.call(nav.querySelectorAll('details.navgrp'));
   if(!groups.length) return;
-
   function closeAll(except){
     groups.forEach(function(d){ if(d!==except) d.open=false; });
   }
