@@ -10,10 +10,13 @@ resolve, every page is reachable from another page, and prose carries no
 live-blog tense ("today", "this morning", "this afternoon") outside
 quoted material.
 """
-import glob, html.parser, os, re, sys
+import glob, hashlib, html.parser, os, re, sys
 
 DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
 failures = []
+
+with open(os.path.join(DOCS, "style.css"), "rb") as f:
+    CSSV = hashlib.sha256(f.read()).hexdigest()[:8]
 
 def fail(msg):
     failures.append(msg)
@@ -49,6 +52,10 @@ for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
         fail(f"{name}: {src.count(chr(8212))} em dash(es)")
     if 'id="countjs"' not in src:
         fail(f"{name}: visit counter missing")
+    for m in re.finditer(r'href="style\.css([^"]*)"', src):
+        if m.group(1) != f"?v={CSSV}":
+            fail(f"{name}: stylesheet link {m.group(0)} does not match style.css "
+                 f"at ?v={CSSV}; run tools/sync-css-version.py")
 
     if 'http-equiv="refresh"' in src:
         continue
