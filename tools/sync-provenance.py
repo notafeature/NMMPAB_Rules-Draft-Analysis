@@ -8,12 +8,14 @@ Two things a reader needs and the site did not have:
    should be able to walk back and see where it came from and what changed at
    each step, without that history sprawling across the page.
 
-   The chain is stated once, in the register at record.html#documents, which
-   holds each document's identity, date, status, and download. The block at the
-   foot of a page names the current document and links the register. It used to
-   restate all four documents with their own download links, which put the same
-   description of the same document on eight pages in different words, and that
-   is the one document-link duplication on the site that serves no citation.
+   The chain is stated once, in the register at record.html#documents, whose
+   data lives in tools/sync-record.py and is read from there by this script.
+   The register holds each document's identity, date, status, and download; the
+   block at the foot of a page names the current document, says what it changed,
+   and links the register. It used to restate all four documents with their own
+   download links, which put the same description of the same document on eight
+   pages in different words, and that is the one document-link duplication on
+   the site that serves no citation.
 
 2. A per-page revision log. What was changed on this page, and when. Only
    index.html had one, buried in its footer.
@@ -28,40 +30,37 @@ Usage:
     python3 tools/sync-provenance.py --check   # exit 1 if any page is stale
 """
 import glob
+import importlib.util
 import os
 import re
 import sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOCS = os.path.join(ROOT, "docs")
 
-# The document chain. Newest last. Identical on every page.
-CHAIN = [
-    {
-        "date": "June 12, 2026",
-        "name": "Committee recommendation",
-        "file": "documents/recommendation-2026-06-12.pdf",
-        "what": "The Training and Education Committee's own recommendation. Origin of the 100 and 120 practicum hours and the 20 supervisory hours. The Advisory Board voted 3-2 on June 26 to accept it, setting three items aside.",
-    },
-    {
-        "date": "June 25, 2026",
-        "name": "Department draft",
-        "file": "documents/rules-draft-2026-06-25.pdf",
-        "what": "The department's first rules-style draft of the same subject. Introduced the module test-out mechanism that every later draft keeps, and the first reciprocity provision, which the June 12 recommendation did not contain.",
-    },
-    {
-        "date": "July 9, 2026",
-        "name": "Board-meeting draft",
-        "file": "documents/rules-draft-2026-07-09.pdf",
-        "what": "The draft the Advisory Board went through section by section on July 9. Used placeholder section numbers shown as 7.35.3.X. Set the shared didactic module at 25 hours. Carried the older waiver dates of December 31, 2026 and June 30, 2027, which the board extended by vote that day without the text being updated.",
-    },
-    {
-        "date": "July 23, 2026",
-        "name": "Published proposed rule",
-        "file": "documents/rules-draft-2026-07-23-published.pdf",
-        "what": "The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.",
-        "current": True,
-    },
-]
+# The document chain lives in the register, in tools/sync-record.py, which is
+# where record.html reads it from as well. This block used to carry its own copy
+# of every document's date, name, and file, which is two homes for one fact and
+# the drift pattern the register exists to end. What stays here is the one thing
+# the register does not hold: what the current document changed, which is the
+# chain narrative rather than the document's identity.
+_spec = importlib.util.spec_from_file_location(
+    "syncrecord", os.path.join(ROOT, "tools", "sync-record.py"))
+syncrecord = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(syncrecord)
+
+CHAIN = [d for d in syncrecord.DOCUMENTS if d.get("chain")]
+
+CHANGED = {
+    "rules-draft-2026-07-23-published":
+        "The department's published proposed rule, and the text going to the August 28 hearing. "
+        "First version with final section numbering, 7.35.3.1 through .28. Raised the shared "
+        "didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 "
+        "and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send "
+        "those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a "
+        "rule that the practicum may not begin before half the didactic and all simulated "
+        "patient hours are complete.",
+}
 
 # Per-page revision entries, newest first. Keep each one specific: what changed,
 # not that something changed.
@@ -173,7 +172,7 @@ def esc(s):
 
 
 def build(page):
-    cur = next(c for c in CHAIN if c.get("current"))
+    cur = next(c for c in CHAIN if c["status"] == "current")
     superseded = len(CHAIN) - 1
     chain = (
         '          <p class="cd">{date}</p>\n'
@@ -183,8 +182,8 @@ def build(page):
         '          <p class="cw">This document supersedes {n} earlier ones. Each of them, what it '
         'is, what superseded it and when, and a download, is in the register at '
         '<a href="record.html#documents">Meetings and filings</a>.</p>'
-    ).format(date=cur["date"], file=cur["file"], name=esc(cur["name"]),
-             what=esc(cur["what"]), n=WORDS.get(superseded, superseded))
+    ).format(date=syncrecord.long_date(cur["date"]), file=cur["file"], name=esc(cur["name"]),
+             what=esc(CHANGED[cur["slug"]]), n=WORDS.get(superseded, superseded))
 
     revs = REVISIONS.get(page)
     if revs:

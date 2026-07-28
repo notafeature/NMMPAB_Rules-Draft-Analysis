@@ -24,16 +24,30 @@ drift apart:
 - Every id cited from another page exists on the page that is supposed to
   hold it. This generalizes the redirect-stub anchor check to every
   internal fragment link on the site.
+
+A fourth reads tools/sync-record.py the same way: the chain, the register,
+and the gaps register on record.html are generated from the data in that
+file, and this check fails if the page has drifted from it. Importing the
+module also runs its own validation, so a document a chain event attaches
+but the register does not hold, or an absence a gap claims that its event
+does not carry back, fails here as well.
 """
 import glob, hashlib, html.parser, importlib.util, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
 
-_spec = importlib.util.spec_from_file_location(
-    "syncnav", os.path.join(ROOT, "tools", "sync-nav.py"))
-syncnav = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(syncnav)
+
+def _load(name, filename):
+    spec = importlib.util.spec_from_file_location(
+        name, os.path.join(ROOT, "tools", filename))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+syncnav = _load("syncnav", "sync-nav.py")
+syncrecord = _load("syncrecord", "sync-record.py")
 
 failures = []
 
@@ -143,6 +157,11 @@ if navs:
         if register and href not in register:
             fail(f"menu: {href} is in the Documents dropdown with no register row "
                  "at record.html#documents")
+
+# the chain, the register, and the gaps register match tools/sync-record.py
+if syncrecord.stale():
+    fail("record.html: the chain, the register, or the gaps register no longer matches "
+         "tools/sync-record.py; run it without --check")
 
 # titles, headings, and menu labels say the same words
 for page, name in syncnav.NAMES.items():
