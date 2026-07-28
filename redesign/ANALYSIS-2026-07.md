@@ -22,6 +22,32 @@ Every recommendation is numbered R1 through R36 and tagged **SMALL** (hours of w
 **STRUCTURAL** (needs its own session), or **OPEN** (a question the owner must answer, with a
 recommended default). Settled owner decisions are built on, not reopened.
 
+## Owner decisions, July 28, 2026
+
+The seven OPEN questions below are answered. The R-items stand as written; this section is
+the answer key, and implementing sessions read the decision here.
+
+- **R9: decided, tool-generated.** The record's events and register are generated from one
+  data structure, extending the data ownership of `tools/sync-provenance.py` as specified in
+  section 3.3.
+- **R10: decided, the register stays on `record.html#documents`.** The `documents.html`
+  redirect stub stays.
+- **R15: decided.** `comment.html` owns form submissions and their published texts; meeting
+  public comment stays where the meeting record lives, linked from `comment.html`, not
+  pasted.
+- **R24: decided, with a condition.** The owner will supply full names for "Jenn" and "Jamie"
+  where they can be sourced; until then the page states the attribution basis, and no name is
+  guessed.
+- **R31: decided, adopted.** The naming table in section 3.15 is adopted as written.
+- **R32: decided, pre-render.** The five start panels are pre-rendered by a build tool, in
+  its own session as tagged.
+- **R33: decided, yes.** Per-page revision logs return to the seven family A pages via
+  `tools/sync-provenance.py`.
+
+Also decided the same day: R27 is executed immediately as the one implementation exception,
+because the sentence it corrects is factually wrong on the live site. Everything else waits
+for its own session per the tags.
+
 ---
 
 ## Part 1: Function analysis
