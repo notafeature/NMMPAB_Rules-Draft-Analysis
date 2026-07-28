@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Specialized Domains · NM Medical Psilocybin Training Rules</title>
+<title>Specialized domains &middot; 7.35.3 NMAC Training and Education</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -104,15 +104,10 @@
   .provbody{padding:4px 16px 18px;}
   .provsec{margin-top:16px;}
   .provk{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
-  .chain{list-style:none; margin:0; padding:0; counter-reset:ch;}
-  .chain li{position:relative; padding:0 0 14px 26px; border-left:2px solid var(--border-strong); margin-left:5px;}
-  .chain li:last-child{border-left-color:transparent; padding-bottom:2px;}
-  .chain li::before{content:""; position:absolute; left:-6px; top:4px; width:10px; height:10px; border-radius:50%; background:var(--border-strong); border:2px solid var(--surface);}
-  .chain li.cur::before{background:var(--accent);}
-  .chain .cd{font-size:12px; font-family:var(--mono); color:var(--text-faint);}
-  .chain .cn{font-size:14.5px; font-weight:650; color:var(--text); margin:1px 0 0;}
-  .chain .cw{font-size:13.5px; color:var(--text-muted); line-height:1.55; margin:4px 0 0;}
-  .chain .curflag{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:20px; padding:1px 8px; margin-left:7px; vertical-align:1px;}
+  .provsec .cd{font-size:12px; font-family:var(--mono); color:var(--text-faint); margin:0;}
+  .provsec .cn{font-size:14.5px; font-weight:650; color:var(--text); margin:1px 0 0;}
+  .provsec .cw{font-size:13.5px; color:var(--text-muted); line-height:1.55; margin:6px 0 0;}
+  .provsec .curflag{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:20px; padding:1px 8px; margin-left:7px; vertical-align:1px;}
   .revs{list-style:none; margin:0; padding:0;}
   .revs li{font-size:13.5px; color:var(--text-muted); line-height:1.55; padding:8px 0; border-top:1px solid var(--border);}
   .revs li:first-child{border-top:none; padding-top:0;}
@@ -124,6 +119,7 @@
   .opttag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--opt); background:var(--surface); border:1px solid var(--opt-border); border-radius:999px; padding:3px 10px; margin-bottom:9px;}
   .optintro{margin:0; font-size:13.5px; color:var(--text-muted); line-height:1.55;}
   .optintro b{color:var(--text); font-weight:600;}
+  .optintro.basis{margin-top:10px; padding-top:10px; border-top:1px solid var(--opt-border, var(--border));}
   .opthead h2{font-size:clamp(19px,2.5vw,24px); margin:0 0 8px; color:var(--text);}
   .opthead>p{font-size:14.5px; color:var(--text-muted); margin:0; line-height:1.55; max-width:660px;}
   .optgrid{display:grid; grid-template-columns:1fr; gap:12px; margin:20px 0;}
@@ -236,12 +232,12 @@
       <details class="tdrop navgrp" data-navgrp="provider">
         <summary>Becoming a provider <span class="caret">&#9662;</span></summary>
         <div class="tdrop-menu">
-          <a href="pathways.html" data-nav="pathways">Can I become a provider?<span class="sub">Pick where you start; the route to each permit</span></a>
+          <a href="pathways.html" data-nav="pathways">Routes to a permit<span class="sub">Pick where you start; the route to each permit</span></a>
           <a href="eligibility.html" data-nav="eligibility">Which licenses qualify<span class="sub">The license-by-permit tables</span></a>
-          <a href="hours.html" data-nav="hours">Training hours<span class="sub">The working model of the deferred quantities</span></a>
+          <a href="hours.html" data-nav="hours">The training hours<span class="sub">The working model of the deferred quantities</span></a>
           <a href="specialization.html" aria-current="page" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
           <a href="cs-number.html" data-nav="cs-number">The controlled-substance number<span class="sub">The certifying-clinician requirement</span></a>
-          <a href="deferred.html" data-nav="deferred">What practicum changes touch<span class="sub">Every provision a practicum change reaches</span></a>
+          <a href="deferred.html" data-nav="deferred">What a practicum change touches<span class="sub">Every provision a practicum change reaches</span></a>
         </div>
       </details>
       <details class="tdrop navgrp" data-navgrp="rule">
@@ -249,8 +245,8 @@
         <div class="tdrop-menu">
           <a href="rule.html" data-nav="rule">The published rule<span class="sub">All twenty-eight sections, verbatim, annotated</span></a>
           <a href="changes.html" data-nav="changes">Section by section<span class="sub">All 104 provisions, and what changed</span></a>
-          <a href="recommendation.html" data-nav="recommendation">Committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
-          <a href="comment.html" data-nav="comment">How to comment<span class="sub">The August 28 hearing, and the input channel</span></a>
+          <a href="recommendation.html" data-nav="recommendation">The committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
+          <a href="comment.html" data-nav="comment">Comment<span class="sub">The August 28 hearing, and the input channel</span></a>
         </div>
       </details>
       <details class="tdrop navgrp" data-navgrp="record">
@@ -261,7 +257,7 @@
           <a href="training-hours-record.html" data-nav="training-hours-record">The training-hours record<span class="sub">July 9 and 17, benchmarks, and community comment</span></a>
         </div>
       </details>
-      <a href="comment.html" class="navcta">Community input</a>
+      <a href="comment.html" class="navcta">Comment</a>
       <details class="tdrop navgrp" data-navgrp="docs">
         <summary>Documents <span class="caret">&#9662;</span></summary>
         <div class="tdrop-menu">
@@ -290,6 +286,7 @@
       <div class="optbanner">
         <span class="opttag">&#9670; Options raised &middot; July 16, 2026</span>
         <p class="optintro">Below this line the register changes. These are possibilities discussed at the <b>July 16 End-of-Life Care committee meeting</b>, offered for consideration. They are not in the published rule, not settled requirements, and not this site's recommendation. The core requirements they would sit on top of are unchanged.</p>
+        <p class="optintro basis"><b>How the July 16 material is sourced.</b> No recording, transcript, or minutes of the July 16 meeting is held in this repository, and the absence is registered on <a href="record.html#gap-july16">the list of documents this site does not hold</a>. Everything below is compiled from meeting notes. Participants are named as those notes name them: where a participant's full name and role are established elsewhere in the record, both are given here; where only a first name was recorded, the first name stands as recorded and no surname is supplied.</p>
       </div>
 
       <div class="opthead">
@@ -324,9 +321,9 @@
       <div class="optbox">
         <h3>An overlay on the three roles, not a fourth permit <span class="optmark">Discussed July 16</span></h3>
         <p>The discussion framed a specialization as an endorsement carried on top of an existing role, not a new license. The same end-of-life competency could sit with a Clinician, a Practitioner, or a Guide or Facilitator, depending on who carries it.</p>
-        <p class="optpos"><b>Dom, Department of Health:</b> creating diagnosis-specific licensure is logistically difficult, since a group session with more than one qualifying condition would require every facilitator to hold every matching certification. The department's stated preference was endorsements and best-practice recommendations rather than a specialization mandate.</p>
-        <p class="optpos"><b>Larry Leeman:</b> pointed to continuity-of-care models, including death doulas who stay through the journey and a Space Attendant who provides continuity, as an example of why the competency travels with the role rather than defining a separate license.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. How specialization sits on core eligibility is on <a href="eligibility.html#specialization">Who can qualify</a>.</p>
+        <p class="optpos"><b>Dominic Zurlo, director of the Department of Health Center for Medical Cannabis and Psilocybin, recorded in the July 16 notes as Dom:</b> creating diagnosis-specific licensure is logistically difficult, since a group session with more than one qualifying condition would require every facilitator to hold every matching certification. The department's stated preference was endorsements and best-practice recommendations rather than a specialization mandate.</p>
+        <p class="optpos"><b>Larry Leeman:</b> pointed to continuity-of-care models, including death doulas who stay through the journey and a Space Attendant, the term used in the July 16 discussion for a person who stays with a patient across the whole arc of a session to provide continuity rather than to facilitate it, as an example of why the competency travels with the role rather than defining a separate license.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026, from meeting notes; no record of that meeting is held in this repository; positions attributed to the members who stated them. How specialization sits on core eligibility is on <a href="eligibility.html#specialization">Which licenses qualify</a>.</p>
       </div>
 
       <div class="optbox">
@@ -336,7 +333,7 @@
         <p class="optpos"><b>Christine and others:</b> offer it as an adjunct add-on, noting that end-of-life work calls for a disposition not suited to every practitioner.</p>
         <p class="optpos"><b>Gregory Evans:</b> keep the core robust and specializations external as add-ons, while considering baking the baseline of all four qualifying-condition domains into the general curriculum.</p>
         <p class="optpos"><b>Jamie:</b> existential and spiritual themes run through all psilocybin work, not only end-of-life, so a baseline competency there fits every facilitator.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026.</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026, from meeting notes; no record of that meeting is held in this repository.</p>
       </div>
 
       <p class="optsub" id="hours">Specialization hours: a proposed addendum <span class="optmark">Discussed July 16</span></p>
@@ -355,7 +352,7 @@
           <p class="ol">The committee has worked toward <b>15 to 20 hours</b>. Gregory Evans floated a wider range, roughly <b>20 to 40</b>. Presented here as an open range, not a set number.</p>
         </div>
       </div>
-      <p class="optsrc" style="margin:0 2px 6px;">Source: End-of-Life Care committee meeting, July 16, 2026; hour ranges attributed to the committee and to Gregory Evans. Core figures: <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">published rule pp.11&ndash;13</a>.</p>
+      <p class="optsrc" style="margin:0 2px 6px;">Source: End-of-Life Care committee meeting, July 16, 2026, from meeting notes; no record of that meeting is held in this repository; hour ranges attributed to the committee and to Gregory Evans. Core figures: <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">published rule pp.11&ndash;13</a>.</p>
 
       <p class="optsub">The proposed end-of-life curriculum <span class="optmark">Presented July 16</span></p>
       <p class="body" style="margin-top:0;">Jenn presented a proposed nine-session curriculum, about <b>17 hours</b> as drafted, within the committee's 15 to 20 range. It is a proposal under discussion, not a settled requirement. The central competency named in the deck is the worker's ability to reflect on their own relationship with death, grief, and spirituality.</p>
@@ -379,14 +376,14 @@
           </tbody>
         </table>
       </div>
-      <p class="optsrc">Source: "Proposed Adjunct Training in End-of-Life Psychedelic Care," presented by Jenn, End-of-Life Care committee meeting, July 16, 2026. Hours and domains from the presented session and assessment matrix.</p>
+      <p class="optsrc">Source: "Proposed Adjunct Training in End-of-Life Psychedelic Care," presented by Jenn, whose surname is not recorded in the meeting notes, at the End-of-Life Care committee meeting, July 16, 2026. Neither the deck nor a record of that meeting is held in this repository. Hours and domains from the presented session and assessment matrix.</p>
 
       <div class="optbox">
         <h3>Left open for the training committee <span class="optmark">Discussed July 16</span></h3>
         <p class="optpos"><b>Test out, or credential out.</b> Whether a practitioner already specialized in palliative care could satisfy the requirement through existing expertise, rather than repeating hours, was flagged for the training committee.</p>
         <p class="optpos"><b>What a specialization hour is, and what readiness means.</b> The discussion did not define what counts toward a specialization hour, or how a resident's readiness to carry the specialization would be judged.</p>
         <p class="optpos"><b>The practicum progression.</b> The committee's strong view was that end-of-life is not an appropriate starting population for a practicum; a resident should gain experience with other populations first. A proposed progression ran from resident, to co-facilitator, to supervised primary. The steps and thresholds were left open.</p>
-        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026; positions attributed to the members who stated them. Terminology follows the site convention: "resident" and "Space Attendant."</p>
+        <p class="optsrc">Source: End-of-Life Care committee meeting, July 16, 2026, from meeting notes; no record of that meeting is held in this repository; positions attributed to the members who stated them. Terminology follows the site convention: "resident" and "Space Attendant."</p>
       </div>
 
       <p class="optsrc" style="margin:14px 2px 0;"><b>Where end-of-life sits in the published rule.</b> The curriculum at <a href="documents/rules-draft-2026-07-23-published.pdf#page=11" target="_blank" rel="noopener">7.35.3.18 (C), p.&nbsp;11</a> lists seventeen required subjects and none of them is end-of-life care. Denali Wilson asked on July 17 that end-of-life, suicidality, substance use disorder and PTSD be added as didactic requirements; Chris Caldwell argued for nineteen or more live instruction hours, and Larry Leeman supported roughly ten to fifteen in the core. None appears in the text published on July 23.</p>
@@ -397,36 +394,19 @@
     <div class="col">
       <!-- provenance: generated by tools/sync-provenance.py, do not hand-edit -->
       <details class="prov">
-        <summary><span class="provsum">Provenance: the document chain and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
+        <summary><span class="provsum">Provenance: the source document and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
         <div class="provbody">
         <div class="provsec">
-          <p class="provk">The document chain, oldest first</p>
-          <ol class="chain">
-          <li>
-            <p class="cd">June 12, 2026</p>
-            <p class="cn"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Committee recommendation</a></p>
-            <p class="cw">The Training and Education Committee's own recommendation. Origin of the 100 and 120 practicum hours and the 20 supervisory hours. The Advisory Board voted 3-2 on June 26 to accept it, setting three items aside.</p>
-          </li>
-          <li>
-            <p class="cd">June 25, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Department draft</a></p>
-            <p class="cw">The department's first rules-style draft of the same subject. Introduced the module test-out mechanism that every later draft keeps, and the first reciprocity provision, which the June 12 recommendation did not contain.</p>
-          </li>
-          <li>
-            <p class="cd">July 9, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Board-meeting draft</a></p>
-            <p class="cw">The draft the Advisory Board went through section by section on July 9. Used placeholder section numbers shown as 7.35.3.X. Set the shared didactic module at 25 hours. Carried the older waiver dates of December 31, 2026 and June 30, 2027, which the board extended by vote that day without the text being updated.</p>
-          </li>
-          <li class="cur">
-            <p class="cd">July 23, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
-            <p class="cw">The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
-          </li>
-          </ol>
+          <p class="provk">The document this page is read from</p>
+          <p class="cd">July 23, 2026</p>
+          <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
+          <p class="cw">The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
+          <p class="cw">This document supersedes three earlier ones. Each of them, what it is, what superseded it and when, and a download, is in the register at <a href="record.html#documents">Meetings and filings</a>.</p>
         </div>
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 28, 2026</b> The July 16 material now states how it is sourced before it states anything else: no recording, transcript, or minutes of that meeting is held in this repository, the absence is registered on the record page, and every source line beneath says so. Dom is named as Dominic Zurlo, director of the Department of Health Center for Medical Cannabis and Psilocybin, with the note that the July 16 notes recorded him by first name. Space Attendant is defined where it first appears. Jenn, Jamie, and Christine keep the first names the notes recorded, because no surname for them appears in any document this site holds, and the page now says that rather than leaving it to be noticed.</li>
           <li><b>July 27, 2026</b> Restored. The July 27 redesign merge replaced this page with a redirect; it returns unchanged from the July 25 version except that the core-figure link points at the retained record page, training-hours-record.html, where the pre-redesign Training hours material lives.</li>
           <li><b>July 25, 2026</b> This page now holds the specialization hours, which had been maintained on Training hours as well. Added at a new #hours anchor: the addendum framing, the core-baseline and end-of-life range cards, the nine-session 17-hour curriculum presented on July 16, and the three questions left open for the training committee. The banner said "The routes above are unchanged", which was left over from when this material sat at the foot of the provider routes page and there were routes above it.</li>
           <li><b>July 25, 2026</b> Page created from the specialized-domain section that was previously at the foot of the provider routes page, where it sat below unrelated material and carried July 16 dates with no indication of their status. It now states that none of it is in the published rule. Added the citation showing where end-of-life sits in the published text: the curriculum at 7.35.3.18 (C) lists seventeen required subjects and end-of-life is not among them, nor are suicidality, substance use disorder or PTSD, all four of which were asked for on the record on July 17.</li>
@@ -437,7 +417,7 @@
       <!-- /provenance -->
       <div class="sitefoot">
         <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
-        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="comment.html">Report an error</a> &middot; <a href="record.html">Recent developments</a></p>
+        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="comment.html">Report an error</a> &middot; <a href="record.html">Meetings and filings</a></p>
       </div>
     </div>
   </footer>
@@ -448,7 +428,7 @@
   "use strict";
   var DOM={
     eol:{t:'End-of-life care', flag:'<span class="ddflag disc">Discussed July 16</span>',
-      body:'Furthest along in the record. A proposed adjunct curriculum was presented at the July 16 End-of-Life Care committee meeting: roughly nine sessions, 15 to 20 hours, offered as a proposal under discussion. See <a href="#hours">the proposed hours and session outline</a> below, and how the layer sits on core eligibility on <a href="eligibility.html#specialization">Who can qualify</a>.'},
+      body:'Furthest along in the record. A proposed adjunct curriculum was presented at the July 16 End-of-Life Care committee meeting: roughly nine sessions, 15 to 20 hours, offered as a proposal under discussion. See <a href="#hours">the proposed hours and session outline</a> below, and how the layer sits on core eligibility on <a href="eligibility.html#specialization">Which licenses qualify</a>.'},
     ptsd:{t:'PTSD', flag:'<span class="ddflag none">Not discussed yet</span>',
       body:'PTSD is one of New Mexico\u2019s four qualifying conditions, shown here as a parallel option. The committee has not taken up a PTSD specialization, so there are no pathway details yet.'},
     sud:{t:'Substance use disorders', flag:'<span class="ddflag none">Not discussed yet</span>',

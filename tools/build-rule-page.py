@@ -10,6 +10,16 @@ and page anchor regenerates.
 Line breaks inside the text are collapsed to single spaces and nothing
 else is altered. Where the extraction is garbled, the linked PDF governs;
 the page says so.
+
+The chrome constants below, NAV and FOOT, and the head and hero written in
+main(), predate the navigation pass: they emit the retired <header class="top">
+menu, an unversioned stylesheet link, no visit counter, and the retired page
+name. Running the script as it stands would replace all four on the live page.
+It therefore refuses to run while docs/rule.html carries the current chrome.
+Bringing NAV, the head, and the hero current is what has to happen before the
+next published rule is built, and it is tracked in redesign/ANALYSIS-2026-07.md.
+Until then ANNOTATIONS is the source of the section notes and any change to a
+note is made here first and mirrored into the page.
 """
 
 import re, html
@@ -59,10 +69,13 @@ ANNOTATIONS = {
     14: [("defect", "Students are not authorized here",
          "The practicum in 7.35.3.19 requires students to conduct administration sessions, and 7.35.3.20 lets "
          "students count toward staffing, but this section authorizes no student to possess or administer "
-         "psilocybin. Stated in the July 25 concerns inventory, finding B1."),
+         "psilocybin. Stated in the July 25 concerns inventory, finding B1, and analyzed at "
+         "<a href='deferred.html#s14'>7.35.3.14 on What a practicum change touches</a>."),
         ("defect", "A registration this rule does not create",
          "Subsection C conditions healing-center owner and employee authorization on registration with the "
-         "department, and the rule creates no such registration. Finding B5.")],
+         "department, and the rule creates no such registration. Finding B5, analyzed at "
+         "<a href='deferred.html#new2'>the missing healing-center registration on What a "
+         "practicum change touches</a>.")],
     16: [("defect", "Paid evaluators are disqualified by the conflict rule",
          "The program must engage and pay the third-party evaluation team, and the section's own conflict rule "
          "disqualifies paid evaluators. Finding B3.")],
@@ -88,7 +101,9 @@ ANNOTATIONS = {
         ("defect", "A practicum that requires patients it cannot lawfully use",
          "Subsection A requires a minimum of 14 qualified patients at approved locations, no provision "
          "authorizes practicum with non-patients, and the only relief is a discretionary waiver with no "
-         "stated standard. Finding B4.")],
+         "stated standard. Finding B4. The provision is quoted, with everything else a practicum "
+         "change reaches, at <a href='deferred.html#s19a'>7.35.3.19 (A) on What a practicum "
+         "change touches</a>.")],
     20: [("blue", "Students in the staffing ratio",
          "Paragraph 5 of subsection H counts qualified students toward staffing ratios, which is how the "
          "department said students would participate instead of a training permit. It depends on the "
@@ -145,7 +160,24 @@ def render_body(body):
         out.append(f"<p>{p}</p>")
     return "\n".join(out)
 
+def guard():
+    """Refuse to overwrite a page whose chrome this script no longer emits."""
+    try:
+        live = open(OUT).read()
+    except FileNotFoundError:
+        return
+    if '<header class="topbar">' in live and '<header class="top">' in NAV:
+        raise SystemExit(
+            f"{OUT} carries the shared menu from tools/sync-nav.py, and this "
+            "script still emits the retired <header class=\"top\"> chrome. "
+            "Running it would take the menu, the visit counter, the versioned "
+            "stylesheet link, and the page name off the live page. Bring NAV, "
+            "the head, and the hero in this script current first."
+        )
+
+
 def main():
+    guard()
     sections = read_sections()
     toc, body = [], []
     for s in sections:
@@ -177,7 +209,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The rule · 7.35.3 NMAC Training and Education</title>
+<title>The published rule &middot; 7.35.3 NMAC Training and Education</title>
 <link rel="stylesheet" href="style.css">
 <style>
 .toclist{{display:grid;grid-template-columns:1fr 1fr;gap:2px 28px;margin:18px 0 6px}}
@@ -199,7 +231,7 @@ a.pdf:hover{{color:var(--blue)}}
 <main class="wrap">
   <div class="head">
     <p class="kicker">Proposed rule · published {DOCDATE} · <b>rule hearing August 28</b></p>
-    <h1>The rule</h1>
+    <h1>The published rule</h1>
     <p class="lede">The full text of 7.35.3 NMAC as published for hearing, all twenty-eight sections, with the state of each contested provision noted where it lives. Line breaks are collapsed for reading; where the extraction stumbles, the linked PDF governs.</p>
     <p class="stamp">Text from the official PDF published {DOCDATE}. Regenerated by tools/build-rule-page.py.</p>
   </div>
