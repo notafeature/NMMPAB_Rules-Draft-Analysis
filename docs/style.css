@@ -47,7 +47,7 @@ a{color:var(--blue);text-underline-offset:2px}
 .navgrp>summary.on{color:var(--blue);font-weight:650;background:var(--bluewash)}
 .navgrp .caret{font-size:10px;opacity:.7}
 .navgrp .tdrop-menu{position:absolute;top:calc(100% + 6px);left:0;background:var(--bg);border:1px solid var(--ink2);border-radius:4px;box-shadow:0 10px 30px rgba(22,24,29,.14);padding:6px;min-width:280px;display:flex;flex-direction:column;gap:2px;z-index:40}
-.navgrp[data-navgrp="record"] .tdrop-menu{left:auto;right:0}
+.navgrp[data-navgrp="docs"] .tdrop-menu{left:auto;right:0}
 .navgrp .tdrop-menu a{font:500 13.5px var(--sans);color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:4px;white-space:normal;line-height:1.35}
 .navgrp .tdrop-menu a:hover{background:var(--wash)}
 .navgrp .tdrop-menu a.on,.navgrp .tdrop-menu a[aria-current]{background:var(--bluewash);color:var(--blue)}

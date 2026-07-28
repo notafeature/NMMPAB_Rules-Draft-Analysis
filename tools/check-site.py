@@ -96,10 +96,21 @@ for label, blocks in (("chrome", navs), ("menu script", navjs)):
 
 # the shared menu links every page that is not a redirect stub
 if navs:
-    nav_hrefs = {h.split("#")[0] for h in re.findall(r'href="([^"]+)"', next(iter(navs.values())))}
+    nav = next(iter(navs.values()))
+    nav_hrefs = {h.split("#")[0] for h in re.findall(r'href="([^"]+)"', nav)}
     for n, s in srcs.items():
         if 'http-equiv="refresh"' not in s and n not in nav_hrefs:
             fail(f"{n}: not linked from the shared menu")
+
+    # the Documents dropdown holds the register and the current PDFs, in a new tab
+    if 'record.html#documents' not in nav:
+        fail("menu: the All documents entry is missing")
+    for pdf in ("documents/rules-draft-2026-07-23-published.pdf",
+                "documents/NMMPAB-2026-07-17-board-transcript.pdf",
+                "documents/NMMPAB-2026-07-17-committee-transcript.pdf",
+                "documents/metz-recommendations-2026-07-17.pdf"):
+        if f'href="{pdf}" target="_blank" rel="noopener"' not in nav:
+            fail(f"menu: {pdf} is missing or does not open in a new tab")
 
 # every page is reachable: linked by href from at least one other page.
 # Redirect stubs are exempt; they are retired addresses, not destinations.
