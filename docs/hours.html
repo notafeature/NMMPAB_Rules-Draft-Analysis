@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The hours, as a working model · 7.35.3 NMAC Training and Education</title>
+<title>The training hours &middot; 7.35.3 NMAC Training and Education</title>
 <link rel="stylesheet" href="style.css?v=3bb392b3">
 <style>
 .roles{display:inline-flex;border:1px solid var(--hair);border-radius:4px;margin:20px 0 6px}
@@ -37,6 +37,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .meaning{margin-top:28px;border-left:3px solid var(--open);background:var(--openwash);padding:14px 18px;font:15px/1.65 var(--serif)}
 .meaning.rec{border-color:var(--blue);background:var(--bluewash)}
 .meaning.pub{border-color:var(--ink2);background:var(--wash)}
+.routes{margin-top:26px;font:14.5px/1.65 var(--sans);color:var(--ink2)}
 .src{margin-top:40px;padding-top:12px;border-top:1px solid var(--hair);font:13px/1.7 var(--sans);color:var(--faint)}
 @media(max-width:760px){.mrow{grid-template-columns:1fr;gap:10px}.mrow .out{text-align:left}.reads{grid-template-columns:1fr}}
 </style>
@@ -58,12 +59,12 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <details class="tdrop navgrp" data-navgrp="provider">
         <summary>Becoming a provider <span class="caret">&#9662;</span></summary>
         <div class="tdrop-menu">
-          <a href="pathways.html" data-nav="pathways">Can I become a provider?<span class="sub">Pick where you start; the route to each permit</span></a>
+          <a href="pathways.html" data-nav="pathways">Routes to a permit<span class="sub">Pick where you start; the route to each permit</span></a>
           <a href="eligibility.html" data-nav="eligibility">Which licenses qualify<span class="sub">The license-by-permit tables</span></a>
-          <a href="hours.html" aria-current="page" data-nav="hours">Training hours<span class="sub">The working model of the deferred quantities</span></a>
+          <a href="hours.html" aria-current="page" data-nav="hours">The training hours<span class="sub">The working model of the deferred quantities</span></a>
           <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
           <a href="cs-number.html" data-nav="cs-number">The controlled-substance number<span class="sub">The certifying-clinician requirement</span></a>
-          <a href="deferred.html" data-nav="deferred">What practicum changes touch<span class="sub">Every provision a practicum change reaches</span></a>
+          <a href="deferred.html" data-nav="deferred">What a practicum change touches<span class="sub">Every provision a practicum change reaches</span></a>
         </div>
       </details>
       <details class="tdrop navgrp" data-navgrp="rule">
@@ -71,8 +72,8 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <div class="tdrop-menu">
           <a href="rule.html" data-nav="rule">The published rule<span class="sub">All twenty-eight sections, verbatim, annotated</span></a>
           <a href="changes.html" data-nav="changes">Section by section<span class="sub">All 104 provisions, and what changed</span></a>
-          <a href="recommendation.html" data-nav="recommendation">Committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
-          <a href="comment.html" data-nav="comment">How to comment<span class="sub">The August 28 hearing, and the input channel</span></a>
+          <a href="recommendation.html" data-nav="recommendation">The committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
+          <a href="comment.html" data-nav="comment">Comment<span class="sub">The August 28 hearing, and the input channel</span></a>
         </div>
       </details>
       <details class="tdrop navgrp" data-navgrp="record">
@@ -83,7 +84,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
           <a href="training-hours-record.html" data-nav="training-hours-record">The training-hours record<span class="sub">July 9 and 17, benchmarks, and community comment</span></a>
         </div>
       </details>
-      <a href="comment.html" class="navcta">Community input</a>
+      <a href="comment.html" class="navcta">Comment</a>
       <details class="tdrop navgrp" data-navgrp="docs">
         <summary>Documents <span class="caret">&#9662;</span></summary>
         <div class="tdrop-menu">
@@ -101,8 +102,8 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 <main class="wrap">
 
   <div class="head">
-    <p class="kicker">7.35.3.18 and .19 · <b>recommendation submitted Jul 27</b> · hearing Aug 28</p>
-    <h1>The hours, as a working model</h1>
+    <p class="kicker">7.35.3.17, .18, and .19 · <b>recommendation submitted Jul 27</b> · hearing Aug 28</p>
+    <h1>The training hours</h1>
     <p class="lede">These three quantities are what the Advisory Board sent to committee, and the department has said it is willing to adjust them. Move them and watch what changes for the person doing the training. Marks show the text as published and as recommended in the committee submission.</p>
     <p class="stamp">Updated July 27, 2026.</p>
   </div>
@@ -132,9 +133,9 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="out"><span id="o-prac">100</span><small>HOURS</small></div>
     </div>
     <div class="mrow">
-      <div class="name">Supervision<small>consultation after certification begins</small></div>
+      <div class="name">Mentoring and consultation<small>after graduation, once the practicum is complete</small></div>
       <div class="trackwrap">
-        <input type="range" id="s-sup" min="0" max="40" value="10" step="1" aria-label="Supervision hours">
+        <input type="range" id="s-sup" min="0" max="40" value="10" step="1" aria-label="Mentoring and consultation hours">
         <span class="pin" style="left:25%"><i>PUBLISHED 10</i></span>
         <span class="pin rec" style="left:50%"><i>RECOMMENDED 20</i></span>
       </div>
@@ -151,22 +152,24 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     <div class="read">
       <div class="k">PROGRAM TOTAL</div>
       <div class="v"><span id="r-total">150</span> <span style="font-size:17px">hrs</span></div>
-      <div class="b">Classroom, supervised practice, and supervision together, before a person may work unsupervised.</div>
+      <div class="b">Classroom, supervised practice, and mentoring together, before a person may work unsupervised.</div>
     </div>
     <div class="read">
       <div class="k">EARNINGS A WORKING CLINICIAN GIVES UP</div>
       <div class="v" style="font-size:32px"><span id="r-cost">$15,000 – 20,000</span></div>
-      <div class="b">Hours in supervised practice at $150 to $200 an hour, the estimate given to the committee on July 17. Tuition, supervision fees, and travel come on top.</div>
+      <div class="b">Hours in supervised practice at $150 to $200 an hour, the estimate given to the committee on July 17. Tuition, supervisor fees, and travel come on top.</div>
     </div>
   </div>
 
   <div class="meaning pub" id="meaning">As published: 100 supervised hours for facilitators and 120 for practitioners, every hour inside an approved healing center or other approved location, completed before applying for certification.</div>
 
+  <p class="routes">Where these hours sit in a route to a permit is on <a href="pathways.html">Routes to a permit</a>. Which licenses qualify for each permit is on <a href="eligibility.html">Which licenses qualify</a>.</p>
+
   <p class="src">
-    Published figures: <a href="rule.html#s18">7.35.3.18</a> and <a href="rule.html#s19">7.35.3.19</a>, published July 23, 2026, pages 11 to 13 of the <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener" data-cite="The published proposed rule, July 23, 2026, 19 pages">official PDF</a>. Recommended figures: the summary of the recommended rules, submitted July 27, 2026, stated in full on the <a href="recommendation.html">recommendation page</a>; a staged practicum of 60 hours for facilitators and 70 for licensed providers, 80 didactic hours, and 20 hours of case presentation and consultation tied to two presented cases. The cost estimate and the department's willingness to adjust the lengths of time: the July 17 committee meeting, as recorded in the <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener" data-cite="July 17 committee transcript, unofficial, no speaker labels">transcript</a>. The full pre-redesign hours page, with the July 9 and July 17 records, benchmarks, and cost variables, is kept at <a href="training-hours-record.html">training-hours-record.html</a>. Hours toward a specialized domain, discussed at the End-of-Life Care committee on July 16, would sit on top of these totals as an addendum; the proposed ranges are on the <a href="specialization.html#hours">specialized-domains page</a>. Nothing here is final rule text.
+    Published figures: the classroom hours at <a href="rule.html#s18">7.35.3.18 (C)</a>, p.&nbsp;11, the supervised practice hours at <a href="rule.html#s19">7.35.3.19 (A)</a>, pp.&nbsp;12 to 13, and the third quantity at <a href="rule.html#s17">7.35.3.17 (A)</a>, p.&nbsp;10, which requires "a minimum of 10 hours of mentoring sessions after graduation and after practicum hours are completed." The rule published July 23, 2026, in the <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener" data-cite="The published proposed rule, July 23, 2026, 19 pages">official PDF</a>. Recommended figures: the summary of the recommended rules, submitted July 27, 2026, stated in full on the <a href="recommendation.html">recommendation page</a>; a staged practicum of 60 hours for facilitators and 70 for licensed providers, 80 didactic hours, and 20 hours of case presentation and consultation tied to two presented cases. The cost estimate and the department's willingness to adjust the lengths of time: the July 17 committee meeting, as recorded in the <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener" data-cite="July 17 committee transcript, unofficial, no speaker labels">transcript</a>. The full pre-redesign hours page, with the July 9 and July 17 records, benchmarks, and cost variables, is kept at <a href="training-hours-record.html">training-hours-record.html</a>. Hours toward a specialized domain, discussed at the End-of-Life Care committee on July 16, would sit on top of these totals as an addendum; the proposed ranges are on the <a href="specialization.html#hours">specialized-domains page</a>. Nothing here is final rule text.
   </p>
 
-  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The two positions it compares: the published text requires 40 classroom hours, 100 or 120 supervised hours by role, and 10 supervision hours. The submitted recommendation proposes 80 classroom hours, 60 or 70 supervised hours by role, and 20 hours of case presentation and consultation.</p></noscript>
+  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The two positions it compares: the published text requires 40 classroom hours, 100 or 120 supervised hours by role, and 10 hours of mentoring after graduation. The submitted recommendation proposes 80 classroom hours, 60 or 70 supervised hours by role, and 20 hours of case presentation and consultation in place of the mentoring.</p></noscript>
 </main>
 <footer class="foot"><div class="wrap">
 <span>An independent community record of the rulemaking. Not affiliated with the New Mexico Department of Health.</span>
@@ -194,7 +197,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       meaning.textContent='As published: '+(role==='f'?'100 supervised hours for a facilitator':'120 supervised hours for a practitioner, including 20 as a supervising practitioner')+', every hour inside an approved healing center or other approved location, completed before applying for certification.';
     }else if(c===80&&p===pins.rec&&s===20){
       meaning.className='meaning rec';
-      meaning.textContent='As recommended: a staged practicum of '+(role==='f'?'60':'70')+' hours that begins with well participants and adds patient acuity step by step, with consultation doubled and tied to two presented cases. The classroom deepens to 80 hours; the supervised hours, the costly ones, fall by two fifths.';
+      meaning.textContent='As recommended: a staged practicum of '+(role==='f'?'60':'70')+' hours that begins with well participants and adds patient acuity step by step, with the 10 mentoring hours replaced by 20 hours of case presentation and consultation, tied to two presented cases. The classroom deepens to 80 hours; the supervised hours, the costly ones, fall by two fifths.';
     }else{
       meaning.className='meaning';
       meaning.textContent='A position being tested. On July 17 the department said it is willing to talk about adjusting these lengths of time; whatever number stands after the August 28 hearing is what every candidate will live with.';

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Provider Routes · NM Medical Psilocybin Training &amp; Education</title>
+<title>Routes to a permit &middot; 7.35.3 NMAC Training and Education</title>
 <style>
   :root{
     --bg:#FBFAFC; --surface:#FFFFFF; --surface-2:#F4F1F8; --surface-3:#ECE8F3;
@@ -135,6 +135,7 @@
   .step .flag.open{background:var(--open-bg); color:var(--open); border-color:var(--open-border);}
   .step .flag.chal{background:var(--chal-bg); color:var(--chal); border-color:var(--chal-border);}
   .step .why{margin:7px 0 0; font-size:13px; color:var(--text-muted); line-height:1.45;}
+  .step .model{margin:8px 0 0; font-size:13px; line-height:1.45;}
   .step .src{margin:8px 0 0; font-family:var(--mono); font-size:10.5px; color:var(--text-faint);}
   .step .src a{color:var(--text-faint); text-decoration:underline;}
   .step .src a:hover{color:var(--accent);}
@@ -202,15 +203,10 @@
   .provbody{padding:4px 16px 18px;}
   .provsec{margin-top:16px;}
   .provk{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin:0 0 10px;}
-  .chain{list-style:none; margin:0; padding:0; counter-reset:ch;}
-  .chain li{position:relative; padding:0 0 14px 26px; border-left:2px solid var(--border-strong); margin-left:5px;}
-  .chain li:last-child{border-left-color:transparent; padding-bottom:2px;}
-  .chain li::before{content:""; position:absolute; left:-6px; top:4px; width:10px; height:10px; border-radius:50%; background:var(--border-strong); border:2px solid var(--surface);}
-  .chain li.cur::before{background:var(--accent);}
-  .chain .cd{font-size:12px; font-family:var(--mono); color:var(--text-faint);}
-  .chain .cn{font-size:14.5px; font-weight:650; color:var(--text); margin:1px 0 0;}
-  .chain .cw{font-size:13.5px; color:var(--text-muted); line-height:1.55; margin:4px 0 0;}
-  .chain .curflag{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:20px; padding:1px 8px; margin-left:7px; vertical-align:1px;}
+  .provsec .cd{font-size:12px; font-family:var(--mono); color:var(--text-faint); margin:0;}
+  .provsec .cn{font-size:14.5px; font-weight:650; color:var(--text); margin:1px 0 0;}
+  .provsec .cw{font-size:13.5px; color:var(--text-muted); line-height:1.55; margin:6px 0 0;}
+  .provsec .curflag{display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--agree); background:var(--agree-bg); border:1px solid var(--agree-border); border-radius:20px; padding:1px 8px; margin-left:7px; vertical-align:1px;}
   .revs{list-style:none; margin:0; padding:0;}
   .revs li{font-size:13.5px; color:var(--text-muted); line-height:1.55; padding:8px 0; border-top:1px solid var(--border);}
   .revs li:first-child{border-top:none; padding-top:0;}
@@ -282,12 +278,12 @@
       <details class="tdrop navgrp" data-navgrp="provider">
         <summary>Becoming a provider <span class="caret">&#9662;</span></summary>
         <div class="tdrop-menu">
-          <a href="pathways.html" aria-current="page" data-nav="pathways">Can I become a provider?<span class="sub">Pick where you start; the route to each permit</span></a>
+          <a href="pathways.html" aria-current="page" data-nav="pathways">Routes to a permit<span class="sub">Pick where you start; the route to each permit</span></a>
           <a href="eligibility.html" data-nav="eligibility">Which licenses qualify<span class="sub">The license-by-permit tables</span></a>
-          <a href="hours.html" data-nav="hours">Training hours<span class="sub">The working model of the deferred quantities</span></a>
+          <a href="hours.html" data-nav="hours">The training hours<span class="sub">The working model of the deferred quantities</span></a>
           <a href="specialization.html" data-nav="specialization">Specialized domains<span class="sub">An overlay on a core permit, not in the rule</span></a>
           <a href="cs-number.html" data-nav="cs-number">The controlled-substance number<span class="sub">The certifying-clinician requirement</span></a>
-          <a href="deferred.html" data-nav="deferred">What practicum changes touch<span class="sub">Every provision a practicum change reaches</span></a>
+          <a href="deferred.html" data-nav="deferred">What a practicum change touches<span class="sub">Every provision a practicum change reaches</span></a>
         </div>
       </details>
       <details class="tdrop navgrp" data-navgrp="rule">
@@ -295,8 +291,8 @@
         <div class="tdrop-menu">
           <a href="rule.html" data-nav="rule">The published rule<span class="sub">All twenty-eight sections, verbatim, annotated</span></a>
           <a href="changes.html" data-nav="changes">Section by section<span class="sub">All 104 provisions, and what changed</span></a>
-          <a href="recommendation.html" data-nav="recommendation">Committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
-          <a href="comment.html" data-nav="comment">How to comment<span class="sub">The August 28 hearing, and the input channel</span></a>
+          <a href="recommendation.html" data-nav="recommendation">The committee recommendation<span class="sub">Submitted July 27, beside the published text</span></a>
+          <a href="comment.html" data-nav="comment">Comment<span class="sub">The August 28 hearing, and the input channel</span></a>
         </div>
       </details>
       <details class="tdrop navgrp" data-navgrp="record">
@@ -307,7 +303,7 @@
           <a href="training-hours-record.html" data-nav="training-hours-record">The training-hours record<span class="sub">July 9 and 17, benchmarks, and community comment</span></a>
         </div>
       </details>
-      <a href="comment.html" class="navcta">Community input</a>
+      <a href="comment.html" class="navcta">Comment</a>
       <details class="tdrop navgrp" data-navgrp="docs">
         <summary>Documents <span class="caret">&#9662;</span></summary>
         <div class="tdrop-menu">
@@ -326,7 +322,7 @@
   <div class="col">
     <header class="hero">
       <p class="eyebrow">New Mexico Medical Psilocybin Program</p>
-      <h1>Routes to a provider permit</h1>
+      <h1>Routes to a permit</h1>
       <p class="updated"><b>Updated July 27, 2026.</b></p>
       <p class="lede">Pick where you start below and follow every step to each of the three permits, <b>certifying clinician, practitioner, facilitator</b>, as the published rule requires them. Where the committee recommendation would change a step, the change is shown directly beneath it.</p>
       <div class="legend">
@@ -340,7 +336,7 @@
       <p class="pl">Starting license</p>
       <p class="phint">Pick the one that fits you. Your routes to each permit appear below.</p>
       <div class="starts" id="starts"></div>
-      <noscript><p style="background:var(--surface-2); border:1px solid var(--border); border-radius:11px; padding:13px 15px; font-size:14px; color:var(--text-muted);">This picker needs JavaScript. The same routes are in static tables on <a href="eligibility.html">Who can qualify</a>: the steps for each permit, and which licenses qualify.</p></noscript>
+      <noscript><p style="background:var(--surface-2); border:1px solid var(--border); border-radius:11px; padding:13px 15px; font-size:14px; color:var(--text-muted);">This picker needs JavaScript. The same routes are in static tables on <a href="eligibility.html">Which licenses qualify</a>: the steps for each permit, and which licenses qualify.</p></noscript>
     </div>
 
     <div id="panel"></div>
@@ -353,36 +349,19 @@
       <p>Steps are from the <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank">July 23 published proposed rule</a> (7.35.3), the text going to the August 28 hearing. Each step links to its page and section. Earlier drafts and the June 12 committee recommendation are history, not current sources, and are not cited in the steps above; the full chain is in the provenance block at the foot of this page. Nothing here is final rule text.</p>
       <!-- provenance: generated by tools/sync-provenance.py, do not hand-edit -->
       <details class="prov">
-        <summary><span class="provsum">Provenance: the document chain and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
+        <summary><span class="provsum">Provenance: the source document and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
         <div class="provbody">
         <div class="provsec">
-          <p class="provk">The document chain, oldest first</p>
-          <ol class="chain">
-          <li>
-            <p class="cd">June 12, 2026</p>
-            <p class="cn"><a href="documents/recommendation-2026-06-12.pdf" target="_blank" rel="noopener">Committee recommendation</a></p>
-            <p class="cw">The Training and Education Committee's own recommendation. Origin of the 100 and 120 practicum hours and the 20 supervisory hours. The Advisory Board voted 3-2 on June 26 to accept it, setting three items aside.</p>
-          </li>
-          <li>
-            <p class="cd">June 25, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-06-25.pdf" target="_blank" rel="noopener">Department draft</a></p>
-            <p class="cw">The department's first rules-style draft of the same subject. Introduced the module test-out mechanism that every later draft keeps, and the first reciprocity provision, which the June 12 recommendation did not contain.</p>
-          </li>
-          <li>
-            <p class="cd">July 9, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-07-09.pdf" target="_blank" rel="noopener">Board-meeting draft</a></p>
-            <p class="cw">The draft the Advisory Board went through section by section on July 9. Used placeholder section numbers shown as 7.35.3.X. Set the shared didactic module at 25 hours. Carried the older waiver dates of December 31, 2026 and June 30, 2027, which the board extended by vote that day without the text being updated.</p>
-          </li>
-          <li class="cur">
-            <p class="cd">July 23, 2026</p>
-            <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
-            <p class="cw">The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
-          </li>
-          </ol>
+          <p class="provk">The document this page is read from</p>
+          <p class="cd">July 23, 2026</p>
+          <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
+          <p class="cw">The department's published proposed rule, and the text going to the August 28 hearing. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
+          <p class="cw">This document supersedes three earlier ones. Each of them, what it is, what superseded it and when, and a download, is in the register at <a href="record.html#documents">Meetings and filings</a>.</p>
         </div>
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
+          <li><b>July 28, 2026</b> The two practicum steps, one on each of the practitioner and facilitator routes, now link the working model of the hours, which is where the quantities they state can be moved. The footer link to the record page read "Recent developments", a name that page no longer carries, and now reads "Meetings and filings". The page name is now the same in the title, the heading, and the menu: routes to a permit.</li>
           <li><b>July 27, 2026</b> Restored. The July 27 redesign merge replaced this page with a redirect; it returns unchanged from the July 25 version except for this: the committee recommendation is now recorded as submitted to the department on July 27 as a summary of the recommended rules, and the recommendation notes beneath the steps carry the submitted figures, 80 didactic hours, a 60 or 70 hour staged practicum by role, 20 hours of case presentation and consultation, and the renaming of practitioner to licensed provider, in place of the July 17 presentation ranges.</li>
           <li><b>July 25, 2026</b> Rebuilt. The page now says what it is in a lede, which it did not. Every step that the committee recommendation would change now shows the change directly beneath it, so a reader sees the published requirement and the proposed one together: 84 didactic hours in place of 35, a 62 or 72 hour scaffolded practicum in place of 100 or 120, supervisory hours from 20 to 10, and mentoring replaced by consultation with two presented cases. The certifying clinician route carries no such note, because the recommendation addresses facilitators and practitioners only and nothing on that route changes. The specialized-domain material from July 16 moved to its own page, and the JavaScript that rendered it was removed rather than left orphaned.</li>
           <li><b>July 25, 2026</b> Reviewed and brought current to the July 23 published rule. All route steps re-cited: the citation helper and 25 step links pointed at the superseded July 9 draft and now point at the published rule with section numbers. The practitioner core module was corrected from 25 hours to 30. "Administration and same-day therapy sessions" corrected to "administration day sessions". The status legend said the committee "meets 1 PM today" and now states that the hours were published unchanged on July 23 with the committee recommendation in progress. The reciprocity waiver step read December 31, 2026; the published rule reads December 31, 2027. The note about the draft's internal inconsistency on certifying-clinician reciprocity was rechecked against the published text, where reciprocity now sits inside 7.35.3.10, and the inconsistency persists.</li>
@@ -393,7 +372,7 @@
       <!-- /provenance -->
       <div class="sitefoot">
         <p><b>Community reference.</b> Not affiliated with the New Mexico Department of Health. Nothing on this site is final rule text, legal advice, or medical advice.</p>
-        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="comment.html">Report an error</a> &middot; <a href="record.html">Recent developments</a></p>
+        <p>Built from public meeting records with AI assistance; unofficial transcripts may contain errors. <a href="about.html">How this site is built</a> &middot; <a href="comment.html">Report an error</a> &middot; <a href="record.html">Meetings and filings</a></p>
       </div>
     </div>
   </footer>
@@ -426,7 +405,7 @@
       {t:"Hold a current NM professional license (for example PSY, LSW, LCSW).", s:'set', why:"The published rule names license examples; it does not describe a therapy or counseling scope.", src:L('published rule 7.35.3.9, p.2',J7+'2')},
       {t:"Certifications and attestation, same as Facilitator.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('pp.2-3',J7+'2')},
       {t:"Approved <b>Practitioner training</b>: the 30-hour core module plus a 5-hour module on psychedelic and psilocybin therapeutic approaches.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11'), metz:"80 didactic hours in place of 35, on one standard shared with facilitators rather than tiered by role, with minimum hours in nine content areas. The recommendation also renames the permit: practitioner becomes licensed provider."},
-      {t:"Practicum at a healing center or other approved location. Published rule: <b>120 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee recommendation was submitted July 27.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"70 hours, staged: the facilitator sequence plus 10 hours leading sessions with a licensed provider as second chair."},
+      {t:"Practicum at a healing center or other approved location. Published rule: <b>120 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee recommendation was submitted July 27.", src:L('published rule 7.35.3.18, p.12',J7+'12'), model:1, metz:"70 hours, staged: the facilitator sequence plus 10 hours leading sessions with a licensed provider as second chair."},
       {t:"Includes an additional <b>20 hours supervising facilitators</b> during administration day sessions.", s:'chal', flag:'Contested', why:"Dr. Anne Metz asked to make this optional at the June 25 committee meeting. The department kept it; it remains in the published rule.", src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('committee meeting, 6/25','changes.html'), metz:"Reduced to 10 hours and folded into step four of the scaffolded practicum."},
       {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 hours of case presentation and consultation after the practicum, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
       {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
@@ -436,7 +415,7 @@
       {t:"Apply for certification. <b>No professional license required.</b>", s:'set', src:L('published rule 7.35.3.10, p.4',J7+'4')},
       {t:"Certifications: <b>HIPAA, plus BLS or (CPR and AED)</b>. Attestation you are not a registered sex offender.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')+' &middot; '+L('p.9',J7+'9')},
       {t:"Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one module you cannot test out of.", s:'set', src:L('published rule 7.35.3.18, p.11',J7+'11')+' &middot; '+L('p.7',J7+'7'), metz:"80 didactic hours in place of 35, with minimum hours in nine content areas. The New Mexico module stays required of every role, with no exemption by reciprocity."},
-      {t:"Practicum at a healing center or other approved location. Published rule: <b>100 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee recommendation was submitted July 27.", src:L('published rule 7.35.3.18, p.12',J7+'12'), metz:"60 hours, staged: well participants first, then co-facilitation with a department-permitted licensed provider, then group work, with every stage spanning preparation, administration, and integration."},
+      {t:"Practicum at a healing center or other approved location. Published rule: <b>100 hours</b>.", s:'open', flag:'Open', why:"Deferred to the Training and Education Committee by a 7-0 board vote July 17; the committee recommendation was submitted July 27.", src:L('published rule 7.35.3.18, p.12',J7+'12'), model:1, metz:"60 hours, staged: well participants first, then co-facilitation with a department-permitted licensed provider, then group work, with every stage spanning preparation, administration, and integration."},
       {t:"Mentoring: <b>10 hours</b> after graduation and after the practicum.", s:'set', src:L('published rule 7.35.3.17, p.10',J7+'10'), metz:"Replaced by 20 hours of case presentation and consultation after the practicum, with sign-off requiring two presented cases of the permittee&rsquo;s own regulated-medicine clients."},
       {t:"Apply to NMDOH. Certification is valid <b>2 years</b> from approval.", s:'set', src:L('published rule 7.35.3.9, p.2',J7+'2')},
       {t:"Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.", s:'set', src:L('published rule 7.35.3.18, p.12',J7+'12')}
@@ -498,7 +477,8 @@
     if(step.s==='chal') flag='<span class="flag chal">&#9660; '+step.flag+'</span>';
     var why= step.why?'<p class="why">'+step.why+'</p>':'';
     var metz= step.metz?'<p class="metz"><span class="mz">If the committee recommendation is adopted</span>'+step.metz+'</p>':'';
-    return '<li class="step '+cls+'"><span class="num"></span><div class="card"><p class="txt">'+step.t+'</p>'+flag+why+metz+'<p class="src">'+(step.src||'')+'</p></div></li>';
+    var model= step.model?'<p class="model"><a href="hours.html">The working model of these hours</a></p>':'';
+    return '<li class="step '+cls+'"><span class="num"></span><div class="card"><p class="txt">'+step.t+'</p>'+flag+why+metz+model+'<p class="src">'+(step.src||'')+'</p></div></li>';
   }
   function journey(key){return '<ol class="steps">'+PERMITS[key].steps.map(stepHTML).join('')+'</ol>';}
 

@@ -9,10 +9,32 @@ non-stub page, the no-JavaScript fallback is present, internal links
 resolve, every page is reachable from another page, and prose carries no
 live-blog tense ("today", "this morning", "this afternoon") outside
 quoted material.
-"""
-import glob, hashlib, html.parser, os, re, sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+Three checks read from tools/sync-nav.py rather than carrying their own
+copy of the same facts, so the menu, the page names, and this file cannot
+drift apart:
+
+- Every page's <title>, its H1, and its label in the shared menu say the
+  same words. Each disagreement costs a reader a re-orientation on every
+  navigation, and all three surfaces disagreed on most pages before the
+  naming pass.
+- Every document in the Documents dropdown has a row in the register at
+  record.html#documents. The dropdown's membership contract is stated in
+  sync-nav.DOCUMENTS_CONTRACT.
+- Every id cited from another page exists on the page that is supposed to
+  hold it. This generalizes the redirect-stub anchor check to every
+  internal fragment link on the site.
+"""
+import glob, hashlib, html.parser, importlib.util, os, re, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOCS = os.path.join(ROOT, "docs")
+
+_spec = importlib.util.spec_from_file_location(
+    "syncnav", os.path.join(ROOT, "tools", "sync-nav.py"))
+syncnav = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(syncnav)
+
 failures = []
 
 with open(os.path.join(DOCS, "style.css"), "rb") as f:
@@ -102,15 +124,70 @@ if navs:
         if 'http-equiv="refresh"' not in s and n not in nav_hrefs:
             fail(f"{n}: not linked from the shared menu")
 
-    # the Documents dropdown holds the register and the current PDFs, in a new tab
-    if 'record.html#documents' not in nav:
-        fail("menu: the All documents entry is missing")
-    for pdf in ("documents/rules-draft-2026-07-23-published.pdf",
-                "documents/NMMPAB-2026-07-17-board-transcript.pdf",
-                "documents/NMMPAB-2026-07-17-committee-transcript.pdf",
-                "documents/metz-recommendations-2026-07-17.pdf"):
-        if f'href="{pdf}" target="_blank" rel="noopener"' not in nav:
-            fail(f"menu: {pdf} is missing or does not open in a new tab")
+    # the Documents dropdown carries what sync-nav.MENU_DOCUMENTS says it carries,
+    # and every document in it opens in a new tab and has a register row
+    register = ""
+    m = re.search(r'<section id="documents">.*?</section>', srcs.get("record.html", ""), re.S)
+    if m:
+        register = m.group(0)
+    else:
+        fail("record.html: the document register at #documents is missing")
+    for d in syncnav.MENU_DOCUMENTS:
+        href = d["href"]
+        if href.endswith(".html") or "#" in href:
+            if f'href="{href}"' not in nav:
+                fail(f"menu: the {d['label']} entry is missing")
+            continue
+        if f'href="{href}" target="_blank" rel="noopener"' not in nav:
+            fail(f"menu: {href} is missing or does not open in a new tab")
+        if register and href not in register:
+            fail(f"menu: {href} is in the Documents dropdown with no register row "
+                 "at record.html#documents")
+
+# titles, headings, and menu labels say the same words
+for page, name in syncnav.NAMES.items():
+    src = srcs.get(page + ".html")
+    if src is None:
+        fail(f"sync-nav.NAMES lists {page}, which is not a page in docs/")
+        continue
+    want = f"{name} &middot; {syncnav.TITLE_SUFFIX}"
+    norm = lambda t: t.strip().replace("&middot;", chr(183)).replace("&amp;", "&")
+    m = re.search(r"<title>(.*?)</title>", src, re.S)
+    if not m:
+        fail(f"{page}.html: no <title>")
+    elif norm(m.group(1)) != norm(want):
+        fail(f"{page}.html: title reads {m.group(1).strip()!r}, "
+             f"and the name in tools/sync-nav.py is {want!r}")
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", src, re.S)
+    if not m:
+        fail(f"{page}.html: no <h1>")
+    elif norm(m.group(1)) != norm(name):
+        fail(f"{page}.html: H1 reads {m.group(1).strip()!r}, "
+             f"and the name in tools/sync-nav.py is {name!r}")
+    if navs:
+        m = re.search(rf'<a href="[^"]*"[^>]*data-nav="{re.escape(page)}"[^>]*>(.*?)<span class="sub">',
+                      next(iter(navs.values())), re.S)
+        if not m:
+            fail(f"{page}.html: no entry in the shared menu")
+        elif norm(m.group(1)) != norm(name):
+            fail(f"{page}.html: menu label reads {m.group(1).strip()!r}, "
+                 f"and the name in tools/sync-nav.py is {name!r}")
+
+# every id cited from anywhere on the site exists on the page that holds it
+ids = {n: set(re.findall(r'id="([^"]+)"', s)) for n, s in srcs.items()}
+for n, s in srcs.items():
+    body = re.sub(r"<script.*?</script>", "", s, flags=re.S)
+    for href in sorted(set(re.findall(r'href="([^"]+)"', body))):
+        if href.startswith(("http", "mailto:")) or "'" in href or "+" in href:
+            continue
+        target, _, frag = href.partition("#")
+        if not frag:
+            continue
+        page = os.path.basename(target) or n
+        if page not in ids:
+            continue          # a missing file is already reported as a broken link
+        if frag not in ids[page]:
+            fail(f"{n}: links {href}, and {page} has no id=\"{frag}\"")
 
 # every page is reachable: linked by href from at least one other page.
 # Redirect stubs are exempt; they are retired addresses, not destinations.
