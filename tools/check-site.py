@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """One entry point for the site checks. Non-zero exit on any failure.
 
-Covers every page in docs/: HTML parses, no nested anchors, no em dashes.
-For redesign pages (the ones carrying <header class="top">): the shared
-chrome is byte-identical except for the aria-current marker, internal
-links resolve, and prose carries no live-blog tense ("today", "this
-morning", "this afternoon") outside quoted material.
+Covers every page in docs/: HTML parses, no nested anchors, no em dashes,
+and the visit counter is present. For every page that is not a redirect
+stub: the shared menu (<header class="topbar">) and its script are
+byte-identical except for the aria-current marker, the menu links every
+non-stub page, the no-JavaScript fallback is present, internal links
+resolve, every page is reachable from another page, and prose carries no
+live-blog tense ("today", "this morning", "this afternoon") outside
+quoted material.
 """
 import glob, html.parser, os, re, sys
 
@@ -17,6 +20,7 @@ def fail(msg):
     print("FAIL " + msg)
 
 navs = {}
+navjs = {}
 srcs = {}
 for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
     name = os.path.basename(path)
@@ -43,14 +47,25 @@ for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
             break
     if chr(8212) in src:
         fail(f"{name}: {src.count(chr(8212))} em dash(es)")
+    if 'id="countjs"' not in src:
+        fail(f"{name}: visit counter missing")
 
-    if '<header class="top">' not in src:
+    if 'http-equiv="refresh"' in src:
         continue
 
-    # shared chrome, normalized for the current-page marker
-    m = re.search(r'<header class="top">.*?</header>', src, re.S)
+    # shared chrome and its script, normalized for the current-page marker
+    m = re.search(r'<header class="topbar">.*?</header>', src, re.S)
     if m:
         navs[name] = re.sub(r' aria-current="page"', "", m.group(0))
+    else:
+        fail(f"{name}: shared menu missing")
+    m = re.search(r'<script id="navjs">.*?</script>', src, re.S)
+    if m:
+        navjs[name] = m.group(0)
+    else:
+        fail(f"{name}: menu script missing")
+    if '<noscript><style>.tnav{display:flex}</style></noscript>' not in src:
+        fail(f"{name}: no-JavaScript menu fallback missing")
     # live-blog tense outside verbatim blocks
     prose = re.sub(r'<div class="verbatim">.*?</div>', "", src, flags=re.S)
     prose = re.sub(r"<script.*?</script>", "", prose, flags=re.S)
@@ -65,11 +80,19 @@ for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
         if target and not os.path.exists(os.path.join(DOCS, target)):
             fail(f"{name}: broken link {href}")
 
-if len(set(navs.values())) > 1:
-    byname = {}
-    for k, v in navs.items(): byname.setdefault(v, []).append(k)
-    groups = " | ".join(",".join(v) for v in byname.values())
-    fail(f"chrome differs between redesign pages: {groups}")
+for label, blocks in (("chrome", navs), ("menu script", navjs)):
+    if len(set(blocks.values())) > 1:
+        byname = {}
+        for k, v in blocks.items(): byname.setdefault(v, []).append(k)
+        groups = " | ".join(",".join(v) for v in byname.values())
+        fail(f"{label} differs between pages: {groups}")
+
+# the shared menu links every page that is not a redirect stub
+if navs:
+    nav_hrefs = {h.split("#")[0] for h in re.findall(r'href="([^"]+)"', next(iter(navs.values())))}
+    for n, s in srcs.items():
+        if 'http-equiv="refresh"' not in s and n not in nav_hrefs:
+            fail(f"{n}: not linked from the shared menu")
 
 # every page is reachable: linked by href from at least one other page.
 # Redirect stubs are exempt; they are retired addresses, not destinations.
