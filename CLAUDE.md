@@ -102,6 +102,7 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 | `redesign/` | The working folder behind the redesign: brief, prototypes, audits |
 | `tools/` | `build-rule-page.py` and `check-site.py` for the site; `sync-nav.py`, `sync-provenance.py`, and `sync-count.py`, which take `--check` and still target the pre-redesign pages |
 | `tools/sync-pathways.py` | The content of `docs/pathways.html`: every starting license, every route, and every step. The page is generated from it, so a step, a verdict, or a citation is changed here and the tool is run. Hand-editing the page fails `check-site.py` |
+| `tools/sync-status.py` | The status of the rulemaking: the dated events, each status item's state, date, and summary, and the procession. The status surfaces on `index.html`, `hours.html`, `eligibility.html`, and `training-hours-record.html` are generated from it, so a status change is made here and the tool is run. Hand-editing a status surface fails `check-site.py` |
 
 ## Current state of truth
 
