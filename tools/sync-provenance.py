@@ -25,6 +25,13 @@ zipped up by default, opened when a reader wants it.
 
 CHAIN is identical on every page. REVISIONS is per page, newest first.
 
+Every content page carries the block. The seven pages restored from the
+pre-redesign site hold it before their sitefoot, with the block's styles
+injected into each page's own stylesheet; the seven pages built in the July
+27 redesign idiom hold it at the end of main, with the styles in the shared
+style.css. Redirect stubs are retired addresses, not destinations, and
+carry no block.
+
 Usage:
     python3 tools/sync-provenance.py           # write into every page
     python3 tools/sync-provenance.py --check   # exit 1 if any page is stale
@@ -67,12 +74,44 @@ CHANGED = {
 
 
 REVISIONS = {
+    # The seven redesign-idiom pages were created July 27, 2026; their logs
+    # run from that date, seeded from the repository history. The revisions
+    # of their pre-redesign predecessors remain in that history.
     "index": [
-        ("July 25, 2026", "Title capitalisation corrected: the first word after the line break was lower case. Added the CSS rules for the section headings introduced with the document strip, which had none and were rendering unstyled."),
-        ("July 25, 2026", "Rebuilt against the page review. The title read \"The rule is published\", which is a headline rather than a statement of fact, and now states that the rule hearing is August 28, 2026. \"What is next\" moved from mid-page into the hero, above \"Where things stand\". The open item now carries a red border and states that the committee recommendation needs to reach the department as soon as possible; it had been the site accent colour, which reads as decoration rather than attention. The \"Nothing on this page is final\" disclaimer moved into the footer. The document strip now carries a heading saying what it is, and the input tile was removed from it. The three lineage deep-dives on the controlled-substance number, the practicum and reciprocity were removed as history that belongs elsewhere, and the two in-page links into them were repointed to the practicum and draft pages. \"Find your way around\" moved to its own page at guide.html."),
-        ("July 17, 2026", "Updated to the July 17 full Advisory Board meeting. The board voted 7-0 to defer the practicum and didactic hours to the Training and Education Committee."),
-        ("July 10, 2026", "Parallel working drafts reconciled into this page. The July 9 meeting description corrected: it was an Advisory Board meeting, and the chair barred formal votes only after the scheduled adjournment."),
-        ("July 9, 2026", "Updated to the outcome of the July 9 Advisory Board meeting. Reciprocity: both waiver deadlines extended to December 31, 2027. Practicum and didactic hours: tabled."),
+        ("August 13, 2026", "The three Where things stand lines and the Scheduled dates are now written by tools/sync-status.py, which holds each status item's state, date, and one-line summary once and writes every surface that shows them, so a date that moves or an item that settles is corrected in one file. The tool emits the text the page already carried, and nothing a reader sees changed."),
+        ("July 31, 2026", "The open item on the hours now states what each submitted figure replaces: 80 classroom hours in place of 40, a staged practicum of 60 or 70 hours by role in place of 100 or 120, and 20 hours of case presentation and consultation in place of 10 hours of mentoring."),
+        ("July 28, 2026", "A seventh portal serves the reader who wants to comment on the rule, and the front page now carries the one-sentence patient signpost stating that this site covers provider training while patient access is set by the Act. The DEFECT line now states how the rule page's five defect notes relate to the three provisions flagged on What a practicum change touches, because the two counts are not a subset of each other and a reader who met both had no way to reconcile them. The page name is now the same in the title, the heading, and the menu: where things stand."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy. The portals now lead with the questions a first-time visitor brings, the routes page first."),
+        ("July 27, 2026", "Created in the July 27 redesign as the site's front page: the dated plaque, the portals by role, Where things stand, the procession, and what changed on July 23. Later the same day the full page directory was added at #directory, and the committee recommendation was recorded as submitted, with its figures stated in the open item."),
+    ],
+    "rule": [
+        ("July 28, 2026", "The defect notes that name findings B1, B4, and B5 now link those findings on What a practicum change touches, so a named cross-reference no longer asks the reader to go search. The links were mirrored into the page by hand because tools/build-rule-page.py, which owns this page, still carries retired chrome; the generator now refuses to run until that is brought current, rather than silently replacing the shared menu and the visit counter. The page name is now the same in the title, the heading, and the menu: the published rule."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy."),
+        ("July 27, 2026", "Created in the July 27 redesign, generated from the published extraction by tools/build-rule-page.py: all twenty-eight sections verbatim, with the state of each contested provision, the five defect notes, and the heading misprints noted at the provision they belong to. Citations open on hover, close on leave, and open the source in a new tab on click. The annotations moved into the generator the same day, so regeneration keeps them, and the submitted recommendation's figures entered the annotations with them."),
+    ],
+    "record": [
+        ("July 28, 2026", "The page is now generated from one data structure: tools/sync-record.py holds the events, the document register, and the gaps register, and writes the marked regions of this page. Every meeting, publication, filing, and scheduled date is one event with a stable anchor in the form e-YYYY-MM-DD, carrying what happened, what changed as one state transition per line, and every document it produced, with an absence stated at the event and linked to its gaps row. A reference that does not resolve in both directions fails the checks."),
+        ("July 28, 2026", "The July 16 End-of-Life Care committee meeting entered the gaps register, which UPDATING.md had listed all along and the register did not, and the gaps rows gained anchors so a page can cite an absence. The page name is now the same in the title, the heading, and the menu: meetings and filings."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy."),
+        ("July 27, 2026", "Created in the July 27 redesign: the dated chain and the document register on one page. Later the same day the gaps register returned beside the held documents, the chain recovered the substance the pre-redesign history page carried, with the July 17 morning and afternoon sessions as separate entries, and the July 27 filing of the committee recommendation entered the chain with its figures."),
+    ],
+    "hours": [
+        ("August 13, 2026", "The kicker above the model is now written by tools/sync-status.py, which holds the status of the rulemaking once and writes every surface that shows it, so the line stating what is open and what was submitted is corrected in one file when it changes."),
+        ("July 31, 2026", "The model now carries three named positions, each with its date and its own colour: the rule published July 23, the recommendation Dr. Anne Metz presented on July 17, and the recommendation the committee submitted on July 27. A strip above the sliders names the position on screen at all times, the buttons show which one is set, and moving a slider off all three says so rather than leaving the reader to guess. Every figure in the Metz position is quoted in the source note from her written recommendations, which are held in docs/documents; the committee position states that its figures are reported rather than checked, because that document is not in the public record."),
+        ("July 28, 2026", "The third quantity was labelled Supervision and cited to 7.35.3.18 and .19 alone, while the published 10-hour figure it carries is the mentoring requirement; verified against the published PDF, it now names mentoring and consultation and cites 7.35.3.17 (A), p. 10. One line beneath the model links the two routing instruments, the routes and the license tables. The page name is now the same in the title, the heading, and the menu: the training hours."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy."),
+        ("July 27, 2026", "Created in the July 27 redesign: the working model of the deferred quantities, with the three sliders, the role toggle, and the program-total and cost reads against the published position. The submitted recommendation's figures entered the model the same day."),
+    ],
+    "recommendation": [
+        ("July 28, 2026", "The Case presentation and consultation row cited the published 10-hour figure to 7.35.3.19 (C), which carries the practitioner's separate 20 supervisory hours; the published counterpart of the recommended consultation requirement is the mentoring requirement, and the row now cites 7.35.3.17 (A), p. 10, verified against the published PDF. The page name is now the same in the title, the heading, and the menu: the committee recommendation."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy."),
+        ("July 27, 2026", "Created in the July 27 redesign, and brought to the submission the same day: the summary of the recommended rules reached the department on July 27, and this page states its figures beside the published text, 80 didactic hours, a staged practicum of 60 or 70 hours by role, and 20 hours of case presentation and consultation on two cases, with the July 17 presentation kept as the basis. The document itself is not published on this site; every figure is stated here and named to its source."),
+    ],
+    "comment": [
+        ("August 13, 2026", "This page now owns the input log. Form submissions and their published texts are published here, marked as received through the form, and public comment given at a meeting is linked in one line to the meeting record that holds it rather than pasted. One received comment had lived in full on both this page and the training-hours record."),
+        ("July 28, 2026", "A what-is-at-issue section now precedes the form: the open hours and the submitted recommendation, the kept controlled-substance number requirement, and the five defect notes, each stated in one line linking the page that holds it. The page name is now the same in the title, the heading, and the menu: comment."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy."),
+        ("July 27, 2026", "Created in the July 27 redesign: the hearing facts and the input form, with its consent checkbox and stated handling. The community input log returned below the form the same day, with both July 17 entries."),
     ],
     "training-hours-record": [
         ("August 13, 2026", "The status strip is re-scoped from live status to a dated record, and is now written by tools/sync-status.py, which holds the site's status facts once and writes every page that shows them. The strip's label now carries the date of the newest status change it states, currently July 27, and the strip closes by naming Where things stand as the page that holds the current state of the rulemaking, because a record page carrying a live status block is how this page came to say, for a day, that the committee recommendation was undelivered. The hero stamp read July 25 while the strip beneath it stated the July 27 submission; it now carries the date of this change."),
@@ -82,11 +121,6 @@ REVISIONS = {
         ("July 25, 2026", "Page review applied. Removed the \"Purpose and how to read this page\" panel: a page that needs instructions for reading it has already failed. Added Dr. Anne Metz's proposed alternative permit title as a parenthetical under the Practitioner tile, since that is a separate recommendation that can be dropped without affecting the practicum work. Every entry in \"What changed on July 23\" now names its subsection in the sentence itself rather than relying on a link placed to one side."),
         ("July 25, 2026", "Brought current to the July 23 published rule. The page had no Updated date at all and was written in live-blog present tense from July 17: the Dr. Anne Metz presentation carried an \"In progress\" tag and a section was headed \"Open questions for July 17\". Role cards updated from the July 9 numbers to the published ones. Corrected two live errors: the in-state bridge deadline read June 30, 2027 and the reciprocity deadline read December 31, 2026, and both are December 31, 2027 in the published rule. Added a \"What changed on July 23\" summary."),
         ("July 17, 2026", "Added the live log of the July 17 Training and Education Committee meeting, including the Dr. Anne Metz presentation."),
-    ],
-    "history": [
-        ("July 25, 2026", "Page review applied. The lede was rewritten: it had been describing itself rather than saying what the page holds. \"New here?\" was removed from the process explainer, which asked a reader to identify as a novice before being given an explanation."),
-        ("July 25, 2026", "Two entries added: the July 23 publication of the proposed rule, and the July 17 afternoon Training and Education Committee meeting, which the page had omitted entirely while carrying the morning board meeting. The July 17 board entry is now labelled morning so the two are distinguishable. \"What is next\" replaced its stale July 17 contents with August 14, August 21, and the August 28 hearing. The \"How this process works\" explainer was moved out of the middle of the chronology, where it split the timeline into two lists, and now sits above it."),
-        ("July 17, 2026", "Added the July 17 Advisory Board meeting: the 7-0 deferral, the department keeping the controlled-substance number, and the revised certifying-clinician exam language."),
     ],
     "pathways": [
         ("August 13, 2026", "The selection is now in the address. Picking a starting license, or a route under it, writes the choice into the URL as #start followed by the license's id, with &permit and the route's key added when the shown route is not that license's first, so the page a reader is looking at can be shared as a link and the link lands with the same panel and the same route open. A link carrying a value the page does not hold falls through to the default with nothing shown or hidden along the way. Without JavaScript the address changes nothing, and the page reads in full as before. The second table on Which licenses qualify links into these addresses from every verdict cell in the bands the starting licenses summarize."),
@@ -115,9 +149,6 @@ REVISIONS = {
         ("July 25, 2026", "First full review of this page. Its central citation was wrong in two places: the lede and section 1 cited the controlled-substance-number requirement to 7.35.3.13 on p.8, which is the clinician-patient relationship and telemedicine section and contains no such requirement. The requirement is at 7.35.3.9 (D)(2), p.3, and a second location the page never mentioned, 7.35.3.8 (B)(3), p.1, which requires every patient enrollment application to record the certifying clinician's controlled substance number. Section 1 stated as verified that the state application requires a current DEA registration and that the state number must be obtained before the DEA issues the federal one, which is circular and which the July 17 record puts in dispute; it now states the dispute and that the department is checking with the Board of Pharmacy. The hearing was described as something the department was targeting for the end of August, which was accurate on July 17 and was superseded when the rule was published with the hearing set for August 28. Three sections ended at a decision point that has since been decided: section 2 called the non-prescribing certifying clinician an open rulemaking question, section 4 ended with the board sending the question back to the department on July 9, and section 6 presented telemedicine only as an external federal precedent when the published rule now contains a telemedicine pathway of its own at 7.35.3.13 (A)(2), p.8. All three now carry the outcome. The update section was dated to July 17 and now runs through the July 23 publication. The footer said the page was compiled July 9 from the record through the July 9 meeting."),
         ("July 25, 2026", "Reviewed and brought current. The page had no Updated date; one was added. The note that \"the July 9 draft PDF still shows the earlier text; an updated draft document has not been posted\" is no longer true: all three certifying-clinician exam pathways appear in the published rule at 7.35.3.8 (B)(8)(c) and 7.35.3.13 (A)(2), and the note now says so. Citations repointed to the published rule. No change to the substance of the page, which was accurate."),
     ],
-    "input": [
-        ("July 25, 2026", "Reviewed. No change to the form or its handling. A Reviewed date was added, since the page had none. Topics for the August 28 rule hearing and for submitting a document to the register were added earlier in the day, together with the querystring map entries they depend on."),
-    ],
     "changes": [
         ("July 28, 2026", "Every provision on the page can now be linked from outside it: the thirteen published-provision rows carry section anchors in the same form the practicum worksheet uses, and each of the 104 comparison entries carries an anchor derived from its heading. The July 26 copy audit was applied: \"Dr. Ann Metz\" is corrected to \"Dr. Anne Metz\" in three places, \"Warnock\" is given as Catherine Warnock, and the deferrals log now states how its attributions are sourced and names the six rows that carry a first name alone, because no surname for them appears in any document this site holds. The four notes that told a reader to verify a passage against the source PDF were resolved instead: all four readings are confirmed against the July 9 draft at pages 5, 8, 11, and 14, and each note now states the finding and links the page. The page name is now the same in the title, the heading, and the menu: section by section."),
         ("July 25, 2026", "Added the CSS rules for the body, citation and note classes used in the published-provisions section, which had none on this page and were rendering unstyled."),
@@ -130,11 +161,10 @@ REVISIONS = {
         ("July 25, 2026", "Rebuilt as a worksheet. The first version led with a reading guide and a three-column history of how each requirement reached the published text, which is not what this page is for; that history belongs on the History page. The page now lists the thirteen provisions a practicum change has to touch, quotes each from the published rule, states what it does, and flags the three that do not work as written: 7.35.3.14 authorises nobody to let a student handle psilocybin, 7.35.3.19 (G) and 7.35.3.10 (D)(1) set different session tests for the same 40-hour waiver, and 7.35.3.14 (C) conditions healing-centre authority on a registration no section creates. Two provisions were added after checking the dependency chain: 7.35.3.11, which creates the approved locations 19 (D) requires, and 7.35.3.10 (D)(1), the second practicum waiver. The reading guide and the closing scope section were removed. All eighteen quotation fragments verified against the published text."),
     ],
     "about": [
-        ("July 25, 2026", "Added to the primary navigation under The record. The page existed but was reachable only from the footer link at the foot of each page, so it had no route in from the nav at all. Sources updated: the list named the July 9 draft as the current source and now names the July 23 published rule, with the three earlier documents marked as history. The transcripts entry now distinguishes the speaker-tagged June and July 9 transcripts from the two July 17 transcripts, which carry no speaker labels."),
-    ],
-    "guide": [
-        ("July 25, 2026", "Shipped broken and fixed the same day. The page was created by moving the site map section out of the overview, and the CSS the tiles depend on was left behind, so the cards rendered as one run-on block of underlined text. Seven classes had no rule. The styles were restored and a check for unstyled classes was added to the verification pass in UPDATING.md. The page also moved in the navigation from The record to Overview, where a directory of the site belongs, and its opening line no longer refers to three items that are no longer above it."),
-        ("July 25, 2026", "Page created from the site map that was previously a section of the overview. It lists what each page holds, so the overview does not have to carry a directory of itself."),
+        ("August 13, 2026", "A per-page revision log returned to every content page of the site, this one included, written by tools/sync-provenance.py, and the corrections sentence now names the log beside the repository history as where a correction is recorded."),
+        ("July 28, 2026", "The page name is now the same in the title, the heading, and the menu: how this site is built."),
+        ("July 28, 2026", "One grouped menu on every page replaced the flat seven-item navigation, with the Documents dropdown at its right edge, and every stylesheet link now carries the style.css content hash so a page and its styles arrive from the same deploy."),
+        ("July 27, 2026", "Created in the July 27 redesign: method and trust. The verification ladder returned as the spine of the Method section the same day, with the one standing soft point named, the June 26 attribution."),
     ],
     "specialization": [
         ("July 31, 2026", "The core-baseline card stated \"35 didactic + 100 practicum\" and said the working model of the hours held the same figures, which it did not: the model compares module totals, so its published baseline is 40. The card now names the 5 simulated patient hours as their own quantity and states which basis the model uses, so the two pages no longer disagree about the same rule text."),
@@ -142,9 +172,6 @@ REVISIONS = {
         ("July 27, 2026", "Restored. The July 27 redesign merge replaced this page with a redirect; it returns unchanged from the July 25 version except that the core-figure link points at the retained record page, training-hours-record.html, where the pre-redesign Training hours material lives."),
         ("July 25, 2026", "This page now holds the specialization hours, which had been maintained on Training hours as well. Added at a new #hours anchor: the addendum framing, the core-baseline and end-of-life range cards, the nine-session 17-hour curriculum presented on July 16, and the three questions left open for the training committee. The banner said \"The routes above are unchanged\", which was left over from when this material sat at the foot of the provider routes page and there were routes above it."),
         ("July 25, 2026", "Page created from the specialized-domain section that was previously at the foot of the provider routes page, where it sat below unrelated material and carried July 16 dates with no indication of their status. It now states that none of it is in the published rule. Added the citation showing where end-of-life sits in the published text: the curriculum at 7.35.3.18 (C) lists seventeen required subjects and end-of-life is not among them, nor are suicidality, substance use disorder or PTSD, all four of which were asked for on the record on July 17."),
-    ],
-    "documents": [
-        ("July 25, 2026", "Descriptions tightened to one line each after review; the page was over-written on creation. Page created earlier the same day: a register of every source document with what it is, when it landed, whether it is current or superseded, page count, size, and a direct download, plus a section naming the documents this site does not have."),
     ],
 }
 
@@ -229,31 +256,41 @@ def build(page):
 
 def main():
     check = "--check" in sys.argv
-    changed, ok, missing = [], [], []
+    changed, ok, stubs, missing = [], [], [], []
 
     for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
         name = os.path.basename(path)
         page = name[:-5]
         src = open(path).read()
-        anchor = '<div class="sitefoot">'
-        if anchor not in src:
-            missing.append(name)
+        if 'http-equiv="refresh"' in src:
+            stubs.append(name)
             continue
 
         new = src
-        # CSS
-        css_block = CSS_MARK + "\n" + CSS + "  " + "/* /provenance block */"
-        if CSS_RE.search(new):
-            new = CSS_RE.sub(lambda _: css_block, new, count=1)
-        else:
-            new = new.replace("</style>\n<style id=\"navpass\">", css_block + "\n</style>\n<style id=\"navpass\">", 1)
-
-        # Block
         block = build(page)
-        if BLOCK_RE.search(new):
-            new = BLOCK_RE.sub(lambda _: block, new, count=1)
+        anchor = '<div class="sitefoot">'
+        if anchor in src:
+            # A restored page: the block sits before the sitefoot, and its
+            # styles are injected into the page's own stylesheet.
+            css_block = CSS_MARK + "\n" + CSS + "  " + "/* /provenance block */"
+            if CSS_RE.search(new):
+                new = CSS_RE.sub(lambda _: css_block, new, count=1)
+            else:
+                new = new.replace("</style>\n<style id=\"navpass\">", css_block + "\n</style>\n<style id=\"navpass\">", 1)
+            if BLOCK_RE.search(new):
+                new = BLOCK_RE.sub(lambda _: block, new, count=1)
+            else:
+                new = new.replace(anchor, block + "\n      " + anchor, 1)
+        elif "</main>" in src:
+            # A redesign-idiom page: the block closes main, and the shared
+            # style.css carries the .prov rules.
+            if BLOCK_RE.search(new):
+                new = BLOCK_RE.sub(lambda _: block, new, count=1)
+            else:
+                new = new.replace("</main>", "  " + block + "\n</main>", 1)
         else:
-            new = new.replace(anchor, block + "\n      " + anchor, 1)
+            missing.append(name)
+            continue
 
         if new == src:
             ok.append(name)
@@ -267,11 +304,13 @@ def main():
         print(("STALE       " if check else "updated     ") + n)
     for n in ok:
         print("in sync     " + n)
+    for n in stubs:
+        print("stub        " + n)
     for n in missing:
         print("NO ANCHOR   " + n)
 
     if missing:
-        print("\n%d page(s) missing the sitefoot anchor." % len(missing))
+        print("\n%d page(s) with no place for the block." % len(missing))
         return 1
     if check and changed:
         print("\n%d page(s) stale. Run without --check to fix." % len(changed))
