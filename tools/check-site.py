@@ -213,7 +213,13 @@ for page, name in syncnav.NAMES.items():
             fail(f"{page}.html: menu label reads {m.group(1).strip()!r}, "
                  f"and the name in tools/sync-nav.py is {name!r}")
 
-# every id cited from anywhere on the site exists on the page that holds it
+# every id cited from anywhere on the site exists on the page that holds it.
+# A #start= fragment into pathways.html is a state link, not an anchor: it
+# names a starting license, and optionally a route, from the data in
+# tools/sync-pathways.py. It is checked against that data, so a typoed start,
+# a typoed permit, or a permit the start does not offer fails here.
+pw_states = {st["id"]: set(syncpathways.live_routes(st))
+             for st in syncpathways.STARTS}
 ids = {n: set(re.findall(r'id="([^"]+)"', s)) for n, s in srcs.items()}
 for n, s in srcs.items():
     body = re.sub(r"<script.*?</script>", "", s, flags=re.S)
@@ -224,6 +230,15 @@ for n, s in srcs.items():
         if not frag:
             continue
         page = os.path.basename(target) or n
+        if page == "pathways.html" and frag.startswith("start="):
+            m = re.fullmatch(r"start=([a-z]+)(?:&(?:amp;)?permit=([a-z]+))?", frag)
+            if not m or m.group(1) not in pw_states:
+                fail(f"{n}: links {href}, which names no starting license in "
+                     "tools/sync-pathways.py")
+            elif m.group(2) and m.group(2) not in pw_states[m.group(1)]:
+                fail(f"{n}: links {href}, and the {m.group(1)} start has no "
+                     f"{m.group(2)} route in tools/sync-pathways.py")
+            continue
         if page not in ids:
             continue          # a missing file is already reported as a broken link
         if frag not in ids[page]:
