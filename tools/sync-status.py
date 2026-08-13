@@ -15,22 +15,23 @@ and each change is made here once and written everywhere.
 
 Three structures hold the status once:
 
-    DATES     the dated events of the rulemaking, each named once, so a date
-              that moves is corrected in one place
-    STATUS    each status item's state, date, and one-line summary, with the
-              full statement the front page carries; newest date first
-    STAGES    the five stages of the rulemaking and which one is current,
-              drawn as the procession on the front page
+    DATES      the dated events of the rulemaking, each named once, so a date
+               that moves is corrected in one place
+    STATUS     each status item's state, date, and one-line summary, with the
+               full statement the front page carries; newest date first
+    SCHEDULED  the dates ahead, as the front page lists them
+    STAGES     the five stages of the rulemaking and which one is current,
+               drawn as the procession on the front page
 
 LEGEND holds the two status definitions the eligibility legend carries; the
 rest of that legend defines the verdict vocabulary of the tables and belongs
 to the page.
 
-Four regions are generated, one per page, each between its own markers, and
-nothing outside them is touched:
+Five regions are generated, each between its own markers, and nothing
+outside them is touched:
 
     index.html                   the "Where things stand" section, with the
-                                 procession
+                                 procession, and the "Scheduled" column
     hours.html                   the kicker line under the page head
     eligibility.html             the Settled and Open rows of the legend
     training-hours-record.html   the status strip
@@ -118,6 +119,17 @@ STATUS = [
 ]
 
 
+# The scheduled dates, oldest first, as the front page lists them under
+# "Scheduled". Each date is one of the DATES above.
+
+SCHEDULED = [
+    (DATES["board"], "Advisory Board meets."),
+    (DATES["committee"], "Training and Education Committee meets."),
+    (DATES["hearing"], "Rule hearing on 7.35.3 NMAC. Public comment is taken and recorded "
+                       "there."),
+]
+
+
 # The five stages of the rulemaking, drawn as the procession on the front
 # page. `flag` is empty, "here" for the current stage, or "todo".
 
@@ -164,6 +176,11 @@ def validate():
     order = [i["date"] for i in STATUS]
     if order != sorted(order, reverse=True):
         problems.append("STATUS is not in newest-first order")
+    for iso, _ in SCHEDULED:
+        if iso not in DATES.values():
+            problems.append(f"a scheduled date {iso} is not in DATES")
+    if [iso for iso, _ in SCHEDULED] != sorted(iso for iso, _ in SCHEDULED):
+        problems.append("SCHEDULED is not in oldest-first order")
     if [f for _, _, f in STAGES].count("here") != 1:
         problems.append("the procession does not have exactly one current stage")
     for _, _, f in STAGES:
@@ -205,6 +222,16 @@ def render_stand():
                    f'<div class="d">{dates}</div></div>')
     out.append("    </div>")
     out.append("  </section>")
+    return "\n".join(out)
+
+
+def render_scheduled():
+    """The "Scheduled" column on the front page."""
+    out = ["    <div>", '      <p class="seclabel">Scheduled</p>']
+    for iso, text in SCHEDULED:
+        out.append(f'      <div class="fix"><b>{abbr_date(iso).upper()}</b>'
+                   f'<span class="what">{text}</span></div>')
+    out.append("    </div>")
     return "\n".join(out)
 
 
@@ -251,6 +278,7 @@ def render_strip():
 
 BLOCKS = [
     ("index.html", "status stand", render_stand),
+    ("index.html", "status scheduled", render_scheduled),
     ("hours.html", "status kicker", render_kicker),
     ("eligibility.html", "status legend", render_legend),
     ("training-hours-record.html", "status strip", render_strip),
