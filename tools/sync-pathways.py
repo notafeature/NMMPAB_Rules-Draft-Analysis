@@ -27,9 +27,28 @@ and every step stays in view and browser find reaches all of it. The one-line
 script in the head marks the document as scripted before anything paints, so a
 reader with JavaScript never sees the page collapse from five panels to one.
 
+The selection is also in the URL. The location hash carries #start=<id>, or
+#start=<id>&permit=<key> when the shown route is not the starting license's
+first, so the visible state is always a shareable address. Three parts carry
+it, and the two that know the valid ids and keys are generated here so they
+cannot drift from the data:
+
+    the head script, hand-held in the page, veils the picker and the panels
+    with one class when the hash looks like a state, so a shared link never
+    flashes the default before the state applies;
+    a script this file writes directly after the panels applies the hash
+    against what the panels actually hold, then lifts the veil; a value the
+    panels do not hold falls through to the default with no error;
+    the foot script, hand-held in the page, rewrites the hash with
+    history.replaceState on every selection.
+
+Without JavaScript the hash is inert: the veil class is never added, nothing
+is narrowed, and the page reads in full as before.
+
 Three regions of docs/pathways.html are generated, each between its own markers,
 and nothing outside them is touched: the selection rules in the page's
-stylesheet, the picker at #starts, and the panels at #panel.
+stylesheet, the picker at #starts, and the panels at #panel with the
+state-applying script beside them.
 
 tools/check-site.py imports this module and calls stale() to fail the build if
 the page no longer matches the data here.
@@ -409,7 +428,7 @@ def panel_html(st):
         out.append("        " + route_html(d, active))
     out.append("      </div>")
     out.append(f'      <p class="eligref" data-start="{st["id"]}">{eligref_html(st)}</p>')
-    out.append(f'      <div class="journeywrap" data-start="{st["id"]}" data-active="{active}">')
+    out.append(f'      <div class="journeywrap" data-start="{st["id"]}" data-active="{active}" data-default="{active}">')
     for key in keys:
         out.append(f'        <div class="jhead" data-k="{key}">{jhead_html(st, key)}</div>')
         out.append(f'        <div class="jholder" data-k="{key}">')
@@ -432,7 +451,48 @@ def render_picker():
 def render_panels():
     return (f'    <div id="panel" data-current="{STARTS[0]["id"]}">\n'
             + "\n".join(panel_html(st) for st in STARTS)
-            + "\n    </div>")
+            + "\n    </div>\n"
+            + state_script())
+
+
+def state_script():
+    """The script that applies the location hash to the panels.
+
+    It sits directly after the panels so it runs the moment they exist, before
+    anything below them has parsed, which is what keeps a shared link from
+    flashing the default view. It validates the hash against the panels
+    themselves rather than against a second copy of the ids and keys: a start
+    is real when a journey wrap carries it, a permit is real for that start
+    when the wrap holds its journey head. Anything else falls through to the
+    default silently. The last line always lifts the veil the head script may
+    have raised, whether or not a state applied."""
+    return """    <script>
+    (function(){
+      var h=document.documentElement;
+      try{
+        var m=/^#start=([a-z]+)(?:&permit=([a-z]+))?$/.exec(location.hash);
+        var panel=document.getElementById('panel');
+        var wrap=m&&panel?panel.querySelector('.journeywrap[data-start="'+m[1]+'"]'):null;
+        if(wrap){
+          panel.setAttribute('data-current',m[1]);
+          var bs=document.querySelectorAll('#starts button.start');
+          for(var i=0;i<bs.length;i++) bs[i].classList.toggle('on',bs[i].getAttribute('data-start')===m[1]);
+          if(m[2]&&wrap.querySelector('.jhead[data-k="'+m[2]+'"]')){
+            wrap.setAttribute('data-active',m[2]);
+            var rs=panel.querySelectorAll('.routes[data-start="'+m[1]+'"] button.route');
+            for(var j=0;j<rs.length;j++){
+              var sel=rs[j].getAttribute('data-k')===m[2];
+              rs[j].classList.toggle('sel',sel);
+              rs[j].setAttribute('aria-pressed',sel?'true':'false');
+              var go=rs[j].querySelector('.rgo');
+              if(go) go.innerHTML=sel?'Shown below':'View pathway &darr;';
+            }
+          }
+        }
+      }catch(e){}
+      h.classList.remove('hs');
+    })();
+    </script>"""
 
 
 def render_css():
@@ -443,7 +503,11 @@ def render_css():
     every step stays in view, and browser find reaches all of it."""
     lines = ["  /* Every panel and every route's steps are in the page. These rules narrow it to",
              "     the selected starting license and the selected route, and they apply only when",
-             "     JavaScript has marked the document. Without it, nothing is hidden. */"]
+             "     JavaScript has marked the document. Without it, nothing is hidden. */",
+             "  /* When the head script sees a state in the location hash it adds hs, and the",
+             "     script after the panels applies the state and removes it, so a shared link",
+             "     shows the arrived-at selection rather than a flash of the default. */",
+             "  .js.hs #starts,.js.hs #panel{visibility:hidden;}"]
     for st in STARTS:
         i = st["id"]
         lines.append(f'  .js #panel[data-current="{i}"] [data-start]:not([data-start="{i}"])'
