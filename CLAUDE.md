@@ -101,6 +101,7 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 | `analytics/` | The visit-counter Worker. The only wrangler config in the repo |
 | `redesign/` | The working folder behind the redesign: brief, prototypes, audits |
 | `tools/` | `build-rule-page.py` and `check-site.py` for the site; `sync-nav.py`, `sync-provenance.py`, and `sync-count.py`, which take `--check` and still target the pre-redesign pages |
+| `tools/sync-pathways.py` | The content of `docs/pathways.html`: every starting license, every route, and every step. The page is generated from it, so a step, a verdict, or a citation is changed here and the tool is run. Hand-editing the page fails `check-site.py` |
 
 ## Current state of truth
 
