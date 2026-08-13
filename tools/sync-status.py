@@ -225,10 +225,16 @@ def render_legend():
 
 
 def render_strip():
-    """The status strip on the training-hours record."""
+    """The status strip on the training-hours record: a dated record, not a
+    live status block. The label carries the date of the newest status change
+    the strip states, and the strip closes by naming the front page as where
+    the current state of the rulemaking lives. A record page carrying a live
+    status block is how this page came to misstate the recommendation for a
+    day, and this frame is what ends that failure mode."""
+    asof = max(i["date"] for i in STATUS)
     return (
         '      <div class="statusline">\n'
-        '        <span class="lab">Status</span>\n'
+        f'        <span class="lab">Status as of {long_date(asof)}</span>\n'
         f'        <p>On <b>{short_date(DATES["deferred"])}</b> the Advisory Board voted '
         "<b>7-0</b> to defer the didactic and practicum hours to the Training and Education "
         f'Committee. On <b>{short_date(DATES["published"])}</b> the department published its '
@@ -237,7 +243,8 @@ def render_strip():
         f'<b>{short_date(DATES["hearing"])}</b>. The committee\'s recommendation was submitted '
         f'to the department on <b>{short_date(DATES["submitted"])}</b>; its figures are beside '
         'the published text on the <a href="recommendation.html">recommendation page</a>. The '
-        "figures below are the published ones.</p>\n"
+        "figures below are the published ones. The current state of the rulemaking is on "
+        '<a href="index.html">Where things stand</a>.</p>\n'
         "      </div>"
     )
 
