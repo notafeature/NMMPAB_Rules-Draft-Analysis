@@ -35,6 +35,11 @@ does not carry back, fails here as well.
 A fifth reads tools/sync-pathways.py: the starting-license picker and the
 five panels on pathways.html are written into the page from the data in
 that file, and this check fails if the page has drifted from it.
+
+A sixth reads tools/sync-status.py: the four status surfaces, on
+index.html, hours.html, eligibility.html, and training-hours-record.html,
+are written into the pages from the STATUS data in that file, and this
+check fails if any of them has drifted from it.
 """
 import glob, hashlib, html.parser, importlib.util, os, re, sys
 
@@ -53,6 +58,7 @@ def _load(name, filename):
 syncnav = _load("syncnav", "sync-nav.py")
 syncrecord = _load("syncrecord", "sync-record.py")
 syncpathways = _load("syncpathways", "sync-pathways.py")
+syncstatus = _load("syncstatus", "sync-status.py")
 
 failures = []
 
@@ -172,6 +178,11 @@ if syncrecord.stale():
 if syncpathways.stale():
     fail("pathways.html: the starting-license picker or the panels no longer match "
          "tools/sync-pathways.py; run it without --check")
+
+# the four status surfaces match tools/sync-status.py
+for n in syncstatus.stale():
+    fail(f"{n}: the status surface no longer matches tools/sync-status.py; "
+         "run it without --check")
 
 # titles, headings, and menu labels say the same words
 for page, name in syncnav.NAMES.items():
