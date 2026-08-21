@@ -15,7 +15,7 @@ Attendees noted in the transcript: Kate Hawk, described as a psychedelic educato
 
 ## The document presented
 
-The chair introduced the document as "this part of the summary of the recommendation of rules, the education training requirements," worked on by Anne Metz and Larry Leeman. It defines three roles: certifying clinicians, who diagnose qualifying conditions and clear patients for psilocybin therapy; licensed providers, professionals holding a license to deliver medical, counseling, mental health, or behavioral health care; and facilitators, who support patients through psilocybin sessions in a non-clinical role. The document states that its hours figures are minimums, and that hours earned simultaneously count once toward the total. Basis: the chair reading the document aloud, confirmed by the screenshots.
+The chair introduced the document as "this part of the summary of the recommendation of rules, the education training requirements," worked on by Anne Metz and Larry Leeman. Later in the meeting Dominic Zurlo corrected the framing: the document is from the Training and Education Subcommittee, not from the department, and other than a final meeting earlier in the week attended by the chair, Denali, and Dr. Leeman, the department was not in the subcommittee's meetings. The department holds its own version, which lists the same content areas but sets no per-area hour minimums, and Zurlo offered a side-by-side in the meeting, saying the two are not very different on the didactic side. The spelling of Denali's name is not fixed by the transcript, which also renders it "Donali" and "Tanali." It defines three roles: certifying clinicians, who diagnose qualifying conditions and clear patients for psilocybin therapy; licensed providers, professionals holding a license to deliver medical, counseling, mental health, or behavioral health care; and facilitators, who support patients through psilocybin sessions in a non-clinical role. The document states that its hours figures are minimums, and that hours earned simultaneously count once toward the total. Basis: the chair reading the document aloud, confirmed by the screenshots.
 
 ### Figures shown
 
@@ -23,13 +23,13 @@ The chair introduced the document as "this part of the summary of the recommenda
 |---|---|---|---|
 | Didactic hours | 8 | 80 | 80 |
 | Practicum and supervision | none stated | 72 + 42 = 114 | 60 + 42 = 102 |
-| Emergency response credential (CPR) | not stated | required | required |
+| Emergency response credential | not stated | required | required |
 | Continuing education, every two years | 8 hours | 20 hours | 20 hours |
 
 Two figures needed correction in the meeting, and one is a transcript artifact:
 
 - The document on screen carried a misprint in the licensed provider practicum subtotal, rendered "7S." The chair read it as 72 or 75; Larry Leeman fixed it at 72 ("Thank you, Larry. It's 72 hours."). 72 plus 42 is the 114 shown.
-- The transcript reads "it's 62 plus the 42 hours is 102 hours" for the facilitator. The stage arithmetic below gives 60, and 60 plus 42 is 102, so the "62" is an artifact of the auto transcription. Derived.
+- Corrected: an earlier version of this record called the facilitator's "62" an artifact of the auto transcription. It is not; the document's practicum table itself is headed "Practicum: Supervised Onsite: 72 Hours for Licensed Provider; 62 for Facilitator." The 62 is internally inconsistent with the same document: the facilitator stages sum to 24 + 24 + 12 = 60, and the stated facilitator total of 102 requires 60, since 62 plus 42 would be 104. The 62 appears to be a second uncorrected figure alongside the "7S," but the document says what it says. Derived.
 - The chair first attributed the 102 to the committee and the 114 to the department. This was corrected in the meeting: both figures are the training and education subgroup's, 102 for facilitators and 114 for licensed providers. The correcting speaker is not fixed by the surrounding text.
 
 ### The pathway diagram
@@ -71,11 +71,68 @@ Within the 80 hours, the document sets minimums for nine content areas:
 | Role playing and/or simulated patient experience | 2 |
 | **Total specified minimums** | **63** |
 
-The nine minimums sum to the stated total of 63, leaving 17 of the 80 hours unallocated to any content area. Derived. Basis for the table: two screenshots, which together show all nine rows and the total row; the chair had begun reading the first row aloud at the last transcript capture.
+The nine minimums sum to the stated total of 63. The document itself accounts for the remaining 17 hours: they are devoted to the topics the rule requires without an hour minimum, an overview of licensed provider and facilitator responsibilities, including how to work as part of a care team and the unique role of non-clinical peer support facilitators, and treatment models. The module concludes with an evaluation demonstrating competency across all areas. Basis: the screenshot of that paragraph, which the chair also read aloud.
+
+The document carries a note on the trauma minimum: seven hours is not PTSD treatment training and should not be represented as such; it prepares trainees to recognize dissociation and trauma responses, work somatically, and de-escalate, and where PTSD treatment falls outside a provider's scope, collaboration with a PTSD-trained provider is the appropriate path. Basis: the screenshot, read aloud by the chair.
+
+Basis for the content-area table: two screenshots, which together show all nine rows and the total row, and the chair reading each row aloud.
+
+### Emergency response credentials
+
+Before applying for certification, licensed providers and facilitators must hold current emergency response credentials: basic life support, or CPR and AED certification, or New Mexico EMT licensure, or a clinical license that includes these competencies. Basis: the chair reading the document aloud.
+
+### The practicum and supervised practice table
+
+The document's practicum section is headed "The Practicum and Supervised Practice : 102 to 114 Supervised Hours." Its prose states that supervised practice is sequenced from lower-risk to higher-risk experiences, that no one completes it without real client contact, and that facilitator-track students complete 102 practicum hours while licensed provider-track students complete 114. The table carries columns for minimum hours, whether the trainee may be compensated, and client medicine sessions, in two blocks:
+
+**Practicum: Supervised Onsite: 72 Hours for Licensed Provider; 62 for Facilitator** (on the 62, see the correction above):
+
+| Stage | Min. hours | Compensated | Medicine sessions | What it involves |
+|---|---|---|---|---|
+| 1. Well participants | 24 | N | 2 | Participants without a qualifying or risk-heightening condition; completed before seeing patients with qualifying conditions. Includes preparation, administration, and integration. |
+| 2. Co-facilitation | 24 | N | 2 | Co-facilitated with a DOH-permitted licensed provider; low-acuity patients such as nicotine use disorder or depression. Includes preparation, administration, and integration. |
+| 3. Group work | 12 | Y | 1 | Group preparation, administration, and integration. |
+| 4. Provider supervisory hours (LP track only) | 12 | Y | 1 | Co-facilitating with a permitted facilitator for administration of same-day therapy sessions. |
+
+**Supervised Practice : Case Consultation: 42 hours Licensed Provider or Facilitator**:
+
+| Stage | Min. hours | Compensated | Medicine sessions | What it involves |
+|---|---|---|---|---|
+| 5. Supervised practice with case consultation | 42 (24 + 18) | Y | 2 | 24 hours of supervised practice with a permitted licensed provider for two clients, designated by the hosting school or healing center, which may include people with end of life, complex PTSD, or opioid addiction as qualifying conditions. The 24 hours are 12 with each participant: an eight-hour medicine day, two 60-minute preparation sessions, and two 60-minute integration sessions. Both clients are presented and discussed within an 18-hour consultation group. This stage may occur in the two-year period after the individual has received their training licenses. |
+
+The total row reads LP 114 and facilitator 102 hours, with eight client medicine sessions in total, four of them before compensation may occur.
+
+The prose beneath the table states that every stage spans preparation, administration, and integration rather than administration alone; that hours in co-facilitation, group work, and practice supervision may be earned simultaneously, each actual hour counting once toward the 102- or 114-hour aggregate; that any remaining balance is completed through co-facilitation designed by the hosting school or healing center; that a student who has completed at least 48 practicum hours, the end of stage two, is qualified to provide care to high-acuity patients when accompanied by a licensed provider; and that all practicum hours take place in an approved healing center or other approved location, with supervisors and students following the program's facilitation and therapy rules, HIPAA and HITECH confidentiality requirements, and applicable scope-of-practice limits. Basis: screenshots of the table and the surrounding prose, and the chair reading the table aloud.
+
+## Whether the hour minimums belong in the rule
+
+The longest discussion of the meeting so far. The question, put by Gregory Evans after the content-area table was read: is the nine-area breakdown being put forward as rule text, or as best-practice recommendations, given that it approaches telling schools how to break down their curriculum. The positions, in the order given:
+
+- **Dominic Zurlo, for the department:** the department recommends the rule carry the content areas but not per-area hour minimums. His grounds: allocating hours per area restricts programs and teachers, who need to shift time by cohort (his example: a class of end-of-life doulas needs fewer palliative-care hours and perhaps more elsewhere); every added qualifying condition would force a rule modification to reallocate hours; and the scrutiny of hours properly happens at program application, where every program, reciprocity programs included, must submit a curriculum crosswalk showing all topics covered in appropriate depth. He noted the recommendation is the committee's to decide.
+- **Gregory Evans, initially:** the committee should absorb that the department will "zoom out" in rule language, keep the granular breakdown on record as best practices, and push it forward as such rather than as rule text.
+- **Larry Leeman:** the numbers were designed as bare minimums, derived by reviewing Oregon's and Colorado's hour requirements, and Colorado graduates recommended more hours than these. A program without eight end-of-life hours should have to argue it covers the competency. He had trouble picturing a good training that omits preparation, integration, administration, suicidality, trauma, or end of life.
+- **Denali:** the subcommittee wrote minimums partly because the department's position is that the rule cannot carry condition-specific requirements, such as palliative-care training for end-of-life practitioners or PTSD-specific requirements. Given the clinical need in those two conditions, some minimum standard for trauma and end of life should survive even if these exact hours do not.
+- **Dezbaá** (rendered "Despa" and "Desba" in the transcript): broad categories let existing certifications, such as an end-of-life care certification, satisfy requirements, on the model of the four ethics hours in licensed massage therapy continuing education.
+- **Anne Metz:** she intended these as specific requirements that programs document in their applications, as Oregon and Colorado do. Without an hours minimum, a program of 70 hours on astral projection and 10 on psilocybin therapy could apply and the department would lack objective criteria to reject it. As someone who runs a program, at Fluence, concrete numbers are what let a program know it is in compliance.
+- **Chris Caldwell:** no current Colorado or Oregon training includes eight hours of end-of-life care; she teaches a two-hour class with 45 minutes of homework for a Colorado program (rendered "Changa Institute"). Under a fixed minimum, a reciprocity applicant would need to supplement to meet the standard.
+- **Leeman, replying:** the two-hour figure is an argument for a minimum, since end of life is one of four qualifying conditions in New Mexico.
+- **Evans, second position:** he walked back the earlier position and aligned with Metz on the importance of minimums, then proposed a middle course: write the categories into the rule and have the rule point to guidance documents holding the concrete minimum hours, so the department has objective numbers for application review but adjusting a number does not require a rule hearing. The chair spoke favorably of the flexibility.
+
+No resolution was reached before the meeting moved on. Basis: the live transcript throughout; attributions follow the pattern of the chair calling on each speaker by name.
+
+## Timing stated in the meeting
+
+Denali asked the chair to ensure the committee hears the department's side-by-side with time for discussion, "since they're going to need our feedback by before Tuesday when they plan to publish." The chair floated gathering on Sunday or Monday; Zurlo offered to show the side-by-side within this meeting. What the department plans to publish on Tuesday is not specified in the transcript to this point. Tuesday would be August 25, three days before the August 28 rule hearing. The date arithmetic is derived; the rest is stated from the transcript.
 
 ## Reciprocity, as explained in the meeting
 
 Dominic Zurlo, responding after the chair deferred the question to him: certification by reciprocity is available at every level to a person trained in a program licensed, permitted, or approved by another jurisdiction, in all cases up until December 31, 2027. A certifying clinician under reciprocity has no practicum requirement; licensed providers and facilitators must demonstrate 40 contact hours of practicum with patients. Programs created with institutes of higher education or with research programs are also eligible, which reaches earlier programs not recognized by Colorado or Oregon. These are spoken explanations at the meeting, not document text, and neither document under discussion was the reciprocity document.
+
+The hour-minimums discussion later surfaced two reciprocity frictions. Zurlo: per-topic hour minimums in the rule would create a problem for reciprocity applicants, whose crosswalks show topics covered but not necessarily to specific hours; this is part of why the department recommends against that specificity. Leeman: the department and the subcommittee both want more practicum in New Mexico than Colorado or Oregon require, which nearly guarantees that the people reciprocity is meant to reach will not meet the practicum requirement; he recalled a prior conclusion that a lesser practicum amount would be accepted during the reciprocity period, and raised it as an open issue for the practicum discussion.
+
+## Aftercare and hallucinogen persisting perception disorder
+
+A participant the chair addressed as Jeff asked whether there will be training on post-session difficulties, naming hallucinogen persisting perception disorder, and offered to send the chair a Scientific American article about a newly opened clinic treating it, suggesting the clinic might speak at a committee meeting. The chair said a continuum of care afterward has been discussed but not at length, and said she would like the topic taken up. The certifying clinician didactic module in the document already lists supporting patients with challenging experiences, including HPPD, among its topics.
 
 ## The certifying clinician's role
 
@@ -87,6 +144,7 @@ The published rule requires a minimum of 100 hours of supervised practice traini
 
 ## Open items
 
-- The transcript was still recording at the last capture; this record ends as the chair begins reading the content-area table aloud. To be completed from the full transcript or the department's posted recording.
+- The transcript was still recording at the last capture; this record ends as the chair finishes reading the practicum table, at a sentence beginning "and then there is the AACC," cut off mid-thought. The department's side-by-side and any consensus or motion are not yet in this record. To be completed from the full transcript or the department's posted recording.
+- What the department plans to publish on Tuesday, August 25 is not identified in the transcript so far. To be established.
 - The screenshots themselves are not committed. If the images are wanted in the repository, the files need to be added directly, or captured from the department's recording when it is posted.
 - Reconcile the whole record against the posted recording and any minutes.
