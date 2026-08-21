@@ -78,8 +78,8 @@ DOCUMENTS = [
         "cite": "The published proposed rule, July 23, 2026, 19 pages",
         "date": "2026-07-23",
         "event": "e-2026-07-23",
-        "what": "The proposed rule as published for the August 28 hearing, and the operative "
-                "text of this rulemaking",
+        "what": "The proposed rule as published July 23, with the hearing then set for August "
+                "28, and the operative text of this rulemaking",
         "status": "current",
         "chain": True,
         "notes": "19 pages. Sections 7.35.3.1 through .28, typeset on this site at "
@@ -246,11 +246,23 @@ GAPS = [
     {
         "id": "gap-hearing-notice",
         "name": "The rule hearing notice as published",
-        "means": "The official time, place, and comment instructions for August 28. The hearing "
-                 "date on this site is sourced to the scheduling on the record, not to a filing",
+        "means": "The official time, place, and comment instructions. The October 2 date on "
+                 "this site is sourced to the department's statement at the August 21 "
+                 "committee meeting, not to a filing; the department said the final notice is "
+                 "in preparation with the hearing officer",
         "at_event": "The hearing notice as published is not held on this site. The date is "
-                    "sourced to the scheduling on the record, not to a filing.",
-        "events": ["e-2026-08-28"],
+                    "sourced to the department's August 21 statement, not to a filing.",
+        "events": ["e-2026-10-02"],
+    },
+    {
+        "id": "gap-aug21",
+        "name": "August 21 committee meeting recording or transcript",
+        "means": "The meeting at which both hours proposals were shown side by side and the "
+                 "October 2 hearing was stated. The department recorded it for posting; a "
+                 "live auto-generated transcript exists in Notion",
+        "at_event": "No recording or transcript of this meeting is held on this site yet. The "
+                    "department recorded the meeting for posting on its website.",
+        "events": ["e-2026-08-21"],
     },
 ]
 
@@ -272,22 +284,78 @@ GAPS = [
 
 EVENTS = [
     {
-        "id": "e-2026-08-28",
-        "date": "2026-08-28",
+        "id": "e-2026-10-02",
+        "date": "2026-10-02",
         "kind": "scheduled",
-        "what": "<b>The rule hearing on 7.35.3 NMAC.</b> Public comment is taken and recorded "
-                "at the hearing, and comment given there becomes part of the rulemaking record "
-                "the department must consider. On July 17 the department said the published "
-                "text is what the hearing runs on.",
+        "what": "<b>The rule hearing on 7.35.3 NMAC, anticipated.</b> The department stated at "
+                "the August 21 committee meeting that the hearing is anticipated for October 2, "
+                "virtual and in person, and that the final notice, in preparation with the "
+                "hearing officer, will fix the date. The hearing was first set for August 28 "
+                "with the July 23 publication. Public comment is taken and recorded at the "
+                "hearing, and comment given there becomes part of the rulemaking record the "
+                "department must consider.",
         "absent": ["gap-hearing-notice"],
         "deeper": [("comment.html", "How comment works, and what is at issue")],
     },
     {
+        "id": "e-2026-09-04",
+        "date": "2026-09-04",
+        "kind": "scheduled",
+        "what": "<b>The Training and Education Committee meets, 9 to 11 AM.</b> Scheduled at "
+                "the close of the August 21 meeting, after the September 11 and 18 mornings "
+                "were found taken.",
+    },
+    {
+        "id": "e-2026-08-25",
+        "date": "2026-08-25",
+        "kind": "scheduled",
+        "what": "<b>The department publishes revised proposed rules</b>, per its statement at "
+                "the August 21 committee meeting, taking the committee's suggestions under "
+                "advisement. Public comment continues after publication, through the rule "
+                "hearing, and the department said changes can still be made in that period.",
+    },
+    {
         "id": "e-2026-08-21",
         "date": "2026-08-21",
-        "kind": "scheduled",
-        "what": "<b>The Training and Education Committee meets, 9 to 11 AM.</b> Seven days "
-                "before the hearing, and after the text for it was published.",
+        "kind": "meeting",
+        "what": "<b>The Training and Education Committee reviewed its subcommittee's education "
+                "and training proposal beside the department's, and took no vote.</b> The "
+                "chair held a vote off deliberately, with the proposals close and the "
+                "department publishing revised rules the following Tuesday. The department "
+                "restated the schedule: revised rules publish August 25, and the rule hearing "
+                "is anticipated for October 2.",
+        "changed": [
+            ("<b>The schedule.</b> Revised proposed rules publish August 25, and the rule "
+             "hearing, first set for August 28, is anticipated for October 2; the final "
+             "notice will fix the date.",
+             "index.html", "Where things stand"),
+            ("<b>The hours question.</b> Both proposals now set 80 classroom hours in place "
+             "of the published 40. The subcommittee's practicum stands at 114 hours for "
+             "licensed providers and 102 for facilitators; the department's at 120 and 100, "
+             "structured differently, with case presentation folded into the practicum "
+             "rather than separate.",
+             "training-hours-record.html", "The training hours record"),
+        ],
+        "said": {
+            "basis": "The account rests on a live auto-generated transcript with no speaker "
+                     "labels; names are fixed by the surrounding text. The department's "
+                     "recording, once posted, is the record.",
+            "lines": [
+                "Dominic Zurlo said the current statute does not allow practicum work with "
+                "individuals who do not have a qualifying condition, which is why the "
+                "department's proposal carries no well-participants stage.",
+                "Zurlo said the department's proposal permits trainee compensation after 50 "
+                "practicum hours, and that its 10 post-graduation mentoring hours are an "
+                "obligation on programs, optional for graduates.",
+                "Anne Metz argued for hour minimums per content area as objective criteria; "
+                "Zurlo said the department recommends content areas in the rule without "
+                "per-area hours; no resolution was reached.",
+                "Senator Jeff Steinborn asked how post-session adverse impact training, "
+                "including hallucinogen persisting perception disorder, is ensured in the "
+                "language; the chair suggested naming it.",
+            ],
+        },
+        "absent": ["gap-aug21"],
     },
     {
         "id": "e-2026-08-14",

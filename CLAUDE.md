@@ -66,12 +66,14 @@ Every page, name, layout, tool, and sentence is tested against these six functio
 | July 27, 2026 | Monday | The committee's recommendation reached the department as a summary of the recommended rules, one day ahead of the working date below |
 | July 28, 2026 | Tuesday | One month before the hearing. The working date for the recommendation to be in the department's hands |
 | August 14, 2026 | Friday | Advisory Board meeting |
-| August 21, 2026 | Friday | Training and Education Committee meeting |
-| August 28, 2026 | Friday | Rule hearing |
+| August 21, 2026 | Friday | Training and Education Committee meeting. Both education and training proposals, the subcommittee's and the department's, were shown side by side; no vote was taken; the department restated the schedule below. Record: `analysis/8-21-committee-extraction.md` |
+| August 25, 2026 | Tuesday | The department publishes revised proposed rules, per its August 21 statement |
+| September 4, 2026 | Friday | Training and Education Committee meeting, 9 to 11 AM, scheduled at the close of August 21 |
+| October 2, 2026 | Friday | Rule hearing, anticipated. Stated by the department on August 21; the final notice, in preparation with the hearing officer, will fix the date. First set for August 28 with the July 23 publication |
 
-**The hearing date is a fact.** The department could not schedule the hearing until the rule was published, and a rule must be published more than a month before its hearing. Publication on July 23 gives 36 days. The department published on Thursday July 23 rather than waiting, because the responsible director was out of state the following week. None of this is inference; it is the sequence.
+**The hearing date moved on August 21.** The hearing was set for August 28 when the rule was published on July 23: the department could not schedule the hearing until the rule was published, and a rule must be published more than a month before its hearing. At the August 21 committee meeting the department stated it will publish revised proposed rules on August 25 and that the hearing is anticipated for October 2, virtual and in person. The October date is an anticipation until the final notice issues; report it as the department's stated anticipation, not as noticed.
 
-**No hearing notice document is held in this repository.** The date is sourced to the scheduling, not to a filing. That gap is tracked in `UPDATING.md`, Part 6. Do not report the date as unverified; report the notice as absent.
+**No hearing notice document is held in this repository.** The October 2 date is sourced to the department's statement at the August 21 meeting, not to a filing. That gap is tracked in `UPDATING.md`, Part 6. Do not report the date as unverified; report the notice as absent.
 
 ## Named people
 

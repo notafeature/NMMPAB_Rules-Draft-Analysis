@@ -92,7 +92,7 @@ version of it is how one fact ended up owned by two pages.
 
 | Fact | Pages that assert it in prose | N |
 |---|---|---|
-| Hearing date, August 28 | changes, comment, cs-number, deferred, eligibility, index, pathways, recommendation, rule | 9 |
+| Hearing date (anticipated October 2 since August 21; August 28 remains in historical prose) | changes, comment, cs-number, deferred, eligibility, index, pathways, recommendation, rule | 9 |
 | The 7-0 deferral vote | changes, comment, cs-number, deferred, eligibility, pathways, recommendation, rule, training-hours-record | 9 |
 | July 27 submission of the recommendation | about, changes, comment, deferred, eligibility, hours, index, pathways, recommendation, rule | 10 |
 | CS number requirement | changes, comment, cs-number, eligibility, index, rule, training-hours-record | 7 |
@@ -318,7 +318,8 @@ known Notion page it is named below; that material was never missing, only uncop
 | June 12 and June 25 recordings or transcripts (`gap-june`) | statements attributed to those meetings; the documents they produced are held | Notion, "Training & Education Rules: Vote Record, Redline & Open Items (6/25 to 6/26)"; no upstream is located for June 12 |
 | July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | Notion, "End of life Care 7/16" and "Proposed Adjunct Training in End-of-Life Psychedelic Care (Slides)" |
 | May 22 committee meeting record (`gap-may22`) | nothing; it is recorded as held and unposted | none exists; the department did not record it |
-| The rule hearing notice as published (`gap-hearing-notice`) | the hearing date, asserted in prose on nine pages | Not located. The date itself is not in doubt; see `CLAUDE.md` |
+| The rule hearing notice as published (`gap-hearing-notice`) | the hearing date, anticipated October 2, asserted in prose across the site | Not located; the department said on August 21 the final notice is in preparation with the hearing officer. See `CLAUDE.md` |
+| August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | Notion, "Training and Education - 8/21"; the department recorded the meeting for posting. The working record is `analysis/8-21-committee-extraction.md` |
 
 **Copying one in is Event C** (Part 1). Put the PDF in `docs/documents/`, the searchable
 text in `source-text/`, add the register row and remove the gap in `tools/sync-record.py`
