@@ -334,7 +334,7 @@ EVENTS = [
              "licensed providers and 102 for facilitators; the department's at 120 and 100, "
              "structured differently, with case presentation folded into the practicum "
              "rather than separate.",
-             "training-hours-record.html", "The training hours record"),
+             "index.html", "Where things stand"),
         ],
         "said": {
             "basis": "The account rests on a live auto-generated transcript with no speaker "
