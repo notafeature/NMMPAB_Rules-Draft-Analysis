@@ -174,7 +174,7 @@ The published rule requires a minimum of 100 hours of supervised practice traini
 
 ## The department's side-by-side
 
-A spreadsheet screen-shared later in the meeting, headed by paired columns "Alternative Proposed Rule" and "DOH Proposed Rule" for each role. The alternative columns use the role names Certifying Clinician, Licensed Provider, and Facilitator; the department's columns use Certifying Clinician, Practitioner, and Facilitator, so the naming difference between the two proposals is visible in the header itself. The capture cuts off partway into the Supervision Practicum row, so rows below it, and the facilitator cells of that row, are not in this record.
+A spreadsheet screen-shared later in the meeting, headed by paired columns "Alternative Proposed Rule" and "DOH Proposed Rule" for each role. The alternative columns use the role names Certifying Clinician, Licensed Provider, and Facilitator; the department's columns use Certifying Clinician, Practitioner, and Facilitator, so the naming difference between the two proposals is visible in the header itself. A second capture completed the Supervision Practicum row; rows below it, if any, are not in this record.
 
 Prerequisites: the New Mexico module and HIPAA/privacy are required in all six columns. The emergency-response credential (BLS, CPR/AED, or EMT) is required of licensed providers or practitioners and facilitators in both proposals, and of certifying clinicians in neither.
 
@@ -198,7 +198,7 @@ Practicum, noted in the sheet as all hours supervised:
 | Group work, 1 group (combined preparatory, administration, integration sessions) | 12 | none | 12 | none |
 | Supervised practice, 2 individual patients (combined preparatory, administration, integration sessions) | 24 | none | 24 | none |
 | Case presentation and consultation (2 cases) | 18 | included in practicum hours | 18 | included in practicum hours |
-| Supervision practicum | 12 | 20 | not captured | not captured |
+| Supervision practicum | 12 | 20 | none | none |
 
 The visible cells sum to the familiar totals on both sides: the alternative's 114 and 102, and the department's 120 for practitioners and 100 for facilitators, the published rule's figures now itemized. Derived.
 
