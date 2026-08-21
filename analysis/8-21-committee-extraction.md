@@ -108,6 +108,32 @@ The prose beneath the table states that every stage spans preparation, administr
 
 A section headed "Practicum Stage: Case Presentation and Consultation" and subtitled as the competency checkpoint expands stage five's consultation half. Every student participates in at least 18 hours of case presentation and consultation with educational program faculty, which programs may provide through a contracted third party. During these hours each student presents at least two cases in which they personally provided direct psilocybin services. Presentations and consultation include discussion of individual case concerns, risk factors, supportive factors, treatment considerations, and recommendations for aftercare, described as a full case conceptualization rather than a formality, and the two case presentations must be completed before full licensure. The document states the rationale: rather than relying on raw hour counts, someone experienced evaluates the new provider's casework before independent practice. The 18 hours remain valid for up to 12 months after the practicum is completed. The document says the model mirrors the consultation structure developed at Memoru in Boulder under the leadership of one of the lead principal investigators in the MAPS MDMA clinical trials. One sentence in the section is incomplete on its face, reading "Which contributes another 24 hours to training hour" between the two-case requirement and the description of the presentations. Basis: the screenshot.
 
+### The Colorado comparison table
+
+A table headed "Comparison of Hours Between Colorado and New Mexico":
+
+| Stage | Colorado | New Mexico |
+|---|---|---|
+| Didactic | 150 | 80 |
+| Practicum, including case presentation with consultation stage | 40 | 114 for LP; 102 facilitator |
+| Colorado Consultation Phase (no medicine sessions required) | 40 | none |
+| Psilocybin medicine sessions in training | 2 | 8 (4 before compensation may occur) |
+| **Total hours** | **230** | **194 LP; 182 facilitator** |
+
+The table's framing: New Mexico's total is lower than Colorado's, but its practicum is larger, requires four times the medicine sessions, and folds consultation into the practicum rather than running a separate consultation phase without medicine sessions. Stated from the document; the framing sentence is derived from the table's own rows. Basis: the screenshot.
+
+### Continuing education
+
+Certification is not the end of training: certifying clinicians complete at least eight hours of continuing medical education specific to psychedelic medicine or therapy every two years; licensed providers and facilitators complete at least 20 hours of continuing education specific to psychedelic therapy and practice every two years and keep their emergency-response credentials current. This matches the published rule's continuing education provision, 7.35.3.18 (G), p. 12. Basis: the screenshot; the match to the rule is derived.
+
+### Program accountability and records
+
+Educational programs keep records for at least five years: course syllabi and enrollment records including each student's name, start and completion dates, examination results and transcripts, the dates, locations, and patient counts for practicum sessions, and the names of facilitators supervised by licensed provider students. Programs upload completion certificates into the department's electronic system, provide current and former students their records on request, and provide required records to the department on request. Basis: the screenshot.
+
+### Flexibility and the 2027 transition pathway
+
+The department may waive, temporarily suspend, or reduce practicum requirements to recognize individuals trained by other government-approved programs and to build the program's initial infrastructure. Applicants who apply and complete their didactic requirements by December 31, 2027, and graduate from a department-certified or department-approved program by that date, may satisfy a reduced practicum of at least 40 documented contact hours including a minimum of two; the screenshot cuts off there, so the remainder of the sentence is not in this record. Basis: the screenshot. The December 31, 2027 date and the 40 contact hours match the reciprocity terms Zurlo described earlier in the meeting.
+
 ## Whether the hour minimums belong in the rule
 
 The longest discussion of the meeting so far. The question, put by Gregory Evans after the content-area table was read: is the nine-area breakdown being put forward as rule text, or as best-practice recommendations, given that it approaches telling schools how to break down their curriculum. The positions, in the order given:
@@ -145,6 +171,40 @@ Zurlo, confirming a description offered by Gregory Evans: the certifying clinici
 ## Against the published rule
 
 The published rule requires a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners, 7.35.3.19 (A), p. 12. The document presented puts practicum and supervision at 102 hours for facilitators and 114 for licensed providers, with the composition above. Derived comparison; at the point this record ends, the committee had discussed the figures and taken no vote.
+
+## The department's side-by-side
+
+A spreadsheet screen-shared later in the meeting, headed by paired columns "Alternative Proposed Rule" and "DOH Proposed Rule" for each role. The alternative columns use the role names Certifying Clinician, Licensed Provider, and Facilitator; the department's columns use Certifying Clinician, Practitioner, and Facilitator, so the naming difference between the two proposals is visible in the header itself. The capture cuts off partway into the Supervision Practicum row, so rows below it, and the facilitator cells of that row, are not in this record.
+
+Prerequisites: the New Mexico module and HIPAA/privacy are required in all six columns. The emergency-response credential (BLS, CPR/AED, or EMT) is required of licensed providers or practitioners and facilitators in both proposals, and of certifying clinicians in neither.
+
+Didactic, where both proposals total 80 hours but compose them differently:
+
+| Row | Alt CC | DOH CC | Alt LP | DOH Practitioner | Alt Facilitator | DOH Facilitator |
+|---|---|---|---|---|---|---|
+| Practitioner and facilitator general module | 8 | 8 | 78 | 65 | 78 | 65 |
+| Certification specific didactic module | none | none | none | 5 | none | 5 |
+| Simulated patient requirement | none | none | 2 | 10 | 2 | 10 |
+| **Total didactic hours** | **8** | **8** | **80** | **80** | **80** | **80** |
+
+Practicum, noted in the sheet as all hours supervised:
+
+| Row | Alt LP | DOH Practitioner | Alt Facilitator | DOH Facilitator |
+|---|---|---|---|---|
+| Well patients/students using psilocybin | 24 | none | 24 | none |
+| Patients with low acuity/low risk for adverse reactions/co-facilitation | 24 | 20 | 24 | 20 |
+| General practicum, 6 individual patients, 2 groups (same-day administration sessions) | none | 60 | none | 60 |
+| Preparatory/integrative sessions, 6 individuals, 1 group | none | 20 | none | 20 |
+| Group work, 1 group (combined preparatory, administration, integration sessions) | 12 | none | 12 | none |
+| Supervised practice, 2 individual patients (combined preparatory, administration, integration sessions) | 24 | none | 24 | none |
+| Case presentation and consultation (2 cases) | 18 | included in practicum hours | 18 | included in practicum hours |
+| Supervision practicum | 12 | 20 | not captured | not captured |
+
+The visible cells sum to the familiar totals on both sides: the alternative's 114 and 102, and the department's 120 for practitioners and 100 for facilitators, the published rule's figures now itemized. Derived.
+
+The load-bearing fact in the sheet is the department's didactic total. The published rule of July 23 requires 30 didactic hours plus 5 hours of simulated patient experience for practitioners and facilitators, 7.35.3.18 (C), p. 11-12, plus a five-hour role-specific module for each role, 7.35.3.18 (D) and (E), p. 12. The "DOH Proposed Rule" column in this sheet totals 80 didactic hours, with a 10-hour simulated patient requirement. The department's current position therefore doubles the published didactic requirement and matches the committee's total, differing in composition and in the practicum structure. Derived comparison. Whether this column is the text the department plans to publish on Tuesday, August 25 is not stated in the captures so far.
+
+Basis for this section: a screenshot of the sheet, received during the meeting.
 
 ## Open items
 
