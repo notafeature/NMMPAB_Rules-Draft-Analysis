@@ -52,6 +52,27 @@ Required of every certifying clinician, licensed provider, and facilitator befor
 
 A module of at least eight didactic hours before applying for certification, addressing psilocybin action, interactions, and pharmacology; the responsibilities of the certifying clinician role; federal confidentiality requirements under 42 CFR Part 2; diagnosis of qualifying conditions; determining medical clearance for psilocybin therapy; psychedelic emergencies, urgencies, and medical monitoring; and supporting patients with challenging experiences, including hallucinogen persisting perception disorder. It ends with a competency evaluation. Basis: the document section headed "Certifying Clinician Training: Eight Didactic Hours."
 
+### Licensed provider and facilitator didactic
+
+Licensed providers and facilitators complete a psilocybin therapy module of at least 80 didactic hours before applying for certification. The document states that this places New Mexico below Oregon's 120 hours and Colorado's 150, and describes the figure as a deliberate calibration, on the ground that graduates in both states report that longer didactic requirements did not buy greater depth. Basis: the chair reading the document section aloud. A bar chart in the document shows the three figures side by side, captioned "Required didactic hours by state (New Mexico figure is the proposed minimum)." Basis: the screenshot, and the chair describing the chart.
+
+Within the 80 hours, the document sets minimums for nine content areas:
+
+| Content area | Minimum hours |
+|---|---|
+| Core psychotherapy skills and ethics, including patient-centered approaches and care, cultural competency, patient confidentiality, informed consent, self-care, somatic awareness and touch, and 42 CFR Part 2 | 22 |
+| End-of-life and palliative care considerations | 8 |
+| Trauma and trauma-informed care | 7 |
+| Preparation and integration sessions | 6 |
+| Medicine, dosing, and clinical research, including psilocybin actions, interactions, and pharmacology | 5 |
+| Screening, suicidality, and crisis response | 5 |
+| Administration session, including set and setting, non-ordinary states of consciousness, and use of music | 4 |
+| Management of challenging psychedelic experiences, including de-escalation techniques | 4 |
+| Role playing and/or simulated patient experience | 2 |
+| **Total specified minimums** | **63** |
+
+The nine minimums sum to the stated total of 63, leaving 17 of the 80 hours unallocated to any content area. Derived. Basis for the table: two screenshots, which together show all nine rows and the total row; the chair had begun reading the first row aloud at the last transcript capture.
+
 ## Reciprocity, as explained in the meeting
 
 Dominic Zurlo, responding after the chair deferred the question to him: certification by reciprocity is available at every level to a person trained in a program licensed, permitted, or approved by another jurisdiction, in all cases up until December 31, 2027. A certifying clinician under reciprocity has no practicum requirement; licensed providers and facilitators must demonstrate 40 contact hours of practicum with patients. Programs created with institutes of higher education or with research programs are also eligible, which reaches earlier programs not recognized by Colorado or Oregon. These are spoken explanations at the meeting, not document text, and neither document under discussion was the reciprocity document.
@@ -66,6 +87,6 @@ The published rule requires a minimum of 100 hours of supervised practice traini
 
 ## Open items
 
-- The transcript was still recording at the last capture; this record ends mid-reading of the New Mexico module section. To be completed from the full transcript or the department's posted recording.
+- The transcript was still recording at the last capture; this record ends as the chair begins reading the content-area table aloud. To be completed from the full transcript or the department's posted recording.
 - The screenshots themselves are not committed. If the images are wanted in the repository, the files need to be added directly, or captured from the department's recording when it is posted.
 - Reconcile the whole record against the posted recording and any minutes.
