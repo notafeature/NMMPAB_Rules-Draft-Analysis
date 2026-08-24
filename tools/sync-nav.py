@@ -75,8 +75,8 @@ MENU_DOCUMENTS = [
     },
     {
         "href": "documents/rules-draft-2026-07-23-published.pdf",
-        "label": "Published rule &middot; July 23",
-        "sub": "Published July 23; revised rules publish August 25",
+        "label": "Last published text &middot; July 23",
+        "sub": "July 23, set aside; the last published text",
     },
     {
         "href": "documents/NMMPAB-2026-07-17-board-transcript.pdf",
@@ -108,20 +108,20 @@ GROUPS = [
         ("eligibility.html", "eligibility", "The license-by-permit tables"),
         ("hours.html", "hours", "The working model of the deferred quantities"),
         ("specialization.html", "specialization", "An overlay on a core permit, not in the rule"),
-        ("cs-number.html", "cs-number", "The certifying-clinician requirement"),
+        ("cs-number.html", "cs-number", "The certifying clinician / medical screener requirement"),
         ("deferred.html", "deferred", "Every provision a practicum change reaches"),
     ]),
     ("rule", "The rule", [
         ("rule.html", "rule", "All twenty-eight sections, verbatim, annotated"),
         ("changes.html", "changes", "All 104 provisions, and what changed"),
-        ("recommendation.html", "recommendation", "Submitted July 27, beside the published text"),
-        ("comment.html", "comment", "The rule hearing, anticipated October 2, and the input channel"),
+        ("recommendation.html", "recommendation", "The August 21 position, in the department's hands"),
+        ("comment.html", "comment", "The rule hearing, anticipated early October, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),
         ("record.html#documents", None, "The register: every document and its status", "All documents"),
         ("training-hours-record.html", "training-hours-record",
-         "July 9 and 17, benchmarks, and community comment"),
+         "July 9, July 17, and August 21, with benchmarks and community comment"),
     ]),
 ]
 

@@ -319,6 +319,7 @@ known Notion page it is named below; that material was never missing, only uncop
 | July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | Notion, "End of life Care 7/16" and "Proposed Adjunct Training in End-of-Life Psychedelic Care (Slides)" |
 | May 22 committee meeting record (`gap-may22`) | nothing; it is recorded as held and unposted | none exists; the department did not record it |
 | The rule hearing notice as published (`gap-hearing-notice`) | the hearing date, anticipated October 2, asserted in prose across the site | Not located; the department said on August 21 the final notice is in preparation with the hearing officer. See `CLAUDE.md` |
+| August 14 board meeting recording or transcript, and the set-aside notice (`gap-aug14`) | the set-aside of the July 23 publication, and the August 25 stated date | Notion, "Medical Psilocybin Advisory Board - 8/14"; the working record is `analysis/8-14-board-extraction.md` |
 | August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | Notion, "Training and Education - 8/21"; the department recorded the meeting for posting. The working record is `analysis/8-21-committee-extraction.md` |
 
 **Copying one in is Event C** (Part 1). Put the PDF in `docs/documents/`, the searchable
