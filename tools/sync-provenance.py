@@ -60,9 +60,9 @@ CHAIN = [d for d in syncrecord.DOCUMENTS if d.get("chain")]
 
 CHANGED = {
     "rules-draft-2026-07-23-published":
-        "The department's published proposed rule, and the operative text; the department "
-        "stated on August 21 that revised rules publish August 25, with the hearing, first "
-        "set for August 28, anticipated for October 2. "
+        "The department's proposed rule as published July 23, set aside with its August 28 "
+        "hearing and standing as the last published text; the department's stated date for "
+        "revised rules is August 25, with the hearing anticipated for early October. "
         "First version with final section numbering, 7.35.3.1 through .28. Raised the shared "
         "didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 "
         "and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send "

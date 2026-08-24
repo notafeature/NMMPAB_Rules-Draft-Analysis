@@ -78,12 +78,13 @@ DOCUMENTS = [
         "cite": "The published proposed rule, July 23, 2026, 19 pages",
         "date": "2026-07-23",
         "event": "e-2026-07-23",
-        "what": "The proposed rule as published July 23, with the hearing then set for August "
-                "28, and the operative text of this rulemaking",
+        "what": "The proposed rule as published July 23, set aside with its August 28 "
+                "hearing; the last published text of this rulemaking, and the text this "
+                "site cites for section numbers until revised rules publish",
         "status": "current",
         "chain": True,
         "notes": "19 pages. Sections 7.35.3.1 through .28, typeset on this site at "
-                 "<a href=\"rule.html\">The published rule</a>",
+                 "<a href=\"rule.html\">The last published text</a>",
     },
     {
         "slug": "nmmpab-2026-07-17-board-transcript",
@@ -255,6 +256,19 @@ GAPS = [
         "events": ["e-2026-10-02"],
     },
     {
+        "id": "gap-aug14",
+        "name": "August 14 board meeting recording or transcript, and the set-aside notice",
+        "means": "The meeting at which the set-aside of the July 23 publication was on the "
+                 "record and the August 25 date was stated. The department's announcement "
+                 "setting aside the publication and the August 28 hearing is not held either; "
+                 "the set-aside is sourced to how it was spoken of at the meeting. A live "
+                 "auto-generated transcript exists in Notion; the working record is "
+                 "analysis/8-14-board-extraction.md in the repository",
+        "at_event": "No recording, transcript, or set-aside notice is held on this site for "
+                    "this meeting. The department recorded the meeting for posting.",
+        "events": ["e-2026-08-14"],
+    },
+    {
         "id": "gap-aug21",
         "name": "August 21 committee meeting recording or transcript",
         "means": "The meeting at which both hours proposals were shown side by side and the "
@@ -287,15 +301,25 @@ EVENTS = [
         "id": "e-2026-10-02",
         "date": "2026-10-02",
         "kind": "scheduled",
-        "what": "<b>The rule hearing on 7.35.3 NMAC, anticipated.</b> The department stated at "
-                "the August 21 committee meeting that the hearing is anticipated for October 2, "
-                "virtual and in person, and that the final notice, in preparation with the "
-                "hearing officer, will fix the date. The hearing was first set for August 28 "
-                "with the July 23 publication. Public comment is taken and recorded at the "
+        "what": "<b>The rule hearing on 7.35.3 NMAC, anticipated.</b> The department placed the "
+                "hearing at the end of September or early October at the August 14 board "
+                "meeting, and named October 2, virtual and in person, at the August 21 "
+                "committee meeting; the final notice, in preparation with the hearing officer, "
+                "will fix the date. The hearing was first set for August 28 with the July 23 "
+                "publication, which was set aside. Public comment is taken and recorded at the "
                 "hearing, and comment given there becomes part of the rulemaking record the "
                 "department must consider.",
         "absent": ["gap-hearing-notice"],
         "deeper": [("comment.html", "How comment works, and what is at issue")],
+    },
+    {
+        "id": "e-2026-09-11",
+        "date": "2026-09-11",
+        "kind": "scheduled",
+        "what": "<b>The full Advisory Board meets in the afternoon</b>, to take up the "
+                "Training and Education Committee's work; the Research and Continuous "
+                "Improvement Committee meets that morning. Scheduled at the August 14 board "
+                "meeting.",
     },
     {
         "id": "e-2026-09-04",
@@ -309,10 +333,11 @@ EVENTS = [
         "id": "e-2026-08-25",
         "date": "2026-08-25",
         "kind": "scheduled",
-        "what": "<b>The department publishes revised proposed rules</b>, per its statement at "
-                "the August 21 committee meeting, taking the committee's suggestions under "
-                "advisement. Public comment continues after publication, through the rule "
-                "hearing, and the department said changes can still be made in that period.",
+        "what": "<b>The department's stated date for publishing revised proposed rules</b>, "
+                "stated at the August 14 board meeting and restated August 21, taking the "
+                "committee's suggestions under advisement. Public comment continues after "
+                "publication, through the rule hearing, and the department said changes can "
+                "still be made in that period.",
     },
     {
         "id": "e-2026-08-21",
@@ -321,9 +346,10 @@ EVENTS = [
         "what": "<b>The Training and Education Committee reviewed its subcommittee's education "
                 "and training proposal beside the department's, and took no vote.</b> The "
                 "chair held a vote off deliberately, with the proposals close and the "
-                "department publishing revised rules the following Tuesday. The department "
-                "restated the schedule: revised rules publish August 25, and the rule hearing "
-                "is anticipated for October 2.",
+                "department's stated publication date the following Tuesday. The department "
+                "restated the schedule: revised rules on August 25, and the rule hearing, "
+                "whose first setting of August 28 was set aside with the July 23 publication, "
+                "anticipated for October 2.",
         "changed": [
             ("<b>The schedule.</b> Revised proposed rules publish August 25, and the rule "
              "hearing, first set for August 28, is anticipated for October 2; the final "
@@ -360,8 +386,41 @@ EVENTS = [
     {
         "id": "e-2026-08-14",
         "date": "2026-08-14",
-        "kind": "scheduled",
-        "what": "<b>The Advisory Board meets.</b>",
+        "kind": "meeting",
+        "what": "<b>The full Advisory Board met, and the set-aside of the July 23 publication "
+                "was on the record as an accomplished fact.</b> The department stated it would "
+                "publish revised proposed rules on August 25 and placed the rule hearing at "
+                "the end of September or early October. A pathway for the committee's work "
+                "into the revised rules was arranged: the committee chair and Larry Leeman "
+                "were to present the training and education recommendations to the department "
+                "the following week, for potential incorporation before publication.",
+        "changed": [
+            ("<b>The published text.</b> The July 23 publication and its August 28 hearing "
+             "were set aside; the July 23 text stands as the last published text of this "
+             "rulemaking.",
+             "rule.html", "The last published text"),
+            ("<b>The schedule.</b> Revised proposed rules stated for August 25; the rule "
+             "hearing placed at the end of September or early October. The full board meets "
+             "September 11, afternoon, on the committee's work.",
+             "index.html", "Where things stand"),
+        ],
+        "said": {
+            "basis": "The account rests on a live auto-generated transcript with no speaker "
+                     "labels; names are fixed by the surrounding text. The department's "
+                     "recording, once posted, is the record.",
+            "lines": [
+                "Larry Leeman, on the set-aside: \"one of the reasons why I think the regs "
+                "were postponed is because there had been a commitment to the training "
+                "committee to be able to work on them.\" No department statement of the "
+                "reason appears in the transcript.",
+                "Dominic Zurlo said published rules are not set in stone: public comment and "
+                "adjustments continue through the rule hearing and after it.",
+                "Zurlo stated the program's goal of first patients seen by December, with "
+                "rulemaking continuing beyond it.",
+            ],
+        },
+        "absent": ["gap-aug14"],
+        "deeper": [],
     },
     {
         "id": "e-2026-07-27",

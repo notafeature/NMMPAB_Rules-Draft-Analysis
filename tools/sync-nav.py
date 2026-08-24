@@ -75,8 +75,8 @@ MENU_DOCUMENTS = [
     },
     {
         "href": "documents/rules-draft-2026-07-23-published.pdf",
-        "label": "Published rule &middot; July 23",
-        "sub": "Published July 23; revised rules publish August 25",
+        "label": "Last published text &middot; July 23",
+        "sub": "July 23, set aside; the last published text",
     },
     {
         "href": "documents/NMMPAB-2026-07-17-board-transcript.pdf",
@@ -114,8 +114,8 @@ GROUPS = [
     ("rule", "The rule", [
         ("rule.html", "rule", "All twenty-eight sections, verbatim, annotated"),
         ("changes.html", "changes", "All 104 provisions, and what changed"),
-        ("recommendation.html", "recommendation", "Submitted July 27, beside the published text"),
-        ("comment.html", "comment", "The rule hearing, anticipated October 2, and the input channel"),
+        ("recommendation.html", "recommendation", "The August 21 position, in the department's hands"),
+        ("comment.html", "comment", "The rule hearing, anticipated early October, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),
