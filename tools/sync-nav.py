@@ -121,7 +121,7 @@ GROUPS = [
         ("record.html", "record", "The dated chain, newest first"),
         ("record.html#documents", None, "The register: every document and its status", "All documents"),
         ("training-hours-record.html", "training-hours-record",
-         "July 9 and 17, benchmarks, and community comment"),
+         "July 9, July 17, and August 21, with benchmarks and community comment"),
     ]),
 ]
 

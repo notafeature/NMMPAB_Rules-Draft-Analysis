@@ -65,13 +65,13 @@ Every page, name, layout, tool, and sentence is tested against these six functio
 | July 23, 2026 | Thursday | The department published the proposed rule and scheduled the hearing |
 | July 27, 2026 | Monday | The committee's recommendation reached the department as a summary of the recommended rules, one day ahead of the working date below |
 | July 28, 2026 | Tuesday | One month before the hearing. The working date for the recommendation to be in the department's hands |
-| August 14, 2026 | Friday | Advisory Board meeting |
+| August 14, 2026 | Friday | Advisory Board meeting. By this meeting the July 23 publication and its August 28 hearing had been set aside, spoken of on the record as an accomplished fact; no notice of the set-aside is held. Record: `analysis/8-14-board-extraction.md` |
 | August 21, 2026 | Friday | Training and Education Committee meeting. Both education and training proposals, the subcommittee's and the department's, were shown side by side; no vote was taken; the department restated the schedule below. Record: `analysis/8-21-committee-extraction.md` |
-| August 25, 2026 | Tuesday | The department publishes revised proposed rules, per its August 21 statement |
+| August 25, 2026 | Tuesday | The department's stated date for publishing revised proposed rules, stated August 14 and August 21 |
 | September 4, 2026 | Friday | Training and Education Committee meeting, 9 to 11 AM, scheduled at the close of August 21 |
 | October 2, 2026 | Friday | Rule hearing, anticipated. Stated by the department on August 21; the final notice, in preparation with the hearing officer, will fix the date. First set for August 28 with the July 23 publication |
 
-**The hearing date moved on August 21.** The hearing was set for August 28 when the rule was published on July 23: the department could not schedule the hearing until the rule was published, and a rule must be published more than a month before its hearing. At the August 21 committee meeting the department stated it will publish revised proposed rules on August 25 and that the hearing is anticipated for October 2, virtual and in person. The October date is an anticipation until the final notice issues; report it as the department's stated anticipation, not as noticed.
+**The hearing date moved with the set-aside.** The hearing was set for August 28 when the rule was published on July 23. The publication and hearing were then set aside, on the record by August 14; the department placed the hearing at the end of September or early October on August 14 and named October 2, virtual and in person, on August 21. The October date is an anticipation until the final notice issues; report it as the department's stated anticipation, not as noticed. The department's reason for the set-aside is not asserted anywhere on the site; the site reports the set-aside as fact and attributes the schedule statements.
 
 **No hearing notice document is held in this repository.** The October 2 date is sourced to the department's statement at the August 21 meeting, not to a filing. That gap is tracked in `UPDATING.md`, Part 6. Do not report the date as unverified; report the notice as absent.
 
@@ -108,7 +108,9 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 
 ## Current state of truth
 
-The operative document is `docs/documents/rules-draft-2026-07-23-published.pdf`: the department's published proposed rule 7.35.3 NMAC, 19 pages, sections 7.35.3.1 through .28.
+No proposed rule is currently published. The July 23 publication and its August 28 hearing were set aside; the set-aside was an accomplished fact on the record by the August 14 board meeting, and no notice of it is held in this repository. `docs/documents/rules-draft-2026-07-23-published.pdf` is the **last published text**, 19 pages, sections 7.35.3.1 through .28: the site cites it for section numbers and rule text until revised rules publish, and frames it as set aside, never as operative.
+
+The committee's recommendation stands at its **August 21 position**: 80 didactic hours with minimums in nine content areas, a staged practicum of 114 hours for licensed providers or 102 for facilitators closing in case presentation and consultation, stated in full on `docs/recommendation.html` and recorded in `analysis/8-21-committee-extraction.md`. It is in the department's hands for the revised rules.
 
 Earlier documents are history. Cite them only where a page is comparing versions.
 
