@@ -150,11 +150,16 @@ STATUS = [
 
 
 # The scheduled dates, oldest first, as the front page lists them under
-# "Scheduled". Each date is one of the DATES above.
+# "Scheduled". Each date is one of the DATES above. Only a meeting a public
+# body scheduled on its own record belongs here; a date the department has
+# stated but no notice fixes belongs in ANTICIPATED, under its own label.
 
 SCHEDULED = [
     (DATES["committee2"], "Training and Education Committee meets, 9 to 11 AM."),
     (DATES["board2"], "Full Advisory Board meets, afternoon, on the committee's work."),
+]
+
+ANTICIPATED = [
     (DATES["hearing"], "Rule hearing on 7.35.3 NMAC, anticipated; the final notice will fix "
                        "the date. Public comment is taken and recorded there."),
 ]
@@ -180,8 +185,9 @@ LEGEND = [
     ("set", "Settled", "The last published text states it, and it was not changed on the "
                        "record."),
     ("open", "Open", "The last published text states it, but it is still moving: the "
-                     "practicum and didactic hours carry the committee's August 21 "
-                     "recommendation, and the department writes the revised rules."),
+                     "didactic, practicum, mentoring, and supervisory hours carry the "
+                     "committee's August 21 recommendation, and the department writes "
+                     "the revised rules."),
 ]
 
 
@@ -206,9 +212,9 @@ def validate():
     order = [i["date"] for i in STATUS]
     if order != sorted(order, reverse=True):
         problems.append("STATUS is not in newest-first order")
-    for iso, _ in SCHEDULED:
+    for iso, _ in SCHEDULED + ANTICIPATED:
         if iso not in DATES.values():
-            problems.append(f"a scheduled date {iso} is not in DATES")
+            problems.append(f"a scheduled or anticipated date {iso} is not in DATES")
     if [iso for iso, _ in SCHEDULED] != sorted(iso for iso, _ in SCHEDULED):
         problems.append("SCHEDULED is not in oldest-first order")
     if [f for _, _, f in STAGES].count("here") != 1:
@@ -256,11 +262,17 @@ def render_stand():
 
 
 def render_scheduled():
-    """The "Scheduled" column on the front page."""
+    """The "Scheduled" column on the front page, with the anticipated dates
+    under their own label so a stated date is never listed as scheduled."""
     out = ["    <div>", '      <p class="seclabel">Scheduled</p>']
     for iso, text in SCHEDULED:
         out.append(f'      <div class="fix"><b>{abbr_date(iso).upper()}</b>'
                    f'<span class="what">{text}</span></div>')
+    if ANTICIPATED:
+        out.append('      <p class="seclabel">Anticipated</p>')
+        for iso, text in ANTICIPATED:
+            out.append(f'      <div class="fix"><b>{abbr_date(iso).upper()}</b>'
+                       f'<span class="what">{text}</span></div>')
     out.append("    </div>")
     return "\n".join(out)
 

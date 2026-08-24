@@ -7,7 +7,8 @@ The same document was then described twice in different words, once in a chain
 entry and once in a register row, which is the drift pattern the redesign brief
 names first. Three structures here hold that content once:
 
-    EVENTS      every meeting, publication, filing, and scheduled date, newest
+    EVENTS      every meeting, publication, filing, and scheduled or
+                anticipated date, newest
                 first, each with a stable anchor of the form e-YYYY-MM-DD, with
                 -am or -pm appended where a day carries more than one event
     DOCUMENTS   the register: every document the site holds or cites, each with
@@ -286,7 +287,10 @@ GAPS = [
 # scheduled date.
 #
 #   id        e-YYYY-MM-DD, with -am or -pm where a day carries two events
-#   kind      meeting, document, filing, or scheduled
+#   kind      meeting, document, filing, scheduled, or anticipated; scheduled
+#             belongs only to a meeting a public body set on its own record,
+#             and anticipated to a date the department has stated that no
+#             notice yet fixes
 #   part      the mono line under the date, where a day carries two events
 #   what      what happened, outcome first
 #   changed   one state transition per line, each naming the page that owns it
@@ -300,7 +304,7 @@ EVENTS = [
     {
         "id": "e-2026-10-02",
         "date": "2026-10-02",
-        "kind": "scheduled",
+        "kind": "anticipated",
         "what": "<b>The rule hearing on 7.35.3 NMAC, anticipated.</b> The department placed the "
                 "hearing at the end of September or early October at the August 14 board "
                 "meeting, and named October 2, virtual and in person, at the August 21 "
@@ -600,7 +604,7 @@ EVENTS = [
              "cs-number.html", "The controlled-substance number"),
             ("<b>Individual training certifications.</b> AED certification was added alongside "
              "BLS and CPR.",
-             "rule.html#s9", "7.35.3.9 (A)"),
+             "rule.html#s9", "7.35.3.9 (E), (F)"),
             ("<b>Outdoor locations.</b> EMT certification was added as a staffing alternative.",
              "rule.html#s11", "7.35.3.11"),
             ("<b>The board's Medicaid seat.</b> Keenan Ryan appeared as the new member.",
@@ -712,7 +716,8 @@ EVENTS = [
 # The prose that introduces each generated section. Held here so the section and
 # the data it introduces cannot drift apart.
 CHAIN_NOTE = (
-    "Every meeting, publication, filing, and scheduled date is one event with its own address, "
+    "Every meeting, publication, filing, and scheduled or anticipated date is one event with "
+    "its own address, "
     "so another page can cite the day rather than restate it. Three pages from before this "
     "site's redesign hold deeper accounts, and each is linked from the events it covers. They "
     "keep their earlier design until their content is fully absorbed here."
@@ -795,7 +800,7 @@ def validate():
             problems.append(f"document {d['slug']} points at {d['file']}, which is not in docs/")
 
     for e in EVENTS:
-        if e["kind"] not in ("meeting", "document", "filing", "scheduled"):
+        if e["kind"] not in ("meeting", "document", "filing", "scheduled", "anticipated"):
             problems.append(f"event {e['id']} has kind {e['kind']!r}")
         if not e["id"].startswith("e-" + e["date"]):
             problems.append(f"event {e['id']} does not carry its own date")
