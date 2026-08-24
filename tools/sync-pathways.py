@@ -84,7 +84,7 @@ def L(text, href):
 #   why    why the step is open or contested, or what the published text does
 #          and does not say
 #   src    the citation, built with L()
-#   metz   what the committee recommendation submitted July 27 would change
+#   metz   what the committee recommendation, at its August 21 position, would change
 #   model  1 where the step states hours the working model on hours.html exists
 #          to move
 #
@@ -183,7 +183,7 @@ PERMITS = {
              "s": "set",
              "src": L("published rule 7.35.3.18, p.11", J7 + "11"),
              "metz": "80 hours in place of these 35, on one standard shared with facilitators rather "
-                     "than tiered by role, with minimum hours in nine content areas. The submission "
+                     "than tiered by role, with minimum hours in nine content areas. The recommendation "
                      "states its 80 across nine content areas including 2 hours of simulated patient "
                      "work, so it is a module total and compares directly against the published 40, "
                      "which is these 35 didactic hours plus the 5-hour simulated patient experience. "
@@ -193,11 +193,12 @@ PERMITS = {
                   "<b>120 hours</b>.",
              "s": "open", "flag": "Open",
              "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17; the "
-                    "committee recommendation was submitted July 27.",
+                    "recommendation stands at the committee's August 21 position.",
              "src": L("published rule 7.35.3.19 (A), pp.12-13", J7 + "12"),
              "model": 1,
-             "metz": "70 hours, staged: the facilitator sequence plus 10 hours leading sessions with a "
-                     "licensed provider as second chair."},
+             "metz": "114 hours, staged: the facilitator sequence of 102 plus 12 provider supervisory "
+                     "hours, with an 18-hour case presentation and consultation group inside the "
+                     "total."},
             {"t": "Includes an additional <b>20 hours supervising facilitators</b> during administration "
                   "day sessions.",
              "s": "chal", "flag": "Contested",
@@ -206,13 +207,13 @@ PERMITS = {
                     "120 rather than adding to them.",
              "src": L("published rule 7.35.3.19 (C), p.13", J7 + "13") + " &middot; "
                     + L("committee meeting, 6/25", "changes.html"),
-             "metz": "Reduced to 10 hours and folded into step four of the scaffolded practicum."},
+             "metz": "Becomes 12 provider supervisory hours, a stage of the staged practicum."},
             {"t": "Mentoring: <b>10 hours</b> after graduation and after the practicum.",
              "s": "set",
              "src": L("published rule 7.35.3.17, p.10", J7 + "10"),
-             "metz": "Replaced by 20 hours of case presentation and consultation after the practicum, "
-                     "with sign-off requiring two presented cases of the permittee&rsquo;s own "
-                     "regulated-medicine clients."},
+             "metz": "Removed as a separate step: the recommendation closes the practicum with an "
+                     "18-hour case presentation and consultation group inside the practicum total, with "
+                     "sign-off requiring two presented cases the permittee personally provided."},
             {"t": "Apply to NMDOH. Certification is valid <b>2 years</b> from approval.",
              "s": "set",
              "src": L("published rule 7.35.3.9, p.2", J7 + "2")},
@@ -237,7 +238,7 @@ PERMITS = {
              "s": "set",
              "src": L("published rule 7.35.3.18, p.11", J7 + "11") + " &middot; " + L("p.7", J7 + "7"),
              "metz": "80 hours in place of these 35, with minimum hours in nine content areas. The "
-                     "submission states its 80 across nine content areas including 2 hours of simulated "
+                     "recommendation states its 80 across nine content areas including 2 hours of simulated "
                      "patient work, so it is a module total and compares directly against the published "
                      "40, which is these 35 didactic hours plus the 5-hour simulated patient "
                      "experience. The New Mexico module stays required of every role, with no exemption "
@@ -246,18 +247,20 @@ PERMITS = {
                   "<b>100 hours</b>.",
              "s": "open", "flag": "Open",
              "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17; the "
-                    "committee recommendation was submitted July 27.",
+                    "recommendation stands at the committee's August 21 position.",
              "src": L("published rule 7.35.3.19 (A), pp.12-13", J7 + "12"),
              "model": 1,
-             "metz": "60 hours, staged: well participants first, then co-facilitation with a "
-                     "department-permitted licensed provider, then group work, with every stage spanning "
-                     "preparation, administration, and integration."},
+             "metz": "102 hours, staged: 24 with well participants, 24 co-facilitating with a "
+                     "department-permitted licensed provider, 12 of group work, and 42 of supervised "
+                     "practice on two cases, with an 18-hour case presentation and consultation group "
+                     "inside the total, and every stage spanning preparation, administration, and "
+                     "integration."},
             {"t": "Mentoring: <b>10 hours</b> after graduation and after the practicum.",
              "s": "set",
              "src": L("published rule 7.35.3.17, p.10", J7 + "10"),
-             "metz": "Replaced by 20 hours of case presentation and consultation after the practicum, "
-                     "with sign-off requiring two presented cases of the permittee&rsquo;s own "
-                     "regulated-medicine clients."},
+             "metz": "Removed as a separate step: the recommendation closes the practicum with an "
+                     "18-hour case presentation and consultation group inside the practicum total, with "
+                     "sign-off requiring two presented cases the permittee personally provided."},
             {"t": "Apply to NMDOH. Certification is valid <b>2 years</b> from approval.",
              "s": "set",
              "src": L("published rule 7.35.3.9, p.2", J7 + "2")},

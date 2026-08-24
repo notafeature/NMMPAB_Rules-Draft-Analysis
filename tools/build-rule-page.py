@@ -83,7 +83,7 @@ ANNOTATIONS = {
          "The didactic hours were deferred to the Training and Education Committee by a 7-0 board vote on "
          "July 17. The text published six days later raised the shared module from 25 hours to 30 and added "
          "three topics: trauma-informed care, dosing, and non-ordinary states of consciousness. The committee's "
-         "recommendation, submitted July 27, proposes a single 80-hour didactic standard with minimums in "
+         "recommendation, standing at its August 21 position, proposes a single 80-hour didactic standard with minimums in "
          "nine content areas; it is on the <a href='recommendation.html'>recommendation page</a>."),
         ("defect", "A module with no date it must exist",
          "Every certification pathway requires a New Mexico module created or approved by the department, and "
@@ -91,7 +91,7 @@ ANNOTATIONS = {
     19: [("open", "Deferred to committee, published unchanged",
          "The board voted 7-0 on July 17 to send the practicum hours to committee. This text carries them "
          "unchanged: 100 hours for facilitators, 120 for practitioners. The committee's recommendation, "
-         "submitted July 27, proposes a staged practicum of 60 hours for facilitators and 70 for licensed "
+         "standing at its August 21 position, proposes a staged practicum of 102 hours for facilitators and 114 for licensed "
          "providers; the two positions can be compared on the "
          "<a href='hours.html'>working model of the hours</a>."),
         ("blue", "New in this draft",
