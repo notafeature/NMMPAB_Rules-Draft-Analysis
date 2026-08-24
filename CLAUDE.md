@@ -48,6 +48,7 @@ Every page, name, layout, tool, and sentence is tested against these six functio
 - Every element introduces itself. No insider shorthand, no first names standing alone, no term used before its meaning.
 - No em dashes anywhere.
 - Process vocabulary is exact: the proposed rule or published text; a recommendation; public comment; the rule hearing; the adopted rule, published in the New Mexico Register as a Part of the NMAC. The word "docket" does not belong to this process. Nothing here is an "amendment," because nothing here changes an adopted rule. The folders `amendments/` and `amendments-remainder/` keep their historical names; new prose does not adopt the word.
+- **Role vocabulary.** "Practitioner" is the umbrella: the screening role, Licensed Providers, and Facilitators are all practitioners. In the site's own voice the middle role is the **Licensed Provider**, never "practitioner"; the department adopted the name at the August 21 meeting. The screening role is written as the pair **certifying clinician / medical screener** for the time being: certifying clinician is the published text's term, medical screener is the recommendation's proposed rename, still being pushed and not yet adopted. Each page's first use states that mapping once. Verbatim quotes and printed section titles keep the document's own words. If the department adopts medical screener, the pair collapses to it; if the department rejects it, the pair reverts to certifying clinician.
 
 ## Design
 

@@ -94,14 +94,14 @@ def L(text, href):
 
 PERMITS = {
     "dc": {
-        "name": "Certifying Clinician",
+        "name": "Certifying Clinician / Medical Screener",
         "dot": "#256E8C",
         "steps": [
             {"t": "Hold a current NM professional license (for example MD, NP).",
              "s": "set",
              "why": "The published rule names license examples; it does not describe a diagnosing scope.",
              "src": L("published rule 7.35.3.9, p.2", J7 + "2")},
-            {"t": "Approved <b>Certifying Clinician training</b>: an 8-hour module covering pharmacology, "
+            {"t": "Approved <b>certifying clinician / medical screener training</b>: an 8-hour module covering pharmacology, "
                   "42 CFR Part 2, diagnosis of qualifying conditions, medical clearance, monitoring, and "
                   "data-collection requirements.",
              "s": "set",
@@ -115,8 +115,8 @@ PERMITS = {
                     + L("July 17 update", "cs-number.html#update")},
             {"t": "<b>No practicum.</b>",
              "s": "set",
-             "why": "The practicum section applies to practitioners and facilitators only; the Certifying "
-                    "Clinician packet lists no practicum item.",
+             "why": "The practicum section applies to Licensed Providers and Facilitators only; the "
+                    "certifying clinician / medical screener's packet lists no practicum item.",
              "src": L("published rule 7.35.3.18, p.12", J7 + "12") + " &middot; " + L("p.8", J7 + "8")},
             {"t": "Apply to NMDOH. Certification is valid <b>2 years</b> from approval.",
              "s": "set",
@@ -155,7 +155,7 @@ PERMITS = {
                     "related waiver deadline is December 31, 2027.",
              "src": L("published rule 7.35.3.10, p.4", J7 + "4") + " &middot; "
                     + L("July 9 meeting transcript", T7)},
-            {"t": "Apply as Practitioner or Facilitator. The reciprocity application packet lists items "
+            {"t": "Apply as Licensed Provider or Facilitator. The reciprocity application packet lists items "
                   "for those two permits only.",
              "s": "open", "flag": "Unresolved",
              "why": "The published rule is inconsistent here. Reciprocity now sits inside 7.35.3.10, "
@@ -167,7 +167,7 @@ PERMITS = {
         ],
     },
     "prac": {
-        "name": "Practitioner",
+        "name": "Licensed Provider",
         "dot": "#5A4A88",
         "steps": [
             {"t": "Hold a current NM professional license (for example PSY, LSW, LCSW).",
@@ -178,7 +178,7 @@ PERMITS = {
             {"t": "Certifications and attestation, same as Facilitator.",
              "s": "set",
              "src": L("published rule 7.35.3.18, p.12", J7 + "12") + " &middot; " + L("pp.2-3", J7 + "2")},
-            {"t": "Approved <b>Practitioner training</b>: the 30-hour core module plus a 5-hour module on "
+            {"t": "Approved <b>Licensed Provider training</b>, the published text's practitioner curriculum: the 30-hour core module plus a 5-hour module on "
                   "psychedelic and psilocybin therapeutic approaches.",
              "s": "set",
              "src": L("published rule 7.35.3.18, p.11", J7 + "11"),
@@ -187,8 +187,9 @@ PERMITS = {
                      "states its 80 across nine content areas including 2 hours of simulated patient "
                      "work, so it is a module total and compares directly against the published 40, "
                      "which is these 35 didactic hours plus the 5-hour simulated patient experience. "
-                     "The recommendation also renames the permit: practitioner becomes licensed "
-                     "provider."},
+                     "The recommendation also renames the roles: the practitioner becomes the "
+                     "Licensed Provider, adopted by the department August 21, and the certifying "
+                     "clinician the medical screener, still being pushed."},
             {"t": "Practicum at a healing center or other approved location. Published rule: "
                   "<b>120 hours</b>.",
              "s": "open", "flag": "Open",
@@ -338,7 +339,7 @@ STARTS = [
      "ex": "Out-of-state, international, or Tribal, Pueblo, and Nation programs NMDOH approves.",
      "routes": [
          {"permit": "recip", "state": "recip",
-          "line": "Enter by reciprocity, as Practitioner or Facilitator."},
+          "line": "Enter by reciprocity, as Licensed Provider or Facilitator."},
          {"permit": "dc", "state": "part",
           "line": "The published rule names certifying clinicians as eligible under 7.35.3.10, but the "
                   "application items listed there are for practitioners and facilitators. Unresolved in "
@@ -390,7 +391,7 @@ def journey_html(key, indent):
 
 def route_html(d, active):
     S = STATE[d["state"]]
-    label = ("Practitioner or Facilitator, by reciprocity" if d["permit"] == "recip"
+    label = ("Licensed Provider or Facilitator, by reciprocity" if d["permit"] == "recip"
              else PERMITS[d["permit"]]["name"])
     inner = (f'<div class="rb"><p class="rn">{label} '
              f'<span class="tag {S["tag"]}">{S["lab"]}</span></p>'
@@ -412,7 +413,7 @@ def eligref_html(st):
 
 
 def jhead_html(st, key):
-    title = ("Pathway by reciprocity: Practitioner or Facilitator" if key == "recip"
+    title = ("Pathway by reciprocity: Licensed Provider or Facilitator" if key == "recip"
              else "Pathway to the " + PERMITS[key]["name"] + " permit")
     route = next((r for r in st["routes"] if r["permit"] == key), None)
     line = '<p class="routeline">' + route["line"] + "</p>" if route else ""

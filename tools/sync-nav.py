@@ -108,7 +108,7 @@ GROUPS = [
         ("eligibility.html", "eligibility", "The license-by-permit tables"),
         ("hours.html", "hours", "The working model of the deferred quantities"),
         ("specialization.html", "specialization", "An overlay on a core permit, not in the rule"),
-        ("cs-number.html", "cs-number", "The certifying-clinician requirement"),
+        ("cs-number.html", "cs-number", "The certifying clinician / medical screener requirement"),
         ("deferred.html", "deferred", "Every provision a practicum change reaches"),
     ]),
     ("rule", "The rule", [

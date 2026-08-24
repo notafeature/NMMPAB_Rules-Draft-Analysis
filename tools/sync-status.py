@@ -139,9 +139,9 @@ STATUS = [
         "id": "cs-number",
         "state": "settled",
         "date": DATES["deferred"],
-        "summary": "The certifying-clinician controlled-substance number, kept July 17, and the "
+        "summary": "The certifying clinician / medical screener's controlled-substance number, kept July 17, and the "
                    "reciprocity deadlines, set July 9; both stand in the last published text",
-        "stand": "The certifying-clinician controlled-substance number, kept July 17, and the "
+        "stand": "The certifying clinician / medical screener's controlled-substance number, kept July 17, and the "
                  "reciprocity deadlines, set to December 31, 2027 on July 9. Both stand in the "
                  "<a href=\"rule.html#s9\">last published text</a>, and neither is changed by "
                  "the August 21 recommendation.",
