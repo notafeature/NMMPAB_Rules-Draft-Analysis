@@ -9,9 +9,11 @@ training-hours-record.html. Every hand-maintained status fact on this site has
 drifted and no tool-owned block ever has; the strip on the training-hours
 record said the committee recommendation was undelivered for a day after five
 other pages said it was submitted, which is the defect class this tool ends.
-The department stated on August 21 that it will publish revised proposed
-rules on August 25, with the rule hearing anticipated for October 2; each
-such change is made here once and written everywhere.
+The July 23 publication was set aside, the recommendation stands at the
+committee's August 21 position, and the rule hearing is anticipated for
+early October; each such change is made here once and written everywhere.
+A date the department states is never carried as a scheduled item: stated
+dates in this rulemaking have been set and overridden.
 
 Three structures hold the status once:
 
@@ -65,8 +67,9 @@ DATES = {
     "board":     "2026-08-14",   # Advisory Board meeting
     "committee": "2026-08-21",   # Training and Education Committee meeting: both proposals
                                  # side by side, no vote, the schedule restated
-    "republish": "2026-08-25",   # revised proposed rules publish, per the department's
-                                 # August 21 statement
+    "republish": "2026-08-25",   # a publication date the department stated August 14 and
+                                 # 21; stated dates here have been overridden, and no
+                                 # surface carries this as a scheduled item
     "committee2": "2026-09-04",  # next Training and Education Committee meeting
     "board2":    "2026-09-11",   # full Advisory Board, afternoon, on the committee's work
     "hearing":   "2026-10-02",   # the rule hearing, anticipated; the final notice, in
@@ -90,17 +93,19 @@ STATUS = [
         "state": "open",
         "date": DATES["committee"],
         "summary": "No proposed rule is currently published: the July 23 publication and its "
-                   "August 28 hearing were set aside; the department's stated date for revised "
-                   "rules is August 25, with the rule hearing anticipated for early October",
+                   "August 28 hearing were set aside; revised rules are forthcoming, and the "
+                   "rule hearing is anticipated for early October",
         "stand": "No proposed rule is currently published. The July 23 publication and its "
                  "August 28 hearing were set aside; the July 23 text remains on this site as "
-                 "the <a href=\"rule.html\">last published text</a>. The department's stated "
-                 "date for publishing revised proposed rules is August 25, and the rule "
-                 "hearing is anticipated for early October, October 2 named at the "
-                 "<a href=\"record.html#e-2026-08-21\">August 21 committee meeting</a>, "
-                 "virtual and in person; the final notice, in preparation with the hearing "
-                 "officer, will fix the date. Public comment continues after publication, "
-                 "through the hearing.",
+                 "the <a href=\"rule.html\">last published text</a>. Revised proposed rules "
+                 "are forthcoming, and no publication date is noticed; the dates the "
+                 "department has stated for them have moved before, and this site reports "
+                 "them only in the <a href=\"record.html\">record</a> of the meetings that "
+                 "stated them. The rule hearing is anticipated for early October, October 2 "
+                 "named at the <a href=\"record.html#e-2026-08-21\">August 21 committee "
+                 "meeting</a>, virtual and in person; the final notice, in preparation with "
+                 "the hearing officer, will fix the date. Public comment continues after "
+                 "publication, through the hearing.",
     },
     {
         "id": "hours",
@@ -113,11 +118,9 @@ STATUS = [
                  "write. The recommendation stands at the "
                  "<a href=\"recommendation.html\">August 21 position</a>: 80 didactic hours "
                  "with minimums in nine content areas, and a staged practicum of 114 hours "
-                 "for licensed providers or 102 for facilitators, closing with case "
-                 "presentation and consultation. The department's own proposal, shown beside "
-                 "it on August 21, also sets 80 didactic hours and reaches 120 or 100 "
-                 "practicum hours, structured differently. No vote was taken; the "
-                 "recommendation is in the department's hands for the revised rules.",
+                 "for licensed providers or 102 for facilitators, closing in case "
+                 "presentation and consultation. It is in the department's hands for the "
+                 "revised rules.",
     },
     {
         "id": "defects",
@@ -150,8 +153,6 @@ STATUS = [
 # "Scheduled". Each date is one of the DATES above.
 
 SCHEDULED = [
-    (DATES["republish"], "The department's stated date for publishing revised proposed "
-                         "rules, stated August 14 and August 21."),
     (DATES["committee2"], "Training and Education Committee meets, 9 to 11 AM."),
     (DATES["board2"], "Full Advisory Board meets, afternoon, on the committee's work."),
     (DATES["hearing"], "Rule hearing on 7.35.3 NMAC, anticipated; the final notice will fix "
@@ -165,7 +166,7 @@ SCHEDULED = [
 STAGES = [
     ("Committee recommendation", "JAN – AUG 21", ""),
     ("Published text", "JUL 23 · SET ASIDE", ""),
-    ("Revised rules", "AUG 25 · STATED", "here"),
+    ("Revised rules", "IN PREPARATION", "here"),
     ("Rule hearing", "EARLY OCT · ANTICIPATED", "todo"),
     ("Adopted rule", "AFTER THE HEARING", "todo"),
 ]
@@ -301,9 +302,8 @@ def render_strip():
         f'<b>{short_date(DATES["submitted"])}</b> and refined at the '
         f'<b>{short_date(DATES["committee"])}</b> committee meeting to 80 didactic hours and '
         "a staged practicum of <b>114 or 102 hours</b> by role; the "
-        '<a href="recommendation.html">recommendation page</a> holds it in full. The '
-        "department's stated date for revised rules is "
-        f'<b>{short_date(DATES["republish"])}</b>, with the rule hearing anticipated for '
+        '<a href="recommendation.html">recommendation page</a> holds it in full. Revised '
+        "rules are forthcoming, with the rule hearing anticipated for "
         f'<b>{short_date(DATES["hearing"])}</b>. The figures below are from the last '
         "published text. The current state of the rulemaking is on "
         '<a href="index.html">Where things stand</a>.</p>\n'

@@ -330,16 +330,6 @@ EVENTS = [
                 "were found taken.",
     },
     {
-        "id": "e-2026-08-25",
-        "date": "2026-08-25",
-        "kind": "scheduled",
-        "what": "<b>The department's stated date for publishing revised proposed rules</b>, "
-                "stated at the August 14 board meeting and restated August 21, taking the "
-                "committee's suggestions under advisement. Public comment continues after "
-                "publication, through the rule hearing, and the department said changes can "
-                "still be made in that period.",
-    },
-    {
         "id": "e-2026-08-21",
         "date": "2026-08-21",
         "kind": "meeting",
@@ -351,9 +341,10 @@ EVENTS = [
                 "whose first setting of August 28 was set aside with the July 23 publication, "
                 "anticipated for October 2.",
         "changed": [
-            ("<b>The schedule.</b> Revised proposed rules publish August 25, and the rule "
-             "hearing, first set for August 28, is anticipated for October 2; the final "
-             "notice will fix the date.",
+            ("<b>The schedule, as the department stated it.</b> Revised rules were placed "
+             "on the following Tuesday, and the rule hearing, first set for August 28, was "
+             "anticipated for October 2, with the final notice to fix the date. Stated "
+             "dates in this rulemaking have moved before.",
              "index.html", "Where things stand"),
             ("<b>The hours question.</b> Both proposals now set 80 classroom hours in place "
              "of the published 40. The subcommittee's practicum stands at 114 hours for "
@@ -399,9 +390,10 @@ EVENTS = [
              "were set aside; the July 23 text stands as the last published text of this "
              "rulemaking.",
              "rule.html", "The last published text"),
-            ("<b>The schedule.</b> Revised proposed rules stated for August 25; the rule "
-             "hearing placed at the end of September or early October. The full board meets "
-             "September 11, afternoon, on the committee's work.",
+            ("<b>The schedule, as the department stated it.</b> Revised rules were placed "
+             "at the end of the month, and the rule hearing at the end of September or "
+             "early October. The full board meets September 11, afternoon, on the "
+             "committee's work.",
              "index.html", "Where things stand"),
         ],
         "said": {

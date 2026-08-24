@@ -11,14 +11,12 @@
 .roles input{position:absolute;opacity:0}
 .roles label.on{background:var(--ink);color:#fff}
 .model{margin-top:12px;border-top:1.5px solid var(--ink);--posc:var(--ink2)}
-.model[data-pos=doh]{--posc:var(--open)}
 .model[data-pos=cte]{--posc:var(--blue)}
 .model[data-pos=free]{--posc:var(--faint)}
 .mrow{display:grid;grid-template-columns:190px 1fr 120px;gap:26px;align-items:center;padding:24px 0 30px;border-bottom:1px solid var(--hair)}
 .mrow .name{font-size:15px;font-weight:650}
 .mrow .name small{display:block;font-weight:400;font-size:12.5px;color:var(--faint);margin-top:2px}
 .posbar{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:14px 0 0;padding:10px 14px;border-left:3px solid var(--ink2);background:var(--wash)}
-.posbar[data-pos=doh]{border-color:var(--open);background:var(--openwash)}
 .posbar[data-pos=cte]{border-color:var(--blue);background:var(--bluewash)}
 .posbar[data-pos=free]{border-color:var(--hair);background:none}
 .posk{font:600 10px var(--mono);letter-spacing:.14em;color:var(--faint)}
@@ -30,8 +28,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
 input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--posc);border:3px solid #fff;box-shadow:0 0 0 1.5px var(--posc);cursor:grab}
 .pin{position:absolute;top:32px;width:0;height:16px;border-left:1.5px solid var(--ink2)}
 .pin i{position:absolute;top:-14px;left:-1px;transform:translateX(-50%);font:600 9.5px var(--mono);letter-spacing:.08em;color:var(--faint);font-style:normal;white-space:nowrap}
-.pin.doh{border-color:var(--open);border-left-style:dashed;top:20px;height:28px}
-.pin.doh i{color:var(--open);top:-14px}
 .pin.cte{border-color:var(--blue)}
 .pin.cte i{color:var(--blue)}
 .mrow .out{font:650 32px var(--mono);text-align:right;letter-spacing:-.03em}
@@ -39,12 +35,9 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .sets{margin:18px 0 4px}
 .sets button{font:600 13px var(--sans);border:1px solid var(--ink2);background:none;color:var(--ink);border-radius:4px;padding:8px 16px;margin-right:10px;cursor:pointer}
 .sets button:hover{background:var(--wash)}
-.sets button.doh{border-color:var(--open);color:var(--open)}
-.sets button.doh:hover{background:var(--openwash)}
 .sets button.cte{border-color:var(--blue);color:var(--blue)}
 .sets button.cte:hover{background:var(--bluewash)}
 .sets button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
-.sets button.doh[aria-pressed=true]{background:var(--open);border-color:var(--open);color:#fff}
 .sets button.cte[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
 .reads{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}
 .read{border-top:1.5px solid var(--ink);padding-top:10px}
@@ -125,7 +118,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     <p class="kicker">7.35.3.17, .18, and .19 · <b>recommendation refined Aug 21</b> · hearing anticipated Oct 2</p>
     <!-- /status kicker -->
     <h1>The training hours</h1>
-    <p class="lede">These three quantities are what the Advisory Board sent to committee. Move them and watch what changes for the person doing the training. Choose a role, then set the model to any of the three positions on these hours: the last published text of July 23, since set aside, the committee&rsquo;s August 21 position, and the department&rsquo;s own August 21 proposal. The strip below the role always names the position you are looking at. The earlier positions, Dr. Anne Metz&rsquo;s July 17 presentation and the committee&rsquo;s July 27 submission, are on the <a href="training-hours-record.html">training-hours record</a> and the <a href="recommendation.html">recommendation page</a>.</p>
+    <p class="lede">These three quantities are what the Advisory Board sent to committee. Move them and watch what changes for the person doing the training. Choose a role, then set the model to the recommendation, which stands at the committee&rsquo;s August 21 position, or to the last published text of July 23, since set aside, for what it replaced. The strip below the role always names the position you are looking at. The earlier positions, Dr. Anne Metz&rsquo;s July 17 presentation and the committee&rsquo;s July 27 submission, are on the <a href="training-hours-record.html">training-hours record</a> and the <a href="recommendation.html">recommendation page</a>.</p>
     <p class="stamp">Updated August 24, 2026.</p>
   </div>
 
@@ -136,8 +129,8 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 
   <div class="posbar" id="posbar" data-pos="cte">
     <span class="posk">SHOWING</span>
-    <span class="posname" id="posname">The committee&rsquo;s August 21 position, as a facilitator would meet it</span>
-    <span class="posdate" id="posdate">PRESENTED AUGUST 21, 2026</span>
+    <span class="posname" id="posname">The recommendation, as a facilitator would meet it</span>
+    <span class="posdate" id="posdate">THE AUGUST 21 POSITION</span>
   </div>
 
   <div class="model">
@@ -146,7 +139,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="trackwrap">
         <input type="range" id="s-class" min="0" max="120" value="80" step="1" aria-label="Classroom hours">
         <span class="pin" style="left:33.3%"><i>RULE 40</i></span>
-        <span class="pin cte" style="left:66.7%"><i>COMMITTEE &middot; DOH 80</i></span>
+        <span class="pin cte" style="left:66.7%"><i>COMMITTEE 80</i></span>
       </div>
       <div class="out"><span id="o-class">80</span><small>HOURS</small></div>
     </div>
@@ -154,7 +147,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="name">Supervised practice<small>the practicum, with patients</small></div>
       <div class="trackwrap">
         <input type="range" id="s-prac" min="0" max="150" value="102" step="1" aria-label="Supervised practice hours">
-        <span class="pin" id="pin-prac-pub" style="left:66.7%"><i id="pin-prac-pub-t">RULE &middot; DOH 100</i></span>
+        <span class="pin" id="pin-prac-pub" style="left:66.7%"><i id="pin-prac-pub-t">RULE 100</i></span>
         <span class="pin cte" id="pin-prac-cte" style="left:68%"><i id="pin-prac-cte-t">COMMITTEE 102</i></span>
       </div>
       <div class="out"><span id="o-prac">102</span><small>HOURS</small></div>
@@ -164,16 +157,15 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       <div class="trackwrap">
         <input type="range" id="s-sup" min="0" max="40" value="0" step="1" aria-label="Hours required after the practicum">
         <span class="pin" style="left:25%"><i>RULE 10</i></span>
-        <span class="pin cte" style="left:0%"><i>COMMITTEE &middot; DOH 0</i></span>
+        <span class="pin cte" style="left:0%"><i>COMMITTEE 0</i></span>
       </div>
       <div class="out"><span id="o-sup">0</span><small>HOURS</small></div>
     </div>
   </div>
 
   <div class="sets">
+    <button type="button" class="cte" id="b-cte" aria-pressed="true">The recommendation, August 21</button>
     <button type="button" id="b-pub" aria-pressed="false">The last published text</button>
-    <button type="button" class="cte" id="b-cte" aria-pressed="true">The committee&rsquo;s August 21 position</button>
-    <button type="button" class="doh" id="b-doh" aria-pressed="false">The department&rsquo;s August 21 proposal</button>
   </div>
 
   <div class="reads">
@@ -189,7 +181,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     </div>
   </div>
 
-  <div class="meaning cte" id="meaning">In the committee&rsquo;s August 21 position, a facilitator completes 80 classroom hours with minimums in nine content areas, then a staged practicum of 102 hours: 24 with well participants, 24 co-facilitating low-acuity patients, 12 of group work, and 42 of supervised practice on two cases, whose 18-hour case presentation and consultation group sits inside the total. Nothing further is required after the practicum; compensation is permitted from the group-work stage.</div>
+  <div class="meaning cte" id="meaning">In the recommendation, a facilitator completes 80 classroom hours with minimums in nine content areas, then a staged practicum of 102 hours: 24 with well participants, 24 co-facilitating low-acuity patients, 12 of group work, and 42 of supervised practice on two cases, whose 18-hour case presentation and consultation group sits inside the total. Nothing further is required after the practicum; compensation is permitted from the group-work stage.</div>
 
   <p class="unver" id="unver">These figures are reported, not checked. Both August 21 positions are sourced to the documents shown and read aloud at the August 21 committee meeting; no recording or transcript of that meeting is held on this site yet, an absence tracked in the <a href="record.html#gaps">gaps register</a>. When the department posts its recording, these figures are checked against it.</p>
 
@@ -200,14 +192,12 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
     <br><br>
     <b>The last published text.</b> Supervised practice at <a href="rule.html#s19">7.35.3.19 (A)</a>, pp.&nbsp;12 to 13, which sets "a minimum of 100 hours of supervised practice training for facilitators and 120 hours for practitioners". The practitioner's 20 hours supervising facilitators, at 7.35.3.19 (C), p.&nbsp;13, sit inside that 120 rather than adding to it. Mentoring at <a href="rule.html#s17">7.35.3.17 (A)</a>, p.&nbsp;10, which requires "a minimum of 10 hours of mentoring sessions after graduation and after practicum hours are completed." All of it in the <a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener" data-cite="The published proposed rule, July 23, 2026, 19 pages">rule published July 23, 2026</a>.
     <br><br>
-    <b>The committee's August 21 position.</b> The subcommittee's education and training document, shown and read aloud at the August 21 committee meeting, stated in full on the <a href="recommendation.html">recommendation page</a>: 80 didactic hours with minimums in nine content areas summing to 63, a staged practicum of 102 hours for facilitators and 114 for licensed providers, and an 18-hour case presentation and consultation group inside the practicum total, on two cases the student personally provided. Its 80 counts the 2 simulated-patient hours inside the total exactly as the published 40 does, so the figures compare directly. Nothing further is required after the practicum, so the third quantity is zero for this position.
-    <br><br>
-    <b>The department's August 21 proposal.</b> The department's side-by-side sheet, shown at the same meeting: 80 didactic hours as 65 general, 5 role-specific, and 10 simulated-patient hours, and a practicum of 100 or 120 hours, its totals identical to the last published text but itemized into co-facilitation, a general practicum of six individual patients and two groups, preparatory and integrative sessions, and, for the provider track, supervisory hours, with two case presentations inside the practicum hours. Its 10 post-graduation mentorship hours are an obligation on programs and optional for the graduate, so they are not counted in the program total. Earlier positions: Dr. Anne Metz's July 17 presentation is on the <a href="training-hours-record.html">training-hours record</a> with its documents; the committee's July 27 submission, 80 classroom hours with a staged practicum of 60 or 70, is kept in the position's history on the <a href="recommendation.html">recommendation page</a>.
+    <b>The recommendation.</b> The committee's August 21 position, stated in full on the <a href="recommendation.html">recommendation page</a>: 80 didactic hours with minimums in nine content areas summing to 63, a staged practicum of 102 hours for facilitators and 114 for licensed providers, and an 18-hour case presentation and consultation group inside the practicum total, on two cases the student personally provided. Its 80 counts the 2 simulated-patient hours inside the total exactly as the published 40 does, so the figures compare directly. Nothing further is required after the practicum, so the third quantity is zero for this position. Earlier positions: Dr. Anne Metz's July 17 presentation is on the <a href="training-hours-record.html">training-hours record</a> with its documents; the committee's July 27 submission, 80 classroom hours with a staged practicum of 60 or 70, is kept in the recommendation's history on the <a href="recommendation.html">recommendation page</a>.
     <br><br>
     The cost estimate and the department's willingness to adjust the lengths of time: the July 17 committee meeting, as recorded in the <a href="documents/NMMPAB-2026-07-17-committee-transcript.pdf" target="_blank" rel="noopener" data-cite="July 17 committee transcript, unofficial, no speaker labels">transcript</a>. The full pre-redesign hours page, with the July 9 and July 17 records, benchmarks, and cost variables, is kept at <a href="training-hours-record.html">training-hours-record.html</a>. Hours toward a specialized domain, discussed at the End-of-Life Care committee on July 16, would sit on top of these totals as an addendum; the proposed ranges are on the <a href="specialization.html#hours">specialized-domains page</a>. Nothing here is final rule text.
   </p>
 
-  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The three positions it compares, with classroom counting the didactic hours and the simulated patient experience together. <b>The last published text of July 23, since set aside:</b> 40 classroom hours, 100 supervised hours for a facilitator or 120 for a practitioner, and 10 hours of mentoring. <b>The committee's August 21 position:</b> 80 classroom hours and a staged practicum of 102 hours for a facilitator or 114 for a licensed provider, with an 18-hour case presentation and consultation group inside the total. <b>The department's August 21 proposal:</b> 80 classroom hours and a practicum of 100 or 120 hours with two case presentations inside it, plus 10 program-offered mentorship hours optional for the graduate.</p></noscript>
+  <noscript><p class="src" style="color:var(--ink)">This model needs JavaScript to move. The two positions it compares, with classroom counting the didactic hours and the simulated patient experience together. <b>The recommendation, at its August 21 position:</b> 80 classroom hours and a staged practicum of 102 hours for a facilitator or 114 for a licensed provider, with an 18-hour case presentation and consultation group inside the total. <b>The last published text of July 23, since set aside:</b> 40 classroom hours, 100 supervised hours for a facilitator or 120 for a practitioner, and 10 hours of mentoring.</p></noscript>
   <!-- provenance: generated by tools/sync-provenance.py, do not hand-edit -->
       <details class="prov">
         <summary><span class="provsum">Provenance: the source document and this page&rsquo;s revisions</span><span class="provchev">&#9656;</span></summary>
@@ -216,13 +206,13 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
           <p class="provk">The document this page is read from</p>
           <p class="cd">July 23, 2026</p>
           <p class="cn"><a href="documents/rules-draft-2026-07-23-published.pdf" target="_blank" rel="noopener">Published proposed rule</a><span class="curflag">Current state of truth</span></p>
-          <p class="cw">The department's proposed rule as published July 23, set aside with its August 28 hearing and standing as the last published text; the department's stated date for revised rules is August 25, with the hearing anticipated for early October. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
+          <p class="cw">The department's proposed rule as published July 23, set aside with its August 28 hearing and standing as the last published text; revised rules are forthcoming, with the hearing anticipated for early October. First version with final section numbering, 7.35.3.1 through .28. Raised the shared didactic module from 25 hours to 30 and added three curriculum topics. Carried the 100 and 120 practicum hours forward unchanged, six days after the board voted 7-0 to send those hours back to committee. Wrote both waiver dates as December 31, 2027. Added a rule that the practicum may not begin before half the didactic and all simulated patient hours are complete.</p>
           <p class="cw">This document supersedes three earlier ones. Each of them, what it is, what superseded it and when, and a download, is in the register at <a href="record.html#documents">Meetings and filings</a>.</p>
         </div>
         <div class="provsec">
           <p class="provk">Revisions to this page</p>
           <ul class="revs">
-          <li><b>August 24, 2026</b> The model re-based to the three current positions: the last published text, the committee's August 21 position of 80 classroom hours and a staged practicum of 102 or 114 with nothing further required after it, and the department's August 21 proposal of 80 classroom hours and the 100 or 120 practicum with two case presentations inside it. The committee position is the default. Dr. Anne Metz's July 17 figures moved to the training-hours record, and the July 27 submission to the recommendation page's history: the July 23 publication and its August 28 hearing were set aside, the July 23 text stands as the last published text, and the committee's recommendation stands at its August 21 position, in the department's hands for the revised rules.</li>
+          <li><b>August 24, 2026</b> The model re-based to two positions: the recommendation, at its August 21 position of 80 classroom hours and a staged practicum of 102 or 114 hours with nothing further required after it, as the default, and the last published text of July 23, since set aside, as what it replaced. Dr. Anne Metz's July 17 figures moved to the training-hours record, and the July 27 submission to the recommendation page's history.</li>
           <li><b>August 21, 2026</b> The kicker and the model's position note now state the schedule as restated: the department stated at the August 21 committee meeting that revised proposed rules publish August 25 and that the rule hearing, first set for August 28, is anticipated for October 2, with the final notice to fix the date.</li>
           <li><b>August 13, 2026</b> The kicker above the model is now written by tools/sync-status.py, which holds the status of the rulemaking once and writes every surface that shows it, so the line stating what is open and what was submitted is corrected in one file when it changes.</li>
           <li><b>July 31, 2026</b> The model now carries three named positions, each with its date and its own colour: the rule published July 23, the recommendation Dr. Anne Metz presented on July 17, and the recommendation the committee submitted on July 27. A strip above the sliders names the position on screen at all times, the buttons show which one is set, and moving a slider off all three says so rather than leaving the reader to guess. Every figure in the Metz position is quoted in the source note from her written recommendations, which are held in docs/documents; the committee position states that its figures are reported rather than checked, because that document is not in the public record.</li>
@@ -249,29 +239,23 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
   var role='f';
   var ROLE={f:'facilitator',p:'practitioner'};
 
-  // The three positions on these hours. Every figure is cited in the source note
+  // The two positions on these hours. Every figure is cited in the source note
   // below the model. Classroom is the module total: didactic plus simulated patient.
-  // The committee and department positions fold consultation or case presentation
-  // inside the practicum total, so their required-after figure is zero; the
-  // department's 10 offered mentorship hours are optional for the graduate and
-  // are not counted.
+  // The recommendation folds its 18 consultation hours inside the practicum
+  // total, so its required-after figure is zero.
   var POS={
-    pub:{key:'pub', name:'The last published text', date:'PUBLISHED JULY 23, 2026 · SET ASIDE',
-         room:40, prac:{f:100,p:120}, sup:10},
-    cte:{key:'cte', name:'The committee’s August 21 position', date:'PRESENTED AUGUST 21, 2026',
+    cte:{key:'cte', name:'The recommendation', date:'THE AUGUST 21 POSITION',
          room:80, prac:{f:102,p:114}, sup:0},
-    doh:{key:'doh', name:'The department’s August 21 proposal', date:'PRESENTED AUGUST 21, 2026',
-         room:80, prac:{f:100,p:120}, sup:0}
+    pub:{key:'pub', name:'The last published text', date:'PUBLISHED JULY 23, 2026 · SET ASIDE',
+         room:40, prac:{f:100,p:120}, sup:10}
   };
-  var ORDER=['pub','cte','doh'];
+  var ORDER=['cte','pub'];
 
   var SAY={
     pub:{f:'As last published, since set aside, a facilitator completes 40 classroom hours, then 100 hours of supervised practice, every hour of it inside an approved healing center or other approved location and finished before applying for certification, then 10 hours of mentoring with the program faculty.',
          p:'As last published, since set aside, a practitioner completes 40 classroom hours, then 120 hours of supervised practice, which include 20 hours supervising facilitators rather than adding to them, every hour inside an approved healing center or other approved location and finished before applying for certification, then 10 hours of mentoring with the program faculty.'},
-    cte:{f:'In the committee’s August 21 position, a facilitator completes 80 classroom hours with minimums in nine content areas, then a staged practicum of 102 hours: 24 with well participants, 24 co-facilitating low-acuity patients, 12 of group work, and 42 of supervised practice on two cases, whose 18-hour case presentation and consultation group sits inside the total. Nothing further is required after the practicum; compensation is permitted from the group-work stage.',
-         p:'In the committee’s August 21 position, a licensed provider, the position’s name for the practitioner, completes 80 classroom hours with minimums in nine content areas, then a staged practicum of 114 hours: the facilitator sequence plus 12 provider supervisory hours, with the 18-hour case presentation and consultation group inside the total. Nothing further is required after the practicum; compensation is permitted from the group-work stage.'},
-    doh:{f:'In the department’s August 21 proposal, a facilitator completes 80 classroom hours, 65 in a general module, 5 role-specific, and 10 of simulated patient work, then a 100-hour practicum: 20 co-facilitating, a 60-hour general practicum of six individual patients and two groups, and 20 of preparatory and integrative sessions, with two case presentations inside the practicum hours. Programs must offer 10 mentorship hours after graduation, optional for the graduate and not counted here; compensation is permitted after 50 practicum hours.',
-         p:'In the department’s August 21 proposal, a practitioner, the department also used the committee’s term licensed provider at the meeting, completes 80 classroom hours, 65 general, 5 role-specific, and 10 simulated, then a 120-hour practicum: the facilitator structure plus 20 supervisory hours, with two case presentations inside the practicum hours. Programs must offer 10 mentorship hours after graduation, optional for the graduate and not counted here; compensation is permitted after 50 practicum hours.'}
+    cte:{f:'In the recommendation, a facilitator completes 80 classroom hours with minimums in nine content areas, then a staged practicum of 102 hours: 24 with well participants, 24 co-facilitating low-acuity patients, 12 of group work, and 42 of supervised practice on two cases, whose 18-hour case presentation and consultation group sits inside the total. Nothing further is required after the practicum; compensation is permitted from the group-work stage.',
+         p:'In the recommendation, a licensed provider, the recommendation’s name for the practitioner, completes 80 classroom hours with minimums in nine content areas, then a staged practicum of 114 hours: the facilitator sequence plus 12 provider supervisory hours, with the 18-hour case presentation and consultation group inside the total. Nothing further is required after the practicum; compensation is permitted from the group-work stage.'}
   };
 
   var meaning=document.getElementById('meaning');
@@ -307,14 +291,14 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       posdate.textContent=P.date;
       meaning.className='meaning '+P.key;
       meaning.textContent=SAY[P.key][role];
-      unver.hidden=!(P.key==='cte'||P.key==='doh');
+      unver.hidden=P.key!=='cte';
     }else{
       posbar.setAttribute('data-pos','free');
       model.setAttribute('data-pos','free');
       posname.textContent='A position being tested, matching none of the three';
       posdate.textContent='NOT FROM ANY DOCUMENT';
       meaning.className='meaning';
-      meaning.textContent='A position being tested. It is not the last published text and not either August 21 proposal. Whatever number stands after the rule hearing, anticipated for early October, is what every candidate will live with.';
+      meaning.textContent='A position being tested. It is not the recommendation and not the last published text. Whatever number stands after the rule hearing, anticipated for early October, is what every candidate will live with.';
       unver.hidden=true;
     }
   }
@@ -325,7 +309,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
       var pin=document.getElementById('pin-prac-'+k);
       var lab=document.getElementById('pin-prac-'+k+'-t');
       if(pin)pin.style.left=(v/150*100)+'%';
-      if(lab)lab.textContent=(k==='pub'?'RULE · DOH ':'COMMITTEE ')+v;
+      if(lab)lab.textContent=(k==='pub'?'RULE ':'COMMITTEE ')+v;
     });
   }
 

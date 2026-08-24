@@ -89,6 +89,8 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 - **Verbatim means verbatim.** Quoted text is never altered, and every claim carries its source.
 - **Do not push to `main`.** Branch, commit, open a pull request.
 - **Nothing here is final, promulgated rule text.**
+- **A date the department states is never carried as a scheduled item.** Stated dates in this rulemaking have been set and overridden. The site reports a stated date only inside the record of the meeting that stated it, in the past tense and attributed. The status surfaces list a forward date only when a notice fixes it, or when a public body scheduled its own meeting on the record.
+- **The recommendation stands alone.** There is one recommendation, the committee's, at its current position. It is not diffed against anything until a proposed rule is published; comparisons then run against that published text. Materials another party shows at a meeting, such as the department's August 21 side-by-side, are meeting record and live on the record pages, never as a standing position on the content pages.
 
 ## Where things are
 
