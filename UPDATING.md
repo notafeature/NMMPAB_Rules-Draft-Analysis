@@ -31,7 +31,7 @@ and **both move between drafts.** A published draft has always renumbered someth
 | 4 | `tools/sync-record.py` | the DOCUMENT event in `EVENTS`, the new register row in `DOCUMENTS` with `"chain": True` and `"status": "current"`, and the superseded row restated as superseded. Run it |
 | 5 | `tools/sync-provenance.py` | a `CHANGED` entry for the new document: what it changed, which is the chain narrative every page's provenance block carries. Run it |
 | 6 | `tools/sync-nav.py` | `MENU_DOCUMENTS`: the dropdown carries the register, the current operative text, and the documents of the most recent meeting or filing, per `DOCUMENTS_CONTRACT`. Run it |
-| 7 | `tools/build-rule-page.py` | point `SOURCE` at the new extraction, review `ANNOTATIONS`, regenerate `docs/rule.html`. **The script currently refuses to run because its chrome constants predate the July 28 navigation pass; bringing them current is open work, tracked in `redesign/ANALYSIS-2026-07.md`. Until then, annotation changes are made in `ANNOTATIONS` first and mirrored into the page by hand** |
+| 7 | `tools/build-rule-page.py` | point `SOURCE` at the new extraction, update `DOC`, `DOCDATE`, and the hero constants, review `ANNOTATIONS`, run it. The script regenerates `docs/rule.html` with the shared menu imported from `sync-nav.py` and then runs the stylesheet, counter, and provenance tools over the fresh page itself. The August 2026 refusal-to-run is retired with the chrome that caused it |
 | 8 | `tools/sync-status.py` | any `STATUS` item whose state or summary the new draft changes, and any date in `DATES`. Run it |
 | 9 | `tools/sync-pathways.py` | every step citation carries a section number and a `#page=N` anchor; re-cite against the new PDF. Run it |
 | 10 | `docs/changes.html` | **add a new diff layer on top.** Previous published vs new published. Older layers stay, unedited, with their own pagination |
@@ -111,8 +111,8 @@ version of it is how one fact ended up owned by two pages.
 | Test-out | changes, eligibility, recommendation, specialization, training-hours-record | 5 |
 
 `rule.html` appears in these rows because the whole page, annotations included, is generated
-by `tools/build-rule-page.py`; a change to it is made in that script's `ANNOTATIONS` (and
-mirrored by hand while the script refuses to run, per Part 1 Event A step 7).
+by `tools/build-rule-page.py`; a change to it is made in that script's `ANNOTATIONS` and the
+script is run. Hand-editing the page is how drift started in August 2026 and is over.
 
 **Regenerate it:**
 
@@ -189,7 +189,7 @@ generated region in a page is fenced by a marker comment naming its tool.
 | The four status surfaces: Where things stand and the Scheduled dates, the hours kicker, the eligibility legend dates, the training-hours-record strip | `tools/sync-status.py` (`STATUS`, `DATES`, `STAGES`, `SCHEDULED`) | `index.html`, `hours.html`, `eligibility.html`, `training-hours-record.html` |
 | The starting-license picker and every route panel | `tools/sync-pathways.py` (`STARTS`) | `pathways.html` |
 | The provenance block: chain narrative and the per-page revision log | `tools/sync-provenance.py` (`CHANGED`, `REVISIONS`; the chain data is read from `tools/sync-record.py`) | all 14 content pages |
-| The whole rule page | `tools/build-rule-page.py` (`ANNOTATIONS`; currently refuses to run, see Part 1 Event A) | `rule.html` |
+| The whole rule page | `tools/build-rule-page.py` (`ANNOTATIONS`; runs the stylesheet, counter, and provenance tools itself after writing) | `rule.html` |
 | Visit-counter beacon | `tools/sync-count.py` | all 18 pages, stubs included |
 | The versioned stylesheet link, `style.css?v=<hash>` | `tools/sync-css-version.py` | every page that links `style.css` |
 
@@ -318,7 +318,6 @@ known Notion page it is named below; that material was never missing, only uncop
 | June 12 and June 25 recordings or transcripts (`gap-june`) | statements attributed to those meetings; the documents they produced are held | Notion, "Training & Education Rules: Vote Record, Redline & Open Items (6/25 to 6/26)"; no upstream is located for June 12 |
 | July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | Notion, "End of life Care 7/16" and "Proposed Adjunct Training in End-of-Life Psychedelic Care (Slides)" |
 | May 22 committee meeting record (`gap-may22`) | nothing; it is recorded as held and unposted | none exists; the department did not record it |
-| The rule hearing notice as published (`gap-hearing-notice`) | the hearing date, anticipated October 2, asserted in prose across the site | Not located; the department said on August 21 the final notice is in preparation with the hearing officer. See `CLAUDE.md` |
 | August 14 board meeting recording or transcript, and the set-aside notice (`gap-aug14`) | the set-aside of the July 23 publication, and the August 25 stated date | Notion, "Medical Psilocybin Advisory Board - 8/14"; the working record is `analysis/8-14-board-extraction.md` |
 | August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | Notion, "Training and Education - 8/21"; the department recorded the meeting for posting. The working record is `analysis/8-21-committee-extraction.md` |
 
