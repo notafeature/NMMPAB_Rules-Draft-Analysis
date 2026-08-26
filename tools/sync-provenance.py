@@ -59,6 +59,16 @@ _spec.loader.exec_module(syncrecord)
 CHAIN = [d for d in syncrecord.DOCUMENTS if d.get("chain")]
 
 CHANGED = {
+    "rules-draft-2026-08-25-published":
+        "The revised proposed rule, published August 25 with the notice fixing the October 2 "
+        "hearing, superseding the set-aside July 23 text. Raised the practitioner and "
+        "facilitator therapy module from 30 didactic hours to 65, at least one third in "
+        "person, and the simulated patient requirement from 5 hours to 10. Added eleven "
+        "curriculum topics without per-area hour minimums, a case-presentation evaluation "
+        "inside the unchanged 100 and 120 practicum hours, a low-risk requirement on the "
+        "first 20 administration-day hours, and a didactic waiver. Kept the role names "
+        "certifying clinician and practitioner, defining them in amendments to 7.35.2.7 "
+        "published the same day.",
     "rules-draft-2026-07-23-published":
         "The department's proposed rule as published July 23, set aside with its August 28 "
         "hearing and standing as the last published text; revised rules are forthcoming, "

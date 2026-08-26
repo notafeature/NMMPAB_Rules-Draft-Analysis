@@ -73,7 +73,7 @@ With this notice the October 2 date is noticed, not merely stated. The hearing w
 
 Sections **.1 through .7 are word-for-word identical** between OLD and NEW, including .7, which in both texts reads in full: "DEFINITIONS: The definitions in 7.35.2.7 NMAC apply to this part." The definitions that give the rule its role vocabulary therefore live in the 7.35.2 amendments; see part 4.
 
-Four section headings printed as 7.34.3 in OLD (.13, .14, .20, .23) are corrected to 7.35.3 in NEW. EDITORIAL, but it retires a known defect of the July 23 text.
+OLD printed five section headings as 7.34.3 (.13, .14, .20, .23, .25). NEW corrects four of them; the .25 heading remains printed 7.34.3.25 (NEW p. 17), against its own history note and every cross-reference. EDITORIAL.
 
 ### 7.35.3.8 Patient enrollment application process (NEW pp. 1 to 2)
 
