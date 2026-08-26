@@ -1,0 +1,514 @@
+===== PAGE 1 =====
+1
+IN THE SUPREME COURT OF THE STATE OF NEW MEXICO
+Opinion Number:______________
+Filing Date:  May 8, 2014   
+Docket No. 33,896
+JAMES RODRIGUEZ, individually and as
+representative of the Estates of JANELL L.
+RODRIGUEZ and DAVID RODRIGUEZ, deceased,
+LEANN AGUILAR, DOMENIC A. RODRIGUEZ, 
+JUAN M. TERRAZAS, individually and as representative
+of the Estate of VIVIANA E. TERRAZAS, deceased,
+LUDIVINA TERRAZAS ENRIQUEZ, and BILLY J.
+TRUJILLO, as next friend of ISAIAH TRUJILLO,
+Plaintiffs-Petitioners,
+v.
+DEL SOL SHOPPING CENTER ASSOCIATES,
+L.P. a/k/a DEL SOL SHOPPING CENTER, BGK
+PROPERTIES, INC., BGK REALTY, INC., BGK
+PROPERTY MANAGEMENT, L.L.C., and BGK
+EQUITIES III, INC.,
+Defendants-Respondents,
+and
+MARIA C. BUSTAMANTE, as representative
+of the Estate of MICHAEL SOLCHENBERGER,
+and his wife LYDIA SOLCHENBERGER, deceased,
+Plaintiffs-Petitioners,
+v.
+BGK PROPERTIES, INC., DEL SOL SHOPPING
+CENTER ASSOCIATES, L.P., and CONCENTRA
+HEALTH SERVICES, INC.,
+Defendants-Respondents.
+===== PAGE 2 =====
+2
+and
+Docket No. 33,949
+JAMES RODRIGUEZ, individually and as
+representative of the Estates of JANELL L.
+RODRIGUEZ and DAVID RODRIGUEZ, deceased,
+LEANN AGUILAR, DOMENIC A. RODRIGUEZ,
+JUAN M. TERRAZAS, individually and as representative
+of the Estate of VIVIANA E. TERRAZAS, deceased,
+LUDIVINA TERRAZAS ENRIQUEZ, and BILLY J.
+TRUJILLO, as next friend of ISAIAH TRUJILLO,
+Plaintiffs-Petitioners,
+v.
+DEL SOL SHOPPING CENTER ASSOCIATES,
+L.P. a/k/a DEL SOL SHOPPING CENTER, BGK
+PROPERTIES, INC., BGK REALTY, INC., BGK
+PROPERTY MANAGEMENT, L.L.C., and BGK
+EQUITIES III, INC.,
+Defendants-Respondents,
+and
+MARIA C. BUSTAMANTE, as representative
+of the Estate of MICHAEL SOLCHENBERGER,
+and his wife LYDIA SOLCHENBERGER, deceased,
+Plaintiffs-Petitioners,
+v.
+BGK PROPERTIES, INC., DEL SOL SHOPPING
+CENTER ASSOCIATES, L.P., and CONCENTRA
+HEALTH SERVICES, INC.,
+Defendants-Respondents.
+ORIGINAL PROCEEDING ON CERTIORARI
+===== PAGE 3 =====
+3
+Sarah M. Singleton and Clay Campbell, District Judges
+O’Friel & Levy, P.C.
+Daniel J. O’Friel
+Aimee S. Bevan
+Santa Fe, NM
+for Petitioner Maria C. Bustamante
+Jaramillo Touchet, L.L.C.
+David Joseph Jaramillo
+Ryan McKelvey
+Albuquerque, NM
+Joe Cruz Castellano, Jr.
+Santa Fe, NM
+Law Office of Bea Lockhart
+Bea Castellano-Lockhart
+Santa Fe, NM
+Escamilla Law Firm, P.L.L.C
+John G. Escamilla
+McAllen, TX
+for Petitioners James Rodriguez, Leann Aguilar, Domenic A. Rodriguez, Juan M.
+Terrazas, Ludivina Terrazas Enriquez, and Billy J. Trujillo
+Madison & Mroz, P.A.
+Ada B. Priest
+M. Eliza Stewart
+Albuquerque, NM
+for Respondents BGK Properties, Inc., Del Sol Shopping Center Associates, L.P.,
+BGK Realty, Inc., and BGK Equities, III, L.L.C.
+Civerolo, Gralow, Hill & Curtis, P.A.
+Lisa Entress Pullen
+M. Clea Gutterson
+Albuquerque, NM
+for Respondent BGK Property Management, L.L.C.
+===== PAGE 4 =====
+4
+Brown & Gay, P.C.
+Remo E. Gay, Jr.
+Melissa A. Brown
+Albuquerque, NM
+for Respondent Concentra Health Services, Inc.
+David J. Stout
+Michael B. Browde
+Albuquerque, NM
+for Amicus Curiae New Mexico Trial Lawyers Association
+A. Blair Dunn
+Albuquerque, NM
+Pacific Legal Foundation
+Deborah J. La Fetra
+Jennifer M. Fry
+Sacramento, CA
+for Amicus Curiae Pacific Legal Foundation
+OPINION
+CHÁVEZ, Justice.
+{1} In this opinion we clarify and expressly hol d that foreseeability is not a factor for
+courts to consider when determining the ex istence of a duty, or when deciding to limit or
+eliminate an existing duty in a particular cl ass of cases.  We reaffirm our adoption of
+Restatement (Third) of Torts:   Liability for Physical and Emotional Harm § 7 comment j
+(2010), see Edward C. v. City of Albuquerque, 2010-NMSC-043, ¶¶ 15, 18, 148 N.M. 646,
+241 P.3d 1086, and require courts to artic ulate specific policy reasons, unrelated to
+foreseeability considerations, if deciding that a defendant does not ha ve a duty or that an
+existing duty should be limited.  Foreseeability is a fact-intensive inquiry relevant only to
+breach of duty and legal cause considerations.  What may not be foreseeable under one set
+of facts may be foreseeable under a slightly different set of facts.  Therefore, foreseeability
+cannot be a policy argument because foreseeability is not susceptible to a categorical
+analysis.  We do not hold that courts may never consider foreseeability; however, when a
+court does so, it is to analyze no-breach-of-duty or no-legal-cause as a matter of law, not
+whether a duty exists.
+BACKGROUND
+{2} In these consolidated cases, a truck crashed through the front glass of the Concentra
+===== PAGE 5 =====
+5
+Medical Clinic (Concentra) in the Del So l Shopping Center (Del Sol) (collectively
+Defendants) in Santa Fe, killing three people and seriously injuring several others.  Both
+groups of Plaintiffs (collectively Plaintiffs) sued Del Sol’s owners and operators, alleging
+that Del Sol negligently contributed to the accident by, among other things, failing to
+adequately post signage; failing to install speed bumps; failing to erect barriers that would
+have protected buildings, employees, and visitors from errant vehicles; or failing to use other
+traffic control methods in the parking lot.  Relying on Romero v. Giant Stop-N-Go of N.M.,
+Inc., 2009-NMCA-059, ¶¶ 8-9, 146 N. M. 520, 212 P.3d 408, both district courts granted
+summary judgment and found that this accident “was not foreseeable” as a matter of law, and
+therefore found that no duty existed.
+{3} On appeal, the Court of Appeals consolidated the two cases and affirmed the district
+courts’ common ruling on summary judgment that Defendants “had no duty to protect
+Plaintiffs inside the building from  criminally reckless drivers.”  Rodriguez v. Del Sol
+Shopping Ctr. Assocs., 2013-NMCA-020, ¶ 1, 297 P.3d 334, cert. granted, 2013-NMCERT-
+001.  After an exhaustive analysis of New Mexico precedent, the Court of Appeals correctly
+rejected the foreseeability-driven duty analysis relied upon by the district courts, stating that
+it was affirming both cases based on a “policy-driven duty analysis advanced by the
+Restatement (Third) of Torts . . . and recently embraced by our New Mexico Supreme Court
+in Edward C. . . ., 2010-NMSC-043, ¶ 15.”  Del Sol, 2013-NMCA-020, ¶ 1.  We agree with
+the Court of Appeals that New Mexico case law has created confusion regarding the extent
+to which foreseeability considerations are relevant to the legal determination of duty.  Id. ¶¶
+6-11.  We will not belabor the discussion of the cases that have caused the confusion,
+including Edward C., which noted that foreseeability plays some role, although it is limited,
+in the determination of duty.  Instead, we take this opportunity to explain why foreseeability
+should not be considered when determining duty, both generally and when considering the
+analysis of the Court of Appeals in these cas es.  We overrule prior cases insofar as they
+conflict with this opinion’s clarification of the appropriate duty analysis in New Mexico.
+And because we conclude that the Court of Appeals analysis is a no-breach-of-duty analysis
+more than a policy-driven duty analysis, we reverse the Court of Appeals.
+DISCUSSION
+{4} Foreseeability and breach are questions that a jury considers when it decides whether
+a defendant acted reasonably under the circumstances of a case or legally caused injury to
+a particular plaintiff.  Torres v. State, 1995-NMSC-025, ¶ 15, 119 N.M. 609, 894 P.2d 386.
+Juries are instructed that “[a]s the risk of danger that should reasonably be foreseen
+increases, the amount of care required also increases.”  UJI 13-1603 NMRA.  Foreseeability
+as it relates to breach of duty is a general an alysis and does not require that the particular
+harm to the plaintiff have been anticipated.  See Spencer v. Health Force, Inc., 2005-NMSC-
+002, ¶ 23, 137 N.M. 64, 107 P.3d 504 (“Foreseeability does not require that the particular
+consequence should have been anticipated, but rather that some general harm or consequence
+be foreseeable.” (internal quotation marks and citation omitted)).  The argument before the
+jury when it is determining whether breach occurred is whether the foreseeable likelihood
+===== PAGE 6 =====
+6
+and severity of injuries that might have occurred due to the defendant’s conduct warranted
+the additional precautions argued by the plaintiff.  See Ford v. Bd. of Cnty. Comm’rs, 1994-
+NMSC-077, ¶ 12, 118 N.M. 134, 879 P.2d 766 (holding that “the ordinary principles of
+negligence . . . govern a landowner’s conduct as to a licensee and invitee.  A landowner or
+occupier of premises must act as a reasonable [person] in maintaining his [or her] property
+in a reasonably safe condition in view of all the circumstances, including the likelihood of
+injury to another, the seriousness of the injury, and the burden of avoiding the risk.”).  These
+ordinary arguments relate to breach of duty and legal cause, and are not policy arguments
+that would justify a no-duty determination or modification of an existing duty.
+{5} In these cases, the Court of Appeals fr amed the issue as “[w]hat duty should
+owner/occupants of a shopping center in New Mexico have to protect business invitees
+within its buildings from vehicles that depart the confines of designated parking areas?”  Del
+Sol, 2013-NMCA-020, ¶ 12.  The Court of Appeals then correctly summarized the law in
+paragraphs 13 and 14 of its opinion.  Id.  The owner/occupier owes a duty of ordinary care
+under the circumstances, Ford, 1994-NMSC-077, ¶ 12, including the duty to exercise
+ordinary care to prevent harmful conduct from a third person, even if the third person’s
+conduct is intentional, Reichert v. Atler, 1994-NMSC-056, ¶ 11, 117 N.M. 623, 875 P.2d
+379.  The duty of ordinary care applies unless the owner/occupier can establish a policy
+reason, unrelated to foreseeability considerations, that compels a limitation on the duty or
+an exemption from the duty to exercise ordi nary care.  There are a number of cases that
+illustrate how policy considerations limit the duty of ordinary care.
+{6} In Edward C., we found a policy reason to mo dify, albeit minimally, the duty of
+ordinary care for owners/occupiers of commercial baseball stadiums.  2010-NMSC-043, ¶
+40.  The owners/occupiers asked this Court to adopt the “baseball rule,” which imposes upon
+owners/occupiers only a limited duty of care to assure the safety of spectators.  Id. ¶¶ 8-10.
+Under the baseball rule, the proprietor of the baseball stadium only has a duty (1) to screen
+the area of the field behind home plate, and (2 ) to a sufficient extent, to protect those
+spectators from being struck by a ball leaving the field of play.  Id. ¶ 23.  We concluded that
+the unique relationship between the baseball stadium owners/occupiers and their fans, along
+with the spectators’ desire to participate in the game by catching foul balls, warranted a
+modification of the duty to exercise ordinary care.  Id. ¶¶ 25, 40.  However, we were
+unwilling to modify the duty of ordinary care to the extent desired by the stadium
+owners/occupiers.  Id. ¶¶ 8, 10, 40.  Instead, we held that a baseball stadium’s
+owners/occupiers have a duty to “exercise[] ordinary care not to increase the inherent risk
+of being hit by a projectile l eaving the field [of play],” which is symmetrically balanced
+against the spectators’ duty to exercise care to protect themselves from the same risk.  Id. ¶
+41.  The stadium owners’/occupiers’ duty of ordinary care remained undisturbed for other
+premises liability claims.  Id.
+{7} By contrast, in Baldonaldo v. El Paso Natural Gas Co., 2008-NMSC-005, ¶ 2, 143
+N.M. 288, 176 P.3d 277, we adopted a policy-based approach to modify the firefighter’s rule
+first recognized in Moreno v. Marrs, 1984-NMCA-077, ¶¶ 20-21, 102 N.M. 373, 695 P.2d
+===== PAGE 7 =====
+7
+1322, which precluded firefighters from recovering for injuries sustained while fighting a
+fire, except in very limited circumstances.  In Baldonado, the firefighters asked us to abolish
+the firefighter’s rule entirely because it was outdated, “as evidenced by the several
+jurisdictions that [had] abolished the rule.”  2008-NMSC-005, ¶ 8.  We declined to abolish
+the firefighter’s rule, but held that policy considerations—the need to encourage the public
+to request rescue from firefighters while discouraging the public from creating the need for
+rescue through reckless or intentional acts—warranted a modification of the existing rule.
+Id. ¶¶ 15-18, 21.  We expanded firefighters’ right to pursue litigation, but only if the
+defendant was alleged to have acted recklessly or intentionally.  Id. ¶ 18.
+{8} Restatement (Third) of Torts itself cites two New Mexico cases to illustrate the
+difference between a policy-driven and a foreseeability-driven approach to a duty analysis.
+The first case, Chavez v. Desert Eagle Distributing Co., 2007-NMCA-018, 141 N.M. 116,
+151 P.3d 77, is an example of a duty analysis inconsistent with the Restatement approach.
+Restatement (Third) of Torts, supra, § 7 cmt. j at 101-02 (reporter’s note to cmt. j).  The
+second case, Gabaldon v. Erisa Mortgage Co., 1997-NMCA-120, 124 N.M. 296, 949 P.2d
+1193, affirmed in part, reversed in part on other grounds, 1999-NMSC-039, ¶ 39, 128 N.M.
+84, 990 P.2d 197, is cited as representative of the approach recommended by the
+Restatement.  Restatement (Third) of Torts, supra, § 7 cmt. j at 102  (reporter’s note to cmt.
+j).
+{9} In Desert Eagle, the question was whether a distributor who sold alcohol to a casino
+owed a duty to plaintiffs injured by a drunk driver who was served alcohol by the casino.
+2007-NMCA-018, ¶ 1.  The Court of Appeals held that the distributor did not owe a duty to
+the plaintiffs, discussing at length why it was not foreseeable to the distributor that the casino
+would serve alcohol to an intoxicated patron.  Id. ¶¶ 17-24.  The foreseeability-driven
+analysis is what drew criticism in the Restatement.  Curiously, the Court of Appeals stated
+that had the plaintiffs’ alleged facts indicating the distributor knew that the casino would
+serve alcohol in violation of the law, it would have been easier to find foreseeability.  Id. ¶
+23.  This statement by the Court of Appeals illustrates how fluid the foreseeability analysis
+can be depending on changing fact patterns—a reason for courts not to assess foreseeability
+when considering the existence of a duty.  Foreseeability considerations should not be used
+by a judge to determine the scope of duty, because not even the most experienced judge is
+capable of anticipating all possible fact s that might affect future foreseeability
+determinations in similar cases.
+{10} However, the Desert Eagle court articulated a much stronger policy reason why the
+distributor did not have a duty—the “legislatu re wanted to limit liability for alcohol-related
+injuries and deaths resulting from the sale or service of alcohol to those who actually
+exercised some degree of control over the service or consumption of alcohol.”  2007-
+NMCA-018, ¶ 31.  Had the Desert Eagle  court limited its analysis to the policy
+consideration, its approach would have been consistent with the Restatement.
+{11} In Gabaldon, the Court of Appeals considered whether to recognize a new duty for
+===== PAGE 8 =====
+8
+non-possessory landlords.  The question regarding duty was whether the lessor of a wave
+pool park had a legal duty to exercise ordinary care in selecting the tenant of the park.  1997-
+NMCA-120, ¶ 17.  The Gabaldon court stated “[w]here the discussion of duty involves
+recognition of a new cause of action, or as here, extension of a recognized theory to a new
+setting, the issue is better framed as a question of policy.”  Id. ¶ 21.  The Court of Appeals
+articulated policy reasons to support its holding that when:
+the property is designed, intended and required to be used for a particular
+purpose, and the use has highly dangerous potentialities involving a
+substantial risk to the general public, and such danger or risk to the public is
+such that it may be foreseen by th e lessor, the lessor owes a duty of
+reasonable care in selecting and entrusting such property to a lessee.
+Id. ¶ 46 (internal quotation mark s and citation omitted).  The Court of Appeals left the
+foreseeability considerations for the jury.  Id. ¶¶ 48-49 (finding that the lessor’s knowledge
+that the lessee did not have experience in the operation of a wave pool created genuine issues
+of material fact).  The policy-driven approach employed by the Gabaldon court was cited
+with approval in Restatement (Third) of Torts, supra, § 7 comment j at 102  (reporter’s note
+to comment j).
+{12} In the Del Sol cases, the Court of Appeals exempted owners/occupiers of shopping
+centers from the duty of ordinary care to protect invitees within its buildings from vehicles
+that departed the confines of designated parking areas.  Del Sol, 2013-NMCA-020, ¶ 29.  To
+arrive at its no-duty determination, the Court of  Appeals considered (1) the nature of the
+activity, (2) the parties’ relationship to the activity, and (3) public policy.  Id. ¶ 14.
+Regarding the nature of the activity and the parties’ relationship to the activity, the Court
+was persuaded by statistical evidence that there was a “sheer improbability and lack of
+inherent danger” of vehicle-pedestrian accidents within the related businesses.  Id. ¶ 16.  The
+flaw in the analysis is that it is a fore seeability-driven analysis, as evidenced by the
+authorities on which the Court of Appeals relied.  See, e.g., Eckerd-Walton, Inc. v. Adams,
+190 S.E.2d 490, 492 (Ga. Ct. App. 1972) (finding that a merchant could not reasonably
+anticipate that a negligent motorist would attempt to drive through a store); Mack v.
+McGrath, 150 N.W.2d 681, 686 (Minn. 1967) (concluding that liability cannot be predicated
+on the remote possibility that a vehicle would jump a curb and expose tenants to injury).
+{13} The cases relied upon by the Court of Appeals could be read to invoke the concept
+of remoteness as articulated by Justice Ransom’s dissent in Calkins v. Cox Estates, 1990-
+NMSC-044, ¶¶ 23-25, 110 N.M. 59, 792 P.2d 36, and his special concurrence in Solon v.
+WEK Drilling Co., 1992-NMSC-023, ¶ 21, 113 N.M. 566, 829 P.2d 645.  Unfortunately,
+remoteness also tends to invite a discussion of the particular facts of a case, despite Justice
+Ransom’s admonition that “[r]emoteness, however, is not a fact.  It is a policy.”  Calkins,
+1990-NMSC-044, ¶ 23 (Ransom, J., dissenting).  Justice Ransom may have seen remoteness
+solely as a policy determination and not a factual one.  However, remoteness often leads
+toward a discussion of the facts in a particular case; insofar as it does so, it is not a
+===== PAGE 9 =====
+9
+discussion of policy.  Since remoteness invites a discussion of particularized facts, we do not
+approve of using remoteness as the basis for a policy determination.  A determination of no
+duty based upon the foreseeability, improbability, or remote nature of the risk is inconsistent
+with the Restatement approach, which provides that only “[i]n exceptional cases, when an
+articulated countervailing principle or policy warrants denying or limiting liability in a
+particular class of cases, a court may decide  that the defendant has no duty or that the
+ordinary duty of reasonable care requires modification.”  Restatement (Third) of Torts,
+supra, § 7(b).
+{14} In New Mexico, juries are instructed to consider the foreseeability of risk of injury
+from a third person in premises liability cases.  UJI 13-1320 NMRA (“The
+[owner’s][occupant’s] duty to protect visitors ar ises from a foreseeable  risk that a third
+person will injure a visitor and, as the risk of danger increases, the amount of care to be
+exercised by the [owner][occupant] also increases.”).  The greater the probability for
+foreseeable injury to result from certain beha vior and the greater the range of severity of
+injury, the more careful the defendant is required to be.  In contrast, the defendant does not
+have to be as careful when the probability of injury is not as likely, which is relevant to the
+breach of duty questions usually reserved for the jury.  The duty to exercise ordinary care
+does not only arise in situations where there is an inherent danger.  See Saiz v. Belen Sch.
+Dist., 1992-NMSC-018, ¶ 20, 113 N.M. 387, 827 P.2d 102 (“Activities that are ‘inherently
+dangerous’ represent an intermediate category of hazardous activity between those that are
+nonhazardous (or only slightly so), in which harm is merely a foreseeable consequence of
+negligence, and activities that are ultrahazardous, in which the potential for harm cannot be
+eliminated by the highest degree of care.”), limitation of holding on other grounds
+recognized by Gracia v. Bittner, 1995-NMCA-064, ¶ 18, 120 N.M. 191, 900 P.2d 351.
+{15} The Court of Appeals also concluded that there was not anything about Del Sol and
+its adjacent parking lot that “justifies a broadened standard of care owed to visitors.”  Del
+Sol, 2013-NMCA-020, ¶ 17.  However, Plaintiffs are not seeking a broadened standard of
+care; they simply contend that Del Sol breached  the duty of ordinary care.  Implicit in the
+Court of Appeals’ determination is that if there was something about the Del Sol parking
+lot—some significant difference in the fact pattern—the result may have been different.
+This also suggests a foreseeability-driven analysis.  Once a court begins to rely on factual
+details in deciding whether to modify the duty of ordinary care or exempt a defendant from
+that duty, the court is really determining that  there has been no breach of duty.  Similarly,
+a court’s concern that the plaintiffs are seeking a broader standard of care is a concern about
+whether the plaintiffs expect too much of the defendants—something more than what is
+reasonable—which is relevant to the issue of breach of duty, not whether a duty is owed, and
+breach of duty questions are usually reserved for the jury.
+{16} Regarding public policy considerations, the Court of Appeals began its analysis by
+stating that it would apply public policy as the primary barometer in ascertaining the “scope
+of ordinary care” owed by Defendants to Plaintiffs.  Id. ¶ 18.  As a preliminary matter, we
+note that Restatement (Third) of Torts, supra, § 7 comment j is concerned with the scope of
+===== PAGE 10 =====
+10
+duty, and not with the scope of ordinary care.  See Edward C., 2010-NMSC-043, ¶¶ 14, 18.
+This distinction is more than semantic, because to be concerned about the scope of ordinary
+care is to be concerned about whether a defendant’s conduct was reasonable—a breach of
+duty analysis.  Restatement (Third) of Torts, supra, § 7 cmt. i (discussing the mistake that
+courts sometimes make when they “inaptly express” a determination that there was no
+breach of duty as a matter of law in terms of no duty).  On the other hand, concerns about
+the scope of duty require a judge to articulate policy considerations when modifying the duty
+of ordinary care or exempting a class of defendants from the duty of ordinary care in a class
+of cases.
+{17} The Court of Appeals’ specific policy considerations centered around the lack of any:
+“laws, codes or ordinances promulgated by the legislature, nor any governing
+body, that mandate the placement of barriers sufficient to prevent vehicles
+that leave the designated roadway from crashing through businesses in a strip
+mall.”  Similarly, nothing in the record presented by any plaintiff indicates
+that Defendants’ parking lot was not in full compliance with applicable state
+and local building codes.
+Del Sol, 2013-NMCA-020, ¶ 18.  Plaintiffs did not plead a theory of negligence per se—that
+Defendants violated a mandatory law or ordinance.  Instead, Plaintiffs’ complaint is based
+solely on a claim that Defendants breached a duty of ordinary care.  Full compliance with
+codes, laws, or ordinances that are silent w ith respect to the relevant issue—the need for
+protective devices to minimize risk from vehicle-building collisions—cannot dictate whether
+the duty of ordinary care should be modified.  The only conclusion that can be drawn from
+such silence is that the legislative branches of local or state government have simply not
+addressed the issue.  Herrera v. Quality Pontiac, 2003-NMSC-018, ¶ 14, 134 N.M. 43, 73
+P.3d 181 (holding that silence only means that the Legislature has not spoken).  Codes and
+regulations are minimum standards.  Santa Fe, N.M. Code 1988 ch. 7-1.1(A)(4) (as amended
+through January 8, 2014) (adopting the 2009 International Building Code, by and through
+the 2009 New Mexico Commercial Building Code found at NMAC 14.7.2); see, e.g. ,
+14.7.2.6 NMAC (“The purpose of this rule is to establish minimum standards for the general
+construction of commercial buildings in New Mexico.”).  We have also previously rejected
+the notion that compliance with codes and regulations is conclusive evidence that someone
+has exercised ordinary care.  Brooks v. Beech Aircraft Corp., 1995-NMSC-043, ¶ 38, 120
+N.M. 372, 902 P.2d 54.  Juries are instructed that:
+What is customarily done by those engaged in the supplier’s business
+is evidence of ordinary care.  However, what ought to be done is fixed by a
+standard of ordinary care, whether it is usually complied with or not.
+Compliance with [industry [customs] [standards] [codes] [rules___
+[or] [governmental [rules] [standards] [codes___ is evidence of ordinary care,
+but it is not conclusive.
+===== PAGE 11 =====
+11
+UJI 13-1405 NMRA.  Instead, these are considerations that go to the issue of the defendant’s
+reasonableness.
+{18} The Court of Appeals also rejected two categories of evidence tendered by Plaintiffs
+to prove that Defendants failed to act reasonably in order to conclude that Defendants were
+exempt from the duty of ordinary care.  Del Sol, 2013-NMCA-020, ¶¶ 19-20.  First, the
+Court rejected the affidavit of Plaintiffs’ safety expert, which was supported by academic
+publications in safety engineering, that identified hazards on Defendants’ property that
+contributed to the errant vehicle crashing into the building and methods to minimize the
+hazards.  Id.  Second, the Court did not find persuasive several photographs of other local
+businesses that have installed safety features similar to those identified by Plaintiffs’ safety
+engineer.  Id. ¶ 19.  The Court of Appeals was not persuaded that the proffered evidence
+“legally establishes a norm of professional safety giving rise to an expanded duty to protect.”
+Id. ¶ 20.  The Court also expressed the opinion that more safety precautions than those
+recommended by the safety engineer would be necessary to “have definitively prevented a
+runaway vehicle from crashing through Del Sol’s storefronts” and “have prevented the
+injuries and loss of life.”  Id.  In summary, the Court of A ppeals did not believe that the
+proffered evidence “indicate[d] that Del Sol’s election not to employ such safety devices
+[fell] beneath professional norms of safety,” nor did the evidence “establish a newly
+applicable safety norm, a building code-derived regulation, or a public policy” that would
+support “the heightened standards of safety advanced by Plaintiffs.”  Id. ¶¶ 20-21.
+{19} Weighing the evidence in this matter is not a proper policy consideration for
+departing from the duty of ordinary care.  In these cases, Plaintiffs tendered the affidavit and
+photographs of other local businesses that have installed protective devices as evidence of
+what type of reasonable precautions should be taken and have been taken to avoid vehicle-
+building crashes.  If a jury is persuaded that Plaintiffs are asking too much of Defendants,
+the jury will decline to hold Defendants liable, not because no duty of ordinary care was
+owed, but because even having the duty of ordinary care, Defendants either acted reasonably
+under the circumstances or their breach of duty did not legally cause the injuries and deaths
+at Concentra.  Courts should not engage in weighing evidence to determine whether a duty
+of care exists or should be expanded or contracted—weighing evidence is the providence of
+the jury; instead, courts should focus on policy considerations when determining the scope
+or existence of a duty of care.
+{20} We also reject the notion that requiring owners/occupiers of buildings and land to
+exercise ordinary care makes them “absolute insurers of patron safety” from:
+remote mechanical and human fallibility . . . forcing businesses into one of
+three undesirable alternatives:  (1) significantly revis[ing] the physical and
+aesthetic layout of buildings and parking lots at substantial expense, (2)
+retain[ing] the status quo and risk[ing]  the enormous cost of catastrophic
+liability, or (3) clos[ing] down the business premises entirely.
+===== PAGE 12 =====
+12
+Id. ¶ 27.  First and foremost, the notion ignores our comparative fault system and the weight
+a jury will give to foreseeability consider ations.  Second, the presumptive undesirable
+alternatives identified by the Court of A ppeals do not appear to be supported by any
+evidence.  Id.  At a minimum, the affidavit of Plaintiffs’ safety engineer and the photos of
+other businesses in the vicinity, which are a pparently still in business, that have safety
+features the expert opines would be reasonable to minimize the danger of vehicle-building
+crashes, create a genuine issue of material fact.  Id. ¶¶ 20-21.
+{21}  The Court of Appeals also concluded that Del Sol could not have “anticipated,
+prevented, or even reacted to” the runaway truck, and the Court therefore could “discern no
+basis on the facts of these cases to legally extend a ‘duty to protect’ visitors from runaway
+vehicles into the responsibility of ordinary care applicable to Defendants.”  Id. ¶ 24.  To say
+that Del Sol could not have “anticipated” is to say that the event was not foreseeable, an
+approach the Court of Appeals sought to avoi d, and which we reject in determining the
+existence of a duty.  To say th at Del Sol could not have “prevented, or even reacted to” a
+runaway truck has no bearing on whether a duty exists; rather, it questions whether Del Sol
+acted reasonably and did not breach the duty of ordinary care.
+{22} In essence, the Court of Appeals’ analysis is focused predominantly on foreseeability
+considerations and the reasonableness of Defendants’ conduct.  Foreseeability
+determinations are reserved for a jury because such determinations require the jury’s
+common sense, common experience, and its consideration of community behavioral norms.
+The multiple perspectives, shared and diverse experiences of a jury inform its decision-
+making.  As stated by the United States Supreme Court over one hundred years ago, “[i]t is
+assumed that twelve [people] know more of the common affairs of life than does one
+[person], that they can draw wiser and safer conclusions from admitted facts thus occurring
+than can a single judge.”  Sioux City & Pac. R.R. v. Stout, 84 U.S. (1 Wall.) 657, 664 (1873).
+This assumption is reflected in the Seventh Amendment of the United States Constitution
+and Article II, Sections 12 and 14 of the New Mexico Constitution, which are the only
+provisions in our constitutions that command citizen participation in our
+democracy—service on a jury, whether it is a gra nd jury, criminal or civil—for the benefit
+of every other citizen.  N.M. Const. ar t. II, §§ 12 & 14; NMSA 1978, § 38-5-1 (1969, as
+amended through 2006).  New Mexico state courts take this duty seriously and have
+cautiously guarded the right to jury trial in civil cases by erring on the side of allowing
+factual issues to be decided by juries.  Romero v. Philip Morris Inc., 2010-NMSC-035, ¶ 9,
+148 N.M. 713, 242 P.3d 280.
+{23} As an example of a court that correctly resisted the effort to conflate a breach-of-duty
+analysis with the duty analysis in a vehicle-building collision case, Restatement (Third) of
+Torts, supra, § 7 comment i cites Marshall v. Burger King Corp ., 856 N.E.2d 1048 (Ill.
+2006).  Although we deem the foreseeability discussion of the Marshall majority
+unnecessary, id. at 1060, we agree with the ultimate conclusion that an owner/occupier owes
+a duty of ordinary care in vehicle-building collision cases, id. at 1059-60.
+===== PAGE 13 =====
+13
+{24} Courts are not powerless to dismiss cases as a matter of law, despite our holding that
+a foreseeability-driven duty analysis is inappropriate.  A court may still decide whether a
+defendant did or did not breach the duty of ordi nary care as a matter of law, or that the
+breach of duty did not legally cause the damages alleged in the case.  However, these
+determinations are materially different than a no-duty or modified-duty analysis.  The court
+must determine that no reasonable jury would find that the defendant breached the duty of
+ordinary care or that the breach legally caused the plaintiff’s damages.  Torres v. El Paso
+Elec. Co., 1999-NMSC-029, ¶ 26, 127 N.M. 729, 987 P.2d 386 (“[A] directed verdict is
+appropriate only when there are no true issues of fact to be presented to a jury.  A trial court
+should not grant a motion for directed verdict unless it is clear that the facts and inferences
+are so strongly and overwhelmingly in favor of the moving party that the judge believes that
+reasonable people could not arrive at a contrary result.” (alteration added) (internal quotation
+marks and citations omitted)), overruled on other grounds by Herrera, 2003-NMSC-018,
+¶ 23 n.3.  This determination requires judges to abandon their own personal thoughts
+regarding the merits of cases and to imagin e the thoughts of twelve adult citizens from a
+variety of socioeconomic backgrounds—such as scientists, college faculty, laborers,
+uneducated, rich, poor, persons with different political persuasions—and what that diverse
+group might find regarding the merits of a case.  The judge can enter judgment as a matter
+of law only if the judge concludes that no reasonable jury could decide the breach of duty
+or legal cause questions except one way.  B ecause neither the Court of Appeals nor the
+district court judges engaged in this analysis, we reverse and remand to the district courts
+for proceedings consistent with this opinion.
+CONCLUSION
+{25} Foreseeability is not a question for courts to consider when determining the existence
+of a duty, or whether to limit or eliminate an existing duty in a particular class of cases.
+Instead, courts must articulate specific policy reasons, unrelated to foreseeability
+considerations, when deciding whether a defendant does or does not have a duty or that an
+existing duty should be limited.
+{26} IT IS SO ORDERED.
+____________________________________
+EDWARD L. CHÁVEZ, Justice
+WE CONCUR:
+____________________________________
+PETRA JIMENEZ MAES, Senior Justice
+____________________________________
+RICHARD C. BOSSON, Justice
+===== PAGE 14 =====
+14
+____________________________________
+MICHAEL D. BUSTAMANTE, Judge
+Sitting by designation
+BARBARA J. VIGIL, Chief Justice and CHARLES W. DANIELS, Justice
+Recused

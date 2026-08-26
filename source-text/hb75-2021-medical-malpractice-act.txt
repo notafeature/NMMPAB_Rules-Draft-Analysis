@@ -1,0 +1,2246 @@
+===== PAGE 1 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+This document may incorporate amendments proposed by a
+committee, but not yet adopted, as well as amendments
+that have been adopted during the current legislative
+session.  The document is a tool to show amendments in
+context and cannot be used for the purpose of adding
+amendments to legislation.
+HOUSE BILL 75
+55TH LEGISLATURE - STATE OF NEW MEXICO - FIRST SESSION, 2021
+INTRODUCED BY
+Daymon Ely
+AN ACT
+RELATING TO MEDICAL MALPRACTICE; SJCºREMOVING HOSPITALS FROM
+THE DEFINITION OF "HEALTH CARE PROVIDER" IN THE MEDICAL
+MALPRACTICE ACT.»SJC SJCºCLARIFYING AND MODERNIZING THE
+MEDICAL MALPRACTICE ACT; RAISING PERSONAL LIABILITY AND
+RECOVERY CAPS; LIMITING PARTICIPATION BY HOSPITALS AND
+OUTPATIENT HEALTH CARE FACILITIES; REQUIRING A THIRD-PARTY
+ADMINISTRATOR FOR THE PATIENT'S COMPENSATION FUND; REQUIRING
+ANNUAL FUND AUDITS; CREATING AN ADVISORY BOARD; REQUIRING
+.218619.2AIC March 19, 2021 (9:03am)
+===== PAGE 2 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+ANNUAL ACTUARIAL STUDIES; REQUIRING SURCHARGES SUFFICIENT TO
+BRING THE FUND TO SOLVENCY BY DECEMBER 31, 2026; AMENDING,
+REPEALING AND ENACTING SECTIONS OF THE NMSA 1978.»SJC
+BE IT ENACTED BY THE LEGISLATURE OF THE STATE OF NEW MEXICO:
+SJCºSECTION 1.  Section 41-5-3 NMSA 1978 (being Laws
+1976, Chapter 2, Section 3, as amended) is amended to read:
+"41-5-3.  DEFINITIONS.--As used in the Medical Malpractice
+Act:
+A.  "health care provider" means a person,
+corporation, organization, facility or institution licensed or
+certified by this state to provide health care or professional
+services as a doctor of medicine, [hospital] outpatient health
+care facility, doctor of osteopathy, chiropractor, podiatrist,
+nurse anesthetist or physician's assistant;
+B.  "insurer" means an insurance company engaged in
+writing health care provider malpractice liability insurance in
+this state;
+C.  "malpractice claim" includes any cause of action
+arising in this state against a health care provider for
+medical treatment, lack of medical treatment or other claimed
+departure from accepted standards of health care [which] that
+proximately results in injury to the patient, whether the
+patient's claim or cause of action sounds in tort or contract,
+and includes [but is not limited to] actions based on battery
+.218619.2AIC March 19, 2021 (9:03am)
+===== PAGE 3 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+or wrongful death; "malpractice claim" does not include a cause
+of action arising out of the driving, flying or nonmedical acts
+involved in the operation, use or maintenance of a vehicular or
+aircraft ambulance;
+D.  "medical care and related benefits" means all
+reasonable medical, surgical, physical rehabilitation and
+custodial services and includes drugs, prosthetic devices and
+other similar materials reasonably necessary in the provision
+of such services;
+E.  "patient" means a natural person who received or
+should have received health care from a licensed health care
+provider, under a contract, express or implied; and
+F.  "superintendent" means the superintendent of
+insurance [of this state]."
+SECTION 2.  Section 41-5-5 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 2) is amended to read:
+"41-5-5.  QUALIFICATIONS.--
+A.  To be qualified under the provisions of the
+Medical Malpractice Act, a health care provider shall:
+(1)  establish its financial responsibility by
+filing proof with the superintendent that the health care
+provider is insured by a policy of malpractice liability
+insurance issued by an authorized insurer in the amount of at
+least two hundred thousand dollars ($200,000) per occurrence or
+.218619.2AIC March 19, 2021 (9:03am)
+- 3 -
+===== PAGE 4 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+for an individual health care provider, excluding [hospitals
+and] outpatient health care facilities, by having continuously
+on deposit the sum of six hundred thousand dollars ($600,000)
+in cash with the superintendent or such other like deposit as
+the superintendent may allow by rule or regulation; provided
+that in the absence of an additional deposit or policy as
+required by this subsection, the deposit or policy shall
+provide coverage for not more than three separate occurrences;
+and
+(2)  pay the surcharge assessed on health care
+providers by the superintendent pursuant to Section 41-5-25
+NMSA 1978.
+B.  For [hospitals or] outpatient health care
+facilities electing to be covered under the Medical Malpractice
+Act, the superintendent shall determine, based on a risk
+assessment of each [hospital or] outpatient health care
+facility, each [hospital's or] outpatient health care
+facility's base coverage or deposit and additional charges for
+the patient's compensation fund.  The superintendent shall
+arrange for an actuarial study, as provided in Section 41-5-25
+NMSA 1978.
+C.  A health care provider not qualifying under this
+section shall not have the benefit of any of the provisions of
+the Medical Malpractice Act in the event of a malpractice claim
+.218619.2AIC March 19, 2021 (9:03am)
+- 4 -
+===== PAGE 5 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+against it."»SJC
+Sfl1ºSJCºSECTION 1.  Section 41-5-3 NMSA 1978 (being Laws
+1976, Chapter 2, Section 3, as amended) is amended to read:
+"41-5-3.  DEFINITIONS.--As used in the Medical Malpractice
+Act:
+A.  "advisory board" means the patient's
+compensation fund advisory board;
+B.  "fund" means the patient's compensation fund;
+[A.] C.  "health care provider" means a person,
+corporation, organization, facility or institution licensed or
+certified by this state to provide health care or professional
+services as a doctor of medicine, hospital, outpatient health
+care facility, doctor of osteopathy, chiropractor, podiatrist,
+nurse anesthetist, [or] physician's assistant, certified nurse
+practitioner, clinical nurse specialist or certified nurse-
+midwife or a business entity that is organized, incorporated or
+formed pursuant to the laws of New Mexico that provides health
+care services primarily through natural persons identified in
+this subsection;
+D.  "hospital" means a facility licensed as a
+hospital in this state that offers in-patient services, nursing
+or overnight care on a twenty-four-hour basis for diagnosing,
+treating and providing medical, psychological or surgical care
+for three or more separate persons who have a physical or
+.218619.2AIC March 19, 2021 (9:03am)
+- 5 -
+===== PAGE 6 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+mental illness, disease, injury or a rehabilitative condition
+or are pregnant and may offer emergency services.  "Hospital"
+includes a hospital's parent corporation, subsidiary
+corporations or affiliates if incorporated or registered in New
+Mexico; employees and locum tenens providing services at the
+hospital; and agency nurses providing services at the hospital;
+E.  "independent provider" means a doctor of
+medicine, doctor of osteopathy, chiropractor, podiatrist, nurse
+anesthetist, physician's assistant, certified nurse
+practitioner, clinical nurse specialist or certified nurse-
+midwife who is not an agent of a hospital or outpatient health
+care facility. "Independent provider" includes a business
+entity that is not a hospital or outpatient health care
+facility that employs or consists of members who are licensed
+or certified as doctors of medicine, doctors of osteopathy,
+chiropractors, podiatrists, nurse anesthetists, physician's
+assistants, certified nurse practitioners, clinical nurse
+specialists or certified nurse-midwives and the business
+entity's employees;
+[B.] F.  "insurer" means an insurance company
+engaged in writing health care provider malpractice liability
+insurance in this state;
+[C.] G.  "malpractice claim" includes any cause of
+action arising in this state against a health care provider for
+.218619.2AIC March 19, 2021 (9:03am)
+- 6 -
+===== PAGE 7 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+medical treatment, lack of medical treatment or other claimed
+departure from accepted standards of health care [which] that
+proximately results in injury to the patient, whether the
+patient's claim or cause of action sounds in tort or contract,
+and includes but is not limited to actions based on battery or
+wrongful death; "malpractice claim" does not include a cause of
+action arising out of the driving, flying or nonmedical acts
+involved in the operation, use or maintenance of a vehicular or
+aircraft ambulance;
+[D.] H.  "medical care and related benefits" means
+all reasonable medical, surgical, physical rehabilitation and
+custodial services and includes drugs, prosthetic devices and
+other similar materials reasonably necessary in the provision
+of such services;
+I.  "occurrence" means all injuries to a patient
+caused by health care providers' successive acts or omissions
+that combined concurrently to create a malpractice claim;
+J.  "outpatient health care facility" means an
+entity that is licensed pursuant to the Public Health Act as an
+outpatient facility, including ambulatory surgical centers,
+free-standing emergency rooms, urgent care clinics, acute care
+centers and intermediate care facilities and includes a
+facility's employees, locum tenens providers and agency nurses
+providing services at the facility.  "Outpatient health care
+.218619.2AIC March 19, 2021 (9:03am)
+- 7 -
+===== PAGE 8 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+facility" does not include independent providers;
+[E.] K.  "patient" means a natural person who
+received or should have received health care from a [licensed]
+health care provider under a contract, express or implied; and
+[F.] L.  "superintendent" means the superintendent
+of insurance [of this state]."
+SECTION 2.  Section 41-5-5 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 2) is amended to read:
+"41-5-5.  QUALIFICATIONS.--
+A.  To be qualified under the provisions of the
+Medical Malpractice Act, a health care provider shall:
+(1)  establish its financial responsibility by
+filing proof with the superintendent that the health care
+provider is insured by a policy of malpractice liability
+insurance issued by an authorized insurer in the amount of at
+least [two hundred thousand dollars ($200,000)] two hundred
+fifty thousand dollars ($250,000) per occurrence or [for an
+individual health care provider, excluding hospitals and
+outpatient health care facilities] by having continuously on
+deposit the sum of [six hundred thousand dollars ($600,000)]
+seven hundred fifty thousand dollars ($750,000) in cash with
+the superintendent or such other like deposit as the
+superintendent may allow by rule [or regulation]; provided that
+hospitals and outpatient health care facilities that establish
+.218619.2AIC March 19, 2021 (9:03am)
+- 8 -
+===== PAGE 9 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+financial responsibility through a policy of malpractice
+liability insurance may use any form of malpractice insurance;
+and provided further that for independent providers, in the
+absence of an additional deposit or policy as required by this
+subsection, the deposit or policy shall provide coverage for
+not more than three separate occurrences; and
+(2)  pay the surcharge assessed on health care
+providers by the superintendent pursuant to Section 41-5-25
+NMSA 1978.
+B.  For hospitals or outpatient health care
+facilities electing to be covered under the Medical Malpractice
+Act, the superintendent shall determine, based on a risk
+assessment of each hospital or outpatient health care facility,
+each hospital's or outpatient health care facility's base
+coverage or deposit and additional charges for the [patient's
+compensation] fund.  The superintendent shall arrange for an
+actuarial study [as provided in Section 41-5-25 NMSA 1978]
+before determining base coverage or deposit and surcharges.
+C.  A health care provider not qualifying under this
+section shall not have the benefit of any of the provisions of
+the Medical Malpractice Act in the event of a malpractice claim
+against it; provided that beginning July 1, 2021, hospitals and
+outpatient health care facilities shall not participate in the
+medical review process, and beginning January 1, 2027,
+.218619.2AIC March 19, 2021 (9:03am)
+- 9 -
+===== PAGE 10 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+hospitals and outpatient health care facilities shall have the
+benefits of the other provisions of the Medical Malpractice Act
+except participation in the fund."
+SECTION 3.  Section 41-5-6 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 4) is amended to read:
+"41-5-6.  LIMITATION OF RECOVERY.--
+A.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from any injury or
+death to a patient as a result of malpractice shall not exceed
+six hundred thousand dollars ($600,000) per occurrence for
+malpractice claims brought against health care providers if the
+injury or death occurred prior to January 1, 2022.  In jury
+cases, the jury shall not be given any instructions dealing
+with this limitation. 
+B.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from any injury or
+death to a patient as a result of malpractice shall not exceed
+seven hundred fifty thousand dollars ($750,000) per occurrence
+for malpractice claims against independent providers.  The
+aggregate dollar amount includes payment to any person for any
+number of loss of consortium claims or other claims per
+occurrence that arise solely because of the injuries or death
+.218619.2AIC March 19, 2021 (9:03am)
+- 10 -
+===== PAGE 11 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+of the patient.  In jury cases, the jury shall not be given any
+instructions dealing with this limitation.  Beginning January
+1, 2023, the per occurrence limit on recovery shall be adjusted
+annually by the consumer price index for all urban consumers.
+C.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+four million dollars ($4,000,000) per occurrence for claims
+brought against a hospital or outpatient health care facility
+if the injury or death occurred in calendar year 2022.  The
+aggregate dollar amount includes payment to any person for any
+number of loss of consortium claims or other claims per
+occurrence that arise solely because of the injuries or death
+of the patient.  In jury cases, the jury shall not be given any
+instructions dealing with this limitation.
+D.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+four million five hundred thousand dollars ($4,500,000) per
+occurrence for claims brought against a hospital or outpatient
+health care facility if the injury or death occurred in
+calendar year 2023.  The aggregate dollar amount includes
+.218619.2AIC March 19, 2021 (9:03am)
+- 11 -
+===== PAGE 12 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+payment to any person for any number of loss of consortium
+claims or other claims per occurrence that arise solely because
+of the injuries or death of the patient.  In jury cases, the
+jury shall not be given any instructions dealing with this
+limitation.
+E.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+five million dollars ($5,000,000) per occurrence for claims
+brought against a hospital or outpatient health care facility
+if the injury or death occurred in calendar year 2024.  The
+aggregate dollar amount includes payment to any person for any
+number of loss of consortium claims or other claims per
+occurrence that arise solely because of the injuries or death
+of the patient.  In jury cases, the jury shall not be given any
+instructions dealing with this limitation.
+F.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+five million five hundred thousand dollars ($5,500,000) per
+occurrence for claims brought against a hospital or outpatient
+health care facility if the injury or death occurred in
+.218619.2AIC March 19, 2021 (9:03am)
+- 12 -
+===== PAGE 13 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+calendar year 2025.  The aggregate dollar amount includes
+payment to any person for any number of loss of consortium
+claims or other claims per occurrence that arise solely because
+of the injuries or death of the patient.  In jury cases, the
+jury shall not be given any instructions dealing with this
+limitation.
+G.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+six million dollars ($6,000,000) per occurrence for claims
+brought against a hospital or outpatient health care facility
+if the injury or death occurred in 2026; provided that
+beginning January 1, 2027, the per occurrence limit shall be
+adjusted annually by the consumer price index for all urban
+consumers.  The aggregate dollar amount includes payment to any
+person for any number of loss of consortium claims or other
+claims per occurrence that arise solely because of the injuries
+or death of the patient.  In jury cases, the jury shall not be
+given any instructions dealing with this limitation.
+[B.] H.  The value of accrued medical care and
+related benefits shall not be subject to [the six hundred
+thousand dollar ($600,000)] any limitation.
+[C.  Monetary damages shall not be awarded for
+.218619.2AIC March 19, 2021 (9:03am)
+- 13 -
+===== PAGE 14 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+future medical expenses in malpractice claims.
+D.] I.  A health care provider's personal liability
+is limited to [two hundred thousand dollars ($200,000)] two
+hundred fifty thousand dollars ($250,000) for monetary damages
+and medical care and related benefits as provided in Section
+41-5-7 NMSA 1978.  Any amount due from a judgment or settlement
+in excess of [two hundred thousand dollars ($200,000)] two
+hundred fifty thousand dollars ($250,000) shall be paid from
+the [patient's compensation] fund [as provided in Section 41-5-
+25 NMSA 1978] except as provided in Subsection K of this
+section.
+[E.  For the purposes of Subsections A and B of this
+section, the six hundred thousand dollar ($600,000) aggregate
+amount recoverable by all persons for or arising from any
+injury or death to a patient as a result of malpractice shall
+apply only to malpractice occurring on or after April 1, 1995.]
+J.  The term "occurrence" shall not be construed in
+such a way as to limit recovery to only one maximum statutory
+payment if separate acts or omissions cause additional or
+enhanced injury or harm as a result of the separate acts or
+omissions.  A patient who suffers two or more distinct injuries
+as a result of two or more different acts or omissions that
+occur at different times by one or more health care providers
+is entitled to up to the maximum statutory recovery for each
+.218619.2AIC March 19, 2021 (9:03am)
+- 14 -
+===== PAGE 15 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+injury.
+K.  Until January 1, 2027, amounts due from a
+judgment or settlement against a hospital or outpatient health
+care facility in excess of seven hundred fifty thousand dollars
+($750,000), excluding past and future medical expenses, shall
+be paid by the hospital or  outpatient health care facility and
+not by the fund.  Beginning January 1, 2027, amounts due from a
+judgment or settlement against a hospital or outpatient health
+care facility shall not be paid from the fund."
+SECTION 4.  Section 41-5-7 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 5, as amended by Laws 1992, Chapter 33,
+Section 6) is amended to read:
+"41-5-7.  [FUTURE] MEDICAL EXPENSES AND PUNITIVE 
+DAMAGES.--
+[A.  In all malpractice claims where liability is
+established, the jury shall be given a special interrogatory
+asking if the patient is in need of future medical care and
+related benefits.  No inquiry shall be made concerning the
+value of future medical care and related benefits, and evidence
+relating to the value of future medical care shall not be
+admissible.  In actions upon malpractice claims tried to the
+court, where liability is found, the court's findings shall
+include a recitation that the patient is or is not in need of
+future medical care and related benefits.
+.218619.2AIC March 19, 2021 (9:03am)
+- 15 -
+===== PAGE 16 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+B.  Except as provided in Section 41-5-10 NMSA 1978,
+once a judgment is entered in favor of a patient who is found
+to be in need of future medical care and related benefits or a
+settlement is reached between a patient and health care
+provider in which the provision of medical care and related
+benefits is agreed upon, and continuing as long as medical or
+surgical attention is reasonably necessary, the patient shall
+be furnished with all medical care and related benefits
+directly or indirectly made necessary by the health care
+provider's malpractice, subject to a semi-private room
+limitation in the event of hospitalization, unless the patient
+refuses to allow them to be so furnished.
+C.] A.  Awards of past and future medical care and
+related benefits shall not be subject to the [six hundred
+thousand dollar ($600,000) limitation] limitations of recovery
+imposed in Section 41-5-6 NMSA 1978.
+[D.  Payment for medical care and related benefits
+shall be made as expenses are incurred.
+E.] B.  The health care provider shall be liable for
+all medical care and related benefit payments until the total
+payments made by or on behalf of it for monetary damages and
+medical care and related benefits combined equals [two hundred
+thousand dollars ($200,000)] the health care provider's
+personal liability limit as provided in Subsection I of Section
+.218619.2AIC March 19, 2021 (9:03am)
+- 16 -
+===== PAGE 17 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+41-5-6 NMSA 1978, after which the payments shall be made by the
+[patient's compensation] fund.
+C.  Beginning January 1, 2027, any amounts due from
+a judgment or settlement against a hospital or outpatient
+health care facility shall not be paid from the fund if the
+injury or death occurred after December 31, 2026.
+[F.] D.  This section shall not be construed to
+prevent a patient and a health care provider from entering into
+a settlement agreement whereby medical care and related
+benefits shall be provided for a limited period of time only or
+to a limited degree.
+[G.  The court in a supplemental proceeding shall
+estimate the value of the future medical care and related
+benefits reasonably due the patient on the basis of evidence
+presented to it.  That figure shall not be included in any
+award or judgment but shall be included in the record as a
+separate court finding.
+H.] E.  A judgment of punitive damages against a
+health care provider shall be the personal liability of the
+health care provider.  Punitive damages shall not be paid from
+the [patient's compensation] fund or from the proceeds of the
+health care provider's insurance contract unless the contract
+expressly provides coverage.  Nothing in Section 41-5-6 NMSA
+1978 precludes the award of punitive damages to a patient. 
+.218619.2AIC March 19, 2021 (9:03am)
+- 17 -
+===== PAGE 18 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+Nothing in this subsection authorizes the imposition of
+liability for punitive damages [on a derivative basis] where
+that imposition would not be otherwise authorized by law."
+SECTION 5.  Section 41-5-9 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 9) is amended to read:
+"41-5-9.  DISTRICT COURT--CONTINUING JURISDICTION.--[A.]
+The district court from which final judgment [issues] issued
+shall have continuing jurisdiction in cases where future
+medical care and related benefits [are] were awarded pursuant
+to Section [7] 41-5-7 NMSA 1978 for malpractice claims arising
+from occurrences prior to July 1, 2021.
+[B.  In all cases where the patient's continued need
+of such benefits or the degree to which such benefits are
+needed is challenged at a point in time after a judgment is
+entered, the court, sitting without a jury, shall determine
+whether such need continues to exist and the extent of such
+need.
+C.  Whenever a patient petitions the district court
+for an increase in medical care and related benefits, the
+petition shall be set down for hearing at the earliest possible
+time and takes precedence over all matters except older matters
+of the same character and motions for preliminary injunctions
+filed pursuant to Section 21-1-1 (65, 66) NMSA 1953.
+D.  The health care provider shall have the burden
+.218619.2AIC March 19, 2021 (9:03am)
+- 18 -
+===== PAGE 19 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+of proving that the patient's need for benefits has subsided or
+abated or that medical care and related benefits are not
+reasonably necessary, which it shall establish by clear and
+convincing evidence.  The patient shall have the burden of
+proving that his need for medical care and related benefits has
+increased, which he shall establish by a preponderance of the
+evidence.]"
+SECTION 6.  Section 41-5-13 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 13) is amended to read:
+"41-5-13.  LIMITATIONS.--No claim for malpractice [arising
+out of an act of malpractice which occurred subsequent to the
+effective date of the Medical Malpractice Act] may be brought
+against a health care provider unless filed within three years
+after the date that the act of malpractice occurred, except
+that [a minor under the full age of six years shall have until
+his ninth birthday in which to file.  This subsection applies
+to all persons regardless of minority or other legal
+disability] the times limited for the bringing of actions by
+minors and incapacitated persons shall be extended so that they
+shall have one year from and after the age of majority or
+termination of incapacity within which to commence the
+actions."
+SECTION 7.  Section 41-5-14 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 14) is amended to read:
+.218619.2AIC March 19, 2021 (9:03am)
+- 19 -
+===== PAGE 20 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+"41-5-14.  MEDICAL REVIEW COMMISSION--INDEPENDENT
+PROVIDERS.--
+A.  The "New Mexico medical review commission" is
+created.  The function of the New Mexico medical review
+commission is to provide panels to review all malpractice
+claims against [health care] independent providers who are
+natural persons covered by the Medical Malpractice Act.
+B.  Those eligible to sit on a panel shall consist
+of health care providers licensed pursuant to New Mexico law
+and residing in New Mexico and [the] members of the state bar.
+C.  The only cases [which] that a panel will
+consider [include all] are cases involving [any] an alleged act
+of malpractice occurring in New Mexico by [health care
+providers] an independent provider qualified under the Medical
+Malpractice Act.  Beginning July 1, 2021, cases involving an
+alleged act of malpractice by a hospital or outpatient health
+care facility shall not be considered and such claims shall not
+be filed with the New Mexico medical review commission.
+D.  An attorney shall submit a case for the
+consideration of a panel, prior to filing a complaint in any
+district court or other court sitting in New Mexico, by
+addressing an application, in writing, signed by the patient or
+[his] the patient's attorney, to the director of the New Mexico
+medical review commission.
+.218619.2AIC March 19, 2021 (9:03am)
+- 20 -
+===== PAGE 21 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+E.  The director of the New Mexico medical review
+commission [will] shall be an attorney appointed by and serving
+at the pleasure of the chief justice of the New Mexico supreme
+court.
+F.  The chief justice shall set the director's
+salary and report the [same] salary to the superintendent in
+[his] the superintendent's capacity as custodian of the
+[patient's compensation] fund."
+SECTION 8.  Section 41-5-15 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 15) is amended to read:
+"41-5-15.  COMMISSION DECISION REQUIRED--APPLICATION.--
+A.  No malpractice action may be filed in any court
+against a qualifying [health care] independent provider or the
+independent provider's employer, master or principal based on a
+theory of respondeat superior or any other derivative theory of
+recovery before application is made to the New Mexico medical
+review commission and its decision is rendered; provided,
+however, that an independent provider and the patient may
+stipulate to forego the panel process.
+B.  This application shall contain the following:
+[(1)  a brief statement of the facts of the
+case, naming the persons involved, the dates and the
+circumstances, so far as they are known, of the alleged act or
+acts of malpractice; and] 
+.218619.2AIC March 19, 2021 (9:03am)
+- 21 -
+===== PAGE 22 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+(1)  the name of the health care provider
+against which the claims are asserted;
+(2)  a short and plain statement of the grounds
+as to why the New Mexico medical review commission has
+jurisdiction over the claims being asserted;
+(3)  the specific date or date range when the
+malpractice allegedly occurred;
+(4)  so far as known, a brief statement of the
+facts supporting the patient's malpractice claim; and
+[(2)] (5)  a statement authorizing the panel to
+obtain access to all medical and hospital records and
+information pertaining to the matter giving rise to the
+application and, for the purposes of its consideration of the
+matter only, waiving any claim of privilege as to the contents
+of those records.  Nothing in that statement shall in any way
+be construed as waiving that privilege for any other purpose or
+in any other context, in or out of court."
+SECTION 9.  Section 41-5-16 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 16) is amended to read:
+"41-5-16.  APPLICATION PROCEDURE.--
+A.  Upon receipt of an application for review, the
+New Mexico medical review commission's director or [his
+delegate] the director's designee shall cause to be served a
+true copy of the application on the [health care] independent
+.218619.2AIC March 19, 2021 (9:03am)
+- 22 -
+===== PAGE 23 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+providers [involved] against which claims are asserted. 
+Service shall be effected pursuant to New Mexico law.  If the
+[health care] independent provider involved chooses to retain
+legal counsel, [his] the independent provider's attorney shall
+informally enter [his] an appearance with the director.
+B.  The [health care] independent provider shall
+answer the application for review and in addition shall submit
+a statement authorizing the panel to obtain access to all
+medical and hospital records and information pertaining to the
+matter giving rise to the application and, for the purposes of
+its consideration of the matter only, waiving any claim of
+privilege as to the contents of those records.  Nothing in that
+statement shall in any way be construed as waiving that
+privilege for any other purpose or in any other context, in or
+out of court.
+C.  In instances where applications are received
+employing the theory of respondeat superior or some other
+derivative theory of recovery, the director shall forward such
+applications to the state professional societies, associations
+or licensing boards of both the individual [health care]
+independent provider whose alleged malpractice caused the
+application to be filed and the [health care] independent
+provider named a respondent as employer, master or principal."
+.218619.2AIC March 19, 2021 (9:03am)
+- 23 -
+===== PAGE 24 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+SECTION 10.  Section 41-5-17 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 17) is amended to read:
+"41-5-17.  PANEL SELECTION.--
+A.  Applications for review shall be promptly
+transmitted by the director of the New Mexico medical review
+commission to the directors of the [health care] independent
+provider's state professional society or association and the
+state bar association, who shall each select three panelists
+within thirty days from the date of transmittal of the
+application.
+B.  If no state professional society or association
+exists or if the [health care] independent provider does not
+belong to [such] a society or association, the director shall
+transmit the application to the [health care] independent
+provider's state licensing board, which shall in turn select
+three persons from the [health care] independent provider's
+profession and, where applicable, [to] two persons specializing
+in the same field or discipline as the [health care]
+independent provider.
+C.  In cases where there are multiple defendants,
+[the case against each health care provider may be reviewed by
+a separate panel, or] a single combined panel [may] shall
+review the [claim] claims against all [parties defendant, at
+the discretion of the director] party defendants.  At the
+.218619.2AIC March 19, 2021 (9:03am)
+- 24 -
+===== PAGE 25 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+discretion of the panel chair, a hearing involving multiple
+defendants may include fewer than three panelists from the
+independent provider's profession and fewer than three lawyer
+panel members per defendant.
+D.  Except for cases involving multiple defendants,
+three panel members from the [health care] independent
+provider's profession and three panel members from the state
+bar association shall sit in review in each case.
+[E.  In those cases where the theory of respondeat
+superior or some other derivative theory of recovery is
+employed, two of the panel members shall be chosen from the
+individual health care provider's profession and one panel
+member shall be chosen from the profession of the health care
+provider named a respondent employer, master or principal.
+F.] E.  The director of the medical review
+commission or [his] the director's delegate, who shall be an
+attorney, shall sit on each panel and serve as [chairman]
+chair.
+[G.  Any] F.  A member shall disqualify [himself]
+the member's self from consideration of [any] a case in which,
+by virtue of [his] circumstances, [he] the member feels [his]
+the member's presence on the panel would be inappropriate,
+considering the purpose of the panel.  The director may excuse
+a proposed panelist from serving.
+.218619.2AIC March 19, 2021 (9:03am)
+- 25 -
+===== PAGE 26 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+[H.] G.  Whenever a party [shall make and file]
+makes and files an affidavit that a panel member selected
+pursuant to this section cannot, according to the belief of the
+party making the affidavit, sit in review of the application
+with impartiality, that panel member shall proceed no further. 
+Another panel member shall be selected by the [health care]
+independent provider's professional association, state
+licensing board or the state bar association, as the case may
+be.  A party may not disqualify more than three proposed panel
+members in this manner in any single malpractice claim."
+SECTION 11.  Section 41-5-18 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 18) is amended to read:
+"41-5-18.  TIME AND PLACE OF HEARING.--A date, time and
+place for hearing shall be fixed by the director of the New
+Mexico medical review commission and prompt notice [thereof] of
+the hearing shall be given to the parties involved, their
+attorneys and the members of the panel.  In no instance shall
+the date set be more than sixty days after the transmittal by
+the director of the application for review, unless good cause
+exists for extending the period.  Hearings may be held anywhere
+in the state [of New Mexico], and the director shall give due
+regard to the convenience of the parties in determining the
+place of hearing.  Upon the request of one party, within ten
+days of the answer filed by the respondent, the hearing shall
+.218619.2AIC March 19, 2021 (9:03am)
+- 26 -
+===== PAGE 27 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+be conducted via video conference, including attorneys,
+witnesses and panel members appearing remotely."
+SECTION 12.  Section 41-5-19 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 19) is amended to read:
+"41-5-19.  HEARING PROCEDURES.--
+A.  At the time set for hearing, the attorney
+submitting the case for review shall be present and shall make
+a brief introduction of [his] the case, including a resume of
+the facts constituting alleged professional malpractice [which
+he is prepared to prove].  The [health care] independent
+provider against whom the claim is brought and [its] the
+independent provider's attorney may be present and may make an
+introductory statement of [its] the independent provider's
+case.
+B.  Both parties may call witnesses to testify
+before the panel, which witnesses shall be sworn.  Medical
+texts, journals, studies and other documentary evidence relied
+upon by either party may be offered and admitted if relevant. 
+Written statements of fact of treating [health care]
+independent providers may be reviewed.  The monetary damages in
+any case shall not be a subject of inquiry or discussion.
+C.  The hearing [will] shall be informal, and no
+official transcript shall be made.  Nothing contained in this
+[paragraph] subsection shall preclude the [taking] recording or
+.218619.2AIC March 19, 2021 (9:03am)
+- 27 -
+===== PAGE 28 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+transcribing of the testimony by the parties at their own
+expense.
+D.  At the conclusion of the hearing, the panel [may
+take the case under advisement or it may request that
+additional facts, records, witnesses or other information be
+obtained and presented to it at a supplemental hearing, which
+shall be set for a date and time certain, not longer than
+thirty days from the date of the original hearing unless the
+attorney bringing the matter for review shall in writing
+consent to a longer period.
+E.  Any supplemental hearing shall be held in the
+same manner as the original hearing, and the parties concerned
+and their attorneys may be present] shall deliberate and reach
+a decision."
+SECTION 13.  Section 41-5-25 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 9, as amended) is amended to read:
+"41-5-25.  PATIENT'S COMPENSATION FUND--THIRD-PARTY
+ADMINISTRATOR--ACTUARIAL STUDIES--SURCHARGES--CLAIMS--
+PRORATION--PROOFS OF AUTHENTICITY.--
+A.  [There is created in the state treasury a] The
+"patient's compensation fund" [to be collected and received by
+the superintendent for exclusive use for the purposes stated in
+the Medical Malpractice Act] is created as a nonreverting fund
+in the state treasury.  The fund consists of money from
+.218619.2AIC March 19, 2021 (9:03am)
+- 28 -
+===== PAGE 29 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+surcharges, income from investment of the fund and any other
+money deposited to the credit of the fund.  The fund [and any
+income from it] shall be held in trust, deposited in a
+segregated account in the state treasury and invested [and
+reinvested by the superintendent with the prior approval of the
+state board of finance] by the state investment office and
+shall not become a part of or revert to the general fund or any
+other fund of [this] the state.  [The fund and any income]
+Money from the fund shall [only] be expended only for the
+purposes of and to the extent provided in the Medical
+Malpractice Act.  [The superintendent shall have the authority
+to use fund money to purchase insurance for the fund and its
+obligations] All approved expenses of collecting, protecting
+and administering the fund, including purchasing insurance for
+the fund, shall be paid from the fund.
+B.  The superintendent shall contract for the
+administration and operation of the fund with a qualified,
+licensed third-party administrator, selected in consultation
+with the advisory board, no later than January 1, 2022.  The
+third-party administrator shall provide an annual audit of the
+fund to the superintendent.
+C.  The superintendent, as custodian of the
+[patient's compensation] fund, and the third-party
+administrator shall be notified by the health care provider or
+.218619.2AIC March 19, 2021 (9:03am)
+- 29 -
+===== PAGE 30 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+[his] the health care provider's insurer within thirty days of
+service on the health care provider of a complaint asserting a
+malpractice claim brought in a court in this state against the
+health care provider.
+[B.  To create the patient's compensation fund] D. 
+The superintendent shall levy an annual surcharge [shall be
+levied] on all New Mexico health care providers qualifying
+under [Paragraph (1) of Subsection A of] Section 41-5-5 NMSA
+1978 [in New Mexico].  The surcharge shall be determined by the
+superintendent [based upon sound actuarial principles, using
+data obtained from New Mexico experience if available] with the
+advice of the advisory board and based on the annual
+independent actuarial study of the fund.  The surcharges for
+health care providers, including hospitals and outpatient
+health care facilities whose qualifications for the fund end on
+January 1, 2027, shall be based on sound actuarial principles,
+using data obtained from New Mexico claims and loss experience. 
+A hospital or outpatient health care facility seeking
+participation in the fund during the remaining qualifying years
+shall provide, at a minimum, the hospital's or outpatient
+health care facility's direct and indirect cost information as
+reported to the federal centers for medicare and medicaid
+services for all self-insured malpractice claims, including
+claims and paid loss detail, and the claims and paid loss
+.218619.2AIC March 19, 2021 (9:03am)
+- 30 -
+===== PAGE 31 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+detail from any professional liability insurance carriers for
+each hospital or outpatient health care facility and each
+employed health care provider for the past eight years to the
+third-party actuary.  The same information shall be available
+to the advisory board for review, including financial
+information and data, and excluding individually identifying
+case information, which information shall not be subject to the
+Inspection of Public Records Act.  The superintendent, the
+third-party actuary or the advisory board shall not use or
+disclose the information for any purpose other than to fulfill
+the duties pursuant to this subsection.
+E.  The surcharge shall be collected on the same
+basis as premiums by each insurer from the health care
+provider.  [C.] The surcharge [with accrued interest] shall be
+due and payable within thirty days after the premiums for
+malpractice liability insurance have been received by the
+insurer from the health care provider in New Mexico.  [D.] If
+the [annual premium] surcharge is collected but not paid
+[within the time limit specified in Subsection C of this
+section] timely, the superintendent may suspend the certificate
+of authority of the insurer [may be suspended] until the annual
+premium surcharge is paid.
+[E.  All expenses of collecting, protecting and
+administering the patient's compensation fund or of purchasing
+.218619.2AIC March 19, 2021 (9:03am)
+- 31 -
+===== PAGE 32 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+insurance for the fund shall be paid from the fund.]
+F.  Surcharges shall be set by October 31 of each
+year for the next calendar year.  Beginning in 2021, the
+surcharges shall be set with the intention of bringing the fund
+to solvency with no projected deficit by December 31, 2026. 
+All qualified and participating hospitals and outpatient health
+care facilities shall cure any fund deficit attributable to
+hospitals and outpatient health care facilities by December 31,
+2026.
+[F.  Claims payable pursuant to Laws 1976, Chapter
+2, Section 30 shall be paid in accordance with the payment
+schedule constructed by the court.]
+G.  If the [patient's compensation] fund would be
+exhausted by payment of all claims allowed during a particular
+calendar year, then the amounts paid to each patient and other
+parties obtaining judgments shall be prorated, with each such
+party receiving an amount equal to the percentage [his] the
+party's own payment schedule bears to the total of payment
+schedules outstanding and payable by the fund.  Any amounts due
+and unpaid as a result of such proration shall be paid in the
+following calendar years.  [However, payments for medical care
+and related benefits shall be made before any payment made
+under Laws 1976, Chapter 2, Section 30.
+G.] H.  Upon receipt of one of the proofs of
+.218619.2AIC March 19, 2021 (9:03am)
+- 32 -
+===== PAGE 33 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+authenticity listed in this subsection, reflecting a judgment
+for damages rendered pursuant to the Medical Malpractice Act,
+the superintendent shall issue or have issued warrants in
+accordance with the payment schedule constructed by the court
+and made a part of its final judgment.  The only claim against
+the [patient's compensation] fund shall be a voucher or other
+appropriate request by the superintendent after [he] the
+superintendent receives:
+(1)  until January 1, 2022, a certified copy of
+a final judgment in excess of two hundred thousand dollars
+($200,000) against a health care provider;
+(2)  until January 1, 2022, a certified copy of
+a court-approved settlement or certification of settlement made
+prior to initiating suit, signed by both parties, in excess of
+two hundred thousand dollars ($200,000) against a health care
+provider; or
+(3)  until January 1, 2022, a certified copy of
+a final judgment less than two hundred thousand dollars
+($200,000) and an affidavit of a health care provider or its
+insurer attesting that payments made pursuant to Subsection [E]
+B of Section 41-5-7 NMSA 1978, combined with the monetary
+recovery, exceed two hundred thousand dollars ($200,000).
+[H.  The superintendent shall contract for an
+independent actuarial study of the patient's compensation fund
+.218619.2AIC March 19, 2021 (9:03am)
+- 33 -
+===== PAGE 34 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+to be performed not less than once every two years.]
+I.  On or after January 1, 2022, the amounts
+specified in Paragraphs (1) through (3) of Subsection H of this
+section shall be two hundred fifty thousand dollars
+($250,000)."
+SECTION 14.  A new section of the Medical Malpractice Act,
+Section 41-5-25.1 NMSA 1978, is enacted to read:
+"41-5-25.1.  [NEW MATERIAL] PATIENT'S COMPENSATION FUND
+ADVISORY BOARD--CREATED--MEMBERSHIP--POWERS AND DUTIES.--
+A.  The "patient's compensation fund advisory board"
+is created to advise the superintendent and the third-party
+administrator.  The office of superintendent of insurance shall
+provide staff services to the advisory board.  The advisory
+board shall be established by July 2, 2021. 
+B.  The nine-member advisory board shall be consist
+of:
+(1)  two representatives from the New Mexico
+trial lawyers association;
+(2)  two representatives of a statewide
+association representing hospitals;
+(3)  two representatives of a statewide
+association representing physicians;
+(4)  two patient or patient advocate
+representatives; and
+.218619.2AIC March 19, 2021 (9:03am)
+- 34 -
+===== PAGE 35 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+(5)  one representative of a statewide
+association representing certified nurse practitioners.
+C.  Members of the advisory board shall be chosen
+annually by their organizations, as applicable, and the patient
+or patient advocate representatives shall be chosen by the
+chief justice of the supreme court from nominations made by the
+New Mexico trial lawyers association.  Members of the advisory
+board are entitled to receive per diem and mileage pursuant to
+the Per Diem and Mileage Act, but shall receive no other
+compensation, perquisite or allowance.
+D.  The advisory board shall elect a chair and a
+vice chair.  A majority of the members constitutes a quorum for
+the transaction of business.  All decisions of the advisory
+board shall be by majority vote of the members present.
+E.  The advisory board shall convene at least twice
+a year or at the request of the superintendent to:
+(1)  review the process and data for the
+setting of the surcharges for all qualified health care
+providers pursuant to the Medical Malpractice Act; 
+(2)  advise the superintendent concerning
+surcharge data accumulation and results; 
+(3)  advise the superintendent on the
+surcharges to be set by the superintendent; and 
+(4)  prepare an annual report to the
+.218619.2AIC March 19, 2021 (9:03am)
+- 35 -
+===== PAGE 36 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+legislature on the operations and financial condition of the
+fund no later than the first day of each year's legislative
+session."
+SECTION 15.  Section 41-5-28 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 29, as amended) is amended to read:
+"41-5-28.  PAYMENT OF MEDICAL REVIEW COMMISSION EXPENSES.-
+-Unless otherwise provided by law, expenses incurred in
+carrying out the powers, duties and functions of the New Mexico
+medical review commission, including the salary of the director
+of the commission, shall be paid by the [patient's
+compensation] fund.  The superintendent, in [his] the
+superintendent's capacity as custodian of the fund, shall
+disburse fund money to the director upon receipt of vouchers
+itemizing expenses incurred by the [New Mexico medical review]
+commission.  The director shall supply the chief justice of the
+New Mexico supreme court with duplicates of all vouchers
+submitted to the superintendent.  Expenses of the commission
+paid by the fund shall not exceed [three hundred fifty thousand
+dollars ($350,000)] five hundred thousand dollars ($500,000) in
+any single calendar year; provided, however, that expenses
+incurred in defending the commission shall not be subject to
+that maximum amount."
+SECTION 16.  Section 41-5-29 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 10) is amended to read:
+.218619.2AIC March 19, 2021 (9:03am)
+- 36 -
+===== PAGE 37 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+"41-5-29.  FUND REPORTS.--On January 31 of each year, the
+superintendent shall, upon request, provide a written report to
+all interested persons of the following information:
+A.  the beginning and ending calendar year balances
+in the [patient's compensation] fund;
+B.  an itemized accounting of the total amount of
+contributions to the [patient's compensation] fund; [and]
+C.  all information regarding closed claims files,
+including an itemized accounting of all payments paid out; and
+[C.] D.  any other information regarding the
+[patient's compensation] fund that the superintendent or the
+legislature considers to be important."
+SECTION 17.  REPEAL.--Sections 41-5-2 and 41-5-10 NMSA
+1978 (being Laws 1976, Chapter 2, Sections 2 and 10) are
+repealed.
+SECTION 18.  EFFECTIVE DATES.--
+A.  The effective date of Sections 7, 13 and 14 of
+this act is July 1, 2021.
+B.  The effective date Sections 1 through 6, 8
+through 12 and 15 through 17 of this act is January 1,
+2022.»SJC»Sfl1
+Sfl1ºSfl1ºSECTION 1.  Section 41-5-3 NMSA 1978 (being
+Laws 1976, Chapter 2, Section 3, as amended) is amended to
+read:
+.218619.2AIC March 19, 2021 (9:03am)
+===== PAGE 38 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+"41-5-3.  DEFINITIONS.--As used in the Medical Malpractice
+Act:
+A.  "health care provider" means a person,
+corporation, organization, facility or institution licensed or
+certified by this state to provide health care or professional
+services as a doctor of medicine, [hospital] outpatient health
+care facility, doctor of osteopathy, chiropractor, podiatrist,
+nurse anesthetist or physician's assistant;
+B.  "insurer" means an insurance company engaged in
+writing health care provider malpractice liability insurance in
+this state;
+C.  "malpractice claim" includes any cause of action
+arising in this state against a health care provider for
+medical treatment, lack of medical treatment or other claimed
+departure from accepted standards of health care [which] that
+proximately results in injury to the patient, whether the
+patient's claim or cause of action sounds in tort or contract,
+and includes [but is not limited to] actions based on battery
+or wrongful death; "malpractice claim" does not include a cause
+of action arising out of the driving, flying or nonmedical acts
+involved in the operation, use or maintenance of a vehicular or
+aircraft ambulance;
+D.  "medical care and related benefits" means all
+reasonable medical, surgical, physical rehabilitation and
+.218619.2AIC March 19, 2021 (9:03am)
+- 38 -
+===== PAGE 39 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+custodial services and includes drugs, prosthetic devices and
+other similar materials reasonably necessary in the provision
+of such services;
+E.  "patient" means a natural person who received or
+should have received health care from a licensed health care
+provider, under a contract, express or implied; and
+F.  "superintendent" means the superintendent of
+insurance [of this state]."
+SECTION 2.  Section 41-5-5 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 2) is amended to read:
+"41-5-5.  QUALIFICATIONS.--
+A.  To be qualified under the provisions of the
+Medical Malpractice Act, a health care provider shall:
+(1)  establish its financial responsibility by
+filing proof with the superintendent that the health care
+provider is insured by a policy of malpractice liability
+insurance issued by an authorized insurer in the amount of at
+least two hundred thousand dollars ($200,000) per occurrence or
+for an individual health care provider, excluding [hospitals
+and] outpatient health care facilities, by having continuously
+on deposit the sum of six hundred thousand dollars ($600,000)
+in cash with the superintendent or such other like deposit as
+the superintendent may allow by rule or regulation; provided
+that in the absence of an additional deposit or policy as
+.218619.2AIC March 19, 2021 (9:03am)
+- 39 -
+===== PAGE 40 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+required by this subsection, the deposit or policy shall
+provide coverage for not more than three separate occurrences;
+and
+(2)  pay the surcharge assessed on health care
+providers by the superintendent pursuant to Section 41-5-25
+NMSA 1978.
+B.  For [hospitals or] outpatient health care
+facilities electing to be covered under the Medical Malpractice
+Act, the superintendent shall determine, based on a risk
+assessment of each [hospital or] outpatient health care
+facility, each [hospital's or] outpatient health care
+facility's base coverage or deposit and additional charges for
+the patient's compensation fund.  The superintendent shall
+arrange for an actuarial study, as provided in Section 41-5-25
+NMSA 1978.
+C.  A health care provider not qualifying under this
+section shall not have the benefit of any of the provisions of
+the Medical Malpractice Act in the event of a malpractice claim
+against it."»Sfl1»Sfl1
+Sfl1ºSECTION 1.  Section 41-5-3 NMSA 1978 (being Laws
+1976, Chapter 2, Section 3, as amended) is amended to read:
+"41-5-3.  DEFINITIONS.--As used in the Medical Malpractice
+Act:
+A.  "advisory board" means the patient's
+.218619.2AIC March 19, 2021 (9:03am)
+- 40 -
+===== PAGE 41 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+compensation fund advisory board;
+B.  "fund" means the patient's compensation fund;
+[A.] C.  "health care provider" means a person,
+corporation, organization, facility or institution licensed or
+certified by this state to provide health care or professional
+services as a doctor of medicine, hospital, outpatient health
+care facility, doctor of osteopathy, chiropractor, podiatrist,
+nurse anesthetist, [or] physician's assistant, certified nurse
+practitioner, clinical nurse specialist or certified nurse-
+midwife or a business entity that is organized, incorporated or
+formed pursuant to the laws of New Mexico that provides health
+care services primarily through natural persons identified in
+this subsection;
+D.  "hospital" means a facility licensed as a
+hospital in this state that offers in-patient services, nursing
+or overnight care on a twenty-four-hour basis for diagnosing,
+treating and providing medical, psychological or surgical care
+for three or more separate persons who have a physical or
+mental illness, disease, injury or a rehabilitative condition
+or are pregnant and may offer emergency services.  "Hospital"
+includes a hospital's parent corporation, subsidiary
+corporations or affiliates if incorporated or registered in New
+Mexico; employees and locum tenens providing services at the
+hospital; and agency nurses providing services at the hospital;
+.218619.2AIC March 19, 2021 (9:03am)
+- 41 -
+===== PAGE 42 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+E.  "independent provider" means a doctor of
+medicine, doctor of osteopathy, chiropractor, podiatrist, nurse
+anesthetist, physician's assistant, certified nurse
+practitioner, clinical nurse specialist or certified nurse-
+midwife who is not an employee or not an agent of a hospital or
+outpatient health care facility. "Independent provider"
+includes a business entity that is not a hospital or outpatient
+health care facility that employs or consists of members who
+are licensed or certified as doctors of medicine, doctors of
+osteopathy, chiropractors, podiatrists, nurse anesthetists,
+physician's assistants, certified nurse practitioners, clinical
+nurse specialists or certified nurse-midwives and the business
+entity's employees;
+[B.] F.  "insurer" means an insurance company
+engaged in writing health care provider malpractice liability
+insurance in this state;
+[C.] G.  "malpractice claim" includes any cause of
+action arising in this state against a health care provider for
+medical treatment, lack of medical treatment or other claimed
+departure from accepted standards of health care [which] that
+proximately results in injury to the patient, whether the
+patient's claim or cause of action sounds in tort or contract,
+and includes but is not limited to actions based on battery or
+wrongful death; "malpractice claim" does not include a cause of
+.218619.2AIC March 19, 2021 (9:03am)
+- 42 -
+===== PAGE 43 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+action arising out of the driving, flying or nonmedical acts
+involved in the operation, use or maintenance of a vehicular or
+aircraft ambulance;
+[D.] H.  "medical care and related benefits" means
+all reasonable medical, surgical, physical rehabilitation and
+custodial services and includes drugs, prosthetic devices and
+other similar materials reasonably necessary in the provision
+of such services;
+I.  "occurrence" means all injuries to a patient
+caused by health care providers' successive acts or omissions
+that combined concurrently to create a malpractice claim;
+J.  "outpatient health care facility" means an
+entity that is licensed pursuant to the Public Health Act as an
+outpatient facility, including ambulatory surgical centers,
+free-standing emergency rooms, urgent care clinics, acute care
+centers and intermediate care facilities and includes a
+facility's employees, locum tenens providers and agency nurses
+providing services at the facility.  "Outpatient health care
+facility" does not include independent providers;
+[E.] K.  "patient" means a natural person who
+received or should have received health care from a [licensed]
+health care provider under a contract, express or implied; and
+[F.] L.  "superintendent" means the superintendent
+of insurance [of this state]."
+.218619.2AIC March 19, 2021 (9:03am)
+- 43 -
+===== PAGE 44 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+SECTION 2.  Section 41-5-5 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 2) is amended to read:
+"41-5-5.  QUALIFICATIONS.--
+A.  To be qualified under the provisions of the
+Medical Malpractice Act, a health care provider shall:
+(1)  establish its financial responsibility by
+filing proof with the superintendent that the health care
+provider is insured by a policy of malpractice liability
+insurance issued by an authorized insurer in the amount of at
+least [two hundred thousand dollars ($200,000)] two hundred
+fifty thousand dollars ($250,000) per occurrence or [for an
+individual health care provider, excluding hospitals and
+outpatient health care facilities] by having continuously on
+deposit the sum of [six hundred thousand dollars ($600,000)]
+seven hundred fifty thousand dollars ($750,000) in cash with
+the superintendent or such other like deposit as the
+superintendent may allow by rule [or regulation]; provided that
+hospitals and outpatient health care facilities that establish
+financial responsibility through a policy of malpractice
+liability insurance may use any form of malpractice insurance;
+and provided further that for independent providers, in the
+absence of an additional deposit or policy as required by this
+subsection, the deposit or policy shall provide coverage for
+not more than three separate occurrences; and
+.218619.2AIC March 19, 2021 (9:03am)
+- 44 -
+===== PAGE 45 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+(2)  pay the surcharge assessed on health care
+providers by the superintendent pursuant to Section 41-5-25
+NMSA 1978.
+B.  For hospitals or outpatient health care
+facilities electing to be covered under the Medical Malpractice
+Act, the superintendent shall determine, based on a risk
+assessment of each hospital or outpatient health care facility,
+each hospital's or outpatient health care facility's base
+coverage or deposit and additional charges for the [patient's
+compensation] fund.  The superintendent shall arrange for an
+actuarial study [as provided in Section 41-5-25 NMSA 1978]
+before determining base coverage or deposit and surcharges.
+C.  A health care provider not qualifying under this
+section shall not have the benefit of any of the provisions of
+the Medical Malpractice Act in the event of a malpractice claim
+against it; provided that beginning July 1, 2021, hospitals and
+outpatient health care facilities shall not participate in the
+medical review process, and beginning January 1, 2027,
+hospitals and outpatient health care facilities shall have the
+benefits of the other provisions of the Medical Malpractice Act
+except participation in the fund."
+SECTION 3.  Section 41-5-6 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 4) is amended to read:
+"41-5-6.  LIMITATION OF RECOVERY.--
+.218619.2AIC March 19, 2021 (9:03am)
+- 45 -
+===== PAGE 46 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+A.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from any injury or
+death to a patient as a result of malpractice shall not exceed
+six hundred thousand dollars ($600,000) per occurrence for
+malpractice claims brought against health care providers if the
+injury or death occurred prior to January 1, 2022.  In jury
+cases, the jury shall not be given any instructions dealing
+with this limitation. 
+B.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from any injury or
+death to a patient as a result of malpractice shall not exceed
+seven hundred fifty thousand dollars ($750,000) per occurrence
+for malpractice claims against independent providers.  The
+aggregate dollar amount includes payment to any person for any
+number of loss of consortium claims or other claims per
+occurrence that arise solely because of the injuries or death
+of the patient.  In jury cases, the jury shall not be given any
+instructions dealing with this limitation.  Beginning January
+1, 2023, the per occurrence limit on recovery shall be adjusted
+annually by the consumer price index for all urban consumers.
+C.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+.218619.2AIC March 19, 2021 (9:03am)
+- 46 -
+===== PAGE 47 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+four million dollars ($4,000,000) per occurrence for claims
+brought against a hospital or outpatient health care facility
+if the injury or death occurred in calendar year 2022.  The
+aggregate dollar amount includes payment to any person for any
+number of loss of consortium claims or other claims per
+occurrence that arise solely because of the injuries or death
+of the patient.  In jury cases, the jury shall not be given any
+instructions dealing with this limitation.
+D.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+four million five hundred thousand dollars ($4,500,000) per
+occurrence for claims brought against a hospital or outpatient
+health care facility if the injury or death occurred in
+calendar year 2023.  The aggregate dollar amount includes
+payment to any person for any number of loss of consortium
+claims or other claims per occurrence that arise solely because
+of the injuries or death of the patient.  In jury cases, the
+jury shall not be given any instructions dealing with this
+limitation.
+E.  Except for punitive damages and past and future
+.218619.2AIC March 19, 2021 (9:03am)
+- 47 -
+===== PAGE 48 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+five million dollars ($5,000,000) per occurrence for claims
+brought against a hospital or outpatient health care facility
+if the injury or death occurred in calendar year 2024.  The
+aggregate dollar amount includes payment to any person for any
+number of loss of consortium claims or other claims per
+occurrence that arise solely because of the injuries or death
+of the patient.  In jury cases, the jury shall not be given any
+instructions dealing with this limitation.
+F.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+five million five hundred thousand dollars ($5,500,000) per
+occurrence for claims brought against a hospital or outpatient
+health care facility if the injury or death occurred in
+calendar year 2025.  The aggregate dollar amount includes
+payment to any person for any number of loss of consortium
+claims or other claims per occurrence that arise solely because
+of the injuries or death of the patient.  In jury cases, the
+jury shall not be given any instructions dealing with this
+limitation.
+.218619.2AIC March 19, 2021 (9:03am)
+- 48 -
+===== PAGE 49 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+G.  Except for punitive damages and past and future
+medical care and related benefits, the aggregate dollar amount
+recoverable by all persons for or arising from an injury or
+death to a patient as a result of malpractice shall not exceed
+six million dollars ($6,000,000) per occurrence for claims
+brought against a hospital or outpatient health care facility
+if the injury or death occurred in 2026; provided that
+beginning January 1, 2027, the per occurrence limit shall be
+adjusted annually by the consumer price index for all urban
+consumers.  The aggregate dollar amount includes payment to any
+person for any number of loss of consortium claims or other
+claims per occurrence that arise solely because of the injuries
+or death of the patient.  In jury cases, the jury shall not be
+given any instructions dealing with this limitation.
+[B.] H.  The value of accrued medical care and
+related benefits shall not be subject to [the six hundred
+thousand dollar ($600,000)] any limitation.
+[C.  Monetary damages shall not be awarded for
+future medical expenses in malpractice claims.
+D.] I.  A health care provider's personal liability
+is limited to [two hundred thousand dollars ($200,000)] two
+hundred fifty thousand dollars ($250,000) for monetary damages
+and medical care and related benefits as provided in Section
+41-5-7 NMSA 1978.  Any amount due from a judgment or settlement
+.218619.2AIC March 19, 2021 (9:03am)
+- 49 -
+===== PAGE 50 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+in excess of [two hundred thousand dollars ($200,000)] two
+hundred fifty thousand dollars ($250,000) shall be paid from
+the [patient's compensation] fund [as provided in Section 41-5-
+25 NMSA 1978] except as provided in Subsection K of this
+section.
+[E.  For the purposes of Subsections A and B of this
+section, the six hundred thousand dollar ($600,000) aggregate
+amount recoverable by all persons for or arising from any
+injury or death to a patient as a result of malpractice shall
+apply only to malpractice occurring on or after April 1, 1995.]
+J.  The term "occurrence" shall not be construed in
+such a way as to limit recovery to only one maximum statutory
+payment if separate acts or omissions cause additional or
+enhanced injury or harm as a result of the separate acts or
+omissions.  A patient who suffers two or more distinct injuries
+as a result of two or more different acts or omissions that
+occur at different times by one or more health care providers
+is entitled to up to the maximum statutory recovery for each
+injury.
+K.  Until January 1, 2027, amounts due from a
+judgment or settlement against a hospital or outpatient health
+care facility in excess of seven hundred fifty thousand dollars
+($750,000), excluding past and future medical expenses, shall
+be paid by the hospital or  outpatient health care facility and
+.218619.2AIC March 19, 2021 (9:03am)
+- 50 -
+===== PAGE 51 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+not by the fund.  Beginning January 1, 2027, amounts due from a
+judgment or settlement against a hospital or outpatient health
+care facility shall not be paid from the fund."
+SECTION 4.  Section 41-5-7 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 5, as amended by Laws 1992, Chapter 33,
+Section 6) is amended to read:
+"41-5-7.  [FUTURE] MEDICAL EXPENSES AND PUNITIVE 
+DAMAGES.--
+[A.  In all malpractice claims where liability is
+established, the jury shall be given a special interrogatory
+asking if the patient is in need of future medical care and
+related benefits.  No inquiry shall be made concerning the
+value of future medical care and related benefits, and evidence
+relating to the value of future medical care shall not be
+admissible.  In actions upon malpractice claims tried to the
+court, where liability is found, the court's findings shall
+include a recitation that the patient is or is not in need of
+future medical care and related benefits.
+B.  Except as provided in Section 41-5-10 NMSA 1978,
+once a judgment is entered in favor of a patient who is found
+to be in need of future medical care and related benefits or a
+settlement is reached between a patient and health care
+provider in which the provision of medical care and related
+benefits is agreed upon, and continuing as long as medical or
+.218619.2AIC March 19, 2021 (9:03am)
+- 51 -
+===== PAGE 52 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+surgical attention is reasonably necessary, the patient shall
+be furnished with all medical care and related benefits
+directly or indirectly made necessary by the health care
+provider's malpractice, subject to a semi-private room
+limitation in the event of hospitalization, unless the patient
+refuses to allow them to be so furnished.
+C.] A.  Awards of past and future medical care and
+related benefits shall not be subject to the [six hundred
+thousand dollar ($600,000) limitation] limitations of recovery
+imposed in Section 41-5-6 NMSA 1978.
+[D.  Payment for medical care and related benefits
+shall be made as expenses are incurred.
+E.] B.  The health care provider shall be liable for
+all medical care and related benefit payments until the total
+payments made by or on behalf of it for monetary damages and
+medical care and related benefits combined equals [two hundred
+thousand dollars ($200,000)] the health care provider's
+personal liability limit as provided in Subsection I of Section
+41-5-6 NMSA 1978, after which the payments shall be made by the
+[patient's compensation] fund.
+C.  Beginning January 1, 2027, any amounts due from
+a judgment or settlement against a hospital or outpatient
+health care facility shall not be paid from the fund if the
+injury or death occurred after December 31, 2026.
+.218619.2AIC March 19, 2021 (9:03am)
+- 52 -
+===== PAGE 53 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+[F.] D.  This section shall not be construed to
+prevent a patient and a health care provider from entering into
+a settlement agreement whereby medical care and related
+benefits shall be provided for a limited period of time only or
+to a limited degree.
+[G.  The court in a supplemental proceeding shall
+estimate the value of the future medical care and related
+benefits reasonably due the patient on the basis of evidence
+presented to it.  That figure shall not be included in any
+award or judgment but shall be included in the record as a
+separate court finding.
+H.] E.  A judgment of punitive damages against a
+health care provider shall be the personal liability of the
+health care provider.  Punitive damages shall not be paid from
+the [patient's compensation] fund or from the proceeds of the
+health care provider's insurance contract unless the contract
+expressly provides coverage.  Nothing in Section 41-5-6 NMSA
+1978 precludes the award of punitive damages to a patient. 
+Nothing in this subsection authorizes the imposition of
+liability for punitive damages [on a derivative basis] where
+that imposition would not be otherwise authorized by law."
+SECTION 5.  Section 41-5-9 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 9) is amended to read:
+"41-5-9.  DISTRICT COURT--CONTINUING JURISDICTION.--[A.]
+.218619.2AIC March 19, 2021 (9:03am)
+- 53 -
+===== PAGE 54 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+The district court from which final judgment [issues] issued
+shall have continuing jurisdiction in cases where future
+medical care and related benefits [are] were awarded pursuant
+to Section [7] 41-5-7 NMSA 1978 for malpractice claims arising
+from occurrences prior to July 1, 2021.
+[B.  In all cases where the patient's continued need
+of such benefits or the degree to which such benefits are
+needed is challenged at a point in time after a judgment is
+entered, the court, sitting without a jury, shall determine
+whether such need continues to exist and the extent of such
+need.
+C.  Whenever a patient petitions the district court
+for an increase in medical care and related benefits, the
+petition shall be set down for hearing at the earliest possible
+time and takes precedence over all matters except older matters
+of the same character and motions for preliminary injunctions
+filed pursuant to Section 21-1-1 (65, 66) NMSA 1953.
+D.  The health care provider shall have the burden
+of proving that the patient's need for benefits has subsided or
+abated or that medical care and related benefits are not
+reasonably necessary, which it shall establish by clear and
+convincing evidence.  The patient shall have the burden of
+proving that his need for medical care and related benefits has
+increased, which he shall establish by a preponderance of the
+.218619.2AIC March 19, 2021 (9:03am)
+- 54 -
+===== PAGE 55 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+evidence.]"
+SECTION 6.  Section 41-5-13 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 13) is amended to read:
+"41-5-13.  LIMITATIONS.--No claim for malpractice [arising
+out of an act of malpractice which occurred subsequent to the
+effective date of the Medical Malpractice Act] may be brought
+against a health care provider unless filed within three years
+after the date that the act of malpractice occurred, except
+that [a minor under the full age of six years shall have until
+his ninth birthday in which to file.  This subsection applies
+to all persons regardless of minority or other legal
+disability] the times limited for the bringing of actions by
+minors and incapacitated persons shall be extended so that they
+shall have one year from and after the age of majority or
+termination of incapacity within which to commence the
+actions."
+SECTION 7.  Section 41-5-14 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 14) is amended to read:
+"41-5-14.  MEDICAL REVIEW COMMISSION--INDEPENDENT
+PROVIDERS.--
+A.  The "New Mexico medical review commission" is
+created.  The function of the New Mexico medical review
+commission is to provide panels to review all malpractice
+.218619.2AIC March 19, 2021 (9:03am)
+- 55 -
+===== PAGE 56 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+claims against [health care] independent providers who are
+natural persons covered by the Medical Malpractice Act.
+B.  Those eligible to sit on a panel shall consist
+of health care providers licensed pursuant to New Mexico law
+and residing in New Mexico and [the] members of the state bar.
+C.  The only cases [which] that a panel will
+consider [include all] are cases involving [any] an alleged act
+of malpractice occurring in New Mexico by [health care
+providers] an independent provider qualified under the Medical
+Malpractice Act.  Beginning July 1, 2021, cases involving an
+alleged act of malpractice by a hospital or outpatient health
+care facility shall not be considered and such claims shall not
+be filed with the New Mexico medical review commission.
+D.  An attorney shall submit a case for the
+consideration of a panel, prior to filing a complaint in any
+district court or other court sitting in New Mexico, by
+addressing an application, in writing, signed by the patient or
+[his] the patient's attorney, to the director of the New Mexico
+medical review commission.
+E.  The director of the New Mexico medical review
+commission [will] shall be an attorney appointed by and serving
+at the pleasure of the chief justice of the New Mexico supreme
+court.
+F.  The chief justice shall set the director's
+.218619.2AIC March 19, 2021 (9:03am)
+- 56 -
+===== PAGE 57 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+salary and report the [same] salary to the superintendent in
+[his] the superintendent's capacity as custodian of the
+[patient's compensation] fund."
+SECTION 8.  Section 41-5-15 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 15) is amended to read:
+"41-5-15.  COMMISSION DECISION REQUIRED--APPLICATION.--
+A.  No malpractice action may be filed in any court
+against a qualifying [health care] independent provider or the
+independent provider's employer, master or principal based on a
+theory of respondeat superior or any other derivative theory of
+recovery before application is made to the New Mexico medical
+review commission and its decision is rendered; provided,
+however, that an independent provider and the patient may
+stipulate to forego the panel process.
+B.  This application shall contain the following:
+[(1)  a brief statement of the facts of the
+case, naming the persons involved, the dates and the
+circumstances, so far as they are known, of the alleged act or
+acts of malpractice; and] 
+(1)  the name of the health care provider
+against which the claims are asserted;
+(2)  a short and plain statement of the grounds
+as to why the New Mexico medical review commission has
+jurisdiction over the claims being asserted;
+.218619.2AIC March 19, 2021 (9:03am)
+- 57 -
+===== PAGE 58 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+(3)  the specific date or date range when the
+malpractice allegedly occurred;
+(4)  so far as known, a brief statement of the
+facts supporting the patient's malpractice claim; and
+[(2)] (5)  a statement authorizing the panel to
+obtain access to all medical and hospital records and
+information pertaining to the matter giving rise to the
+application and, for the purposes of its consideration of the
+matter only, waiving any claim of privilege as to the contents
+of those records.  Nothing in that statement shall in any way
+be construed as waiving that privilege for any other purpose or
+in any other context, in or out of court."
+SECTION 9.  Section 41-5-16 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 16) is amended to read:
+"41-5-16.  APPLICATION PROCEDURE.--
+A.  Upon receipt of an application for review, the
+New Mexico medical review commission's director or [his
+delegate] the director's designee shall cause to be served a
+true copy of the application on the [health care] independent
+providers [involved] against which claims are asserted. 
+Service shall be effected pursuant to New Mexico law.  If the
+[health care] independent provider involved chooses to retain
+legal counsel, [his] the independent provider's attorney shall
+informally enter [his] an appearance with the director.
+.218619.2AIC March 19, 2021 (9:03am)
+- 58 -
+===== PAGE 59 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+B.  The [health care] independent provider shall
+answer the application for review and in addition shall submit
+a statement authorizing the panel to obtain access to all
+medical and hospital records and information pertaining to the
+matter giving rise to the application and, for the purposes of
+its consideration of the matter only, waiving any claim of
+privilege as to the contents of those records.  Nothing in that
+statement shall in any way be construed as waiving that
+privilege for any other purpose or in any other context, in or
+out of court.
+C.  In instances where applications are received
+employing the theory of respondeat superior or some other
+derivative theory of recovery, the director shall forward such
+applications to the state professional societies, associations
+or licensing boards of both the individual [health care]
+independent provider whose alleged malpractice caused the
+application to be filed and the [health care] independent
+provider named a respondent as employer, master or principal."
+SECTION 10.  Section 41-5-17 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 17) is amended to read:
+"41-5-17.  PANEL SELECTION.--
+A.  Applications for review shall be promptly
+transmitted by the director of the New Mexico medical review
+commission to the directors of the [health care] independent
+.218619.2AIC March 19, 2021 (9:03am)
+- 59 -
+===== PAGE 60 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+provider's state professional society or association and the
+state bar association, who shall each select three panelists
+within thirty days from the date of transmittal of the
+application.
+B.  If no state professional society or association
+exists or if the [health care] independent provider does not
+belong to [such] a society or association, the director shall
+transmit the application to the [health care] independent
+provider's state licensing board, which shall in turn select
+three persons from the [health care] independent provider's
+profession and, where applicable, [to] two persons specializing
+in the same field or discipline as the [health care]
+independent provider.
+C.  In cases where there are multiple defendants,
+[the case against each health care provider may be reviewed by
+a separate panel, or] a single combined panel [may] shall
+review the [claim] claims against all [parties defendant, at
+the discretion of the director] party defendants.  At the
+discretion of the panel chair, a hearing involving multiple
+defendants may include fewer than three panelists from the
+independent provider's profession and fewer than three lawyer
+panel members per defendant.
+D.  Except for cases involving multiple defendants,
+three panel members from the [health care] independent
+.218619.2AIC March 19, 2021 (9:03am)
+- 60 -
+===== PAGE 61 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+provider's profession and three panel members from the state
+bar association shall sit in review in each case.
+[E.  In those cases where the theory of respondeat
+superior or some other derivative theory of recovery is
+employed, two of the panel members shall be chosen from the
+individual health care provider's profession and one panel
+member shall be chosen from the profession of the health care
+provider named a respondent employer, master or principal.
+F.] E.  The director of the medical review
+commission or [his] the director's delegate, who shall be an
+attorney, shall sit on each panel and serve as [chairman]
+chair.
+[G.  Any] F.  A member shall disqualify [himself]
+the member's self from consideration of [any] a case in which,
+by virtue of [his] circumstances, [he] the member feels [his]
+the member's presence on the panel would be inappropriate,
+considering the purpose of the panel.  The director may excuse
+a proposed panelist from serving.
+[H.] G.  Whenever a party [shall make and file]
+makes and files an affidavit that a panel member selected
+pursuant to this section cannot, according to the belief of the
+party making the affidavit, sit in review of the application
+with impartiality, that panel member shall proceed no further. 
+Another panel member shall be selected by the [health care]
+.218619.2AIC March 19, 2021 (9:03am)
+- 61 -
+===== PAGE 62 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+independent provider's professional association, state
+licensing board or the state bar association, as the case may
+be.  A party may not disqualify more than three proposed panel
+members in this manner in any single malpractice claim."
+SECTION 11.  Section 41-5-18 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 18) is amended to read:
+"41-5-18.  TIME AND PLACE OF HEARING.--A date, time and
+place for hearing shall be fixed by the director of the New
+Mexico medical review commission and prompt notice [thereof] of
+the hearing shall be given to the parties involved, their
+attorneys and the members of the panel.  In no instance shall
+the date set be more than sixty days after the transmittal by
+the director of the application for review, unless good cause
+exists for extending the period.  Hearings may be held anywhere
+in the state [of New Mexico], and the director shall give due
+regard to the convenience of the parties in determining the
+place of hearing.  Upon the request of one party, within ten
+days of the answer filed by the respondent, the hearing shall
+be conducted via video conference, including attorneys,
+witnesses and panel members appearing remotely."
+SECTION 12.  Section 41-5-19 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 19) is amended to read:
+"41-5-19.  HEARING PROCEDURES.--
+A.  At the time set for hearing, the attorney
+.218619.2AIC March 19, 2021 (9:03am)
+- 62 -
+===== PAGE 63 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+submitting the case for review shall be present and shall make
+a brief introduction of [his] the case, including a resume of
+the facts constituting alleged professional malpractice [which
+he is prepared to prove].  The [health care] independent
+provider against whom the claim is brought and [its] the
+independent provider's attorney may be present and may make an
+introductory statement of [its] the independent provider's
+case.
+B.  Both parties may call witnesses to testify
+before the panel, which witnesses shall be sworn.  Medical
+texts, journals, studies and other documentary evidence relied
+upon by either party may be offered and admitted if relevant. 
+Written statements of fact of treating [health care]
+independent providers may be reviewed.  The monetary damages in
+any case shall not be a subject of inquiry or discussion.
+C.  The hearing [will] shall be informal, and no
+official transcript shall be made.  Nothing contained in this
+[paragraph] subsection shall preclude the [taking] recording or
+transcribing of the testimony by the parties at their own
+expense.
+D.  At the conclusion of the hearing, the panel [may
+take the case under advisement or it may request that
+additional facts, records, witnesses or other information be
+obtained and presented to it at a supplemental hearing, which
+.218619.2AIC March 19, 2021 (9:03am)
+- 63 -
+===== PAGE 64 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+shall be set for a date and time certain, not longer than
+thirty days from the date of the original hearing unless the
+attorney bringing the matter for review shall in writing
+consent to a longer period.
+E.  Any supplemental hearing shall be held in the
+same manner as the original hearing, and the parties concerned
+and their attorneys may be present] shall deliberate and reach
+a decision."
+SECTION 13.  Section 41-5-25 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 9, as amended) is amended to read:
+"41-5-25.  PATIENT'S COMPENSATION FUND--THIRD-PARTY
+ADMINISTRATOR--ACTUARIAL STUDIES--SURCHARGES--CLAIMS--
+PRORATION--PROOFS OF AUTHENTICITY.--
+A.  [There is created in the state treasury a] The
+"patient's compensation fund" [to be collected and received by
+the superintendent for exclusive use for the purposes stated in
+the Medical Malpractice Act] is created as a nonreverting fund
+in the state treasury.  The fund consists of money from
+surcharges, income from investment of the fund and any other
+money deposited to the credit of the fund.  The fund [and any
+income from it] shall be held in trust, deposited in a
+segregated account in the state treasury and invested [and
+reinvested by the superintendent with the prior approval of the
+state board of finance] by the state investment office and
+.218619.2AIC March 19, 2021 (9:03am)
+- 64 -
+===== PAGE 65 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+shall not become a part of or revert to the general fund or any
+other fund of [this] the state.  [The fund and any income]
+Money from the fund shall [only] be expended only for the
+purposes of and to the extent provided in the Medical
+Malpractice Act.  [The superintendent shall have the authority
+to use fund money to purchase insurance for the fund and its
+obligations] All approved expenses of collecting, protecting
+and administering the fund, including purchasing insurance for
+the fund, shall be paid from the fund.
+B.  The superintendent shall contract for the
+administration and operation of the fund with a qualified,
+licensed third-party administrator, selected in consultation
+with the advisory board, no later than January 1, 2022.  The
+third-party administrator shall provide an annual audit of the
+fund to the superintendent.
+C.  The superintendent, as custodian of the
+[patient's compensation] fund, and the third-party
+administrator shall be notified by the health care provider or
+[his] the health care provider's insurer within thirty days of
+service on the health care provider of a complaint asserting a
+malpractice claim brought in a court in this state against the
+health care provider.
+[B.  To create the patient's compensation fund] D. 
+The superintendent shall levy an annual surcharge [shall be
+.218619.2AIC March 19, 2021 (9:03am)
+- 65 -
+===== PAGE 66 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+levied] on all New Mexico health care providers qualifying
+under [Paragraph (1) of Subsection A of] Section 41-5-5 NMSA
+1978 [in New Mexico].  The surcharge shall be determined by the
+superintendent [based upon sound actuarial principles, using
+data obtained from New Mexico experience if available] with the
+advice of the advisory board and based on the annual
+independent actuarial study of the fund.  The surcharges for
+health care providers, including hospitals and outpatient
+health care facilities whose qualifications for the fund end on
+January 1, 2027, shall be based on sound actuarial principles,
+using data obtained from New Mexico claims and loss experience. 
+A hospital or outpatient health care facility seeking
+participation in the fund during the remaining qualifying years
+shall provide, at a minimum, the hospital's or outpatient
+health care facility's direct and indirect cost information as
+reported to the federal centers for medicare and medicaid
+services for all self-insured malpractice claims, including
+claims and paid loss detail, and the claims and paid loss
+detail from any professional liability insurance carriers for
+each hospital or outpatient health care facility and each
+employed health care provider for the past eight years to the
+third-party actuary.  The same information shall be available
+to the advisory board for review, including financial
+information and data, and excluding individually identifying
+.218619.2AIC March 19, 2021 (9:03am)
+- 66 -
+===== PAGE 67 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+case information, which information shall not be subject to the
+Inspection of Public Records Act.  The superintendent, the
+third-party actuary or the advisory board shall not use or
+disclose the information for any purpose other than to fulfill
+the duties pursuant to this subsection.
+E.  The surcharge shall be collected on the same
+basis as premiums by each insurer from the health care
+provider.  [C.] The surcharge [with accrued interest] shall be
+due and payable within thirty days after the premiums for
+malpractice liability insurance have been received by the
+insurer from the health care provider in New Mexico.  [D.] If
+the [annual premium] surcharge is collected but not paid
+[within the time limit specified in Subsection C of this
+section] timely, the superintendent may suspend the certificate
+of authority of the insurer [may be suspended] until the annual
+premium surcharge is paid.
+[E.  All expenses of collecting, protecting and
+administering the patient's compensation fund or of purchasing
+insurance for the fund shall be paid from the fund.]
+F.  Surcharges shall be set by October 31 of each
+year for the next calendar year.  Beginning in 2021, the
+surcharges shall be set with the intention of bringing the fund
+to solvency with no projected deficit by December 31, 2026. 
+All qualified and participating hospitals and outpatient health
+.218619.2AIC March 19, 2021 (9:03am)
+- 67 -
+===== PAGE 68 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+care facilities shall cure any fund deficit attributable to
+hospitals and outpatient health care facilities by December 31,
+2026.
+[F.  Claims payable pursuant to Laws 1976, Chapter
+2, Section 30 shall be paid in accordance with the payment
+schedule constructed by the court.]
+G.  If the [patient's compensation] fund would be
+exhausted by payment of all claims allowed during a particular
+calendar year, then the amounts paid to each patient and other
+parties obtaining judgments shall be prorated, with each such
+party receiving an amount equal to the percentage [his] the
+party's own payment schedule bears to the total of payment
+schedules outstanding and payable by the fund.  Any amounts due
+and unpaid as a result of such proration shall be paid in the
+following calendar years.  [However, payments for medical care
+and related benefits shall be made before any payment made
+under Laws 1976, Chapter 2, Section 30.
+G.] H.  Upon receipt of one of the proofs of
+authenticity listed in this subsection, reflecting a judgment
+for damages rendered pursuant to the Medical Malpractice Act,
+the superintendent shall issue or have issued warrants in
+accordance with the payment schedule constructed by the court
+and made a part of its final judgment.  The only claim against
+the [patient's compensation] fund shall be a voucher or other
+.218619.2AIC March 19, 2021 (9:03am)
+- 68 -
+===== PAGE 69 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+appropriate request by the superintendent after [he] the
+superintendent receives:
+(1)  until January 1, 2022, a certified copy of
+a final judgment in excess of two hundred thousand dollars
+($200,000) against a health care provider;
+(2)  until January 1, 2022, a certified copy of
+a court-approved settlement or certification of settlement made
+prior to initiating suit, signed by both parties, in excess of
+two hundred thousand dollars ($200,000) against a health care
+provider; or
+(3)  until January 1, 2022, a certified copy of
+a final judgment less than two hundred thousand dollars
+($200,000) and an affidavit of a health care provider or its
+insurer attesting that payments made pursuant to Subsection [E]
+B of Section 41-5-7 NMSA 1978, combined with the monetary
+recovery, exceed two hundred thousand dollars ($200,000).
+[H.  The superintendent shall contract for an
+independent actuarial study of the patient's compensation fund
+to be performed not less than once every two years.]
+I.  On or after January 1, 2022, the amounts
+specified in Paragraphs (1) through (3) of Subsection H of this
+section shall be two hundred fifty thousand dollars
+($250,000)."
+SECTION 14.  A new section of the Medical Malpractice Act,
+.218619.2AIC March 19, 2021 (9:03am)
+- 69 -
+===== PAGE 70 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+Section 41-5-25.1 NMSA 1978, is enacted to read:
+"41-5-25.1.  [NEW MATERIAL] PATIENT'S COMPENSATION FUND
+ADVISORY BOARD--CREATED--MEMBERSHIP--POWERS AND DUTIES.--
+A.  The "patient's compensation fund advisory board"
+is created to advise the superintendent and the third-party
+administrator.  The office of superintendent of insurance shall
+provide staff services to the advisory board.  The advisory
+board shall be established by July 2, 2021. 
+B.  The nine-member advisory board shall be consist
+of:
+(1)  two representatives from the New Mexico
+trial lawyers association;
+(2)  two representatives of a statewide
+association representing hospitals;
+(3)  two representatives of a statewide
+association representing physicians;
+(4)  two patient or patient advocate
+representatives; and
+(5)  one representative of a statewide
+association representing certified nurse practitioners.
+C.  Members of the advisory board shall be chosen
+annually by their organizations, as applicable, and the patient
+or patient advocate representatives shall be chosen by the
+chief justice of the supreme court from nominations made by the
+.218619.2AIC March 19, 2021 (9:03am)
+- 70 -
+===== PAGE 71 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+New Mexico trial lawyers association.  Members of the advisory
+board are entitled to receive per diem and mileage pursuant to
+the Per Diem and Mileage Act, but shall receive no other
+compensation, perquisite or allowance.
+D.  The advisory board shall elect a chair and a
+vice chair.  A majority of the members constitutes a quorum for
+the transaction of business.  All decisions of the advisory
+board shall be by majority vote of the members present.
+E.  The advisory board shall convene at least twice
+a year or at the request of the superintendent to:
+(1)  review the process and data for the
+setting of the surcharges for all qualified health care
+providers pursuant to the Medical Malpractice Act; 
+(2)  advise the superintendent concerning
+surcharge data accumulation and results; 
+(3)  advise the superintendent on the
+surcharges to be set by the superintendent; and 
+(4)  prepare an annual report to the
+legislature on the operations and financial condition of the
+fund no later than the first day of each year's legislative
+session."
+SECTION 15.  Section 41-5-28 NMSA 1978 (being Laws 1976,
+Chapter 2, Section 29, as amended) is amended to read:
+"41-5-28.  PAYMENT OF MEDICAL REVIEW COMMISSION EXPENSES.-
+.218619.2AIC March 19, 2021 (9:03am)
+- 71 -
+===== PAGE 72 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+-Unless otherwise provided by law, expenses incurred in
+carrying out the powers, duties and functions of the New Mexico
+medical review commission, including the salary of the director
+of the commission, shall be paid by the [patient's
+compensation] fund.  The superintendent, in [his] the
+superintendent's capacity as custodian of the fund, shall
+disburse fund money to the director upon receipt of vouchers
+itemizing expenses incurred by the [New Mexico medical review]
+commission.  The director shall supply the chief justice of the
+New Mexico supreme court with duplicates of all vouchers
+submitted to the superintendent.  Expenses of the commission
+paid by the fund shall not exceed [three hundred fifty thousand
+dollars ($350,000)] five hundred thousand dollars ($500,000) in
+any single calendar year; provided, however, that expenses
+incurred in defending the commission shall not be subject to
+that maximum amount."
+SECTION 16.  Section 41-5-29 NMSA 1978 (being Laws 1992,
+Chapter 33, Section 10) is amended to read:
+"41-5-29.  FUND REPORTS.--On January 31 of each year, the
+superintendent shall, upon request, provide a written report to
+all interested persons of the following information:
+A.  the beginning and ending calendar year balances
+in the [patient's compensation] fund;
+B.  an itemized accounting of the total amount of
+.218619.2AIC March 19, 2021 (9:03am)
+- 72 -
+===== PAGE 73 =====
+underscored material = new
+[bracketed material] = delete
+Amendments: new = ºbold, blue, highlight»
+delete = ºbold, red, highlight, strikethrough»
+contributions to the [patient's compensation] fund; [and]
+C.  all information regarding closed claims files,
+including an itemized accounting of all payments paid out; and
+[C.] D.  any other information regarding the
+[patient's compensation] fund that the superintendent or the
+legislature considers to be important."
+SECTION 17.  REPEAL.--Sections 41-5-2 and 41-5-10 NMSA
+1978 (being Laws 1976, Chapter 2, Sections 2 and 10) are
+repealed.
+SECTION 18.  EFFECTIVE DATES.--
+A.  The effective date of the provisions of Sections
+7, 13 and 14 of this act is July 1, 2021.
+B.  The effective date of the provisions of Sections
+1 through 6, 8 through 12 and 15 through 17 of this act is
+January 1, 2022.»Sfl1
+SJCºHJCºSECTION 3.  EFFECTIVE DATE.--The effective date
+of the provisions of this act is December 31, 2021.»HJC»SJC
+- 73 -
+.218619.2AIC March 19, 2021 (9:03am)
