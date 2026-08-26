@@ -148,6 +148,21 @@ ANNOTATIONS = {
          "Both reciprocity waiver deadlines were extended to December 31, 2027 at the July 9 board meeting, "
          "resolved without objection. The board chair described December 31 as a legislative backstop. "
          "Source: July 9 meeting transcript.")],
+    11: [("open", "The owner statement at a patient's home",
+         "An other approved location may be a patient's residence, and the pathway exists in the first "
+         "instance for a patient who cannot be physically transported to a healing center. Paragraph (9) of "
+         "Subsection B requires proof of ownership of the property by the patient, practitioner, or "
+         "facilitator, or &ldquo;a signed, written statement from the owner of such property acknowledging "
+         "that the owner understands that persons will be participating in the medical psilocybin program "
+         "on the premises&rdquo;. A patient who rents cannot receive treatment at home unless the landlord "
+         "signs that statement, which discloses the household's program participation to a party with no "
+         "role in the patient's care; Paragraph (7) of the same subsection requires a plan for maintaining "
+         "patient confidentiality at the same location. Denali Wilson, in written comments of July 25, "
+         "2026 on the committee's redline, objected that end-of-life patients receiving at-home treatment "
+         "would need landlord permission: &ldquo;We don't require that for any other in home healthcare "
+         "and it's not appropriate to require that for EOL patients. People should not have to get their "
+         "landlords permission to have certain healthcare.&rdquo; Public comment continues through the "
+         "October 2 hearing.")],
     13: [("blue", "New in this text",
          "Two provisions appear here for the first time in the August 25 text: a certifying clinician, "
          "practitioner, or facilitator shall not consume or be under the influence of psilocybin or any "
