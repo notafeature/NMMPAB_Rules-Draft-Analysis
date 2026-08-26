@@ -471,9 +471,9 @@ EVENTS = [
                 "the following week, for potential incorporation before publication.",
         "changed": [
             ("<b>The published text.</b> The July 23 publication and its August 28 hearing "
-             "were set aside; the July 23 text stands as the last published text of this "
-             "rulemaking.",
-             "rule.html", "The last published text"),
+             "were set aside; the July 23 text stood as the last published text of this "
+             "rulemaking until the August 25 revision.",
+             "rule.html", "The published rule"),
             ("<b>The schedule, as the department stated it.</b> Revised rules were placed "
              "at the end of the month, and the rule hearing at the end of September or "
              "early October. The full board meets September 11, afternoon, on the "
