@@ -2,11 +2,11 @@
 
 Drafting material for public comment on the revised proposed rule 7.35.3 NMAC and the proposed amendments to 7.35.2 NMAC, both published August 25, 2026. Written comment is received until the close of the rule hearing, October 2, 2026, and the department has said on the record that changes can still be made through the hearing, as they were in the producer rulemaking.
 
-This file is drafting material, not site content and not a filing. Nothing in it has been submitted to the department. It states proposed edits in the published texts' own strike-and-add convention: struck text in [brackets], inserted text in **bold**. Where a proposal is the committee recommendation's position it is attributed to the recommendation; where it is a community position it is stated as one. The formal redline documents in `amendments/` and `amendments-remainder/` cover the July 23 text; this file drafts against August 25 and does not modify either of those documents. The controlled-substance number, which `amendments-remainder/` excludes by decision, is addressed here in Part 4 as its own track.
+This file is drafting material, not site content and not a filing. Nothing in it has been submitted to the department. It states proposed edits in the published texts' own strike-and-add convention: struck text in [brackets], inserted text in **bold**. Where a proposal is the committee recommendation's position it is attributed to the recommendation; where it is a community position it is stated as one. The formal redline documents in `amendments/` and `amendments-remainder/` cover the July 23 text; this file drafts against August 25 and does not modify either of those documents. The controlled-substance number, which `amendments-remainder/` excludes by decision, is addressed here in Section 4 as its own track.
 
 ---
 
-## Part 1. The role architecture
+## Section 1. The role architecture
 
 The published texts carry three certified individual roles with names that do not describe the work: the certifying clinician, who the department itself described on August 21 as ensuring medical clearance; the practitioner, a name that collides with "nurse practitioner" and says nothing about the role; and the facilitator. The recommendation's architecture names each role by its function and uses "practitioner" for what it is in ordinary language: anyone who practices in the program.
 
@@ -54,15 +54,15 @@ In 7.35.2.7, the qualified patient definition:
 
 > "Qualified patient" or "patient" means a patient whose [certifying clinician] **clinician** has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition.
 
-The Medical Psilocybin Act, Section 3, defines a qualified patient as one "whose clinician has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition"; the amendment substitutes the narrower defined term, certifying clinician. The Act's own architecture is the argument for restoring its word. The Act defines a clinician as "an approved health care provider licensed in New Mexico who holds a permit from the department to provide medical services to qualified patients," and defines medical services as the services "provided to a patient in an approved setting before, during and after the ingestion of psilocybin," including the preparation, administration, and integration sessions. The Act's clinician is therefore the provider who delivers the three sessions, and the Act places the appropriateness judgment with that provider. The published rule creates a separate role that delivers none of the three, gives it the judgment, and requires the controlled-substance number of it. Restoring the Act's word returns the judgment to the clinician who treats the patient, which is where the Act put it. Restoring the Act's word conforms the definition to the statute, and it returns the statutory judgment of medical appropriateness to the clinician umbrella rather than fixing it, by definition, in the one role that carries the controlled-substance number. Part 4 states what follows for the number.
+The Medical Psilocybin Act, Section 3, defines a qualified patient as one "whose clinician has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition"; the amendment substitutes the narrower defined term, certifying clinician. The Act's own architecture is the argument for restoring its word. The Act defines a clinician as "an approved health care provider licensed in New Mexico who holds a permit from the department to provide medical services to qualified patients," and defines medical services as the services "provided to a patient in an approved setting before, during and after the ingestion of psilocybin," including the preparation, administration, and integration sessions. The Act's clinician is therefore the provider who delivers the three sessions, and the Act places the appropriateness judgment with that provider. The published rule creates a separate role that delivers none of the three, gives it the judgment, and requires the controlled-substance number of it. Restoring the Act's word returns the judgment to the clinician who treats the patient, which is where the Act put it. Restoring the Act's word conforms the definition to the statute, and it returns the statutory judgment of medical appropriateness to the clinician umbrella rather than fixing it, by definition, in the one role that carries the controlled-substance number. Section 4 states what follows for the number.
 
 ### 1.5 What this part does not resolve
 
-The controlled-substance number sits inside the published definition, so any redefinition confronts it. Part 4 states the options. A screening-only definition weakens the stated rationale for a prescriber credential, and the two edits can be proposed together or separately.
+The controlled-substance number sits inside the published definition, so any redefinition confronts it. Section 4 states the options. A screening-only definition weakens the stated rationale for a prescriber credential, and the two edits can be proposed together or separately.
 
 ---
 
-## Part 2. The hours and the competency checkpoint
+## Section 2. The hours and the competency checkpoint
 
 ### 2.1 Per-area minimums, or floors in guidance
 
@@ -80,7 +80,7 @@ This answers the department's two stated objections: reciprocity crosswalks show
 
 ### 2.2 Simulated patient hours
 
-The published requirement is 10 hours, split five in person and five flexible, at 7.35.3.18 (C)(2). The recommendation set 2 inside its 80. On August 21, after the department's walkthrough, the committee's hours author supported approximately six, three of exercises and practice and three of simulation, to preserve room for electives. The edit: in (C)(2), [no less than five hours] twice becomes **no less than three hours**, or the paragraph is restated at a six-hour total. The same paragraph needs the drafting correction in Part 3.6 either way.
+The published requirement is 10 hours, split five in person and five flexible, at 7.35.3.18 (C)(2). The recommendation set 2 inside its 80. On August 21, after the department's walkthrough, the committee's hours author supported approximately six, three of exercises and practice and three of simulation, to preserve room for electives. The edit: in (C)(2), [no less than five hours] twice becomes **no less than three hours**, or the paragraph is restated at a six-hour total. The same paragraph needs the drafting correction in Section 3.6 either way.
 
 ### 2.3 The consultation group
 
@@ -94,7 +94,7 @@ The published practicum carries the recommendation's direction without its names
 
 ---
 
-## Part 3. Drafting corrections
+## Section 3. Drafting corrections
 
 Corrections the text needs regardless of any position, each with the language that resolves it. All are carried in fuller form in `analysis/8-25-published-delta.md` part 6 and the site's provision notes.
 
@@ -124,7 +124,7 @@ Corrections the text needs regardless of any position, each with the language th
 
 ---
 
-## Part 4. The controlled-substance number
+## Section 4. The controlled-substance number
 
 Not a recommendation item; a community position with its own record since June. The requirement now lives in three places, so the full edit is three strikes:
 
@@ -132,19 +132,17 @@ Not a recommendation item; a community position with its own record since June. 
 - Strike 7.35.3.9 (D)(2), "NM controlled substance number," from the application packet, renumbering the list.
 - In 7.35.3.8 (B)(3), strike the number from the patient application's record of the clinician's licensure.
 
-The middle positions on the record, if the full strike is not taken: the consultation model (July 9, board member Chris Peskuski) and the behavioral-health referral with telemedicine (July 9, Keenan Ryan). The screening-only definition in Part 1.3 is the quiet version of the same move: a role confined to medical screening weakens the rationale for a prescriber credential. The restoration of the Act's word clinician in the qualified-patient definition, Part 1.4, is another: it returns the statutory judgment of medical appropriateness to the clinician umbrella, so the judgment is no longer fixed by definition in the number-holding role even if the number stays. The analysis of what the number is, who can hold it, and who it excludes is on the site's controlled-substance number page.
+The middle positions on the record, if the full strike is not taken: the consultation model (July 9, board member Chris Peskuski) and the behavioral-health referral with telemedicine (July 9, Keenan Ryan). The screening-only definition in Section 1.3 is the quiet version of the same move: a role confined to medical screening weakens the rationale for a prescriber credential. The restoration of the Act's word clinician in the qualified-patient definition, Section 1.4, is another: it returns the statutory judgment of medical appropriateness to the clinician umbrella, so the judgment is no longer fixed by definition in the number-holding role even if the number stays. The analysis of what the number is, who can hold it, and who it excludes is on the site's controlled-substance number page.
 
 ---
 
-## Part 5. The owner statement at the patient's residence
+## Section 5. The owner statement at the patient's residence
 
 Not a recommendation item; a community position resting on a committee member's written comment.
 
 **What the text requires.** 7.35.3.11 (B) certifies "other approved locations," which "may include a patient's residence," for a patient who cannot be physically transported to a healing center, for other reasons of medical necessity, for rural and frontier access, or for treatment in a natural environment. Item (B)(9) reads in full: "Proof of ownership by the qualified patient or attending practitioner or facilitator of any property on which medical psilocybin administration sessions will be conducted, or a signed, written statement from the owner of such property acknowledging that the owner understands that persons will be participating in the medical psilocybin program on the premises, and what those persons are authorized to do within the terms of their certification" (NEW p. 6). The healing-center application carries the same instrument at (A)(8) for a commercial premises; this part addresses only (B)(9).
 
 **What it does.** A patient who rents cannot receive treatment at home unless the landlord signs a statement acknowledging that the household is participating in the medical psilocybin program. The statement discloses the patient's program participation, and with it the existence of a qualifying condition, to a private party with no role in the patient's care, as a condition of receiving care. It also hands that party an effective veto over the treatment. The same application requires, two items earlier at (B)(7), a plan for maintaining patient confidentiality at the location whose owner the application has just informed. The at-home pathway exists in the first instance for patients who cannot travel, end-of-life patients among them.
-
-**The record.** Denali Wilson, in her July 25, 2026 comments on the committee's redline of the then-published text: "seems like this will require EOL patients who are getting at home treatment to get permission from their landlord. We don't require that for any other in home healthcare and it's not appropriate to require that for EOL patients. People should not have to get their landlords permission to have certain healthcare." The comment file carries no section anchors; the content fixes it to this provision. The August 25 text carries the requirement forward.
 
 **The resolving language.** Ownership stays as one form of proof; lawful occupancy becomes another; the owner acknowledgment survives only for a location that belongs to none of the participants, and no instrument names the patient:
 
@@ -154,4 +152,12 @@ Not a recommendation item; a community position resting on a committee member's 
 
 ## Sources
 
-The August 25 texts: `docs/documents/rules-draft-2026-08-25-published.pdf` and `docs/documents/rules-7.35.2-amendments-2026-08-25-published.pdf`, cited above by subsection. The recommendation's position: `analysis/8-21-committee-extraction.md`. The July 25 comments quoted in Part 5: `source-text/wilson-redline-2026-07-25-comments.txt`. The Act, quoted in Parts 1.3 and 1.4 and verified against the enacted text: `docs/documents/medical-psilocybin-act-sb219-2025.pdf`, extraction at `source-text/medical-psilocybin-act-sb219-2025.txt`, definitions at Section 3, the exemption from criminal and civil penalties at Section 5. The August 21 statements attributed to the department and committee members: the same record, resting on a live auto-generated transcript with no speaker labels; the department's posted recording, once it appears, is the record. The comparison this file drafts from: `analysis/8-25-recommendation-comparison.md`. The defect inventory: `analysis/8-25-published-delta.md`, part 6.
+The August 25 texts: `docs/documents/rules-draft-2026-08-25-published.pdf` and `docs/documents/rules-7.35.2-amendments-2026-08-25-published.pdf`, cited above by subsection. The recommendation's position: `analysis/8-21-committee-extraction.md`. The Act, quoted in Sections 1.3 and 1.4 and verified against the enacted text: `docs/documents/medical-psilocybin-act-sb219-2025.pdf`, extraction at `source-text/medical-psilocybin-act-sb219-2025.txt`, definitions at Section 3, the exemption from criminal and civil penalties at Section 5. The August 21 statements attributed to the department and committee members: the same record, resting on a live auto-generated transcript with no speaker labels; the department's posted recording, once it appears, is the record. The comparison this file drafts from: `analysis/8-25-recommendation-comparison.md`. The defect inventory: `analysis/8-25-published-delta.md`, part 6.
+
+---
+
+**Document.** Proposed change language for the texts published August 25, 2026.
+**Generated.** August 26, 2026 at 21:09 UTC.
+**Drafted against.** The revised proposed rule 7.35.3 NMAC and the proposed amendments to 7.35.2.7, .10, and .24 NMAC, both published August 25, 2026.
+**Status.** Drafting material. Nothing here has been submitted to the department, adopted by the Training and Education Committee, or advanced as departmental policy.
+**Numbering.** The numbered sections of this file are this file's own. They are not sections of the NMAC. Rule citations always carry their full number, as in 7.35.3.18 (C)(2).

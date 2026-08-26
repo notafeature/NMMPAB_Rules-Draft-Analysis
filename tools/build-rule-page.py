@@ -175,12 +175,13 @@ ANNOTATIONS = {
          "on the premises&rdquo;. A patient who rents cannot receive treatment at home unless the landlord "
          "signs that statement, which discloses the household's program participation to a party with no "
          "role in the patient's care; Paragraph (7) of the same subsection requires a plan for maintaining "
-         "patient confidentiality at the same location. Denali Wilson, in written comments of July 25, "
-         "2026 on the committee's redline, objected that end-of-life patients receiving at-home treatment "
-         "would need landlord permission: &ldquo;We don't require that for any other in home healthcare "
-         "and it's not appropriate to require that for EOL patients. People should not have to get their "
-         "landlords permission to have certain healthcare.&rdquo; Public comment continues through the "
-         "October 2 hearing.")],
+         "patient confidentiality at the same location. The at-home pathway exists in the first instance "
+         "for patients who cannot be transported to a healing center, end-of-life patients among them. "
+         "Landlord approval and patient privacy were raised at the August 21 committee meeting, from "
+         "the chat and read into the record by the chair, who called it a sticky subject to be "
+         "discussed further; the question had been raised at an earlier end-of-life meeting. The "
+         "exchange is on <a href='record.html#e-2026-08-21'>the record</a>. Public comment continues "
+         "through the October 2 hearing.")],
     13: [("blue", "New in this text",
          "Two provisions appear here for the first time in the August 25 text: a certifying clinician, "
          "practitioner, or facilitator shall not consume or be under the influence of psilocybin or any "
