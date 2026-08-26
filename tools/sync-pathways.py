@@ -66,7 +66,7 @@ PAGE = os.path.join(DOCS, "pathways.html")
 
 # The published rule, cited by page, and the July 9 meeting transcript. Every
 # step's citation is built from one of these two.
-J7 = "documents/rules-draft-2026-07-23-published.pdf#page="
+J7 = "documents/rules-draft-2026-08-25-published.pdf#page="
 T7 = "documents/NMMPAB-2026-07-09-transcript.pdf"
 
 
@@ -94,38 +94,40 @@ def L(text, href):
 
 PERMITS = {
     "dc": {
-        "name": "Certifying Clinician / Medical Screener",
+        "name": "Certifying Clinician",
         "dot": "#256E8C",
         "steps": [
-            {"t": "Hold a current NM professional license (for example MD, NP).",
+            {"t": "Hold a current NM professional license that permits diagnosing the qualifying "
+                  "conditions (for example MD, NP).",
              "s": "set",
-             "why": "The published rule names license examples; it does not describe a diagnosing scope.",
+             "why": "New in the August 25 text: the license must permit diagnosis of the qualifying "
+                    "conditions. The July 23 text gave examples without describing a scope.",
              "src": L("published rule 7.35.3.9, p.3", J7 + "3")},
-            {"t": "Approved <b>certifying clinician / medical screener training</b>: an 8-hour module covering pharmacology, "
+            {"t": "Approved <b>certifying clinician training</b>: an 8-hour module covering pharmacology, "
                   "42 CFR Part 2, diagnosis of qualifying conditions, medical clearance, monitoring, and "
                   "data-collection requirements.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.11", J7 + "11")},
+             "src": L("published rule 7.35.3.18 (B), p.12", J7 + "12")},
             {"t": "Hold a <b>New Mexico Controlled Substance number</b> (state number, not the federal "
                   "DEA number).",
              "s": "set",
-             "why": "Contested through June and July, and kept by the department on July 17, which also "
-                    "revised the certifying-clinician evaluation language. It stands in the last "
-                    "published text and is not changed by the August 21 recommendation.",
+             "why": "Contested through June and July, and kept by the department on July 17. It stands "
+                    "in the August 25 text, and the amended definition of certifying clinician in "
+                    "7.35.2.7 carries the number inside it.",
              "src": L("published rule 7.35.3.9, p.3", J7 + "3") + " &middot; "
                     + L("July 17 update", "cs-number.html#update")},
             {"t": "<b>No practicum.</b>",
              "s": "set",
-             "why": "The practicum section applies to Licensed Providers and Facilitators only; the "
-                    "certifying clinician / medical screener's packet lists no practicum item.",
-             "src": L("published rule 7.35.3.19, p.12", J7 + "12") + " &middot; "
+             "why": "The practicum section applies to practitioners and facilitators only; the "
+                    "certifying clinician's packet lists no practicum item.",
+             "src": L("published rule 7.35.3.19, p.13", J7 + "13") + " &middot; "
                     + L("7.35.3.9, p.3", J7 + "3")},
             {"t": "Apply to NMDOH. Certification is valid <b>2 years</b> from approval.",
              "s": "set",
              "src": L("published rule 7.35.3.9, p.2", J7 + "2")},
             {"t": "Continuing education: <b>8 CME hours every 2 years</b>.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.12", J7 + "12")},
+             "src": L("published rule 7.35.3.18 (G), p.13", J7 + "13")},
         ],
     },
     "recip": {
@@ -138,94 +140,103 @@ PERMITS = {
                   "New Mexico's.",
              "s": "set",
              "src": L("published rule 7.35.3.10, p.4", J7 + "4") + " &middot; "
-                    + L("7.35.3.19, p.12", J7 + "12")},
+                    + L("7.35.3.19 (G), p.14", J7 + "14")},
             {"t": "Complete the <b>New Mexico Module</b>.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.11", J7 + "11") + " &middot; "
+             "src": L("published rule 7.35.3.18 (A), p.11", J7 + "11") + " &middot; "
                     + L("7.35.3.10, p.4", J7 + "4")},
             {"t": "Apply by the waiver deadline for a reduced practicum: at least <b>40 hours of contact "
                   "time</b> instead of the full practicum.",
              "s": "set",
-             "why": "The published rule sets this deadline at December 31, 2027. The July 9 draft still "
-                    "read December 31, 2026; the board moved it without objection that day and the "
-                    "published text now carries it. Board chair Ian Dunn noted that date is a legislative "
+             "why": "The published rule sets this deadline at December 31, 2027, unchanged since July "
+                    "23. The July 9 draft still read December 31, 2026; the board moved it without "
+                    "objection that day. Board chair Ian Dunn noted that date is a legislative "
                     "backstop, not the target date.",
              "src": L("published rule 7.35.3.10 (D), p.5", J7 + "5") + " &middot; "
                     + L("July 9 meeting transcript", T7)},
             {"t": "NMDOH may further reduce the practicum requirement at its discretion, to build the "
                   "program's initial infrastructure.",
              "s": "set",
-             "why": "The published rule sets no end date for this discretion, at 7.35.3.19 (F). The "
-                    "related waiver deadline is December 31, 2027.",
+             "why": "The published rule sets no end date for this discretion, at 7.35.3.19 (G). The "
+                    "related waiver deadline is December 31, 2027. The August 25 text adds the same "
+                    "discretion for the didactic requirements, at 7.35.3.18 (H).",
              "src": L("published rule 7.35.3.10 (D), p.5", J7 + "5") + " &middot; "
                     + L("July 9 meeting transcript", T7)},
-            {"t": "Apply as Licensed Provider or Facilitator. The reciprocity application packet lists items "
+            {"t": "Apply as practitioner or facilitator. The reciprocity application packet lists items "
                   "for those two permits only.",
              "s": "open", "flag": "Unresolved",
-             "why": "The published rule is inconsistent here. Reciprocity now sits inside 7.35.3.10, "
-                    "which names certifying clinicians as eligible to apply on the basis of a program "
-                    "from another jurisdiction, while the application items listed there are for "
-                    "practitioners and facilitators.",
+             "why": "The published rule is inconsistent here, unchanged in the August 25 text. "
+                    "Reciprocity sits inside 7.35.3.10, which names certifying clinicians as eligible "
+                    "to apply on the basis of a program from another jurisdiction, while the "
+                    "application items listed there are for practitioners and facilitators.",
              "src": L("published rule 7.35.3.10, p.4", J7 + "4") + " &middot; "
-                    + L("7.35.3.19, p.12", J7 + "12")},
+                    + L("7.35.3.19, p.13", J7 + "13")},
         ],
     },
     "prac": {
-        "name": "Licensed Provider",
+        "name": "Practitioner",
         "dot": "#5A4A88",
         "steps": [
-            {"t": "Hold a current NM professional license (for example PSY, LSW, LCSW).",
+            {"t": "Hold a current NM professional license <b>to practice therapy, counseling, or "
+                  "behavioral services</b> (for example PSY, LSW, LCSW).",
              "s": "set",
-             "why": "The published rule names license examples; it does not describe a therapy or "
-                    "counseling scope.",
+             "why": "New in the August 25 text: the license type is stated. The July 23 text gave "
+                    "examples without describing a scope.",
              "src": L("published rule 7.35.3.9, p.3", J7 + "3")},
             {"t": "Certifications and attestation, same as Facilitator.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.12", J7 + "12") + " &middot; " + L("pp.2-3", J7 + "2")},
-            {"t": "Approved <b>Licensed Provider training</b>, the published text's practitioner curriculum: the 30-hour core module plus a 5-hour module on "
-                  "psychedelic and psilocybin therapeutic approaches.",
+             "src": L("published rule 7.35.3.18 (F), p.13", J7 + "13") + " &middot; " + L("pp.2-3", J7 + "2")},
+            {"t": "Approved <b>practitioner training</b>: the 65-hour therapy module, at least one "
+                  "third in person, with 10 hours of simulated patient experience, plus a 5-hour module "
+                  "on psychedelic and psilocybin therapeutic approaches.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.11", J7 + "11"),
-             "metz": "80 hours in place of these 35, on one standard shared with facilitators rather "
-                     "than tiered by role, with minimum hours in nine content areas. The recommendation "
-                     "states its 80 across nine content areas including 2 hours of simulated patient "
-                     "work, so it is a module total and compares directly against the published 40, "
-                     "which is these 35 didactic hours plus the 5-hour simulated patient experience. "
-                     "The recommendation also renames the roles: the practitioner becomes the "
-                     "Licensed Provider, and the certifying clinician the medical screener, still "
-                     "being pushed; the department's August 21 side-by-side kept its own columns at "
-                     "certifying clinician and practitioner."},
+             "why": "The August 25 text doubled the module: the July 23 text set 30 didactic hours "
+                    "with 5 simulated patient hours.",
+             "src": L("published rule 7.35.3.18 (C), p.12", J7 + "12") + " &middot; "
+                    + L("7.35.3.18 (E), p.13", J7 + "13"),
+             "metz": "The recommendation, at its August 21 position, sets the same 80-hour total, with "
+                     "minimum hours in nine content areas and 2 simulated patient hours inside it; the "
+                     "published text sets no per-area minimums and 10 simulated hours. The "
+                     "recommendation also proposed renaming the roles, the practitioner to the "
+                     "licensed provider and the certifying clinician to the medical screener; the "
+                     "August 25 text keeps certifying clinician and practitioner."},
             {"t": "Practicum at a healing center or other approved location. Published rule: "
                   "<b>120 hours</b>.",
              "s": "open", "flag": "Open",
-             "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17; the "
-                    "recommendation stands at the committee's August 21 position.",
-             "src": L("published rule 7.35.3.19 (A), pp.12-13", J7 + "12"),
+             "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17, "
+                    "published unchanged July 23, and published unchanged again August 25, now with a "
+                    "case-presentation evaluation, a low-risk requirement on the first 20 hours, and a "
+                    "qualifying-condition diversity requirement inside the total. Public comment "
+                    "continues through the October 2 hearing.",
+             "src": L("published rule 7.35.3.19 (A), pp.13-14", J7 + "13"),
              "model": 1,
              "metz": "114 hours, staged: the facilitator sequence of 102 plus 12 provider supervisory "
                      "hours, with an 18-hour case presentation and consultation group inside the "
-                     "total."},
+                     "total. The published text takes the two-case presentation, evaluated by the "
+                     "practicum supervisor at 7.35.3.19 (C), without the 18-hour consultation group."},
             {"t": "Includes an additional <b>20 hours supervising facilitators</b> during administration "
                   "day sessions.",
              "s": "chal", "flag": "Contested",
              "why": "Dr. Anne Metz asked to make this optional at the June 25 committee meeting. The "
-                    "department kept it; it remains in the published rule. The 20 hours sit inside the "
-                    "120 rather than adding to them.",
-             "src": L("published rule 7.35.3.19 (C), p.13", J7 + "13") + " &middot; "
+                    "department kept it in the July 23 text and again in the August 25 text. The 20 "
+                    "hours sit inside the 120 rather than adding to them.",
+             "src": L("published rule 7.35.3.19 (D), p.14", J7 + "14") + " &middot; "
                     + L("committee meeting, 6/25", "changes.html"),
              "metz": "Becomes 12 provider supervisory hours, a stage of the staged practicum."},
             {"t": "Mentoring: <b>10 hours</b> after graduation and after the practicum.",
              "s": "set",
-             "src": L("published rule 7.35.3.17, p.10", J7 + "10"),
+             "src": L("published rule 7.35.3.17 (A), p.11", J7 + "11"),
              "metz": "Removed as a separate step: the recommendation closes the practicum with an "
                      "18-hour case presentation and consultation group inside the practicum total, with "
-                     "sign-off requiring two presented cases the permittee personally provided."},
+                     "sign-off requiring two presented cases the permittee personally provided. The "
+                     "August 25 text keeps the mentoring and adds its own two-case evaluation inside "
+                     "the practicum."},
             {"t": "Apply to NMDOH. Certification is valid <b>2 years</b> from approval.",
              "s": "set",
              "src": L("published rule 7.35.3.9, p.2", J7 + "2")},
             {"t": "Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.12", J7 + "12")},
+             "src": L("published rule 7.35.3.18 (G), p.13", J7 + "13")},
         ],
     },
     "fac": {
@@ -238,43 +249,53 @@ PERMITS = {
             {"t": "Certifications: <b>HIPAA, plus BLS, or (CPR and AED), or New Mexico EMT "
                   "licensure</b>. Attestation you are not a registered sex offender.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.12", J7 + "12") + " &middot; "
+             "src": L("published rule 7.35.3.18 (F), p.13", J7 + "13") + " &middot; "
                     + L("7.35.3.9, p.3", J7 + "3")},
-            {"t": "Approved <b>Facilitator training</b>. Begins with the New Mexico Module, the one "
+            {"t": "Approved <b>facilitator training</b>: the 65-hour therapy module, at least one third "
+                  "in person, with 10 hours of simulated patient experience, plus a 5-hour "
+                  "facilitator-specific module. Begins with the New Mexico Module, the one "
                   "module you cannot test out of.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.11", J7 + "11") + " &middot; "
+             "why": "The August 25 text doubled the module: the July 23 text set 30 didactic hours "
+                    "with 5 simulated patient hours.",
+             "src": L("published rule 7.35.3.18 (A), p.11", J7 + "11") + " &middot; "
+                    + L("7.35.3.18 (C), p.12", J7 + "12") + " &middot; "
                     + L("7.35.3.17 (B), p.11", J7 + "11"),
-             "metz": "80 hours in place of these 35, with minimum hours in nine content areas. The "
-                     "recommendation states its 80 across nine content areas including 2 hours of simulated "
-                     "patient work, so it is a module total and compares directly against the published "
-                     "40, which is these 35 didactic hours plus the 5-hour simulated patient "
-                     "experience. The New Mexico module stays required of every role, with no exemption "
-                     "by reciprocity."},
+             "metz": "The recommendation, at its August 21 position, sets the same 80-hour total, with "
+                     "minimum hours in nine content areas and 2 simulated patient hours inside it; the "
+                     "published text sets no per-area minimums and 10 simulated hours. The New Mexico "
+                     "module stays required of every role, with no exemption by reciprocity."},
             {"t": "Practicum at a healing center or other approved location. Published rule: "
                   "<b>100 hours</b>.",
              "s": "open", "flag": "Open",
-             "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17; the "
-                    "recommendation stands at the committee's August 21 position.",
-             "src": L("published rule 7.35.3.19 (A), pp.12-13", J7 + "12"),
+             "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17, "
+                    "published unchanged July 23, and published unchanged again August 25, now with a "
+                    "case-presentation evaluation, a low-risk requirement on the first 20 hours, and a "
+                    "qualifying-condition diversity requirement inside the total. Public comment "
+                    "continues through the October 2 hearing.",
+             "src": L("published rule 7.35.3.19 (A), pp.13-14", J7 + "13"),
              "model": 1,
              "metz": "102 hours, staged: 24 with well participants, 24 co-facilitating with a "
                      "department-permitted licensed provider, 12 of group work, and 42 of supervised "
                      "practice on two cases, with an 18-hour case presentation and consultation group "
                      "inside the total, and every stage spanning preparation, administration, and "
-                     "integration."},
+                     "integration. The published text takes the two-case presentation without the "
+                     "consultation group, and the department stated on August 21 that the statute "
+                     "does not allow a well-participants stage."},
             {"t": "Mentoring: <b>10 hours</b> after graduation and after the practicum.",
              "s": "set",
-             "src": L("published rule 7.35.3.17, p.10", J7 + "10"),
+             "src": L("published rule 7.35.3.17 (A), p.11", J7 + "11"),
              "metz": "Removed as a separate step: the recommendation closes the practicum with an "
                      "18-hour case presentation and consultation group inside the practicum total, with "
-                     "sign-off requiring two presented cases the permittee personally provided."},
+                     "sign-off requiring two presented cases the permittee personally provided. The "
+                     "August 25 text keeps the mentoring and adds its own two-case evaluation inside "
+                     "the practicum."},
             {"t": "Apply to NMDOH. Certification is valid <b>2 years</b> from approval.",
              "s": "set",
              "src": L("published rule 7.35.3.9, p.2", J7 + "2")},
             {"t": "Continuing education: <b>20 hours every 2 years</b>. Keep BLS or CPR/AED current.",
              "s": "set",
-             "src": L("published rule 7.35.3.18, p.12", J7 + "12")},
+             "src": L("published rule 7.35.3.18 (G), p.13", J7 + "13")},
         ],
     },
 }
@@ -304,9 +325,9 @@ STARTS = [
      "ex": "Psychologist, LCSW, LPCC, LMFT, psychiatric NP.",
      "routes": [
          {"permit": "dc", "state": "part",
-          "line": "Only with a NM Controlled Substance number. That requirement was contested and "
-                  "kept by the department on July 17; the gate is the number, not your license "
-                  "scope."},
+          "line": "Only with a NM Controlled Substance number, and the August 25 text requires a "
+                  "license that permits diagnosing the qualifying conditions. The number requirement "
+                  "was contested and kept by the department on July 17."},
          {"permit": "prac", "state": "open", "line": "Direct route."},
          {"permit": "fac", "state": "open", "line": "Also open. No license needed for this one."},
      ]},
@@ -317,8 +338,8 @@ STARTS = [
           "line": "Direct route, for a licensee holding a NM Controlled Substance number, a "
                   "requirement the department kept on July 17."},
          {"permit": "prac", "state": "part",
-          "line": "Requires a NM professional license (the published rule gives PSY, LSW, LCSW as "
-                  "examples; it does not describe a therapy or counseling scope)."},
+          "line": "Requires a license to practice therapy, counseling, or behavioral services, "
+                  "stated in the August 25 text (examples PSY, LSW, LCSW)."},
          {"permit": "fac", "state": "open", "line": "Also open."},
      ]},
     {"elig": "band-otherhealth", "id": "otherhealth", "title": "Other health license",
@@ -338,8 +359,8 @@ STARTS = [
                   "worker reads on the behavioral health group."},
          {"permit": "prac", "state": "part",
           "line": "Set by the license held. A palliative care social worker has a direct route; a "
-                  "palliative care physician holds a license the rule does not describe as therapy or "
-                  "counseling scope."},
+                  "palliative care physician's license is not one to practice therapy, counseling, "
+                  "or behavioral services, which the August 25 text requires for this permit."},
          {"permit": "fac", "state": "open",
           "line": "Open whatever license is held, because this route turns on no license at all. It is "
                   "the one route the whole palliative care team shares."},
@@ -348,7 +369,7 @@ STARTS = [
      "ex": "Out-of-state, international, or Tribal, Pueblo, and Nation programs NMDOH approves.",
      "routes": [
          {"permit": "recip", "state": "recip",
-          "line": "Enter by reciprocity, as Licensed Provider or Facilitator."},
+          "line": "Enter by reciprocity, as practitioner or facilitator."},
          {"permit": "dc", "state": "part",
           "line": "The published rule names certifying clinicians as eligible under 7.35.3.10, but the "
                   "application items listed there are for practitioners and facilitators. Unresolved in "
@@ -400,7 +421,7 @@ def journey_html(key, indent):
 
 def route_html(d, active):
     S = STATE[d["state"]]
-    label = ("Licensed Provider or Facilitator, by reciprocity" if d["permit"] == "recip"
+    label = ("Practitioner or Facilitator, by reciprocity" if d["permit"] == "recip"
              else PERMITS[d["permit"]]["name"])
     inner = (f'<div class="rb"><p class="rn">{label} '
              f'<span class="tag {S["tag"]}">{S["lab"]}</span></p>'
@@ -422,7 +443,7 @@ def eligref_html(st):
 
 
 def jhead_html(st, key):
-    title = ("Pathway by reciprocity: Licensed Provider or Facilitator" if key == "recip"
+    title = ("Pathway by reciprocity: Practitioner or Facilitator" if key == "recip"
              else "Pathway to the " + PERMITS[key]["name"] + " permit")
     route = next((r for r in st["routes"] if r["permit"] == key), None)
     line = '<p class="routeline">' + route["line"] + "</p>" if route else ""

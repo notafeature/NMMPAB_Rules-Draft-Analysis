@@ -61,6 +61,50 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July",
 
 DOCUMENTS = [
     {
+        "slug": "rules-draft-2026-08-25-published",
+        "name": "Revised proposed rule",
+        "file": "documents/rules-draft-2026-08-25-published.pdf",
+        "cite": "The revised proposed rule, August 25, 2026, 20 pages",
+        "date": "2026-08-25",
+        "event": "e-2026-08-25",
+        "what": "The revised proposed rule as published August 25, with the October 2 hearing "
+                "noticed the same day; the operative published text, and the text this site "
+                "cites for section numbers and rule text",
+        "status": "current",
+        "chain": True,
+        "notes": "20 pages. Sections 7.35.3.1 through .28, typeset on this site at "
+                 "<a href=\"rule.html\">The published rule</a>",
+    },
+    {
+        "slug": "rules-7.35.2-amendments-2026-08-25-published",
+        "name": "Proposed amendments to 7.35.2 NMAC",
+        "file": "documents/rules-7.35.2-amendments-2026-08-25-published.pdf",
+        "cite": "Proposed amendments to 7.35.2.7, .10, and .24 NMAC, August 25, 2026",
+        "date": "2026-08-25",
+        "event": "e-2026-08-25",
+        "what": "Proposed amendments to the adopted producer and laboratory rule: the "
+                "program's definitions, producer sales to healing centers, and the "
+                "transportation of psilocybin",
+        "status": "current",
+        "notes": "6 pages. Strike-and-add text for 7.35.2.7, 7.35.2.10, and 7.35.2.24; the "
+                 "definitions that 7.35.3.7 imports, certifying clinician and practitioner "
+                 "among them",
+    },
+    {
+        "slug": "hearing-notice-2026-08-25",
+        "name": "Notice of the rule hearing",
+        "file": "documents/hearing-notice-2026-08-25.pdf",
+        "cite": "The notice of the October 2, 2026 rule hearing",
+        "date": "2026-08-25",
+        "event": "e-2026-08-25",
+        "what": "The notice fixing the rule hearing for October 2, 2026, 9:00 AM, in the "
+                "Harold Runnels Building auditorium in Santa Fe, in person, by video "
+                "conference, and by telephone",
+        "status": "current",
+        "notes": "2 pages. The hearing's official time, place, access, and written-comment "
+                 "instructions",
+    },
+    {
         "slug": "summary-recommended-rules",
         "name": "Summary of the recommended rules",
         "file": None,
@@ -80,12 +124,13 @@ DOCUMENTS = [
         "date": "2026-07-23",
         "event": "e-2026-07-23",
         "what": "The proposed rule as published July 23, set aside with its August 28 "
-                "hearing; the last published text of this rulemaking, and the text this "
-                "site cites for section numbers until revised rules publish",
-        "status": "current",
+                "hearing and superseded by the August 25 revision",
+        "status": "superseded",
+        "superseded_by": "rules-draft-2026-08-25-published",
         "chain": True,
-        "notes": "19 pages. Sections 7.35.3.1 through .28, typeset on this site at "
-                 "<a href=\"rule.html\">The last published text</a>",
+        "notes": "19 pages. Sections 7.35.3.1 through .28. Stood as the last published text "
+                 "from the set-aside, on the record by August 14, until the August 25 "
+                 "publication",
     },
     {
         "slug": "nmmpab-2026-07-17-board-transcript",
@@ -246,17 +291,6 @@ GAPS = [
         "events": ["e-2026-05-22"],
     },
     {
-        "id": "gap-hearing-notice",
-        "name": "The rule hearing notice as published",
-        "means": "The official time, place, and comment instructions. The October 2 date on "
-                 "this site is sourced to the department's statement at the August 21 "
-                 "committee meeting, not to a filing; the department said the final notice is "
-                 "in preparation with the hearing officer",
-        "at_event": "The hearing notice as published is not held on this site. The date is "
-                    "sourced to the department's August 21 statement, not to a filing.",
-        "events": ["e-2026-10-02"],
-    },
-    {
         "id": "gap-aug14",
         "name": "August 14 board meeting recording or transcript, and the set-aside notice",
         "means": "The meeting at which the set-aside of the July 23 publication was on the "
@@ -288,9 +322,9 @@ GAPS = [
 #
 #   id        e-YYYY-MM-DD, with -am or -pm where a day carries two events
 #   kind      meeting, document, filing, scheduled, or anticipated; scheduled
-#             belongs only to a meeting a public body set on its own record,
-#             and anticipated to a date the department has stated that no
-#             notice yet fixes
+#             belongs only to a meeting a public body set on its own record or
+#             a hearing a published notice fixes, and anticipated to a date the
+#             department has stated that no notice yet fixes
 #   part      the mono line under the date, where a day carries two events
 #   what      what happened, outcome first
 #   changed   one state transition per line, each naming the page that owns it
@@ -304,16 +338,15 @@ EVENTS = [
     {
         "id": "e-2026-10-02",
         "date": "2026-10-02",
-        "kind": "anticipated",
-        "what": "<b>The rule hearing on 7.35.3 NMAC, anticipated.</b> The department placed the "
-                "hearing at the end of September or early October at the August 14 board "
-                "meeting, and named October 2, virtual and in person, at the August 21 "
-                "committee meeting; the final notice, in preparation with the hearing officer, "
-                "will fix the date. The hearing was first set for August 28 with the July 23 "
-                "publication, which was set aside. Public comment is taken and recorded at the "
-                "hearing, and comment given there becomes part of the rulemaking record the "
-                "department must consider.",
-        "absent": ["gap-hearing-notice"],
+        "kind": "scheduled",
+        "what": "<b>The rule hearing on 7.35.3 NMAC and the 7.35.2 amendments, 9:00 AM, "
+                "Harold Runnels Building auditorium, 1190 St. Francis Drive, Santa Fe</b>, in "
+                "person, by video conference, and by telephone. Fixed by the "
+                "<a href=\"#doc-hearing-notice-2026-08-25\">notice published August 25</a>, "
+                "after a first setting of August 28 was set aside with the July 23 "
+                "publication. Public comment is taken and recorded at the hearing, and "
+                "written comment must be received by the close of the hearing; comment given "
+                "becomes part of the rulemaking record the department must consider.",
         "deeper": [("comment.html", "How comment works, and what is at issue")],
     },
     {
@@ -332,6 +365,53 @@ EVENTS = [
         "what": "<b>The Training and Education Committee meets, 9 to 11 AM.</b> Scheduled at "
                 "the close of the August 21 meeting, after the September 11 and 18 mornings "
                 "were found taken.",
+    },
+    {
+        "id": "e-2026-08-25",
+        "date": "2026-08-25",
+        "kind": "document",
+        "what": "<b>The department published the revised proposed rule for 7.35.3 NMAC, "
+                "proposed amendments to 7.35.2 NMAC, and the notice of the October 2 rule "
+                "hearing.</b> The revised rule, 20 pages, supersedes the set-aside July 23 "
+                "text and follows the structure the department showed beside the committee's "
+                "proposal on August 21. One hearing covers the new rule and the amendments.",
+        "changed": [
+            ("<b>The hearing.</b> Fixed by notice for October 2, 9:00 AM, in the Harold "
+             "Runnels Building auditorium in Santa Fe, in person, by video conference, and "
+             "by telephone, with written comment due by the close of the hearing. The date "
+             "moves from the department's stated anticipation to a noticed setting.",
+             "comment.html", "Comment"),
+            ("<b>Didactic hours.</b> The practitioner and facilitator therapy module rises "
+             "from 30 didactic hours to 65, at least one third in person, and the simulated "
+             "patient requirement from 5 hours to 10, so the pre-certification module total "
+             "moves from 40 hours to 80.",
+             "rule.html#s18", "7.35.3.18"),
+            ("<b>The curriculum.</b> Eleven topics added, informed consent, cultural "
+             "competencies, and traditional and ceremonial practices among them, with no "
+             "per-area hour minimums; a new waiver lets the department reduce the didactic "
+             "requirements.",
+             "rule.html#s18", "7.35.3.18"),
+            ("<b>The practicum.</b> The 100 and 120 hour totals stand. New inside them: the "
+             "first 20 administration-day hours are with low-risk patients, and the student "
+             "must pass case presentations on two of their last four patients to complete "
+             "the practicum.",
+             "rule.html#s19", "7.35.3.19"),
+            ("<b>The role names.</b> Certifying clinician and practitioner stand; medical "
+             "screener and licensed provider appear nowhere in the published texts. The "
+             "definitions now live in the amended 7.35.2.7, the certifying clinician's with "
+             "the controlled-substance number inside it.",
+             "cs-number.html", "The controlled-substance number"),
+            ("<b>The adopted rule.</b> The amendments let producers sell to healing centers, "
+             "extend psilocybin transportation to certified practitioners and healing "
+             "centers, and add a chain-of-custody duty on the treatment side.",
+             "changes.html", "Section by section"),
+        ],
+        "attached": ["rules-draft-2026-08-25-published",
+                     "rules-7.35.2-amendments-2026-08-25-published",
+                     "hearing-notice-2026-08-25"],
+        "deeper": [("rule.html", "All twenty-eight sections, verbatim and annotated"),
+                   ("changes.html", "What changed from the July 23 text, provision by provision"),
+                   ("recommendation.html", "The recommendation beside the published text")],
     },
     {
         "id": "e-2026-08-21",
