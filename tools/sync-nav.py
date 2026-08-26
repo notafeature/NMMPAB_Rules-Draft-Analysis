@@ -74,24 +74,19 @@ MENU_DOCUMENTS = [
         "sub": "The register: what each one is and whether it is current",
     },
     {
-        "href": "documents/rules-draft-2026-07-23-published.pdf",
-        "label": "Last published text &middot; July 23",
-        "sub": "July 23, set aside; the last published text",
+        "href": "documents/rules-draft-2026-08-25-published.pdf",
+        "label": "Revised proposed rule &middot; August 25",
+        "sub": "The current proposed rule, 7.35.3.1 through .28",
     },
     {
-        "href": "documents/NMMPAB-2026-07-17-board-transcript.pdf",
-        "label": "Transcript &middot; July 17 board",
-        "sub": "Unofficial, no speaker attribution",
+        "href": "documents/rules-7.35.2-amendments-2026-08-25-published.pdf",
+        "label": "7.35.2 amendments &middot; August 25",
+        "sub": "The definitions, producer sales, and transportation",
     },
     {
-        "href": "documents/NMMPAB-2026-07-17-committee-transcript.pdf",
-        "label": "Transcript &middot; July 17 committee",
-        "sub": "Unofficial, no speaker attribution",
-    },
-    {
-        "href": "documents/metz-recommendations-2026-07-17.pdf",
-        "label": "Recommendations &middot; July 17",
-        "sub": "Dr. Anne Metz, presented to the committee",
+        "href": "documents/hearing-notice-2026-08-25.pdf",
+        "label": "Hearing notice &middot; August 25",
+        "sub": "October 2, 9:00 AM, Santa Fe, and by video and telephone",
     },
 ]
 
@@ -106,22 +101,22 @@ GROUPS = [
     ("provider", "Becoming a provider", [
         ("pathways.html", "pathways", "Pick where you start; the route to each permit"),
         ("eligibility.html", "eligibility", "The license-by-permit tables"),
-        ("hours.html", "hours", "The working model of the deferred quantities"),
+        ("hours.html", "hours", "The working model of the training hours"),
         ("specialization.html", "specialization", "An overlay on a core permit, not in the rule"),
-        ("cs-number.html", "cs-number", "The certifying clinician / medical screener requirement"),
+        ("cs-number.html", "cs-number", "The certifying clinician requirement"),
         ("deferred.html", "deferred", "Every provision a practicum change reaches"),
     ]),
     ("rule", "The rule", [
         ("rule.html", "rule", "All twenty-eight sections, verbatim, annotated"),
-        ("changes.html", "changes", "All 104 provisions, and what changed"),
-        ("recommendation.html", "recommendation", "The August 21 position, in the department's hands"),
-        ("comment.html", "comment", "The rule hearing, anticipated early October, and the input channel"),
+        ("changes.html", "changes", "What each publication changed, layer by layer"),
+        ("recommendation.html", "recommendation", "The August 21 position, beside the published text"),
+        ("comment.html", "comment", "The October 2 rule hearing, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),
         ("record.html#documents", None, "The register: every document and its status", "All documents"),
         ("training-hours-record.html", "training-hours-record",
-         "July 9, July 17, and August 21, with benchmarks and community comment"),
+         "July 9 through August 25, with benchmarks and community comment"),
     ]),
 ]
 
