@@ -243,6 +243,23 @@ DOCUMENTS = [
                  "hours. Compared provision by provision on "
                  "<a href=\"changes.html\">Section by section</a>",
     },
+    {
+        "slug": "medical-psilocybin-act-sb219-2025",
+        "name": "The Medical Psilocybin Act",
+        "file": "documents/medical-psilocybin-act-sb219-2025.pdf",
+        "cite": "Senate Bill 219, the Medical Psilocybin Act, 2025",
+        "date": "2025-06-20",
+        "event": "e-2025-06-20",
+        "what": "The enabling statute. It creates the program and the advisory board, defines "
+                "the clinician and the qualified patient, lists the qualifying conditions, "
+                "exempts clinicians and patients from penalty, and leaves clinician "
+                "qualifications to department rulemaking",
+        "status": "current",
+        "notes": "18 pages. Senate Bill 219 as enacted, 57th Legislature, first session, 2025. "
+                 "The definitions the rulemaking imports are at Section 3; the exemption from "
+                 "criminal and civil penalties is at Section 5; the Schedule I carve-out is at "
+                 "Section 12",
+    },
 ]
 
 
@@ -789,6 +806,18 @@ EVENTS = [
         "kind": "meeting",
         "what": "<b>The Training and Education Committee met</b>, the first of the five "
                 "meetings that developed the recommendation it issued on June 12.",
+    },
+    {
+        "id": "e-2025-06-20",
+        "date": "2025-06-20",
+        "kind": "document",
+        "what": "<b>The Medical Psilocybin Act took effect</b>, enacted as Senate Bill 219 of "
+                "the 2025 regular session. The Act creates the medical psilocybin program and "
+                "the advisory board, sets the two-part patient test, keeps psilocybin in "
+                "Schedule I with a carve-out for the program, and delegates the rest to "
+                "department rulemaking. It is the authority every rule in this record is "
+                "written under.",
+        "attached": ["medical-psilocybin-act-sb219-2025"],
     },
 ]
 
