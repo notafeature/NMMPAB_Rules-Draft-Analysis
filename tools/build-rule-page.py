@@ -75,6 +75,24 @@ DEF_NOTES = {
         "the medical screener and confining it to medical screening. The number requirement is "
         "analyzed on <a href='cs-number.html'>the controlled-substance number page</a>; the "
         "August 21 exchange is on <a href='record.html#e-2026-08-21'>the record</a>.")],
+    "Clinician": [("defect", "A definition that does not cover the certifying clinician",
+        "Both clinical roles are defined as subtypes of this term: the certifying clinician and "
+        "the practitioner each &ldquo;means a clinician who&rdquo; meets their further conditions. "
+        "But this definition reaches only a provider certified to provide &ldquo;medical "
+        "services&rdquo;, and medical services means the three sessions, preparation, "
+        "administration, and integration. The certifying clinician provides none of the three. "
+        "The amendments define the broader term that would close the gap, &ldquo;medical "
+        "psilocybin service&rdquo;, two entries below. The facilitator is defined as an "
+        "individual, not a clinician.")],
+    "Qualified patient": [("open", "The Act's word is clinician",
+        "The Medical Psilocybin Act defines a qualified patient as one &ldquo;whose clinician "
+        "has judged the patient to be a medically appropriate candidate for the use of medical "
+        "psilocybin based on being diagnosed with a qualifying condition.&rdquo; This definition "
+        "substitutes the narrower defined term, whose certifying clinician has judged, which "
+        "places the statutory judgment of medical appropriateness in the one role that carries "
+        "the controlled-substance number inside its definition. The Act's own definition of "
+        "clinician names no license type and no controlled-substance number; the requirement is "
+        "analyzed on <a href='cs-number.html'>the controlled-substance number page</a>.")],
     "Practitioner": [("blue", "Rewritten, and the rename declined",
         "The amendment strikes the adopted definition, “an individual who is a licensed "
         "healthcare professional,” for a certified clinician providing psilocybin "

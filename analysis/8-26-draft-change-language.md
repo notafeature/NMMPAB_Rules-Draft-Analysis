@@ -40,7 +40,23 @@ The drafting rationale, stated for the comment record:
 
 Conforming amendments follow through 7.35.3: the term change everywhere the role appears (54 occurrences), and the "qualified patient" definition in 7.35.2.7, which currently reads "whose certifying clinician has judged the patient to be a medically appropriate candidate."
 
-### 1.4 What this part does not resolve
+### 1.4 The clinician umbrella, and the Act's own word restored
+
+The published text already builds the hierarchy this part names. Both clinical roles are defined as subtypes of clinician: the certifying clinician "means a clinician who holds a state of New Mexico controlled substances number," and the practitioner means "a clinician who is certified by the department to provide medical psilocybin integrative therapy," with supervision of facilitators and the department trainings completing that definition (amendments PDF p. 3). The facilitator is defined as "an individual," not a clinician. The clinical treatment authority therefore already sits with the middle role. The edits below state the hierarchy the text implies, and they let the screening role's clinical involvement shrink to screening without creating any authority that does not already exist.
+
+In 7.35.2.7, the clinician definition:
+
+> "Clinician" means an approved health care provider licensed in New Mexico who holds a certification from the department to provide [medical services] **medical psilocybin services** to qualified patients. **The [certifying clinician] medical screener and the [practitioner] licensed provider are clinicians. A facilitator is not required to be a clinician.**
+
+If the renames in 1.2 and 1.3 are not taken, the published names substitute in the inserted sentences. The one-word aim fix in the first sentence is a correction in its own right, stated at 3.11: the published clinician definition reaches only "medical services," the three sessions, which the certifying clinician does not provide.
+
+In 7.35.2.7, the qualified patient definition:
+
+> "Qualified patient" or "patient" means a patient whose [certifying clinician] **clinician** has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition.
+
+The Medical Psilocybin Act defines a qualified patient as one "whose clinician has judged the patient to be a medically appropriate candidate for the use of medical psilocybin based on being diagnosed with a qualifying condition"; the amendment substitutes the narrower defined term, certifying clinician. Restoring the Act's word conforms the definition to the statute, and it returns the statutory judgment of medical appropriateness to the clinician umbrella rather than fixing it, by definition, in the one role that carries the controlled-substance number. Part 4 states what follows for the number.
+
+### 1.5 What this part does not resolve
 
 The controlled-substance number sits inside the published definition, so any redefinition confronts it. Part 4 states the options. A screening-only definition weakens the stated rationale for a prescriber credential, and the two edits can be proposed together or separately.
 
@@ -104,6 +120,8 @@ Corrections the text needs regardless of any position, each with the language th
 
 **3.10 List punctuation in the practicum criteria.** 7.35.3.19 (A) places "; and" after item (2) although items (3) and (4) follow, and item (3) ends in a period rather than a semicolon.
 
+**3.11 The clinician definition does not cover the certifying clinician.** "Clinician" reaches a provider certified to provide "medical services"; "medical services" means services "before, during and after the ingestion of psilocybin and includes a preparation session, an administration session and an integration session"; and the certifying clinician, defined as a subtype of clinician, provides none of the three. The one-word correction: in the clinician definition, [medical services] becomes **medical psilocybin services**, the amendments' own broader term. That broader term's definition is itself missing a word, reading "any medical or therapeutic service related the medical use of psilocybin," and wants "related **to** the medical use."
+
 ---
 
 ## Part 4. The controlled-substance number
@@ -114,7 +132,7 @@ Not a recommendation item; a community position with its own record since June. 
 - Strike 7.35.3.9 (D)(2), "NM controlled substance number," from the application packet, renumbering the list.
 - In 7.35.3.8 (B)(3), strike the number from the patient application's record of the clinician's licensure.
 
-The middle positions on the record, if the full strike is not taken: the consultation model (July 9, board member Chris Peskuski) and the behavioral-health referral with telemedicine (July 9, Keenan Ryan). The screening-only definition in Part 1.3 is the quiet version of the same move: a role confined to medical screening weakens the rationale for a prescriber credential. The analysis of what the number is, who can hold it, and who it excludes is on the site's controlled-substance number page.
+The middle positions on the record, if the full strike is not taken: the consultation model (July 9, board member Chris Peskuski) and the behavioral-health referral with telemedicine (July 9, Keenan Ryan). The screening-only definition in Part 1.3 is the quiet version of the same move: a role confined to medical screening weakens the rationale for a prescriber credential. The restoration of the Act's word clinician in the qualified-patient definition, Part 1.4, is another: it returns the statutory judgment of medical appropriateness to the clinician umbrella, so the judgment is no longer fixed by definition in the number-holding role even if the number stays. The analysis of what the number is, who can hold it, and who it excludes is on the site's controlled-substance number page.
 
 ---
 
