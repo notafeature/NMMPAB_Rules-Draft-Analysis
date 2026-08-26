@@ -36,6 +36,75 @@ DOCDATE = "August 25, 2026"
 OUT = os.path.join(ROOT, "docs", "rule.html")
 NSECTIONS = 28
 
+# The rule defines nothing of its own: 7.35.3.7 imports every definition from
+# 7.35.2.7 NMAC, which the amendments published August 25 rewrite. The program
+# rulemaking's definitions therefore live inside the producer rule's section,
+# and every future Part's definitions will land there the same way. The
+# section built from AMEND_SOURCE reproduces the program-side definitions on
+# this page, verbatim in the amendment's own strike-and-add notation, so a
+# reader of the rule is never sent to a different document for the words the
+# rule runs on.
+AMEND_SOURCE = os.path.join(ROOT, "source-text",
+                            "rules-7.35.2-amendments-2026-08-25-published.txt")
+AMEND_DOC = "documents/rules-7.35.2-amendments-2026-08-25-published.pdf"
+
+# The program-side terms, in the amendment's own order. Producer-side terms
+# (cultivation, lots, testing) stay with the producer rule.
+DEF_TERMS = [
+    "Administration session", "Administrative review committee",
+    "Adverse health event", "Approved location", "Certificant",
+    "Certification", "Certifying clinician", "Clinician",
+    "Educational program", "Electronic system", "Enrollment", "Facilitator",
+    "Guide", "Healing center", "Integration session",
+    "Medical psilocybin service", "Medical services", "New Mexico module",
+    "Other approved location", "Practicum", "Practitioner",
+    "Preparation session", "Qualified patient", "Qualifying condition",
+    "Registrant of another approved location",
+]
+
+# Notes under individual definitions. Every claim is sourced.
+# type: open | settled | defect | blue
+DEF_NOTES = {
+    "Certifying clinician": [("open", "The contested scope of the screening role",
+        "The definition authorizes the certifying clinician “to diagnose or confirm a "
+        "previous diagnosis of a qualifying condition,” and carries the controlled-substance "
+        "number inside it. At the August 21 committee meeting the department described the role "
+        "more narrowly: ensuring the medical clearance, so that the person does indeed have the "
+        "diagnosis and treatment is medically appropriate, with the counseling-side judgment "
+        "sitting with the treating role. The committee recommendation proposes renaming the role "
+        "the medical screener and confining it to medical screening. The number requirement is "
+        "analyzed on <a href='cs-number.html'>the controlled-substance number page</a>; the "
+        "August 21 exchange is on <a href='record.html#e-2026-08-21'>the record</a>.")],
+    "Practitioner": [("blue", "Rewritten, and the rename declined",
+        "The amendment strikes the adopted definition, “an individual who is a licensed "
+        "healthcare professional,” for a certified clinician providing psilocybin "
+        "integrative therapy and supervising facilitators. The committee recommendation proposes "
+        "renaming the role the Licensed Provider; the published texts keep practitioner. The "
+        "recommendation's position is on "
+        "<a href='recommendation.html'>the recommendation page</a>.")],
+    "Guide": [("blue", "Struck into an alias",
+        "The adopted rule defined the guide as its own registered role, assisting practitioners. "
+        "The amendment strikes that definition; guide survives only as the alternate name inside "
+        "the facilitator definition above.")],
+    "Qualifying condition": [("blue", "Where the conditions bind the curriculum",
+        "End-of-life care, post-traumatic stress disorder, and substance use disorders are three "
+        "of the four qualifying conditions, and none is a named topic in the didactic list at "
+        "7.35.3.18 (C); the list's nearest counterpart is “Education on the qualifying "
+        "conditions and appropriate treatment practices.”")],
+}
+
+# What the section says about itself before the entries.
+DEFS_LEDE = (
+    "This rule defines nothing of its own: 7.35.3.7 imports every definition from 7.35.2.7 "
+    "NMAC, the producer rule's definitions section, which the amendments published August 25 "
+    "rewrite. The program-side definitions are reproduced here verbatim from that amendment, "
+    "in its own notation: <s>bracketed struck text</s> is language the amendment removes from "
+    "the adopted rule, and the rest is what would stand. Every future Part of the program's "
+    "rules will carry its definitions into 7.35.2.7 the same way. The full amendment, with the "
+    "producer-side definitions and the changes to producer sales and transportation, is the "
+    "source PDF each entry links."
+)
+
 KICKER = ('Published August 25, 2026 &middot; <b>the current proposed rule</b> &middot; '
           'rule hearing October 2, 2026')
 LEDE = ("The full text of 7.35.3 NMAC as published August 25, 2026, all twenty-eight "
@@ -66,8 +135,9 @@ ANNOTATIONS = {
          "practitioner, facilitator, and the New Mexico module among them, are in the amendments to "
          "7.35.2.7 NMAC published August 25 alongside this text. The definitions were sent to the "
          "Training and Education Committee on July 17 with the hours; the amendments carry the "
-         "department's language. The amendments PDF is in the register on the "
-         "<a href='record.html#documents'>record page</a>.")],
+         "department's language. The program-side definitions are reproduced, verbatim and "
+         "annotated, in <a href='#defs'>the section directly below</a>; the amendments PDF is in "
+         "the register on the <a href='record.html#documents'>record page</a>.")],
     9: [("settled", "Controlled-substance number, kept",
          "The requirement that a certifying clinician hold a New Mexico controlled-substance number was "
          "contested through June and July and kept by the department on July 17. It stands in this "
@@ -190,6 +260,86 @@ def read_sections():
                          "misprint": misprint})
     return sections
 
+def read_definitions():
+    """The program-side definitions from the amendments extraction, verbatim,
+    each with the PDF page it sits on."""
+    raw = open(AMEND_SOURCE).read()
+    pages = [(m.start(), int(m.group(1))) for m in re.finditer(r"===== PAGE (\d+) =====", raw)]
+    def page_of(i):
+        p = 1
+        for start, n in pages:
+            if start <= i: p = n
+            else: break
+        return p
+    flat = re.sub(r"===== PAGE \d+ =====", "", raw)
+    # every definition start: “Term” means, “Term” or “alias” means, and the
+    # struck standalone guide entry, whose bracket opens before the quote
+    starts = [(m.start(), m.group(1)) for m in re.finditer(
+        r"[“\"]([A-Z][^”\"]{1,60})[”\"](?:\s+or\s+[“\"][^”\"]+[”\"])?\s*(?:means|includes|is any|an individual)", flat)]
+    bounds = {}
+    for i, (pos, term) in enumerate(starts):
+        end = starts[i + 1][0] if i + 1 < len(starts) else len(flat)
+        # stop at a lettered group heading between this entry and the next
+        m = re.search(r"\n\s+[A-Z]\.\s+Definitions beginning", flat[pos:end])
+        if m: end = pos + m.start()
+        bounds.setdefault(term.strip().lower(), (pos, end))
+    # offsets into `flat` do not match `raw`; map by text position of the term
+    out = []
+    for term in DEF_TERMS:
+        key = term.lower()
+        if key not in bounds:
+            raise SystemExit(f"definition {term!r} not found in the amendments extraction")
+        pos, end = bounds[key]
+        text = re.sub(r"\s+", " ", flat[pos:end]).strip()
+        # the span runs to the next definition's start, which can leave that
+        # entry's leading enumeration token behind; trim it
+        text = re.sub(r"(?:\s*\[?\(\d+\)\]?)+\s*\.?\s*$", "", text).rstrip()
+        if not text.endswith((".", "]", ";")):
+            text += "."
+        text = "“" + text
+        # the guide entry sits inside a struck bracket that opens before the
+        # quote; carry the bracket in so the strike renders
+        if term == "Guide" and not text.startswith("["):
+            open_b = flat.rfind("[", 0, pos)
+            if open_b != -1 and flat.find("]", pos) < end + 40:
+                text = "[" + text
+        rawpos = raw.find(flat[pos:pos + 40])
+        out.append({"term": term, "text": text,
+                    "page": page_of(rawpos if rawpos != -1 else 0)})
+    return out
+
+
+def render_definition(d):
+    t = html.escape(d["text"])
+    t = re.sub(r"\[([^\]]+)\]", r"<s>\1</s>", t)
+    t = re.sub(r"^““", "“", t)
+    if d["term"] == "Guide":
+        # the whole entry is struck; the opening bracket precedes the quote
+        t = t.replace("“<s>", "<s>", 1)
+    chipword = {"open": "Open", "settled": "Settled", "defect": "Defect", "blue": "Note"}
+    notes = "\n".join(
+        f"<div class='note {kind}'><span class='mark {kind}'>{chipword[kind]}</span> "
+        f"<b>{html.escape(title)}.</b> {txt}</div>"
+        for kind, title, txt in DEF_NOTES.get(d["term"], []))
+    return (f"<div class='defentry' id='def-{d['term'].lower().replace(' ', '-')}'>"
+            f"<div class='defhead'><span class='dterm'>{html.escape(d['term'])}</span>"
+            f"<a class='pdf' href='{AMEND_DOC}#page={d['page']}' target='_blank' rel='noopener' "
+            f"data-cite='Proposed amendments to 7.35.2 NMAC, August 25, 2026, page {d['page']}'>"
+            f"PDF p. {d['page']}</a></div>"
+            f"<p class='deftext'>{t}</p>{notes}</div>")
+
+
+def render_defs_section():
+    entries = "\n".join(render_definition(d) for d in read_definitions())
+    return f"""
+<section class="rsec" id="defs">
+  <div class="rhead"><span class="rnum">7.35.2.7</span><h2 class="rtitle">The Definitions The Rule Runs On</h2>
+  <a class="pdf" href="{AMEND_DOC}#page=1" target="_blank" rel="noopener" data-cite="Proposed amendments to 7.35.2 NMAC, August 25, 2026">PDF pp. 1-4</a></div>
+  <p class="defslede">{DEFS_LEDE}</p>
+  {entries}
+</section>"""
+
+
 def render_body(body):
     """Split on subsection letters at line starts; collapse whitespace inside."""
     lines = body.split("\n")
@@ -239,6 +389,13 @@ def main():
   {notehtml}
 </section>""")
 
+    # The definitions the rule imports, placed directly after 7.35.3.7, which
+    # is the section that imports them.
+    body.insert(7, render_defs_section())
+    toc.insert(7, "<a class='toc' href='#defs'><span class='sect'>2.7</span> "
+                  "<span class='t'>The Definitions The Rule Runs On</span> "
+                  "<span class='mark open'>Open</span> <span class='mark blue'>Note</span></a>")
+
     name = syncnav.NAMES["rule"]
     nav = syncnav.build_nav("rule")
     doc = f"""<!DOCTYPE html>
@@ -260,6 +417,13 @@ a.toc .t{{flex:1}}
 a.pdf{{font:600 10.5px var(--mono);color:var(--faint);text-decoration:none;white-space:nowrap}}
 a.pdf:hover{{color:var(--blue)}}
 .hist{{color:var(--faint);font-size:12.5px}}
+.defslede{{font-size:14px;color:var(--ink2);line-height:1.6;max-width:74ch;margin:0 0 18px}}
+.defentry{{padding:12px 0;border-top:1px solid var(--hair);scroll-margin-top:70px}}
+.defentry:first-of-type{{border-top:none}}
+.defhead{{display:flex;gap:12px;align-items:baseline}}
+.dterm{{font:650 14px var(--sans);color:var(--ink);flex:1}}
+.deftext{{font-size:14px;color:var(--ink2);line-height:1.6;margin:5px 0 0;max-width:74ch}}
+.deftext s,.defslede s{{color:var(--faint)}}
 @media(max-width:760px){{.toclist{{grid-template-columns:1fr}}}}
 </style>
 <noscript><style>.tnav{{display:flex}}</style></noscript>
