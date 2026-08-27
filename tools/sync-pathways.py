@@ -67,6 +67,7 @@ PAGE = os.path.join(DOCS, "pathways.html")
 # The published rule, cited by page, and the July 9 meeting transcript. Every
 # step's citation is built from one of these two.
 J7 = "documents/rules-draft-2026-08-25-published.pdf#page="
+J72 = "documents/rules-7.35.2-amendments-2026-08-25-published.pdf#page=3"
 T7 = "documents/NMMPAB-2026-07-09-transcript.pdf"
 
 
@@ -298,6 +299,128 @@ PERMITS = {
              "src": L("published rule 7.35.3.18 (G), p.13", J7 + "13")},
         ],
     },
+    "hc": {
+        "name": "Healing Center",
+        "dot": "#1F7A5A",
+        "steps": [
+            {"t": "<b>No license, training, or examination is required of the applicant.</b> The "
+                  "healing center is the one certification in this rule that any person may apply "
+                  "for. &ldquo;Person&rdquo; is defined to include a natural person as well as a "
+                  "corporation, partnership, or limited liability company, so an individual may hold "
+                  "it. The center itself is certified; the people who work in it are certified "
+                  "separately.",
+             "s": "set",
+             "why": "Compare the practitioner and facilitator applications at 7.35.3.9, which require "
+                    "a professional license, completed practicum, life support certification, and "
+                    "HIPAA training. None of that attaches here.",
+             "src": L("published rule 7.35.3.11 (A), p.5", J7 + "5") + " &middot; "
+                    + L("7.35.2.7 definition of person", J72)},
+            {"t": "<b>Stand up the business.</b> Register with the New Mexico secretary of state and "
+                  "with taxation and revenue, and obtain any business licenses your city or county "
+                  "requires.",
+             "s": "set",
+             "src": L("published rule 7.35.3.11 (A)(4) to (6), p.5", J7 + "5")},
+            {"t": "<b>Secure the premises.</b> A certificate of occupancy for each New Mexico location "
+                  "where you will operate, and either proof that you own the property or a signed "
+                  "written statement from the owner acknowledging that people will be participating "
+                  "in the medical psilocybin program there and what they are authorized to do.",
+             "s": "open", "flag": "Contested",
+             "why": "The same owner-statement instrument governs treatment at a patient's home under "
+                    "Subsection B, where it means a renting patient needs the landlord's signature "
+                    "before being treated at home. Landlord approval and patient privacy were raised "
+                    "at the August 21 committee meeting and the chair called it a subject to be "
+                    "discussed further. Public comment continues through the October 2 hearing.",
+             "src": L("published rule 7.35.3.11 (A)(7) and (8), p.5", J7 + "5")},
+            {"t": "<b>Make the location safe and reachable.</b> Proof of compliance with disability "
+                  "access law, proof of a working communication device that reliably reaches emergency "
+                  "medical services, a plan for secured storage of the psilocybin, and a plan for "
+                  "wastage of what is not used.",
+             "s": "set",
+             "src": L("published rule 7.35.3.11 (A)(9), (16), (17), (20), pp.5-6", J7 + "5")},
+            {"t": "<b>Write the operating plans.</b> Record retention; patient confidentiality, which "
+                  "the list asks for twice at items (13) and (18); a safety and emergency response plan "
+                  "covering adverse health event response and reporting; written complaint and "
+                  "grievance procedures available to patients; and a plan for transparency and "
+                  "disclosure of fees to patients.",
+             "s": "set",
+             "src": L("published rule 7.35.3.11 (A)(12) to (15), (18), (19), pp.5-6", J7 + "5")},
+            {"t": "<b>If sessions will happen outdoors</b>, add a detailed description of the outdoor "
+                  "area identifying safe entrances and exits and verifying it is free of hazards, an "
+                  "emergency safety and response plan, and proof that emergency medical services can "
+                  "be contacted from the location and can respond to it.",
+             "s": "set",
+             "why": "A separate operating duty applies once you are running: a natural-environment "
+                    "setting 15 minutes or more from emergency services needs a first aid kit, an AED, "
+                    "and two people present holding wilderness first aid, wilderness first responder, "
+                    "or New Mexico emergency medical technician credentials.",
+             "src": L("published rule 7.35.3.11 (A)(21), p.6", J7 + "6") + " &middot; "
+                    + L("7.35.3.20 (K), p.16", J7 + "16")},
+            {"t": "<b>Name everyone.</b> An organizational chart of governance and operations, a list "
+                  "of all owners or board members with contact information, the primary program "
+                  "contact, a list of all employees by legal name, and the contact details of any "
+                  "affiliated practitioners or facilitators.",
+             "s": "set",
+             "why": "The employee list matters twice over: 7.35.3.14 (C) grants medicine-handling "
+                    "authority to owners and employees &ldquo;who are registered with the "
+                    "department,&rdquo; and no section of the rule creates that registration. The "
+                    "application list is the nearest thing the rule has to one.",
+             "src": L("published rule 7.35.3.11 (A)(2), (3), (10), (11), (22), pp.5-6", J7 + "5")},
+            {"t": "<b>Sign the affirmations.</b> Consent to publication of the center's contact "
+                  "information if certified, an affirmation that everything submitted is true and "
+                  "accurate, an attestation that no person associated with the applicant is registered "
+                  "as a sex offender in any jurisdiction, and the authorized representative's signature "
+                  "and date.",
+             "s": "set",
+             "src": L("published rule 7.35.3.11 (A)(23), (24), p.6", J7 + "6")},
+            {"t": "<b>Submit and wait.</b> The whole application goes through the department's "
+                  "electronic system. <b>The rule sets no application or certification fee</b>, here or for "
+                  "any other certification; the only fees it names are the ones a center discloses to "
+                  "patients and the ones an educational program charges students. Certification takes "
+                  "effect the day the department issues it "
+                  "and runs <b>two years</b>.",
+             "s": "set",
+             "why": "If the application is denied the department gives notice within 30 calendar days, "
+                    "and you may re-apply after six months. A second denial means another six months. "
+                    "A denial may be appealed.",
+             "src": L("published rule 7.35.3.11 (D), pp.6-7", J7 + "6")},
+            {"t": "<b>You cannot run a session alone.</b> The center holds the certification, but an "
+                  "administration session needs certified people in the room: at least one practitioner "
+                  "and one facilitator for an individual session, and for a group session one "
+                  "practitioner for every eight patients and one facilitator or qualified student for "
+                  "every two.",
+             "s": "open", "flag": "Open",
+             "why": "Read literally the individual-session rule requires exactly one of each, so two "
+                    "practitioners would not satisfy it. The department may waive or decrease the ratio "
+                    "if it finds the ratio is a barrier for patients and safety concerns are otherwise "
+                    "alleviated.",
+             "src": L("published rule 7.35.3.20 (H)(5), p.16", J7 + "16")},
+            {"t": "<b>Then the operating duties begin</b>, and they are in a different section from "
+                  "the application. Fourteen of them: keep a list of qualified patients and a daily log, "
+                  "no firearms on the premises, consumption only on the premises, limit who may be "
+                  "present, display the certification publicly, give patients specified information, "
+                  "maintain the safety plan and provide it to everyone who uses the location, storage "
+                  "rules, adverse health event reporting, and record access for the department.",
+             "s": "set",
+             "why": "An applicant reading only 7.35.3.11 would not meet most of this. The obligations "
+                    "that decide how the center actually runs live at 7.35.3.20.",
+             "src": L("published rule 7.35.3.20, pp.15-17", J7 + "15")},
+            {"t": "<b>Renew every two years</b>, filing the renewal packet no more than 60 and no less "
+                  "than 30 calendar days before the certification expires.",
+             "s": "set",
+             "src": L("published rule 7.35.3.11 (C), p.6", J7 + "6")},
+            {"t": "<b>One ownership rule, and one silence.</b> A certificant, or a person who owns part "
+                  "of one, may not hold an ownership interest in a permittee, which means a psilocybin "
+                  "producer or a testing laboratory. The rule says nothing about whether a certifying "
+                  "clinician, practitioner, or facilitator may own a healing center.",
+             "s": "open", "flag": "Unresolved",
+             "why": "The wall the rule builds runs between treatment and supply, not inside treatment. "
+                    "No provision permits a provider to own a center and none forbids it, so a person "
+                    "deciding whether to invest has nothing in the text to rely on. Nothing in the rule "
+                    "addresses a certifying clinician certifying a patient into a center the clinician "
+                    "holds an interest in.",
+             "src": L("published rule 7.35.3.23, p.18", J7 + "18")},
+        ],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -320,6 +443,8 @@ STARTS = [
                   "terms as any other applicant. The rule gives a doula no permit or scope of their "
                   "own; it allows any other individual to be present at an administration session on "
                   "each patient's prior written consent, at 7.35.3.20 (D)."},
+         {"permit": "hc", "state": "open",
+          "line": "Open to anyone. The rule sets no license, training, or examination for the applicant; the certification is held by the center, and the people who work in it are certified separately."},
      ]},
     {"elig": "band-behavioral", "cs": True, "id": "therapy", "title": "Therapy or counseling license",
      "ex": "Psychologist, LCSW, LPCC, LMFT, psychiatric NP.",
@@ -330,6 +455,8 @@ STARTS = [
                   "was contested and kept by the department on July 17."},
          {"permit": "prac", "state": "open", "line": "Direct route."},
          {"permit": "fac", "state": "open", "line": "Also open. No license needed for this one."},
+         {"permit": "hc", "state": "open",
+          "line": "Open. No license is required of the applicant, and holding one adds nothing to this application."},
      ]},
     {"elig": "band-medical", "cs": True, "id": "diagnose", "title": "License to diagnose",
      "ex": "Physician (MD/DO), psychiatrist, nurse practitioner, physician assistant.",
@@ -341,6 +468,8 @@ STARTS = [
           "line": "Requires a license to practice therapy, counseling, or behavioral services, "
                   "stated in the August 25 text (examples PSY, LSW, LCSW)."},
          {"permit": "fac", "state": "open", "line": "Also open."},
+         {"permit": "hc", "state": "open",
+          "line": "Open. No license is required of the applicant, and holding one adds nothing to this application."},
      ]},
     {"elig": "band-otherhealth", "id": "otherhealth", "title": "Other health license",
      "ex": "Registered nurse, pharmacist, licensed massage therapist. No diagnosis or therapy scope.",
@@ -348,6 +477,8 @@ STARTS = [
          {"permit": "dc", "state": "nopath", "line": "Needs a diagnosing license."},
          {"permit": "prac", "state": "nopath", "line": "Needs a therapy license."},
          {"permit": "fac", "state": "open", "line": "Direct route."},
+         {"permit": "hc", "state": "open",
+          "line": "Open. No license is required of the applicant, and holding one adds nothing to this application."},
      ]},
     {"elig": "endoflife-roles", "id": "palliative", "title": "A specialty rather than a license",
      "ex": "Palliative care specialist, hospice clinician, and anyone whose field of practice is not "
@@ -364,6 +495,8 @@ STARTS = [
          {"permit": "fac", "state": "open",
           "line": "Open whatever license is held, because this route turns on no license at all. It is "
                   "the one route the whole palliative care team shares."},
+         {"permit": "hc", "state": "open",
+          "line": "Open. No license is required of the applicant, and holding one adds nothing to this application."},
      ]},
     {"elig": "band-outofstate", "id": "elsewhere", "title": "Trained outside New Mexico",
      "ex": "Out-of-state, international, or Tribal, Pueblo, and Nation programs NMDOH approves.",
@@ -374,6 +507,8 @@ STARTS = [
           "line": "The published rule names certifying clinicians as eligible under 7.35.3.10, but the "
                   "application items listed there are for practitioners and facilitators. Unresolved in "
                   "the draft."},
+         {"permit": "hc", "state": "open",
+          "line": "Open. No New Mexico license is required of the applicant, but the location itself must be in New Mexico and carry a certificate of occupancy."},
      ]},
 ]
 
