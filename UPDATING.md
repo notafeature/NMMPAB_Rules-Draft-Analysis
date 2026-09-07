@@ -8,8 +8,9 @@ It answers one question: **"I have new source material. What do I have to touch?
 It is not a style guide and not a philosophy. If you need to know what a page is for, open
 the page. `WRITING-STANDARD.md` holds the writing rules and `CLAUDE.md` the standing facts.
 
-The site is fourteen content pages and four redirect stubs in `docs/`, and the facts that go
-stale fastest live in generated regions: five sync tools own the menu, the record, the status
+The site is fourteen content pages in `docs/7.35.3/`, the parts index at `docs/index.html`, and a
+redirect stub at every retired root address, and the facts that go stale fastest live in generated
+regions: five sync tools own the menu, the record, the status
 surfaces, the routes, and the provenance blocks, and `tools/check-site.py` fails when any
 page drifts from its tool. The order of work for any event is therefore: **documents first,
 then the tool data, then the run, then the hand-maintained prose, then the checks.**
@@ -31,10 +32,10 @@ and **both move between drafts.** A published draft has always renumbered someth
 | 4 | `tools/sync-record.py` | the DOCUMENT event in `EVENTS`, the new register row in `DOCUMENTS` with `"chain": True` and `"status": "current"`, and the superseded row restated as superseded. Run it |
 | 5 | `tools/sync-provenance.py` | a `CHANGED` entry for the new document: what it changed, which is the chain narrative every page's provenance block carries. Run it |
 | 6 | `tools/sync-nav.py` | `MENU_DOCUMENTS`: the dropdown carries the register, the current operative text, and the documents of the most recent meeting or filing, per `DOCUMENTS_CONTRACT`. Run it |
-| 7 | `tools/build-rule-page.py` | point `SOURCE` at the new extraction, update `DOC`, `DOCDATE`, and the hero constants, review `ANNOTATIONS`, run it. The script regenerates `docs/rule.html` with the shared menu imported from `sync-nav.py` and then runs the stylesheet, counter, and provenance tools over the fresh page itself. The August 2026 refusal-to-run is retired with the chrome that caused it |
+| 7 | `tools/build-rule-page.py` | point `SOURCE` at the new extraction, update `DOC`, `DOCDATE`, and the hero constants, review `ANNOTATIONS`, run it. The script regenerates `docs/7.35.3/rule.html` with the shared menu imported from `sync-nav.py` and then runs the stylesheet, counter, and provenance tools over the fresh page itself. The August 2026 refusal-to-run is retired with the chrome that caused it |
 | 8 | `tools/sync-status.py` | any `STATUS` item whose state or summary the new draft changes, and any date in `DATES`. Run it |
 | 9 | `tools/sync-pathways.py` | every step citation carries a section number and a `#page=N` anchor; re-cite against the new PDF. Run it |
-| 10 | `docs/changes.html` | **add a new diff layer on top.** Previous published vs new published. Older layers stay, unedited, with their own pagination |
+| 10 | `docs/7.35.3/changes.html` | **add a new diff layer on top.** Previous published vs new published. Older layers stay, unedited, with their own pagination |
 | 11 | Every page in the fact index (Part 2) whose figure changed, and every remaining `#page=N` anchor in hand-maintained prose | old anchors are wrong the moment the PDF changes |
 | 12 | `tools/sync-provenance.py` → `REVISIONS` | a dated entry for each page whose content changed, then run it again |
 | 13 | Run the checks (Part 3) | |
@@ -117,7 +118,7 @@ script is run. Hand-editing the page is how drift started in August 2026 and is 
 **Regenerate it:**
 
 ```bash
-cd docs && python3 - <<'PY'
+cd docs/7.35.3 && python3 - <<'PY'
 import glob, re, os
 pages = {}
 for f in sorted(glob.glob('*.html')):
@@ -160,9 +161,10 @@ tool is named, the page's content is edited in that tool and regenerated, never 
 | `changes.html` | Provision-level diffs, one layer per document transition, newest on top | |
 | `training-hours-record.html` | The dated record of the hours question: roles, benchmarks, cost, the July 9 and 17 records, and public comment given at meetings | status strip: `tools/sync-status.py` |
 
-The four redirect stubs, `documents.html`, `guide.html`, `history.html`, and `input.html`,
-are retired addresses. They own nothing, they redirect into the pages above, and
-`check-site.py` verifies each stub's target holds the anchor it promises.
+The redirect stubs at the root of `docs/`, one at every address the site used before it was
+arranged by Part on September 7, 2026, are retired addresses. They own nothing, they redirect
+into the pages above, and `check-site.py` verifies each stub's target holds the anchor it
+promises.
 
 Two ownership rules that have been decided and should not drift back:
 
@@ -184,13 +186,13 @@ generated region in a page is fenced by a marker comment naming its tool.
 
 | Block | Tool | Covers |
 |---|---|---|
-| Shared menu and its script, including the Documents dropdown and every page name | `tools/sync-nav.py` (`NAMES`, `TITLE_SUFFIX`, `GROUPS`, `MENU_DOCUMENTS`, `DOCUMENTS_CONTRACT`) | all 14 content pages |
+| Shared menu and its script, including the Documents dropdown and every page name | `tools/sync-nav.py` (`NAMES`, `TITLE_SUFFIX`, `GROUPS`, `MENU_DOCUMENTS`, `DOCUMENTS_CONTRACT`) | all 14 content pages of the Part |
 | The chain of events, the document register, the gaps register | `tools/sync-record.py` (`EVENTS`, `DOCUMENTS`, `GAPS`) | `record.html` |
 | The four status surfaces: Where things stand and the Scheduled dates, the hours kicker, the eligibility legend dates, the training-hours-record strip | `tools/sync-status.py` (`STATUS`, `DATES`, `STAGES`, `SCHEDULED`) | `index.html`, `hours.html`, `eligibility.html`, `training-hours-record.html` |
 | The starting-license picker and every route panel | `tools/sync-pathways.py` (`STARTS`) | `pathways.html` |
-| The provenance block: chain narrative and the per-page revision log | `tools/sync-provenance.py` (`CHANGED`, `REVISIONS`; the chain data is read from `tools/sync-record.py`) | all 14 content pages |
+| The provenance block: chain narrative and the per-page revision log | `tools/sync-provenance.py` (`CHANGED`, `REVISIONS`; the chain data is read from `tools/sync-record.py`) | all 14 content pages of the Part |
 | The whole rule page | `tools/build-rule-page.py` (`ANNOTATIONS`; runs the stylesheet, counter, and provenance tools itself after writing) | `rule.html` |
-| Visit-counter beacon | `tools/sync-count.py` | all 18 pages, stubs included |
+| Visit-counter beacon | `tools/sync-count.py` | every page: the parts index, the stubs, and each Part |
 | The versioned stylesheet link, `style.css?v=<hash>` | `tools/sync-css-version.py` | every page that links `style.css` |
 
 A new page needs nothing special from the counter tool: run it and the beacon appears. The
@@ -309,17 +311,17 @@ missing paperwork. The reader-facing list is the gaps register at `record.html#g
 data is `GAPS` in `tools/sync-record.py`; keep this table, that data, and the upstream
 pointers in step. Landing any of these closes a gap.
 
-Meeting notes and transcripts originate in **Notion** and are copied here. Where a gap has a
-known Notion page it is named below; that material was never missing, only uncopied.
+Meeting recordings and transcripts are obtained from the public record and copied here. Where
+a working record was written from an unofficial transcript, the Upstream column names it.
 
 | Missing here (gap id) | What rests on it | Upstream |
 |---|---|---|
-| Official minutes, any meeting (`gap-minutes`) | the June 26 motion's mover is attributed from a meeting-note summary | the department has posted none; the June 26 summary relied on is in Notion, "Medical Psilocybin Advisory Board Meeting (June 2026)" |
-| June 12 and June 25 recordings or transcripts (`gap-june`) | statements attributed to those meetings; the documents they produced are held | Notion, "Training & Education Rules: Vote Record, Redline & Open Items (6/25 to 6/26)"; no upstream is located for June 12 |
-| July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | Notion, "End of life Care 7/16" and "Proposed Adjunct Training in End-of-Life Psychedelic Care (Slides)" |
+| Official minutes, any meeting (`gap-minutes`) | the June 26 motion's mover is attributed from a meeting-note summary | the department has posted none; the June 26 attribution rests on a meeting-note summary, not on the transcript |
+| June 12 and June 25 recordings or transcripts (`gap-june`) | statements attributed to those meetings; the documents they produced are held | the working records are `analysis/6-25-hearing-extraction.md` and `analysis/6-26-board-extraction.md`; no recording of June 12 is located |
+| July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | the working record is `analysis/eol-july16-committee-source.md`; no recording is located |
 | May 22 committee meeting record (`gap-may22`) | nothing; it is recorded as held and unposted | none exists; the department did not record it |
-| August 14 board meeting recording or transcript, and the set-aside notice (`gap-aug14`) | the set-aside of the July 23 publication, and the August 25 stated date | Notion, "Medical Psilocybin Advisory Board - 8/14"; the working record is `analysis/8-14-board-extraction.md` |
-| August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | Notion, "Training and Education - 8/21"; the department recorded the meeting for posting. The working record is `analysis/8-21-committee-extraction.md` |
+| August 14 board meeting recording or transcript, and the set-aside notice (`gap-aug14`) | the set-aside of the July 23 publication, and the August 25 stated date | the working record, from the unofficial transcript, is `analysis/8-14-board-extraction.md` |
+| August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | the department recorded the meeting for posting. The working record, from the unofficial transcript, is `analysis/8-21-committee-extraction.md` |
 
 **Copying one in is Event C** (Part 1). Put the PDF in `docs/documents/`, the searchable
 text in `source-text/`, add the register row and remove the gap in `tools/sync-record.py`

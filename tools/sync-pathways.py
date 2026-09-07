@@ -61,14 +61,17 @@ import os
 import re
 import sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
+PART = partlib.current_part()
+DOCS = partlib.docs_dir(PART)
 PAGE = os.path.join(DOCS, "pathways.html")
 
 # The published rule, cited by page, and the July 9 meeting transcript. Every
 # step's citation is built from one of these two.
-J7 = "documents/rules-draft-2026-08-25-published.pdf#page="
-J72 = "documents/rules-7.35.2-amendments-2026-08-25-published.pdf#page=3"
-T7 = "documents/NMMPAB-2026-07-09-transcript.pdf"
+J7 = "/documents/rules-draft-2026-08-25-published.pdf#page="
+J72 = "/documents/rules-7.35.2-amendments-2026-08-25-published.pdf#page=3"
+T7 = "/documents/NMMPAB-2026-07-09-transcript.pdf"
 
 
 def L(text, href):

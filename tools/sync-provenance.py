@@ -43,7 +43,10 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCS = os.path.join(ROOT, "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
+PART = partlib.current_part()
+DOCS = partlib.docs_dir(PART)
 
 # The document chain lives in the register, in tools/sync-record.py, which is
 # where record.html reads it from as well. This block used to carry its own copy
@@ -302,7 +305,7 @@ def build(page):
         '          <p class="cw">This document supersedes {n} earlier ones. Each of them, what it '
         'is, what superseded it and when, and a download, is in the register at '
         '<a href="record.html#documents">Meetings and filings</a>.</p>'
-    ).format(date=syncrecord.long_date(cur["date"]), file=cur["file"], name=esc(cur["name"]),
+    ).format(date=syncrecord.long_date(cur["date"]), file="/" + cur["file"], name=esc(cur["name"]),
              what=esc(CHANGED[cur["slug"]]), n=WORDS.get(superseded, superseded))
 
     revs = REVISIONS.get(page)

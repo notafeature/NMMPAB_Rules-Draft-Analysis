@@ -49,7 +49,10 @@ import os
 import re
 import sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
+PART = partlib.current_part()
+DOCS = partlib.docs_dir(PART)
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]

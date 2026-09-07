@@ -4,7 +4,7 @@
 .LSOverride
 ._*
 
-# Python venv used for PDF extraction (see HANDOFF.md §10)
+# Python venv used for PDF extraction
 pdfenv/
 __pycache__/
 *.pyc

@@ -27,14 +27,16 @@ The operative document is the department's **revised proposed rule 7.35.3 NMAC, 
 
 Earlier documents are history and are cited only where a page compares versions: the June 12 committee recommendation, the June 25 department draft, the July 9 board-meeting draft, and the set-aside July 23 publication.
 
-For what changed and when, see `docs/record.html` and `docs/changes.html`. For why the dates are what they are, see [CLAUDE.md](CLAUDE.md).
+For what changed and when, see `docs/7.35.3/record.html` and `docs/7.35.3/changes.html`. For why the dates are what they are, see [CLAUDE.md](CLAUDE.md).
 
 ## What's here
 
 ```
 NMMPAB_Rules-Draft-Analysis/
 ├── docs/                     <- the site, published by GitHub Pages from main
-│   ├── index.html            <- the overview: where the rulemaking stands, portals by role
+│   ├── index.html            <- the parts index: every Part of 7.35 NMAC and where it stands
+│   ├── 7.35.3/               <- the Training and Education pages, listed below
+│   ├── *.html                <- a redirect stub at every retired root address
 │   ├── rule.html             <- the published text, all 28 sections, verbatim and annotated
 │   ├── recommendation.html   <- the committee recommendation beside the published text
 │   ├── hours.html            <- the working model of the three deferred quantities
@@ -49,11 +51,10 @@ NMMPAB_Rules-Draft-Analysis/
 ├── amendments/               <- drafting for the practicum sections, with its own audit harness
 ├── amendments-remainder/     <- drafting for the sections outside the practicum, with its own audit harness
 ├── analytics/                <- the visit-counter Worker. The only wrangler config in the repo
-├── redesign/                 <- the working folder behind the redesign: brief, prototypes, audits
 ├── Document Register/        <- original source PDFs and the Medical Psilocybin Act
 ├── source-text/              <- plain-text extractions, searchable
 ├── analysis/                 <- extractions, deltas, research. Public
-├── tools/                    <- build-rule-page.py and check-site.py for the site; sync-nav.py, sync-provenance.py, sync-count.py
+├── tools/                    <- the site tools; partlib.py says which Part a tool works on (--part)
 ├── CLAUDE.md                 <- standing rules and facts (read first)
 ├── WRITING-STANDARD.md       <- how everything here is written
 ├── UPDATING.md               <- what to change when the rulemaking moves
@@ -68,10 +69,10 @@ The layout above is the one in place today. The multi-part layout that replaces 
 
 - **The rule and the drafts:** `docs/documents/`. The August 25 revised proposed rule is current. The June 12 recommendation, the June 25 draft, the July 9 draft, and the set-aside July 23 publication are superseded.
 - **Transcripts:** `docs/documents/` as PDFs and `source-text/` as searchable text. The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.** A speaker is named from an unlabelled transcript only where the surrounding text fixes it, and the basis is stated.
-- **Upstream:** meeting recordings and transcripts are obtained from the public record and copied into this repository. `docs/record.html` lists the documents the repository holds, and `UPDATING.md` Part 6 tracks the gaps for editors. Private working notes are never cited.
+- **Upstream:** meeting recordings and transcripts are obtained from the public record and copied into this repository. `docs/7.35.3/record.html` lists the documents the repository holds, and `UPDATING.md` Part 6 tracks the gaps for editors. Private working notes are never cited.
 - **Names corrected from garbled auto-transcripts:** Zurlo, Leeman, Peskuski, Dezbaá, Fatemi, Wilson, Caldwell, Burgard, Dunn, Ryan, Truckner.
 
-This site is built from public meeting records with AI assistance; the transcripts it relies on are unofficial and may contain errors. See `docs/about.html` for the method and the corrections path.
+This site is built from public meeting records with AI assistance; the transcripts it relies on are unofficial and may contain errors. See `docs/7.35.3/about.html` for the method and the corrections path.
 
 **Everything committed here is treated as published,** including commit messages and everything in `analysis/`, whether the repository is public or private.
 

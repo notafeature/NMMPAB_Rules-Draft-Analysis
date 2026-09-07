@@ -2,13 +2,13 @@
 
 > **NAME CORRECTIONS (apply on use):** Zurlo→**Zurlo**, Piskuski→**Peskuski**, Lima→**Leeman**, Fatimi→**Fatemi**. Quotes preserve raw auto-transcript wording.
 > **"seg." numbers** = auto-transcript segment numbers.
-> Source: Notion page `9c05a6c8a0ea47068a138ac4776121f4` (embedded note `38ba2b7222dc80969c1ec6bb62a88fe5`), full transcript read (365 segments).
+> Source: the unofficial auto-generated transcript of the meeting, read in full (365 segments).
 > Board present: Ian Dunn (Chair), Brenda Burgard, Chris Peskuski, Dan Jennings, Alana Dances, Larry Leeman. Dept: Dominic Zurlo + staff (Jorge, Shane).
 
 ## The motion and vote (verbatim)
 
 **Motion (seg 334):** "I move to adopt these recommendations minus the practicum requirement, the controlled substance number requirement, and the reciprocal timeline. If you are in favor of this document minus those three things, if you could please raise your hand at this time."
-- Attributed to **Brenda Burgard** per the Notion meeting-note summary; raw transcript is unlabeled at this segment (motion + vote-calling are one continuous voice = chair function). **[attribution soft]**
+- Attributed to **Brenda Burgard** per the meeting-note summary; raw transcript is unlabeled at this segment (motion + vote-calling are one continuous voice = chair function). **[attribution soft]**
 
 **Vote (segs 335–340):** "we have two in favor... oh, three in favor. Or are you no or yes, Larry?... We have three... if you are opposed, please raise your hand... the vote is **three in favor, two against**. Again, we have adopted this minus the practicum, controlled substance number and reciprocity timeline, which will be discussed at the next meeting."
 - **Tally 3–2, carried.** Only **Larry Leeman** identified (voting yes). **The two against are NOT named** — do not attribute.

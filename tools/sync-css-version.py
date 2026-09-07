@@ -11,18 +11,20 @@ performs the same check.
 """
 import glob, hashlib, os, re, sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
+DOCS = partlib.DOCS_ROOT
 
 with open(os.path.join(DOCS, "style.css"), "rb") as f:
     want = hashlib.sha256(f.read()).hexdigest()[:8]
 
 check = "--check" in sys.argv
 stale = []
-for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
+for path in sorted(p for d in partlib.all_html_dirs() for p in glob.glob(os.path.join(d, "*.html"))):
     src = open(path).read()
-    new = re.sub(r'href="style\.css[^"]*"', f'href="style.css?v={want}"', src)
+    new = re.sub(r'href="/style\.css[^"]*"', f'href="/style.css?v={want}"', src)
     if new != src:
-        stale.append(os.path.basename(path))
+        stale.append(os.path.relpath(path, DOCS))
         if not check:
             open(path, "w").write(new)
 
