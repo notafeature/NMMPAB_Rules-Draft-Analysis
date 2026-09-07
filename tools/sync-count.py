@@ -27,7 +27,8 @@ import os
 import re
 import sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
 SELF = os.path.abspath(__file__)
 
 # The Worker's origin, no trailing slash. Printed by `npx wrangler deploy`.
@@ -119,8 +120,8 @@ def main():
     changed, ok = [], []
     want = block()
 
-    for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
-        name = os.path.basename(path)
+    for path in sorted(p for d in partlib.all_html_dirs() for p in glob.glob(os.path.join(d, "*.html"))):
+        name = os.path.relpath(path, partlib.DOCS_ROOT)
         src = open(path).read()
         if PATTERN.search(src):
             new = PATTERN.sub(lambda _: want, src, count=1)

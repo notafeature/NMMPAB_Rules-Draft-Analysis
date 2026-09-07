@@ -81,12 +81,14 @@ producers and laboratories.
 
 ### 2.3 The tools are per part
 
-The eight tools in `tools/` were written for one flat `docs/`. Each holds its data in
-constants at the top of the file (`NAMES`, `GROUPS`, `STATUS`, `EVENTS`, `DOCUMENTS`,
-`STARTS`, `ANNOTATIONS`). The multi-part layout moves each part's data into a module of its
-own, `parts/7.35.N/site.py`, and the tools take the part as an argument. The checks in
-`check-site.py` run over every part. This is the largest single piece of the layout move and
-is done on one branch, before any Part 2 content.
+Since September 7, 2026 every tool asks `tools/partlib.py` which Part it is working on
+(`--part 7.35.3`, the default) and where that Part's pages live, and `check-site.py` checks the
+Part's pages and the root together. Each tool still holds its data in constants at the top of
+the file (`NAMES`, `GROUPS`, `STATUS`, `EVENTS`, `DOCUMENTS`, `STARTS`, `ANNOTATIONS`), and
+all of it is Part 3's. The split of that data into per-Part modules is done when the first
+second Part is built, against a real second data set rather than a guessed one; `partlib`
+refuses a Part it has no data for rather than writing one Part's content into another's
+folder.
 
 ### 2.4 The statute layer
 
@@ -134,15 +136,14 @@ copied from one is replaced by the public document it stands for.
 ### 4.1 Today
 
 ```
-docs/                    the site
+docs/                    the site: the parts index, the stubs, 7.35.3/, style.css, documents/
 analysis/                extractions, deltas, research (Part 3)
 source-text/             plain-text extractions (Part 3, the statute, 7.35.2)
 Document Register/       original PDFs as received
 amendments/              drafting for the practicum sections (Part 3), own audit harness
 amendments-remainder/    drafting for the sections outside the practicum (Part 3), own audit harness
 analytics/               the counter Worker; the only wrangler config in the repository
-redesign/                the July 26 redesign working folder; nothing served
-tools/                   the site tools
+tools/                   the site tools, Part-aware through partlib.py
 CLAUDE.md  WRITING-STANDARD.md  UPDATING.md  ARCHITECTURE.md  OPERATIONS.md  README.md
 ```
 
@@ -159,7 +160,13 @@ analytics/               unchanged
 Document Register/       unchanged
 ```
 
-`redesign/` is removed in the layout move. It is recoverable from history.
+`redesign/` was removed on September 7, 2026 and is recoverable from history.
+
+The `parts/` and `statute/` folders are not yet made. The two drafting harnesses in
+`amendments/` and `amendments-remainder/` read `source-text/` and `docs/documents/` by fixed
+path and pass every one of their checks (245 and 772 on September 7, 2026); they are in use
+for the October 2 hearing. The folder move waits until after the hearing so that nothing
+those harnesses read moves under them.
 
 The repository is public today and may become private later. Neither state changes what is
 committed: nothing that names the compiler, nothing from a private workspace, no secret.
@@ -171,11 +178,11 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 | Decision | State | Where it lands |
 |---|---|---|
 | One host per project; the hub at the apex; `rules.` for rule analysis only | Decided | Part 1 |
-| Parts as paths named by part number | Decided | Part 2.1 |
+| Parts as paths named by part number | Built September 7, 2026: `docs/7.35.3/`, the parts index, the stubs | Part 2.1 |
 | Page names in plain language, set in one place | Decided; already the rule for Part 3 | Part 2.1 |
-| One repository for the rules site, all parts | Decided | Part 4 |
+| One repository for the rules site, all parts | Decided; the `parts/` folder move waits until after the October 2 hearing | Part 4 |
 | Statute cited by compiled section; the Act's name kept | Decided | Part 2.4 |
-| No private-workspace references in any committed file | Decided | Part 3 |
+| No private-workspace references in any committed file | Done September 7, 2026 | Part 3 |
 | Status vocabulary | Kept as `tools/sync-status.py` has it until it is cleaned up | |
 | Hosting for `rules.` | GitHub Pages stays while the repository is public. Moves to Cloudflare when the repository goes private | `OPERATIONS.md` Part 4 |
 | The hub at the apex | Decided; not built. Replaces the redirect rule | `OPERATIONS.md` Part 4 |
@@ -186,8 +193,9 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 ### The order of work
 
 1. This document and `OPERATIONS.md`, and the pointers in `CLAUDE.md` and `README.md`.
-2. The layout move: folders, redirect stubs, part-aware tools, `redesign/` removed,
-   private-workspace references removed. No content changes. One branch.
+2. The layout move: `docs/` by Part, redirect stubs, part-aware tools, `redesign/` removed,
+   private-workspace references removed, the official 7.35.2 text held. Done September 7,
+   2026. The `parts/` folder move is deferred to after the hearing (Part 4.2).
 3. Part 2: the official adopted text and the August 25 amendments into `docs/documents/`,
    the rule page built, the index and the two audience pages.
 4. The citation sweep to compiled-section form, and `docs/statute/`.

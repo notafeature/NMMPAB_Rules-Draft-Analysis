@@ -29,11 +29,14 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import partlib
+PART = partlib.current_part()
 
 SOURCE = os.path.join(ROOT, "source-text", "rules-draft-2026-08-25-published.txt")
-DOC = "documents/rules-draft-2026-08-25-published.pdf"
+DOC = "/documents/rules-draft-2026-08-25-published.pdf"
 DOCDATE = "August 25, 2026"
-OUT = os.path.join(ROOT, "docs", "rule.html")
+OUT = os.path.join(partlib.docs_dir(PART), "rule.html")
 NSECTIONS = 28
 
 # The rule defines nothing of its own: 7.35.3.7 imports every definition from
@@ -46,7 +49,7 @@ NSECTIONS = 28
 # rule runs on.
 AMEND_SOURCE = os.path.join(ROOT, "source-text",
                             "rules-7.35.2-amendments-2026-08-25-published.txt")
-AMEND_DOC = "documents/rules-7.35.2-amendments-2026-08-25-published.pdf"
+AMEND_DOC = "/documents/rules-7.35.2-amendments-2026-08-25-published.pdf"
 
 # The program-side terms, in the amendment's own order. Producer-side terms
 # (cultivation, lots, testing) stay with the producer rule.
@@ -438,7 +441,7 @@ def main():
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{name} &middot; {syncnav.TITLE_SUFFIX}</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <style>
 .toclist{{display:grid;grid-template-columns:1fr 1fr;gap:2px 28px;margin:18px 0 6px}}
 a.toc{{display:flex;gap:10px;align-items:baseline;padding:6px 8px;border-radius:4px;text-decoration:none;color:var(--ink);font-size:13.5px}}
@@ -465,7 +468,7 @@ a.pdf:hover{{color:var(--blue)}}
 <body>
 <header class="topbar">
   <div class="inner">
-    <a class="brand" href="index.html"><span class="dot"></span>7.35.3 NMAC &middot; Training &amp; Education</a>
+    <a class="brand" href="index.html"><span class="dot"></span>{partlib.brand(PART)}</a>
 {nav}
     <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false" aria-controls="tnav">&#9776;</button>
   </div>
@@ -494,7 +497,7 @@ a.pdf:hover{{color:var(--blue)}}
     # and the provenance block; running them here means a regenerated page is
     # never live without them.
     for tool in ("sync-css-version.py", "sync-count.py", "sync-provenance.py"):
-        subprocess.run([sys.executable, os.path.join(ROOT, "tools", tool)],
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", tool), "--part", PART],
                        check=True, stdout=subprocess.DEVNULL)
     print("stamped: stylesheet version, visit counter, provenance block")
 

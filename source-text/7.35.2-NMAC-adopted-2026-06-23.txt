@@ -1,21 +1,10 @@
-{"metadata":{"type":"page"},"title":"📘 7.35.2 NMAC — Adopted Rule (effective 6/23/2026)","url":"https://app.notion.com/p/2a3f430293784860bf389a48595a3f19","text":"Here is the result of "view" for the Page with URL https://app.notion.com/p/2a3f430293784860bf389a48595a3f19 as of 2026-06-23T23:10:43.560Z:
-<page url="https://app.notion.com/p/2a3f430293784860bf389a48595a3f19" icon="📘">
-<ancestor-path>
-<parent-page url="https://app.notion.com/p/2dca2b7222dc802f9e4fc5c518dd9b2d" title="Propagation Committee"/>
-<ancestor-2-page url="https://app.notion.com/p/2dca2b7222dc80629ca6cb4cb06ac65b" title="Advisory Board Sub Committee Overview"/>
-<ancestor-3-page url="https://app.notion.com/p/287a2b7222dc81ba82ded12e401268a2" title=""/>
-<ancestor-4-page url="https://app.notion.com/p/287a2b7222dc81d6856fda6679faab0e" title=""/>
-<ancestor-5-page url="https://app.notion.com/p/287a2b7222dc81bfb837cf4282bb0551" title="NMDOH Advisory TeamSpace"/>
-</ancestor-path>
-<properties>
-{"title":"7.35.2 NMAC — Adopted Rule (effective 6/23/2026)"}
-</properties>
-<content>
+7.35.2 NMAC, Producer and Laboratory Requirements, as adopted, effective June 23, 2026.
+Text as published in the New Mexico Register, Volume XXXVII, Issue 12, June 23, 2026.
+The official PDF is docs/documents/rules-7.35.2-adopted-2026-06-23-published.pdf; a
+page-marked extraction of it is source-text/rules-7.35.2-adopted-2026-06-23-published.txt.
+This file keeps the section-headed layout the drafting harness in amendments/ reads.
+
 TITLE 7 HEALTH \\| CHAPTER 35 MEDICAL PSILOCYBIN \\| PART 2 PRODUCER AND LABORATORY REQUIREMENTS
-<empty-block/>
-<callout icon="📘" color="green_bg">
-	**Adopted Rule — Effective June 23, 2026.** Published in the New Mexico Register, Volume XXXVII, Issue 12 (6/23/2026). Source PDF: `7.35.2_v1_260623.pdf`. Compare to the pre-hearing draft: <mention-page url="https://app.notion.com/p/332a2b7222dc8054a1b3dc55a4a6b3b0"/>.
-</callout>
 ---
 ## 7.35.2.1 ISSUING AGENCY
 New Mexico department of health.
@@ -90,9 +79,6 @@ The objective of this rule is to adopt rules governing the issuance of permits t
 4. **"Mushroom"** is the fleshy, spore-bearing fruiting body of a fungus.
 ### N–O. \[RESERVED\]
 ### P. Definitions beginning with "P"
-<callout icon="⚠️" color="yellow_bg">
-	As published, the P. heading in the adopted text shows "\[RESERVED\]" immediately above the P-list. Treat the listed items below as the operative P definitions; the \[RESERVED\] marker appears to be a publication artifact in the New Mexico Register text.
-</callout>
 1. **"Package"** means to enclose, wrap, or seal psilocybin products.
 2. **"Permit"** means the authorization issued by the department to a person to operate as a psilocybin producer or psilocybin testing laboratory under this part.
 3. **"Permit-applicant"** means a person who has applied for a permit to operate as a psilocybin producer or psilocybin testing laboratory.
@@ -782,9 +768,3 @@ The provisions of this rule are separate and severable. If any provision of this
 \[7.35.2.27 NMAC - N, 6/23/2026\]
 ---
 HISTORY OF 7.35.2 NMAC — \[RESERVED\]
----
-## Source
-New Mexico Register, Volume XXXVII, Issue 12, June 23, 2026. Original PDF attached below.
-<pdf src="file://%7B%22source%22%3A%22attachment%3Adc662059-324c-4330-977c-6014ff35d61d%3A4f612cab-37aa-4715-9cac-716d0298b473.pdf%22%2C%22permissionRecord%22%3A%7B%22table%22%3A%22block%22%2C%22id%22%3A%22d9f5131c-c420-4196-9819-f5b14871a4b4%22%2C%22spaceId%22%3A%224dda2b72-22dc-815b-aa49-00033e76889f%22%7D%7D">7.35.2_v1_260623.pdf — adopted rule, 6/23/2026</pdf>
-</content>
-</page>"}

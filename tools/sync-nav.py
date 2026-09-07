@@ -28,7 +28,10 @@ import os
 import re
 import sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
+PART = partlib.current_part()
+DOCS = partlib.docs_dir(PART)
 
 # The canonical name of each page. One name per page, used as the nav label, as
 # the <title> before the suffix, and as the H1. Changing a name here is half the
@@ -53,7 +56,7 @@ NAMES = {
 
 # Every page title ends with this, so a search result or a browser tab names the
 # rulemaking as well as the page.
-TITLE_SUFFIX = "7.35.3 NMAC Training and Education"
+TITLE_SUFFIX = partlib.suffix(PART)
 
 # What the Documents dropdown carries, and why. A reader opening this menu is
 # looking for a document, not for a history of documents; the register at
@@ -74,17 +77,17 @@ MENU_DOCUMENTS = [
         "sub": "The register: what each one is and whether it is current",
     },
     {
-        "href": "documents/rules-draft-2026-08-25-published.pdf",
+        "href": "/documents/rules-draft-2026-08-25-published.pdf",
         "label": "Revised proposed rule &middot; August 25",
         "sub": "The current proposed rule, 7.35.3.1 through .28",
     },
     {
-        "href": "documents/rules-7.35.2-amendments-2026-08-25-published.pdf",
+        "href": "/documents/rules-7.35.2-amendments-2026-08-25-published.pdf",
         "label": "7.35.2 amendments &middot; August 25",
         "sub": "The definitions, producer sales, and transportation",
     },
     {
-        "href": "documents/hearing-notice-2026-08-25.pdf",
+        "href": "/documents/hearing-notice-2026-08-25.pdf",
         "label": "Hearing notice &middot; August 25",
         "sub": "October 2, 9:00 AM, Santa Fe, and by video and telephone",
     },
@@ -94,6 +97,7 @@ MENU_DOCUMENTS = [
 # label comes from NAMES where a slug is given, so a name is written once.
 GROUPS = [
     ("start", "Start here", [
+        ("/", None, "Every Part of Chapter 35, and where each stands", "All parts of 7.35 NMAC"),
         ("index.html", "index", "What is open, what is settled, what is next"),
         ("index.html#directory", None, "Every page, in one list", "What is on this site"),
         ("about.html", "about", "Sources, method, and how to report an error"),

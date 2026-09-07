@@ -40,7 +40,7 @@ No page rules, no bulk redirect lists, no rate-limit rule enabled.
 | Item | Value |
 |---|---|
 | Repository | `github.com/notafeature/NMMPAB_Rules-Draft-Analysis`, public, default branch `main` |
-| Pages source | branch `main`, folder `/docs` |
+| Pages source | branch `main`, folder `/docs`. The parts index and the redirect stubs sit at the root; each Part's pages sit in their own folder, `docs/7.35.3/` today; `style.css` and `documents/` are shared and linked by root-absolute path |
 | Build type | legacy (GitHub runs Jekyll over `docs/`; no `_config.yml` is present, so it publishes the folder as-is) |
 | Custom domain | `rules.medical-psilocybin.org`, set by the file `docs/CNAME` |
 | HTTPS | enforced; certificate issued by GitHub, renewed by GitHub, current one expires 2026-10-23 |
@@ -72,13 +72,16 @@ confirming the SSL mode, and never in the week before a rule hearing.
 | Deploy | `./analytics/setup.sh`, or `npx wrangler@4 deploy --config ./analytics/wrangler.toml` from the repository root |
 
 What it records, what it drops, and what the organisation column can and cannot tell you are
-in `analytics/README.md`. Two facts from it that come up: datacenter networks are dropped, so
+in `analytics/README.md`. The beacon reports `location.pathname`, and the README states the
+Worker reduces it to a bare file name; with pages in Part folders, two Parts' `index.html`
+would then count as one page. Whether the reduction keeps the folder is open work in
+`analytics/worker.js`, to be settled before a second Part's pages exist. Two facts from it that come up: datacenter networks are dropped, so
 scanners sweeping the domain mostly do not appear, and a mobile carrier row is a phone on
 that carrier's network, wherever the reader is.
 
 ### 1.5 The input form
 
-`docs/comment.html` posts to Formspree form `mjgqnkvv`. Submissions land in the Formspree
+`docs/7.35.3/comment.html` posts to Formspree form `mjgqnkvv`. Submissions land in the Formspree
 inbox of the account that owns the form. No other service receives reader input.
 
 ### 1.6 Local preview
@@ -121,7 +124,7 @@ The Worker is the one thing with a deploy step, and merging does not deploy it. 
 
 ### 3.1 Add a page
 
-1. Create the file in `docs/` (or the part's folder, once the layout move lands).
+1. Create the file in the Part's folder, `docs/7.35.3/`.
 2. Add its slug and name to `NAMES` and its place to `GROUPS` in `tools/sync-nav.py`.
 3. Run, in this order: `sync-nav.py`, `sync-css-version.py`, `sync-count.py`,
    `sync-provenance.py` (with a `REVISIONS` entry for the new page).
@@ -130,9 +133,8 @@ The Worker is the one thing with a deploy step, and merging does not deploy it. 
 
 ### 3.2 Retire a page
 
-Replace its content with a redirect stub (copy one of `docs/history.html`,
-`docs/input.html`, `docs/guide.html`, `docs/documents.html`) pointing at the page that now
-owns the content, with the anchor. Remove it from `sync-nav.py`. `check-site.py` verifies the
+Replace its content with a redirect stub (copy one at the root of `docs/`) pointing at the
+page that now owns the content by root-absolute path, with the anchor. Remove it from `sync-nav.py`. `check-site.py` verifies the
 stub's target and anchor exist.
 
 ### 3.3 Add a document
@@ -143,13 +145,13 @@ extraction into `source-text/`, the register row in `tools/sync-record.py`, the 
 
 ### 3.4 Add a part
 
-Once the layout move has landed:
-
-1. `docs/7.35.N/` and `parts/7.35.N/` with `site.py` copied from an existing part and its
-   data replaced.
+1. `docs/7.35.N/`, an entry for the Part in `PARTS` in `tools/partlib.py` (title suffix and
+   brand), and the Part's data in the tools. Today each tool holds Part 3's data inline; the
+   first second Part is when that data splits into per-Part modules (`ARCHITECTURE.md` 2.3).
 2. The official text: the Register issue's PDF and the compiled NMAC file into
    `docs/documents/`, extracted into `parts/7.35.N/source-text/`.
-3. `tools/build-rule-page.py --part 7.35.N` with `SOURCE` pointed at the extraction.
+3. `tools/build-rule-page.py --part 7.35.N` with `SOURCE` pointed at the extraction. Every
+   tool takes `--part`; `check-site.py --part 7.35.N` runs the Part's checks.
 4. A row on `docs/index.html` (the parts and their states) and on `docs/statute/` for each
    statute section the part implements.
 5. The title suffix for the part in its `site.py`.

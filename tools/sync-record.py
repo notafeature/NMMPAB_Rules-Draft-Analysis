@@ -44,7 +44,10 @@ import os
 import re
 import sys
 
-DOCS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import partlib
+PART = partlib.current_part()
+DOCS = partlib.docs_dir(PART)
 PAGE = os.path.join(DOCS, "record.html")
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
@@ -314,7 +317,7 @@ GAPS = [
                  "record and the August 25 date was stated. The department's announcement "
                  "setting aside the publication and the August 28 hearing is not held either; "
                  "the set-aside is sourced to how it was spoken of at the meeting. A live "
-                 "auto-generated transcript exists in Notion; the working record is "
+                 "auto-generated transcript was read for the working record at "
                  "analysis/8-14-board-extraction.md in the repository",
         "at_event": "No recording, transcript, or set-aside notice is held on this site for "
                     "this meeting. The department recorded the meeting for posting.",
@@ -325,7 +328,7 @@ GAPS = [
         "name": "August 21 committee meeting recording or transcript",
         "means": "The meeting at which both hours proposals were shown side by side and the "
                  "October 2 hearing was stated. The department recorded it for posting; a "
-                 "live auto-generated transcript exists in Notion",
+                 "live auto-generated transcript was read for the working record",
         "at_event": "No recording or transcript of this meeting is held on this site yet. The "
                     "department recorded the meeting for posting on its website.",
         "events": ["e-2026-08-21"],
@@ -905,7 +908,7 @@ def validate():
             problems.append(f"document {d['slug']} is not superseded but names a successor")
         if d["status"] not in ("current", "superseded", "record"):
             problems.append(f"document {d['slug']} has status {d['status']!r}")
-        if d["file"] and not os.path.exists(os.path.join(DOCS, d["file"])):
+        if d["file"] and not os.path.exists(os.path.join(partlib.DOCS_ROOT, d["file"])):
             problems.append(f"document {d['slug']} points at {d['file']}, which is not in docs/")
 
     for e in EVENTS:
@@ -961,7 +964,7 @@ def doc_link(d, text=None):
     label = text or d["name"]
     if not d["file"]:
         return label
-    return (f'<a href="{d["file"]}" target="_blank" rel="noopener" '
+    return (f'<a href="/{d["file"]}" target="_blank" rel="noopener" '
             f'data-cite="{d["cite"]}">{label}</a>')
 
 

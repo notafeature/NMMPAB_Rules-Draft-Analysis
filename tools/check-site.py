@@ -44,7 +44,10 @@ check fails if any of them has drifted from it.
 import glob, hashlib, html.parser, importlib.util, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DOCS = os.path.join(ROOT, "docs")
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import partlib
+PART = partlib.current_part()
+DOCS = partlib.docs_dir(PART)
 
 
 def _load(name, filename):
@@ -62,31 +65,31 @@ syncstatus = _load("syncstatus", "sync-status.py")
 
 failures = []
 
-with open(os.path.join(DOCS, "style.css"), "rb") as f:
+with open(os.path.join(partlib.DOCS_ROOT, "style.css"), "rb") as f:
     CSSV = hashlib.sha256(f.read()).hexdigest()[:8]
 
 def fail(msg):
     failures.append(msg)
     print("FAIL " + msg)
 
-navs = {}
-navjs = {}
-srcs = {}
-for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
-    name = os.path.basename(path)
-    src = open(path).read()
-    srcs[name] = src
+class P(html.parser.HTMLParser):
+    def __init__(self):
+        super().__init__(); self.stack = []; self.bad = []
+    def handle_starttag(self, tag, attrs):
+        if tag not in ("meta", "link", "br", "hr", "img", "input",
+                       "line", "rect", "circle", "path", "text"):
+            self.stack.append(tag)
+    def handle_endtag(self, tag):
+        if self.stack and self.stack[-1] == tag: self.stack.pop()
+        elif tag in self.stack: self.bad.append(tag)
 
-    class P(html.parser.HTMLParser):
-        def __init__(self):
-            super().__init__(); self.stack = []; self.bad = []
-        def handle_starttag(self, tag, attrs):
-            if tag not in ("meta", "link", "br", "hr", "img", "input",
-                           "line", "rect", "circle", "path", "text"):
-                self.stack.append(tag)
-        def handle_endtag(self, tag):
-            if self.stack and self.stack[-1] == tag: self.stack.pop()
-            elif tag in self.stack: self.bad.append(tag)
+
+def basic(name, path, src):
+    """The checks every page passes, stubs and the parts index included: it
+    parses, nests no anchors, carries no em dash, carries the counter, links
+    the stylesheet by its current hash, and every internal link resolves.
+    A root-absolute link resolves from docs/, any other from the page's own
+    folder."""
     p = P(); p.feed(src)
     if p.bad or p.stack:
         fail(f"{name}: parse {p.bad or p.stack}")
@@ -99,10 +102,28 @@ for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
         fail(f"{name}: {src.count(chr(8212))} em dash(es)")
     if 'id="countjs"' not in src:
         fail(f"{name}: visit counter missing")
-    for m in re.finditer(r'href="style\.css([^"]*)"', src):
+    for m in re.finditer(r'href="/style\.css([^"]*)"', src):
         if m.group(1) != f"?v={CSSV}":
             fail(f"{name}: stylesheet link {m.group(0)} does not match style.css "
                  f"at ?v={CSSV}; run tools/sync-css-version.py")
+    if 'href="style.css' in src:
+        fail(f"{name}: stylesheet linked by relative path; the site links /style.css")
+    for href in set(re.findall(r'href="([^"]+)"', src)):
+        if "'" in href or "+" in href:
+            continue
+        target = partlib.resolve(href, os.path.dirname(path))
+        if target and not os.path.exists(target):
+            fail(f"{name}: broken link {href}")
+
+
+navs = {}
+navjs = {}
+srcs = {}
+for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
+    name = os.path.basename(path)
+    src = open(path).read()
+    srcs[name] = src
+    basic(name, path, src)
 
     if 'http-equiv="refresh"' in src:
         continue
@@ -126,13 +147,33 @@ for path in sorted(glob.glob(os.path.join(DOCS, "*.html"))):
     for word in ("this morning", "this afternoon", "meets today", "later today"):
         if word in prose.lower():
             fail(f"{name}: live-blog tense: '{word}'")
-    # internal links resolve
-    for href in set(re.findall(r'href="([^"]+)"', src)):
-        if href.startswith(("http", "#", "mailto:")) or "'" in href or "+" in href:
+
+# the root of docs/: the parts index and a redirect stub at every retired
+# root address. Each passes the basic checks; each stub's target exists and
+# holds the anchor it promises; the parts index links every Part folder.
+root_pages = 0
+for path in sorted(glob.glob(os.path.join(partlib.DOCS_ROOT, "*.html"))):
+    root_pages += 1
+    name = "docs/" + os.path.basename(path)
+    src = open(path).read()
+    basic(name, path, src)
+    if 'http-equiv="refresh"' in src:
+        m = re.search(r'url=([^">]+)', src)
+        if not m:
+            fail(f"{name}: stub with no url=")
             continue
-        target = href.split("#")[0].split("?")[0]
-        if target and not os.path.exists(os.path.join(DOCS, target)):
-            fail(f"{name}: broken link {href}")
+        target, _, frag = m.group(1).partition("#")
+        tpath = partlib.resolve(target, partlib.DOCS_ROOT)
+        if not tpath or not os.path.exists(tpath):
+            fail(f"{name}: stub target {target} missing")
+        elif frag and f'id="{frag}"' not in open(tpath).read():
+            fail(f"{name}: stub target {target} lacks anchor #{frag}")
+    elif os.path.basename(path) == "index.html":
+        for part in partlib.PARTS:
+            if f'href="/{part}/' not in src:
+                fail(f"{name}: the parts index does not link Part {part}")
+    else:
+        fail(f"{name}: a root page that is neither the parts index nor a stub")
 
 for label, blocks in (("chrome", navs), ("menu script", navjs)):
     if len(set(blocks.values())) > 1:
@@ -148,6 +189,8 @@ if navs:
     for n, s in srcs.items():
         if 'http-equiv="refresh"' not in s and n not in nav_hrefs:
             fail(f"{n}: not linked from the shared menu")
+    if "/" not in nav_hrefs:
+        fail("menu: no link to the parts index at /")
 
     # the Documents dropdown carries what sync-nav.MENU_DOCUMENTS says it carries,
     # and every document in it opens in a new tab and has a register row
@@ -273,4 +316,4 @@ for n in stubs:
 if failures:
     print(f"\n{len(failures)} failure(s).")
     sys.exit(1)
-print(f"checked {len(glob.glob(os.path.join(DOCS, '*.html')))} pages: clean.")
+print(f"checked {len(srcs)} pages in docs/{PART}/ and {root_pages} at the root: clean.")
