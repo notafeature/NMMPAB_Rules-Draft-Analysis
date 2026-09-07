@@ -107,7 +107,7 @@ No credential is in the repository. The Worker's `wrangler.toml` holds only iden
 1. Branch from `main`. Never push to `main`.
 2. Edit. Content that a tool owns is edited in the tool and the tool is run (`UPDATING.md`,
    Part 3).
-3. `python3 tools/check-site.py` must print `clean`. It checks every page parses, carries the
+3. `python3 tools/check-all.py` must print `clean` for every Part (`check-site.py --part N` runs one). It checks every page parses, carries the
    menu, the counter, the versioned stylesheet, no em dashes, no broken links, and that every
    tool-owned region matches its tool.
 4. Open a pull request. The owner merges.
@@ -146,8 +146,9 @@ extraction into `source-text/`, the register row in `tools/sync-record.py`, the 
 ### 3.4 Add a part
 
 1. `docs/7.35.N/`, an entry for the Part in `PARTS` in `tools/partlib.py` (title suffix and
-   brand), and the Part's data in the tools. Today each tool holds Part 3's data inline; the
-   first second Part is when that data splits into per-Part modules (`ARCHITECTURE.md` 2.3).
+   brand), and a data file per tool in `tools/parts/7.35.N/`: `sync-nav.py`, `sync-status.py`,
+   `sync-record.py`, `sync-provenance.py`, `build-rule-page.py`, and `sync-pathways.py` only
+   if the Part has routes. Copy Part 2's as the smaller template.
 2. The official text: the Register issue's PDF and the compiled NMAC file into
    `docs/documents/`, extracted into `parts/7.35.N/source-text/`.
 3. `tools/build-rule-page.py --part 7.35.N` with `SOURCE` pointed at the extraction. Every

@@ -1,0 +1,356 @@
+===== PAGE 1 =====
+OFFICE OF GENERAL COUNSEL | NEW MEXICO DEPARTMENT OF HEALTH 
+1190 St. Francis Dr., Room N4095 • P.O. Box 26110 • Santa Fe, New Mexico • 87502-6110 
+(505) 827-2997 • Fax: (505) 827-2930 • www.nmhealth.org 
+Via E-Mail 
+May 13, 2026 
+Craig Erickson 
+Utton & Kery, P.A. 
+500 Tijeras Ave. NW 
+Albuquerque, NM 87102 
+E-mail: craig@uttonkery.com 
+Re: Public Comments in Rulemaking for 7.35.2 NMAC, Medical Psilocybin; Producer and 
+Laboratory Requirements 
+Dear Mr. Erickson: 
+The New Mexico Department of Health offers the following responses to substantive proposals 
+made in the public comments submitted during the rulemaking proceeding for the proposed new 
+rule 7.35.2 NMAC, Medical Psilocybin; Producer and Laboratory Requirements. 
+A.    Written Public Comments of Mr. Gregory Evans 
+Mr. Gregory Evans is a researcher and a member of the Medical Psilocybin Advisory Board’s 
+Propagation Committee, who offered several proposed edits to the rule.   Of the changes requested 
+by Mr. Evans, the Department proposes to adopt the following: 
+1.    Definition of Certificate of Analysis (p. 6, Item 10): The Department agrees that a 
+definition of “certificate of analysis” should be added in 7.35.2.7 NMAC.   However, the 
+Department prefers the following abbreviated text: “Certificate of analysis or COA means a 
+document issued by a permitted psilocybin testing laboratory that reports the results of all analyses 
+required by the department or additional testing requested by a producer or manufacturer.”   
+2.    Maximum Water Content of 10% (p. 7, Item 21): Mr. Evans proposed adding a 10% 
+maximum water content requirement.   The Department agrees, and included this proposed edit in 
+its List of Anticipated Revisions to the proposed rule, announced by Dr. Dominick Zurlo at the 
+hearing on April 24, 2026. 
+3. UID Assignment - Omits Cultivation Batch (p. 10, Item 27): Section 7.35.2.10(A)(6) 
+omits the term cultivation batch from unique identification number (UIN) assignment. Although 
+the term cultivation batch appears in other references in the rule for assignment of UIN, the 
+Department suggests adding the terms “cultivation batch” to the language in 7.35.2.10 AA6.   
+4. UID Assignment-Omits Harvest Lot (p. 10, Item 28): The requested addition of “harvest 
+lot” to section 7.35.2.15(A)(1) NMAC was made prior to the rule hearing. 
+With respect to the other comments of Mr. Gregory Evans, the Department responds as follows: 
+===== PAGE 2 =====
+2 
+5.   Add Definition for “Inoculate” (p. 1, Item 1):   The Department understands that spores 
+do not contain psilocybin. “Psilocybin spore” refers to a spore that produces a mushroom 
+containing psilocybin.   The Departments does not believe that adding the term “inoculate” would 
+be beneficial.   
+6.    "Psilocybin" - Bundled Compound Creates Regulatory Ambiguity (p. 1, Item 2):   The 
+rule definition of “psilocybin” is identical to the statutory definition at section 26-2D-3(G), NMSA 
+1978.   The definition should not be altered.   
+7.   "Cultivation" and "Manufacture" - Overlapping Scope (p. 2, Item 3): The 
+Department believes that the language of the proposed text is clear and does not lead to 
+“conflicting obligations”, nor prevent the assignment of unique identification numbers for each 
+stage.   
+8.    "Potency" - Required Analytes Unspecified (p. 2, Item 4): Potency testing and required 
+analytes are specified later in the rule at section 7.35.2.19(G) NMAC. The rule sets the reporting 
+measurement in milligrams/gm, which is a metric unit.    
+  
+9.    "Mycelium" - Unnecessary Species Qualifier (p. 3, Item 5): The Department believes 
+that the definition of “mycelium” is sufficiently accurately for the program’s purposes.   If a 
+cultivation batch is contaminated with Trichoderma, aspergillus or other fungal contaminants that 
+have mycelium, the Department may reference the species by name.   
+10.    "Fruiting Bodies" - Reduced to Single Function (p. 3, Item 6): The Department believes 
+that the definition of “fruiting bodies” is sufficiently accurately for the program’s purposes.   
+Adding the words “including associated structures” might be technically more specific, but would 
+not add clarity or needed meaning to the definition.   
+11.    Lot Hierarchy - Definitions Do Not Enforce the Intended Chain (p. 3, Item 7): To 
+accurately track growing, harvesting, and producing the psilocybin-containing mushrooms for use, 
+growth stages needed to be defined in the rule to allow for tracking and to prevent diversion.   
+a. Chain Broken: The Department believes that the definitions are accurate, and that they can 
+be followed by producers without confusion. Adding “parent stages” would not add additional 
+meaning to the rule. 
+b. Mixed genetic heritage: This was intentional to allow producers to grow multiple species 
+of psilocybin-containing mushrooms that may vary in psilocybin content. Testing of the 
+finished product will determine the important parameter of amount of psilocybin contained in 
+the product. 
+c. Homogenization: Adding the word “powdered” to the definition of homogenized lot, when 
+the definition of homogenized requires “powdering”, would be redundant and unnecessary. 
+d. Product Lot: The Department is satisfied with the current definition and believes that the 
+proposed longer and more complex definition would not reduce confusion or add meaningful 
+information.   
+e. UID: The Department concurs with the proposal to add “cultivation batch” to 
+7.35.2.10(A)(6) NMAC (see above). 
+===== PAGE 3 =====
+3 
+f. Dead Clause: The lack of a time value assigned to the phrase “Harvested within a specified 
+time period” was intentional, to allow for the producer to self-determine the time period, based 
+on business practice and different growth time for different types of psilocybin-containing 
+mushrooms.   
+12.   Unique Identification Number - Permissive Scope (p. 4, Item 8): The Department 
+believes that the words “may include” do not grant permission to ignore assigning a unique 
+identification number to each stage as defined. 
+13. "Spawn" - Recommended Addition (p. 5, Item 9): The Department believes that adding 
+a definition for the word “spawn” would not add meaningful content to the rule.   Spawn arise from 
+germinating spores and are not a separate biological entity.   
+14. "Shelf Life" - Recommended Addition; "Stability" - Recommended Addition (p. 5, 
+Items 11 and 12): The Department has not defined a shelf life or expiration date for psilocybin 
+product as there is little scientific information regarding the stability of homogenized powdered 
+psilocybin mushrooms. A single study was identified by the Department, entitled “Stability of 
+psilocybin and its four analogs in the biomass of the psychotropic mushroom Psilocybe cubensis”, 
+by Gotvaldova, Hajkova et al. This study found some degradation of psilocybin beginning at 1 
+month even under the best storage conditions and a more pronounced drop between 2 and 15 
+months. An additional study from Rose City Labs found conversion of psilocybin to psilocin with 
+a small decrease in potency after 3 months of storage. 
+Because of the lack of substantial data on stability for stored powdered psilocybin, the Department 
+opted in favor of requiring re-testing every six months, to balance safety, potential decreasing 
+potency requiring change in dosing amount, and testing costs. As the Department gains 
+experience with the results of testing, the rules allow for changing testing frequency as needed. 
+15. Definitions to Defer (p. 6, Items 13-20): The Department has proposed adopting certain 
+definitions in the Psilocybin Producer and Laboratory Requirements rule that are particular to 
+psilocybin patients and practitioners.   Some of these are not used at all outside of definitions.   The 
+Department has proposed these definitions in anticipation that the definitions used in this rule will 
+be incorporated in their entirety by reference in future rules concerning patients and practitioners.   
+If those definitions are determined to require revisions in the future, they can be amended at that 
+time. 
+16. New Subsection - Water Activity (New Provision) (p. 7, Item 22): The 
+Department believes adding a subsection regarding water activity would be redundant and 
+unnecessary, as a water content of 10% is generally analogous to a water activity of the 
+proposed 0.6 aw in the public comment.   Although a water activity measurement of 0.6 aw or less 
+could in theory inhibit the growth of bacterial/yeast and mold in the finished product, this alone 
+would not guarantee that the product is not contaminated.   This is part of why the Department has 
+proposed to require additional testing for contaminants.   
+17. Microbiological Panel - Scope, TYM, and Aspergillus Reporting (p. 8, Item 23): The 
+Department believes that testing for each of the required microbiological species is reasonable and 
+===== PAGE 4 =====
+4 
+appropriate. The medical conditions that qualify a patient for enrollment in in the New Mexico 
+Medical Psilocybin Program often come with comorbidities, including immunosuppression, which 
+require pathogen-free mushroom products. Each required species to be tested can cause serious 
+illness or death in patients who are immunocompromised or seriously ill. The testing panel was 
+created after consultation with the American Herbal Products Association (AHPA), the USDA, 
+the National Advisory Committee on Microbiological Criteria in Foods (NACMCF), review of 
+Oregon and Colorado Psilocybin program requirements and discussion with psilocybin testing labs 
+in Colorado, Oregon and Florida. The Department is also concerned that the Psilocybin Program 
+may attract novice producer entrants with varying skill levels.   The Department finds that more 
+thorough testing at the start will better ensure the safety of patients.    As the Department gains 
+experience with the testing results of testing, the testing frequency can be adjusted through future 
+rulemaking as needed. 
+18. Retest Cadence (p. 8, Item 24): The Department believes that referencing the re-test 
+cadence in four passages of Section 19 of the rule is not problematic, and serves a useful purpose, 
+as each reference pertains to the testing of different analytes.   
+19. Sample Size - Fixed Range Conflicts with Laboratory Requirements (p. 9, Item 25): 
+Having consulted with laboratories in Colorado and Oregon, the Department believes that a sample 
+size of 1-5 grams will be sufficient for all testing, and gives producers notice of the amount of 
+product that they can expect to lose in the course of testing. These amounts should be in line with 
+laboratory standard operating procedures.   
+20. Residual Solvents - References Not Applicable to Authorized Product Forms (p. 9, 
+Item 26): While the proposed rule does not authorize solvent-based extraction, the Department 
+anticipates that solvents could be used for cleaning and disinfection, and that solvents could 
+therefore contaminate mushroom products. Additionally, the Department believes it is important 
+to require the wastage of products that are manufactured using solvents, all of which would be 
+deemed unapproved at this time.   The Department does not believe that modifying these references 
+in the rule would be beneficial. 
+21. Potency Calculation - "Total Psilocybin Equivalent" and "Total Potential Psilocin" 
+Undefined (p. 10, Item 29): The Department believes that it is unnecessary to include conversion 
+factors, analyte inputs, and calculation formula in the rule, as these parameters have been 
+standardized via accepted standardized operating procedures for testing laboratories.   
+  
+B. Written Public Comments of Mr. James Brown 
+1. Recall Classifications: Mr. James Brown proposed that the Department incorporate 
+various additional text in the rule to require three classes of recalls, ranging from Class 1 to Class 
+3. The Department believes that the proposed text, at Sections 7.35.2.10 (A)(8) and 
+7.35.2.19 (M)(1) through (5) NMAC, is sufficient, and gives clear, simple instructions on the 
+recall procedure, as well as the destruction of any psilocybin lot that poses a health hazard or that 
+fails a visual inspection or laboratory test.   The Department is concerned that the proposed text 
+would unnecessarily complicate the recall process. 
+===== PAGE 5 =====
+5 
+2. Various Definitions: Mr. Brown recommended that the Department adopt definitions for 
+various expressions and utilize them in the rule, including definitions for “referring clinician”, 
+“determining clinician”, “guides or facilitators”, and “integration provider”.   The Dosage, 
+Administration & Clinical Practice (DACP) Committee and the Training & Education Committee 
+of the Medical Psilocybin Advisory Board are currently working together to make 
+recommendations concerning licensures and the qualifications, competencies, scope of 
+practice, and roles for each. The Department anticipates addressing these matters in future 
+rulemaking. 
+3. Dual Ownership Prohibited:   Mr. Brown recommended that the prohibition against dual 
+ownership by a permittee be modified to allow a person holding either a producer or laboratory 
+permit to hold an interest in another permittee, so long as there was clear separation between the 
+operations of each permittee.   The Department believes that allowing persons who have ownership 
+interests in a permittee to hold ownership interests in other permittees can raise various conflicts 
+of interest that would ultimately be detrimental to patients in the Medical Psilocybin Program.   
+One of the biggest conflicts poses is the potential for market monopoly: if a person holds an 
+ownership interest in multiple entities, they could use their position to favor their own products.   
+In the case of dual ownership in a producer and a laboratory, the conflict is even more stark, as 
+those persons would be incentivized to skew or falsify test results. 
+  
+C. Written Public Comments of Mr. Jonathan M. Dennis 
+Mr. Jonathan M. Dennis offered public comments on behalf of the Psychedelic Bar Association. 
+1. Intersections of Medical and Religious Use: Mr. Dennis stated that regulations should 
+acknowledge religious use and the right of religious adherents to legally access psilocybin.   As 
+Mr. Dennis correctly noted, the Medical Psilocybin Act makes no reference to religious use.   The 
+Act does not authorize the NM Department of Health to enroll individuals in the NM Medical 
+Psilocybin Program for religious use of psilocybin.   While the Department understands that 
+religious use may be deemed lawful, consistent with the terms of the United States and New 
+Mexico Constitutions and applicable case precedents interpreting the same, it is not within the 
+legal role of this agency to enroll persons for religious use of psilocybin.   The Medical Psilocybin 
+Program is a medical program, and discussion of religious use of psilocybin is beyond the scope 
+of the program and the proposed rule. 
+2. Sale Restrictions and Federal Tax Consequences (pp. 4-6): Mr. Dennis expressed 
+concern that transfers of psilocybin from producers to service centers would trigger exposure for 
+the service center under Section 280(E) of the Internal Revenue Code, which prohibits businesses 
+engaged in the trafficking of a Schedule I controlled substance from deducting ordinary business 
+expenses from their federal taxes.   Mr. Dennis recommended allowing direct sales from producers 
+to patients to reduce the impact of Section 280(E). 
+Allowing direct sales of psilocybin from producers to patients would encourage self-dosing and 
+recreational use.   Irrespective of potential tax implications, the Department is committed to 
+ensuring that producers of medical psilocybin products only distribute those products to clinicians, 
+and that the administration of medical psilocybin only occurs in supervised clinical settings.   
+===== PAGE 6 =====
+6 
+Psilocybin presents unique health risks and is in that regard very different from medical cannabis.   
+In adopting the Medical Psilocybin Act, NMSA 1978, §§ 26-2D-1 through -11, the NM Legislature 
+emphasized the involvement of clinicians and the ingestion of psilocybin only in supervised 
+administration sessions as part of an integrated therapeutic practice.   The Department’s approach 
+is consistent with that expressed legislative intent. 
+3. Anticipating and Reducing Negative Consequences of Profit Motives (pp. 6-7):   
+in the State Program:   Mr. Dennis highlighted the proposed requirement that permittee investors 
+“enjoy the customary incidents of ownership”.   Mr. Dennis recommended that the rule clarify that 
+passive investments are allowed within the program.   The Department believes that the proposed 
+text, particularly as revised in response to public comments (described in the List of Anticipated 
+Revisions to the proposed rule discussed at the rule hearing) is appropriate.   Requiring that 
+investors enjoy the customary incidents of ownership proportionate to their percentage ownership 
+is not unduly burdensome, and will help to ensure that permittees do not enter “straw man”-type 
+arrangements whereby actual control of a company is vested in persons other than those who hold 
+record ownership of the business, etc. 
+4. Restrictors for Property-Renting Applicants: Mr. Dennis proposed that the rule not 
+require that a permit applicant submit an attestation from a landlord acknowledging that their 
+property will be used to cultivate psilocybin on the premises.   Mr. Dennis expressed concern that 
+such an attestation could expose a landlord to potential civil and criminal liability, and that 
+landlords would be reluctant to provide an attestation.   He stated that there should be a “lease 
+agreement pathway”, and that the scope of any written approval should be limited to only requiring 
+permission to participate in a DOH-licensed program.    
+The Department believes it is important for permit applicants and permittees to provide an 
+attestation from a landlord acknowledging that they understand how the premises will be used, 
+particularly given the state of federal law and the potential for negative legal repercussions for 
+landlords (such as property seizures, etc.), including those land owners who may not be aware of 
+the activities occurring on the leased premises.   However, in response to the public comments on 
+this subject, the Department proposes to modify the proposed text at section 7.35.2.8(A) NMAC 
+as follows: 
+A. General requirements: An applicant for a producer or laboratory 
+permit shall provide to the Department and shall maintain the following records: 
+… 
+(9) proof of ownership of the facility or [written approval from the 
+owner to cultivate psilocybin on the premises] a signed, written statement from 
+the owner of the property acknowledging that the owner understands that the 
+tenant will be participating in the medical psilocybin program as a permittee and 
+what their permit allows; 
+D. Written Public Comments of John Starr 
+Mr. Starr stated that the rules should be written in a manner that favors small business, and 
+expressed concern that the proposed rule does not encourage investment and could restrict access 
+===== PAGE 7 =====
+7 
+to medical psilocybin by making it too expensive.   The Department believes that the proposed rule 
+strikes an appropriate balance between ensuring the safety of psilocybin products and avoiding the 
+imposition of unnecessary expenses and restraints. 
+E. Written Public Comments of Denali Wilson, Esq. and Victoria J. Cvitanovic, Esq.: 
+Ms. Denali Wilson and Ms. Victoria J. Cvitanovic offered extensive public comments, including 
+several proposed amendments, on behalf of the Healing Advocacy Fund and the Rudick Law 
+Group.    
+1. Gaps in Protections Against Predatory Financing and Disguised Control 
+Ms. Wilson and Ms. Cvitanovic proposed various amendments to limit the potential for predatory 
+financing and strawman-type arrangements within the Program, which included proposed edits to 
+the definition of “actual control” and the proposed deletion of the definition of “genuine 
+ownership”.   In consideration of this comment, the Department proposed certain edits to the rule, 
+which were included in the List of Anticipated Revisions announced by Dr. Zurlo at the hearing 
+on April 24, 2026.   The Department proposed to revise the definition of “actual control” as follows: 
+7.35.2.7(A)(1) NMAC; revise definition of “actual control” as follows: 
+(1) “Actual control” means the ability to:   
+(a) [direct] control the policies, management, [and] or personnel of a permittee;   
+(b) [exert authority over] control strategic priorities, capital allocations, acquisitions, and 
+divestments of a permittee; or   
+(c) control a majority of voting rights of a permittee. 
+Pursuant to section 7.35.2.9(D) NMAC, transfer of actual control of an applicant or permittee 
+would be prohibited.   By the above edits to the definition of “actual control”, whether someone 
+has “actual control” over a permittee depends on whether they can dictate the policies, priorities, 
+etc. of the permittee, and not whether they can “exert authority” over the permittee.   The revised 
+text would enable someone who has an ownership interest in a permittee to vote their shares, 
+exerting an influence on the business’ operations without having absolute control over the 
+business.   These edits are also consistent with 7.35.2.9(E) NMAC, which would effectively require 
+that persons who hold an ownership interest in a permittee be able to exert authority over the 
+permittee as one of the “customary incidents of ownership”. 
+The Department believes that the text of the proposed rule, as revised, is relatively straightforward 
+and adequately addresses the subject of ownership interests in a permittee.   In contrast, The 
+Department believes that the proposed text, which include lengthy revisions to the definition of 
+“actual control” and multiple passages regarding new “true parties in interest” designation, would 
+be overly complicated and would not add significant value.   Again, the proposed text (as revised) 
+allows for investment in permittees, and generally allows persons with ownership interests to exert 
+control on the business (vote their shares, etc.), provided that outright control over the business 
+cannot be transferred, except in the limited circumstance (described in the List of Anticipated 
+Revisions discussed at the rule hearing) in which a sole proprietor dies and the Department has 
+authorized the transfer of the permit. 
+===== PAGE 8 =====
+8 
+2. Clarity Regarding Rules Into Investment Into Permitted Businesses 
+The comment included various proposed edits to section 7.35.2.2 NMAC, “General Permittee 
+Requirements”.   Here again, the Department believes that the proposed edits would overly 
+complicate the rule, without adding significant value. The rule at 7.35.2.9(B) NMAC would 
+prohibit a person who holds an ownership interest in a permittee from holding an ownership 
+interest in another permittee.   The Department believes that this is necessary to prevent conflicts 
+of interest and negative impacts on the Program that can result.   The comment’s proposed text 
+attempts to differentiate between ownership interests and control, and would permit dual 
+ownership so long as the person doesn’t qualify as a “true party in interest” (i.e., a person who 
+hold actual control) with respect to the second permittee.   The Department believes that prohibiting 
+dual ownership is a more robust and practical approach to limiting the potential for predatory 
+financing and disguised control of permittees.   Prohibiting dual ownership, and requiring record 
+ownership, will provide bright-line standards that are both simpler for the Department to enforce 
+and easier for regulated entities to follow.   Shifting entirely to a control-based approach would be 
+difficult to implement, as it would be difficult to distinguish between persons who are simply 
+passive investors and persons who exert control over a permittee through backroom decision-
+making.   Prohibiting dual ownership will help to preserve market competition and diversity, in 
+part by limiting the potential for de facto monopolies and promoting small businesses.   The desire 
+to generate more lending opportunities within the industry, though laudable, does not outweigh 
+these compelling interests. 
+Again, the proposed rule (as revised) allows the transfer of ownership interests in a permittee; it 
+only prohibits the transfer of outright control of a permittee to another person, except in the 
+circumstance involving the death of a sole proprietor.   The proposed rule does not compel investors 
+in a permittee to “take responsibility for compliance and actions of the permittee”: it only requires 
+that an ownership interest in a permit not be nominal or without the benefits and risks of genuine 
+ownership or control, which is defined to mean that the persons enjoys the customary incidents of 
+ownership and shares in the profits and losses of the permittee proportionate to the percentage of 
+their ownership interest.   The Department does not consider the definition of “genuine ownership” 
+to be unduly vague.   Additionally, while the rule does not require owners to create succession 
+plans, it does not prevent the creation of such plans. 
+3. Issues the Proposed Regulations Created Related to Insurance Coverage for Care 
+The comment recommended that the definition of “administration session” be deleted, and that 
+certain additional definitions be included in the rule.   In consideration of this comment, the 
+Department proposed in the List of Anticipated Revisions to the proposed rule to revise the 
+definition of “administration session” at 7.35.2.7(A)(2) NMAC as follows: 
+7.35.2.7(A)(2) NMAC; revise definition of “administration session” as follows: 
+(2) “Administration session” means the [therapeutic session combined with the 
+administration of] session in which psilocybin is administered.    
+This definition more clearly delineates between administration sessions that involve the actual 
+administration of psilocybin, and therapy sessions that do not involve psilocybin administration. 
+===== PAGE 9 =====
+9 
+The comment includes extensive proposed revisions to the definition of “guide”.   The Department 
+does not agree that the definition of “guide” exposes guides to malpractice liability.   The current 
+definition does not describe guides as performing a clinical role. 
+The comment includes proposed revisions to the definition of “medical services”.   However, this 
+expression is based on the statutory definition at NMSA 1978, § 26-2D-3(D), and the Department 
+cannot revise it. 
+3. Other Equity and Access Issues: 
+The comment proposes that the Department replace the written landlord approval requirement with 
+either written approval or a lease agreement that “adequately protects the right of the program 
+licensee to participate in the Medical Psilocybin Program.”   Here again, the Department believes 
+that it is important for permit applicants and permittees to provide an attestation from a landlord 
+acknowledging that they understand how the premises will be used.   However, in response to the 
+public comments on this subject, the Department proposes to remove the “approval” reference at 
+section 7.35.2.8(A) NMAC, and to modify the text as stated above in Part C (5) of this letter. 
+The Department of Health wishes to thank the commenters who shared their expertise and 
+perspectives in this rulemaking.   While the Department has not proposed to adopt every edit 
+suggested in public comment, the depth and breadth of feedback received in this rulemaking has 
+informed several revisions, and has contributed to a better understanding of the rule and its 
+impacts.   The Department also wishes to thank the Medical Psilocybin Advisory Board and its 
+committees for their pioneering work in building a safe and sustainable Medical Psilocybin 
+Program for our state. 
+  Sincerely, 
+     Christopher D. Woodward 
+     Deputy General Counsel 

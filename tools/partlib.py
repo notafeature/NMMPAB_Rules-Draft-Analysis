@@ -28,6 +28,10 @@ DOCS_ROOT = os.path.join(ROOT, "docs")
 # One entry per Part whose pages exist. The suffix ends every page title in
 # that Part; the brand is the text on the top bar's home link.
 PARTS = {
+    "7.35.2": {
+        "suffix": "7.35.2 NMAC Producers and Laboratories",
+        "brand": "7.35.2 NMAC &middot; Producers &amp; Laboratories",
+    },
     "7.35.3": {
         "suffix": "7.35.3 NMAC Training and Education",
         "brand": "7.35.3 NMAC &middot; Training &amp; Education",
@@ -54,6 +58,32 @@ def current_part(argv=None):
 
 def docs_dir(part):
     return os.path.join(DOCS_ROOT, part)
+
+
+def data_path(part, name):
+    """The file that holds a Part's data for one tool: tools/parts/<part>/<name>.py."""
+    return os.path.join(ROOT, "tools", "parts", part, name + ".py")
+
+
+def has_data(part, name):
+    return os.path.exists(data_path(part, name))
+
+
+def load_data(part, name, namespace):
+    """Execute a Part's data file for one tool into that tool's namespace.
+
+    A tool holds its code; what is true of a Part lives in tools/parts/<part>/,
+    one file per tool, executed here so the tool's own helpers are in scope
+    for anything the data file defines. A tool that has no data for the Part
+    stops here rather than running on another Part's facts.
+    """
+    path = data_path(part, name)
+    if not os.path.exists(path):
+        raise SystemExit(f"tools/partlib.py: Part {part} has no data for {name}; "
+                         f"expected {os.path.relpath(path, ROOT)}")
+    with open(path) as f:
+        code = compile(f.read(), path, "exec")
+    exec(code, namespace)
 
 
 def suffix(part):
