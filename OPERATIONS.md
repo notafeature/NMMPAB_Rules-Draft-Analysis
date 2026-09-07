@@ -96,6 +96,16 @@ that carrier's network, wherever the reader is.
 
 The hub answers only once the apex redirect rule (1.1) is disabled.
 
+### 1.4b Pathways: the `medical-psilocybin-pathways` Worker
+
+| Item | Value |
+|---|---|
+| Repository | `github.com/notafeature/pathways.medical-psilocybin.org`, public; local clone `~/MPAB/pathways.medical-psilocybin.org/` |
+| Hosting | a Worker with static assets, name `medical-psilocybin-pathways`, custom domain `pathways.medical-psilocybin.org` created by Wrangler; deployed September 7, 2026 |
+| Content | six guide pages and a browser-side drafter; `tools/build.py` stamps the shared chrome and the counter beacon and refuses an em dash |
+| Deploy | `python3 tools/build.py && npx wrangler@4 deploy --config ./wrangler.jsonc` from that repository |
+| Counter | in `ALLOWED_ORIGINS` |
+
 ### 1.5 The input form
 
 `docs/7.35.3/comment.html` posts to Formspree form `mjgqnkvv`. Submissions land in the Formspree
