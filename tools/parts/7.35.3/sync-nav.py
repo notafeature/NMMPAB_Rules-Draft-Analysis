@@ -12,7 +12,6 @@ NAMES = {
     "hours": "The training hours",
     "recommendation": "The committee recommendation",
     "comment": "Comment",
-    "about": "How this site is built",
     "pathways": "Routes to a permit",
     "eligibility": "Which licenses qualify",
     "cs-number": "The controlled-substance number",
@@ -56,7 +55,7 @@ GROUPS = [
         ("/", None, "Every Part of Chapter 35, and where each stands", "All parts of 7.35 NMAC"),
         ("index.html", "index", "What is open, what is settled, what is next"),
         ("index.html#directory", None, "Every page, in one list", "What is on this site"),
-        ("about.html", "about", "Sources, method, and how to report an error"),
+        ("/about/", None, "Sources, method, and how to report an error", "How this site is built"),
     ]),
     ("provider", "Becoming a provider", [
         ("pathways.html", "pathways", "Pick where you start; the route to each permit"),

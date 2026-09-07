@@ -321,9 +321,10 @@ for n in stubs:
         fail(f"{n}: stub with no url=")
         continue
     target, _, frag = m.group(1).partition("#")
-    if target not in srcs:
+    tpath = partlib.resolve(target, DOCS)
+    if not tpath or not os.path.exists(tpath):
         fail(f"{n}: stub target {target} missing")
-    elif frag and f'id="{frag}"' not in srcs[target]:
+    elif frag and f'id="{frag}"' not in open(tpath).read():
         fail(f"{n}: stub target {target} lacks anchor #{frag}")
 
 if failures:

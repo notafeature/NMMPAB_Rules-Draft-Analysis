@@ -7,7 +7,6 @@ HAS_DEFS = False
 DOC = "/documents/rules-7.35.2-adopted-2026-06-23-published.pdf"
 DOCDATE = "June 23, 2026"
 NSECTIONS = 27
-ABOUT_HREF = "/7.35.3/about.html"
 
 AMEND_DOC = "/documents/rules-7.35.2-amendments-2026-08-25-published.pdf"
 

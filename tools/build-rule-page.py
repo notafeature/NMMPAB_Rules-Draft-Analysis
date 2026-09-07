@@ -44,7 +44,7 @@ _spec.loader.exec_module(syncnav)
 FOOT = f"""<footer class="foot"><div class="wrap">
 <span>An independent community record of the rulemaking. Not affiliated with the New Mexico Department of Health.</span>
 <span>Nothing here is final rule text, legal advice, or medical advice.</span>
-<a href="{globals().get("ABOUT_HREF", "about.html")}">Sources and method</a>
+<a href="{globals().get("ABOUT_HREF", "/about/")}">Sources and method</a>
 <a href="comment.html">Report an error</a>
 </div></footer>"""
 
