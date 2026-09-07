@@ -47,7 +47,7 @@ database_id = "6b4b8f4f-38be-4315-9cd1-75a08d10acb6"
 # Only requests carrying one of these origins are recorded. The github.io
 # address is kept because it still resolves and redirects, and because the
 # fallback matters more than the extra entry costs.
-ALLOWED_ORIGINS = "https://notafeature.github.io,https://rules.medical-psilocybin.org,https://medical-psilocybin.org,https://www.medical-psilocybin.org"
+ALLOWED_ORIGINS = "https://notafeature.github.io,https://rules.medical-psilocybin.org,https://medical-psilocybin.org,https://www.medical-psilocybin.org,https://pathways.medical-psilocybin.org"
 DASH_USER = "owner"
 
 [observability]
