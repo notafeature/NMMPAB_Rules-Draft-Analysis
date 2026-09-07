@@ -22,9 +22,11 @@ REVISIONS = {
         ("September 7, 2026", "Created, generated from the Register extraction by tools/build-rule-page.py: all twenty-seven sections verbatim, cited to the PDF page, with the three sections the August 25 amendments would change annotated at the section."),
     ],
     "producers": [
+        ("September 7, 2026", "A section at the top, Before you apply: what the rule says an applicant has in hand, cited item by item, with what the rule does not state about the application itself."),
         ("September 7, 2026", "Created: what the adopted rule requires of a producer, in the order a producer meets it, from the permit application through discipline, each requirement cited to its subsection and page, and what the August 25 amendments would change."),
     ],
     "laboratories": [
+        ("September 7, 2026", "A section at the top, Before you apply: the records and the credential a laboratory applicant has in hand, cited item by item, with what the rule does not state about the application itself."),
         ("September 7, 2026", "Created: what the adopted rule requires of a psilocybin testing laboratory, from the accreditation the permit rests on through the five required tests, the additional services the rule allows, reporting, and discipline, each cited to its subsection and page."),
     ],
     "record": [
