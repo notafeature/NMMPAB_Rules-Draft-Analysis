@@ -72,10 +72,10 @@ confirming the SSL mode, and never in the week before a rule hearing.
 | Deploy | `./analytics/setup.sh`, or `npx wrangler@4 deploy --config ./analytics/wrangler.toml` from the repository root |
 
 What it records, what it drops, and what the organisation column can and cannot tell you are
-in `analytics/README.md`. The beacon reports `location.pathname`, and the README states the
-Worker reduces it to a bare file name; with pages in Part folders, two Parts' `index.html`
-would then count as one page. Whether the reduction keeps the folder is open work in
-`analytics/worker.js`, to be settled before a second Part's pages exist. Two facts from it that come up: datacenter networks are dropped, so
+in `analytics/README.md`. The beacon reports `location.pathname`; the Worker keeps the Part
+folder and the file name (`7.35.3/index.html`), so two Parts' index pages are two rows. The
+page-view filter `PV_PATH` in `analytics/worker.js` accepts a file at the root or one folder
+down; a deeper folder would need that pattern widened and the Worker redeployed. Two facts from it that come up: datacenter networks are dropped, so
 scanners sweeping the domain mostly do not appear, and a mobile carrier row is a phone on
 that carrier's network, wherever the reader is.
 
