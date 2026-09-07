@@ -36,7 +36,7 @@ ENDPOINT = "https://count.medical-psilocybin.org"
 
 # What this sends, and nothing else:
 #   k  "pv" for a page view, "dl" for a click on a document link
-#   p  location.pathname, which the Worker reduces to a bare file name
+#   p  location.pathname, which the Worker keeps as the Part folder and file name
 #   r  document.referrer, which the Worker reduces to a bare host name
 #
 # Global Privacy Control and Do Not Track are honoured, which means the counts

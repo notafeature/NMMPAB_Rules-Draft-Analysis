@@ -51,7 +51,10 @@ const SECURITY_HEADERS = {
 };
 
 
-const PV_PATH = /^[a-z0-9-]+\.html$/;
+// A page is a file at the root of the site or one folder down, where each
+// Part of 7.35 NMAC keeps its pages (7.35.3/index.html). The folder is kept
+// in the recorded path, so two Parts' index pages are two rows, not one.
+const PV_PATH = /^(?:[a-z0-9.-]+\/)?[a-z0-9-]+\.html$/;
 const DL_PATH = /^documents\/[A-Za-z0-9._%-]+\.(pdf|txt)$/;
 
 const BOT_UA = /bot|crawl|spider|slurp|headless|lighthouse|monitor|curl|wget|python-requests|axios|scrapy|facebookexternalhit|whatsapp|telegram|slackbot|discord|embedly|pingdom|uptime|preview|feedfetcher|archive\.org/i;
