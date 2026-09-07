@@ -172,8 +172,21 @@ for path in sorted(glob.glob(os.path.join(partlib.DOCS_ROOT, "*.html"))):
         for part in partlib.PARTS:
             if f'href="/{part}/' not in src:
                 fail(f"{name}: the parts index does not link Part {part}")
+        for d in partlib.SITE_DIRS:
+            if f'href="/{d}/' not in src:
+                fail(f"{name}: the parts index does not link /{d}/")
     else:
         fail(f"{name}: a root page that is neither the parts index nor a stub")
+
+# the site-wide folders: one index.html each, carrying the root's chrome
+for folder in partlib.site_dirs():
+    for path in sorted(glob.glob(os.path.join(folder, "*.html"))):
+        root_pages += 1
+        name = os.path.relpath(path, partlib.DOCS_ROOT)
+        src = open(path).read()
+        basic(name, path, src)
+        if os.path.basename(path) != "index.html":
+            fail(f"{name}: a site-wide folder holds only an index.html")
 
 for label, blocks in (("chrome", navs), ("menu script", navjs)):
     if len(set(blocks.values())) > 1:

@@ -143,6 +143,13 @@ Follow `UPDATING.md`, Event A or C: the PDF into `docs/documents/` with a dated 
 extraction into `source-text/`, the register row in `tools/sync-record.py`, the dropdown in
 `tools/sync-nav.py` if it is a document of the latest filing, and the tools run.
 
+### 3.3a Add a site-wide page outside any Part
+
+A folder under `docs/` with one `index.html` carrying the root's chrome (brand link to `/`,
+no Part menu), its name added to `SITE_DIRS` in `tools/partlib.py`, and a link from the
+parts index, which `check-site.py` requires. `sync-css-version.py` and `sync-count.py` cover
+it; the Part tools do not touch it. `docs/statute/` is the one that exists.
+
 ### 3.4 Add a part
 
 1. `docs/7.35.N/`, an entry for the Part in `PARTS` in `tools/partlib.py` (title suffix and

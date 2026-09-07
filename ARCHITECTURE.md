@@ -100,8 +100,10 @@ section: "Section 26-2D-7 NMSA 1978". The bill number, Senate Bill 219, is cited
 legislative history and for the bill's Sections 12 through 14, which amended other chapters.
 
 `docs/statute/` carries Article 2D section by section, and for each section the part that
-implements it. As of September 7, 2026: 26-2D-7 is cited as authority by Parts 2 and 3;
-26-2D-9, assessment reporting, is implemented by no published part.
+carries it, built September 7, 2026: 26-2D-7 is cited as authority by Parts 2 and 3;
+26-2D-8, -9, -10, and -11 are carried by no published part. The statute folder is a
+site-wide page outside any Part, listed in `SITE_DIRS` in `tools/partlib.py` and checked by
+`check-site.py` with the root pages.
 
 ### 2.5 The board layer
 
@@ -182,7 +184,7 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 | Parts as paths named by part number | Built September 7, 2026: `docs/7.35.3/`, the parts index, the stubs | Part 2.1 |
 | Page names in plain language, set in one place | Decided; already the rule for Part 3 | Part 2.1 |
 | One repository for the rules site, all parts | Decided; the `parts/` folder move waits until after the October 2 hearing | Part 4 |
-| Statute cited by compiled section; the Act's name kept | Decided | Part 2.4 |
+| Statute cited by compiled section; the Act's name kept | Done September 7, 2026: the sweep of the pages and the tool data, and `docs/statute/` | Part 2.4 |
 | No private-workspace references in any committed file | Done September 7, 2026 | Part 3 |
 | Status vocabulary | Kept as `tools/sync-status.py` has it until it is cleaned up | |
 | Part 2 pages | Built September 7, 2026: six pages in `docs/7.35.2/`, from the Register text and the department's rulemaking documents | Part 2.2 |
@@ -202,5 +204,5 @@ committed: nothing that names the compiler, nothing from a private workspace, no
    department's response to comments, and the hearing officer's report into
    `docs/documents/`; the rule page built; the index, the two audience pages, the record,
    and the comment page. Done September 7, 2026.
-4. The citation sweep to compiled-section form, and `docs/statute/`.
+4. The citation sweep to compiled-section form, and `docs/statute/`. Done September 7, 2026.
 5. The hub at the apex, its own project.

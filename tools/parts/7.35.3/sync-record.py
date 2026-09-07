@@ -199,7 +199,7 @@ DOCUMENTS = [
         "slug": "medical-psilocybin-act-sb219-2025",
         "name": "The Medical Psilocybin Act",
         "file": "documents/medical-psilocybin-act-sb219-2025.pdf",
-        "cite": "Senate Bill 219, the Medical Psilocybin Act, 2025",
+        "cite": "The Medical Psilocybin Act, Sections 26-2D-1 through 26-2D-11 NMSA 1978, as enacted in 2025",
         "date": "2025-06-20",
         "event": "e-2025-06-20",
         "what": "The enabling statute. It creates the program and the advisory board, defines "
@@ -207,10 +207,12 @@ DOCUMENTS = [
                 "exempts clinicians and patients from penalty, and leaves clinician "
                 "qualifications to department rulemaking",
         "status": "current",
-        "notes": "18 pages. Senate Bill 219 as enacted, 57th Legislature, first session, 2025. "
-                 "The definitions the rulemaking imports are at Section 3; the exemption from "
-                 "criminal and civil penalties is at Section 5; the Schedule I carve-out is at "
-                 "Section 12",
+        "notes": "18 pages. The enrolled bill, Senate Bill 219, 57th Legislature, first session, 2025, "
+                 "enacted as Laws 2025, Chapter 73 and compiled as Sections 26-2D-1 through 26-2D-11 "
+                 "NMSA 1978. The definitions the rulemaking imports are at 26-2D-3, the exemption from "
+                 "criminal and civil penalties at 26-2D-5; the Schedule I carve-out is the bill's "
+                 "Section 12, which amended 30-31-6 NMSA 1978. Section by section on "
+                 "<a href=\"/statute/\">The statute</a>",
     },
 ]
 
@@ -764,7 +766,7 @@ EVENTS = [
         "date": "2025-06-20",
         "kind": "document",
         "what": "<b>The Medical Psilocybin Act took effect</b>, enacted as Senate Bill 219 of "
-                "the 2025 regular session. The Act creates the medical psilocybin program and "
+                "the 2025 regular session, Laws 2025, Chapter 73, compiled as Sections 26-2D-1 through 26-2D-11 NMSA 1978. The Act creates the medical psilocybin program and "
                 "the advisory board, sets the two-part patient test, keeps psilocybin in "
                 "Schedule I with a carve-out for the program, and delegates the rest to "
                 "department rulemaking. It is the authority every rule in this record is "
