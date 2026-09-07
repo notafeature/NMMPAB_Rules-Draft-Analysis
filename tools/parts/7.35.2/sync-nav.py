@@ -42,7 +42,7 @@ GROUPS = [
     ("start", "Start here", [
         ("/", None, "Every Part of Chapter 35, and where each stands", "All parts of 7.35 NMAC"),
         ("index.html", "index", "In effect since June 23; amendments proposed August 25"),
-        ("/7.35.3/about.html", None, "Sources, method, and how to report an error", "How this site is built"),
+        ("/about/", None, "Sources, method, and how to report an error", "How this site is built"),
     ]),
     ("who", "Who the rule reaches", [
         ("producers.html", "producers", "The permit, the premises, testing, labeling, transport"),

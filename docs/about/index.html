@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How this site is built &middot; Medical Psilocybin rules</title>
+<link rel="stylesheet" href="/style.css?v=707e1857">
+<style>
+.fix b{min-width:96px}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="/"><span class="dot"></span>7.35 NMAC &middot; Medical Psilocybin</a>
+  </div>
+</header>
+<main class="wrap">
+  <div class="head">
+    <p class="kicker">Sources, method, corrections</p>
+    <h1>How this site is built</h1>
+    <p class="lede">What this site is, where its facts come from, what it records about its readers, and how to correct it. This page covers every Part of the rules site, the statute page, and the hub at medical-psilocybin.org.</p>
+    <p class="stamp">Moved to the root and extended to every Part on September 7, 2026; the method is unchanged from the Part 3 page created July 27, 2026.</p>
+  </div>
+
+  <section>
+    <p class="seclabel">What this site is</p>
+    <p>An independent community record of New Mexico's medical psilocybin rulemaking: the rules the Department of Health publishes under Chapter 35 of Title 7 NMAC, one Part at a time, what each requires of the people it reaches, the statute they implement, and the record of how each came to be. It exists so that a person affected by a rule can know, at any moment, what the text says, what is still being decided, and how it came to be this way, without attending a meeting or reading a transcript. It serves board and committee members, producers and laboratories, providers and educators, people preparing to comment at a hearing, and anyone following the process. When a rulemaking ends, its Part remains as the account of how the rule was made.</p>
+    <p>It is affiliated with no agency, company, or organization, and it is free to read. Nothing on it is final rule text, legal advice, or medical advice; the department's publications in the New Mexico Register govern.</p>
+  </section>
+
+  <section>
+    <p class="seclabel">Method</p>
+    <p>Read this before relying on anything here. Quoted text is verbatim from the source, with line breaks collapsed to single spaces and nothing else altered. Every claim about what a rule requires cites the published text by section and page, and every claim about what was said or decided cites a named meeting transcript or a filed document. Where a transcript carries no speaker labels, a speaker is named only where the surrounding text fixes the identity, and the basis is stated. Where this site and a primary source disagree, the primary source is right.</p>
+    <p>Every document the site relies on is one a member of the public can obtain, and each Part's record page lists what the site holds and what it does not. The site is built with AI assistance from the public meeting record and the published documents, and reviewed against the sources before publication. Unofficial transcripts are auto-generated and may contain errors; they are labeled as such wherever they are relied on.</p>
+    <p>Statements on this site occupy three strengths of verification, and each is only as strong as its tier.</p>
+    <div class="fix"><b>VERBATIM</b><span class="what">Rule, amendment, and recommendation quotes are copied from the source PDFs and can be checked one step away. Strongest tier.</span></div>
+    <div class="fix"><b>TRANSCRIPT</b><span class="what">Meeting quotes and outcomes come from unofficial transcripts or from a filed account such as a hearing officer's report. Wording is faithful to the source, which itself may contain errors, and speaker attribution can be inferred rather than labeled.</span></div>
+    <div class="fix"><b>COMPILED</b><span class="what">Benchmarks and background are sourced to the cited primary document but were collected and summarized with AI assistance; a citation error is possible.</span></div>
+    <p>Known soft points are flagged in place rather than smoothed over. One stands in Part 3: the June 26, 2026 motion is attributed to Brenda Burgard per the meeting-note summary, because the raw transcript is unlabeled at that segment. In Part 2, the Propagation Committee's meetings are listed by date from the department's meeting records page and nothing on the site quotes them.</p>
+  </section>
+
+  <section>
+    <p class="seclabel">What the site records about its readers</p>
+    <p>Each page reports one event to a counter at count.medical-psilocybin.org when it loads, and one when a document link is clicked. The counter keeps the page path, the host the reader arrived from with no path or query string, a two-letter country code, the name of the network that carried the request, and a reader identifier that lasts one day and is then gone. It keeps no cookie, no address, and no identifier that survives the day it was written. Browsers sending Global Privacy Control or Do Not Track are not counted, and traffic from datacenter networks is dropped, so every number is a floor rather than a total. Records older than 400 days are deleted. The counter's code is in the site's repository, in the folder named analytics.</p>
+  </section>
+
+  <section>
+    <p class="seclabel">Corrections</p>
+    <p>Errors are corrected in place, and the correction is recorded twice: in the revision log at the foot of the page it touches, and in the repository history behind this site. To report one, use the comment page of the Part it concerns and choose "An error on this site": <a href="/7.35.2/comment.html">Part 2, producers and laboratories</a> or <a href="/7.35.3/comment.html">Part 3, training and education</a>. Submissions are reviewed before anything is passed along or published, and anything published is de-identified unless the sender consented to a name.</p>
+  </section>
+</main>
+<footer class="foot"><div class="wrap">
+<span>An independent community record of the rulemaking. Not affiliated with the New Mexico Department of Health.</span>
+<span>Nothing here is final rule text, legal advice, or medical advice.</span>
+<a href="/about/">Sources and method</a>
+<a href="/7.35.3/comment.html">Report an error</a>
+</div></footer>
+<script id="countjs">
+(function(){
+  var E="https://count.medical-psilocybin.org";
+  if(!E) return;
+  var nav=navigator;
+  if(nav.globalPrivacyControl===true||nav.doNotTrack==="1"||window.doNotTrack==="1") return;
+  if(location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1") return;
+
+  function send(k,p){
+    var body=JSON.stringify({k:k,p:p,r:document.referrer||""});
+    try{
+      if(nav.sendBeacon&&nav.sendBeacon(E+"/e",new Blob([body],{type:"text/plain;charset=UTF-8"}))) return;
+    }catch(e){}
+    try{
+      if(window.fetch){
+        fetch(E+"/e",{method:"POST",body:body,mode:"cors",keepalive:true,
+                      headers:{"Content-Type":"text/plain;charset=UTF-8"}}).catch(function(){});
+        return;
+      }
+    }catch(e){}
+    new Image().src=E+"/px?p="+encodeURIComponent(p)+"&r="+encodeURIComponent(document.referrer||"");
+  }
+
+  send("pv",location.pathname);
+
+  // Which documents actually get opened is half the question, and a PDF link
+  // leaves the site without ever loading a page that could report it.
+  document.addEventListener("click",function(e){
+    var a=e.target&&e.target.closest&&e.target.closest('a[href$=".pdf"]');
+    if(a) send("dl",a.getAttribute("href"));
+  },true);
+})();
+</script>
+</body>
+</html>
