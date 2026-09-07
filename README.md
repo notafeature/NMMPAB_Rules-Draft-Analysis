@@ -23,7 +23,7 @@ They are separate and they have different clocks.
 
 ## Where things stand
 
-The operative document is the department's **revised proposed rule 7.35.3 NMAC, published August 25, 2026**, 20 pages, sections 7.35.3.1 through .28, published with proposed amendments to 7.35.2.7, .10, and .24 NMAC and the notice fixing the rule hearing for **October 2, 2026**. The adopted rule 7.35.2 NMAC, Producer and Laboratory Requirements, has been in effect since June 23, 2026. The full statement of the current state, and why the dates are what they are, is in [CLAUDE.md](CLAUDE.md).
+The operative document is the department's **revised proposed rule 7.35.3 NMAC, published August 25, 2026**, 20 pages, sections 7.35.3.1 through .28, published with proposed amendments to 7.35.2.7, .10, and .24 NMAC and the notice fixing the rule hearing for **October 2, 2026**. The adopted rule 7.35.2 NMAC, Producer and Laboratory Requirements, has been in effect since June 23, 2026, and has its own pages at `docs/7.35.2/`. The full statement of the current state, and why the dates are what they are, is in [CLAUDE.md](CLAUDE.md).
 
 Earlier documents are history and are cited only where a page compares versions: the June 12 committee recommendation, the June 25 department draft, the July 9 board-meeting draft, and the set-aside July 23 publication.
 
@@ -35,6 +35,7 @@ For what changed and when, see `docs/7.35.3/record.html` and `docs/7.35.3/change
 NMMPAB_Rules-Draft-Analysis/
 ├── docs/                     <- the site, published by GitHub Pages from main
 │   ├── index.html            <- the parts index: every Part of 7.35 NMAC and where it stands
+│   ├── 7.35.2/               <- the producer and laboratory pages: index, rule, producers, laboratories, record, comment
 │   ├── 7.35.3/               <- the Training and Education pages, listed below
 │   ├── *.html                <- a redirect stub at every retired root address
 │   ├── rule.html             <- the published text, all 28 sections, verbatim and annotated

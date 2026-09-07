@@ -28,6 +28,10 @@ DOCS_ROOT = os.path.join(ROOT, "docs")
 # One entry per Part whose pages exist. The suffix ends every page title in
 # that Part; the brand is the text on the top bar's home link.
 PARTS = {
+    "7.35.2": {
+        "suffix": "7.35.2 NMAC Producers and Laboratories",
+        "brand": "7.35.2 NMAC &middot; Producers &amp; Laboratories",
+    },
     "7.35.3": {
         "suffix": "7.35.3 NMAC Training and Education",
         "brand": "7.35.3 NMAC &middot; Training &amp; Education",

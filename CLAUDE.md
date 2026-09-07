@@ -118,7 +118,7 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 
 | Path | What |
 |---|---|
-| `docs/` | The site, served from `main`. `docs/index.html` is the parts index; `docs/7.35.3/` holds the Training and Education pages; a redirect stub sits at every retired root address; `style.css` and `documents/` are shared and linked by root-absolute path |
+| `docs/` | The site, served from `main`. `docs/index.html` is the parts index; `docs/7.35.2/` holds the producer and laboratory pages and `docs/7.35.3/` the Training and Education pages; a redirect stub sits at every retired root address; `style.css` and `documents/` are shared and linked by root-absolute path |
 | `docs/documents/` | Source PDFs, linked from the site |
 | `source-text/` | Plain-text extractions, searchable |
 | `analysis/` | Extractions, deltas, research. Public |
@@ -127,11 +127,15 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 | `analytics/` | The visit-counter Worker. The only wrangler config in the repo. Kept; the dashboard is at `count.medical-psilocybin.org` (`OPERATIONS.md` 1.4) |
 | `ARCHITECTURE.md` | Hosts, projects, parts, paths; the decisions of September 7, 2026 and their state |
 | `OPERATIONS.md` | The infrastructure inventory and the runbooks |
-| `tools/` | `partlib.py` says which Part a tool works on (`--part 7.35.3`, the default and the only Part with pages) and where its pages live. `build-rule-page.py` regenerates `docs/7.35.3/rule.html` from the current extraction, sourcing the shared menu from `sync-nav.py` and running the stylesheet, counter, and provenance tools over the fresh page; `check-site.py` runs every check; `sync-nav.py`, `sync-record.py`, `sync-provenance.py`, `sync-count.py`, and `sync-css-version.py` each take `--check` |
+| `tools/` | `partlib.py` says which Part a tool works on (`--part 7.35.2` or `7.35.3`; the default is 7.35.3) and where its pages live; each tool's data for a Part is in `tools/parts/<part>/`, and `check-all.py` checks every Part. `build-rule-page.py` regenerates `docs/7.35.3/rule.html` from the current extraction, sourcing the shared menu from `sync-nav.py` and running the stylesheet, counter, and provenance tools over the fresh page; `check-site.py` runs every check; `sync-nav.py`, `sync-record.py`, `sync-provenance.py`, `sync-count.py`, and `sync-css-version.py` each take `--check` |
 | `tools/sync-pathways.py` | The content of `docs/7.35.3/pathways.html`: every starting license, every route, and every step. The page is generated from it, so a step, a verdict, or a citation is changed here and the tool is run. Hand-editing the page fails `check-site.py` |
 | `tools/sync-status.py` | The status of the rulemaking: the dated events, each status item's state, date, and summary, and the procession. The status surfaces on `index.html`, `hours.html`, `eligibility.html`, and `training-hours-record.html` are generated from it, so a status change is made here and the tool is run. Hand-editing a status surface fails `check-site.py` |
 
 ## Current state of truth
+
+**Part 2.** 7.35.2 NMAC, Producer and Laboratory Requirements, is the adopted rule, in effect since June 23, 2026, published in the New Mexico Register, Volume XXXVII, Issue 12: `docs/documents/rules-7.35.2-adopted-2026-06-23-published.pdf`, 19 pages, sections 7.35.2.1 through .27. Proposed amendments to 7.35.2.7, .10, and .24 were published August 25 and go to the October 2 hearing; until adopted the text stands unamended. The record from the March 24 notice through the hearing officer's May 26 report is in `tools/parts/7.35.2/sync-record.py`.
+
+**Part 3.**
 
 The current proposed rule is the **revised proposed rule published August 25, 2026**: `docs/documents/rules-draft-2026-08-25-published.pdf`, 20 pages, sections 7.35.3.1 through .28. The site cites it for section numbers and rule text. It was published with **proposed amendments to 7.35.2 NMAC**, `docs/documents/rules-7.35.2-amendments-2026-08-25-published.pdf`, which carry the definitions 7.35.3.7 imports, certifying clinician and practitioner among them, and with the **hearing notice**, `docs/documents/hearing-notice-2026-08-25.pdf`, fixing the rule hearing for October 2, 2026, 9:00 AM, in Santa Fe and by video conference and telephone, with written comment due by the close of the hearing. The delta against the July 23 text is `analysis/8-25-published-delta.md`.
 

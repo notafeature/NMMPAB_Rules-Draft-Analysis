@@ -75,9 +75,9 @@ session that has built one can build the next.
 | Pages by audience | One page per kind of reader the rule reaches ("For producers", "For testing laboratories", "Routes to a permit") | hand-maintained or a content tool |
 | `comment.html` | How public comment works for this part, and the input channel | hand-maintained |
 
-Part 3 today has fourteen content pages; not every part needs that many. Part 2 starts with
-`index`, `rule`, the August 25 amendments beside the adopted text, and one page each for
-producers and laboratories.
+Part 3 has fourteen content pages; Part 2, built September 7, 2026, has six: `index`,
+`rule` with the August 25 amendments noted at the three sections they would change,
+`producers`, `laboratories`, `record`, and `comment`.
 
 ### 2.3 The tools are per part
 
@@ -85,10 +85,11 @@ Since September 7, 2026 every tool asks `tools/partlib.py` which Part it is work
 (`--part 7.35.3`, the default) and where that Part's pages live, and `check-site.py` checks the
 Part's pages and the root together. Each tool still holds its data in constants at the top of
 the file (`NAMES`, `GROUPS`, `STATUS`, `EVENTS`, `DOCUMENTS`, `STARTS`, `ANNOTATIONS`), and
-all of it is Part 3's. The split of that data into per-Part modules is done when the first
-second Part is built, against a real second data set rather than a guessed one; `partlib`
-refuses a Part it has no data for rather than writing one Part's content into another's
-folder.
+since September 7, 2026 that data lives in `tools/parts/<part>/<tool>.py`, one file per tool
+per Part, executed into the tool's namespace by `partlib.load_data()`; the tools hold code
+only. A tool with no data for a Part stops with a plain message rather than writing one
+Part's content into another's folder, and the pathways tool does nothing for a Part with no
+routes. `tools/check-all.py` runs the checks for every Part.
 
 ### 2.4 The statute layer
 
@@ -184,6 +185,7 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 | Statute cited by compiled section; the Act's name kept | Decided | Part 2.4 |
 | No private-workspace references in any committed file | Done September 7, 2026 | Part 3 |
 | Status vocabulary | Kept as `tools/sync-status.py` has it until it is cleaned up | |
+| Part 2 pages | Built September 7, 2026: six pages in `docs/7.35.2/`, from the Register text and the department's rulemaking documents | Part 2.2 |
 | Hosting for `rules.` | GitHub Pages stays while the repository is public. Moves to Cloudflare when the repository goes private | `OPERATIONS.md` Part 4 |
 | The hub at the apex | Decided; not built. Replaces the redirect rule | `OPERATIONS.md` Part 4 |
 | Application hosts | None built. Each gets its own project and repository when it exists | Part 1 |
@@ -196,7 +198,9 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 2. The layout move: `docs/` by Part, redirect stubs, part-aware tools, `redesign/` removed,
    private-workspace references removed, the official 7.35.2 text held. Done September 7,
    2026. The `parts/` folder move is deferred to after the hearing (Part 4.2).
-3. Part 2: the official adopted text and the August 25 amendments into `docs/documents/`,
-   the rule page built, the index and the two audience pages.
+3. Part 2: the official adopted text, the March 24 notice, the hearing exhibits, the
+   department's response to comments, and the hearing officer's report into
+   `docs/documents/`; the rule page built; the index, the two audience pages, the record,
+   and the comment page. Done September 7, 2026.
 4. The citation sweep to compiled-section form, and `docs/statute/`.
 5. The hub at the apex, its own project.

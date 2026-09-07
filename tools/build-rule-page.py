@@ -39,10 +39,12 @@ _spec = importlib.util.spec_from_file_location(
     "syncnav", os.path.join(ROOT, "tools", "sync-nav.py"))
 syncnav = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(syncnav)
-FOOT = """<footer class="foot"><div class="wrap">
+# The site-wide method page lives with Part 3 until it moves to the root; a
+# Part's data may point the footer at it with ABOUT_HREF.
+FOOT = f"""<footer class="foot"><div class="wrap">
 <span>An independent community record of the rulemaking. Not affiliated with the New Mexico Department of Health.</span>
 <span>Nothing here is final rule text, legal advice, or medical advice.</span>
-<a href="about.html">Sources and method</a>
+<a href="{globals().get("ABOUT_HREF", "about.html")}">Sources and method</a>
 <a href="comment.html">Report an error</a>
 </div></footer>"""
 

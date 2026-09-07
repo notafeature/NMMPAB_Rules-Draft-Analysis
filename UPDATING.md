@@ -13,7 +13,9 @@ redirect stub at every retired root address, and the facts that go stale fastest
 regions: five sync tools own the menu, the record, the status
 surfaces, the routes, and the provenance blocks, and `tools/check-site.py` fails when any
 page drifts from its tool. The order of work for any event is therefore: **documents first,
-then the tool data, then the run, then the hand-maintained prose, then the checks.**
+then the tool data, then the run, then the hand-maintained prose, then the checks.** Every
+tool takes `--part` (7.35.2 or 7.35.3; the default is 7.35.3), and each Part's data lives in
+`tools/parts/<part>/`; `tools/check-all.py` runs the checks for every Part.
 
 ---
 
