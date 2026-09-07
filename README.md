@@ -11,6 +11,8 @@ Goal: let anyone, including people who do not follow the legislative process, se
 - **[CLAUDE.md](CLAUDE.md)** holds the standing facts: the timeline and the reasoning behind each date, the two workstreams, the corrected transcript spellings, and the constraints.
 - **[WRITING-STANDARD.md](WRITING-STANDARD.md)** sets the register for everything written here, including commit messages and pull request bodies.
 - **[UPDATING.md](UPDATING.md)** is the propagation map: something happens in the rulemaking, and it says where that lands on the site. Part 2 is the fact index, which is the blast radius of any change.
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** holds the hosts, the projects, the parts and their paths, and the decisions of September 7, 2026 with their state: built, decided, or open.
+- **[OPERATIONS.md](OPERATIONS.md)** holds the infrastructure as it stands and the runbooks: DNS, hosting, the counter, credentials, and what must never be done.
 
 ## The two workstreams
 
@@ -21,9 +23,9 @@ They are separate and they have different clocks.
 
 ## Where things stand
 
-The operative document is the department's **proposed rule 7.35.3 NMAC, published July 23, 2026**, 19 pages, sections 7.35.3.1 through .28. It goes to a rule hearing on **August 28, 2026**.
+The operative document is the department's **revised proposed rule 7.35.3 NMAC, published August 25, 2026**, 20 pages, sections 7.35.3.1 through .28, published with proposed amendments to 7.35.2.7, .10, and .24 NMAC and the notice fixing the rule hearing for **October 2, 2026**. The adopted rule 7.35.2 NMAC, Producer and Laboratory Requirements, has been in effect since June 23, 2026. The full statement of the current state, and why the dates are what they are, is in [CLAUDE.md](CLAUDE.md).
 
-Earlier documents are history and are cited only where a page compares versions: the June 12 committee recommendation, the June 25 department draft, and the July 9 board-meeting draft.
+Earlier documents are history and are cited only where a page compares versions: the June 12 committee recommendation, the June 25 department draft, the July 9 board-meeting draft, and the set-aside July 23 publication.
 
 For what changed and when, see `docs/record.html` and `docs/changes.html`. For why the dates are what they are, see [CLAUDE.md](CLAUDE.md).
 
@@ -52,21 +54,25 @@ NMMPAB_Rules-Draft-Analysis/
 ├── source-text/              <- plain-text extractions, searchable
 ├── analysis/                 <- extractions, deltas, research. Public
 ├── tools/                    <- build-rule-page.py and check-site.py for the site; sync-nav.py, sync-provenance.py, sync-count.py
-├── CLAUDE.md                 <- standing facts (read first)
+├── CLAUDE.md                 <- standing rules and facts (read first)
 ├── WRITING-STANDARD.md       <- how everything here is written
-├── UPDATING.md               <- what to change when something happens
+├── UPDATING.md               <- what to change when the rulemaking moves
+├── ARCHITECTURE.md           <- hosts, parts, paths, and the state of each decision
+├── OPERATIONS.md             <- infrastructure inventory and runbooks
 └── README.md
 ```
 
+The layout above is the one in place today. The multi-part layout that replaces it, with one path per Part of 7.35 NMAC, is set out in `ARCHITECTURE.md`, Part 4.
+
 ## Sources
 
-- **The rule and the drafts:** `docs/documents/`. The July 23 published proposed rule is current. The June 12 recommendation, June 25 draft and July 9 draft are superseded.
+- **The rule and the drafts:** `docs/documents/`. The August 25 revised proposed rule is current. The June 12 recommendation, the June 25 draft, the July 9 draft, and the set-aside July 23 publication are superseded.
 - **Transcripts:** `docs/documents/` as PDFs and `source-text/` as searchable text. The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.** A speaker is named from an unlabelled transcript only where the surrounding text fixes it, and the basis is stated.
-- **Upstream:** meeting notes and transcripts originate in Notion and are copied into this repository. `docs/record.html` lists the documents the repository holds, and `UPDATING.md` Part 6 tracks the gaps for editors.
+- **Upstream:** meeting recordings and transcripts are obtained from the public record and copied into this repository. `docs/record.html` lists the documents the repository holds, and `UPDATING.md` Part 6 tracks the gaps for editors. Private working notes are never cited.
 - **Names corrected from garbled auto-transcripts:** Zurlo, Leeman, Peskuski, Dezbaá, Fatemi, Wilson, Caldwell, Burgard, Dunn, Ryan, Truckner.
 
 This site is built from public meeting records with AI assistance; the transcripts it relies on are unofficial and may contain errors. See `docs/about.html` for the method and the corrections path.
 
-**This repository is public.** Everything committed here is published, including commit messages and everything in `analysis/`.
+**Everything committed here is treated as published,** including commit messages and everything in `analysis/`, whether the repository is public or private.
 
 Nothing in this repository is final, promulgated rule text.
