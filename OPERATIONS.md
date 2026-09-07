@@ -20,8 +20,8 @@ servers: `greg.ns.cloudflare.com`, `rose.ns.cloudflare.com`.
 
 | Record | Type | Content | Proxied | Purpose |
 |---|---|---|---|---|
-| `medical-psilocybin.org` | A | `192.0.2.0` | yes | Placeholder so Cloudflare can answer at the apex and apply the redirect rule |
-| `www.medical-psilocybin.org` | A | `192.0.2.0` | yes | Same |
+| `medical-psilocybin.org` | A | `192.0.2.0` | yes | Placeholder; the hub Worker's zone route `medical-psilocybin.org/*` answers every request on it, and the redirect rule below fires first while it is enabled |
+| `www.medical-psilocybin.org` | A | `192.0.2.0` | yes | Same, route `www.medical-psilocybin.org/*` |
 | `rules.medical-psilocybin.org` | CNAME | `notafeature.github.io` | **no** | The site. DNS-only on purpose; see 1.3 |
 | `count.medical-psilocybin.org` | AAAA | `100::` | yes | The counter Worker's custom domain, created by Wrangler |
 
@@ -30,8 +30,12 @@ reserved placeholder addresses; the proxied records exist so Cloudflare handles 
 
 **Redirect rule** (Cloudflare, Rules, Redirect Rules), named "Redirect to rules subdomain",
 enabled: if the host is `medical-psilocybin.org` or `www.medical-psilocybin.org`, 301 to
-`https://rules.medical-psilocybin.org` plus the request path, query string preserved. This is
-why the apex "works" today. Building the hub at the apex means replacing this rule (Part 4.3).
+`https://rules.medical-psilocybin.org` plus the request path, query string preserved. Rule id
+`f608fd6122b34aa1b0d08739d5d969e7` in ruleset `948e2cb12d104a84a4a8f71d507bc4d9`. **Until this
+rule is disabled, the apex redirects and the hub Worker routed behind it never answers.** Neither
+the session's Cloudflare API token nor Wrangler's login may edit zone rulesets or delete DNS
+records; the switch is one action in the dashboard: Rules, Redirect Rules, disable "Redirect to
+rules subdomain" (Part 4.3).
 
 No page rules, no bulk redirect lists, no rate-limit rule enabled.
 
@@ -78,6 +82,19 @@ page-view filter `PV_PATH` in `analytics/worker.js` accepts a file at the root o
 down; a deeper folder would need that pattern widened and the Worker redeployed. Two facts from it that come up: datacenter networks are dropped, so
 scanners sweeping the domain mostly do not appear, and a mobile carrier row is a phone on
 that carrier's network, wherever the reader is.
+
+### 1.4a The hub: the `medical-psilocybin-hub` Worker
+
+| Item | Value |
+|---|---|
+| Repository | `github.com/notafeature/medical-psilocybin.org`, public; local clone `~/MPAB/medical-psilocybin.org/` |
+| Code and config | `public/index.html`, `public/404.html`, `public/style.css` (a copy of the rules site's), `wrangler.jsonc` |
+| Account | the personal account, `2418db2ff3f95726c374a86551d2436e` |
+| Hosting | a Worker with static assets and no code, name `medical-psilocybin-hub`, bound by zone routes `medical-psilocybin.org/*` and `www.medical-psilocybin.org/*` over the placeholder A records; deployed September 7, 2026 |
+| Deploy | `npx wrangler@4 deploy --config ./wrangler.jsonc` from that repository |
+| Counter | carries the beacon; both hosts are in the counter's `ALLOWED_ORIGINS` |
+
+The hub answers only once the apex redirect rule (1.1) is disabled.
 
 ### 1.5 The input form
 
@@ -199,13 +216,18 @@ Change all of them in one pass.
 
 ### 4.3 Put the hub at the apex
 
-1. Build the hub as its own project (Part 4.1). Give it the custom domains
-   `medical-psilocybin.org` and `www.medical-psilocybin.org`. Wrangler will refuse while the
-   placeholder A records exist: delete those two records first, then deploy.
-2. Disable or delete the redirect rule "Redirect to rules subdomain". Add a redirect rule for
-   `www` to the apex if the hub does not handle it.
-3. Add the apex origin to the counter's `ALLOWED_ORIGINS` if the hub carries the beacon.
-4. Nothing on `rules.` changes.
+Done September 7, 2026 except the last switch. The hub is its own project (1.4a), bound by
+zone routes over the placeholder A records rather than custom domains, because deleting the
+records needs a DNS permission the deploy credentials lack. Both hosts are in the counter's
+`ALLOWED_ORIGINS`. `rules.` is untouched.
+
+**To switch the apex to the hub:** in the Cloudflare dashboard, zone `medical-psilocybin.org`,
+Rules, Redirect Rules, disable "Redirect to rules subdomain". The Worker answers at once; to
+verify, `curl -sI https://medical-psilocybin.org/` returns `200` with the hub, and
+`https://www.medical-psilocybin.org/` the same. To revert, enable the rule again.
+
+If custom domains are ever wanted instead of routes: delete the two placeholder A records,
+change `routes` in the hub's `wrangler.jsonc` back to `custom_domain: true`, and deploy.
 
 ### 4.4 Move `rules.` from GitHub Pages to Cloudflare
 
