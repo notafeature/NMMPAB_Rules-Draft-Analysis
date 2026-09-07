@@ -94,9 +94,18 @@ def brand(part):
     return PARTS[part]["brand"]
 
 
+# Site-wide pages that belong to no Part: each is a folder under docs/ with an
+# index.html, carrying the root's chrome rather than a Part's menu.
+SITE_DIRS = ["statute"]
+
+
+def site_dirs():
+    return [os.path.join(DOCS_ROOT, d) for d in SITE_DIRS]
+
+
 def all_html_dirs():
-    """Every folder that holds pages: the root, then each Part."""
-    return [DOCS_ROOT] + [docs_dir(p) for p in PARTS]
+    """Every folder that holds pages: the root, the site-wide folders, then each Part."""
+    return [DOCS_ROOT] + site_dirs() + [docs_dir(p) for p in PARTS]
 
 
 def resolve(href, page_dir):
