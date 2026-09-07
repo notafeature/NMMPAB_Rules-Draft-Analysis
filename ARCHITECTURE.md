@@ -18,8 +18,8 @@ time. This was decided before September 2026 and stands.
 
 | Host | Serves | Today (built) | Decided (not yet built) |
 |---|---|---|---|
-| `medical-psilocybin.org` | The hub: what this is, what it covers, where each area lives | A Cloudflare redirect rule sends every path to `rules.` with a 301 | A hub page. Its own project, not this repository |
-| `www.medical-psilocybin.org` | Nothing of its own | Same redirect to `rules.` | Redirects to the apex |
+| `medical-psilocybin.org` | The hub: what this is, what it covers, where each area lives | The hub Worker is deployed and routed on the host (repository `medical-psilocybin.org`); a Cloudflare redirect rule still sends every path to `rules.` until it is disabled in the dashboard (`OPERATIONS.md` 4.3) | The hub answers |
+| `www.medical-psilocybin.org` | The hub, same page | Same route, same redirect rule | Same |
 | `rules.medical-psilocybin.org` | Analysis of the rules, and only that | This repository, `docs/` on `main`, GitHub Pages | The same host, with one path per part: `/7.35.2/`, `/7.35.3/` |
 | `count.medical-psilocybin.org` | The visit counter and its dashboard | The `nmmpab-count` Worker in `analytics/` | Unchanged. Every new host is added to its allowed origins |
 | Application hosts, for example `pathways.` | Tools that do something for a reader rather than describe the rule | None | One project each, in its own repository. The hub lists them; the rules site links to them where a page hands off to a tool |
@@ -189,7 +189,7 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 | Status vocabulary | Kept as `tools/sync-status.py` has it until it is cleaned up | |
 | Part 2 pages | Built September 7, 2026: six pages in `docs/7.35.2/`, from the Register text and the department's rulemaking documents | Part 2.2 |
 | Hosting for `rules.` | GitHub Pages stays while the repository is public. Moves to Cloudflare when the repository goes private | `OPERATIONS.md` Part 4 |
-| The hub at the apex | Decided; not built. Replaces the redirect rule | `OPERATIONS.md` Part 4 |
+| The hub at the apex | Built and deployed September 7, 2026; answers once the redirect rule is disabled, one dashboard action | `OPERATIONS.md` 4.3 |
 | Application hosts | None built. Each gets its own project and repository when it exists | Part 1 |
 | Paid tools, donations | Later. Not on `rules.` | Part 1 |
 | Diff of the enrolled bill against the compiled Article 2D | Parked; about an hour of work | Part 2.4 |
@@ -205,4 +205,5 @@ committed: nothing that names the compiler, nothing from a private workspace, no
    `docs/documents/`; the rule page built; the index, the two audience pages, the record,
    and the comment page. Done September 7, 2026.
 4. The citation sweep to compiled-section form, and `docs/statute/`. Done September 7, 2026.
-5. The hub at the apex, its own project.
+5. The hub at the apex, its own project. Built September 7, 2026; the redirect rule is the
+   owner's switch.
