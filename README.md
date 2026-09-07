@@ -35,6 +35,7 @@ For what changed and when, see `docs/7.35.3/record.html` and `docs/7.35.3/change
 NMMPAB_Rules-Draft-Analysis/
 ├── docs/                     <- the site, published by GitHub Pages from main
 │   ├── index.html            <- the parts index: every Part of 7.35 NMAC and where it stands
+│   ├── about/                <- how the site is built, site-wide: method, verification tiers, the counter, corrections
 │   ├── statute/              <- the Medical Psilocybin Act, Article 2D, section by section, with the Part that carries each
 │   ├── 7.35.2/               <- the producer and laboratory pages: index, rule, producers, laboratories, record, comment
 │   ├── 7.35.3/               <- the Training and Education pages, listed below

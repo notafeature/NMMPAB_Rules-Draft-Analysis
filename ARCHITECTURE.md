@@ -52,6 +52,7 @@ docs/
   style.css           one stylesheet, linked by content hash
   documents/          every source PDF, flat, dated file names (unchanged from today)
   statute/            Article 2D section by section, and which part carries each section
+  about/              how the site is built: method, verification tiers, the counter, corrections; site-wide
   board/              the board and its seven committees; five have no rule part yet
   7.35.2/             Part 2 pages
   7.35.3/             Part 3 pages: everything that is at the root of docs/ today
@@ -139,7 +140,7 @@ copied from one is replaced by the public document it stands for.
 ### 4.1 Today
 
 ```
-docs/                    the site: the parts index, the stubs, 7.35.3/, style.css, documents/
+docs/                    the site: the parts index, the stubs, statute/, about/, 7.35.2/, 7.35.3/, style.css, documents/
 analysis/                extractions, deltas, research (Part 3)
 source-text/             plain-text extractions (Part 3, the statute, 7.35.2)
 Document Register/       original PDFs as received
