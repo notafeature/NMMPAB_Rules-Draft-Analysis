@@ -118,7 +118,7 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 
 | Path | What |
 |---|---|
-| `docs/` | The site, served from `main`. `docs/index.html` is the parts index; `docs/statute/` is the statute page, site-wide; `docs/7.35.2/` holds the producer and laboratory pages and `docs/7.35.3/` the Training and Education pages; a redirect stub sits at every retired root address; `style.css` and `documents/` are shared and linked by root-absolute path |
+| `docs/` | The site, served from `main`. `docs/index.html` is the parts index; `docs/statute/` and `docs/about/` are site-wide pages; `docs/7.35.2/` holds the producer and laboratory pages and `docs/7.35.3/` the Training and Education pages; a redirect stub sits at every retired root address; `style.css` and `documents/` are shared and linked by root-absolute path |
 | `docs/documents/` | Source PDFs, linked from the site |
 | `source-text/` | Plain-text extractions, searchable |
 | `analysis/` | Extractions, deltas, research. Public |

@@ -165,7 +165,7 @@ extraction into `source-text/`, the register row in `tools/sync-record.py`, the 
 A folder under `docs/` with one `index.html` carrying the root's chrome (brand link to `/`,
 no Part menu), its name added to `SITE_DIRS` in `tools/partlib.py`, and a link from the
 parts index, which `check-site.py` requires. `sync-css-version.py` and `sync-count.py` cover
-it; the Part tools do not touch it. `docs/statute/` is the one that exists.
+it; the Part tools do not touch it. `docs/statute/` and `docs/about/` are the two that exist.
 
 ### 3.4 Add a part
 
