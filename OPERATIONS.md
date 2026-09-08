@@ -102,7 +102,7 @@ The hub answers only once the apex redirect rule (1.1) is disabled.
 |---|---|
 | Repository | `github.com/notafeature/pathways.medical-psilocybin.org`, public; local clone `~/MPAB/pathways.medical-psilocybin.org/` |
 | Hosting | a Worker with static assets, name `medical-psilocybin-pathways`, custom domain `pathways.medical-psilocybin.org` created by Wrangler; deployed September 7, 2026 |
-| Content | six guide pages and a browser-side drafter; `tools/build.py` stamps the shared chrome and the counter beacon and refuses an em dash |
+| Content | one folder per role under `public/` (`producers/` with six guide pages and the drafter; `testing/`, `clinicians/`, `practitioners/`, `facilitators/`, `healing-centers/`, `educational-programs/`, `patients/` with one page each); `public/_redirects` carries the first day's addresses; `tools/build.py` stamps the shared chrome, a folder's `_subnav.html`, and the counter beacon, refuses an em dash, and fails on a root-absolute link that resolves to no file |
 | Deploy | `python3 tools/build.py && npx wrangler@4 deploy --config ./wrangler.jsonc` from that repository |
 | Counter | in `ALLOWED_ORIGINS` |
 
