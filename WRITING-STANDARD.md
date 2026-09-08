@@ -259,3 +259,7 @@ gets ignored, and a rule that named a real defect gets followed.
 | 2026-07-25 | Unsourced treated as unfounded (Part 1) | A sourced date reported as unverifiable because the notice document was absent. The tier was wrong, not the fact |
 | 2026-07-25 | Characterisation (#13) | Describing a prior session's output rather than what it changed and when |
 | 2026-07-25 | Not verbatim inside quotation marks | `hours.html`, a block headed "verbatim by speaker" carrying eight quotes with unmarked elisions and one inserted word |
+
+## Committee material and the rule
+
+A requirement is stated only where the adopted rule states it, cited to the subsection and the page of the published text. Minutes, framework outlines, presentations, and any other document that predates a rule's promulgation never support a requirement, a process, or a department position on a page. They may appear in one form only: a block labeled as committee material, in which each item is set beside the adopted text and the result stated (required, required elsewhere, not required), with the rule cited per item. A proposed rule is cited as proposed and marked as not in effect. Where the rule is silent, the page says so and names the question to put to the department.

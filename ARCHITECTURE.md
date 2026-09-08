@@ -22,7 +22,7 @@ time. This was decided before September 2026 and stands.
 | `www.medical-psilocybin.org` | The hub, same page | Same route, same redirect rule | Same |
 | `rules.medical-psilocybin.org` | Analysis of the rules, and only that | This repository, `docs/` on `main`, GitHub Pages | The same host, with one path per part: `/7.35.2/`, `/7.35.3/` |
 | `count.medical-psilocybin.org` | The visit counter and its dashboard | The `nmmpab-count` Worker in `analytics/` | Unchanged. Every new host is added to its allowed origins |
-| `pathways.medical-psilocybin.org` | Practical guides for applicants, jurisdiction by jurisdiction, and a drafter for the two documents 7.35.2.8 names | Built September 7, 2026: its own repository and Worker, six pages worked for the City of Santa Fe and Santa Fe County | Other jurisdictions added one at a time; other tools follow the same pattern, one project each |
+| `pathways.medical-psilocybin.org` | One pathway per role: what its rule requires, where each item comes from, agency by agency, and what is not yet known; a drafter for the two documents 7.35.2.8 names | Built September 7, 2026, one folder per role since September 8: `/producers/`, `/testing/`, `/clinicians/`, `/practitioners/`, `/facilitators/`, `/healing-centers/`, `/educational-programs/`, `/patients/`. The producer pathway is worked for the City of Santa Fe and Santa Fe County; the Part 3 roles cite the proposed rule as proposed | Other jurisdictions one at a time; a facility-address selector once a third jurisdiction exists ("Location selector" below); other tools follow the same pattern, one project each |
 
 The rules site is the neutral reference and stays free. Anything paid, donation-funded, or
 signed lives on another host. The rules site itself names no author in any committed file.
@@ -192,6 +192,8 @@ committed: nothing that names the compiler, nothing from a private workspace, no
 | Hosting for `rules.` | GitHub Pages stays while the repository is public. Moves to Cloudflare when the repository goes private | `OPERATIONS.md` Part 4 |
 | The hub at the apex | Built and deployed September 7, 2026; answers once the redirect rule is disabled, one dashboard action | `OPERATIONS.md` 4.3 |
 | Application hosts | `pathways.` built September 7, 2026; each further one gets its own project and repository | Part 1 |
+| Committee material on any page | Never the basis of a requirement. Minutes, framework outlines, and other documents that predate a rule's promulgation appear only in a labeled block that checks each item against the adopted text, with the result stated per item | `WRITING-STANDARD.md` |
+| Location selector on `pathways.` | Planned, not built. A zip code narrows to candidate jurisdictions; the facility address settles city against unincorporated county, because postal zip codes cross municipal boundaries. Built on one data file per jurisdiction, keyed to the rule's record numbers, once a third jurisdiction is written | Part 1 |
 | Paid tools, donations | Later. Not on `rules.` | Part 1 |
 | Diff of the enrolled bill against the compiled Article 2D | Parked; about an hour of work | Part 2.4 |
 
