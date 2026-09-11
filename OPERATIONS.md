@@ -24,6 +24,7 @@ servers: `greg.ns.cloudflare.com`, `rose.ns.cloudflare.com`.
 | `www.medical-psilocybin.org` | A | `192.0.2.0` | yes | Same, route `www.medical-psilocybin.org/*` |
 | `rules.medical-psilocybin.org` | CNAME | `notafeature.github.io` | **no** | The site. DNS-only on purpose; see 1.3 |
 | `count.medical-psilocybin.org` | AAAA | `100::` | yes | The counter Worker's custom domain, created by Wrangler |
+| `research.medical-psilocybin.org` | (created by Wrangler) | Worker custom domain | yes | The research Worker's custom domain, created by the September 11, 2026 deploy (1.4c) |
 
 Zone settings: SSL/TLS mode **Full**; Always Use HTTPS **off**. `192.0.2.0` and `100::` are
 reserved placeholder addresses; the proxied records exist so Cloudflare handles the request.
@@ -105,6 +106,17 @@ The hub answers only once the apex redirect rule (1.1) is disabled.
 | Content | one folder per role under `public/` (`producers/` with six guide pages and the drafter; `testing/`, `clinicians/`, `practitioners/`, `facilitators/`, `healing-centers/`, `educational-programs/`, `patients/` with one page each); `public/_redirects` carries the first day's addresses; `tools/build.py` stamps the shared chrome, a folder's `_subnav.html`, and the counter beacon, refuses an em dash, and fails on a root-absolute link that resolves to no file |
 | Deploy | `python3 tools/build.py && npx wrangler@4 deploy --config ./wrangler.jsonc` from that repository |
 | Counter | in `ALLOWED_ORIGINS` |
+
+### 1.4c Research: the `medical-psilocybin-research` Worker
+
+| Item | Value |
+|---|---|
+| Repository | `github.com/notafeature/research.medical-psilocybin.org`, public; local clone `~/Projects/Medical-Psilocybin/research.medical-psilocybin.org/` |
+| Hosting | a Worker with static assets, name `medical-psilocybin-research`, custom domain `research.medical-psilocybin.org` created by Wrangler; deployed September 11, 2026 |
+| Content | one dated folder per revision under `public/` (`2026-09-11/`: the Core / Extended Data Set as Summary and Schema PDFs, workbook, JSON Schema, CSV, and three diagrams in PNG and SVG, with an index page); `tools/build.py` stamps the shared chrome and the files table (size, SHA-256), refuses an em dash, fails on a root-absolute link that resolves to no file, on the provenance address appearing in a page, on a Measures file, or on a file the table does not name |
+| Signed | the only signed host: every page carries "Work product of the Research and Continuous Improvement Committee workgroup, New Mexico Medical Psilocybin Advisory Board. Published by Gregory Evans. Not a department publication." The published files are CC BY 4.0. Its README records the decisions of September 11, 2026 |
+| Deploy | `python3 tools/build.py && npx wrangler@4 deploy --config ./wrangler.jsonc` from that repository |
+| Counter | **not counted**, decided September 11, 2026 and recorded in that repository's README (4.1 step 3, the written alternative); no beacon, not in `ALLOWED_ORIGINS` |
 
 ### 1.5 The input form
 
