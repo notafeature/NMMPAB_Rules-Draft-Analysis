@@ -1,0 +1,812 @@
+[00:00:02] Here in just a moment, our meeting has started and the recording
+[00:00:06] has started.
+[00:00:08] Good morning, everyone.
+[00:00:10] We are letting everybody on into the room, so I'll probably repeat myself a little
+[00:00:15] bit and my apologies for that.
+[00:00:17] As most everybody knows, I'm Dominic Zerlo and I'm the Director
+[00:00:22] for the Center for Medical Cannabis and Psilocybin.
+[00:00:26] This is the Patient Qualification and Safety Committee meeting with the Chair
+[00:00:31] of Ian Dunn.
+[00:00:32] Just as a reminder, this meeting is being recorded,
+[00:00:35] so Please ensure that you're using appropriate language during the meeting
+[00:00:39] so we don't have to go back and bleep it out later on when when we post it up on
+[00:00:44] the website.
+[00:00:45] I did actually want to make sure to mention one thing with regard to the
+[00:00:51] program and the advisory Board's websites and that is the Department of Health and
+[00:00:58] actually Allstate agencies are in the process of converting everything over
+[00:01:04] into into ADA compliance.
+[00:01:06] And so some of the documents which may not necessarily be,
+[00:01:10] may briefly not be available on the website.
+[00:01:13] If that does happen and it is a document that you know was there previously,
+[00:01:18] please be aware that we are working on converting everything and things will be
+[00:01:23] set back on up.
+[00:01:24] But if there is a document that you need in the meantime,
+[00:01:27] you are welcome to reach out to the program.
+[00:01:30] But please give it a little bit of time if it's not something you need right away,
+[00:01:34] simply because we don't want to get overwhelmed with a request for something
+[00:01:38] that may just be back on the website in an in a couple of days or so.
+[00:01:43] So just to let everybody know that is coming up,
+[00:01:46] I believe the anticipated date at this point right now is on the 24th to the
+[00:01:52] 26th that that may occur.
+[00:01:54] So just as a note, if you go to the website during those
+[00:01:58] days, later in those days, you may experience that little bit of
+[00:02:02] difficulty saying, I know I saw this year before,
+[00:02:05] where is it?
+[00:02:06] And again, this is the Advisory Board committee
+[00:02:10] meeting for patient qualification and safety.
+[00:02:13] And I will now turn it over to the chair, Ian Dunn.
+[00:02:16] Ian, good morning and the meeting is yours.
+[00:02:20] Good morning, everyone.
+[00:02:20] Thank you for taking time out of your Monday.
+[00:02:22] Happy 420 everyone.
+[00:02:24] We are going to be working on a few things today.
+[00:02:27] In the patient Qualification and Safety committee.
+[00:02:30] We are going to look at patient information safety.
+[00:02:33] It was brought up in another committee that we hadn't taken the time to
+[00:02:38] specifically apply HIPAA.
+[00:02:39] So we are going to go ahead and do that.
+[00:02:42] After that, if time permits, we'll be looking at petition submission
+[00:02:46] processes to be adopted by the Board and then evidence reviews standards for
+[00:02:51] qualifying conditions if time permits.
+[00:02:54] I will now turn over to some introductions.
+[00:02:59] Thank you for attending today's meeting.
+[00:03:01] Please share.
+[00:03:03] That was not great.
+[00:03:05] Thank you for attending today's meeting.
+[00:03:06] Please share your name, your area of expertise relating to
+[00:03:09] patient qualification and safety, and what brings you to the patient
+[00:03:13] qualification meeting.
+[00:03:17] At this time, if you would like to introduce yourselves
+[00:03:20] and participate, please raise your hand.
+[00:03:26] All right.
+[00:03:26] And 1st, we've got sky, rivers and sky.
+[00:03:29] I've enabled your mic.
+[00:03:30] You can unmute when ready.
+[00:03:35] You can hear me OK?
+[00:03:37] Yes.
+[00:03:38] Oh, hi, I'm Sky Rivers.
+[00:03:40] I'm with the Santa Fe Reporter.
+[00:03:41] I'm a retired intuitive counselor.
+[00:03:44] I have been following the committees and the latest updates on what is going on.
+[00:03:51] And I appreciate everybody's attendance and all the work that the DoH and
+[00:03:56] everyone has been putting in.
+[00:03:58] And thank you for having me.
+[00:04:01] So thanks Sky.
+[00:04:03] And let's see, next we've got Kate Hawk.
+[00:04:06] And OK, I have enabled your mic.
+[00:04:10] You can unmute when ready.
+[00:04:12] Yeah.
+[00:04:12] Good morning, everybody.
+[00:04:13] I've introduced myself a few times in these meetings.
+[00:04:16] I'm going to say I'm Kate Hawk.
+[00:04:17] I live in Santa Fe, been a MAPS member since the 80s,
+[00:04:21] trauma therapist all these years.
+[00:04:23] And I'll just mention right now I'm in Scottsdale.
+[00:04:26] I've been working with Scottsdale Research Institute doing their FDA phase
+[00:04:31] one study.
+[00:04:33] We just saw a group of 8 veterans through a mushroom session and it's going really
+[00:04:40] well.
+[00:04:40] So glad to be here today.
+[00:04:43] Awesome.
+[00:04:44] Thanks, Kate.
+[00:04:45] And next we've got Chris Peskowski and you can unmute when ready.
+[00:04:54] Good morning, Mr.
+[00:04:55] Chair.
+[00:04:56] Good morning, everybody.
+[00:04:57] I'm Chris Peskowski, veteran facilitator in Colorado,
+[00:05:00] and I'm just happy to be here and help.
+[00:05:02] Thank you.
+[00:05:06] All right.
+[00:05:07] And next we've got Brenda Burgard.
+[00:05:09] And Brenda, you can unmute.
+[00:05:12] Good morning, everyone.
+[00:05:13] I'm Brenda Burgard.
+[00:05:14] I'm one of the Chair people for training and education and also President of
+[00:05:19] Decrim here in New Mexico.
+[00:05:22] I welcome everybody here and I hope this will be a really productive and helpful
+[00:05:27] meeting.
+[00:05:28] Thank you.
+[00:05:31] Awesome.
+[00:05:31] Thanks, Brenda.
+[00:05:32] And next we've got Gregory Evans.
+[00:05:35] And Gregory, you can unmute when ready.
+[00:05:40] Good morning, everybody.
+[00:05:42] My name is Gregory Evans.
+[00:05:43] I'm an independent researcher mycologist with no affiliations.
+[00:05:47] I'm Sankei resident and my intention is to support the programs development
+[00:05:51] through committee recommendations aligned with emerging research and best practices.
+[00:05:57] Thank you all and good morning.
+[00:06:01] All righty, good morning to everyone.
+[00:06:04] What if you will bring up the patient information safety?
+[00:06:08] This is going to be a very basic document.
+[00:06:11] I it's just basically mirroring HIPAA onto the program.
+[00:06:16] The purpose?
+[00:06:16] To protect patient safety and ensure program integrity and promote equitable
+[00:06:20] access to care by establishing clear confidentiality standards for all
+[00:06:24] licensed entities participating in the medical psilocybin program.
+[00:06:28] So our recommendation is to the Board that they adopt these standards.
+[00:06:32] So our HIPAA Alliance standards.
+[00:06:34] Licensees should implement and adhere to privacy protections consistent with the
+[00:06:38] standards established under the Health Insurance Portability and Accountability
+[00:06:42] Act of 1996, regardless of whether the licensee
+[00:06:44] qualifies as a covered entity under federal law.
+[00:06:47] Licensees should not use or disclose patient identifying information except as
+[00:06:51] permitted or required under HIPAA aligned privacy standards or pursuant to valid
+[00:06:55] legal process, including a court order, warrant, or lawfully issued subpoena.
+[00:07:00] Licensees should not disclose patient information in response to informal,
+[00:07:03] voluntary or non compulsory requests, including requests from law enforcement
+[00:07:07] that are not supported by valid legal process.
+[00:07:11] The minimum necessary standard is that all disclosures should be limited to the
+[00:07:14] minimum necessary information required to comply with applicable legal requirement.
+[00:07:19] We're not prohibited by law.
+[00:07:20] Licensee should make reasonable efforts to notify patients prior to disclosure of
+[00:07:24] their information.
+[00:07:26] These requirements should apply to all patients facing licensed,
+[00:07:29] all patient facing licensed entities within the medical psilocybin program
+[00:07:33] regardless of federal HIPAA status.
+[00:07:36] All right.
+[00:07:38] And then there is a question from Dominic Zerlo.
+[00:07:42] Yes, good morning, Ian.
+[00:07:45] Just as a clarification, I would recommend taking out the year of
+[00:07:49] the ACT because there are updates regularly and I would recommend adding in
+[00:07:54] not just having HIPAA, so not just having that there,
+[00:07:57] but also listing high tech, which is the health information
+[00:08:01] technology for economic and clinical health and ensuring that that is there.
+[00:08:07] Just as a note, that is something that the department
+[00:08:11] does require under with regard to anything that individuals and and
+[00:08:16] programs all are actually are, are compliant with regard to this because
+[00:08:22] it is a federal level.
+[00:08:24] The main reason for needing it within here is because psilocybin is still a
+[00:08:30] schedule 1, so technically illicit at the federal
+[00:08:33] level.
+[00:08:34] So we just want to make sure though that all of the health security issues and
+[00:08:38] requirements are actually there as well.
+[00:08:41] So so I would yeah.
+[00:08:42] And I see it's already, you're already changing it to add high
+[00:08:45] tech.
+[00:08:45] So that would be perfect.
+[00:08:47] Thank you.
+[00:08:49] Thank you.
+[00:08:57] All right.
+[00:08:58] Any other questions, comments, concerns on the information standards?
+[00:09:09] Perfect.
+[00:09:09] Then let's go ahead and move to a vote.
+[00:09:11] All those in favor, please raise your hand at this time.
+[00:09:28] All right.
+[00:09:28] We've got four hands up.
+[00:09:35] Thank you.
+[00:09:35] And then please place your hand down at this time.
+[00:09:44] And then if you are opposed, please raise your hand 4 yeses, 0 Nos.
+[00:09:54] The Patient Information Safety document is adopted by the committee.
+[00:09:59] Next, we can move on to the patient petition
+[00:10:02] submission process.
+[00:10:07] So the purpose and initial implementation.
+[00:10:10] So, to prevent program overload at initial
+[00:10:12] implementation, the Committee recommends that the Board
+[00:10:15] not begin accepting petitions until February 28th of 2027.
+[00:10:19] Prior to the acceptance of petitions, the Patient Qualification and Safety
+[00:10:23] Committee should evaluate potential qualifying conditions and PRIDE provide
+[00:10:27] the Board with an initial set of expansionary qualifying conditions
+[00:10:30] recommendations no later than January 31st, 2027.
+[00:10:34] Once the Board begins accepting petitions, the Medical Psilocybin Advisory Board may
+[00:10:38] accept and review petitions from any individual or association individual of
+[00:10:42] individuals requesting the addition of a qualifying condition under the Medical
+[00:10:46] Psilocybin Act.
+[00:10:48] Except as otherwise provided, they shall be submitted electronically to
+[00:10:53] the Department of Health with basic instructions to try and help them out
+[00:10:57] with organizing and making sure that they get it.
+[00:11:01] So a specific subject line, just saying, petition to the Medical Psilocybin
+[00:11:05] Advisory Board and beginning with Deer Medical Psilocybin Advisory Board.
+[00:11:08] That way it's searchable in their system for submission deadlines.
+[00:11:14] I'm not gonna lie, I ripped these off of the medical
+[00:11:17] cannabis program.
+[00:11:18] The complete petitions may be submitted at any time following that.
+[00:11:21] January 31st, 20270.
+[00:11:25] Sorry it was February 28th.
+[00:11:27] This was the wrong number.
+[00:11:34] Petitions will be scheduled for review at the next available Board meeting.
+[00:11:37] To be considered, petitions must be received at least 30
+[00:11:41] calendar days prior to the scheduled meeting and to ensure inclusion in the
+[00:11:47] public notice, petitions must be received at least 35
+[00:11:51] calendar days prior to the Board meeting to be processed.
+[00:11:55] Imported to the Board.
+[00:11:56] Petitions must be submitted in a readable electronic format including the following,
+[00:12:01] a caption including their name, address, contact information,
+[00:12:05] the medical condition, medical treatment or disease pros
+[00:12:08] proposed for inclusion, a table of contents,
+[00:12:11] an introductory narrative, a statement of proposed benefit,
+[00:12:14] supporting evidence, and additional materials.
+[00:12:18] As an optional.
+[00:12:19] I will go ahead and paste that into the chat and I will open up for discussion,
+[00:12:24] questions, comments, concerns.
+[00:12:37] All right.
+[00:12:37] And 1st, we've got Kate Hawk.
+[00:12:39] Kate, you can unmute when you're ready.
+[00:12:44] Thank you.
+[00:12:44] Yeah, I think I understand this, but just to make sure it's totally clear
+[00:12:48] to everybody.
+[00:12:48] So this is just for adding additional conditions to the four that are already
+[00:12:53] approved, right?
+[00:12:54] So it's gives us a chance to get started with what's already in the act,
+[00:12:58] and then there will be opportunities to add other things afterwards.
+[00:13:02] Is that correct?
+[00:13:04] Yeah.
+[00:13:04] So it does two things.
+[00:13:06] So we can begin as a committee evaluating qualifications now,
+[00:13:10] But what it says is like if we're gonna individually submit petitions,
+[00:13:15] that would begin a little bit later, but like the committee will still discuss
+[00:13:21] some initial qualifying conditions to provide the board.
+[00:13:25] And then after that process, the board will begin accepting petitions
+[00:13:29] as like the standard protocol outside of the committees.
+[00:13:33] OK, thank you.
+[00:13:37] All right.
+[00:13:37] And next we've got sky, rivers and sky you can unmute when
+[00:13:42] already.
+[00:14:02] OK.
+[00:14:02] Looks like might be having some issues.
+[00:14:06] I know that earlier you were able to introduce yourself.
+[00:14:10] Yeah, there you go.
+[00:14:11] OK, there I am.
+[00:14:13] What was just discussed, does that mean that the implementation
+[00:14:18] date December of the end of this year is going to be moved up to January of next
+[00:14:25] year or this petition is just for additional qualifying conditions?
+[00:14:31] I'm a little confused.
+[00:14:33] Yeah, so this would be for additional
+[00:14:36] qualifying conditions.
+[00:14:39] Basically what this would do is the original implementation date or goal by
+[00:14:44] the department would stand.
+[00:14:46] This would just say, OK, so if they're going to start in December,
+[00:14:50] then that gives us two months to allow them to figure out the current systems
+[00:14:55] and processes for those initial patients and then we can begin to add to that
+[00:15:00] patient pool.
+[00:15:01] I just don't want to stress out the systems on the very first day.
+[00:15:05] OK, Thank you very much.
+[00:15:08] Thank you.
+[00:15:20] All right, any other questions, comments, concerns?
+[00:15:31] All righty, then we will move to a vote of this
+[00:15:33] document as well.
+[00:15:35] All those in favor, please raise your hand at this time.
+[00:15:56] All right and I'm seeing six hands up perfect.
+[00:16:02] You may lower your hands at this time and all those opposed please raise your hand
+[00:16:13] at this time.
+[00:16:25] All right, seeing none in opposition.
+[00:16:27] This is document also is adopted by the committee.
+[00:16:31] Now we have one final one which is going to discuss.
+[00:16:35] So that had qualifying conditions added in two processes.
+[00:16:39] So the later one once the program is in effect will be the petitions.
+[00:16:44] But the initial one where we're still gonna review and collect data is gonna be
+[00:16:49] the patient qualification and safety committee.
+[00:16:52] So next we're gonna review our standards for qualifying conditions in this
+[00:17:01] committee, this one.
+[00:17:09] And Jorge, would you do me a favor and go ahead and
+[00:17:11] paste it in the chat?
+[00:17:15] I sure will.
+[00:17:41] Thank you.
+[00:17:42] So the purpose is to ensure that recommendations for new qualifying
+[00:17:46] conditions under the medical psilocybin program are based on credible scientific
+[00:17:49] evidence, clinical relevance and patients patient
+[00:17:52] safety considerations.
+[00:17:54] So this policy would govern the evaluation of potential qualifying
+[00:17:56] conditions by the Patient Qualification and Safety Committee.
+[00:18:00] So the standard of evidence, randomized controlled trials shall be
+[00:18:03] considered the strongest and most reliable form of evidence for evaluating
+[00:18:07] therapeutic benefit and shall be prioritized when available.
+[00:18:10] In the absence of sufficient randomized controlled trial data,
+[00:18:13] the committee may reconsider high quality observational studies, open label trials,
+[00:18:16] and other emerging evidence.
+[00:18:18] Provided that limitations are clearly acknowledged and the totality of evidence
+[00:18:21] supports a reasonable expectation of benefit and safety.
+[00:18:25] Systemic reviews and analysis may be used to evaluate consistency and overall
+[00:18:29] trends in the evidence.
+[00:18:31] The committee saw ensure that such analysis are not given duplicate weight
+[00:18:34] by where they rely on the same underlying studies already under review.
+[00:18:39] In applying the standard of evidence, the committee shall consider the strength
+[00:18:43] and consistency of findings across these studies,
+[00:18:46] the size and clinical relevance of observed effects,
+[00:18:48] known or potential risks associated with treatment,
+[00:18:51] and the severity of the condition and availability of alternative treatments.
+[00:18:57] Questions, comments, concerns.
+[00:19:05] Let's see, Chris was just asking in the chat if we
+[00:19:08] could zoom into the document a bit and then that looks like.
+[00:19:13] How does that look?
+[00:19:15] It's also in the chat.
+[00:19:18] It's a little better.
+[00:19:19] Thank you.
+[00:19:20] Yeah, sure.
+[00:19:22] All right.
+[00:19:23] And Kate, you can unmute when you're ready.
+[00:19:28] Yeah, Thank you.
+[00:19:29] Well, this generally makes sense, but I'm thinking in from a perspective of
+[00:19:34] end of life care, for instance.
+[00:19:36] I'd like a little more time to have a chance to talk about it.
+[00:19:40] We're going to have an in person meeting this week and I'd just like to, you know,
+[00:19:45] these are really important to set the foundation.
+[00:19:48] I'd just like a little more time for us to take this into our committee and
+[00:19:52] consider, you know, what would the implications be for end of
+[00:19:56] life care particularly?
+[00:19:58] So, you know, just wondering if we can have a little
+[00:20:01] more time before we vote on this.
+[00:20:05] I yes, we can if we need to take more time.
+[00:20:09] So I don't see how.
+[00:20:13] So end of life care is already a qualifying condition.
+[00:20:16] It's a legislative 1.
+[00:20:18] So this would just go for additional qualifying conditions or OK yeah,
+[00:20:23] so I didn't understand.
+[00:20:25] So this is just the additional ones this doesn't apply for.
+[00:20:30] I guess end of life care isn't as clearly defined.
+[00:20:34] I mean, it's not a, you know, a diagnosis or disorder in in in itself,
+[00:20:40] but OK, so this is just additional ones.
+[00:20:43] If there's evidence, we want to have evidence to add anything
+[00:20:47] additional, right?
+[00:20:48] Anything the legislature didn't add, we want to take the time to make sure
+[00:20:51] we're reviewing evidence.
+[00:20:53] Got it.
+[00:20:54] OK, Just didn't understand this is only for
+[00:20:56] additional things.
+[00:20:56] Thank you.
+[00:20:57] No worries.
+[00:20:58] Thank you.
+[00:21:07] Any other questions, comments or concerns?
+[00:21:17] All righty, let's go ahead and move on to a vote of
+[00:21:22] how we the petition.
+[00:21:24] No, the evidence requirements, all those in favor,
+[00:21:27] please raise your hand at this time.
+[00:21:44] All right, seeing four hands up.
+[00:21:49] All righty, at this time you may lower your hands.
+[00:22:00] All righty.
+[00:22:01] And then if you are opposed, please raise your hand at this time
+[00:22:08] seeing none, the vote for yes, zero, no, the document is adopted.
+[00:22:16] So next what I want to do is go ahead and plan for some qualifying conditions that
+[00:22:22] we think would be beneficial.
+[00:22:24] That way at our next meeting, we can compile evidence and, you know,
+[00:22:30] get prepared for that part as well.
+[00:22:34] But I do want to just open before we start that.
+[00:22:36] Any other things that you feel need to be addressed before we moving on to this
+[00:22:41] qualifying conditions section?
+[00:22:45] Gregory.
+[00:22:54] Yeah, this goes back to the HIPAA.
+[00:22:56] Just really quick before we move on.
+[00:23:01] I wanted to get my words right, so I didn't chime in when that was
+[00:23:08] happening.
+[00:23:12] I wanted to just call out like a flag for something that we will need to consider
+[00:23:17] at some point.
+[00:23:19] And that's like the, what is it called, like QSOA qualified service organization
+[00:23:25] agreement.
+[00:23:27] And so anything that touches Sud or Medicaid is probably gonna have to have
+[00:23:34] that as an additional layer.
+[00:23:37] And this is more for like any like provider regulations, whatever.
+[00:23:43] But I think we should somehow call it out in the code or I mean, yeah,
+[00:23:48] in the in the rules so that like we don't trip on ourselves when we hit that
+[00:23:54] insurance conversation later down the road.
+[00:24:01] Nothing to vote on today.
+[00:24:02] Just like as we iterate this, I think before we roll out,
+[00:24:05] we should probably have that conversation.
+[00:24:08] Yeah.
+[00:24:09] And I think the department would probably have more to do with the.
+[00:24:16] I don't know that we can like establish that agreement for them,
+[00:24:21] but I definitely think we can draw attention to it.
+[00:24:27] Yeah.
+[00:24:27] And I'm not sure how it like would fold into this part of the recommendation.
+[00:24:31] But if there's like a, a provider who has like their BAA in
+[00:24:37] place with their patients and they are receiving payments from Medicaid for any
+[00:24:44] part of their business, I think Dominic probably has some insight
+[00:24:50] on this.
+[00:24:52] It's like I'm trying to understand the link in here,
+[00:24:55] but there is a requirement for that business to have an additional layer of
+[00:25:00] agreement with their patients.
+[00:25:03] I think that's how it works out.
+[00:25:04] Dom.
+[00:25:06] Yeah, Dominique.
+[00:25:08] Yeah, good morning, everybody.
+[00:25:09] I I mean, this is something that is already
+[00:25:12] actually in place.
+[00:25:13] It doesn't necessarily need to be doesn't necessarily need to be outlined here.
+[00:25:19] However, all of the agreements that are there
+[00:25:21] would include it.
+[00:25:22] So including it in here and just saying that it would also ensure to match with
+[00:25:28] the security rule is fine.
+[00:25:30] But that security rule is a part of HIPAA itself.
+[00:25:33] So it's not necessarily doesn't need to necessarily be outlined separately,
+[00:25:40] but if it helps people to feel a little more protected,
+[00:25:45] there's not an issue with including it in.
+[00:25:49] It simply adds in another layer of spelling it out for individuals,
+[00:25:53] especially for patients to say, look, your,
+[00:25:55] your private health information needs to be protected regardless of whether it's
+[00:26:00] paper, electronic or otherwise.
+[00:26:02] So to add it on in is not a problem, especially from that standpoint.
+[00:26:08] And just to call it out, but it is the security rule is a part of
+[00:26:12] HIPAA itself.
+[00:26:14] And and that was actually a part of why the high tech to be added in really was
+[00:26:19] there.
+[00:26:19] And why I suggested that is just to give patients and providers both sort of that
+[00:26:24] reminder of all of this information needs to be protected no matter what.
+[00:26:30] I hope that helps that that totally makes sense.
+[00:26:32] And I see it covered under high tech.
+[00:26:38] I'm, my main concern was just downstream when
+[00:26:41] all of the insurance pieces fall together, like calling out that due diligence,
+[00:26:47] like the program is 25,000 steps ahead.
+[00:26:50] And yeah, I think getting that insurance, those Medicaid payments for a lot of
+[00:26:56] these conditions is, is massive.
+[00:26:59] But yeah, thank you.
+[00:27:00] Doesn't need to be, we don't need it.
+[00:27:02] I wouldn't recommend like refoating on this thing or anything like that.
+[00:27:06] Just wanted to put the conversation out there.
+[00:27:10] I appreciate it, thank you so much.
+[00:27:13] But is there any other comments before we get to qualifying conditions?
+[00:27:26] All righty seeing none, what does the committee believe are the
+[00:27:30] best conditions to start with?
+[00:27:32] I know one of the ones that I was considering and has some of the best
+[00:27:37] evidence was just major depressive disorder outside of treatment resistant
+[00:27:42] depression.
+[00:27:44] I definitely have been looking into OCD, some other conditions,
+[00:27:49] but I definitely want to hear what the committee is looking into and what y'all
+[00:27:54] would like to focus on 1st.
+[00:28:04] All right, looks like yeah, Chris, yeah.
+[00:28:13] I agree with you that we should look at major depressive disorder.
+[00:28:18] And I don't know if just regular depression has its own ICD or its own
+[00:28:24] codes, but I don't really see a reason why
+[00:28:27] people should have to start with pharmaceuticals if this could help them
+[00:28:33] through that process without without taking medications.
+[00:28:39] So I would like to see just regular depression as well.
+[00:28:43] Thank you, Major.
+[00:28:45] So it sounds like major depressing.
+[00:28:47] Yeah.
+[00:28:48] And major depressive disorder is just the the government name of depression.
+[00:28:54] But yeah, we could definitely look into that key.
+[00:28:59] Yeah, I, I agree with with Chris, you know, having people,
+[00:29:03] if they don't want to be on pharmaceuticals,
+[00:29:06] that might be difficult to get off of.
+[00:29:08] That would be nice if we don't have to have the treatment resistant, you know,
+[00:29:13] if there's evidence that this could help.
+[00:29:16] And then I'll also say physical pain could be, you know, helpful.
+[00:29:22] And then there's a whole, you know, mounting body of evidence for brain
+[00:29:28] injuries.
+[00:29:29] So things like that could be added.
+[00:29:35] And, you know, some of these things are overlapping.
+[00:29:37] Is it like working with the veterans here?
+[00:29:39] A lot of them is some kind of effect on the brain from all the all the explosions.
+[00:29:46] But then there's also PTSD symptoms.
+[00:29:49] So sometimes those things go together.
+[00:29:54] Yeah, I completely agree that sometimes it's
+[00:29:57] multifactorial leading to their symptoms.
+[00:30:00] So thank you.
+[00:30:01] We can definitely look at physical pain in TBI.
+[00:30:05] Greg.
+[00:30:06] Agree.
+[00:30:11] Sorry, I was just gonna echo TBI.
+[00:30:13] I believe that was called out and that weird,
+[00:30:17] weird meeting we had that was cast on some weird television station that
+[00:30:23] nobody's ever heard of this weekend by some orange guy with a bunch of thugs.
+[00:30:30] That felt like, yeah, anyways, I'm pretty sure they called out TBI.
+[00:30:34] And I think getting ahead of that before our state can enter the ibogaine
+[00:30:40] conversation and doing that with psilocybin as an org,
+[00:30:44] as a full biomass would be really, really interesting.
+[00:30:50] Thank you, Catherine.
+[00:30:52] Oh, sorry, your mic's enabled now.
+[00:30:58] There we go.
+[00:30:59] There we go.
+[00:31:00] Definitely chronic pain.
+[00:31:01] I think that's important.
+[00:31:03] I also agree with TBI.
+[00:31:06] I was also thinking about, I know they're doing a lot of research on
+[00:31:11] Parkinson's and that it's really helping a lot with fibromyalgia as well.
+[00:31:18] So kind of looking at some, you know, physical health issues that they're doing
+[00:31:24] work on.
+[00:31:26] I was also wondering about, I know we're doing end of life,
+[00:31:30] but what about people with frozen grief, right?
+[00:31:33] Like things that happened 10 years ago, you know, maybe even, you know,
+[00:31:39] existential issues, but really like focusing on this frozen
+[00:31:44] grief that I see this pretty often with people,
+[00:31:47] especially if they've had multiple losses throughout their life.
+[00:31:54] I just think that, you know, we should consider expanding the end of
+[00:31:58] life so that it's not just people currently experiencing it,
+[00:32:03] but things that, you know, relate to the past.
+[00:32:06] Now, you could also potentially see that as
+[00:32:10] PTSD because depending on, you know, the situation.
+[00:32:14] But I just see that being a a big theme that I see a lot with people.
+[00:32:22] Anyway, thank you.
+[00:32:24] Would a good word for that be existential distress?
+[00:32:29] Like it doesn't necessarily have to be the the that they are going to die.
+[00:32:37] It could have been just that they thought they were going to die and or have some
+[00:32:42] other traumatic existential injury.
+[00:32:44] So would that be a good characterization of what you were describing?
+[00:32:47] Yeah.
+[00:32:48] But I was also talking about people that have experienced loss of others
+[00:32:53] throughout their life and they're stuck like they are trigger.
+[00:32:57] I mean it again, it could also be under PTSD.
+[00:32:59] But yeah, people that have experienced near death
+[00:33:03] experiences themselves.
+[00:33:04] But also, you know, just there's just a lot of grief.
+[00:33:10] I I just, I'm thinking about like about 20
+[00:33:13] different patients in the past, you know, six months that they,
+[00:33:18] they're stuck in their grief.
+[00:33:20] They can't move forward because they're missing.
+[00:33:23] There's so much loss in their life.
+[00:33:24] And by the way, it's not always people.
+[00:33:26] It could be loss of a job, loss of their identity, you know,
+[00:33:31] loss of health, like the disability.
+[00:33:36] Yeah, I like what Kate is saying.
+[00:33:37] Prolonged grief disorder.
+[00:33:40] That might be the way to put it.
+[00:33:49] Thank you.
+[00:33:49] I will go ahead and mark that down.
+[00:33:51] Chris, I'm, I'm curious if tobacco cessation would be
+[00:33:58] included in, in our current, what is it substance abuse protocols
+[00:34:06] would, would tobacco qualify or would that have
+[00:34:12] to be separate?
+[00:34:16] In my humble opinion, and ultimately the department will be the
+[00:34:21] one to to decide.
+[00:34:24] I believe nicotine use disorder would also qualify for psilocybin use,
+[00:34:30] but I will defer until the department makes that decision.
+[00:34:34] And if they decide contrary to that, I would support adding nicotine use
+[00:34:41] disorder.
+[00:34:41] There have been a few credible studies on it's effectiveness for that.
+[00:34:47] So Gregory or I think Catherine has her hand up.
+[00:34:59] Oops, sorry Catherine, I already spoke.
+[00:35:02] So.
+[00:35:02] Oh, OK, there we go.
+[00:35:05] Catherine.
+[00:35:06] I think there there's something I've been looking at called demoralization.
+[00:35:11] So the IT shows it's shown up in studies around end of life and long term aid
+[00:35:19] survivors.
+[00:35:21] Essentially it's this triggered state where you're discouraged, defeated,
+[00:35:26] unmotivated to the point you can't keep trying.
+[00:35:28] It's like it, it, it's depression like, like acute depression without like the
+[00:35:35] clinical definition of depression.
+[00:35:38] And it's, it's showing up in a lot of research
+[00:35:40] lately.
+[00:35:40] And I think that might be a, a, a, a hood to put that conversation under.
+[00:35:48] I have a small word salad, things that haven't been touched,
+[00:35:56] cluster headaches, eating disorders, postpartum depression,
+[00:36:04] the demoralization hood of conversations.
+[00:36:09] It's pretty bad, large.
+[00:36:11] I did want to echo the Alzheimer's and Parkinson's conversation.
+[00:36:20] I think that's all I have on my current list, Brenda.
+[00:36:33] Yes, I was going to say Alzheimer's as well,
+[00:36:37] possibly autism.
+[00:36:39] This is something new that's being looked at as well.
+[00:36:44] I think that along with autism comes social anxieties, other types of fears.
+[00:36:53] So I think Alzheimer's is the other one that was going to be talking about.
+[00:36:58] But Gregory did good job of answering that will promote well saying you know
+[00:37:04] what he needed to say about Alzheimer's.
+[00:37:08] I think that would be further research to be done.
+[00:37:13] Now I have a question.
+[00:37:14] Will New Mexico be on any of these studies?
+[00:37:20] Will we be creating any studies here at like one of the universities here?
+[00:37:28] I believe Larry Lehman is working on research.
+[00:37:34] I think Dominic has more information than I do on that if you would like to chime
+[00:37:38] in.
+[00:37:39] Sure.
+[00:37:39] Thank you, Ian.
+[00:37:40] And, and Brenda, it's a great question.
+[00:37:42] And as Ian was mentioning, you know, Doctor Lehman over at UNM definitely has
+[00:37:46] some of his own studies that are, are that he is Pi principal investigator
+[00:37:51] on and that he's working with.
+[00:37:53] So that would be part of it.
+[00:37:55] The other aspect is if the the research fund does get funding in future years,
+[00:38:00] then that would be 1 area where this list of items would be some of the areas that
+[00:38:06] we potentially could fund research in the future.
+[00:38:10] But again, that's all dependent upon that particular
+[00:38:14] fund getting funded.
+[00:38:16] So I hope that's helpful.
+[00:38:18] Yeah, Thank you.
+[00:38:23] And then, Catherine, did you put your hand up or was it just
+[00:38:26] left up?
+[00:38:26] Yeah, no, I did.
+[00:38:27] OK, cool.
+[00:38:28] So, you know, a couple things kind of going back to,
+[00:38:32] I guess the demoralization, something that kind of stems out of that,
+[00:38:36] it's a little different.
+[00:38:38] It's a huge thing that I'm seeing with clients right now.
+[00:38:42] And that's just moral injury.
+[00:38:44] I don't think there's any research around it though, yet,
+[00:38:47] because I think that's kind of what our our country's experiencing right now is a
+[00:38:51] lot of moral injury.
+[00:38:53] I also just wanted to mention, and I don't know if this is the time to
+[00:38:57] bring it up or not, but is this an area where we could bring
+[00:39:01] microdosing in at all or not?
+[00:39:03] Like it does that have to be brought in in a different way?
+[00:39:08] I just am, you know, just really seeing so many people wanting
+[00:39:12] micro dosing to be a part of this experience,
+[00:39:14] which I understand the law is not written for it,
+[00:39:17] but I'm just wondering if by looking at new conditions, can we also bring in new,
+[00:39:22] you know, the micro dosing piece at all or not?
+[00:39:28] So in terms of micro dosing, it's not that it's not allowed,
+[00:39:31] it's that the law requires that we have a preparation,
+[00:39:34] administration and integration session.
+[00:39:36] So as long as that is fulfilled, we can have,
+[00:39:41] they can have a microdose of psilocybin.
+[00:39:46] So what I believe is being worked on in dosage administration and clinical
+[00:39:53] practice would basically say that for your first initial,
+[00:39:59] your preparation would be two sessions with a total of 2 hours minimum and.
+[00:40:08] Then they are going to if you have subsequent ones like let's say it's a
+[00:40:12] micro dose that you take recurring, then you would you could get away with
+[00:40:18] less preparation sessions and potentially combining some of those dosage
+[00:40:23] integration into singular ones to make it possibly applicable.
+[00:40:27] But the current caveat and the law is that we do have to have those three
+[00:40:32] sessions in there.
+[00:40:33] OK, sorry to interject that in then I
+[00:40:36] apologize.
+[00:40:37] That's not sounds like that's not relevant to this.
+[00:40:39] So I apologize.
+[00:40:40] No worries.
+[00:40:41] We all have questions.
+[00:40:42] I appreciate your thoughts.
+[00:40:46] And then, Gregory, Catherine, I just sent you a bunch of stuff about
+[00:40:52] moral injury that I've been following.
+[00:41:00] And then I lost my train of thought.
+[00:41:03] Dominic was talking about.
+[00:41:05] What was Dominic talking about?
+[00:41:10] My brain.
+[00:41:11] Has anyone heard of ADHD?
+[00:41:15] Yes, which is something that like I
+[00:41:17] specifically like so like the micro dosing conversation is like massively
+[00:41:22] important for me, but I definitely like am in the camp.
+[00:41:25] Can't I'm in camp table that because like, once we get some normalization down,
+[00:41:33] then the, the, the the flexibility and latitude to
+[00:41:38] design trials around micro dosing will shift in future iterations of whatever
+[00:41:46] the approved locations Definitely kills it.
+[00:41:53] I am aghast.
+[00:41:55] I literally cannot remember.
+[00:41:59] Brenda spoke before Dominic.
+[00:42:04] Yeah.
+[00:42:04] Brenda had asked Dominic if there's any research going on in the state of New
+[00:42:08] Mexico.
+[00:42:08] He had explained what was going on with Larry Lehman's study.
+[00:42:13] Got it.
+[00:42:14] I got it.
+[00:42:14] Thank you.
+[00:42:14] You triggered it.
+[00:42:16] You fired my brain cell, my single remaining brain cell.
+[00:42:23] This is a crosswalk opportunity.
+[00:42:25] I'm curious if in the research and continuous improvement group, we can so.
+[00:42:34] So when we have conditions, we have 4 conditions.
+[00:42:37] There's gonna be overlapping conditions.
+[00:42:39] People will have additional potentially like treatable conditions that are not
+[00:42:45] like the target of the therapy.
+[00:42:48] And so if we can call those out in like an intake form and understand.
+[00:42:53] So we, we have this list of 30 conditions that
+[00:42:56] we want to like consider let's like start tracking those and see if there is like
+[00:43:01] tangentical improvement across those things to help build bases for.
+[00:43:07] Yeah, like you can do, you can do initial studies without even
+[00:43:10] like if you have this type of information at a program level,
+[00:43:14] I think you could write papers based on it and then get studies approved.
+[00:43:18] Anyways, that was that was what I wanted to get
+[00:43:21] out.
+[00:43:22] Well, thank you.
+[00:43:23] I'm glad that you found your thought, Eileen.
+[00:43:30] All right.
+[00:43:31] And your mic's enabled now.
+[00:43:33] Hey, sorry for my I'm gonna say a lot of
+[00:43:36] things that I said in the chat, but I couldn't unmute earlier,
+[00:43:41] so I apologize for that.
+[00:43:44] Yeah, the restrictions that that this law
+[00:43:47] created do create a problem for treating chronic pain.
+[00:43:51] Because most of the research that we have right now says that like in order to
+[00:43:57] treat chronic pain, especially conditions like headache
+[00:44:00] diseases, you have to take a dose every five days,
+[00:44:04] which if you have to do a preparation and an integration session before and after
+[00:44:09] each of those five days.
+[00:44:11] And that's going to cost you a couple $1000.
+[00:44:14] It is not going to be affordable for anybody.
+[00:44:18] And those sessions every five days usually last for, you know,
+[00:44:23] quite some time, like, you know, a month or two months in order to,
+[00:44:28] to get you out of that pain cycle that you're in.
+[00:44:33] So chronic pain is probably going to to be a challenge.
+[00:44:38] And the research that's out there right now for chronic pain doesn't show that
+[00:44:42] those preparation and integration sessions and the therapy component are
+[00:44:47] necessary to treat the chronic pain.
+[00:44:49] It's not that they're not also beneficial because most people who live with chronic
+[00:44:53] pain also live with some kind of a mental health issue that has been created by the
+[00:44:58] chronic pain that they live with or is just comorbid with the chronic pain that
+[00:45:02] they live with.
+[00:45:03] But because of the, the, the limitations of the law,
+[00:45:07] it's going to be a problem.
+[00:45:09] And it's going to be something that we're going to have to address with the, the,
+[00:45:14] the, the training committee.
+[00:45:16] So that people don't go into these sessions thinking I'm going to treat my
+[00:45:21] chronic pain by getting one or two sessions of psychedelic assisted therapy
+[00:45:26] and, you know, a preparation and an integrated session
+[00:45:30] and then become more hopeless when it doesn't work for them.
+[00:45:35] And that's not to say that I don't agree with what Gregory says,
+[00:45:39] that we should be tracking it in Colorado.
+[00:45:41] They're going to start working to track these other things,
+[00:45:45] whether people are having improvement in their chronic pain.
+[00:45:49] Because it could be that one or two sessions is all somebody needs to treat
+[00:45:54] their low back pain or their spinal stenosis or something like that.
+[00:45:59] We don't know enough yet to know that the most robust clinical trials are around
+[00:46:04] cluster headache and migraine right now.
+[00:46:07] But the other thing that I wanted to point out is that there's some research
+[00:46:11] about autoimmune conditions, especially Lyme,
+[00:46:14] that has been coming to light recently.
+[00:46:17] And so I also think that those conditions should be included in our list.
+[00:46:22] Thank you so much.
+[00:46:28] All righty.
+[00:46:28] Any others?
+[00:46:45] All righty.
+[00:46:46] So we still, we have quite a few conditions that I
+[00:46:49] heard brought up today.
+[00:46:50] We have physical pain, TBI, Parkinson's, fibromyalgia, major depressive disorder,
+[00:46:58] existential distress, prolonged reef disorder, demoralization,
+[00:47:04] cluster headaches, PPD, Alzheimer's, Parkinson's and autism.
+[00:47:11] So I heard major depressive disorder and chronic pain the most.
+[00:47:17] Would you guys like to go into that in detail next meeting?
+[00:47:31] Cool.
+[00:47:32] All right, I saw some yeses in the chat.
+[00:47:35] So we will go ahead and look over chronic pain and I said Alzheimer's, right?
+[00:47:45] Chronic pain and Alzheimer's for the next.
+[00:47:54] Gregory, if we're going to do Alzheimer's, can we just lump Parkinson's into that as
+[00:48:03] a broader like multi like categorization of things?
+[00:48:14] So yeah, we can do MDD, Alzheimer's, Parkinson's.
+[00:48:21] And then Eileen had a comment.
+[00:48:26] Maybe neurological conditions overall.
+[00:48:32] Yeah, I think that's what I was trying to say.
+[00:48:34] Thank you, Eileen.
+[00:48:35] Sure.
+[00:48:41] All righty.
+[00:48:42] So we will go over neurological conditions and major depressive disorder
+[00:48:50] at the next meeting.
+[00:48:54] We will go ahead and set that.
+[00:48:56] No.
+[00:48:59] All right.
+[00:49:23] Does May 4th at 9:00 AM work for the department?
+[00:49:26] Oh, Gregory had another comment.
+[00:49:27] Sorry.
+[00:49:28] Oh, no, just while you were writing, I was wondering like,
+[00:49:33] are we at the point in this committee where like we get to like just get deep
+[00:49:39] divey and start talking about the future?
+[00:49:45] Sure.
+[00:49:46] No, like, like if we're, if we're going into like a series of
+[00:49:51] meetings where we're gonna like dig into some of these conditions,
+[00:49:56] I think we have an incredible like body of people here that will have wonderful,
+[00:50:02] like this will become my favorite meetings just to get information from
+[00:50:08] people that like that are in this room doing so much work here.
+[00:50:14] So yeah, I'd be really interested to see if the
+[00:50:17] next month or two or is is that's what the goal of this group is or if we're
+[00:50:22] gonna keep working in tandem on other stuff as well.
+[00:50:27] So as far as the patient qualification committee bylaws go,
+[00:50:30] we have achieved all of the objection objectives minus the initial qualifying
+[00:50:35] conditions.
+[00:50:36] So this will be the the deep dive into what specific things,
+[00:50:41] what research is out there, What research goes against this?
+[00:50:46] Is there any biases?
+[00:50:48] What is the all of why does this help this condition?
+[00:50:53] Why should it be recommended?
+[00:50:54] Is this common practice, things like that?
+[00:50:58] Maybe not common practice, that is probably the wrong word,
+[00:51:02] but common research context could be.
+[00:51:04] Yeah, Yeah.
+[00:51:07] So it it'll be that part, the actual assessment of analysis because
+[00:51:11] this committee has produced most of our deliver all of our deliverables minus the
+[00:51:17] initial qualifying conditions.
+[00:51:22] Awesome.
+[00:51:24] Can I throw out a resource?
+[00:51:26] Sure.
+[00:51:27] Find it.
+[00:51:30] I'll come back and I'll come back with that.
+[00:51:35] Perfect.
+[00:51:35] And then I once again, I'm gonna ask the department is May 4th.
+[00:51:40] What's that?
+[00:51:41] What's the day?
+[00:51:41] I said May 4th available for you guys at 9:00 AM Yes, yes,
+[00:51:47] it is currently available.
+[00:51:50] So snag it before someone else does EQ 9:00 AM to and then we'll do 11 since
+[00:51:57] we're going over a brand 9 to 11 since we're going over a couple of conditions,
+[00:52:04] then we're gonna get in the weeds, cool.
+[00:52:09] And then as soon as Gregory gets us our resource, then we can adjourn.
+[00:52:18] I'm gonna drop it in the chat here.
+[00:52:22] But after the thing that happened this weekend from somebody who doesn't deserve
+[00:52:30] the attention, I did a very deep dive on, you know,
+[00:52:35] like where clinical trials are for which treatments and which like Pantheon of
+[00:52:42] Classics and other psychedelics.
+[00:52:46] But this organization has this incredible map of every clinical trial and where
+[00:52:52] it's at in its progress and like links to the deeper research.
+[00:52:57] And this was a fascinating deep dive.
+[00:53:00] I encourage anyone who hasn't to check out the Psychedelic Alpha website.
+[00:53:08] Well, thank you.
+[00:53:09] I definitely will be checking it out myself.
+[00:53:12] But thank you everyone for coming and participating today.
+[00:53:14] I appreciate all of your input and for spending in the morning of 4/20 with us.
+[00:53:19] Have a great, you know, rest of your week.
+[00:53:22] It is Monday, so make the best out of it.
+[00:53:24] Thank you guys so much for coming and thank you again everybody.
