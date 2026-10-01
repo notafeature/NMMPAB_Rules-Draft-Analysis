@@ -1,0 +1,812 @@
+[00:00:04] OK.
+[00:00:04] And the meeting has started.
+[00:00:06] For recording purposes, I am now letting everybody in from the
+[00:00:10] lobby.
+[00:00:11] Good morning, everybody.
+[00:00:12] As usual, it does take a minute or two for everyone
+[00:00:15] to come in from the lobby.
+[00:00:17] And so in the meanwhile, my name is Dominic Serlo and I'm with the
+[00:00:21] Department of Health and we are here as the Department of Health to help support
+[00:00:25] this meeting.
+[00:00:26] This is the meeting of the Patient Qualification and Safety Committee with
+[00:00:31] Ian Dunn as the chair.
+[00:00:33] And just as a reminder, we are recording this meeting.
+[00:00:37] So Please remember to keep language in the background to appropriate language so
+[00:00:44] that we can ensure we can post this video at a later date.
+[00:00:50] That is also one of two reasons why we do not have video for everyone.
+[00:00:54] And I'll, once I finish speaking, I will actually be turning my video off
+[00:00:58] is we want to ensure that everybody has enough broadband is the second reason,
+[00:01:03] or I'm sorry, not broadband, but bandwidth to be able to remain in the
+[00:01:07] meeting as much as possible.
+[00:01:09] And what we've discovered, of course is that because some areas of
+[00:01:13] the state do not have as good as Internet as some other areas,
+[00:01:16] we want to always make sure that people are able to remain in the meeting as much
+[00:01:20] as possible.
+[00:01:21] And while sometimes they still end up dropping off due to that lack of Internet
+[00:01:26] or poor Internet quality, we want to try to reduce that as much as
+[00:01:30] possible.
+[00:01:30] And so with that, I will turn it on over to Ian.
+[00:01:35] Ian and I will get that document posted in the chat for the clinical support
+[00:01:39] framework.
+[00:01:41] Perfect.
+[00:01:42] Thank you guys so much for coming today.
+[00:01:44] We are in the patient qualification and Safety committee.
+[00:01:48] Welcome.
+[00:01:49] We will be going over a medication interactions.
+[00:01:53] So I am happy to see a couple people from the prior meetings that can help out with
+[00:01:59] that.
+[00:02:01] And if we wanna go ahead and begin, if you would like to raise your hand and
+[00:02:07] introduce yourself, your area of expertise and what he brings
+[00:02:11] you to the patient qualification and Safety committee, that would be great.
+[00:02:24] Good morning, Doctor Viva.
+[00:02:26] I've unmuted your microphone.
+[00:02:28] Whenever you're ready, go ahead and unmute yourself.
+[00:02:31] Thank you so much.
+[00:02:32] Good morning everyone.
+[00:02:34] I'm Doctor Lita Fatemi.
+[00:02:35] I am an internal medicine physician.
+[00:02:38] I was at UNM for a decade as an academic hospitalist.
+[00:02:43] Now I'm in Hospice and of life work with our patients in the community and we also
+[00:02:50] have our conscious physicians psychedelics Academy.
+[00:02:55] And again, you know, these topics of the committee are just
+[00:02:58] wonderful because as we're teaching our Academy students who are healthcare
+[00:03:03] professionals, you know, this is one of the biggest topics we talk
+[00:03:08] about is patient qualification, contraindication medications.
+[00:03:12] Glad to be here.
+[00:03:13] Thank you so much for creating this platform.
+[00:03:19] Thank you.
+[00:03:21] Next up is Al Alan, I've enabled your microphone.
+[00:03:24] You may unmute yourself whenever you're ready.
+[00:03:27] Thank you.
+[00:03:28] Good morning everyone.
+[00:03:29] Happy to be here.
+[00:03:30] My name is Ellen Shimmels.
+[00:03:31] I'm a psychiatric minor health nurse practitioner in Albuquerque.
+[00:03:35] I'm also an Army veteran and a clinical professor at Emory University.
+[00:03:39] I've been a psychiatric nurse now for about 30 years,
+[00:03:42] about 20 years as a nurse practitioner.
+[00:03:45] I have advanced training in many different trauma focused psychotherapies,
+[00:03:49] extensive experience in clinical education with a focus on trauma informed,
+[00:03:53] evidence based and ethically grounded care.
+[00:03:55] Happy to be here and support and bring my knowledge to the group.
+[00:03:59] Thank you.
+[00:04:03] Thank you, Alan.
+[00:04:06] And just a friendly reminder at this point, if anyone else would like to speak,
+[00:04:10] please go ahead and raise your hand on the teams.
+[00:04:12] That way I can go ahead and enable your microphone credentials.
+[00:04:20] Since no one else is requesting to speak at this time, I'll pass it back to you.
+[00:04:23] Ian, ready for Hey, so we will begin discussion on medication
+[00:04:27] interactions if you could pull up the document for me.
+[00:04:33] So this is a place list of basic medication interactions that I've found.
+[00:04:40] So if there is any, you know, ones that are missing, I am not perfect,
+[00:04:45] we can definitely add those.
+[00:04:47] So you are gonna see some familiar ones.
+[00:04:49] Ones we've already talked about are lithium, Maois and stimulant use.
+[00:04:54] This also goes a little bit broader into ones that aren't going to be blocked from
+[00:04:59] participation, but are going to could dampen the
+[00:05:02] psychedelic effects.
+[00:05:04] And so I know in the dosage committee they were talking about or they adopted
+[00:05:11] other dosages.
+[00:05:12] So like maybe someone on these medications could need a substantially
+[00:05:17] higher dose.
+[00:05:19] And then there's also other drugs that increase the the seizure threshold and
+[00:05:26] that potentiate serotonergic effects.
+[00:05:30] So there's a couple in here.
+[00:05:32] We'll go ahead and start with the first one that we haven't already adopted,
+[00:05:36] which is going to be atypical antipsychotics.
+[00:05:40] So current main concern with psilocybin, they're likely to block psychedelic
+[00:05:45] effects through 5 HT 2A receptor antagonism Tier 2.
+[00:05:50] We want to get them extra clinical support, you know, risk mitigation plan,
+[00:05:55] maybe get them that other dose or higher dose if they were not going to taper off,
+[00:06:00] but should definitely be recognized as something that needs extra consideration.
+[00:06:05] Is there any comments or discussion on atypical antipsychotics?
+[00:06:16] All right, seeing none, we can go ahead and go on to SSRIs S
+[00:06:22] slash Snris.
+[00:06:24] Their best supported issue is blunted subjective and possible therapeutic
+[00:06:28] effect.
+[00:06:29] So they as well may require a higher dose.
+[00:06:32] Again, medication review, see if they need extra safety
+[00:06:35] implementation if they are going to get a higher dose.
+[00:06:39] Not necessarily restricted, just kind of a warning.
+[00:06:45] Anyone have any questions, comments, concerns, or discussion on SSRIs or Snris?
+[00:06:58] All right, now we'll move to tricyclic
+[00:07:00] antidepressants.
+[00:07:01] So it's just again, a possible serotonergic caution.
+[00:07:06] Interaction risk is limited, but you know, the provider should still know and a
+[00:07:11] safety plan should be in place.
+[00:07:13] It should be Tier 2, not very restricted, but again, just there as extra precaution.
+[00:07:20] Any questions, comments, concerns, or discussion on tricyclic
+[00:07:23] antidepressants?
+[00:07:31] Seeing none, we'll go on to other serotonergic
+[00:07:34] antidepressants.
+[00:07:35] These are going to be Trazodone, velazodone,
+[00:07:40] bortaroxetine and other serotonergic antidepressants.
+[00:07:47] They have a possible attenuation of psychedelic effects and serotonergic
+[00:07:52] interaction concerns.
+[00:07:53] These aren't very well established.
+[00:07:56] So again, it's just a clinical warning, not anything restrictive.
+[00:08:01] Any questions, comments, concerns on other serotonergic
+[00:08:04] antidepressants?
+[00:08:13] Cool.
+[00:08:14] And then we next we have bupropion.
+[00:08:17] It is not primarily serotonergic.
+[00:08:20] There's less evidence for blunting, but it can lower the seizure threshold.
+[00:08:23] So caution is reasonable.
+[00:08:25] Again, Tier 2 is just having them make a safety
+[00:08:28] plan and make sure that they are all that we take extra time to review what is
+[00:08:34] going on with their medications.
+[00:08:37] So Tier 2, I will again open for discussion
+[00:08:40] questions, comments, concerns.
+[00:08:48] Allen.
+[00:08:50] Allen, I've enabled your microphone.
+[00:08:51] Go ahead.
+[00:08:54] I'm sorry I wasn't quick enough on the jump.
+[00:08:56] I put it in the chat, but so I guess with the Trazodone list,
+[00:09:00] I would probably include Mirtazapine and even Buspirone.
+[00:09:06] They're not even for as far as they're tenergic agents that we should be maybe
+[00:09:11] aware of on that Tier 2.
+[00:09:13] I don't know if you were trying to lift, I know you're saying others,
+[00:09:17] but I mean they're probably more they're more common than Velazodone or
+[00:09:21] vortioxetine.
+[00:09:25] So Mirtazapine and thanks.
+[00:09:37] Thank you, Alan.
+[00:09:39] James, I've enabled your microphone.
+[00:09:41] You're able to unmute yourself whenever you're ready.
+[00:09:45] Morning everyone and Ian, thanks again for chairing this committee.
+[00:09:49] You know, going back to that, I do agree with the mirtazapine on the
+[00:09:54] Wellbutrin or bupropion there.
+[00:09:56] There's a mixed bag on that with the evidence that shows because of that up
+[00:09:59] regulation receptor that it actually does a different mechanism.
+[00:10:03] It's considered ADNR.
+[00:10:06] And so with the DNR's, they're necessarily used maybe not an
+[00:10:09] interaction.
+[00:10:10] So I don't know if it needs to go there.
+[00:10:11] That's just my thought on, you know, the pharmacy side of it.
+[00:10:15] Again, I, I think the mirtazapine's a great
+[00:10:17] addition.
+[00:10:18] I just think we just more discussion on the bupropion.
+[00:10:21] I think we need.
+[00:10:22] Thank you.
+[00:10:24] Yeah, and I definitely don't see bupropion as a
+[00:10:27] like serotonergic issue, but I definitely the only reason it was
+[00:10:31] really included as a warning is because it can lower seizure threshold.
+[00:10:37] So caution would be reasonable, but I would definitely be open to more
+[00:10:40] discussion on bupropion.
+[00:10:43] Alan, whenever you're ready, go ahead and unmute yourself, please.
+[00:10:46] Thanks again.
+[00:10:47] Yeah, I, I, I also wanted to stay away from saying
+[00:10:50] anything about serotonin with the bupropion because it's,
+[00:10:53] and it's not a serotonergic agent when we say lowers and see their seizures
+[00:10:58] threshold like that.
+[00:11:00] I, I can't remember where, where seizures are anyway,
+[00:11:03] because one of the big things, the highest concern is like eating
+[00:11:07] disorders, any kind of alcohol use with seizures and
+[00:11:11] history of seizures, of course.
+[00:11:13] So I feel like we're maybe addressing that already with where we put seizures
+[00:11:18] in general on the other list outside the medication list, if that makes sense.
+[00:11:22] So then we wouldn't be concerned about the bupropion,
+[00:11:25] would be concerned about the potential for seizures if someone has a history of
+[00:11:30] seizures or if they have, you know, the alcohol or potential withdrawal or
+[00:11:34] they have eating disorders.
+[00:11:36] I guess it's like a chicken and the egg thing.
+[00:11:38] But yeah, I would just take the serotonin, which you did out of there.
+[00:11:42] Thanks.
+[00:11:51] All right, so I've updated the bupropion to just say
+[00:11:53] can lower seizure threshold.
+[00:11:55] So caution is reasonable.
+[00:11:57] Is that what we're thinking, or would you all prefer to just rather
+[00:12:00] strike it completely?
+[00:12:12] Alan, go right ahead.
+[00:12:14] Your microphone is enabled.
+[00:12:16] Sorry.
+[00:12:16] I, I think with, again, if we could answer the question about
+[00:12:20] what we are saying about anyone with a history of seizures and those types of
+[00:12:26] things.
+[00:12:26] Because otherwise I don't think you can blanketly say that without someone having
+[00:12:31] a, you know, the history.
+[00:12:33] And if you look at a history of like seizure disorders or active eating
+[00:12:37] disorders, that could potentially lower that seizure
+[00:12:40] threshold, which you're more concerned about.
+[00:12:43] I guess that might be, that would already maybe negate someone
+[00:12:47] from being, you know, from, from being able to participate in the 1st
+[00:12:52] place if it's active.
+[00:12:54] You see what I'm saying?
+[00:12:55] So it won't necessarily matter about the propion.
+[00:12:57] And I just worry that if keeping the list, keeping bupropion would be like a maybe a
+[00:13:02] secondary level of defense, you know, but I I just don't want it to, you know,
+[00:13:07] to be, you know, I don't, I guess I'll worry about someone with,
+[00:13:11] you know, thinking that maybe bupropion is one of
+[00:13:14] the safer agents because it doesn't have that serotonergic pathway would be a
+[00:13:18] reason to maybe.
+[00:13:20] Yeah, get it off the list.
+[00:13:21] OK.
+[00:13:21] You already did that.
+[00:13:22] Sorry.
+[00:13:23] No, you're good.
+[00:13:24] You're good.
+[00:13:24] I completely agree with what you're saying.
+[00:13:25] And we already do have a history of seizure disorders under extra caution.
+[00:13:29] So you're right if that is our primary concern and the evidence is not as strong
+[00:13:35] as with lithium.
+[00:13:36] So I'm pretty OK with dismissing bupropion.
+[00:13:43] So next we had benzodiazepines, they just dampen the AQ experience and
+[00:13:48] maybe reduce therapeutic utility.
+[00:13:51] They are also are kind of used to as a reversal agent.
+[00:13:55] So chronic use of benzodiazepines may require an additional dose or other
+[00:14:01] mechanisms.
+[00:14:02] So I did say clinical support.
+[00:14:05] Let's get a, a figure out what they need.
+[00:14:08] Maybe they need a higher dosage, maybe they need to taper off whatever
+[00:14:14] their provider decides, but if they are on them at the time of
+[00:14:19] administration, we do need to take that into
+[00:14:23] consideration.
+[00:14:25] How do y'all feel about that?
+[00:14:40] Cool.
+[00:14:41] And then cannabis has the potential to potentiate serotoninergic effects.
+[00:14:45] Again, not that it's dangerous, just that hey,
+[00:14:50] let's take another look at it make sure that we're doing everything we can for
+[00:14:57] these patients again, not a restriction, just let's pay attention all right and
+[00:15:05] then are there any Medicare Oops, sorry Ellen, I'm so sorry Ellen,
+[00:15:11] go ahead whenever you're ready.
+[00:15:15] No, so I mean like I you know, obviously cannabis is also considered a
+[00:15:20] medical.
+[00:15:20] I just, I just wonder if we should consider,
+[00:15:23] and I guess alcohol's already on our other list.
+[00:15:26] I just kind of think about cannabis and alcohol,
+[00:15:28] even though it's obviously not in the same class.
+[00:15:31] But I mean, you know, I kind of think about that.
+[00:15:33] Do we want to mention alcohol or anything like that here or just keep with the
+[00:15:37] cannabis because of the medical indications?
+[00:15:41] I only chose cannabis because of the fact that they're both serotonergic.
+[00:15:47] But in theory, we could do alcohol as well.
+[00:15:51] It may also dampen the acute experience and may reduce therapeutic utility.
+[00:15:56] It has a lot of mechanism of action similarities with benzos.
+[00:16:03] So we could add alcohol.
+[00:16:07] Is that a common?
+[00:16:08] Yeah.
+[00:16:08] I mean, that's what I was thinking.
+[00:16:09] But if again, I just off the top my head can't remember.
+[00:16:12] I mean, obviously acute intoxication would be on
+[00:16:15] our, I was already on our list, but I don't remember where else alcohol
+[00:16:20] fell on the on the other side of the list.
+[00:16:23] Not that, you know, when we were talking about the like
+[00:16:26] history of use, right, with the history and stuff.
+[00:16:28] Yeah.
+[00:16:29] So, so it might already be covered.
+[00:16:31] I don't want it to be redundant.
+[00:16:32] Thanks.
+[00:16:35] Yeah, so definitely will consider alcohol.
+[00:16:40] Does anyone have any other medications or medication classes that I've missed?
+[00:16:54] Anne, Anne, your microphone is enabled whenever
+[00:16:57] you're ready.
+[00:16:58] Go ahead and unmute yourself, please.
+[00:17:01] Just in my work in Colorado, I've noticed that people on GLP ones have
+[00:17:06] had delayed onset.
+[00:17:07] So potentially something to mention in there.
+[00:17:14] Thank you, Anne.
+[00:17:16] Alan, I went ahead and enabled your microphone.
+[00:17:18] Go ahead.
+[00:17:21] I just want, I know we have lithium listed
+[00:17:23] specifically, but I don't know if we should also
+[00:17:26] consider lamotrigine and other mood stabilizer as that Tier 2 just because of
+[00:17:30] the same thing.
+[00:17:31] Like it's kind of known to blunt the blunt psychedelic effects as well.
+[00:17:40] Thank you, Alan James, I've enabled your microphone.
+[00:17:43] Go ahead and I'll meet yourself whenever you're ready.
+[00:17:48] Thank you again.
+[00:17:49] You know, just going back to that GLP one, I think that's something to talk about
+[00:17:53] and discuss, and it's something that in the literature,
+[00:17:57] it's coming very prevalent.
+[00:17:58] This is something that we do need to kind of think about as a group.
+[00:18:02] I think GLP once needs to be somewhere in here as a precautionary thing and or just
+[00:18:07] a like an FYI if you're on these because there's so many people on them currently
+[00:18:12] and increasing in what we say numbers on concentration there,
+[00:18:15] but a lot of more people come in.
+[00:18:17] So thank you.
+[00:18:21] Thank you, James.
+[00:18:22] Dr.
+[00:18:23] Lida, I've enabled your microphone.
+[00:18:24] Go ahead and unmute yourself whenever you're ready.
+[00:18:28] Yeah, you know, to resonate with that GLP ones I've heard
+[00:18:31] in the community where people are even just micro dosing, you know,
+[00:18:35] for four days in a row and they'll they don't feel much.
+[00:18:38] And then on, on the 4th day when they're taking their
+[00:18:41] GLP one at a higher dose and a micro dose at a higher dose, then four hours later,
+[00:18:46] they have a huge macro dose experience.
+[00:18:49] So it's because of that lower GI motility that GLP ones create.
+[00:18:56] I totally agree that that has to be considered.
+[00:18:59] And maybe for two weeks people shouldn't be really taking it before journey.
+[00:19:05] The other medication group that I would be also advising you know to to look at
+[00:19:12] is hormone replacement therapy, especially in females,
+[00:19:17] perimenopause or menopausal females who are utilizing estrogen that can enhance
+[00:19:24] the effects because of serotonergic effects as well.
+[00:19:29] But we have other experts here on the in the committee that can speak to that as
+[00:19:34] well.
+[00:19:41] Thank you Doctor Lita, back to you.
+[00:19:47] Perfect.
+[00:19:48] So I've added GLP one's the main concern that I've heard is the potential to delay
+[00:19:55] onset.
+[00:19:56] Is that the am I getting that right or are we is there and more that I should
+[00:20:03] say because I feel like the risk is more so that like because the onset is so
+[00:20:10] delayed maybe potential to significantly.
+[00:20:21] OK.
+[00:20:22] And then?
+[00:20:24] We the other one that we hadn't discussed as fully was the mood stabilizers.
+[00:20:33] So how do we feel about lamotrigine and other mood stabilizers for psilocybin use?
+[00:20:48] Doctor Lida, your microphone is enabled.
+[00:20:50] You may begin when you're ready.
+[00:21:05] Doctor Lita, if you can hear us, we cannot hear you.
+[00:21:09] Your microphone is enabled.
+[00:21:22] So sorry, Doctor Lita, we still cannot hear you.
+[00:21:26] If you're able to put it in the chat, that'll be applicable as well.
+[00:21:29] And thank you, Dominic.
+[00:21:32] OK, she put in the chat.
+[00:21:33] Sorry, my phone isn't working.
+[00:21:34] Understandable.
+[00:21:35] If you're able to put it in the chat, please do so.
+[00:21:37] Just a friendly reminder, as Dominic posted,
+[00:21:40] the microphone button is what's utilized in the Teams app to mute or unmute
+[00:21:45] yourself or *6 from a telephone.
+[00:21:47] That's voice only, Ian.
+[00:21:48] No one else has their hand up.
+[00:21:49] So I'm going to send it back to you.
+[00:22:05] Allen, Ian, you're Ian, you're muted.
+[00:22:09] I'm so sorry.
+[00:22:10] And Allen, your microphone's enabled.
+[00:22:12] Go ahead and begin whenever you're ready.
+[00:22:15] Now you're muting him.
+[00:22:17] I, I don't know.
+[00:22:18] I mean, I, I didn't necessarily mean to put mood
+[00:22:20] stabilizers as a whole class because lamotrigine is the only one I've seen in
+[00:22:25] literature that's actually linked to kind of muting that effect.
+[00:22:29] I haven't there should be no reason for valproic acid to do that,
+[00:22:33] primarily because lamotrigine works on the glutamate system.
+[00:22:38] But again, I, I, I mean, if we want to put it as a class,
+[00:22:41] but put it Lamotrigine as an example or something like that.
+[00:22:45] But if we're doing like individual meds, I would probably lean on the side of just
+[00:22:49] leaving the Lamotrigine there as a Tier 2.
+[00:22:52] Thanks.
+[00:22:55] Perfect.
+[00:22:57] So I went ahead and put Lamotrigine since that is the one she specifically listed
+[00:23:04] as well as you right now.
+[00:23:09] So they're likely to block psychedelic effect in Tier 2.
+[00:23:14] And then are there any other medications that we still feel are missing?
+[00:23:35] All righty.
+[00:23:36] So why don't we go ahead and vote on the adoption of if I'm going to give a little
+[00:23:44] bit more time, Are you all sure?
+[00:23:47] Any other medications we should consider?
+[00:23:53] OK, we will go ahead and vote on the adoption
+[00:23:57] of this medication tier placement.
+[00:24:01] All those in favor, please raise your hand.
+[00:24:06] And I believe there's there is one Doctor Lee that has a comment in the chat if you
+[00:24:10] want to look at that before the vote.
+[00:24:13] Yes, let's see in regards the concern is
+[00:24:17] potentially dosing over the necessary effective dose and then having a major
+[00:24:26] trip that was not expected likely?
+[00:25:02] OK.
+[00:25:02] So I've gone ahead and updated it to GLP one's potential for significantly delayed
+[00:25:07] onset.
+[00:25:07] If additional dosing is provided due to the delay,
+[00:25:10] the potential for overdosing is substantial.
+[00:25:16] Ellen.
+[00:25:22] Sorry, I was just saying it.
+[00:25:23] Yeah, I was just saying it in the chat too.
+[00:25:25] Is maybe like like we have likely for some of these and potential for some of
+[00:25:29] these.
+[00:25:29] Why don't we just use the same verbiage instead of using likely?
+[00:25:34] I mean, I don't I'm I just think that maybe
+[00:25:36] that's a stronger word for not necessarily a good reason.
+[00:25:40] Thanks.
+[00:25:43] So I always used potential for what we have more less documented information.
+[00:25:52] So like atypical antipsychotics, we have very extensive documentation that
+[00:25:56] they block the five HT 2A receptor which we believe is responsible for the
+[00:26:00] psychedelic more at least partially responsible for the psychedelic
+[00:26:04] experience.
+[00:26:05] So because of that it is very likely unless you are like everyone processes
+[00:26:11] different medicine differently.
+[00:26:14] So if you are the odd one out, maybe it doesn't for you.
+[00:26:16] Whereas potential is we know the relationship between these,
+[00:26:22] but we don't have as much evidence, if that makes sense.
+[00:26:28] Oh, sure.
+[00:26:28] Then I guess for lamotrigine, I would say may instead of likely.
+[00:26:34] And that's I guess for the antipsychotics.
+[00:26:37] I understand likely is maybe a better verb for that,
+[00:26:40] but just kind of I was just trying to be mindful of the words.
+[00:26:45] Thanks.
+[00:26:45] I appreciate the explanation.
+[00:26:47] That makes sense.
+[00:26:48] Yeah.
+[00:26:49] So I changed lamotrigine to May.
+[00:26:51] GLP ones are still potential to significantly delay onset if additional
+[00:26:57] dosing is provided.
+[00:26:59] Due to the due to the delay, the potential for overdosing is
+[00:27:03] substantial.
+[00:27:10] But then if I could ask when we say best supported issue is blunted subjective and
+[00:27:18] possibly therapeutic effect under SSRISNRIS,
+[00:27:22] maybe there would be a way to make that a little clearer because that so I could
+[00:27:31] say it's blunted psychedelic effects.
+[00:27:34] So what most people report is that it almost it required a much higher dose to
+[00:27:43] get the same results.
+[00:27:45] Right, right.
+[00:27:46] And and I appreciate that.
+[00:27:47] But I guess the the best supported issue.
+[00:27:50] I don't understand that verbiage, like why?
+[00:27:53] Let's maybe be consistent with what we're saying.
+[00:27:55] So likely to say likely blunted psychedelic effect or something,
+[00:27:59] because the best supported issue is just not how we worded anything else.
+[00:28:02] That's thank you.
+[00:28:05] Likely blunted psychedelic effects Potential serotonergic caution and
+[00:28:12] reaction risk is limited.
+[00:28:14] Potential unpotentialist in July onset.
+[00:28:19] OK, I think this is good.
+[00:28:23] May blunt.
+[00:28:24] Yeah.
+[00:28:25] OK, psychedelic effects.
+[00:28:32] How about May potentiate?
+[00:28:44] All right, any other comments either in the chat or
+[00:28:48] out loud?
+[00:28:51] All right, seeing no comments, we can now move on to the medication
+[00:29:13] interaction adoption.
+[00:29:21] So at this time, if you are in support of adopting the
+[00:29:25] current medication interactions as stand, please raise your hand.
+[00:29:42] I did 6:00 AM.
+[00:29:43] See you all right.
+[00:29:47] You may put your hands down and if you are against the adoption of the current
+[00:29:59] medication interactions as they stand, please raise your hand.
+[00:30:08] I do not see any.
+[00:30:18] So with six yes and 0 no's the motion is adopted,
+[00:30:27] which means we can get to our larger package.
+[00:30:58] Because the work of this committee is almost done,
+[00:31:03] we will go ahead and consolidate the recommendations into one document,
+[00:31:11] which I should have as soon as SharePoint wants to load.
+[00:32:01] All right, Jorge, the consolidated recommendations have
+[00:32:04] been moved into the meeting folder.
+[00:32:05] If you can just go ahead and open them for me.
+[00:32:10] Is that in today's folder for the 17th?
+[00:32:13] Yes, Meetings.
+[00:32:14] Meetings.
+[00:32:18] Found it.
+[00:32:37] OK.
+[00:32:38] You see that that yes.
+[00:32:42] So these are the consolidated recommendations of everything that we
+[00:32:47] have gone through so far as a committee.
+[00:32:51] So if you want to Scroll down to the initial qualifying conditions table,
+[00:32:57] we're just going to review everything this committee has done and make sure we
+[00:33:03] have not missed anything.
+[00:33:06] So treatment resistant depression, post traumatic stress disorder,
+[00:33:10] substance use disorders and end of life distress are the four initial legislative
+[00:33:15] qualifying conditions assigned to the ICD 10 codes on the right.
+[00:33:25] And Metz has a comment.
+[00:33:35] I'm so sorry about that, Ed, Go ahead.
+[00:33:36] No worries.
+[00:33:38] It may be a little late to mention this, but after reviewing the original Hopkins
+[00:33:44] studies on end of life distress, technically those people qualified for
+[00:33:48] those studies because they had generalized anxiety disorder.
+[00:33:53] And I'm just wondering about the alignment between, you know,
+[00:33:58] our desire to have Medicaid cover these treatments and having AZ code as the I
+[00:34:03] CD10.
+[00:34:04] I wonder if it would be more useful to have generalized anxiety disorder as the
+[00:34:10] ICD 10 code, I don't know, in addition to or in lieu of the Z code.
+[00:34:18] Yeah.
+[00:34:19] And then actually, Dominic, Yeah, Thanks, Ann.
+[00:34:26] That's a really great point.
+[00:34:27] And just to let you know, the ICD 10 codes here are not necessarily
+[00:34:31] what will be utilized with regard to billing.
+[00:34:34] We actually are meeting with HCA.
+[00:34:38] Actually I have to look at my calendar, but here coming up soon just to to go
+[00:34:43] over what potential billing codes are.
+[00:34:45] So if the main concern on that is regarding billing,
+[00:34:48] don't worry about that because we're going to be looking that over with HCA to
+[00:34:53] sort of see, you know, what codes would be appropriate.
+[00:34:57] And so we'll actually bring that to either this committee or as we just move
+[00:35:01] forward, if we have permission, we'll just sort of adjust those codes to
+[00:35:05] match what would work with HCA for the billing.
+[00:35:10] Yeah, these codes are largely for the research
+[00:35:13] and continuous improvement committee who are documenting, you know,
+[00:35:17] the effectiveness of these treatments and ensuring that we are doing things
+[00:35:23] properly and we're getting as much data as we can to make sure we're making a
+[00:35:28] safe program.
+[00:35:30] So it's more internal.
+[00:35:31] Just saying here's what they roughly line up with so that we can track and ensure
+[00:35:37] the program, but it doesn't have to do with billing.
+[00:35:41] Ellen, Ellen, go right ahead.
+[00:35:45] Thanks.
+[00:35:46] On a similar range for post traumatic stress disorder.
+[00:35:49] I was just curious if we could use like the F43-1,
+[00:35:52] like an X because 1-2 implies that it's a chronic post traumatic stress disorder.
+[00:35:58] And there's no, I, I haven't read that there's any specific
+[00:36:02] legislative condition that makes you have to have chronic PTSD versus an acute PTSD.
+[00:36:08] And I might even err on the side of if someone doesn't quite have meet all the
+[00:36:12] criteria that they might even have an adjustment disorder.
+[00:36:15] I don't know if that's or, or if we don't want to make that
+[00:36:19] distinguish, you know, distinguish nation, that's fine.
+[00:36:21] But I just at least would put an F43 dash or .
+[00:36:26] 1 X because that implies all of the PTSD diagnosis.
+[00:36:31] OK, perfect.
+[00:36:34] And then Dr.
+[00:36:38] Fatima, all right ahead.
+[00:36:42] Yeah, thank you.
+[00:36:44] I was thinking, Dominic, if you guys wanna also when you talk to
+[00:36:49] the ACA about prolonged service codes, it may be very appropriate to do so
+[00:36:55] because often these conversations go over the allotted unexpected time.
+[00:37:01] And these codes are cover that face to FaceTime and their utilization would be
+[00:37:07] really beneficial for the practice that is, you know, looking to sign up for,
+[00:37:12] for this program.
+[00:37:14] So just something to look into with them, maybe talk to them about the prolonged
+[00:37:19] service codes.
+[00:37:21] Thank you.
+[00:37:23] Thank you, Doctor Lita, before I go ahead and enable your
+[00:37:26] microphone, Lisa just to catch up in the chat and
+[00:37:29] commented that adjustment disorder would be so helpful to have and Alan concurs
+[00:37:33] with that statement.
+[00:37:34] And Lisa, your microphone is enabled whenever
+[00:37:36] you're ready.
+[00:37:37] Go right ahead.
+[00:37:39] Thank you.
+[00:37:41] I was wondering if you guys would consider adding conditions like OCDADHD
+[00:37:47] and eating disorder to the least so these aren't just the like for internal
+[00:37:54] translation of the legislative conditions to ICD 10 codes.
+[00:38:00] At the moment, we are going to implement the program
+[00:38:05] with these four conditions, ensure that these four have access before
+[00:38:11] we create a huge patient demand that's going to cripple the new industry because
+[00:38:18] there won't be enough centers and growers and manufacturers to support them.
+[00:38:25] So let's ensure that they have time to build up before we go ahead and endorse a
+[00:38:31] bunch of new conditions.
+[00:38:33] And then we have hundreds of thousands of patients who can't get care at all.
+[00:38:38] Ellen, go ahead.
+[00:38:40] Ellen.
+[00:38:43] Thanks.
+[00:38:43] Yes, and I appreciate that.
+[00:38:44] I think we were just to have it on the record,
+[00:38:47] the adjustment disorder comment was really maybe not, you know,
+[00:38:50] meeting probably criteria for PTSD, but maybe not quite.
+[00:38:54] And I think adjustment disorder could collectively be used instead of AZ code
+[00:38:59] for end of life related to stress.
+[00:39:01] Or even when you're looking at someone just being diagnosed with a medical
+[00:39:06] illness that they would potentially die from,
+[00:39:09] I guess is part of that not not always knowing that the end of life is imminent,
+[00:39:14] if that makes sense.
+[00:39:16] I think that there's some, you know, I don't even know,
+[00:39:18] I know that they looked at GAD as was mentioned earlier,
+[00:39:21] but I think that that would be really too stringent.
+[00:39:24] But adjustment disorder kind of opens it up in a way that there's something going
+[00:39:28] on that there's a there's a significant adjustment too.
+[00:39:31] And that's, I don't know if that I mean, because that's where I think what,
+[00:39:36] what is being said that could, would still fall under these buckets,
+[00:39:40] but leave a little more, maybe a little more laxity for,
+[00:39:44] for what it exactly is going on from the patient side things.
+[00:39:49] So we're thinking F432 for end of life distress.
+[00:39:55] Please correct me if I'm wrong.
+[00:39:58] I mean, that's, that's what I think.
+[00:40:06] But I, I would, I would also, I just think that that's a,
+[00:40:10] a maybe a better, a more collective way to capture that end
+[00:40:14] of life distress in whatever context we're talking about.
+[00:40:20] I think I agree because I don't think end of life distress only happens when you're
+[00:40:26] on palliative care.
+[00:40:28] I think people can have that kind of distress even if let's say they had
+[00:40:33] cancer, thought they were going to die, end up getting, you know,
+[00:40:37] their leg amputated and they're still adjusting,
+[00:40:40] but they still had that fear of end of life and that still causes a bunch of
+[00:40:45] existential distress.
+[00:40:48] So I could agree with adjustment disorder even outside of necessarily palliative
+[00:40:54] care.
+[00:40:54] But I do think that the majority should be what the legislators intended,
+[00:41:02] which would be Hospice and end of life care.
+[00:41:10] If I don't, if actually, if you just take the X off of the,
+[00:41:15] I think that that will cover the PTSD.
+[00:41:18] Now I think about it too, because I didn't want to.
+[00:41:21] I'm used to seeing the XS when we're implying like any of them,
+[00:41:24] but just to take it off, to make it cleaner.
+[00:41:26] Thanks.
+[00:41:27] And you just did appreciate it.
+[00:41:33] Thank you, Alan.
+[00:41:34] Kate, I've enabled your microphone whenever
+[00:41:35] you're ready.
+[00:41:36] Go ahead and unmute yourself, please.
+[00:41:40] Good morning, everybody.
+[00:41:41] Yeah, this is Kate Hawk.
+[00:41:42] And I'm closely involved with the end of life care committee.
+[00:41:48] Yeah, there there is this question about well,
+[00:41:51] where do we start and how broad can this apply?
+[00:41:55] And in in the meeting, Senator Steinborn actually confirmed that
+[00:42:01] they left end of life care, our end of life open to be flexible.
+[00:42:08] So right now I think, you know, this would be good to consider in our end
+[00:42:12] of life care committee, but you know, there wasn't anything that said,
+[00:42:16] well this has to be Hospice or this has to be palliative care.
+[00:42:20] So just wanted to mention that so maybe we can look at this further as we go.
+[00:42:26] Yeah, so I've already updated it to F 43. 2,
+[00:42:29] which would be the adjustment disorder codes.
+[00:42:34] So I think that that helps to really and vision the end of life related distress
+[00:42:43] because I don't think it, it only comes from like being in Hospice.
+[00:42:50] I think it can also come from just hearing that you have a serious diagnosis
+[00:42:55] and you know, if you're ever in the room with someone
+[00:42:58] during that, it is a certain type of, of grief and, and end of life distress.
+[00:43:03] And so I definitely would agree with that.
+[00:43:08] I don't think they have to be in Hospice care already.
+[00:43:12] I think they definitely can get it to help them be more comfortable in those
+[00:43:17] census.
+[00:43:19] So does anyone.
+[00:43:21] So is F 43.2 OK with people?
+[00:43:25] I was just wondering about the one that you removed.
+[00:43:28] Would it, you know, would it work to have both?
+[00:43:33] Yeah, the palliative care Z code, Yeah, I don't think we should remove that one.
+[00:43:38] That one applies to.
+[00:43:39] All right.
+[00:43:57] And Ellen, go ahead, Ellen, and thank you.
+[00:44:01] I agree that we should keep the Z code there.
+[00:44:04] But then I would also say let's look at the middle column and maybe take that
+[00:44:08] palliative care status off.
+[00:44:10] We can just say, you know, just associated with or symptoms
+[00:44:15] associated with serious or life limiting illness.
+[00:44:18] I think that that would cover it well without just putting that palliative care
+[00:44:23] label on, I think.
+[00:44:32] Thank you, Allen.
+[00:44:33] And then just to catch up in the chat, Lori asked,
+[00:44:36] does it have to be specific to end of life illness or could it just be older
+[00:44:39] age and and cognitive?
+[00:44:40] That's fantastic, wonderful adjustment.
+[00:44:43] Thanks everyone for having such great ideas.
+[00:44:46] Thank you.
+[00:44:48] Thank you all.
+[00:44:50] So I have changed it to end of life distress with serious or life limiting
+[00:44:58] illness and then kept the Z code Z 51.5.
+[00:45:03] Added the adjustment disordered Z code F 43.2.
+[00:45:11] Is everyone any other comments?
+[00:45:19] No, OK.
+[00:45:20] We can go ahead and move on to the clinical support framework.
+[00:45:25] This is what we have been putting those medications into all day.
+[00:45:30] Tier 1, proceed with standard protocol.
+[00:45:32] Patient or provider may request additional clinical support,
+[00:45:36] but it's patients without any Tier 2-3 or Tier 4 criteria,
+[00:45:40] patients meeting criteria in this tier.
+[00:45:43] For Tier 2, it's enhanced clinical support.
+[00:45:46] They remain eligible for participation, but they need appropriate clinical
+[00:45:50] consideration, which may include stabilization where
+[00:45:53] appropriate, and thoughtful support planning.
+[00:45:56] The specific approach should be guided by practitioner judgment and the
+[00:45:59] individual's patient individual patients clinical contacts.
+[00:46:04] For Tier 2, required documentation is a risk
+[00:46:06] mitigation plan to be available to the facilitator slash administrator of
+[00:46:11] psilocybin, A comprehensive medication review,
+[00:46:14] and a documented monitoring plan.
+[00:46:18] Tier 3 is specialist supported care.
+[00:46:21] Patients meeting criteria in this tier may participate only with the required
+[00:46:24] Tier 2 documentation and documented consultation and concurrence of two
+[00:46:28] practitioner signatories prior to administration,
+[00:46:31] the primary psilocybin practitioner responsible for the patient's care,
+[00:46:34] and a licensed specialist practicing within their scope of licensure and
+[00:46:38] possessing expertise relevant to the identified condition.
+[00:46:41] So this could be a psychiatrist, a psychiatric mental health nurse
+[00:46:45] practitioner, A cardiologist, A neurologist,
+[00:46:47] or other appropriately credentialed clinician,
+[00:46:50] and then Tier 4 is not appropriate for participation at this time.
+[00:46:57] Any questions, comments, concerns on the actual framework?
+[00:47:03] Cool.
+[00:47:05] So now these are the clinical support framework criteria.
+[00:47:11] So what is actually in each of these?
+[00:47:14] So active eating disorder or significant malnutrition taking more than or equal to
+[00:47:19] a high intensity dose as defined by the dosage administration and clinical
+[00:47:23] Practices committee.
+[00:47:25] So they designed that as being equal to above 50 milligrams of psilocybin.
+[00:47:31] This would only usually be for patients, you know,
+[00:47:34] that are taking medication that may blunt their subjective effect and what they
+[00:47:39] perceive and get out of psilocybin therapy.
+[00:47:42] That's why it's here.
+[00:47:44] Tier 3 specialist supported care, history of bipolar 2 disorders,
+[00:47:49] history of delusional disorders, history of dissociative disorders and
+[00:47:54] then Tier 4 not appropriate at this time.
+[00:47:58] So there's a couple situations.
+[00:48:00] If the individual is under the age of 18, if they are pregnant,
+[00:48:04] if they are breastfeeding, unless the patient and provider implement
+[00:48:07] A and document a plan to pump and discard breast milk for at least 24 hours
+[00:48:12] following administration, there are a couple of stabilization
+[00:48:15] before treatment conditions.
+[00:48:17] These mean we will accept them, but we do need them to destabilize before
+[00:48:24] they are appropriate.
+[00:48:26] So this would be an active psychotic episode, a history of Tias or Cvas,
+[00:48:31] clinically significant uncontrolled hypertension,
+[00:48:33] uncontrolled diabetes mellitus, uncontrolled seizure disorder,
+[00:48:37] current suicidal or homicidal ideation with intent,
+[00:48:40] planner inability to maintain safety.
+[00:48:44] And then there are a couple of conditions that are contraindications to
+[00:48:47] participation in psilocybin services.
+[00:48:50] Those are going to be a history of schizophrenia spectrum disorders,
+[00:48:54] a history of persistent or current psychotic disorder including psychosis
+[00:48:58] precipitated by serotonergic psychedelic exposure, history of bipolar one disorder,
+[00:49:03] history of borderline personality disorder, severe congestive heart failure,
+[00:49:07] known allergy to psilocybin containing mushrooms,
+[00:49:10] and an active inability to provide informed consent.
+[00:49:15] Everyone good with the criteria or do you have any discussion on those?
+[00:49:22] Doctor Lita, your microphone is enabled.
+[00:49:24] Go ahead.
+[00:49:26] Thank you.
+[00:49:27] I would add coronary artery disease or just atherosclerotic,
+[00:49:33] just a heart disease in general.
+[00:49:37] So just severe heart failure.
+[00:49:41] It does not, you know, it does not cover all the cardiac
+[00:49:45] disorders.
+[00:49:46] And given that there's so many, there's a, there's a really large number of
+[00:49:51] serotonin receptors in the heart muscle itself that people can go into a cardiac
+[00:49:58] complication and even have a heart attack during a session with psilocybin.
+[00:50:03] So I think that has to be a contraindication cardiovascular disease.
+[00:50:11] Thank you, Doctor Lita, will you speak?
+[00:50:16] Yeah.
+[00:50:17] Education.
+[00:50:17] Thank you.
+[00:50:21] Thank you, Doctor.
+[00:50:21] Lita and Lori commented.
+[00:50:24] Or excuse me?
+[00:50:25] Yeah, Lori commented in the chat.
+[00:50:26] Why is borderline excluded?
+[00:50:28] I feel it would help my patients with borderline.
+[00:50:30] No, there is not substantial evidence that it
+[00:50:33] is helpful to borderline personality disorder and there's some evidence that
+[00:50:40] it may exacerbate mood swings and emotional instability as well as
+[00:50:45] splitting.
+[00:50:46] So it typically is not used for borderline personality disorder.
+[00:50:54] There is some emerging evidence about the use in bipolar 2 disorder,
+[00:50:58] but I have not seen any on bipolar, I mean, borderline personality disorder.
+[00:51:08] All right.
+[00:51:08] So just to clarify, we're adding coronary artery disease and
+[00:51:11] cardiovascular disease.
+[00:51:17] Anyone have any objections to that?
+[00:51:21] OK.
+[00:51:27] Any other conditions you think we need to add?
+[00:51:36] And just in the chat game, Lori commented, just because it's not shown to be helpful
+[00:51:41] does not necessary, does not necessitate, excuse me, exclusion.
+[00:51:46] No, it doesn't.
+[00:51:48] But when it has been shown to cause harm that that does,
+[00:51:56] it is a very high risk tool to give someone with BPD because it can cause
+[00:52:07] mood instability and we don't want to be the ones responsible for causing that.
+[00:52:33] But I do want to say this is not, how do I say like it's not the end all be
+[00:52:41] all.
+[00:52:41] As soon as more research comes out which the medical psilocybin program is
+[00:52:47] investing in, we will be able to see more information.
+[00:52:51] And once we get more information and maybe I'm completely off base and it
+[00:52:56] turns out that borderline personality disorder is extremely helped by
+[00:53:00] psilocybin.
+[00:53:01] If that turns out to be the case, then we will adjust going forward and we
+[00:53:05] would just strike it and add it as a qualifying condition if it is helpful.
+[00:53:11] It's not the end all be all.
+[00:53:14] I just wanted to remind you all of that.
+[00:53:16] And then the medication interaction considerations that we talked about
+[00:53:22] earlier copied and pasted into this.
+[00:53:26] So it is the exact same thing we talked about and that is it.
+[00:53:31] So this is what's up for adoption is our consolidated recommendations with the
+[00:53:38] additions that we have discussed.
+[00:53:42] All those in favor, please raise your hand.
+[00:53:47] I do see six hands 7 perfect and you may put your hands down,
+[00:54:00] although let me wait a little bit longer for those to.
+[00:54:19] All right, all those opposed, I do not see any.
+[00:54:40] All right, so the consolidated recommendations are
+[00:54:44] adopted and that is what I had planned for y'all today.
+[00:54:49] Does anyone else have any discussion or things that you would like to discuss or?
+[00:55:02] Without anything, I guess we can go ahead and set the next
+[00:55:08] meeting.
+[00:55:13] So hold on, let my calendar allow.
+[00:55:25] How does April 6th sound for everyone?
+[00:55:37] Perfect.
+[00:55:37] What time?
+[00:55:38] What?
+[00:55:38] What time are you in?
+[00:55:39] Nine AMI think that looks good on our end, Johnny?
+[00:55:46] Yes.
+[00:55:46] Is that correct?
+[00:55:47] Is that correct?
+[00:55:48] Yeah, Looks, looks good.
+[00:55:49] I think Dominic will be out of the office, but otherwise I think that's good.
+[00:55:56] Yes, Johnny is correct.
+[00:55:57] But the meetings can continue even though I'll be out.
+[00:56:01] You all have this done.
+[00:56:02] You're all doing this so very well.
+[00:56:04] And so I am not necessary for the process, but I will review the video, of course,
+[00:56:09] afterwards.
+[00:56:11] Well, thank you all for being here.
+[00:56:13] I hope you have a wonderful rest of your day.
+[00:56:15] Be safe out there.
+[00:56:16] And I appreciate all of your input and for everyone taking the time to be here.
+[00:56:22] I love the conversations and thank you for supporting this program.
+[00:56:26] Thank you, everyone.
+[00:56:27] Thank you, Ian.
+[00:56:30] Thank you, everybody.
+[00:56:31] Have a great and wonderful week.

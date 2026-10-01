@@ -1,0 +1,831 @@
+[00:00:03] All right.
+[00:00:04] And should be good to go.
+[00:00:06] Well, thank you, Johnny.
+[00:00:09] Good morning, everyone.
+[00:00:10] My name is Porto Gonzalez and the program managers for the medical psilocybin
+[00:00:15] program Welcome and good morning.
+[00:00:18] We're here with Ian Dunn, who is the Chair of the Dosage
+[00:00:21] Administration and Clinical Practice Committee,
+[00:00:24] but also the Chair of the Medical Psilocybin Advisory Board.
+[00:00:28] So I just, I just put a message in a chat.
+[00:00:31] Please remember that this meeting is being recorded and to keep language
+[00:00:35] appropriate as the recordings are made public on the website.
+[00:00:39] We have the cameras off and that is because we same thing with language.
+[00:00:46] We in case there is something that may be inappropriate for the background,
+[00:00:52] we have turned off all cameras, but we will open the mics for folks when
+[00:00:57] you are ready to speak.
+[00:00:59] And with that, we'll have Ian start the meeting.
+[00:01:03] Ian, good morning, everyone.
+[00:01:06] Welcome to the Dosage Administration and Clinical Practice Committee.
+[00:01:10] Today we're going to be going over preparation and administration sessions,
+[00:01:15] bringing together what we had discussed last time.
+[00:01:19] Last meeting we distinguished the different clinical roles and this would
+[00:01:22] be the application of those different clinical roles.
+[00:01:25] If what he would like to bring up the preparation sessions while we would begin
+[00:01:30] with introductions, if you would like to participate in
+[00:01:34] today's meeting, just a brief statement about your name,
+[00:01:38] who you are, your any affiliations.
+[00:01:41] But if you would like to participate, please raise your hand at this time.
+[00:01:52] All right.
+[00:01:52] And first up, we've got Lori Golzar and Lori,
+[00:01:56] I have enabled your mic.
+[00:02:00] Thank you.
+[00:02:00] Hi.
+[00:02:01] Good morning.
+[00:02:03] Thanks for being here.
+[00:02:03] I'm Lori.
+[00:02:04] I live in Farmington, NM, I'm a FNP and APMHNP and I work full time
+[00:02:09] for Centacor Foundation, a substance use disorder facility.
+[00:02:14] And I also have a psychiatric clinic there where I see outpatients as well in
+[00:02:19] the community.
+[00:02:20] So yeah, thank you so much for being here.
+[00:02:23] Appreciate it.
+[00:02:24] We are hopeful to present this to our organization in Texas so that we can
+[00:02:30] potentially provide psilocybin therapy at our facility here in Farmington.
+[00:02:36] This is just a thought and we are bringing it forward to them.
+[00:02:41] So I'm hopeful to get as much information as I can.
+[00:02:44] Appreciate it.
+[00:02:47] Awesome, thanks.
+[00:02:48] And let's see next we've got Chris Peskowski and your mic is enabled.
+[00:02:55] Good morning, everybody.
+[00:02:56] Chris Peskowski, Advisory Board member, just happy to be here.
+[00:03:02] Awesome.
+[00:03:03] Thanks, Chris.
+[00:03:04] And next got Don Moser and your mic is enabled.
+[00:03:11] Hi, Don Moser, and I live in Las Vegas, NM,
+[00:03:14] and I'm here to learn as much as possible.
+[00:03:18] Thank you so much for all your work.
+[00:03:22] Awesome.
+[00:03:22] Thanks, Don.
+[00:03:24] And next, we've got Cassandra Veeton.
+[00:03:28] Let's see.
+[00:03:29] And your mic is enabled.
+[00:03:38] Oh, I'm sorry to to unmute.
+[00:03:41] I'll still want to go.
+[00:03:43] Yeah, there.
+[00:03:44] Yeah.
+[00:03:44] Great.
+[00:03:45] I'm Cassandra Veeton.
+[00:03:46] I'm a psychologist.
+[00:03:48] I live half time in Lamey, New Mexico and half time in San Diego.
+[00:03:52] And I'm a Co founder and clinical psychology director at the Center for
+[00:03:56] Psychedelic Research at UC San Diego.
+[00:04:01] Awesome.
+[00:04:02] Thank you.
+[00:04:03] And next, we've got Brenda Burgard and I have
+[00:04:08] enabled your mic.
+[00:04:11] Good morning, everyone.
+[00:04:12] I'm Brenda Burgard.
+[00:04:13] I am Chair for Training and Education for the DoH here for psilocybin.
+[00:04:20] Thank you and I hope we have a great meeting this morning.
+[00:04:25] Awesome.
+[00:04:26] Thanks, Brenda.
+[00:04:27] And next, we've got Jessica Eden.
+[00:04:30] And Jessica, I've enabled your mic.
+[00:04:34] Hello, my name is Jessica Eden.
+[00:04:36] I am a licensed clinical social worker in New Mexico and Colorado and also a
+[00:04:42] licensed clinical facilitator in Colorado.
+[00:04:45] And so I've been working with psychedelics and psilocybin specifically
+[00:04:49] for about the last four years.
+[00:04:51] And so I'm just here to participate and learn.
+[00:04:54] Thank you.
+[00:04:57] Awesome.
+[00:04:57] Thanks, Jessica.
+[00:04:58] And looks like that was the last hand I saw up, so we'll send it back to you.
+[00:05:04] Ian.
+[00:05:06] Perfect.
+[00:05:06] So in the last meeting we had talked about the differentiation between
+[00:05:10] psychological preparation and administrative preparation.
+[00:05:14] So just try and kind of get into the guidance of those differences.
+[00:05:19] This document would kind of help to specialize which one would be doing which.
+[00:05:23] As a reminder, a psychedelic therapist is the more
+[00:05:26] holistic model, whereas a bullet facilitator is generally
+[00:05:30] the person that is with them during administration.
+[00:05:34] Generally doesn't have to be separately credentialed outside of the Department of
+[00:05:40] Health.
+[00:05:41] Whereas the psychedelic therapist is generally already a licensed healthcare
+[00:05:45] provider.
+[00:05:48] So let's get into the psychological preparation.
+[00:05:50] So the psychedel, the psychedelic therapist must be
+[00:05:53] involved in the psychological preparation process to establish the clinical
+[00:05:57] foundation for treatment.
+[00:05:59] So they established the timing.
+[00:06:00] This phase must occur first to allow the therapist to determine medical
+[00:06:04] appropriateness and approve or to firm participation based on safety.
+[00:06:08] Clinical assessment.
+[00:06:09] The therapist conducts A comprehensive biopsychosocial assessment and reviews
+[00:06:13] medical, including medication interactions and
+[00:06:16] contraindications, mental health and substance abuse history,
+[00:06:19] intention and setting.
+[00:06:21] Intention, setting, and object objectives.
+[00:06:24] The The therapist facilitates the discussion of patient goals, intentions,
+[00:06:28] and expectations for the session to establish a psychological framework for
+[00:06:32] the experience.
+[00:06:33] Orientation to set.
+[00:06:35] The therapist addresses the patient's physical, emotional,
+[00:06:38] and psychological readiness, helping them navigate set factors and
+[00:06:41] potential psychological changes.
+[00:06:43] Clinical safety planning.
+[00:06:45] This is where they would evaluate risk for adverse responses,
+[00:06:49] create a formal safety plan and perform an assessment of the patient support
+[00:06:53] system.
+[00:06:55] In terms of cultural and spiritual alignment,
+[00:06:57] we would use trauma informed and culturally competent communication.
+[00:07:01] The therapist ensures alignment regarding any ceremonial,
+[00:07:03] cultural or spiritual elements that may be present.
+[00:07:07] Dosing and tearing.
+[00:07:08] During this phase, the therapist assigns the clinical
+[00:07:11] support tier and establishes dosing parameters or considerations.
+[00:07:14] If a patient is determined to be clinically inappropriate,
+[00:07:17] the therapist is responsible for referring them to a primary care provider
+[00:07:20] or other appropriate treatment.
+[00:07:22] Ave.
+[00:07:24] So that would be kind of the psychological preparation,
+[00:07:28] what we're wanting them to do beforehand.
+[00:07:31] In terms of administrative preparation, this would be primarily done by the
+[00:07:36] facilitator in order to ensure you know the proper personality fit when you are
+[00:07:42] going to be with this person, maybe not next to them 24/7,
+[00:07:46] but just they're gonna be the presence to ground you if you do have an adverse
+[00:07:52] reaction.
+[00:07:53] So we want to have them obtain and document informed consent during the
+[00:07:59] session.
+[00:08:00] This will happen after the psychological preparation.
+[00:08:04] This session is a primary opportunity for the patient and facilitator to ensure the
+[00:08:08] report is good enough to fit the patient goals.
+[00:08:11] This phase includes establishing boundaries such as touch provinces,
+[00:08:14] providing written disclosures and are orienting the patient to non scope,
+[00:08:18] non clinical scope of the facilitator.
+[00:08:21] The facilitator orients the patient to the physical environment where the
+[00:08:24] session will occur.
+[00:08:25] This includes reviewing environmental conditions, the lighting, the temperature,
+[00:08:29] the sound, explaining privacy measures and ensuring
+[00:08:31] the patient is comfortable with the facility layout.
+[00:08:35] The facilitators are responsible for knowing how to escalate medical or
+[00:08:39] psychological concerns to the psychedelic therapist or emergency services.
+[00:08:42] You know, depending on what the specific adverse
+[00:08:45] event is.
+[00:08:46] And this should be part of their orientation and they should provide the
+[00:08:49] materials for the patient self administration in accordance with the
+[00:08:52] therapist direction.
+[00:08:55] Some combined timing and compliance standards.
+[00:08:59] This is still up in pretty up in the air.
+[00:09:02] Patient shall complete at least two preparation sessions totalling no less
+[00:09:06] than three hours prior to administration.
+[00:09:08] At least one session must be dedicated to psychological preparation.
+[00:09:12] At least one session to administrative preparation.
+[00:09:15] Where feasible, at least one hour of total preparation
+[00:09:18] time shall be conducted in person.
+[00:09:20] Psychological preparation must be completed and clinical appropriateness
+[00:09:23] determined before the final administrative preparation session is
+[00:09:26] concluded.
+[00:09:27] And all activities, including clinical screening results from
+[00:09:30] the therapist and informed consent from the facilitator must be documented in the
+[00:09:33] patient record.
+[00:09:34] So now I'll open to any discussion, questions, comments,
+[00:09:39] concerns on the preparation sessions.
+[00:09:47] All right.
+[00:09:47] And Lori, I see your hand up.
+[00:09:49] You can unmute when you're ready.
+[00:09:52] Thank you.
+[00:09:53] Hi, just a couple questions.
+[00:09:54] 1 is you refer to the therapist but say it has to be a a licensed clinical role.
+[00:10:03] So are is this like a provider like either a doctor of psychology or a PMHNP
+[00:10:10] or psychiatrist in this?
+[00:10:12] I'm just want to make sure I understand.
+[00:10:14] Or is could this be any licensed therapist that could be considered
+[00:10:19] therapist?
+[00:10:21] Psychological therapist please?
+[00:10:23] Generally it would be a therapist with additional training on specific
+[00:10:28] assessment and general psychedelic assessment.
+[00:10:33] This committee in the past has found that most medical institutions don't teach
+[00:10:38] about psilocybin use.
+[00:10:39] So we would have to provide that education ourselves anyway.
+[00:10:44] And that's why we had opened it up originally to social workers or clinical
+[00:10:51] counselors or PhDs who may have who are going to have additional training with
+[00:10:58] the program.
+[00:11:00] OK.
+[00:11:01] So they don't have to have a medical background specifically.
+[00:11:08] I mean, I I understand we all have to go through
+[00:11:11] the training anyhow.
+[00:11:12] Like Doctor Fatima or see me.
+[00:11:17] I don't remember how to say it.
+[00:11:18] I know she has like a conscious physician program to teach providers, do they?
+[00:11:24] So they don't have to be medical providers to be a psychedelic therapist
+[00:11:30] at this time.
+[00:11:31] No.
+[00:11:34] OK, Thank you.
+[00:11:38] Right.
+[00:11:38] And Chris?
+[00:11:45] You know, I'm curious what happened to the document
+[00:11:49] we were working off of last time, but this was the new document that sent
+[00:11:55] out.
+[00:11:56] The document we were working on last time was just the clinical roles.
+[00:12:02] We had a preparation document that we were working from.
+[00:12:05] Yeah.
+[00:12:06] So that one was based on before we had done the clinical roles.
+[00:12:10] And at the last meeting we I had sent out an additional copy of a new preparation
+[00:12:16] based on the updated definitions of the roles because the the past one had the
+[00:12:22] facilitator doing everything.
+[00:12:25] And in the last meeting we had discussed the difference between psychological and
+[00:12:29] administrative preparation.
+[00:12:38] All right.
+[00:12:38] I just, I think it's a, a little bit frustrating that we have new
+[00:12:43] documents every time.
+[00:12:44] Like it kind of dishonours the process that we're,
+[00:12:51] we were working on all of that stuff and now we're, we're starting new, right.
+[00:13:02] But the previous document didn't bring up the concerns of the separation of
+[00:13:06] psychological and administrative preparation, which was brought up.
+[00:13:10] And then at the end of the last meeting, I had let people know, well,
+[00:13:14] these definitions no longer apply, so we're gonna go ahead and generate a
+[00:13:18] new one.
+[00:13:18] I had it sent out last week to be reviewed and then now we're here.
+[00:13:32] So I, I think we also talked about, you know, based on the clinical,
+[00:13:38] it's here that people fall into that a lot of this work could be done by the
+[00:13:45] facilitator if it's not complex cases.
+[00:13:49] I think this is very restrictive.
+[00:13:52] And is there any, I mean, the psychological preparation,
+[00:14:00] administrative preparation, I get the, the difference of that,
+[00:14:08] but I don't know that that's like necessarily has to be a split roles like
+[00:14:18] this.
+[00:14:19] And you know, the, the people that are sitting should kind
+[00:14:24] of be involved in this whole process, especially the cultural spiritual
+[00:14:30] alignment section.
+[00:14:32] I think if we're going to split this up like this needs to be in the facilitator
+[00:14:37] part.
+[00:14:42] All right.
+[00:14:43] I'm fine with that.
+[00:14:44] The cultural and spiritual alignment.
+[00:14:59] Can I talk again please?
+[00:15:01] Yeah.
+[00:15:02] So as far as like the clinical assessment part goes,
+[00:15:06] doesn't that need to be by a medical provider of some capacity?
+[00:15:12] We had in the previous meeting, I know we had discussed that they will be
+[00:15:18] meeting with like a psychiatric provider or someone like that prior to determining
+[00:15:25] that this would be a good, a good therapy for them.
+[00:15:30] So that sounds like that's the psychological preparation portion.
+[00:15:34] And I don't know that I feel very confident that a even a trained,
+[00:15:42] the therapist would be able to really determine if the medication interactions
+[00:15:51] and history and physical assessment would be conducive to a psilocybin therapy.
+[00:16:01] You know what I mean?
+[00:16:02] Thank you.
+[00:16:02] You don't think we could teach on a singular drugs,
+[00:16:05] medication interactions and a singular drugs contraindications?
+[00:16:10] I think singular drugs, biological histories,
+[00:16:13] that would be contraindications.
+[00:16:15] I'm not saying I don't think it could be taught.
+[00:16:18] I'm saying that the training that we go through as medical providers,
+[00:16:24] years of physical assessments and history taking and psychiatric assessments,
+[00:16:31] a lot of people might present to the clinic as no,
+[00:16:35] I've never had this bipolar disorder or whatever it is.
+[00:16:41] And it's, you know, just by somebody saying so doesn't make
+[00:16:47] it true.
+[00:16:49] That's why I feel that it would be more safe.
+[00:16:53] I mean, are they going to be, you know, do they really know the parameters of a
+[00:16:59] safe blood pressure and things like that?
+[00:17:03] I just, it seems like a lot to place in the hands
+[00:17:06] of a therapist in my opinion.
+[00:17:09] I disagree.
+[00:17:11] Most assessment is taught within the first two semesters of nursing school in
+[00:17:17] terms of those critical ranges, in terms of being able to assess,
+[00:17:22] beginning to assess medication interactions, contraindications.
+[00:17:27] All of that begins second semester of nursing school.
+[00:17:30] So I think it would be feasible to say we can teach this for just one drug.
+[00:17:39] Yeah.
+[00:17:39] Yes.
+[00:17:39] But you were accepted into nursing school because you understand and comprehend,
+[00:17:45] like complex, you know, physical systems.
+[00:17:50] I'm not saying anything negative about therapist.
+[00:17:53] Trust me, I absolutely require them.
+[00:17:57] I just am saying that the mindset is not a medical background mindset.
+[00:18:02] It's different.
+[00:18:03] So I don't know that they will.
+[00:18:07] I don't know very many who would really be very good at that.
+[00:18:11] Sorry about my dog.
+[00:18:16] And then I do see some other hands.
+[00:18:18] So Chris or I, I think we have Cassandra first.
+[00:18:24] Cassandra, sorry, I just saw the C Oh, no, you're good.
+[00:18:28] No problem.
+[00:18:31] So is there an assumption, as Reuben said, Doctor Sutter said in the chat that there
+[00:18:40] has been a medical clearance or are we proposing that there does not need to be
+[00:18:49] a physician clearance prior to getting treatment even online or you know,
+[00:18:57] like in what regards?
+[00:18:59] OK, so let's just say somebody, if somebody says I'm interested in doing
+[00:19:05] psilocybin treatment, are they required to clear it with their
+[00:19:10] physician or any physi or a physician prior to starting this whole preparation
+[00:19:16] process?
+[00:19:19] Let me at Dominic to clarify.
+[00:19:23] Yeah, and he did.
+[00:19:23] He did drop something in the chat.
+[00:19:26] Good morning.
+[00:19:26] Must be certified.
+[00:19:28] Yeah, exactly.
+[00:19:30] Good morning, everybody.
+[00:19:31] Yeah, just to clarify, what we're talking about on this
+[00:19:35] preparation phase is all of that medical certification aspect.
+[00:19:39] So the patient has already gone through a clinical medical evaluation that they
+[00:19:44] have one of the qualifying conditions that has already occurred.
+[00:19:49] They've been referred into the program.
+[00:19:51] And then these stages are with the therapy level now in the the best world
+[00:19:56] situation and what should be happening regardless of anything else is all of the
+[00:20:02] members of the care team.
+[00:20:04] So that should be the the medical providers or the clinician, the therapist,
+[00:20:09] the facilitators, etcetera should really be working
+[00:20:13] together, consulting with each other to ensure that
+[00:20:16] all of this is happening.
+[00:20:18] So this stage where we're looking as far As for preparation really is.
+[00:20:23] The patient has already gotten cleared from the medical,
+[00:20:26] they're going through their preparation.
+[00:20:28] So the therapeutic, but that is still going to include some
+[00:20:31] of that medical interactions and some of those other information which some of
+[00:20:36] that should come from the clinical aspect.
+[00:20:38] And then moving forward with the administrative as far As for the
+[00:20:42] facilitator, which is part of what in the last meeting
+[00:20:46] had been requested the therapeutic and that administrative be separated out.
+[00:20:51] So that's just really what this is going through.
+[00:20:54] And Doctor Sutter, I completely agree.
+[00:20:56] But remember, these are guidelines, these are not regulations.
+[00:21:01] So this is what the guiding document as far as how providers should move forward
+[00:21:06] with it.
+[00:21:07] And definitely agree that there should be that clinical documentation.
+[00:21:12] But again, these are not requirements.
+[00:21:14] These are guidance for your best practices.
+[00:21:17] Yeah.
+[00:21:17] So I think put into regulations.
+[00:21:19] So I think what people are what a couple of us, Can you hear me?
+[00:21:23] Yes, I think what a couple of us are saying on
+[00:21:27] the call is that the way it's framed right now is that a psychedelic therapist
+[00:21:34] would be responsible for assessing medical medication interaction,
+[00:21:39] interactions and contraindications.
+[00:21:43] And that, that probably should be done by a
+[00:21:46] physician, that's all.
+[00:21:48] So sure.
+[00:21:50] And I think it's just the, the language utilized is a lot of that
+[00:21:54] would happen beforehand, but also during that preparation,
+[00:21:58] there should be the ongoing discussion of that.
+[00:22:01] So for example, a, a great example.
+[00:22:03] I mean, I, I, I think we understand what you're saying.
+[00:22:05] I think we're just suggesting that perhaps this item would say, you know,
+[00:22:12] reviewing the, you know, reviewing the physicians.
+[00:22:18] Yeah.
+[00:22:19] But an LCSW would not be able to would not be able to medically clear someone
+[00:22:25] for potential serotonin syndrome or you know,
+[00:22:28] so maybe in the medical history bullet point there needs to be some slight
+[00:22:34] change in.
+[00:22:36] Yeah.
+[00:22:36] I think maybe what you just did review is better than be than do it.
+[00:22:41] Yeah.
+[00:22:45] And then I did see in the chat the review of meds is outside of a scope of practice.
+[00:22:49] And I do want to clarify that providing we are providing areas where this would
+[00:22:57] be within their scope of practice, this is not an existing function for
+[00:23:04] anyone to dispense psilocybin outside of controlled research.
+[00:23:10] So outside of the scope of practice is not really a concern because we're gonna
+[00:23:15] have to provide them with additional education anyway on psilocybin.
+[00:23:20] Psilocybin education is broadly not taught in medical schools or nursing
+[00:23:25] schools.
+[00:23:27] So we can review the medical history and those medication interactions which the
+[00:23:34] this committee has or patient qualification and safety has provided
+[00:23:39] lists of on these topics to try to get as much access as possible.
+[00:23:45] There are a bunch of resources in today's world that can even help to expedite and
+[00:23:54] to allow more participation.
+[00:23:57] But I do agree that there should be clinical oversight.
+[00:24:00] But it here, it's just supposed to be they're supposed
+[00:24:04] to look at their history to make sure that nothing was missed.
+[00:24:11] Yeah, I think the way it's framed now is better
+[00:24:14] than the way it was framed before.
+[00:24:17] I think it's good.
+[00:24:18] I also just had a question about these committee meetings.
+[00:24:20] So are some people allowed to chat and turn on their camera?
+[00:24:25] And some people are not allowed to chat and turn on camera.
+[00:24:31] So the only people we have on camera generally is going to be the committee
+[00:24:35] chair and occasionally some DoH folks.
+[00:24:38] We also generally want to, as much as we can keep it so that we're
+[00:24:43] going in order of whoever raises their hand and then anybody can put anything in
+[00:24:49] the chat as well.
+[00:24:51] Yeah, I for some reason I don't seem to be able
+[00:24:53] to chat, but I guess I'll figure that out.
+[00:24:55] Yeah, there, there are unfortunately occasionally for
+[00:24:58] some people just yeah, there there have been folks who haven't
+[00:25:02] been able to put stuff in the chat.
+[00:25:04] Unfortunately sometimes there's yeah, occasionally there will be a thing that
+[00:25:09] says like some people are outside of the org,
+[00:25:12] it's possible they have message related policies that will not allow them to use
+[00:25:17] the chat.
+[00:25:18] So I, I do see that notification right now.
+[00:25:20] So that's unfortunately not something we can change on our end.
+[00:25:24] But I am going to go to Chris next.
+[00:25:36] Yeah, I guess first I'd like to make a request
+[00:25:40] that people that didn't introduce themselves,
+[00:25:44] please introduce themselves before they're talking.
+[00:25:49] I see a lot of new faces in here suddenly and no context as to who you all are.
+[00:25:57] And beyond that, like I, I think we've already had this discussion
+[00:26:04] several times, but I don't think you know the safety
+[00:26:09] profile of psilocybin is very good and I do not think MD's are the proper
+[00:26:17] clinician to do that evaluation.
+[00:26:21] I don't think that's necessary.
+[00:26:26] I think that we can keep the evaluation done with people that have diagnostic
+[00:26:33] authority.
+[00:26:34] And again, the safety profile of suicide benefit is
+[00:26:39] very good and we can easily train these people to do that work.
+[00:26:46] And then I had something else, but hopefully it'll come back to me.
+[00:26:49] I got lost in the conversation.
+[00:26:51] Thank you.
+[00:26:58] All right.
+[00:26:58] And Greg Evans, I've enabled your mic and you can speak
+[00:27:03] with me.
+[00:27:06] Good morning, everybody.
+[00:27:07] My name is Gregory Evans.
+[00:27:08] I'm an independent home psychologist and researcher.
+[00:27:14] Couple things trying to gather all of my thoughts because there was lots going on
+[00:27:21] here and I want to try to speak from a place of like bridging,
+[00:27:26] bridging modalities, bridging gaps.
+[00:27:29] I think one of the things that I wanted to kind of hatch that Doctor Zurlo
+[00:27:36] mentioned is that imagine we're in a pipeline and the pipeline goes through a
+[00:27:43] singular hole and then it spreads out and has options.
+[00:27:48] That singular entry point to the program has the qualifying condition,
+[00:27:56] the contraindications, medical readiness, all of that assessment is complete and
+[00:28:05] that allows for a broader range of therapy models that are like like
+[00:28:13] participant centric.
+[00:28:17] So if a person enters into the program with and and I wanna myself here and say
+[00:28:24] this is how I see it and I see it working best and none of what I should am saying
+[00:28:32] should be said as like codified process because we are in the process of doing
+[00:28:39] that today.
+[00:28:41] The if there is a participant that enters the program with the doctor that is also
+[00:28:49] a different, like has different types of therapy in
+[00:28:54] their practice that has the ability to qualify them for the program,
+[00:29:01] which involves all the contraindications.
+[00:29:06] And I will say, if we're bringing up serotonin syndrome,
+[00:29:10] we need to really go back and understand what the drugs that we're dealing with
+[00:29:16] are.
+[00:29:17] We are not dealing with ketamine, we are not dealing with MDMA.
+[00:29:19] We are not dealing with any compound that is known to commonly by itself under like
+[00:29:28] proper diagnostic protocols trigger serotonin system syndrome.
+[00:29:36] The research is out there.
+[00:29:37] We're gonna get more.
+[00:29:39] We are in the early stages of understanding this chemical in general,
+[00:29:42] but we are not at the beginning.
+[00:29:46] So if that person wants to stay with that, that that practitioner all the way
+[00:29:51] through as their facilitator and their integration coach and their preparation
+[00:29:57] team with that, with that single person, that's a possibility.
+[00:30:02] There are possibilities where a person can qualify and then reach out to their
+[00:30:08] culturally appropriate preparation, like the person that they want to guide
+[00:30:13] them through preparation, sit with them in medicine.
+[00:30:17] And honey, I just parked to make a little, have a little chat.
+[00:30:24] We're gonna go back to your school in just a minute.
+[00:30:28] So I, I, I just think it's really important to
+[00:30:31] understand that we're not, there's nothing in the program that is
+[00:30:36] taking away the medical safety mechanism.
+[00:30:40] What we're what I think is happening is that there is a mechanism that is
+[00:30:47] triggered and authorized.
+[00:30:49] Once you're in this container, there are multiple pathways to realize
+[00:30:56] the process of the therapy.
+[00:30:59] It's like a, you get in like it's not the the program
+[00:31:03] is not for administering medical psilocybin.
+[00:31:07] It is a container of therapy that extends across months.
+[00:31:11] So if somebody wants to select a different team or select a broad range of
+[00:31:19] people to be a part of that team, those teams need to communicate together.
+[00:31:27] But I, I hope, I don't know, I'm going to land it there,
+[00:31:33] but I hope that makes some sense.
+[00:31:37] Thank you.
+[00:31:37] And I do appreciate everyone's input.
+[00:31:39] I do want to remind everyone this is a settled issue.
+[00:31:45] The this committee has already voted and adopted saying that therapists are OK so
+[00:31:51] we can't.
+[00:31:53] I mean, we could try to go back, but it's not worth our time to go and
+[00:31:57] hash every single argument that's ever been had.
+[00:32:01] So in regards to preparation, are there any other just questions,
+[00:32:06] comments, concerns or changes?
+[00:32:08] I did update that medical history questions, comments, concerns.
+[00:32:15] I will let Johnny go back to calling the roll.
+[00:32:21] Cool.
+[00:32:21] All right, Lori, see your hand up.
+[00:32:25] Yeah, I know we have limited time.
+[00:32:26] I'm sorry to take up the time, but can I please clarify a couple things
+[00:32:31] real quick?
+[00:32:32] One is, I know remember it was talked about that
+[00:32:34] there would be, and I know this is a moot point at this
+[00:32:38] time with the therapist thing and I'm totally on board with the therapist
+[00:32:42] providing that role, by the way.
+[00:32:45] I just want to make sure that we are safe as far as a medical provider reviewing
+[00:32:50] that person's history and physical assessment and all that stuff.
+[00:32:54] As far as like during the administration though,
+[00:32:58] I thought we had mentioned that there would be some kind of medical provider on
+[00:33:04] site or available during the time of administration like on call for them.
+[00:33:09] I thought they had to be on site.
+[00:33:11] Maybe I was dreaming about this, but I thought we had talked about that.
+[00:33:15] I have that question and then I have one more question and then I'll be quiet.
+[00:33:20] I know you guys and this is not about this specifically,
+[00:33:23] but had been talking with Medicare and Medicaid about reimbursement and I
+[00:33:27] wondered if there was any.
+[00:33:30] I'm just trying to bring this forward to our executive team in Texas and I I need
+[00:33:34] that piece of information.
+[00:33:35] Do we think that insurances are going to be covering this?
+[00:33:38] Does anyone have any insight into that?
+[00:33:40] I would love that information today.
+[00:33:42] Thank you so much.
+[00:33:48] So I think, yeah, Ian can probably speak to that first
+[00:33:51] question and then Dominic can speak to the second, I think a bit.
+[00:33:57] Yeah.
+[00:33:58] So we had that if you had an inability to access emergency services and you could
+[00:34:05] find someone, you could have someone to administer
+[00:34:10] emergency medicine on site, but there was no requirement that they
+[00:34:17] would have to if they have appropriate access to emergency services that worked
+[00:34:24] in that regard.
+[00:34:31] OK, thank you.
+[00:34:33] And then this is Dominic.
+[00:34:35] In regard to the question as far as insurance and or Medicaid,
+[00:34:39] we are actually working with HCA to see what aspects could potentially be covered,
+[00:34:45] for example, the preparation, the therapeutic preparation,
+[00:34:49] the integrative therapy afterwards.
+[00:34:52] However, it does appear as though administration
+[00:34:55] itself of course, which this is not surprising I think to
+[00:34:58] any of us because it is schedule one would not be covered.
+[00:35:03] However, again that therapeutic sessions, it looks like it will be,
+[00:35:07] but there is no definitive answer yet and I don't know that we're going to have
+[00:35:12] that anytime in the next month or two for example.
+[00:35:16] That may take longer before we have those answers.
+[00:35:19] However, we are continuing to work with regard to
+[00:35:21] that.
+[00:35:24] Great, thank you.
+[00:35:26] And, and actually I will now Jessica posted in
+[00:35:30] the chat that if it's an unlicensed person as a facilitator,
+[00:35:34] that is correct that they would not be able to bill to insurance.
+[00:35:39] And it is part of why it, we specify in a lot of places the
+[00:35:43] licensing aspect of this because it's only going to be those licensed
+[00:35:47] individuals who are going to be able to bill.
+[00:35:51] Individuals who do not have licensure are not going to be able to bill with regard
+[00:35:55] to this.
+[00:35:57] So thank you Jessica for pointing that out.
+[00:35:58] I appreciate the assist.
+[00:36:04] All right.
+[00:36:04] And oh, let's see, I saw Ruben Sutter's hand up and.
+[00:36:13] OK, yeah, your mic is enabled if you want to unmute.
+[00:36:17] OK, Unmuted.
+[00:36:18] Yeah.
+[00:36:19] It's Ruben Sutter.
+[00:36:19] I'm an addiction psychiatrist.
+[00:36:21] I own Sage Neuroscience Center here in Albuquerque.
+[00:36:25] Very much in agreement with the safety of Silas Ivan and.
+[00:36:28] And you know, these drugs, given that we're putting this in the
+[00:36:32] medical context of the medical clearance, we do have to sort of honor those
+[00:36:37] pathways.
+[00:36:38] And, and I know we've talked about that in
+[00:36:39] terms of entering medical clearance.
+[00:36:41] My concern in terms of therapist being licensed,
+[00:36:44] providers needing malpractice coverage, you want to be certain that they're not
+[00:36:48] being asked to do anything that is out of their scope of practice.
+[00:36:51] And so in terms of reviewing medical history or anything,
+[00:36:55] that's certainly valid that if they have the documentation for a medical provider
+[00:37:01] mid level or otherwise, which also is perfectly reasonable that
+[00:37:05] they're just verifying this with the client rather than, you know,
+[00:37:10] doing the assessment.
+[00:37:11] And, and if there's anything different, I might suggest that then they refer back
+[00:37:16] to the medical provider largely one, its scope of practice and 2nd, it,
+[00:37:20] we're going to have malpractice insurance and there's going to be risk of liability
+[00:37:25] here.
+[00:37:25] And I don't want somebody to be at risk of doing something that is outside their
+[00:37:30] scope that would they would expose them.
+[00:37:35] That's all.
+[00:37:37] Thank you.
+[00:37:38] And I, I do want to point that out.
+[00:37:40] Yes, if a patient is determined to be
+[00:37:42] clinically inappropriate, which means one of their conditions
+[00:37:46] matches on their list of diagnosis matches to a list provided,
+[00:37:49] then the therapist is responsible for referring them back to their primary care
+[00:37:54] for provider or other appropriate treatment.
+[00:37:56] Ave.
+[00:37:58] So yes, I completely agree.
+[00:37:59] Thank you.
+[00:38:06] All right, I'm next.
+[00:38:07] We've got Catherine Warnock.
+[00:38:09] And Catherine, I have enabled your mic.
+[00:38:13] Hello and good morning.
+[00:38:15] I'd like to kind of bring us back to topic, if that's OK.
+[00:38:17] I feel like we've been talking about a lot of things that have already been
+[00:38:21] resolved or are outside of the scope.
+[00:38:24] I'd like to just kind of mention that I think that there's two things that are
+[00:38:27] missing from this list.
+[00:38:29] And by the way, I'm Catherine Warnock.
+[00:38:31] I am a psychedelic therapist in Las Cruces, NM.
+[00:38:35] Been doing this work for about 5 years.
+[00:38:38] I think we need to add something about Matrix making sure that the people have
+[00:38:44] safety and where they're landing after the experience.
+[00:38:48] So set and setting are really critical, we all know that.
+[00:38:52] But I think Matrix gets missed a lot.
+[00:38:54] And Matrix is like, are we sending them back into a system
+[00:38:57] that is healthy and that's going to support this type of a treatment?
+[00:39:01] So for example, if I'm working with a client who is
+[00:39:05] having a is in a domestic abuse situation, last thing I want to do is send them back
+[00:39:10] into that with their mind being open and they're very vulnerable.
+[00:39:15] Even if it's like the day after or two days after we need,
+[00:39:18] there needs to be like plans around where are they going after the experience.
+[00:39:24] So I think that's really important.
+[00:39:27] And then also, are we going to provide any education
+[00:39:31] about the the process meaning what psilocybin does in the brain,
+[00:39:36] what you know, the neuroplasticity?
+[00:39:39] Are we going to include any information about what, you know, what they should?
+[00:39:46] I mean, yeah, I see that you have expectations in there,
+[00:39:48] which is really good.
+[00:39:50] But just some some education about what it is, what it does, what it's for,
+[00:39:56] you know, just want to mention that as well.
+[00:40:01] Thank you and thank you Board, for all the time and effort you put into
+[00:40:05] this.
+[00:40:05] This is a thankless paid less job.
+[00:40:08] So I just want you all to know I appreciate all of you.
+[00:40:17] Awesome.
+[00:40:17] Thanks, Catherine.
+[00:40:18] And while he's updating that, we'll go to Brenda.
+[00:40:30] Hello everyone.
+[00:40:30] I'm Brenda Burgard.
+[00:40:31] I'm chair for education training for psilocybin.
+[00:40:35] I just want to address that I think with any type of training you're going to have
+[00:40:42] a preparation for the clinician and the patient.
+[00:40:47] So when the patient is is there in front of you,
+[00:40:52] you're explaining to them and you're having a handout sheet about what to
+[00:40:59] expect during, before, during and after preparation.
+[00:41:04] The preparation is vitally important as a clinician to give that information to the
+[00:41:11] patient or client that you're working with because they are the ones that are
+[00:41:16] going to decide whether or not to continue with this program.
+[00:41:21] There should be an opt out segment in this too,
+[00:41:25] because the the the patient should be able to opt out at any time.
+[00:41:30] But preparation and education for the client is vitally important.
+[00:41:35] So I think whenever we have a, a patient or a client come to us,
+[00:41:41] the first things we do is we prepare, we prepare them for therapy in general.
+[00:41:48] And this should be really nicely wrapped up in a nice little package here for
+[00:41:55] information.
+[00:41:57] I think that when we do that, the, the, the client or patient will feel more
+[00:42:03] comfortable with working with this medicine.
+[00:42:06] And another thing I wanted to preface too is that as, as a therapist myself,
+[00:42:12] I often ask what types of medications that they're on,
+[00:42:16] how long they've been on and how much they're taking to see if there is any
+[00:42:22] contraindications of the medication they're presently taking.
+[00:42:26] And if I see anything, I refer them back to their medical
+[00:42:31] provider to just, you know, check to make sure that this is
+[00:42:36] appropriate medication.
+[00:42:38] So I think when we really get into the education and training of all of this,
+[00:42:43] this will be part of the training for the clinician to prepare the the client or
+[00:42:48] the patient.
+[00:42:56] Awesome.
+[00:42:56] Thanks, Brenda.
+[00:43:00] And yeah, whenever you're ready.
+[00:43:03] Perfect.
+[00:43:04] And then so to kind of sum up the two last points I heard.
+[00:43:11] So the general education on The Who, who out why and how psilocybin and
+[00:43:15] potential adverse effects, they should be provided in an easy read
+[00:43:19] digestible format for patients.
+[00:43:22] And then the matrix.
+[00:43:23] But can you provide words because I don't know why my yeah.
+[00:43:28] So for matrix, I would say something like assessment of
+[00:43:33] suitable matrix, just making sure that we are that it's
+[00:43:37] being looked at and that if accommodations need to be made to they
+[00:43:43] have to stay with the family member for a week or somebody that's safe or it's
+[00:43:49] basically just assessing and then making accommodations for a suitable and healthy
+[00:43:56] release into, you know, an appropriate matrix.
+[00:44:00] I know that's very wordy, but I just want to make sure that the
+[00:44:06] environment and the people that there are going to are going to be on board.
+[00:44:14] Like the worst thing you want is somebody being released and everyone's going to
+[00:44:17] make fun of them because they had this treatment.
+[00:44:20] It's not going to, you know, it's not going to provide positive
+[00:44:27] outcomes.
+[00:44:27] We're trying to do everything for positive outcomes.
+[00:44:40] I think you did a good job there, Ian.
+[00:44:43] Thank you.
+[00:44:44] But I I stole it from Reuben Sutter and great, great.
+[00:44:49] Thanks, Reuben.
+[00:44:52] All right.
+[00:45:07] And then we wanted both of those to be under the psychological preparation.
+[00:45:17] I think so, yes.
+[00:45:18] OK, perfect.
+[00:45:21] All righty.
+[00:45:30] Any other questions, comments, concerns TSE Jessica Eden's hand up and
+[00:45:36] you can unmute when you're ready.
+[00:45:41] OK, thanks.
+[00:45:43] And then I just wanted to mention that like when I mentioned aftercare,
+[00:45:48] like that's not necessarily integration, that's like aftercare in that that night
+[00:45:53] of the day after like emergency, sort of like, you know,
+[00:45:57] if they're going to be able to reach out to the facilitator or the therapist or a
+[00:46:02] fireside chat, you know, something like that.
+[00:46:05] If they need something right there before their integration session.
+[00:46:08] It's kind of how I look at that.
+[00:46:13] This is a different thing.
+[00:46:14] A different comment or question that I have is I noticed that you took out
+[00:46:20] therapist conducting the comprehensive bio psychosocial assessment and reviews
+[00:46:25] from that medical history section.
+[00:46:28] And I'm just wasn't sure where that went because I think that that is something
+[00:46:32] that the therapist should be doing.
+[00:46:35] And that could be shared even with the facilitator because that's a lot of
+[00:46:39] history that's taken.
+[00:46:40] And we would look at that for any sort of red flags even in the history that we
+[00:46:46] would want to address.
+[00:46:50] And then let me know if you need me to stop.
+[00:46:52] My other piece would be, oh, shoot, I'm sorry,
+[00:46:55] I forgot my train of thought there.
+[00:46:58] I'll have to come back to it.
+[00:47:05] No worries, it happened to the best of us.
+[00:47:07] It is Cinco de Mayo.
+[00:47:09] My brain already on Margarita time.
+[00:47:16] This is what it was.
+[00:47:18] I wonder if the psychedelic therapist during the process of psychological
+[00:47:23] preparation should then be determining and making a recommendation for the
+[00:47:29] appropriate number of preparation sessions based on their assessment and
+[00:47:34] what they're finding.
+[00:47:35] So like with the minimum of these two, but then they can make a recommendation
+[00:47:40] that the that there should be maybe 3 or 4 of them or you know,
+[00:47:44] whatever they're needing.
+[00:48:12] So I do like that determines the number of requisite preparation sessions to
+[00:48:17] administration.
+[00:48:18] Is that a good phrasing for everyone?
+[00:48:42] Right.
+[00:48:42] I see Chris's hand up.
+[00:48:45] Chris, you can unmute when you're ready.
+[00:48:50] I wonder if maybe determines readiness might be more appropriate rather than
+[00:48:54] like the way this reads, it makes you sound like, well,
+[00:48:58] I based on your history, I think you should have to do 5
+[00:49:01] preparation sessions.
+[00:49:02] But I I don't think that's realistic.
+[00:49:05] I think, you know, as they're working together,
+[00:49:09] maybe readiness is a better measure.
+[00:49:56] All right, and then cool.
+[00:50:12] All righty.
+[00:50:12] Any other questions, comments or concerns?
+[00:50:30] All right, then we can go ahead and go on this.
+[00:50:35] Now, all those in favour of adopting the
+[00:50:38] preparation sessions document as proposed, please raise your hand at this time.
+[00:50:51] Ian, we didn't, I don't think we spent a lot of time on
+[00:50:54] the facilitator section.
+[00:51:01] Does anyone have any questions, comments or concerns about the
+[00:51:03] facilitator session?
+[00:51:07] You can go ahead and put your hands down at this time.
+[00:51:11] All right, Catherine, I see your hand up.
+[00:51:28] You can unmute.
+[00:51:30] Yeah.
+[00:51:30] I'm actually thinking the cultural and spiritual alignment needs to be in both.
+[00:51:36] Like, I'm just thinking we it needs to be all
+[00:51:38] the way through.
+[00:51:40] I don't know.
+[00:51:51] Well, I went ahead and added it to
+[00:51:53] psychological preparation.
+[00:51:59] OK, excuse me And before we go to Chris, let's see,
+[00:52:03] I just see Ruben at a couple or a question in there.
+[00:52:07] Will there be a minimum expectation for observation?
+[00:52:14] We will have to determine that administration.
+[00:52:20] All right, and we'll go to Chris.
+[00:52:25] I think I've brought this up before, but some things have kind of changed
+[00:52:28] since then.
+[00:52:29] It is 60 days before administration.
+[00:52:33] I I'm not sure that's really appropriate for for somebody.
+[00:52:43] I would, I would think maybe no more than 30 days
+[00:52:46] and they're probably meeting with their psychedelic therapist more frequently or
+[00:52:51] before they're meeting with their facilitator.
+[00:52:54] I mean, hopefully all this is happening in
+[00:52:57] conjunction, but I think it might want to be closer to
+[00:53:02] administration than 60 days.
+[00:53:11] I believe it's based on Colorado's with 60 days.
+[00:53:16] I would have to Fact Check my stuff, but it was either Colorado or Oregon that
+[00:53:22] had the baseline and we just moved there.
+[00:53:25] We can change it if you would like, but 30 days seems a little bit difficult
+[00:53:32] if we are, you know, sending them back to to be tapered off of
+[00:53:38] medication.
+[00:53:39] And then we need more administration sessions because they weren't completed
+[00:53:43] within the last period.
+[00:53:45] And it was a thing about boundaries.
+[00:53:47] But I would be OK with changing it to 30 if that's what the committee agrees with.
+[00:53:59] Let's see.
+[00:53:59] And I see Gregory Evan's hand up and you can unmute when you're ready.
+[00:54:07] Thank you.
+[00:54:08] I would I would second that 30 days simply because we're not constraining
+[00:54:15] people from having a longer period.
+[00:54:19] We're constraining like the minimum easiest path.
+[00:54:24] Also, I think having wow bugs we're having,
+[00:54:30] I'm sorry, totally lost my train of thought.
+[00:54:37] If we're gonna consider having multiple sessions,
+[00:54:39] those secondary sessions shouldn't be behold to the primary sessions of
+[00:54:44] constraints.
+[00:54:44] So if somebody is received like their primary session and then their team
+[00:54:50] themselves decide that they should go back in,
+[00:54:53] I don't think that they should have to wait 30 or 60 days.
+[00:54:58] So I think it should be further determining clinician team.
+[00:55:03] Cool.
+[00:55:04] I went ahead and updated it to 30 days.
+[00:55:18] And then Dominic.
+[00:55:20] Yeah, good morning, Ian.
+[00:55:23] It just seems since we only have a couple of minutes left in this meeting and there
+[00:55:28] still seem to be some questions, what I would recommend at this point is
+[00:55:32] to go ahead and let people sit with this until the next meeting before doing a
+[00:55:36] vote just to ensure that they have enough time to review it and see if they have
+[00:55:41] additional questions or, you know, ideas for some of the changes,
+[00:55:45] especially with regard to the facilitator since we've just started reviewing that
+[00:55:50] portion.
+[00:55:52] All righty, that sounds good.
+[00:55:54] I am very busy for the next two weeks.
+[00:55:57] Does Wednesday the 27th work for the department and everyone in the committee?
+[00:56:06] Let's take a look for us Wednesday the 27th should be good do we want to do 9 to
+[00:56:14] 11 for that one just in case sure OK cool alrighty since we are out of time today,
+[00:56:22] I do appreciate everyone for taking the time to be here and share your thoughts
+[00:56:29] with us.
+[00:56:32] I appreciate everyone's opinions and just, you know, taking time out of your day,
+[00:56:36] it's, it's something you don't have to do on
+[00:56:39] something that's so easy to not do.
+[00:56:40] So I do thank you for being here.
+[00:56:44] But have a great rest of your week.
+[00:56:45] Enjoy your Cinco de Mayo and be safe everyone.
+[00:56:49] Thank you for your time.

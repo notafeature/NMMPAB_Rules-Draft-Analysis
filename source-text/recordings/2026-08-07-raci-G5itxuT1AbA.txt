@@ -1,0 +1,1200 @@
+[00:00:02] and then I will let everybody in from the lobby. So, we'll need to give it a
+[00:00:07] minute or two for everybody in the lobby to join in. Um, as people are coming on
+[00:00:12] in, good morning everybody. Uh, I am Dr. Dominic Zerlo with the New Mexico
+[00:00:16] Department of Health. I'm the director for the Center for Medical Cannabis and
+[00:00:21] Psilocybin. Um, and this is the research and continuous improvement committee
+[00:00:26] meeting with Dan Jennings as the chair. And uh, just as as usual, you will see
+[00:00:32] most of us with our cameras off through most of the meeting just to ensure that
+[00:00:37] there's enough bandwidth for people, especially individuals who are calling
+[00:00:41] in from more rural areas or other areas where uh, internet may be um, uh, may
+[00:00:47] not be there. But then you will see those of us who are either presenting or
+[00:00:52] uh from the do turn on our mics when we are speaking. Um and when we get to the
+[00:00:58] point for public comment, we will uh also have people will be able to raise
+[00:01:02] their hand um and uh and be able to ask questions and go through that and we'll
+[00:01:07] put that information into the chat here shortly. So with that in mind, uh the
+[00:01:13] only other part to remind everyone is these meetings are made public and so
+[00:01:17] the recordings are put on the website. So please ensure to use appropriate
+[00:01:21] language just so that we don't have to go through and bleep them. Uh which we
+[00:01:25] will do by the way, but that means that it takes a lot longer for it then to be
+[00:01:30] able to get posted on the website because it has to go through some
+[00:01:33] additional levels to ensure that it is appropriate. So, thank you everybody and
+[00:01:38] with that I turn it over to you Dan. Thank you.
+[00:01:41] >> Thank you, Dom. Appreciate that very much. Hi everybody. I'm Dan Jennings and
+[00:01:45] I'm the chair of the research and continuous improvement committee and
+[00:01:49] vice chair of the uh psilocybin medical board. appreciate everybody being here
+[00:01:53] today and uh this is our time that we like to just have our introductions for
+[00:01:58] everybody and we would like to uh have our introductions from our DO team first
+[00:02:03] if you wouldn't mind and then we'll go into the uh introductions of everybody
+[00:02:08] else that's here on the call. Remember whenever you're uh ready to make your
+[00:02:12] introductions just go ahead and raise your hand. We'll unmute your microphone
+[00:02:16] then whenever uh we're called on. So Tom, would you like to introduce your
+[00:02:20] team? >> Absolutely. Thank you so much, Dan. Uh
+[00:02:24] I'm also just putting the information on how to raise and your hand and unmute in
+[00:02:28] the chat. So uh for people if you didn't see it on the screen or not as familiar
+[00:02:33] with it, that information is also in the chat. And so um so today from the
+[00:02:39] department um we have myself uh Dominic Zerlo. We also have Dr. Robert Truckner
+[00:02:45] who is our medical director here today. Uh we have Cyrus Routman who is our
+[00:02:50] environmental scientist in the psilocybin program and Leslie Peterson
+[00:02:55] who is our compliance officer in the medical psilocybin program. Jorge was
+[00:03:00] not able to be here today but sends his regards. We also have Katie Fryag who is
+[00:03:06] one of our health educators. Uh we have co Kathy Ajieri who is our project
+[00:03:12] manager. We have Brenda Martinez who is our deputy director for the center. Um
+[00:03:17] and then we have uh Vicente Royel who is our intern this summer who has been
+[00:03:22] working with us through this summer and uh is actually about to wrap up his
+[00:03:26] internship but has been doing a wonderful job and uh and we we are sorry
+[00:03:32] to see him ending his internship but we're hopefully going to be continuing
+[00:03:36] with him here in the future. Um, and I think at this point I caught everybody
+[00:03:42] from the do side. So, back to you, Dan. >> Awesome. Thank you all very much.
+[00:03:47] Appreciate it. And I appreciate our uh special guest we have today. Uh, thank
+[00:03:50] you from the board. We have Ian Dunn uh who is our chair of the psilocidon board
+[00:03:55] and uh we also have Chris Puscy who just joined us uh also who is on Silicon
+[00:04:00] board and uh Senator Steinborn. Thank you very much for joining us. And for
+[00:04:05] everybody, please uh feel free to raise your hand and like I said, we'll come
+[00:04:09] around and unmute your microphone for you. Please introduce yourself, your
+[00:04:13] name, where you're from, uh location, if you're in New Mexico or not, your
+[00:04:17] affiliation, if you're affiliated with anything, and if this is your first time
+[00:04:20] or if you're returning to the committee meetings. Appreciate it.
+[00:04:44] Nathan, go on ahead. You are your mic is enabled.
+[00:04:48] >> Great. Thank you. My name is Nathan Oaks and I live in uh beautiful Lake Tahoe,
+[00:04:53] California. And um I'm [clears throat] here to uh talk about a little bit about
+[00:04:59] data privacy um and security uh especially with a uh
+[00:05:04] a little bit of emphasis on deidentification and reidentification
+[00:05:09] uh and um this is my first time and I am uh excited to be here. Thank you guys.
+[00:05:17] >> Thank you Nathan for being our guest presenter today and so appreciate you
+[00:05:21] being here too.
+[00:05:27] And Don, your mic's enabled. >> Yes. Good morning. Don Moer, Las Vegas,
+[00:05:33] New Mexico. And I'm not affiliated with anyone. I'm just very interested in the
+[00:05:38] program. Thank you. Thank you, Don.
+[00:05:44] And while we're waiting for others to raise their hand to make an
+[00:05:48] introduction, I'll read in from the chat. Uh Kate Hawk, good morning,
+[00:05:51] everyone. Khawk from Santa Fe trauma therapist with 20 plus years working
+[00:05:55] with psychedelic harm reduction Kathy Sanchez bureau chief at workers
+[00:05:59] compensation administration medical cost containment and Hanifeh Washington
+[00:06:05] co-director of the psychedelic mental health al access alliance Santa Fe
+[00:06:10] implementation partner of the UNM groups psilocybin assisted uh therapy study for
+[00:06:15] PTSD
+[00:06:20] and please anybody body else that's on the call would like to introduce
+[00:06:24] yourself, please raise your hand and or drop into the chat box. Also,
+[00:06:34] we have Gregory Evans, independent researcher and home ecologist in Santa
+[00:06:38] Fe
+[00:06:49] and Sky River, Santa Fe reporter covering updates on the legalization of
+[00:06:53] psilocybin from Santa Fe.
+[00:07:10] and I'll give a little bit more wait time just in case there's some people
+[00:07:13] that might still be doing their introductions.
+[00:07:27] Okay. Oh, thank you, Nathan Oaks. Uh, thank you very much for dropping into
+[00:07:32] the chat box there as well. Um, appreciate you being here. And actually,
+[00:07:38] since we have nobody else in the introduction phase right now, then we'll
+[00:07:42] go ahead and move into our guest presentation then with Nathan Oaks. uh
+[00:07:46] he's a cloud and cyber security engineer with 30 years of experience designing
+[00:07:51] and managing secure high resilience technology systems and man and uh
+[00:07:56] specially working in development and operations. He is currently supports
+[00:08:00] digital health initiatives for US Department of Veterans Affairs focusing
+[00:08:05] on cloud architecture, identity and access management, compliance and
+[00:08:10] technical risk mitigation specializing in translating complex security and data
+[00:08:16] migration uh issues and uh into actionable
+[00:08:20] strategies. Nathan bridges the gap between technical teams, policy makers
+[00:08:24] and program stakeholders. Today Nathan will be sharing insights on structuring
+[00:08:28] the data architecture for our New Mexico medical psilocybin program and focus on
+[00:08:33] how we can safeguard participant data through rigorous privacy controls data
+[00:08:37] sanity and policy frameworks ensuring data remains fully identifi deidentified
+[00:08:43] while and protected while still enabling vital research continuous quality
+[00:08:47] improvement and systemwide traceability. Please help me welcome Nathan.
+[00:08:55] >> Thank you. Thank you, Dan. Um, I really, uh, appreciate the ability to be here.
+[00:09:00] Uh, thank you guys for inviting me. Um, I want to be clear about the scope of
+[00:09:04] this talk. I'm not here to prescribe an entire technical architecture or write a
+[00:09:10] comprehensive rule set in 20 minutes. My goal here is to offer a small set of
+[00:09:15] policy principles and design patterns that can help New Mexico make those
+[00:09:19] decisions safely. The core idea is that this trust by design uh and this is not
+[00:09:27] primarily a technology problem. It is a trust and governance problem that
+[00:09:32] technology then has to implement. Now I'm approaching this from a systems
+[00:09:37] cloud security uh data governance perspective.
+[00:09:41] uh the gory details can come later but today I want to focus on the questions
+[00:09:46] that need to be asked before those details are built.
+[00:09:53] So moving on here I I I really want to make clear before we get into um some
+[00:10:00] more of the technical stuff the human stakes why data trust matters.
+[00:10:07] Privacy here is not just a compliance requirement. Patient trust can affect
+[00:10:12] whether people are willing to participate in the program at all. As we
+[00:10:16] all know, you know, psychedelic care may involve some of the most intimate
+[00:10:20] information a person ever shares. trauma, mental health history, substance
+[00:10:25] use, you know, deeply personal experiences during altered states,
+[00:10:29] sometimes recording, sensor data, and you know, yes, breaches can cause
+[00:10:34] lawsuits, reputational damage, regulatory consequences, but I don't
+[00:10:39] want to spend our limited time on generic breach scenarios. The more
+[00:10:43] important point for this program is upstream. If people fear that seeking
+[00:10:48] treatment will create a permanent commercially exploitable or government
+[00:10:52] accessible record of those experiences, some people will simply avoid treatment.
+[00:10:57] That's why I'm treating trust as part of the safety and accessibility model, not
+[00:11:03] as a public relations concern. Now the data landscape, today's data and
+[00:11:11] tomorrow's
+[00:11:14] uh the rules that we write now can't really assume that medical data will
+[00:11:19] continue to look like rows and columns in electronic health record. As we all
+[00:11:23] know things move so quickly. Today we have familiar clinical data. Um,
+[00:11:29] psychedelic care also creates rich experiential data like free form
+[00:11:33] narrative, facilitator observations, audio, video and you know the frontier
+[00:11:39] is already moving toward wearables, biometrics, eye tracking, motion,
+[00:11:44] neurohysiology, immersive headset telemetry, AI derived
+[00:11:48] inferences etc etc. Now some of the standards that are already written by
+[00:11:56] federal agencies or NIST or or things like that uh things have have already
+[00:12:01] progressed um past those. And so
+[00:12:06] I you know I want to make an important distinction. Uh I'd like to talk about
+[00:12:11] data minimization but I'd like to make an important distinction about it. I'm
+[00:12:16] not arguing that every provider should collect as little data as possible.
+[00:12:19] There may be very good reasons with meaningful patient consent obviously to
+[00:12:23] capture very rich multimodal data. Future therapies may use many signals
+[00:12:29] from a piece experience for instance to help patients revisit or integrate
+[00:12:34] aspects of that experience later. Data minization is important but I think
+[00:12:38] the better principle is collect intentionally
+[00:12:43] expose minimally and use purposefully. Maximum useful collection doesn't
+[00:12:50] require maximum exposure. Policy should separately govern
+[00:12:55] collection, retention, access, and disclosure. [clears throat] And it
+[00:13:00] should regulate categories of risk and use rather than hard- coding a list of
+[00:13:04] today's devices or even today's data fields.
+[00:13:10] Now, let's move on to deidentification. I'm kind of presenting a working
+[00:13:15] vocabulary here. Um, but deidentification is not a binary thing.
+[00:13:20] It's not that data is either identified or deidentified and that's it. There's
+[00:13:25] somewhat of a spectrum. And I I want to make clear that these are my working
+[00:13:31] definitions for this talk. Legal and technical definitions vary by context.
+[00:13:35] And obviously New Mexico will be will will want to write their own clear
+[00:13:40] definitions of these things. But for the today's talk, identified data is
+[00:13:45] directly linked to a person. When we say pseudonmized uh interesting little word
+[00:13:51] there um or also what we call relinkable data means that direct identifiers have
+[00:13:57] been replaced or separated but an authorized linkage mechanism still
+[00:14:02] exists to reidentify that data. Deidentified data means that the
+[00:14:07] identification risk has been deliberately reduced to an agreed level,
+[00:14:11] but it's not automatically safe. Uh risk is not necessarily zero. Um there are
+[00:14:18] multiple ways to to relink that data. There's things called linkage attacks
+[00:14:23] and so on. We won't get too far into that today. Then aggregated data, I
+[00:14:27] think everyone knows what that means. That's information that's reported at a
+[00:14:31] group level. uh but small sets of aggregated data, small cells can still
+[00:14:36] create identification risk. And then at the very end we have anonymized data
+[00:14:41] which for this presentation means that no reasonable mechanism remains to
+[00:14:46] relink that information to a person. Now risk remains on risk depends on what
+[00:14:51] remains in the data and what it can be linked to. The identification is risk
+[00:14:56] management and not a magic switch. These terms are often used kind of
+[00:15:02] inconsistently. Um but I you know I want to just emphasize that a gooid or a
+[00:15:07] globally unique identifier something random that that is linked to uh patient
+[00:15:12] data for instance doesn't must make that data anonymous if another system can
+[00:15:17] resolve that gooid back to a person. The key point again is that risk depends on
+[00:15:22] what remains. Dates, locations, rare attributes, narrative, highdimensional
+[00:15:27] signals, and and what outside information can be linked to it. A data
+[00:15:31] set that is difficult to reidentify today may be easier to reidentify in the
+[00:15:36] future. And I have a a fuller glossery in the backup slides that, you know,
+[00:15:43] I'll share this slide at the end or this deck at the end here.
+[00:15:47] Now, this is really important to me and I feel like it's very relevant to New
+[00:15:53] Mexico. You don't need a name to know who somebody is. They could not have a
+[00:15:59] name in their data, not have a social security number, and still be
+[00:16:03] identifiable. We call some of these, sometimes we call
+[00:16:08] these quasi identifiers. Removing names and numbers isn't really enough.
+[00:16:12] Ordinary attributes can become identifying when combined. In New
+[00:16:16] Mexico, I think this deserves particular attention because some rural, tribal,
+[00:16:21] and other communities are small enough that combinations of age, affiliation,
+[00:16:26] location, diagnosis, and did that person have treatment on Tuesday or maybe a
+[00:16:31] rare event uh may point to one single person and everybody could know who that
+[00:16:36] person is even without having traditional uh identifiable data.
+[00:16:43] So I would say that we want to treat this respectfully as a privacy risk
+[00:16:48] example. Definitely not here as not bringing this as an attempt to prescribe
+[00:16:53] tribal level data sovereignity policy. But um you know I I think that that um
+[00:17:02] it's difficult to identify what all the quasi identifiers are. I kind of
+[00:17:08] anticipate I have had the question many times like how do I identify all the
+[00:17:12] quasi identifiers and and the answer honestly is that we really can't solve
+[00:17:16] this with a static list. Identifiability depends on combinations of attributes,
+[00:17:21] granularity, population size, what external information is available.
+[00:17:26] That's why deidentification should include disclosure, risk assessment, and
+[00:17:30] reidentification testing, not simply just removal of fields that we label PII
+[00:17:36] or personally identifiable information. And you know from a data security
+[00:17:40] standpoint we we want to think like an attacker sometimes but in privacy terms
+[00:17:47] we say you know given this proposed release and reasonably available outside
+[00:17:51] information how successfully could someone figure out who these people are.
+[00:17:56] Now there are some um for instance NIST National Institute of Standards and
+[00:18:01] Technology special publications that I that I'll reference in another slide
+[00:18:04] that I'll share later that deal uh specifically with this kind of stuff and
+[00:18:09] there's there's studies and guidance on this um that New Mexico can refer to.
+[00:18:15] So security, privacy and governments are different problems.
+[00:18:22] So just a little vocabulary here. Security. When we talk about security,
+[00:18:26] we're asking who can get to the data. Privacy asks what can that data reveal
+[00:18:33] about a person. Data governance asks why we have the data, who's allowed to use
+[00:18:39] it, and what they are allowed to do with it. Now, a system can be extraordinarily
+[00:18:44] secure. We can have encryption and identity management and logging and
+[00:18:48] backups and all the things, but we could still have a terrible privacy policy if
+[00:18:53] that organization is permitted to use patient information for purposes that
+[00:18:58] patients never reasonably expected. Now, [clears throat]
+[00:19:04] just to touch on sock and ISO and and compliance standards,
+[00:19:10] I think those can be useful evidence of an of organizational maturity when we're
+[00:19:14] talking about, for instance, vendors, providers in the space, um, that sort of
+[00:19:19] thing. But these are baselines. They don't answer New Mexico's core policy
+[00:19:24] question which is what an organization should be permitted to do with
+[00:19:27] psychedelic patient data. Compliance with SOCK 2 and ISO 27701 and etc is a
+[00:19:35] floor but trust is the goal. Now
+[00:19:41] reidentification of data must be exceptional and governed.
+[00:19:47] Here this diagram is just an illustrative control pattern. It's it's
+[00:19:52] I'm not suggesting New Mexico mandate a particular database architecture. Uh the
+[00:19:57] important concepts here are separation of identity from sensitive data, least
+[00:20:03] privilege access policies, separation of duties, what we call controlled linkage
+[00:20:10] and very importantly auditability. Now I'm just giving a pattern here and this
+[00:20:16] is a possible pattern. Um is an identity vault separated from clinical or
+[00:20:21] research data that has a dedicated linkage service in between ordinary
+[00:20:27] users almost any nobody should be able to traverse this entire chain by
+[00:20:32] themselves. Now for sufficiently sensitive reidentification New Mexico
+[00:20:37] could consider dual authorization what we call the two key pattern kind of like
+[00:20:41] a nuclear launch. you know both people have to turn the keys but what that
+[00:20:45] means in this context is that one person requests and another independently
+[00:20:49] approves. This is an established security control concept. Now there's
+[00:20:54] some possible legit legitimate categories and obviously there could be
+[00:20:59] more but you know for the purposes of this talk I thinking about patient
+[00:21:03] directed reidentification possibly for access to their data correction of data
+[00:21:08] uh authorized disclosure maybe to other providers so on um and appropriate
+[00:21:13] deletion or data withdrawal requests. Now we obviously have safety and
+[00:21:18] continuity of care um which you know could be adverse
+[00:21:22] events, adverse events, emergency care coordination or even like product or lot
+[00:21:28] recall if something's um you know wrong with a certain lot of product. Obviously
+[00:21:34] there's also legal and regulatory um concerns. there's valid legal compulsion
+[00:21:39] like a subpoena or legal court order um or narrowly defined oversight.
+[00:21:46] And I'll also throw in that there could be
+[00:21:51] what I call exceptional authorized research only when identity is genuinely
+[00:21:56] necessary and appropriate oversight exists. Now every event, every
+[00:22:02] reidentification event should be logged and auditable. Routine patientdirected
+[00:22:08] events like deletion requests might be aggregated for oversight. Exceptional
+[00:22:12] reidentification may merit individual reporting or prior approval. Now, in an
+[00:22:19] emergency scenario, we could have a controlled quote unquote break glass
+[00:22:24] path that might be appropriate, but breaking that glass should always create
+[00:22:30] an unavoidable audit event.
+[00:22:35] Now this is the ethical core of my little talk today and
+[00:22:43] that is that patient data should serve the patient at at the end of the day.
+[00:22:49] That's the bottom line. And I think you know we've all had experiences with
+[00:22:55] concern being concerned about our data being sold or used in in ways that we
+[00:23:00] don't expect or don't want. You know, this is broader than just
+[00:23:05] simply saying data cannot be sold. Uh, you know, a sophisticated business can
+[00:23:10] monetize information without calling that transaction a sale.
+[00:23:14] Uh, they could, you know, licensing, data brokerage, profile enrichment, what
+[00:23:18] they what they call that, targeted advertising, so on and so forth. Um, you
+[00:23:24] know, or packaging supposedly anonymous insights from inadequately deidentified
+[00:23:29] records can can pose a risk. So companies should absolutely be able to
+[00:23:34] build successful businesses delivering treatment um analytics, software,
+[00:23:39] infrastructure, responsible research services. But the distinction here is
+[00:23:44] that the patients intimate information itself should never become the product.
+[00:23:50] Purpose limitation is critical. Information collected for care should
+[00:23:56] never silently become marketing unrelated product development or like
+[00:24:00] general purpose AI training data. Optional secondary uses should be
+[00:24:06] genuinely separable where practical. Now transparency also and I feel like this
+[00:24:11] is important to all of us and we all can relate to this. Transparency should be
+[00:24:15] human readable. A patient should be able to answer what are you collecting?
+[00:24:22] Um, why are you collecting it? Who can see it? Who receives it downstream? How
+[00:24:27] long is it kept? Can it be used for research or AI? How do I get a copy of
+[00:24:32] my own data? How do I request it to be deleted? When can it be rel to me? Now,
+[00:24:38] having a legal privacy policy may still be a good thing, but I think that the
+[00:24:44] patients should also be receiving a concise plain language data rights
+[00:24:49] notice or even a little explainer video. Um, a privacy right really isn't
+[00:24:55] meaningful if exercising your privacy right requires you to become a a privacy
+[00:24:59] law expert. >> [clears throat]
+[00:25:02] >> Now I consider myself a scientist at heart and I love research and I want to
+[00:25:09] absolutely enable research in every way but I want to do that without exposing
+[00:25:16] people. Um the goal isn't to lock data away. The goal is to match the
+[00:25:21] disclosure to the question. And I put this in kind of a latter format. What I
+[00:25:26] call progressive disclosure. We start with the least identifying form of data
+[00:25:31] capable of answering the legitimate question, often a research question. If
+[00:25:36] you need aggregate data, you give the aggregate. If you need demographic
+[00:25:40] trends, you give only the demographic detail that's actually needed. You need
+[00:25:44] detailed longitudinal analysis, maybe consider a protected
+[00:25:49] research environment or maybe a controlled query model rather than
+[00:25:53] distributing raw copies all over the place. Um and then you know if
+[00:25:59] identifiable data is needed which it could be in certain cases but that
+[00:26:04] should require extraordinary justification.
+[00:26:07] Now this becomes especially important in small populations like we talked about
+[00:26:11] earlier where demographic detail that feels harmless can become identifying.
+[00:26:17] Uh again referring to NIST special publication 800188. They discuss
+[00:26:22] multiple data sharing models including deidentified releases, synthetic data,
+[00:26:28] query interfaces, protected data enclaves as well as disclosure review
+[00:26:32] boards, reidentification studies. Now I think research researchers should divi
+[00:26:38] derive an enormous value from this program and will do so. But in most
+[00:26:43] cases, researchers simply don't need to know who that participant is.
+[00:26:49] So I think these are some of the things that New Mexico should define. Now, now
+[00:26:56] this is intentionally a set of questions. It's not a comprehensive rule
+[00:27:01] book. RECI doesn't need to build the system today, but it needs to define the
+[00:27:06] policy boundaries clearly enough that providers, vendors, researchers,
+[00:27:10] engineers, etc. can build within them safely.
+[00:27:14] Now, the questions here include, you know, what purposes justify collecting
+[00:27:18] and using patient data? What uses should be prohibited outright?
+[00:27:24] What's the minimum information that should cross each organizational
+[00:27:28] boundary? When can data be reidentified? Who
+[00:27:32] authorizes that? What must always be logged and auditable?
+[00:27:38] What obligations follow the data downstream
+[00:27:44] and what rights and explanations must must patients receive and then you know
+[00:27:49] crucially how will the rules evolve as technology changes technology and
+[00:27:55] reidentification capabilities will change and are changing. So I would say
+[00:28:01] to consider mandatory periodic review um you know on a cadence that's up to
+[00:28:08] you guys exact cadence for the state to decide but there also maybe should be a
+[00:28:13] mechanism for interim guidance to be issued when technology might be moving
+[00:28:17] faster than the rule cycle. Again, you know, SOCK or ISO style standards can be
+[00:28:23] useful baselines, but New Mexico, I think, should go beyond checkbox
+[00:28:28] compliance and define program specific privacy and data use boundaries.
+[00:28:35] And I'd like to leave you with this very simple slide with these three things.
+[00:28:44] These three objectives don't have to be in conflict. Protect the person, protect
+[00:28:50] the data, preserve the value. Now, New Mexico does not have to choose between
+[00:28:56] patient privacy and discovery. We don't have to choose between trust and
+[00:29:00] innovation. If the rules are built thoughtfully from the beginning, each
+[00:29:05] can strengthen the other. Good governance is what makes responsible
+[00:29:09] innovation possible because it gives patients the confidence to participate.
+[00:29:14] It gives responsible organizations clear boundaries and it gives researchers
+[00:29:18] access to useful data without unnecessarily exposing people. Now today
+[00:29:23] I've deliberately stayed at the principal level. There's a a much deeper
+[00:29:27] layer underneath each of these topics like disclosure risk risk testing
+[00:29:31] reidentification controls audit models research environments
+[00:29:36] uh vendor requirements you know detailed policy language. Um, but we're not going
+[00:29:42] to get to that in in 20 minutes. Um, I would be happy to help work through
+[00:29:47] those as the program develops. Thank you guys. Any uh questions? I
+[00:29:53] think we have about five minutes left. Nathan, thank you very much. And while
+[00:29:59] everybody gets ready for their questions, you can drop it into the chat
+[00:30:02] and you can also raise your hand. Sometimes it's easier to raise hands
+[00:30:06] because if you have some questions, it's easier to explain that way. Uh Nathan,
+[00:30:09] thank you very much for this because we love uh your presentation here in dactic
+[00:30:13] because this is part of a travel set of of dactics we've been having from open
+[00:30:17] to uh Dr. Pitzky and talking about site share and things like that. And so as
+[00:30:22] we're starting to move into this data collection, I really appreciate uh this
+[00:30:28] grounding that you've given us with on really what matters on the data
+[00:30:32] collection, data reporting, uh the why uh and the how we can be better stewards
+[00:30:38] of this information and this data and to build a really solid. Uh we've talked a
+[00:30:44] lot about patient safety and this is one huge part of patient safety. Um so I
+[00:30:50] would love I mean, this is an opportunity. If uh anybody has any
+[00:30:54] questions for Nathan or comments or thoughts, uh please please raise your
+[00:30:59] hand, drop them into the chat, and I'll let you know. Dominic Zeros, thank you,
+[00:31:02] Nathan. Gregory Evans, thank you, sir. Um but please, this is this is your time
+[00:31:07] now. >> Yeah, Jeff.
+[00:31:18] >> There we go. There we go. Hey, good morning everybody and and thank you so
+[00:31:21] much Dan for the committee and thank you Nathan for presenting today really
+[00:31:24] fascinating and something on a lot of our minds. I have a a lot of questions,
+[00:31:30] but the one I want to ask you is as we look at our law, our brand new law, and
+[00:31:37] if there needs to be any strengthening or tweaks to it, are is there any It
+[00:31:41] would be helpful. I'd love your opinion if you think we need any specific
+[00:31:46] language in law that further tightens the protection of data specifically,
+[00:31:52] you know, any language that kind of sets more statutory legal sideboards of
+[00:31:58] ensuring data, you know, is protected. Um, I think we
+[00:32:03] have some good protective language in there now, but I just thought I'd ask
+[00:32:06] you the question. Thanks. Yeah, you know, I wish I was more familiar with
+[00:32:10] the language of the law. Unfortunately, I hadn't had time to to really review
+[00:32:15] that. But I mean in answer to your question um I think that you know in my
+[00:32:21] mind New Mexico is a leader in this in this space and other states programs
+[00:32:30] possibly even other countries are going to look at New Mexico and they're going
+[00:32:33] to copy this stuff um or you know use it in some kind of way. I think it's you
+[00:32:38] know I put this slide up here from for selected standards and resources.
+[00:32:42] There's some really good stuff that NIST has put out and obviously the the
+[00:32:46] baselines of ISO and sock. I think those are good starting points to look at some
+[00:32:51] of um you know to to look at some of the language that that could be um in there.
+[00:32:57] But, you know, I I really feel like New Mexico needs to go above and beyond
+[00:33:03] um thinking about trust being built into the law as as clearly and um you know,
+[00:33:12] as well defined as as possible. Um I again I I haven't I don't know the the
+[00:33:18] law itself and so that that may a lot of this may already be in there. Um
+[00:33:23] but you know an answer to your question is short answer is yes. I I I think that
+[00:33:27] it's it's worth looking at and it's worth really um putting the language of
+[00:33:31] trust in there, especially when it comes to uh patient um patient trust and
+[00:33:37] concise and and readable um policies around privacy and things like that. Um
+[00:33:43] I think it may be just just one thing off the top of my head. I think it may
+[00:33:46] be beneficial to include a requirement that in addition to your standard legal
+[00:33:52] 15-page privacy policy, patients are provided with a concise human readable,
+[00:33:57] this is what we're going to do with your data. These are the cases that in which
+[00:34:00] it can be reidentified, so on and so forth. Um, I think that's a good
+[00:34:05] starting point. >> Cool. You know, Dan, it would be great
+[00:34:09] if I don't know if this document's going to be emailed around, but that would be
+[00:34:13] really helpful. Um, it's probably worth saying to everybody on the call, you
+[00:34:17] know, sometimes, yeah, you define a lot of these things in rule, so they're not
+[00:34:22] necessarily specified at this level in law, but nonetheless,
+[00:34:27] um, yeah, it's all great feedback and I and I'm not able to chat for some reason
+[00:34:31] or or I would have done this, but it might be helpful if someone can put
+[00:34:34] SB219 link into the chat um because it's a pretty short bill and
+[00:34:40] you could probably see that section real quick if you were interested. did or
+[00:34:44] anyone else would love to. >> Thank you. Thank you so much.
+[00:34:48] >> Absolutely. >> Thank you, sir.
+[00:34:50] >> Thank you, Senator. Very, very, very good point to bring up. I mean, this is
+[00:34:53] something that Nathan brought up is because, you know, providers will be
+[00:34:57] utilizing EMR, EHR, you know, uh, medical record software in their
+[00:35:02] organization. And so, this is something that is not just mindful for the state
+[00:35:07] side, but also for provider side too. And I'm glad, you know, Brenda uh is on
+[00:35:12] the call too. Brenda leads the education and training committee and so having
+[00:35:16] some of this information and to speak to the the document and the slide deck
+[00:35:20] these will be uh provided uh to do for the publication up on the website so
+[00:35:25] that they will be available along with the uh video recording of this as well
+[00:35:29] so that way people couldn't make it or want to refer back to it. Uh and I know
+[00:35:33] that we have our chair Ian Dunn that has a question as well.
+[00:35:38] >> Hey Ian. Yeah, I just wanted to clarify. So, um, in terms of law, it wouldn't be
+[00:35:45] data is not very expansively protected under the medical psilocybin act.
+[00:35:51] However, um it would still be fall under, you know, HIPPA and high-tech,
+[00:35:56] which could help um compliance in terms of let's not, you know, waste political
+[00:36:02] capital on um that kind of thing when especially we can do a lot within this
+[00:36:08] committee because like like you said, we should go above and beyond the standards
+[00:36:12] set in law. Um so what we can do in this committee is continue that analysis of
+[00:36:18] how we can keep the our patients as safe as possible because um you know the
+[00:36:24] thing about the law is that legislation is often delayed from reality.
+[00:36:33] >> So it often takes a lot longer for them to process things than it does for let's
+[00:36:38] say bad actors. Um, so by going above and beyond, especially like I really
+[00:36:43] liked your presentation, but by going above and beyond, we can protect against
+[00:36:47] some of those bad actors and especially when we have, you know, an expert that
+[00:36:51] was willing to share with us on cyber security and that kind of thing. I am
+[00:36:55] just very um, you know, grateful for the presentation as a whole and excited to
+[00:36:59] see how we can actually um, operationalize all of this. So, thank
+[00:37:05] you. >> Yeah, thanks Ian. And, you know, I'm
+[00:37:09] Fortunately, you know, I'm a cloud engineer and not a politics guy. So, I
+[00:37:14] understand that there's a difference between the law itself as a law and and
+[00:37:19] then guidance and rules. And so, you know, I mean, I don't um I you know,
+[00:37:23] obviously the law is at the top, but it could point to the guidance and rules
+[00:37:27] that uh you know, this committee issues. Um, and you know, I think that, uh,
+[00:37:33] there's a there's a distinction to be made there and there's decisions as to
+[00:37:36] what, like you said, what what kind of political capital we put into the law
+[00:37:40] itself. But, um, those guidances, you know, and and rules that are issued can
+[00:37:45] probably move faster than a bill itself.
+[00:37:52] >> Great. and Dominic Zarlo put into the chat the uh link there to uh the statute
+[00:37:57] there uh for anybody that's interested as well. So,
+[00:38:01] >> excellent. All right. Anybody else? All right. Thank you everyone so much for
+[00:38:07] the opportunity to share with you guys today.
+[00:38:11] >> I end my sharing back to you Dan. >> Thank you very much Nathan. I really
+[00:38:16] appreciate your time spending and expertise that you brought to us today.
+[00:38:21] this is uh this is huge and so we really appreciate that opportunity that you
+[00:38:26] gave us today. Um and please feel free if you do have time you can stick
+[00:38:30] around. If you do have to leave we completely understand. Um just make sure
+[00:38:34] you just hit the leave button instead of the the independent button. So
+[00:38:41] >> you got it. Thanks Dan. >> Thank you sir. And so um just as a
+[00:38:46] reminder to us on our next kind of beat that we're moving into the the racy
+[00:38:51] subcommittee uh this is kind of what our guiding principles are. So really to
+[00:38:55] kind of recenter us back to these kind of norms again the idea that uh that uh
+[00:39:00] Nathan brought up about the idea of being participant centered throughout
+[00:39:04] this is important. We need to make sure that we collect what we act on collect
+[00:39:08] once used many times and we need to make sure that it's human and not clinical.
+[00:39:12] So some of the things that Nathan brought up today, we really appreciate
+[00:39:16] those reminders back again to us. Uh the going to our next step, we've been
+[00:39:22] working on some frameworks in this committee. Uh this committee's
+[00:39:25] responsibilities are kind of three-fold. We have a reporting framework that we're
+[00:39:29] responsible for. We have a harm reduction quality improvement framework
+[00:39:32] responsibility and then a core extended data set framework. And so Nathan's talk
+[00:39:37] today was a really good reminder as we move into that core data set. corks in a
+[00:39:42] data set to remind ourselves of exactly why we're doing this and how we need to
+[00:39:47] do this with good care and protection. So again, the three intersectional work
+[00:39:52] groups that were created were care and pathway and safety, participant
+[00:39:55] experience, fit and data reporting and architecture and those are headed up by
+[00:39:59] uh three individuals that usually are here. I'll say that uh Danielle Leonard
+[00:40:04] is one of those could not make it today uh and Dr. James Brown was not able to
+[00:40:08] make it today and Gregory Evans who is on the call today. So just so you know
+[00:40:12] that that those kind of intercession work groups happen outside of these so
+[00:40:16] that that way we can get a lot of this big work going and then they're brought
+[00:40:19] back to the committee so that we can discuss and come to consensus on that.
+[00:40:23] So one of our first was a breakdown for those three uh inter session workg
+[00:40:28] groupoups and this was to create that reporting framework task. And so these
+[00:40:33] were kind of the the task breakdowns that each one of those uh workg
+[00:40:36] groupoups were working on and then brought back to our committee uh which
+[00:40:41] if you uh were able to sign up before uh a few days ago, you received a copy of
+[00:40:46] this deck just to kind of look at in advance. Again, if you didn't receive
+[00:40:49] it, it will be published on the DOH website after this meeting. But just so
+[00:40:53] you can see that on the 12th of June, the subcommittee here uh came to
+[00:40:57] consensus that these are the kind of uh reporting framework [clears throat]
+[00:41:02] areas that we're interested in making sure that there was information for. So,
+[00:41:06] seven different areas uh divided up into before the session, then the session
+[00:41:10] itself, and then after the session, including an early follow-up, which is
+[00:41:14] usually defined about 24 to 72 hours after the uh session. And so, these were
+[00:41:20] the categories that we were looking at as kind of the information that we would
+[00:41:24] like to have and to look at and to work on. That then moved into the harm
+[00:41:29] reduction quality improvement framework. And this was the task breakdown for
+[00:41:33] those three work groups that started to work on and really especially started to
+[00:41:37] work on the event tiers for uh for not just adverse or serious adverse
+[00:41:43] reactions but also challenging experiences. So today for this part of
+[00:41:49] this work group I would like to present to you what the work groups have come up
+[00:41:53] with. U so we'll present it here for the first time. Again, if you did have a
+[00:41:57] copy of this ahead of time, you got to see this so that we can have good
+[00:42:00] discussion today. But today, what I would like to do is present and then
+[00:42:05] have feedback and then ultimately if we can come to a consensus to see if we're
+[00:42:10] good with this or what changes we need to make. So I'll present these four
+[00:42:15] different tiers and two different reporting pathways for the harm
+[00:42:18] reduction quality improvement framework. So first one is that a session would be
+[00:42:23] a tier one routine no incident. This is essentially what we're hoping for for
+[00:42:28] 100% of all sessions that there are no safety concerns, no unexpected
+[00:42:32] deviations from care plan. So therefore, this is simple, very simple things that
+[00:42:37] might happen during any kind of psilocybin experience. And so therefore,
+[00:42:42] there would be no specific individual incident report required, reporting
+[00:42:46] required. Uh, however, let's move to a tier two, which is a challenging
+[00:42:50] experience because we've heard a lot. We when we first started this workg group
+[00:42:55] uh committee uh everything I looked at was adverse experience. So actually
+[00:43:00] working through a lot of the conversations that y'all have provided
+[00:43:03] and for example Dr. Pitzky and his work we really decided let's look at a tier 2
+[00:43:07] which is challenging experience. This is something that may come up during the
+[00:43:11] session it may come up during integration. Uh and these are things
+[00:43:15] that uh really can be managed within the session container for example like grief
+[00:43:21] processing, transient paranoia or fear or those kind of feelings of getting
+[00:43:25] stuck or feeling crazy or things like this. Uh any kind of like mild physical
+[00:43:30] discomfort um that might require some hands-on or some support in the session
+[00:43:35] but usually resolves naturally. Uh also even going to an anxiety or emotional
+[00:43:41] intensity that may still continue but usually resolve next day during that
+[00:43:46] initial uh uh quick uh intervention that can come up during that first kind of uh
+[00:43:52] check-in and then participant that might have any kind of difficulty but then at
+[00:43:57] the end says no I feel safe and I feel supported. So really what we wanted to
+[00:44:01] do is just make sure that internally those things were documented because
+[00:44:04] that would be part of the facilitation process uh in data. It could just be a
+[00:44:09] yes no flag entered and so it would just look at trend monitoring. That would be
+[00:44:15] all those kind of things we look at. But this would not be something that needs
+[00:44:18] to get reported back into program but just something that we could look at for
+[00:44:22] quality improvement purposes. And then that [clears throat] leads into
+[00:44:26] the higher tier tier three. this is an adverse or ae experience and it does
+[00:44:30] have some clinical significance. So a tier three would be negative unexpected
+[00:44:35] negative outcomes that uh last beyond the session in some cases and require
+[00:44:41] intervention beyond standard support. And so we broken it down into two
+[00:44:45] physical and psychological. So physical things might be like nausea or vomiting
+[00:44:50] that that requires medical attention or uh causes dehydration or headaches and
+[00:44:55] migraines that do not respond to standard treatment. Uh blood pressure
+[00:44:59] that requires medical evaluation but it is not an emergency that's another tear
+[00:45:04] up. Uh allergic reaction but is not anaphilaxis. Uh and then going into
+[00:45:09] psychological things like this that panic persists after 72 hours even after
+[00:45:15] you have postsession uh support sleep disruption that lasts for more than a
+[00:45:19] week. Uh worsening of the mental health conditions um such as PTSD symptoms um
+[00:45:26] that even the participant feels harmed or dismissed or invalidated during the
+[00:45:31] session and that the participant feels that has a lasting impact on their
+[00:45:34] well-being. >> [snorts and clears throat]
+[00:45:36] >> uh HPPPD or also DPDR depersonalization derealization
+[00:45:42] um and that could last on you know within 48 hours but then could persist
+[00:45:47] uh disorienting depression or even the onlogical shock or that fear of
+[00:45:51] existential dread that might happen that doesn't resolve through standard
+[00:45:55] integration. So these are things that are just classified as what tier two or
+[00:46:00] tier three adverse experience and there is what we are recommending a mandatory
+[00:46:05] entry into the the state system somehow that has to be done within 5 days and
+[00:46:11] then uh there is facilitator documentation. uh it would require
+[00:46:15] quality improvement um system learning reviews because these kind of things
+[00:46:19] might be something that we just don't we want to uncover and see if there's
+[00:46:23] something that can help in uh future rule changes or best practices and
+[00:46:28] things like that. Um and this is even that after those initial sessions and
+[00:46:34] into those integration follow-up sessions would follow the same pathway.
+[00:46:39] Then into tier 4 these would be the SAE serious adverse uh events and these do
+[00:46:44] require external responses and uh formal review. So what this comes into are
+[00:46:52] things like there's three different uh three different areas that we're looking
+[00:46:55] at. Medical emergencies, uh psychiatric emergencies, and also safety and conduct
+[00:47:01] events. So for the first two that we have here, I just wanted to also kind of
+[00:47:06] call out to this is that we understand that there are individuals that will be
+[00:47:10] in the program that have uh that that have like terminal
+[00:47:15] endstage. uh they're at the end of life as their as their criteria for being the
+[00:47:20] program. So we just want to make sure that that these are not specific to
+[00:47:25] those events that are consistent with their disease trajectory. Um so just so
+[00:47:30] you know this is for individuals that would be outside of those kind of things
+[00:47:34] that these are outside of the expectations of the session. So these
+[00:47:39] would be cardiac events, hypertensive crisis, uh seizure activity,
+[00:47:43] anaphilaxis, loss of consciousness that requires airway management, uh or any
+[00:47:47] medical event requiring ER or hospitalization. And then same for
+[00:47:52] psychiatric because we know that at EOL that somebody might just say might have
+[00:47:57] these conversations about death and dying and having a good death. So again,
+[00:48:03] this does not necessarily mean suicidal ideiation. So therefore, individuals
+[00:48:07] that are not at EOL, if there is suicidal ideation with plans, then those
+[00:48:12] are things that need to come into an SAE report. Uh self harm, uh acute psychotic
+[00:48:18] break, prolonged psychosis, and homicidal ideiation. And then for the
+[00:48:22] last uh part of tier 4, safety, uh and events. So we really want to make sure
+[00:48:27] the patients are safe and feel safe. So things that might be like patient
+[00:48:31] alopment during the session where they could be uh acutely uh impaired. So that
+[00:48:37] would be something that would be an SAPE uh boundary violations from provider
+[00:48:42] participant disclosure of abuse uh facilitator practicing outside of scope
+[00:48:47] or training uh facilitator impairment uh medication errors. And so the reporting
+[00:48:53] actions that we have for this is that that's an immediate uh report within 24
+[00:48:57] 48 hours and formal investigation required. Um it this also looks at
+[00:49:02] credentials uh that might be initiated and uh just uh to be clear patients are
+[00:49:08] informed of the department of health reporting channel uh and offered uh
+[00:49:13] different advocacy supports. So these this is kind of what we're looking at
+[00:49:17] for the tier 4. And so I kind of previewed this DO reporting channel. So
+[00:49:22] we're looking at two different reporting channels. One is through the
+[00:49:25] facilitator. That's the primary reporting channel. And these are the
+[00:49:29] things that come in to the facilitator that would be uh reported. But we also
+[00:49:34] want to ensure that there is an escalation and especially for sensitive
+[00:49:38] that could be a DO direct. So these would be reserved for these kind of
+[00:49:42] things like boundary violations where the participant feels unsafe. um that uh
+[00:49:47] they can report directly to the DO and that does kind of trigger a tier three
+[00:49:51] or tier four review if it comes in through that way. So
+[00:49:56] this is kind of what the the work groups have come up with to present to us here
+[00:50:01] today and um after going through it I would love to hear everybody's comments,
+[00:50:06] feedback um are we on a mark? Have we missed the mark? Um and then as we come
+[00:50:13] to the end I would like to be able to see or if we didn't but we missed the
+[00:50:17] mark completely we'll come back and revise if it's something that um that we
+[00:50:22] might be able to move forward with we would love to kind of work moving
+[00:50:25] forward into this. So please during this time uh please raise your hand if you
+[00:50:29] can if you can't you can drop into the chat box whatever you would like to do
+[00:50:33] on this. So, thank you. And first one, Ian.
+[00:50:38] >> Hi, thank you. Um, love the document. It was very well thought out and clearly
+[00:50:43] they spent a lot of time um, working on it. One question I have is um, this is a
+[00:50:49] very named perils type of document. What about
+[00:50:56] situations that we don't know like um
+[00:51:03] current like adverse events that we don't predict, right? So if there was
+[00:51:06] some sort of outside of this list adverse event, let's say um a patient
+[00:51:11] didn't eat for 4 days, right? Where would that patient be reported?
+[00:51:19] >> Right? So to try to and to try to catch those kind of things, we've broke down
+[00:51:25] into these tiers. So for example, that would not be let's say that the patient
+[00:51:29] didn't eat for several days ahead of time and thus had some sort of an event.
+[00:51:34] So it wouldn't be a tier one. So then it would be the facilitator practitioner
+[00:51:38] that would make or the the fac the practitioner would say, is this a is
+[00:51:42] this a challenging experience? Meaning could is this something that got
+[00:51:46] resolved during the session container? um if it was something that I didn't eat
+[00:51:51] and so I felt weak and and so I didn't feel good but as an example I'm just
+[00:51:57] saying uh then the individual then had something to eat in in in the session or
+[00:52:03] right during that integration time uh and it resolved itself then that would
+[00:52:07] probably be listed as a tier 2 challenging experience because it
+[00:52:11] happened but it required some support and it resolved itself in that
+[00:52:15] container. However, if it was something that required uh it was a little bit
+[00:52:19] more, it had some clinical significance. So, they had like a a sugar crash and it
+[00:52:25] required maybe some intervention from some medical. For example, if they have
+[00:52:30] insulin, they administered insulin to themsel, that might be an adverse event
+[00:52:34] with clinical significance because it was something that wasn't necessarily
+[00:52:38] inside of the container and required some sort of some physical example that
+[00:52:42] took place there. However, if it was in in this example that the person did not
+[00:52:48] have insulin and it didn't resolve itself through through having something
+[00:52:51] to eat during that session, uh then it required a hospitalization or required
+[00:52:55] EMS. And this would be an SAE in that example. So, we tried to kind of bring
+[00:53:02] those three tiers like that into where you could kind of categorize those kind
+[00:53:07] of things that are not specifically called out in those bullet points. I
+[00:53:11] hope that helps. And if it doesn't, let me know and say that nope, it needs to
+[00:53:14] be more clarified or or here's another just as example.
+[00:53:18] >> No, that works. That actually makes a lot more sense. I had kind of spent a
+[00:53:24] lot of time reading the bullet points and not looking at the the phrase at the
+[00:53:29] top. But yeah, that makes a lot of sense based on what intervention is needed,
+[00:53:32] right? Because it's going to be a lot different if, let's say, they had low
+[00:53:36] blood sugar, right? if they just need um candy versus if we need to get dextrose
+[00:53:41] like that is um two ends of how serious it was and how um we could handle it. So
+[00:53:48] yeah, I support the adverse reporting system as it stands. It's very well
+[00:53:53] thought out. Thank you. >> I appreciate you saying that. Yeah, it
+[00:53:57] is something where we knew that if we just listed those the top part that we
+[00:54:03] wouldn't get into the detail, but also by having some of those details then you
+[00:54:07] can get to the point where the detail is not detailed enough for everything. So
+[00:54:11] hopefully it gives a little bit and honestly to be to be very honest this is
+[00:54:15] something that during u like facilitator preparation these are great things that
+[00:54:21] the training can bring up. So just like you called out, it's like okay you know
+[00:54:25] facilitators practitioners if this happened how would this be handled and
+[00:54:30] so I think with good education and training in the dactic and the practicum
+[00:54:34] I think we can get that very clear with everybody in the pro I feel
+[00:54:41] uh Kate Hawk said good work thanks to everyone who worked on this. Thank you
+[00:54:44] Kate. Uh Brenda
+[00:54:55] Your mic isn't >> Hello. Hi. Um, my mic wasn't working. I
+[00:54:58] wanted to thank Nathan for his um his um presentation on you know keeping things
+[00:55:04] uh secure. Um that was a real big safety thing for many people. And thank you Dan
+[00:55:11] for this. This is really um wonderful because this just gives us more
+[00:55:15] information for education and training to um put that um in there because I
+[00:55:22] think often times especially um people who have never experienced that with a
+[00:55:28] client uh this is very important and also too um what's going to be happening
+[00:55:34] as well this is what I imagine is that you're going to have a team of people so
+[00:55:39] if someone isn't having an adverse reaction during their session, however,
+[00:55:44] maybe soon afterwards and and doing our due diligence and and telling the the
+[00:55:50] patient, "Hey, if you're feeling off, if you're feeling kind of panicky or
+[00:55:55] anything like that, please call us." Or if you want us to check in 24 hours
+[00:56:00] after you come home, let us know. so that we're doing our due diligence for
+[00:56:04] continuing uh the care that needs to be for um uh an individual. So Dan, I want
+[00:56:12] to thank you and your team for having all of this information because this is
+[00:56:16] very important uh for education and training. We want people to be um
+[00:56:22] well-versed in this area especially um because we want to be able to like
+[00:56:29] Nathan said go over up and above what we're used to actually. And so this is
+[00:56:35] um this is wonderful. I can't get into the chat for some reason. If I'm stone
+[00:56:40] quiet, it's usually because I can't get into the chat or someone's already
+[00:56:44] brought up the subject before I can even get in. So, uh, I want to just thank
+[00:56:49] everyone for their hard work on this. >> Thank you very much for the good words
+[00:56:54] on that, Brenda. Yeah, I have to say that the, uh, leaders of these three
+[00:56:57] work groups and then all the people that are working with them on this because,
+[00:57:01] and I apologize not being recognizing everybody's name. So, I'm going to
+[00:57:05] always forget the specific individuals that are working on this, you know,
+[00:57:09] offline. So, please, if you're on the call today and you're like, "Hey, I have
+[00:57:13] to work on this." I really need you to either, you know, raise your hand and
+[00:57:17] say it if you can't get in the chat or put it in the chat because seriously,
+[00:57:20] this is again I this is not me. Uh I always like to say that it's great to be
+[00:57:26] a conductor of an orchestra because people think that guy's doing all the
+[00:57:29] work. I'm not doing anything. I'm just up here. Everybody else is doing the
+[00:57:34] work. And so they have done amazing things on this. And I want to call out
+[00:57:38] what Danielle really wanted to hit in this, which is what you called out,
+[00:57:42] Brenda, which was, and that's what I've got on the screen there, harms
+[00:57:46] identified practitioners at scheduled follow-up integration. So, for example,
+[00:57:50] this might be after that initial that after that initial 24 48 hours of just
+[00:57:54] quick initial check-in that these kind of things will come up because there are
+[00:58:00] slow building arms that can come up that the participant might stop. And so we
+[00:58:04] don't want to just like, well, if I didn't hear from the didn't hear from
+[00:58:08] the patient, I guess everything's going awesome for them. We really want to
+[00:58:12] build the best practices into the program so that the practitioners and
+[00:58:15] facilitators are reaching out to the patients to hear back from them because
+[00:58:20] we we don't want to just assume great things. I mean, great, but that's where
+[00:58:25] we start to have serious issues there, too. So, uh, Greg
+[00:58:36] your mic is enabled. >> Hey, good morning. How's everyone?
+[00:58:41] There's a lot of information.
+[00:58:45] Um, something that Danielle and I discovered um or kind of like we're
+[00:58:50] working through recently around tier 4 delineation is that it might be useful.
+[00:58:57] I don't know if this got it to the notes for today, but [clears throat]
+[00:59:01] it might be useful to have an event class that essentially tells us what
+[00:59:06] happened. Whereas like conduct and ethics events should remain eligible,
+[00:59:11] not mandatory, but eligible for tier 4 because they may require immediate DO
+[00:59:16] review like participant protection or credential action. But they should be
+[00:59:21] separated as an event class in the data model. An event class tells us what
+[00:59:27] happened like a psychotic break or a medication error or a incidence of
+[00:59:32] sexual misconduct. Those might all be tier 4, but they're not exactly the same
+[00:59:37] analytic category.
+[00:59:41] Yeah, thanks for calling that. That's I think one of the reasons why um there
+[00:59:45] were these kind of things like medical emergency, psychiatric emergency and
+[00:59:50] safety and cognitive event and so the granularity of the specificity of what
+[00:59:54] is happening is dependent upon the data set that uh will be proposed you know by
+[01:00:01] y'all. So, for example, it could be as simple as saying it was a medical
+[01:00:07] emergency and then a and more like an open field or a psychiatric emergency
+[01:00:12] and an open field andor safety and conduct in an open field. Uh, or it
+[01:00:17] could I don't like Ian made a very good comment on that because if it is like a
+[01:00:22] drop- down checkbox thing, there are things that might be missed. So I I am
+[01:00:28] kind of ambivalent on both of those two things because one is great to have very
+[01:00:32] clean data set and then one is you miss out vice versa. So just I I think that
+[01:00:39] as you move into this third phase, the third and final phase that we're working
+[01:00:42] on, that's where you all get to say here's how we really want to have that
+[01:00:45] and here's the reason why. >> Yeah, that was a little breadcrumb for
+[01:00:51] [laughter] >> Yeah, for it's it's the teaser for the
+[01:00:55] next part. So yes, great. Thank you very much, Gregory. And again, thank you for
+[01:00:59] you and your team on working on this because again, this was some of the
+[01:01:03] things that really started to come out from the work that had been like
+[01:01:07] bubbling underneath all this stuff. Um, and it was great to have, you know, like
+[01:01:11] I said, all of y'all's Danielle's and Dr. Browns and your expertise. And I
+[01:01:15] think that Kate was part of this process as well. I know that Kate hasn't said
+[01:01:19] anything in there, but I know that Kate's been part of this. There's been
+[01:01:21] several people that have been bringing these kind of things in. So that's why
+[01:01:26] it's comprehensive and and and I think beautiful for that reason. But I would
+[01:01:32] love to hear from other people out there as well that are on the call to say like
+[01:01:36] okay uh if there's any like I said kind of push back something that we missed
+[01:01:40] because this is the time this is a really good time to do so before I would
+[01:01:45] ask for a like a consensus vote. >> Yes. Yeah. The only thing I'm curious
+[01:01:53] about um and it's more of a hope for the best uh prepare for the worst is I don't
+[01:02:01] want someone who is opposed to the program to say there are a lot of
+[01:02:10] serious adverse events happening in the program and it has nothing to do with
+[01:02:17] how we've regulated it or what's illegal. it it's just there was bad
+[01:02:22] actors. For instance, boundary violation, romantic initiation, that
+[01:02:26] kind of thing. Um, and I don't think we should lump those together cuz I don't
+[01:02:33] want them to say, "Well, this is dangerous. This is a the medicine can't
+[01:02:37] be here because there are all these serious adverse events." Um,
+[01:02:42] when in reality, the medicine is very safe. um sometimes
+[01:02:49] hopefully not there are bad actors in any field um and I don't know it may be
+[01:02:56] such a moot point cuz I don't know if it will actually appear um but it's just
+[01:03:02] something for consideration. No, I and actually what you just said echoes
+[01:03:07] really what Gregory was just talking about. The idea being if we just put it
+[01:03:11] all into one data element and say we had 14 tier 4 saes that is not granular
+[01:03:19] enough in order to take action based upon that. So the idea of being able to
+[01:03:24] say okay we had 14 tier four but they're broken into this many medical
+[01:03:30] emergencies this many psychiatric emergencies and this many like
+[01:03:34] participant safety conduct violations then you actually have a little bit it
+[01:03:41] is what I'm thinking a little bit better opportunity then to review take action
+[01:03:47] but also on the public side because then it is like okay these are things and
+[01:03:51] then you get to go into if it was a tier 4 safety and uh uh conduct event then
+[01:03:57] it's like then what happens you know that's the really sapes
+[01:04:02] are everything's going to happen across the board we then need to also be very
+[01:04:08] conscious about the data to say then what was happened what happened within
+[01:04:12] this period of time 24 4872 this happened an investigation this happened
+[01:04:18] maybe it was a license issue that was then uh clarified that that person lost
+[01:04:22] their license or and then [clears throat] continued into it could
+[01:04:25] even go into uh uh adjudication. So I think that you're calling out something
+[01:04:31] that is very clear that needs to be addressed when we go into the court
+[01:04:35] extended data set so that you're exactly right. It's not just lumped all together
+[01:04:39] but just like Gregory said separated out in some way. I I hope that helps explain
+[01:04:43] and I hope it kind of is it something that sounds like that could help there.
+[01:04:49] I think again it's a prepare for the worst situation. So I'm imagining right
+[01:04:56] like someone who just hates the idea of psilocybin. Um and so they would just
+[01:05:02] say well there's serious adverse events all over the place. It is a horrific
+[01:05:08] thing. Um and if those are like conduct related to a specific facility, right,
+[01:05:14] and that's where they're racked up. Sure, we could go adjudicate and we
+[01:05:18] could say, well, this is what was actually happening, but oftent times
+[01:05:23] what makes the headline is number of serious adverse events due to
+[01:05:29] psilocybin, right? Um, but I do think that overall we do you did a good job or
+[01:05:35] Gregory and um James and all of the others that participated um did a really
+[01:05:42] good job. It's just in a prepare for the worst kind of situation. And honestly,
+[01:05:46] again, this could be a moot point in that we we could have a perfect program.
+[01:05:52] You know, none of us can predict the future. Maybe we have no bad actors.
+[01:05:56] Maybe psilocybin just makes people not have bad choices. Um, I doubt that
+[01:06:02] because I have still made a bad choice after, but um,
+[01:06:08] just kind of spitballing and throwing it out there just so that there is a point
+[01:06:12] of conversation cuz Greg kind of pointed it out and I wanted to just explore that
+[01:06:17] other avenue cuz there is still a lot of, you know, stigma and there is
+[01:06:23] still a lot of societal perception that we have to work against and I don't want
+[01:06:30] that to be shaped by incomplete information if people are being served
+[01:06:36] like that. But again, we can't predict the future and maybe we shouldn't try to
+[01:06:40] protect against something that we don't know could even happen. We don't know
+[01:06:45] how the reporters would do it, how um that marketing would happen. But um
+[01:06:52] yeah, overall I still think this is a great system all in all. um even if it
+[01:06:58] was to stay under tier 4 like I would still support it as a whole cuz I think
+[01:07:02] the data collection mechanisms are um structurally sound and rooted in patient
+[01:07:08] response and safety. So I think it is great overall that was just response and
+[01:07:14] chatter. Thank you. >> No, this is like I said this is exactly
+[01:07:19] why I want to have this there. There's I always like to say there's you know you
+[01:07:23] called it a moot point. I don't think so. I think that when you're feeling
+[01:07:25] that, you call that out and this is something that it exists there for a
+[01:07:29] reason. So, we need to like if if there is something we can change or make a
+[01:07:33] difference or or adjustment in, yes, we definitely can. And it and you're right,
+[01:07:38] it might be something that never comes up. It might be something that we need
+[01:07:41] to to do. Uh but yeah, absolutely. Uh and then I know that we got Jason really
+[01:07:48] impressive. Sky, well done. And then Styles said, "I think this information
+[01:07:51] needs to be shared, but I do agree with and Gregory,
+[01:07:57] >> I just curious if you wanted to lump [clears throat] uh get into the feedback
+[01:08:02] loop before we move on or do you want to because it's it's
+[01:08:07] [clears throat] could be relevant here, but it could be other because I know we
+[01:08:12] want to codify this um today. Um but some of the things people are
+[01:08:17] asking kind of lead us to how how is the feedback loop and the interpretation of
+[01:08:22] the data going to be handled. So up to you on that Dan.
+[01:08:27] >> Well uh I think on the feedback loop because that is not in my perview that I
+[01:08:32] see today but that doesn't mean I don't want it brought up. So I'm like if you
+[01:08:37] can bring that up a little bit and share about that. Now it's not part of the
+[01:08:41] exor extended data set >> [clears throat]
+[01:08:43] >> uh part of this or is it part of that?
+[01:08:48] >> I think it's outside of the schema. It's more of an operational thing
+[01:08:52] >> like what does the system do with a harm signal after it's collected
+[01:08:56] >> and what are the loops for those for monitoring and responding to those
+[01:09:01] outputs. >> No, I think that that would be um
+[01:09:04] something to bring up uh at this point. So yeah, you might be able to hit it for
+[01:09:08] a couple of minutes. That would be great.
+[01:09:13] >> Um I think [sighs and gasps]
+[01:09:17] >> Sure. Uh we got Who's got their hand up there? Don.
+[01:09:20] >> Don.
+[01:09:26] >> I will defer to Dom for a moment. >> Well, thank you, Greg, and thank you,
+[01:09:31] Dan. I I just want to I mean first of all this is just really excellent the
+[01:09:35] work um that's gone into this and it really does fit very well with some of
+[01:09:40] the things that have already been proposed and some of the things already
+[01:09:44] incorporated in including for example in some of the things with for example you
+[01:09:49] uh talk is it on this slide or the last one where it talks about toxicity. So
+[01:09:53] for example if there's a contaminant in the product where there's a a process
+[01:09:57] for recall and for testing and things like that. So like these kinds of things
+[01:10:02] really do fit in with it. And in the the proposals that we've really been moving
+[01:10:07] forward and looking at, it does include the reporting with regard to adverse
+[01:10:12] events. Um just to let everybody know, we wouldn't put the specific items about
+[01:10:16] adverse events into rules because those can change, but they would be in
+[01:10:20] guidelines and best practices. So just when people see that, a lot of times
+[01:10:24] people think the rules have like every single tiny detail in it and they don't
+[01:10:29] necessarily. But what I want to walk through is kind of an idea of uh to give
+[01:10:34] what would sort of happen when a report like this came in because it's the same
+[01:10:38] kind of process we really use any time anytime we get adverse events reported.
+[01:10:44] It's the same similar process to what we used when uh with for example when we'd
+[01:10:49] get reports with regard to cannabis for example. Um like if uh you know if we
+[01:10:53] got reports on mold at a a cannabis facility what would sort of happen and
+[01:10:58] what essentially occurs is uh and and actually Dan if you go back to the last
+[01:11:02] slide you kind of have it or it might be the slide before that. Um yeah there you
+[01:11:08] go. So the action so where it gets if you look at the bottom of the slide it
+[01:11:12] sort of outlines it I think pretty clearly um and what would happen is once
+[01:11:17] do is notified in that short time frame we investigate sometimes it may be
+[01:11:22] something that you know there's an adverse event that has nothing to do
+[01:11:26] with anything the practitioners did or anything else maybe it was a situation
+[01:11:31] you know just uh that that's for example the the participant the patient may have
+[01:11:36] had a heart condition that was undisclosed and unfound prior to it. But
+[01:11:41] what would essentially happen is that investigation into what are the causes
+[01:11:46] or potential causes for this happening. Um we have done before for example with
+[01:11:51] regard to cannabis where we had providers who were not doing the
+[01:11:55] appropriate review, not doing the appropriate things and they then their
+[01:11:59] licens and credentials that report was sent over to their licensing board
+[01:12:04] and we have had providers who have gotten sanctioned or fined by their
+[01:12:09] licensing board. That part is up to their licensing board but the department
+[01:12:13] facilitates that sort of report going over there. So, just as an example,
+[01:12:18] those safety factors are are already in place and they're actually standard
+[01:12:22] procedures. You won't really see that a lot in the rules because it's part of
+[01:12:26] standard procedures in those kinds of cases. And in those cases, we do defer
+[01:12:31] while we gather the evidence. It then gets deferred to the appropriate
+[01:12:35] licensing board. And then the participants of course are informed of
+[01:12:39] the information. For example, if it was a toxicity or contaminant issue with the
+[01:12:44] product, we have that entire process of the product getting recalled and
+[01:12:49] destroyed. Well, tested first obviously and then if necessary destroyed or just
+[01:12:54] to make sure it's not something with that, where could that contamination
+[01:12:58] have come in? For example, was it at the production facility? Was it during
+[01:13:03] transport? Was it at the actual healing center or the practitioner's office?
+[01:13:07] Those sort of things. So there would be that kind of an investigation and so
+[01:13:12] depending exactly on what was found would really depend then on the next
+[01:13:16] steps. So whether it's a you know a an accidental sort of contamination like in
+[01:13:22] that case I'm talking about you know um then it's about a destroy make sure that
+[01:13:27] you know what has happened there's what's called a notice of contemplative
+[01:13:31] action which would mean like in that case whoever wherever the contamination
+[01:13:36] happened they'd have to put in place a protocol and demonstrate that that was
+[01:13:40] is not something that will happen again in the future and of course if it's
+[01:13:44] severe enough it actually could result in the pulling of their permits. And so
+[01:13:49] it all depends sort of what's found in that investigation. But that gives you
+[01:13:53] an idea of how that works. And we're we're that's something that's a thread
+[01:13:58] throughout all of the rules as they move forward. And so we already have that
+[01:14:02] within with regard to the cultivation with and the laboratories. We have that
+[01:14:07] already built in in part and are continuing to build it in as far as for
+[01:14:11] the patients and the providers and education. And then it will continue as
+[01:14:16] we go through other changes and additions into the rules. For example,
+[01:14:22] another one that's not actually in here, but say for example, it's a serious
+[01:14:26] event. I mean, not a serious event, but is a data breach. Similar process and
+[01:14:31] procedures with regard to that. So, as Nathan was talking a lot about is we
+[01:14:36] want to protect that data. Well, if there's a data breach, we have to do an
+[01:14:40] a a a an entire investigation to ensure see what happens. I'm sure we've all at
+[01:14:45] some point gotten those letters from like such and such financial institution
+[01:14:49] had all of this. We have those sort of things will be in place to be able to
+[01:14:54] notify patients to be able to notify providers etc. So hopefully that helps
+[01:15:00] to explain a little bit of what happens. Um and to kind of give an idea of
+[01:15:04] something that could happen and how we would respond.
+[01:15:08] >> Thank you, Dom. That is yeah, this because I knew that there were probably
+[01:15:12] already avenues in place at the DO and ultimately these kind of things bubble
+[01:15:16] up to the DO level to to take care of in whatever way. But as you said, it could
+[01:15:22] also be the licensing boards. It could be lots of other places too.
+[01:15:26] Oh, and Dan, just one more thing, and it's also really important, and it was
+[01:15:31] on one of the slides as well, which I thought was really great, is that it
+[01:15:35] also has to be that it's not just potentially the providers, practitioners
+[01:15:39] who are reporting, but the patients themselves um and even their family
+[01:15:44] members. So, for example, you may have a patient who says, um, say they're
+[01:15:49] getting really vivid dreams for the week or two afterwards, cuz that was on one
+[01:15:53] of the earlier slides, and they don't want to say anything because they're
+[01:15:57] minimizing it themselves. Then, the the family members, spouses, etc. would be
+[01:16:04] able to also report. And so to have a mechanism for that sort of thing to
+[01:16:08] happen so that it can actually ensure that you know the patients are being
+[01:16:12] taken care of and that problematic situations are addressed. Yeah, that
+[01:16:17] was one of the things that the group was really interested in in making
+[01:16:21] sure it it was there in that container because that's why we put on there do
+[01:16:25] triages the report and determines whether it's a tier three or a tier 4
+[01:16:29] because it could be something like oh that was just those kind of ontological
+[01:16:33] those dreams those kind of things not a tier 4 SAE but it was an adverse
+[01:16:37] experience because it persisted past the uh and it affected the the the group the
+[01:16:44] individual the group in some way so that is an adverse and I again going back to
+[01:16:49] you know some of the things like Ian brought up is like yes I understand that
+[01:16:52] could be something where the headline could be grabbed and say these
+[01:16:55] are adverse experiences and so we just need to be very clear uh in this also so
+[01:17:01] that people don't just grab the sensationalism but you also can't help
+[01:17:05] unfortunately with those kind of things too but uh we want to say that those
+[01:17:10] were outside of the challenge experience they were more adverse in that case and
+[01:17:15] So, record hope that helped also to clarify the feedback loop too.
+[01:17:20] >> Yeah, totally. Uh, I didn't mean to run a yarn. [clears throat] Um, I did want
+[01:17:24] to speak. I love that um point that was just brought up and
+[01:17:31] trying to figure out uh like like types of solutions that go back to treatment
+[01:17:38] where if there if we have a way for we create an easy way an easy
+[01:17:44] path for people who are experiencing complicated
+[01:17:48] post- psychedelic experiences like heavy dreams right if the practitioner is
+[01:17:54] involved in that loop in a in an immediate if the um the licensed
+[01:17:59] provider is there hearing those things from the participant in real time or
+[01:18:06] closer to real time and preventing that um pathway for allowing something that
+[01:18:13] could become a very positive experience. things we learn from our dreams if we're
+[01:18:18] doing that work versus some the pathway where that becomes consuming and turns
+[01:18:24] into a psychotic episode. having a way for the program to um
+[01:18:31] tighten that communication loop during the extended the early and extended
+[01:18:36] process of integration um and ongoing
+[01:18:41] [snorts] pathway of folding these experiences into that individual's life
+[01:18:46] and that's more of like a how do we technology this stuff but anyways we
+[01:18:51] should land this >> no that's appreciate you brought up
+[01:18:54] because again I think that a lot of it is like how do we handle how do we deal
+[01:18:58] with what any of these kind of experiences are that gets reported to
+[01:19:03] the practitioner or to the do. So absolutely that is clearly part of that
+[01:19:08] uh feedback cycle that you're talking about there. Um so on this uh I would
+[01:19:14] since I don't see any more hands or comments in the chat on that. So I would
+[01:19:19] love it if we because I do like to get consensus before we move forward with
+[01:19:23] saying like great we build consensus on this because it's just proposed right
+[01:19:26] now. So, if you're uh from New Mexico, because again, part of our norms are
+[01:19:30] that New Mexicans get to vote on this. If you're from New Mexico, uh on the
+[01:19:34] call, please raise your hand if you feel strongly that we move forward and build
+[01:19:38] consensus with this uh harm reduction quality improvement framework. And then
+[01:19:42] I'll ask for a show of hands if you don't. So, for those right now, a show
+[01:19:47] of hands if you do want to build consensus and move forward with this
+[01:20:09] Thank you all. And if you wouldn't mind lowering your hands now, we have eight.
+[01:20:14] And then for the next question, I'll ask
+[01:20:21] see when when Skype There we go. And then this would be for
+[01:20:26] No, if you do Oh, Sky, your hand is up. So, oh, I'm sorry. I just want to see if
+[01:20:31] you did have a comment or question. So, and then for this next part, I would
+[01:20:34] like to ask if there is anybody a show of hands that does not want to move
+[01:20:38] forward with this proposed framework.
+[01:20:49] See, no hands raised for that. And I appreciate everybody that built the
+[01:20:53] consensus around that. We will go ahead and mark this down as something. Yay.
+[01:20:57] All right. Great. We've got Yeah, I know. Yeah, that's great. I love that,
+[01:21:00] too. It's like that's the one thing I love moving forward with something. So,
+[01:21:03] thank you all very much for this. This it's a huge because again, honestly,
+[01:21:08] this is this is this is great to be able to to to to take what all of y'all have
+[01:21:14] worked together on all these months and move forward with it. So, thanks again.
+[01:21:18] And that leaves us into our uh last little beat here for our uh committee
+[01:21:23] meeting which is the core extended data set. Again I keep referring back to this
+[01:21:26] because this is the last real part that we're tasked with during this time is to
+[01:21:31] recommend core and extended data set and I call it that because there are certain
+[01:21:35] data elements that we know that are going to be like critical for the entire
+[01:21:40] program. There are others that could be classified extended. Great for research,
+[01:21:45] great for um potential um uh uh optional reporting, but these are the things that
+[01:21:51] we just want to try to fair it out. So again, the three work groups have been
+[01:21:55] kind of assigned uh these kind of uh task breakdowns. So the care pathway and
+[01:22:00] safety and participant experience and fit both of those two uh work groups get
+[01:22:05] to really look at how do you define in data these kind of things because a lot
+[01:22:10] of this is some are feeling based and some so it's hard to really kind of grab
+[01:22:16] around those kind of things. So those work groups are going to talk about how
+[01:22:19] we can in data capture some of these kinds of things. And then of course the
+[01:22:24] biggest one the the third work group which is the data reporting and
+[01:22:27] architecture. Um these are the ones that really define and this is just an
+[01:22:33] example doesn't mean that this is the data set but again these are just some
+[01:22:36] things that from hearing and talking to people that this might be some of the
+[01:22:40] things that we as data elements we collect. So again the group has to
+[01:22:44] decide what is the required minimum elements and what are those enhanced the
+[01:22:49] extended data elements. And um the the hope the expectation at this point is
+[01:22:55] that September 11th uh from our next uh workg group that we are a committee
+[01:23:00] hearing that we have here will be that time that it will be presented. And so
+[01:23:05] we'll talk about it at that time. Again hopefully you know we'll have it a
+[01:23:09] little bit ahead of time. I'll be able to push that out to everybody that is
+[01:23:12] registered for the meeting so you can look at it and talk about it. But we'll
+[01:23:15] basically spend a lot of that whole meeting going over those things, talking
+[01:23:19] about it and building that kind of consensus as well. U and so I like I
+[01:23:24] said I know that uh Danielle couldn't make it and neither could uh Dr. Brown,
+[01:23:28] but Gregory, did you want to share a little bit about the work that y'all are
+[01:23:32] doing on this part with everybody?
+[01:23:40] And Greg, your mic is enabled. >> Sure.
+[01:23:46] >> It's a lot of data, isn't it? It's like just a lot of questions to ask people.
+[01:23:50] It's like a [laughter]
+[01:23:54] I [clears throat] think I don't know. I'm really interested in
+[01:23:59] um actually Dan before I lay into
+[01:24:05] a wall of text uh is there any particular areas you want to highlight
+[01:24:09] today? >> Uh no I just know that um the the
+[01:24:13] September 11th meeting will be where uh this will be kind of presented what the
+[01:24:18] core or extend data set looks like. So I know that there's nothing to like hey
+[01:24:22] we've got this already. So, I just wanted to kind of uh have you at this
+[01:24:26] time share if there's anything that you wanted to say like we're working on this
+[01:24:29] or we're stuck on this especially this is a good time to maybe um if there's
+[01:24:35] put like your email address out there so that if people wanted to join this
+[01:24:38] interession workg group that y'all are working on uh for feel free to drop that
+[01:24:43] in there as well. But that's kind of where it's just just real quick like
+[01:24:47] maybe any any five minutes or so would be good.
+[01:24:50] >> Yeah, that was cool. Um just [clears throat] kind of the heads. Um
+[01:25:00] the core and data extended framework consensus is an interesting question
+[01:25:04] because it links directly into the the technology framework and [clears throat]
+[01:25:10] how the reporting is executed. and will define what becomes a burden and what
+[01:25:16] becomes um actionable uh data that we can have flexible analytics on. The
+[01:25:26] idea of having core data sets that are kind of required and then
+[01:25:33] an open list of other buckets where we can receive information if people choose
+[01:25:38] to report on certain things. allows for uh the independent structure of
+[01:25:45] somebody's business to have the flexibility. We're not trying to tell
+[01:25:50] companies and healers and whatnot like exactly what instruments they need to
+[01:25:56] use to define something in a clinical uh framework. But um [clears throat] one
+[01:26:03] of the interesting things that came up for example was the difference between
+[01:26:06] um using the I think it was Oasis versus GAD 7 as a preferred anxiety measure and
+[01:26:13] just allow like if our data architecture allows for both of those and we say we
+[01:26:20] need to receive an anxiety measurement here are options or you can submit your
+[01:26:26] own. Like that's a question about architecture that can't
+[01:26:31] be really like we can't define the request and the requirement until we
+[01:26:36] have some level of understanding what the capacity of the system that's
+[01:26:42] receiving and transmitting that uh health record.
+[01:26:50] Um
+[01:26:55] it's not the like the idea that the battery is not as much of an
+[01:26:59] administration plan. It's more of like a pool validated pool of validated
+[01:27:03] measures that are acceptable for receipts um sorted by purpose, burden,
+[01:27:09] trigger, and pathway.
+[01:27:12] Um, moving [clears throat] into the
+[01:27:18] data dictionary side of things is something that we've been that we will
+[01:27:22] be working tirelessly on. Like that's [clears throat] I think the data
+[01:27:26] defining the data dictionary and what uh alignment is needed for different tools
+[01:27:32] is kind of a big chunk of that work. And um we've been in discussion with Pitzky
+[01:27:39] since that last me meeting. And [clears throat] not to get too deep into
+[01:27:44] the concept of his program that he brought up called Syshare. P S Y share
+[01:27:52] um we discovered that he doesn't actually
+[01:27:57] like that system is more of a unifier. So like it c it kind of takes other
+[01:28:04] people's schema and will unify it into deidentified or anonymous reporting
+[01:28:11] tools that are accessible to um you know a public or a wider market
+[01:28:17] of researchers. Um we need to decide what type of uh systems we align with
+[01:28:23] where those boundaries are and how that information is protected.
+[01:28:29] we [clears throat] don't necessarily need and this is an interesting question
+[01:28:33] to define uh around metadata alignment. Um [clears throat] that specific tool
+[01:28:40] that we're investigating there um doesn't specifically need that metadata
+[01:28:45] alignment, but that doesn't mean that we don't need to define what our
+[01:28:48] architecture is. [clears throat] And then
+[01:28:53] uh the last thing we wanted to kind of plug
+[01:29:00] Well, there's two more things.
+[01:29:08] When we're capturing screening data, defining what type of like therapeutic
+[01:29:15] alignment measures we if we're going to find if we're going to measure or review
+[01:29:20] things like practitioner or or provider and p and participant alignment, we need
+[01:29:28] to gather certain things um from the
+[01:29:34] uh screening portion of the process. We're we're measuring like the efficacy
+[01:29:39] of the idea is to measure the efficacy of the entire containment of care. So
+[01:29:44] it's not about the dosage day. It's about how was everything planned. What
+[01:29:51] how was the alignment uh perceived by each end of the system?
+[01:29:56] Whether that's three or four people involved in that measure or if it's just
+[01:30:00] like the patient saying, "Ah, that was okay. I didn't really like my shaman
+[01:30:07] today. Um and yeah, so capturing that screening
+[01:30:12] data and what screening data is captured is pretty um interesting conversation
+[01:30:18] that we hope to get into. And then the in inside of that um
+[01:30:25] we have begun to discuss the idea of in including insurance readiness. So like
+[01:30:31] how prepared are our uh providers to handle the needs of the
+[01:30:42] infrastructure of payments and if they're if we have providers that are
+[01:30:48] using certain uh I don't like I don't I'm not an
+[01:30:54] insurance person but like if we [clears throat] have people pushing back
+[01:30:56] on pre uh pre-approved conditions or stuff like that like We want to be able
+[01:31:01] to identify like where the easiest paths are and then feed though that
+[01:31:05] information back into training and education so when providers are getting
+[01:31:09] educated on the process of dealing with this complicated system in the state of
+[01:31:14] New Mexico that we can create pathways for ease and that's kind of bringing
+[01:31:19] back the review cycle from the research and comm research and continuous
+[01:31:24] improvement uh where the value of crosswalking
+[01:31:28] information to other departments and other uh pillars can be super
+[01:31:33] beneficial. I think that's about it. >> That's fantastic. Thank you very much
+[01:31:37] and glad you brought up that the site share with Dr. Bliski and how that
+[01:31:41] operates because again as we move forward with the program um I know that
+[01:31:45] the research field is going to be very u uh it's going to be something that we
+[01:31:50] really need to look at and how can the data that we're collecting in this
+[01:31:53] program be shared. So hearing that and y'all's conversations with continuing
+[01:31:58] conversation with Dr. Pitzky after uh the presentation from last month that
+[01:32:02] thank you and the the insurability part is is huge and so thank you again for
+[01:32:08] y'all working on that part because I know that that's going to help uh
+[01:32:13] definitely bring down the cost for the program to
+[01:32:18] patients and so it's something that needs to always be at the forefront of
+[01:32:22] this is to ensure that the program can be uh eligible for insurability to the
+[01:32:28] maximum extent that it can be. So, thank you very much for for doing that. Uh, as
+[01:32:33] you can see, there's uh lots of there's lots of work to go on and uh this is I
+[01:32:38] mean I know a lot of people think like whoa wow this is dry but this is kind of
+[01:32:43] I mean I know the program is exciting but this is really an exciting part of
+[01:32:47] it. um this uh for th for for those of you that really get excited around
+[01:32:52] research and and continuous improvement. Um I really encourage you to to jump
+[01:32:57] into some of these intersectional work groups that these these uh leaders are
+[01:33:01] doing because what Gregory and like I said Danielle and Dr. Brown and
+[01:33:05] everybody are talking about are these kind of important things that we can
+[01:33:09] build into it as best practices, as ideas, as information into it. So,
+[01:33:14] please um uh and and please drop into the chat box your email address if
+[01:33:19] people wanted to reach out and say like, "Hey, I'd like to I'd like to be part of
+[01:33:22] these conversations so that that way September 11th when we come back again,
+[01:33:27] um y'all's team can present some of the uh work for this uh consensus part. So,
+[01:33:33] that's kind of what we have on our calendar so far. I will probably start
+[01:33:36] to work with DO to slug some times on the calendar for like October, November
+[01:33:40] as well. Um uh because right now these are the only dates set and so we're at
+[01:33:45] the end of our our run that I pre set on the calendar but uh I'll probably be
+[01:33:52] including a few more as we know that we need to move forward with it. Um so at
+[01:33:58] this time this kind of leads us to the last part which is the uh public comment
+[01:34:03] time. So I turn this over to everybody that is on the call that we have some
+[01:34:08] time left for you to share. Um, this is kind of your open floor if you will and
+[01:34:14] uh, we would love to hear from you. If you can unmute your microphone by
+[01:34:18] raising your hand, we'll unmute your microphone for you. Uh, everybody gets
+[01:34:22] three minutes to share during their open mic time. And if you can't open your
+[01:34:26] microphone or raise your hand, then please feel free to adopt it into the
+[01:34:29] chat and I'll read it into the record as well. So uh at this time again as I said
+[01:34:35] please do feel free raise your hand uh and we will unmute you or drop it into
+[01:34:39] the chat for your public comment time
+[01:34:49] and Dominic just dropped into the chat also a way that you can uh raise your
+[01:34:53] hand at this time and don't forget that uh Gregor Evans introduced his email
+[01:34:57] there. Interstitial work groups will be Mondays at noon through the month of
+[01:35:00] August.
+[01:35:04] And then just in case I'm also going to put into the chat for everybody if you
+[01:35:08] don't feel comfortable or you something comes up in the next couple hours where
+[01:35:13] you say oh I should have thought about and you wanted to include it in the
+[01:35:16] record um I just put the information about how to submit written public
+[01:35:20] comments. >> Thank you. Perfect. Thank you very much.
+[01:35:24] The email address there is also on the screen for you and in the chat box how
+[01:35:28] to submit uh your public comments to this meeting.
+[01:35:37] Okay Garcia in the chat this may be a bit off
+[01:35:41] topic so if it can't be covered in this meeting that's fine. Is there going to
+[01:35:44] be any active research in micro doing? Uh and so I'll kind of give just a quick
+[01:35:51] brief information on that. Um and so at this time the program is not uh this is
+[01:35:57] not a micro doing program which would mean home use outside of facilities that
+[01:36:03] are deemed unless it's for example through the rules. And so Dominic is on
+[01:36:08] and can you kind of share a little bit more about that?
+[01:36:11] >> Yeah, I I mean you kind of covered that right there Dan. Um but basically it's
+[01:36:15] the program has does not yet have the research funding and um so at this point
+[01:36:21] u unless there are other uh researchers who are out there who are looking into
+[01:36:26] micro doing which I know there are some around the country but the program
+[01:36:30] itself is not going to be doing that kind of research. Now again if down the
+[01:36:35] road there are funds uh in the research fund then we would be doing RFPs of
+[01:36:41] course to uh send that on out for that type of research and that is one of the
+[01:36:46] topics that has come up multiple times.
+[01:36:51] >> Thank you and Gregory Evans.
+[01:37:01] I care a lot about micro doing. Um this program is not designed for that. Um one
+[01:37:09] of the things that we can do is if we extend our screening information, we can
+[01:37:14] collect data points on um what that individual may have been doing outside
+[01:37:19] of the program indiv uh per personal work that they've been doing. people are
+[01:37:25] talking about disclosing um personal use um in their screening
+[01:37:30] data and um starting to collect information about that and if people end
+[01:37:36] up disclosing that during about their process of integration we can if the
+[01:37:42] department can allow for that type of um personal use disclosure data capturing
+[01:37:48] lots of complicated [laughter] uh areas stuff around this Um but if
+[01:37:55] there is a system that can be that can start to record um what people are doing
+[01:38:00] outside of the container that we are measuring um
+[01:38:09] [clears throat] essentially putting those in as baseline uh data points then
+[01:38:13] we can start to be create the framework for beginning to study some of that
+[01:38:20] stuff. So even though it's not really something that the program will guide
+[01:38:25] on, it may be something that people integrate with and that's not the
+[01:38:30] decision or the purview of the department. But if the data point is
+[01:38:33] collected, we can start to recognize patterns of efficacy. And I don't think
+[01:38:39] that we're more than a year or so away from
+[01:38:43] having the capacity in here in New Mexico or in other spaces for larger
+[01:38:48] micro doing studies. I look forward to that.
+[01:38:53] >> Thank you. >> Anybody else with public comment? Like I
+[01:38:58] said, please raise your hand and drop into the chat if you have anything.
+[01:39:07] Okay, not seeing any. I appreciate everybody's time today. Uh, thank you
+[01:39:12] very much for again coming to another Friday meeting with us and again I hope
+[01:39:16] to see lots of y'all back here on September 11th so that we can go over
+[01:39:20] the core extended data set framework and really appreciate your your time, your
+[01:39:25] attention, your comments and everything especially getting consensus around the
+[01:39:29] harm reduction quality improvement framework. So again, thank you very much
+[01:39:32] for all of your work on that and those that created the work and those that
+[01:39:36] voted on the work. So, thank you guys very much
+[01:39:39] >> and on behalf of the department, thank you as well. Um, just this was excellent
+[01:39:44] work and thank you everybody who's been involved.
+[01:39:49] So, I hope everybody has a great rest of your Friday and weekend.
+[01:39:53] >> Thanks everyone.
