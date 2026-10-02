@@ -337,12 +337,18 @@ a working record was written from an unofficial transcript, the Upstream column 
 
 | Missing here (gap id) | What rests on it | Upstream |
 |---|---|---|
-| Official minutes, any meeting (`gap-minutes`) | the June 26 motion's mover is attributed from a meeting-note summary | the department has posted none; the June 26 attribution rests on a meeting-note summary, not on the transcript |
-| June 12 and June 25 recordings or transcripts (`gap-june`) | statements attributed to those meetings; the documents they produced are held | the working records are `analysis/6-25-hearing-extraction.md` and `analysis/6-26-board-extraction.md`; no recording of June 12 is located |
-| July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | the working record is `analysis/eol-july16-committee-source.md`; no recording is located |
-| May 22 committee meeting, the full record (`gap-may22`) | nothing; the meeting is recorded as held | the department published a 13 minute recording under the title May 26, 2026; its captions are `source-text/recordings/2026-05-22-tae-gZJS4sPuacg.txt`, and `INDEX.csv` there states the basis for the date. No record of the rest of the meeting is held |
-| August 14 board meeting recording or transcript, and the set-aside notice (`gap-aug14`) | the set-aside of the July 23 publication, and the August 25 stated date | the working record, from the unofficial transcript, is `analysis/8-14-board-extraction.md` |
-| August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | the department recorded the meeting for posting. The working record, from the unofficial transcript, is `analysis/8-21-committee-extraction.md` |
+| Official minutes, any meeting (`gap-minutes`) | the June 26 motion's mover is attributed from a meeting-note summary | the department's recording of June 26 is in the register; its captions carry no speaker labels, so the attribution still rests on the meeting-note summary |
+| May 22 committee meeting, the full record (`gap-may22`) | nothing; the meeting is recorded as held | the department published a 13 minute recording under the title May 26, 2026; it is in the register, its captions are `source-text/recordings/2026-05-22-tae-gZJS4sPuacg.txt`, and `INDEX.csv` there states the basis for the date. No record of the rest of the meeting is held |
+| The notice setting aside the July 23 publication (`gap-aug14`) | the set-aside of the July 23 publication | sourced to how it was spoken of at the August 14 board meeting, whose recording is in the register; the working record is `analysis/8-14-board-extraction.md` |
+
+The gaps for the June 12, June 25, July 16, and August 21 recordings closed on October 1,
+2026, when the department's recordings were registered. What rests on those meetings was
+written from meeting notes or a live transcript before the recordings were published. The
+August 21 hour figures were checked against the captions that day. The quotations and
+attributions for those meetings, and everything on `specialization.html`, have not been
+reconciled with the captions; the working records are `analysis/6-25-hearing-extraction.md`,
+`analysis/6-26-board-extraction.md`, `analysis/eol-july16-committee-source.md`,
+`analysis/8-14-board-extraction.md`, and `analysis/8-21-committee-extraction.md`.
 
 **Copying one in is Event C** (Part 1). Put the PDF in `docs/documents/`, the searchable
 text in `source-text/`, add the register row and remove the gap in `tools/sync-record.py`
