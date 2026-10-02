@@ -1,4 +1,4 @@
-[00:00:04] Uh, you and I can do it between the two
+[00:00:02] Uh, you and I can do it between the two
 [00:00:04] of us.
 [00:00:05] >> Okay.
 [00:00:06] >> Yeah. Let me know how I can help. I'm
@@ -105,7 +105,7 @@
 [00:03:56] Martinez. I'm the deputy director at the
 [00:03:59] center for medical cannabis and
 [00:04:00] psilocybin. Glad to be here.
-[00:04:11] >> Great. and Jorge if you'll go ahead and
+[00:04:09] >> Great. and Jorge if you'll go ahead and
 [00:04:11] start unmuting. Thank you. [snorts]
 [00:04:14] >> Sure.
 [00:04:16] Brenda, your mic has been enabled.
@@ -118,7 +118,7 @@
 [00:04:32] familiar with um the culture and um I am
 [00:04:37] actually a graduate of NMSU and UNM and
 [00:04:41] the Southwestern College of Santa Fe.
-[00:04:49] >> Dan, your your mic has been unmuted.
+[00:04:47] >> Dan, your your mic has been unmuted.
 [00:04:50] Please unmute yourself.
 [00:04:52] >> Hello. It's been an honor to be uh able
 [00:04:55] to speak at some of these different
@@ -134,9 +134,9 @@
 [00:05:20] trying to help you guys with any
 [00:05:22] questions you have from somebody that's
 [00:05:24] been in the industry for a while.
-[00:05:31] Gregory, your mic has been enabled.
+[00:05:29] Gregory, your mic has been enabled.
 [00:05:31] Please unmute yourself.
-[00:05:39] >> Good morning.
+[00:05:36] >> Good morning.
 [00:05:39] It's cold and snowy.
 [00:05:42] Uh my name is Gregory Evans. I'm
 [00:05:44] independent researcher. Um
@@ -154,7 +154,7 @@
 [00:06:25] resistant depression or somebody having
 [00:06:27] acute anxiety may may respond to a
 [00:06:30] different chemical profile.
-[00:06:40] >> Eight, your mic has been uh enabled.
+[00:06:38] >> Eight, your mic has been uh enabled.
 [00:06:40] Please unmute yourself.
 [00:06:43] >> Good morning. I'm Kate Hawk. I'm in
 [00:06:45] Santa Fe. I'm going to as many of these
@@ -174,7 +174,7 @@
 [00:07:20] the Santa Fe Psychedelic Society
 [00:07:22] meetings here. Um just really happy to
 [00:07:24] be with you this morning. Thanks
-[00:07:33] >> James. Your mic has been enabled. Please
+[00:07:31] >> James. Your mic has been enabled. Please
 [00:07:33] unmute yourself.
 [00:07:34] >> Thanks Greg.
 [00:07:35] >> Thank you sir. Appreciate you. Dan,
@@ -206,7 +206,7 @@
 [00:08:32] but also are safe using it. So, hope
 [00:08:35] everybody's having a great, safe, warm
 [00:08:37] day. Take care.
-[00:08:45] Denali, your mic has been enabled.
+[00:08:43] Denali, your mic has been enabled.
 [00:08:45] Please unmute yourself.
 [00:08:47] Good morning everybody. Um grateful to
 [00:08:50] chair um and to the department. I'm a
@@ -228,7 +228,7 @@
 [00:09:32] the scope of this committee and what
 [00:09:34] your goals and hopes are. So, we'll be
 [00:09:36] listening attentively.
-[00:09:47] >> Katherine, your mic has been enabled.
+[00:09:45] >> Katherine, your mic has been enabled.
 [00:09:47] Please unmute yourself.
 [00:09:49] Hello and good morning. My name is
 [00:09:51] Katherine Waro. I am a licensed
@@ -243,7 +243,7 @@
 [00:10:16] grateful that we're all here. Thank you
 [00:10:18] everybody for your time and effort on
 [00:10:20] this project.
-[00:10:29] >> James, your mic has been enabled. Please
+[00:10:27] >> James, your mic has been enabled. Please
 [00:10:29] uh unmute yourself.
 [00:10:31] Hello and good morning everybody. My
 [00:10:33] name is James and I'm from Arizona and
@@ -265,7 +265,7 @@
 [00:11:12] reductionists as a team. So, I'm really
 [00:11:14] excited to learn from everybody and um
 [00:11:17] yeah, thank you very much for your time.
-[00:11:27] >> Shane, your mic has been enabled. Please
+[00:11:26] >> Shane, your mic has been enabled. Please
 [00:11:27] unmute yourself.
 [00:11:30] >> Yeah, my name is Shane McDaniel. I'm a
 [00:11:32] fifth generation New Mexican. Uh my
@@ -280,7 +280,7 @@
 [00:12:01] industry and I used chromatography a lot
 [00:12:03] in the semiconductor industry at Intel
 [00:12:06] and Rio Rancho. Um I'm also uh
-[00:12:18] recent he recently healed um
+[00:12:14] recent he recently healed um
 [00:12:18] from a bunch of different uh mental
 [00:12:21] health issues um from my gain. I went
 [00:12:24] down to Ambio uh in Mexico and received
@@ -315,12 +315,12 @@
 [00:13:36] >> I'll look into that, Dominic.
 [00:13:38] >> Thank you, Kathy.
 [00:13:40] >> Thank you, guys.
-[00:13:48] Desba, your mic has been enabled. Please
+[00:13:46] Desba, your mic has been enabled. Please
 [00:13:48] unmute yourself.
 [00:13:51] >> Uh, y I'm Desba and I am a part of the
 [00:13:54] psilocybin advisory board. Just hanging
 [00:13:58] out, listening with y'all. Thank you.
-[00:14:06] >> And with that, we do have an
+[00:14:05] >> And with that, we do have an
 [00:14:06] introduction in the chat from Tessa
 [00:14:08] Capel and it says, "Good morning
 [00:14:10] everyone. I am Tessa Capel with a PhD in
@@ -344,7 +344,7 @@
 [00:14:55] and have had a relationship with
 [00:14:56] psilocybin and indigenous ceremonies for
 [00:15:00] most of my life.
-[00:15:08] Great. Well, thank you everybody for the
+[00:15:06] Great. Well, thank you everybody for the
 [00:15:08] introductions. I see no other hands up
 [00:15:10] for introductions. So, I really
 [00:15:11] appreciate all of you being here today
@@ -504,7 +504,7 @@
 [00:20:44] So, thank you. And back to you, Dan. And
 [00:20:46] of course, people who uh thinking about
 [00:20:49] what the norms are.
-[00:21:01] I'm not seeing anything in the chat box.
+[00:20:59] I'm not seeing anything in the chat box.
 [00:21:01] So, I'll go ahead and if it might be
 [00:21:02] easier for people, just raise your hand
 [00:21:04] if you wanted to share a norm that you
@@ -602,7 +602,7 @@
 [00:24:39] um as we move forward and other
 [00:24:41] meetings, I would love to hear that as
 [00:24:43] well.
-[00:24:54] And I see a hand from Gregory Evans.
+[00:24:50] And I see a hand from Gregory Evans.
 [00:24:54] >> Gregory, your mic has been enabled.
 [00:24:56] Please unmute yourself to speak.
 [00:24:58] >> Dan, I'm having trouble kind of putting
@@ -661,7 +661,7 @@
 [00:26:57] committee with the different states
 [00:26:58] involved and see all members have a vote
 [00:27:00] on the committee.
-[00:27:06] be the uh I'm just kind of keeping some
+[00:27:04] be the uh I'm just kind of keeping some
 [00:27:06] notes here as I go on this one. So that
 [00:27:08] that way that's my homework is to kind
 [00:27:10] of take the norms that y'all are
@@ -686,7 +686,7 @@
 [00:27:48] everything and we can move on to the
 [00:27:49] next beat which would be kind of our our
 [00:27:51] bulk here.
-[00:28:01] I'm going to make one more uh kind of uh
+[00:27:58] I'm going to make one more uh kind of uh
 [00:28:01] announcement on this is that and Dominic
 [00:28:03] you put that slide back up that has the
 [00:28:05] email address uh for us as well because
@@ -821,9 +821,9 @@
 [00:32:54] you all to be able to look at them, take
 [00:32:56] a look at them, and come back and give
 [00:32:58] me some feedback on what you think.
-[00:33:06] And uh if Don, you might go to the next
+[00:33:03] And uh if Don, you might go to the next
 [00:33:06] slide there.
-[00:33:12] We also have a couple comments in the
+[00:33:10] We also have a couple comments in the
 [00:33:12] chat. You want me to read those?
 [00:33:14] >> Okay. Uh Denali had to step away, but
 [00:33:16] she'll be back in at 10 o'clock. back
@@ -857,7 +857,7 @@
 [00:34:22] put uh some links here that to take a
 [00:34:25] look at as well. Uh the next slide
 [00:34:27] please.
-[00:34:33] Then when we talk about code of ethics
+[00:34:31] Then when we talk about code of ethics
 [00:34:33] and equity, I've gathered a few uh tools
 [00:34:36] that I've found throughout as well. Uh
 [00:34:39] including APA's code of ethics to take a
@@ -874,7 +874,7 @@
 [00:35:02] the Colorado group that I really thought
 [00:35:05] was kind of important to to review and
 [00:35:07] to to come from. Next slide please.
-[00:35:16] Then when it comes to some of the uh
+[00:35:14] Then when it comes to some of the uh
 [00:35:16] information for patients and we're
 [00:35:18] screening informed consent. So there's
 [00:35:20] client services guide which really it
@@ -947,7 +947,7 @@
 [00:38:01] different adverse effects and a rating
 [00:38:04] scale across each one of those as well.
 [00:38:07] Uh, next slide, please.
-[00:38:16] And then I believe, yeah, this I believe
+[00:38:13] And then I believe, yeah, this I believe
 [00:38:16] is our last slide for the research. And
 [00:38:18] so to look at harm reduction education,
 [00:38:21] um some of the things that we've heard
@@ -998,7 +998,7 @@
 [00:40:02] uh, to to kind of be able to share. Open
 [00:40:05] up your mics if you need to raise your
 [00:40:06] hands and such.
-[00:40:14] >> Okay. And James, we do have or I'm
+[00:40:12] >> Okay. And James, we do have or I'm
 [00:40:14] sorry, Dan, we have uh James Hassobe has
 [00:40:17] actually included in the chat a an
 [00:40:20] extern external resource for drug
@@ -1035,7 +1035,7 @@
 [00:41:24] add, eliminate, edit, put notes on and
 [00:41:26] such like that from there. Any other
 [00:41:29] comments or thoughts from the committee?
-[00:41:47] A question out of the chat from Gregory
+[00:41:45] A question out of the chat from Gregory
 [00:41:47] Evans. Do we have any conversation
 [00:41:48] developing around grant funded or
 [00:41:50] private research programs that could
@@ -1050,7 +1050,7 @@
 [00:42:10] this presentation. I do have that as
 [00:42:11] kind of a future thought to think about.
 [00:42:14] So thank you.
-[00:42:27] Okay. And
+[00:42:24] Okay. And
 [00:42:27] I'll just kind of as a as a former
 [00:42:29] educator, I always do wait time. So I
 [00:42:31] always like to just pause for a little
@@ -1059,7 +1059,7 @@
 [00:42:37] thoughts together. So forgive me while I
 [00:42:39] just pause for just a moment here for
 [00:42:41] that reason.
-[00:42:52] And you can still think about this and
+[00:42:49] And you can still think about this and
 [00:42:52] comment on this, but I'd love to move on
 [00:42:53] to our next part that I'd like to share
 [00:42:56] with you, and that is some of the data
@@ -1141,7 +1141,7 @@
 [00:46:04] scaled score that we could use as a
 [00:46:06] baseline then for for the interactions
 [00:46:08] and the integration. Next slide please.
-[00:46:16] For session logistics this would be the
+[00:46:14] For session logistics this would be the
 [00:46:16] data elements that would be for the
 [00:46:18] actual session and so there would be a
 [00:46:20] one to many relationship. There would be
@@ -1223,7 +1223,7 @@
 [00:49:30] We have two more hands up and then some
 [00:49:32] comments in the in the chat. Uh I'll go
 [00:49:35] through the the hands up first.
-[00:49:43] Dan, your mic has been enabled. Please
+[00:49:41] Dan, your mic has been enabled. Please
 [00:49:43] unmute yourself to speak.
 [00:49:46] >> Um hello there. Um so on the dosing, um
 [00:49:51] am I am I understanding this correctly?
@@ -1373,10 +1373,10 @@
 [00:55:46] research purposes because they are going
 [00:55:48] to have pharmacologically distinct
 [00:55:50] mechanisms.
-[00:56:00] Thank you. And I appreciate the
+[00:55:58] Thank you. And I appreciate the
 [00:56:00] clarification on that one too. I've made
 [00:56:01] a note of that in here.
-[00:56:12] I think you're muted. Uh
+[00:56:08] I think you're muted. Uh
 [00:56:12] >> I think uh thank you.
 [00:56:16] Uh I'm going to try to keep this dosage
 [00:56:19] thing as it relates to research and
@@ -1455,7 +1455,7 @@
 [00:59:52] known species.
 [00:59:54] >> Thank you. Appreciate that.
 [00:59:57] >> And we have three more hands raised.
-[01:00:04] Denali, your mic has been enabled.
+[01:00:02] Denali, your mic has been enabled.
 [01:00:04] please unmute yourself.
 [01:00:07] >> Um, hi again everyone. I um had to step
 [01:00:11] out for a minute but think I'm following
@@ -1491,7 +1491,7 @@
 [01:01:26] understand. Um that's all I wanted to
 [01:01:29] contribute.
 [01:01:31] >> Thank you.
-[01:01:38] >> You want to read the you want to read
+[01:01:36] >> You want to read the you want to read
 [01:01:38] the chat before we go to the next
 [01:01:40] reader? I mean,
 [01:01:43] >> yeah, that would be perfect. Uh, I think
@@ -1512,7 +1512,8 @@
 [01:02:16] long-winded ramble. Also, yes to
 [01:02:18] adaptive, there is so much that is truly
 [01:02:20] unknown.
-[01:02:32] Uh, next we have we have Desba. Please
+[01:02:24] Okay.
+[01:02:28] Uh, next we have we have Desba. Please
 [01:02:32] un uh your mic has been enabled. Please
 [01:02:34] unmute yourself.
 [01:02:36] >> Hi. So, I was just trying to see if I
@@ -1565,7 +1566,7 @@
 [01:04:29] committees and what that would look like
 [01:04:30] for the future.
 [01:04:34] >> Beautifully said. Thank you very much,
-[01:04:40] >> James. Your mics has been enabled.
+[01:04:39] >> James. Your mics has been enabled.
 [01:04:40] Please unmute yourself to speak.
 [01:04:43] >> Thank you again, and I'll keep this one
 [01:04:45] simple. Um the word entourage comes to
@@ -1640,7 +1641,7 @@
 [01:07:23] list, that would be fantastic. I'll take
 [01:07:25] another beat here if there's some more
 [01:07:27] comments that came in in the chat.
-[01:07:37] I think Greg Evans has I have a whole
+[01:07:34] I think Greg Evans has I have a whole
 [01:07:37] database of analytics for multiple
 [01:07:39] chemists. Happy to share my research.
 [01:07:41] Great. send it to the medical psilocybin
@@ -1769,10 +1770,10 @@
 [01:12:24] any other thoughts comments things that
 [01:12:26] you want to um slings and arrows and
 [01:12:30] barbs at me or anything like Yeah,
-[01:12:43] I'll give again a little bit. Great.
+[01:12:41] I'll give again a little bit. Great.
 [01:12:43] Thank you very much, James. I see that
 [01:12:45] you've got your hand raised. Thank you,
-[01:12:54] >> James. Your mic has been en enabled.
+[01:12:52] >> James. Your mic has been en enabled.
 [01:12:54] Please unmute yourself to speak.
 [01:12:56] >> Thank you. Um I'm interested. Um I was
 [01:13:00] looking through SB 219 and there's no um
@@ -1810,7 +1811,7 @@
 [01:14:19] from session to session potentiality so
 [01:14:22] thanks for bringing that up I like that
 [01:14:24] comment so thank you very
-[01:14:37] and Shane I think has his hand up. Yeah.
+[01:14:34] and Shane I think has his hand up. Yeah.
 [01:14:37] Thank you.
 [01:14:38] >> Yeah. Um first just real quick Dominic I
 [01:14:41] sent you an email regarding my inability
@@ -1901,11 +1902,11 @@
 [01:18:09] committee is thinking about. So, thank
 [01:18:11] you. I appreciate that. Um, and I see
 [01:18:13] Brenda has her hand up.
-[01:18:20] Your mic's been enabled. Please unmute
+[01:18:18] Your mic's been enabled. Please unmute
 [01:18:20] yourself to speak.
-[01:18:31] >> Brenda, your mic has been enabled.
+[01:18:29] >> Brenda, your mic has been enabled.
 [01:18:31] Please unmute yourself to speak.
-[01:18:46] >> Brenda, if
+[01:18:45] >> Brenda, if
 [01:18:46] >> Okay, there we go. It wasn't working. My
 [01:18:48] chat's not working either. Um, thank
 [01:18:51] you, Dan, for having um all of this
@@ -1931,16 +1932,16 @@
 [01:19:48] you know a medical uh doctor there to
 [01:19:51] make sure that they're um able to take
 [01:19:54] the medicine.
-[01:20:03] Thank you. I believe
+[01:20:00] Thank you. I believe
 [01:20:03] >> there's one comment in the chat. Yep. Uh
 [01:20:05] James says, "I agree. Being a veteran
 [01:20:08] myself, wording does matter to a lot of
 [01:20:10] vet community."
 [01:20:11] >> Exactly.
 [01:20:14] >> Have hands up. We have one hand up.
-[01:20:28] Ben, your mic has been enabled. Please
+[01:20:26] Ben, your mic has been enabled. Please
 [01:20:28] unmute yourself to speak.
-[01:20:36] >> Yeah, Dan, thank you for the
+[01:20:35] >> Yeah, Dan, thank you for the
 [01:20:36] conversation. Uh, I'm curious about the
 [01:20:39] data collection and how that extends to
 [01:20:42] preparation
@@ -1993,7 +1994,7 @@
 [01:22:41] present but that is for another
 [01:22:43] committee.
 [01:22:44] >> Yes, thank you.
-[01:22:51] >> One more comment from Desba for the sake
+[01:22:48] >> One more comment from Desba for the sake
 [01:22:51] of the meeting proposing the board and
 [01:22:53] future marketing education. uh I'm
 [01:22:56] visual. I think a color-coded flowchart
@@ -2048,13 +2049,13 @@
 [01:24:56] you'll Donnie, if you go to the very
 [01:24:58] last slide of the deck and then back up
 [01:25:00] one.
-[01:25:06] There you go. So you're exactly right,
+[01:25:04] There you go. So you're exactly right,
 [01:25:06] James. I tried to include something in
 [01:25:08] there about what the setting type uh had
 [01:25:10] had looked like. Was a clinic, home,
 [01:25:13] retreat center, virtual, something like
 [01:25:14] that. So
-[01:25:24] okay. And so I would love to kind of hit
+[01:25:20] okay. And so I would love to kind of hit
 [01:25:24] the last phase. Uh so Don if you
 [01:25:26] wouldn't mind going to the very last
 [01:25:27] slide which is future discussions and so
@@ -2282,7 +2283,7 @@
 [01:33:51] because that would be a part of the
 [01:33:53] protocols and the process for the
 [01:33:56] overall treatment.
-[01:34:04] Okay, we have another hand up.
+[01:34:00] Okay, we have another hand up.
 [01:34:04] Gregory, your your mic has been enabled.
 [01:34:07] Please unmute yourself to speak.
 [01:34:09] >> Just need rambling again. Um, I actually
@@ -2328,7 +2329,7 @@
 [01:35:47] Betacarbolines are uh
 [01:35:51] hello pharmacologists who wants to chime
 [01:35:53] in. um [clears throat]
-[01:36:00] uh chemicals that work as MAI inhibitors
+[01:35:57] uh chemicals that work as MAI inhibitors
 [01:36:00] uh specifically like harm and harm where
 [01:36:04] there are reports of harm being found in
 [01:36:09] psilocybin containing mushroom biomass.
@@ -2361,11 +2362,11 @@
 [01:37:24] of the uh pharmarmacologists around that
 [01:37:28] those types of effects and get more
 [01:37:31] research uh up
-[01:37:47] and anybody else have their hands up? I
+[01:37:45] and anybody else have their hands up? I
 [01:37:47] don't see anybody else's. So, if you
 [01:37:50] would like to get in the queue, make
 [01:37:51] sure you raise your hand, please.
-[01:37:58] >> James, your mic has been enabled. Please
+[01:37:56] >> James, your mic has been enabled. Please
 [01:37:58] unmute yourself to speak.
 [01:38:00] >> Thank you. to kind of piggyback on uh
 [01:38:03] James Brown's earlier comment in regards
@@ -2409,7 +2410,7 @@
 [01:39:39] really talking about here is DMT." Just
 [01:39:41] saying.
 [01:39:43] Go back to the hands that are raised.
-[01:39:51] We have James Brown. Your mic has been
+[01:39:48] We have James Brown. Your mic has been
 [01:39:51] enabled. Please unmute yourself to
 [01:39:53] speak.
 [01:39:56] >> Thank you again. And this will be my
@@ -2462,7 +2463,7 @@
 [01:41:40] far as resources for for those
 [01:41:43] communities? And thank you so much. I'll
 [01:41:46] end it with that.
-[01:41:58] >> Denali, your mic has been enabled.
+[01:41:56] >> Denali, your mic has been enabled.
 [01:41:58] Please unmute yourself to speak.
 [01:42:02] >> [clears throat]
 [01:42:03] >> Um, thank you so much, uh, Chair
@@ -2505,7 +2506,7 @@
 [01:43:25] deeper dive on issues that are
 [01:43:26] identified when they are um that is my
 [01:43:31] only contribution. Thank you so much.
-[01:43:54] your mic has been enabled. Please unmute
+[01:43:52] your mic has been enabled. Please unmute
 [01:43:54] yourself to speak.
 [01:43:55] >> Hi. Yeah. Uh yeah, Denali. And then I
 [01:43:59] think that was kind of where I was going
@@ -2537,11 +2538,11 @@
 [01:45:04] everything else, how do we clean it up
 [01:45:05] and how do we maintain the flow of of of
 [01:45:07] this medicine to the rest of the state.
-[01:45:22] There's one comment in chat from
+[01:45:20] There's one comment in chat from
 [01:45:22] Gregory.
 [01:45:24] Excuse me. Plus one on that cross
 [01:45:26] committee dependency tracking.
-[01:45:39] Thank you very much. And uh I don't see
+[01:45:37] Thank you very much. And uh I don't see
 [01:45:39] any other hands raised, but I do want to
 [01:45:42] kind of let that kind of settle because
 [01:45:45] I do appreciate those comments,
@@ -2702,7 +2703,7 @@
 [01:51:43] that's going to be our our kind of beats
 [01:51:46] that we'll have at that time. So I hope
 [01:51:47] that helps.
-[01:51:54] There you go. Thank you Dominic for
+[01:51:53] There you go. Thank you Dominic for
 [01:51:54] putting in the chat so the medical
 [01:51:56] psilocybin and put RACI. So, our new
 [01:51:59] official acronym for this committee and

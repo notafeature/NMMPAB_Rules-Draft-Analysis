@@ -82,6 +82,25 @@ it) and in `tools/sync-record.py` (the SCHEDULED event), update the dropdown sub
 copies that live in hand-maintained prose and correct each one. The hearing date currently
 appears on nine pages outside the generated regions; see Part 2. Grep first, then edit.
 
+### Event E. The department publishes a meeting recording
+
+The department posts a recording weeks after the meeting. `tools/sync-recordings.py` reads
+the department's meeting records page, a search of its YouTube channel, and the channel's
+Medical Psilocybin playlist, and pulls the captions of any recording `INDEX.csv` does not
+list.
+
+| Touch | Why |
+|---|---|
+| `python3 tools/sync-recordings.py --list` | reports what is new and writes nothing |
+| `python3 tools/sync-recordings.py` | writes the `.vtt` and the `.txt` to `source-text/recordings/` and adds the index row |
+| `source-text/recordings/MISSING.md` | by hand, for a recording found only on the channel or a department link that resolves to no video; the tool reports both |
+| `CORRECTIONS` in the tool | where a title carries the wrong date: the date the record supports and the basis, which the tool writes into the index row |
+| `tools/sync-record.py` | where the recording closes or changes a gap: Event C |
+| `python3 tools/sync-recordings.py --check` | every index row has its two files, every `.txt` is what its `.vtt` produces, and the index is in order |
+
+A caption transcript is a copy of the recording. Where the two disagree, the recording
+governs, and a quotation from a transcript is the caption text, errors included.
+
 ---
 
 ## Part 2: The fact index
@@ -321,7 +340,7 @@ a working record was written from an unofficial transcript, the Upstream column 
 | Official minutes, any meeting (`gap-minutes`) | the June 26 motion's mover is attributed from a meeting-note summary | the department has posted none; the June 26 attribution rests on a meeting-note summary, not on the transcript |
 | June 12 and June 25 recordings or transcripts (`gap-june`) | statements attributed to those meetings; the documents they produced are held | the working records are `analysis/6-25-hearing-extraction.md` and `analysis/6-26-board-extraction.md`; no recording of June 12 is located |
 | July 16 End-of-Life Care committee record (`gap-july16`) | all of `specialization.html` and the specialization notes elsewhere | the working record is `analysis/eol-july16-committee-source.md`; no recording is located |
-| May 22 committee meeting record (`gap-may22`) | nothing; it is recorded as held and unposted | none exists; the department did not record it |
+| May 22 committee meeting, the full record (`gap-may22`) | nothing; the meeting is recorded as held | the department published a 13 minute recording under the title May 26, 2026; its captions are `source-text/recordings/2026-05-22-tae-gZJS4sPuacg.txt`, and `INDEX.csv` there states the basis for the date. No record of the rest of the meeting is held |
 | August 14 board meeting recording or transcript, and the set-aside notice (`gap-aug14`) | the set-aside of the July 23 publication, and the August 25 stated date | the working record, from the unofficial transcript, is `analysis/8-14-board-extraction.md` |
 | August 21 committee meeting recording or transcript (`gap-aug21`) | the August 21 meeting record, the October 2 anticipation, and the department's side-by-side | the department recorded the meeting for posting. The working record, from the unofficial transcript, is `analysis/8-21-committee-extraction.md` |
 

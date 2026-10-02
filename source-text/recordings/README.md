@@ -7,7 +7,7 @@ This folder holds the YouTube caption transcripts of every recording the New Mex
 Each recording has two files, named by meeting date, body, and YouTube video ID.
 
 - `.vtt` is the caption file as YouTube serves it.
-- `.txt` is the same captions as plain text, one line per cue in the form `[HH:MM:SS] text`, with the overlapping cues that YouTube auto-captions produce removed.
+- `.txt` is the same captions as plain text, one line per caption line in the form `[HH:MM:SS] text`, stamped with the start of its cue. Automatic captions served as rolling captions show each line twice, once as it is spoken and once above the next line; the repeat is dropped on an exact match and nothing else is removed. `tools/sync-recordings.py` makes every `.txt` from its `.vtt`, and its `--check` fails if one no longer matches.
 
 `INDEX.csv` lists every recording: meeting date, body, YouTube title, video ID, watch URL, the department's redirect URL where one exists, upload date, duration in seconds, whether the captions are manual or automatic, caption language, the text file, and notes. `MISSING.md` lists the one department link that resolves to no video and the five recordings found on the channel but not on the department's page.
 
@@ -23,4 +23,6 @@ The recording itself is the public record. These files are a searchable copy of 
 
 ## Provenance
 
-Pulled from YouTube on October 1, 2026 with yt-dlp, captions only, no video or audio. The department's page and channel were read the same day. The yt-dlp metadata files were not kept; `INDEX.csv` carries the dates and durations taken from them.
+Pulled from YouTube on October 1, 2026 with yt-dlp, captions only, no video or audio. The department's page and channel were read the same day. The yt-dlp metadata files were not kept; `INDEX.csv` carries the dates and durations taken from them. `tools/sync-recordings.py` pulls recordings published after that date.
+
+A file is named by the date of its meeting. One title carries the wrong date: the Training and Education Committee recording titled May 26, 2026 is the meeting of May 22, 2026, and its index row states the basis.

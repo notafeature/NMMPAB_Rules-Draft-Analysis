@@ -229,7 +229,7 @@
 [00:17:28] take away? What's too long? What's not enough? And then we um refine what we
 [00:17:33] do.
 [00:17:37] And the next slide. So again, like with everything, we need safeguards. So this
-[00:17:43] is something we all need to keep in mind. We want to have supervised
+[00:17:43] this is something we all need to keep in mind. We want to have supervised
 [00:17:46] practicum where we have those hours of observ observed sessions with patients.
 [00:17:52] Um we want some collaborative oversight. Um so nobody operates in isolation
 [00:17:57] obviously and then we want to make sure this is really uh thought of as
@@ -278,7 +278,7 @@
 [00:21:34] permission to do with with trainees or for people in depression and not have
 [00:21:39] experience with working in end of life care And so that was on the slide which
 [00:21:43] Jen mentioned having um supervised um supervised practicum and again we're
-[00:21:49] somewhat waiting for the overall model to develop but you know in the
+[00:21:49] we're somewhat waiting for the overall model to develop but you know in the
 [00:21:53] discussions that we've had as a committee the idea was that people
 [00:21:57] should have go through do a practicum um with people potentially with attendees
 [00:22:03] then move on and um be doing either as a co-f facilitator or working more
@@ -290,7 +290,7 @@
 [00:22:31] working with end of life care and we actually asked Mary to come not to do a
 [00:22:35] presentation but just to you know weigh in if she has any thoughts or comments
 [00:22:39] about um you know about the areas of training things we might be missing and
-[00:22:44] you know that that difficult to answer question about how much training
+[00:22:44] and you know that that difficult to answer question about how much training
 [00:22:48] is needed and optimal. Mary Mary just to any thoughts at this
 [00:22:53] point in the discussion
 [00:23:03] or
@@ -318,7 +318,7 @@
 [00:24:56] training like a couple of hours of training and so in that situation um you
 [00:25:01] know as a committee we're recommending that people get a separate training as
 [00:25:06] people develop New Mexico trainings and as it's one of the four competencies um
-[00:25:12] I think one approach would be to actually include that you know 15 hours
+[00:25:12] um I think one approach would be to actually include that you know 15 hours
 [00:25:16] or or what is decided on is recommended in the in there. So there's there'd be a
 [00:25:21] range of people there and I think there's also a range of people who are
 [00:25:25] um that are therapists or clinicians as far as how much training you have.
@@ -358,7 +358,7 @@
 [00:28:33] and I wasn't allowing myself any break and I'd go to sleep you know
 [00:28:39] I'd do long days of all these intense conversations
 [00:28:44] and then I go home at night and I dream and get up and start the next day and
-[00:28:49] I'm going to say this because um I don't want anyone to get to this I and
+[00:28:49] and I'm going to say this because um I don't want anyone to get to this I and
 [00:28:56] I wasn't saying anything. I wasn't saying I can't do it and I'm going to
 [00:29:00] back off. And I I really started to not do well and I went to my doctor and I
 [00:29:07] said I need help and I'm not sleeping well. told him what was going on. He
@@ -386,7 +386,7 @@
 [00:31:14] can't go away. And I went to my supervisor and I told her that and she
 [00:31:19] sat me down and she said, "Mary, I just begun this
 [00:31:24] work." She said, "Mary, listen to me. You're going on your vacation. This is
-[00:31:30] I don't I can't remember her exact words, but basically you you can't
+[00:31:30] this is I don't I can't remember her exact words, but basically you you can't
 [00:31:37] get that invested that um you know I was just overboard with that. And so it was
 [00:31:44] a huge teaching moment for me to be able to have that separation and really to
 [00:31:51] pay attention to that because I know you all as caregivers as doing all work in
@@ -446,7 +446,7 @@
 [00:36:55] TDD specialization and I think as we continue to add beyond PTSD and all the
 [00:37:01] existing models that we have, we should institute some sort of like you've done
 [00:37:07] your general container, now you want to specialize in this
-[00:37:13] type of work with this type of patient. I think that having these
+[00:37:13] this type of work with this type of patient. I think that having these
 [00:37:18] specializations and deciding what type of so if you have somebody that's high
 [00:37:23] risk they or maybe maybe we analyze what what types of varity the individual
 [00:37:31] patient is coming in with and maybe there's a container where a generalist
@@ -463,7 +463,7 @@
 [00:38:23] regard to end of life as far as for that training. Um and uh and I think that
 [00:38:28] would really be up to the the provider to go through and do that just as what
 [00:38:34] happens now with many providers in different other other different
-[00:38:38] areas. Um and then um as far as for the practicum side that really is
+[00:38:38] different areas. Um and then um as far as for the practicum side that really is
 [00:38:45] where with the educational programs where they arrange for those practicums.
 [00:38:49] So they could do that where they are arranging if somebody is looking at
 [00:38:53] wanting to specialize with regard to end of life where they do that in situations
@@ -634,7 +634,7 @@
 [00:53:27] grows it's going to be like a lighter touch on each of those things. So like
 [00:53:32] do we have majors like can I be go into a program am I going to major in end of
 [00:53:38] life with a minor in PTSD or you know like so just kind of fleshing out your
-[00:53:45] request and question there. Um, I think I would sit in the camp of keeping
+[00:53:45] your request and question there. Um, I think I would sit in the camp of keeping
 [00:53:50] them outside of the core. Like I would like the core to be as as
 [00:53:56] robust as possible and specialties to be outside of that. Personally,
 [00:54:02] >> Greg, I'd be happy to share my my thoughts on that. I I think that we have
@@ -707,7 +707,7 @@
 [00:59:39] acuity, then how you know that seems like that might drive some of the
 [00:59:44] decision- making about who can be in the room and who's responsible. So, those
 [00:59:48] are my comments. Thank you.
-[00:59:57] Jamie. Christine, your mic's been enabled.
+[00:59:57] Thank you, Jamie. Christine, your mic's been enabled.
 [01:00:03] >> Hi all. Thank you so much, Jen. That was great. Hi, Mary and Mike. Mary, good to
 [01:00:09] hear you. I guess um this has been a really great and thoughtful
 [01:00:12] conversation. Certainly raises a lot more questions than um I know I had
@@ -833,7 +833,7 @@
 [01:12:26] But so are you going to have two um will there be two facilitators for each
 [01:12:32] patient?
 [01:12:36] >> Mary, this is Larry. There's um there's discussion of different models. Um, one
-[01:12:41] model would was to have and and the terminology may be different than in
+[01:12:41] one model would was to have and and the terminology may be different than in
 [01:12:45] other states, but to have um like one licensed provider and have another
 [01:12:50] person who um we call the spaceholder that that may be more of a a hospice
 [01:12:54] volunteer with 50 hours of training. But we're trying to look at ways to make it
@@ -916,7 +916,7 @@
 [01:20:04] Mary that that that your study, the person
 [01:20:09] who's doing the study doesn't have the capacity to be with that person 6
 [01:20:14] months, 8 months, 1 year, 5 years later as they're continuing to integrate those
-[01:20:20] experiences into their daily life through practice and daily activities.
+[01:20:20] those experiences into their daily life through practice and daily activities.
 [01:20:25] And that that inte that integration process when we when you open up the
 [01:20:30] word integration and and extrapolate it into daily practice and community
 [01:20:36] building and relationships that support their betterness, their wellness, their
@@ -1077,7 +1077,7 @@
 [01:35:03] Thank you, Greg.
 [01:35:13] >> Can Mary be? >> Yeah.
 [01:35:20] Um well, first I want to thank you all for your all your um comments and and
-[01:35:25] um what you're bringing into this, Greg and Jamie and Chris and Michael and
+[01:35:25] and um what you're bringing into this, Greg and Jamie and Chris and Michael and
 [01:35:31] Larry and and everyone Dominic. Um, I'm going to just jump into this
 [01:35:37] because as um, Greg was brought up, the um, caregiver support person, I just it
 [01:35:45] was almost every single one of the caregivers in our study at some point
@@ -1106,7 +1106,7 @@
 [01:38:03] working with the plan for training for for practicum. But um I I think all the
 [01:38:10] comments that hear about models that support presence and continuity and I
 [01:38:16] think we need to keep that in our dialogue here and um you know look at
-[01:38:21] innovative models in the state. Um just to talk about something in that
+[01:38:21] look at innovative models in the state. Um just to talk about something in that
 [01:38:27] realm. Um we are looking at the um potential for a a small pilot at UN M
 [01:38:32] that would actually treat both the caregiver and the end of life person. Um
 [01:38:37] it came up here in the past that that wasn't currently covered under the state

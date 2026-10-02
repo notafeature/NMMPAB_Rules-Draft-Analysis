@@ -1,4 +1,4 @@
-[00:00:04] Okay, the meeting has started. So, the
+[00:00:02] Okay, the meeting has started. So, the
 [00:00:04] recording has started. I will admit
 [00:00:06] everybody uh who is in the waiting room.
 [00:00:08] Please remember while we are admitting
@@ -65,7 +65,7 @@
 [00:02:33] committee and I'm here to um you know
 [00:02:37] help guide this along. Can we get to the
 [00:02:39] next slide?
-[00:02:54] So thank you again for um attending this
+[00:02:50] So thank you again for um attending this
 [00:02:54] meeting. So what this meeting is serving
 [00:02:56] to do is looking at the community input
 [00:02:59] from last meeting on dosage levels.
@@ -88,7 +88,8 @@
 [00:03:35] All right. And then Jorge if you
 [00:03:37] wouldn't mind pulling up those community
 [00:03:39] input dosage categories.
-[00:04:13] And I've also provided it in the chat so
+[00:04:02] Perfect.
+[00:04:09] And I've also provided it in the chat so
 [00:04:14] everyone has access to um the document.
 [00:04:18] But basically what I'm going over is
 [00:04:19] just the compilation of what we received
@@ -114,20 +115,20 @@
 [00:05:16] comments on um the mini dose category
 [00:05:19] whether it needs to be changed, updated
 [00:05:22] or just general thoughts.
-[00:05:32] And for anybody not sure on how to raise
+[00:05:30] And for anybody not sure on how to raise
 [00:05:32] your hand to speak, I have put those
 [00:05:33] instructions in the chat.
-[00:05:50] James, I see your hand is up.
+[00:05:47] James, I see your hand is up.
 [00:05:50] I'm getting your microphone unmuted
 [00:05:52] here.
 [00:05:55] Okay, James, you are unmuted.
-[00:06:01] >> Afternoon everyone and Ian, uh, thank
+[00:05:59] >> Afternoon everyone and Ian, uh, thank
 [00:06:01] you again for being the chair here. Um,
 [00:06:03] just a couple quick comments. I like
 [00:06:06] where we're sitting with this again, and
 [00:06:08] I'm assuming that this is just a
 [00:06:10] one-time dose, right? So,
-[00:06:18] the comments, but that's that's kind of
+[00:06:17] the comments, but that's that's kind of
 [00:06:18] where I sit with this when I look at it
 [00:06:20] right now. And I I do like the
 [00:06:22] conversion and uh that that speaks to me
@@ -135,7 +136,7 @@
 [00:06:28] used to using in Oregon and stuff. It's
 [00:06:30] right there. I think we start with that.
 [00:06:32] So that's that's my thought. Thank you.
-[00:06:42] >> All righty. So with no other comments,
+[00:06:39] >> All righty. So with no other comments,
 [00:06:42] we will go ahead and go to talk about
 [00:06:44] the threshold psychedelic dose. Um this
 [00:06:48] is on the end where maybe the provider
@@ -152,10 +153,10 @@
 [00:07:21] It's dosage range is between 4 to 6.9
 [00:07:25] mtp roughly equal to 5.6 to 9.6
 [00:07:28] milligrams of psilocybin.
-[00:07:36] And I will now open to any comments,
+[00:07:33] And I will now open to any comments,
 [00:07:36] questions, concerns on the threshold
 [00:07:38] dose.
-[00:07:58] All righty. With no comments, we can go
+[00:07:56] All righty. With no comments, we can go
 [00:07:58] ahead and move on to what I would
 [00:08:00] consider the most mainstream of the
 [00:08:02] approaches. It is between 7 to 21.9
@@ -177,7 +178,7 @@
 [00:08:37] I will open any comment questions
 [00:08:39] concerns on the moderate psychedelic
 [00:08:41] dose.
-[00:08:52] All right, seeing none, we can go ahead
+[00:08:51] All right, seeing none, we can go ahead
 [00:08:52] and move on to that highintensity
 [00:08:54] psychedelic dose. Chris has his hand up.
 [00:08:57] >> Oh, Chris
@@ -203,7 +204,7 @@
 [00:09:50] repetitive psychedelic from each of the
 [00:09:52] dosage and I appreciate your comment. I
 [00:09:55] also see James has his hand up.
-[00:10:03] >> Yeah. And just one comment was I I just
+[00:10:01] >> Yeah. And just one comment was I I just
 [00:10:03] don't see administration length time. I
 [00:10:06] didn't know if we needed to add that
 [00:10:07] somewhere into here or what's your
@@ -237,15 +238,15 @@
 [00:11:16] could be included here, we could
 [00:11:18] definitely add it. Um, but in my head I
 [00:11:22] had deferred it to that committee.
-[00:11:29] >> Gregory Evans, your mic has been
+[00:11:27] >> Gregory Evans, your mic has been
 [00:11:29] unmuted.
-[00:11:38] Um, I'm curious why you're hitting 22
+[00:11:33] Um, I'm curious why you're hitting 22
 [00:11:38] milligrams as the ceiling of the
 [00:11:41] moderate dose
 [00:11:43] as opposed to like 18, which would be
 [00:11:46] kind of your classic dose category. It's
 [00:11:50] not a challenge, just a curiosity.
-[00:12:02] Oh, so I had provided I always prefer to
+[00:11:59] Oh, so I had provided I always prefer to
 [00:12:02] provide a little bit of wiggle room in
 [00:12:04] the event that someone has, you know,
 [00:12:06] different gut biomes and other things
@@ -274,7 +275,7 @@
 [00:13:05] and in an hour you have an opportunity
 [00:13:07] to updose 2 grams. Is that what you're
 [00:13:09] saying?
-[00:13:17] >> That would be my expectation with this.
+[00:13:13] >> That would be my expectation with this.
 [00:13:17] Um, that would of course impact things
 [00:13:19] like you would have to reset your
 [00:13:21] administration clock for when they would
@@ -283,15 +284,15 @@
 [00:13:32] >> All right. Um, have you I mean how many
 [00:13:34] people in the room have done a dose that
 [00:13:37] high?
-[00:13:49] I see you, Chris.
+[00:13:46] I see you, Chris.
 [00:13:49] Copy that. Yeah, I'm not challenging it.
 [00:13:50] I just think that we're a little bit
 [00:13:52] outside of standard scoping on that. Um,
 [00:13:56] but yeah, I yield.
-[00:14:02] >> So, yeah, and I would be okay with
+[00:14:01] >> So, yeah, and I would be okay with
 [00:14:02] setting that MTP down to 18 if that is
 [00:14:05] the consensus.
-[00:14:11] And then Jamie had
+[00:14:10] And then Jamie had
 [00:14:11] >> just want to be clear, I'm not
 [00:14:12] specifically asking for that.
 [00:14:14] >> Okay,
@@ -312,9 +313,9 @@
 [00:14:50] of style for each one. But it could be,
 [00:14:53] you know, decided later again, but just
 [00:14:55] thoughts.
-[00:15:02] >> All right. Thank you.
+[00:14:59] >> All right. Thank you.
 [00:15:02] And Gregory.
-[00:15:09] Greg, Gregory, your mic is enabled.
+[00:15:06] Greg, Gregory, your mic is enabled.
 [00:15:09] >> Interesting thought. Like I think I saw
 [00:15:11] Kate mention uh the leeway. What if
 [00:15:15] these ranges over overlapped, right?
@@ -338,9 +339,9 @@
 [00:16:07] accommodate. So I would actually support
 [00:16:10] that heavily um if again that's what the
 [00:16:14] consensus is on.
-[00:16:24] I think it's worth exploring. I'll draw
+[00:16:23] I think it's worth exploring. I'll draw
 [00:16:24] a picture.
-[00:16:30] Uh Dominic.
+[00:16:28] Uh Dominic.
 [00:16:30] >> Yeah. Good afternoon everybody. I just
 [00:16:33] um wanted to mention to remember that
 [00:16:36] for this particular committee and what's
@@ -393,7 +394,7 @@
 [00:18:39] of leeway to to breathe and kind of do
 [00:18:41] their job is kind of where I was going
 [00:18:42] with that. But uh James had his hand up.
-[00:18:51] >> Ian, uh just a thought on this too just
+[00:18:48] >> Ian, uh just a thought on this too just
 [00:18:51] to get clarity
 [00:18:53] with the moderate range and the high
 [00:18:55] range. Are we saying again that this is
@@ -448,9 +449,9 @@
 [00:21:13] little bit still within a safe range.
 [00:21:15] But I do appreciate your input.
 [00:21:18] Um, Nathan,
-[00:21:30] you've been uh your mic has been
+[00:21:28] Nathan, you've been uh your mic has been
 [00:21:30] enabled.
-[00:21:45] Uh just as a reminder, um it once we
+[00:21:42] Uh just as a reminder, um it once we
 [00:21:45] enable your microphone from the
 [00:21:47] Department of Health site, you just need
 [00:21:49] to unmute. Oh, there you go, Nathan.
@@ -477,23 +478,25 @@
 [00:22:47] minimize adverse um, instances.
 [00:22:51] Great. Thank you.
 [00:22:55] Any
-[00:23:10] Um I'm sorry Ian. I'm not sure if we've
+[00:23:00] other hands
+[00:23:04] and Chris?
+[00:23:08] Um I'm sorry Ian. I'm not sure if we've
 [00:23:10] gotten to the high high dose yet. Um if
 [00:23:14] we haven't, I apologize, but this
 [00:23:17] appears to me that we're capping our
 [00:23:19] dose limit at some point. Is that the
 [00:23:22] case?
-[00:23:30] Yes. So, I had originally had um in our
+[00:23:27] Yes. So, I had originally had um in our
 [00:23:30] last meeting a
 [00:23:32] dosage that just said um
 [00:23:36] I believe it was
-[00:23:43] I there was no maximum. It just said
+[00:23:40] I there was no maximum. It just said
 [00:23:43] above 50. Um and then overwhelmingly the
 [00:23:48] community input was to set that
 [00:23:50] established cap range at 50 mg of
 [00:23:54] psilocybin. Um so that's what is
 [00:23:57] included in this document.
-[00:24:07] >> So that's already been determined
+[00:24:06] >> So that's already been determined
 [00:24:07] through the committee that that cap
 [00:24:11] >> that cap has not been determined through
 [00:24:13] the committee. We have not had an
@@ -503,7 +506,7 @@
 [00:24:22] is just an elomeration of what the
 [00:24:24] community had said and that's why we're
 [00:24:27] discussing it today.
-[00:24:35] Yeah, I I think I would
+[00:24:31] Yeah, I I think I would
 [00:24:35] recommend that we not have a cap on it
 [00:24:38] because again with people that are
 [00:24:39] taking SSRIs might need much higher
@@ -518,7 +521,7 @@
 [00:25:05] some other method where people could
 [00:25:08] receive higher doses um perhaps with
 [00:25:11] extra screening.
-[00:25:17] >> Yeah, I do appreciate that. Um what I'm
+[00:25:15] >> Yeah, I do appreciate that. Um what I'm
 [00:25:17] going to go ahead and do is just read
 [00:25:19] out the highintensity dose because I
 [00:25:21] think that has um created a lot of
@@ -549,7 +552,7 @@
 [00:26:29] love to review that those conversations.
 [00:26:32] Um I'm very much
 [00:26:34] would uh
-[00:26:42] try to not regulate the top end. I mean,
+[00:26:39] try to not regulate the top end. I mean,
 [00:26:42] what you're looking at here is like two
 [00:26:44] grams of of Zaps could easily exceed
 [00:26:49] that dosage. And you know, like there's
@@ -566,7 +569,7 @@
 [00:27:19] kind of they're different than ours. And
 [00:27:22] we have this really unique container
 [00:27:24] where we can experiment with very
-[00:27:33] um yeah, measurable
+[00:27:30] um yeah, measurable
 [00:27:34] uh container where we can measure
 [00:27:35] things. So, I don't know. I'm with I'm
 [00:27:37] very much with Chris on that. So that's
@@ -628,7 +631,7 @@
 [00:29:43] recommended limits as opposed to hard
 [00:29:45] limit would probably be best.
 [00:29:48] >> Thank you, Nathan. Chris, you're next.
-[00:29:54] Yeah, I just wanted to u correct one
+[00:29:52] Yeah, I just wanted to u correct one
 [00:29:54] thing. I'm reasonably sure. So, Oregon
 [00:29:58] did put a limit on it and I know that's
 [00:29:59] created some some issues for them, but
@@ -638,7 +641,7 @@
 [00:30:12] many
 [00:30:14] uh negative outcomes as a result of
 [00:30:16] that.
-[00:30:22] And then Dominic has a clarifier on
+[00:30:20] And then Dominic has a clarifier on
 [00:30:22] that.
 [00:30:23] >> Well, I actually have a recommendation.
 [00:30:26] Um, and what I would recommend is maybe
@@ -655,7 +658,8 @@
 [00:30:54] but create a separate category and not
 [00:30:58] actually fully capping it but still
 [00:31:00] providing some guidance.
-[00:31:15] >> Um, I'm in support with Chris and
+[00:31:09] James, you may unmute yourself.
+[00:31:13] >> Um, I'm in support with Chris and
 [00:31:15] Dominic and Gregory and the rest of the
 [00:31:18] group as far as another category is
 [00:31:20] needed. Um, but I think that category 2
@@ -699,11 +703,12 @@
 [00:32:46] allowed to have this because of a
 [00:32:48] blunting or other circumstantial.
 [00:32:51] Thank you.
-[00:33:08] >> Gregory, you may unmute yourself.
+[00:33:04] >> Gregory, you may unmute yourself.
 [00:33:08] >> Uh, Ian, just a math
 [00:33:11] Uh note on high intensity range 22 to 36
 [00:33:15] MTP that should be 30.6
-[00:33:29] Thank you. I have edited it now and it
+[00:33:21] not 36.
+[00:33:27] Thank you. I have edited it now and it
 [00:33:29] was a typo.
 [00:33:31] Yeah.
 [00:33:33] Yeah. Cool. Thanks. Just
@@ -718,7 +723,7 @@
 [00:33:55] to remove intensity and dosage range as
 [00:33:58] it is very subjective and based on so
 [00:34:00] many variables.
-[00:34:12] All righty. So I have
+[00:34:09] All righty. So I have
 [00:34:12] So
 [00:34:15] if we added the other dosage
 [00:34:18] um category, it would be a dosage that's
@@ -726,10 +731,11 @@
 [00:34:25] a dosage that is not listed in the other
 [00:34:28] categories is used. Then the department
 [00:34:31] shall review
-[00:34:37] then it should be permitted under
+[00:34:35] then it should be permitted under
 [00:34:37] department review or what are y'all's
 [00:34:39] thoughts on that
-[00:34:52] >> Yeah, I I don't think that that should
+[00:34:45] >> Chris?
+[00:34:49] >> Yeah, I I don't think that that should
 [00:34:52] be something the department has to
 [00:34:53] review in every case. I um can't
 [00:34:57] remember the gentleman's name earlier,
@@ -748,7 +754,8 @@
 [00:35:31] um evaluate outcomes. Maybe I didn't use
 [00:35:33] the right words. Um but thank you. Yeah.
 [00:35:36] Yeah, that makes sense.
-[00:35:50] >> And I'm with Chris again. And that's
+[00:35:45] >> James, you may unmute yourself.
+[00:35:49] >> And I'm with Chris again. And that's
 [00:35:50] what I was trying to say earlier just to
 [00:35:52] clarify again was the review would be
 [00:35:54] conducted by the practitioner, the
@@ -773,7 +780,8 @@
 [00:36:43] categories is used, the department shall
 [00:36:45] review
 [00:36:47] um a high dosage usage.
-[00:37:06] I was
+[00:36:55] And Gregory, you can unmute yourself.
+[00:37:03] I was
 [00:37:06] I would be interested in including in
 [00:37:08] the per um
 [00:37:11] some
@@ -783,7 +791,7 @@
 [00:37:23] than
 [00:37:24] that can speak to how that could be
 [00:37:27] included?
-[00:37:39] And Ian uh wrote in the chat, "Any
+[00:37:35] And Ian uh wrote in the chat, "Any
 [00:37:39] administered dose exceeding the
 [00:37:41] highintensity dose range shall require a
 [00:37:44] psychedelic utilization review.
@@ -791,7 +799,7 @@
 [00:37:49] the freedom to use this. However, they
 [00:37:52] should report to the department on
 [00:37:54] outcomes.
-[00:38:05] Sorry. And that was supposed to not be
+[00:38:03] Sorry. And that was supposed to not be
 [00:38:05] freedom to use this. It was freedom to
 [00:38:07] use um the higher dose. However, they
 [00:38:09] should report to the department on
@@ -799,7 +807,7 @@
 [00:38:13] does
 [00:38:15] so with that other dosage included, does
 [00:38:18] anyone have anything else we should add?
-[00:38:27] Uh yeah, sorry if I can if I'm allowed
+[00:38:25] Uh yeah, sorry if I can if I'm allowed
 [00:38:28] to finish the Yeah, ego dissolution
 [00:38:31] inventory. Dominic just put it in there.
 [00:38:34] Um I think this is really valuable for
@@ -821,7 +829,7 @@
 [00:39:18] a lot of ideas, but this could help
 [00:39:20] define some of that stuff um if we
 [00:39:24] measure it.
-[00:39:35] So, are you recommending to have us
+[00:39:32] So, are you recommending to have us
 [00:39:35] check the EDI for um
 [00:39:39] all dosages or just for the higher one?
 [00:39:44] I mean, I think all of them honestly,
@@ -836,9 +844,9 @@
 [00:40:08] level research, that would be
 [00:40:11] great. Give me the keys
 [00:40:14] to read all that.
-[00:40:22] >> All righty. And everyone else's thoughts
+[00:40:18] >> All righty. And everyone else's thoughts
 [00:40:22] on the EDI.
-[00:40:37] Okay. Um, so I can definitely add it to
+[00:40:34] Okay. Um, so I can definitely add it to
 [00:40:37] the other
 [00:40:39] dosage category. I would feel most
 [00:40:42] comfortable with that. That way we're
@@ -849,7 +857,8 @@
 [00:40:55] respective disorder. So would you be in
 [00:40:59] support of it for just the other doses?
 [00:41:03] All
-[00:41:27] Kate added to the chat, I appreciate the
+[00:41:13] right. If that was directed at me. Yes.
+[00:41:25] Kate added to the chat, I appreciate the
 [00:41:27] balance of research and bio bureaucracy.
 [00:41:31] And Chris gave a thumbs up.
 [00:41:34] All righty. Well then I think we have
@@ -862,7 +871,7 @@
 [00:41:56] you guys a little bit to also just
 [00:41:58] review it. I don't expect you to read at
 [00:42:00] the speed of light.
-[00:44:08] All righty. And I see Gregory with his
+[00:44:06] All righty. And I see Gregory with his
 [00:44:08] hand up.
 [00:44:11] Um, I would just consider changing
 [00:44:13] should to shall
@@ -870,11 +879,11 @@
 [00:44:17] less soft
 [00:44:20] based if it's a requirement.
 [00:44:24] But yeah, TBD.
-[00:44:34] All right. And should has been updated
+[00:44:33] All right. And should has been updated
 [00:44:34] to shall
-[00:45:43] All righty. So, I will now turn over to
+[00:45:40] All righty. So, I will now turn over to
 [00:45:43] Nathan.
-[00:45:50] >> Hey, I'm reading that that section about
+[00:45:48] >> Hey, I'm reading that that section about
 [00:45:50] other dosage. I'm curious. It seems like
 [00:45:52] why we're calling out the ego
 [00:45:54] dissolution inventory in particular. Um,
@@ -884,7 +893,7 @@
 [00:46:02] Yeah, it feels like that that's that
 [00:46:04] yeah, that's been called out for some
 [00:46:06] reason.
-[00:46:14] >> Um, since it was Gregory's idea, I will
+[00:46:12] >> Um, since it was Gregory's idea, I will
 [00:46:14] let him speak on it.
 [00:46:17] Um, my thinking on that is,
 [00:46:22] uh, back to James and Chris kind of
@@ -918,7 +927,7 @@
 [00:47:49] understand where that moving target is,
 [00:47:52] if that makes sense. I got you. That
 [00:47:54] makes a lot of sense. Thank you.
-[00:48:03] Dominic.
+[00:48:01] Dominic.
 [00:48:03] >> Yeah, thank you, Ian and Greg. uh as you
 [00:48:07] were talking about that that made me
 [00:48:09] really think about um you know the the
@@ -969,25 +978,28 @@
 [00:50:11] are you guys ready for a vote? It
 [00:50:14] doesn't look like we have much more
 [00:50:15] conversation.
-[00:50:20] First, if anyone wants to speak, please
+[00:50:19] First, if anyone wants to speak, please
 [00:50:20] raise your hand.
-[00:50:26] All right. So, we'll go ahead and move
+[00:50:24] All right. So, we'll go ahead and move
 [00:50:26] to a vote. Please uh display the screen
 [00:50:29] with the voting hand for me.
-[00:50:41] And to be clear on what we are voting
+[00:50:38] And to be clear on what we are voting
 [00:50:41] on, it is this exact language.
-[00:50:56] with the EDI portion strike, the other
+[00:50:53] with the EDI portion strike, the other
 [00:50:56] dosage added. Um, but everything else
 [00:51:00] remained the same.
-[00:51:13] 306.
+[00:51:04] Oh, and that typo uh correction of
+[00:51:11] 306.
 [00:51:13] Yeah. Okay. All righty. If you are
 [00:51:17] voting in affirmation in
 [00:51:20] support of this document, please raise
 [00:51:22] your hand at this time.
-[00:52:17] All righty. And then if you are against
+[00:51:49] And it looks like we had 10 hands up.
+[00:51:54] All right, please put your hands down.
+[00:52:15] All righty. And then if you are against
 [00:52:17] this um document, please raise your hand
 [00:52:20] at this time.
-[00:52:37] And that is 0 no 104.
+[00:52:34] And that is 0 no 104.
 [00:52:37] The outline of our dose or our dosage
 [00:52:41] guidelines are adopted.
 [00:52:45] And
@@ -996,7 +1008,8 @@
 [00:52:51] we can now discuss what would you guys
 [00:52:54] like to work on at our next meeting or
 [00:52:57] at the end of finishing up of this one.
-[00:53:22] >> Uh Ian,
+[00:53:15] Yes.
+[00:53:19] >> Uh Ian,
 [00:53:22] this may be handled in a different
 [00:53:24] committee. I'm not sure, but I I feel
 [00:53:26] like our preparatory sessions and our
@@ -1016,14 +1029,14 @@
 [00:54:05] definitely look at things like um
 [00:54:07] duration, environment, environmental
 [00:54:09] conditions. Um
-[00:54:16] we can also look at risk factors,
+[00:54:13] we can also look at risk factors,
 [00:54:16] contraindications
 [00:54:18] and side effect profiles associated with
 [00:54:21] the specific dosage levels. Um but yeah,
 [00:54:26] that would be a reasonable next step if
 [00:54:28] we wanted to work on preparation.
 [00:54:32] Gregory
-[00:54:37] Um, I don't think I'm going to get a lot
+[00:54:35] Um, I don't think I'm going to get a lot
 [00:54:37] of uh traction behind me, but um
 [00:54:41] somewhere down the road I would love to
 [00:54:43] get deep into the conversation of
@@ -1062,13 +1075,13 @@
 [00:56:17] resources and sources and that kind of
 [00:56:19] thing.
 [00:56:22] How's that sounding to everyone?
-[00:56:35] All right.
+[00:56:33] All right.
 [00:56:35] So, and in terms of um administration
 [00:56:40] and preparation, does anyone have
 [00:56:41] something they would like to say at this
 [00:56:44] time or do you guys want to submit the
 [00:56:47] comments? Um
-[00:56:54] >> Ian in the chat, James wrote, "Contra
+[00:56:52] >> Ian in the chat, James wrote, "Contra
 [00:56:54] indications and safety plans for
 [00:56:55] preparation." And Vincent wrote, "Oh,
 [00:56:58] sorry, moved." Vincent wrote, "I think
@@ -1084,16 +1097,16 @@
 [00:57:27] day is Monday at 5:00 p.m. That would be
 [00:57:30] really great for us. Um but when would
 [00:57:33] you guys like to meet again?
-[00:57:45] actually. Um,
+[00:57:42] actually. Um,
 [00:57:46] see if I can find the
-[00:58:02] it might be unlucky, but Friday the 13th
+[00:57:58] it might be unlucky, but Friday the 13th
 [00:58:02] um, would it be is is looking pretty
 [00:58:05] free from our end.
 [00:58:08] >> You know, I might have to try my luck.
 [00:58:10] Is everyone okay with Friday the 13th at
 [00:58:12] 9:00?
 [00:58:15] >> Gregory and Chris both have hands up.
-[00:58:25] >> Uh, Gregory.
+[00:58:21] >> Uh, Gregory.
 [00:58:25] >> Um, I just would love
 [00:58:27] a little elaboration on what you want to
 [00:58:31] see or hear from us about like
@@ -1143,7 +1156,7 @@
 [01:00:40] setting that sort of stuff. Got it.
 [01:00:41] Yeah. Yeah.
 [01:00:44] And then Chris,
-[01:00:50] >> yeah, I just I can't make it on the
+[01:00:47] >> yeah, I just I can't make it on the
 [01:00:50] 13th. I'll be finishing up my
 [01:00:51] facilitator training in Colorado. Um, so
 [01:00:55] if we could move it to a different day,
@@ -1153,7 +1166,8 @@
 [01:01:03] >> Um, would the 12th at 9 work for people?
 [01:01:09] >> Yeah, the the 12th LBA traveling as
 [01:01:11] well.
-[01:01:35] Oh, and Ian, just from a calendaring
+[01:01:16] I could probably do it from my car.
+[01:01:33] Oh, and Ian, just from a calendaring
 [01:01:35] standpoint, uh the 20th we already have
 [01:01:38] two different meetings, the board
 [01:01:39] meeting and end of life uh care meeting.
@@ -1163,9 +1177,9 @@
 [01:01:52] >> I really have no preference for if it's
 [01:01:54] on Friday or not. Um,
 [01:01:57] but we could
-[01:02:05] do we have anything on
+[01:02:02] do we have anything on
 [01:02:05] March 16th?
-[01:02:12] >> Uh,
+[01:02:11] >> Uh,
 [01:02:12] >> I don't see anything. That should be
 [01:02:14] pretty good.
 [01:02:17] >> Okay, then. How does everyone feel about
@@ -1173,7 +1187,7 @@
 [01:02:23] 9,
 [01:02:24] >> which is a Monday?
 [01:02:26] Yes,
-[01:02:37] see some thumbs up. All right. Well,
+[01:02:34] see some thumbs up. All right. Well,
 [01:02:37] that sounds uh great. I see no hands of
 [01:02:40] questions, so I will go ahead and
 [01:02:43] adjourn. We will meet March 16th at

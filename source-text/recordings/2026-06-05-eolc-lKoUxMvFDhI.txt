@@ -1,4 +1,4 @@
-[00:00:09] Oh, Johnny and Jorge when um James Brown
+[00:00:06] Oh, Johnny and Jorge when um James Brown
 [00:00:09] is going to be uh sharing some slides,
 [00:00:11] too.
 [00:00:12] >> Okay,
@@ -82,7 +82,7 @@
 [00:03:16] invite James to to uh to talk um on the
 [00:03:20] pharmacy at end of life care and so
 [00:03:22] happen
-[00:03:28] >> James I've enabled you to mic
+[00:03:26] >> James I've enabled you to mic
 [00:03:28] >> and also James you are a presenter but I
 [00:03:31] can run the slides for you and
 [00:03:33] >> is that okay Jorge can you run those for
@@ -95,7 +95,7 @@
 [00:03:46] information and the Department of Health
 [00:03:48] as well. Thank you so much for allowing
 [00:03:49] me to present this today.
-[00:04:08] >> Did you get that slide deck, Jorge, that
+[00:04:07] >> Did you get that slide deck, Jorge, that
 [00:04:08] I sent earlier today? Uh uh is this is
 [00:04:12] the the end of life committee scopes and
 [00:04:14] responsibilities. Is this the the orange
@@ -114,10 +114,10 @@
 [00:04:49] that.
 [00:04:50] >> Thank you.
 [00:04:51] >> Yes.
-[00:05:32] All right, there you are, James.
+[00:05:31] All right, there you are, James.
 [00:05:32] >> Thank you so much.
 [00:05:34] >> You're welcome.
-[00:05:41] >> Okay, everybody. Uh, James Brown. I'm a
+[00:05:39] >> Okay, everybody. Uh, James Brown. I'm a
 [00:05:41] farm D from New Mexico. Um today, um I
 [00:05:45] do represent an organization called Five
 [00:05:46] Degrees North Healing Foundation, which
@@ -127,7 +127,7 @@
 [00:05:55] and we're hoping to be able to provide
 [00:05:56] those services in the future. So, thank
 [00:05:58] you, Jorge. Next slide, please.
-[00:06:07] So what I want to do is everybody knows
+[00:06:05] So what I want to do is everybody knows
 [00:06:07] you know a a good high level here um I
 [00:06:09] just broke it down and did some I really
 [00:06:11] like uh visuals and so how does
@@ -165,7 +165,7 @@
 [00:07:19] the brain out of a rapid pattern and
 [00:07:21] into a more open connected and adaptable
 [00:07:25] state next slide Okay.
-[00:07:33] You know, and in my background, we do a
+[00:07:32] You know, and in my background, we do a
 [00:07:33] lot of drug drug interactions or what we
 [00:07:35] call pharmaccoinetics and
 [00:07:36] pharmacodnamics.
@@ -196,7 +196,7 @@
 [00:08:32] incre increase or decrease the blood
 [00:08:34] concentration of the of these
 [00:08:35] medications. Uh next slide, Jorge.
-[00:08:43] Again, just a little bit more about drug
+[00:08:42] Again, just a little bit more about drug
 [00:08:44] drug interactions as we get in here. Um
 [00:08:45] the big thing to take away with this
 [00:08:47] again is that for instance blood
@@ -215,7 +215,7 @@
 [00:09:13] those different disease states with this
 [00:09:14] end of life type of focus. Um next slide
 [00:09:19] please.
-[00:09:24] So what happens in the elderly? I think
+[00:09:22] So what happens in the elderly? I think
 [00:09:24] that's a big takeaway. you know, talking
 [00:09:26] to Larry, I think one of the big focuses
 [00:09:27] is is with our group, what happens in
@@ -238,7 +238,7 @@
 [00:10:08] orally intake something um that can be
 [00:10:11] affected by those different uh kinetic
 [00:10:13] pieces as you age. Next slide please.
-[00:10:20] Here we go. This is what this is kind of
+[00:10:19] Here we go. This is what this is kind of
 [00:10:20] a breadandbut slide here. kinetics
 [00:10:23] changes in the elderly. So what's going
 [00:10:25] on? The liver reduces P450 enzymes,
@@ -309,7 +309,7 @@
 [00:12:50] digestive tract um if if you guys wanted
 [00:12:52] to know that about 80% um versus 20%.
 [00:12:56] Okay so um next slide please.
-[00:13:04] So what does that mean and how will it
+[00:13:02] So what does that mean and how will it
 [00:13:04] affect my patients? How does it affect
 [00:13:07] me? That's important to me, right? So
 [00:13:10] let's say somebody's on uh benzoazipene,
@@ -357,7 +357,7 @@
 [00:14:45] ability to tailor dosing strategies. I
 [00:14:48] love that. Individualize please. Next
 [00:14:50] slide.
-[00:14:57] Practical applications. Facilitators and
+[00:14:55] Practical applications. Facilitators and
 [00:14:57] also clinicians should have access to
 [00:15:00] the client's overall medical history.
 [00:15:02] That's important. You guys know that
@@ -385,7 +385,7 @@
 [00:15:49] very low but there is some history and
 [00:15:51] research is coming out more and more
 [00:15:53] about this. Next slide.
-[00:16:01] GI history and health is important. We
+[00:15:58] GI history and health is important. We
 [00:16:01] also want to look at their weight and
 [00:16:02] composition. Right? We talked earlier
 [00:16:03] about their decreased muscle mass. Uh
@@ -424,7 +424,7 @@
 [00:17:15] these sessions. prior is very important
 [00:17:18] um because the blade onset can have a
 [00:17:19] heightened effect. Next slide.
-[00:17:26] GLP1s. This is something I talked to
+[00:17:24] GLP1s. This is something I talked to
 [00:17:26] Larry about. I think this is a hot
 [00:17:27] topic. Um I wanted to bring this in
 [00:17:29] because I think it's I think it's
@@ -470,7 +470,7 @@
 [00:18:49] the individual and it's something to be
 [00:18:51] aware of during your session. Next
 [00:18:53] slide.
-[00:19:00] And if anybody wants to know about GLP1s
+[00:18:58] And if anybody wants to know about GLP1s
 [00:19:00] real quick, I would give them about
 [00:19:02] sevenday wash out period uh prior to
 [00:19:04] their their their psilocybin experience,
@@ -556,7 +556,7 @@
 [00:22:07] alcohol, and other things that are
 [00:22:10] enhanced hallucinations like marijuana.
 [00:22:12] Uh, next, please.
-[00:22:19] Serotonin syndrome. What is that, James?
+[00:22:16] Serotonin syndrome. What is that, James?
 [00:22:19] That's something I just wanted to be.
 [00:22:20] It's very rare. You should hopefully
 [00:22:22] never see this, but we if we do, it's
@@ -587,7 +587,7 @@
 [00:23:24] unlikely. Next slide, Jorge.
 [00:23:28] And we only have a few more slides left.
 [00:23:30] We're almost done.
-[00:23:35] Something I wanted to bring up was
+[00:23:34] Something I wanted to bring up was
 [00:23:35] HPPPD. What is that? That's hallucinag
 [00:23:38] hallucinogen persisting perception
 [00:23:41] disorder. Again, these are things that
@@ -613,7 +613,7 @@
 [00:24:27] with perception and controlled use.
 [00:24:30] Again, very uncommon to have HPPPD. Next
 [00:24:32] slide.
-[00:24:37] Again, this is about just the management
+[00:24:36] Again, this is about just the management
 [00:24:37] of serotonin. If you're if you're
 [00:24:39] experiencing that, um what do you do? Um
 [00:24:42] discontinuation again, sedation, uh
@@ -705,7 +705,7 @@
 [00:27:47] I think we should just drop right into
 [00:27:48] questions on your presentation.
 [00:27:52] >> Sounds great.
-[00:28:02] >> All right. And uh let's see. Um, and as
+[00:27:58] >> All right. And uh let's see. Um, and as
 [00:28:02] a reminder, yeah, if you want to ask a
 [00:28:04] question, you can raise your hand um on
 [00:28:07] Teams with the icon that says raise with
@@ -729,7 +729,7 @@
 [00:28:53] you've seen any um in that space any
 [00:28:57] studies or experience
 [00:28:59] um in that space.
-[00:29:05] >> Dr. Fatimi, uh amazing question. I think
+[00:29:02] >> Dr. Fatimi, uh amazing question. I think
 [00:29:05] this is a very very important thing to
 [00:29:07] bring up because people do have this uh
 [00:29:11] ammonia issues a lot in this population
@@ -842,7 +842,7 @@
 [00:33:23] BMI,
 [00:33:26] I wanted to bring up just to kind of
 [00:33:29] circle back on that to
-[00:33:36] um
+[00:33:34] um
 [00:33:36] just kind of rein restate that like
 [00:33:39] solosin is not lipophilic. So it there
 [00:33:43] like BMI doesn't necessarily have the
@@ -947,7 +947,7 @@
 [00:37:57] question. Um, I think Dr. Fatame has a
 [00:38:00] response. I also saw that Larry may have
 [00:38:03] wanted to say something.
-[00:38:11] >> Thank you so much for the discussion,
+[00:38:10] >> Thank you so much for the discussion,
 [00:38:11] Mike. Oh, so sorry.
 [00:38:14] >> No, I'm just saying I I don't want to
 [00:38:15] say I don't want to say anything. I I
@@ -1002,7 +1002,7 @@
 [00:40:26] see if anything's been published about
 [00:40:28] it. I don't know if um anybody in the
 [00:40:31] group has seen it.
-[00:40:42] >> Um Dr. I haven't seen the specific
+[00:40:39] >> Um Dr. I haven't seen the specific
 [00:40:42] zopran in the literature but I know that
 [00:40:45] you know of course with highdose zopran
 [00:40:47] uh you know we get that QT prolongation
@@ -1014,7 +1014,7 @@
 [00:41:03] um and so I think you would see that
 [00:41:06] effect coming across as a concern
 [00:41:09] >> right thank Thank you.
-[00:41:20] >> All right. And looks like Ian Dunn
+[00:41:15] >> All right. And looks like Ian Dunn
 [00:41:20] has got his hand up and your mic is
 [00:41:22] enabled.
 [00:41:24] Good afternoon everyone. Hi, my name is
@@ -1063,7 +1063,7 @@
 [00:43:10] that um Zopran
 [00:43:12] occasionally can cause some serotonin
 [00:43:14] syndrome issues.
-[00:43:37] I have a couple this is Larry a couple
+[00:43:36] I have a couple this is Larry a couple
 [00:43:37] of comments from the research um
 [00:43:40] research world. Um we actually you know
 [00:43:42] most of the studies do actually allow
@@ -1108,7 +1108,7 @@
 [00:45:05] the polyfarm pharmacy we we do see that
 [00:45:08] effect come up a you know, could come up
 [00:45:10] and you could see that.
-[00:45:16] >> Well, James, I want to thank you again.
+[00:45:14] >> Well, James, I want to thank you again.
 [00:45:16] This is like really an awesome talk and
 [00:45:17] it'd be good to have it, you know, have
 [00:45:19] it up on the website for people and and
@@ -1124,11 +1124,11 @@
 [00:45:39] thank you for sharing it all, James.
 [00:45:43] >> Thank you, sir. I appreciate you and
 [00:45:44] thank you for letting me present today.
-[00:45:54] >> And um Jorge or Johnny, if you can um
+[00:45:50] >> And um Jorge or Johnny, if you can um
 [00:45:54] throw my slides up there, I can
 [00:45:55] transition into those.
 [00:45:57] >> All right. I sure will. Dr. in.
-[00:46:11] There you are.
+[00:46:08] There you are.
 [00:46:11] Great. Thanks. Um, so I just want to
 [00:46:14] start a little bit just to kind of put
 [00:46:15] us in this perspective of where we are
@@ -1158,7 +1158,7 @@
 [00:47:14] the natural aging process. So just as a
 [00:47:17] reminder to to us that was some of our
 [00:47:19] our early perspectives. Next slide.
-[00:47:29] Um you know we talked earlier again this
+[00:47:26] Um you know we talked earlier again this
 [00:47:29] is again something from previous time
 [00:47:31] that eligibility can include individuals
 [00:47:33] across a range of end of life
@@ -1203,7 +1203,7 @@
 [00:48:57] what's eligibility and what is priority
 [00:49:00] especially when we look at the equity
 [00:49:01] fund. Next slide.
-[00:49:08] Um so one question would be like
+[00:49:06] Um so one question would be like
 [00:49:08] prioritization guidelines and I know the
 [00:49:11] equity committee in desert has been
 [00:49:13] looking at those and have looked very
@@ -1306,16 +1306,16 @@
 [00:52:58] adjust these as we start um start making
 [00:53:00] our our guidelines and our
 [00:53:02] recommendations.
-[00:53:11] open to open to thoughts and comments.
+[00:53:07] open to open to thoughts and comments.
 [00:53:11] >> All right, let's see. Looks like first
 [00:53:12] we've got um JS
 [00:53:16] um and I have allowed your mic and you
 [00:53:18] can unmute when you're ready.
-[00:53:27] And to unmute um there is an icon at the
+[00:53:23] And to unmute um there is an icon at the
 [00:53:27] top banner that says mic. Yeah, there
 [00:53:28] you go.
 [00:53:30] >> Hey guys, it's Jeff. It's
-[00:53:43] Sorry, I had you on my laptop and on my
+[00:53:41] Sorry, I had you on my laptop and on my
 [00:53:43] cell phone because I'm sitting in a
 [00:53:45] coffee shop. Can you hear me? Okay.
 [00:53:48] >> Yes.
@@ -1439,7 +1439,7 @@
 [00:58:27] through that. So anyway, that is my
 [00:58:30] feedback but fantastic job to all you
 [00:58:33] guys. Thank you so much.
-[00:58:40] >> All right. And next we've got Ian Dunn.
+[00:58:38] >> All right. And next we've got Ian Dunn.
 [00:58:40] And Ian, you can unmute when you're
 [00:58:42] ready.
 [00:58:44] >> Yeah. I was actually going to go um
@@ -1470,7 +1470,7 @@
 [01:00:04] Y to this one. Um although I do like the
 [01:00:07] premise behind it. Anyway, those were my
 [01:00:09] two cents. Thank you.
-[01:00:19] >> All right. Um, and Chris Caldwell. Um, I
+[01:00:15] >> All right. Um, and Chris Caldwell. Um, I
 [01:00:19] have enabled your mic and you can
 [01:00:20] unmute.
 [01:00:22] >> Hi all. Great to be here. Larry, I loved
@@ -1495,7 +1495,7 @@
 [01:01:12] Parkinson's, you know, may uh um may
 [01:01:15] experience existential or physiological
 [01:01:18] distress. us right off the bat.
-[01:01:27] >> That's all I
+[01:01:26] >> That's all I
 [01:01:27] >> Good points, Chris. Chris, appreciate
 [01:01:29] that. Good good points. And as I say,
 [01:01:31] these are just I'm really glad that
@@ -1520,10 +1520,10 @@
 [01:02:11] there are certainly arguments to not
 [01:02:14] having those limits. um and or at least
 [01:02:16] changing the limits.
-[01:02:25] >> All right, let's see. Next, uh we've got
+[01:02:23] >> All right, let's see. Next, uh we've got
 [01:02:25] Gregory Evans, and you can unmute when
 [01:02:28] ready.
-[01:02:33] >> Um I'm going to run through a couple
+[01:02:31] >> Um I'm going to run through a couple
 [01:02:33] notes
 [01:02:36] here. Um but something you just said um
 [01:02:40] may triggered something I hadn't really
@@ -1539,7 +1539,7 @@
 [01:03:05] very different thing to take psilocybin
 [01:03:08] for for end of life
 [01:03:11] um 3 years into a diagnosis versus like
-[01:03:13] holy [ __ ] my whole life just
+[01:03:13] holy [ __ ] my whole life just
 [01:03:16] um man my language I apologize um but
 [01:03:20] yeah like the immediate uh reaction to
 [01:03:23] understanding that you will be dying. Um
@@ -1585,13 +1585,13 @@
 [01:05:29] gather from the fund distributions
 [01:05:31] correlating to their unique demographic
 [01:05:33] alignments
-[01:05:38] could be really really interesting. See
+[01:05:36] could be really really interesting. See
 [01:05:38] who from what zones of demographic um
 [01:05:43] identities are seeking assistance with
 [01:05:47] which type of therapy and that could
 [01:05:49] tell us a lot honestly. And then again
 [01:05:53] to uh I believe Dr. Steinborn said um
-[01:06:03] uh we should it said in the chat but
+[01:06:01] uh we should it said in the chat but
 [01:06:03] mentioning that the reallocation terms
 [01:06:05] should be defined as we if we do set
 [01:06:07] something like that. So as funds dwindle
@@ -1599,7 +1599,7 @@
 [01:06:12] have funds moved or be not specifically
 [01:06:16] gated to that therapy model. That is
 [01:06:20] all. Thank you.
-[01:06:28] All right. Uh let's see. And next we've
+[01:06:26] All right. Uh let's see. And next we've
 [01:06:28] got uh Lita Fati. And you can unmute
 [01:06:30] when you're ready. Thank you so much.
 [01:06:33] What an amazing conversation. Um on the
@@ -1676,7 +1676,7 @@
 [01:10:02] need in our community in this population
 [01:10:05] both for patients and um and family
 [01:10:08] members, caretakers. Thank you so much.
-[01:10:19] >> All right. Um, and next we've got Jamie
+[01:10:16] >> All right. Um, and next we've got Jamie
 [01:10:19] Beichy. And Jamie, I have allowed your
 [01:10:22] mic and you can unmute uh when you're
 [01:10:25] ready.
@@ -1739,10 +1739,10 @@
 [01:12:49] that can be chronically managed over
 [01:12:51] many many years potentially. So those
 [01:12:54] are my thoughts.
-[01:13:00] >> Awesome. Thanks Jamie. Um, and next
+[01:12:58] >> Awesome. Thanks Jamie. Um, and next
 [01:13:00] we'll go to Ian Dunn, and you can unmute
 [01:13:03] when you're ready.
-[01:13:10] >> All right. Uh, thank you. So, I wanted
+[01:13:07] >> All right. Uh, thank you. So, I wanted
 [01:13:10] to address what, uh, Dr. Fatmi and
 [01:13:13] Gregory were talking about. Um, I know
 [01:13:15] at least in the patient qualification
@@ -1778,7 +1778,7 @@
 [01:14:33] another 30 40 years to live with that
 [01:14:35] organ damage versus um maybe three years
 [01:14:39] but I will turn it over um thank you.
-[01:14:49] >> All right and Larry
+[01:14:47] >> All right and Larry
 [01:14:50] >> um yeah first of all I love all the
 [01:14:51] comments and everything. We're
 [01:14:53] definitely going into uncharted
@@ -1862,10 +1862,10 @@
 [01:17:57] cope with it in a different way. So I'm
 [01:17:59] just putting that out there as a
 [01:18:00] thought. Thank you.
-[01:18:07] >> Awesome. Thanks Joel. Um let's see. Next
+[01:18:05] >> Awesome. Thanks Joel. Um let's see. Next
 [01:18:07] we've got Greg Evans and you can unmute
 [01:18:10] when you're ready.
-[01:18:15] >> Dr. Rosen, I think you took a lot of the
+[01:18:13] >> Dr. Rosen, I think you took a lot of the
 [01:18:15] words right out of my mouth. Um, what I
 [01:18:18] was going to bring up is just the idea
 [01:18:20] that having a system which provides for
@@ -1884,14 +1884,14 @@
 [01:19:00] left behind
 [01:19:02] and how we can help those people as
 [01:19:04] well.
-[01:19:15] >> Awesome. Thanks, Greg. And uh back to
+[01:19:13] >> Awesome. Thanks, Greg. And uh back to
 [01:19:15] you, Larry.
-[01:19:24] >> The um I I didn't have any more
+[01:19:23] >> The um I I didn't have any more
 [01:19:24] comments. It looks like Jennifer, you
 [01:19:27] look like it says you're on hold. Did
 [01:19:29] you have uh comments or questions?
 [01:19:33] Jennifer Johnson.
-[01:19:40] >> Um I'm not sure what the onh hold thing
+[01:19:37] >> Um I'm not sure what the onh hold thing
 [01:19:40] is. Let me see
 [01:19:42] because that just grays out the whole
 [01:19:45] mic area. Um not sure what that's about.
@@ -1902,7 +1902,8 @@
 [01:19:57] going on.
 [01:19:58] >> On hold in Teams means that someone has
 [01:20:00] stepped away.
-[01:20:10] >> Well, great. I think this has been a
+[01:20:03] >> Okay, cool.
+[01:20:09] >> Well, great. I think this has been a
 [01:20:10] great discussion. Um, you know, lots of
 [01:20:12] um and I think it's a discussion that
 [01:20:15] we're going to want to continue as we
@@ -1924,7 +1925,7 @@
 [01:20:56] considered in as end of life care and
 [01:20:58] grief you know I think that's very very
 [01:21:00] relevant.
-[01:21:07] So, if we don't have any more comments,
+[01:21:05] So, if we don't have any more comments,
 [01:21:07] um well, um we're talking about having
 [01:21:10] our next meeting July 10th, 1 to 3 PM.
 [01:21:14] Um the one of the focuses of that was
@@ -1952,7 +1953,7 @@
 [01:22:10] thinking about that and figuring that'll
 [01:22:11] be discussed in one of our future
 [01:22:13] meetings.
-[01:22:23] So thanks everybody. Great meeting. Love
+[01:22:21] So thanks everybody. Great meeting. Love
 [01:22:23] all the comments. I love the direction
 [01:22:25] we're we're moving in. Um uh July I
 [01:22:28] know. Yeah, summers get hard. I know. So

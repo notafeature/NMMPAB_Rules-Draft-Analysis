@@ -382,10 +382,10 @@
 [00:32:57] But, you know, I I really feel like New Mexico needs to go above and beyond
 [00:33:03] um thinking about trust being built into the law as as clearly and um you know,
 [00:33:12] as well defined as as possible. Um I again I I haven't I don't know the the
-[00:33:18] law itself and so that that may a lot of this may already be in there. Um
+[00:33:18] the law itself and so that that may a lot of this may already be in there. Um
 [00:33:23] but you know an answer to your question is short answer is yes. I I I think that
 [00:33:27] it's it's worth looking at and it's worth really um putting the language of
-[00:33:31] trust in there, especially when it comes to uh patient um patient trust and
+[00:33:31] of trust in there, especially when it comes to uh patient um patient trust and
 [00:33:37] concise and and readable um policies around privacy and things like that. Um
 [00:33:43] I think it may be just just one thing off the top of my head. I think it may
 [00:33:46] be beneficial to include a requirement that in addition to your standard legal
@@ -439,7 +439,7 @@
 [00:37:33] there's a there's a distinction to be made there and there's decisions as to
 [00:37:36] what, like you said, what what kind of political capital we put into the law
 [00:37:40] itself. But, um, those guidances, you know, and and rules that are issued can
-[00:37:45] probably move faster than a bill itself.
+[00:37:45] can probably move faster than a bill itself.
 [00:37:52] >> Great. and Dominic Zarlo put into the chat the uh link there to uh the statute
 [00:37:57] there uh for anybody that's interested as well. So,
 [00:38:01] >> excellent. All right. Anybody else? All right. Thank you everyone so much for
@@ -647,7 +647,7 @@
 [00:53:41] like that is um two ends of how serious it was and how um we could handle it. So
 [00:53:48] yeah, I support the adverse reporting system as it stands. It's very well
 [00:53:53] thought out. Thank you. >> I appreciate you saying that. Yeah, it
-[00:53:57] is something where we knew that if we just listed those the top part that we
+[00:53:57] it is something where we knew that if we just listed those the top part that we
 [00:54:03] wouldn't get into the detail, but also by having some of those details then you
 [00:54:07] can get to the point where the detail is not detailed enough for everything. So
 [00:54:11] hopefully it gives a little bit and honestly to be to be very honest this is
@@ -703,7 +703,7 @@
 [00:58:15] facilitators are reaching out to the patients to hear back from them because
 [00:58:20] we we don't want to just assume great things. I mean, great, but that's where
 [00:58:25] we start to have serious issues there, too. So, uh, Greg
-[00:58:36] your mic is enabled. >> Hey, good morning. How's everyone?
+[00:58:36] Greg, your mic is enabled. >> Hey, good morning. How's everyone?
 [00:58:41] There's a lot of information.
 [00:58:45] Um, something that Danielle and I discovered um or kind of like we're
 [00:58:50] working through recently around tier 4 delineation is that it might be useful.
@@ -792,7 +792,7 @@
 [01:06:02] because I have still made a bad choice after, but um,
 [01:06:08] just kind of spitballing and throwing it out there just so that there is a point
 [01:06:12] of conversation cuz Greg kind of pointed it out and I wanted to just explore that
-[01:06:17] other avenue cuz there is still a lot of, you know, stigma and there is
+[01:06:17] that other avenue cuz there is still a lot of, you know, stigma and there is
 [01:06:23] still a lot of societal perception that we have to work against and I don't want
 [01:06:30] that to be shaped by incomplete information if people are being served
 [01:06:36] like that. But again, we can't predict the future and maybe we shouldn't try to
@@ -865,7 +865,7 @@
 [01:11:46] or potential causes for this happening. Um we have done before for example with
 [01:11:51] regard to cannabis where we had providers who were not doing the
 [01:11:55] appropriate review, not doing the appropriate things and they then their
-[01:11:59] licens and credentials that report was sent over to their licensing board
+[01:11:59] their licens and credentials that report was sent over to their licensing board
 [01:12:04] and we have had providers who have gotten sanctioned or fined by their
 [01:12:09] licensing board. That part is up to their licensing board but the department
 [01:12:13] facilitates that sort of report going over there. So, just as an example,
@@ -921,7 +921,7 @@
 [01:16:04] able to also report. And so to have a mechanism for that sort of thing to
 [01:16:08] happen so that it can actually ensure that you know the patients are being
 [01:16:12] taken care of and that problematic situations are addressed. Yeah, that
-[01:16:17] was one of the things that the group was really interested in in making
+[01:16:17] that was one of the things that the group was really interested in in making
 [01:16:21] sure it it was there in that container because that's why we put on there do
 [01:16:25] triages the report and determines whether it's a tier three or a tier 4
 [01:16:29] because it could be something like oh that was just those kind of ontological
@@ -929,7 +929,7 @@
 [01:16:37] experience because it persisted past the uh and it affected the the the group the
 [01:16:44] individual the group in some way so that is an adverse and I again going back to
 [01:16:49] you know some of the things like Ian brought up is like yes I understand that
-[01:16:52] could be something where the headline could be grabbed and say these
+[01:16:52] that could be something where the headline could be grabbed and say these
 [01:16:55] are adverse experiences and so we just need to be very clear uh in this also so
 [01:17:01] that people don't just grab the sensationalism but you also can't help
 [01:17:05] unfortunately with those kind of things too but uh we want to say that those
@@ -1085,7 +1085,7 @@
 [01:30:18] that we hope to get into. And then the in inside of that um
 [01:30:25] we have begun to discuss the idea of in including insurance readiness. So like
 [01:30:31] how prepared are our uh providers to handle the needs of the
-[01:30:42] infrastructure of payments and if they're if we have providers that are
+[01:30:42] the infrastructure of payments and if they're if we have providers that are
 [01:30:48] using certain uh I don't like I don't I'm not an
 [01:30:54] insurance person but like if we [clears throat] have people pushing back
 [01:30:56] on pre uh pre-approved conditions or stuff like that like We want to be able
@@ -1115,7 +1115,7 @@
 [01:32:47] it. um this uh for th for for those of you that really get excited around
 [01:32:52] research and and continuous improvement. Um I really encourage you to to jump
 [01:32:57] into some of these intersectional work groups that these these uh leaders are
-[01:33:01] doing because what Gregory and like I said Danielle and Dr. Brown and
+[01:33:01] are doing because what Gregory and like I said Danielle and Dr. Brown and
 [01:33:05] everybody are talking about are these kind of important things that we can
 [01:33:09] build into it as best practices, as ideas, as information into it. So,
 [01:33:14] please um uh and and please drop into the chat box your email address if
