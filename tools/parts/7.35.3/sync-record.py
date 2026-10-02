@@ -57,6 +57,34 @@ DOCUMENTS = [
                  "instructions",
     },
     {
+        "slug": "recording-2026-08-21-committee",
+        "name": "Department recording, Training and Education Committee",
+        "file": "",
+        "cite": "August 21 committee recording, automatic captions, no speaker labels",
+        "date": "2026-08-21",
+        "event": "e-2026-08-21",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "2 hours 6 minutes. <a href=\"https://www.youtube.com/watch?v=Wwpm3mb-6TA\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-08-21-tae-Wwpm3mb-6TA.txt",
+    },
+    {
+        "slug": "recording-2026-08-14-board",
+        "name": "Department recording, Advisory Board",
+        "file": "",
+        "cite": "August 14 board recording, automatic captions, no speaker labels",
+        "date": "2026-08-14",
+        "event": "e-2026-08-14",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "1 hour 8 minutes. <a href=\"https://www.youtube.com/watch?v=3wb4IZGzAZw\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-08-14-board-3wb4IZGzAZw.txt",
+    },
+    {
         "slug": "summary-recommended-rules",
         "name": "Summary of the recommended rules",
         "file": None,
@@ -141,6 +169,20 @@ DOCUMENTS = [
         "notes": "6 slides. PowerPoint, not PDF",
     },
     {
+        "slug": "recording-2026-07-16-eolc",
+        "name": "Department recording, End-of-Life Care committee",
+        "file": "",
+        "cite": "July 16 End-of-Life Care committee recording, automatic captions, no speaker labels",
+        "date": "2026-07-16",
+        "event": "e-2026-07-16",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "1 hour 41 minutes. <a href=\"https://www.youtube.com/watch?v=aNGCtJHUTSY\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-07-16-eolc-aNGCtJHUTSY.txt",
+    },
+    {
         "slug": "rules-draft-2026-07-09",
         "name": "Board-meeting draft",
         "file": "documents/rules-draft-2026-07-09.pdf",
@@ -165,6 +207,34 @@ DOCUMENTS = [
         "what": "The Advisory Board meeting that resolved reciprocity and tabled the hours",
         "status": "record",
         "notes": "34 pages. Unofficial. Speaker-tagged",
+    },
+    {
+        "slug": "recording-2026-06-26-board",
+        "name": "Department recording, Advisory Board",
+        "file": "",
+        "cite": "June 26 board recording, automatic captions, no speaker labels",
+        "date": "2026-06-26",
+        "event": "e-2026-06-26",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "2 hours 21 minutes. <a href=\"https://www.youtube.com/watch?v=lfT4X5YObro\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-06-26-board-lfT4X5YObro.txt",
+    },
+    {
+        "slug": "recording-2026-06-25-committee",
+        "name": "Department recording, Training and Education Committee",
+        "file": "",
+        "cite": "June 25 committee recording, automatic captions, no speaker labels",
+        "date": "2026-06-25",
+        "event": "e-2026-06-25",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "2 hours 13 minutes. <a href=\"https://www.youtube.com/watch?v=ZrEJz6xaBpQ\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-06-25-tae-ZrEJz6xaBpQ.txt",
     },
     {
         "slug": "rules-draft-2026-06-25",
@@ -194,6 +264,34 @@ DOCUMENTS = [
         "notes": "9 pages. Origin of the 100 and 120 practicum hours and the 20 supervisory "
                  "hours. Compared provision by provision on "
                  "<a href=\"changes.html\">Section by section</a>",
+    },
+    {
+        "slug": "recording-2026-06-12-committee",
+        "name": "Department recording, Training and Education Committee",
+        "file": "",
+        "cite": "June 12 committee recording, automatic captions, no speaker labels",
+        "date": "2026-06-12",
+        "event": "e-2026-06-12",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "2 hours 1 minute. <a href=\"https://www.youtube.com/watch?v=8-0m59laErY\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-06-12-tae-8-0m59laErY.txt",
+    },
+    {
+        "slug": "recording-2026-05-22-committee",
+        "name": "Department recording, Training and Education Committee, first 13 minutes",
+        "file": "",
+        "cite": "May 22 committee recording, first 13 minutes, automatic captions, no speaker labels",
+        "date": "2026-05-22",
+        "event": "e-2026-05-22",
+        "what": "The department's recording of the meeting, published on its YouTube channel",
+        "status": "record",
+        "notes": "13 minutes, ending mid-sentence. Published under the title May 26, 2026. <a href=\"https://www.youtube.com/watch?v=gZJS4sPuacg\" target=\"_blank\" "
+                 "rel=\"noopener\">On the department's YouTube channel</a>, not published on this "
+                 "site. Its automatic captions carry no speaker labels and are in the repository "
+                 "at source-text/recordings/2026-05-22-tae-gZJS4sPuacg.txt. The index beside it states the basis for the date",
     },
     {
         "slug": "medical-psilocybin-act-sb219-2025",
@@ -228,40 +326,19 @@ GAPS = [
         "id": "gap-minutes",
         "name": "Official minutes, any meeting",
         "means": "Nothing on this site is official minutes. One consequence: the mover of the "
-                 "June 26 motion is attributed from a meeting-note summary, because the raw "
-                 "transcript is unlabeled at that point",
-        "at_event": "No transcript or official minutes of this meeting is held on this site, "
-                    "and the mover of the motion is attributed from a meeting-note summary.",
+                 "June 26 motion is attributed from a meeting-note summary, because the "
+                 "captions of the department's recording carry no speaker labels",
+        "at_event": "No official minutes of this meeting is held on this site, and the mover of "
+                    "the motion is attributed from a meeting-note summary.",
         "events": ["e-2026-06-26"],
-    },
-    {
-        "id": "gap-june",
-        "name": "Recordings or transcripts, June 12 and June 25",
-        "means": "The recommendation and the department draft from those dates are held; the "
-                 "meetings themselves are not",
-        "at_event": "No recording or transcript of the meeting on this date is held on this "
-                    "site. The document it produced is.",
-        "events": ["e-2026-06-25", "e-2026-06-12"],
-    },
-    {
-        "id": "gap-july16",
-        "name": "July 16 End-of-Life Care committee meeting, any record",
-        "means": "Everything on <a href=\"specialization.html\">Specialized domains</a> rests "
-                 "on it: the endorsement proposal, the proposed hour ranges, the nine-session "
-                 "curriculum, and the positions attributed to named participants",
-        "at_event": "No record of this meeting is held on this site, and everything this site "
-                    "states about it rests on that meeting.",
-        "events": ["e-2026-07-16"],
     },
     {
         "id": "gap-may22",
         "name": "May 22 committee meeting, the full record",
         "means": "The department's recording of this meeting runs 13 minutes and ends "
                  "mid-sentence. It is published under the title May 26, 2026, and the "
-                 "department's link to it is labeled May 29. Its caption transcript is "
-                 "source-text/recordings/2026-05-22-tae-gZJS4sPuacg.txt in the repository, and "
-                 "the index beside it states the basis for the date. No record of the rest of "
-                 "the meeting is held",
+                 "department's link to it is labeled May 29. The recording is in the register. "
+                 "No record of the rest of the meeting is held",
         "at_event": "The department's recording of this meeting runs 13 minutes and ends "
                     "mid-sentence, and is published under the title May 26, 2026. No record of "
                     "the rest of the meeting is held.",
@@ -269,26 +346,12 @@ GAPS = [
     },
     {
         "id": "gap-aug14",
-        "name": "August 14 board meeting recording or transcript, and the set-aside notice",
-        "means": "The meeting at which the set-aside of the July 23 publication was on the "
-                 "record and the August 25 date was stated. The department's announcement "
-                 "setting aside the publication and the August 28 hearing is not held either; "
-                 "the set-aside is sourced to how it was spoken of at the meeting. A live "
-                 "auto-generated transcript was read for the working record at "
-                 "analysis/8-14-board-extraction.md in the repository",
-        "at_event": "No recording, transcript, or set-aside notice is held on this site for "
-                    "this meeting. The department recorded the meeting for posting.",
+        "name": "The notice setting aside the July 23 publication",
+        "means": "The department's announcement setting aside the July 23 publication and the "
+                 "August 28 hearing is not held. The set-aside is sourced to how it was spoken "
+                 "of at the August 14 board meeting, whose recording is in the register",
+        "at_event": "No notice of the set-aside is held on this site.",
         "events": ["e-2026-08-14"],
-    },
-    {
-        "id": "gap-aug21",
-        "name": "August 21 committee meeting recording or transcript",
-        "means": "The meeting at which both hours proposals were shown side by side and the "
-                 "October 2 hearing was stated. The department recorded it for posting; a "
-                 "live auto-generated transcript was read for the working record",
-        "at_event": "No recording or transcript of this meeting is held on this site yet. The "
-                    "department recorded the meeting for posting on its website.",
-        "events": ["e-2026-08-21"],
     },
 ]
 
@@ -415,9 +478,11 @@ EVENTS = [
              "index.html", "Where things stand"),
         ],
         "said": {
-            "basis": "The account rests on a live auto-generated transcript with no speaker "
-                     "labels; names are fixed by the surrounding text. The department's "
-                     "recording, once posted, is the record.",
+            "basis": "The account was written from a live auto-generated transcript with no "
+                     "speaker labels; names are fixed by the surrounding text. The department's "
+                     "recording is published and is in the register. The recommendation's "
+                     "figures were checked against its captions on October 1, 2026; the "
+                     "quotations below were not.",
             "lines": [
                 "Dominic Zurlo said the current statute does not allow practicum work with "
                 "individuals who do not have a qualifying condition, which is why the "
@@ -433,7 +498,7 @@ EVENTS = [
                 "language; the chair suggested naming it.",
             ],
         },
-        "absent": ["gap-aug21"],
+        "attached": ["recording-2026-08-21-committee"],
     },
     {
         "id": "e-2026-08-14",
@@ -458,9 +523,10 @@ EVENTS = [
              "index.html", "Where things stand"),
         ],
         "said": {
-            "basis": "The account rests on a live auto-generated transcript with no speaker "
-                     "labels; names are fixed by the surrounding text. The department's "
-                     "recording, once posted, is the record.",
+            "basis": "The account was written from a live auto-generated transcript with no "
+                     "speaker labels; names are fixed by the surrounding text. The department's "
+                     "recording is published and is in the register. The quotations below have "
+                     "not been checked against its captions.",
             "lines": [
                 "Larry Leeman, on the set-aside: \"one of the reasons why I think the regs "
                 "were postponed is because there had been a commitment to the training "
@@ -472,6 +538,7 @@ EVENTS = [
                 "rulemaking continuing beyond it.",
             ],
         },
+        "attached": ["recording-2026-08-14-board"],
         "absent": ["gap-aug14"],
         "deeper": [],
     },
@@ -633,7 +700,7 @@ EVENTS = [
              "creates one.",
              "specialization.html", "Specialized domains"),
         ],
-        "absent": ["gap-july16"],
+        "attached": ["recording-2026-07-16-eolc"],
         "deeper": [("specialization.html",
                     "The proposal, its hour ranges, and who raised what")],
     },
@@ -686,13 +753,16 @@ EVENTS = [
              "changes.html", "Section by section"),
         ],
         "said": {
-            "basis": "No transcript or official minutes of this meeting is held on this site. "
-                     "The account below comes from a meeting-note summary.",
+            "basis": "The account below comes from a meeting-note summary. No official minutes "
+                     "of this meeting is held. The department's recording is in the register; "
+                     "its captions carry no speaker labels, and the account has not been "
+                     "checked against them.",
             "lines": [
                 "Only Larry Leeman's \"reluctant yes\" is named on the record. The two votes "
                 "against are not.",
             ],
         },
+        "attached": ["recording-2026-06-26-board"],
         "absent": ["gap-minutes"],
     },
     {
@@ -710,8 +780,7 @@ EVENTS = [
              "recommendation did not contain one.",
              "rule.html#s10", "7.35.3.10"),
         ],
-        "attached": ["rules-draft-2026-06-25"],
-        "absent": ["gap-june"],
+        "attached": ["rules-draft-2026-06-25", "recording-2026-06-25-committee"],
     },
     {
         "id": "e-2026-06-12",
@@ -726,8 +795,7 @@ EVENTS = [
              "in this document, and they stand in the published text.",
              "rule.html#s19", "7.35.3.19"),
         ],
-        "attached": ["recommendation-2026-06-12"],
-        "absent": ["gap-june"],
+        "attached": ["recommendation-2026-06-12", "recording-2026-06-12-committee"],
         "deeper": [("changes.html",
                     "This recommendation against the department drafts, provision by provision")],
     },
@@ -737,6 +805,7 @@ EVENTS = [
         "kind": "meeting",
         "what": "<b>The Training and Education Committee met</b>, the last of the five meetings "
                 "that developed the recommendation it issued on June 12.",
+        "attached": ["recording-2026-05-22-committee"],
         "absent": ["gap-may22"],
     },
     {
