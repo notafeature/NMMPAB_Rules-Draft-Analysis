@@ -1,6 +1,6 @@
-[00:00:04] Take a minute. The meeting has now
+[00:00:02] Take a minute. The meeting has now
 [00:00:04] started and I am admitting everyone.
-[00:00:15] Good morning everybody. Uh this is
+[00:00:13] Good morning everybody. Uh this is
 [00:00:15] Dominic Zerlo with the New Mexico
 [00:00:17] Department of Health Center for Medical
 [00:00:19] Cannabis and Psilocybin. Um we are going
@@ -68,7 +68,7 @@
 [00:02:43] going to go ahead and turn it over to
 [00:02:45] them to just give us a reminder on who
 [00:02:47] they are and why they're here.
-[00:02:55] >> So, I'll go down the list just
+[00:02:53] >> So, I'll go down the list just
 [00:02:55] alphabetically. Uh, Brenda
 [00:02:57] Burgard.
 [00:03:00] >> Hello everyone. Thank you for having me.
@@ -79,7 +79,7 @@
 [00:03:13] of DRIM for New Mexico.
 [00:03:19] Okay.
 [00:03:19] >> Uh Chris Piscus.
-[00:03:25] >> Morning everyone. I'm Chris Piscus. I'm
+[00:03:23] >> Morning everyone. I'm Chris Piscus. I'm
 [00:03:26] a chairman of the propagation committee
 [00:03:28] and a veteran and a advocate and
 [00:03:31] ambassador with the Royal Cars Project.
@@ -91,10 +91,10 @@
 [00:03:50] practicing nurse practitioner, a primary
 [00:03:52] care provider. Thanks,
 [00:03:54] Thank you, Alana. Desba
-[00:04:03] Desbar, um the chair of the equity,
+[00:03:59] Desbar, um the chair of the equity,
 [00:04:03] access, and cultural considerations
 [00:04:05] committee. Um and I'm here in Santa Fe.
-[00:04:16] >> Thank you, Desbot. Uh Larry Leman.
+[00:04:12] >> Thank you, Desbot. Uh Larry Leman.
 [00:04:16] >> Yeah, good morning. Larry Leman. I'm the
 [00:04:17] chair of the end of life committee. I'm
 [00:04:19] a um Emily addiction medicine physician
@@ -105,14 +105,14 @@
 [00:04:32] present at this time.
 [00:04:35] >> All righty. Well, the agenda is on the
 [00:04:38] screen. Do we have a motion to adopt it?
-[00:04:44] >> A motion to adopt.
+[00:04:42] >> A motion to adopt.
 [00:04:44] >> Any second?
 [00:04:46] >> A second.
 [00:04:47] >> Second.
 [00:04:48] >> Second. Perfect. All righty. And then I
 [00:04:52] will Any objections to adoption of the
 [00:04:55] agenda?
-[00:05:01] Without ad without objection, the agenda
+[00:04:58] Without ad without objection, the agenda
 [00:05:01] is adopted.
 [00:05:04] So now I'm going to go ahead and turn
 [00:05:07] over to the
@@ -127,13 +127,13 @@
 [00:05:27] Dominic Zerlo and I am the director for
 [00:05:30] our center. Uh so with that can we go to
 [00:05:34] Brenda?
-[00:05:39] >> Good morning everyone. Uh Brenda
+[00:05:37] >> Good morning everyone. Uh Brenda
 [00:05:39] Martinez that's okay.
 [00:05:42] I'm the deputy director here at the
 [00:05:44] center for medical cannabis and
 [00:05:46] psilocybin.
 [00:05:48] >> Thank you, Brenda. Uh Johnny.
-[00:05:55] >> Yeah, morning. My name is Johnny Musher
+[00:05:53] >> Yeah, morning. My name is Johnny Musher
 [00:05:55] and I'm a management analyst.
 [00:05:59] >> Rob,
 [00:06:02] >> good morning. I'm Robert Shuckner. I'm
@@ -143,12 +143,12 @@
 [00:06:11] psilocybin program manager Gonzalez here
 [00:06:13] in Albuquerque.
 [00:06:16] >> Raymond,
-[00:06:22] >> hello everyone. Can you hear me?
+[00:06:20] >> hello everyone. Can you hear me?
 [00:06:22] >> Yes.
 [00:06:23] >> Awesome. Raymond Gigos. I am the data
 [00:06:25] and systems uh analyst for the program.
 [00:06:29] >> Thank you Raymond. Adrian,
-[00:06:35] >> hi buenos. My name is Adrian Espa and
+[00:06:33] >> hi buenos. My name is Adrian Espa and
 [00:06:35] I'm a health educator for the department
 [00:06:37] of health cannabis and suicide program.
 [00:06:41] >> Thank you Adrian. Katie.
@@ -156,7 +156,7 @@
 [00:06:46] Tag. I'm a health educator with the
 [00:06:48] program.
 [00:06:50] >> Thank you Katie. Carmen.
-[00:06:55] >> Good morning everybody. Carmen Batista.
+[00:06:54] >> Good morning everybody. Carmen Batista.
 [00:06:56] I'm a health educator with the program.
 [00:06:59] >> Thank you Carmen. Ismael.
 [00:07:02] >> Good morning everybody. My name is
@@ -167,7 +167,7 @@
 [00:07:13] project manager.
 [00:07:15] >> Thank you. Thank you Kathy. Uh Chris
 [00:07:17] Woodward.
-[00:07:24] >> Hi everybody. Um I'm Chris Woodward. I'm
+[00:07:22] >> Hi everybody. Um I'm Chris Woodward. I'm
 [00:07:24] deputy general counsel for the
 [00:07:25] department of health and I'm the
 [00:07:27] attorney who represents the medical
@@ -278,7 +278,7 @@
 [00:11:28] So, um with that, I will turn it back on
 [00:11:31] over to you, uh Ian, uh for our next
 [00:11:35] set.
-[00:11:42] >> Uh yeah. So I will actually go ahead and
+[00:11:39] >> Uh yeah. So I will actually go ahead and
 [00:11:42] also turn over to Chris. His committee
 [00:11:46] has been working on or not quite yet.
 [00:11:50] Sorry about that. Let's hear an update
@@ -286,7 +286,7 @@
 [00:11:53] committees. Um and then we can go ahead
 [00:11:57] and
 [00:11:58] work on propagation.
-[00:12:06] Uh if you could roll call the chairs.
+[00:12:04] Uh if you could roll call the chairs.
 [00:12:06] Thank you.
 [00:12:07] >> Sure. Uh so uh one again I'm going to go
 [00:12:11] down through the list of how they are on
@@ -315,7 +315,7 @@
 [00:13:15] psilocybin in the news or anything like
 [00:13:17] that? Um, so um all are welcome in the
 [00:13:21] next meeting for training and education.
-[00:13:28] Thank you.
+[00:13:26] Thank you.
 [00:13:28] >> Thank you, Brenda. Then we will uh go
 [00:13:33] next to Desba. Desba, do you mind
 [00:13:35] providing an update?
@@ -391,11 +391,11 @@
 [00:16:23] supporting all of the other committees
 [00:16:26] as they move along and as we have those
 [00:16:28] considerations moving forward.
-[00:16:37] >> Thank you, Desba. Um, and then the next
+[00:16:33] >> Thank you, Desba. Um, and then the next
 [00:16:37] committee, um, is going to be Larry
 [00:16:40] Leman. Larry, I'm bringing your slides
 [00:16:41] up now. Give me just a moment.
-[00:16:52] Okay. And the slides are should be
+[00:16:50] Okay. And the slides are should be
 [00:16:52] showing at this time. We'll give it
 [00:16:55] There we go.
 [00:16:58] >> Great. Thanks, everybody. Good to good
@@ -451,7 +451,7 @@
 [00:18:56] chance to to look at some of the
 [00:18:57] meetings you at least to watch the
 [00:18:59] presentations.
-[00:19:04] >> Thanks everybody.
+[00:19:02] >> Thanks everybody.
 [00:19:04] >> Thank you Larry. And for those who if
 [00:19:06] for any reason you can't see the slides,
 [00:19:08] I have put those the information on them
@@ -490,7 +490,7 @@
 [00:20:25] conditions warrant what clinical
 [00:20:27] support. So it's been a really good
 [00:20:29] discussion.
-[00:20:35] >> Thank you Ian. Um and so then at this
+[00:20:33] >> Thank you Ian. Um and so then at this
 [00:20:36] time uh we will move to um Chris Pascus
 [00:20:40] with uh just a general overview with
 [00:20:43] regard to propagation and then Chris
@@ -565,7 +565,7 @@
 [00:23:31] Minimize duplication by utilizing
 [00:23:33] existing state, county, and municipal
 [00:23:35] licensing and inspection authorities.
-[00:23:42] All right, so this is the bare basics.
+[00:23:41] All right, so this is the bare basics.
 [00:23:42] It's just telling us, you know, what
 [00:23:44] we're doing. Uh essentially the
 [00:23:47] propagation committee looked at
@@ -574,14 +574,14 @@
 [00:23:52] facilitators and and came up with this
 [00:23:56] first draft uh going into this meeting.
 [00:23:59] So any thoughts on section one?
-[00:24:11] >> All right, Dominic, will you read
+[00:24:10] >> All right, Dominic, will you read
 [00:24:11] section two, please?
 [00:24:13] >> Absolutely. Section two, authorized
 [00:24:15] species. Whole mushroom fruing bodies
 [00:24:18] shall be harvested for use in this
 [00:24:20] program. Mycelial biomass products are
 [00:24:24] prohibited.
-[00:24:31] Um, so after lengthy discussion in
+[00:24:28] Um, so after lengthy discussion in
 [00:24:31] committee and I reached out to people in
 [00:24:34] Oregon and Colorado to kind of get an
 [00:24:37] idea of why they chose the species they
@@ -592,7 +592,7 @@
 [00:24:53] fruing bodies uh restricting the use of
 [00:24:55] my biomass and I can kind of get more
 [00:24:59] detailed if anybody would like on that.
-[00:25:07] >> Um this is Miranda. I don't know if it's
+[00:25:05] >> Um this is Miranda. I don't know if it's
 [00:25:07] inappropriate to ask now, but if you
 [00:25:09] could just explain what myelial biomass
 [00:25:12] products are or
@@ -637,7 +637,7 @@
 [00:26:58] we decided to to limit it to the fruing
 [00:27:01] body only for that those products.
 [00:27:04] >> Makes sense. Thank you.
-[00:27:09] >> Yeah. And if I could piggy back off of
+[00:27:08] >> Yeah. And if I could piggy back off of
 [00:27:09] that, it it's the difference between
 [00:27:12] like harvesting
 [00:27:16] a spear of green onion versus just
@@ -651,7 +651,8 @@
 [00:27:33] was, let's say, dirt or if it was manure
 [00:27:36] or if it was whatever, it's going to end
 [00:27:37] up contaminating.
-[00:27:53] >> And just to add on to that and you you
+[00:27:46] Got it. Thank you.
+[00:27:50] >> And just to add on to that and you you
 [00:27:53] you can see this um in the the myelial
 [00:27:57] advertising war between rise mushrooms
 [00:27:59] and all kinds of other stuff that oh our
@@ -667,14 +668,15 @@
 [00:28:26] uh
 [00:28:29] it just it interferes with the the I
 [00:28:32] guess the
-[00:28:37] medicine,
+[00:28:36] the medicine,
 [00:28:38] not not the medicine itself, but it
 [00:28:39] interferes with the weight of like what
 [00:28:41] is the actual medicine in the fruing
 [00:28:44] body versus like you're getting mostly
-[00:29:04] >> Any other questions about how we about
+[00:28:54] Thank you.
+[00:29:00] >> Any other questions about how we about
 [00:29:04] section two?
-[00:29:12] >> All right. Um can you move on to section
+[00:29:09] >> All right. Um can you move on to section
 [00:29:12] three, Dominic, please?
 [00:29:14] >> Uh yes indeed. So permit structure there
 [00:29:16] are actually different parts with this.
@@ -705,7 +707,7 @@
 [00:30:16] department required for those aspects of
 [00:30:18] production. Um and then that they have
 [00:30:21] to ensure that items are kept secure.
-[00:30:29] Right? I think this section is pretty
+[00:30:27] Right? I think this section is pretty
 [00:30:29] straightforward. um this permitting
 [00:30:32] process will not require you know
 [00:30:35] multiple layers of paperwork if people
@@ -730,7 +732,7 @@
 [00:31:31] process, but no permits permitting fees.
 [00:31:36] Any questions on section A of or yes,
 [00:31:40] subsection A of section three.
-[00:31:57] >> Yeah. So, um
+[00:31:54] >> Yeah. So, um
 [00:31:57] I was just curious about the
 [00:32:02] separation of cultivation and harvesting
 [00:32:05] just because I'm afraid of someone
@@ -750,7 +752,7 @@
 [00:32:36] licenses.
 [00:32:37] >> Correct. Correct.
 [00:32:38] >> Okay. Cool. That's perfect for me.
-[00:32:46] >> All right. If there's no further
+[00:32:45] >> All right. If there's no further
 [00:32:46] comments, let's go to subsection B.
 [00:32:50] Uh now, uh here with subsection B, um
 [00:32:54] Chris, I'm not including in the text yet
@@ -785,7 +787,7 @@
 [00:34:04] need to acquire. But we're not as a
 [00:34:07] department not imposing additional ones
 [00:34:09] upon them.
-[00:34:18] Okay, this is all pretty much boiler
+[00:34:16] Okay, this is all pretty much boiler
 [00:34:18] boilerplate stuff to do business in the
 [00:34:20] state of New Mexico already. We didn't
 [00:34:22] really add anything in there. Um, we
@@ -803,7 +805,7 @@
 [00:35:00] >> Yeah, I would suggest we do that at the
 [00:35:01] end.
 [00:35:02] >> Okay.
-[00:35:08] And then I also would like to
+[00:35:05] And then I also would like to
 [00:35:08] potentially bookmark a spot for
 [00:35:10] predatory financing uh language.
 [00:35:15] Is that going to come out with the next
@@ -815,7 +817,7 @@
 [00:35:28] Okay.
 [00:35:30] Any
 [00:35:31] questions on subsection B?
-[00:35:42] >> All right, let's move on to section C,
+[00:35:40] >> All right, let's move on to section C,
 [00:35:42] please.
 [00:35:44] So, with section C, zoning and municipal
 [00:35:48] municipal permits must be within the
@@ -841,10 +843,10 @@
 [00:36:35] product that is going to be ingested um
 [00:36:37] and as a medicine that uh food safety
 [00:36:39] processes should be followed.
-[00:36:47] Okay, I think this is pretty
+[00:36:46] Okay, I think this is pretty
 [00:36:47] straightforward. Um, does is there any
 [00:36:50] questions on subsection C?
-[00:37:00] >> All right, let's move on to subsection
+[00:36:59] >> All right, let's move on to subsection
 [00:37:00] D, please, Dominic.
 [00:37:02] >> And subsection D is agricultural. the
 [00:37:05] New Mexico Department of Agriculture
@@ -852,10 +854,10 @@
 [00:37:09] mitigation guidance and that production
 [00:37:12] is treated analogously to controlled
 [00:37:14] environmental environment agriculture.
-[00:37:25] Again, I think this is pretty
+[00:37:23] Again, I think this is pretty
 [00:37:25] straightforward. Are there any questions
 [00:37:26] on subsection D?
-[00:37:35] All right, let's move on to section
+[00:37:33] All right, let's move on to section
 [00:37:35] four, please.
 [00:37:36] >> So, section four is cultivation uh
 [00:37:39] standards. And please give me a moment
@@ -892,7 +894,7 @@
 [00:38:55] other chemical agents and other
 [00:38:57] substances determined harmful by the
 [00:38:59] department.
-[00:39:07] Um okay. So, as Dominic said, we just
+[00:39:04] Um okay. So, as Dominic said, we just
 [00:39:07] want to make sure we're tracking what
 [00:39:08] substrates are used. So, that way if
 [00:39:10] people have sensitivities that we're not
@@ -918,7 +920,7 @@
 [00:40:10] posted by the department of what you
 [00:40:12] cannot use in this space.
 [00:40:17] Any questions?
-[00:40:27] Yeah.
+[00:40:25] Yeah.
 [00:40:27] >> Yeah. Um I do have a question about the
 [00:40:30] fact that it says growth medium is not
 [00:40:33] restricted. I know that we have in in
@@ -932,7 +934,7 @@
 [00:40:55] that have any impact on what the
 [00:40:58] department is able to say for growth
 [00:41:00] medium?
-[00:41:05] >> I can answer that.
+[00:41:03] >> I can answer that.
 [00:41:05] >> Oh Chris
 [00:41:07] >> uh in the specific case of you know if
 [00:41:11] it's grown in manure uh there will be
@@ -949,11 +951,12 @@
 [00:41:38] individual components which end up being
 [00:41:41] potentially harmful, those can still be
 [00:41:44] banned at that point.
-[00:41:57] Any other comments or concerns about
+[00:41:48] >> Thank you. Thank you.
+[00:41:55] Any other comments or concerns about
 [00:41:57] section 4?
-[00:42:09] Okay, let's go ahead and move on to
+[00:42:08] Okay, let's go ahead and move on to
 [00:42:09] section five, please.
-[00:42:16] Okay. And so section five is harvesting,
+[00:42:13] Okay. And so section five is harvesting,
 [00:42:16] processing, and homogenization.
 [00:42:19] Part A, batch definition, is a batch
 [00:42:21] defined as harvested and homogenized
@@ -968,7 +971,7 @@
 [00:42:44] the purpose of this is for accurate
 [00:42:46] potency testing uh reduction and
 [00:42:48] reduction of dose variability.
-[00:42:56] >> All right. Excellent. So we and I think
+[00:42:53] >> All right. Excellent. So we and I think
 [00:42:56] we may need to look at the language a
 [00:42:57] little bit on here. It says this part
 [00:42:59] where it says 1 kilogram after drying
@@ -996,7 +999,7 @@
 [00:44:06] there? If that's what if if I'm
 [00:44:09] understanding your
 [00:44:12] uh,
-[00:44:17] sorry.
+[00:44:15] sorry.
 [00:44:17] >> Yeah. Would would it help if you were
 [00:44:19] saying like at the point like the weight
 [00:44:21] is wet versus like when it's dry?
@@ -1019,7 +1022,7 @@
 [00:45:00] after a 4-week period. Sorry.
 [00:45:05] No worries. Did I answer your question,
 [00:45:07] Desba?
-[00:45:14] >> I'm going assume that's a yes. All
+[00:45:13] >> I'm going assume that's a yes. All
 [00:45:14] right, Ian.
 [00:45:16] >> Yeah. So, I just want to make sure I
 [00:45:18] understand it correctly. So if I'm a
@@ -1027,7 +1030,7 @@
 [00:45:24] and then I can just batch them into 1
 [00:45:26] kilogram and then that gets homogenized
 [00:45:28] and tested and all that.
-[00:45:35] >> Correct. But they all have to be the
+[00:45:33] >> Correct. But they all have to be the
 [00:45:35] same the basically the same inoculation.
 [00:45:38] So you have to they have to be on a
 [00:45:42] similar substrate because that has to be
@@ -1043,7 +1046,7 @@
 [00:46:04] us. Some of us are
 [00:46:07] I think that might also be another
 [00:46:12] uh
-[00:46:19] >> I'm sorry Desbol. I feel like I keep
+[00:46:17] >> I'm sorry Desbol. I feel like I keep
 [00:46:19] interrupting you. Are you
 [00:46:20] >> Oh, no, no, no. I'm just wondering like
 [00:46:22] when you're talking about a batch, I
@@ -1087,7 +1090,8 @@
 [00:47:54] fruing bodies from the same inoculation
 [00:47:56] which have been harvested over a 4-week
 [00:47:58] period
-[00:48:11] Yeah, I think that looks good. And then
+[00:48:02] to clarify that aspect of it.
+[00:48:07] Yeah, I think that looks good. And then
 [00:48:11] I don't think we'll need to add the
 [00:48:13] substrate in there because that already
 [00:48:14] needs to be tracked. So, it's kind of
@@ -1096,12 +1100,12 @@
 [00:48:21] >> Yeah, the substrates again would that'll
 [00:48:23] be tracked just as you said.
 [00:48:26] >> Okay. Excellent.
-[00:48:33] All right. Uh any other questions on
+[00:48:30] All right. Uh any other questions on
 [00:48:34] batching or why we why we did what we
 [00:48:37] did?
-[00:48:45] Excellent. Let's go on to section six,
+[00:48:43] Excellent. Let's go on to section six,
 [00:48:45] please.
-[00:48:53] Okay. And just so everybody is aware for
+[00:48:51] Okay. And just so everybody is aware for
 [00:48:53] this, this also has uh several sections.
 [00:48:56] So I'm going to do section A first. Um
 [00:48:59] and this is that uh regarding testing
@@ -1143,11 +1147,11 @@
 [00:50:33] could request that they be tested by a
 [00:50:36] secondary lab to ensure that they are
 [00:50:39] testing in valid and appropriate ways.
-[00:50:48] >> Excellent. Thank you Dominic. Um yeah.
+[00:50:45] >> Excellent. Thank you Dominic. Um yeah.
 [00:50:48] So basically this gives cultivators
 [00:50:51] three or uh laboratories kind of three
 [00:50:54] processes by which they can be um
-[00:51:01] validated
+[00:51:00] validated
 [00:51:01] through either the the state lab
 [00:51:04] department or through these two other
 [00:51:08] verifying agencies ISO or NEAC.
@@ -1165,7 +1169,7 @@
 [00:51:44] results.
 [00:51:47] Are there any questions on the testing
 [00:51:49] authority?
-[00:52:05] Okay, Chris, I don't see any questions
+[00:52:02] Okay, Chris, I don't see any questions
 [00:52:05] on the testing authority. There is a a
 [00:52:07] question that did come in in the chat
 [00:52:10] when I was reading that portion um
@@ -1186,7 +1190,8 @@
 [00:52:46] going to be a different batch. If it's a
 [00:52:48] different strain, it's going to be a
 [00:52:49] different batch.
-[00:53:01] >> All right, let's go ahead and go down to
+[00:52:55] Any other questions?
+[00:52:59] >> All right, let's go ahead and go down to
 [00:53:01] section B, please. Subsection B. So this
 [00:53:04] next set is uh about testing uh the
 [00:53:08] required testing panels. Um and
@@ -1239,7 +1244,7 @@
 [00:55:10] implementation of testing as the
 [00:55:11] laboratories are permitted and are able
 [00:55:14] to provide validation of testing.
-[00:55:23] Excellent. Thank you, Dominic. Um, okay.
+[00:55:20] Excellent. Thank you, Dominic. Um, okay.
 [00:55:23] So, this is the most robust testing
 [00:55:28] profile out of any of the three states
 [00:55:30] that have a program so far. And I did
@@ -1277,13 +1282,13 @@
 [00:56:55] what exactly ends up being with regard
 [00:56:57] to dosing, we're only talking a few
 [00:56:59] dollars per dose total.
-[00:57:07] >> Thank you, Dominic. Brenda,
+[00:57:04] >> Thank you, Dominic. Brenda,
 [00:57:07] >> do we know how much time it takes
 [00:57:10] between um uh harvesting and uh testing?
 [00:57:16] So, the the mushroom gets uh sent to the
 [00:57:19] lab. How long does it usually
 [00:57:22] uh take for testing? Do we know?
-[00:57:30] >> I can't answer that.
+[00:57:27] >> I can't answer that.
 [00:57:30] Go ahead, Dominic.
 [00:57:32] >> Yeah. So Brenda, it's going to depend on
 [00:57:33] various aspects such as drying. So how
@@ -1305,11 +1310,11 @@
 [00:58:11] them. And then whenever they send that
 [00:58:14] that test in is kind of that batch date
 [00:58:17] that gets applied to it at that point.
-[00:58:31] >> Other questions? Ian.
+[00:58:26] >> Other questions? Ian.
 [00:58:31] >> Yeah. So, with the synthetic tryptoamine
 [00:58:35] screening
 [00:58:36] um
-[00:58:42] and I could be wrong on this, is there
+[00:58:40] and I could be wrong on this, is there
 [00:58:42] any way that we could have um limited
 [00:58:48] GMOs psilocybin? cuz that is an
 [00:58:52] regularly occurring tryptoamine, but it
@@ -1319,7 +1324,7 @@
 [00:59:03] accounted for or does it need to be? I
 [00:59:06] don't think so, but I just wanted to
 [00:59:07] double check.
-[00:59:14] >> Oh, Chris, go ahead.
+[00:59:12] >> Oh, Chris, go ahead.
 [00:59:14] >> It's not something that came up in
 [00:59:16] committee
 [00:59:17] uh specifically. It's something I can
@@ -1343,21 +1348,21 @@
 [01:00:11] colleagues in both Colorado and Oregon,
 [01:00:14] they haven't really been seeing that as
 [01:00:15] an issue.
-[01:00:22] And it, you know, if if people want
+[01:00:19] And it, you know, if if people want
 [01:00:22] synthetic tryptomines, they all they
 [01:00:24] have to do is go to the nearest head
 [01:00:26] shop and there's all kinds of funky
 [01:00:29] stuff in the chocolates and stuff there.
 [01:00:31] They're fine. So,
 [01:00:34] any other questions?
-[01:00:44] Okay. Uh and then the last section of
+[01:00:42] Okay. Uh and then the last section of
 [01:00:44] this and my apologies I just didn't copy
 [01:00:47] it in the last time round is uh just on
 [01:00:50] batch release. Um and really this is
 [01:00:52] just that all batches of course must
 [01:00:55] pass required testing before they can be
 [01:00:57] released for use.
-[01:01:10] Okay. All right. Let's move on to
+[01:01:08] Okay. All right. Let's move on to
 [01:01:10] section seven, please.
 [01:01:14] And section seven is uh food preparation
 [01:01:16] and product handling. Um and this is any
@@ -1377,10 +1382,10 @@
 [01:01:48] food safety training and in this case
 [01:01:50] that they actually implement it and
 [01:01:52] utilize those processes.
-[01:02:02] >> All right, I think this section is also
+[01:01:58] >> All right, I think this section is also
 [01:02:02] um pretty straightforward. Um but any
 [01:02:05] questions?
-[01:02:14] >> Let's go to section 8 please.
+[01:02:12] >> Let's go to section 8 please.
 [01:02:14] >> So and section 8 does have a couple of
 [01:02:16] uh parts within it. And so the first
 [01:02:18] part this is all under labeling
@@ -1400,9 +1405,9 @@
 [01:02:53] 10 printed pages long. So uh we'll we
 [01:02:57] have that as a separate document,
 [01:03:00] but we'll get to that in a moment.
-[01:03:08] Any questions on section 8, subsection
+[01:03:05] Any questions on section 8, subsection
 [01:03:08] 8?
-[01:03:16] Let's move on to section B, please.
+[01:03:12] Let's move on to section B, please.
 [01:03:16] >> And section B is the label requirements
 [01:03:20] and the elements itself. Um the label
 [01:03:23] must be printed or affixed on the
@@ -1451,20 +1456,20 @@
 [01:05:09] psilocybin labels that you were hoping
 [01:05:11] for. Thank you very much for injecting a
 [01:05:13] little humor.
-[01:05:24] All right. Uh so required label elements
+[01:05:20] All right. Uh so required label elements
 [01:05:24] I think most of them are pretty
 [01:05:26] straightforward.
 [01:05:28] Um,
 [01:05:30] are there any questions on how we kind
 [01:05:31] of came up with this?
-[01:05:49] Any issues anywhere?
+[01:05:46] Any issues anywhere?
 [01:05:50] >> All right, let's move.
-[01:05:59] Sir, was is there a comment?
+[01:05:56] Sir, was is there a comment?
 [01:05:59] >> Oh, I was just saying it looks great. 10
 [01:06:01] of 10. That section is beautiful.
 [01:06:04] >> Excellent. Let's move on to section C,
 [01:06:07] please.
-[01:06:16] Okay. And so, um, here this is the
+[01:06:12] Okay. And so, um, here this is the
 [01:06:16] product information document. And so
 [01:06:18] this would be a document available that
 [01:06:20] lists the following information in
@@ -1539,20 +1544,20 @@
 [01:08:59] information repeats everything on the
 [01:09:00] label.
 [01:09:01] >> Okay, thank you.
-[01:09:09] Oh, and there's a question uh in the
+[01:09:07] Oh, and there's a question uh in the
 [01:09:09] chat about adding suicide crisis
 [01:09:11] hotline, the 988 number.
-[01:09:18] I think that could be added without any
+[01:09:16] I think that could be added without any
 [01:09:18] issue. Does anybody
 [01:09:21] that
 [01:09:22] >> I think that's a good idea.
 [01:09:24] >> Yeah. Okay, we will add that on in.
 [01:09:25] Thank you, Eileen.
 [01:09:28] >> And Ian, did you have a comment?
-[01:09:37] >> It totally slipped my mind. Sorry about
+[01:09:35] >> It totally slipped my mind. Sorry about
 [01:09:37] that.
 [01:09:40] >> No, thank you.
-[01:09:48] All right, I think uh let's move on to
+[01:09:46] All right, I think uh let's move on to
 [01:09:48] section or subsection D rather.
 [01:09:52] >> Subsection D is about the traceability
 [01:09:54] or the tracking that we will do. Um and
@@ -1577,7 +1582,7 @@
 [01:10:52] whistles in their software that you can
 [01:10:55] buy. Are there any questions about
 [01:10:57] traceability and tracking? Excellent.
-[01:11:13] Let's go on to section nine, compliance,
+[01:11:11] Let's go on to section nine, compliance,
 [01:11:13] please.
 [01:11:14] >> Okay. And for compliance, the compliance
 [01:11:18] authority would be with the Department
@@ -1618,9 +1623,9 @@
 [01:12:44] And so we would be using similar
 [01:12:46] processes with regard to that which are
 [01:12:48] fairly standardized.
-[01:12:59] All right. Any
+[01:12:57] All right. Any
 [01:12:59] questions about compliance?
-[01:13:08] Excellent. Let's move on to
+[01:13:07] Excellent. Let's move on to
 [01:13:08] transportation, please.
 [01:13:11] >> Okay. transportation
 [01:13:13] um needs to be done and completed in a
@@ -1635,7 +1640,7 @@
 [01:13:35] and needed to go between the production
 [01:13:38] and the um facilitation of uh psilocybin
 [01:13:43] being administered.
-[01:13:49] And another thing that this allows is it
+[01:13:47] And another thing that this allows is it
 [01:13:49] allows um say a producer and a
 [01:13:53] facilitator to meet somewhere and u
 [01:13:56] arrange for a pickup in that location
@@ -1647,7 +1652,7 @@
 [01:14:15] distances and stay overnight, things
 [01:14:17] like that.
 [01:14:20] Any questions on transportation?
-[01:14:28] >> Okay.
+[01:14:26] >> Okay.
 [01:14:28] Uh and then uh the last section as far
 [01:14:31] as uh for these types of items is the
 [01:14:34] future expansion and review. Um and this
@@ -1673,13 +1678,14 @@
 [01:15:26] would include things such as making sure
 [01:15:28] that they're secure, safe, those sort of
 [01:15:30] things with regard to transportation.
-[01:15:38] Okay. And uh with regard to the future
+[01:15:36] Okay. And uh with regard to the future
 [01:15:38] expansion, I think that's really just
 [01:15:40] that we ensure that the regulations um
 [01:15:43] are actually open so that they can be
 [01:15:45] scalable. And I think as this outline
 [01:15:48] shows it, I I believe that they are
-[01:16:06] >> Okay, let's move on to section 12,
+[01:15:55] >> awesome. Uh any questions on section 11?
+[01:16:04] >> Okay, let's move on to section 12,
 [01:16:06] please.
 [01:16:06] >> And actually Chris, section 12 are the
 [01:16:09] definitions which we actually are
@@ -1703,10 +1709,10 @@
 [01:16:56] able to sit with it for a while. Uh, are
 [01:16:59] there any questions it about anything
 [01:17:01] that we've gone over?
-[01:17:09] >> Um, I don't have a question. I just I
+[01:17:06] >> Um, I don't have a question. I just I
 [01:17:09] will also side with um striking the
 [01:17:11] definitions. um if that is necessary.
-[01:17:21] >> I'm sorry, I might have missed. Why
+[01:17:19] >> I'm sorry, I might have missed. Why
 [01:17:21] would we strike the definitions?
 [01:17:24] >> Sorry, Alana. What we're going to be
 [01:17:26] doing is as the various regulations are
@@ -1729,7 +1735,7 @@
 [01:18:02] within their statutes than we do, for
 [01:18:04] example.
 [01:18:06] Okay, that sounds reasonable. Thanks.
-[01:18:17] >> All right, that completes my uh
+[01:18:14] >> All right, that completes my uh
 [01:18:17] presentation of our first draft. I'll
 [01:18:19] turn it back over to you, Ian.
 [01:18:21] >> Uh if I may.
@@ -1749,13 +1755,13 @@
 [01:18:58] recommendation for a sunset clause to
 [01:19:00] protect New Mexico residents. And uh
 [01:19:02] there is um
-[01:19:09] I'm trying to find this section right
+[01:19:08] I'm trying to find this section right
 [01:19:09] now. I'm sorry.
 [01:19:11] >> That's okay. Uh it is on um
-[01:19:19] >> Oh, page two.
+[01:19:18] >> Oh, page two.
 [01:19:19] >> Sorry, Chris. Yes, page two has it.
 [01:19:21] >> H2.
-[01:19:29] Oh, there it is. Okay. Um would you like
+[01:19:27] Oh, there it is. Okay. Um would you like
 [01:19:29] to read the the sunset proposal Dominic?
 [01:19:32] >> Yeah. So the sunset proposal and this is
 [01:19:36] again to be considered by the board and
@@ -1788,7 +1794,7 @@
 [01:20:40] compliance with the residency and
 [01:20:41] ownership requirements set forth in this
 [01:20:44] measure.
-[01:20:50] >> All right. So this was unanimously
+[01:20:47] >> All right. So this was unanimously
 [01:20:50] uh accepted as a proposal um through our
 [01:20:54] committee and uh then there came into
 [01:20:57] some question whether this violated
@@ -1815,7 +1821,7 @@
 [01:21:54] Health's legal team.
 [01:21:57] Any
 [01:22:00] questions on that,
-[01:22:08] Ian?
+[01:22:06] Ian?
 [01:22:08] >> Yeah, I really like the idea of having
 [01:22:11] New Mexico interest represented first,
 [01:22:13] especially for those first three years
@@ -1941,7 +1947,7 @@
 [01:27:09] think at least as far as a residency
 [01:27:12] requirement goes, it's probably not
 [01:27:15] going to happen.
-[01:27:21] >> Thank you, Chris.
+[01:27:19] >> Thank you, Chris.
 [01:27:21] uh Desb
 [01:27:24] um
 [01:27:26] illegalities aside and and laws etc and
@@ -1954,14 +1960,15 @@
 [01:27:45] it would still fall under like us having
 [01:27:48] a recommendation and not not sidest
 [01:27:50] stepping it.
-[01:28:00] >> Thank you. And yes, again, um I
+[01:27:56] >> Thank you. And yes, again, um I
 [01:28:00] understand there's legal scrutiny on
 [01:28:03] this, but I propose that we still make
 [01:28:06] this recommendation and allow that
 [01:28:09] conversation to continue between the
 [01:28:11] legal team with the Department of Health
 [01:28:12] and and the Micology Guild.
-[01:28:39] All right. Um,
+[01:28:19] >> Any other questions?
+[01:28:36] All right. Um,
 [01:28:40] at this time, can we take a look at the
 [01:28:42] predatory f I'm getting an echo. Can
 [01:28:44] somebody mute, please?
@@ -2049,7 +2056,7 @@
 [01:32:04] the corporation. And D for nonprofit
 [01:32:07] entities, each principal officer of the
 [01:32:10] entity.
-[01:32:17] Um, and then, uh, Chris, do you Chris
+[01:32:13] Um, and then, uh, Chris, do you Chris
 [01:32:17] Woodward, do you mind, um, just, uh,
 [01:32:19] explaining a little bit what nominee and
 [01:32:22] straw proxy ownership is? Uh,
@@ -2095,14 +2102,14 @@
 [01:34:03] problematic. So the language that
 [01:34:06] Dominic just described would would
 [01:34:07] address that.
-[01:34:13] >> Thank you, Chris. And thank you,
+[01:34:12] >> Thank you, Chris. And thank you,
 [01:34:13] Dominic. And I just wanted to be clear
 [01:34:15] that the um predatory financial language
 [01:34:19] did not come through the committee. That
 [01:34:22] was a um kind of a side meeting that uh
 [01:34:26] we were continuing the discussion about
 [01:34:28] the sunset clause through. show.
-[01:34:36] >> Um, Dominic, if if I may. So, on on the
+[01:34:33] >> Um, Dominic, if if I may. So, on on the
 [01:34:36] subject of predatory financing, um,
 [01:34:40] the language that that Dominic just read
 [01:34:43] off doesn't really address like loans
@@ -2144,18 +2151,18 @@
 [01:36:16] be some some tweaks to that. I'm not
 [01:36:18] sure.
 [01:36:21] >> Thank you, Chris.
-[01:36:27] >> All right. Are there any other questions
+[01:36:25] >> All right. Are there any other questions
 [01:36:27] or comments?
-[01:36:42] Excellent. Then I'll go ahead and I'll
+[01:36:40] Excellent. Then I'll go ahead and I'll
 [01:36:42] turn it back over to Ian.
-[01:36:51] >> Perfect. Thank you guys. Um,
+[01:36:47] >> Perfect. Thank you guys. Um,
 [01:36:51] so we have two options. We can defer to
 [01:36:57] the voting on this until the next
 [01:37:00] meeting and allow us to hear public
 [01:37:02] comment first or we can vote on it now.
 [01:37:07] What is whatever the board members
 [01:37:10] feeling like
-[01:37:25] Ian, if I may, I would recommend voting
+[01:37:23] Ian, if I may, I would recommend voting
 [01:37:26] on this today. Um, even if you do decide
 [01:37:29] to hear public comment, I think there's
 [01:37:31] been opportunity for people to comment
@@ -2175,26 +2182,28 @@
 [01:38:06] >> All right, then we will go ahead and
 [01:38:08] move to a vote. If you want to pull up
 [01:38:10] the hand raising screen for me.
-[01:38:37] all right. So what I will go ahead and
+[01:38:16] All right.
+[01:38:20] So
+[01:38:35] all right. So what I will go ahead and
 [01:38:37] do is if the board members are in
 [01:38:39] support of passing the propagation
 [01:38:41] outline with the definition stried out,
 [01:38:44] please raise your hand at this time.
-[01:39:02] of those attending, there is unanimous
+[01:39:00] of those attending, there is unanimous
 [01:39:02] consent to adopt. Um,
 [01:39:07] perfect.
 [01:39:08] If you could all put your hands down
-[01:39:17] ceremonially, if there's anyone in
+[01:39:16] ceremonially, if there's anyone in
 [01:39:17] negation, please raise your hand at this
 [01:39:19] time.
-[01:39:26] Perfect. The motion is adopted. The
+[01:39:24] Perfect. The motion is adopted. The
 [01:39:26] propagation outline is adopted with the
 [01:39:28] definition stried out. All righty. So,
 [01:39:32] that looks like that was what we had on
 [01:39:34] the agenda today. Is there any other
 [01:39:35] business you feel we need to get to
 [01:39:37] before we turn to public comment?
-[01:39:46] >> All right, I will turn it over to uh
+[01:39:44] >> All right, I will turn it over to uh
 [01:39:46] >> just do we know where the next meeting
 [01:39:48] is?
 [01:39:50] >> You are right. We need to set the next
@@ -2204,16 +2213,16 @@
 [01:40:04] March 20th or 27th if you wanted to do
 [01:40:08] another Friday, but when works best for
 [01:40:09] y'all.
-[01:40:23] >> The 20th in the morning works for me.
+[01:40:19] >> The 20th in the morning works for me.
 [01:40:23] >> Like 9:00 a.m. or earlier?
 [01:40:26] >> Uh either way. Uh, then let's do the
 [01:40:30] 20th at 9:00 a.m.
-[01:40:40] Everyone good with that? No objections.
+[01:40:36] Everyone good with that? No objections.
 [01:40:40] Cool.
 [01:40:42] 2026.
-[01:40:50] Perfect. All right. Oh, Chris has his
+[01:40:48] Perfect. All right. Oh, Chris has his
 [01:40:50] hand up.
-[01:40:56] >> Yeah. So, I I do have a question for the
+[01:40:53] >> Yeah. So, I I do have a question for the
 [01:40:56] board. What would you like the
 [01:40:58] propagation committee to work on next?
 [01:41:01] Um, I have two more meetings set up. I
@@ -2234,11 +2243,11 @@
 [01:41:41] drafts that we have created as a
 [01:41:43] department and help us uh with regard to
 [01:41:46] that.
-[01:41:52] >> That sounds good. Are there any other
+[01:41:50] >> That sounds good. Are there any other
 [01:41:52] questions the board would like uh the
 [01:41:54] propagation committee to answer?
 [01:41:56] >> Go ahead, Despa.
-[01:42:06] >> I just had a question for Dominic.
+[01:42:02] >> I just had a question for Dominic.
 [01:42:06] >> Sure. Oh, so I just was wanted to know
 [01:42:09] if we had an update on the equity fund
 [01:42:12] uh result of that in the legislation and
@@ -2286,7 +2295,7 @@
 [01:43:55] fantastic task quite frankly and one
 [01:43:58] that we're very happy and looking
 [01:44:00] forward to tackle.
-[01:44:07] Oh, and uh some of my team have actually
+[01:44:04] Oh, and uh some of my team have actually
 [01:44:07] already put in the uh the links within
 [01:44:10] the chat for all of the upcoming
 [01:44:12] meetings
@@ -2297,12 +2306,12 @@
 [01:44:26] However, what I can say is I do know the
 [01:44:28] bill is has already been submitted.
 [01:44:31] What's up?
-[01:44:45] All right.
+[01:44:43] All right.
 [01:44:45] With no other board members with
 [01:44:47] questions, I think I'll turn it back to
 [01:44:48] you, Dom, for
 [01:44:51] public comment.
-[01:45:00] >> Okay. And so at this time, if there are
+[01:44:58] >> Okay. And so at this time, if there are
 [01:45:00] any members of the public who are
 [01:45:02] interested in speaking, and I do already
 [01:45:04] see uh at least one hand, um the
@@ -2327,7 +2336,7 @@
 [01:45:59] federal government that they would
 [01:46:01] accept and that would resolve all
 [01:46:04] transportation issues?
-[01:46:12] Um the second question is do you guys
+[01:46:08] Um the second question is do you guys
 [01:46:12] monitor uh forever chemicals in the
 [01:46:16] water that is added to the cycllin?
 [01:46:21] And the last question is um I'm actually
@@ -2335,10 +2344,10 @@
 [01:46:30] participating in the medical research as
 [01:46:34] a patient.
 [01:46:36] And those are my three questions.
-[01:46:44] Thank you.
+[01:46:41] Thank you.
 [01:46:44] Next up is Jeremy. Jeremy, I've enabled
 [01:46:48] your microphone. Please unmute yourself.
-[01:46:55] Hello everybody. Uh my name is Jeremy.
+[01:46:53] Hello everybody. Uh my name is Jeremy.
 [01:46:55] Um I appreciate you guys uh giving me a
 [01:46:58] chance to speak. I just wanted to
 [01:46:59] elaborate on uh the full fruitruing body
@@ -2390,7 +2399,8 @@
 [01:49:12] um 70% ISO, things of that manner. So, I
 [01:49:15] just kind of wanted to know where you
 [01:49:16] guys were at with that. Thanks.
-[01:49:28] And just a friendly reminder, if anyone
+[01:49:22] >> Thank you.
+[01:49:26] And just a friendly reminder, if anyone
 [01:49:28] else wishes to make public comment on
 [01:49:31] the Microsoft Teams app, there is the
 [01:49:33] raise hand or uh the raise icon with the
@@ -2404,14 +2414,14 @@
 [01:49:54] is no hands up at this time, I will pass
 [01:49:56] it grace back off to either Ian or
 [01:49:59] Dominic.
-[01:50:08] Alrighty. Well, if given that there's a
+[01:50:04] Alrighty. Well, if given that there's a
 [01:50:08] little under 10 minutes left and um we
 [01:50:12] have no more public comment, I say we go
 [01:50:14] ahead and adjourn. Thank you guys all so
 [01:50:17] much for coming. I really appreciate all
 [01:50:19] of your time and help today and I wish
 [01:50:22] you all the best weekend.
-[01:50:34] On behalf of the department, thank you
+[01:50:32] On behalf of the department, thank you
 [01:50:34] everybody for participating and for all
 [01:50:36] the hard work that has gone into
 [01:50:38] everything so far and uh looking forward

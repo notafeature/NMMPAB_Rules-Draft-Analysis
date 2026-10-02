@@ -170,7 +170,7 @@
 [00:15:43] Okay, next we will go to uh, Dan Hassen Hen. Dan, your line should be um
 [00:15:54] able to be unmuted. You have three minutes.
 [00:15:56] >> Hi there. >> Hello.
-[00:15:58] My name is Daniel Houston. I'm from the wonderful state of Oregon. Uh I
+[00:15:58] >> Hello. My name is Daniel Houston. I'm from the wonderful state of Oregon. Uh I
 [00:16:03] am the only licensed uh and approved psilocybin testing laboratory in the
 [00:16:09] state of Oregon. There used to be two of us. Um, I'm here to offer my uh insight
 [00:16:17] into the industry and to help anybody with anything they need. I do not plan
@@ -263,7 +263,7 @@
 [00:23:45] definitely need um actual participants and actual patients saying what they
 [00:23:50] need because there's a lot of experts in the field but not enough voices from the
 [00:23:54] actual people who need it. Um and so I just wanted to say if you ever need any
-[00:23:59] help or or guidance, we have an amazing group of of people. um who are
+[00:23:59] any help or or guidance, we have an amazing group of of people. um who are
 [00:24:04] you know metastatic patients but also have a lot of um life in them and time
 [00:24:09] uh who would love to talk about how to how to serve that community best because
 [00:24:13] there definitely needs to be more patient voices um as well as expert
@@ -277,7 +277,7 @@
 [00:24:55] I have four suggestions that I'd like to make for the board today. Uh the first
 [00:24:59] is regarding the end of life care qualifying condition. Uh I ask that we
 [00:25:04] resist any temptation to define qualification based on a prognostic
-[00:25:09] time frame and instead we consider a broader paliotative care
+[00:25:09] prognostic time frame and instead we consider a broader paliotative care
 [00:25:14] definition that would include anyone with a lifelimiting serious illness
 [00:25:18] regardless of hospice eligibility or specific prognosis. I've witnessed end
 [00:25:23] of life anxiety keeping people from having conversations well upstream um
@@ -446,7 +446,7 @@
 [00:38:54] treatment and treatment should be free. So we helped um we helped create
 [00:38:59] facilitate this and it's a whole community coming together for this to
 [00:39:03] happen. >> Thank you.
-[00:39:05] >> Thank you, Wendy.
+[00:39:05] Thank you. >> Thank you, Wendy.
 [00:39:08] >> Okay, I see Amy has uh rejoined. So, Amy, I'm gonna come back to you. Um,
 [00:39:14] please unmute your line. >> Can you hear me?
 [00:39:19] >> Yes, I can. >> Great. So, thank you for the opportunity
@@ -459,7 +459,7 @@
 [00:39:49] requirement that psilocybin must be cultivated here in New Mexico. That
 [00:39:54] decision ensures that the benefits, both economic and cultural, stay rooted in
 [00:39:58] our state. I believe the same principle should apply to facilitator training.
-[00:40:04] is not just a technical process. It shapes the values, ethics,
+[00:40:04] Training is not just a technical process. It shapes the values, ethics,
 [00:40:08] and culture of this entire program. If we allow outofstate organizations to
 [00:40:13] come in and set up shop, we risk outsourcing our framework to entities
 [00:40:17] that may not share New Mexico's priorities or cultural context.
@@ -523,7 +523,7 @@
 [00:45:09] people much more uh versed in silicon than myself that are on this call
 [00:45:14] because I know some of them. I am a primary care doctor and and also a
 [00:45:18] ketamine provider here in Santa Fe. And so I just wanted to say I think that the
-[00:45:25] way that uh so there are things that are advantageous about or that we can
+[00:45:25] the way that uh so there are things that are advantageous about or that we can
 [00:45:29] look to as the way that we provide ketamine for patients for chronic pain,
 [00:45:34] substance abuse, depression, PTSD um and for end of life um angst uh or
 [00:45:42] end of life anxiety, excuse me. um uh which uh and so opening up using
@@ -688,7 +688,7 @@
 [00:57:59] centers are um they're really uh not financially viable and um also for
 [00:58:06] jouriers they can't afford to have multiple journeys when they might need
 [00:58:10] them for you know really for depression and and PTSD and substance use. So, what
-[00:58:16] many are saying up in Oregon is that the way that the current market up
+[00:58:16] what many are saying up in Oregon is that the way that the current market up
 [00:58:20] there has um been implemented uh in the in the rules and regulations has really
 [00:58:26] driven all use underground at this point. So, this is something very
 [00:58:30] important for us in New Mexico to consider that we want to make sure that
@@ -703,7 +703,7 @@
 [00:59:17] having someone who might be um also a cultivator and someone who understands
 [00:59:23] the business of cultivation and what's gone wrong in other states where um we
 [00:59:28] know in in the in uh cannabis world um it really out outpriced uh the local
-[00:59:35] cultivators for cannabis and that became problematic in in many different
+[00:59:35] local cultivators for cannabis and that became problematic in in many different
 [00:59:40] states. And so we really want our our local cultivators to be championed here
 [00:59:46] because they're really growing medicine for the people that live here and
 [00:59:50] there's like that deep connection. So that's um that's pretty much all I
@@ -724,7 +724,7 @@
 [01:01:24] department of health to please be mindful of the amount of cultivation
 [01:01:28] licenses issued. I would like to advocate for a strict cap on these
 [01:01:34] cultivation or production licenses. One gram of dried psilocybin is very
-[01:01:41] different from 1 g of cannabis flour. I want to emphasize that again.
+[01:01:41] very different from 1 g of cannabis flour. I want to emphasize that again.
 [01:01:47] There is no need to flood New Mexico with an overabundance of psilocyum. We
 [01:01:53] need to emphasize compliance and adherence to strict guidelines so that
 [01:01:58] this medicine stays true to the goals and ethics for this patient centric
@@ -897,8 +897,8 @@
 [01:18:02] sure that they have appropriate training that allows them to really address all
 [01:18:07] the potential harms and all the potential situations as they provide
 [01:18:10] this care. also making sure that that training is uniquely tailored. You know,
-[01:18:15] it's not helpful for people to engage in duplicative training. It's
-[01:18:20] actually kind of a burden for people to participate in this program.
+[01:18:15] you know, it's not helpful for people to engage in duplicative training. It's
+[01:18:20] it's actually kind of a burden for people to participate in this program.
 [01:18:23] And so having uniquely tailored training for specific professionals,
 [01:18:28] you know, would go a long way um in safety. And then the final piece on
 [01:18:33] safety, you just making sure that we have good outcome reporting. you know,
@@ -969,7 +969,7 @@
 [01:23:30] capacity I' I've worked closely with like part of my job has been creating
 [01:23:34] relationships with people who sell drugs for the purpose of ensuring that the
 [01:23:38] drug supply that is available to people remains uh you know as unadulterated and
-[01:23:42] reliable as possible because uh especially psilocybin I can just say
+[01:23:42] and reliable as possible because uh especially psilocybin I can just say
 [01:23:47] from having conversations with people who sell drugs for a living psilocybin
 [01:23:49] is not something people make very much money off of and many many many of the
 [01:23:52] people who are what you would call a drug dealer or someone who's you know on

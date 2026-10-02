@@ -264,13 +264,14 @@
 [00:23:09] Okay. Can you see my uh just this the screen the
 [00:23:15] >> Are you seeing anything? >> Nothing
 [00:23:19] at this moment. >> Okay, I'm just going to present from the
-[00:23:23] PowerPoint presentation itself on the slides.
+[00:23:23] the PowerPoint presentation itself on the slides.
 [00:23:30] Uh
 [00:23:36] if you've got it up and could do better, go for it. Um, okay. Can you see this
 [00:23:40] slide? >> Something up.
 [00:23:42] >> Uh, the psychedelic data connect with disconnect with the
 [00:23:46] state regulated settings at the bottom. >> Nothing else except for the two circle
 [00:23:53] safety and effectiveness. >> Oh gosh. Okay.
+[00:23:59] Okay.
 [00:24:03] Um,
 [00:24:08] what about that? >> Nothing has changed yet.
 [00:24:15] >> I swear I give hundreds of these. Um, >> completely understand.
@@ -293,13 +294,13 @@
 [00:25:32] >> Todd, this is a disaster. >> Todd, do you want me to see if I can
 [00:25:35] share mine? >> I guess so. Sure.
 [00:25:38] >> All right.
-[00:25:44] Thank thank you in the meantime while
+[00:25:44] >> All right. Thank thank you in the meantime while
 [00:25:47] lady's um trying to pull this up. Um uh for for serving on this panel um you
 [00:25:55] know I I uh did the same thing in the first four years of the Oregon measure
 [00:26:00] 109 roll out and it's so much work. I know how much work you're putting in and
 [00:26:05] how many hours and um you know served both on the full board and the co-chared
 [00:26:11] the research committee and um so thank you. I I I really feel the
-[00:26:20] amount of work you're doing.
+[00:26:20] the amount of work you're doing.
 [00:26:29] So you'll have to forgive me. This is essentially the same um presentation but
 [00:26:34] for a different group. Um uh oh, now it says that it shouldn't
 [00:26:39] couldn't share my content.
@@ -330,7 +331,7 @@
 [00:29:20] standards of data encryption and privacy. Um and we designed a system to
 [00:29:25] be able to follow people prospectively longitudinally over time. Um in such a
 [00:29:30] way that they remain anonymous actually um their their their um names um don't
-[00:29:37] appear in the follow-up. They're assigned a unique number and that
+[00:29:37] don't appear in the follow-up. They're assigned a unique number and that
 [00:29:40] follows them through. even if they go to a second facilitator for a second or
 [00:29:46] third session somewhere else um that person is is still tracked within the
 [00:29:51] system for 12 months. Um uh
@@ -340,7 +341,7 @@
 [00:30:25] ago now um just as they were starting to open some of their healing centers. And
 [00:30:30] so we have a rapidly growing number of folks um in Colorado. Uh the way it
 [00:30:35] works is we reach out first to the facilitator community and spend a lot a
-[00:30:41] lot of time doing community building, right? And understanding what
+[00:30:41] lot a lot of time doing community building, right? And understanding what
 [00:30:47] uh the community of facilitators is looking for, what they need, what they
 [00:30:50] want. Um and then participation is voluntary c um in in Colorado and
 [00:30:57] Oregon. um such that a facilitator uh who wants to join the consortium
@@ -397,7 +398,7 @@
 [00:35:41] that. Um so um so uh we the the individual regardless of whether or not
 [00:35:49] they're still engaging with the facilitator
 [00:35:52] um continues to uh be pinged and uh supply uh data u moving forward. Um and
-[00:36:02] some of this is quite sensitive, right? We're asking them to dep to rate
+[00:36:02] and some of this is quite sensitive, right? We're asking them to dep to rate
 [00:36:06] their depression and anxiety and um other clinical measures
 [00:36:12] um um some some pretty sensitive issues u which is why the privacy um and that
 [00:36:20] way you know what happens in the 12 months afterwards. And so far um uh
@@ -406,7 +407,7 @@
 [00:36:41] before their experience, one week after their experience,
 [00:36:45] one month after their experience and then 3, six, 9 and 12 months after their
 [00:36:51] experience. um greater than 87% uh response at each
-[00:36:56] point.
+[00:36:56] each point.
 [00:37:03] Um Greg.
 [00:37:10] >> Oops. Okay. Yeah. Um >> it works. I guess
 [00:37:15] >> um since you're on that point curious where you see the greatest attrition
@@ -676,7 +677,7 @@
 [00:59:50] Um, I'm super interested in the concept of open data share and open access. I
 [00:59:57] have a passion project that I call the open data silo that's basically started
 [01:00:00] with HLC data and breaking that open for public research. Um, so you're right
-[01:00:06] in my heart. [laughter] Um but from the
+[01:00:06] right in my heart. [laughter] Um but from the
 [01:00:12] perspective of your organization and moving forward into expanded regulated
 [01:00:19] markets and out like um wild data that's inside containers, right? Like this is
 [01:00:26] not research data but it is researching wild data. This is fascinating and and
@@ -731,7 +732,7 @@
 [01:04:53] consented to additional research um directly to his study. Um so it's sort
 [01:05:00] of open is feeding um that scientific work uh that that he's doing which is
 [01:05:05] crucial. I envision a time eventually when rigorous psychometrics are done on
-[01:05:12] the uh lengthy survey that that perhaps the the PT will shrink uh to
+[01:05:12] on the uh lengthy survey that that perhaps the the PT will shrink uh to
 [01:05:19] something that could be more nimble in a population-based survey.
 [01:05:23] >> Yeah. And if I could if I could add a little bit to that, you know,
 [01:05:27] challenging experiences referral. um some of the questions that we've been
@@ -943,7 +944,7 @@
 [01:24:02] comfortable, and secure during your treatment? Were your needs for respect,
 [01:24:05] presence, care, and compassion met during your session? And I feel that uh
 [01:24:09] having that you're talking about in this information capture is kind of like our
-[01:24:14] kind of our non-negotiables, the way that you want to approach this makes a
+[01:24:14] our kind of our non-negotiables, the way that you want to approach this makes a
 [01:24:18] lot of sense. And I believe that having that little bit background makes a lot
 [01:24:22] as you said Danielle also is that uh it is captured at the point of care by the
 [01:24:28] best person for that and also try to capture once and not repeat. So those
@@ -983,7 +984,7 @@
 [01:27:49] welcomed into that space is a big one. So there's a lot of preparation that
 [01:27:54] goes in before even the the data and everything is gets collected. However,
 [01:27:59] this is uh this is what we need. This is this is still a medical program and I I
-[01:28:06] often have to tell and remind people that this is but we want to make it feel
+[01:28:06] I often have to tell and remind people that this is but we want to make it feel
 [01:28:10] not like a medical program and I think that's the whole point of all of this.
 [01:28:15] Thank you Brent for calling that point out because it's very true and that's
 [01:28:18] the reason why as part of the patient care um the care pathway and safety
@@ -1059,7 +1060,7 @@
 [01:33:49] people that choose to be engaged in self care in the psychedelic space are
 [01:33:56] utilizing psychedelics for self-care, betterment
 [01:34:01] of self um do have that kind of wherewithal and
-[01:34:07] that grows to some extent. So I'm not surprised to see the retention.
+[01:34:07] and that grows to some extent. So I'm not surprised to see the retention.
 [01:34:13] I'm very happy to see the data that shows the retention that I assume.
 [01:34:19] Um, and as far as the impact on the patient and the practitioner, I'm h
 [01:34:28] having to like extrapolate all this data. I've recently aligned myself with
@@ -1124,7 +1125,7 @@
 [01:39:29] multiple roles are physically located in that space and so it might make it easy
 [01:39:34] to go from one to the other also. So that might shrink down that a little bit
 [01:39:39] as well, but that's what I think. Um >> yeah.
-[01:39:45] >> So
+[01:39:45] >> Yeah. >> So
 [01:39:47] >> um yeah. All right. Well, thank you. That's that was that was my question.
 [01:39:50] >> Yeah. Thank you. And just before before Todd and Adrian jump off here, um Todd
 [01:39:57] will circulate when to change or improve myself as the second most common reason

@@ -255,10 +255,16 @@ GAPS = [
     },
     {
         "id": "gap-may22",
-        "name": "May 22 committee meeting, any record",
-        "means": "Held, but not recorded or posted by the department",
-        "at_event": "No record of this meeting exists. It was held, and the department did not "
-                    "record or post it.",
+        "name": "May 22 committee meeting, the full record",
+        "means": "The department's recording of this meeting runs 13 minutes and ends "
+                 "mid-sentence. It is published under the title May 26, 2026, and the "
+                 "department's link to it is labeled May 29. Its caption transcript is "
+                 "source-text/recordings/2026-05-22-tae-gZJS4sPuacg.txt in the repository, and "
+                 "the index beside it states the basis for the date. No record of the rest of "
+                 "the meeting is held",
+        "at_event": "The department's recording of this meeting runs 13 minutes and ends "
+                    "mid-sentence, and is published under the title May 26, 2026. No record of "
+                    "the rest of the meeting is held.",
         "events": ["e-2026-05-22"],
     },
     {

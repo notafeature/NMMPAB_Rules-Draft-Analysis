@@ -1,4 +1,4 @@
-[00:00:04] All right. Uh good afternoon everyone.
+[00:00:02] All right. Uh good afternoon everyone.
 [00:00:04] My name is Horge Gonzalez. I am the
 [00:00:07] medical psilocybin program manager and
 [00:00:10] so welcome to the meeting today and that
@@ -162,7 +162,7 @@
 [00:07:22] right? There's a lot to hold on to here
 [00:07:24] as far as like the different variables.
 [00:07:28] Um,
-[00:07:37] and so where one community that is more
+[00:07:33] and so where one community that is more
 [00:07:37] rural than another,
 [00:07:39] the living wage or however it costs to
 [00:07:42] live there might be less or more. We
@@ -270,11 +270,11 @@
 [00:12:21] problem um this challenge and so yeah
 [00:12:25] let's go um Ian I think I saw your hand
 [00:12:28] pop up
-[00:12:46] I don't know if Ian's mic is enabled or
+[00:12:44] I don't know if Ian's mic is enabled or
 [00:12:46] not, but
 [00:12:47] >> your mic isn't enabled. And you talk
 [00:12:50] when you're ready.
-[00:13:04] Hi, can you hear me?
+[00:13:02] Hi, can you hear me?
 [00:13:04] >> Yes, now we can.
 [00:13:05] >> Hi. Sorry, my computer was acting up.
 [00:13:07] Um, yeah, I was just curious, um, and
@@ -310,7 +310,7 @@
 [00:14:30] didn't discuss it, but it was it was in
 [00:14:32] that realm. So, I think I saw Greg or
 [00:14:34] Brenda their hand pop up.
-[00:14:42] >> Brenda,
+[00:14:40] >> Brenda,
 [00:14:42] >> Brenda, your mic's enabled.
 [00:14:43] >> Uh, yeah, I just put it in the chat. A
 [00:14:45] sliding fee for um people's income. Uh I
@@ -418,7 +418,7 @@
 [00:19:28] taper? So, basically, are we covering
 [00:19:32] 100% of the session if they're at 200%
 [00:19:37] or is that like a reduced amount?
-[00:19:46] Dominic may have a better answer, but it
+[00:19:43] Dominic may have a better answer, but it
 [00:19:46] is my understanding that at if we just
 [00:19:49] went with just this slide and nothing
 [00:19:52] else, right? We weren't doing the
@@ -528,7 +528,7 @@
 [00:24:27] as much
 [00:24:29] uh
 [00:24:32] financial
-[00:24:38] can't think of the word. I'm so sorry.
+[00:24:36] can't think of the word. I'm so sorry.
 [00:24:38] but in order to be able to take care of
 [00:24:40] as many people as possible.
 [00:24:43] But also realizing that, you know,
@@ -732,7 +732,7 @@
 [00:33:55] we have to be able to be judicious in
 [00:33:58] how we're um figuring out. And there is
 [00:34:02] a little bit of
-[00:34:08] uh you know we can't be voyers. We can't
+[00:34:06] uh you know we can't be voyers. We can't
 [00:34:08] you know anticipate the future. But I
 [00:34:11] feel like trying to find just that
 [00:34:13] little middle spot where we can be of
@@ -771,12 +771,12 @@
 [00:35:31] people financially in this particular
 [00:35:33] way as we can. Um, Greg, you have your
 [00:35:35] hand up.
-[00:35:42] Um just to touch on um
+[00:35:39] Um just to touch on um
 [00:35:42] Hanifa's question here about
 [00:35:45] [clears throat] Medicaid. I think it
 [00:35:46] would be interesting to kind of like
 [00:35:48] trace that conversation and I know
-[00:35:57] we are amongst the process of discovery
+[00:35:53] we are amongst the process of discovery
 [00:35:57] on that and there's a lot of unknowns.
 [00:35:59] Um, I think it's interesting that if we
 [00:36:02] land the Medicaid, which I think we are
@@ -803,7 +803,8 @@
 [00:37:03] super bill for the all of the different
 [00:37:08] uh events inside the container of the
 [00:37:11] PAT event.
-[00:37:26] PAT
+[00:37:15] I think that's the whole thing.
+[00:37:24] PAT
 [00:37:26] >> psychedelic assisted therapy.
 [00:37:29] And yeah, I agree it's not for everyone.
 [00:37:31] I'm probably not going to like I mean
@@ -864,12 +865,12 @@
 [00:39:59] wonder if that will be the same for
 [00:40:01] medical psilocybin services.
 [00:40:04] Uh,
-[00:40:08] I'm not sure what the comment is with
+[00:40:07] I'm not sure what the comment is with
 [00:40:08] Jim's what a patient discusses as
 [00:40:10] private. Yes, that is just protocol. It
 [00:40:13] is all paid. Um, Brenda, you have your
 [00:40:16] hand up.
-[00:40:21] >> Thanks, Desbah. I really appreciate you
+[00:40:19] >> Thanks, Desbah. I really appreciate you
 [00:40:21] explaining this the way you are because
 [00:40:23] it has to be it has to be said in in a
 [00:40:27] language that we could all understand.
@@ -1182,16 +1183,16 @@
 [00:55:01] $200.
 [00:55:02] Uh, sorry I see 10 sessions. 2350 bucks.
 [00:55:08] No, 23. Sorry. 235.
-[00:55:18] >> So let's say like someone's session,
+[00:55:16] >> So let's say like someone's session,
 [00:55:18] someone's total price tag for therapy
 [00:55:21] including the medicine is $1675.
-[00:55:36] Then if everybody's was that way, cuz
+[00:55:34] Then if everybody's was that way, cuz
 [00:55:36] we're all the same and we all have the
 [00:55:38] same problems that need to be addressed
 [00:55:40] in the exact same way and the exact same
 [00:55:42] length of time, that means we would
 [00:55:44] possibly be able to cover 376 people.
-[00:55:54] If if let's just say if a if a person
+[00:55:51] If if let's just say if a if a person
 [00:55:54] who was a therapist charged $235
 [00:55:58] per hour session
 [00:56:00] for five sessions,
@@ -1215,7 +1216,7 @@
 [00:56:53] say 200% poverty level.
 [00:56:56] That's basically their entire annual 200
 [00:57:00] times their annual salary.
-[00:57:07] Um,
+[00:57:05] Um,
 [00:57:07] and I don't feel like we're getting any
 [00:57:09] further, but I'm just throwing all of
 [00:57:10] this information out there. Hopefully,
@@ -1290,7 +1291,7 @@
 [01:00:02] so any other insight?
 [01:00:07] >> Uh, Jeff has his hand up.
 [01:00:09] >> Okay, great. Yes.
-[01:00:15] >> Hey, thanks Dezba. I just uh Sorry,
+[01:00:12] >> Hey, thanks Dezba. I just uh Sorry,
 [01:00:15] guys. I don't know if it's live. I just
 [01:00:16] put it in the into the chat uh because I
 [01:00:18] thought we were about to run out of
@@ -1402,7 +1403,7 @@
 [01:04:43] >> Okay. Thank you. Yeah. Thank you,
 [01:04:44] Senator.
 [01:04:46] >> Um,
-[01:04:58] anyone else? [laughter]
+[01:04:56] anyone else? [laughter]
 [01:04:58] I think I think that we, you know, as
 [01:04:59] far as like we did come up with the
 [01:05:01] 200%, that would be like a good place to
@@ -1414,7 +1415,7 @@
 [01:05:18] like what else do we look at
 [01:05:21] because
 [01:05:23] um
-[01:05:31] because back to Jim's point in the
+[01:05:28] because back to Jim's point in the
 [01:05:31] beginning which is again something that
 [01:05:33] we had thought brought up earlier was
 [01:05:35] you know we don't want to have it happen
@@ -1460,7 +1461,7 @@
 [01:07:31] needs it both financially, medically,
 [01:07:35] um,
 [01:07:37] and what are those other criteria?
-[01:07:44] Um,
+[01:07:41] Um,
 [01:07:44] >> that's I see Ian's hand up.
 [01:07:46] >> Okay. Yeah, Ian.
 [01:07:48] >> Yeah. Uh, I just wanted to kind of hop
@@ -1520,10 +1521,10 @@
 [01:10:33] support the New Mexicans that are living
 [01:10:35] there, even if their population, right,
 [01:10:38] on its own doesn't support it.
-[01:10:45] >> Thank you, Ann. Um and then you also
+[01:10:43] >> Thank you, Ann. Um and then you also
 [01:10:45] brought up another idea. Um it's another
 [01:10:49] point of you know how how
-[01:10:57] uh yeah because this is through the
+[01:10:55] uh yeah because this is through the
 [01:10:57] clinicians the the the therapists
 [01:11:01] um side of it that who know their
 [01:11:05] populations more
@@ -1568,7 +1569,8 @@
 [01:12:53] Um, do we have any hands who are in
 [01:12:56] agreement of the 200%? Please raise your
 [01:12:59] virtual hand.
-[01:13:16] there I see five hands up.
+[01:13:03] Is
+[01:13:14] there I see five hands up.
 [01:13:16] >> Okay, I think that's probably about
 [01:13:18] everybody.
 [01:13:20] [clears throat]
@@ -1577,17 +1579,18 @@
 [01:13:28] All right. Is anybody you know would
 [01:13:31] like to have a different consideration
 [01:13:34] other than 200%.
-[01:13:51] So far I only see one hand.
+[01:13:41] Different consideration other than 200%.
+[01:13:47] So far I only see one hand.
 [01:13:51] Okay. And I'm just going to say I guess
 [01:13:53] everyone else is abstaining from voting.
 [01:13:56] Um,
-[01:14:02] unless
+[01:13:59] unless
 [01:14:02] Don, I can't tell. I saw your hand up
 [01:14:04] for the for the 200%. I can't tell if
 [01:14:06] you forgot to lower your hand or if you
 [01:14:09] were voting for a different
 [01:14:11] consideration other than 200%.
-[01:14:25] No comment.
+[01:14:22] No comment.
 [01:14:25] All right. All right. Well, that's half
 [01:14:26] that's half of the people that are not
 [01:14:29] um Department of Health,
@@ -1607,7 +1610,7 @@
 [01:15:04] >> I'm sorry. Um Don, if you were
 [01:15:06] interested in commenting, I have allowed
 [01:15:07] your mic.
-[01:15:18] Uh yes, I was uh just voting for the
+[01:15:16] Uh yes, I was uh just voting for the
 [01:15:18] 200%.
 [01:15:20] >> Oh, okay. So then that's seven. No,
 [01:15:22] that's that's six. That's six. Okay.
@@ -1622,7 +1625,7 @@
 [01:15:42] that with the half of the money. Okay,
 [01:15:45] thank you Senator for um pointing that
 [01:15:48] out. Um
-[01:15:55] yeah, if if we wanted to have a
+[01:15:52] yeah, if if we wanted to have a
 [01:15:55] conversation about rural
 [01:15:59] demographics
 [01:16:01] and how that is taken into consideration
@@ -1636,7 +1639,7 @@
 [01:16:25] person
 [01:16:27] that is
 [01:16:30] uh
-[01:16:37] I don't want to say the severity of the
+[01:16:35] I don't want to say the severity of the
 [01:16:37] of their of their need but let's just
 [01:16:39] say for the severity and the sake of the
 [01:16:41] need that it's already a given. We don't
@@ -1658,7 +1661,7 @@
 [01:17:19] don't have insurance? Because that to me
 [01:17:20] was be like a huge
 [01:17:23] um
-[01:17:30] qualifier perhaps. I don't know if
+[01:17:28] qualifier perhaps. I don't know if
 [01:17:30] anyone agrees with me. I want to say
 [01:17:32] that up until [laughter]
 [01:17:33] just the beginning of this month, I did
@@ -1674,7 +1677,7 @@
 [01:17:58] equity fund? Any suggestions? I I would
 [01:18:01] say whether or not they have insurance.
 [01:18:02] Period.
-[01:18:09] Even though I feel like no one has an
+[01:18:07] Even though I feel like no one has an
 [01:18:09] excuse to have insurance. I just outed
 [01:18:11] myself and said I did not have any up
 [01:18:12] until this point up until earlier this
@@ -1755,7 +1758,7 @@
 [01:21:33] are who are asking for it, right?
 [01:21:37] Sometimes the people may be the ones who
 [01:21:39] don't know that this is even an option.
-[01:21:48] who don't know that this is even an
+[01:21:46] who don't know that this is even an
 [01:21:48] option and who are you know maybe they
 [01:21:52] don't want to but maybe just on a whim
 [01:21:56] and are able to come in I don't know
@@ -1811,7 +1814,7 @@
 [01:23:47] Um,
 [01:23:49] yes, let me just read this really
 [01:23:52] quickly here. Uh,
-[01:23:59] that goes for therapy as this is from
+[01:23:58] that goes for therapy as this is from
 [01:23:59] Brenda. That goes for therapy as well. A
 [01:24:01] therapist will need to qualify them for
 [01:24:03] a mental health therapy assessment. Yes.
@@ -1856,7 +1859,7 @@
 [01:25:41] me for to essentially say, "Hey, I just
 [01:25:44] need a non a list that this person has
 [01:25:47] no contraindications."
-[01:26:01] Okay. No, thank you for bringing that
+[01:26:00] Okay. No, thank you for bringing that
 [01:26:01] up. Um, yeah, and that's kind of, you
 [01:26:04] know, as coming at it from a massage
 [01:26:05] therapist, you know, I'm also taking
@@ -1869,7 +1872,7 @@
 [01:26:19] medical provider about such issues and
 [01:26:21] contraindications prior to to working
 [01:26:24] with me. Um,
-[01:26:31] let's see. Okay. Is there another
+[01:26:28] let's see. Okay. Is there another
 [01:26:31] potential proposal of like something to
 [01:26:34] look at whether it's rural initi a rural
 [01:26:38] initiative, whether it's um
@@ -1879,7 +1882,7 @@
 [01:26:49] even as uh Senator Steinborn had
 [01:26:53] reiterated from a previous meeting about
 [01:26:59] um
-[01:27:04] and I hate I'm going to say it even
+[01:27:03] and I hate I'm going to say it even
 [01:27:04] though it sounds horrible, limiting the
 [01:27:07] number of patients in a specific
 [01:27:09] diagnosis.
@@ -1895,25 +1898,25 @@
 [01:27:38] uh thresholds gateways as possible you
 [01:27:41] know but of course it's not like we need
 [01:27:43] to. So Heneifa I see your hand up.
-[01:27:54] >> Hi good afternoon. Um, I just wanted to
+[01:27:50] >> Hi good afternoon. Um, I just wanted to
 [01:27:54] bounce back to something I left in the
 [01:27:55] chat earlier, which was around, you
 [01:27:58] know, should we consider a
 [01:27:59] recommendation around automatically
 [01:28:01] qualifying those who are already on
 [01:28:04] Medicaid uh here in New Mexico?
-[01:28:15] >> Okay, I think that's a good one. I think
+[01:28:13] >> Okay, I think that's a good one. I think
 [01:28:15] that would probably be a good one.
 [01:28:19] And Greg,
 [01:28:21] if you I'm sorry. Hey, Anifa, are you
 [01:28:23] are you complete?
 [01:28:26] >> I am complete. Thank you so much.
 [01:28:27] >> Okay. Uhhuh. And Greg,
-[01:28:34] [clears throat]
+[01:28:33] [clears throat]
 [01:28:34] >> I have opinions on the like
 [01:28:37] categorization. Um, I think it's I think
 [01:28:40] it's definitely worth
-[01:28:46] considering. I think if we're going to
+[01:28:44] considering. I think if we're going to
 [01:28:46] do it now ahead of the program data,
 [01:28:49] it's just like it's arbitrary. Um I
 [01:28:54] think it would be more valuable to
@@ -1968,7 +1971,7 @@
 [01:30:57] insurance is usually because I'm too
 [01:30:59] depressed to figure it out. So those
 [01:31:01] people definitely need help.
-[01:31:10] And uh yeah, good luck one day.
+[01:31:06] And uh yeah, good luck one day.
 [01:31:10] >> Thank you, Greg, for for um essentially
 [01:31:14] pointing that out. I too feel like you
 [01:31:16] know there are a lot of um barriers
@@ -2030,7 +2033,8 @@
 [01:33:52] able to provide
 [01:33:55] uh everything to everyone. And I think
 [01:33:57] we need to be more realistic about that.
-[01:34:09] It's um
+[01:34:03] >> Yes.
+[01:34:06] It's um
 [01:34:09] that's why I'm trying to with you know I
 [01:34:11] think I think it I think what I'm going
 [01:34:13] to say is that I I really like the idea
@@ -2041,7 +2045,7 @@
 [01:34:26] a minute after I ask. Um, but I'm going
 [01:34:28] to go to Hanifeh. I saw your hand pop
 [01:34:31] up.
-[01:34:38] >> Yes, thank you again. Um, I think I
+[01:34:35] >> Yes, thank you again. Um, I think I
 [01:34:38] heard there's there's two things kind of
 [01:34:41] emerging, which was if people are
 [01:34:43] insured, if they don't have insurance,
@@ -2140,7 +2144,7 @@
 [01:38:43] therapy session itself and then the
 [01:38:45] talking therapy session. So, it's like
 [01:38:46] $20,000,
-[01:38:52] then we would kind of go into how much
+[01:38:49] then we would kind of go into how much
 [01:38:52] of that percentage of the 20% based off
 [01:38:55] of how much Medicaid would be paying for
 [01:38:57] that. If Medicaid paid for
@@ -2148,7 +2152,7 @@
 [01:39:02] or let's see, sorry, [laughter]
 [01:39:05] [gasps]
 [01:39:06] $19,000,
-[01:39:11] $900.
+[01:39:10] $900.
 [01:39:11] And so then the person was able to only
 [01:39:14] pay for 100 and their co-ay was like 30,
 [01:39:17] then that means then from the fund is
@@ -2271,7 +2275,7 @@
 [01:43:50] It's beautiful.
 [01:43:53] It can be the program logo.
 [01:43:56] Um,
-[01:44:01] it's a cart and horse thing. It's it's
+[01:43:59] it's a cart and horse thing. It's it's
 [01:44:01] really strange cuz it's like you got to
 [01:44:02] go to the doctor to get the designation
 [01:44:04] and then you have to but then like there
@@ -2282,7 +2286,7 @@
 [01:44:17] whatever the what are we calling that
 [01:44:20] qualifying clinician certifying
 [01:44:22] clinician um [clears throat]
-[01:44:28] that treatment plan might already be in
+[01:44:27] that treatment plan might already be in
 [01:44:28] place which means that you've actually
 [01:44:30] interacted acted with this provider to
 [01:44:32] some context, whether it's billable
@@ -2319,7 +2323,7 @@
 [01:45:47] have to come through something. But
 [01:45:48] yeah, just that container of
 [01:45:50] autoqualifyish.
-[01:45:57] >> Yes,
+[01:45:55] >> Yes,
 [01:45:57] I hear what you're saying. I believe
 [01:45:59] what I'm understanding is just like is
 [01:46:02] this the only two qualifying things in
@@ -2513,7 +2517,7 @@
 [01:53:44] through this and figure out how to do
 [01:53:46] it. It's it's never an easy process when
 [01:53:49] we're looking at equity issues.
-[01:53:57] >> Thank you, Senator Seyorn and uh Dominic
+[01:53:54] >> Thank you, Senator Seyorn and uh Dominic
 [01:53:57] for having that last little kind of
 [01:54:00] conversation. So, we were not able to
 [01:54:02] really kind of get to the second
@@ -2579,7 +2583,7 @@
 [01:56:32] things? Dominic Jorge, any departmental
 [01:56:34] admin, please send comments to medical
 [01:56:37] psilocybin dooh.n.gov.
-[01:56:44] Um, please continue the discussion
+[01:56:42] Um, please continue the discussion
 [01:56:44] amongst yourselves [laughter] in spaces.
 [01:56:47] And again, thank you so much for your
 [01:56:49] time and spending some time with me this
