@@ -17,7 +17,11 @@ LEDE = ("The full text of 7.35.4 NMAC, Treatment Equity Fund, as the department 
         "every history note reads N, xx/xx/2026, the date left blank until adoption. Where the "
         "text departs from the recommendation the Advisory Board voted on September 11, a note "
         "sits under the section and the full comparison is on "
-        "<a href='recommendation.html'>The board recommendation</a>. Line breaks are collapsed "
+        "<a href='recommendation.html'>The board recommendation</a>. A note marked New from the "
+        "department sits under each provision that is in neither the committee's August 18 "
+        "framework nor the board's September 11 vote and was not found in the captions of the "
+        "recorded committee and board meetings; the list is at "
+        "<a href='recommendation.html#new'>The board recommendation</a>. Line breaks are collapsed "
         "for reading; where the extraction stumbles, the linked PDF governs.")
 
 _A = (f"<a href='{AMEND_DOC}' target='_blank' rel='noopener' data-cite='Proposed amendment to "
@@ -59,3 +63,36 @@ ANNOTATIONS = {
           "\"based solely on the lack or unavailability of funding\". 7.35.4.17 (E) states that "
           "such a suspension is not a finding that anyone violated the rule.")],
 }
+
+# New from the department: in the proposed text, in neither recommendation, and not found
+# in the captions of the 23 recorded committee and board meetings, December 5, 2025 to
+# September 14, 2026, searched for its terms on October 22, 2026.
+def _dept(what):
+    return ("dept", "Not in the recommendation or the recorded meetings", what)
+
+for _n, _what in [
+    (8, "Subsection D (5): eligibility ends 12 months after funding approval. The committee "
+        "and the board set no duration."),
+    (9, "Subsection B (3): the three forms of residency proof, among them a letter of "
+        "accommodation from a licensed medical or behavioral health provider, and a tribal "
+        "identification card with a utility bill. The recommendation required residency and "
+        "named no proof."),
+    (10, "Subsection E: when another payer pays after the fund has, the claimant notifies the "
+         "department within 30 calendar days and returns the overpayment."),
+    (11, "Subsection A (1) and (3), and Subsection B: payment is capped at the claimant's usual "
+         "and customary charge as well as the rate, the rate may be Medicaid's or Medicare's, and "
+         "where neither applies the department may use the most analogous one. The recommendation "
+         "capped reimbursement at Medicaid rates."),
+    (12, "Subsection D: a claim is due within 180 calendar days after the date of service. "
+         "Claims through the department's system and SHARE were discussed; the deadline was not."),
+    (15, "Subsection A: claim records are kept at least seven years after payment or the final "
+         "resolution of an audit, investigation, or recovery."),
+    (16, "Subsection D: requested records are due within 10 business days. Audit procedures "
+         "were recommended; the deadline and the specific powers in Subsection C were not."),
+    (18, "The whole section: what counts as an overpayment, repayment within 30 calendar days, "
+         "and recovery by offset against future payments."),
+    (20, "The whole section: administrative review on written request within 30 calendar days, "
+         "a review of documents and not a hearing, no stay of the action under review, and "
+         "Subsection H, no review of a determination based solely on the lack of funding."),
+]:
+    ANNOTATIONS.setdefault(_n, []).append(_dept(_what))

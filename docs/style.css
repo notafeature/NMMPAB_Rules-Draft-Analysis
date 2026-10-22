@@ -7,6 +7,7 @@
   --bg:#FFFFFF; --ink:#16181D; --ink2:#4A4F58; --faint:#8A8F98; --hair:#E4E6EA; --wash:#F5F6F8;
   --blue:#2447C7; --bluewash:#EEF1FB;
   --open:#9A6700; --openwash:#FBF3DF;
+  --dept:#6B3FA0; --deptwash:#F3EEFA;
   --settled:#1E6B45; --settledwash:#EAF4EE;
   --defect:#B42318; --defectwash:#FBEDEB;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -94,6 +95,7 @@ p{margin:0 0 12px;max-width:64ch}
 .mark.defect{color:var(--defect);background:var(--defectwash)}
 .mark.gray{color:var(--ink2);background:var(--wash)}
 .mark.blue{color:var(--blue);background:var(--bluewash)}
+.mark.dept{color:var(--dept);background:var(--deptwash)}
 
 /* verbatim rule text: serif on wash, cited */
 .verbatim{font:16px/1.75 var(--serif);background:var(--wash);border-left:3px solid var(--ink);padding:14px 18px;margin:12px 0}
@@ -129,6 +131,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .note{border-left:3px solid var(--blue);background:var(--bluewash);padding:12px 16px;font-size:14px;margin:14px 0}
 .note.open{border-color:var(--open);background:var(--openwash)}
 .note.defect{border-color:var(--defect);background:var(--defectwash)}
+.note.dept{border-color:var(--dept);background:var(--deptwash)}
 
 /* Citations: the source opens on hover, closes on leave, and the click opens it in a new tab */
 a[data-cite]{position:relative}

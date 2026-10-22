@@ -14,15 +14,19 @@ CHANGED = {
 # Per-page revision entries, newest first.
 REVISIONS = {
     "index": [
+        ("October 22, 2026", "A line naming the ten provisions the department introduced, linked to the list."),
         ("October 22, 2026", "Created as the front page of the Part: the plaque, the portals by role, the status surfaces written by tools/sync-status.py, and the page directory."),
     ],
     "rule": [
+        ("October 22, 2026", "A New from the department note under each provision in neither recommendation and not found in the captions of the 23 recorded committee and board meetings: 7.35.4.8, .9, .10, .11, .12, .15, .16, .18, and .20."),
         ("October 22, 2026", "Created, generated from the October 20 extraction by tools/build-rule-page.py: all twenty sections verbatim, cited to the PDF page, with notes at 7.35.4.7, .10, .14, and .20."),
     ],
     "fund": [
+        ("October 22, 2026", "The New from the department mark on each requirement in neither recommendation and not found in the recorded meetings, with a key at the top of the page."),
         ("October 22, 2026", "Created: what the proposed rule would require of a patient, of a provider who bills the fund, and of the department, each cited to its subsection and page, with what the rule does not state."),
     ],
     "recommendation": [
+        ("October 22, 2026", "The list of department additions rebuilt from a search of the captions of 23 recorded committee and board meetings, each item marked New from the department. Two items listed earlier the same day, no guarantee of payment and payment in full, were discussed in committee and are removed from it, with the moments cited."),
         ("October 22, 2026", "Created: the equity fund recommendation as the committee voted it on August 18 and the board on September 11, item by item beside the proposed text, each item cited to the recording and to the subsection."),
     ],
     "record": [
