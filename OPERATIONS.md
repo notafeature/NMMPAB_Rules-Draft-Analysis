@@ -118,10 +118,13 @@ The hub answers only once the apex redirect rule (1.1) is disabled.
 | Deploy | `python3 tools/build.py && npx wrangler@4 deploy --config ./wrangler.jsonc` from that repository |
 | Counter | **not counted**, decided September 11, 2026 and recorded in that repository's README (4.1 step 3, the written alternative); no beacon, not in `ALLOWED_ORIGINS` |
 
-### 1.5 The input form
+### 1.5 The input form (withdrawn)
 
-`docs/7.35.3/comment.html` posts to Formspree form `mjgqnkvv`. Submissions land in the Formspree
-inbox of the account that owns the form. No other service receives reader input.
+Withdrawn October 22, 2026. No page under `docs/` carries a form or links Formspree, and the
+site receives no reader input. The comment pages that carried the form are kept, unserved, in
+`archive/comment-pages/`; they posted to Formspree form `mjgqnkvv`. Closing that form is done in
+the Formspree account, not in this repository; until it is closed, a copy of an old page can
+still submit to it.
 
 ### 1.6 Local preview
 
@@ -137,7 +140,7 @@ No credential is in the repository. The Worker's `wrangler.toml` holds only iden
 | GitHub account | the owner's browser and `gh auth` (scopes `repo`, `workflow`, `read:org`, `gist`) | merging, Pages settings, making the repository private |
 | Cloudflare account | the owner's browser and `wrangler login` | DNS, rules, the Worker, any new project |
 | `SALT`, `DASH_PASS` | Worker secrets, set by `setup.sh` | the counter; regenerate with `wrangler secret put` |
-| Formspree account | the owner's browser | the input form |
+| Formspree account | the owner's browser | the withdrawn input form, `mjgqnkvv`; to be closed there |
 
 ---
 

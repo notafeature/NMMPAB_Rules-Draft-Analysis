@@ -99,6 +99,7 @@ REVISIONS = {
         ("July 27, 2026", "Created in the July 27 redesign, and brought to the submission the same day: the summary of the recommended rules reached the department on July 27, and this page states its figures beside the published text, 80 didactic hours, a staged practicum of 60 or 70 hours by role, and 20 hours of case presentation and consultation on two cases, with the July 17 presentation kept as the basis. The document itself is not published on this site; every figure is stated here and named to its source."),
     ],
     "training-hours-record": [
+        ("October 22, 2026", "The community input register states that the site's input form was withdrawn on October 22, 2026, in the past tense."),
         ("October 22, 2026", "The status strip states the rule hearing as held October 2 and the rule as not adopted."),
         ("October 1, 2026", "The August 21 note no longer states that no recording of the meeting is held. The department's recording is in the register."),
         ("August 26, 2026", "The role tiles, the published-hours section, the waiver table, the benchmark row, and the cost tiles carry the August 25 figures: the shared module at 65 didactic hours with 10 simulated, the practicum unchanged at 100 and 120 with the evaluation gate, the subsections relettered; the middle role reads practitioner with the recommendation's proposed rename noted."),
