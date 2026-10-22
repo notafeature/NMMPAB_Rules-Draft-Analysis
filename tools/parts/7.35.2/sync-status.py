@@ -9,26 +9,41 @@ DATES = {
     "adopted":  "2026-06-23",   # adopted, effective, published in the Register, Issue 12
     "amend":    "2026-08-25",   # proposed amendments to .7, .10, .24, and the hearing notice
     "hearing":  "2026-10-02",   # the rule hearing on the amendments, fixed by the notice
+    "amend2":   "2026-10-20",   # a further proposed amendment to .7, with the proposed 7.35.4
+    "hearing2": "2026-11-20",   # the rule hearing on it and on 7.35.4, fixed by the notice
 }
 
 # The status items. Newest date first. state: open, defect, or settled.
 STATUS = [
     {
+        "id": "amendment-fund",
+        "state": "open",
+        "date": DATES["amend2"],
+        "summary": "A further amendment to the definitions, adding eleven terms for the treatment "
+                   "equity fund, was proposed October 20 and goes to a rule hearing on November 20",
+        "stand": "On October 20, 2026 the department proposed a further amendment to 7.35.2.7, "
+                 "carrying the terms of the August 25 amendment and adding eleven for the "
+                 "proposed 7.35.4 NMAC, Treatment Equity Fund, which imports its definitions "
+                 "from this section. The notice fixes a rule hearing on both for November 20, "
+                 "2026, 9:00 AM, in Santa Fe and by video conference and telephone. The proposed "
+                 "fund rule and the hearing are on <a href=\"/7.35.4/index.html\">its pages</a>.",
+    },
+    {
         "id": "amendments",
         "state": "open",
         "date": DATES["amend"],
         "summary": "Amendments to the definitions, the general producer requirements, and the "
-                   "transportation of psilocybin were proposed August 25 and go to the October 2 "
-                   "rule hearing",
+                   "transportation of psilocybin, proposed August 25, went to the October 2 rule "
+                   "hearing and are not adopted",
         "stand": "The department published proposed amendments to 7.35.2.7, 7.35.2.10, and "
                  "7.35.2.24 on August 25, with the notice fixing a rule hearing for October 2, "
-                 "9:00 AM, in the Harold Runnels Building auditorium in Santa Fe, in person, by "
-                 "video conference, and by telephone. The amendments would add twenty-one defined "
-                 "terms, let producers sell to healing centers, and let certified practitioners and "
-                 "healing centers transport psilocybin. Each is noted at the section it changes on "
-                 "<a href=\"rule.html#s7\">The adopted rule</a>. Written comment must reach the "
-                 "department by the close of the hearing; how comment works is on "
-                 "<a href=\"comment.html\">Comment</a>.",
+                 "2026, 9:00 AM, in Santa Fe, in person, by video conference, and by telephone; "
+                 "written comment was due by the close of the hearing. The department's exhibit "
+                 "binder for the hearing, posted October 1, carries the amendments in the words "
+                 "published August 25 and lists no anticipated revisions. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. The adopted text "
+                 "stands unamended. Each amendment is noted at the section it would change on "
+                 "<a href=\"rule.html#s7\">The adopted rule</a>; the record is on "
+                 "<a href=\"record.html#e-2026-10-02\">Meetings and filings</a>.",
     },
     {
         "id": "text",
@@ -48,10 +63,10 @@ STATUS = [
 
 # The scheduled dates, oldest first, as the front page lists them.
 SCHEDULED = [
-    (DATES["hearing"], "Rule hearing on the proposed amendments to 7.35.2 NMAC and on the "
-                       "proposed 7.35.3 NMAC, 9:00 AM, Harold Runnels Building auditorium, "
-                       "Santa Fe, and by video conference and telephone; fixed by the notice "
-                       "published August 25. Written comment is due by the close of the hearing."),
+    (DATES["hearing2"], "Rule hearing on the proposed amendment to 7.35.2.7 NMAC of October 20 and "
+                        "on the proposed 7.35.4 NMAC, 9:00 AM, Harold Runnels Building "
+                        "auditorium, Santa Fe, and by video conference and telephone; fixed by "
+                        "the notice published October 20."),
 ]
 
 ANTICIPATED = []
@@ -61,8 +76,9 @@ STAGES = [
     ("Proposed", "NOTICED MAR 24", ""),
     ("Rule hearing", "APR 24", ""),
     ("Adopted", "IN EFFECT JUN 23", ""),
-    ("Amendments proposed", "PUBLISHED AUG 25", "here"),
-    ("Hearing on amendments", "OCT 2 · BY NOTICE", "todo"),
+    ("Amendments proposed", "PUBLISHED AUG 25", ""),
+    ("Hearing on amendments", "OCT 2", "here"),
+    ("Amendments adopted", "NOT YET", "todo"),
 ]
 
 # No eligibility legend on this Part.

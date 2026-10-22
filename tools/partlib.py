@@ -36,6 +36,10 @@ PARTS = {
         "suffix": "7.35.3 NMAC Training and Education",
         "brand": "7.35.3 NMAC &middot; Training &amp; Education",
     },
+    "7.35.4": {
+        "suffix": "7.35.4 NMAC Treatment Equity Fund",
+        "brand": "7.35.4 NMAC &middot; Treatment Equity Fund",
+    },
 }
 
 DEFAULT = "7.35.3"

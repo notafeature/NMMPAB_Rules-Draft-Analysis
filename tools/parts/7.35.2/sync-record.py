@@ -6,6 +6,35 @@ tools/partlib.py; the tool holds the code, this file holds what is true of the P
 # document names its successor. `chain` marks the successive texts of the rule.
 DOCUMENTS = [
     {
+        "slug": "rules-7.35.3-exhibit-binder-2026-10-01",
+        "name": "The exhibit binder for the October 2 hearing",
+        "file": "documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
+        "cite": "Department of Health exhibits for the October 2, 2026 hearing on 7.35.3 NMAC "
+                "and the amendments to 7.35.2 NMAC, published October 1, 2026",
+        "date": "2026-10-01",
+        "event": "e-2026-10-01",
+        "what": "The department's final exhibit binder for the hearing, with the proposed texts "
+                "and the written public comments",
+        "status": "record",
+        "notes": "153 pages. The department's exhibits for the October 2 hearing: Exhibit 1 the proposed 7.35.3 NMAC and Exhibit 2 the proposed amendments to 7.35.2 NMAC, each identical in its words to the August 25 publication; the notice; the affidavits of publication; the hearing officer's appointment; and, as Exhibit 8, 51 written public comments, 8.A through 8.YY. It lists no anticipated revisions",
+    },
+    {
+        "slug": "rules-7.35.2-amendments-2026-10-20-published",
+        "name": "Proposed amendment to 7.35.2.7 NMAC, for the equity fund",
+        "file": "documents/rules-7.35.2-amendments-2026-10-20-published.pdf",
+        "cite": "Proposed amendment to 7.35.2.7 NMAC, October 20, 2026",
+        "date": "2026-10-20",
+        "event": "e-2026-10-20",
+        "what": "Strike-and-add text for the definitions section, carrying the terms of the "
+                "August 25 amendment and adding eleven for the proposed 7.35.4 NMAC, Treatment "
+                "Equity Fund. Proposed, not adopted; heard November 20",
+        "status": "record",
+        "notes": "5 pages. The added terms are allowable amount, claim, claimant, covered "
+                 "treatment, director, federal poverty guidelines, fund, household, other payer, "
+                 "program manager, and SHARE. Published with the proposed 7.35.4 NMAC, which has "
+                 "<a href=\"/7.35.4/index.html\">its own pages</a>",
+    },
+    {
         "slug": "rules-7.35.2-amendments-2026-08-25-published",
         "name": "Proposed amendments to 7.35.2 NMAC",
         "file": "documents/rules-7.35.2-amendments-2026-08-25-published.pdf",
@@ -14,7 +43,7 @@ DOCUMENTS = [
         "event": "e-2026-08-25",
         "what": "Proposed amendments to three sections of the adopted rule: the definitions, "
                 "producer sales, and the transportation of psilocybin. Proposed, not adopted; "
-                "heard October 2",
+                "the October 2 hearing was set to take them up",
         "status": "record",
         "notes": "6 pages. Strike-and-add text for 7.35.2.7, 7.35.2.10, and 7.35.2.24; each "
                  "is noted at its section on <a href=\"rule.html#s7\">The adopted rule</a>. The "
@@ -134,6 +163,18 @@ DOCUMENTS = [
 # names carries the reciprocal absence line.
 GAPS = [
     {
+        "id": "gap-hearing-2026-10-02",
+        "name": "The record of the October 2 hearing",
+        "means": "No recording, transcript, or hearing officer's report of the October 2 hearing "
+                 "is posted, and no response to the written comments. What was said at the "
+                 "hearing, and whether the department announced revisions there, is not held. "
+                 "The exhibit binder published October 1 is the last department document on "
+                 "this rulemaking",
+        "at_event": "No recording, transcript, or hearing officer's report of the hearing is "
+                    "held on this site.",
+        "events": ["e-2026-10-02"],
+    },
+    {
         "id": "gap-committee",
         "name": "Propagation Committee agendas, minutes, and recordings",
         "means": "The committee's nine meetings from January 9 to April 15, 2026 shaped the "
@@ -168,15 +209,41 @@ GAPS = [
 # slugs), absent (gap ids), and deeper (the fuller account).
 EVENTS = [
     {
+        "id": "e-2026-10-20",
+        "date": "2026-10-20",
+        "kind": "document",
+        "what": "<b>The department published a further proposed amendment to 7.35.2.7 NMAC</b>, "
+                "with the proposed 7.35.4 NMAC, Treatment Equity Fund, which imports its "
+                "definitions from this section, and fixed a rule hearing on both for November "
+                "20, 2026. The adopted text stands unamended until the department adopts an "
+                "amendment.",
+        "changed": [
+            ("<b>Definitions.</b> Eleven terms for the equity fund would be added to 7.35.2.7.",
+             "rule.html#s7", "7.35.2.7"),
+        ],
+        "attached": ["rules-7.35.2-amendments-2026-10-20-published"],
+        "deeper": [("/7.35.4/index.html", "The proposed 7.35.4 NMAC")],
+    },
+    {
         "id": "e-2026-10-02",
         "date": "2026-10-02",
-        "kind": "scheduled",
+        "kind": "meeting",
         "what": "<b>The rule hearing on the proposed amendments to 7.35.2 NMAC and on the "
-                "proposed 7.35.3 NMAC, 9:00 AM, Harold Runnels Building auditorium, 1190 St. "
-                "Francis Drive, Santa Fe</b>, in person, by video conference, and by telephone. "
-                "Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published August "
-                "25</a>. Written comment must be received by the close of the hearing.",
-        "deeper": [("comment.html", "How comment works, and what is at issue")],
+                "proposed 7.35.3 NMAC, 9:00 AM, Harold Runnels Building auditorium, Santa Fe</b>, "
+                "in person, by video conference, and by telephone. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
+                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to comments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026.",
+        "absent": ["gap-hearing-2026-10-02"],
+        "deeper": [("comment.html", "The hearing as noticed, and what was at issue")],
+    },
+    {
+        "id": "e-2026-10-01",
+        "date": "2026-10-01",
+        "kind": "filing",
+        "what": "<b>The department posted its exhibit binder for the October 2 hearing</b>: the "
+                "proposed 7.35.3 NMAC and the proposed amendments to 7.35.2 NMAC as exhibited, "
+                "each identical in its words to the August 25 publication, and 51 written "
+                "public comments. The binder lists no anticipated revisions.",
+        "attached": ["rules-7.35.3-exhibit-binder-2026-10-01"],
     },
     {
         "id": "e-2026-08-25",

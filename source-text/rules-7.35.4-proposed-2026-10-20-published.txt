@@ -1,0 +1,351 @@
+===== PAGE 1 =====
+TITLE 7 HEALTH  
+CHAPTER 35 MEDICAL PSILOCYBIN  
+PART 4  TREATMENT EQUITY FUND 
+ 
+7.35.4.1  ISSUING AGENCY: New Mexico department of health. 
+[7.35.4.1 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.2  SCOPE: This rule applies to qualified patients seeking financial assistance from the medical 
+psilocybin treatment equity fund, certifying clinicians, practitioners, healing centers, producers, and other persons 
+submitting claims for payment from the fund. 
+[7.35.4.2 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.3  STATUTORY AUTHORITY: This rule is promulgated pursuant to the following statutory 
+authorities: the New Mexico Department of Health Act, Subsection E of Section 9 -7-6 NMSA 1978, and the 
+Medical Psilocybin Act, Sections 26-2D-7 and 26-2D-11 NMSA 1978. 
+[7.35.4.3 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.4  DURATION: Permanent. 
+[7.35.4.4 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.5  EFFECTIVE DATE: xx/xx/2026, unless a later date is cited at the end of a section. 
+[7.35.4.5 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.6  OBJECTIVE: The objective of this rule is to establish eligibility, covered medical services , 
+reimbursement, claims submission, payment, recordkeeping and audit requirements for the medical psilocybin 
+treatment equity fund. The fund promotes equitable access to medical psilocybin treatment for qualified New 
+Mexico patients who meet the income requirements established by this rule. 
+[7.35.4.6 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.7  DEFINITIONS: The definitions in 7.35.2.7 NMAC apply to this part. 
+[7.35.4.7 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.8  PATIENT ELIGIBILITY: 
+ A. A qualified patient may be deemed eligible for assistance from the fund if: 
+  (1) the patient is currently enrolled in the New Mexico medical psilocybin program; 
+  (2) the patient is a resident of New Mexico; 
+  (3) the patient’s household income does not exceed 200 percent of the applicable federal 
+poverty guidelines; and 
+  (4) sufficient funds are available in the fund and have been appropriated for the requested 
+purpose. 
+ B. Subject to the allowable amounts and limitations in this rule, the fund may cover up to 100 percent 
+of the allowable amount for a qualified patient. 
+ C. Eligibility for assistance does not create entitlement to payment and does not guarantee that 
+funding will be available for all requested treatment. 
+ D. Treatment equity fund eligibility shall be effective from the date of approval, and shall 
+automatically end under the following circumstances: 
+  (1) the patient’s enrollment in the medical psilocybin program expires or is suspended, 
+revoked or withdrawn; 
+  (2) the patient ceases to be a New Mexico resident; 
+  (3) the department finds that the eligibility determination was based on materially inaccurate 
+or fraudulent information; 
+  (4) available funding is exhausted or otherwise unavailable; or 
+  (5) when 12 months have lapsed from the date of funding approval. 
+[7.35.4.8 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.9  APPLICATION AND VERIFICATION OF ELIGIBILITY: 
+===== PAGE 2 =====
+ A. An applicant for funding from the treatment equity fund shall submit an application via the 
+electronic system designated by the department. 
+ B. An application shall include: 
+  (1) the patient’s name and medical psilocybin program identification number; 
+  (2) the patient’s residential and mailing addresses; 
+ (3) proof of the patient’s New Mexico residency in the form of either: 
+  (a) a current and valid New Mexico state-issued identification card or driver’s 
+license; 
+   (b) a letter of accommodation from a licensed medical or behavioral health provider 
+attesting that the patient is a resident of New Mexico; or 
+   (c) a current and valid identification card from a native American tribe, pueblo, or 
+nation in New Mexico and a utility bill or other documentation that demonstrates residence in New Mexico. 
+  (4) proof of income eligibility; 
+  (5) an authorization permitting the department to verify eligibility information; 
+  (6) an attestation that the information submitted is true and complete; and 
+  (7) any additional information reasonably necessary to determine eligibility. 
+ C. An applicant may establish income eligibility by submitting their United States federal tax return 
+for the most recent filing year, or an eligibility verification, approval, certification, or award letter from the 
+respective administering governmental entity that demonstrates current enrollment in either New Mexico Medicaid, 
+the Supplemental Nutrition Assistance Program (SNAP), the Temporary Assistance for Needy Families (TANF) 
+program, the Special Supplemental Nutrition Program for Women, Infants and Children (WIC), or the Supplemental 
+Security Income (SSI) program. 
+[7.35.4.9 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.10 REQUEST FOR REIMBURSEMENT: 
+A.
+ Before submitting a reimbursement request, the claimant shall make a reasonable and documented 
+effort to obtain payment from all other payers who may be legally responsible for the covered treatment. 
+B. Requests for reimbursement shall include an attestation that the claimant has pursued 
+reimbursement from other legally liable and potentially liable third parties prior to requesting reimbursement from 
+the treatment equity fund, and was not able to obtain reimbursement. Such third parties may include private 
+insurance, Medicaid, Medicare, and other sources of funding. The request shall include attached proof of denial or 
+ineligibility for reimbursement, which may consist of any of the following: 
+(1) notification of denial; 
+(2) an explanation of benefits; 
+(3) a remittance advice; 
+(4) documentation that the service or product is categorically excluded from coverage; or  
+(5) other documentation accepted by the department. 
+C. A claim shall disclose payments received or reasonably anticipated from another payer. The 
+amount payable from the fund shall not exceed the allowable amount after deducting all  confirmed and anticipated 
+payments and credits from other payers. 
+D. A claimant is not required to submit a claim to an entity that does not legally cover the service or 
+product when the department has documented that the category of service or product is excluded from that entity’s 
+coverage. 
+E. If another payer makes payment after the fund has paid a claim, the claimant shall notify the 
+department within 30 calendar days and return the resultant overpayment to the department. 
+[7.35.4.10 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.11 REIMBURSEMENT: 
+A. The reimbursement payment shall be limited to the lesser of: 
+(1) the claimant’s usual and customary charge; 
+(2) the amount remaining after payment by another payer; or 
+(3) the applicable New Mexico Medicaid or Medicare reimbursement rate. 
+B. When no directly applicable Medicaid or Medicare rate exists, the department may establish an 
+allowable amount based on the most analogous Medicaid or Medicare service or payment methodology.  
+===== PAGE 3 =====
+C.  For a psilocybin product or other covered item for which no analogous Medicaid or Medicare rate 
+exists, the department shall establish a uniform fee schedule based on documented acquisition cost and reasonable 
+program safeguards. 
+D. A claimant accepting payment from the fund shall accept the allowable amount as payment in full 
+and shall not bill the patient for the difference between the claimant’s charge and the amount paid by the fund.  
+E. Nothing in this section requires payment for a service or product that is not otherwise covered 
+under this rule. 
+[7.35.4.11 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.12 ELECTRONIC CLAIM AND INVOICE SUBMISSION: 
+A. Certifying clinicians, practitioners, producers, healing centers and other authorized claimants shall 
+submit claims through the electronic system designated by the department. 
+B. A claim shall include, as applicable: 
+ (1) the claimant’s legal name, address, tax identification number, and SHARE vendor 
+identification number; 
+(2) the claimant’s department certification or permit number; 
+  (3) the patient’s program identification number; 
+  (4) the date, location, and type of each service; 
+  (5) the applicable billing code, service unit (i.e., preparation, administration, or integration 
+session), quantity, and charge; 
+  (6) identification of the individual(s) who furnished each service; 
+  (7) for a psilocybin product, product unique identification number, quantity, and any 
+acquisition charge; 
+  (8) documentation of amounts billed to and received or denied by other payers; 
+  (9) receipts and documentation required for a travel claim using the State of New Mexico 
+mileage reimbursement rate; 
+  (10) the amount requested from the fund; 
+  (11) an attestation that the claim is accurate, the treatment was furnished as reported, no 
+duplicate payment has been requested or received and all other payer payments have been disclosed; and  
+  (12) additional documentation reasonably required by the department. 
+ C. A claimant seeking direct payment shall complete a federal form W-9 and all enrollment 
+documents required for payment through SHARE. 
+ D. A claimant shall submit a claim not later than 180 calendar days after the date of service. The 
+department may extend the deadline upon a showing of good cause. 
+ E. A claimant shall not bill the same service unit more than once. Individuals participating in the 
+same administration-day session may be included separately for distinct services or roles authorized by the 
+department. 
+ F. The department may reject or return an incomplete claim and request correction or additional 
+documentation. 
+[7.35.4.12 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.13 PAYMENT NOTICE AND INTERNAL TRACKING: 
+ A.
+ The department when issuing a payment shall identify: 
+  (1) the claim number; 
+  (2) name of the claimant; and 
+  (3) the amount paid from the fund. 
+ B. Payment shall be made through SHARE or a successor system designated by the department.  
+ C. The department shall maintain an internal record of each application, authorization, claim, 
+payment, denial, adjustment, hold, suspension, overpayment and recovery . 
+ D. Internal records shall permit the department to identify duplicate billing, monitor available money 
+and evaluate equitable distribution of the fund while protecting patient confidentiality.  
+[7.35.4.13 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.14 ALLOWABLE EXPENSES FOR TREATMENT EQUITY FUND REIMBURSEMENT:  
+A.
+   A qualified patient’s expenses are eligible for reimbursement for up to a maximum of: 
+===== PAGE 4 =====
+  (1) one initial administration session, with a combined total of six preparatory and integrative 
+sessions included; 
+  (2) a second administration session, with a combined total of two preparatory and integrative 
+sessions included; and 
+  (3) a third administration session, with a combined total of two preparatory and integrative 
+sessions included. 
+ B.   A qualified patient is eligible for reimbursement for travel expenses when the shortest reasonable 
+one-way distance between the patient’s residence and the location of an authorized appointment, healing center or 
+other approved location exceeds 100 miles. Covered travel expenses are limited to reasonable and necessary 
+transportation expenses directly related to covered treatment and shall not exceed the New Mexico department of 
+finance and administration maximum allowable rates for mileage and lodging applicable to public officers and 
+employees.  The department may pay: 
+  (1) mileage for use of a privately owned vehicle at the applicable department-approved rate; 
+  (2) the actual cost of public or commercial transportation, not exceeding the least costly 
+reasonable means of transportation; and 
+  (3) lodging expenses. 
+ C. A claim for travel reimbursement shall include: 
+  (1) the patient’s residence address; 
+  (2) the treatment location; 
+  (3) the treatment date; 
+  (4) the travel dates; 
+  (5) the distance traveled and method used to calculate mileage; 
+  (6) itemized receipts, except when reimbursement is based on a mileage rate; 
+  (7) documentation connecting the travel to authorized treatment; and 
+  (8) any prior authorization required by the department. 
+ D. Reimbursement for allowable expenses shall be reduced by amounts paid or otherwise available 
+from Medicaid, an insurer, or another payer.   
+ E. The cost of meals, entertainment, and upgrades, as well as personal expenses and costs unrelated 
+to covered treatment, shall not be eligible for reimbursement. 
+[7.35.4.14 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.15 RECORD RETENTION AND ACCESS: 
+ A. A claimant shall retain all records supporting a claim for at least seven years after the date of 
+payment or final resolution of an audit, investigation or recovery action, whichever is later.  
+ B. Records shall include clinical documentation, service logs, invoices, receipts, other -payer 
+documentation, authorizations, payment records and communications concerning the claim.  
+ C. Records shall be maintained in a manner that protects confidential patient information and shall be 
+made available to the department or its designee upon request. 
+ D. Failure to produce requested records may result in denial, suspension, recovery of payment , delay, 
+and other action authorized by law. 
+[7.35.4.15 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.16 AUDITS AND PROGRAM INTEGRITY: 
+ A. The department or its designee may conduct prepayment reviews, post-payment audits, random 
+audits, risk-based audits, and investigations of fund applications, authorizations, claims and payments. 
+ B. An audit may determine whether: 
+  (1) the patient satisfied income, residency and program-enrollment requirements; 
+  (2) the treatment was covered, authorized and actually furnished; 
+  (3)
+ the claimant furnishing or billing for treatment held all required licenses, certifications, or 
+permits; 
+  (4) the treatment was furnished within the provider’s scope of practice and certification; 
+  (5) the number and type of services complied with applicable limits; 
+  (6) the claim was accurate and supported by contemporaneous records; 
+  (7) another payer or assistance program made payment; 
+  (8) a duplicate, false, misleading or inflated claim was submitted; 
+  (9) the claimant complied with recordkeeping and patient-confidentiality requirements; and 
+===== PAGE 5 =====
+  (10) fund payments were used for authorized purposes. 
+ C. The department may: 
+  (1) request records and written responses; 
+  (2) compare claim information with program, licensing, tax, Medicaid and other payment 
+records to the extent permitted by law; 
+  (3) interview claimants and patients; 
+  (4) conduct remote or on-site reviews during normal business hours; and 
+  (5) refer suspected fraud, false claims, professional misconduct or other violations to the 
+appropriate governmental or licensing authority. 
+ D. A claimant shall provide requested records within 10 business days unless the department 
+authorizes additional time. 
+[7.35.4.16 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.17            PAYMENT DENIAL AND SUSPENSION: 
+ A. The department may deny an individual claim or suspend a payment to a claimant when: 
+  (1) required information or supporting documentation is missing; 
+  (2) the department identifies a duplicate, inconsistent or potentially inaccurate claim; 
+  (3) the claimant fails to cooperate with an audit or records request; 
+  (4) there is a credible allegation of fraud, material misrepresentation, or misuse of fund 
+money; 
+  (5) the claimant’s applicable license, certification, or permit is expired, suspended, restricted, 
+or revoked; 
+  (6) the department determines that continued payment presents a material risk to patients or 
+the fund; 
+  (7) an overpayment has not been repaid to the department or otherwise resolved; or 
+(8) the department determines that funds are unavailable. 
+ B. Except when immediate action is necessary to protect patients or public funds , the department 
+shall provide electronic written notice before suspending or denying payment. The notice shall be issued via the 
+electronic system designated by the department, and shall state: 
+  (1) the factual and legal basis for the action; 
+  (2) the claims or payments affected; 
+  (3) the effective date; 
+  (4) the documentation or corrective action required; and 
+  (5) the procedure and deadline for requesting review. 
+ C. The department may immediately deny or suspend payment when necessary to prevent payment of 
+a potentially fraudulent or unauthorized claim, or when funding is exhausted or otherwise unavailable. 
+ D. A payment suspension shall remain in effect until the department determines that: 
+  (1) the claim is payable; 
+  (2) the deficiency has been corrected; 
+  (3) the claim should be denied; 
+  (4) an overpayment has been resolved; or 
+  (5) funding becomes available. 
+ E. A suspension based solely on fund availability does not constitute a determination that the 
+claimant or patient violated this rule. 
+[7.35.4.17 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.18            OVERPAYMENTS AND RECOVERY: 
+ A. A payment is an overpayment when: 
+  (1) the patient or treatment was not eligible for payment; 
+  (2) the claim contained inaccurate or incomplete material information; 
+  (3) another payer was responsible for all or part of the payment; 
+  (4) the payment exceeded the allowable amount; 
+  (5) the department paid the same treatment more than once; or 
+  (6) the claimant cannot produce records sufficient to support payment. 
+ B. The department shall issue a written notice via the department approved electronic system stating 
+the basis and amount of the overpayment. 
+===== PAGE 6 =====
+ C. The claimant shall repay the overpayment within 30 calendar days after the notice is issued,  unless 
+the department approves a repayment agreement. 
+ D. The department may recover an overpayment by direct repayment, offset against future payments , 
+and any other lawful collection method. 
+ E. Recovery of an overpayment shall not preclude referral for collection or other remedies authorized 
+by law. 
+[7.35.4.18 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.19            PROGRAM MONITORING: 
+ A. The department shall periodically evaluate whether fund money is being distributed equitably 
+throughout New Mexico. 
+ B. The evaluation may consider: 
+  (1) patient income level; 
+  (2) county and geographic region; 
+  (3) rural, frontier and tribal access; 
+  (4) qualifying condition; 
+  (5) type and amount of assistance requested, approved and paid; 
+  (6) application and claim approval and denial rates; 
+  (7) processing and waiting times; 
+  (8) distance traveled for treatment; and 
+  (9) other identified barriers to access. 
+ C. Information used for program monitoring or public reporting shall be aggregated or de-identified 
+so that individual patients cannot be identified. 
+ D. The department may use the results to improve outreach, allocation methods, application 
+assistance, and access to covered treatment, consistent with available appropriations and applicable law.  
+[7.35.4.19 NMAC - N, xx/xx/2026] 
+ 
+7.35.4.20         ADMINISTRATIVE REVIEW OF ADVERSE PAYMENT DETERMINATIONS:  
+ A. A patient or claimant may request administrative review of a denial, reduction, suspension, or 
+overpayment determination (adverse payment determination). 
+ B. A request for administrative review shall be submitted in writing via the electronic system 
+designated by the department within 30 calendar days after the date of notice, shall be properly addressed to the 
+medical psilocybin program, and shall include: 
+  (1) the requestor’s name and contact information; 
+  (2) the claim or application number; 
+  (3) the determination being challenged; 
+  (4) a concise statement explaining why the adverse payment determination should be 
+changed; and 
+  (5) supporting documentation. 
+ C. The administrative review shall consist of a review of relevant documents ; the administrative 
+review is not an adjudicatory proceeding. 
+ D. The program manager or another person designated by the director shall conduct an initial review 
+of the request for administrative review, shall review relevant documentation, and may request additional 
+information or further clarification from the patient or claimant. In the event that the program manager or designated 
+person identifies an additional basis for an adverse payment determination or proposes to take an adverse payment 
+determination that was not previously identified, the patient or claimant shall be informed and shall be allowed to 
+submit additional information or documentation, as appropriate, and within a stated deadline. 
+ E. The program manager or designated person shall recommend that the director affirm, modify, or 
+deny the adverse payment determination. Within 10 business days of receipt of the request for administrative review 
+or the date of last submission of any additional information or documentation from the patient or claimant 
+(whichever is later), the program manager or designated person shall provide to the director a written recommended 
+decision, which shall include a brief statement of the basis. 
+ F. Within 10 business days of receipt of the recommended decision, the director or the director’s 
+designee shall issue a final decision regarding the request for administrative review, which shall include a brief 
+statement of the basis.  The final decision of the director or the director’s designee may affirm, deny, or modify the 
+adverse payment determination. The final decision of the director or the director’s designee shall be issued to the 
+===== PAGE 7 =====
+patient or claimant via the electronic system designated by the department and shall  constitute the final decision of 
+the department. 
+ G. A request for administrative review shall not stay a payment denial, suspension, or recovery 
+action. 
+ H. An adverse payment determination that is based solely on the lack or unavailability of funding 
+shall not be subject to administrative review. 
+[7.35.4.20 NMAC - N, xx/xx/2026] 

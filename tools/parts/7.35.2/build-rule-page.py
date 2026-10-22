@@ -11,11 +11,11 @@ NSECTIONS = 27
 AMEND_DOC = "/documents/rules-7.35.2-amendments-2026-08-25-published.pdf"
 
 KICKER = ('Adopted and in effect since June 23, 2026 &middot; <b>amendments to three sections '
-          'proposed August 25</b> &middot; rule hearing October 2, 2026')
+          'proposed August 25</b> &middot; heard October 2, 2026, not adopted')
 LEDE = ("The full text of 7.35.2 NMAC as published in the New Mexico Register on June 23, 2026, "
         "all twenty-seven sections, in effect from that day. The three sections the department "
         "proposes to amend are noted where they sit; nothing in this text is amended until the "
-        "department adopts the amendments after the October 2 hearing. Line breaks are collapsed "
+        "department adopts the amendments; they went to the October 2 hearing. Line breaks are collapsed "
         "for reading, and the four testing tables read as run-on text; where the extraction "
         "stumbles, the linked PDF governs.")
 
@@ -35,14 +35,14 @@ ANNOTATIONS = {
          "proposed rule 7.35.3 NMAC defines nothing of its own and imports every definition from "
          "this section, so these terms are the vocabulary of the program rulemaking as well; the "
          "program-side definitions are reproduced and annotated on "
-         "<a href='/7.35.3/rule.html#defs'>the 7.35.3 rule page</a>. The hearing is October 2.")],
+         "<a href='/7.35.3/rule.html#defs'>the 7.35.3 rule page</a>. The hearing was October 2.")],
     10: [("open", "Amendment proposed: sales to healing centers",
           f"The {_A} would restructure this section into a lead-in and eight numbered items and "
           "change one of them: Subsection G, which permits sale only to other producers and to "
           "practitioners, would become item (7) and permit sale \"to other producers, healing "
           "centers, and practitioners\" (amendments pp. 4 to 5). Healing centers are defined in the "
           "same amendments and assumed as buyers by 7.35.3.14 of the proposed program rule. The "
-          "hearing is October 2.")],
+          "hearing was October 2.")],
     24: [("open", "Amendment proposed: who may transport, who verifies",
           f"The {_A} would open transport beyond producer permittees: Paragraph (1) of Subsection A "
           "would read \"persons holding a permit or designated employees, or contractors of a "
@@ -51,7 +51,7 @@ ANNOTATIONS = {
           "from \"the permittee receiving the psilocybin shipment\" to \"the person receiving\" it, "
           "and the rejection prohibition from \"Permittees\" to \"Persons\" (amendments pp. 5 to 6). "
           "Paired with 7.35.3.14 (D) of the proposed program rule, this is the chain of custody for "
-          "the treatment side of the program. The hearing is October 2.")],
+          "the treatment side of the program. The hearing was October 2.")],
     19: [("blue", "Start dates are the department's to set",
           "Subsection A lets the department delay or suspend the sample collection, testing, and "
           "labeling requirements in whole or in part, considering whether a laboratory has "

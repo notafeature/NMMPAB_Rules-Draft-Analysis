@@ -19,6 +19,8 @@ DATES = {
     "hearing":   "2026-10-02",   # the rule hearing, fixed by the notice published
                                  # August 25. First set for August 28 with the July 23
                                  # publication, which was set aside
+    "binder":    "2026-10-01",   # the department's exhibit binder for the hearing
+    "hearing4":  "2026-11-20",   # the rule hearing on 7.35.4 and a further 7.35.2.7 amendment
 }
 
 
@@ -35,10 +37,9 @@ STATUS = [
     {
         "id": "text",
         "state": "open",
-        "date": DATES["republish"],
-        "summary": "The revised proposed rule published August 25, with amendments to 7.35.2 "
-                   "NMAC and the notice fixing the rule hearing for October 2; comment "
-                   "continues through the hearing",
+        "date": DATES["hearing"],
+        "summary": "The revised proposed rule published August 25 went to the October 2 rule "
+                   "hearing; no record of the hearing is posted and the rule is not adopted",
         "stand": "The department published the revised proposed rule for 7.35.3 NMAC on "
                  "August 25, with proposed amendments to 7.35.2 NMAC and the notice fixing "
                  "the rule hearing for October 2, 9:00 AM, in the Harold Runnels Building "
@@ -46,8 +47,10 @@ STATUS = [
                  "The revised rule supersedes the set-aside July 23 publication and is "
                  "typeset in full at <a href=\"rule.html\">The published rule</a>; what it "
                  "changed is on <a href=\"changes.html\">Section by section</a>. Written "
-                 "comment must reach the department by the close of the hearing; how comment "
-                 "works is on <a href=\"comment.html\">Comment</a>.",
+                 "comment was due by the close of the hearing. The department's exhibit binder, "
+                 "posted October 1, carries the rule in the words published August 25 and "
+                 "lists no anticipated revisions. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. The record is on "
+                 "<a href=\"record.html#e-2026-10-02\">Meetings and filings</a>.",
     },
     {
         "id": "hours",
@@ -55,7 +58,7 @@ STATUS = [
         "date": DATES["republish"],
         "summary": "The revised text doubles the therapy module to 65 didactic hours with 10 "
                    "simulated patient hours and keeps the 100 and 120 practicum hours; the "
-                   "recommendation stands at its August 21 position, and comment continues",
+                   "recommendation stands at its August 21 position",
         "stand": "The revised text answers the hours question the board sent to committee: "
                  "the therapy module doubles to 65 didactic hours, at least one third in "
                  "person, with 10 simulated patient hours, an 80-hour module total matching "
@@ -65,7 +68,7 @@ STATUS = [
                  "committee's recommendation stands at its "
                  "<a href=\"recommendation.html\">August 21 position</a>, and the two "
                  "positions can be compared on the <a href=\"hours.html\">working model of "
-                 "the hours</a>. Public comment continues through the October 2 hearing.",
+                 "the hours</a>. Written comment was due by the close of the October 2 hearing.",
     },
     {
         "id": "defects",
@@ -102,12 +105,11 @@ STATUS = [
 # stated but no notice fixes belongs in ANTICIPATED, under its own label.
 
 SCHEDULED = [
-    (DATES["committee2"], "Training and Education Committee meets, 9 to 11 AM."),
-    (DATES["board2"], "Full Advisory Board meets, afternoon, on the committee's work."),
-    (DATES["hearing"], "Rule hearing, 9:00 AM, Harold Runnels Building auditorium, Santa "
-                       "Fe, and by video conference and telephone; fixed by the notice "
-                       "published August 25. Written comment is due by the close of the "
-                       "hearing."),
+    (DATES["hearing4"], "Rule hearing on the proposed 7.35.4 NMAC, Treatment Equity Fund, and a "
+                        "further proposed amendment to 7.35.2.7 NMAC, the definitions this Part "
+                        "imports, 9:00 AM, Harold Runnels Building auditorium, Santa Fe, and by "
+                        "video conference and telephone; fixed by the notice published October 20. "
+                        "<a href=\"/7.35.4/index.html\">Its pages</a>."),
 ]
 
 ANTICIPATED = []
@@ -119,9 +121,9 @@ ANTICIPATED = []
 STAGES = [
     ("Committee recommendation", "JAN – AUG 21", ""),
     ("First published text", "JUL 23 · SET ASIDE", ""),
-    ("Revised rules", "PUBLISHED AUG 25", "here"),
-    ("Rule hearing", "OCT 2 · BY NOTICE", "todo"),
-    ("Adopted rule", "AFTER THE HEARING", "todo"),
+    ("Revised rules", "PUBLISHED AUG 25", ""),
+    ("Rule hearing", "OCT 2", "here"),
+    ("Adopted rule", "NOT YET", "todo"),
 ]
 
 
@@ -135,7 +137,7 @@ LEGEND = [
     ("open", "Open", "The published text of August 25 states it, and it is still moving: "
                      "the didactic, practicum, mentoring, and supervisory hours carry the "
                      "committee's August 21 recommendation beside the revised text, and "
-                     "public comment continues through the October 2 hearing."),
+                     "the rule is not adopted."),
 ]
 
 
@@ -146,7 +148,7 @@ def render_kicker():
     """The kicker line on the training-hours page."""
     return ('    <p class="kicker">7.35.3.17, .18, and .19 · '
             f'<b>revised text published {abbr_date(DATES["republish"])}</b> · '
-            f'rule hearing {abbr_date(DATES["hearing"])}</p>')
+            f'rule hearing held {abbr_date(DATES["hearing"])}</p>')
 
 
 def render_strip():
@@ -172,8 +174,9 @@ def render_strip():
         f'<b>{short_date(DATES["republish"])}</b> the department published the revised '
         "proposed rule: the therapy module <b>doubled to 65 didactic hours</b> with 10 "
         "simulated patient hours, the practicum <b>unchanged at 100 and 120 hours</b> with "
-        "a case-presentation evaluation added inside them. The rule hearing is "
-        f'<b>{short_date(DATES["hearing"])}</b>, fixed by notice. The figures below are '
+        "a case-presentation evaluation added inside them. The rule hearing was "
+        f'<b>{short_date(DATES["hearing"])}</b>, fixed by notice; the rule is not adopted. '
+        "The figures below are "
         "from the August 25 published text. The current state of the rulemaking is on "
         '<a href="index.html">Where things stand</a>.</p>\n'
         "      </div>"

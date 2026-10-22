@@ -17,7 +17,7 @@ They are separate. Do not let one drift into the other.
 
 **1. The draft recommendation.** Drafting work for the Training and Education Committee, built against the published rule. Lives in `amendments/` and `amendments-remainder/`, each with its own audit harness. Deadline-driven.
 
-**2. The site.** `docs/`, served from `main` by GitHub Pages at https://rules.medical-psilocybin.org. The address is set by `docs/CNAME`; deleting or overwriting that file takes the domain down. Six primary pages, the working model of the hours, the retained record pages, and redirect stubs at retired addresses. A reference for people following the rulemaking. No external deadline. The site covers one Part of the NMAC today, 7.35.3, and is being reshaped to carry every Part as a path under the same host (`ARCHITECTURE.md`, Part 2).
+**2. The site.** `docs/`, served from `main` by GitHub Pages at https://rules.medical-psilocybin.org. The address is set by `docs/CNAME`; deleting or overwriting that file takes the domain down. Six primary pages, the working model of the hours, the retained record pages, and redirect stubs at retired addresses. A reference for people following the rulemaking. No external deadline. The site carries three Parts of the NMAC, 7.35.2, 7.35.3, and 7.35.4, each as a path under the same host (`ARCHITECTURE.md`, Part 2).
 
 ## When something changes
 
@@ -134,7 +134,11 @@ The July 9 transcript carries speaker labels. **Both July 17 transcripts do not.
 
 ## Current state of truth
 
-**Part 2.** 7.35.2 NMAC, Producer and Laboratory Requirements, is the adopted rule, in effect since June 23, 2026, published in the New Mexico Register, Volume XXXVII, Issue 12: `docs/documents/rules-7.35.2-adopted-2026-06-23-published.pdf`, 19 pages, sections 7.35.2.1 through .27. Proposed amendments to 7.35.2.7, .10, and .24 were published August 25 and go to the October 2 hearing; until adopted the text stands unamended. The record from the March 24 notice through the hearing officer's May 26 report is in `tools/parts/7.35.2/sync-record.py`.
+**Part 2.** 7.35.2 NMAC, Producer and Laboratory Requirements, is the adopted rule, in effect since June 23, 2026, published in the New Mexico Register, Volume XXXVII, Issue 12: `docs/documents/rules-7.35.2-adopted-2026-06-23-published.pdf`, 19 pages, sections 7.35.2.1 through .27. Proposed amendments to 7.35.2.7, .10, and .24 were published August 25 and went to the October 2 hearing; until adopted the text stands unamended. The record from the March 24 notice through the hearing officer's May 26 report is in `tools/parts/7.35.2/sync-record.py`.
+
+**Part 4.** 7.35.4 NMAC, Treatment Equity Fund, is proposed, not in effect: `docs/documents/rules-7.35.4-proposed-2026-10-20-published.pdf`, 7 pages, sections 7.35.4.1 through .20, published October 20, 2026 with a proposed amendment to 7.35.2.7 (`docs/documents/rules-7.35.2-amendments-2026-10-20-published.pdf`, adding eleven fund terms to the August 25 text) and the notice fixing the rule hearing for November 20, 2026, 9:00 AM, in Santa Fe and by video conference and telephone, with written comment due by its close (`docs/documents/hearing-notice-7.35.4-2026-10-20.pdf`). It follows the equity fund recommendation the Equity, Access and Cultural Considerations Committee voted 5-0 on August 18 and the Advisory Board voted 7-0 on September 11. It departs from the board vote at 7.35.4.14 (A), two sessions per later administration where the board voted three, and does not name the diagnostic evaluation or the medication among allowable expenses; the comparison is `docs/7.35.4/recommendation.html`. No written recommendation is held; the terms are taken from the department's recordings.
+
+**The October 2 hearing.** The department's exhibit binder, `docs/documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf`, 153 pages, carries the 7.35.3 rule and the 7.35.2 amendments in words identical to the August 25 publication, 51 written comments, and no anticipated revisions. As of October 22, 2026 no recording, transcript, hearing officer's report, or response to comments is posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20. The absence is the gap `gap-hearing-2026-10-02` in both Parts' records.
 
 **Part 3.**
 
