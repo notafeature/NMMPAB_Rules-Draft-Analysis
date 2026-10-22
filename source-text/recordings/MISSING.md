@@ -15,6 +15,11 @@ None.
 - 2026-03-18, prop, Medical Psilocybin Propagation Committee Meeting - March 18, 2026, `RrMVYOESWeg`, https://www.youtube.com/watch?v=RrMVYOESWeg
 - 2026-06-23, eacc, Medical Psilocybin:  Equity, Access and Cultural Considerations Committee Meeting on June 23, 2026, `U235JMJBhmw`, https://www.youtube.com/watch?v=U235JMJBhmw
 - 2026-08-21, tae, Medical Psilocybin: Training and Education Committee Meeting on August 21, 2026, `Wwpm3mb-6TA`, https://www.youtube.com/watch?v=Wwpm3mb-6TA
+- 2026-09-04, tae, Medical Psilocybin: Training and Education Committee meeting on September 4, 2026, `X07Wku-eD9Y`, https://www.youtube.com/watch?v=X07Wku-eD9Y
+- 2026-09-11, board, Medical Psilocybin: Advisory Board Meeting on September 11, 2026, `HYyUImvtYGQ`, https://www.youtube.com/watch?v=HYyUImvtYGQ
+- 2026-09-11, raci, Medical Psilocybin: Research and Continuous Improvement Committee Meeting on September 11, 2026, `4EnGUlDhth8`, https://www.youtube.com/watch?v=4EnGUlDhth8
+- 2026-09-14, eacc, Medical Psilocybin: Equity, Access and Cultural Considerations Committee Meeting on Sept. 14, 2026, `6T23BU2jI8w`, https://www.youtube.com/watch?v=6T23BU2jI8w
+- 2026-09-15, dacp, Medical Psilocybin: Dosage, Administration and Clinical Practice Committee Meeting on Sept. 15, 2026, `bTFoQRKu31o`, https://www.youtube.com/watch?v=bTFoQRKu31o
 
 ## Channel-search scope note
 
