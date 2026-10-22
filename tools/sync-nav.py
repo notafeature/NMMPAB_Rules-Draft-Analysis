@@ -66,7 +66,8 @@ def build_nav(page=None):
             )
         lines.append("        </div>")
         lines.append("      </details>")
-    lines.append(f'      <a href="{CTA[0]}" class="navcta">{CTA[1]}</a>')
+    if CTA:
+        lines.append(f'      <a href="{CTA[0]}" class="navcta">{CTA[1]}</a>')
     lines.append('      <details class="tdrop navgrp" data-navgrp="docs">')
     lines.append('        <summary>Documents <span class="caret">&#9662;</span></summary>')
     lines.append('        <div class="tdrop-menu">')

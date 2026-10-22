@@ -410,7 +410,6 @@ EVENTS = [
                 "with the July 23 publication. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
                 "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to comments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026.",
         "absent": ["gap-hearing-2026-10-02"],
-        "deeper": [("comment.html", "The hearing as noticed, and what was at issue")],
     },
     {
         "id": "e-2026-10-01",
@@ -453,7 +452,7 @@ EVENTS = [
              "Runnels Building auditorium in Santa Fe, in person, by video conference, and "
              "by telephone, with written comment due by the close of the hearing. The date "
              "moves from the department's stated anticipation to a noticed setting.",
-             "comment.html", "Comment"),
+             None, None),
             ("<b>Didactic hours.</b> The practitioner and facilitator therapy module rises "
              "from 30 didactic hours to 65, at least one third in person, and the simulated "
              "patient requirement from 5 hours to 10, so the pre-certification module total "
@@ -899,6 +898,5 @@ REGISTER_NOTE = (
 )
 GAPS_NOTE = (
     "Named here so the gaps are visible rather than silent, each beside the event it belongs "
-    "to. If you hold any of these, or know where they are posted, send them through the "
-    "<a href=\"comment.html\">comment form</a> with the source stated."
+    "to."
 )

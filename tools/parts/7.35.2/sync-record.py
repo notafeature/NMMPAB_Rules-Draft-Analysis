@@ -59,8 +59,7 @@ DOCUMENTS = [
         "what": "The notice fixing the rule hearing on the proposed 7.35.3 NMAC and on the "
                 "amendments to 7.35.2.7, 7.35.2.10, and 7.35.2.24 for October 2, 2026",
         "status": "record",
-        "notes": "2 pages, published in the New Mexico Register, Volume XXXVII, Issue 16. The "
-                 "hearing mechanics are on <a href=\"comment.html\">Comment</a>",
+        "notes": "2 pages, published in the New Mexico Register, Volume XXXVII, Issue 16",
     },
     {
         "slug": "rules-7.35.2-adopted-2026-06-23-published",
@@ -233,7 +232,6 @@ EVENTS = [
                 "in person, by video conference, and by telephone. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
                 "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to comments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026.",
         "absent": ["gap-hearing-2026-10-02"],
-        "deeper": [("comment.html", "The hearing as noticed, and what was at issue")],
     },
     {
         "id": "e-2026-10-01",
@@ -422,6 +420,5 @@ REGISTER_NOTE = (
 )
 GAPS_NOTE = (
     "Named here so the gaps are visible rather than silent, each beside the event it belongs "
-    "to. If you hold any of these, send it through the "
-    "<a href=\"comment.html\">comment form</a> with the source stated."
+    "to."
 )

@@ -9,7 +9,6 @@ NAMES = {
     "producers": "For producers",
     "laboratories": "For testing laboratories",
     "record": "Meetings and filings",
-    "comment": "Comment",
 }
 
 # The dropdown's members, in the order they appear: the register, the operative
@@ -55,7 +54,6 @@ GROUPS = [
     ]),
     ("rule", "The rule", [
         ("rule.html", "rule", "All twenty-seven sections, verbatim, the proposed amendments noted"),
-        ("comment.html", "comment", "The October 2 hearing as noticed, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),
@@ -64,4 +62,4 @@ GROUPS = [
 ]
 
 # The call to action between the groups and the Documents dropdown.
-CTA = ("comment.html", "Comment")
+CTA = None
