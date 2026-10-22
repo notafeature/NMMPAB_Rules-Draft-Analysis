@@ -22,8 +22,8 @@ STATUS = [
                  "and a notice fixing the rule hearing for November 20, 2026, 9:00 AM, in the "
                  "Harold Runnels Building auditorium in Santa Fe, in person, by video conference, "
                  "and by telephone. The rule is proposed and not in effect. Written comment must "
-                 "be received by the close of the hearing; how comment works is on "
-                 "<a href=\"comment.html\">Comment</a>. The text is on "
+                 "be received by the close of the hearing; the <a href=\"/documents/hearing-notice-7.35.4-2026-10-20.pdf\" target=\"_blank\" rel=\"noopener\">notice</a> carries the video conference "
+                 "code, the telephone number, and the written comment address. The text is on "
                  "<a href=\"rule.html\">The proposed rule</a>.",
     },
     {

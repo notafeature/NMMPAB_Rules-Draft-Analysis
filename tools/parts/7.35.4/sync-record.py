@@ -62,7 +62,7 @@ DOCUMENTS = [
                 "proposed amendment to 7.35.2.7 NMAC for November 20, 2026, and stating the "
                 "legal authority and how to comment",
         "status": "record",
-        "notes": "2 pages. The hearing mechanics are on <a href=\"comment.html\">Comment</a>",
+        "notes": "2 pages. It carries the video conference code, the telephone number, the written comment address, and the deadline: the close of the hearing",
     },
     {
         "slug": "medical-psilocybin-act-sb219-2025",
@@ -110,7 +110,6 @@ EVENTS = [
                 "Drive, Santa Fe</b>, in person, by video conference, and by telephone. Fixed by "
                 "the <a href=\"#doc-hearing-notice-7.35.4-2026-10-20\">notice published October "
                 "20</a>. Written comment must be received by the close of the hearing.",
-        "deeper": [("comment.html", "How comment works, and what is at issue")],
     },
     {
         "id": "e-2026-10-20",
@@ -255,6 +254,5 @@ REGISTER_NOTE = (
 )
 GAPS_NOTE = (
     "Named here so the gaps are visible rather than silent, each beside the event it belongs "
-    "to. If you hold any of these, send it through the "
-    "<a href=\"comment.html\">comment form</a> with the source stated."
+    "to."
 )

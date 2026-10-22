@@ -11,7 +11,6 @@ NAMES = {
     "record": "Meetings and filings",
     "hours": "The training hours",
     "recommendation": "The committee recommendation",
-    "comment": "Comment",
     "pathways": "Routes to a permit",
     "eligibility": "Which licenses qualify",
     "cs-number": "The controlled-substance number",
@@ -69,7 +68,6 @@ GROUPS = [
         ("rule.html", "rule", "All twenty-eight sections, verbatim, annotated"),
         ("changes.html", "changes", "What each publication changed, layer by layer"),
         ("recommendation.html", "recommendation", "The August 21 position, beside the published text"),
-        ("comment.html", "comment", "The October 2 rule hearing as noticed, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),
@@ -81,4 +79,4 @@ GROUPS = [
 
 # The call to action sits between the groups and the Documents dropdown. It
 # carries no data-nav, so the active-page marker stays on the dropdown entry.
-CTA = ("comment.html", "Comment")
+CTA = None
