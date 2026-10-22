@@ -96,11 +96,11 @@ DEFS_LEDE = (
 )
 
 KICKER = ('Published August 25, 2026 &middot; <b>the current proposed rule</b> &middot; '
-          'rule hearing October 2, 2026')
+          'heard October 2, 2026; not adopted')
 LEDE = ("The full text of 7.35.3 NMAC as published August 25, 2026, all twenty-eight "
         "sections, with the state of each contested provision noted where it lives. This "
-        "text supersedes the set-aside July 23 publication and goes to hearing on "
-        "October 2, 2026; public comment continues through the hearing. The rule&rsquo;s "
+        "text supersedes the set-aside July 23 publication and went to the rule hearing on "
+        "October 2, 2026; written comment was due by the close of the hearing. The rule&rsquo;s "
         "definitions are in amendments to 7.35.2.7 NMAC published the same day. Line "
         "breaks are collapsed for reading; where the extraction stumbles, the linked PDF "
         "governs.")
@@ -140,8 +140,8 @@ ANNOTATIONS = {
          "Landlord approval and patient privacy were raised at the August 21 committee meeting, from "
          "the chat and read into the record by the chair, who called it a sticky subject to be "
          "discussed further; the question had been raised at an earlier end-of-life meeting. The "
-         "exchange is on <a href='record.html#e-2026-08-21'>the record</a>. Public comment continues "
-         "through the October 2 hearing.")],
+         "exchange is on <a href='record.html#e-2026-08-21'>the record</a>. Written comment was due "
+         "by the close of the October 2 hearing.")],
     13: [("blue", "New in this text",
          "Two provisions appear here for the first time in the August 25 text: a certifying clinician, "
          "practitioner, or facilitator shall not consume or be under the influence of psilocybin or any "
@@ -179,7 +179,7 @@ ANNOTATIONS = {
          "didactic hours, at least one third in person, with 10 simulated patient hours, matching the "
          "recommendation's 80-hour total while declining its per-area minimums. The committee's "
          "recommendation, at its August 21 position, sets minimums in nine content areas; it is on the "
-         "<a href='recommendation.html'>recommendation page</a>, and public comment continues through "
+         "<a href='recommendation.html'>recommendation page</a>; written comment was due by the close of "
          "the October 2 hearing."),
         ("blue", "New in this text",
          "Eleven topics enter the required list, legal considerations, cultural competencies, "

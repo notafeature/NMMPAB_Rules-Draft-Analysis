@@ -31,9 +31,14 @@ MENU_DOCUMENTS = [
         "sub": "The definitions, producer sales, and transportation",
     },
     {
-        "href": "/documents/hearing-notice-2026-08-25.pdf",
-        "label": "Hearing notice &middot; August 25",
-        "sub": "October 2, 9:00 AM, Santa Fe, and by video and telephone",
+        "href": "/documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
+        "label": "Hearing exhibits &middot; October 1",
+        "sub": "The texts as heard October 2, and 51 written comments",
+    },
+    {
+        "href": "/documents/rules-7.35.2-amendments-2026-10-20-published.pdf",
+        "label": "Proposed definitions &middot; October 20",
+        "sub": "Eleven terms for the treatment equity fund; heard November 20",
     },
 ]
 
@@ -41,7 +46,7 @@ MENU_DOCUMENTS = [
 GROUPS = [
     ("start", "Start here", [
         ("/", None, "Every Part of Chapter 35, and where each stands", "All parts of 7.35 NMAC"),
-        ("index.html", "index", "In effect since June 23; amendments proposed August 25"),
+        ("index.html", "index", "In effect since June 23; amendments heard October 2, not adopted"),
         ("/about/", None, "Sources, method, and how to report an error", "How this site is built"),
     ]),
     ("who", "Who the rule reaches", [
@@ -50,7 +55,7 @@ GROUPS = [
     ]),
     ("rule", "The rule", [
         ("rule.html", "rule", "All twenty-seven sections, verbatim, the proposed amendments noted"),
-        ("comment.html", "comment", "The October 2 hearing on the amendments, and the input channel"),
+        ("comment.html", "comment", "The October 2 hearing as noticed, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),

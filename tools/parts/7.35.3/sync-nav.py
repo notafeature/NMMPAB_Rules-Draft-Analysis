@@ -42,9 +42,9 @@ MENU_DOCUMENTS = [
         "sub": "The definitions, producer sales, and transportation",
     },
     {
-        "href": "/documents/hearing-notice-2026-08-25.pdf",
-        "label": "Hearing notice &middot; August 25",
-        "sub": "October 2, 9:00 AM, Santa Fe, and by video and telephone",
+        "href": "/documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
+        "label": "Hearing exhibits &middot; October 1",
+        "sub": "The texts as heard October 2, and 51 written comments",
     },
 ]
 
@@ -69,7 +69,7 @@ GROUPS = [
         ("rule.html", "rule", "All twenty-eight sections, verbatim, annotated"),
         ("changes.html", "changes", "What each publication changed, layer by layer"),
         ("recommendation.html", "recommendation", "The August 21 position, beside the published text"),
-        ("comment.html", "comment", "The October 2 rule hearing, and the input channel"),
+        ("comment.html", "comment", "The October 2 rule hearing as noticed, and the input channel"),
     ]),
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),

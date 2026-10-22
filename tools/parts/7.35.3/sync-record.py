@@ -13,6 +13,19 @@ tools/partlib.py; the tool holds the code, this file holds what is true of the P
 
 DOCUMENTS = [
     {
+        "slug": "rules-7.35.3-exhibit-binder-2026-10-01",
+        "name": "The exhibit binder for the October 2 hearing",
+        "file": "documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
+        "cite": "Department of Health exhibits for the October 2, 2026 hearing on 7.35.3 NMAC "
+                "and the amendments to 7.35.2 NMAC, published October 1, 2026",
+        "date": "2026-10-01",
+        "event": "e-2026-10-01",
+        "what": "The department's final exhibit binder for the hearing, with the proposed texts "
+                "and the written public comments",
+        "status": "record",
+        "notes": "153 pages. The department's exhibits for the October 2 hearing: Exhibit 1 the proposed 7.35.3 NMAC and Exhibit 2 the proposed amendments to 7.35.2 NMAC, each identical in its words to the August 25 publication; the notice; the affidavits of publication; the hearing officer's appointment; and, as Exhibit 8, 51 written public comments, 8.A through 8.YY. It lists no anticipated revisions",
+    },
+    {
         "slug": "rules-draft-2026-08-25-published",
         "name": "Revised proposed rule",
         "file": "documents/rules-draft-2026-08-25-published.pdf",
@@ -323,6 +336,18 @@ DOCUMENTS = [
 
 GAPS = [
     {
+        "id": "gap-hearing-2026-10-02",
+        "name": "The record of the October 2 hearing",
+        "means": "No recording, transcript, or hearing officer's report of the October 2 hearing "
+                 "is posted, and no response to the written comments. What was said at the "
+                 "hearing, and whether the department announced revisions there, is not held. "
+                 "The exhibit binder published October 1 is the last department document on "
+                 "this rulemaking",
+        "at_event": "No recording, transcript, or hearing officer's report of the hearing is "
+                    "held on this site.",
+        "events": ["e-2026-10-02"],
+    },
+    {
         "id": "gap-minutes",
         "name": "Official minutes, any meeting",
         "means": "Nothing on this site is official minutes. One consequence: the mover of the "
@@ -378,16 +403,24 @@ EVENTS = [
     {
         "id": "e-2026-10-02",
         "date": "2026-10-02",
-        "kind": "scheduled",
+        "kind": "meeting",
         "what": "<b>The rule hearing on 7.35.3 NMAC and the 7.35.2 amendments, 9:00 AM, "
-                "Harold Runnels Building auditorium, 1190 St. Francis Drive, Santa Fe</b>, in "
-                "person, by video conference, and by telephone. Fixed by the "
-                "<a href=\"#doc-hearing-notice-2026-08-25\">notice published August 25</a>, "
-                "after a first setting of August 28 was set aside with the July 23 "
-                "publication. Public comment is taken and recorded at the hearing, and "
-                "written comment must be received by the close of the hearing; comment given "
-                "becomes part of the rulemaking record the department must consider.",
-        "deeper": [("comment.html", "How comment works, and what is at issue")],
+                "Harold Runnels Building auditorium, Santa Fe</b>, in person, by video "
+                "conference, and by telephone, after a first setting of August 28 was set aside "
+                "with the July 23 publication. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
+                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to comments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026.",
+        "absent": ["gap-hearing-2026-10-02"],
+        "deeper": [("comment.html", "The hearing as noticed, and what was at issue")],
+    },
+    {
+        "id": "e-2026-10-01",
+        "date": "2026-10-01",
+        "kind": "filing",
+        "what": "<b>The department posted its exhibit binder for the October 2 hearing</b>: the "
+                "proposed 7.35.3 NMAC and the proposed amendments to 7.35.2 NMAC as exhibited, "
+                "each identical in its words to the August 25 publication, and 51 written "
+                "public comments. The binder lists no anticipated revisions.",
+        "attached": ["rules-7.35.3-exhibit-binder-2026-10-01"],
     },
     {
         "id": "e-2026-09-11",

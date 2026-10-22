@@ -79,7 +79,10 @@ session that has built one can build the next.
 
 Part 3 has fourteen content pages; Part 2, built September 7, 2026, has six: `index`,
 `rule` with the August 25 amendments noted at the three sections they would change,
-`producers`, `laboratories`, `record`, and `comment`.
+`producers`, `laboratories`, `record`, and `comment`. Part 4, built October 22, 2026, has six:
+`index`, `rule`, `fund` (by who the rule reaches), `recommendation` (the September 11 board
+vote beside the proposed text, in the committee-material form of `WRITING-STANDARD.md`),
+`record`, and `comment`.
 
 ### 2.3 The tools are per part
 
@@ -102,8 +105,9 @@ section: "Section 26-2D-7 NMSA 1978". The bill number, Senate Bill 219, is cited
 legislative history and for the bill's Sections 12 through 14, which amended other chapters.
 
 `docs/statute/` carries Article 2D section by section, and for each section the part that
-carries it, built September 7, 2026: 26-2D-7 is cited as authority by Parts 2 and 3;
-26-2D-8, -9, -10, and -11 are carried by no published part. The statute folder is a
+carries it, built September 7, 2026: 26-2D-7 is cited as authority by Parts 2, 3, and 4;
+26-2D-11 by the proposed Part 4, from October 22, 2026; 26-2D-8, -9, and -10 are carried by
+no published part. The statute folder is a
 site-wide page outside any Part, listed in `SITE_DIRS` in `tools/partlib.py` and checked by
 `check-site.py` with the root pages.
 

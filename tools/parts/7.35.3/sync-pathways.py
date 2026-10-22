@@ -144,8 +144,8 @@ PERMITS = {
              "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17, "
                     "published unchanged July 23, and published unchanged again August 25, now with a "
                     "case-presentation evaluation, a low-risk requirement on the first 20 hours, and a "
-                    "qualifying-condition diversity requirement inside the total. Public comment "
-                    "continues through the October 2 hearing.",
+                    "qualifying-condition diversity requirement inside the total. Written comment "
+                    "was due by the close of the October 2 hearing.",
              "src": L("published rule 7.35.3.19 (A), pp.13-14", J7 + "13"),
              "model": 1,
              "metz": "114 hours, staged: the facilitator sequence of 102 plus 12 provider supervisory "
@@ -209,8 +209,8 @@ PERMITS = {
              "why": "Deferred to the Training and Education Committee by a 7-0 board vote July 17, "
                     "published unchanged July 23, and published unchanged again August 25, now with a "
                     "case-presentation evaluation, a low-risk requirement on the first 20 hours, and a "
-                    "qualifying-condition diversity requirement inside the total. Public comment "
-                    "continues through the October 2 hearing.",
+                    "qualifying-condition diversity requirement inside the total. Written comment "
+                    "was due by the close of the October 2 hearing.",
              "src": L("published rule 7.35.3.19 (A), pp.13-14", J7 + "13"),
              "model": 1,
              "metz": "102 hours, staged: 24 with well participants, 24 co-facilitating with a "
@@ -266,7 +266,7 @@ PERMITS = {
                     "Subsection B, where it means a renting patient needs the landlord's signature "
                     "before being treated at home. Landlord approval and patient privacy were raised "
                     "at the August 21 committee meeting and the chair called it a subject to be "
-                    "discussed further. Public comment continues through the October 2 hearing.",
+                    "discussed further. Written comment was due by the close of the October 2 hearing.",
              "src": L("published rule 7.35.3.11 (A)(7) and (8), p.5", J7 + "5")},
             {"t": "<b>Make the location safe and reachable.</b> Proof of compliance with disability "
                   "access law, proof of a working communication device that reliably reaches emergency "
