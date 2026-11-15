@@ -18,6 +18,7 @@ NAMES = {
     "deferred": "What a practicum change touches",
     "changes": "Section by section",
     "training-hours-record": "The training-hours record",
+    "comments": "Comments and the response",
 }
 
 
@@ -72,6 +73,7 @@ GROUPS = [
     ("record", "The record", [
         ("record.html", "record", "The dated chain, newest first"),
         ("record.html#documents", None, "The register: every document and its status", "All documents"),
+        ("comments.html", "comments", "What the comments asked for, and what the November 9 response proposes"),
         ("training-hours-record.html", "training-hours-record",
          "July 9 through August 25, with benchmarks and community comment"),
     ]),

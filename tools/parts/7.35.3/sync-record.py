@@ -466,7 +466,8 @@ EVENTS = [
                 "department proposes to the text heard October 2 and the proposals it declines. "
                 "The revisions are proposed, not adopted; the text in force on this site remains "
                 "the August 25 publication. The response does not address the proposed "
-                "amendments to 7.35.2 NMAC.",
+                "amendments to 7.35.2 NMAC. What the comments asked for, beside the response, is "
+                "on <a href=\"comments.html\">Comments and the response</a>.",
         "changed": [
             ("<b>The certifying clinician.</b> The department proposes to remove the certifying "
              "clinician from the rule, with its requirements at 7.35.3.18 (B) and its continuing "

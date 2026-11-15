@@ -58,7 +58,7 @@ STATUS = [
                  "revisions to the text heard October 2: among them, removing the certifying "
                  "clinician and the in-person examination in favor of practitioner screening and "
                  "referral, striking the landlord statement, and revising the staffing ratios. "
-                 "The revisions are proposed, not adopted. The record is on "
+                 "The revisions are proposed, not adopted. What the comments asked for, beside the response, is on <a href=\"comments.html\">Comments and the response</a>. The record is on "
                  "<a href=\"record.html#e-2026-11-09\">Meetings and filings</a>.",
     },
     {
