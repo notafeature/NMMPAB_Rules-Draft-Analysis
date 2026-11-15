@@ -51,13 +51,14 @@ STATUS = [
                  "changed is on <a href=\"changes.html\">Section by section</a>. Written "
                  "comment was due by the close of the hearing. The department's exhibit binder, "
                  "posted October 1, carries the rule in the words published August 25 and "
-                 "lists no anticipated revisions. The department's recording of the hearing is posted on the Sunshine Portal; no transcript or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. "
+                 "lists no anticipated revisions; the final binder, dated October 5 and posted "
+                 "on the Sunshine Portal, carries all 75 written comments. The department's recording of the hearing is posted on the Sunshine Portal; no transcript or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. "
                  "On November 9 the department's office of general counsel responded in writing "
                  "to the public comments, addressed to the hearing officer, and proposed "
                  "revisions to the text heard October 2: among them, removing the certifying "
                  "clinician and the in-person examination in favor of practitioner screening and "
                  "referral, striking the landlord statement, and revising the staffing ratios. "
-                 "The revisions are proposed, not adopted. The record is on "
+                 "The revisions are proposed, not adopted. What the comments asked for, beside the response, is on <a href=\"comments.html\">Comments and the response</a>. The record is on "
                  "<a href=\"record.html#e-2026-11-09\">Meetings and filings</a>.",
     },
     {
