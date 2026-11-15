@@ -40,7 +40,7 @@ STATUS = [
                  "2026, 9:00 AM, in Santa Fe, in person, by video conference, and by telephone; "
                  "written comment was due by the close of the hearing. The department's exhibit "
                  "binder for the hearing, posted October 1, carries the amendments in the words "
-                 "published August 25 and lists no anticipated revisions. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. The adopted text "
+                 "published August 25 and lists no anticipated revisions. The department's recording of the hearing is posted on the Sunshine Portal; no transcript or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. The adopted text "
                  "stands unamended. Each amendment is noted at the section it would change on "
                  "<a href=\"rule.html#s7\">The adopted rule</a>; the record is on "
                  "<a href=\"record.html#e-2026-10-02\">Meetings and filings</a>.",

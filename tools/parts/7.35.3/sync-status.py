@@ -51,7 +51,7 @@ STATUS = [
                  "changed is on <a href=\"changes.html\">Section by section</a>. Written "
                  "comment was due by the close of the hearing. The department's exhibit binder, "
                  "posted October 1, carries the rule in the words published August 25 and "
-                 "lists no anticipated revisions. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. "
+                 "lists no anticipated revisions. The department's recording of the hearing is posted on the Sunshine Portal; no transcript or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. "
                  "On November 9 the department's office of general counsel responded in writing "
                  "to the public comments, addressed to the hearing officer, and proposed "
                  "revisions to the text heard October 2: among them, removing the certifying "

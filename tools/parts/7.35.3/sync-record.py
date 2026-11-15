@@ -31,6 +31,19 @@ DOCUMENTS = [
                  "rules page and held from it on November 15, 2026",
     },
     {
+        "slug": "recording-2026-10-02-hearing",
+        "name": "Department recording of the October 2 rule hearing",
+        "file": "",
+        "cite": "Recording of the October 2, 2026 rule hearing on 7.35.3 NMAC and the 7.35.2 amendments, posted on the Sunshine Portal",
+        "date": "2026-10-02",
+        "event": "e-2026-10-02",
+        "what": "The department's video recording of the rule hearing, posted with the hearing's record on the Sunshine Portal",
+        "status": "record",
+        "notes": "Posted as \"Medical Psilocybin Rules Hearing 10226 - Recording\", an MP4, in the Sunshine Portal's rule hearing record for 7.35.3 NMAC. "
+                 "<a href=\"https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/j80000003o0H/E7HWX6gYGpsHosAJVdrlOAm_E_0QSkYRvmeF1CRYejw\" target=\"_blank\" rel=\"noopener\">On the Sunshine Portal</a>, not published on this site. "
+                 "Found there on November 15, 2026. No transcript or captions of it are held",
+    },
+    {
         "slug": "rules-7.35.3-exhibit-binder-2026-10-01",
         "name": "The exhibit binder for the October 2 hearing",
         "file": "documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
@@ -356,13 +369,14 @@ GAPS = [
     {
         "id": "gap-hearing-2026-10-02",
         "name": "The record of the October 2 hearing",
-        "means": "No recording, transcript, or hearing officer's report of the October 2 hearing "
-                 "is posted. What was said at the hearing, and whether the department announced "
-                 "revisions there, is not held. The department's written response to the "
+        "means": "No transcript or hearing officer's report of the October 2 hearing is posted. "
+                 "The department's recording is posted on the Sunshine Portal and is in the "
+                 "register, but no transcript of it is held, so what was said at the hearing, and "
+                 "whether the department announced revisions there, is not stated on this site. The department's written response to the "
                  "comments on 7.35.3 NMAC, dated November 9, is held; it proposes revisions and "
                  "is not adopted text",
-        "at_event": "No recording, transcript, or hearing officer's report of the hearing is "
-                    "held on this site.",
+        "at_event": "No transcript or hearing officer's report of the hearing is held on this "
+                    "site; the department's recording is posted on the Sunshine Portal.",
         "events": ["e-2026-10-02"],
     },
     {
@@ -484,7 +498,8 @@ EVENTS = [
                 "Harold Runnels Building auditorium, Santa Fe</b>, in person, by video "
                 "conference, and by telephone, after a first setting of August 28 was set aside "
                 "with the July 23 publication. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
-                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026. The department's written response to the comments on 7.35.3 NMAC followed on <a href=\"#e-2026-11-09\">November 9</a>.",
+                "August 25</a>; written comment was due by the close of the hearing. The department's recording is posted on the Sunshine Portal; no transcript or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026. The department's written response to the comments on 7.35.3 NMAC followed on <a href=\"#e-2026-11-09\">November 9</a>.",
+        "attached": ["recording-2026-10-02-hearing"],
         "absent": ["gap-hearing-2026-10-02"],
     },
     {

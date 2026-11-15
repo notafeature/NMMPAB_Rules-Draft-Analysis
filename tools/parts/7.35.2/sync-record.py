@@ -6,6 +6,19 @@ tools/partlib.py; the tool holds the code, this file holds what is true of the P
 # document names its successor. `chain` marks the successive texts of the rule.
 DOCUMENTS = [
     {
+        "slug": "recording-2026-10-02-hearing",
+        "name": "Department recording of the October 2 rule hearing",
+        "file": "",
+        "cite": "Recording of the October 2, 2026 rule hearing on 7.35.3 NMAC and the 7.35.2 amendments, posted on the Sunshine Portal",
+        "date": "2026-10-02",
+        "event": "e-2026-10-02",
+        "what": "The department's video recording of the rule hearing, posted with the hearing's record on the Sunshine Portal",
+        "status": "record",
+        "notes": "Posted as \"Medical Psilocybin Rules Hearing 10226 - Recording\", an MP4, in the Sunshine Portal's rule hearing record for 7.35.3 NMAC. "
+                 "<a href=\"https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/j80000003o0H/E7HWX6gYGpsHosAJVdrlOAm_E_0QSkYRvmeF1CRYejw\" target=\"_blank\" rel=\"noopener\">On the Sunshine Portal</a>, not published on this site. "
+                 "Found there on November 15, 2026. No transcript or captions of it are held",
+    },
+    {
         "slug": "rules-7.35.3-exhibit-binder-2026-10-01",
         "name": "The exhibit binder for the October 2 hearing",
         "file": "documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
@@ -164,13 +177,15 @@ GAPS = [
     {
         "id": "gap-hearing-2026-10-02",
         "name": "The record of the October 2 hearing",
-        "means": "No recording, transcript, or hearing officer's report of the October 2 hearing "
-                 "is posted, and no response to the written comments on the proposed amendments "
-                 "to 7.35.2 NMAC. What was said at the hearing, and whether the department "
-                 "announced revisions there, is not held. The department's November 9 response "
+        "means": "No transcript or hearing officer's report of the October 2 hearing is posted, "
+                 "and no response to the written comments on the proposed amendments "
+                 "to 7.35.2 NMAC. The department's recording is posted on the Sunshine Portal, but "
+                 "no transcript of it is held, so what was said at the hearing, and whether the "
+                 "department announced revisions there, is not stated on this site. The "
+                 "department's November 9 response "
                  "to comments addresses 7.35.3 NMAC only",
-        "at_event": "No recording, transcript, or hearing officer's report of the hearing is "
-                    "held on this site.",
+        "at_event": "No transcript or hearing officer's report of the hearing is held on this "
+                    "site; the department's recording is posted on the Sunshine Portal.",
         "events": ["e-2026-10-02"],
     },
     {
@@ -230,7 +245,8 @@ EVENTS = [
         "what": "<b>The rule hearing on the proposed amendments to 7.35.2 NMAC and on the "
                 "proposed 7.35.3 NMAC, 9:00 AM, Harold Runnels Building auditorium, Santa Fe</b>, "
                 "in person, by video conference, and by telephone. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
-                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to the comments on the 7.35.2 amendments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026. The department's November 9 response to comments addresses 7.35.3 NMAC only.",
+                "August 25</a>; written comment was due by the close of the hearing. The department's recording is posted on the Sunshine Portal; no transcript, hearing officer's report, or response to the comments on the 7.35.2 amendments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026. The department's November 9 response to comments addresses 7.35.3 NMAC only.",
+        "attached": ["recording-2026-10-02-hearing"],
         "absent": ["gap-hearing-2026-10-02"],
     },
     {
