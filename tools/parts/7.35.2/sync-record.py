@@ -165,10 +165,10 @@ GAPS = [
         "id": "gap-hearing-2026-10-02",
         "name": "The record of the October 2 hearing",
         "means": "No recording, transcript, or hearing officer's report of the October 2 hearing "
-                 "is posted, and no response to the written comments. What was said at the "
-                 "hearing, and whether the department announced revisions there, is not held. "
-                 "The exhibit binder published October 1 is the last department document on "
-                 "this rulemaking",
+                 "is posted, and no response to the written comments on the proposed amendments "
+                 "to 7.35.2 NMAC. What was said at the hearing, and whether the department "
+                 "announced revisions there, is not held. The department's November 9 response "
+                 "to comments addresses 7.35.3 NMAC only",
         "at_event": "No recording, transcript, or hearing officer's report of the hearing is "
                     "held on this site.",
         "events": ["e-2026-10-02"],
@@ -230,7 +230,7 @@ EVENTS = [
         "what": "<b>The rule hearing on the proposed amendments to 7.35.2 NMAC and on the "
                 "proposed 7.35.3 NMAC, 9:00 AM, Harold Runnels Building auditorium, Santa Fe</b>, "
                 "in person, by video conference, and by telephone. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
-                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to comments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026.",
+                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to the comments on the 7.35.2 amendments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026. The department's November 9 response to comments addresses 7.35.3 NMAC only.",
         "absent": ["gap-hearing-2026-10-02"],
     },
     {

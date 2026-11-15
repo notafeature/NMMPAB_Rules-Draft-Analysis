@@ -1,0 +1,499 @@
+===== PAGE 1 =====
+November 9, 2026
+
+Via E-Mail
+
+Craig Erickson
+Utton & Kery, P.A.
+500 Tijeras Ave. NW
+Albuquerque, NM 87102
+E-mail: craig@uttonkery.com
+Re: Public Comments in Rulemaking for 7.35.3 NMAC, Medical Psilocybin (Patient and
+Practitioner Rule)
+Dear Mr. Erickson:
+The New Mexico Department of Health offers the following responses to substantive proposals
+made in the public comments submitted during the rulemaking proceeding for the proposed new
+rule 7.35.3 NMAC, Medical Psilocybin; Patients, Certifying Clinicians, Practitioners, Facilitators,
+Healing Centers, Other Approved Locations, and Educational Programs. Due to the substantial
+volume of comments received, the Department has organized the following by topic, consolidating
+related comments and the Department’s position under each heading.
+1.
+
+Patient Application and Enrollment
+
+Several commenters objected to the patient-application framework, including the proposed 30-day
+Department review period, and argued that a registration process modeled on the Medical
+Cannabis Program is unnecessary for a supervised, private psilocybin program that issues no
+patient cards.
+The Medical Psilocybin Act at NMSA 1978, § 26-2D-9 requires that the Department of Health
+adopt rules “for the collection of data from producers, clinicians and qualified patients” to evaluate
+the efficacy of the medical use of psilocybin and publish an annual assessment of the program.
+NMSA 1978, § 26-2D-9. While that section requires that data be reported in such a way that an
+individual qualified patient cannot be identified, that requirement refers to the Department’s
+reporting of information concerning patients, rather than to its collection of data.
+The patient enrollment process is not intended to be an involved process, and does not require the
+Department to render any clinical decisions regarding individual patients, or to collect detailed
+clinical records. Rather, it is a straightforward enrollment process that collects basic information
+about patients who will participate in the program.
+In consideration of the comments received, the Department proposes to reduce the 30-calendarday maximum processing period at section 8(C) to 10 business days; will revise references to
+“applicant” to specify “patient”; and will include text to clarify that this is an enrollment process,
+rather than a more involved “application process”.
+OFFICE OF GENERAL COUNSEL | NEW MEXICO DEPARTMENT OF HEALTH
+1190 St. Francis Dr., Room N4095 • P.O. Box 26110 • Santa Fe, New Mexico • 87502-6110
+(505) 827-2997 • Fax: (505) 827-2930 • www.nmhealth.org
+
+===== PAGE 2 =====
+2.
+
+Certifying Clinician Qualifications and the Certification Gateway
+
+Some commenters objected to the clinician-centered model of the rule generally, as well as the
+specific requirement that a certifying clinician serve as the gateway to the program, and the
+requirement that a certifying clinician hold a New Mexico controlled-substance registration. Some
+commenters proposed that the Department instead adopt a medical screening and referral model
+that requires providers to utilize a screening tool to refer patients to medical providers if they have
+contraindicated conditions.
+The statute at NMSA 1978, § 26-2D-3(H) defines “qualified patient” as “a patient whose clinician
+has judged the patient to be a medically appropriate candidate for the use of medical psilocybin
+based on being diagnosed with a qualifying condition”. As such, a patient must be certified by a
+clinician in order to be enrolled in the program.
+However, the Department understands the concerns regarding access that were raised by
+commenters. Based on the comments received, the Department proposes to remove references to
+the “certifying clinician” from the rule, and instead rely on practitioner screening and referral of
+patients who have contraindicated conditions or treatments. (Note that a “practitioner” is defined
+in the proposed rule as a type of clinician certified by the Department, and practitioner certification
+therefore comports with the statutory requirement described above.) Contraindicated conditions
+and treatments to be listed in the rule will include:
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+Cardiovascular disease;
+Seizure disorder or history of seizure;
+Moderate or greater head trauma;
+Hypertension;
+History of stroke or cerebrovascular disease, including but not limited to aneurysms;
+Asthma/ COPD;
+Diabetes;
+Psychosis or disease with a risk of psychosis (including bipolar disorder);
+Medication/drug-interaction contraindications (such as lithium, and drugs with
+serotonergic/psychotropic interactions);
+History of suicide attempt, thoughts of self-harm, or thoughts of harming others;
+Use of medical devices including but not limited to insulin pump, continuous glucose
+sensor feeding tubes, ostomies, central lines, supplemental oxygen, dialysis, tracheostomy,
+pacemaker, external defibrillators, pain pump, stimulators or other implantable device; and
+Such additional contraindicated conditions or treatments as the Department may require.
+
+Requirements concerning certifying clinicians at section 7.35.3.18(B) NMAC will be deleted,
+along with continuing education requirements for certifying clinicians.
+The provider who certifies the patient will not be required to hold a controlled substances
+registration.
+Section 8(B) will be revised to require that the practitioner attest:
+
+2
+
+===== PAGE 3 =====
+•
+•
+
+that the practitioner has completed the required department screening tool;
+that the practitioner has referred the patient to a medical provider (with the appropriate
+scope of practice to evaluate potential medical risk) if either:
+1) there are medical risks indicated through the screening tool review,
+2) the patient has not seen a medical provider within the previous 12 months; or
+3) the practitioner has otherwise chosen, within the practitioner’s discretion, to make the
+referral.
+
+The practitioner will also be required to attest that the practitioner has determined, in their
+professional opinion and based on consultation with the medical provider (as applicable) that:
+1) the potential health benefits of the medical use of psilocybin likely outweigh the health
+risks for the patient; and
+2) there are no identified medical risks that cannot be adequately addressed during
+treatment; or to the extent that there are any identified medical risks, a written plan has been created
+to address those risks during treatment, which will be implemented by the treating practitioner.
+3.
+In-Person Examination, Telehealth, and Pre-Administration Screening; VA Certifier
+Barrier
+Some commenters objected that the requirement that there be an in-person examination by a
+certifying clinician burdens rural patients, raises costs, and is unnecessary, and they asked that
+telehealth evaluation be permitted and that end-of-life patients be accommodated. Related
+comments proposed that an initial screening (inquiry into medical and mental conditions and
+medications) replace a mandatory physical examination, with medical clearance required only
+where screening identifies an issue. Commenters also stated concern that patients who are seen
+by Veterans Administration healthcare providers would have greater obstacles meeting the
+certification requirements, since their providers (as federal employees) would be prohibited from
+certifying patients for the use of psilocybin, which is a Schedule I drug under federal drug laws.
+As noted, the Department intends to remove the “certifying clinician” provisions of the rule,
+including the in-person examination requirement at section 13(A), in favor of allowing
+practitioners to certify patients based on the above-described medical screening process.
+Rather than requiring that a certifying clinician conduct an in-person examination within the
+previous six months, the Department intends to incorporate a requirement within section 8(B) that
+patients who have not been seen by a medical provider in the previous 12 months be referred to a
+medical provider before being certified to the program. This will effectively remove the
+requirement that every examination be in-person. This screening process will be more individualspecific and should be less burdensome for patients in the program.
+
+3
+
+===== PAGE 4 =====
+4.
+
+Treatment Locations and Settings
+
+Commenters raised several issues concerning where treatment may occur, including the landlordattestation requirement, its interaction with federally assisted housing, the enumerated list of other
+approved locations, the 90-day certification period for such locations, and treatment at long-term
+care facilities.
+a.
+
+Landlord/Property-Owner Statement
+
+The Department received considerable public comment regarding the proposed requirements at
+sections 11(A) and (B), which would require that an attestation be obtained from a landlord or
+property owner as a precondition of approval of a healing center or an “other approved location”.
+In consideration of the comments received, the Department intends to strike the landlord/propertyowner statement requirements and will replace them with a requirement that the applicant attest
+that they are the owner of the property or that they are aware of the legal risk concerning the
+property. The Department will offer educational material to patients regarding the potential
+consequences of psilocybin use, and will also include a requirement within section 8 that the
+patient attest that they have been informed of the legal status of psilocybin and potential
+consequences of using it.
+Psilocybin is classified as a Schedule I drug under federal drug laws, the possession of which is
+deemed federally illegal, which may (in some circumstances) result in forfeiture of property
+associated with its possession. In adopting these provisions, the Department seeks to ensure that
+applicants for healing centers and other approved locations, and patients, are enabled to make
+informed decisions.
+b.
+
+Federally Assisted Housing
+
+Comments regarding potential conflicts with Section 8 / federally assisted housing are effectively
+resolved by the removal of the landlord-approval requirement, described above.
+c.
+
+Enumerated List of Other Approved Locations
+
+One commenter observed that, because section 7.35.3.11(B) lists specific reasons for certifying
+other locations, any reason not listed might be presumed excluded, and recommended a catch-all
+provision. The Department declines to modify the provision; the existing language is broad
+enough to meet the anticipated needs for approval of other locations.
+d.
+
+90-Day Certification Period
+
+A commenter objected that other approved locations, intended to improve rural and frontier access,
+require a lengthy application yet expire after only 90 days, and recommended matching the
+certification to the patient’s enrollment period. The Department declines to change this. The
+certification of “other approved locations” is intended to allow temporary (not extended) use.
+
+4
+
+===== PAGE 5 =====
+e.
+
+Long-Term Care Facilities
+
+One commenter emphasized that treatment should be available at long-term care facilities. The
+proposed rules do not prohibit treatment at long-term care facilities. It would be for such a facility
+to decide whether to apply to become an approved location.
+5.
+
+Staffing Ratios, Practitioners, and Facilitators
+
+Commenters addressed the session staffing requirements, the eligibility of certain licensed
+professionals to serve as practitioners, and the liability implications of practitioner supervision of
+facilitators.
+a.
+
+Staffing Ratios
+
+Some commenters requested that the Department increase the ratio of patients to practitioners and
+facilitators during administration sessions. In consideration of the comments received on this
+topic, the Department proposes to make the following revisions to the staffing ratios at section
+20(H):
+For individual patient sessions, a minimum of one practitioner and one additional practitioner or
+facilitator will be present.
+For group sessions, the ratio will be modified to allow one practitioner for every nine patients and
+at least one additional practitioner, facilitator, or qualified student for every three patients.
+For example, if there are three patients, there must be a minimum of two practitioners/facilitators;
+if there are 6 patients, it would be one practitioner and two additional practitioner/facilitators; if
+there are 9 patients, it would be one practitioner and three additional practitioner/facilitators; if
+there are 10 patients, it would be two practitioners and 4 additional practitioner facilitators.
+The text of this section will be revised to clarify that, for purposes of being “present” during an
+administration session, the practitioner will only need to be in the building (i.e., within range to be
+called into the room in case of an emergency), not necessarily present in the administration session
+itself. The concern here is that facilitators are not licensed medical professionals and are not
+necessarily qualified to address emergency medical/therapeutic episodes. These ratios are
+intended for safety reasons, and to ensure patients get the attention needed during their
+administration and journey.
+b.
+
+Practitioner Eligibility
+
+The Department received a comment asking whether a given practitioner license would be eligible
+for practitioner certification in the program. To clarify which practitioners may be certified in the
+program, the Department proposes to add text at section 9(E)(1) that specifies examples of licensed
+providers who hold professional licensure in NM to practice therapy, counseling, or behavioral
+services, consisting of licensed therapists, licensed professional clinical counselors, licensed
+mental health counselors, licensed alcohol and drug abuse counselors, licensed independent social
+workers, licensed clinical social workers, licensed master social workers, licensed psychologists,
+
+5
+
+===== PAGE 6 =====
+psychiatrists, psychiatric nurse practitioners, and advanced practice registered nurses. This
+passage will include a catch-all provision that authorizes a person whose license does not fall
+within this list to submit a letter from their licensing body indicating that utilization of medical
+psilocybin is within their professional scope of practice.
+c.
+
+Supervision and Malpractice Exposure
+
+Some commenters expressed concern that placing a non-licensed facilitator under a practitioner’s
+supervision could extend the practitioner’s malpractice exposure to the facilitator while leaving
+the facilitator outside the corresponding coverage framework, and recommended treating the two
+roles as independent.
+In response, the Department notes that the “facilitator” designation is a creation of this rule, and
+does not exist in the Medical Psilocybin Act: the only providers referenced in the statute are
+“clinicians”. For this reason, it is the Department’s position that facilitators cannot lawfully
+operate within the program without clinician supervision, because their ability to function within
+the program effectively derives from clinicians.
+It is also the understanding of the Department that most facilitators in Oregon and Colorado (whose
+state laws also legalize psilocybin usage) carry liability policies for protection against malpractice,
+and that there are in fact insurance carriers willing to insure facilitators.
+d.
+
+Rural Wilderness Staffing
+
+One commenter suggested that the requirement at section 20(K), that there be at least two
+individuals present during administration sessions who have wilderness first aid certification,
+wilderness first responder certification, or licensure as a New Mexico emergency medical
+technician, is too costly, and that one person would be sufficient. The Department disagrees. This
+is not an unusual safety precaution for experiences in wilderness areas. For example, Scouting
+America requires any group participating in treks at the Philmont Scout Ranch in New Mexico
+have two members who are trained in Wilderness First Aid. (https://www.scouting.org/health-andsafety/safety-moments/wilderness-first-aid/)
+6.
+
+Training and Education Requirements
+
+Commenters raised several training and curriculum issues, including the overall practicum burden,
+specific content gaps, an internal inconsistency in the practicum-reciprocity provisions, the
+accuracy of references to Native use, touch-consent instruction, third-party curriculum evaluation,
+and a numbering error.
+a.
+
+Practicum Burden
+
+Some commenters recommended that the practicum requirements be reduced; the Department
+declines to do so. The Department notes that the practicum hours were previously increased in
+response to earlier public input, and the Department does not believe that further revisions would
+be beneficial.
+
+6
+
+===== PAGE 7 =====
+b.
+
+Content Gaps
+
+Some commenters sought express coverage within the training requirements for suicidality,
+challenging experiences, trauma, end-of-life care, and pharmacology. The Department notes that
+most of these subjects are already encompassed within existing curriculum requirements. For
+example, pharmacology (7.35.3.18(C)(1)(g)), trauma (7.35.3.18(C)(1)(c)), clinical research
+(7.35.3.18(v)), end-of-life care (within “education on the qualifying conditions and appropriate
+treatment practices,” 7.35.3.18(C)(1)(o)), and “bad trips and medical emergencies” (addressed as
+“psychedelic emergencies, urgencies, complications, and medical monitoring,”
+7.35.3.18(C)(1)(d)) are all addressed within the rule as proposed. For additional clarity, the
+Department proposes to add the term “suicidality response” to 7.35.3.18(C)(1)(e) NMAC. The
+Department declines to prescribe fixed hours for individual topics, considering that topic length
+may change, and the rule should allow educational programs to make adjustments without
+requiring a rule change.
+c.
+
+Practicum-Reciprocity Inconsistency
+
+Commenters correctly identified a conflict between section 7.35.3.10(D)(1) (40 hours, two
+individual and two group sessions) and section 7.35.3.19(H)(4)(b) (40 hours, two individual and
+one group session). This was a continuity/typographic error. The Department proposes to revise
+both sections to read “one group session.” The Department intends to retain the requirement of
+experience across more than one modality, as experience in only one modality would not
+demonstrate the flexibility and expertise required through the primary certification process.
+d.
+
+References to Traditional Use by Native Americans
+
+One commenter noted an absence of evidence of traditional psilocybin use by peoples indigenous
+to New Mexico. The Department has adjusted the language to require training on the “historical
+aspects of psychedelic use, including traditional use by Native American and other populations in
+New Mexico.”
+e.
+
+Touch and Consent
+
+Commenters recommended that the curriculum expressly address touch consent and that the
+Department define permissible and prohibited touch. Somatic training is already included in the
+proposed regulations (7.35.3.18(C)(y)), and informed consent is already a required training topic
+(7.35.3.18(C)(1)(x)). The Department declines to promulgate rules defining permissible touch, as
+this is a negotiated patient-provider boundary addressed through training rather than a matter for
+specification in DOH rule.
+f.
+
+Third-Party Curriculum Evaluation
+
+One commenter questioned the rigor of allowing training programs to assemble their own
+evaluation panels and asked how the rule intersects with New Mexico Higher Education
+Department (HED) regulations. However, the Department is not requiring educational programs
+
+7
+
+===== PAGE 8 =====
+to comply with HED regulations; it is requiring programs to undergo a formal evaluation of their
+curriculum and program.
+g.
+
+Practicum with Other Students
+
+One commenter requested that practicum students be permitted to train on one another rather than
+with qualifying patients. The Department cannot lawfully adopt this recommendation, due to the
+fact that psilocybin consumption by non-patients is illegal under NM state law. Unlike Colorado,
+New Mexico has not legalized psilocybin consumption generally, and students therefore could not
+lawfully consume psilocybin in the course of training.
+h.
+
+Numbering
+
+The Department will correct the faulty numbering of 7.35.3.12(A), items 21–24, which is a
+typographic error.
+7.
+
+Cost, Affordability, and Microdosing
+
+Commenters raised concerns about program affordability, citing supervision costs, training costs,
+treatment-room costs, and testing costs, and compared prices in Oregon. Some commenters
+proposed a microdosing pathway as a lower-cost option.
+The Department is unable to make a full determination regarding cost and affordability until more
+information is available on what providers will charge, and any present estimate would be
+speculative. The Department also lacks authority to restrict or set practitioner fees.
+The Department notes, however, that the revised rule permits students who have completed half
+of their practicum to be counted toward the provider-patient ratio, and the Department is proposing
+to adjust group staffing ratios (as described above), both of which should reduce costs below the
+figures cited by commenters. Additionally, the Department does not intend to charge a fee for
+permits, certificates, or applications, which should help to alleviate costs for permitted and
+certified persons and entities.
+Regarding microdosing: the Department appreciates the interest, but believes that microdosing
+would be more of a clinical consideration for providers than a structural feature of the program.
+Microdosing is not prohibited by the existing framework where the practitioner and patient agree
+to use low doses, provided that administration occurs in the approved settings as required by
+statute. See NMSA 1978, § 26-2D-7(A)(3) (requiring the Department to establish treatment
+protocols that include “approved settings for administration of psilocybin to patients”).
+8.
+
+Ownership and Vertical Integration
+
+One commenter urged that clinicians be permitted to grow the medicine they prescribe and to
+vertically integrate prescribing, cultivation, and administration, arguing this would substantially
+reduce costs.
+
+8
+
+===== PAGE 9 =====
+The Department declines to adopt vertical integration in the cultivation and administration of
+psilocybin. Such a model would create the very conflicts of interest the Department seeks to avoid.
+For example, where a provider is also the producer, the provider would both sell and produce the
+product, creating an incentive to sell more product than the patient needs, to raise prices to improve
+the provider’s bottom line, or to bypass safety requirements such as product testing.
+There is also no indication that a vertically integrated model would necessarily reduce costs, as the
+same production requirements would apply. In fact, it could actually increase costs by multiplying
+production locations and thereby increasing statewide expenditures on electricity, water, travel for
+testing, and build-out, as well as the Department’s regulatory oversight burden. A defined set of
+production locations should yield lower overall statewide production and oversight costs.
+9.
+
+Confidentiality and Justice-Involved Patients
+
+One commenter requested that the Department specify in the rule that justice-system involvement
+does not disqualify an otherwise qualified patient, that participation must be voluntary (though a
+court or probation referral does not render it involuntary), and that declining treatment carries no
+adverse consequence; the commenter also sought guidance on 42 CFR Part 2, HIPAA, and state
+confidentiality requirements.
+The statute at NMSA 1978, § 26-2D-10 provides that a person serving probation or parole, or in
+custody or under supervision pending trial as part of a community supervision program, shall not
+be penalized for participation in the program. Because that protection exists in statute, it need not
+be repeated in the rule.
+The Department lacks authority over courts, probation departments, diversion programs, and
+community supervision programs, and generally cannot dictate their requirements through rule.
+10.
+
+Appeals and Due Process
+
+Some commenters objected that the appeals process (section 7.35.3.27) is inaccessible, requiring
+hearing requests by certified mail and in-person hearings in Santa Fe, and questioned the allocation
+of the burden of proof.
+a.
+
+Accessibility
+
+The Department declines to modify the certified-mail and venue provisions. Section 7.35.3.27(D)
+requires that a hearing request be sent by certified mail, and section 7.35.3.27(E) provides that
+hearings are held in Santa Fe, except that where the appellant lives more than 100 miles from Santa
+Fe, or the parties agree, the hearing may be conducted by telephone or web video. These standards
+are not unduly onerous, and the rule leaves open the possibility of a web-based hearing in every
+case.
+
+9
+
+===== PAGE 10 =====
+b.
+
+Burden of Proof
+
+Section 7.35.3.27(L), as proposed, would place the burden on the appellant to establish by a
+preponderance of the evidence that the Department’s decision should be reversed or modified. In
+consideration of the comments received on this topic, the Department proposes to revise this
+provision to specify that the appellant bears the burden where the Department has denied an initial
+application, whereas the Department bears the burden when it has suspended or revoked an
+existing certificate. Whereas an existing certificate may implicate due-process interests of the
+holder, the same is not true of the denial of an initial application (see, e.g., New Mexico State
+Racing Comm’n v. Yoakum, 1991-NMCA-153, 113 N.M. 561); and it is a familiar practice for
+licensing and certifying bodies to impose the burden of proof on an initial applicant.
+c.
+
+Judicial Review
+
+Some commenters complained that section 7.35.3.25(E) wrongly limits judicial review. That
+section states that, “[e]xcept as otherwise provided by law, there shall be no right to judicial review
+of a decision by the administrative review committee.” In essence, this states that the rule is not
+establishing a right to judicial review of such decisions, and that there is no right of review “except
+as otherwise provided by law”. The Department is not required to establish a right of judicial
+review of such decisions by rule.
+11.
+
+Records Retention, Fees, and Minor Consent
+
+One commenter requested that the rule include specific record-retention periods, and that it
+establish a minimum patient age or consent architecture for minors. In consideration of this
+comment, the Department proposes to add to the rule a requirement that healing centers,
+practitioners, and facilitators retain treatment records for a minimum of five years, consistent with
+the retention period applicable to educational centers. With respect to a minimum patient age, the
+statute does not establish one, and the Department believes this is best left to the licensed provider
+to determine within their practice and within the patient-provider relationship.
+The Department of Health wishes to thank the many commenters who shared their expertise and
+perspectives in this rulemaking. While the Department does not propose to adopt every edit
+suggested in public comments, the depth and breadth of comments received has resulted in several
+substantial revisions, and has contributed to a better understanding of the rule and its impacts. The
+Department also wishes to thank the Medical Psilocybin Advisory Board and its committees for
+their pioneering work in building a safe and sustainable Medical Psilocybin Program for our state.
+Sincerely,
+/s/ Christopher D. Woodward 11-9-26
+Christopher D. Woodward
+Deputy General Counsel
+
+10
+
+

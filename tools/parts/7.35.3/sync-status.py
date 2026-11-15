@@ -21,6 +21,7 @@ DATES = {
                                  # publication, which was set aside
     "binder":    "2026-10-01",   # the department's exhibit binder for the hearing
     "hearing4":  "2026-11-20",   # the rule hearing on 7.35.4 and a further 7.35.2.7 amendment
+    "response":  "2026-11-09",   # the department's written response to the comments on 7.35.3
 }
 
 
@@ -37,9 +38,10 @@ STATUS = [
     {
         "id": "text",
         "state": "open",
-        "date": DATES["hearing"],
+        "date": DATES["response"],
         "summary": "The revised proposed rule published August 25 went to the October 2 rule "
-                   "hearing; no record of the hearing is posted and the rule is not adopted",
+                   "hearing; on November 9 the department proposed revisions in its response "
+                   "to comments, and the rule is not adopted",
         "stand": "The department published the revised proposed rule for 7.35.3 NMAC on "
                  "August 25, with proposed amendments to 7.35.2 NMAC and the notice fixing "
                  "the rule hearing for October 2, 9:00 AM, in the Harold Runnels Building "
@@ -49,8 +51,30 @@ STATUS = [
                  "changed is on <a href=\"changes.html\">Section by section</a>. Written "
                  "comment was due by the close of the hearing. The department's exhibit binder, "
                  "posted October 1, carries the rule in the words published August 25 and "
-                 "lists no anticipated revisions. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. The record is on "
-                 "<a href=\"record.html#e-2026-10-02\">Meetings and filings</a>.",
+                 "lists no anticipated revisions. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through October 20. "
+                 "On November 9 the department's office of general counsel responded in writing "
+                 "to the public comments, addressed to the hearing officer, and proposed "
+                 "revisions to the text heard October 2: among them, removing the certifying "
+                 "clinician and the in-person examination in favor of practitioner screening and "
+                 "referral, striking the landlord statement, and revising the staffing ratios. "
+                 "The revisions are proposed, not adopted. The record is on "
+                 "<a href=\"record.html#e-2026-11-09\">Meetings and filings</a>.",
+    },
+    {
+        "id": "cs-number",
+        "state": "open",
+        "date": DATES["response"],
+        "summary": "The department proposes to remove the certifying clinician and its "
+                   "controlled-substance number; the August 25 text still carries both",
+        "stand": "The certifying clinician's controlled-substance number, kept July 17, "
+                 "sits inside the definition of certifying clinician in the amended "
+                 "7.35.2.7 as well as in the <a href=\"rule.html#s9\">application "
+                 "requirements</a> of the August 25 text. On November 9 the department "
+                 "proposed, in its response to comments, to remove the certifying clinician "
+                 "from the rule and stated that the provider who certifies a patient will not "
+                 "be required to hold a controlled-substances registration. The response does "
+                 "not address the definition in the proposed amendments to 7.35.2.7. The "
+                 "reciprocity deadlines, set to December 31, 2027 on July 9, stand unchanged.",
     },
     {
         "id": "hours",
@@ -83,18 +107,6 @@ STATUS = [
                  "<a href=\"deferred.html\">What a practicum change touches</a>. Two of those "
                  "three are among the five; the third, a conflict between the two waivers that "
                  "set 40 contact hours, is analyzed there and carries no note in the rule.",
-    },
-    {
-        "id": "cs-number",
-        "state": "settled",
-        "date": DATES["republish"],
-        "summary": "The certifying clinician's controlled-substance number, kept July 17 and "
-                   "now inside the amended definition; the reciprocity deadlines stand",
-        "stand": "The certifying clinician's controlled-substance number, kept July 17, now "
-                 "sits inside the definition of certifying clinician in the amended "
-                 "7.35.2.7 as well as in the <a href=\"rule.html#s9\">application "
-                 "requirements</a>. The reciprocity deadlines, set to December 31, 2027 on "
-                 "July 9, stand unchanged in the revised text.",
     },
 ]
 

@@ -41,9 +41,9 @@ MENU_DOCUMENTS = [
         "sub": "The definitions, producer sales, and transportation",
     },
     {
-        "href": "/documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
-        "label": "Hearing exhibits &middot; October 1",
-        "sub": "The texts as heard October 2, and 51 written comments",
+        "href": "/documents/rules-7.35.3-response-to-comments-2026-11-09.pdf",
+        "label": "Response to comments &middot; November 9",
+        "sub": "The revisions the department proposes to the text heard October 2",
     },
 ]
 

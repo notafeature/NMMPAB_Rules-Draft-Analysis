@@ -13,6 +13,24 @@ tools/partlib.py; the tool holds the code, this file holds what is true of the P
 
 DOCUMENTS = [
     {
+        "slug": "rules-7.35.3-response-to-comments-2026-11-09",
+        "name": "The department's response to public comments",
+        "file": "documents/rules-7.35.3-response-to-comments-2026-11-09.pdf",
+        "cite": "Department of Health response to public comments on 7.35.3 NMAC, "
+                "November 9, 2026",
+        "date": "2026-11-09",
+        "event": "e-2026-11-09",
+        "what": "The office of general counsel's written responses to the substantive proposals "
+                "in the public comments on 7.35.3 NMAC, organized by topic, stating the "
+                "revisions the department proposes and the proposals it declines, with reasons",
+        "status": "record",
+        "notes": "10 pages, addressed to the hearing officer, Craig Erickson, and signed by the "
+                 "department's Deputy General Counsel. It proposes revisions to the text heard "
+                 "October 2; it is not adopted text. It addresses 7.35.3 NMAC only and does not "
+                 "address the proposed amendments to 7.35.2 NMAC. Posted on the department's "
+                 "rules page and held from it on November 15, 2026",
+    },
+    {
         "slug": "rules-7.35.3-exhibit-binder-2026-10-01",
         "name": "The exhibit binder for the October 2 hearing",
         "file": "documents/rules-7.35.3-exhibit-binder-2026-10-01.pdf",
@@ -339,10 +357,10 @@ GAPS = [
         "id": "gap-hearing-2026-10-02",
         "name": "The record of the October 2 hearing",
         "means": "No recording, transcript, or hearing officer's report of the October 2 hearing "
-                 "is posted, and no response to the written comments. What was said at the "
-                 "hearing, and whether the department announced revisions there, is not held. "
-                 "The exhibit binder published October 1 is the last department document on "
-                 "this rulemaking",
+                 "is posted. What was said at the hearing, and whether the department announced "
+                 "revisions there, is not held. The department's written response to the "
+                 "comments on 7.35.3 NMAC, dated November 9, is held; it proposes revisions and "
+                 "is not adopted text",
         "at_event": "No recording, transcript, or hearing officer's report of the hearing is "
                     "held on this site.",
         "events": ["e-2026-10-02"],
@@ -401,6 +419,64 @@ GAPS = [
 
 EVENTS = [
     {
+        "id": "e-2026-11-09",
+        "date": "2026-11-09",
+        "kind": "filing",
+        "what": "<b>The department's office of general counsel responded in writing to the "
+                "substantive proposals in the public comments on 7.35.3 NMAC</b>, addressed to "
+                "the hearing officer, organized in eleven topics, stating the revisions the "
+                "department proposes to the text heard October 2 and the proposals it declines. "
+                "The revisions are proposed, not adopted; the text in force on this site remains "
+                "the August 25 publication. The response does not address the proposed "
+                "amendments to 7.35.2 NMAC.",
+        "changed": [
+            ("<b>The certifying clinician.</b> The department proposes to remove the certifying "
+             "clinician from the rule, with its requirements at 7.35.3.18 (B) and its continuing "
+             "education, and to have practitioners certify patients through a department "
+             "screening tool and referral. The provider who certifies a patient would not "
+             "be required to hold a controlled-substances registration. Response, pp. 2 to 3.",
+             "rule.html#s9", "7.35.3.9"),
+            ("<b>The in-person examination.</b> The department proposes to remove the in-person "
+             "examination at 7.35.3.13 (A). A patient who has not seen a medical provider in "
+             "the previous 12 months would be referred to one before certification, and the "
+             "practitioner would attest to the screening, any referral, and a written plan "
+             "for any identified medical risk. Response, pp. 2 to 3.",
+             "rule.html#s13", "7.35.3.13"),
+            ("<b>Patient enrollment.</b> The department proposes to reduce the 30-calendar-day "
+             "processing period at 7.35.3.8 (C) to 10 business days and to restate the process "
+             "as enrollment of a patient. Response, p. 1.",
+             "rule.html#s8", "7.35.3.8"),
+            ("<b>The landlord statement.</b> The department proposes to strike the landlord or "
+             "property-owner statement at 7.35.3.11 (A) and (B) and to require instead that the "
+             "applicant attest to owning the property or to awareness of the legal risk, and "
+             "that the patient attest to having been informed of the legal status of "
+             "psilocybin. Response, p. 4.",
+             "rule.html#s11", "7.35.3.11"),
+            ("<b>Staffing ratios.</b> The department proposes, at 7.35.3.20 (H), one practitioner "
+             "and one additional practitioner or facilitator for an individual session, and for "
+             "a group one practitioner for every nine patients and one additional practitioner, "
+             "facilitator, or qualified student for every three, with the practitioner present "
+             "in the building. Response, p. 5.",
+             "rule.html#s20", "7.35.3.20"),
+            ("<b>Practitioner eligibility.</b> The department proposes to list qualifying "
+             "licenses at 7.35.3.9 (E)(1), with a provision for a letter from a licensing body "
+             "stating that medical psilocybin is within the licensee's scope of practice. "
+             "Response, pp. 5 to 6.",
+             "eligibility.html", "Which licenses qualify"),
+            ("<b>The reciprocity practicum.</b> The department identifies the conflict between "
+             "7.35.3.10 (D)(1) and 7.35.3.19 (H)(4)(b) as a typographic error and proposes "
+             "that both read one group session. Response, p. 7.",
+             "deferred.html", "What a practicum change touches"),
+            ("<b>The practicum hours.</b> The department declines to reduce them. Response, p. 6.",
+             "hours.html", "The training hours"),
+            ("<b>Appeals.</b> The department proposes that at 7.35.3.27 (L) the appellant bear "
+             "the burden on the denial of an initial application and the department bear it on "
+             "a suspension or revocation. Response, p. 10.",
+             "rule.html#s27", "7.35.3.27"),
+        ],
+        "attached": ["rules-7.35.3-response-to-comments-2026-11-09"],
+    },
+    {
         "id": "e-2026-10-02",
         "date": "2026-10-02",
         "kind": "meeting",
@@ -408,7 +484,7 @@ EVENTS = [
                 "Harold Runnels Building auditorium, Santa Fe</b>, in person, by video "
                 "conference, and by telephone, after a first setting of August 28 was set aside "
                 "with the July 23 publication. Fixed by the <a href=\"#doc-hearing-notice-2026-08-25\">notice published "
-                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, hearing officer's report, or response to comments has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026.",
+                "August 25</a>; written comment was due by the close of the hearing. No recording, transcript, or hearing officer's report has been posted, and no adopted text appears in the New Mexico Register through Volume XXXVII, Issue 20, October 20, 2026. The department's written response to the comments on 7.35.3 NMAC followed on <a href=\"#e-2026-11-09\">November 9</a>.",
         "absent": ["gap-hearing-2026-10-02"],
     },
     {
