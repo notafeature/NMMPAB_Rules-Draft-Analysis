@@ -1,0 +1,1428 @@
+Machine transcript of the department's recording of the October 2, 2026 rule hearing on 7.35.3 NMAC and the proposed amendments to 7.35.2 NMAC.
+Recording: "Medical Psilocybin Rules Hearing 10226 - Recording", MP4, 2:26:56, posted on the Sunshine Portal (ARCHITECTURE.md 3.1):
+https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/j80000003o0H/E7HWX6gYGpsHosAJVdrlOAm_E_0QSkYRvmeF1CRYejw
+Made November 15, 2026 with whisper.cpp, model large-v3-turbo, English, from the downloaded recording. Not corrected. No speaker labels.
+Many cues from about 1:56:00 to the end are in capital letters; that is an artifact of the model, not emphasis.
+Each line is [HH:MM:SS] text, stamped with the start of its cue. This is not the department's transcript; the recording governs.
+
+[00:00:00] This hearing of the New Mexico Department of Health will now come to order.
+[00:00:10] I would like to welcome you to the public hearing on the proposed New Rule 7.35.3 NMAC,
+[00:00:18] the New Mexico Psilocybin Program, in particular patient-certifying clinicians, practitioners,
+[00:00:24] facilitators, healing centers, other approved locations, and educational programs, and also
+[00:00:30] proposed amendments to Rule Section 7.35.2.7, 7.35.2.10, and 7.35.224 NMAC.
+[00:00:45] My name is Craig Erickson, and I've been appointed by the New Mexico Department of Health Cabinet
+[00:00:50] Secretary Gina de Blasi to act as the hearing officer in this matter today, and I'll be
+[00:00:55] presiding over the hearing.
+[00:00:59] Deputy General Counsel Chris Woodward will be advising the department in this proceeding,
+[00:01:04] and Dominic Zerlo, Director of the Center for Medical Cannabis and Psilocybin, will provide
+[00:01:09] a brief summary of what is happening in the proposed New Rule and the proposed amendments
+[00:01:14] to the Rule in person and via live web conference platform and via telephone.
+[00:01:19] Pursuant to notice, this matter is being heard this second day of October 2026 via an in-person
+[00:01:25] hearing as well as a live web conference platform and via telephone.
+[00:01:31] Also pursuant to notice, the public has been given the opportunity to comment on the proposed
+[00:01:36] amendments to the Rule in person and via live web conference platform and telephonically.
+[00:01:47] The opportunity was also given to the public to submit written comments through the close
+[00:01:51] of business today.
+[00:01:54] This is a recorded proceeding.
+[00:01:55] The time is approximately 9:07 AM.
+[00:02:00] This proceeding is being held in accordance with New Mexico statute section 9-7-60 of the
+[00:02:10] Department of Health Act and section 26-2-D-7 of the Medical Psilocybin Act, which requires that
+[00:02:23] the department promulgate requirements, restriction, and limitation of the psilocybin program, as
+[00:02:29] well as necessary training, safety protocols, best practices, and requirements for data collection.
+[00:02:37] We'll proceed with the hearing in the following manner.
+[00:02:39] Dr. Zerlo will give a brief introduction regarding the proposed rule and the amendments to the subsections,
+[00:02:47] the second subsection of the rule.
+[00:02:50] Mr. Woodwell will move to enter exhibits into the record, and then we'll take public comments
+[00:02:56] on each section from those who wish to offer comments.
+[00:03:00] I will remind those given today that this hearing is being recorded, and before you speak, please state for the record
+[00:03:06] your full name and who you represent if you're here on behalf of some entity.
+[00:03:11] There will be a five minute limitation on the length of public comments, so please keep that in mind as well.
+[00:03:17] And there's a very handy instrument over here that it's like a stoplight, and it gives you a warning
+[00:03:25] and then tells you when to stop.
+[00:03:27] I haven't seen that before.
+[00:03:29] The Department is not bound by the formal rules of evidence during these proceedings.
+[00:03:36] However, the Hearing Officer may, in his discretion, exclude evidence that is incompetent, irrelevant,
+[00:03:43] immaterial, or unduly repetitious.
+[00:03:47] The Hearing Officer may take notice of judicially cognizable technical or scientific facts within the Department's specialized knowledge as well.
+[00:03:56] This public hearing is intended to provide the public with an opportunity to voice opinions
+[00:04:02] on the proposed rule and amendments to the rules.
+[00:04:07] At this point, I think we're ready for Dr. Zerlo to introduce the rule to the hearing, and we'll
+[00:04:13] move on from there.
+[00:04:18] Thank you, and thank you everybody both here in person and online for attending.
+[00:04:24] We appreciate all the work and the effort that has gone into the creation of these rules,
+[00:04:29] and we really do appreciate everything that has happened for the last year and some.
+[00:04:36] We have had over 75 public meetings between committees and board meetings in order to go
+[00:04:43] through the different aspects of not only this rule, but also the previous rule and future rules
+[00:04:49] that are in the making at the moment, specifically with regard to the Treatment Equity Fund.
+[00:04:54] This hearing is not with regard to the Treatment Equity Fund.
+[00:04:58] This hearing is with regard to the proposed rule for the patients, certifying clinicians, practitioners,
+[00:05:08] practitioners, facilitators, healing centers, other approved locations, and educational programs,
+[00:05:15] with Title VII, Chapter 35, Part III.
+[00:05:20] So, Part VIII of this includes the patient enrollment application process, which is a section that defines
+[00:05:28] and outlines what patients will need to do to be registered for the program.
+[00:05:32] As a note, this is a registration.
+[00:05:37] The department is not actually going to be approving the medical qualifications of the patient.
+[00:05:44] It is simply to register the patient to ensure that they have met the requirements for the program.
+[00:05:50] Part IX is certifying clinician, practitioner, and facilitator application.
+[00:05:56] This section outlines the requirements for those different positions and what they will need to do to become certified.
+[00:06:04] The application process for certification as a certifying clinician, practitioner, or facilitator based on educational programs from other jurisdictions.
+[00:06:16] This section outlines the different ways that people who have been trained and educated in other jurisdictions, such as Colorado, Oregon, Australia, Canada, in their approved programs and other programs that are deemed to match the requirements in New Mexico, can actually obtain certification in New Mexico.
+[00:06:40] This will allow for providers to not have to duplicate those requirements in New Mexico in order to be able to practice and be a part of the program.
+[00:06:53] Application process for healing centers and other approved locations.
+[00:06:56] This is Section 11.
+[00:06:57] This portion goes through what the process is for the application for the healing centers, where individuals will be able to receive treatment for psilocybin.
+[00:07:08] It also includes for other locations to allow for, if there is not a healing center or a defined healing center in an area, for other locations to be utilized for patients to be able to receive treatment.
+[00:07:26] Section 12 is the application process for the psilocybin educational programs that develop in New Mexico.
+[00:07:34] This section outlines what those requirements are, including what their requirements are for their instructors, outlining what those programs will need to do in order to enroll students, the records that they need to maintain, and it also allows for the approval, the time period that they will be approved.
+[00:07:57] The requirements and prohibitions for certifying clinicians, practitioners, and facilitators.
+[00:08:05] This is Section 13, and it goes through the requirements for the scopes of work for those certifying clinicians, and to ensure that there is a clinician-patient relationship.
+[00:08:17] It also goes through the requirements for telemedicine.
+[00:08:22] Section 14, authorized possession, purchase, or sale of medical psilocybin by practitioners, facilitators, healing centers, healing center owners, and employees, chain of custody.
+[00:08:35] This section outlines what needs to be recorded in order to ensure that as medical psilocybin is provided to the patients through those practitioners in the healing centers, that they have the legal ability to do so in New Mexico.
+[00:08:52] Section 15, psilocybin educational programs required reporting and curricula approval.
+[00:09:00] This section goes through what the educational programs will need to submit for their approval and certification, and requiring any reports of updates to their curriculum and their program.
+[00:09:15] Section 16, requirements for third-party evaluators of educational programs.
+[00:09:21] This section outlines how educational programs will need to evaluate their curricula to determine the efficacy and the veracity and the validity of how their programs and the curricula are implemented.
+[00:09:37] Educational programs, mentoring requirements, and record-keeping.
+[00:09:42] This section goes through the aspects of what the educational program requirements are to retain records, and the options that they need to offer with regard to mentoring.
+[00:09:56] And this would be after the educators and the providers have gone through their programs, additional mentoring that they provide to those providers.
+[00:10:08] Section 18: Educational requirements for certifying clinicians, practitioners, and facilitators.
+[00:10:21] This section goes through the requirements of what training is necessary for the different levels of certification of providers, whether it be the certifying clinician, provider, or facilitator.
+[00:10:34] And goes through the different categories and topics that need to be presented in the curriculum for the educational programs.
+[00:10:45] Section 19: Practicum requirements for practitioners and facilitators.
+[00:10:49] This section goes through the various requirements for individuals who wish to be certified as facilitators and practitioners.
+[00:11:00] It goes through what hours they are required to have, what the restrictions are regarding that, and what the abilities are, including the minimum number of practicum hours, the evaluation, the supervision hours, and what the standards should be.
+[00:11:19] Section 20: Requirements for Healing Centers and Other Approved Locations.
+[00:11:25] This section goes through the requirements for Healing Centers to be Approved, what they need to have in their facilities, the cautions and precautions that they need to take, and the ability for them to respond to emergencies that may occur.
+[00:11:44] Section 21: Department Evaluation and Assessment of Psilocybin Educational Programs, Healing Centers, and Other Approved Locations.
+[00:11:53] This allows for the department to conduct site visits, to review materials that are submitted by these certified locations, and to ensure that those locations are safe, and are safe for the patients, and for those practitioners and facilitators who are conducting administration and/or therapy in those areas.
+[00:12:20] Section 22: Prohibitions and Limitations for Qualified Patients for Qualified Patients.
+[00:12:27] This section goes over what patients and certificates are able and allowed to do under the law and under the Medical Psilocybin Act.
+[00:12:39] Section 25: Prohibition Against Dual Ownership in Certificant and Permitting.
+[00:12:44] This section outlines that a certificate or a person who holds an ownership shall not also hold an ownership for a permit.
+[00:12:53] Section 24: Complaints to the Department.
+[00:12:58] This section outlines the requirement that complaints may be submitted to the department and the methodology for those submissions.
+[00:13:08] Section 25: Informal Administrative Review or Denied Patient Applications.
+[00:13:15] This section goes through the possibility of, if applications are denied for any reason, what the procedures are for that administrative review of the application and for final determination.
+[00:13:29] Section 26: Voluntary Withdrawal Administrative Review or Relinquishment of Certification.
+[00:13:37] This section allows for the ability for a certificate or a patient to withdraw from the program at any time in writing.
+[00:13:44] Section 27: Disciplinary Actions and Appeal Processes for Enrolled Patients, Patient Applicants, Certificants, and Applicants for Certification.
+[00:13:54] This section goes through what the potential grounds for disciplinary action may be and how that individual could then request a hearing and the timing and the logistics for that hearing and the procedure to ensure that that is done through a due process for those individuals.
+[00:14:17] Section 28: And then Section 28: And then Section 28: And what this is, is this simply states the provision of this rule are separate and severable.
+[00:14:28] If any provision of this rule is held to be invalid, unconstitutional, or unenforceable, the remaining provisions shall remain in effect.
+[00:14:38] Section 28: The next section is the amendments to the previous rule, which was Rule 7.35.2.
+[00:14:50] And this really is the different definitions that needed to be added for the new rule.
+[00:14:57] And so the new proposed rule refers back to this section.
+[00:15:00] And so in it, it includes the items such as what are adverse health events for reporting purposes, what a certificate is, a certifying clinician, expiration date, and et cetera, healing centers, approved locations, and goes through and outlines what those definitions are.
+[00:15:22] Section 28: The other section that has an amendment is from Rule 7.35.2.24 is some clarification with regard to the requirements for the transportation of psilocybin to expand that.
+[00:15:37] And then at this time, I turn it back to our hearing officer.
+[00:15:41] Thank you.
+[00:15:42] Thank you.
+[00:15:43] At this time, Mr. Woodward will introduce and move to place into evidence the Department of Health exhibits.
+[00:15:49] Thank you.
+[00:15:50] Thank you.
+[00:15:51] So the Department has a total of eight exhibits that it will ask be admitted into the record today.
+[00:16:00] Our first exhibit is the proposed new rule 7.35.3.
+[00:16:06] And all of these exhibits are available on the web.
+[00:16:11] They're available on the Department of Health's regulations webpage and also on the State Sunshine portal.
+[00:16:17] So for anybody out there who wants to see these, these are all up there.
+[00:16:21] So the first exhibit is the proposed new rule 7.35.3 NMAC.
+[00:16:26] Second exhibit, exhibit two, is the proposed amendment to 7.35.2 at sections 7, 10, and 22.
+[00:16:39] As Dr. Zerlo was just describing, section 7 is a definition section.
+[00:16:45] Section 10, section 10 is the general producer of requirements.
+[00:16:51] And section 24 contains requirements for transportation of psilocybin.
+[00:16:56] And so those are, those amendments are all in sort of red line text so you can see exactly what changed in those, or what's proposed to be changed.
+[00:17:04] Exhibit three consists of the notice of public hearing for today's rule hearing, describing the content of the proposed rule changes, and proposed new rule, and how to submit public comment.
+[00:17:22] Exhibit four is an affidavit of publication from the Albuquerque Journal, a newspaper of general circulation in the state of New Mexico.
+[00:17:31] And this is just a testing that, consistent with the state rules act, the notice of hearing was published in the Albuquerque Journal on August 25th of this year.
+[00:17:46] Exhibit five, starting at page two, is an affidavit of publication in the New Mexico register.
+[00:17:55] The New Mexico register is published by the State Records Center and Archives.
+[00:17:59] It is the official publication for all rule notices and rules in the state of New Mexico.
+[00:18:07] And this affidavit is just a testing to the publication of the hearing notice in the register.
+[00:18:14] And I believe it says, let's see, that's issue number 16, volume 37.
+[00:18:24] Exhibit six is the August 24th, 2026, letter from Secretary Gina de Blasi appointing Craig Erickson as the hearing officer in this matter.
+[00:18:38] Exhibit seven is an affidavit of notice to the public written by Jacob Clark, a paralegal, attesting to the various things that the Department of Health did to provide notice of the hearing today.
+[00:18:52] The publication of the notice, the posting of the notice, and circulation of the notice by email to various parties.
+[00:18:59] And then Exhibit eight contains all of the written public comments in this case, or in this proceeding.
+[00:19:08] And as the hearing officer just stated, the record will be left open until the close of business today, so 5 p.m. today.
+[00:19:14] So if we receive any additional written comments, those will be included.
+[00:19:18] I think at this point we've received something like maybe 80 written comments, so those will all be included within that Exhibit eight.
+[00:19:26] And so with that, that's all of the Department's proposed exhibits, and I would ask at this time that those exhibits be admitted into the record.
+[00:19:35] Exhibit, Department of Health exhibits one through eight will be admitted into the record, and the motion is granted.
+[00:19:42] And as indicated, as indicated, if there are any additional public comments that come in today, they'll be added to the exhibit binder as well.
+[00:19:53] At this point, I think that we're ready to begin calling for public comments.
+[00:20:05] Who's going to be the, do you have the list of, how you've got it?
+[00:20:12] All right, and we're going to do everyone in person first, then we will give everyone who is logged in online on Teams.
+[00:20:25] If you do wish to make a public comment on Teams, you'll just want to raise your hand.
+[00:20:31] There is a hand icon in Teams that says raise, and you can start getting in the queue for that now if you'd like.
+[00:20:38] But we're going to do everyone in person first.
+[00:20:42] So it looks like first, we have, let's see, Barack Wolf.
+[00:20:52] And just to remind everyone, when you approach the podium, if you could give us your name, and also if you're representing some entity, let us know who that is at all.
+[00:21:02] Certainly.
+[00:21:03] How's this coming through okay?
+[00:21:05] No, yeah, that one's been on the fritz, so I will actually pass this to you.
+[00:21:09] Okay.
+[00:21:10] Do you want to put that in there or no?
+[00:21:11] Just hold it.
+[00:21:12] Yeah, that's good.
+[00:21:13] How's that?
+[00:21:14] Great.
+[00:21:15] All right.
+[00:21:16] Well, somebody had to go first, so here we go.
+[00:21:19] I want to thank you for the opportunity to make a few comments and read them into the record today.
+[00:21:25] I'm Barrick Wolf, W-O-L-F-F.
+[00:21:29] I'm a founding board member of End of Life Options New Mexico.
+[00:21:33] It's a nonprofit that was created in 2021 with a mission to provide statewide information and support about end of life options, including medical aid in dying.
+[00:21:45] I had almost 25 years of work in public health.
+[00:21:50] That's been a major part of my career, and I worked in rural health, EMS, and trauma systems, and as the director of the public health division.
+[00:21:59] On retirement, I worked for 20 years as a senior analyst at the Senate Health and Public Affairs Committee during the legislative sessions.
+[00:22:08] I've drafted many sets of regulations over the years and helped implement the programs involved with some assistance from time to time.
+[00:22:17] This auditorium is familiar territory.
+[00:22:20] EOLO New Mexico was involved in the development of MPA to a limited extent, but we were early and strong advocates for its passage.
+[00:22:32] Helping overcome end-of-life anxiety through the use of psychedelic medications is one of the areas of proven efficacy, and the MPA holds a great promise to those who we serve.
+[00:22:45] I've been involved with Dr. Lehman's advisory subcommittee over these past many months, and have been well impressed with the active engagement of clinicians and advocates working on behalf of those who will benefit from the program.
+[00:22:58] The work of the advisory committee has been both professional and client-focused to create a program that will help ensure access to safe and high-quality program.
+[00:23:08] As evidenced in the numerous public comments that we'll hear today online and in writing, there are several key areas where the proposed regulations fall short of expectations, and we're hopeful that this hearing process will lead to some significant changes.
+[00:23:24] The written comments from end-of-life options to Mexico Board of Directors have been submitted with our specific concerns outlined and clear recommendations for changes in the areas of landlord notification/approval, including long-term care facilities, which is particularly important for people at the end of life.
+[00:23:44] Provider certification, when these clients have a prognosis of less than nine months to live and are already deeply engaged in medical care system, and participant registration with NMDOH.
+[00:23:57] I'm not going to go into detail about those or in the comments.
+[00:24:02] We feel that these areas of the eggs have created some unnecessary and deleterious burdens on people at the end of life.
+[00:24:10] And finally, I appreciate and applaud the dedicated work of the staff of NMDH on this important new program, and literally the hundreds of people who have been actively working on crafting this new and innovative program with so much potential.
+[00:24:26] My caution, based on years of experience, is that when you request and provide the opportunity for public participation, you really need to be responsive to the voices you're going to hear.
+[00:24:39] We look forward to working with you to move this program forward.
+[00:24:43] Thanks so much.
+[00:24:44] If I could ask you just one question.
+[00:24:47] Please.
+[00:24:48] Can you spell your first and last name?
+[00:24:49] I may be asking people to do that.
+[00:24:51] Sure.
+[00:24:52] I know we have a sign-in sheet that I've discovered over the years of doing this, but sometimes what people write on the sign-in sheet is in this program.
+[00:25:01] So if I have any question, I'm going to ask people to spell that.
+[00:25:04] That's great.
+[00:25:05] I appreciate that.
+[00:25:06] The lines are little, and as we age, we tend to scroll.
+[00:25:10] So it's Barak, B-A-R-A-K, Wolf, W-O-L-F-F.
+[00:25:16] Thanks so much.
+[00:25:17] Thank you.
+[00:25:18] Thank you.
+[00:25:19] Thank you.
+[00:25:19] Thank you.
+[00:25:20] Thank you.
+[00:25:21] Thank you.
+[00:25:22] Thank you.
+[00:25:23] And thank you for taking my brief comments.
+[00:25:24] My name is Lance Chilton.
+[00:25:25] Thank you.
+[00:25:26] Thank you.
+[00:25:27] Thank you.
+[00:25:28] And thank you for taking my brief comments.
+[00:25:31] My name is Lance Chilton.
+[00:25:32] I practiced pediatrics in New Mexico for 43 years, most of it in Albuquerque, but also in Gallup, Taos, and Santa Fe.
+[00:25:45] And I retired a few years ago.
+[00:25:46] Like Mr. Wolf, I am now a board member at End of Life Options New Mexico, because I believe all of us should have options at our lives' ends.
+[00:26:00] I'm impressed that medical evidence suggests that psilocybin may be a good option for some End of Life New Mexicans.
+[00:26:23] It may help to relieve the anxiety and depression that people experience when they know they are dying.
+[00:26:32] And so I was pleased to see the legislature pass 2025 Senate Bill 219, which established this program.
+[00:26:41] Persons at the end of their lives face daunting decisions and choices.
+[00:26:47] Psilocybin may be a partial answer to some of these problems, as long as it isn't made unnecessarily difficult to access this medication, adding to the problems that people face at the end of their lives.
+[00:27:02] Unlike the use of cannabis, psilocybin usage affects only the person to whom it is administered.
+[00:27:12] There is no vapor given off and no residue is left on nearby surfaces.
+[00:27:19] I urge you to ease some of the restrictions on psilocybin usage, at least at the end of life, for patients thought to be within their last six months of life,
+[00:27:32] when they have already been determined to be eligible for hospice services.
+[00:27:37] Thank you.
+[00:27:38] Thank you, Dr. Chairman.
+[00:27:39] And next we have Crystal C. Romero.
+[00:27:40] That's C-R-Y-S-T-A-L-C-R-O-M-E-R-O.
+[00:27:41] Can Chris Peskuski go before me?
+[00:27:42] Yes.
+[00:27:43] Thank you.
+[00:27:44] Let's see.
+[00:27:45] We'll go to Chris Peskuski.
+[00:27:46] C. Romero. That's C-R-Y-S-T-A-L-C-R-O-M-E-R-O. Can Chris Piskuski go before me? Yes. Let's see. We'll go to Chris Piskuski. That is C-H-R-I-S-P-E-S-K-U-S-K-I. Thank you.
+[00:28:11] Good morning. Good morning.
+[00:28:16] Good morning. My name is Chris Piskuski. I'm a Marine Corps veteran living in Albuquerque
+[00:28:25] and a peer facilitator on UNM's psilocybin study for PTSD. About 25,000 people have now
+[00:28:34] received psychedelic care through state-regulated programs with very few adverse events. The
+[00:28:41] EuroCart project has spent almost a decade helping veterans prepare for and integrate psychedelic
+[00:28:48] experiences, many of them carrying PTSD, depression, and addiction at once.
+[00:28:56] These systems work. Colorado built on what Oregon learned and both rely on what every field of
+[00:29:03] medicine already does. The provider who knows the patient screens them and refers out when something
+[00:29:10] exceeds their scope. New Mexico goes further under our laws. Licensed clinicians deliver every treatment
+[00:29:17] and these rules put a licensed behavioral health provider in the room for every dose. That's more
+[00:29:23] clinical oversight than Oregon or Colorado required. Yet at the front door, these rules turn away
+[00:29:31] from all of that and toward our medical cannabis program. A law written nearly 20 years ago. The laws aren't
+[00:29:40] written the same. Times have changed. The medicine is different. Why are we writing the same rules?
+[00:29:50] Under these rules, nobody gets in without a prescriber's signature. A recent in-person exam and up to 30 days
+[00:29:56] is waiting on state approval. That gate doesn't add safety. Clinical risk is dynamic. Tracking it takes an ongoing
+[00:30:06] relationship. A one-time appointment, likely a cash-paid video visit, is a gateway and at a gateway, people disclose selectively.
+[00:30:16] So I'm asking for five changes. First, remove the controlled substance number requirements. So licensed behavioral health
+[00:30:23] providers with diagnostic authority can certify patients into the program. Second, bring physicians in when screening flags, real medical risk.
+[00:30:31] Third, strike the patient application process. The department should receive patient information, not be
+[00:30:40] the arbiters of approval. Fourth, allow individual sessions with one licensed practitioner as Oregon in Colorado do. Fifth, remove the
+[00:30:50] landlord's signature requirement for treatment at home. I had to leave the country to get help, and it worked.
+[00:30:58] Many don't have the capacity to do that. This program was created so they wouldn't have to.
+[00:31:04] Dangling access just out of reach is an insult to the veterans and first responders who need it.
+[00:31:10] It will leave them coping in unhealthy ways.
+[00:31:13] Laurie
+[00:31:37] Good morning. My name is Crystal C. Romero. I'm an Army National Guard veteran and a member
+[00:31:55] of the UNM group Psilocybin Assisted Therapy Research team. I want to echo what my colleague
+[00:32:03] Chris just shared, but I also want to ask us to think about what is at stake beyond the
+[00:32:10] regulations themselves. We have an extraordinary opportunity in New Mexico to build something
+[00:32:18] that doesn't simply create access to psilocybin, but creates safe, ethical, equitable access
+[00:32:29] to healing. Many of the people who come through these doors will arrive after years, sometimes
+[00:32:40] decades, of trauma, moral injury, institutional betrayal, and treatments that have not given
+[00:32:48] them the relief that they were searching for. They are not simply consumers purchasing a
+[00:32:56] service. They are people placing themselves in an incredibly vulnerable position and trusting
+[00:33:04] the system we create to protect them. That is why the people sitting beside them matter. Training
+[00:33:14] matters. Screening matters. Preparation matters. Integration matters. And most of all, accountability
+[00:33:23] matters. But access matters, too. If we build the safest program in the country, but we make
+[00:33:32] it inaccessible to veterans like myself, first responders, survivors, folks that live in the rural areas of New
+[00:33:44] Mexico, where I'm from, and people without significant financial resources, then we truly haven't created access.
+[00:33:53] Access. So perhaps the question before us isn't simply, how do we regulate psilocybin? The bigger question is, what kind of system would we want someone to love to walk into at the most vulnerable moment of their life?
+[00:34:12] If we build from that question, with safety, compassion, competency, and accessibility
+[00:34:21] ability at the center, I believe New Mexico has an opportunity, not merely to follow what other states have done, but to lead. Thank you.
+[00:34:37] Next we have Mary Currie, M-A-R-Y C-U-R-R-Y.
+[00:34:43] Good morning, Ms. Currie. Good morning.
+[00:34:56] My name is Dr. Mary Currie. I've been in New Mexico for 35 years. And I have, like, a barrack
+[00:35:13] school of, been around the Department of Health for a good portion of that. I was involved in the early implementation of the HIV/AIDS program for the
+[00:35:26] nine counties of northern New Mexico, which was designed and rolled out as a integrated model that entered through behavioral health.
+[00:35:37] We called it mental health and substance abuse services back then, but it's kind of been collapsed to behavioral
+[00:35:43] health. And I also was involved in the implementation and sustainability of the
+[00:35:51] substance abuse screening, SBIRT, screening brief intervention and referral to
+[00:36:00] treatment program, which was implemented in rural and frontier areas of New Mexico.
+[00:36:06] Also creating an integrated model where you could access behavioral services.
+[00:36:16] I do want to acknowledge how incredible and amazing it is that this is happening in New Mexico.
+[00:36:22] But I've seen New Mexico embrace innovation and do things in a way that has brought national, federal recognition to it. And I think we have an opportunity for that to happen.
+[00:36:36] So I know it took a lot of work and for all of you that are here or listening, that have been part of getting this to this point, including the governor's efforts. I just want to say thank you.
+[00:36:54] So currently I have a small software company in integrated in behavioral health for child, youth and family, public behavioral health services.
+[00:37:09] And I work as a private practice clinician. I specialize in the treatment of traumatic stress
+[00:37:14] And I think one of the things about psilocybin treatment that is truly mind blowing is that it has the potential to cure.
+[00:37:16] And right now, what we have as a system that has
+[00:37:21] And right now, what we have as a system that has
+[00:37:21] And I think one of the things about psilocybin treatment that is truly mind blowing is that it has the potential to cure.
+[00:37:26] And right now, what we have as a system that has
+[00:37:28] and I think one of the things about psilocybin treatment that is truly mind blowing is that it has the potential to cure.
+[00:37:40] It has the potential to cure. And right now, what we have as a system that has the potential to treat a chronic, psychological, physiological illness.
+[00:37:56] So the idea that that opportunity exists is really amazing and wonderful.
+[00:38:06] I'm very interested in sort of what's going to happen in terms of implementation through sustainability of this model.
+[00:38:15] I'm interested in understanding what kind of data is going to be collected.
+[00:38:19] What kind of data story we're going to orient towards telling here.
+[00:38:24] But I'm really here to talk about
+[00:38:28] changing a model where you enter through a client/patient, enters through screening efforts through a certified clinician.
+[00:38:41] I'm currently on my own dime paying $8,000 to become certified
+[00:38:49] through the California Institute of Integral Studies.
+[00:38:54] And so with a flow chart that basically is a person is either, you know, in treatment with somebody who's certified
+[00:39:01] or you have a collaborative role and understanding with other clinicians where they can be
+[00:39:09] screened both for health issues and psychological issues.
+[00:39:14] If there's a health issue,
+[00:39:16] the client/patient can go to their doctor,
+[00:39:20] be sure that there's no concern about their hypertension,
+[00:39:25] something like that.
+[00:39:26] If they're screened out medically,
+[00:39:28] they're screened out,
+[00:39:30] but that that isn't a gateway point.
+[00:39:35] Same issues with mental health screenings.
+[00:39:37] Okay.
+[00:39:38] And so that's my main concern.
+[00:39:42] And it really addresses, it's been brought up here before by the veterans,
+[00:39:48] that inequity to access is really a high potential.
+[00:39:55] And it's happening.
+[00:39:56] It happened in Oregon with the data they have.
+[00:39:59] And the last thing I want to say is I really hope that if it's not currently on the table,
+[00:40:04] it moves there quickly.
+[00:40:06] And that's access to microdosing.
+[00:40:10] The data is very solid.
+[00:40:11] So thank you for hearing me and happy to contribute in any way moving forward.
+[00:40:18] Just a quick question for you.
+[00:40:20] I saw this in the written materials as well.
+[00:40:24] What does the phrase Frontier New Mexico refer to?
+[00:40:28] Frontier is based on population.
+[00:40:31] It's based on population.
+[00:40:34] So if you have a certain level of population that's below rural,
+[00:40:40] it then becomes frontier.
+[00:40:43] So if you've ever been to reserve,
+[00:40:46] you're in the frontier.
+[00:40:54] All right.
+[00:40:54] And next we have Adele Getty.
+[00:40:57] I'll have you spell your name just in case.
+[00:41:01] I'd like to pass it at this moment.
+[00:41:04] Sounds good.
+[00:41:04] All right.
+[00:41:05] Adele Getty passes.
+[00:41:07] Is it Adele?
+[00:41:12] Oh, okay.
+[00:41:14] And then G-E-T-T-1.
+[00:41:16] Okay.
+[00:41:16] Sounds good.
+[00:41:18] Let's see.
+[00:41:19] Next we've got Kate O'Flanary.
+[00:41:23] I might have said that wrong too.
+[00:41:24] O'Flanary.
+[00:41:25] Okay.
+[00:41:25] I'll have you spell it as well.
+[00:41:37] Good morning.
+[00:41:42] Good morning.
+[00:41:45] Do you want me to spell my name?
+[00:41:46] Yes.
+[00:41:47] My last name is O-F-L-A-H-E-R-T-Y.
+[00:41:54] You might want to hold the mic a little closer too.
+[00:41:56] Okay.
+[00:41:57] Is that better?
+[00:41:58] Yes.
+[00:41:58] All right.
+[00:41:59] Good morning.
+[00:42:01] I am a resident of Oregon, the state of Oregon,
+[00:42:05] and I'm just here visiting friends and family.
+[00:42:08] And I happen to be here during this hearing.
+[00:42:11] So I decided to come.
+[00:42:15] I have participated in the state of Oregon program
+[00:42:18] on almost every level.
+[00:42:20] First as a cultivator and then as a licensed facilitator
+[00:42:24] and then as a facilitator trainer.
+[00:42:29] Excuse me.
+[00:42:30] I hate folks speaking.
+[00:42:31] I don't like talking into a mic.
+[00:42:33] So anyway, after reviewing the rules,
+[00:42:40] I do appreciate that it seems that you value safety
+[00:42:44] and access to people who are in dire situations.
+[00:42:49] I do want to, I guess I want to echo what a lot of people have already said.
+[00:42:54] And it seems like there's a bit of overregulation and which might lead to some of the problems
+[00:43:03] that the state of Oregon is experiencing.
+[00:43:07] Currently, their department is in a budgetary crisis and a lot of the service centers are shutting down
+[00:43:14] and a lot of the facilitators are dropping out as well.
+[00:43:18] So I guess I want to urge New Mexico to
+[00:43:25] to really learn from Oregon's mistakes.
+[00:43:28] And I guess given that you've made it this far with all of this, the rules and oversight,
+[00:43:36] I think that it would be wise to think about dose, dosage and how with much lower dose doses, there's much lower risk
+[00:43:48] of adverse events.
+[00:43:49] And so I think these rules and the safety regulations will really only apply if people
+[00:43:55] are taking larger doses or are already in a high risk situation.
+[00:44:01] So I think that that could be a solution to allow more access to folks who aren't,
+[00:44:11] who generally would love the beneficial effects of psilocybin and could benefit from them.
+[00:44:18] And also to not set the program up for failure.
+[00:44:26] I guess specifically requiring both a facilitator and what do you call it, not a clinician, but a
+[00:44:52] a practitioner during all sessions I think is a little bit much.
+[00:45:00] Some people don't require that much oversight
+[00:45:04] unless they're in kind of like a higher risk situation.
+[00:45:10] In the state of Oregon, they require someone to be at the on the premises who's not in the session with
+[00:45:16] the person as kind of a backup person in case things go sideways.
+[00:45:21] But to create the need for more people to be in the room at the same time is just going to raise the costs
+[00:45:28] for both the patient as well as the whole program.
+[00:45:37] Secondly, some of the requirements on how many facilitators need to be present as well as how many
+[00:45:51] of the practitioners need to be present during group sessions I think could be reduced a bit,
+[00:45:58] especially dependent on dose.
+[00:46:01] I really think that a lot of these rules could all be modified depending on dose.
+[00:46:07] And I am a huge advocate of micro dosing.
+[00:46:10] I think it's really effective.
+[00:46:12] I don't think that more psilocybin necessarily equates to more healing.
+[00:46:17] It's really just dependent on the person and their their metabolism,
+[00:46:23] what they're going through and is very specific to each person.
+[00:46:30] I also was looking at the practicum requirements and 20 seconds.
+[00:46:38] I guess I have some notes that I could submit online.
+[00:46:40] But overall, I guess I'll just leave it with that dose dependency is is a huge thing.
+[00:46:46] And if you can create a micro dosing program, I think you'll have a lot more success in New Mexico.
+[00:46:52] Thanks.
+[00:46:56] Let's see.
+[00:46:56] And Michael Williams, I can't tell if you.
+[00:47:00] Okay, no, sounds good.
+[00:47:04] All right, next we have Dr. Lida Fatemi.
+[00:47:10] L-I-D-A-F-A-T-E-M-I.
+[00:47:14] Yes, perfect.
+[00:47:16] Thank you so much for having me.
+[00:47:18] Thank you.
+[00:47:22] Before I begin, can we take a deep breath together?
+[00:47:25] A deep breath full of gratitude to be in this space together today.
+[00:47:33] Thank you.
+[00:47:35] While war, famine, natural disasters, and the misuse of AI surveillance touch so many corners of our world,
+[00:47:46] We get to gather here in safety to talk about bringing medical psilocybin and conscious healing to our people.
+[00:47:56] Look around you.
+[00:47:57] Feel your body in this space.
+[00:48:01] This is a historic moment for our state, for human history, and for our planet.
+[00:48:10] I'm Dr. Lida Fatemi.
+[00:48:12] I'm a board-certified internal medicine physician and hospice physician.
+[00:48:17] I'm an associate professor at the UNM School of Medicine and the founder of Conscious Physicians Psychedelics Academy.
+[00:48:27] I speak today only for myself.
+[00:48:30] As a child, I survived war in Iran and lived under terrorism.
+[00:48:36] Psychedelics and deep personal work helped me heal.
+[00:48:44] So I come to you as a physician and also someone who knows firsthand what this medicine can do.
+[00:48:50] New Mexico carries deep trauma, generational, historical, and personal.
+[00:48:55] I see this at my patients' bed sites every day and in the eyes of the clinicians who care for them.
+[00:49:02] I know that same trauma in the people of Iran, where I was born.
+[00:49:08] Our people are exhausted.
+[00:49:12] And they are searching for hope.
+[00:49:15] The Medical Psilocybin Act can be that hope.
+[00:49:19] If we let compassion write the rules instead of control and fear.
+[00:49:26] So I ask each of us, myself included, to test every rule with one question.
+[00:49:34] Does this come from compassion or from control and fear?
+[00:49:39] If it comes from fear, can we name where that fear began internally?
+[00:49:46] Let it go and choose differently today.
+[00:49:51] I recently brought a related message to the FDA.
+[00:49:55] The federal government has built a fast lane for psychedelic medicines.
+[00:50:01] Review, expanded access, and rescheduling have all been accelerated.
+[00:50:06] But no one has built the workforce waiting at the other end of that lane.
+[00:50:11] New Mexico will feel that gap first.
+[00:50:15] These are not medications you simply prescribe and dispense.
+[00:50:19] They touch perception, memory, and identity.
+[00:50:23] Yet most medical residents in this country have no formal training in this work.
+[00:50:30] So, from a place of compassion and safety, I urge four changes.
+[00:50:37] First, allow certifying clinician visits by telehealth.
+[00:50:42] Medicare already allows hospice recertification visits by telehealth.
+[00:50:46] In-person requirements shut out our rural, tribal, homebound, and seriously ill patients.
+[00:50:53] The very people who need this most.
+[00:50:56] Second, remove the reporting step after medical clearance.
+[00:51:00] Make it a simple referral like any other specialty.
+[00:51:04] And publish a public list of certified providers so clinicians and patients can find care with ease.
+[00:51:12] Third, fund educational scholarships.
+[00:51:16] We did the math at our academy.
+[00:51:20] The new training requirements cost about $20,000 per person who wants to be trained as a facilitator in New Mexico.
+[00:51:33] Few New Mexicans can afford that.
+[00:51:35] Without scholarships or an educational fund, we will not have a workforce.
+[00:51:43] And care will never reach the communities who need it most.
+[00:51:47] Within the New Mexico community, can we have people from other states come?
+[00:51:52] Sure.
+[00:51:52] But do they understand our needs of New Mexicans here?
+[00:51:57] They won't.
+[00:51:59] Thank you.
+[00:52:01] Fourth, remove the landlord clause.
+[00:52:05] No patient should have to choose between their home and their medical privacy.
+[00:52:11] Thank you so much.
+[00:52:13] And I have so much gratitude for being here with you all.
+[00:52:17] Thank you.
+[00:52:18] Thank you.
+[00:52:23] Next we have Ellen Schimmels.
+[00:52:27] Perfect, and E-L-L-E-N-S-C-H-I-M-M-E-L-S.
+[00:52:34] That's right.
+[00:52:35] Thank you.
+[00:52:40] Hi, can everyone hear me okay?
+[00:52:43] All right.
+[00:52:44] Hi, as he said, my name is Ellen Schimmels.
+[00:52:46] And thank you for the opportunity to speak.
+[00:52:49] I'm a doctorally prepared nurse practitioner and full clinical professor
+[00:52:54] with 30 years of mental health experience.
+[00:52:57] including 23 years on active duty in the United States Army.
+[00:53:03] Like Dr. Mary, I'm a trained, or I think she's working on her training,
+[00:53:07] but I'm a trained psychedelic facilitator, also paid out of pocket for that,
+[00:53:14] and a therapist with UNM Group Psilocybin Assisted Therapy Study.
+[00:53:20] I'm also a fellow in the University Psychedelic Education Program,
+[00:53:25] working with USONA and 1440 Multi-University, or Multiversity, I think it's called.
+[00:53:31] So as an educator, I've taught more than 70 courses and developed and implemented more than 50
+[00:53:37] interdisciplinary simulations with a variety of clinical complexity and decision-making
+[00:53:44] across graduate and undergraduate education.
+[00:53:51] Five months into my deployment to Afghanistan, I found a lump in my breast.
+[00:53:58] In 2011, I was diagnosed with breast cancer.
+[00:54:03] Almost immediately, a plan of care took shape.
+[00:54:07] My care involved primary care, surgery, medical and radiation oncology, nursing, pharmacy case
+[00:54:13] management, mental health care, support groups, rehabilitation. I had a lymphedema therapist to
+[00:54:19] help me drain lymph nodes and a genetic counselor, a fertility specialist because I was only 34
+[00:54:26] and still wanted to have a child. Homeopathy, art therapy, I was even referred to Zumba.
+[00:54:33] And many others throughout my diagnosis, treatment, survivorship and recovery.
+[00:54:38] Each played a role in helping me navigate not only my illness and treatment, but the physical,
+[00:54:43] emotional and practical realities of healing. Unfortunately, and as a mental health provider now
+[00:54:50] for almost 30 years, we don't approach mental health care with the same coordinated, comprehensive model
+[00:54:57] that we use for conditions such as cancer. Mental health patients often navigate fragmented care
+[00:55:04] alone, moving between providers, trying multiple treatments, sometimes with limited response and few
+[00:55:11] sustained options. For the New Mexico medical psilocybin model, we can do this differently.
+[00:55:19] We had the opportunity to make this a community initiative from the beginning. And this starts
+[00:55:24] with how we approach education. We should not introduce another treatment into an already fragmented
+[00:55:31] system without educational infrastructure to support it. I appreciate that the proposed rules recognize
+[00:55:37] education, simulation and supervised clinical experience for certifying clinicians, practitioners and
+[00:55:43] facilitators, but I encourage the board to think more broadly about education as an essential
+[00:55:49] essential to a safe, affordable and sustainable system. One that extends way beyond treatment providers
+[00:55:56] to the broader community. I don't think an education fund is the only answer. New Mexico should
+[00:56:03] establish a centralized statewide medical psilocybin education framework through its public higher education
+[00:56:10] system. Leveraging existing expertise in curriculum development, teaching, simulation and professional
+[00:56:16] standards. Education could be integrated into healthcare programs at all levels. It could also be offered as
+[00:56:22] electives and continuing education, as well as provide pathways for community members and those seeking
+[00:56:28] facilitator roles. I am most concerned about the path for our non-clinical facilitators. If we can't afford
+[00:56:36] as clinicians to pay for this training, how are they going to pay for it? I think that having the educational
+[00:56:43] universities involved is actually going to create an educational path to obtaining a degree, to obtaining a
+[00:56:50] future in this work for non-clinical facilitators, as well as many opportunities for clinical facilitators.
+[00:56:57] I am proud to be a nurse. One of the most important things I think about being a nurse is that there's
+[00:57:04] many pathways into being a nurse. I'm now a doctorally prepared nurse, but there's so many ways that these
+[00:57:11] people come into nursing and I just want to have that opportunity for clinical and non-clinical facilitators
+[00:57:17] in this space who want to help others. I don't want education to be another reason that this makes us
+[00:57:27] inaccessible, another hoop for people to jump through. I think a university-based model could reduce
+[00:57:32] fragmentation by connecting the medical psilocybin to the broader system where patients live and heal.
+[00:57:38] It would promote consistent, evidence-informed education, workforce development quality,
+[00:57:43] accountability, and sustainability while preparing our communities. Thank you.
+[00:57:52] Next, we have Dave Landy.
+[00:57:57] Okay, and is that D-A-V-E-L-A-N-D-E?
+[00:58:03] Hi, good morning. So I didn't see a lot of outline for microdosing. I've heard a couple people talk
+[00:58:10] about that and from my own experience, less is more. Okay, I found that less is more in my experience
+[00:58:20] with microdosing as far as, you know, you take somebody that's already in a rough position and then
+[00:58:29] you throw them right into a fire. It's a lot. I think having more access and more options
+[00:58:37] would be a good thing. And also the rental clause, I also think is, is, uh, not fair. So, yeah. Thank you.
+[00:58:50] Thank you. Um, and I think, okay, yeah, I think next is Larry David.
+[00:59:00] And, uh, L-A-R-Y, well, I mean, yeah. L-A-R-Y, L-E-E-M-A-N.
+[00:59:09] Well, it's amazing to be here at this day. I remember three years ago when we were talking about
+[00:59:15] models and legislators were consulting and doing this, so I just want to kind of just
+[00:59:20] acknowledge that we've come a whole long way at this point in time. Um, I'm, um,
+[00:59:26] to introduce, introduce myself. Um, I'm a professor at the UNM School of Medicine,
+[00:59:31] board-certified family and addiction medicine physician. My relevant roles are co-directing
+[00:59:36] a UNM research program for psychedelic assisted therapies, being a member of the advisory board,
+[00:59:41] and the chair of New Mexico Psilocybin End of Life Committee. Um, but I'm just speaking for myself today,
+[00:59:47] not for any of those other organizations. Um, I have had the opportunity, um, you know,
+[00:59:54] over the last four years to actually work with people with all of the conditions that are included
+[01:00:00] here, people with PTSD, people with treatment, resistant depression, uh, people with end of,
+[01:00:07] um, end of life and, and addiction. I see like an amazing amount of potential, um, you know,
+[01:00:12] for this. And I also see it's, it's challenging. I mean, we try to balance off the issue of how do we,
+[01:00:19] do you have access and safety? Um, and I appreciate the, the challenge of, of doing that. Um,
+[01:00:27] um, I'll make some specific recommendations about the rules, but I do want to talk about some of the
+[01:00:31] more global systems that have started to come up here because I think these are key, um, for the
+[01:00:36] education. Um, I think to really train facilitators, it actually has to be the community college system.
+[01:00:42] We, it's the only system that I see as being affordable to do this. We can't really replicate
+[01:00:48] $10,000 training to let alone $15,000. Um, thinking about like the idea of systems of care,
+[01:00:55] and it really gets involved in the, like how many people need to be there, who needs to be there.
+[01:01:01] We need to actually think about systems and we need to have access. There's problems that are rare,
+[01:01:06] but we want to have somebody available. So if you're a facilitator, it's relatively new,
+[01:01:11] you have access to someone who's a, a psychedelic, uh, therapist that has a lot of training.
+[01:01:16] We need to think about systems and not individuals here.
+[01:01:23] When we're looking at, um, uh, looking at how we're, how we're doing this here, I'm going to give
+[01:01:28] some suggestions to kind of make this as an easier, easier system and help with the, um, access.
+[01:01:35] Thankfully, um, there's been about 10 people that have gone before me. So almost everything I've
+[01:01:39] written down here, you've heard. So I'm going to try not to sit there and repeat it, but I'm going to
+[01:01:43] say a couple of things. Um, end of life care, you know, I'm chairing that committee. The committee
+[01:01:49] felt really strongly about the bill landlord, uh, provision needing to be struck. Um, you know,
+[01:01:55] end of life is a delicate time for people. We need to make it as easy as possible. We can't have people
+[01:02:02] having to run around, get certifying clinicians and different things for that group. I mean, for all
+[01:02:08] of these groups in particular, we need to, we need to make it easier. I don't think there's any reason
+[01:02:13] for this provision. There's no other state that's actually encountered, um, you know, a legal problem
+[01:02:18] with this yet. I see legal problems with the provision. It requires people to reveal their health care
+[01:02:24] conditions to the landlord. So I'm hoping we can strike the landlord provision.
+[01:02:32] For educational requirements, it is such a balance, I think, on there because these can really,
+[01:02:37] the more requirements, the more expensive you have there. Um, but I also think that we have to be
+[01:02:43] careful about having had enough training. Um, Oregon has done 130 hours. Colorado has done 150 hours.
+[01:02:50] We have more like about 75 hours. I think that's good. I support that. I mean, as far as access,
+[01:02:56] we've increased the amount of a practicum, but I'm concerned and I've expressed this and actually the
+[01:03:01] two committees I participated in both, um, recommended more specific requirements so that
+[01:03:07] people actually, when they go through, have to have certain trainings. I'm going to give some of the
+[01:03:12] examples of that. The end of life committee felt everybody should have eight to 10 hours of training.
+[01:03:18] It's not, it's not specified here how much you need to have. And I, you know, we've had discussions
+[01:03:23] where people were like, well, it's up to the training programs. It'll have to happen. I've talked to
+[01:03:28] people at pretty much all the programs in Colorado. None of them have more than two to three hours of
+[01:03:33] training and end of life care. It's not enough. Our program is looking at taking care of the sickest
+[01:03:40] people. Um, here, um, we're talking about talking about people with treatment, resistant depression,
+[01:03:45] PTSD and such. I think that we really need to mandate specific requirements there. We recommended seven
+[01:03:52] hours of trauma training, four hours of screening, suicidality and crisis response, and, um, specific
+[01:03:59] training and challenging experiences. I echo what people say. Psilocybin is an extremely safe medicine,
+[01:04:06] but there are experiences that people come out. Some estimates now are about three percent of people.
+[01:04:14] Five minutes just go so quick. You pretty much heard everything else here, so it doesn't matter, but I,
+[01:04:19] I'm basically echoing the sentiments to try to make this easier, get rid of the 30 days, and, um,
+[01:04:25] I'm really excited for all we have to do to move forward on this. Thank you.
+[01:04:33] All right, uh, let's see. Uh, Patricio Dominguez?
+[01:04:39] And, uh, let's see. P-A-T-R-I-C-I-O-D-O-M-I-N-G-U-E-Z?
+[01:04:45] Correct. Perfect. Good morning.
+[01:04:50] What do I have to say is kind of delicate? Would you like the mic stand?
+[01:04:55] Uh, that would be so sweet. And because it's, uh, I'm going to, I'm going to include some
+[01:05:01] statistics and numbers and all that sort of stuff, I didn't want to have to memorize all that stuff,
+[01:05:05] so I wrote it down, so I'm pretty much going to be reading it rather than, than speaking it. I
+[01:05:09] probably will break out into some, uh, extemporaneous, but, uh, okay. My name is Patricio Dominguez.
+[01:05:17] I represent Plant Medicine University, which is a program in process for this specific purpose.
+[01:05:26] My first statement will be regarding the trap of the out-of-state corporations.
+[01:05:31] Members of the committee, thank you for the opportunity to speak.
+[01:05:34] As you finalize the rules and review providers' bids for our state's emerging medical psilocybin
+[01:05:40] program, I urge you to confront a persistent damaging pattern in New Mexico's regulatory history,
+[01:05:48] the knee-jerk tendency to award critical state contracts to flashy out-of-state corporate bidders
+[01:05:54] at the expense of qualified local experts. We are building the nation's first strictly medically
+[01:06:02] integrated psychedelic framework. Because the stakes are incredibly high, there will be tremendous pressure
+[01:06:08] to outsource facilitator training to massive out-of-state educational entities claiming to have
+[01:06:16] turnkey curricula. But history proves that when New Mexico exports public infrastructure to outside firms,
+[01:06:24] the state pays millions for programs that fundamentally fail our communities.
+[01:06:31] The high cost of bypassing local context. We do not have to guess what happened when state
+[01:06:37] education and training initiatives outsource the data as already in our history books.
+[01:06:43] Please try to learn from our sister departments. The mid-2010s passed through controversy. The state
+[01:06:50] bypassed local education capacity to funnel over 31 million dollars in no-bid contracts to out-of-state
+[01:06:57] consultants. The result was New Mexico Teach, a punitive evaluation system completely decoupled from New
+[01:07:03] Mexico's demographic reality. It resulted in massive union lawsuits, local protests, and a state auditor probe that
+[01:07:11] blasted the department for the total lack of internal control. 2020. Graduation alliance failure. The state
+[01:07:18] bypassed our local district to hand 4.6 million emergency contracts to private equity-backed call
+[01:07:25] centers knocking on the door and building real community trust. This outside vendor sent out automatic
+[01:07:34] robocalls that families blocked to spam. A review of public records later reveals zero verifiable
+[01:07:40] evidence that this out-of-state contract improved a single student outcome. If we let out-of-state
+[01:07:47] corporate entities swoop in, colonize, to train our psilocybin facilitators, we are setting this
+[01:07:54] breakthrough program up for the exact same failure. Outside firms do not understand the regulatory landscape
+[01:08:01] of New Mexico Department of Health. They do not understand our local behavior health networks, and they do not
+[01:08:08] have relationships with our communities. The local mandate and clinical safety. Your draft requirements explicitly
+[01:08:16] emphasize the need for cultural competency, equity, and access. You cannot buy true New Mexican culture
+[01:08:26] competency from corporate offices in Oregon, Colorado, or New York. New Mexico's program requires a deep,
+[01:08:33] localization of local knowledge of our traditional healing,
+[01:08:36] "Curandetismal," indigenous history, small community power dynamics, local training organizations like mine,
+[01:08:46] "already possess the requisite clinical qualifications, the state infrastructure, and the trusted community
+[01:08:54] "relationships to deliver this safety." Furthermore, keeping these training contracts local keeps New Mexico tax dollars
+[01:09:02] within our borders. It builds our state economic capacity, creates sustainable local jobs, and ensures
+[01:09:08] that the wealth generated by this new industry stays right here to support New Mexican families. I challenge
+[01:09:15] this committee to align your procurement choices with your stated goals of equity and community health. Do
+[01:09:25] not hide behind the rigid bias-scoring framework that favors out-of-state corporate scale. Trust New
+[01:09:31] Mexico talent, prioritize local bidders, and let those who actually live and love this state build the safe, ethical
+[01:09:39] program our citizens deserve. Now I'm going to go off the record. We have nine seconds. Traditional
+[01:09:48] practitioners. Your health department has already approved traditional practitioners such as
+[01:09:52] "Curandetismal," and there is a licensing procedure for them, something like that with this.
+[01:09:59] Thank you.
+[01:10:01] And next, I think, is the last in-person sign up to speak as DESBA.
+[01:10:15] That's D-E-Z-B-A-A.
+[01:10:18] I welcome all. Yad-e-e, all. Just want to really essentially echo everything that has been said here,
+[01:10:36] especially our last speaker, Dr. Fatemi, Larry Lehman.
+[01:10:44] There is a wealth of experience that was asked -- oh, sorry. My organization, I am chairing the
+[01:10:52] Equity, Access, and Cultural Considerations Committee, but I'm speaking as a concerned citizen
+[01:10:58] and psilocybin advocate on my own behalf. But there is a wealth of experience that was asked of us
+[01:11:05] to draw in that can meet the government where it's at. This is a confluence area of expert knowledge.
+[01:11:16] Expert knowledge that has not only been passed down through generations, as we see with our
+[01:11:21] curanderas, our healers, our traditional medicine people, but also people who have worked with the
+[01:11:28] people that are here. And not to dismiss the fact that government is government, and government will
+[01:11:34] always be government, but we're hoping for change. We're hoping to be able to be met here in New Mexico.
+[01:11:41] And as much as we are in the national stage, it is very, very local. And it is so local that it is within
+[01:11:48] ourselves that local. Sometimes we feel like we cannot change the world and all the effects of the trauma
+[01:11:56] worldwide. But if we look inside to see the effects of us individually as people, we can change our own
+[01:12:04] world within ourselves. What we are asking essentially is to be able to have that agency, to be able to have
+[01:12:11] that within our own homes, to be able to allow our elders to be able to peacefully transition without the
+[01:12:18] bureaucracy, to be able to heal within our own capacity, and to be able to take back not only our land
+[01:12:30] that was taken away from us by the government, but also to take back that medicine that is truly a legacy
+[01:12:37] of our whole humanity. But we're meeting that with the government, and we're asking for that change here,
+[01:12:45] here and now. So my plea, mostly, is just to follow through with that responsibility that was bestowed upon us
+[01:12:56] to bring to your attention the vast amount of expertise, the knowledge from the rest of the community
+[01:13:05] that is asking for you to consider what we have written, and to meet us where we're at, and to be
+[01:13:14] responsible for that change to your community. Thank you. Thank you.
+[01:13:22] That was the last in-person comment? Yes, that was the last in-person comment. Are there any online? Yes, we have
+[01:13:29] seven people in the queue online right now to get public comment, so I'm going to start with that.
+[01:13:38] In just a moment here, let me get a couple things set up.
+[01:13:57] All right, let's see. The first hand up currently is Jim Dodson. And again, Jim, we have, and everybody
+[01:14:07] else online, we have five minutes for a public comment, and I will let you know when there's 30 seconds left
+[01:14:14] and in time at the end. So let's see here. And to, I'm going to Jim Dodson. So, J-I-M-D-O-D-S-O-N.
+[01:14:27] And I'm going to allow your mic, Jim. Now, if you are able to select the mic icon
+[01:14:36] and in Teams, you should be able to unmute yourself.
+[01:14:46] All right, I see it's unmuted. One moment.
+[01:14:53] I'm not getting... I'm going to go for some reason. Let's see.
+[01:15:01] Okay, apologies, Jim. I'm seeing that you're unmuted, but
+[01:15:30] we are not getting audio here. I'm going to try the next person and we'll come right back to you.
+[01:15:39] You might want to check with your mic that the correct mic is selected on your computer,
+[01:15:46] but we will come right back to you.
+[01:15:51] Okay, next we have Paul Walton.
+[01:15:57] And let me enable your mic.
+[01:16:01] All right, Paul, you should be able to enable your mic.
+[01:16:05] Yeah, can you hear me?
+[01:16:07] Yes. We just spooked everybody in the audience.
+[01:16:10] All right, cool. My name is Paul Walton, and I represent... I'm the executive director and
+[01:16:20] founder of Firefighters for Plant Medicine. And we have been, or I have been doing a lot of advocacy,
+[01:16:28] education, cultural awareness for psychedelics and medical cannabis as well. But I hear, obviously,
+[01:16:35] we're talking about psychedelics here, psilocybin in particular. First of all, I want to thank
+[01:16:40] everybody and recognize all the people that worked on this project before it became a bill. Thank you
+[01:16:46] all for all the work that you've done. And thank you, everyone, for all the continued work and support
+[01:16:51] for this historic bill that's being done to help a lot of people. Obviously, I'm a first responder.
+[01:17:00] I'm a firefighter with Bernalillo County. Over 18 years, I've gone through the medicine myself,
+[01:17:06] and it's changed my life. It's also changed a lot of other firefighters' life and first responders.
+[01:17:13] As I think about all the previous comments and everything, Chris, Crystal, Ellen, Larry,
+[01:17:21] there's been so many good comments, and so much of this has already been brought up of what I wanted
+[01:17:26] to talk about. But I want to bring up some other things here. The barriers do create a problem.
+[01:17:35] Firefighters, in particular, the number one line of duty death is cancer. So that's an end of life.
+[01:17:41] First responders, in general, resort to coping mechanisms such as alcohol addiction and abuse.
+[01:17:49] So that's pretty much covered. We have a lot of veterans and first responders. The number one
+[01:17:55] cause of death is suicide. And when you look at PTSD, complex PTSD, moral injury, severe depression,
+[01:18:04] and all these other things that can kind of go along with PTSD and depression, ADHD, we run into an instance
+[01:18:12] where a lot of people are struggling daily to do daily functions. When we insert extra barriers that can
+[01:18:23] inhibit someone's ability to reach treatment, that causes unnecessary stress. And those stressors
+[01:18:33] can basically detour someone in general from going through the process. When something gets very stressful,
+[01:18:42] when you have PTSD, depression, chaos can assume in your head. And therefore, you basically shut down or
+[01:18:50] disassociate and you remove yourself from even getting treatment. We're the first to help others, but we're
+[01:18:58] also the last to help ourselves. So removing some of these barriers and lightening up some of these guardrails
+[01:19:06] can help our first responders gain access. And I understand that their safety should be a concern.
+[01:19:13] Ethics should be built off of, everything should be built off of ethics. Safety comes from that,
+[01:19:20] harm reduction comes from that. So if we can reduce some of these barriers a little bit, I do feel like
+[01:19:26] the only people that really should be seeing a medical physician to further for the application or the permit
+[01:19:31] for this is anybody that does have a medical condition that does raise red flags. Otherwise, you do have
+[01:19:38] qualified clinicians that are diagnosing and that should be well enough. And if the Department of Health
+[01:19:44] is receiving these applications, they should also be screening for additional flags that might have been
+[01:19:49] missed. So I'm not going to continue on about all the other things, but I just want to make sure that we are
+[01:19:57] taking care of the people that take care of us and that actually need this. This is saving lives. It's
+[01:20:04] changing lives of our first responders. So with the affordability access, all these things can be huge
+[01:20:11] barriers, not alone the barriers that we present for ourselves in getting treatment. There's the stigmas of
+[01:20:17] looking weak, even not only in the eyes of your fellow workers, but then in the eyes of the public as well.
+[01:20:26] So I encourage you to listen to all that everybody said and try to relax these barriers a little bit.
+[01:20:33] I understand that safety should be a concern and absolutely. And then I want, I do want to add on to
+[01:20:39] the micro dosing. And I've talked about this at the very beginning of all this. And so I hope that we can
+[01:20:45] work on this down the road and maybe next year, but they're okay. Micro dosing is a viable solution
+[01:20:54] for therapy. I really do think that it's probably one of the next things that's really going to happen
+[01:20:58] with people to open them up and barriers for first responders that can actually help loosen and open
+[01:21:04] up and make them a little bit more vulnerable for a better treatment. And that's all I have to say.
+[01:21:10] So thank you everyone for all your work. Awesome. Thank you, Paul. And we are going to try to go back to
+[01:21:19] Jim Dodson here. All right. Okay, let's try this again. Jim, I have allowed your mic. Let's see if
+[01:21:29] we can hear you when you unmute. So you'll just want to select that mic icon up at the top.
+[01:21:36] Okay, and we're not hearing anything and still not seeing that it is unmuting. So Jim, if you want to
+[01:21:57] try hopping off the call and hopping back on, sometimes that can fix the issues for people.
+[01:22:03] Hello, hello, hello. Yes, we can hear you. Yeah, now we can hear you. Thank you.
+[01:22:09] Thank you. I am Jim Dodson, representing myself as a patient advocate and citizen researcher.
+[01:22:26] I will use an immersive reader to present my three minute comment.
+[01:22:31] A more complete comment is presented online.
+[01:22:39] Clearly, this was a performance enhancing medicine. I could see better than
+[01:22:49] On this day 13 years ago, I suffered an accidental blow to my prefrontal cortex that two years later
+[01:22:56] led to a social security judge declaring me fully and permanently disabled with MDD and PTSD.
+[01:23:09] Jim, if the recording is still playing, we can't hear it.
+[01:23:26] All right, I'll try to read it. What medicine did not know at the time, I learned 10 years later as a citizen researcher.
+[01:23:37] My brain, for efficiency, turned back all the neural networks associated with the impact injury,
+[01:23:44] leaving a limited loop feedback network that made self-regulation impossible,
+[01:23:50] and my liability to any employer and to my family members.
+[01:23:55] As life collapsed around me, I was directed to a psychiatrist by my PCP after completing a
+[01:24:01] mood assessment form during an annual physical exam. After months of trying multiple options,
+[01:24:08] my psychiatrist told me I was treatment resistant, as most PTSD patients are, to traditional methods.
+[01:24:17] It was difficult to hear I was hopelessly trapped in my own mind.
+[01:24:20] My research led me to ask what I was hearing about psychedelic therapy was true, that it was 80% effective for the most severe patients.
+[01:24:32] Yes, she said it was true, but while promising, it remained illegal here then, and she could not prescribe it.
+[01:24:39] So I did what I had to do to save myself and procure my own medicine with a simple text request.
+[01:24:46] I tested it first with a minimal dose by playing the best round of golf in my life.
+[01:24:55] Clearly, this was a performance-enhancing medicine.
+[01:24:59] I could see better than any human on that course in that moment.
+[01:25:03] I felt surprisingly energized.
+[01:25:05] The heroic dose that followed happened safely and quietly in the comfort of my own surroundings, where I feel at peace.
+[01:25:16] My own space, meeting the mushroom, one-on-one, transformed me.
+[01:25:21] I returned to my psychiatrist two weeks later to discuss the miracle I experienced.
+[01:25:26] Now, I was treatment-responsive and ready to discover how to be me, the me I was intended to be.
+[01:25:35] My integration sessions then opened my mind to Carl Jung and the journey to individuation.
+[01:25:42] An ideal pairing with psychedelic journey.
+[01:25:46] Thidactical behavioral therapy put me on the path with heart.
+[01:25:53] All of this treatment process.
+[01:25:56] It is important to point out, exists today, paid for by the existing healthcare industry standards.
+[01:26:05] If only the medicine were simply prescribed like any other protected drug and used as instructed.
+[01:26:13] This is the KISS option for treatment that is affordable and free of all the scare tactics to force traumatized patients into retreat settings with predatory strangers for a fee far beyond the reach of most citizens in our state.
+[01:26:32] Home settings must be permitted just as retreat settings are permitted.
+[01:26:36] There is no moral nor medical reason to exclude the sojourner pathway.
+[01:26:44] Patient voices often go unheard in healthcare.
+[01:26:48] I'm sorry, I'm yelling.
+[01:26:50] Ground out by the data-driven professionals that see them as an annoyance, making them vulnerable to predatory abuses.
+[01:26:58] To prevent such snake oil practices, the advisory board must amend the rules to permit patients the right to choose their own preferred modality.
+[01:27:10] Thank you.
+[01:27:14] Thank you, Jim.
+[01:27:18] Let's see.
+[01:27:19] Next, we have Brett Phelps.
+[01:27:23] Let me just get to your mic here.
+[01:27:27] All right.
+[01:27:27] And Brett, I have enabled your mic.
+[01:27:28] You should be able to unmute.
+[01:27:32] Yes, can you hear me okay?
+[01:27:34] Yes.
+[01:27:34] Great.
+[01:27:36] Good morning and thank you for the opportunity to comment on the proposed regulations for New Mexico's medical psilocybin program.
+[01:27:44] My name is Brett Phelps and I'm here today speaking on behalf of the Psychedelic Bar Association New Mexico Working Group.
+[01:27:52] I want to focus specifically on the requirement that a patient obtain written permission from a landlord before the patient's home may be approved as an other approved location under the rules.
+[01:28:04] We strongly recommend that the department exempt a patient's own residence from this requirement.
+[01:28:11] The Medical Psilocybin Act establishes a lawful state-regulated system for the medical use of psilocybin.
+[01:28:18] Yet the proposed rule would effectively require some patients, simply because they rent rather than own their homes, to disclose their participation in that medical program to their landlord and obtain the landlord's affirmative written consent.
+[01:28:34] This creates several significant legal problems.
+[01:28:39] First, federal law continues to classify psilocybin as a Schedule I controlled substance.
+[01:28:45] Even a landlord who fully supports a tenant's participation in New Mexico's program may understandably refuse to sign a document expressly authorizing possession and administration of psilocybin on the landlord's property.
+[01:29:01] Requiring written authorization, therefore, creates a substantial practical barrier to access without necessarily providing any corresponding safety benefit.
+[01:29:12] Second, the requirement creates serious privacy and discrimination concerns.
+[01:29:17] A request for landlord approval necessarily reveals sensitive information about a tenant's medical treatment.
+[01:29:25] In many circumstances, the very fact that a patient qualifies for treatment may reveal, or at the very least, invite questions about, a disability or medical condition.
+[01:29:36] Federal and state fair housing and civil rights laws significantly restrict discrimination based on disability and regulate how housing providers may seek and use disability-related information.
+[01:29:49] The regulation would therefore place landlords in an extraordinarily difficult position, approve conduct involving a federally prohibited substance, or deny permission to a tenant seeking medical treatment authorized by state law.
+[01:30:06] That brings me to the state's potential liability and litigation risk.
+[01:30:10] By affirmatively requiring landlord approval as a condition of access to state-authorized medical treatment, the department itself creates the mechanism requiring disclosure and landlord involvement.
+[01:30:24] If a patient is denied access, subjected to different lease terms, charged additional rent, threatened with eviction, or otherwise experiences adverse housing consequences because of that required disclosure, litigation may not be limited to the landlord.
+[01:30:42] Even when governmental immunity ultimately protects the state from particular damages claims, that does not eliminate the risk of constitutional, statutory, administrative, or injunctive litigation challenging the rule.
+[01:31:04] And most importantly, this risk appears unnecessary.
+[01:31:08] The department can regulate the safety of an administration location without requiring a tenant to obtain permission concerning the tenant's personal medical care from a third-party landlord.
+[01:31:21] For those reasons, we respectfully recommend that the department revise the other approved location provisions
+[01:31:28] to expressly exempt a qualified patient's own residence from any landlord approval requirement.
+[01:31:36] That approach better protects patient privacy, avoids unnecessary housing and discrimination disputes, reduces legal risk to both landlords and the state,
+[01:31:47] and preserves the act's goal of providing meaningful access to medical psilocybin for New Mexicans.
+[01:31:53] Thank you.
+[01:31:57] Thank you, Brett.
+[01:31:58] And I'm just messing with the mics here.
+[01:32:02] Okay.
+[01:32:03] And next we have Jeff Steinborn.
+[01:32:07] And Jeff, I have allowed your mic.
+[01:32:11] You should be able to unmute.
+[01:32:20] Okay.
+[01:32:21] Thank you all very much.
+[01:32:22] It is an honor to be here with you.
+[01:32:25] I am State Senator Jeff Steinborn,
+[01:32:27] and I was the primary author of the New Mexico Medical Psilocybin Act.
+[01:32:34] And I echo the sentiment that it is, it's, we're fortunate to be able to have this conversation today,
+[01:32:40] because I know that there's 40, 47 other states that wish they were having this conversation today.
+[01:32:46] So, I think that's great.
+[01:32:47] So, I want to thank the Department of Health for all of your good work, you know, standing up this program, moving these rules forward.
+[01:32:56] I think there's a lot of good in this rule.
+[01:32:58] But I am very concerned about several provisions that I would like to address that I believe would inappropriately limit people's access to care and potentially slow down their receiving of that care.
+[01:33:12] The specific issues that I would request the Department amend is, number one, I am totally opposed to the landlord sign-off for homebound patients.
+[01:33:26] By virtue of our law, the Medical Psilocybin Act, we have given people the legal right to access this plant medicine.
+[01:33:34] And I believe it's totally inappropriate to subordinate that right, that individual right, that we have given people to a landlord.
+[01:33:42] It forces someone to violate their right to their medical privacy in order to receive that care.
+[01:33:48] And if the landlord doesn't support it, it actually jeopardizes their ability to obtain this care.
+[01:33:56] Does the state require, do we request written permission from the federal government for even having this program?
+[01:34:04] Of course we don't.
+[01:34:06] So we shouldn't use that standard or inconsistency with federal law to deny any individual in the state that very right.
+[01:34:15] And I feel that goes against the spirit of the Medical Psilocybin Act.
+[01:34:20] I'll also add that I'm concerned about the same requirement in the rule for landlords to have to give approval for siting a healing center in 7.35.3.11.
+[01:34:32] Do we require landlord approval for other medical offices in a building?
+[01:34:38] That, in my opinion, should be the standard that we apply to a medical psilocybin practice, a healing center,
+[01:34:45] and not create a new separate standard for them, which I think, again, draws from maybe old stigmas about this treatment, about the risks, about the patients.
+[01:34:59] I think that requiring this landlord approval could jeopardize access to care in available spaces and affect also the discretion involved of patients and essentially potentially limit people's access to health care.
+[01:35:18] So in the same spirit, I agree that we should be adding specific training in adverse experiences and protocols to the didactic training,
+[01:35:32] specifically adding minimum required hours of training for the following four areas, end-of-life and palliative care considerations at eight hours,
+[01:35:41] trauma and trauma-informed care at seven hours, screening, suicidality, and crisis response at four hours,
+[01:35:48] and managing of challenging experiences during and after psilocybin-assisted therapy.
+[01:35:53] This is so important.
+[01:35:55] This is an emerging area as we bring these programs to scale that we know there is a subset of people that do have challenging long-term experiences,
+[01:36:03] and it's essential with a medical program dealing with a more vulnerable population.
+[01:36:08] You could argue that our training is strong in these areas, and that is consistent with our program,
+[01:36:17] and we even see in other states they're standing up clinics to deal with just adverse situations.
+[01:36:23] So I think this is an area that we need to continue to do work, and the training is the appropriate place to start
+[01:36:29] so that everybody involved in providing this care has the best information to do that.
+[01:36:36] Finally, I am concerned about the 30-day state approval for applications to request treatment for patients.
+[01:36:45] And, Dominic, I heard you say at the beginning, I think you're referring to this,
+[01:36:50] that it is not whether or not the state being put in a position to decide if someone can receive treatment or not.
+[01:36:57] I don't know if you were referring to this.
+[01:37:00] That would be a huge concern.
+[01:37:02] But I am concerned that this paperwork requirement is a potential duplication of other work requirements being promulgated on providers in this very rule,
+[01:37:10] and I would strongly encourage the department to review this, streamline it, only require paperwork for things that need their approval,
+[01:37:17] and also require or change the rule that it be done within a lot sooner than 30 days, maybe a week or two weeks later,
+[01:37:24] so we're not delaying care.
+[01:37:25] Thank you all so much for this opportunity.
+[01:37:30] Thank you, Senator.
+[01:37:32] Yep.
+[01:37:36] Okay, next, we have Mary Crow.
+[01:37:42] Let me just get to your mic here.
+[01:37:46] All right.
+[01:37:47] I've allowed your mic.
+[01:37:48] You should be able to unmute.
+[01:37:55] Good morning.
+[01:37:55] Good morning.
+[01:37:55] My name is Mary Crow.
+[01:37:57] I live in Grant County, New Mexico, in Silver City.
+[01:38:00] I currently work in the frontier area of New Mexico.
+[01:38:06] I have worked within the system for over 30 years.
+[01:38:14] I'm a family nurse practitioner, a psychiatric nurse practitioner,
+[01:38:18] and I'm currently enrolled in New Mexico's psilocybin certification program.
+[01:38:25] My biggest concerns are penalties regarding the fact that psilocybin has not been decriminalized
+[01:38:38] as far as how it would affect my clients, how it would affect services,
+[01:38:45] and how it would personally affect me.
+[01:38:47] Thank you.
+[01:38:48] Thank you, Mary.
+[01:38:54] Let's see here.
+[01:38:58] Okay.
+[01:38:58] And next, we have Lisa Ginsberg.
+[01:39:04] Lisa, I have enabled your mic.
+[01:39:06] You should be able to unmute.
+[01:39:09] Good morning.
+[01:39:10] My name is Lisa Ginsberg, and I'm the founder and CEO of Changa Institute,
+[01:39:15] the nation's first government-accredited psilocybin facility training program.
+[01:39:18] Welcome across Oregon, Colorado, and hopefully soon New Mexico.
+[01:39:23] First of all, thank you so much, Senator, for important comments on education and Department of Health for your service and time that you put in and making this possible and bringing the people of New Mexico and paving the way for the future states that want to bring medical access to psilocybin services on the state and hopefully federal level soon.
+[01:39:45] So, it's been an honor to participate in rulemaking process for over the past year.
+[01:39:52] And I am grateful to this committee for recognizing the need of qualified practitioners and prioritizing mental health and needs of New Mexicans, and for creating a reciprocity pathway that allows established educational programs to support the rollout of the medical psilocybin program.
+[01:40:16] And we are proud to bring our expertise and practitioner training to help to train the state's first psilocybin providers.
+[01:40:24] So, thank you so much for everyone on this committee for being so involved and doing an outstanding job and really thinking and prioritizing New Mexicans' safety and needs.
+[01:40:39] So, thank you so much for being so involved.
+[01:40:40] Thank you so much for being so involved.
+[01:40:41] Thank you so much for being so involved.
+[01:40:42] Thank you so much for being so involved.
+[01:40:43] Thank you so much for being so involved.
+[01:40:44] Thank you so much for being so involved.
+[01:40:45] Thank you, Lisa.
+[01:40:46] Thank you, Lisa.
+[01:40:47] Okay, next we have Denali Wilson.
+[01:40:48] Denali, I have enabled your mic, and you can unmute when you're ready.
+[01:40:49] Hi, everyone.
+[01:40:50] Good morning.
+[01:40:50] My name is Denali Wilson, and I serve as the Director of Strategic Support for Healing Advocacy.
+[01:40:50] As an organization, we are committed to the program that we're going to work with.
+[01:40:51] Thank you, Lisa.
+[01:40:52] Thank you, Lisa.
+[01:40:53] Okay, next we have Denali Wilson.
+[01:40:54] Denali, I have enabled your mic, and you can unmute when you're ready.
+[01:40:55] Hi, everyone.
+[01:40:56] Good morning.
+[01:40:57] My name is Denali Wilson, and I serve as the Director of Strategic Support for Healing Advocacy.
+[01:41:15] As an organization, we are committed to the program's success and are offering public comment in that spirit.
+[01:41:22] There are several provisions in the draft rules that we believe will limit patient access,
+[01:41:29] complicate insurance coverage, and overall increase costs to patients and to the department.
+[01:41:35] And those have been detailed in length in our written public comment, but there are a few that I want to highlight this morning.
+[01:41:42] First is the certifying clinician requirement, which goes beyond what was anticipated in the statute.
+[01:41:49] We urge a model that preserves safety without a prescriber gateway.
+[01:41:55] The Medical Psilocybin Act requires only that a patient have a qualifying condition, which any licensed provider authorized to diagnose can confirm.
+[01:42:04] We continue to recommend that the department instead regulate around specific contraindications such as medication interactions, uncontrolled hypertension, history of psychosis, whatever is supported by evidence.
+[01:42:21] And that heightened clinical review and attestation should only be required when a risk factor is present and be conducted by a clinician whose scope fits that particular risk.
+[01:42:33] The proposed certifying clinician design also creates an important insurance problem to pay attention to.
+[01:42:40] A medical encounter whose only purpose is program entry lacks independent medical necessity, which is the requirement for billing insurance.
+[01:42:51] And that is going to invite claims denials and clawbacks over time, which is a serious long lead liability problem.
+[01:43:00] If the department does keep this role, we want to see targeted recruitment, not just of medical doctors, nurse practitioners, psychiatric nurse practitioners who will be important providers in this role, but also naturopathic doctors and doctors of oriental medicine who have prescriptive authority in New Mexico and who can help fill the provider gap that the design is likely to create.
+[01:43:25] Second, we want to urge the department to reconsider the supervisory relationship that's created in rule between the practitioner and facilitator.
+[01:43:35] The supervision structure imposed can pull the facilitator their conduct under the medical malpractice law of the state, but those facilitators are not eligible as covered providers.
+[01:43:48] So that leaves them potentially personally liable for any claims that arise from medical harm.
+[01:43:54] The design also invites payers to deny insurance claims as services delivered by someone not authorized to bill.
+[01:44:03] And so we recommend that you treat these roles as independent with coordination, a coordination model instead of a supervisory model.
+[01:44:13] Third, and as you've heard from many parties, is the landlord attestation issue.
+[01:44:19] Third, this should not apply to patients receiving care in their own home or in long-term care.
+[01:44:25] And we endorse the end-of-life options New Mexico proposed exemption, which is written in their public comment and copied in ours as well.
+[01:44:33] Third, without it, the department is likely to see costly litigation on this issue and the disparate impact that it will have on dying and disabled low-income patients in our state.
+[01:44:44] Similar litigation in Oregon has already cost the state hundreds of thousands of dollars.
+[01:44:49] Third, disability rights, disability rights, New Mexico had to jump off of the call before providing public comment, but they have submitted written public comment.
+[01:44:57] In advisory board discussions about this provision, there was a request from the department for legal expertise in support of community opposition to this provision, and that has been provided both by the Psychedelic Bar Association, who you just heard from, and from Disability Rights New Mexico, who provided written public comment and legal analysis of the provision.
+[01:45:19] So I'd like to specifically request special attention on this issue from Mr. Erickson, presiding over this hearing, and from Mr. Woods' word for the general counsel for the department.
+[01:45:32] Finally, an issue related to training, suicidality and challenging experiences appear missing from the didactic requirements in draft rules, but with depression and PTSD as qualifying conditions.
+[01:45:48] Those are important safety touchpoints, so we recommend a minimum hours for those topics and others.
+[01:45:53] There are no minimum hours present in the draft, so thank you.
+[01:45:58] We look forward to working to support a strong and accessible program.
+[01:46:05] Thank you, Denali.
+[01:46:08] Next, we have Ian Dunn.
+[01:46:12] Ian, I have enabled your mic, and you can unmute.
+[01:46:19] Hello and good morning, everyone.
+[01:46:21] My name is Ian Dunn.
+[01:46:22] I wanted to echo the sentiments spoke on by Denali, Senator Steinborn, and others.
+[01:46:29] I'm sorry if I have forgotten your name at this time.
+[01:46:32] I am a patient living with PTSD, and I am deeply concerned about the proposed rules, specifically the requirement that treatment in other approved locations receive the property owner's approval rather than approval of the lawful resident.
+[01:46:46] I want to emphasize what this means in practice.
+[01:46:49] For a homeowner, the decision is simple.
+[01:46:51] If their healthcare team determines that their home is an appropriate setting for treatment, they can consent to treatment in their home.
+[01:46:56] For a renter, that same healthcare decision suddenly requires the permission of a third party, their landlord.
+[01:47:03] Nowhere else in medicine do we routinely tell a competent adult who lawfully occupies a home that they must ask their landlord for permission to receive medical treatment there.
+[01:47:12] We do not ask landlords to evaluate diagnoses.
+[01:47:15] We do not ask them to determine whether a treatment is clinically appropriate, and we should be very cautious about creating a system in which access to healthcare depends upon disclosing private medical information to someone who has no role in the patient's care.
+[01:47:29] I also stand here as an advocate of Gen Z. To my knowledge, I am the only member of Gen Z who has been intimately involved in the development of this program, and I have had the extraordinary opportunity to work alongside clinicians, regulators, advocates, and patients as New Mexico built something that has never existed here before.
+[01:47:45] But that also means I feel a particular responsibility to point out when a rule may affect my generation differently than generations designing it.
+[01:47:53] My generation has grown up during a profound mental health crisis, but we have shown a remarkable willingness to seek professional mental health services.
+[01:48:01] At the same time, young adults face a housing market in which home ownership is increasingly out of reach.
+[01:48:06] For many people my age, renting is not a temporary inconvenience before buying a house.
+[01:48:10] It is simply the reality of how we live.
+[01:48:13] Those realities collide under this rule.
+[01:48:16] A patient who owns a home retains control over where they receive treatment.
+[01:48:20] A patient who rents may have to approach their landlord, disclose enough information to explain why permission is being requested in the first place, and hope that the landlord is understandable and approves of psilocybin treatment.
+[01:48:32] Consider what we are asking the patient to do.
+[01:48:35] They may have to tell the person who controls whether their lease is renewed that they have a serious mental health condition.
+[01:48:42] They may have to explain that they are seeking a treatment that despite being lawful within New Mexico's medical program remains federally controlled and may still carry significant stigma.
+[01:48:51] And after making those disclosures, the landlord can simply say no.
+[01:48:55] That creates two classes of patients.
+[01:48:58] Those who own property and those who do not.
+[01:49:01] Those who own property can make decisions for themselves.
+[01:49:03] Those who do not must ask someone else.
+[01:49:06] And this extends beyond Gen Z.
+[01:49:08] The people most affected by this may be young adults, people with limited incomes, rural New Mexicans, people with disabilities, people living on Social Security income, or anyone for whom home ownership is financially inaccessible.
+[01:49:20] If there is a legitimate safety concern about whether a resident is in an appropriate treatment setting, then regulate the safety of the setting.
+[01:49:29] Require the appropriate clinician or program or determine what the location satisfies.
+[01:49:33] Applicable health and safety standards.
+[01:49:35] Require emergency planning.
+[01:49:37] Require appropriate staffing and patient protections.
+[01:49:39] But ownership is not a clinical qualification.
+[01:49:42] A landlord is not part of the patient's treatment team.
+[01:49:46] A patient property ownership does not make someone better qualified to determine a particular setting is medically appropriate.
+[01:49:53] The question should be, does the patient lawfully reside there?
+[01:49:57] Does the patient consent?
+[01:49:58] And has the location been determined to be clinically and operationally appropriate for treatment?
+[01:50:04] If the answer to those questions is yes, then I struggle to understand what a legitimate patient safety purpose is served by giving a landlord an additional veto power.
+[01:50:15] We have spent an enormous amount of time building safeguards into this program.
+[01:50:18] Those safeguards should protect patients from harm, not protect patients from making healthcare decisions simply because they do not own real estate.
+[01:50:28] New Mexico has an opportunity to build a medical psilocybin program around patient dignity, around privacy, safety, and equitable access.
+[01:50:35] But as someone from the generation that will live with these regulations for decades to come, I am asking you to consider not only how this rule operates on paper but who will actually bear its burden.
+[01:50:48] Thank you so much for this time.
+[01:50:49] I appreciate your listening to my comment.
+[01:51:00] Thank you.
+[01:51:01] Thank you.
+[01:51:02] Thank you.
+[01:51:03] And next we have Janice Phelps.
+[01:51:04] And Janice, I have enabled your mic and you can unmute when you're ready.
+[01:51:15] And again, to unmute, there should be a mic icon up at the top of the screen and you can select that to unmute.
+[01:51:26] There we are.
+[01:51:27] Thank you very much.
+[01:51:28] So, my name is Janice Phelps.
+[01:51:31] Thank you for the opportunity to speak on behalf of the New Mexico Medical Psilocybin Program.
+[01:51:37] My name, again, Dr. Janice Phelps.
+[01:51:41] I'm a clinical psychologist, founder of the CIIS, that's the California Institute of Integral Studies Certification Program in Psychedelic Therapies and Research.
+[01:51:52] We're the first in the country to be an academically based certification program.
+[01:51:57] And we've been conducting that education for 10 years as well as in Oregon for the past four years.
+[01:52:04] I applaud the authoritative and grassroots work by hundreds of New Mexicans on this program.
+[01:52:13] New Mexicans, you have a smaller population, but you have a fierce commitment in service of multiple communities and stakeholders in this project.
+[01:52:23] I have a strong suggestion for another framework on how to assume you will provide safety balanced with access.
+[01:52:32] I second the suggestions of many, many others, both here and in the 80 letters that have been provided for this hearing.
+[01:52:41] I suggest reconsideration of the needs and reconsider of reviewing further, taking the time before settling on this rule to really reassess this landlord approval process.
+[01:52:57] No more needs to be said than was said before.
+[01:53:00] Streamline your access processes and allow relevant telehealth to occur.
+[01:53:06] You will be able to support the public education and reduce the training costs.
+[01:53:11] Institute specific trainings as suggested by Dr. Lehman and others.
+[01:53:15] Key importance of modules on cultural humility and teaching being provided by traditional medicine people will make your trainings relevant for the population of New Mexico.
+[01:53:28] I highly recommend these because of my tenure experience in running and founding the program I just shared with you at CIS.
+[01:53:37] So what happens if some of these provisions increase access and appear to lower safety or appear to lower standards?
+[01:53:46] Please consider the value of your training standards as an assurance of safety, thereby allowing you to open access.
+[01:53:57] It's an act of faith to rely on the competencies of your approved service centers and your practitioners.
+[01:54:04] They are willing to provide services with psilocybin that still carry stigma.
+[01:54:09] They will give you feedback, perhaps more than you want, but particularly at the beginning of the rollout, to help you fine tune the access processes, training processes, eligibility processes, and how to evaluate outcomes.
+[01:54:26] Instead, I suggest you envision standards of training as a key way to assure safety and thereby allow you to loosen these provisions that have been spoken about that limit access.
+[01:54:38] Do not underestimate what your core medical and mental health practitioners will do to assure safety.
+[01:54:45] Four of our graduates are working on your rollout, some in very key positions, and we have great faith in them, as well as other members of your community that have been working on this entire program from the very beginning.
+[01:55:01] I witnessed two large in-person meetings in New Mexico of stakeholders and volunteers and was very impressed with the caliber, commitment, and current expertise in this group.
+[01:55:14] I would suggest you ask training programs in Oregon and Colorado to share their curricular materials with you, thereby lowering costs for training.
+[01:55:27] And we have more than 100 hours of excellent training by experts, which we can provide for your training programs, saving thousands of dollars per person.
+[01:55:40] And we have a great opportunity to provide for you, and we have a great opportunity to provide for your training programs, and we have a great opportunity to provide for your training programs, and we have a great opportunity to provide for your training programs, and we have a great opportunity to provide for your training programs, and we have a great opportunity to provide for your training programs.
+[01:55:58] MONIES WILL HELP YOU SHORE SUGGESTIONS AND WILL HELP YOU INSTITUTE THE REQUESTS. THANK YOU
+[01:56:05] FOR YOUR TIME HERE. I APPRECIATE ALL THE WORK THAT YOU'VE DONE AND I WISH YOU THE GREATEST SUCCESS.
+[01:56:14] JANET? YES. ALL RIGHT. AND NEXT WE'VE GOT DR. COURTNEY HAYLE. AND
+[01:56:26] COURTNEY, I HAVE ALLOWED YOUR MIC. YOU CAN UNMUTE WHEN YOU'RE READY.
+[01:56:37] AND AGAIN, TO UNMUTE, THERE SHOULD BE A MIC ICON UP ON THE TOP BANNER AND YOU SHOULD
+[01:56:43] JUST SELECT THAT. THANK YOU VERY MUCH. I'M DR. COURTNEY HAYLE, PH.D. IN TRANSPERSIONAL
+[01:56:50] PSYCHOLOGY AND A GENERATIONAL PRACTITIONER. AS SOMEONE WHOSE LIFE
+[01:56:54] WAS SAVED BY NATIVE AMERICAN CURANDISMO, CURANDERISMO AND SPIRITUAL TRADITIONS. I'M EXCITED
+[01:57:00] TO BE HERE NOW AND I'M EXCITED TO SEE WHAT'S OPENING UP FOR MANY OTHER PEOPLE IN NEED.
+[01:57:07] FOR MORE THAN 25 YEARS, I'VE STUDIED AND WORKED ALONGSIDE TATA PATRICIO DOMINGUEZ,
+[01:57:12] WHO SPOKE EARLIER, IN TRADITIONAL CEREMONIAL SETTINGS AND HIS KNOWLEDGE AND LINEAGE HELPED
+[01:57:18] ME TO RECOVER FROM A NEARLY FATAL DISEASE. TOGETHER WE BUILT TRADITIONAL TAMASCAL.
+[01:57:24] WE BUILT ALL KINDS OF PROJECTS FOR AT-RISK YOUTH, FOR VETERANS WITH PTSD.
+[01:57:30] MY OWN WORK INCLUDES PLANT MEDICINE, SWEAT LODGE AND MANY OTHER THINGS.
+[01:57:35] I PURSUED A MASTER'S DEGREE AND A PHD BECAUSE I WANTED TO UNDERSTAND WHY THESE SYSTEMS HE
+[01:57:40] TAUGHT ME WORK AND HOW TO TEACH THEM RESPONSIBLY. MY MASTER'S IS ON THE MEDICINE WHEEL
+[01:57:46] AND HOW BALANCE, ORIENTATION AND BEAUTY CAN UNLOCK HEALING. I'M A PHD IN TRANSPERSIONAL
+[01:57:51] PSYCHOLOGY, DEVELOPED A STRUCTURED SYSTEM USING SOUND AND NERVOUS SYSTEM REGULATION.
+[01:57:57] SO I WANT TO SAY THAT MY RESEARCH AND EXPERIENCE OVER 25 YEARS SHOWS THAT SETTING AND THE CULTURAL
+[01:58:03] CONTAINER, THE PREPARATION AND THE RELATIONSHIP MATTER PROFOUNDLY, ESPECIALLY IN WORK WITH
+[01:58:09] COMPLEX PTSD, STRESS, ANXIETY, TRAUMA AND RECOVERY. I'VE BEEN WORKING WITH VETERANS FOR 20 YEARS,
+[01:58:16] PEOPLE IN RECOVERY. MY CONCERN IS THAT THE PROPOSED FRAMEWORK MAY CREATE TOO MUCH CONTROL
+[01:58:21] IN SOME PLACES AND NOT ENOUGH MEANINGFUL STANDARDS IN OTHERS, ESPECIALLY AROUND CULTURALLY
+[01:58:28] RELEVANT MATERIALS. MY CONCERN IS THAT FACILITATORS ALSO NEED TO HAVE A DIRECT EXPERIENCE WITH
+[01:58:34] PLANT MEDICINE. I WENT TO THE FDA HEARINGS IN SILVER SPRING A FEW WEEKS BACK AND SAW MANY,
+[01:58:39] MANY PEOPLE WHO HAD ZERO NATIVE UNDERSTANDING, ZERO PERSONAL EXPERIENCE WITH HEALING AND I WAS
+[01:58:46] SHOCKED THAT THESE PEOPLE ARE TRAINING FACILITATORS. I BELIEVE THAT NEW MEXICO MUST REQUIRE CULTURALLY
+[01:58:53] APPROPRIATE TRAINING THAT HONORS NEW MEXICAN TRADITIONS, RATHER THAN STERILIZING, CONTROLLING,
+[01:58:58] OR BLEACHING OUT THE MANY COLORS OF OUR TRADITIONS. SO SAFETY MATTERS, REGULATION MATTERS,
+[01:59:04] BUT CULTURAL KNOWLEDGE, OUR LIVED EXPERIENCE IN VASTLY DIFFERENT PLACES, THE NAVAHO NATION,
+[01:59:10] APACHE, PUEBLO, HISPANIC TRADITIONS, THESE ARE ALL VERY DIFFERENT SETTINGS AND THEY ALL DESERVE
+[01:59:17] TO HAVE AN APPROPRIATE CULTURAL CONTAINER. THEY DESERVE TO HAVE ACCESS,
+[01:59:21] PEOPLE WHO LIVE OUTSIDE OF THE CAPITALIST ECONOMY SIMPLY DON'T HAVE THE MONEY, BUT THAT DOESN'T
+[01:59:25] MEAN THAT THEY DON'T HAVE THE RIGHT OR THE CULTURAL EXPERIENCE. AND I JUST WANT TO MAKE
+[01:59:30] SURE THAT EVERYONE IS REPRESENTED AS APPROPRIATELY AS POSSIBLE. THANK YOU SO MUCH FOR ALL OF
+[01:59:36] YOUR WORK AND THANK YOU FOR ALLOWING YOU TO SPEAK.
+[01:59:40] THANK YOU, COURTNEY. NEXT WE HAVE JENNIFER JOHNSON.
+[01:59:48] AND JENNIFER, I HAVE ALLOWED YOUR MIC. YOU CAN UNMUT WHEN YOU'RE READY.
+[01:59:54] GOOD MORNING. THANKS SO MUCH FOR LETTING ME SPEAK AND I'VE REALLY, REALLY ENJOYED ALL OF THE COMMENTS.
+[02:00:08] THIS HAS BEEN GREAT. SO, MY NAME IS JENNIFER JOHNSON. I AM A HOSPICE RN IN TAOS.
+[02:00:16] I AM HELPING BUILD AN END OF LIFE PSYCHEDELIC CARE PROGRAM FOR MY HOSPICE AND I AM ALSO A
+[02:00:20] TRAINED PSYCHEDELIC FACILITATOR IN PRIVATE PRACTICE. I HAVE BEEN WORKING WITH THIS MEDICINE
+[02:00:25] FOR APPROXIMATELY NINE YEARS PERSONALLY AND IT HAS BEEN PIVOTAL IN MY HEALING.
+[02:00:30] I SUPPORT THIS PROGRAM AND I REALLY WANT IT TO SUCCEED, BUT AS WRITTEN, THESE RULES WILL
+[02:00:34] KEEP MOST OF MY DYING PATIENTS AND MANY RULE NEW MEXICANS FROM EVER RECEIVING CARE.
+[02:00:39] I AM ASKING FOR FIVE CHANGES. FIRST, DELETE THE PROPERTY OWNER STATEMENT. I AM A LANDLORD
+[02:00:45] MYSELF. A SIGNED ACKNOWLEDGEMENT GIVES AN OWNER NOTHING TO GAIN AND SOMETHING TO LOSE,
+[02:00:50] SO MANY WON'T SIGN IT. AND HOSPICE PATIENTS WHO RENT WILL LOSE CARE IN THEIR OWN HOMES.
+[02:00:56] THIS PROVISION WAS BORROWED FROM MEDICAL CANNABIS WHERE THE LANDLORD'S CONCERN WAS SMOKE ON
+[02:01:01] THE PROPERTY. THAT CONCERN DOESN'T EXIST IN A SUPERVISED PSILICIMIN SESSION. NEW MEXICO
+[02:01:06] DOESN'T REQUIRE A LANDLORD'S PERMISSION FOR A PATIENT TO USE MEDICAL AID IN DYING AT HOME
+[02:01:11] OR FOR HOSPICE TO BRING OPIOIDS INTO A RENTED HOME. A SUPERVISED PSILICIMIN
+[02:01:16] SESSION SHOULDN'T BE THE ONE END OF LIFE CHOICE THAT NEEDS A LANDLORD'S SIGNATURE.
+[02:01:21] THE DEPARTMENT HAS POINTED TO FEDERAL LAW, BUT NEW MEXICO ALREADY CHOSE TO DEPART FROM
+[02:01:26] FEDERAL LAW WHEN IT PASSED THIS ACT. FEDERAL ILLEGALITY ALONE CAN'T JUSTIFY GIVING
+[02:01:31] LANDLORDS A VETO OVER PATIENT CARE. IF THE DEPARTMENT WANTS DOCUMENTATION,
+[02:01:37] LET THE PATIENT SHOW THEIR RIGHT TO LIVE IN THE HOME, AND REQUIRE THE PROVIDER TO BRING
+[02:01:41] ONLY THE SESSION DOSE AND REMOVE ANYTHING UNUSED THE SAME DAY. AT A MINIMUM, EXEMPT
+[02:01:46] END OF LIFE CARE AND IN-HOME PATIENTS. SECOND, REMOVE THE CERTIFYING CLINICIAN
+[02:01:50] REQUIREMENT. THE ACT DEFINES A CLINICIAN AS A LICENSE PROVIDER WITH A DEPARTMENT,
+[02:01:55] AND IT MAKES A QUALIFYING DIAGNOSIS THE THRESHOLD FOR ENTRY.
+[02:01:58] NOTHING IN THE ACT REQUIRES A CONTROLLED SUBSTANCE REGISTRATION.
+[02:02:01] THE REAL RISKS IN PSILOSYBIN THERAPY ARE PSYCHOLOGICAL OR ARE MEDICAL RISKS THAT MUST
+[02:02:07] BE SCREENED ON THE DAY OF THE SESSION, LIKE INTOXICATION. A ONE-TIME PRESCRIBER VISIT
+[02:02:12] MISSES BOTH. INSTEAD, REGULATE AROUND THE SPECIFIC CONTRAINDICATIONS,
+[02:02:16] MEDICATIONS, AND HISTORIES THAT NEED CLINICAL REVIEW AND REQUIRE SIGNOFF FROM A
+[02:02:21] CLINICIAN WHOSE SCOPE FITS THAT RISK. THERE'S ALSO A FINANCIAL PROBLEM. AN APPOINTMENT
+[02:02:27] WHOSE ONLY PURPOSE IN THIS PROGRAM IS ENTRY, INVITES INSURANCE DENIALS AND CLAWBACKS AND
+[02:02:32] MORE COST. THIRD, STRIKE THE PATIENT APPLICATION. NO PATIENT EVER POSSESSES
+[02:02:38] PSILOSYBIN OUTSIDE A SUPERVISED SESSION, SO THERE'S NOTHING FOR AN APPLICATION OR CARD TO AUTHORIZE.
+[02:02:43] IT ADDS BURDEN FOR THE DEPARTMENT, CREATES ANOTHER STORE OF SENSITIVE PATIENT DATA AND ADDS STIGMA.
+[02:02:48] FOR HOSPICE PATIENTS, EVERY ADDED WEEK OF WAITING TIME IS TIME THEY DON'T HAVE.
+[02:02:53] FOURTH, LET REGISTERED NURSES BE CERTIFIED AS PRACTITIONERS,
+[02:02:56] AT LEAST FOR END OF LIFE CARE. RIGHT NOW THE PRACTITIONER PERMIT IS LIMITED TO THERAPY,
+[02:03:00] COUNSELING AND BEHAVIORAL HEALTH LICENSES. HOSPICE NURSES ALREADY ASSESS AND MONITOR PATIENTS,
+[02:03:06] MANAGE SYMPTOMS AND MEDICATIONS, COORDINATE WITH PHYSICIANS, AND SUPPORT
+[02:03:10] DYING PATIENTS AND THEIR FAMILIES THROUGH EMOTIONAL AND EXISTENTIAL DISTRESS.
+[02:03:15] EXCLUDING US SHRINKS THE WORKFORCE BEST PREPARED TO DO THIS WORK.
+[02:03:19] FIFTH, DROP THE REQUIREMENT FOR A PRACTITIONER IN THE ROOM AT EVERY SESSION.
+[02:03:23] REQUIRE MEDICAL CLEARANCE FROM A QUALIFIED PROVIDER BEFORE THE TREATMENT,
+[02:03:26] AND LET THE CERTIFIED FACILITATORS WORK WITHIN THEIR TRAINING AND LICENSES THEY HOLD,
+[02:03:31] REFERRING OUT WHEN A PATIENT'S NEED EXCEED THAT SCOPE.
+[02:03:34] TWO CERTIFIED PEOPLE AT EVERY BEDSIDE DOUBLES THE COST OF EVERY SESSION.
+[02:03:38] IN RULE AND FRONTIER COUNTIES AND IN PATIENT'S HOME,
+[02:03:41] IT OFTEN WON'T BE POSSIBLE BEFORE A PATIENT DIES.
+[02:03:44] THE RULE ALREADY LETS THE DEPARTMENT WAVE THE RATIO WHEN IT'S A BARRIER TO SAFETY
+[02:03:49] AND IS OTHERWISE ADDRESSED.
+[02:03:52] END OF LIFE CARE IS EXACTLY THAT CASE.
+[02:03:54] PLEASE WRITE THAT EXEMPTION INTO THE RULE,
+[02:03:56] RATHER THAN MAKING DYING PATIENTS WAIT ON CASE-BY-CASE WAIVERS.
+[02:04:00] FINALLY, I'M WORRIED ABOUT WHAT HAPPENS IF THE LEGAL PROGRAM IS COSTLY,
+[02:04:04] IS THIS COSTLY AND CUMBERSOME.
+[02:04:07] MANY EXPERIENCED PRACTITIONERS WILL SIMPLY STAY UNDERGROUND.
+[02:04:10] THE PEOPLE LEFT BEHIND WILL BE THE ONES LEAST ABLE TO PAY THE HIGHER FEES
+[02:04:14] OF ALL THESE ADDED LAYERS.
+[02:04:16] RULE LOW INCOME AND DYING NEW MEXICANS.
+[02:04:20] A PROGRAM THIS HARD TO JOIN WON'T MAKE ANYONE SAFER.
+[02:04:23] IT WILL ONLY MAKE SAFE CARE HARDER TO REACH.
+[02:04:26] THANK YOU SO MUCH FOR YOUR TIME.
+[02:04:31] THANK YOU, JENNIFER.
+[02:04:33] AND NEXT WE HAVE MARIA FEENI.
+[02:04:37] MARIA, I HAVE ALLOWED YOUR MIC AND YOU CAN UNMUTE.
+[02:04:43] HI, CAN YOU HEAR ME?
+[02:04:46] YES.
+[02:04:46] OK, GREAT.
+[02:04:47] HI, MY NAME IS MARIA FEENI, DR. MARIA FEENI.
+[02:04:50] I HAVE A PH.D. IN BIOMEDICAL ENGINEERING.
+[02:04:52] I'M AN EXPERT IN BRAIN STIMULATION AND I'VE ACTUALLY DECIDED TO LEAVE
+[02:04:55] THAT FIELD TO TRANSITION INTO PSYCHEDELIC MEDICINE.
+[02:04:58] I'M GETTING A DEGREE IN COUNSELING RIGHT NOW BECAUSE
+[02:05:01] AS A SEXUAL TRAUMA SURVIVOR, THIS IS THE ONLY THING THAT HAS HELPED ME HEAL.
+[02:05:05] AND I FEEL SO INCREDIBLY PASSIONATE ABOUT THIS MEDICINE THAT I HAVE
+[02:05:10] COMPLETELY PIVOTED MY ENTIRE ACADEMIC CAREER.
+[02:05:14] I WANT TO SAY I'M SUPER EXCITED TO BE HERE.
+[02:05:16] I'M SUPER EXCITED THIS IS HAPPENING IN NEW MEXICO.
+[02:05:19] AND I DO HAVE SEVERAL CONCERNS,
+[02:05:22] SOME OF WHICH ARE ECHOING WHAT OTHER PEOPLE HAVE SHARED.
+[02:05:25] AND THERE'S A FEW THAT I DON'T THINK HAVE BEEN HIGHLIGHTED YET.
+[02:05:28] AND I REALLY HAVE THREE MAIN THINGS THAT I WANT TO DISCUSS.
+[02:05:32] AND, YOU KNOW, I THINK THAT THE WHOLE POINT OF WE NEED TO LEARN FROM THE
+[02:05:36] MISTAKES THAT HAVE HAPPENED IN OTHER STATES, ESPECIALLY OREGON.
+[02:05:40] THIS PROGRAM IS JUST NOT BEING ROLLED OUT TO AS MANY PEOPLE AS IT COULD BE IN OREGON.
+[02:05:44] AND A LOT OF THAT COMES DOWN TO ACCESS AND AFFORDABILITY.
+[02:05:48] AND SO I THINK THE THREE THINGS WE NEED TO CONSIDER IN NEW MEXICO
+[02:05:52] ARE ACCESS, PRACTICALITY, AND AFFORDABILITY.
+[02:05:57] SO I JUST WANT TO GO AHEAD AND ECHO WHAT OTHERS HAVE SAID ABOUT I DON'T THINK IT'S
+[02:06:01] APPROPRIATE FOR THE LANDLORD APPROVAL CLAWS.
+[02:06:05] I THINK THAT IT CREATES A LOT OF ADDITIONAL LEGAL ISSUES.
+[02:06:09] AND FRANKLY, LANDLORDS ARE NEVER CONSULTED FOR ANY OTHER MEDICAL
+[02:06:14] PROCEDURE THAT'S DONE ON A PATIENT IN THE HOME.
+[02:06:17] AND I JUST DON'T THINK THIS IS APPROPRIATE.
+[02:06:20] I ALSO COMPLETELY DISAGREE WITH 7.35.3.1188,
+[02:06:28] INDICATING THAT A LANDLORD NEEDS TO APPROVE THAT THE HEALING CENTER
+[02:06:32] DOES MEDICAL PSILICIPAN IN THE CONTEXT OF A RENTAL PROPERTY
+[02:06:38] FOR A BUSINESS. I THINK THAT, AGAIN, THIS IS JUST AN ADDED BARRIER
+[02:06:42] WHERE A LANDLORD IS LIKELY TO SAY NO BECAUSE OF ALL THE LITIGATION
+[02:06:47] ISSUES THAT WE MIGHT HAVE IN THIS STATE AND ANY KIND OF MENTAL FEAR THEY MIGHT HAVE ABOUT
+[02:06:51] THAT WHEN REALLY WHAT THAT'S GOING TO END UP DOING IS LIMITING ACCESS FOR SMALL
+[02:06:57] BUSINESSES AND ULTIMATELY LIMITING ACCESS IN POOR COMMUNITIES WHERE PEOPLE MAY NOT
+[02:07:02] EVEN UNDERSTAND WHAT THIS MEDICINE IS AND SO LANDLORDS MIGHT BE, YOU KNOW, HAVE A KNEEJERK
+[02:07:06] REACTION OF FEAR. SO I REALLY DON'T THINK THAT'S NECESSARY FOR THE ULTIMATE SUCCESS OF
+[02:07:12] THIS TO -- WHICH IS REALLY WE WANT TO GET GOOD CARE OUT TO PATIENTS TO PROTECT THEM AND TO
+[02:07:16] HAVE PROPERLY EDUCATED FACILITATORS AND I THINK IF YOU HAVE THAT THERE'S NO REASON TO INVOLVE A
+[02:07:22] LANDLORD WHETHER IT'S IN A CLIENT'S RENTED PERSONAL PROPERTY OR WHETHER WE'RE LOOKING AT
+[02:07:31] FACILITIES WHERE BUSINESSES ARE OPERATING. SO THE OTHER MAIN CONCERN I HAVE,
+[02:07:35] WHICH AGAIN IS COMING BACK TO COST, IS THE GROUP RATIOS. SO IN THE -- I THINK IT'S 7.35.3.28H5,
+[02:07:46] IT DISCUSSES THAT IN -- YOU KNOW, WE'LL HAVE TO HAVE SO MANY FACILITATORS OR
+[02:07:54] PRACTITIONERS PER PERSON AND I THINK THAT THESE RATIOS ARE A LITTLE BIT TOO HIGH AND GENEROUS.
+[02:08:00] I THINK HAVING ONE PERSON WHO'S FACILITATING, WHETHER THAT'S A FACILITATOR OR A PRACTITIONER,
+[02:08:09] TO THREE OR FOUR PATIENTS IS MORE THAN ENOUGH. SO WITH THE EXISTING REQUIREMENTS,
+[02:08:16] IF YOU HAVE A GROUP OF EIGHT PEOPLE, YOU WOULD NEED ONE FACILITATOR AND FOUR
+[02:08:22] PRACTITIONERS TO BE IN THE ROOM. SO THAT'S FIVE PEOPLE WHO ARE GETTING PAID
+[02:08:26] TO BE THERE FOR EIGHT PEOPLE EXPERIENCING PILICIDE.
+[02:08:35] MARINA, WE JUST LOST YOUR AUDIO.
+[02:08:38] GIVE YOU A SECOND TO SEE IF YOU CAN RECONNECT.
+[02:08:47] I SEE YOU TURNED OFF YOUR MIC. LET'S SEE IF YOU'RE ABLE TO TURN THAT BACK ON.
+[02:09:02] CAN YOU HEAR ME NOW?
+[02:09:03] YES. WE STOPPED THE CLOCK SO WE WILL.
+[02:09:08] OH, THANK YOU. I'M NOT SURE IF MY INTERNET JUST GOT UNSTABLE THERE FOR A SECOND.
+[02:09:12] BUT I'M NOT SURE WHERE I GOT CUT OFF.
+[02:09:17] I WAS TALKING TO CLIENT RATIO. DID YOU HEAR WHAT I STARTED DISCUSSING THERE?
+[02:09:24] YEAH, LET ME SEE WHAT I CAN ACTUALLY SEE IN THE TRANSCRIPT WHAT THE LAST THING YOU SAID.
+[02:09:30] SO THE LAST THING YOU SAID.
+[02:09:31] SO THAT'S FIVE PEOPLE WHO ARE GETTING PAID TO BE THERE FOR EIGHT PEOPLE EXPERIENCING.
+[02:09:35] YES. OK, GREAT.
+[02:09:36] YEAH, I JUST THINK THAT THAT'S GOING TO, YOU KNOW, THE WHOLE POINT OF HAVING GROUPS
+[02:09:40] IS TO REDUCE COST, TO MAKE THINGS MORE ACCESSIBLE.
+[02:09:44] I MEAN, THERE'S ALSO MANY OTHER BENEFITS.
+[02:09:46] IT GIVES COMMUNITY SUPPORT.
+[02:09:48] IT MIRRORS AN ANCESTRAL MODEL OF HOW THESE MEDICINS HAVE BEEN GIVEN,
+[02:09:52] WHICH HAVE ALWAYS BEEN GIVEN IN COMMUNITY.
+[02:09:54] AND SO THAT THE GROUP THERAPY ASPECT, THE INTERPERSONAL SUPPORT IS ALSO THERE.
+[02:09:59] BUT I REALLY DON'T THINK THAT THAT KIND OF RATIO IS NECESSARY.
+[02:10:04] I THINK IT'S GOING TO MAKE THIS MORE EXPENSIVE.
+[02:10:06] AND I THINK ULTIMATELY IT'S GOING TO BLOCK ACCESS FOR
+[02:10:11] LOTS OF PEOPLE IN OUR STATE.
+[02:10:13] WE ARE A POOR STATE.
+[02:10:15] OKAY. AND THEN, YEAH, ALSO JUST SAYING,
+[02:10:17] LIKE, IF YOU HAVE A GROUP OF 12, YOU WOULD NEED TWO FACILITATORS
+[02:10:20] PLUS SIX PRACTITIONERS, WHICH IS EIGHT PEOPLE IN THE ROOM
+[02:10:24] FOR 12 PEOPLE GOING THROUGH PSILICIMIN,
+[02:10:26] WHICH I JUST THINK IS TOO MUCH.
+[02:10:28] I THINK THAT SHOULD BE REDUCED TO SOMETHING LIKE
+[02:10:31] MAYBE ONE FACILITATOR PER -- OR PRACTITIONER PER FOUR PEOPLE I THINK IS MORE THAN ENOUGH.
+[02:10:38] SO, YEAH, I THINK THAT'S ALL I HAD TO SAY.
+[02:10:41] OH, ALSO THERE'S THE REQUIREMENT --
+[02:10:45] THANK YOU.
+[02:10:45] THANK YOU, MARIA.
+[02:10:48] LET'S SEE, AND NEXT, WE HAVE SAGE.
+[02:10:51] AND SAGE, I HAVE ALLOWED YOUR MIC.
+[02:10:55] AND IF YOU COULD ALSO -- WHOPS -- OH, NO, I DIDN'T.
+[02:10:58] OKAY, THERE WE GO.
+[02:11:01] I HAVE NOW ALLOWED YOUR MIC.
+[02:11:03] AND YOU SHOULD BE ABLE TO UNMUTE WHEN READY.
+[02:11:05] AND IF YOU COULD ALSO STATE YOUR LAST NAME AS WELL.
+[02:11:10] YES, HI, GOOD MORNING.
+[02:11:11] MY NAME IS SAGE, ROMAN-NOSE.
+[02:11:15] ALSO, THE CHEYENNE PRONUNCIATION IS VANAHEA HOA'E.
+[02:11:20] AND I AM A RECOGNIZED MEMBER OF A FEDERALLY RECOGNIZED TRIBE OF THE CHEYENNE NATION.
+[02:11:28] I AM ALSO A FOUNDED HEALING GARDENS CHURCH.
+[02:11:34] AND I'M SPEAKING ON BEHALF OF MYSELF AS A MEDICINE WOMAN.
+[02:11:38] AND FOR ALL OTHER INDIGENOUS TRIBAL MEMBERS AND MEDICINE PEOPLE.
+[02:11:44] WHETHER IT'S THROUGH BLOOD OR THROUGH TRAINING.
+[02:11:49] AND I KNOW THAT I DON'T -- I'M NOT USED TO SHARING.
+[02:11:56] BECAUSE IT'S NOT -- IT'S NOT TRADITIONAL TO SAY, LIKE, "OH, I'M THIS AND I'M THAT."
+[02:12:00] BUT I DO HAVE TO SHARE THIS BECAUSE THIS IS CREDIBLE KNOWLEDGE THAT I'VE RECEIVED,
+[02:12:06] EVEN THOUGH IT'S NOT FROM SCHOOLING.
+[02:12:08] SO, I RESPECT LICENSING AND I RESPECT COLLEGE ACADEMICS.
+[02:12:12] BUT I ALSO ASK THAT MY TRAINING NOT BE DISCREDITED.
+[02:12:16] SO, AS I GREW UP IN MY TRIBE, I HAVE HAD TRAINING SINCE I WAS VERY YOUNG,
+[02:12:23] SITTING IN CEREMONY PREPARING PLANTS AND HOLDING SPACE.
+[02:12:27] AND I -- MY GIVEN NAME FROM THE TRIBE WAS "WOMAN WITH MEDICINE" AND THEN LATER ON THROUGH SUNDANCE CEREMONY
+[02:12:35] LATER ON THROUGH SUNDANCE CEREMONY WAS CHANGED TO SAGEWOMAN.
+[02:12:39] SO, MY LINEAGE IS A LONG LINE OF HEALERS SINCE TIME IN MEMORIUM.
+[02:12:45] AND AFTER HOLDING OVER 300 CEREMONIES AT LEAST.
+[02:12:49] I DON'T KEEP TRACK, BUT I COULD SOMEHOW FIGURE OUT THE DOCUMENTS FOR THAT.
+[02:12:54] AND THROUGH MY TRAINING, THROUGH HANDS ON AND THROUGH TRIALS AND TRIBULATIONS AND, YOU KNOW,
+[02:13:03] THROUGH INITIATION, THROUGH THE PLANTS, WORKING WITH THE PLANTS THEMSELVES,
+[02:13:08] JUST THE AMOUNT OF WHAT I HAVE SO GRATEFULLY BEEN ABLE TO LEARN AND RECEIVE AND ACCESS.
+[02:13:16] AND THIS IS ALL TO SHARE.
+[02:13:19] THIS IS MY LIFELONG SOUL'S PATH.
+[02:13:23] IT'S VERY DEEP TO ME.
+[02:13:25] AND I WOULD LIKE TO BE ACCESSIBLE FOR PEOPLE.
+[02:13:28] I DON'T WANT TO BE IN A NICHE WHERE, YOU KNOW, PEOPLE HAVE TO GO TO COSTA RICA
+[02:13:32] OR PERU FOR ME TO HOLD THE CEREMONIES FOR THEM.
+[02:13:36] I WANT TO BE NOT UNDERGROUND.
+[02:13:40] I WANT TO BE A NUMBER THAT YOU CAN CONTACT SO THAT WAY I CAN BE THERE FOR PEOPLE.
+[02:13:47] AND ALSO, YOU KNOW, BEING MORE ACCESSIBLE SPEAKING FINANCIALLY FOR THOSE THAT CAN'T AFFORD IT.
+[02:13:54] BECAUSE THERE IS SO MUCH COMMUNITY SERVICE THAT GOES INTO THIS WORK.
+[02:13:59] BECAUSE PEOPLE, A LOT OF PEOPLE, CANNOT AFFORD THE EXPENSES OF THESE PLANTS.
+[02:14:05] AND SO I LIVED IN THE JUNGLE WITH THE SHIPEBO TRIBE.
+[02:14:10] I WAS ALSO ADOPTED IN, IN ORDER TO RECEIVE THE INFORMATION THAT I HAVE.
+[02:14:14] AND THEN LATER ON, PRACTICING UNDER A VERY POWERFUL MEDICINE WOMAN IN OHAKA FOR THE PSILICIBIN,
+[02:14:22] SPECIFICALLY DOING A YEAR-LONG DIETA WITH THE MUSHROOM MEDICINE.
+[02:14:28] AND I, AGAIN, I JUST WANT TO SHARE THAT THERE'S SO MUCH KNOWLEDGE THAT PEOPLE DO HAVE
+[02:14:37] WITHOUT HAVING A LICENSE AND I THINK IT'S JUST AS CREDIBLE AND VALID AND THAT'S WHAT I WOULD LIKE
+[02:14:47] TO SHARE, IS THAT TO PLEASE CONSIDER THE MEDICINE PEOPLE OF THIS LINEAGE.
+[02:14:56] THANK YOU, SAGE.
+[02:15:00] ALL RIGHT, NEXT WE HAVE ROBIN CHAVEZ.
+[02:15:04] AND ROBIN, I HAVE ALLOWED YOUR MIC AND YOU SHOULD BE ABLE TO UNMUTE.
+[02:15:10] GOOD MORNING.
+[02:15:11] MY NAME IS ROBIN CHAVEZ.
+[02:15:13] I'M THE FOUNDER AND CEO OF RED WILLOW HOSPICE.
+[02:15:16] I'M ALSO A GRADUATE OF DR.
+[02:15:18] FATEMI'S CONSCIOUS PHYSICIAN PSYCHIDELIC ACADEMY,
+[02:15:20] WHICH IS A NEW MEXICO-BASED NINE-MONTH FACILITATOR TRAINING PROGRAM.
+[02:15:25] AND I AM HERE ON BEHALF OF THE PATIENTS WE SERVE, INDIVIDUALS AT END OF LIFE,
+[02:15:30] THOSE RECEIVING PALLIATIVE CARE AND THEIR FAMILIES.
+[02:15:34] I ALSO SPEAK FROM PERSONAL EXPERIENCE, AS I'M A GENERATIONAL NEW MEXICAN,
+[02:15:39] WITH GENERATIONAL TRAUMA.
+[02:15:41] I HAVE EXPERIENCED DOMESTIC VIOLENCE.
+[02:15:43] I HAVE LIVED WITH ANXIETY, DEPRESSION, POSTPARTUM DEPRESSION,
+[02:15:46] AND PSYLICIBIN CHANGED MY LIFE AND BROUGHT ME TO HEALING AND THE INNER WORK THAT I NEEDED TO DO.
+[02:15:52] I WANT EVERY QUALIFYING NEW MEXICAN TO HAVE THAT SAME OPPORTUNITY.
+[02:15:56] MY CENTRAL CONCERN IS EQUITY.
+[02:15:59] AS DRAFTED, THESE RULES WOULD MAKE ACCESS DEPEND ON WHETHER A PATIENT OWNS A HOME,
+[02:16:02] LIVES IN A SPECIALLY PERMITTED CLINICIAN, AND CAN AFFORD TO WAIT.
+[02:16:07] AND I OFFER FOUR ALTERNATIVES.
+[02:16:09] FIRST, THE PROPERTY OWNER STATEMENT.
+[02:16:12] MOST HOSPICE PATIENTS RECEIVE CARE IN THEIR HOME, AND MANY OF OUR PATIENTS ARE RENTERS.
+[02:16:19] REQUIRING A LANDLORD SIGNATURE WOULD PUT THIS CARE OUT OF REACH FOR LOWER INCOME FAMILIES AND
+[02:16:24] OLDER ADULTS ON FIXED INCOMES.
+[02:16:27] WE ASK THAT IT NOT APPLY TO END OF LIFE PATIENTS, PATIENTS RECEIVING HOME CARE,
+[02:16:31] OR LONG-TERM CARE RESIDENTS.
+[02:16:33] ALTERNATIVELY, THE DEPARTMENT MAY CONSIDER COLORADO'S MODEL,
+[02:16:37] WHERE THE PATIENT SIMPLY DEMONSTRATES A RIGHT TO RESIDE THERE.
+[02:16:41] SECOND, THE CERTIFYING CLINICIAN REQUIREMENT.
+[02:16:44] THE ACT REQUIRES ONLY A QUALIFYING CONDITION CONFIRMED BY A STATE-LICENSED NEW MEXICO PROVIDER.
+[02:16:51] IN A STATE AS RURAL AS OURS, AN EXTRA IN-PERSON VISIT CAN MEAN HOURS OF TRAVEL,
+[02:16:56] WHICH A SERIOUSLY ILL PATIENT CANNOT MAKE.
+[02:16:59] WE RECOMMEND REGULATING AROUND SPECIFIC CONTRAINDICATIONS AND MEDICATIONS
+[02:17:04] WITH AN ATTESTATION FROM A QUALIFIED CLINICIAN,
+[02:17:06] INCLUDING REGISTERED NURSES ACTING WITHIN THEIR SCOPE OF PRACTICE WHERE RISK IS IDENTIFIED.
+[02:17:12] THIRD, THE PATIENT APPLICATION.
+[02:17:15] NO PATIENT POSSESSES PSILICIMIN OUTSIDE A SUPERVISED SESSION,
+[02:17:18] SO THE APPLICATION SERVES NO CLEAR PURPOSE.
+[02:17:20] MANY OF OUR PATIENTS DO NOT HAVE 30 DAYS TO WAIT.
+[02:17:23] WE ASK THAT IT BE STRUCK.
+[02:17:25] FOURTH, THE REQUIREMENT FOR BOTH A PRACTITIONER AND A FACILITATOR.
+[02:17:30] TWO PROFESSIONALS PER SESSION RAISES COSTS AND LIMITS AVAILABILITY,
+[02:17:34] ESPECIALLY IN RURAL AREAS.
+[02:17:36] WE ASK THAT THIS BE STRUCK.
+[02:17:37] THAT REGISTERED NURSES BE RECOGNIZED AS QUALIFIED PROVIDERS WITHIN THEIR SCOPE OF PRACTICE,
+[02:17:42] AND THAT A TRUSTED SUPPORT PERSON BE PERMITTED ALONGSIDE A SINGLE QUALIFIED PROVIDER.
+[02:17:48] FINALLY, HOSPICE TEAMS PLACE OPIOIDS AND OTHER CONTROLLED PHARMACEUTICALS IN PATIENT
+[02:17:54] HOMES EVERY DAY UNSUPERVISED WITHOUT A LANDLORD SIGNATURE, APPLICATION, OR WAITING PERIOD.
+[02:17:59] Psilocybin, GIVEN UNDER DIRECT SUPERVISION, WOULD FACE FAR GREATER OVERSIGHT.
+[02:18:05] IT SHOULD NOT BE REGULATED AS THE ALTERNATIVE.
+[02:18:08] FOR MANY OF OUR PATIENTS, IT IS THE REAL MEDICINE, AND EVERY QUALIFYING NEW MEXICAN DESERVES FOR ACCESS.
+[02:18:14] THANK YOU.
+[02:18:20] THANK YOU, ROBIN.
+[02:18:22] AND NEXT, WE HAVE AMY WONG HOPE.
+[02:18:27] AND AMY, I HAVE ENABLED YOUR MIC, AND YOU SHOULD BE ABLE TO UNMUTE.
+[02:18:33] CAN YOU HEAR ME?
+[02:18:35] YES.
+[02:18:36] OKAY, GREAT.
+[02:18:36] THANK YOU.
+[02:18:37] THANK YOU FOR THE OPPORTUNITY TO COMMENT ON THE RULES AND REGULATIONS, AND THANK YOU TO
+[02:18:41] THE ADVISORY BOARD WHO HAS BEEN PUTTING THESE TOGETHER AND MAKING COMMENTS THROUGHOUT.
+[02:18:46] I'M REALLY IMPRESSED WITH THE COMMENTS THAT I'VE HEARD TODAY,
+[02:18:50] AND AM IN AGREEMENT WITH THE PREVIOUS SPEAKER WHO HAS ECHOED MANY OF THE THINGS THAT WE'VE
+[02:18:56] BEEN ALREADY TALKING ABOUT REGARDING THE CERTIFYING CLINICIAN WHO IS ACTING AS A
+[02:19:00] MEDICAL PRESCRIBER.
+[02:19:01] I WILL NOT REPEAT MY CONCERNS WITH THAT BECAUSE I ALREADY AGREE THAT IT IS NOT INCREASING
+[02:19:07] SAFETY TO HAVE A MEDICAL PRESCRIBER, NOR IS IT -- IT'S A VERY, VERY BIG BARRIER TO ACCESSIBILITY.
+[02:19:15] WHEN I THINK ABOUT HOSPICE JOURNEYERS WHO REALLY HAVE SO MANY LIMITATIONS ALREADY,
+[02:19:25] IT'S CREATING ANOTHER LIMITATION TO ACCESSIBILITY FOR THEM.
+[02:19:29] AND THEY HAVE PRECIOUS LITTLE TIME TO WAIT.
+[02:19:31] THEY HAVE A VERY, VERY SHORT WINDOW IN WHICH TO ENGAGE WITH THE PSYCHEDELIC EXPERIENCE
+[02:19:37] WITH PSILICIBIN IN ORDER TO ACTUALLY EXPERIENCE THE BENEFITS AFTERWARDS AND INTEGRATE
+[02:19:44] THOSE CHANGES FROM THE PSILICIBIN EXPERIENCE SO THAT THEY CAN ACTUALLY HAVE
+[02:19:49] QUALIFIED, YOU KNOW, MEANINGFUL CHANGE HAPPEN IN TERMS OF HOW THEY FEEL ABOUT
+[02:19:55] THEIR END OF LIFE CARE AND THEIR RELATIONSHIPS WITH OTHERS AND THE EXISTING TIME THEY HAVE.
+[02:19:59] I ALSO AM VERY CONCERNED ABOUT THE CERTIFYING CLINICIAN CREATING A FALSE SENSE OF A GREEN
+[02:20:05] LIGHT FOR A POSSIBLE JOURNEYER, THINKING THAT JUST BECAUSE THEY HAVE BEEN CERTIFIED BY
+[02:20:11] A CLINICIAN FOR PSILICIBIN, THAT THEY WILL THEN SAY TO A PRACTITION OR FACILITATOR,
+[02:20:15] WELL, I'VE BEEN GREEN-LIT FOR THIS, SO WHY ARE YOU DENYING ME?
+[02:20:20] BOTH AS MENTAL HEALTH PROFESSIONALS, AND I AM A LICENSED SOCIAL WORKER IN NEW MEXICO
+[02:20:26] AND COLORADO AS WELL AS A LICENSED NATURAL MEDICINE CLINICAL FACILITATOR.
+[02:20:31] I KNOW THAT WHEN I AM VETTING SOMEBODY FOR WHETHER TO GUIDE AND SIT FOR THEM UP IN
+[02:20:38] WITH PSILICIBIN IN COLORADO, THAT THEIR READINESS MAY BE DIFFERENT.
+[02:20:43] SOMETIMES A CO-OCCURRING MENTAL HEALTH DIAGNOSIS THAT WOULD BE CONTRAINDICATED FOR
+[02:20:49] PSILICIBIN SHOWS UP A MONTH INTO PREPARATION AND A SINGLE INCIDENT PRESCRIBING DIAGNOSTIC
+[02:20:58] SESSION IS NOT ENOUGH FOR A CERTIFYING CLINICIAN TO KNOW IF THAT CONTRAINDICATION IS THERE.
+[02:21:03] THE BURDEN IS ALWAYS ON ME AS A NATURAL MEDICINE FACILITATOR TO TALK TO THE REST OF
+[02:21:09] THE TREATMENT TEAM FOR A PERSON IF THERE ARE CONTRAINDICATIONS WHICH ARE EITHER MEDICAL
+[02:21:14] OR MENTAL HEALTH RELATED. SO I REALLY SUGGEST THAT THAT MEDICAL PRESCRIBER OR CERTIFYING
+[02:21:19] CLINICIAN BE REMOVED. I ALSO WANT TO SPEAK TO THE EDUCATIONAL REQUIREMENTS AND THE CONCERNS
+[02:21:25] THAT HAVE BEEN BROUGHT UP ABOUT INDIGENOUS TEACHERS AND TRADITIONAL MEDICINE HOLDERS.
+[02:21:30] I AGREE WITH WHAT HAS BEEN SHARED. I HAVE STARTED STUDYING WITH A OOHAKAN ELDER AND THROUGH
+[02:21:36] EXPERIENCING THAT TIME WITH THAT OOHAKAN ELDER CAN SEE THAT THOUGH I GOT TRAINED THROUGH
+[02:21:42] INTERTREC PSILICIPIN CERTIFICATION IN OREGON, THAT THE UNDERSTANDING OF HOW THOSE
+[02:21:51] MEDICINES WORK AND HOW TO REALLY HONOR THEM AS THE FACILITATOR IN THE ROOM AND TO HONOR
+[02:21:58] THEM THAT REALLY THAT MYSELF AS A TRAUMA CLINICIAN AND A LICENSE FACILITATOR, I AM
+[02:22:06] JUST HOLDING A SAFE PHYSICAL SPACE, A SAFE EMOTIONAL SPACE AND OFFERING AN OPPORTUNITY FOR
+[02:22:13] THE PERSON TO PREPARE SO THAT THEY CAN OPEN UP TO WHAT THE MEDICINE CAN DO FOR THEM IN THE
+[02:22:19] SESSION. SO I JUST WANTED TO SAY THAT AND I ALSO THINK THAT THE PREVIOUS SPEAKER AND I'M SORRY TO
+[02:22:26] FORGET HER NAME WHAT SHE SAID SHE WAS LICENSED IN OREGON ABOUT DOSING THAT THE PRACTITIONER
+[02:22:33] RATIO IN OREGON IS SET UP SUCH THAT DEPENDING ON THE AMOUNT THAT THAT THE DEPENDING ON THE AMOUNT
+[02:22:40] OF PEOPLE IN THE ROOM THERE'S A CERTAIN AMOUNT OF DOSAGE THAT IS ALLOWED PER JOURNEYER
+[02:22:46] AND USUALLY THE RATIO IS TWO PRACTITIONERS TO TWO FACILITATORS TO ABOUT SIX OR EIGHT PEOPLE
+[02:22:55] AND THEN THERE'S A CERTAIN LIMITATION ON HOW MUCH PSILICIBIN EACH PERSON CAN TAKE IN THE ROOM.
+[02:23:00] I HAVE SUBMITTED SOME PUBLIC COMMENT. THE PUBLIC COMMENTS HAVE BEEN REALLY
+[02:23:04] ASTOUNDING I REALLY URGE THE DOH AND THE DECISION MAKING TO TO REALLY CONSIDER THE PUBLIC COMMENTS
+[02:23:12] AND THE COMMENTS HERE TODAY AND THANK YOU SO MUCH FOR THE TIME TO COMMENT.
+[02:23:19] ALL RIGHT THANK YOU AMY AND IT LOOKS LIKE WE HAVE REACHED THE LAST ONLINE PUBLIC
+[02:23:26] COMMENT HERE AND WE HAVE ROBERTO FLORES AND ROBERTO I HAVE
+[02:23:33] ENABLED YOUR MIC AND YOU SHOULD BE ABLE TO UNMUTE
+[02:24:02] HELLO GOOD MORNING CAN YOU HEAR ME?
+[02:24:06] YES WE CAN HEAR YOU THANKS.
+[02:24:08] AWESOME I'M SORRY I WAS TRYING TO UNMUTE I'LL BE REALLY QUICK MY NAME IS DR.
+[02:24:13] ROBERTO FLORES I'M A PSYCHIATRIST OVER IN SUNLAND PARK NEW MEXICO
+[02:24:19] AND I TREATED A VARIETY OF PATIENTS OVER THE COURSE OF MY CAREER AND JUST REALLY QUICK I JUST
+[02:24:24] WANTED TO POINT OUT I THINK JUST ABOUT WHAT HAS ALREADY BEEN SAID BUT POINTING OUT TOWARDS
+[02:24:35] THINK SHOULD BE ALSO CONSIDERED FOR THE BOARD RECOGNIZING THAT REGULATORY RESTRICTIONS CAN ALSO
+[02:24:41] INFLUENCE AND ULTIMATELY DICTATE PATIENT BEHAVIOR WE CAN USE THE EXPERIENCE OF THE
+[02:24:45] MEDICAL CANNABIS THAT PROVIDES A USEFUL EXAMPLE FOR EXAMPLE WHEN ACCESS AND QUALIFYING
+[02:24:51] CONDITIONS, PURCHASING OPTIONS AND METHODS OF THAT PARTICULAR PRODUCT WERE OVERLY RESTRICTED
+[02:24:58] SOME PATIENTS MAY HAVE SOUGHT CANNABIS OUTSIDE OF THE REGULAR MEDICAL PROGRAMS RATHER THAN
+[02:25:04] ABANDONING THE TREEMENT THAT THEY WERE ULTIMATELY SEEKING AND I BELIEVE THAT A SIMILAR DYNAMIC
+[02:25:10] COULD OCCUR WITH PSILOSIVEN. I RESPECTFULLY ASK THE WARD TO CONSIDER A MORE FLEXIBLE FRAMEWORK
+[02:25:18] THAT CAN MAINTAIN APPROPRIATE CLINICAL SAFEGUARDS WHILE GIVING QUALIFIED PATIENTS REASONABLE
+[02:25:23] AUTONOMY AND HOW AND WHERE TREATMENT CAN OCCUR. I BELIEVE THAT REGULATION SHOULD NOT ONLY
+[02:25:29] SEEK TO PREVENT DIVERSION BUT IT SHOULD ALSO AVOID CREATING RESTRICTIONS THAT UNINTENTIONALLY
+[02:25:37] ENCOURAGE PATIENTS TO LEAVE THE REGULATED SYSTEM WHICH I THINK I MEAN IN ALL HONESTY MANY PEOPLE
+[02:25:43] THAT I EVEN TREAT MIGHT ALREADY BE YOU KNOW TRYING THIS ON THEIR OWN AND I JUST WANTED TO
+[02:25:49] POINT THAT OUT. THANK YOU SO MUCH FOR THE OPPORTUNITY AND I WISH EVERYONE A SAFE AND HAPPY WEEKEND.
+[02:25:59] ALL RIGHT ALL RIGHT THANK YOU ROBERTO AND I WILL GET IT BACK TO CRAIG
+[02:26:05] TELEPHONIC PARTICIPANTS. IT DOESN'T LOOK LIKE ANYBODY VIA TELEPHONE
+[02:26:13] HAD RAISED THEIR HAND THERE WAS INSTRUCTION TO DO THAT FOR THE ANNOUNCEMENT AND I DIDN'T SEE ANY SO.
+[02:26:18] ALL RIGHT THAT WILL END THE OFFERING OF COMMENTS IN THIS HEARING WITH THE DEPARTMENT OF HEALTH AND I WOULD
+[02:26:28] LIKE TO THANK THE WITNESSES WHO PARTICIPATED AND THOSE WHO PROVIDED WRITTEN COMMENTS AS WELL.
+[02:26:35] THE AUDIENCE IS REMINDED THAT THE NEW RULES HAVE CONFECTED AFTER THEY'RE FILED WITH RECORDS AND
+[02:26:40] ARCHIVES BY THE DEPARTMENT OF HEALTH AND WITHOUT ALL ADJOURN THE HEARING. THANK YOU.
+[02:26:53] THANK YOU.

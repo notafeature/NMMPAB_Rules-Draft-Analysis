@@ -31,6 +31,26 @@ DOCUMENTS = [
                  "rules page and held from it on November 15, 2026",
     },
     {
+        "slug": "rules-7.35.3-exhibit-binder-2026-10-05",
+        "name": "The final exhibit binder for the October 2 hearing",
+        "file": "documents/rules-7.35.3-exhibit-binder-2026-10-05.pdf",
+        "cite": "Department of Health exhibit binder, final, for the October 2, 2026 hearing on "
+                "7.35.3 NMAC and the amendments to 7.35.2 NMAC, completed October 5, 2026",
+        "date": "2026-10-05",
+        "event": "e-2026-10-05",
+        "what": "The department's final exhibit binder for the hearing, with the proposed texts "
+                "and every written public comment received by the close of the hearing",
+        "status": "record",
+        "notes": "203 pages. Posted on the Sunshine Portal as \"0. 7.35.3 NMAC Exhibit Binder Final\" "
+                 "(<a href=\"https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/UW00000BgXE9/y5xSY_gTinbYogo1hsTj5fy3sde8G6VoUhKzTLjSit8\" target=\"_blank\" rel=\"noopener\">on the portal</a>); the file's "
+                 "metadata dates it October 5, 2026. Exhibit 8 runs 8.A through 8.XXX, 76 exhibits: "
+                 "the 51 of the October 1 binder and 25 more, 8.ZZ through 8.XXX, the last sent "
+                 "October 2 at 4:53 PM. Exhibit 8.MM, a second copy of the comment at 8.GG in the "
+                 "October 1 binder, is marked withdrawn, leaving 75 written comments. The binder's "
+                 "list of exhibits ends at 8.RRR; 8.SSS through 8.XXX are in the binder and not on "
+                 "the list. Held from the portal on November 15, 2026",
+    },
+    {
         "slug": "recording-2026-10-02-hearing",
         "name": "Department recording of the October 2 rule hearing",
         "file": "",
@@ -41,7 +61,10 @@ DOCUMENTS = [
         "status": "record",
         "notes": "Posted as \"Medical Psilocybin Rules Hearing 10226 - Recording\", an MP4, in the Sunshine Portal's rule hearing record for 7.35.3 NMAC. "
                  "<a href=\"https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/j80000003o0H/E7HWX6gYGpsHosAJVdrlOAm_E_0QSkYRvmeF1CRYejw\" target=\"_blank\" rel=\"noopener\">On the Sunshine Portal</a>, not published on this site. "
-                 "Found there on November 15, 2026. No transcript or captions of it are held",
+                 "Found there on November 15, 2026. No transcript by the department is posted. A "
+                 "machine transcript made from it on November 15, uncorrected and without speaker "
+                 "labels, is in the repository at "
+                 "source-text/hearing-2026-10-02-recording-machine-transcript.txt",
     },
     {
         "slug": "rules-7.35.3-exhibit-binder-2026-10-01",
@@ -51,8 +74,9 @@ DOCUMENTS = [
                 "and the amendments to 7.35.2 NMAC, published October 1, 2026",
         "date": "2026-10-01",
         "event": "e-2026-10-01",
-        "what": "The department's final exhibit binder for the hearing, with the proposed texts "
-                "and the written public comments",
+        "what": "The department's exhibit binder for the hearing as posted the day before it, "
+                "with the proposed texts and the written public comments received by then. "
+                "Completed by the final binder of October 5",
         "status": "record",
         "notes": "153 pages. The department's exhibits for the October 2 hearing: Exhibit 1 the proposed 7.35.3 NMAC and Exhibit 2 the proposed amendments to 7.35.2 NMAC, each identical in its words to the August 25 publication; the notice; the affidavits of publication; the hearing officer's appointment; and, as Exhibit 8, 51 written public comments, 8.A through 8.YY. It lists no anticipated revisions",
     },
@@ -491,6 +515,20 @@ EVENTS = [
         "attached": ["rules-7.35.3-response-to-comments-2026-11-09"],
     },
     {
+        "id": "e-2026-10-05",
+        "date": "2026-10-05",
+        "kind": "filing",
+        "what": "<b>The department completed its final exhibit binder for the October 2 "
+                "hearing</b>, posted on the Sunshine Portal: the exhibits of the October 1 binder "
+                "and 25 written public comments received after it, 8.ZZ through 8.XXX, 75 written "
+                "comments in all once Exhibit 8.MM is withdrawn. The hearing notice states that "
+                "written comments \"will be published on the agency website ... within 3 days of "
+                "receipt\"; as of November 15, 2026 the department's rules page links only \"7.35.3 "
+                "Public Comment submitted by October 1, 2026\", and the 25 later comments appear "
+                "only in this binder.",
+        "attached": ["rules-7.35.3-exhibit-binder-2026-10-05"],
+    },
+    {
         "id": "e-2026-10-02",
         "date": "2026-10-02",
         "kind": "meeting",
@@ -509,7 +547,9 @@ EVENTS = [
         "what": "<b>The department posted its exhibit binder for the October 2 hearing</b>: the "
                 "proposed 7.35.3 NMAC and the proposed amendments to 7.35.2 NMAC as exhibited, "
                 "each identical in its words to the August 25 publication, and 51 written "
-                "public comments. The binder lists no anticipated revisions.",
+                "public comments, 8.A through 8.YY. The binder lists no anticipated revisions. "
+                "The department completed it with the <a href=\"#e-2026-10-05\">final binder of "
+                "October 5</a>.",
         "attached": ["rules-7.35.3-exhibit-binder-2026-10-01"],
     },
     {
