@@ -98,6 +98,11 @@ list.
 | `tools/sync-record.py` | where the recording closes or changes a gap: Event C |
 | `python3 tools/sync-recordings.py --check` | every index row has its two files, every `.txt` is what its `.vtt` produces, and the index is in order |
 
+A rule hearing's recording is a different case. The department posts it with the hearing's
+record on the Sunshine Portal, not on its YouTube channel or its rules page, so the tool does
+not find it. Check the portal's record for the hearing (`ARCHITECTURE.md` 3.1) and register the
+recording by hand as a row with no file, linking the portal.
+
 A caption transcript is a copy of the recording. Where the two disagree, the recording
 governs, and a quotation from a transcript is the caption text, errors included.
 

@@ -133,6 +133,33 @@ the compiled NMAC file for the part. Both are published by the State Records Cen
 Archives. The Register issue is the source for the rule page; the compiled file is the source
 once the part has been amended, because it carries the history notes.
 
+### 3.1 Where the department's documents are posted
+
+Two public places carry the department's rulemaking documents. Check both when an event
+happens; neither is complete without the other.
+
+| Where | What it carries | How to read it |
+|---|---|---|
+| The department's rules page, https://www.nmhealth.org/about/asd/cmo/rules/ | Proposed texts, notices, written public comments as they arrive, exhibit binders, responses to comments | Each document is served at `https://www.nmhealth.org/publication/view/rules/<id>/`. The ids are sequential across the whole department, and the response header `content-disposition` carries the file name, so a scan of the ids after the last known one finds new rulemaking documents without opening each file |
+| The Sunshine Portal, the state's transparency portal, Rule Hearing Search: https://statenm.my.salesforce-sites.com/public/SSP_RuleHearingSearchPublic (linked from https://www.sunshineportalnm.com/) | One record per noticed rule hearing: the purpose, the summary, how and when to comment, the hearing details, and the hearing's files. The 7.35.3 record carries the proposed rule, the 7.35.2 amendments, the notice, the final exhibit binder, the hearing recording, and the response to comments. The recording of the October 2 hearing is posted here and not on the department's rules page | Search with Agency set to Department of Health and the hearing-date filter set to All, then View Details. Each file is a Salesforce content link of the form `https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/<id>/<key>`, which opens in a browser viewer with a download button. The page and the viewer need JavaScript; a plain HTTP fetch of either returns only a script shell |
+
+The 7.35.3 file links on the Sunshine Portal, as listed November 15, 2026:
+
+| File as the portal names it | Link |
+|---|---|
+| 7.35.3 NMAC New Rule | https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/UW00000BBBhl/4MVojPa6w2PeVsHdjtoafEqmqIk23NkyVGBgiOq9vL0 |
+| 7.35.2 NMAC Amendments | https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/UW00000BBBeX/myjBTK13xXZiL9cWq8p12MJx5gPE2zgdjAedfz4gwRA |
+| 7.35.2, 3 NMAC Notice of Hearing | https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/UW00000BBBg9/vRtTdR7wSrAuFm0vlhdXE34iDyowrxJh7HtrrQIDIrg |
+| 0. 7.35.3 NMAC Exhibit Binder Final | https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/UW00000BgXE9/y5xSY_gTinbYogo1hsTj5fy3sde8G6VoUhKzTLjSit8 |
+| Medical Psilocybin Rules Hearing 10226 - Recording (MP4) | https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/j80000003o0H/E7HWX6gYGpsHosAJVdrlOAm_E_0QSkYRvmeF1CRYejw |
+| DOH Response Letter to Public Comments 11-9-26 | https://statenm.my.salesforce.com/sfc/p/#4100000137C2/a/j80000003o3V/8_uO6VK4FpnTi2H9NQtW8Z5jaLvsQTQZi8au_A36kFY |
+
+The same search returns a second Department of Health record for 7.35.3, titled "CANCELED -7.35.3 NMAC Medical Psilocybin Patients, Certifying Clinicians, et al", whose purpose reads "CANCELED. RULEMAKING TO BE RESCHEDULED." It is the portal's record of the hearing first set with the July 23 publication. Its details page has not been read, so the site does not yet cite it.
+
+A cloud session reaches these hosts only when its environment allows them: `www.nmhealth.org` for the rules page; `statenm.my.salesforce-sites.com`, `statenm.my.salesforce.com`, `statenm.file.force.com`, `b.static.lightning.force.com`, and `www.sunshineportalnm.com` for the Sunshine Portal.
+
+### 3.2 Private material
+
 Working notes, drafts, meeting summaries, and any material that lives in a private workspace
 are research. They inform the site and are never linked from it. No committed file carries a
 link to, an identifier of, or the name of a page in a private workspace. Material that was
