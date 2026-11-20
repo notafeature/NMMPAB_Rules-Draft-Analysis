@@ -18,6 +18,7 @@ REVISIONS = {
         ("October 22, 2026", "Created as the front page of the Part: the plaque, the portals by role, the status surfaces written by tools/sync-status.py, and the page directory."),
     ],
     "rule": [
+        ("November 20, 2026", "The Wording note is renamed Update terminology and given its own color, and the list of sections puts each title on one line with its marks beneath it."),
         ("November 20, 2026", "A Wording note at 7.35.4.2, .7, .8, .9, .10, .12, .13, .14, .15, and .20, where the text rests on a term in 7.35.3 or 7.35.2.7 that the department's November 9 response on 7.35.3 proposes to change, or where one thing carries two names."),
         ("October 22, 2026", "A New from the department note under each provision in neither recommendation and not found in the captions of the 23 recorded committee and board meetings: 7.35.4.8, .9, .10, .11, .12, .15, .16, .18, and .20."),
         ("October 22, 2026", "Created, generated from the October 20 extraction by tools/build-rule-page.py: all twenty sections verbatim, cited to the PDF page, with notes at 7.35.4.7, .10, .14, and .20."),

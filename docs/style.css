@@ -9,6 +9,7 @@
   --open:#9A6700; --openwash:#FBF3DF;
   --dept:#6B3FA0; --deptwash:#F3EEFA;
   --settled:#1E6B45; --settledwash:#EAF4EE;
+  --terms:#0B6E7F; --termswash:#E5F3F5;
   --defect:#B42318; --defectwash:#FBEDEB;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --serif:Charter,"Bitstream Charter","Iowan Old Style",Georgia,serif;
@@ -96,7 +97,7 @@ p{margin:0 0 12px;max-width:64ch}
 .mark.gray{color:var(--ink2);background:var(--wash)}
 .mark.blue{color:var(--blue);background:var(--bluewash)}
 .mark.dept{color:var(--dept);background:var(--deptwash)}
-.mark.clarify{color:var(--ink2);background:var(--wash)}
+.mark.clarify{color:var(--terms);background:var(--termswash)}
 
 /* verbatim rule text: serif on wash, cited */
 .verbatim{font:16px/1.75 var(--serif);background:var(--wash);border-left:3px solid var(--ink);padding:14px 18px;margin:12px 0}
@@ -133,7 +134,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .note.open{border-color:var(--open);background:var(--openwash)}
 .note.defect{border-color:var(--defect);background:var(--defectwash)}
 .note.dept{border-color:var(--dept);background:var(--deptwash)}
-.note.clarify{border-color:var(--ink2);background:var(--wash)}
+.note.clarify{border-color:var(--terms);background:var(--termswash)}
 
 /* Citations: the source opens on hover, closes on leave, and the click opens it in a new tab */
 a[data-cite]{position:relative}
