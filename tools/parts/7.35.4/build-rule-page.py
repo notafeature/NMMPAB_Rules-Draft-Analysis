@@ -21,9 +21,10 @@ LEDE = ("The full text of 7.35.4 NMAC, Treatment Equity Fund, as the department 
         "department sits under each provision that is in neither the committee's August 18 "
         "framework nor the board's September 11 vote and was not found in the captions of the "
         "recorded committee and board meetings; the list is at "
-        "<a href='recommendation.html#new'>The board recommendation</a>. A note marked Wording "
-        "sits where this Part's words rest on a term in 7.35.3 or 7.35.2.7 that the department's "
-        "November 9 response on 7.35.3 proposes to change, or where one thing carries two names. "
+        "<a href='recommendation.html#new'>The board recommendation</a>. A note marked Update "
+        "terminology sits where a term in this Part rests on a term in 7.35.3 or 7.35.2.7 that the "
+        "department's November 9 response on 7.35.3 proposes to change, or where this Part uses two "
+        "terms for one thing or a term it never establishes. "
         "Line breaks are collapsed "
         "for reading; where the extraction stumbles, the linked PDF governs.")
 
@@ -100,7 +101,7 @@ for _n, _what in [
 ]:
     ANNOTATIONS.setdefault(_n, []).append(_dept(_what))
 
-# Wording: where this Part's words rest on terms in 7.35.3 or 7.35.2.7 that the department's
+# Update terminology: where this Part's words rest on terms in 7.35.3 or 7.35.2.7 that the department's
 # November 9, 2026 response on 7.35.3 proposes to change, or where one thing carries two names.
 # Facts and sources only; no proposed language. Added November 20, 2026.
 _R = ("<a href='/documents/rules-7.35.3-response-to-comments-2026-11-09.pdf' target='_blank' "

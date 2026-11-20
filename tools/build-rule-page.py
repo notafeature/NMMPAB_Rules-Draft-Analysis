@@ -135,7 +135,7 @@ def render_definition(d):
         # the whole entry is struck; the opening bracket precedes the quote
         t = t.replace("“<s>", "<s>", 1)
     chipword = {"open": "Open", "settled": "Settled", "defect": "Defect", "blue": "Note",
-                "dept": "New from the department", "clarify": "Wording"}
+                "dept": "New from the department", "clarify": "Update terminology"}
     notes = "\n".join(
         f"<div class='note {kind}'><span class='mark {kind}'>{chipword[kind]}</span> "
         f"<b>{html.escape(title)}.</b> {txt}</div>"
@@ -194,10 +194,15 @@ def main():
         kinds = []
         for kind, _, _ in notes:
             if kind not in kinds: kinds.append(kind)
+        # Chip order in the section list: New from the department first, Update terminology
+        # second, then Open, Defect, Settled; Note always last.
+        CHIP_ORDER = ["dept", "clarify", "open", "defect", "settled", "blue"]
+        kinds.sort(key=CHIP_ORDER.index)
         chipword = {"open": "Open", "settled": "Settled", "defect": "Defect", "blue": "Note",
-                "dept": "New from the department", "clarify": "Wording"}
+                "dept": "New from the department", "clarify": "Update terminology"}
         chips = " ".join(f"<span class='mark {k}'>{chipword[k]}</span>" for k in kinds)
-        toc.append(f"<a class='toc' href='#s{n}'><span class='sect'>.{n}</span> <span class='t'>{title.title()}</span> {chips}</a>")
+        chips = f"<span class='chips'>{chips}</span>" if chips else ""
+        toc.append(f"<a class='toc' href='#s{n}'><span class='sect'>.{n}</span> <span class='t'>{title.title()}</span>{chips}</a>")
         notehtml = "\n".join(
             f"<div class='note {kind}'><span class='mark {kind}'>{chipword[kind]}</span> <b>{html.escape(t)}.</b> {txt}</div>"
             for kind, t, txt in notes)
@@ -216,7 +221,7 @@ def main():
         body.insert(7, render_defs_section())
         toc.insert(7, "<a class='toc' href='#defs'><span class='sect'>2.7</span> "
                       "<span class='t'>The Definitions The Rule Runs On</span> "
-                      "<span class='mark open'>Open</span> <span class='mark blue'>Note</span></a>")
+                      "<span class='chips'><span class='mark open'>Open</span> <span class='mark blue'>Note</span></span></a>")
 
     name = syncnav.NAMES["rule"]
     nav = syncnav.build_nav("rule")
@@ -229,9 +234,11 @@ def main():
 <link rel="stylesheet" href="/style.css">
 <style>
 .toclist{{display:grid;grid-template-columns:1fr 1fr;gap:2px 28px;margin:18px 0 6px}}
-a.toc{{display:flex;gap:10px;align-items:baseline;padding:6px 8px;border-radius:4px;text-decoration:none;color:var(--ink);font-size:13.5px}}
+a.toc{{display:grid;grid-template-columns:2.6em 1fr;column-gap:8px;row-gap:5px;align-items:baseline;padding:7px 8px;border-radius:4px;text-decoration:none;color:var(--ink);font-size:13.5px}}
 a.toc:hover{{background:var(--wash)}}
-a.toc .t{{flex:1}}
+a.toc .sect{{font-family:var(--mono)}}
+a.toc .chips{{grid-column:2;display:flex;flex-wrap:wrap;gap:5px}}
+a.toc .mark{{white-space:nowrap;padding:2px 7px;font-size:9.5px}}
 .rsec{{margin:52px 0;scroll-margin-top:70px}}
 .rhead{{display:flex;gap:14px;align-items:baseline;border-bottom:1.5px solid var(--ink);padding-bottom:6px;margin-bottom:12px}}
 .rnum{{font:650 13px var(--mono);color:var(--blue)}}
