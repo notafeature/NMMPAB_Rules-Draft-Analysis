@@ -96,6 +96,7 @@ p{margin:0 0 12px;max-width:64ch}
 .mark.gray{color:var(--ink2);background:var(--wash)}
 .mark.blue{color:var(--blue);background:var(--bluewash)}
 .mark.dept{color:var(--dept);background:var(--deptwash)}
+.mark.clarify{color:var(--ink2);background:var(--wash)}
 
 /* verbatim rule text: serif on wash, cited */
 .verbatim{font:16px/1.75 var(--serif);background:var(--wash);border-left:3px solid var(--ink);padding:14px 18px;margin:12px 0}
@@ -132,6 +133,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .note.open{border-color:var(--open);background:var(--openwash)}
 .note.defect{border-color:var(--defect);background:var(--defectwash)}
 .note.dept{border-color:var(--dept);background:var(--deptwash)}
+.note.clarify{border-color:var(--ink2);background:var(--wash)}
 
 /* Citations: the source opens on hover, closes on leave, and the click opens it in a new tab */
 a[data-cite]{position:relative}

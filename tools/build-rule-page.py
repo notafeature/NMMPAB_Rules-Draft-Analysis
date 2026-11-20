@@ -135,7 +135,7 @@ def render_definition(d):
         # the whole entry is struck; the opening bracket precedes the quote
         t = t.replace("“<s>", "<s>", 1)
     chipword = {"open": "Open", "settled": "Settled", "defect": "Defect", "blue": "Note",
-                "dept": "New from the department"}
+                "dept": "New from the department", "clarify": "Wording"}
     notes = "\n".join(
         f"<div class='note {kind}'><span class='mark {kind}'>{chipword[kind]}</span> "
         f"<b>{html.escape(title)}.</b> {txt}</div>"
@@ -195,7 +195,7 @@ def main():
         for kind, _, _ in notes:
             if kind not in kinds: kinds.append(kind)
         chipword = {"open": "Open", "settled": "Settled", "defect": "Defect", "blue": "Note",
-                "dept": "New from the department"}
+                "dept": "New from the department", "clarify": "Wording"}
         chips = " ".join(f"<span class='mark {k}'>{chipword[k]}</span>" for k in kinds)
         toc.append(f"<a class='toc' href='#s{n}'><span class='sect'>.{n}</span> <span class='t'>{title.title()}</span> {chips}</a>")
         notehtml = "\n".join(

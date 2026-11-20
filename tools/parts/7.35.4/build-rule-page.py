@@ -21,7 +21,10 @@ LEDE = ("The full text of 7.35.4 NMAC, Treatment Equity Fund, as the department 
         "department sits under each provision that is in neither the committee's August 18 "
         "framework nor the board's September 11 vote and was not found in the captions of the "
         "recorded committee and board meetings; the list is at "
-        "<a href='recommendation.html#new'>The board recommendation</a>. Line breaks are collapsed "
+        "<a href='recommendation.html#new'>The board recommendation</a>. A note marked Wording "
+        "sits where this Part's words rest on a term in 7.35.3 or 7.35.2.7 that the department's "
+        "November 9 response on 7.35.3 proposes to change, or where one thing carries two names. "
+        "Line breaks are collapsed "
         "for reading; where the extraction stumbles, the linked PDF governs.")
 
 _A = (f"<a href='{AMEND_DOC}' target='_blank' rel='noopener' data-cite='Proposed amendment to "
@@ -96,3 +99,88 @@ for _n, _what in [
          "Subsection H, no review of a determination based solely on the lack of funding."),
 ]:
     ANNOTATIONS.setdefault(_n, []).append(_dept(_what))
+
+# Wording: where this Part's words rest on terms in 7.35.3 or 7.35.2.7 that the department's
+# November 9, 2026 response on 7.35.3 proposes to change, or where one thing carries two names.
+# Facts and sources only; no proposed language. Added November 20, 2026.
+_R = ("<a href='/documents/rules-7.35.3-response-to-comments-2026-11-09.pdf' target='_blank' "
+      "rel='noopener' data-cite='Department of Health response to public comments on 7.35.3 NMAC, "
+      "November 9, 2026'>November 9 response on 7.35.3 NMAC</a>")
+_P3 = ("<a href='/documents/rules-draft-2026-08-25-published.pdf#page=17' target='_blank' "
+       "rel='noopener' data-cite='Proposed 7.35.3 NMAC, August 25, 2026, page 17'>7.35.3 text "
+       "published August 25</a>")
+
+def _w(title, text):
+    return ("clarify", title, text)
+
+for _n, _note in [
+    (2, _w("Roles named in the scope",
+           f"The scope names certifying clinicians among those who submit claims. The department's "
+           f"{_R} proposes to remove the certifying clinician from 7.35.3 (Response, pp. 2 to 3); "
+           "it does not address 7.35.4. Facilitators and other approved locations are not named "
+           "in the scope, and 7.35.4.14 (B) names an other approved location as a place of "
+           "treatment.")),
+    (7, _w("Two imported definitions rest on the certifying clinician",
+           f"The {_A} defines a claimant as \"an authorized certifying clinician, practitioner, "
+           "healing center, producer, or other vendor\" (amendment p. 1), and a qualified patient "
+           "as a patient \"whose certifying clinician has judged the patient to be a medically "
+           "appropriate candidate\" (amendment p. 4). This Part uses qualified patient for "
+           f"eligibility throughout. The {_R} proposes that a practitioner certify the patient in "
+           "place of a certifying clinician (Response, pp. 2 to 3) and does not address the "
+           "7.35.2.7 definitions.")),
+    (8, _w("Enrollment, and two names for the date of approval",
+           "Subsection A (1) requires current enrollment in the program, and Subsection D (1) ends "
+           f"fund eligibility when enrollment ends. The {_R} proposes that 7.35.3 state that joining "
+           "the program is an enrollment rather than an application (Response, p. 1). Eligibility "
+           "for the fund is still applied for, under 7.35.4.9. Subsection D dates eligibility from "
+           "\"the date of approval\", and paragraph (5) from \"the date of funding approval\".")),
+    (9, _w("The patient identifier, and the word applicant",
+           "Subsection B (1) asks for the patient's \"medical psilocybin program identification "
+           "number\", and 7.35.4.12 (B)(3) for the patient's \"program identification number\". "
+           f"The {_P3} sets enrollment at 7.35.3.8 and issues no patient identification number; its "
+           "one such term is \"registry identification number\", at 7.35.3.24 (C) (p. 17). "
+           "Subsections A and C call the patient an applicant; the response proposes replacing "
+           "applicant with patient in 7.35.3 (Response, p. 1).")),
+    (10, _w("Two names for a claim",
+            "The heading and Subsections A and B speak of a request for reimbursement. Subsection "
+            "C and the rest of this Part speak of a claim, the defined term: \"an electronic "
+            f"request for payment from the fund\" ({_A}, p. 1).")),
+    (12, _w("Claimants, and the roles that are not named",
+            "Subsection A names certifying clinicians as claimants; see the note at 7.35.4.2. Under "
+            f"the {_R}, a practitioner refers a patient to a medical provider when the screening "
+            "tool indicates risk or the patient has not seen a medical provider in 12 months "
+            "(Response, pp. 2 to 3). That medical provider is not among the claimants. Facilitators "
+            "are not named; Subsection E lets the same session be billed separately \"for distinct "
+            "services or roles authorized by the department\".")),
+    (12, _w("Words that differ from the defined terms",
+            "Subsection C requires \"all enrollment documents required for payment through "
+            "SHARE\"; the proposed 7.35.2.7 defines enrollment as \"enrollment as a qualified "
+            "patient\" (amendment p. 2). Subsection E says \"administration-day session\"; the "
+            "defined term is administration session (amendment p. 1).")),
+    (13, _w("Authorization",
+            "Subsection C records each \"authorization\". No section of this Part establishes an "
+            "authorization step. The word also appears at 7.35.4.14 (B) and (C), 7.35.4.15 (B), "
+            "and 7.35.4.16 (A) and (B).")),
+    (14, _w("Who submits a travel claim",
+            "Subsection B makes a qualified patient \"eligible for reimbursement for travel "
+            f"expenses\". A patient is not within the definition of claimant ({_A}, p. 1), and a "
+            "claim carries a tax identification number, a SHARE vendor identification number, and "
+            "a department certification or permit number (7.35.4.12 (B)(1) and (2)). No section "
+            "states who submits a travel claim or to whom it is paid.")),
+    (14, _w("Session names, and prior authorization",
+            "Subsection A says \"preparatory and integrative sessions\"; the defined terms are "
+            "preparation session and integration session (amendment pp. 3 to 4). Subsection C (8) "
+            "requires \"any prior authorization required by the department\"; no section "
+            "establishes prior authorization.")),
+    (15, _w("Two retention periods",
+            "Subsection A keeps claim records at least seven years, and Subsection B includes "
+            f"clinical documentation among them. The {_R} proposes that healing centers, "
+            "practitioners, and facilitators keep treatment records at least five years under "
+            "7.35.3 (Response, p. 10).")),
+    (20, _w("Burden of proof",
+            "This section does not state who bears the burden in a review. For 7.35.3.27 (L), the "
+            f"{_R} proposes that the appellant bear it on denial of an initial application, and "
+            "the department on suspension or revocation of an existing certificate (Response, "
+            "p. 10).")),
+]:
+    ANNOTATIONS.setdefault(_n, []).append(_note)
